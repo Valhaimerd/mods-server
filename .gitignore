@@ -1,0 +1,17 @@
+# Local configuration and credentials
+server.properties
+
+# Generated Minecraft/NeoForge server data
+eula.txt
+logs/
+world/
+crash-reports/
+libraries/
+versions/
+usercache.json
+whitelist.json
+banned-ips.json
+banned-players.json
+*.log
+*.lck
+

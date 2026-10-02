@@ -15,3 +15,7 @@ banned-players.json
 *.log
 *.lck
 
+# Installer build output
+installer/bin/
+installer/obj/
+/dist/

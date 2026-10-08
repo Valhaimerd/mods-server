@@ -26,6 +26,396 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
 
 Configure controls from the top of Minecraft's Controls screen to the bottom. The complete category-ordered tables in this chapter keep actual defaults, pack recommendations, and conflicts separate.
 
+The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A **Default key** is shown only when official documentation states it; otherwise the cell remains blank. **Recommended key** values are pack choices and remain separate from defaults.
+
+#### LibTooltips
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Expand Tooltip |  |  |  |
+
+#### Starcatcher keybinds
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Minigame Hit |  |  |  |
+| Open Guide |  |  |  |
+| Toggle Tournament Overlay |  |  |  |
+
+#### Movement
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Jump |  |  |  |
+| Roll |  |  |  |
+| Sneak |  |  |  |
+| Sprint |  |  |  |
+| Strafe Left |  |  |  |
+| Strafe Right |  |  |  |
+| Walk Backward |  |  |  |
+| Walk Forward |  |  |  |
+
+#### Miscellaneous
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Advancements |  |  |  |
+| Alex's Caves Special Ability |  |  |  |
+| Quick Actions |  |  |  |
+| Take Screenshot |  |  |  |
+| Toggle Cinematic Camera |  |  |  |
+| Toggle Fullscreen |  |  |  |
+| Toggle GUI |  |  |  |
+| Toggle Perspective |  |  |  |
+| Toggle Spectator Shader Effects |  |  |  |
+
+#### Multiplayer keybinds
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Friends Screen |  |  |  |
+| List Players |  |  |  |
+| Open Chat |  |  |  |
+| Open Command |  |  |  |
+| Social Interactions Screen |  |  |  |
+
+#### Gameplay
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Attack/Destroy |  |  |  |
+| Chain Mining Key (Hold) |  |  |  |
+| Open Config Menu |  |  |  |
+| Pick Block |  |  |  |
+| Use Item/Place Block |  |  |  |
+| [Tom's Simple Storage] Open Terminal |  |  |  |
+
+#### Inventory
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Drop Selected Item |  |  |  |
+| Hotbar Slot 1 |  |  |  |
+| Hotbar Slot 2 |  |  |  |
+| Hotbar Slot 3 |  |  |  |
+| Hotbar Slot 4 |  |  |  |
+| Hotbar Slot 5 |  |  |  |
+| Hotbar Slot 6 |  |  |  |
+| Hotbar Slot 7 |  |  |  |
+| Hotbar Slot 8 |  |  |  |
+| Hotbar Slot 9 |  |  |  |
+| Open Pet Status |  |  |  |
+| Open/Close Inventory |  |  |  |
+| Swap Item With Off Hand |  |  |  |
+
+#### Creative Mode
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Load Hotbar Activator |  |  |  |
+| Save Hotbar Activator |  |  |  |
+
+#### Spectator
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Highlight Players |  |  |  |
+| Select On Hotbar |  |  |  |
+
+#### Debug
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Toggle Overlay |  |  |  |
+| Debug Modifier Key |  |  |  |
+| Clear Chat |  |  |  |
+| Copy Data |  |  |  |
+| Copy Location |  |  |  |
+| Cycle Spectator |  |  |  |
+| Debug Crash |  |  |  |
+| Debug Options |  |  |  |
+| Dump Dynamic Textures |  |  |  |
+| Dump Version Info |  |  |  |
+| Game Mode Switcher |  |  |  |
+| Reload Chunks |  |  |  |
+| Reload Resource Packs |  |  |  |
+| Show Advanced Tooltips |  |  |  |
+| Show Chunk Boundaries |  |  |  |
+| Show Hitboxes |  |  |  |
+| Start/Stop Profiling |  |  |  |
+| Toggle Lost Focus Pause |  |  |  |
+| Profiling Chart |  |  |  |
+| FPS Charts |  |  |  |
+| Network Charts |  |  |  |
+| Lightmap Texture |  |  |  |
+
+#### Puffish Skills
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Skill Tree |  |  |  |
+
+#### PatPat
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Pat Entity |  |  |  |
+
+#### Jade
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Narrate Target |  |  |  |
+| Open Config |  |  |  |
+| Show Details |  |  |  |
+| Show Overlay |  |  |  |
+| Show Recipes |  |  |  |
+| Show Uses |  |  |  |
+| Toggle Fluid |  |  |  |
+| Use Profile #0 |  |  |  |
+| Use Profile #1 |  |  |  |
+| Use Profile #2 |  |  |  |
+| Use Profile #3 |  |  |  |
+
+#### Iris
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Reload Shaders |  |  |  |
+| Shaderpack Selection Screen |  |  |  |
+| Toggle Shaders |  |  |  |
+| Wireframe (SP only) |  |  |  |
+
+#### Coordinates Display
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Change HUD Position |  |  |  |
+| Copy Current Position as /tp Command |  |  |  |
+| Copy Current Position to Clipboard |  |  |  |
+| Cycle Display Mode (hold Shift to go back) |  |  |  |
+| Mark a Position |  |  |  |
+| Open Coordinates GUI |  |  |  |
+| Send Current Position in Chat |  |  |  |
+| Toggle 3D Compass Rendering |  |  |  |
+| Toggle HUD |  |  |  |
+
+#### Xaero's World Map
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Server Settings |  |  |  |
+| Open Settings |  |  |  |
+| Open World Map |  |  |  |
+| Quick Manual Confirmation |  |  |  |
+| Toggle Chunk Claims |  |  |  |
+| Toggle Dimension |  |  |  |
+| Toggle Tracked Players |  |  |  |
+| Zoom In (alternative) |  |  |  |
+| Zoom Out (alternative) |  |  |  |
+
+#### Effortless Building
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Modifier Settings |  |  |  |
+| Open Radial Menu |  |  |  |
+| Redo |  |  |  |
+| Undo |  |  |  |
+
+#### Spell Engine
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Bypass Spell Hotbar |  |  |  |
+| Spell Hotbar Slot 1 |  |  |  |
+| Spell Hotbar Slot 2 |  |  |  |
+| Spell Hotbar Slot 3 |  |  |  |
+| Spell Hotbar Slot 4 |  |  |  |
+| Spell Hotbar Slot 5 |  |  |  |
+| Spell Hotbar Slot 6 |  |  |  |
+| Spell Hotbar Slot 7 |  |  |  |
+| Spell Hotbar Slot 8 |  |  |  |
+| Spell Hotbar Slot 9 |  |  |  |
+| Tooltip Spell Details |  |  |  |
+
+#### Better Combat
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Feint |  |  |  |
+| Toggle Mine with Weapons |  |  |  |
+
+#### Better Party
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Party Menu |  |  |  |
+
+#### Curios
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open/Close Curios Inventory |  |  |  |
+
+#### Hovering Hotbar
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Move Hotbar Down |  |  |  |
+| Move Hotbar Up |  |  |  |
+
+#### Iourus Races
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Race Menu |  |  |  |
+
+#### Item Interactions
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Toggle Item Held By Cursor Tooltip |  |  |  |
+| Toggle Item Storage Tooltip |  |  |  |
+
+#### JEI — Cheat Mode
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Cheat 1 Item |  |  |  |
+| Cheat 1 Item |  |  |  |
+| Cheat 1 Stack |  |  |  |
+| Cheat 1 Stack |  |  |  |
+| Toggle Cheat Mode |  |  |  |
+
+#### JEI — Dev Tools
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Copy Recipe ID to Clipboard |  |  |  |
+
+#### JEI — Edit Mode
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Hide Ingredient |  |  |  |
+| Hide Ingredient (With Wildcard) |  |  |  |
+| Toggle Hide Ingredients Mode |  |  |  |
+
+#### JEI — Hovering over Config Button
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Toggle Cheat Mode |  |  |  |
+
+#### JEI — Hovering with Mouse
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Add/Remove Bookmark |  |  |  |
+| Craft Bookmarked Recipe (Many) |  |  |  |
+| Craft Bookmarked Recipe (One) |  |  |  |
+| Quick Move Ghost Item |  |  |  |
+| Share Item to Chat |  |  |  |
+| Show Recipe |  |  |  |
+| Show Recipe |  |  |  |
+| Show Uses |  |  |  |
+| Show Uses |  |  |  |
+
+#### JEI — Overlays
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Next Page |  |  |  |
+| Previous Page |  |  |  |
+| Select Search Bar |  |  |  |
+| Show/Hide Bookmarked Ingredients |  |  |  |
+| Show/Hide JEI Overlays |  |  |  |
+
+#### JEI — Recipes
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Close Recipes GUI |  |  |  |
+| Next Recipe |  |  |  |
+| Next Recipe Category |  |  |  |
+| Next Recipe Page |  |  |  |
+| Pause Recipe Ingredient Cycling |  |  |  |
+| Previous Recipe |  |  |  |
+| Previous Recipe Category |  |  |  |
+| Previous Recipe Page |  |  |  |
+
+#### JEI — Search Filter
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Clear Search Filter |  |  |  |
+| Next Search |  |  |  |
+| Previous Search |  |  |  |
+
+#### Locked In Slots
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Lock Slot |  |  |  |
+
+#### Pet Vault
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Pet Vault |  |  |  |
+| Unsummon All Pets |  |  |  |
+
+#### Pro Placer
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Toggle Fast Block Placement |  |  |  |
+
+#### Skill Perks
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Perk Tree |  |  |  |
+
+#### Sophisticated Backpacks
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Open Backpack |  |  |  |
+| Run Inventory Interaction Upgrades |  |  |  |
+| Swap Tool Based on Current Block/Entity |  |  |  |
+| Switch Upgrade in the 1st Slot On/Off |  |  |  |
+| Switch Upgrade in the 2nd Slot On/Off |  |  |  |
+| Switch Upgrade in the 3rd Slot On/Off |  |  |  |
+| Switch Upgrade in the 4th Slot On/Off |  |  |  |
+| Switch Upgrade in the 5th Slot On/Off |  |  |  |
+
+#### Sophisticated Mods
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Sort Storage/Backpack |  |  |  |
+| Transfer to Inventory |  |  |  |
+| Transfer to Storage |  |  |  |
+
+#### Sophisticated Item Actions
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Deposit Item into Storages |  |  |  |
+| Highlight Storage with Item |  |  |  |
+| Restock Item from Storages |  |  |  |
+
+#### Tool Belt
+
+| Action | Default key | Recommended key | Conflict or notes |
+|---|---|---|---|
+| Cycle Tool Left |  | Unbound | Direct cycling is intentionally disabled. |
+| Cycle Tool Right |  | Unbound | Direct cycling is intentionally disabled. |
+| Open Belt Slot Inventory |  | `Shift + Q` | Opens the belt inventory without using the swap action. |
+| Swap Tool |  | `Q` | Uses the freed primary tool-belt key. |
+
 ### Choosing a race
 
 Choose a race before settling on a build. See [Races and racial traits](#races-and-racial-traits) for the canonical system entry.

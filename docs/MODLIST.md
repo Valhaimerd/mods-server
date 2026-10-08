@@ -26,47 +26,49 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
 
 Configure controls from the top of Minecraft's Controls screen to the bottom. The complete category-ordered tables in this chapter keep actual defaults, pack recommendations, and conflicts separate.
 
-The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A **Default key** is shown only when official documentation states it; otherwise the cell remains blank. **Recommended key** values are pack choices and remain separate from defaults.
+The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A **Default key** is shown only when official documentation states it; otherwise the cell remains blank. **Recommended key** values are pack choices and remain separate from defaults. A blank recommendation means **leave the action unbound** unless you personally need it.
+
+The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, `G` for progression and equipment, and `Q` for Tool Belt. A key may be reused only when the actions operate in clearly different contexts, such as a JEI inventory shortcut and an in-world action.
 
 #### LibTooltips
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Expand Tooltip |  |  |  |
+| Expand Tooltip |  | `Left Shift` | Tooltip-only action; sharing Sprint is safe. |
 
 #### Starcatcher keybinds
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Minigame Hit |  |  |  |
-| Open Guide |  |  |  |
-| Toggle Tournament Overlay |  |  |  |
+| Minigame Hit |  | `Space` | Used only inside the fishing minigame; intentional context share with Jump. |
+| Open Guide |  | `Ctrl + Space` |  |
+| Toggle Tournament Overlay |  | `Tab` | Tournament-only action; intentional context share with Inventory. |
 
 #### Movement
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Jump |  |  |  |
-| Roll |  |  |  |
-| Sneak |  |  |  |
-| Sprint |  |  |  |
-| Strafe Left |  |  |  |
-| Strafe Right |  |  |  |
-| Walk Backward |  |  |  |
-| Walk Forward |  |  |  |
+| Jump | `Space` | `Space` |  |
+| Roll | `R` | `E` | Moved from `R` to keep the pet-control group together. |
+| Sneak | `Left Shift` | `C` | PatPat uses the currently configured Sneak key plus right-click. |
+| Sprint | `Left Ctrl` | `Left Shift` |  |
+| Strafe Left | `A` | `A` |  |
+| Strafe Right | `D` | `D` |  |
+| Walk Backward | `S` | `S` |  |
+| Walk Forward | `W` | `W` |  |
 
 #### Miscellaneous
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Advancements |  |  |  |
-| Alex's Caves Special Ability |  |  |  |
+| Advancements |  | `L` | Frees `B` for Better Party. |
+| Alex's Caves Special Ability |  | `X` | Keeps `Q` available for Tool Belt. |
 | Quick Actions |  |  |  |
-| Take Screenshot |  |  |  |
+| Take Screenshot | `F2` |  | `F2` is reserved for Show Advanced Tooltips in this profile. |
 | Toggle Cinematic Camera |  |  |  |
-| Toggle Fullscreen |  |  |  |
-| Toggle GUI |  |  |  |
-| Toggle Perspective |  |  |  |
+| Toggle Fullscreen |  | `Equals (=)` |  |
+| Toggle GUI | `F1` | `Minus (-)` |  |
+| Toggle Perspective | `F5` | `0` |  |
 | Toggle Spectator Shader Effects |  |  |  |
 
 #### Multiplayer keybinds
@@ -74,39 +76,39 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
 | Friends Screen |  |  |  |
-| List Players |  |  |  |
-| Open Chat |  |  |  |
-| Open Command |  |  |  |
-| Social Interactions Screen |  |  |  |
+| List Players | `Tab` | `;` |  |
+| Open Chat | `T` | `Enter` |  |
+| Open Command | `/` | `/` |  |
+| Social Interactions Screen |  | `'` |  |
 
 #### Gameplay
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Attack/Destroy |  |  |  |
-| Chain Mining Key (Hold) |  |  |  |
-| Open Config Menu |  |  |  |
-| Pick Block |  |  |  |
-| Use Item/Place Block |  |  |  |
+| Attack/Destroy | `Left Mouse Button` | `Left Mouse Button` |  |
+| Chain Mining Key (Hold) | `Grave Accent` | `Grave Accent` | Replaces the conflicting screenshot assignment on `C`. |
+| Open Config Menu |  | `Ctrl + Grave Accent` |  |
+| Pick Block |  | `Middle Mouse Button` |  |
+| Use Item/Place Block | `Right Mouse Button` | `Right Mouse Button` |  |
 | [Tom's Simple Storage] Open Terminal |  |  |  |
 
 #### Inventory
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Drop Selected Item |  |  |  |
-| Hotbar Slot 1 |  |  |  |
-| Hotbar Slot 2 |  |  |  |
-| Hotbar Slot 3 |  |  |  |
-| Hotbar Slot 4 |  |  |  |
-| Hotbar Slot 5 |  |  |  |
-| Hotbar Slot 6 |  |  |  |
-| Hotbar Slot 7 |  |  |  |
-| Hotbar Slot 8 |  |  |  |
-| Hotbar Slot 9 |  |  |  |
-| Open Pet Status |  |  |  |
-| Open/Close Inventory |  |  |  |
-| Swap Item With Off Hand |  |  |  |
+| Drop Selected Item | `Q` | `Z` | Frees `Q` for Tool Belt. |
+| Hotbar Slot 1 | `1` | `1` |  |
+| Hotbar Slot 2 | `2` | `2` |  |
+| Hotbar Slot 3 | `3` | `3` |  |
+| Hotbar Slot 4 | `4` | `4` |  |
+| Hotbar Slot 5 | `5` | `5` |  |
+| Hotbar Slot 6 | `6` | `6` |  |
+| Hotbar Slot 7 | `7` | `7` |  |
+| Hotbar Slot 8 | `8` | `8` |  |
+| Hotbar Slot 9 | `9` | `9` |  |
+| Open Pet Status | `U` | `Shift + R` | Part of the pet-control group. |
+| Open/Close Inventory | `E` | `Tab` |  |
+| Swap Item With Off Hand |  | `F` |  |
 
 #### Creative Mode
 
@@ -126,52 +128,52 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Toggle Overlay |  |  |  |
+| Toggle Overlay |  | `F1` |  |
 | Debug Modifier Key |  |  |  |
 | Clear Chat |  |  |  |
 | Copy Data |  |  |  |
 | Copy Location |  |  |  |
 | Cycle Spectator |  |  |  |
 | Debug Crash |  |  |  |
-| Debug Options |  |  |  |
+| Debug Options |  | `F12` |  |
 | Dump Dynamic Textures |  |  |  |
 | Dump Version Info |  |  |  |
 | Game Mode Switcher |  |  |  |
 | Reload Chunks |  |  |  |
 | Reload Resource Packs |  |  |  |
-| Show Advanced Tooltips |  |  |  |
-| Show Chunk Boundaries |  |  |  |
-| Show Hitboxes |  |  |  |
+| Show Advanced Tooltips |  | `F2` |  |
+| Show Chunk Boundaries |  | `F3` |  |
+| Show Hitboxes |  | `F4` |  |
 | Start/Stop Profiling |  |  |  |
-| Toggle Lost Focus Pause |  |  |  |
-| Profiling Chart |  |  |  |
-| FPS Charts |  |  |  |
-| Network Charts |  |  |  |
-| Lightmap Texture |  |  |  |
+| Toggle Lost Focus Pause |  | `F5` |  |
+| Profiling Chart |  | `F6` |  |
+| FPS Charts |  | `F7` |  |
+| Network Charts |  | `F8` |  |
+| Lightmap Texture |  | `F9` |  |
 
 #### Puffish Skills
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Skill Tree |  |  |  |
+| Open Skill Tree | `K` | `T` |  |
 
 #### PatPat
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Pat Entity |  |  |  |
+| Pat Entity | `Shift + Right Mouse Button` | `Right Mouse Button` | Hold the recommended Sneak key (`C`) while clicking. |
 
 #### Jade
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Narrate Target |  |  |  |
-| Open Config |  |  |  |
+| Narrate Target | `Numpad 5` |  |  |
+| Open Config | `Numpad 0` |  | Use the Mods screen if the keyboard has no numpad. |
 | Show Details |  |  |  |
-| Show Overlay |  |  |  |
-| Show Recipes |  |  |  |
-| Show Uses |  |  |  |
-| Toggle Fluid |  |  |  |
+| Show Overlay | `Numpad 1` |  |  |
+| Show Recipes | `Numpad 3` |  | JEI already provides recipe lookup. |
+| Show Uses | `Numpad 4` |  | JEI already provides usage lookup. |
+| Toggle Fluid | `Numpad 2` |  |  |
 | Use Profile #0 |  |  |  |
 | Use Profile #1 |  |  |  |
 | Use Profile #2 |  |  |  |
@@ -181,32 +183,32 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Reload Shaders |  |  |  |
-| Shaderpack Selection Screen |  |  |  |
-| Toggle Shaders |  |  |  |
+| Reload Shaders | `R` | `Alt + R` | Separates it from the pet-control group. |
+| Shaderpack Selection Screen | `O` |  | Open from Video Settings instead. |
+| Toggle Shaders | `K` |  | Open from Video Settings instead. |
 | Wireframe (SP only) |  |  |  |
 
 #### Coordinates Display
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Change HUD Position |  |  |  |
+| Change HUD Position |  | `Alt + N` | Part of the coordinates group. |
 | Copy Current Position as /tp Command |  |  |  |
 | Copy Current Position to Clipboard |  |  |  |
-| Cycle Display Mode (hold Shift to go back) |  |  |  |
+| Cycle Display Mode (hold Shift to go back) |  | `Shift + N` | Replaces the conflicting screenshot assignment on `Ctrl + M`. |
 | Mark a Position |  |  |  |
-| Open Coordinates GUI |  |  |  |
-| Send Current Position in Chat |  |  |  |
-| Toggle 3D Compass Rendering |  |  |  |
-| Toggle HUD |  |  |  |
+| Open Coordinates GUI |  | `Ctrl + N` |  |
+| Send Current Position in Chat |  | `Y` |  |
+| Toggle 3D Compass Rendering |  | `H` |  |
+| Toggle HUD |  | `N` |  |
 
 #### Xaero's World Map
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Server Settings |  |  |  |
-| Open Settings |  |  |  |
-| Open World Map |  |  |  |
+| Open Server Settings |  | `Shift + M` | Server owners only. |
+| Open Settings |  | `Ctrl + M` |  |
+| Open World Map | `M` | `M` |  |
 | Quick Manual Confirmation |  |  |  |
 | Toggle Chunk Claims |  |  |  |
 | Toggle Dimension |  |  |  |
@@ -218,16 +220,16 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Modifier Settings |  |  |  |
-| Open Radial Menu |  |  |  |
-| Redo |  |  |  |
-| Undo |  |  |  |
+| Open Modifier Settings | `Numpad +` |  | Also available from the radial menu. |
+| Open Radial Menu | `Left Alt` | `Left Alt` |  |
+| Redo | `Ctrl + Y` | `Ctrl + Y` |  |
+| Undo | `Ctrl + Z` | `Ctrl + Z` |  |
 
 #### Spell Engine
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Bypass Spell Hotbar |  |  |  |
+| Bypass Spell Hotbar |  | `Left Ctrl` | Separates it from Effortless Building's `Left Alt` radial menu. |
 | Spell Hotbar Slot 1 |  |  |  |
 | Spell Hotbar Slot 2 |  |  |  |
 | Spell Hotbar Slot 3 |  |  |  |
@@ -250,26 +252,26 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Party Menu |  |  |  |
+| Open Party Menu | `Z` | `B` | `Z` is used for dropping items in the recommended profile. |
 
 #### Curios
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open/Close Curios Inventory |  |  |  |
+| Open/Close Curios Inventory | `G` | `Ctrl + G` | Keeps plain `G` available for Skill Perks. |
 
 #### Hovering Hotbar
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Move Hotbar Down |  |  |  |
-| Move Hotbar Up |  |  |  |
+| Move Hotbar Down |  | `Down Arrow` |  |
+| Move Hotbar Up |  | `Up Arrow` |  |
 
 #### Iourus Races
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Race Menu |  |  |  |
+| Open Race Menu |  | `P` |  |
 
 #### Item Interactions
 
@@ -282,10 +284,10 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Cheat 1 Item |  |  |  |
-| Cheat 1 Item |  |  |  |
-| Cheat 1 Stack |  |  |  |
-| Cheat 1 Stack |  |  |  |
+| Cheat 1 Item | `Right Mouse Button` | `Right Mouse Button` | Mouse binding while Cheat Mode is active. |
+| Cheat 1 Item |  |  | Alternate binding left unbound. |
+| Cheat 1 Stack | `Left Mouse Button` | `Left Mouse Button` | Mouse binding while Cheat Mode is active. |
+| Cheat 1 Stack |  |  | Alternate binding left unbound. |
 | Toggle Cheat Mode |  |  |  |
 
 #### JEI — Dev Tools
@@ -298,8 +300,8 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Hide Ingredient |  |  |  |
-| Hide Ingredient (With Wildcard) |  |  |  |
+| Hide Ingredient | `Ctrl + Left Mouse Button` | `Ctrl + Left Mouse Button` | Edit Mode only. |
+| Hide Ingredient (With Wildcard) | `Ctrl + Right Mouse Button` | `Ctrl + Right Mouse Button` | Edit Mode only. |
 | Toggle Hide Ingredients Mode |  |  |  |
 
 #### JEI — Hovering over Config Button
@@ -317,20 +319,20 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 | Craft Bookmarked Recipe (One) |  |  |  |
 | Quick Move Ghost Item |  |  |  |
 | Share Item to Chat |  |  |  |
-| Show Recipe |  |  |  |
-| Show Recipe |  |  |  |
-| Show Uses |  |  |  |
-| Show Uses |  |  |  |
+| Show Recipe | `R` | `R` | Keyboard binding while hovering an item. |
+| Show Recipe | `Left Mouse Button` | `Left Mouse Button` | Mouse binding in the JEI item list. |
+| Show Uses | `U` | `U` | Keyboard binding while hovering an item. |
+| Show Uses | `Right Mouse Button` | `Right Mouse Button` | Mouse binding in the JEI item list. |
 
 #### JEI — Overlays
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Next Page |  |  |  |
-| Previous Page |  |  |  |
-| Select Search Bar |  |  |  |
+| Next Page | `Mouse Wheel Down` | `Mouse Wheel Down` | JEI overlay only. |
+| Previous Page | `Mouse Wheel Up` | `Mouse Wheel Up` | JEI overlay only. |
+| Select Search Bar | `Ctrl + F` | `Ctrl + F` |  |
 | Show/Hide Bookmarked Ingredients |  |  |  |
-| Show/Hide JEI Overlays |  |  |  |
+| Show/Hide JEI Overlays | `Ctrl + O` | `Ctrl + O` |  |
 
 #### JEI — Recipes
 
@@ -339,19 +341,19 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 | Close Recipes GUI |  |  |  |
 | Next Recipe |  |  |  |
 | Next Recipe Category |  |  |  |
-| Next Recipe Page |  |  |  |
+| Next Recipe Page | `Mouse Wheel Down` | `Mouse Wheel Down` | Recipe view only. |
 | Pause Recipe Ingredient Cycling |  |  |  |
 | Previous Recipe |  |  |  |
 | Previous Recipe Category |  |  |  |
-| Previous Recipe Page |  |  |  |
+| Previous Recipe Page | `Mouse Wheel Up` | `Mouse Wheel Up` | Recipe view only. |
 
 #### JEI — Search Filter
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Clear Search Filter |  |  |  |
+| Clear Search Filter | `Right Mouse Button` | `Right Mouse Button` | Right-click the search field. |
 | Next Search |  |  |  |
-| Previous Search |  |  |  |
+| Previous Search | `Up Arrow` | `Up Arrow` | Search field only. |
 
 #### Locked In Slots
 
@@ -363,8 +365,8 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Pet Vault |  |  |  |
-| Unsummon All Pets |  |  |  |
+| Open Pet Vault | `V` | `R` | Part of the pet-control group. |
+| Unsummon All Pets |  | `Ctrl + R` | Part of the pet-control group. |
 
 #### Pro Placer
 
@@ -376,13 +378,13 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Perk Tree |  |  |  |
+| Open Perk Tree | `G` | `G` | Curios moves to `Ctrl + G`. |
 
 #### Sophisticated Backpacks
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Backpack |  |  |  |
+| Open Backpack | `B` | `V` | `B` is reserved for Better Party. |
 | Run Inventory Interaction Upgrades |  |  |  |
 | Swap Tool Based on Current Block/Entity |  |  |  |
 | Switch Upgrade in the 1st Slot On/Off |  |  |  |
@@ -414,7 +416,18 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 | Cycle Tool Left |  | Unbound | Direct cycling is intentionally disabled. |
 | Cycle Tool Right |  | Unbound | Direct cycling is intentionally disabled. |
 | Open Belt Slot Inventory |  | `Shift + Q` | Opens the belt inventory without using the swap action. |
-| Swap Tool |  | `Q` | Uses the freed primary tool-belt key. |
+| Swap Tool | `R` | `Q` | Uses the freed primary tool-belt key. |
+
+#### Default-key sources
+
+Defaults were last checked on 2026-10-08. Only keys explicitly stated by the game or mod author are copied into the Default key column.
+
+- [Minecraft controls](https://www.minecraft.net/article/minecraft-controls) and [Java Edition screenshot controls](https://help.minecraft.net/hc/en-us/articles/40719065932557-Take-and-Manage-Screenshots-in-Minecraft-Java-Edition)
+- [Combat Roll](https://modrinth.com/mod/combat-roll), [Pufferfish's Skills](https://modrinth.com/mod/skills), and [Skill Perks](https://www.curseforge.com/minecraft/mc-mods/skill-perks)
+- [Jade](https://modrinth.com/mod/jade), [JEI](https://modrinth.com/mod/jei), [Iris](https://github.com/IrisShaders/Iris/blob/26.1/docs/guide.md), and [Curios](https://modrinth.com/mod/curios)
+- [OneKeyMiner](https://www.curseforge.com/minecraft/mc-mods/onekeyminer-nf), [Effortless Building](https://modrinth.com/mod/effortless-building), [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map), and [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks)
+- [Better Party](https://modrinth.com/mod/better-party), [PatPat](https://modrinth.com/plugin/patpat), [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status), and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
+- [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt)
 
 ### Choosing a race
 

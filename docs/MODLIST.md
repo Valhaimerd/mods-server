@@ -781,6 +781,30 @@ Recipe browsing, uses, trades, loot tables, and world-generation lookup tools re
 
 ### HUD changes and customization
 
+For each configurable interface, document the available display modes, what each mode changes, the authoritative default when published, the recommended pack setting, known overlaps, and how to open its configuration interface. Undocumented defaults remain blank rather than being inferred from screenshots.
+
+#### Recommended HUD arrangement
+
+- Place **Paper Doll** at the upper-left.
+- Place **Coordinates Display** directly beneath Paper Doll.
+- Place **Better Party** in a vertical panel on the right.
+- Explain alternative Coordinates Display modes rather than presenting the recommendation as the only valid setup.
+- Keep the party panel clear of the personal HUD stack and note possible competition with status effects or server scoreboards.
+
+Design asset: `output/playwright/hud-layout-recommended.png`
+
+#### Coordinates Display configuration
+
+Coordinates Display provides position information through a configurable HUD. Its Controls category confirms actions for changing the HUD position, cycling display modes, opening its GUI, toggling the HUD, and controlling related navigation features. The handbook should explain the alternative modes without claiming an undocumented default.
+
+#### Better Party configuration
+
+Better Party provides live party information alongside its party-management mechanics. The recommended right-side vertical layout prevents its panel from covering Paper Doll and Coordinates Display; exact default placement and configuration paths require an authoritative source before publication.
+
+#### Paper Doll configuration
+
+Paper Doll gives immediate visual feedback about the player's character and equipment. The recommended upper-left placement makes it the first element in the personal HUD stack, with Coordinates Display directly below it; exact default placement and configuration paths require an authoritative source before publication.
+
 - **Hovering Hotbar** — Shifts the hotbar upward slightly so it appears to float above the screen edge.
 - **Overflowing Bars** — Keeps health, armor, and similar HUD values readable beyond vanilla limits.
 - **Paper Doll** — Adds a small on-screen view of the player's character and equipment.

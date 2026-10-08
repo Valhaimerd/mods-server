@@ -204,6 +204,15 @@ The screenshot category sequence is:
 39. Sophisticated Item Actions
 40. Tool Belt
 
+The latest Tool Belt screenshot supersedes the Tool Belt bindings visible in the original screenshot set. Record these as the approved **recommended keys**, not as official defaults:
+
+| Action | Recommended key |
+|---|---|
+| Cycle Tool Left | Unbound |
+| Cycle Tool Right | Unbound |
+| Open Belt Slot Inventory | `Shift + Q` |
+| Swap Tool | `Q` |
+
 ## HUD and configuration documentation
 
 For mods with configurable interfaces, explain:

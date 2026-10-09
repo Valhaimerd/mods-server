@@ -606,7 +606,6 @@ Race selection defines persistent character traits and belongs at the beginning 
 - **Core idea:** Four installed RPG Series modules provide Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through weapons, class books, spells, and matching equipment.
 - **Onboarding:** There is no permanent class-selection screen. Follow [Choosing a class](#choosing-a-class) to assemble and test a loadout.
 
-
 ### Skill trees and character progression
 
 - **Skill Tree (RPG Series)** — Supplies class and weapon trees that modify spells, add passive combat effects, and turn gathered XP into skill points.
@@ -619,10 +618,10 @@ Their reset methods are also separate. Use an **Orb of Oblivion** to reset and r
 
 ### Abilities, spells, runes, and resources
 
-- **Spell Engine** — Provides the visible spell hotbar, casting behavior, targeting, cooldowns, and class or weapon ability integration.
+- **Spell Engine** — Connects equipped class books and compatible weapons to the visible ability hotbar, casting rules, targeting, costs, and cooldowns.
 - **Runes** — Adds craftable ammunition consumed by class spells.
 
-Spell Engine supplies the visible hotbar, casting behavior, targeting, cooldowns, class-book integration, and weapon skills. Runes act as spell ammunition and can be produced more efficiently with a Rune Crafting Altar. This handbook documents the shared mechanics without enumerating every spell.
+Equip a class book in its Curios slot, hold a compatible weapon, and use the keys displayed on the ability hotbar. Hold `Left Ctrl` with a number key when the normal item hotbar must take priority. If casting fails, read the hotbar message and check the target, cooldown, equipped loadout, and rune cost. Runes can be crafted normally or produced more efficiently with a Rune Crafting Altar.
 
 ### Combat controls and dodge rolling
 
@@ -648,7 +647,7 @@ Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipme
 
 ![Curios inventory opened beside the normal inventory with accessory slots grouped vertically](assets/screenshots/12-curios-interface.png)
 
-*The Curios screen keeps accessories separate from ordinary armor and inventory slots.*
+*The Curios screen keeps the spell-book and accessory slots separate from ordinary armor and inventory slots.*
 
 #### Acquisition and upgrade paths
 
@@ -940,17 +939,17 @@ Do not judge an unfamiliar creature only by its model. Watch whether it is passi
 - **Animal Pen** — Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
 - **Compact Villagers** — Lets players carry villagers and trade through compact booths.
 - **Name Tag Upgrade** — Allows on-the-go renaming and adds convenience improvements to name-tag use.
-- **Pet Vault** — Gives pets portable storage.
+- **Pet Vault** — Stores, summons, and manages owned pets and mounts through the Keeper's Locket radial menu.
 - **Pet Status** — Exposes useful health and status information for owned pets.
 - **Iron Wolf Armor** — Adds protective equipment for wolves.
 
 | Companion task | Recommended control | Use |
 |---|---|---|
-| Inspect an owned pet | `Shift + R` | Opens Pet Status without conflicting with the recommended JEI controls. |
-| Open portable pet storage | `R` | Opens Pet Vault; use this away from an item-hover context. |
+| Review owned pets | `Shift + R` | Opens the private Pet Status dashboard without conflicting with the recommended JEI controls. |
+| Open the pet-management radial | `R` | Opens Pet Vault; use this away from an item-hover context. |
 | Review the player party | `B` | Opens Better Party. Pets and player parties are separate systems. |
 
-Pet Status is the quickest health check before travel. Pet Vault adds portable pet storage, but it should not replace an emergency supply kept on the player. Animal Pen and Compact Villagers reduce crowded entity management at settlements; verify that a creature or villager is stored safely before changing or removing the containing block.
+Pet Status is the quickest health and location check before travel; unloaded pets show last-known rather than live information. To begin using Pet Vault, equip a Keeper's Locket in its Curios necklace slot and right-click a tamed companion you own to register it. In the `R` radial menu, left-click that pet's slice to summon or store it. Right-clicking a summoned companion unregisters it permanently from the vault but leaves the animal in the world, so do not use that interaction when the intent is only to store it. Animal Pen and Compact Villagers reduce crowded entity management at settlements; verify that a creature or villager is stored safely before changing or removing the containing block.
 
 #### Sources for adventure and exploration
 
@@ -1234,9 +1233,11 @@ JEI's cheat, edit, and developer controls are reference entries rather than norm
 
 ![Recommended HUD layout: Paper Doll above Coordinates Display at the upper-left, with Better Party on the right](assets/hud-layout-recommended.png)
 
+*Layout diagram: stack personal information on the upper-left and reserve the right edge for the party roster.*
+
 ![In-game recommended HUD with Paper Doll above Coordinates Display on the left and the Better Party roster on the right](assets/screenshots/11-hud-layout-in-game.png)
 
-*The live arrangement preserves the center of the screen while keeping character, location, and party information visible.*
+*In-game example: the arrangement preserves the center while keeping character, location, and party information visible.*
 
 This is the pack recommendation, not a locked layout. It gives personal status elements a consistent upper-left stack, leaves the center clear for combat, and gives a multiplayer roster enough vertical space on the right.
 

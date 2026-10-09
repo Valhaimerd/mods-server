@@ -1,24 +1,30 @@
 # Handbook Screenshot Queue
 
-This directory is reserved for real screenshots captured from the current Minecraft 26.2 pack. The existing `hud-layout-recommended.png` is a layout diagram, not an in-game capture.
+This directory contains real screenshots captured from the Minecraft 26.2 pack. The existing `hud-layout-recommended.png` one directory above is a layout diagram, not an in-game capture.
 
 Do not use promotional screenshots or fabricated interfaces. A capture should show the pack's actual configuration and recommended controls.
+
+Capture set reviewed: 2026-10-09. These images were made in a disposable experimental world; visible test coordinates and the test character name are intentional and do not identify a production base or server.
 
 ## Capture queue
 
 | File | Handbook location | Status |
 |---|---|---|
-| `01-race-selection.png` | Choosing a race | Needed |
-| `02-class-loadout-and-spell-hotbar.png` | Choosing a class | Needed |
-| `03-rpg-tree.png` | Skills, abilities, spells, and runes | Needed |
-| `04-skill-perks.png` | Skills, abilities, spells, and runes | Needed |
-| `05-better-party-menu.png` | Parties, downed players, and death | Needed |
-| `06-jei-recipe-and-uses.png` | JEI everyday workflow | Needed |
-| `07-world-map-and-coordinates.png` | Travel, maps, compasses, and teleportation | Needed |
-| `08-revive-and-grave.png` | Parties, downed players, and death | Needed |
-| `09-storage-interface.png` | Storage and inventory management | Needed |
-| `10-effortless-building.png` | Building and decoration | Needed |
-| `11-hud-layout-in-game.png` | HUD changes and customization | Needed |
+| `01-race-selection.png` | Choosing a race | Captured |
+| `02-class-loadout.png` | Choosing a class | Captured |
+| `02-spell-hotbar.png` | Choosing a class | Captured |
+| `03-rpg-tree.png` | Skills, abilities, spells, and runes | Captured |
+| `04-skill-perks.png` | Skills, abilities, spells, and runes | Captured |
+| `05-better-party-button.png` | Parties, downed players, and death | Captured |
+| `05-better-party-menu.png` | Parties, downed players, and death | Captured |
+| `06-jei-recipe-and-uses.png` | JEI everyday workflow | Captured |
+| `07-world-map-and-coordinates.png` | Travel, maps, compasses, and teleportation | Captured |
+| `08-revive-and-grave.png` | Parties, downed players, and death | Captured |
+| `09-storage.png` | Storage and inventory management | Captured |
+| `09-storage-interface.png` | Storage and inventory management | Captured |
+| `10-effortless-building.png` | Building and decoration | Captured |
+| `11-hud-layout-in-game.png` | HUD changes and customization | Captured |
+| `12-curios-interface.png` | Weapons, armor, jewelry, and relics | Captured |
 
 ## Capture standards
 
@@ -30,4 +36,4 @@ Do not use promotional screenshots or fabricated interfaces. A capture should sh
 - Record the pack version and capture date in the commit message.
 - When embedding a capture, write descriptive alt text that explains the interface and the action being demonstrated.
 
-The handbook contains invisible `handbook-figure` comments at the intended insertion points. Replace a marker with the finished Markdown image and update this table to `Captured`; do not embed a filename before the image exists.
+All planned captures are embedded in the handbook. For a replacement or future addition, insert an invisible `handbook-figure` marker at the intended location until the real PNG exists; never create a broken image link as a placeholder.

@@ -112,17 +112,17 @@ $targets = foreach ($line in $handbook) {
 $targets | Sort-Object -Unique | Where-Object { -not $anchors.Contains($_) }
 ```
 
-The internal-link check should produce no output. Confirm that all queued screenshot markers have one manifest row and that embedded local images exist:
+The internal-link check should produce no output. Confirm that every queued screenshot is embedded once and that all embedded local images exist:
 
 ```powershell
-$markers = $handbook | ForEach-Object {
-    if ($_ -match 'handbook-figure: screenshots/([^ ]+\.png)') { $matches[1] }
+$embeddedScreenshots = $handbook | ForEach-Object {
+    if ($_ -match '\(assets/screenshots/([^)]+\.png)\)') { $matches[1] }
 }
 $manifest = Get-Content -LiteralPath '.\docs\assets\screenshots\README.md' -Encoding UTF8
 $queued = $manifest | ForEach-Object {
     if ($_ -match '`(\d{2}-[^`]+\.png)`') { $matches[1] }
 }
-Compare-Object $markers $queued
+Compare-Object $embeddedScreenshots $queued
 
 $localImages = $handbook | ForEach-Object {
     foreach ($match in [regex]::Matches($_, '!\[[^]]*\]\(([^)]+)\)')) {

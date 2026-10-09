@@ -473,7 +473,9 @@ Press `P` to open the Iourus Races menu. The five choices are Human, Elf, Dwarf,
 
 Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Because the official race documentation confirms persistent saving but does not document a free player reset, do not assume the choice can be changed whenever you like.
 
-<!-- handbook-figure: screenshots/01-race-selection.png | status: capture needed -->
+![Iourus Races selection screen showing Human traits and the available race list](assets/screenshots/01-race-selection.png)
+
+*The race screen previews attributes and traits before the choice is confirmed.*
 
 See [Races and racial traits](#races-and-racial-traits) for the canonical system entry.
 
@@ -500,7 +502,13 @@ To activate the full class kit:
 
 Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
 
-<!-- handbook-figure: screenshots/02-class-loadout-and-spell-hotbar.png | status: capture needed -->
+![RPG class loadout screen showing weapon and spell specialization branches](assets/screenshots/02-class-loadout.png)
+
+*Class books and compatible weapons expose different specialization branches.*
+
+![Spell Engine hotbar showing four numbered abilities beside the normal item hotbar](assets/screenshots/02-spell-hotbar.png)
+
+*A compatible loadout adds the numbered Spell Engine hotbar without replacing the normal item hotbar.*
 
 ### Skills, abilities, spells, and runes
 
@@ -514,9 +522,13 @@ The pack has two progression screens plus the Spell Engine combat interface. The
 
 The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
 
-<!-- handbook-figure: screenshots/03-rpg-tree.png | status: capture needed -->
+![Full RPG skill tree with colored branches for different class and weapon paths](assets/screenshots/03-rpg-tree.png)
 
-<!-- handbook-figure: screenshots/04-skill-perks.png | status: capture needed -->
+*Press `T` to inspect the large class and weapon tree before spending its skill points.*
+
+![Skill Perks tree with the Redoubt perk tooltip explaining its shield-triggered armor bonus](assets/screenshots/04-skill-perks.png)
+
+*Press `G` for the separate general perk tree; hovering a node explains its effect, trigger, and cooldown.*
 
 Runes are ammunition for casted spells, much like arrows are ammunition for bows. They can be crafted normally, while the Rune Crafting Altar produces them more efficiently. If a spell refuses to cast, check the equipped book and weapon, the selected ability, its cooldown, and the required runes before assuming the keybind is broken.
 
@@ -544,7 +556,13 @@ Press `B` to create, browse, or manage a Better Party group. Parties can be publ
 
 The recommended HUD layout places the party roster vertically on the right. Each player can move and scale that HUD independently, so one player's layout does not rearrange everyone else's screen.
 
-<!-- handbook-figure: screenshots/05-better-party-menu.png | status: capture needed -->
+![Inventory screen with the Better Party shortcut button beside the recipe book](assets/screenshots/05-better-party-button.png)
+
+*The Better Party shortcut is also available from the inventory when the `B` binding is forgotten.*
+
+![Better Party lobby with party search, filters, Create Party, and HUD Settings controls](assets/screenshots/05-better-party-menu.png)
+
+*The lobby is used to find or create a party; HUD Settings controls the roster shown during play.*
 
 Death recovery has several layers:
 
@@ -554,7 +572,9 @@ Death recovery has several layers:
 4. **Final respawn:** If revival is declined, fails, or times out, Better Respawn normally places the player near the death location. A valid nearby bed or respawn anchor, returning from the End, and deaths across dimensions can use different placement rules.
 5. **Recovery:** The grave remains the source of stored items after an ordinary respawn. Use Better Revive's grave tools and location information instead of searching blindly.
 
-<!-- handbook-figure: screenshots/08-revive-and-grave.png | status: capture needed -->
+![Better Revive grave in the world with owner, remaining time, stored items, experience, and grave-distance information](assets/screenshots/08-revive-and-grave.png)
+
+*The grave overlay identifies its owner, remaining protection time, stored items and experience, and recovery distance.*
 
 See [Death, revival, graves, and respawning](#death-revival-graves-and-respawning) and [Parties and multiplayer cooperation](#parties-and-multiplayer-cooperation).
 
@@ -623,6 +643,10 @@ Equipment is part of the build rather than a simple armor-value ladder. Check at
 | Enchantments | Enchanting Infuser, Universal Enchants, enchantment collection | Refine the finished loadout after its basic weapon, armor, and accessories work together. |
 
 Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+
+![Curios inventory opened beside the normal inventory with accessory slots grouped vertically](assets/screenshots/12-curios-interface.png)
+
+*The Curios screen keeps accessories separate from ordinary armor and inventory slots.*
 
 #### Acquisition and upgrade paths
 
@@ -801,7 +825,9 @@ During a Blood Moon, sheltering underground or leaving the Overworld avoids the 
 | Build a return network | Waystones | Activate destinations as they are discovered, then travel through an available waystone or supported warp item. |
 | Travel between named markers | Bifrost Teleport | Establish and name markers before relying on them as the return route. |
 
-<!-- handbook-figure: screenshots/07-world-map-and-coordinates.png | status: capture needed -->
+![Xaero's World Map showing explored terrain, the player marker, map controls, biome, and coordinates](assets/screenshots/07-world-map-and-coordinates.png)
+
+*The map reveals only explored terrain and keeps the current biome and coordinates visible at the top.*
 
 A compass identifies a direction and distance; it does not make the destination safe or automatically map the route. Add a map marker before leaving, and verify that the destination belongs to the current dimension. The world map only reveals explored terrain, so blank regions are unknown—not empty.
 
@@ -1048,7 +1074,9 @@ Potion Time Stacker changes repeated use: drinking another potion with the same 
 4. Use `Ctrl + Z` and `Ctrl + Y` for undo and redo when the result is wrong. Server limits still control reach, shape size, breaking, and replacement behavior.
 5. Use mirrors or arrays for repeated sections only after one section is correct. Pro Placer supports precise single-block work and bridging where a bulk shape would be excessive.
 
-<!-- handbook-figure: screenshots/10-effortless-building.png | status: capture needed -->
+![Effortless Building radial menu with shape tools and filling options](assets/screenshots/10-effortless-building.png)
+
+*Hold `Left Alt` to choose a building shape and configure whether it is filled or hollow.*
 
 Effortless Building can place, break, or apply tool interactions across a selected shape. Check the preview before confirming, especially near storage, redstone, or irreplaceable blocks. The Randomizer tool can vary a palette, while an empty weighted slot can intentionally leave gaps.
 
@@ -1072,7 +1100,13 @@ Armor Statues provides a dedicated interface for poses, body-part rotation, visi
 | Temporary packed storage | Easy Shulker Boxes | Browse and move contents while the shulker box remains in the inventory instead of placing and breaking it repeatedly. |
 | Protected inventory positions | Locked In Slots | Hover a slot and use its lock action to prevent movement, swapping, or accidental dropping. The pack leaves this key unbound until a player chooses one. |
 
-<!-- handbook-figure: screenshots/09-storage-interface.png | status: capture needed -->
+![Tom's Simple Storage inventory connector linking two nearby container inventories](assets/screenshots/09-storage.png)
+
+*The connector indexes linked inventories; Jade reports their combined capacity and connected-container count.*
+
+![Tom's Simple Storage terminal showing items from connected containers in one searchable interface](assets/screenshots/09-storage-interface.png)
+
+*The terminal browses the network as one inventory while the items remain in their connected containers.*
 
 Sophisticated Backpacks can also be placed as blocks and used with hoppers or other inventory automation. Keep its role distinct from a Tom's network: a backpack is a portable container with upgrades, while Tom's Simple Storage indexes connected inventories rather than moving everything into one giant chest.
 
@@ -1174,7 +1208,9 @@ The recommended profile assigns `F2` to advanced tooltips, so the normal screens
 4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
 5. Press `Ctrl + O` if the item list needs to be hidden or restored.
 
-<!-- handbook-figure: screenshots/06-jei-recipe-and-uses.png | status: capture needed -->
+![JEI recipe view with a crafting recipe on the left and the searchable item browser on the right](assets/screenshots/06-jei-recipe-and-uses.png)
+
+*Recipe and usage views keep the selected process visible beside JEI's filtered item browser.*
 
 JEI search can combine ordinary words with filters. Prefix a term with `@` to search by source mod, prefix an unwanted term with `-` to exclude it, and wrap a phrase in quotation marks when its words must stay together. This is the quickest way to browse one large content mod without listing every item in this handbook.
 
@@ -1194,7 +1230,9 @@ JEI's cheat, edit, and developer controls are reference entries rather than norm
 
 ![Recommended HUD layout: Paper Doll above Coordinates Display at the upper-left, with Better Party on the right](assets/hud-layout-recommended.png)
 
-<!-- handbook-figure: screenshots/11-hud-layout-in-game.png | status: capture needed -->
+![In-game recommended HUD with Paper Doll above Coordinates Display on the left and the Better Party roster on the right](assets/screenshots/11-hud-layout-in-game.png)
+
+*The live arrangement preserves the center of the screen while keeping character, location, and party information visible.*
 
 This is the pack recommendation, not a locked layout. It gives personal status elements a consistent upper-left stack, leaves the center clear for combat, and gives a multiplayer roster enough vertical space on the right.
 

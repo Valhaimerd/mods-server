@@ -19,3 +19,8 @@ banned-players.json
 installer/bin/
 installer/obj/
 /dist/
+
+# Local planning, browser automation, and generated handbook previews
+/.playwright-cli/
+/.superpowers/
+/output/

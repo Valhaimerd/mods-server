@@ -24,7 +24,6 @@
 - Populate a Default key only from an official mod website or official documentation; leave it blank when undocumented.
 - Leave unapproved Recommended key cells blank.
 - Preserve all unbound and duplicate-looking actions shown by the Controls screen.
-- The approved Tool Belt recommendations are: Cycle Tool Left unbound, Cycle Tool Right unbound, Open Belt Slot Inventory `Shift + Q`, and Swap Tool `Q`.
 - The recommended HUD layout is Paper Doll upper-left, Coordinates Display directly beneath it, and Better Party as a right-side vertical panel.
 - Do not stage or commit the user's existing JAR deletions while executing documentation tasks.
 
@@ -58,7 +57,7 @@ Run:
 (Select-String -Path '.\docs\MODLIST.md' -Pattern '^- \*\*').Count
 ```
 
-Expected: `278` synchronized JARs, `4` client-store JARs, and `156` current catalog bullets.
+Expected: `277` synchronized JARs, `4` client-store JARs, and `155` current catalog bullets.
 
 - [ ] **Step 2: Replace the current numbered impact hierarchy with the approved handbook shell**
 
@@ -319,7 +318,7 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 29. **JEI — Hovering with Mouse:** Add/Remove Bookmark; Craft Bookmarked Recipe (Many); Craft Bookmarked Recipe (One); Quick Move Ghost Item; Share Item to Chat; Show Recipe; Show Recipe; Show Uses; Show Uses
 30. **JEI — Overlays:** Next Page; Previous Page; Select Search Bar; Show/Hide Bookmarked Ingredients; Show/Hide JEI Overlays
 
-- [ ] **Step 6: Add categories 31–40 in this exact order**
+- [ ] **Step 6: Add categories 31–39 in this exact order**
 
 31. **JEI — Recipes:** Close Recipes GUI; Next Recipe; Next Recipe Category; Next Recipe Page; Pause Recipe Ingredient Cycling; Previous Recipe; Previous Recipe Category; Previous Recipe Page
 32. **JEI — Search Filter:** Clear Search Filter; Next Search; Previous Search
@@ -330,24 +329,8 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 37. **Sophisticated Backpacks:** Open Backpack; Run Inventory Interaction Upgrades; Swap Tool Based on Current Block/Entity; Switch Upgrade in the 1st Slot On/Off; Switch Upgrade in the 2nd Slot On/Off; Switch Upgrade in the 3rd Slot On/Off; Switch Upgrade in the 4th Slot On/Off; Switch Upgrade in the 5th Slot On/Off
 38. **Sophisticated Mods:** Sort Storage/Backpack; Transfer to Inventory; Transfer to Storage
 39. **Sophisticated Item Actions:** Deposit Item into Storages; Highlight Storage with Item; Restock Item from Storages
-40. **Tool Belt:** Cycle Tool Left; Cycle Tool Right; Open Belt Slot Inventory; Swap Tool
 
-- [ ] **Step 7: Populate the approved Tool Belt recommendations**
-
-Use:
-
-```md
-#### Tool Belt
-
-| Action | Default key | Recommended key | Conflict or notes |
-|---|---|---|---|
-| Cycle Tool Left |  | Unbound | Direct cycling is intentionally disabled. |
-| Cycle Tool Right |  | Unbound | Direct cycling is intentionally disabled. |
-| Open Belt Slot Inventory |  | `Shift + Q` | Opens the belt inventory without using the swap action. |
-| Swap Tool |  | `Q` | Uses the freed primary tool-belt key. |
-```
-
-- [ ] **Step 8: Validate table count and order**
+- [ ] **Step 7: Validate table count and order**
 
 Run:
 
@@ -361,16 +344,16 @@ $doc = Get-Content -LiteralPath '.\docs\MODLIST.md' -Raw
   '#### Curios','#### Hovering Hotbar','#### Iourus Races','#### Item Interactions','#### JEI — Cheat Mode',
   '#### JEI — Dev Tools','#### JEI — Edit Mode','#### JEI — Hovering over Config Button','#### JEI — Hovering with Mouse','#### JEI — Overlays',
   '#### JEI — Recipes','#### JEI — Search Filter','#### Locked In Slots','#### Pet Vault','#### Pro Placer',
-  '#### Skill Perks','#### Sophisticated Backpacks','#### Sophisticated Mods','#### Sophisticated Item Actions','#### Tool Belt'
+  '#### Skill Perks','#### Sophisticated Backpacks','#### Sophisticated Mods','#### Sophisticated Item Actions'
 ) | ForEach-Object { if (-not $doc.Contains($_)) { throw "Missing keybind category: $_" } }
 
 $tableHeaders = (Select-String -Path '.\docs\MODLIST.md' -SimpleMatch '| Action | Default key | Recommended key | Conflict or notes |').Count
-if ($tableHeaders -ne 40) { throw "Expected 40 keybind tables; found $tableHeaders" }
+if ($tableHeaders -ne 39) { throw "Expected 39 keybind tables; found $tableHeaders" }
 ```
 
-Expected: no exception and exactly 40 table headers.
+Expected: no exception and exactly 39 table headers.
 
-- [ ] **Step 9: Commit the keybind reference**
+- [ ] **Step 8: Commit the keybind reference**
 
 ```powershell
 git add -- 'docs/MODLIST.md'
@@ -484,7 +467,7 @@ Expected: only intentionally qualified cross-reference labels, if any, require r
 Run:
 
 ```powershell
-if ((Get-ChildItem '.\mods' -Filter '*.jar' -File).Count -ne 278) { throw 'Unexpected mods JAR count' }
+if ((Get-ChildItem '.\mods' -Filter '*.jar' -File).Count -ne 277) { throw 'Unexpected mods JAR count' }
 if ((Get-ChildItem '.\mod store' -Filter '*.jar' -File).Count -ne 4) { throw 'Unexpected mod store JAR count' }
 $duplicateHashes = Get-ChildItem '.\mods' -Filter '*.jar' -File | Get-FileHash -Algorithm SHA256 | Group-Object Hash | Where-Object Count -gt 1
 if ($duplicateHashes) { throw 'Duplicate JAR hashes detected' }

@@ -1,8 +1,8 @@
 # Modpack Player Handbook Scaffold
 
-Last audited: 2026-10-08  
-Pack target: Minecraft 26.2 with NeoForge 26.2  
-Current distribution: 278 synchronized JARs plus 4 optional client-store JARs
+Last audited: 2026-10-09<br>
+Pack target: Minecraft 26.2 with NeoForge 26.2<br>
+Current distribution: 277 synchronized JARs plus 4 optional client-store JARs
 
 ## About this scaffold
 
@@ -28,7 +28,7 @@ Configure controls from the top of Minecraft's Controls screen to the bottom. Th
 
 The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A **Default key** is shown only when official documentation states it; otherwise the cell remains blank. **Recommended key** values are pack choices and remain separate from defaults. A blank recommendation means **leave the action unbound** unless you personally need it.
 
-The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, `G` for progression and equipment, and `Q` for Tool Belt. A key may be reused only when the actions operate in clearly different contexts, such as a JEI inventory shortcut and an in-world action.
+The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, and `G` for progression and equipment. A key may be reused only when the actions operate in clearly different contexts, such as a JEI inventory shortcut and an in-world action.
 
 #### LibTooltips
 
@@ -62,7 +62,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
 | Advancements |  | `L` | Frees `B` for Better Party. |
-| Alex's Caves Special Ability |  | `X` | Keeps `Q` available for Tool Belt. |
+| Alex's Caves Special Ability |  | `X` | Dedicated ability key that stays clear of Drop Item. |
 | Quick Actions |  |  |  |
 | Take Screenshot | `F2` |  | `F2` is reserved for Show Advanced Tooltips in this profile. |
 | Toggle Cinematic Camera |  |  |  |
@@ -96,7 +96,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Drop Selected Item | `Q` | `Z` | Frees `Q` for Tool Belt. |
+| Drop Selected Item | `Q` | `Q` | Uses the familiar vanilla binding. |
 | Hotbar Slot 1 | `1` | `1` |  |
 | Hotbar Slot 2 | `2` | `2` |  |
 | Hotbar Slot 3 | `3` | `3` |  |
@@ -252,7 +252,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Default key | Recommended key | Conflict or notes |
 |---|---|---|---|
-| Open Party Menu | `Z` | `B` | `Z` is used for dropping items in the recommended profile. |
+| Open Party Menu | `Z` | `B` | Mnemonic pack binding for the party system. |
 
 #### Curios
 
@@ -409,15 +409,6 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Highlight Storage with Item |  |  |  |
 | Restock Item from Storages |  |  |  |
 
-#### Tool Belt
-
-| Action | Default key | Recommended key | Conflict or notes |
-|---|---|---|---|
-| Cycle Tool Left |  | Unbound | Direct cycling is intentionally disabled. |
-| Cycle Tool Right |  | Unbound | Direct cycling is intentionally disabled. |
-| Open Belt Slot Inventory |  | `Shift + Q` | Opens the belt inventory without using the swap action. |
-| Swap Tool | `R` | `Q` | Uses the freed primary tool-belt key. |
-
 #### Default-key sources
 
 Defaults were last checked on 2026-10-08. Only keys explicitly stated by the game or mod author are copied into the Default key column.
@@ -427,7 +418,6 @@ Defaults were last checked on 2026-10-08. Only keys explicitly stated by the gam
 - [Jade](https://modrinth.com/mod/jade), [JEI](https://modrinth.com/mod/jei), [Iris](https://github.com/IrisShaders/Iris/blob/26.1/docs/guide.md), and [Curios](https://modrinth.com/mod/curios)
 - [OneKeyMiner](https://www.curseforge.com/minecraft/mc-mods/onekeyminer-nf), [Effortless Building](https://modrinth.com/mod/effortless-building), [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map), and [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks)
 - [Better Party](https://modrinth.com/mod/better-party), [PatPat](https://modrinth.com/plugin/patpat), [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status), and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
-- [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt)
 
 ### Choosing a race
 
@@ -745,7 +735,6 @@ Potion crafting, effect duration, stacking, and alchemy mechanics receive their 
 - **Linked Chests** — Lets separate chests share an inventory.
 - **Easy Shulker Boxes** — Allows shulker boxes to be used directly from the inventory.
 - **Locked In Slots** — Protects chosen inventory slots from accidental movement or replacement.
-- **Tool Belt** — Moves frequently used tools out of the main inventory while keeping them accessible.
 
 ### Item transport and logistics
 
@@ -981,7 +970,6 @@ Cosmetic replacements, equipment appearance, and first-person animation changes 
 - [The Graveyard](#the-graveyard)
 - [Tom's Simple Storage](#storage-and-inventory-management)
 - [Too Many Bows](#weapons-armor-jewelry-and-relics)
-- [Tool Belt](#storage-and-inventory-management)
 - [Towers of Chambers](#structures-and-dungeons)
 - [Towns and Towers](#structures-and-dungeons)
 - [Ultimate Warden](#bosses-and-major-encounters)
@@ -1109,7 +1097,6 @@ Cosmetic replacements, equipment appearance, and first-person animation changes 
 - [Sophisticated Backpacks](#storage-and-inventory-management)
 - [Tom's Simple Storage](#storage-and-inventory-management)
 - [Linked Chests](#storage-and-inventory-management)
-- [Tool Belt](#storage-and-inventory-management)
 
 #### Travel
 
@@ -1132,7 +1119,6 @@ Cosmetic replacements, equipment appearance, and first-person animation changes 
 - [Combat Roll](#combat-controls-and-dodge-rolling)
 - [OneKeyMiner](#enchanting-and-equipment-improvement)
 - [Effortless Building](#building-and-decoration)
-- [Tool Belt](#storage-and-inventory-management)
 
 #### HUD
 

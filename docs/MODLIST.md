@@ -615,6 +615,8 @@ Race selection defines persistent character traits and belongs at the beginning 
 
 The `T` and `G` screens are separate systems. Inspect both before spending points so class specialization and general utility choices remain deliberate.
 
+Their reset methods are also separate. Use an **Orb of Oblivion** to reset and refund points spent in the RPG class tree. The Skill Perks screen has its own **Respec** action; the server can disable it and controls whether spent XP levels are refunded, so read its confirmation result before rebuilding the general perk tree.
+
 ### Abilities, spells, runes, and resources
 
 - **Spell Engine** — Provides the visible spell hotbar, casting behavior, targeting, cooldowns, and class or weapon ability integration.
@@ -762,10 +764,10 @@ This pack rewards exploration, but unfamiliar landmarks can begin boss fights, r
 |---|---|---|
 | World Bosses | Find a shrine and complete its summoning ritual. | Treat the shrine as an arena and expect the encounter to scale for a group. |
 | Bosslike Ender Dragon | Enter the End and begin the dragon fight. | Recalled crystals can become warded; stand in the glowing ring at the pillar base before trying to break that crystal. |
-| Ultimate Warden | Discover and enter its dungeon. | This is not an ordinary Warden encounter; prepare for a contained boss area and a longer fight. |
-| Gateway of Doom | A gateway is triggered manually or appears through an enabled event. | The boss bar shows the wave, remaining enemies, and timer. Finish the wave before time expires or the configured failure effects can apply. |
+| Ultimate Warden | Obtain a Dungeon Key from a Warden, then hold it for 30 seconds to enter the dungeon. | This is not an ordinary Warden encounter; prepare for a contained boss area and keep the special exit key awarded by the boss. Hold that key for 10 seconds to leave. |
+| Gateway of Doom | Throw a Devil Eye, or encounter an enabled automatic event. | The Eye searches for safe placement and returns if it cannot open a Gateway. The boss bar shows the wave, remaining enemies, and timer; finish before configured failure effects apply. |
 
-For every major encounter, place the respawn and recovery route first, then clear ordinary enemies around the arena. Gateway enemies are kept near their event area, so regroup outside its boundary instead of dragging the wave toward a base. Hell Wards can protect important areas from gateway placement when the server permits them.
+For every major encounter, place the respawn and recovery route first, then clear ordinary enemies around the arena. The Shrine Locator Compass can cycle between World Boss shrine targets, which is safer than searching blindly with ritual items already packed. Gateway enemies are kept near their event area, so regroup outside its boundary instead of dragging the wave toward a base. Hell Wards protect complete chunks from every normal Gateway placement method; right-click a placed Ward to inspect its protected chunks on the built-in map.
 
 Both Bosslike Ender Dragon and Stellarity modify the dragon encounter. Expect their mechanics to overlap, follow the telegraphs and boss-bar state shown by the current server, and do not rely on a vanilla dragon walkthrough.
 
@@ -1015,7 +1017,7 @@ Serene Seasons can change crop growth across the year. Universal Bone Meal broad
 
 #### Starcatcher first-catch flow
 
-1. Open the Starcatcher guide with `Ctrl + Space` and review its help pages before choosing a fishing location.
+1. If the guide is missing, fish once with a vanilla rod to receive the Starcatcher guide and rod. Open the guide with `Ctrl + Space` and review its help pages before choosing a fishing location.
 2. Prepare the rod and tackle box. Hooks, bobbers, and bait alter the setup, and uncommon catches can require the right combination.
 3. Cast normally. When the minigame begins, follow its on-screen target and use `Space` for **Minigame Hit**; this shares Jump safely because the action is minigame-specific.
 4. Check the catalogue after the catch. It records discoveries and their measurements, while JEI covers recipes that the guide does not.
@@ -1112,6 +1114,8 @@ Sophisticated Backpacks can also be placed as blocks and used with hoppers or ot
 
 Linked Chests share data by channel, not by physical adjacency. Label the three-color combination, decide whether the channel is shared or personal, and test a second chest before trusting it with important materials. Easy Shulker Boxes and Locked In Slots are interaction safeguards; they do not expand a storage network.
 
+Set a Linked Chest channel with dyes on its three color controls; any chest using the same ordered combination opens that channel's shared inventory. Use a diamond on the latch to convert it to a larger player-specific channel. To configure portable access, sneak-use a Linked Pouch on the target chest so the pouch copies that channel.
+
 ### Item transport and logistics
 
 - **Golden Hopper** — Adds a hopper with configurable filtering behavior.
@@ -1145,7 +1149,7 @@ Vehicle Upgrade affects many rideable entities rather than supplying a new vehic
 
 - **Market Board** — Provides a shared multiplayer marketplace where players can list, buy, remove, and collect proceeds from item sales.
 
-Right-click a placed board to open the market. Use its search, sorting, and scrolling controls to review existing listings before creating one. When selling, verify the item, quantity, accepted server currency, and price before confirming; completed-sale currency must be collected through the board. The server administrator controls which currencies are registered, and currency items themselves cannot be sold through the system.
+Right-click a placed board to browse and buy; sneak-right-click it to open the management interface for selling items, removing listings, or collecting sale proceeds. Use its search, sorting, and scrolling controls to review existing listings before creating one. When selling, verify the item, quantity, accepted server currency, and price before confirming. The ordinary Market Board uses one configured currency, while Market Board Plus can accept multiple registered currencies in one price. The server administrator controls which currencies are registered, and currency items themselves cannot be sold through the system.
 
 Market Board is for asynchronous player listings. Goblin Traders and other unusual traders remain direct creature interactions and are documented under [Creatures and hostile mobs](#creatures-and-hostile-mobs).
 

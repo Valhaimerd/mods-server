@@ -651,22 +651,46 @@ Open the party menu with the recommended `B` binding and use `/p <message>` for 
 
 ## Part III — Adventure and Challenge
 
+This pack rewards exploration, but unfamiliar landmarks can begin boss fights, raids, or persistent threats. Before a long trip, open the world map with `M`, confirm that Coordinates Display can be toggled with `N`, record the route home, and carry supplies for both the journey out and the return.
+
+### Expedition checklist
+
+- Place or activate a return point before entering a new dimension or beginning a major encounter.
+- Carry food, ordinary combat supplies, and any runes or arrows required by the current build.
+- Keep one inventory route available for unexpected loot instead of leaving every slot full.
+- In multiplayer, form the party with `B` before combat so the HUD, friendly-fire rules, shared experience, and revive flow are already working.
+- Treat unfamiliar structures as active encounters. Observe the site, identify exits, and avoid opening containers or activating blocks until the group is ready.
+- Watch the sky and chat at night. Blood Moons and other environmental threats can make an otherwise routine return trip unsafe.
+
 ### Bosses and major encounters
 
 - **Stellarity encounters** — The End expansion includes major combat progression. See [Stellarity](#stellarity).
 
-- **World Bosses** — Adds boss shrines, summoning rituals, raid caches, large encounters, and Worldbreaker equipment.
-- **Bosslike Ender Dragon** — Reworks the dragon into a staged fight that scales with the number of players.
-- **Ultimate Warden** — Gives the Warden a dedicated dungeon and expanded boss encounter.
-- **Gateway of Doom** — Opens configurable, wave-based combat gateways with timed challenges, bosses, and rewards.
+- **World Bosses** — Adds shrine-based encounters summoned through rituals, with multiplayer scaling, changing attack patterns, and shared reward caches.
+- **Bosslike Ender Dragon** — Reworks the dragon into a multi-phase fight that scales with the number of players and becomes stronger after previous victories.
+- **Ultimate Warden** — Turns the Warden into a boss encounter with a visible boss bar, dedicated dungeon, and custom rewards.
+- **Gateway of Doom** — Opens timed, wave-based arena encounters with an on-screen boss bar, escalating enemies, and rewards for completing every wave.
+
+| Encounter | How it begins | Mechanic that changes the plan |
+|---|---|---|
+| World Bosses | Find a shrine and complete its summoning ritual. | Treat the shrine as an arena and expect the encounter to scale for a group. |
+| Bosslike Ender Dragon | Enter the End and begin the dragon fight. | Recalled crystals can become warded; stand in the glowing ring at the pillar base before trying to break that crystal. |
+| Ultimate Warden | Discover and enter its dungeon. | This is not an ordinary Warden encounter; prepare for a contained boss area and a longer fight. |
+| Gateway of Doom | A gateway is triggered manually or appears through an enabled event. | The boss bar shows the wave, remaining enemies, and timer. Finish the wave before time expires or the configured failure effects can apply. |
+
+For every major encounter, place the respawn and recovery route first, then clear ordinary enemies around the arena. Gateway enemies are kept near their event area, so regroup outside its boundary instead of dragging the wave toward a base. Hell Wards can protect important areas from gateway placement when the server permits them.
+
+Both Bosslike Ender Dragon and Stellarity modify the dragon encounter. Expect their mechanics to overlap, follow the telegraphs and boss-bar state shown by the current server, and do not rely on a vanilla dragon walkthrough.
 
 ### Invasions and wave events
 
-- **Invasion** — Starts increasingly difficult base-defense events whose enemies can build, dig, and adapt.
-- **Illager Invasion** — Expands the hostile illager roster.
-- **It Takes a Pillage** — Adds pillager camps, fortresses, encounters, and loot.
+- **Invasion** — Starts increasingly difficult Nexus-defense events whose attackers can build, dig, and adapt to the terrain.
+- **Illager Invasion** — Adds new illager combat and support roles to raids and places others in structures.
+- **It Takes a Pillage** — Adds pillager encampments, fortresses, patrol threats, and related rewards.
 
-Invasions and gateway encounters escalate through organized waves and reward preparation, group coordination, and defensive building.
+These systems are not interchangeable. **Invasion** begins around a placed and activated Nexus, while **Illager Invasion** makes village raids and related encounters more varied, and **It Takes a Pillage** adds hostile pillager locations to exploration.
+
+Do not test a Nexus beside an irreplaceable home. Invasion enemies can bridge gaps, place ladders, and destroy blocks while trying to reach it. Use a prepared defense site, provide sight lines and fallback paths, and move valuable storage outside the likely damage area. A Gateway of Doom is also wave-based, but it is a timed arena challenge rather than a Nexus defense.
 
 ### Dangerous nights and environmental threats
 
@@ -676,31 +700,49 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Primary topic:** Dangerous nights and environmental threats
 - **Also affects:** Combat, Events, Creatures, Structures, Equipment
 - **Core idea:** Makes exploration more hostile through wither-themed enemies, behaviors, encounters, and rewards.
-- **Future guide:** Explain threat escalation, preparation, encounters, and rewards without enumerating every enemy.
+- **Player guidance:** Expect its structures, creatures, and rewards to belong to one hostile theme. Scout new sites from a safe distance and use Jade and JEI to identify unfamiliar content without needing an exhaustive enemy list.
+
 #### The Graveyard
 
 - **Type:** Integrated adventure expansion
 - **Primary topic:** Dangerous nights and environmental threats
 - **Also affects:** Structures, Creatures, Combat, Equipment
 - **Core idea:** Adds graveyard-themed locations, enemies, atmosphere, and adventure rewards.
-- **Future guide:** Explain discovery, hazards, encounters, and notable mechanics.
+- **Player guidance:** Graveyard structures are adventure locations rather than decoration. Enter with an escape route, light the surrounding ground, and expect their atmosphere, enemies, and loot to be connected.
 
-- **Blood Moon** — Creates occasional nights with much heavier danger.
-- **The Darkness Will Find You** — Makes Deep Dark exploration more punishing and less predictable.
-- **Armored Foes** — Allows a wider range of hostile mobs to spawn with equipment.
+- **Blood Moon** — Replaces every fourth full moon with an Overworld event that strengthens hostile mobs, increases phantom pressure, and prevents sleeping through the night.
+- **The Darkness Will Find You** — Adds a progression-based Deep Dark curse that can make night, sleep, dark dimensions, sculk spread, and hostile events increasingly dangerous until the player pursues its protection and resolution systems.
+- **Armored Foes** — Lets more hostile mob families spawn wearing visible equipment and makes illagers equip armor during raids.
 
-- **Somnora** — Lets time pass naturally during sleep instead of instantly skipping the night.
+- **Somnora** — Replaces the instant night skip with accelerated world time, including visible sky and weather progression, multiplayer-aware sleeping, plant growth, and configurable ambience.
+
+#### When the night changes
+
+During a Blood Moon, sheltering underground or leaving the Overworld avoids the event, but a bed cannot skip it. If the night is ordinary, Somnora still means sleep advances the world instead of cutting instantly to morning. The Darkness Will Find You can separately make sleep unreliable after its curse begins, so read current messages and effects rather than assuming every failed sleep has the same cause.
 
 ### Travel, maps, compasses, and teleportation
 
-- **Waystones** — Adds discoverable and craftable fast-travel points.
+- **Waystones** — Adds discoverable and craftable travel points that must be activated before they can be selected as destinations.
 - **Bifrost Teleport** — Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
-- **Explorer's Compass** — Locates structures.
-- **Nature's Compass** — Locates biomes.
-- **Xaero's World Map** — Adds a self-writing, full-screen world map.
+- **Explorer's Compass** — Searches for vanilla and modded structures through an item interface.
+- **Nature's Compass** — Searches for vanilla and modded biomes and displays information about the selected result.
+- **Xaero's World Map** — Builds a full-screen map from terrain the player has explored.
 - **Xaero's Map Multiplayer** — Adds multiplayer-oriented features to Xaero's maps.
 
+| Need | Use | Control or interaction |
+|---|---|---|
+| Review explored terrain | Xaero's World Map | Press `M`; drag to pan and use the mouse wheel to zoom. |
+| Read or share exact position | Coordinates Display | Press `N` to toggle the HUD, `Ctrl + Y` for its interface, or `Y` to send the current position in chat. |
+| Locate a structure | Explorer's Compass | Use the compass, search the structure list, and select a target. |
+| Locate a biome | Nature's Compass | Right-click the compass, search the biome list, and select a target; sneak-right-click resets it. |
+| Build a return network | Waystones | Activate destinations as they are discovered, then travel through an available waystone or supported warp item. |
+| Travel between named markers | Bifrost Teleport | Establish and name markers before relying on them as the return route. |
+
+A compass identifies a direction and distance; it does not make the destination safe or automatically map the route. Add a map marker before leaving, and verify that the destination belongs to the current dimension. The world map only reveals explored terrain, so blank regions are unknown—not empty.
+
 ### Integrated world and dimension expansions
+
+World-generation changes appear in newly generated terrain. Existing explored chunks normally retain their old layout, so travel beyond familiar borders when searching for a new biome or structure after a pack update.
 
 #### Alex's Caves
 
@@ -708,21 +750,23 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Primary topic:** Integrated world and dimension expansions
 - **Also affects:** Combat, Equipment, World Generation, Creatures
 - **Core idea:** Adds rare underground ecosystems with their own creatures, materials, equipment, and progression.
-- **Future guide:** Explain discovery, preparation, major mechanics, controls, configuration, and relationships to other systems.
+- **Player guidance:** Begin with an Underground Cabin and its Cave Compendium. The book teaches the intended discovery route, while the recommended `X` binding is reserved for equipment that exposes Alex's Caves' special ability action.
+
 #### Better Nether
 
 - **Type:** Integrated dimension expansion
 - **Primary topic:** Integrated world and dimension expansions
 - **Also affects:** World Generation, Structures, Creatures, Equipment
 - **Core idea:** Expands Nether terrain, biomes, vegetation, structures, creatures, and exploration rewards.
-- **Future guide:** Explain dimension changes, major hazards, navigation, and progression-relevant mechanics.
+- **Player guidance:** Expect the Nether to contain unfamiliar plants, materials, mobs, and large structures. Mark the portal immediately and bring spare ignition because ordinary visual landmarks are less reliable in the denser terrain.
+
 #### Stellarity
 
 - **Type:** Integrated dimension expansion
 - **Primary topic:** Integrated world and dimension expansions
 - **Also affects:** World Generation, Structures, Creatures, Equipment, Bosses
 - **Core idea:** Expands the End with new terrain, structures, enemies, equipment, and progression.
-- **Future guide:** Explain access, exploration rules, major encounters, and important system interactions.
+- **Player guidance:** Treat the End as a full adventure dimension rather than a short dragon trip. Strongholds, the dragon, outer-island terrain, End Cities, crafting interactions, and boss encounters are all changed; some Stellarity recipes and rewards do not appear normally in JEI, so preserve written or in-world clues.
 
 - **Biomes O' Plenty** — Adds more than 50 biomes plus matching plants and blocks.
 - **Terralith** — Rebuilds Overworld terrain around almost 100 realistic and light-fantasy biomes made from vanilla blocks.
@@ -732,6 +776,8 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Clear End City** — Adds cinematic End structures, void gardens, crashed citadels, and new loot locations.
 - **Serene Seasons** — Adds seasonal color, temperature, and environmental changes.
 - **Abyssal Ocean** — Generates rare, extremely deep offshore ocean regions that become darker toward bedrock.
+
+Serene Seasons affects more than scenery: weather, temperature, and crop growth can change across the year. Nature's Compass finds a biome; Explorer's Compass finds a structure; neither replaces preparation for the seasonal or dimensional conditions around the target.
 
 ### Structures and dungeons
 
@@ -753,6 +799,16 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Improved Village Placement** — Chooses terrain that produces more natural village layouts.
 - **Gazebos** — Adds village gazebos that contain small spell libraries.
 
+#### Exploring generated structures
+
+Use this same loop for unfamiliar structures without requiring a room-by-room spoiler:
+
+1. Mark the entrance and identify a retreat route before descending or activating anything.
+2. Use Jade to identify unfamiliar blocks and entities, then `R` and `U` over recovered items to inspect their recipes and uses in JEI.
+3. Secure one area at a time. Structure mods can overlap with the pack's expanded hostile roster, so a familiar building shape does not guarantee familiar enemies.
+4. Keep unique books, maps, templates, keys, and named components until their purpose is understood.
+5. Recheck villages for useful services. Gazebos can supply spell libraries, guards can protect settlements, and some structure overhauls change where progression landmarks appear.
+
 ### Creatures and hostile mobs
 
 - **Alex's Caves creatures** — Cave-specific creatures belong to the broader cave ecosystem. See [Alex's Caves](#alexs-caves).
@@ -765,10 +821,10 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Primary topic:** Creatures and hostile mobs
 - **Also affects:** Creatures, Farming, Food, Building
 - **Core idea:** Adds mushroom creatures, crops, colorful shroomwood, and connected survival content.
-- **Future guide:** Explain its ecosystem, cultivation loop, creature interactions, and building uses.
+- **Player guidance:** Treat its creatures, cultivation, food, and building materials as one ecosystem. Use observed behavior, Jade identification, and JEI recipes instead of assuming every mushroom creature is either hostile or decorative.
 
 - **Alex's Mobs** — Adds a large roster of real and fantasy creatures with distinct behaviors and rewards.
-- **Animal Garden collection** — Adds bull sharks, capybaras, fennec foxes, harp seals, hippopotamuses, lions, narwhals, owls, prairie dogs, red pandas, red river hogs, spotted hyenas, springhares, and yellow mongooses.
+- **Animal Garden collection** — Adds a broad collection of land and aquatic wildlife with species-specific behavior.
 - **Ender Zoology** — Adds hostile mobs designed to feel like extensions of the vanilla roster.
 - **Lullaby's Mobs** — Adds additional custom hostile creatures.
 - **Mutants and Zombies** — Adds stronger mutant zombie enemies.
@@ -779,6 +835,8 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Guard Ribbits** — Adds armed protectors for Ribbit settlements.
 - **Guard Villagers** — Adds armed defenders to ordinary villages.
 - **Goblin Traders** — Adds wandering goblins with unusual trades.
+
+Do not judge an unfamiliar creature only by its model. Watch whether it is passive, defensive, territorial, tameable, rideable, or openly hostile before approaching. Jade supplies the name and health information; JEI can explain known drops and uses without turning this handbook into a species catalogue. Guard Villagers and Guard Ribbits are settlement defenders, while Goblin Traders and Ribbits are social or trading encounters rather than ordinary hostile spawns.
 
 ### Companions, pets, villagers, and settlements
 
@@ -792,6 +850,23 @@ Invasions and gateway encounters escalate through organized waves and reward pre
 - **Pet Status** — Exposes useful health and status information for owned pets.
 - **Iron Wolf Armor** — Adds protective equipment for wolves.
 - **Party Creepers** — Replaces destructive creeper damage with a decorative party-style explosion.
+
+| Companion task | Recommended control | Use |
+|---|---|---|
+| Inspect an owned pet | `Shift + R` | Opens Pet Status without conflicting with the recommended JEI controls. |
+| Open portable pet storage | `R` | Opens Pet Vault; use this away from an item-hover context. |
+| Review the player party | `B` | Opens Better Party. Pets and player parties are separate systems. |
+
+Pet Status is the quickest health check before travel. Pet Vault adds portable pet storage, but it should not replace an emergency supply kept on the player. Animal Pen and Compact Villagers reduce crowded entity management at settlements; verify that a creature or villager is stored safely before changing or removing the containing block.
+
+#### Sources for adventure and exploration
+
+- [World Bosses](https://www.curseforge.com/minecraft/mc-mods/world-bosses), [Bosslike Ender Dragon](https://www.curseforge.com/minecraft/mc-mods/bosslike-ender-dragon), [Ultimate Warden](https://www.curseforge.com/minecraft/mc-mods/ultimate-warden), and [Gateway of Doom](https://modrinth.com/mod/gateway-of-doom)
+- [Invasion Mod Fork](https://modrinth.com/mod/invasion-mod-unofficial), [Illager Invasion](https://modrinth.com/mod/illager-invasion), and [It Takes a Pillage Continuation](https://modrinth.com/mod/it-takes-a-pillage-continuation)
+- [Withered Lands](https://modrinth.com/mod/withered-lands), [The Graveyard unofficial port](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port), [Blood Moon](https://modrinth.com/datapack/ks-blood-moon), [The Darkness Will Find You](https://modrinth.com/mod/the-darkness-will-find-you), [Armored Foes](https://modrinth.com/mod/armored-foes), and [Somnora](https://www.curseforge.com/minecraft/mc-mods/somnora)
+- [Waystones](https://modrinth.com/mod/waystones), [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass), [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass), and [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)
+- [Alex's Caves](https://modrinth.com/mod/alexs-caves), [BetterNether](https://modrinth.com/mod/betternether), [Stellarity](https://modrinth.com/datapack/stellarity), and [Serene Seasons](https://modrinth.com/mod/serene-seasons)
+- [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status) and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
 
 ## Part IV — Survival and Creation
 

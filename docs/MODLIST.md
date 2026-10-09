@@ -1,12 +1,12 @@
-# Modpack Player Handbook Scaffold
+# Modpack Player Handbook
 
 Last audited: 2026-10-09<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
 Current distribution: 277 synchronized JARs plus 4 optional client-store JARs
 
-## About this scaffold
+## About this handbook
 
-This document is the working content outline for a future player-facing PDF handbook. It is written for players who understand vanilla Minecraft but are new to this modpack. It prioritizes changed mechanics, controls, configuration, and relationships between systems rather than exhaustive lists of items, creatures, blocks, recipes, structures, or loot.
+This handbook is written for players who understand vanilla Minecraft but are new to this modpack. It prioritizes changed mechanics, controls, configuration, and relationships between systems rather than exhaustive lists of items, creatures, blocks, recipes, structures, or loot.
 
 Libraries, APIs, compatibility bridges, and invisible server internals are omitted from the gameplay catalog. A support mod may still appear in the keybind reference when it exposes controls to players.
 

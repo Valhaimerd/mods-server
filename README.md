@@ -2,7 +2,7 @@
 
 This repository contains the current Minecraft mod collection and a Windows installer that keeps a player's mod folder in sync with it.
 
-See [the user-facing mod catalog](docs/MODLIST.md) for the gameplay, exploration, building, and quality-of-life ideas included in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from that catalog.
+See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics, controls, exploration, building, and quality-of-life features in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from its gameplay catalog.
 
 ## Installer
 

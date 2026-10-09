@@ -35,3 +35,7 @@ dotnet publish .\installer\ModsServerInstaller.csproj -c Release -r win-x64 --se
 ```
 
 The resulting self-contained `dist\ModsServerInstaller.exe` runs on 64-bit Windows without requiring a separate .NET installation.
+
+## Maintaining the handbook
+
+When the pack changes, follow the [player handbook maintenance checklist](docs/HANDBOOK_MAINTENANCE.md) to audit player-facing mods, controls, screenshots, indexes, and distribution counts without adding libraries or APIs to the gameplay catalog.

@@ -1,5 +1,7 @@
 # Modpack Player Handbook
 
+<!-- Future PDF stylesheet: handbook-print.css -->
+
 Last audited: 2026-10-09<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
 Current distribution: 277 synchronized JARs plus 4 optional client-store JARs
@@ -19,6 +21,52 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
 **Integrated-expansion subtypes:** Integrated world expansion; Integrated dimension expansion; Integrated adventure expansion; Integrated character-progression suite; Integrated survival or profession expansion; Integrated building expansion.
 
 **Cross-reference tags:** Combat; Character; Skills; Magic; Equipment; Bosses; Events; World Generation; Structures; Creatures; Companions; Farming; Food; Building; Storage; Travel; Multiplayer; Controls; HUD.
+
+<div class="page-break" aria-hidden="true"></div>
+
+## Quick Reference
+
+Use this page to get a new character playable quickly. The complete explanations and every configurable action begin in [Part I](#part-i--start-here).
+
+### First ten minutes
+
+1. Apply the recommended controls, resolving highlighted conflicts from the top of the Controls screen downward.
+2. Press `P`, read the racial traits, and choose a race.
+3. Obtain a weapon and class book for the archetype you want to try; equip both together.
+4. Press `T` to inspect class and weapon trees, then `G` to inspect the separate general perk tree.
+5. In multiplayer, press `B` to join or create a party before traveling.
+6. Press `M` for the world map and `N` for the coordinate HUD; place the Paper Doll above the coordinates at the upper-left.
+
+### Essential controls
+
+| Area | Recommended key | Action |
+|---|---|---|
+| Movement | `E` | Directional combat roll |
+| Movement | `C` | Sneak; also used with right-click for PatPat |
+| Character | `P` | Open the race menu |
+| Character | `T` | Open RPG class and weapon skill trees |
+| Character | `G` | Open the general perk tree |
+| Equipment | `Ctrl + G` | Open the Curios inventory |
+| Multiplayer | `B` | Open the party menu |
+| Inventory | `Tab` | Open or close inventory |
+| Storage | `V` | Open the equipped backpack |
+| Pets | `R` | Open Pet Vault |
+| Pets | `Shift + R` | Open Pet Status |
+| Pets | `Ctrl + R` | Unsummon all vaulted pets |
+| Navigation | `M` | Open the world map |
+| Navigation | `N` | Toggle the coordinate HUD |
+| Navigation | `Ctrl + N` | Open the Coordinates Display interface |
+| Navigation | `Shift + N` | Cycle coordinate display modes |
+| Recipes | `R` / `U` | Show an item's JEI recipe / uses while hovering it |
+| Recipes | `Ctrl + F` | Focus the JEI search field |
+| Building | `Left Alt` | Open the Effortless Building radial menu |
+| Building | `Ctrl + Z` / `Ctrl + Y` | Undo / redo an Effortless Building action |
+
+### Screen layout
+
+Place Paper Doll at the upper-left with Coordinates Display immediately below it, and keep Better Party as a vertical roster on the right. This keeps the center clear and prevents those three overlays from covering one another. See [HUD changes and customization](#hud-changes-and-customization) for the layout diagram and setup notes.
+
+<div class="page-break" aria-hidden="true"></div>
 
 ## Part I — Start Here
 
@@ -425,6 +473,8 @@ Press `P` to open the Iourus Races menu. The five choices are Human, Elf, Dwarf,
 
 Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Because the official race documentation confirms persistent saving but does not document a free player reset, do not assume the choice can be changed whenever you like.
 
+<!-- handbook-figure: screenshots/01-race-selection.png | status: capture needed -->
+
 See [Races and racial traits](#races-and-racial-traits) for the canonical system entry.
 
 ### Choosing a class
@@ -450,6 +500,8 @@ To activate the full class kit:
 
 Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
 
+<!-- handbook-figure: screenshots/02-class-loadout-and-spell-hotbar.png | status: capture needed -->
+
 ### Skills, abilities, spells, and runes
 
 The pack has two progression screens plus the Spell Engine combat interface. They complement one another but do not represent the same pool of upgrades.
@@ -461,6 +513,10 @@ The pack has two progression screens plus the Spell Engine combat interface. The
 | Spell or skill hotbar | Appears with a compatible loadout | Selects and casts the active abilities supplied by a class book or weapon. Hold `Left Ctrl` when the Spell Engine hotbar must be bypassed. |
 
 The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
+
+<!-- handbook-figure: screenshots/03-rpg-tree.png | status: capture needed -->
+
+<!-- handbook-figure: screenshots/04-skill-perks.png | status: capture needed -->
 
 Runes are ammunition for casted spells, much like arrows are ammunition for bows. They can be crafted normally, while the Rune Crafting Altar produces them more efficiently. If a spell refuses to cast, check the equipped book and weapon, the selected ability, its cooldown, and the required runes before assuming the keybind is broken.
 
@@ -488,6 +544,8 @@ Press `B` to create, browse, or manage a Better Party group. Parties can be publ
 
 The recommended HUD layout places the party roster vertically on the right. Each player can move and scale that HUD independently, so one player's layout does not rearrange everyone else's screen.
 
+<!-- handbook-figure: screenshots/05-better-party-menu.png | status: capture needed -->
+
 Death recovery has several layers:
 
 1. **Downed window:** PlayerRevive gives teammates a limited opportunity to rescue a fallen player before death completes. Treat the on-screen timer as authoritative because server settings can change the duration.
@@ -495,6 +553,8 @@ Death recovery has several layers:
 3. **Compatibility handoff:** The installed Better Revive × PlayerRevive bridge connects both systems and prevents repeated bleed-out or death loops. Players should follow the current on-screen prompt rather than trying to restart an earlier revive state.
 4. **Final respawn:** If revival is declined, fails, or times out, Better Respawn normally places the player near the death location. A valid nearby bed or respawn anchor, returning from the End, and deaths across dimensions can use different placement rules.
 5. **Recovery:** The grave remains the source of stored items after an ordinary respawn. Use Better Revive's grave tools and location information instead of searching blindly.
+
+<!-- handbook-figure: screenshots/08-revive-and-grave.png | status: capture needed -->
 
 See [Death, revival, graves, and respawning](#death-revival-graves-and-respawning) and [Parties and multiplayer cooperation](#parties-and-multiplayer-cooperation).
 
@@ -505,6 +565,8 @@ See [Death, revival, graves, and respawning](#death-revival-graves-and-respawnin
 - [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree), [Pufferfish's Skills](https://modrinth.com/mod/skills), and [Skill Perks](https://www.curseforge.com/minecraft/mc-mods/skill-perks)
 - [Spell Engine](https://modrinth.com/mod/spell-engine), [Runes](https://modrinth.com/mod/runes), [Better Combat](https://modrinth.com/mod/better-combat), and [Combat Roll](https://modrinth.com/mod/combat-roll)
 - [Better Party](https://modrinth.com/mod/better-party), [PlayerRevive](https://modrinth.com/mod/playerrevive), [Better Revive](https://www.curseforge.com/minecraft/mc-mods/better-revive), [Better Revive × PlayerRevive](https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive), and [Better Respawn](https://modrinth.com/mod/better-respawn)
+
+<div class="page-break" aria-hidden="true"></div>
 
 ## Part II — Character and Core Systems
 
@@ -535,6 +597,7 @@ The `T` and `G` screens are separate systems. Inspect both before spending point
 
 ### Abilities, spells, runes, and resources
 
+- **Spell Engine** — Provides the visible spell hotbar, casting behavior, targeting, cooldowns, and class or weapon ability integration.
 - **Runes** — Adds craftable ammunition consumed by class spells.
 
 Spell Engine supplies the visible hotbar, casting behavior, targeting, cooldowns, class-book integration, and weapon skills. Runes act as spell ammunition and can be produced more efficiently with a Rune Crafting Altar. This handbook documents the shared mechanics without enumerating every spell.
@@ -543,6 +606,7 @@ Spell Engine supplies the visible hotbar, casting behavior, targeting, cooldowns
 
 - **Better Combat** — Replaces vanilla melee timing with animated attacks, weapon combos, dual-wield support, and improved hit detection.
 - **Combat Roll** — Adds a dodge roll with its own attributes and enchantments.
+- **Target Dummy** — Provides a craftable target for testing damage and complete attack sequences.
 
 ### Weapons, armor, jewelry, and relics
 
@@ -579,6 +643,7 @@ Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipme
 - **Relics** — Adds Curios-equipped trinkets with active or passive mechanics that can reshape a build.
 - **Too Many Bows** — Expands ranged builds with bows that have different abilities and combat attributes.
 - **Arrow+** — Adds craftable arrow tiers with different damage levels using familiar materials.
+- **Fletching Recipe** — Gives the fletching table a crafting interface for efficient ordinary-arrow production and explosive arrows.
 - **Shield Upgrades** — Adds durable specialized shields whose attributes or defensive effects support different situations.
 - **Enchantments collection** — Adds a broad selection of offensive, defensive, movement, and ranged enchantments.
 
@@ -589,6 +654,8 @@ Too Many Bows changes more than appearance: bow damage, draw speed, ranged scali
 Shield Upgrades provides side-grades with different attributes and reactive effects. Choose a shield for the expected hazard instead of treating every new shield as a direct replacement for the previous one.
 
 #### Testing and changing equipment
+
+- **Armor Quick Swap** — Swaps complete armor sets quickly from an inventory or armor stand.
 
 Use a Target Dummy and Floating Damage Indicators to compare complete attack sequences, not only a single hit. Test with the same buffs, distance, runes, arrows, armor, and accessories each time; attack speed, cooldowns, area effects, and passive triggers can make the largest displayed number misleading.
 
@@ -615,24 +682,18 @@ Use Enchantment Insights tooltips and the station interface to confirm what an u
 - **Easy Magic** — Keeps items in enchanting tables and adds a low-cost way to reroll random offers.
 - **Universal Enchants** — Broadens which equipment can accept existing enchantments and improves selected vanilla enchantment behavior.
 - **DarkSmithing** — Adds custom ways to craft smithing templates.
-- **OneKeyMiner** — Adds vein mining, crop harvesting, and automatic replanting.
-- **Armor Quick Swap** — Swaps complete armor sets quickly from an inventory or armor stand.
-- **Target Dummy** — Provides a craftable target for testing damage and character builds.
 - **Elytra Trims** — Allows elytra to receive armor trims, dyes, banner patterns, and other visual treatments.
 - **Naturally Trimmed** — Applies trims to some equipment generated through mobs, loot, and trades, making found gear visually distinct.
 - **Armor Trim Item Fix** — Makes inventory icons show the applied trim pattern instead of a generic trimmed texture.
-- **Fletching Recipe** — Gives the fletching table a crafting interface for efficient ordinary-arrow production and explosive arrows.
 
 DarkSmithing makes smithing templates craftable through custom recipes; use JEI for the installed recipes rather than assuming vanilla duplication rules. Trims remain cosmetic unless another item explicitly states otherwise. Naturally Trimmed affects generated equipment, Armor Trim Item Fix changes inventory presentation, and Elytra Trims extends decoration to elytra.
-
-OneKeyMiner is an equipment-use shortcut rather than an enchantment. Hold the recommended `Grave Accent` key while mining, farming, or planting to chain matching actions. It still consumes the relevant tool durability and can be limited by hunger, durability thresholds, block limits, and server settings, so inspect the tool before clearing a large group.
 
 #### Sources for equipment and enchanting
 
 - [Arsenal](https://modrinth.com/mod/arsenal-rpg-series), [Armory](https://modrinth.com/mod/armory-rpg-series), [Jewelry](https://modrinth.com/mod/jewelry), and [Relics](https://modrinth.com/mod/relics-rpg)
 - [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
 - [Enchanting Infuser](https://modrinth.com/mod/enchanting-infuser), [Easy Magic](https://modrinth.com/mod/easy-magic), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
-- [DarkSmithing](https://modrinth.com/mod/darksmithing), [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
+- [DarkSmithing](https://modrinth.com/mod/darksmithing), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
 - [Elytra Trims](https://modrinth.com/mod/elytra-trims), [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed), [Armor Trim Item Fix](https://modrinth.com/mod/armor-trim-item-fix), and [Fletching Recipe](https://modrinth.com/mod/fletching-recipe)
 
 ### Death, revival, graves, and respawning
@@ -648,6 +709,8 @@ The installed compatibility bridge connects PlayerRevive and Better Revive so th
 - **Better Party** — Adds public and private parties, roles, shared nearby experience, friendly-fire protection, party chat, and a party HUD.
 
 Open the party menu with the recommended `B` binding and use `/p <message>` for party chat. Party creation, roles, protection, shared experience, communication, and HUD customization are summarized in [Parties, downed players, and death](#parties-downed-players-and-death).
+
+<div class="page-break" aria-hidden="true"></div>
 
 ## Part III — Adventure and Challenge
 
@@ -737,6 +800,8 @@ During a Blood Moon, sheltering underground or leaving the Overworld avoids the 
 | Locate a biome | Nature's Compass | Right-click the compass, search the biome list, and select a target; sneak-right-click resets it. |
 | Build a return network | Waystones | Activate destinations as they are discovered, then travel through an available waystone or supported warp item. |
 | Travel between named markers | Bifrost Teleport | Establish and name markers before relying on them as the return route. |
+
+<!-- handbook-figure: screenshots/07-world-map-and-coordinates.png | status: capture needed -->
 
 A compass identifies a direction and distance; it does not make the destination safe or automatically map the route. Add a map marker before leaving, and verify that the destination belongs to the current dimension. The world map only reveals explored terrain, so blank regions are unknown—not empty.
 
@@ -835,6 +900,7 @@ Use this same loop for unfamiliar structures without requiring a room-by-room sp
 - **Guard Ribbits** — Adds armed protectors for Ribbit settlements.
 - **Guard Villagers** — Adds armed defenders to ordinary villages.
 - **Goblin Traders** — Adds wandering goblins with unusual trades.
+- **Party Creepers** — Replaces destructive creeper damage with a decorative party-style explosion.
 
 Do not judge an unfamiliar creature only by its model. Watch whether it is passive, defensive, territorial, tameable, rideable, or openly hostile before approaching. Jade supplies the name and health information; JEI can explain known drops and uses without turning this handbook into a species catalogue. Guard Villagers and Guard Ribbits are settlement defenders, while Goblin Traders and Ribbits are social or trading encounters rather than ordinary hostile spawns.
 
@@ -849,7 +915,6 @@ Do not judge an unfamiliar creature only by its model. Watch whether it is passi
 - **Pet Vault** — Gives pets portable storage.
 - **Pet Status** — Exposes useful health and status information for owned pets.
 - **Iron Wolf Armor** — Adds protective equipment for wolves.
-- **Party Creepers** — Replaces destructive creeper damage with a decorative party-style explosion.
 
 | Companion task | Recommended control | Use |
 |---|---|---|
@@ -868,9 +933,17 @@ Pet Status is the quickest health check before travel. Pet Vault adds portable p
 - [Alex's Caves](https://modrinth.com/mod/alexs-caves), [BetterNether](https://modrinth.com/mod/betternether), [Stellarity](https://modrinth.com/datapack/stellarity), and [Serene Seasons](https://modrinth.com/mod/serene-seasons)
 - [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status) and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
 
+<div class="page-break" aria-hidden="true"></div>
+
 ## Part IV — Survival and Creation
 
 These systems turn gathered resources into long-term infrastructure. The useful order is simple: establish repeatable food, organize portable and base storage, then add faster building, item routing, vehicles, and player trading as those needs appear.
+
+### Resource gathering and repetitive actions
+
+- **OneKeyMiner** — Adds vein mining, crop harvesting, and automatic replanting.
+
+Hold the recommended `Grave Accent` key while mining, farming, or planting to chain matching actions. OneKeyMiner still consumes the relevant tool durability and can be limited by hunger, durability thresholds, block limits, and server settings, so inspect the tool before clearing a large group.
 
 ### Farming, food, and cooking
 
@@ -975,6 +1048,8 @@ Potion Time Stacker changes repeated use: drinking another potion with the same 
 4. Use `Ctrl + Z` and `Ctrl + Y` for undo and redo when the result is wrong. Server limits still control reach, shape size, breaking, and replacement behavior.
 5. Use mirrors or arrays for repeated sections only after one section is correct. Pro Placer supports precise single-block work and bridging where a bulk shape would be excessive.
 
+<!-- handbook-figure: screenshots/10-effortless-building.png | status: capture needed -->
+
 Effortless Building can place, break, or apply tool interactions across a selected shape. Check the preview before confirming, especially near storage, redstone, or irreplaceable blocks. The Randomizer tool can vary a palette, while an empty weighted slot can intentionally leave gaps.
 
 Stonecutting Upgrade expands the stonecutter recipe area and remembers the previous selection. Press `Space` inside the stonecutter to refill one input item, or hold `Shift` with `Space` to refill a stack. These are interface actions, not global building keybinds.
@@ -996,6 +1071,8 @@ Armor Statues provides a dedicated interface for poses, body-part rotation, visi
 | Shared storage across locations | Linked Chests | Matching three-dye channels open the same inventory. Personal channels can restrict access, and a linked pouch can provide portable channel access. |
 | Temporary packed storage | Easy Shulker Boxes | Browse and move contents while the shulker box remains in the inventory instead of placing and breaking it repeatedly. |
 | Protected inventory positions | Locked In Slots | Hover a slot and use its lock action to prevent movement, swapping, or accidental dropping. The pack leaves this key unbound until a player chooses one. |
+
+<!-- handbook-figure: screenshots/09-storage-interface.png | status: capture needed -->
 
 Sophisticated Backpacks can also be placed as blocks and used with hoppers or other inventory automation. Keep its role distinct from a Tom's network: a backpack is a portable container with upgrades, while Tom's Simple Storage indexes connected inventories rather than moving everything into one giant chest.
 
@@ -1040,6 +1117,7 @@ Market Board is for asynchronous player listings. Goblin Traders and other unusu
 
 #### Sources for survival and creation
 
+- [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf)
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
 - [Starcatcher](https://modrinth.com/mod/starcatcher)
 - [Alchemia](https://modrinth.com/mod/alchemia), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
@@ -1047,6 +1125,8 @@ Market Board is for asynchronous player listings. Goblin Traders and other unusu
 - [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks), [Tom's Simple Storage](https://modrinth.com/mod/toms-storage), [Linked Chests](https://modrinth.com/mod/new-linked-chests), [Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes), and [Locked In Slots](https://modrinth.com/mod/locked-in-slots)
 - [Golden Hopper](https://www.curseforge.com/minecraft/mc-mods/golden-hopper), [Hopper Gadgetry](https://modrinth.com/mod/hopper-gadgetry), [Sophisticated Inventory Interactions](https://modrinth.com/mod/sophisticated-inventory-interactions), and [Sophisticated Item Actions](https://modrinth.com/mod/sophisticated-item-actions)
 - [Seaworthy Boats](https://modrinth.com/mod/seaworthy-boats), [Vehicle Upgrade](https://modrinth.com/mod/vehicle-upgrade), and [The Market Board](https://www.curseforge.com/minecraft/mc-mods/market-board)
+
+<div class="page-break" aria-hidden="true"></div>
 
 ## Part V — Interface and Reference
 
@@ -1094,6 +1174,8 @@ The recommended profile assigns `F2` to advanced tooltips, so the normal screens
 4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
 5. Press `Ctrl + O` if the item list needs to be hidden or restored.
 
+<!-- handbook-figure: screenshots/06-jei-recipe-and-uses.png | status: capture needed -->
+
 JEI search can combine ordinary words with filters. Prefix a term with `@` to search by source mod, prefix an unwanted term with `-` to exclude it, and wrap a phrase in quotation marks when its words must stay together. This is the quickest way to browse one large content mod without listing every item in this handbook.
 
 | JEI extension | What it adds to the lookup workflow |
@@ -1111,6 +1193,8 @@ JEI's cheat, edit, and developer controls are reference entries rather than norm
 #### Recommended HUD arrangement
 
 ![Recommended HUD layout: Paper Doll above Coordinates Display at the upper-left, with Better Party on the right](assets/hud-layout-recommended.png)
+
+<!-- handbook-figure: screenshots/11-hud-layout-in-game.png | status: capture needed -->
 
 This is the pack recommendation, not a locked layout. It gives personal status elements a consistent upper-left stack, leaves the center clear for combat, and gives a multiplayer roster enough vertical space on the right.
 
@@ -1174,6 +1258,8 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [Eating Animation Fork](https://github.com/Fring-BS/Eating-Animation-Fork), [Distinct Potions](https://modrinth.com/mod/distinct-potions), [Quick Skin](https://modrinth.com/mod/quick-skin), and [PatPat](https://modrinth.com/plugin/patpat)
 - [Iris](https://modrinth.com/mod/iris) and [Sodium](https://modrinth.com/mod/sodium)
 
+<div class="page-break" aria-hidden="true"></div>
+
 ### Alphabetical mod index
 
 - [Abyssal Ocean](#integrated-world-and-dimension-expansions)
@@ -1187,7 +1273,7 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [Antique Trading Ship](#structures-and-dungeons)
 - [AppleSkin](#information-overlays-and-tooltips)
 - [Arcane Lanterns](#building-and-decoration)
-- [Armor Quick Swap](#enchanting-and-equipment-improvement)
+- [Armor Quick Swap](#weapons-armor-jewelry-and-relics)
 - [Armor Statues](#building-and-decoration)
 - [Armor Trim Item Fix](#enchanting-and-equipment-improvement)
 - [Armored Foes](#dangerous-nights-and-environmental-threats)
@@ -1234,7 +1320,7 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [Explorer's Compass](#travel-maps-compasses-and-teleportation)
 - [Explorify](#structures-and-dungeons)
 - [Farmer's Delight](#farmers-delight)
-- [Fletching Recipe](#enchanting-and-equipment-improvement)
+- [Fletching Recipe](#weapons-armor-jewelry-and-relics)
 - [Floating Damage Indicators](#information-overlays-and-tooltips)
 - [Food Effect Tooltips](#information-overlays-and-tooltips)
 - [Functional Sculptures](#building-and-decoration)
@@ -1277,10 +1363,10 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [No Crop Destruction](#farming-food-and-cooking)
 - [Nullscape](#integrated-world-and-dimension-expansions)
 - [Ocean Lily Pad Village](#structures-and-dungeons)
-- [OneKeyMiner](#enchanting-and-equipment-improvement)
+- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
 - [Overflowing Bars](#hud-changes-and-customization)
 - [Paper Doll](#hud-changes-and-customization)
-- [Party Creepers](#companions-pets-villagers-and-settlements)
+- [Party Creepers](#creatures-and-hostile-mobs)
 - [PatPat](#cosmetic-and-animation-changes)
 - [Pet Status](#companions-pets-villagers-and-settlements)
 - [Pet Vault](#companions-pets-villagers-and-settlements)
@@ -1307,11 +1393,12 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [Sophisticated Backpacks](#storage-and-inventory-management)
 - [Sophisticated Inventory Interactions](#item-transport-and-logistics)
 - [Sophisticated Item Actions](#item-transport-and-logistics)
+- [Spell Engine](#abilities-spells-runes-and-resources)
 - [Starcatcher](#starcatcher)
 - [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#building-and-decoration)
 - [Stoneworks](#building-and-decoration)
-- [Target Dummy](#enchanting-and-equipment-improvement)
+- [Target Dummy](#combat-controls-and-dodge-rolling)
 - [Terralith](#integrated-world-and-dimension-expansions)
 - [The Darkness Will Find You](#dangerous-nights-and-environmental-threats)
 - [The Graveyard](#the-graveyard)
@@ -1332,12 +1419,15 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 - [Xaero's Map Multiplayer](#travel-maps-compasses-and-teleportation)
 - [Xaero's World Map](#travel-maps-compasses-and-teleportation)
 
+<div class="page-break" aria-hidden="true"></div>
+
 ### Gameplay-tag index
 
 #### Combat
 
 - [Better Combat](#combat-controls-and-dodge-rolling)
 - [Combat Roll](#combat-controls-and-dodge-rolling)
+- [Target Dummy](#combat-controls-and-dodge-rolling)
 - [RPG classes](#rpg-classes)
 - [World Bosses](#bosses-and-major-encounters)
 - [Invasion](#invasions-and-wave-events)
@@ -1359,6 +1449,7 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 #### Magic
 
 - [RPG classes](#rpg-classes)
+- [Spell Engine](#abilities-spells-runes-and-resources)
 - [Runes](#abilities-spells-runes-and-resources)
 - [Alchemia](#alchemia)
 - [Arcane Lanterns](#building-and-decoration)
@@ -1407,6 +1498,7 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 
 - [Alex's Mobs](#creatures-and-hostile-mobs)
 - [Animal Garden collection](#creatures-and-hostile-mobs)
+- [Party Creepers](#creatures-and-hostile-mobs)
 - [Shroomcraft](#shroomcraft)
 - [Ender Zoology](#creatures-and-hostile-mobs)
 
@@ -1422,6 +1514,7 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 
 - [Farmer's Delight](#farmers-delight)
 - [Kaleidoscope Cookery](#farming-food-and-cooking)
+- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
 - [Shroomcraft](#shroomcraft)
 - [Universal Bone Meal](#farming-food-and-cooking)
 
@@ -1464,7 +1557,8 @@ For shader management, use Iris from Video Settings. `Alt + R` reloads shaders i
 
 - [Better Combat](#combat-controls-and-dodge-rolling)
 - [Combat Roll](#combat-controls-and-dodge-rolling)
-- [OneKeyMiner](#enchanting-and-equipment-improvement)
+- [Spell Engine](#abilities-spells-runes-and-resources)
+- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
 - [Effortless Building](#building-and-decoration)
 
 #### HUD

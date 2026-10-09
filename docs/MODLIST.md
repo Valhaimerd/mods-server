@@ -870,6 +870,8 @@ Pet Status is the quickest health check before travel. Pet Vault adds portable p
 
 ## Part IV — Survival and Creation
 
+These systems turn gathered resources into long-term infrastructure. The useful order is simple: establish repeatable food, organize portable and base storage, then add faster building, item routing, vehicles, and player trading as those needs appear.
+
 ### Farming, food, and cooking
 
 - **Shroomcraft cultivation** — Mushroom crops connect to a wider creature and building ecosystem. See [Shroomcraft](#shroomcraft).
@@ -881,12 +883,26 @@ Pet Status is the quickest health check before travel. Pet Vault adds portable p
 - **Primary topic:** Farming, food, and cooking
 - **Also affects:** Farming, Food, Equipment, Building
 - **Core idea:** Expands farming, cooking tools, food preparation, meals, and kitchen-centered survival.
-- **Future guide:** Explain the cooking loop, important workstations, food mechanics, and integrations.
+- **Player guidance:** Build around preparation, heat, and serving rather than treating every meal as an ordinary crafting-grid recipe. Use JEI to identify the required workstation and container for the food being made.
 
 - **Kaleidoscope Cookery** — Adds more ingredients and recipes around the cooking loop.
 - **Better Rotten Flesh** — Adds useful ways to process and consume rotten flesh and new zombie-feeding behavior.
 - **Universal Bone Meal** — Makes bone meal work on a wider range of plants.
 - **No Crop Destruction** — Prevents farmland and crops from being trampled during normal play.
+
+#### Kitchen workflow
+
+| Job | Main system | How to approach it |
+|---|---|---|
+| Prepare ingredients | Cutting boards, knives, and other preparation stations | Check the JEI recipe category instead of assuming the crafting grid. Preparation can improve yield or create an ingredient used by another station. |
+| Cook directly | Heated cookware and stoves | Supply the required ingredient and heat source, then collect the cooked result. |
+| Make batch meals | Cooking pots and compatible containers | Place the pot over heat, follow the displayed recipe, and provide the serving container when the recipe requires one. |
+| Use Cookery stations | Kaleidoscope Cookery's kitchen blocks | Its chopping, milling, cooking, and steaming processes have their own recipe categories; follow JEI rather than substituting a similar-looking station. |
+| Serve or display food | Feast and display blocks | Some prepared foods are placed in the world and taken in portions instead of being eaten directly from the original block. |
+
+Farmer's Delight and Kaleidoscope Cookery overlap in theme but do not make every workstation interchangeable. Search the desired result in JEI, open its recipe with `R`, and follow the station shown there. Better Rotten Flesh provides a use for a normally poor food source, but its processed results and zombie interactions should still be tested away from villagers and livestock.
+
+Serene Seasons can change crop growth across the year. Universal Bone Meal broadens which plants accept bone meal, while No Crop Destruction protects the farm from ordinary trampling; neither guarantees that every crop will grow equally well in every season or environment.
 
 ### Fishing and collection systems
 
@@ -896,9 +912,18 @@ Pet Status is the quickest health check before travel. Pet Vault adds portable p
 - **Primary topic:** Fishing and collection systems
 - **Also affects:** Food, Equipment, Events, Multiplayer
 - **Core idea:** Adds collectible fish, fishing minigames, equipment, trophies, tournaments, and a guidebook.
-- **Future guide:** Explain the fishing loop, minigame controls, collections, tournaments, and configuration.
+- **Player guidance:** Fish are selected by conditions such as biome, weather, time, and elevation. Use the guide and catalogue to plan where to fish instead of expecting one location to provide every catch.
 
-Fishing-focused progression and collection systems receive their canonical entries here.
+#### Starcatcher first-catch flow
+
+1. Open the Starcatcher guide with `Ctrl + Space` and review its help pages before choosing a fishing location.
+2. Prepare the rod and tackle box. Hooks, bobbers, and bait alter the setup, and uncommon catches can require the right combination.
+3. Cast normally. When the minigame begins, follow its on-screen target and use `Space` for **Minigame Hit**; this shares Jump safely because the action is minigame-specific.
+4. Check the catalogue after the catch. It records discoveries and their measurements, while JEI covers recipes that the guide does not.
+5. During a tournament, use `Tab` for the tournament overlay. This intentionally shares the key with Inventory because the contexts are separate.
+6. Decide whether the catch belongs in food preparation, a display or aquarium, the collection, or the selling system.
+
+Starcatcher's difficulty and presentation have accessibility settings, including an option to disable the minigame. Treat the server configuration as authoritative. This handbook explains the loop without listing every fish or hidden condition.
 
 ### Potions and alchemy
 
@@ -908,11 +933,19 @@ Fishing-focused progression and collection systems receive their canonical entri
 - **Primary topic:** Potions and alchemy
 - **Also affects:** Magic, Equipment, Food
 - **Core idea:** Reimagines potion brewing as a simplified, Potion Craft-inspired alchemy system.
-- **Future guide:** Explain the alchemy loop, interaction controls, outputs, and relationship to ordinary potion systems.
+- **Player guidance:** Alchemia is an ingredient-navigation system rather than a replacement skin for the Brewing Stand. Learn it at an Alchemical Cauldron and keep ordinary brewing recipes as a separate workflow.
 - **Potion Time Stacker** — Lets repeated potion effects extend their remaining duration.
 - **Potions Stack** — Allows ordinary potions to stack in small groups.
 
-Potion crafting, effect duration, stacking, and alchemy mechanics receive their canonical entries here.
+#### Alchemia workflow
+
+1. Place an ordinary cauldron over a campfire to create the Alchemical Cauldron setup.
+2. Add discovered alchemy ingredients. Each one moves the mixture's bias in a direction on the radial effect map.
+3. Continue adjusting the mixture until the water changes to the desired effect. Combining paths can produce a potion with more than one effect; the last effect added is generally the strongest.
+4. Use glass bottles on the completed cauldron to collect the result. One full cauldron can fill four bottles.
+5. Record useful ingredient paths and confirm unfamiliar ingredients or outputs with JEI before consuming the result.
+
+Potion Time Stacker changes repeated use: drinking another potion with the same active effect adds duration instead of simply replacing the old timer. Splash-potion stacking and the maximum duration are server-configurable, so check the actual effect timer after use. Potions Stack changes inventory capacity only; potions still stack only when their item data matches.
 
 ### Building and decoration
 
@@ -922,7 +955,7 @@ Potion crafting, effect duration, stacking, and alchemy mechanics receive their 
 - **Primary topic:** Building and decoration
 - **Also affects:** Building, Storage
 - **Core idea:** Adds coordinated bridges, doors, fences, furniture, decorations, lights, paintings, paths, roofs, stairs, trapdoors, and windows.
-- **Future guide:** Explain the collection at a family level, focusing on building workflows rather than block-by-block listings.
+- **Player guidance:** Treat the collection as coordinated block families. Search by the source mod in JEI or filter by the material being used instead of browsing every decorative variant individually.
 
 - **Display Delight** — Adds decorative ways to display food and related items.
 - **Functional Sculptures** — Adds a collection of craftable statues, monuments, and memorials for decorative builds.
@@ -934,6 +967,20 @@ Potion crafting, effect duration, stacking, and alchemy mechanics receive their 
 - **Arcane Lanterns** — Uses catalysts to give lanterns different magical area effects.
 - **Barricades** — Adds defensive barricades, contact-damage obstacles, and resettable traps.
 
+#### Bulk-building workflow
+
+1. Prototype a small section with ordinary placement and confirm the palette, orientation, and block count.
+2. Hold `Left Alt` to open Effortless Building's radial menu, choose a shape, and review its fill and replacement options.
+3. With the building block selected, right-click the first position, aim at the endpoint, and right-click again to place the previewed shape. Survival use consumes the correct blocks from inventory.
+4. Use `Ctrl + Z` and `Ctrl + Y` for undo and redo when the result is wrong. Server limits still control reach, shape size, breaking, and replacement behavior.
+5. Use mirrors or arrays for repeated sections only after one section is correct. Pro Placer supports precise single-block work and bridging where a bulk shape would be excessive.
+
+Effortless Building can place, break, or apply tool interactions across a selected shape. Check the preview before confirming, especially near storage, redstone, or irreplaceable blocks. The Randomizer tool can vary a palette, while an empty weighted slot can intentionally leave gaps.
+
+Stonecutting Upgrade expands the stonecutter recipe area and remembers the previous selection. Press `Space` inside the stonecutter to refill one input item, or hold `Shift` with `Space` to refill a stack. These are interface actions, not global building keybinds.
+
+Armor Statues provides a dedicated interface for poses, body-part rotation, visibility, alignment, and display options. Arcane Lanterns uses a Lantern Maker and catalysts to create area effects; read the JEI description before placement because some effects help farms or movement while others repel, contain, debuff, or damage entities. Barricades and traps are functional defenses, so test their reset and contact behavior before placing them on a shared path.
+
 ### Storage and inventory management
 
 - **Sophisticated Backpacks** — Adds upgradeable portable storage with functional upgrade slots.
@@ -942,6 +989,18 @@ Potion crafting, effect duration, stacking, and alchemy mechanics receive their 
 - **Easy Shulker Boxes** — Allows shulker boxes to be used directly from the inventory.
 - **Locked In Slots** — Protects chosen inventory slots from accidental movement or replacement.
 
+| Storage need | Best starting system | Important behavior |
+|---|---|---|
+| Portable general storage | Sophisticated Backpacks | Open the equipped or carried backpack with the recommended `V` key. Higher backpack tiers add capacity and upgrade slots; installed upgrades determine automation and utility behavior. |
+| One searchable base inventory | Tom's Simple Storage | Connect ordinary inventories to a network and access them through a terminal. The terminal hotkey is intentionally unbound, so interact with the placed terminal unless you assign one. |
+| Shared storage across locations | Linked Chests | Matching three-dye channels open the same inventory. Personal channels can restrict access, and a linked pouch can provide portable channel access. |
+| Temporary packed storage | Easy Shulker Boxes | Browse and move contents while the shulker box remains in the inventory instead of placing and breaking it repeatedly. |
+| Protected inventory positions | Locked In Slots | Hover a slot and use its lock action to prevent movement, swapping, or accidental dropping. The pack leaves this key unbound until a player chooses one. |
+
+Sophisticated Backpacks can also be placed as blocks and used with hoppers or other inventory automation. Keep its role distinct from a Tom's network: a backpack is a portable container with upgrades, while Tom's Simple Storage indexes connected inventories rather than moving everything into one giant chest.
+
+Linked Chests share data by channel, not by physical adjacency. Label the three-color combination, decide whether the channel is shared or personal, and test a second chest before trusting it with important materials. Easy Shulker Boxes and Locked In Slots are interaction safeguards; they do not expand a storage network.
+
 ### Item transport and logistics
 
 - **Golden Hopper** — Adds a hopper with configurable filtering behavior.
@@ -949,20 +1008,45 @@ Potion crafting, effect duration, stacking, and alchemy mechanics receive their 
 - **Sophisticated Inventory Interactions** — Brings search, sorting, and transfer controls to eligible container screens.
 - **Sophisticated Item Actions** — Finds nearby inventories containing an item and supports direct restocking or depositing.
 
-Storage transfer, hoppers, filtering, restocking, and deposit mechanics receive their canonical entries here.
+#### Choosing a transport tool
+
+| Tool | Direction and purpose | Common mistake |
+|---|---|---|
+| Golden Hopper | Works like a hopper with one physical filter item controlling what can be pulled and pushed. | The filter slot stores a real item; it is not only a ghost reference. |
+| Grated Hopper | Collects and transfers only items that match its configured filter slots. | An empty or incorrect filter changes what the system accepts. |
+| Duct | Pushes items toward connected containers in any direction and can be chained. | It does not pull items or collect loose drops. |
+| Chute | Collects loose items and sends them downward without keeping an internal inventory. | It is a one-way drop path, not a general pipe. |
+| Sophisticated Inventory Interactions | Adds search, sort modes, and transfer buttons to supported inventory screens. | Filtered transfer moves items matching something already stored at the destination; verify the destination before using transfer-all. |
+| Sophisticated Item Actions | Highlights nearby matching storage or moves selected items without opening each container. | Modifier keys change whether the hotbar, main inventory, empty slots, or unmatched storage slots are included. |
+
+The Sophisticated interaction and item-action keybinds are intentionally left unbound in the recommended profile. Assign only the actions you will use, then test them with disposable items: deposit and transfer operations can affect many stacks at once. Locked In Slots can protect personal slots from ordinary inventory mistakes, but it should not be treated as a substitute for verifying a bulk destination.
 
 ### Vehicles and travel equipment
 
-- **Seaworthy Boats** — Adds faster, tougher boat tiers and a shipyard repair loop.
-- **Vehicle Upgrade** — Improves the reliability and capabilities of mounts and other rideable vehicles.
+- **Seaworthy Boats** — Gives boats health and armor, then adds faster and tougher reinforcement tiers plus a shipyard repair loop.
+- **Vehicle Upgrade** — Improves mount and vehicle behavior, including swimming, terrain handling, rider inventory access, mounted mining, and reduced wandering.
 
-Vehicle and boat upgrades are cross-referenced here from the travel chapter.
+Use a Shipyard near the boat to switch between repair and upgrade work. Repairs consume planks; reinforcement consumes the configured material and normally advances through the available tiers in sequence. The riding HUD shows boat health when enabled, so return for repairs before a damaged boat breaks far from shore.
+
+Vehicle Upgrade affects many rideable entities rather than supplying a new vehicle family. Saddled mounts can stay where they are left, mounts can handle water and leaves more reliably, and passengers interact with nearby blocks more safely. Some features are configurable, so observed server behavior takes precedence over the full feature list.
 
 ### Trading and multiplayer economy
 
-- **Market Board** — Provides a shared multiplayer marketplace for player trading.
+- **Market Board** — Provides a shared multiplayer marketplace where players can list, buy, remove, and collect proceeds from item sales.
 
-Player markets and unusual traders are cross-referenced here from their canonical multiplayer or creature entries.
+Right-click a placed board to open the market. Use its search, sorting, and scrolling controls to review existing listings before creating one. When selling, verify the item, quantity, accepted server currency, and price before confirming; completed-sale currency must be collected through the board. The server administrator controls which currencies are registered, and currency items themselves cannot be sold through the system.
+
+Market Board is for asynchronous player listings. Goblin Traders and other unusual traders remain direct creature interactions and are documented under [Creatures and hostile mobs](#creatures-and-hostile-mobs).
+
+#### Sources for survival and creation
+
+- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
+- [Starcatcher](https://modrinth.com/mod/starcatcher)
+- [Alchemia](https://modrinth.com/mod/alchemia), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
+- [Macaw's building mods](https://www.curseforge.com/members/sketch_macaw/projects), [Effortless Building](https://modrinth.com/mod/effortless-building), [Armor Statues](https://modrinth.com/mod/armor-statues), [Stonecutting Upgrade](https://www.curseforge.com/minecraft/mc-mods/stonecutting-upgrade), [Arcane Lanterns](https://modrinth.com/mod/arcane-lanterns), and [Traps and Barricades](https://www.curseforge.com/minecraft/mc-mods/traps-and-brricades)
+- [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks), [Tom's Simple Storage](https://modrinth.com/mod/toms-storage), [Linked Chests](https://modrinth.com/mod/new-linked-chests), [Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes), and [Locked In Slots](https://modrinth.com/mod/locked-in-slots)
+- [Golden Hopper](https://www.curseforge.com/minecraft/mc-mods/golden-hopper), [Hopper Gadgetry](https://modrinth.com/mod/hopper-gadgetry), [Sophisticated Inventory Interactions](https://modrinth.com/mod/sophisticated-inventory-interactions), and [Sophisticated Item Actions](https://modrinth.com/mod/sophisticated-item-actions)
+- [Seaworthy Boats](https://modrinth.com/mod/seaworthy-boats), [Vehicle Upgrade](https://modrinth.com/mod/vehicle-upgrade), and [The Market Board](https://www.curseforge.com/minecraft/mc-mods/market-board)
 
 ## Part V — Interface and Reference
 

@@ -732,7 +732,7 @@ During a Blood Moon, sheltering underground or leaving the Overworld avoids the 
 | Need | Use | Control or interaction |
 |---|---|---|
 | Review explored terrain | Xaero's World Map | Press `M`; drag to pan and use the mouse wheel to zoom. |
-| Read or share exact position | Coordinates Display | Press `N` to toggle the HUD, `Ctrl + Y` for its interface, or `Y` to send the current position in chat. |
+| Read or share exact position | Coordinates Display | Press `N` to toggle the HUD, `Ctrl + N` for its interface, or `Y` to send the current position in chat. |
 | Locate a structure | Explorer's Compass | Use the compass, search the structure list, and select a target. |
 | Locate a biome | Nature's Compass | Right-click the compass, search the biome list, and select a target; sneak-right-click resets it. |
 | Build a return network | Waystones | Activate destinations as they are discovered, then travel through an available waystone or supported warp item. |
@@ -1050,15 +1050,32 @@ Market Board is for asynchronous player listings. Goblin Traders and other unusu
 
 ## Part V — Interface and Reference
 
+The pack exposes far more information than vanilla Minecraft, but every overlay does a different job. Use Jade for the thing in front of you, JEI for items and recipes, tooltips for details already in your inventory, and the permanent HUD only for information needed while moving. The recommended layout below keeps those layers readable without turning the screen into a dashboard.
+
 ### Information overlays and tooltips
 
-- **AppleSkin** — Shows hunger and saturation information in the HUD.
-- **Jade** — Identifies blocks and entities being looked at and shows relevant state information.
-- **Effect Insights** — Explains active and available status effects.
-- **Enchantment Insights** — Explains enchantments and their behavior.
-- **Food Effect Tooltips** — Shows food-related effects before an item is eaten.
-- **Floating Damage Indicators** — Displays combat damage numbers above affected entities.
-- **Controlling** — Makes keybinds searchable and easier to diagnose.
+- **AppleSkin** — Visualizes hunger, saturation, exhaustion, and the food value of held items without changing those mechanics.
+- **Jade** — Identifies the block or entity being looked at and displays relevant state information in an on-screen overlay.
+- **Effect Insights** — Adds readable descriptions to potion and food effects, including active effects viewed from the inventory.
+- **Enchantment Insights** — Adds enchantment descriptions, levels, and optional technical details to tooltips and enchanting hints.
+- **Food Effect Tooltips** — Shows the status effects supplied by a food before it is eaten.
+- **Floating Damage Indicators** — Displays configurable, color-coded damage numbers for dealt and received damage.
+- **Controlling** — Adds keybind search, conflict filtering, and a view of currently available keys to the Controls screen.
+
+#### Reading the information layers
+
+| Question | Read this first | Useful action |
+|---|---|---|
+| What block or creature is this? | Jade | Aim at it. Use `Numpad 1` to toggle the overlay and `Numpad 0` for Jade configuration. |
+| What does this item make? | JEI | Hover the item and press `R`, or left-click it in JEI's item list. |
+| Where is this item used? | JEI | Hover the item and press `U`, or right-click it in JEI's item list. |
+| What does this effect or enchantment do? | Effect Insights or Enchantment Insights | Read the expanded tooltip; hold `Left Shift` when LibTooltips indicates more text is available. |
+| What will this food restore or apply? | AppleSkin and Food Effect Tooltips | Hold or hover the food before eating it. AppleSkin previews hunger and saturation; the tooltip lists status effects. |
+| How much damage did that hit cause? | Floating Damage Indicators | Read the number over the target. Its color and prefix distinguish configured damage types. |
+
+Jade's `Numpad 2` toggles its fluid display and `Numpad 5` narrates the current target. Its recipe and usage shortcuts are left unchanged, but JEI's `R` and `U` workflow is the consistent recommendation throughout this handbook. Players without a numpad can open the mod's configuration through the Mods screen or rebind only the Jade actions they actually use.
+
+The recommended profile assigns `F2` to advanced tooltips, so the normal screenshot action is intentionally unbound. Advanced tooltips are best used temporarily when an item ID, durability value, or other technical detail is needed. Controlling's search and conflict views should be the first place to check when a shortcut does nothing.
 
 ### Recipe and loot information
 
@@ -1069,53 +1086,93 @@ Market Board is for asynchronous player listings. Goblin Traders and other unusu
 - **Advanced Worldgen Info** — Shows where world-generation features and resources can appear.
 - **Show My Recipes** — Unlocks crafting recipes in the recipe book so players can discover what is available.
 
-Recipe browsing, uses, trades, loot tables, and world-generation lookup tools receive their canonical entries here.
+#### JEI everyday workflow
+
+1. Open an inventory and use the search field to narrow the item list. Press `Ctrl + F` to focus the field quickly.
+2. Hover an ingredient or result and press `R` for recipes or `U` for uses. In the JEI item list, left-click and right-click perform the same two actions.
+3. Scroll to move between item-list or recipe pages. Click a recipe-category name to see every recipe in that category.
+4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
+5. Press `Ctrl + O` if the item list needs to be hidden or restored.
+
+JEI search can combine ordinary words with filters. Prefix a term with `@` to search by source mod, prefix an unwanted term with `-` to exclude it, and wrap a phrase in quotation marks when its words must stay together. This is the quickest way to browse one large content mod without listing every item in this handbook.
+
+| JEI extension | What it adds to the lookup workflow |
+|---|---|
+| JEI Trades | Trade inputs and outputs read from the current game's registered trade data. |
+| Just Enough Filters | Additional ways to narrow the visible item list. |
+| Advanced Loot Info | Loot-table and villager-trade information inside the recipe viewer. |
+| Advanced Worldgen Info | World-generation information for features and resources inside the recipe viewer. |
+| Show My Recipes | Makes the ordinary recipe book a broader discovery aid alongside JEI. |
+
+JEI's cheat, edit, and developer controls are reference entries rather than normal-player tools. They remain unbound in the recommended profile. On a survival server, use JEI for information and recipe transfer only; permissions and server rules remain authoritative.
 
 ### HUD changes and customization
 
-For each configurable interface, document the available display modes, what each mode changes, the authoritative default when published, the recommended pack setting, known overlaps, and how to open its configuration interface. Undocumented defaults remain blank rather than being inferred from screenshots.
-
 #### Recommended HUD arrangement
 
-- Place **Paper Doll** at the upper-left.
-- Place **Coordinates Display** directly beneath Paper Doll.
-- Place **Better Party** in a vertical panel on the right.
-- Explain alternative Coordinates Display modes rather than presenting the recommendation as the only valid setup.
-- Keep the party panel clear of the personal HUD stack and note possible competition with status effects or server scoreboards.
+![Recommended HUD layout: Paper Doll above Coordinates Display at the upper-left, with Better Party on the right](assets/hud-layout-recommended.png)
 
-Design asset: `output/playwright/hud-layout-recommended.png`
+This is the pack recommendation, not a locked layout. It gives personal status elements a consistent upper-left stack, leaves the center clear for combat, and gives a multiplayer roster enough vertical space on the right.
+
+1. Open Better Party with `B`, set its roster to a vertical arrangement, and place it on the right.
+2. Open Paper Doll's configuration and place the model in the upper-left. Adjust its scale and action-based visibility before positioning the coordinates beneath it.
+3. Press `Ctrl + N` to open Coordinates Display, then use `Alt + N` for HUD positioning. Place the coordinate panel directly below Paper Doll.
+4. Use `Shift + N` to cycle coordinate display modes and choose the amount of navigation information that remains readable at the current GUI scale.
+5. Test the result with status effects visible, the chat open, and a full party. Move the right-side roster if a server scoreboard or effect list competes for the same edge.
+
+Recheck the layout after changing GUI scale or resolution. The image shows the relationship between elements; it is not a pixel-perfect requirement for every display.
 
 #### Coordinates Display configuration
 
-Coordinates Display provides position information through a configurable HUD. Its Controls category confirms actions for changing the HUD position, cycling display modes, opening its GUI, toggling the HUD, and controlling related navigation features. The handbook should explain the alternative modes without claiming an undocumented default.
+Coordinates Display can show precise position, chunk position, facing direction, biome, and other navigation information. Its display modes offer different densities: a minimal mode keeps the footprint small, a compass-oriented mode emphasizes direction, and a hotbar-oriented mode moves the readout closer to the lower center of the screen. Use the mode that fits the current activity; the upper-left arrangement above is simply the most balanced general setup.
+
+The recommended coordinate group is `N` to toggle the HUD, `Shift + N` to cycle modes, `Alt + N` to reposition it, and `Ctrl + N` to open its GUI. `Y` sends the current position in chat and `H` toggles the 3D compass. Marking, clipboard, and `/tp` actions remain unbound unless a player needs them.
 
 #### Better Party configuration
 
-Better Party provides live party information alongside its party-management mechanics. The recommended right-side vertical layout prevents its panel from covering Paper Doll and Coordinates Display; exact default placement and configuration paths require an authoritative source before publication.
+Better Party's HUD is most useful when it shows the roster without obscuring the player's own status information. Keep it vertical on the right and scale it for the usual party size. If status effects or a server scoreboard also occupy that side, move or reduce the party panel rather than stacking interfaces on top of one another. Party creation, roles, chat, friendly fire, XP sharing, and revival coordination are covered under [Parties and multiplayer cooperation](#parties-and-multiplayer-cooperation).
 
 #### Paper Doll configuration
 
-Paper Doll gives immediate visual feedback about the player's character and equipment. The recommended upper-left placement makes it the first element in the personal HUD stack, with Coordinates Display directly below it; exact default placement and configuration paths require an authoritative source before publication.
+Paper Doll shows a small player model during configured actions such as sprinting, swimming, crouching, flying, or gliding. Its position, size, display duration, head movement, and visibility rules are configurable. Place it first because its model needs more vertical space than a coordinate line; then position Coordinates Display directly beneath it.
 
-- **Hovering Hotbar** — Shifts the hotbar upward slightly so it appears to float above the screen edge.
-- **Overflowing Bars** — Keeps health, armor, and similar HUD values readable beyond vanilla limits.
-- **Paper Doll** — Adds a small on-screen view of the player's character and equipment.
+- **Hovering Hotbar** — Raises the hotbar from the screen edge with a configurable offset and optional experience-level placement.
+- **Overflowing Bars** — Compresses health, armor, and armor-toughness values beyond vanilla limits into layered bars with readable counters.
+- **Paper Doll** — Adds a configurable, action-aware player model to the HUD.
+
+Hovering Hotbar uses `Up Arrow` and `Down Arrow` in the recommended profile for quick positioning. Overflowing Bars becomes important when RPG equipment raises defensive or health values beyond the normal display range; its layers and counters represent additional capacity rather than a second, separate health pool.
 
 ### Cosmetic and animation changes
 
-- **Eating Animation** — Adds visible first-person eating and drinking animations.
-- **Distinct Potions** — Makes potion types easier to distinguish visually.
-- **Quick Skin** — Makes changing player skins faster.
+- **Eating Animation** — Adds visible first-person sprite animations while eating and drinking.
+- **Distinct Potions** — Gives potion categories clearer names, colors, and bottle appearances so they are easier to distinguish.
+- **Quick Skin** — Adds in-game skin, model, and cape management without returning to the launcher.
 - **PatPat** — Adds a friendly player-to-player and player-to-creature pat interaction.
 - **Kingdom Cats Replacer** — Replaces vanilla cat visuals with seven animated models while preserving vanilla cat behavior.
 
-Cosmetic replacements, equipment appearance, and first-person animation changes receive their canonical entries here.
+These features mainly change presentation. Eating Animation and Kingdom Cats Replacer do not create a second food or cat progression system, while Distinct Potions changes recognition rather than potion effects. Quick Skin controls appearance; whether other players see a selected skin or cape depends on the server connection and their compatible setup.
+
+To pat a supported player or creature, hold the configured Sneak key and right-click. With the recommended profile that means hold `C` and use the normal right mouse button; the interaction is contextual and does not replace ordinary use actions on every target.
 
 ### Optional client features
 
 - **Coordinates Display** — Shows the player's coordinates and related navigation information on a configurable HUD.
 - **Iris** — Enables shader-pack support.
 - **Sodium** — Replaces the renderer to improve frame rate and reduce rendering stutter.
+
+These three player-facing features are kept with the client-store portion of the distribution because they affect an individual player's interface, visuals, or rendering rather than shared game rules. Their support dependency is intentionally omitted from this gameplay catalog.
+
+Sodium supplies the optimized renderer and its Video Settings interface. Its defaults are designed to select supported optimizations automatically, so change advanced options only when troubleshooting a specific issue. Iris adds shader-pack loading on top of the client renderer; shaders remain optional and can change both performance and visual clarity without changing server mechanics.
+
+For shader management, use Iris from Video Settings. `Alt + R` reloads shaders in the recommended profile, while the direct selection and toggle shortcuts are intentionally left unbound to avoid crowding the keyboard. If frame rate, visual artifacts, or crashes appear after enabling a shader, disable the shader first, retest without it, then update the graphics driver and reduce expensive shader or render-distance settings one change at a time.
+
+#### Sources for interface and client features
+
+- [Jade](https://modrinth.com/mod/jade), [AppleSkin](https://modrinth.com/mod/appleskin), [Effect Insights](https://modrinth.com/mod/effect-insights), [Enchantment Insights](https://modrinth.com/mod/enchantment-insights), [Food Effect Tooltips](https://modrinth.com/mod/foodeffecttooltips), [Floating Damage Indicators](https://modrinth.com/mod/floating-damage-indicators), and [Controlling](https://modrinth.com/mod/controlling)
+- [Just Enough Items](https://modrinth.com/mod/jei), [JEI Trades](https://modrinth.com/mod/jei-trades), [Just Enough Filters](https://modrinth.com/mod/just-enough-filters), [Advanced Loot Info](https://modrinth.com/mod/advanced-loot-info), and [Advanced Worldgen Info](https://modrinth.com/mod/advanced-worldgen-info)
+- [Coordinates Display](https://modrinth.com/mod/coordinates-display), [Paper Doll](https://modrinth.com/mod/paper-doll), [Hovering Hotbar](https://modrinth.com/mod/hovering-hotbar), and [Overflowing Bars](https://modrinth.com/mod/overflowing-bars)
+- [Eating Animation Fork](https://github.com/Fring-BS/Eating-Animation-Fork), [Distinct Potions](https://modrinth.com/mod/distinct-potions), [Quick Skin](https://modrinth.com/mod/quick-skin), and [PatPat](https://modrinth.com/plugin/patpat)
+- [Iris](https://modrinth.com/mod/iris) and [Sodium](https://modrinth.com/mod/sodium)
 
 ### Alphabetical mod index
 

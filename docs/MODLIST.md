@@ -469,9 +469,9 @@ Defaults were last checked on 2026-10-09. Only keys explicitly stated by the gam
 
 ### Choosing a race
 
-Press `P` to open the Iourus Races menu. The five choices are Human, Elf, Dwarf, Orc, and Goblin. A race is not merely cosmetic: it is saved with the character and changes strengths, weaknesses, or passive behavior. Read the in-game traits before confirming instead of choosing only by appearance.
+Press `P` to open the Iourus Races menu. The installed 1.1.0 version offers seven choices: Human, Elf, Dwarf, Orc, Goblin, Melfork, and Draconic. A race is not merely cosmetic: it is saved with the character and changes strengths, weaknesses, attributes, or passive behavior. Read the in-game traits before confirming instead of choosing only by appearance.
 
-Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Because the official race documentation confirms persistent saving but does not document a free player reset, do not assume the choice can be changed whenever you like.
+Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Ordinary players cannot freely replace a confirmed race. The installed version provides `/race reset`, but restricts it to server administrators, so ask an administrator if a genuine reset is needed.
 
 ![Iourus Races selection screen showing Human traits and the available race list](assets/screenshots/01-race-selection.png)
 
@@ -497,7 +497,7 @@ To activate the full class kit:
 1. Obtain a weapon appropriate for the intended archetype. Some caster weapons already provide a basic spell.
 2. Find a Spell Binding Table in a village gazebo, or build one and surround it with bookshelves.
 3. Create the corresponding class book at the table.
-4. Equip the book and hold a compatible weapon. The spell or skill hotbar should then expose the available abilities.
+4. Equip the book in the Curios spell-book slot (`Ctrl + G` opens the Curios interface), then hold a compatible weapon. The spell or skill hotbar should expose the available abilities.
 5. Test the loadout somewhere safe before spending progression points.
 
 Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
@@ -518,7 +518,7 @@ The pack has two progression screens plus the Spell Engine combat interface. The
 |---|---|---|
 | RPG class and weapon skill trees | `T` | Specializes class books, modifies existing spells and weapon skills, and unlocks passive combat effects. Skill points are earned by gathering XP. |
 | Skill Perks | `G` | Spends XP on broader passive survival, movement, utility, and combat perks. |
-| Spell or skill hotbar | Appears with a compatible loadout | Selects and casts the active abilities supplied by a class book or weapon. Hold `Left Ctrl` when the Spell Engine hotbar must be bypassed. |
+| Spell or skill hotbar | Appears with a compatible loadout | Uses the displayed ability keys for active abilities supplied by a class book or weapon. Hold `Left Ctrl` while pressing a number key to bypass the Spell Engine hotbar and select the corresponding normal item slot. |
 
 The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
 
@@ -543,7 +543,7 @@ Complete these steps before the first long expedition:
 - Apply the recommended controls, especially `P` for races, `T` for the RPG skill tree, `G` for general perks, `E` for rolling, and `B` for parties.
 - Open the race menu with `P`, read every trait, and choose the character's persistent race.
 - Pick an initial archetype from the class table, then obtain its appropriate weapon and class book.
-- Equip the book and weapon together, confirm that the ability hotbar appears, and verify any rune requirement.
+- Equip the book in the Curios spell-book slot, hold the compatible weapon, confirm that the ability hotbar appears, and verify any rune requirement.
 - Open `T` and inspect the class and weapon branches before spending points. Open `G` separately and remember that its perks spend XP.
 - Practice a full basic attack sequence and one directional roll in a safe area.
 - In multiplayer, create or join a party with `B`, review friendly fire and XP sharing, and set the party HUD to the recommended right-side vertical layout.
@@ -567,10 +567,10 @@ The recommended HUD layout places the party roster vertically on the right. Each
 Death recovery has several layers:
 
 1. **Downed window:** PlayerRevive gives teammates a limited opportunity to rescue a fallen player before death completes. Treat the on-screen timer as authoritative because server settings can change the duration.
-2. **Revival and grave:** Better Revive stores inventory, equipment, supported equipped slots, and experience in a protected grave. A helper can use a revive option, including the consent-based Life Pulse interaction when enabled, while the downed player may instead choose **Respawn now (no revival)**.
+2. **Revival and grave:** Better Revive stores inventory, equipment, supported equipped slots, and experience in a protected grave. A helper can throw a Revive Potion near the grave or, when manual revival is enabled, interact with the grave to request the consent-based Life Pulse minigame. The downed player may instead choose **Respawn now (no revival)**.
 3. **Compatibility handoff:** The installed Better Revive × PlayerRevive bridge connects both systems and prevents repeated bleed-out or death loops. Players should follow the current on-screen prompt rather than trying to restart an earlier revive state.
 4. **Final respawn:** If revival is declined, fails, or times out, Better Respawn normally places the player near the death location. A valid nearby bed or respawn anchor, returning from the End, and deaths across dimensions can use different placement rules.
-5. **Recovery:** The grave remains the source of stored items after an ordinary respawn. Use Better Revive's grave tools and location information instead of searching blindly.
+5. **Recovery:** The grave remains the source of stored items after an ordinary respawn. Better Revive supplies a Grave Compass for an active grave; use it to review the grave's location, dimension, distance, and contents. At the grave, right-click it to recover the stored items. If the inventory cannot accept everything, the remainder stays protected in the grave rather than being overwritten or discarded.
 
 ![Better Revive grave in the world with owner, remaining time, stored items, experience, and grave-distance information](assets/screenshots/08-revive-and-grave.png)
 
@@ -592,7 +592,7 @@ See [Death, revival, graves, and respawning](#death-revival-graves-and-respawnin
 
 ### Races and racial traits
 
-- **Iourus Races** — Adds Human, Elf, Dwarf, Orc, and Goblin as persistent character identities with different strengths, weaknesses, and passive behavior.
+- **Iourus Races** — Adds Human, Elf, Dwarf, Orc, Goblin, Melfork, and Draconic as persistent character identities with different strengths, weaknesses, attributes, and passive behavior.
 
 Race selection defines persistent character traits and belongs at the beginning of character setup. Open the race menu with the recommended `P` binding and read the in-game trait descriptions before confirming.
 

@@ -546,32 +546,94 @@ Spell Engine supplies the visible hotbar, casting behavior, targeting, cooldowns
 
 ### Weapons, armor, jewelry, and relics
 
+Equipment is part of the build rather than a simple armor-value ladder. Check attack speed, spell power, healing power, ranged attributes, set bonuses, passive effects, and Curios bonuses before replacing an item solely because its material looks stronger.
+
+#### Building a loadout
+
+| Equipment layer | Main systems | What to decide |
+|---|---|---|
+| Weapon and class book | RPG classes, Better Combat, Spell Engine | Choose the attack style and active abilities the build is meant to use. |
+| Armor | RPG class armor, Armory | Match bonuses to the class or damage type; complete sets can add bonuses beyond ordinary protection. |
+| Jewelry | Jewelry | Fill Curios slots with useful combat attributes that support the chosen role. |
+| Relic | Relics | Add a more distinctive active or passive mechanic; some effects interact with spells, weapon skills, or rolling. |
+| Enchantments | Enchanting Infuser, Universal Enchants, enchantment collection | Refine the finished loadout after its basic weapon, armor, and accessories work together. |
+
+Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+
+#### Acquisition and upgrade paths
+
+- Class equipment is the practical starting point because it establishes the intended weapon, spell, and attribute combination.
+- Jewelry spans several material tiers. Gems can be found underground and crafted into accessories, while village trades and dungeon loot provide alternative sources.
+- Relics are primarily adventure rewards from dungeon chests and major enemies, with a smaller craftable selection connected to Jewelry materials. They are build-changing accessories, not ordinary armor upgrades.
+- Arsenal weapons are rare loot rather than normal crafting goals. Look for them in major boss rewards and valuable dungeon chests; every Arsenal weapon carries at least one built-in passive spell.
+- Armory sets upgrade existing RPG class armor with materials obtained from rare structure loot and bosses. Their set and spell-modifier bonuses reward keeping the build focused instead of mixing pieces only by armor value.
+
+#### Included equipment systems
+
 - **Alex's Caves equipment** — Exploration rewards support new combat options. See [Alex's Caves](#alexs-caves).
 - **Stellarity equipment** — End progression includes additional equipment systems. See [Stellarity](#stellarity).
 
 - **Arsenal** — Places legendary RPG weapons behind exploration and combat rewards instead of ordinary crafting.
 - **Armory** — Adds RPG armor sets with distinct designs and set bonuses.
-- **Jewelry** — Adds equippable magical jewelry.
-- **Relics** — Adds powerful trinkets intended to change character builds.
-- **Too Many Bows** — Expands bow choices and ranged combat equipment.
-- **Arrow+** — Adds additional arrow types.
-- **Shield Upgrades** — Adds stronger shields with special behavior.
-- **Enchantments collection** — Adds Ice, Air Jump, Attack Speed, Critical Strike, Double Hit, Downfall, Life Steal, Fangs, Spiky, Thunder Strike, and True Shot mechanics.
+- **Jewelry** — Adds Curios-equipped rings and necklaces with combat attributes, supported by mining, crafting, trading, and loot.
+- **Relics** — Adds Curios-equipped trinkets with active or passive mechanics that can reshape a build.
+- **Too Many Bows** — Expands ranged builds with bows that have different abilities and combat attributes.
+- **Arrow+** — Adds craftable arrow tiers with different damage levels using familiar materials.
+- **Shield Upgrades** — Adds durable specialized shields whose attributes or defensive effects support different situations.
+- **Enchantments collection** — Adds a broad selection of offensive, defensive, movement, and ranged enchantments.
+
+#### Ranged and defensive equipment
+
+Too Many Bows changes more than appearance: bow damage, draw speed, ranged scaling, and unique abilities can make two bows behave very differently. Better Combat supplies the shared ranged-combat handling, while Arrow+ and Fletching Recipe expand ammunition and crafting. Use JEI rather than guessing which bow and arrow mechanics can be combined.
+
+Shield Upgrades provides side-grades with different attributes and reactive effects. Choose a shield for the expected hazard instead of treating every new shield as a direct replacement for the previous one.
+
+#### Testing and changing equipment
+
+Use a Target Dummy and Floating Damage Indicators to compare complete attack sequences, not only a single hit. Test with the same buffs, distance, runes, arrows, armor, and accessories each time; attack speed, cooldowns, area effects, and passive triggers can make the largest displayed number misleading.
+
+Armor Quick Swap has no required hotkey: right-click an armor piece in the inventory to equip or exchange it, or sneak and right-click an armor stand to swap the full worn set. This is useful for keeping separate combat, travel, or utility sets without manually moving four slots.
 
 ### Enchanting and equipment improvement
 
-- **Enchanting Infuser** — Replaces random enchanting with more direct enchantment selection.
-- **Easy Anvils** — Improves anvil behavior and interaction.
-- **Easy Magic** — Improves the enchanting-table interface and workflow.
-- **Universal Enchants** — Broadens which tools and weapons can accept existing enchantments.
+The pack keeps the vanilla enchanting route but also provides a deterministic alternative. Both still depend on experience and the enchanting setup, so choose the workflow that matches the job instead of assuming one station replaces every other station.
+
+| Station or system | Best use | Important behavior |
+|---|---|---|
+| Enchanting Table with Easy Magic | Quick vanilla-style enchanting | Items and lapis remain in the table, and the offers can be rerolled for a small lapis and experience-point cost. |
+| Enchanting Infuser | Building a specific set of enchantments | The basic infuser lets the player choose enchantments directly; stronger options still depend on surrounding bookshelves and cost experience. |
+| Advanced Enchanting Infuser | Reworking finished equipment | Can modify existing enchantments, repair using experience, and recover experience by removing unwanted enchantments. |
+| Anvil with Easy Anvils | Combining, repairing, and renaming | Items remain in the anvil, prior-work penalties are reduced, enchanted-book costs are fairer, and renaming is free. |
+| Universal Enchants | Expanded compatibility rules | Allows many existing enchantments on more weapon and equipment types and relaxes some vanilla incompatibilities. Server configuration remains authoritative. |
+
+Use Enchantment Insights tooltips and the station interface to confirm what an unfamiliar enchantment does and whether the current item accepts it. Universal Enchants broadens the rules, but it does not mean every enchantment belongs on every item or that every normally exclusive combination is enabled on this server.
+
+#### Included improvement systems
+
+- **Enchanting Infuser** — Provides basic and advanced stations for choosing, modifying, repairing, or removing enchantments without relying entirely on random offers.
+- **Easy Anvils** — Keeps items in anvils and makes combining, repairing, and renaming equipment less punitive.
+- **Easy Magic** — Keeps items in enchanting tables and adds a low-cost way to reroll random offers.
+- **Universal Enchants** — Broadens which equipment can accept existing enchantments and improves selected vanilla enchantment behavior.
 - **DarkSmithing** — Adds custom ways to craft smithing templates.
 - **OneKeyMiner** — Adds vein mining, crop harvesting, and automatic replanting.
 - **Armor Quick Swap** — Swaps complete armor sets quickly from an inventory or armor stand.
 - **Target Dummy** — Provides a craftable target for testing damage and character builds.
-- **Elytra Trims** — Extends armor trim customization to elytra.
-- **Naturally Trimmed** — Makes trimmed equipment appear through ordinary world and loot progression.
-- **Armor Trim Item Fix** — Makes inventory icons reflect the actual trim applied to armor.
-- **Fletching Recipe** — Makes the fletching table usable for crafting ordinary and special explosive arrows.
+- **Elytra Trims** — Allows elytra to receive armor trims, dyes, banner patterns, and other visual treatments.
+- **Naturally Trimmed** — Applies trims to some equipment generated through mobs, loot, and trades, making found gear visually distinct.
+- **Armor Trim Item Fix** — Makes inventory icons show the applied trim pattern instead of a generic trimmed texture.
+- **Fletching Recipe** — Gives the fletching table a crafting interface for efficient ordinary-arrow production and explosive arrows.
+
+DarkSmithing makes smithing templates craftable through custom recipes; use JEI for the installed recipes rather than assuming vanilla duplication rules. Trims remain cosmetic unless another item explicitly states otherwise. Naturally Trimmed affects generated equipment, Armor Trim Item Fix changes inventory presentation, and Elytra Trims extends decoration to elytra.
+
+OneKeyMiner is an equipment-use shortcut rather than an enchantment. Hold the recommended `Grave Accent` key while mining, farming, or planting to chain matching actions. It still consumes the relevant tool durability and can be limited by hunger, durability thresholds, block limits, and server settings, so inspect the tool before clearing a large group.
+
+#### Sources for equipment and enchanting
+
+- [Arsenal](https://modrinth.com/mod/arsenal-rpg-series), [Armory](https://modrinth.com/mod/armory-rpg-series), [Jewelry](https://modrinth.com/mod/jewelry), and [Relics](https://modrinth.com/mod/relics-rpg)
+- [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
+- [Enchanting Infuser](https://modrinth.com/mod/enchanting-infuser), [Easy Magic](https://modrinth.com/mod/easy-magic), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [DarkSmithing](https://modrinth.com/mod/darksmithing), [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
+- [Elytra Trims](https://modrinth.com/mod/elytra-trims), [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed), [Armor Trim Item Fix](https://modrinth.com/mod/armor-trim-item-fix), and [Fletching Recipe](https://modrinth.com/mod/fletching-recipe)
 
 ### Death, revival, graves, and respawning
 

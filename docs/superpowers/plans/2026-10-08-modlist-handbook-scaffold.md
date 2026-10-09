@@ -1,10 +1,12 @@
 # Modlist Handbook Scaffold Implementation Plan
 
+**Status:** Implemented on 2026-10-09. The scaffold subsequently became the full Markdown handbook; PDF production remains intentionally deferred.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Revamp `docs/MODLIST.md` into a topic-based scaffold for a future player handbook and add a complete, category-ordered keybind reference.
 
-**Architecture:** Keep one Markdown source organized as a short onboarding path followed by topic reference chapters. Focused mods remain compact entries; multi-system mods receive canonical integrated-expansion entries and short cross-references from secondary topics. The keybind reference is a sequence of 40 independent tables matching the Minecraft Controls screen order, with blank undocumented defaults and only approved recommendations populated.
+**Architecture:** Keep one Markdown source organized as a short onboarding path followed by topic reference chapters. Focused mods remain compact entries; multi-system mods receive canonical integrated-expansion entries and short cross-references from secondary topics. The keybind reference is a sequence of 39 independent tables matching the Minecraft Controls screen order, with blank undocumented defaults and only approved recommendations populated.
 
 **Tech Stack:** GitHub-flavored Markdown, PowerShell validation commands, installed JAR metadata, official mod documentation for authoritative defaults
 
@@ -47,7 +49,7 @@
 - Consumes: the approved five-part handbook architecture and vocabulary from the spec.
 - Produces: stable Part and chapter headings that Tasks 2–4 populate.
 
-- [ ] **Step 1: Verify the source inventory before editing**
+- [x] **Step 1: Verify the source inventory before editing**
 
 Run:
 
@@ -59,7 +61,7 @@ Run:
 
 Expected: `277` synchronized JARs, `4` client-store JARs, and `155` current catalog bullets.
 
-- [ ] **Step 2: Replace the current numbered impact hierarchy with the approved handbook shell**
+- [x] **Step 2: Replace the current numbered impact hierarchy with the approved handbook shell**
 
 Use this exact top-level structure:
 
@@ -118,7 +120,7 @@ Use this exact top-level structure:
 ### Gameplay-tag index
 ```
 
-- [ ] **Step 3: Add concise catalog rules near the beginning**
+- [x] **Step 3: Add concise catalog rules near the beginning**
 
 Include:
 
@@ -128,11 +130,11 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
 
 List the approved entry types and tag vocabulary exactly as defined in the spec. Do not include relevance stages.
 
-- [ ] **Step 4: Add compact Start Here navigation**
+- [x] **Step 4: Add compact Start Here navigation**
 
 Under each Part I chapter, add a two- or three-sentence orientation that tells the future handbook author what the chapter must teach and links to the detailed Part II topic. Do not repeat full mod descriptions in Part I.
 
-- [ ] **Step 5: Validate the shell**
+- [x] **Step 5: Validate the shell**
 
 Run:
 
@@ -143,7 +145,7 @@ Select-String -Path '.\docs\MODLIST.md' -Pattern '\b(early game|midgame|late gam
 
 Expected: five Part headings; no progression-stage matches.
 
-- [ ] **Step 6: Commit the shell**
+- [x] **Step 6: Commit the shell**
 
 ```powershell
 git add -- 'docs/MODLIST.md'
@@ -161,7 +163,7 @@ git commit -m "docs: establish player handbook structure"
 - Consumes: the chapter headings from Task 1 and the 156 existing player-facing entries.
 - Produces: one canonical placement per mod or family plus concise secondary-topic cross-references.
 
-- [ ] **Step 1: Preserve focused entries as compact records**
+- [x] **Step 1: Preserve focused entries as compact records**
 
 Use this format for mods centered on one topic:
 
@@ -171,7 +173,7 @@ Use this format for mods centered on one topic:
 
 Keep the existing core-idea sentence unless installed metadata proves it inaccurate. Add only approved entry types and material tags.
 
-- [ ] **Step 2: Convert multi-system mods to canonical expansion entries**
+- [x] **Step 2: Convert multi-system mods to canonical expansion entries**
 
 Use this format:
 
@@ -187,7 +189,7 @@ Use this format:
 
 Apply an integrated-expansion subtype when a mod substantially spans three or more gameplay concerns. At minimum, evaluate Alex's Caves, Stellarity, Better Nether, The Graveyard, Withered Lands, Shroomcraft, Starcatcher, Farmer's Delight, Alchemia, and the RPG Series bundle.
 
-- [ ] **Step 3: Add cross-references from secondary topics**
+- [x] **Step 3: Add cross-references from secondary topics**
 
 Use this format:
 
@@ -197,7 +199,7 @@ Use this format:
 
 Keep the cross-reference conceptual. Do not list the creatures or rewards individually.
 
-- [ ] **Step 4: Place focused entries under their player-facing topics**
+- [x] **Step 4: Place focused entries under their player-facing topics**
 
 Use these ownership rules:
 
@@ -207,15 +209,15 @@ Use these ownership rules:
 - Overlay, tooltip, recipe-browser, HUD, cosmetic, animation, and optional-client entries belong in Part V.
 - Death, party, and multiplayer-cooperation entries receive canonical Part II placements and Part I onboarding links.
 
-- [ ] **Step 5: Populate the alphabetical mod index**
+- [x] **Step 5: Populate the alphabetical mod index**
 
 Under `### Alphabetical mod index`, add one alphabetized Markdown link for each of the 156 original user-facing catalog labels. Link each name to its canonical entry or owning topic. Do not add libraries or APIs merely to reach the expected count.
 
-- [ ] **Step 6: Populate the gameplay-tag index**
+- [x] **Step 6: Populate the gameplay-tag index**
 
 Under `### Gameplay-tag index`, list only the approved tags from the spec. Under each tag, link to the canonical entries that materially affect that topic. Do not introduce synonyms such as `Mobs` when the approved tag is `Creatures`.
 
-- [ ] **Step 7: Verify catalog preservation and uniqueness**
+- [x] **Step 7: Verify catalog preservation and uniqueness**
 
 Run:
 
@@ -232,7 +234,7 @@ if ($indexCount -ne 156) { throw "Expected 156 alphabetical index entries; found
 
 Expected: no accidental duplicate canonical labels. Review any intentional cross-reference labels manually because they must be qualified names such as `Alex's Caves creatures`, not a repeated `Alex's Caves` label.
 
-- [ ] **Step 8: Check excluded implementation entries**
+- [x] **Step 8: Check excluded implementation entries**
 
 Run:
 
@@ -242,7 +244,7 @@ Select-String -Path '.\docs\MODLIST.md' -Pattern '^#{3,4} (Architectury|Balm|Boo
 
 Expected: no canonical gameplay headings for these libraries or APIs. Controls tables added in Task 3 may still contain support-mod category names.
 
-- [ ] **Step 9: Commit the reclassified catalog**
+- [x] **Step 9: Commit the reclassified catalog**
 
 ```powershell
 git add -- 'docs/MODLIST.md'
@@ -258,9 +260,9 @@ git commit -m "docs: organize mods by player topic"
 
 **Interfaces:**
 - Consumes: the Part I `Essential keybinds and conflict resolution` chapter from Task 1.
-- Produces: 40 tables with the exact action order below.
+- Produces: 39 tables with the exact action order below.
 
-- [ ] **Step 1: Add the keybind-source notice**
+- [x] **Step 1: Add the keybind-source notice**
 
 Insert this text before the first table:
 
@@ -268,7 +270,7 @@ Insert this text before the first table:
 The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A Default key is shown only when official documentation states it; otherwise the cell remains blank. Recommended keys are pack choices and are kept separate from defaults.
 ```
 
-- [ ] **Step 2: Use one table per category**
+- [x] **Step 2: Use one table per category**
 
 Render each category as an H4 heading, for example `#### LibTooltips`, then use this exact table header every time:
 
@@ -279,7 +281,7 @@ Render each category as an H4 heading, for example `#### LibTooltips`, then use 
 
 Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` only when a binding is intentionally recommended to remain unbound.
 
-- [ ] **Step 3: Add categories 1–10 in this exact order**
+- [x] **Step 3: Add categories 1–10 in this exact order**
 
 1. **LibTooltips:** Expand Tooltip
 2. **Starcatcher:** Minigame Hit; Open Guide; Toggle Tournament Overlay
@@ -292,7 +294,7 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 9. **Spectator:** Highlight Players; Select On Hotbar
 10. **Debug:** Toggle Overlay; Debug Modifier Key; Clear Chat; Copy Data; Copy Location; Cycle Spectator; Debug Crash; Debug Options; Dump Dynamic Textures; Dump Version Info; Game Mode Switcher; Reload Chunks; Reload Resource Packs; Show Advanced Tooltips; Show Chunk Boundaries; Show Hitboxes; Start/Stop Profiling; Toggle Lost Focus Pause; Profiling Chart; FPS Charts; Network Charts; Lightmap Texture
 
-- [ ] **Step 4: Add categories 11–20 in this exact order**
+- [x] **Step 4: Add categories 11–20 in this exact order**
 
 11. **Puffish Skills:** Open Skill Tree
 12. **PatPat:** Pat Entity
@@ -305,7 +307,7 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 19. **Better Combat:** Feint; Toggle Mine with Weapons
 20. **Better Party:** Open Party Menu
 
-- [ ] **Step 5: Add categories 21–30 in this exact order**
+- [x] **Step 5: Add categories 21–30 in this exact order**
 
 21. **Curios:** Open/Close Curios Inventory
 22. **Hovering Hotbar:** Move Hotbar Down; Move Hotbar Up
@@ -318,7 +320,7 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 29. **JEI — Hovering with Mouse:** Add/Remove Bookmark; Craft Bookmarked Recipe (Many); Craft Bookmarked Recipe (One); Quick Move Ghost Item; Share Item to Chat; Show Recipe; Show Recipe; Show Uses; Show Uses
 30. **JEI — Overlays:** Next Page; Previous Page; Select Search Bar; Show/Hide Bookmarked Ingredients; Show/Hide JEI Overlays
 
-- [ ] **Step 6: Add categories 31–39 in this exact order**
+- [x] **Step 6: Add categories 31–39 in this exact order**
 
 31. **JEI — Recipes:** Close Recipes GUI; Next Recipe; Next Recipe Category; Next Recipe Page; Pause Recipe Ingredient Cycling; Previous Recipe; Previous Recipe Category; Previous Recipe Page
 32. **JEI — Search Filter:** Clear Search Filter; Next Search; Previous Search
@@ -330,7 +332,7 @@ Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` 
 38. **Sophisticated Mods:** Sort Storage/Backpack; Transfer to Inventory; Transfer to Storage
 39. **Sophisticated Item Actions:** Deposit Item into Storages; Highlight Storage with Item; Restock Item from Storages
 
-- [ ] **Step 7: Validate table count and order**
+- [x] **Step 7: Validate table count and order**
 
 Run:
 
@@ -353,7 +355,7 @@ if ($tableHeaders -ne 39) { throw "Expected 39 keybind tables; found $tableHeade
 
 Expected: no exception and exactly 39 table headers.
 
-- [ ] **Step 8: Commit the keybind reference**
+- [x] **Step 8: Commit the keybind reference**
 
 ```powershell
 git add -- 'docs/MODLIST.md'
@@ -372,7 +374,7 @@ git commit -m "docs: add complete keybind reference"
 - Consumes: the approved HUD placement and configuration policy.
 - Produces: a future-proof configuration section without inventing undocumented settings.
 
-- [ ] **Step 1: Add the configuration-entry template**
+- [x] **Step 1: Add the configuration-entry template**
 
 Under `HUD changes and customization`, include:
 
@@ -380,7 +382,7 @@ Under `HUD changes and customization`, include:
 For each configurable interface, document the available display modes, what each mode changes, the authoritative default when published, the recommended pack setting, known overlaps, and how to open its configuration interface. Leave undocumented defaults blank rather than inferring them from screenshots.
 ```
 
-- [ ] **Step 2: Add the approved HUD recommendation**
+- [x] **Step 2: Add the approved HUD recommendation**
 
 Include:
 
@@ -400,11 +402,11 @@ Reference the saved mockup as a future asset source without embedding it in the 
 Design asset: `output/playwright/hud-layout-recommended.png`
 ```
 
-- [ ] **Step 3: Add per-feature configuration scaffolds without unknown values**
+- [x] **Step 3: Add per-feature configuration scaffolds without unknown values**
 
 Create concise subsections for Coordinates Display, Better Party, and Paper Doll containing only verified purpose and the approved layout relationship. Do not add claimed menu paths, default modes, or option names until official documentation is researched.
 
-- [ ] **Step 4: Validate recommendation consistency**
+- [x] **Step 4: Validate recommendation consistency**
 
 Run:
 
@@ -415,7 +417,7 @@ Test-Path -LiteralPath '.\output\playwright\hud-layout-recommended.png'
 
 Expected: all three placement statements are present and the image exists.
 
-- [ ] **Step 5: Commit the HUD scaffold**
+- [x] **Step 5: Commit the HUD scaffold**
 
 ```powershell
 git add -- 'docs/MODLIST.md'
@@ -434,11 +436,11 @@ git commit -m "docs: add HUD configuration guidance"
 - Consumes: all documentation produced by Tasks 1–4.
 - Produces: a discoverable, internally consistent handbook scaffold ready for research passes.
 
-- [ ] **Step 1: Verify the README link**
+- [x] **Step 1: Verify the README link**
 
 Ensure `README.md` contains one concise link to `docs/MODLIST.md` and says libraries, APIs, and compatibility-only JARs are omitted from the user-facing catalog. Preserve unrelated README content.
 
-- [ ] **Step 2: Scan for forbidden placeholders and invented staging**
+- [x] **Step 2: Scan for forbidden placeholders and invented staging**
 
 Run:
 
@@ -449,7 +451,7 @@ Select-String -Path '.\docs\MODLIST.md' -Pattern '\b(early game|midgame|late gam
 
 Expected: no matches.
 
-- [ ] **Step 3: Validate Markdown and duplicate labels**
+- [x] **Step 3: Validate Markdown and duplicate labels**
 
 Run:
 
@@ -462,7 +464,7 @@ git diff --check
 
 Expected: only intentionally qualified cross-reference labels, if any, require review; `git diff --check` reports no whitespace errors.
 
-- [ ] **Step 4: Verify repository inventory facts without modifying files**
+- [x] **Step 4: Verify repository inventory facts without modifying files**
 
 Run:
 
@@ -475,7 +477,7 @@ if ($duplicateHashes) { throw 'Duplicate JAR hashes detected' }
 
 Expected: no exception.
 
-- [ ] **Step 5: Inspect the final diff and protect unrelated work**
+- [x] **Step 5: Inspect the final diff and protect unrelated work**
 
 Run:
 
@@ -486,7 +488,7 @@ git diff -- README.md docs/MODLIST.md
 
 Confirm that the three existing JAR deletions remain unstaged and are not included in documentation commits.
 
-- [ ] **Step 6: Commit the entry-point update if README changed**
+- [x] **Step 6: Commit the entry-point update if README changed**
 
 If and only if `README.md` still needs the catalog link:
 
@@ -495,7 +497,7 @@ git add -- 'README.md'
 git commit -m "docs: link player handbook scaffold"
 ```
 
-- [ ] **Step 7: Report the handoff**
+- [x] **Step 7: Report the handoff**
 
 Report:
 

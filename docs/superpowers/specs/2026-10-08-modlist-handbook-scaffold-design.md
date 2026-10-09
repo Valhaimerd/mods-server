@@ -1,7 +1,7 @@
 # Modlist Handbook Scaffold Design
 
 Date: 2026-10-08  
-Status: Awaiting final user review
+Status: Implemented and content-reviewed on 2026-10-09
 
 ## Purpose
 
@@ -236,15 +236,15 @@ The approved layout mockup is currently saved at `output/playwright/hud-layout-r
 
 ## Scope of the first revamp
 
-The first implementation restructures `docs/MODLIST.md` as the handbook scaffold and adds the full screenshot-derived keybind tables. It does not create the PDF, exhaustively research every mechanic, choose all recommended bindings, or enumerate mod content.
+The implementation restructured `docs/MODLIST.md` as the handbook scaffold, then expanded it into the maintained player handbook. It includes the full screenshot-derived keybind tables, approved recommended bindings, topic-by-topic mechanic guidance, a quick reference, verified gameplay screenshots, print styling, and a maintenance runbook. It intentionally does not enumerate every item, creature, block, recipe, structure, enchantment, or loot drop.
 
-Future passes will:
+Implementation outcome:
 
-1. Research authoritative default keys and configuration modes.
-2. Resolve conflicts and populate recommended keys.
-3. Expand core mechanic explanations.
-4. Add verified screenshots and diagrams.
-5. Produce and visually verify the final PDF.
+1. Authoritative default keys and configuration modes were researched where official documentation exists; undocumented defaults remain blank.
+2. Key conflicts were resolved into the recommended profile while preserving the complete 39-category control order.
+3. Core mechanics were expanded and reviewed against official documentation and installed JAR evidence.
+4. Fifteen verified gameplay screenshots and one HUD layout diagram were embedded with descriptive captions.
+5. PDF production and visual PDF verification remain deferred until explicitly requested.
 
 ## Validation criteria
 

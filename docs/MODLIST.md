@@ -411,7 +411,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 #### Default-key sources
 
-Defaults were last checked on 2026-10-08. Only keys explicitly stated by the game or mod author are copied into the Default key column.
+Defaults were last checked on 2026-10-09. Only keys explicitly stated by the game or mod author are copied into the Default key column.
 
 - [Minecraft controls](https://www.minecraft.net/article/minecraft-controls) and [Java Edition screenshot controls](https://help.minecraft.net/hc/en-us/articles/40719065932557-Take-and-Manage-Screenshots-in-Minecraft-Java-Edition)
 - [Combat Roll](https://modrinth.com/mod/combat-roll), [Pufferfish's Skills](https://modrinth.com/mod/skills), and [Skill Perks](https://www.curseforge.com/minecraft/mc-mods/skill-perks)
@@ -421,31 +421,98 @@ Defaults were last checked on 2026-10-08. Only keys explicitly stated by the gam
 
 ### Choosing a race
 
-Choose a race before settling on a build. See [Races and racial traits](#races-and-racial-traits) for the canonical system entry.
+Press `P` to open the Iourus Races menu. The five choices are Human, Elf, Dwarf, Orc, and Goblin. A race is not merely cosmetic: it is saved with the character and changes strengths, weaknesses, or passive behavior. Read the in-game traits before confirming instead of choosing only by appearance.
+
+Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Because the official race documentation confirms persistent saving but does not document a free player reset, do not assume the choice can be changed whenever you like.
+
+See [Races and racial traits](#races-and-racial-traits) for the canonical system entry.
 
 ### Choosing a class
 
-Classes establish the player's main combat style. See [Classes and playstyles](#classes-and-playstyles).
+There is no permanent class-selection screen. The pack's four RPG Series modules provide six archetypes, and the active playstyle comes from the weapon, class book, spells, and matching equipment currently being used.
+
+| Archetype | Main role | Starting direction | Class book |
+|---|---|---|---|
+| Archer | Ranged damage | Use a bow or crossbow. | Archery Manual |
+| Paladin | Front-line protection and damage | Use a heavy melee weapon; a shield supports a defensive style. | Paladin Libram |
+| Priest | Healing and support | Use a holy wand or staff. | Holy Book |
+| Rogue | Mobile melee and evasion | Use quick weapons; dual wielding suits the role. | Rogue Manual |
+| Warrior | Heavy melee and control | Use slower, heavy weapons. | Warrior Codex |
+| Wizard | Arcane, fire, or frost magic | Use a wand or staff. | A matching wizard tome |
+
+To activate the full class kit:
+
+1. Obtain a weapon appropriate for the intended archetype. Some caster weapons already provide a basic spell.
+2. Find a Spell Binding Table in a village gazebo, or build one and surround it with bookshelves.
+3. Create the corresponding class book at the table.
+4. Equip the book and hold a compatible weapon. The spell or skill hotbar should then expose the available abilities.
+5. Test the loadout somewhere safe before spending progression points.
+
+Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
 
 ### Skills, abilities, spells, and runes
 
-Class skills, general perks, spell resources, and runes are separate but related systems. See [Skill trees and character progression](#skill-trees-and-character-progression) and [Abilities, spells, runes, and resources](#abilities-spells-runes-and-resources).
+The pack has two progression screens plus the Spell Engine combat interface. They complement one another but do not represent the same pool of upgrades.
+
+| System | Open it | What it changes |
+|---|---|---|
+| RPG class and weapon skill trees | `T` | Specializes class books, modifies existing spells and weapon skills, and unlocks passive combat effects. Skill points are earned by gathering XP. |
+| Skill Perks | `G` | Spends XP on broader passive survival, movement, utility, and combat perks. |
+| Spell or skill hotbar | Appears with a compatible loadout | Selects and casts the active abilities supplied by a class book or weapon. Hold `Left Ctrl` when the Spell Engine hotbar must be bypassed. |
+
+The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
+
+Runes are ammunition for casted spells, much like arrows are ammunition for bows. They can be crafted normally, while the Rune Crafting Altar produces them more efficiently. If a spell refuses to cast, check the equipped book and weapon, the selected ability, its cooldown, and the required runes before assuming the keybind is broken.
+
+Better Combat changes ordinary weapon attacks into aimed swings, combos, and dual-wield sequences. Combat Roll adds a directional dodge on `E`; rolling has a cooldown and can consume hunger, so it is an escape tool rather than unlimited movement. Some RPG-tree passives can also trigger from combat events such as attacks, damage, evasion, or rolling.
+
+See [Skill trees and character progression](#skill-trees-and-character-progression), [Abilities, spells, runes, and resources](#abilities-spells-runes-and-resources), and [Combat controls and dodge rolling](#combat-controls-and-dodge-rolling).
 
 ### First-session checklist
 
-Resolve conflicting keys, choose a race and class, open the relevant skill screens, confirm the recommended HUD positions, and learn the party and revival flow before extended exploration.
+Complete these steps before the first long expedition:
+
+- Apply the recommended controls, especially `P` for races, `T` for the RPG skill tree, `G` for general perks, `E` for rolling, and `B` for parties.
+- Open the race menu with `P`, read every trait, and choose the character's persistent race.
+- Pick an initial archetype from the class table, then obtain its appropriate weapon and class book.
+- Equip the book and weapon together, confirm that the ability hotbar appears, and verify any rune requirement.
+- Open `T` and inspect the class and weapon branches before spending points. Open `G` separately and remember that its perks spend XP.
+- Practice a full basic attack sequence and one directional roll in a safe area.
+- In multiplayer, create or join a party with `B`, review friendly fire and XP sharing, and set the party HUD to the recommended right-side vertical layout.
+- Learn the downed and grave screens before carrying valuable equipment far from the base.
+- Place Paper Doll at the upper-left and Coordinates Display directly beneath it so neither overlaps the party HUD.
 
 ### Parties, downed players, and death
 
-Party play changes friendly fire, shared experience, group information, and travel. Downed and dead players follow multiple rescue and recovery systems; see [Death, revival, graves, and respawning](#death-revival-graves-and-respawning).
+Press `B` to create, browse, or manage a Better Party group. Parties can be public, invite-only, or password-protected; they support leader, officer, and member roles. The leader can manage friendly-fire protection, nearby XP sharing, and the party-member locator when the server permits them. Use `/p <message>` for party chat.
+
+The recommended HUD layout places the party roster vertically on the right. Each player can move and scale that HUD independently, so one player's layout does not rearrange everyone else's screen.
+
+Death recovery has several layers:
+
+1. **Downed window:** PlayerRevive gives teammates a limited opportunity to rescue a fallen player before death completes. Treat the on-screen timer as authoritative because server settings can change the duration.
+2. **Revival and grave:** Better Revive stores inventory, equipment, supported equipped slots, and experience in a protected grave. A helper can use a revive option, including the consent-based Life Pulse interaction when enabled, while the downed player may instead choose **Respawn now (no revival)**.
+3. **Compatibility handoff:** The installed Better Revive × PlayerRevive bridge connects both systems and prevents repeated bleed-out or death loops. Players should follow the current on-screen prompt rather than trying to restart an earlier revive state.
+4. **Final respawn:** If revival is declined, fails, or times out, Better Respawn normally places the player near the death location. A valid nearby bed or respawn anchor, returning from the End, and deaths across dimensions can use different placement rules.
+5. **Recovery:** The grave remains the source of stored items after an ordinary respawn. Use Better Revive's grave tools and location information instead of searching blindly.
+
+See [Death, revival, graves, and respawning](#death-revival-graves-and-respawning) and [Parties and multiplayer cooperation](#parties-and-multiplayer-cooperation).
+
+#### Sources for the RPG onboarding
+
+- [Iourus Races](https://modrinth.com/mod/iourus-races)
+- [Archers](https://modrinth.com/mod/archers), [Paladins & Priests](https://modrinth.com/mod/paladins-and-priests), [Rogues & Warriors](https://modrinth.com/mod/rogues-and-warriors), and [Wizards](https://modrinth.com/mod/wizards)
+- [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree), [Pufferfish's Skills](https://modrinth.com/mod/skills), and [Skill Perks](https://www.curseforge.com/minecraft/mc-mods/skill-perks)
+- [Spell Engine](https://modrinth.com/mod/spell-engine), [Runes](https://modrinth.com/mod/runes), [Better Combat](https://modrinth.com/mod/better-combat), and [Combat Roll](https://modrinth.com/mod/combat-roll)
+- [Better Party](https://modrinth.com/mod/better-party), [PlayerRevive](https://modrinth.com/mod/playerrevive), [Better Revive](https://www.curseforge.com/minecraft/mc-mods/better-revive), [Better Revive × PlayerRevive](https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive), and [Better Respawn](https://modrinth.com/mod/better-respawn)
 
 ## Part II — Character and Core Systems
 
 ### Races and racial traits
 
-- **Iourus Races** — Adds selectable fantasy races with different traits.
+- **Iourus Races** — Adds Human, Elf, Dwarf, Orc, and Goblin as persistent character identities with different strengths, weaknesses, and passive behavior.
 
-Race selection defines persistent character traits and belongs at the beginning of character setup.
+Race selection defines persistent character traits and belongs at the beginning of character setup. Open the race menu with the recommended `P` binding and read the in-game trait descriptions before confirming.
 
 ### Classes and playstyles
 
@@ -454,23 +521,23 @@ Race selection defines persistent character traits and belongs at the beginning 
 - **Type:** Integrated character-progression suite
 - **Primary topic:** Classes and playstyles
 - **Also affects:** Combat, Character, Skills, Magic, Equipment
-- **Core idea:** Combines Archer, Paladin, Priest, Rogue, Warrior, and Wizard playstyles with class equipment and related progression.
-- **Future guide:** Explain class selection, resources, abilities, equipment expectations, and related controls.
+- **Core idea:** Four installed RPG Series modules provide Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through weapons, class books, spells, and matching equipment.
+- **Onboarding:** There is no permanent class-selection screen. Follow [Choosing a class](#choosing-a-class) to assemble and test a loadout.
 
 
 ### Skill trees and character progression
 
-- **Skill Tree (RPG Series)** — Lets a player specialize their chosen class by unlocking class-specific abilities.
-- **Puffish Skills** — Adds a separate configurable skill-progression system.
-- **Skill Perks** — Turns experience levels into a branching set of survival and mobility perks.
+- **Skill Tree (RPG Series)** — Supplies class and weapon trees that modify spells, add passive combat effects, and turn gathered XP into skill points.
+- **Pufferfish's Skills** — Provides the configurable progression framework and the `T` skill-tree screen used by the RPG trees.
+- **Skill Perks** — Spends XP on a separate set of general survival, mobility, utility, and combat perks opened with `G`.
 
-Skill trees and perk systems extend class and general character progression. Canonical entries are consolidated during the catalog pass below.
+The `T` and `G` screens are separate systems. Inspect both before spending points so class specialization and general utility choices remain deliberate.
 
 ### Abilities, spells, runes, and resources
 
 - **Runes** — Adds craftable ammunition consumed by class spells.
 
-Spellcasting classes use abilities, spell resources, and runes. This chapter will document activation, resource use, and controls without enumerating every spell.
+Spell Engine supplies the visible hotbar, casting behavior, targeting, cooldowns, class-book integration, and weapon skills. Runes act as spell ammunition and can be produced more efficiently with a Rune Crafting Altar. This handbook documents the shared mechanics without enumerating every spell.
 
 ### Combat controls and dodge rolling
 
@@ -509,14 +576,16 @@ Spellcasting classes use abilities, spell resources, and runes. This chapter wil
 ### Death, revival, graves, and respawning
 
 - **PlayerRevive** — Gives downed players a short rescue window before normal death handling completes.
-- **Better Revive** — Adds long-term revival, graves, potion-based rescue, and a compass that leads back to lost items.
-- **Better Respawn** — Respawns a player near their death location instead of relying only on the vanilla flow.
+- **Better Revive** — Protects items and experience in graves, supports consent-based or item-assisted revival, and provides grave recovery tools.
+- **Better Respawn** — Normally respawns a player near their death location, with exceptions for nearby spawn points, dimension changes, and returning from the End.
+
+The installed compatibility bridge connects PlayerRevive and Better Revive so their downed states hand off cleanly instead of repeating. See [Parties, downed players, and death](#parties-downed-players-and-death) for the player flow.
 
 ### Parties and multiplayer cooperation
 
 - **Better Party** — Adds public and private parties, roles, shared nearby experience, friendly-fire protection, party chat, and a party HUD.
 
-Party creation, roles, protection, shared experience, communication, and group travel are documented here and summarized in Start Here.
+Open the party menu with the recommended `B` binding and use `/p <message>` for party chat. Party creation, roles, protection, shared experience, communication, and HUD customization are summarized in [Parties, downed players, and death](#parties-downed-players-and-death).
 
 ## Part III — Adventure and Challenge
 
@@ -941,7 +1010,7 @@ Cosmetic replacements, equipment appearance, and first-person animation changes 
 - [Potion Time Stacker](#potions-and-alchemy)
 - [Potions Stack](#potions-and-alchemy)
 - [Pro Placer](#building-and-decoration)
-- [Puffish Skills](#skill-trees-and-character-progression)
+- [Pufferfish's Skills](#skill-trees-and-character-progression)
 - [Puffsprout](#companions-pets-villagers-and-settlements)
 - [Quick Skin](#cosmetic-and-animation-changes)
 - [Relics](#weapons-armor-jewelry-and-relics)
@@ -1000,13 +1069,13 @@ Cosmetic replacements, equipment appearance, and first-person animation changes 
 - [Iourus Races](#races-and-racial-traits)
 - [RPG classes](#rpg-classes)
 - [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Puffish Skills](#skill-trees-and-character-progression)
+- [Pufferfish's Skills](#skill-trees-and-character-progression)
 - [Skill Perks](#skill-trees-and-character-progression)
 
 #### Skills
 
 - [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Puffish Skills](#skill-trees-and-character-progression)
+- [Pufferfish's Skills](#skill-trees-and-character-progression)
 - [Skill Perks](#skill-trees-and-character-progression)
 
 #### Magic

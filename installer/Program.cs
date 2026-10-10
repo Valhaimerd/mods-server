@@ -360,6 +360,20 @@ internal static class Program
             throw new InvalidOperationException("Self-test failed: menu navigation did not skip or wrap enabled choices correctly.");
         }
 
+        if (InteractiveMenu.HandleKey(ConsoleKey.UpArrow, menuOptions, 1) !=
+                new MenuKeyResult(3, MenuAction.Continue) ||
+            InteractiveMenu.HandleKey(ConsoleKey.DownArrow, menuOptions, 3) !=
+                new MenuKeyResult(1, MenuAction.Continue) ||
+            InteractiveMenu.HandleKey(ConsoleKey.Enter, menuOptions, 1) !=
+                new MenuKeyResult(1, MenuAction.Submit) ||
+            InteractiveMenu.HandleKey(ConsoleKey.Escape, menuOptions, 3) !=
+                new MenuKeyResult(3, MenuAction.Cancel) ||
+            InteractiveMenu.HandleKey(ConsoleKey.P, menuOptions, 1) !=
+                new MenuKeyResult(1, MenuAction.Continue))
+        {
+            throw new InvalidOperationException("Self-test failed: menu key handling is incorrect.");
+        }
+
         var threwForEmptyMenu = false;
         try
         {

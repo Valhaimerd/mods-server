@@ -320,6 +320,89 @@ internal static class Program
 
     private static async Task RunSelfTestAsync()
     {
+        if (!InstallerBehavior.SourceFoldersFor(InstallMode.Client)
+                .SequenceEqual(new[] { "mods", "mod store" }, StringComparer.Ordinal))
+        {
+            throw new InvalidOperationException("Self-test failed: client mode must load mods and mod store.");
+        }
+
+        if (!InstallerBehavior.SourceFoldersFor(InstallMode.Server)
+                .SequenceEqual(new[] { "mods" }, StringComparer.Ordinal))
+        {
+            throw new InvalidOperationException("Self-test failed: server mode must load only mods.");
+        }
+
+        var normalModsPath = Path.Combine("C:\\", "server", "mods");
+        var upperModsPath = Path.Combine("C:\\", "server", "MODS") + Path.DirectorySeparatorChar;
+        var mixedCaseModsPath = Path.Combine("C:\\", "server", "Mods");
+        if (!InstallerBehavior.IsModsFolder(normalModsPath) ||
+            !InstallerBehavior.IsModsFolder(upperModsPath) ||
+            !InstallerBehavior.IsModsFolder(mixedCaseModsPath) ||
+            InstallerBehavior.IsModsFolder(Path.Combine("C:\\", "server", "plugins")) ||
+            InstallerBehavior.IsModsFolder(string.Empty))
+        {
+            throw new InvalidOperationException("Self-test failed: mods-folder validation is incorrect.");
+        }
+
+        MenuOption[] menuOptions =
+        [
+            new("Disabled before", Enabled: false),
+            new("First enabled"),
+            new("Disabled between", Enabled: false),
+            new("Last enabled"),
+        ];
+        if (InstallerBehavior.FirstEnabledIndex(menuOptions) != 1 ||
+            InstallerBehavior.MoveSelection(menuOptions, 1, 1) != 3 ||
+            InstallerBehavior.MoveSelection(menuOptions, 3, 1) != 1 ||
+            InstallerBehavior.MoveSelection(menuOptions, 1, -1) != 3 ||
+            InstallerBehavior.MoveSelection(menuOptions, 3, -1) != 1)
+        {
+            throw new InvalidOperationException("Self-test failed: menu navigation did not skip or wrap enabled choices correctly.");
+        }
+
+        var threwForEmptyMenu = false;
+        try
+        {
+            InstallerBehavior.FirstEnabledIndex(Array.Empty<MenuOption>());
+        }
+        catch (InvalidOperationException)
+        {
+            threwForEmptyMenu = true;
+        }
+
+        var threwForEmptyNavigation = false;
+        try
+        {
+            InstallerBehavior.MoveSelection(Array.Empty<MenuOption>(), 0, 1);
+        }
+        catch (InvalidOperationException)
+        {
+            threwForEmptyNavigation = true;
+        }
+
+        var threwForDisabledMenu = false;
+        try
+        {
+            InstallerBehavior.MoveSelection(new[] { new MenuOption("Disabled", Enabled: false) }, 0, 1);
+        }
+        catch (InvalidOperationException)
+        {
+            threwForDisabledMenu = true;
+        }
+
+        if (!threwForEmptyMenu || !threwForEmptyNavigation || !threwForDisabledMenu)
+        {
+            throw new InvalidOperationException("Self-test failed: an unselectable menu must be rejected.");
+        }
+
+        if (!InstallerBehavior.ShouldUseInteractiveWizard(0, inputRedirected: false, outputRedirected: false) ||
+            InstallerBehavior.ShouldUseInteractiveWizard(0, inputRedirected: true, outputRedirected: false) ||
+            InstallerBehavior.ShouldUseInteractiveWizard(0, inputRedirected: false, outputRedirected: true) ||
+            InstallerBehavior.ShouldUseInteractiveWizard(1, inputRedirected: false, outputRedirected: false))
+        {
+            throw new InvalidOperationException("Self-test failed: interactive wizard launch detection is incorrect.");
+        }
+
         if (HandbookFileName != "modpack-player-handbook.pdf" ||
             HandbookUrl != "https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf")
         {

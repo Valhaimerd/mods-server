@@ -36,4 +36,10 @@ if (($partOnePositions | Where-Object { $_ -lt 0 }).Count -gt 0 -or (($partOnePo
 if (-not $html.Contains('assets/screenshots/02-class-specialization-tree.png') -or $html.Contains('assets/screenshots/02-class-loadout.png')) {
     throw 'The class screenshot must use its specialization-tree filename.'
 }
+if ($html -notmatch '(?s)\.keybind-section td:last-child:empty\s*\{[^}]*color:\s*#(?:7[0-9a-f]{2}|8[0-9a-f]{2});[^}]*font-style:\s*italic;') {
+    throw 'Empty recommended-key cells must have a muted, italic unbound style.'
+}
+if ($html -notmatch '(?s)\.keybind-section td:last-child:empty::before\s*\{[^}]*content:\s*["'']Unbound["''];') {
+    throw 'Empty recommended-key cells must display the Unbound label.'
+}
 "PASS: all $(@($manifest | Where-Object Status -eq 'Downloaded').Count) downloaded mod icons render; Part I keybind-first order and class screenshot reference are correct."

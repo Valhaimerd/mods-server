@@ -233,6 +233,16 @@ tbody tr:nth-child(even) {
   padding: 1.4pt 2.2pt;
 }
 
+.keybind-section td:last-child:empty {
+  color: #777;
+  background: #efefed;
+  font-style: italic;
+}
+
+.keybind-section td:last-child:empty::before {
+  content: "Unbound";
+}
+
 .keybind-section h3 + p {
   margin-bottom: 2mm;
 }

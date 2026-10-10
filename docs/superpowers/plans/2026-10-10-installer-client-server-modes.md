@@ -196,7 +196,7 @@ Commit message: `docs(installer): describe client and server setup`
 - Consumes the implementation and documentation from Tasks 1–4.
 - Produces a self-contained `win-x64` release asset named exactly `ModsServerInstaller.exe`, source/docs pushed to `main`, and GitHub release `installer-v1.2.0`.
 
-- [ ] **Step 1: Run final self-test and publish build**
+- [x] **Step 1: Run final self-test and publish build**
 
 Run: `dotnet run --project .\installer\ModsServerInstaller.csproj -- --self-test`
 
@@ -204,7 +204,7 @@ Run: `dotnet publish .\installer\ModsServerInstaller.csproj -c Release -r win-x6
 
 Expected: self-test passes and `dist\ModsServerInstaller.exe` exists.
 
-- [ ] **Step 2: Run the published executable's self-test and check Git hygiene**
+- [x] **Step 2: Run the published executable's self-test and check Git hygiene**
 
 Run: `& .\dist\ModsServerInstaller.exe --self-test`
 
@@ -212,17 +212,17 @@ Run: `git diff --check`
 
 Expected: published binary prints `Self-test passed.` and whitespace checks report no errors.
 
-- [ ] **Step 3: Push the completed commits to `origin/main`**
+- [x] **Step 3: Push the completed commits to `origin/main`**
 
 Confirm the current branch is `main`, review `git status --short` and `git log --oneline -5`, then run `git push origin main`.
 
 Expected: push succeeds and the remote branch contains the implementation, README, approved design spec, and plan.
 
-- [ ] **Step 4: Publish release `installer-v1.2.0`**
+- [x] **Step 4: Publish release `installer-v1.2.0`**
 
 Create the annotated tag and GitHub release `installer-v1.2.0`, attach `dist\ModsServerInstaller.exe` with that exact asset name, and include concise notes about client/server modes and source selection. Verify the release asset is available through the repository's latest-download URL.
 
-- [ ] **Step 5: Verify remote release state**
+- [x] **Step 5: Verify remote release state**
 
 Run: `gh release view installer-v1.2.0 --json tagName,name,assets,url`
 

@@ -1,7 +1,7 @@
 # Installer Client and Server Modes Design
 
 Date: 2026-10-10
-Status: Approved; implementation in progress
+Status: Approved; implementation shipped in `installer-v1.2.0`
 
 ## Purpose
 

@@ -14,6 +14,8 @@ Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/rel
 
 The installer reads the `mods` and `mod store` folders from this public repository, compares Git hashes, and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 
+After a successful install or repair, the installer opens the [player handbook PDF](https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf) in the default browser. It also opens the guide when the installation is already current; `--check`, cancellation, and failed updates do not open it.
+
 The executable is not code-signed, so Windows SmartScreen may show an unknown-publisher warning. The source code is available in the `installer` folder.
 
 Useful command-line options:

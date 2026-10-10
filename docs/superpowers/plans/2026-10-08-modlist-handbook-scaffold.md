@@ -1,16 +1,20 @@
 # Modlist Handbook Scaffold Implementation Plan
 
-**Status:** Implemented on 2026-10-09. The scaffold subsequently became the full Markdown handbook; PDF production remains intentionally deferred.
+**Status:** Implemented on 2026-10-09; print design, front matter, and icon staging revised on 2026-10-10. A later pass will resolve grouped/ambiguous icon sources and decide how icons are placed in entries.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Revamp `docs/MODLIST.md` into a topic-based scaffold for a future player handbook and add a complete, category-ordered keybind reference.
 
-**Architecture:** Keep one Markdown source organized as a short onboarding path followed by topic reference chapters. Focused mods remain compact entries; multi-system mods receive canonical integrated-expansion entries and short cross-references from secondary topics. The keybind reference is a sequence of 39 independent tables matching the Minecraft Controls screen order, with blank undocumented defaults and only approved recommendations populated.
+**Architecture:** Keep one Markdown source organized as a short onboarding path followed by topic reference chapters. Focused mods remain compact entries; multi-system mods receive canonical integrated-expansion entries and short cross-references from secondary topics. The keybind reference follows the Minecraft Controls screen order and uses only Action and Recommended key columns.
 
-**Tech Stack:** GitHub-flavored Markdown, PowerShell validation commands, installed JAR metadata, official mod documentation for authoritative defaults
+**Tech Stack:** GitHub-flavored Markdown, PowerShell validation commands, installed JAR metadata, official mod documentation for player-facing behavior
 
 **Spec:** `docs/superpowers/specs/2026-10-08-modlist-handbook-scaffold-design.md`
+
+**Current presentation additions:** The print title is `26.2 RPG Series`; the linked contents is followed by the alphabetical mod index and Gameplay-tag index near the front. Verified project icons are stored in `docs/assets/mod-icons/` and rendered beside catalog titles; unresolved collection icons are omitted, and Bifrost's custom illustration remains pending an exact local crop.
+
+**Current keybind-table revision:** The player-facing tables now contain only `Action` and `Recommended key`, with one shared 65/35 column split across all categories. Later additions bring the count to 42: Moonstone is immediately before Starcatcher, Vital Relics follows Puffish Skills, and Tool Belt is last. These updates supersede the original category numbering below.
 
 ## Global Constraints
 
@@ -22,9 +26,9 @@
 - Do not assign early-game, midgame, or late-game labels.
 - Give each mod one canonical entry and use concise cross-references from secondary topics.
 - Use only the approved entry types, integrated-expansion subtypes, and cross-reference tags from the spec.
-- Use submitted screenshots only for keybind category names, action names, and ordering.
-- Populate a Default key only from an official mod website or official documentation; leave it blank when undocumented.
-- Leave unapproved Recommended key cells blank.
+- Use submitted screenshots for keybind category names, action names, ordering, and current recommended assignments.
+- Keep the player-facing keybind tables to `Action` and `Recommended key` only.
+- Leave recommended-key cells blank when an action should remain unbound.
 - Preserve all unbound and duplicate-looking actions shown by the Controls screen.
 - The recommended HUD layout is Paper Doll upper-left, Coordinates Display directly beneath it, and Better Party as a right-side vertical panel.
 - Do not stage or commit the user's existing JAR deletions while executing documentation tasks.
@@ -260,14 +264,14 @@ git commit -m "docs: organize mods by player topic"
 
 **Interfaces:**
 - Consumes: the Part I `Essential keybinds and conflict resolution` chapter from Task 1.
-- Produces: 39 tables with the exact action order below.
+- Produces: 42 tables with the exact action order below.
 
 - [x] **Step 1: Add the keybind-source notice**
 
 Insert this text before the first table:
 
 ```md
-The tables follow the Minecraft Controls screen from top to bottom so players can configure one category at a time. Screenshot values are not treated as official defaults. A Default key is shown only when official documentation states it; otherwise the cell remains blank. Recommended keys are pack choices and are kept separate from defaults.
+The tables follow the Minecraft Controls screen from top to bottom. They show only each action and its recommended key, so players can configure one category at a time without comparing against default-key or conflict-note columns.
 ```
 
 - [x] **Step 2: Use one table per category**
@@ -275,11 +279,11 @@ The tables follow the Minecraft Controls screen from top to bottom so players ca
 Render each category as an H4 heading, for example `#### LibTooltips`, then use this exact table header every time:
 
 ```md
-| Action | Default key | Recommended key | Conflict or notes |
-|---|---|---|---|
+| Action | Recommended key |
+|---|---|
 ```
 
-Leave undocumented defaults and unapproved recommendations empty. Use `Unbound` only when a binding is intentionally recommended to remain unbound.
+Leave an action's recommended-key cell empty when it should remain unbound.
 
 - [x] **Step 3: Add categories 1–10 in this exact order**
 
@@ -339,21 +343,26 @@ Run:
 ```powershell
 $doc = Get-Content -LiteralPath '.\docs\MODLIST.md' -Raw
 @(
-  '#### LibTooltips','#### Starcatcher','#### Movement','#### Miscellaneous','#### Multiplayer',
+  '#### LibTooltips','#### Moonstone (月之石)','#### Starcatcher','#### Movement','#### Miscellaneous','#### Multiplayer',
   '#### Gameplay','#### Inventory','#### Creative Mode','#### Spectator','#### Debug',
-  '#### Puffish Skills','#### PatPat','#### Jade','#### Iris','#### Coordinates Display',
+  '#### Puffish Skills','#### Vital Relics','#### PatPat','#### Jade','#### Iris','#### Coordinates Display',
   "#### Xaero's World Map",'#### Effortless Building','#### Spell Engine','#### Better Combat','#### Better Party',
   '#### Curios','#### Hovering Hotbar','#### Iourus Races','#### Item Interactions','#### JEI — Cheat Mode',
   '#### JEI — Dev Tools','#### JEI — Edit Mode','#### JEI — Hovering over Config Button','#### JEI — Hovering with Mouse','#### JEI — Overlays',
   '#### JEI — Recipes','#### JEI — Search Filter','#### Locked In Slots','#### Pet Vault','#### Pro Placer',
-  '#### Skill Perks','#### Sophisticated Backpacks','#### Sophisticated Mods','#### Sophisticated Item Actions'
+  '#### Skill Perks','#### Sophisticated Backpacks','#### Sophisticated Mods','#### Sophisticated Item Actions','#### Tool Belt'
 ) | ForEach-Object { if (-not $doc.Contains($_)) { throw "Missing keybind category: $_" } }
 
-$tableHeaders = (Select-String -Path '.\docs\MODLIST.md' -SimpleMatch '| Action | Default key | Recommended key | Conflict or notes |').Count
-if ($tableHeaders -ne 39) { throw "Expected 39 keybind tables; found $tableHeaders" }
+$tableHeaders = (Select-String -Path '.\docs\MODLIST.md' -SimpleMatch '| Action | Recommended key |').Count
+if ($tableHeaders -ne 42) { throw "Expected 42 two-column keybind tables; found $tableHeaders" }
+$css = Get-Content -LiteralPath '.\docs\handbook-print.css' -Raw
+$tableRule = [regex]::Match($css, '(?s)\.keybind-section table\s*\{([^}]*)\}').Groups[1].Value
+$firstRule = [regex]::Match($css, '(?s)\.keybind-section th:first-child,\s*\.keybind-section td:first-child\s*\{([^}]*)\}').Groups[1].Value
+$lastRule = [regex]::Match($css, '(?s)\.keybind-section th:last-child,\s*\.keybind-section td:last-child\s*\{([^}]*)\}').Groups[1].Value
+if ($tableRule -notmatch 'table-layout:\s*fixed;' -or $tableRule -notmatch 'width:\s*100%;' -or $firstRule -notmatch 'width:\s*65%;' -or $lastRule -notmatch 'width:\s*35%;') { throw 'Keybind table column widths are not consistent.' }
 ```
 
-Expected: no exception and exactly 39 table headers.
+Expected: no exception, exactly 42 two-column keybind tables, and a consistent 65/35 width rule.
 
 - [x] **Step 8: Commit the keybind reference**
 
@@ -504,7 +513,7 @@ Report:
 - The final handbook and keybind-table structure
 - The number of keybind categories and tables
 - Which recommended bindings are populated
-- Which default-key cells remain intentionally empty
+- Which actions are intentionally left unbound
 - The saved HUD mockup path
 - Validation commands and results
 - Unrelated working-tree changes that remain untouched

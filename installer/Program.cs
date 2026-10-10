@@ -1,3 +1,5 @@
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Net.Http.Json;
 using System.Security.Cryptography;
 using System.Text;
@@ -9,6 +11,8 @@ internal static class Program
 {
     private const string Repository = "Valhaimerd/mods-server";
     private const string Branch = "main";
+    private const string HandbookFileName = "modpack-player-handbook.pdf";
+    private static string HandbookUrl => $"https://github.com/{Repository}/blob/{Branch}/{HandbookFileName}";
     private static readonly string[] SourceFolders = ["mods", "mod store"];
 
     public static async Task<int> Main(string[] args)
@@ -52,6 +56,7 @@ internal static class Program
             if (!plan.HasChanges)
             {
                 Console.WriteLine("Everything is already up to date.");
+                OpenHandbookAfterRun(options.CheckOnly, cancelled: false, updateSucceeded: true);
                 return 0;
             }
 
@@ -74,6 +79,7 @@ internal static class Program
                 Console.WriteLine($"Backup: {backup}");
             }
 
+            OpenHandbookAfterRun(options.CheckOnly, cancelled: false, updateSucceeded: true);
             return 0;
         }
         catch (Exception ex)
@@ -291,8 +297,43 @@ internal static class Program
         return $"{value:0.##} {units[unit]}";
     }
 
+    private static bool ShouldOpenHandbook(bool checkOnly, bool cancelled, bool updateSucceeded) =>
+        updateSucceeded && !checkOnly && !cancelled;
+
+    private static void OpenHandbookAfterRun(bool checkOnly, bool cancelled, bool updateSucceeded)
+    {
+        if (!ShouldOpenHandbook(checkOnly, cancelled, updateSucceeded))
+        {
+            return;
+        }
+
+        try
+        {
+            Process.Start(new ProcessStartInfo(HandbookUrl) { UseShellExecute = true });
+            Console.WriteLine("Opened the player handbook in your browser.");
+        }
+        catch (Exception ex) when (ex is InvalidOperationException or Win32Exception)
+        {
+            Console.WriteLine($"Could not open a browser automatically. View the handbook at: {HandbookUrl}");
+        }
+    }
+
     private static async Task RunSelfTestAsync()
     {
+        if (HandbookFileName != "modpack-player-handbook.pdf" ||
+            HandbookUrl != "https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf")
+        {
+            throw new InvalidOperationException("Self-test failed: handbook viewer URL is not stable.");
+        }
+
+        if (!ShouldOpenHandbook(checkOnly: false, cancelled: false, updateSucceeded: true) ||
+            ShouldOpenHandbook(checkOnly: true, cancelled: false, updateSucceeded: true) ||
+            ShouldOpenHandbook(checkOnly: false, cancelled: true, updateSucceeded: true) ||
+            ShouldOpenHandbook(checkOnly: false, cancelled: false, updateSucceeded: false))
+        {
+            throw new InvalidOperationException("Self-test failed: handbook launch gating is incorrect.");
+        }
+
         var path = Path.GetTempFileName();
         try
         {

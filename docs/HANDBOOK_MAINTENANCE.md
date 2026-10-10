@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-09<br>
+Last verified: 2026-10-10<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2
 
 ## Purpose
@@ -11,14 +11,16 @@ Use this checklist whenever the pack adds, removes, renames, or substantially re
 
 - Work from the repository root with PowerShell and Git available.
 - Know which JARs changed and whether each change is main-pack or optional client-store content.
-- Have an official mod page or repository for player-facing behavior and default-key claims.
+- Have the current in-game controls and the verified recommended assignments available.
 - Have the current recommended controls available in Minecraft when key assignments change.
 
 ## Inclusion decision
 
 Add a canonical handbook entry when a mod exposes meaningful content or behavior during ordinary play: mechanics, progression, creatures, structures, equipment, interfaces, travel, building, storage, or other visible utilities.
 
-Do not add libraries, APIs, loaders, compatibility bridges, performance internals, or server-only plumbing to the gameplay catalog. A support mod may still appear in the complete keybind tables if it exposes a control that players can see. Broad content mods receive one integrated entry with cross-references, not duplicate entries under every feature they contain.
+Do not add libraries, APIs, loaders, compatibility bridges, performance internals, or server-only plumbing to the gameplay catalog. A support mod may still appear in the complete keybind tables if it exposes a control that players can see. Keep broad mods integrated rather than duplicating them across every feature category. When a group contains separately installed, player-facing modules, retain the image-free group overview and add a distinct titled entry for each installed member with its own verified icon.
+
+Keep the full category-ordered keybind tables together at the beginning of Part I, before race, class, skills, abilities, and first-session onboarding. The print builder preserves this order and keeps the complete keybind block together; do not split or duplicate its tables. Other chapters may mention a shortcut when it helps explain a mechanic, but should describe it in prose rather than repeat it in a table. Keep comparison tables only when they clarify genuinely different workflows; use compact lists or short paragraphs for ordinary mod descriptions.
 
 ## Update procedure
 
@@ -40,19 +42,21 @@ Do not add libraries, APIs, loaders, compatibility bridges, performance internal
    - the official source list for that part;
    - onboarding or mechanic guidance when the change affects what a new player must do.
 
-5. Update keybinds from the top of Minecraft's Controls screen downward. Keep `Default key` and `Recommended key` separate. Enter a default only when the mod's official documentation states it; otherwise leave that cell blank. Explain intentional context sharing and every resolved conflict.
+5. Update keybinds from the top of Minecraft's Controls screen downward. Keep one table per category with only `Action` and `Recommended key`; leave an action's recommendation blank when it should remain unbound. The print stylesheet fixes every keybind table to the same 65/35 column split. Resolve assignments in the actual profile before publishing, but keep default-key and conflict explanations out of the player tables.
 6. Update screenshots through [the screenshot queue](assets/screenshots/README.md). Use real captures from the current pack, follow the privacy and readability standards, replace the matching `handbook-figure` marker only after the PNG exists, and update its queue status.
 7. Update the handbook's `Last audited` date and distribution counts. Treat the baselines below as values that must change deliberately when the pack changes, not as permanent constants.
 8. Run the verification checks, review the documentation diff, and stage documentation files explicitly. Do not stage unrelated mod-folder changes.
+9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/` with `fetch-mod-icons.ps1`. Use CurseForge artwork only for this pack, verify every project match, and do not substitute a similar result. Keep the seven grouped overview entries image-free, but register each installed member mod as its own player-facing entry with the corresponding project icon. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
 
 ## Verification
 
 Current verified baseline:
 
-- 277 main-pack JARs;
+- 282 main-pack JARs;
 - 4 optional client-store JARs;
-- 156 alphabetical gameplay entries;
-- 39 keybind tables;
+- 214 alphabetical gameplay entries;
+- 206 verified CurseForge project icons for individual mods plus user-provided Bifrost artwork; seven group overviews remain image-free;
+- 41 keybind tables;
 - 5 handbook parts;
 - zero broken internal links.
 
@@ -61,9 +65,16 @@ Check the simple counts:
 ```powershell
 $handbook = Get-Content -LiteralPath '.\docs\MODLIST.md' -Encoding UTF8
 ($handbook | Where-Object { $_ -match '^## Part [IVX]+ ' }).Count
-($handbook | Where-Object { $_ -eq '| Action | Default key | Recommended key | Conflict or notes |' }).Count
+($handbook | Where-Object { $_ -eq '| Action | Recommended key |' }).Count
 (Get-ChildItem -LiteralPath '.\mods' -File -Filter '*.jar').Count
 (Get-ChildItem -LiteralPath '.\mod store' -File -Filter '*.jar').Count
+```
+
+Check icon sources and ensure each downloaded icon is emitted into HTML without generating a PDF:
+
+```powershell
+& '.\docs\tests\Test-ModIconSources.ps1'
+& '.\docs\tests\Test-ModIconRendering.ps1'
 ```
 
 Check the alphabetical index count, order, and duplicates:
@@ -157,7 +168,13 @@ Build the distributable handbook from the repository root:
 .\docs\build-handbook.ps1
 ```
 
-The script converts `docs/MODLIST.md` to HTML, restores GitHub-style heading anchors for internal links, applies `docs/handbook-print.css`, and prints an A4 PDF with Microsoft Edge or Google Chrome. Its generated working files go under `tmp/pdfs/`, and the finished artifact is `output/pdf/modpack-player-handbook.pdf`. The generated directories remain ignored by Git; commit the Markdown, stylesheet, screenshots, and build script rather than the output copy.
+The script converts `docs/MODLIST.md` to HTML, restores GitHub-style heading anchors for internal links, applies `docs/handbook-print.css`, and prints an A4 PDF with Microsoft Edge or Google Chrome. Its generated working files go under `tmp/pdfs/`; it writes the stable `modpack-player-handbook.pdf` filename to both `output/pdf/` and the repository root. The output copy remains ignored by Git. The root copy is committed so the installer can open GitHub's PDF viewer directly without downloading a separate file.
+
+The visual system uses black body text, forest-green part openers, and amber accents. Preserve that hierarchy and compact rhythm when adjusting the print styles. The Quick Reference keeps control reminders in prose; only the Part I controls chapter carries keybind tables.
+
+The handbook cover title is `26.2 RPG Series by Valhaimerd`. Keep the linked, one-page Table of Contents after the introduction. Its page numbers are maintained in `MODLIST.md`; after any pagination-affecting edit, rebuild the PDF and update those numbers to match the rendered pages. In the PDF, place the alphabetical mod index immediately after the contents, then the Gameplay-tag index with its own title bar, followed by Quick Reference. The source may keep both index sections at the end of `MODLIST.md`; `build-handbook.ps1` moves them into the front matter for print.
+
+Project artwork is staged in `assets/mod-icons/`, with origin URLs and match status in its manifest. The PDF builder renders verified icons beside prominent mod titles, followed by each entry's details, with a slim amber vertical accent and horizontal separator. Image proportions are preserved; unresolved icons are omitted rather than substituted. Confirm artwork terms before public distribution.
 
 Before distribution, render and inspect every PDF page. Confirm that:
 
@@ -165,6 +182,10 @@ Before distribution, render and inspect every PDF page. Confirm that:
 - tables, headings, and images are not clipped or split incorrectly;
 - Quick Reference remains on one page;
 - the alphabetical and gameplay-tag indexes remain readable;
+- the one-page Table of Contents has enough row spacing to read comfortably without splitting onto a second page;
+- the one-page table of contents has right-aligned page numbers that match each linked destination;
+- the alphabetical mod index follows the contents and precedes the separately titled Gameplay-tag index;
+- the cover title is `26.2 RPG Series by Valhaimerd`, and the running footer reads `26.2 RPG SERIES BY VALHAIMERD / PLAYER FIELD GUIDE`;
 - internal links are clickable and resolve to real headings;
 - no blank or nearly blank page was introduced unintentionally.
 
@@ -179,6 +200,6 @@ Before distribution, render and inspect every PDF page. Confirm that:
 
 - **Count changed unexpectedly:** inspect `git status --short -- mods 'mod store'` and check for duplicate filenames before editing the header.
 - **One JAR covers many systems:** give it one integrated entry in its strongest topic and add selective gameplay tags rather than copying its description.
-- **Default key is uncertain:** leave the default cell blank; a screenshot or current local assignment is not proof of an official default.
+- **Recommended key is undecided:** leave the cell blank until the control is intentionally assigned or confirmed unbound.
 - **Screenshot is unavailable:** retain the invisible capture marker and `Needed` queue status; do not create a broken image link or use unrelated promotional art.
 - **Index link is broken:** verify the target heading text and its GitHub-style lowercase hyphenated anchor, then update every index or cross-reference pointing to it.

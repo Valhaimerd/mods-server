@@ -1,7 +1,7 @@
 # Modlist Handbook Scaffold Design
 
 Date: 2026-10-08  
-Status: Implemented and content-reviewed on 2026-10-09
+Status: Implemented; front matter and icon staging updated on 2026-10-10
 
 ## Purpose
 
@@ -144,39 +144,23 @@ Display the complete keybind inventory supplied in the screenshots. Do not reduc
 
 Create one table per in-game category and preserve the screenshots' top-to-bottom category and action order. This lets a player work through the Minecraft Controls screen sequentially without jumping between handbook sections.
 
-Use this table structure:
+Use this player-facing table structure:
 
-| Action | Default key | Recommended key | Conflict or notes |
-|---|---|---|---|
+| Action | Recommended key |
+|---|---|
 
 Rules:
 
-- Use the screenshots to identify categories, actions, and ordering only.
-- Do not treat the keys visible in the screenshots as authoritative defaults.
-- Populate **Default key** only when the mod's official website or documentation explicitly states it.
-- Leave **Default key** blank when no authoritative default is published. Do not guess.
-- Populate **Recommended key** during the later conflict-resolution pass.
+- Preserve the Minecraft Controls category and action order so players can work top to bottom.
+- Show only **Action** and **Recommended key** in the handbook; keep defaults and conflict explanations out of these tables to reduce visual load.
+- Leave **Recommended key** blank for actions intended to remain unbound.
 - Include unbound actions.
 - Preserve duplicate-looking actions when the game lists separate bindings for them.
 - Clean raw localization-key category names into readable headings without altering their meaning.
-- Keep conflict explanations beside the affected action rather than in a distant section.
+- Use the same full table width and column proportions for every keybind category. The print style fixes the columns to 65% for Action and 35% for Recommended key.
+- Check the recommended profile for conflicts before publishing; do not add a conflict-notes column to the player tables.
 
-The screenshot category sequence is:
-
-1. LibTooltips
-2. Starcatcher
-3. Movement
-4. Miscellaneous
-5. Multiplayer
-6. Gameplay
-7. Inventory
-8. Creative Mode
-9. Spectator
-10. Debug
-11. Puffish Skills
-12. PatPat
-13. Jade
-14. Iris
+The current 42-category sequence is: LibTooltips, Moonstone (月之石), Starcatcher keybinds, Movement, Miscellaneous, Multiplayer keybinds, Gameplay, Inventory, Creative Mode, Spectator, Debug, Puffish Skills, Vital Relics, PatPat, Jade, Iris, Coordinates Display, Xaero's World Map, Effortless Building, Spell Engine, Better Combat, Better Party, Curios, Hovering Hotbar, Iourus Races, Item Interactions, JEI — Cheat Mode, JEI — Dev Tools, JEI — Edit Mode, JEI — Hovering over Config Button, JEI — Hovering with Mouse, JEI — Overlays, JEI — Recipes, JEI — Search Filter, Locked In Slots, Pet Vault, Pro Placer, Skill Perks, Sophisticated Backpacks, Sophisticated Mods, Sophisticated Item Actions, and Tool Belt.
 15. Coordinates Display
 16. Xaero's World Map
 17. Effortless Building
@@ -203,6 +187,16 @@ The screenshot category sequence is:
 38. Sophisticated Mods
 39. Sophisticated Item Actions
 
+Keep these tables together in Part I. Other handbook chapters may mention a key in prose when it helps explain an interaction, but do not repeat controls in tables elsewhere. Prefer prose or concise lists for ordinary mod guidance; reserve comparison tables for genuinely different workflows.
+
+## Print design
+
+- Use black for body text and a restrained accent palette: forest green for part openers and amber for emphasis.
+- Give the cover and each part a clear visual entry point without wasting pages on decorative spacer pages.
+- Keep body text, lists, captions, and tables compact and readable; avoid broad cell padding and excessive vertical margins.
+- Keep screenshot captions with their images and retain page numbering and a discreet handbook footer.
+- Preserve clickable internal and source links in the generated PDF.
+
 ## HUD and configuration documentation
 
 For mods with configurable interfaces, explain:
@@ -227,10 +221,10 @@ The approved layout mockup is currently saved at `output/playwright/hud-layout-r
 
 ## Source and uncertainty policy
 
-- Prefer official mod websites and official documentation for default controls and configuration claims.
+- Prefer official mod websites and official documentation for player-facing behavior and configuration claims.
 - Use installed JAR metadata to confirm that a mod is present and to establish its core idea.
-- Do not infer undocumented default keys from the submitted screenshots.
-- Leave unknown fields empty instead of presenting assumptions as facts.
+- Use the confirmed profile for recommended keys; leave unconfirmed assignments blank instead of guessing.
+- Keep default-key and conflict-detail columns out of the player-facing keybind tables.
 - Keep libraries, APIs, compatibility bridges, and invisible server internals out of the user-facing catalog.
 - A support mod may still appear as a keybind-table heading when it exposes controls in the player's Controls screen; this does not make it a canonical gameplay entry.
 
@@ -238,13 +232,15 @@ The approved layout mockup is currently saved at `output/playwright/hud-layout-r
 
 The implementation restructured `docs/MODLIST.md` as the handbook scaffold, then expanded it into the maintained player handbook. It includes the full screenshot-derived keybind tables, approved recommended bindings, topic-by-topic mechanic guidance, a quick reference, verified gameplay screenshots, print styling, and a maintenance runbook. It intentionally does not enumerate every item, creature, block, recipe, structure, enchantment, or loot drop.
 
+The print handbook is titled **26.2 RPG Series**. Its linked Table of Contents is followed by the alphabetical mod index and separately titled Gameplay-tag index in the opening pages, then the Quick Reference and five topic-based parts. Verified project icons are staged in `docs/assets/mod-icons/` and rendered beside catalog titles. Grouped collections may require multiple icons, and no similarly named project artwork should be substituted when a source is uncertain.
+
 Implementation outcome:
 
-1. Authoritative default keys and configuration modes were researched where official documentation exists; undocumented defaults remain blank.
-2. Key conflicts were resolved into the recommended profile while preserving the complete 39-category control order.
+1. The complete keybind inventory is shown in 42 ordered category tables with only Action and Recommended key columns; all tables share fixed 65/35 widths.
+2. The recommended profile preserves the confirmed control assignments and leaves unbound actions blank.
 3. Core mechanics were expanded and reviewed against official documentation and installed JAR evidence.
 4. Fifteen verified gameplay screenshots and one HUD layout diagram were embedded with descriptive captions.
-5. PDF production and visual PDF verification remain deferred until explicitly requested.
+5. PDF production was requested and completed on 2026-10-09. The October 10 revision tightens the print layout, confines keybind tables to Part I, and updates the player guidance across all five parts; regenerate and visually inspect the PDF before handoff.
 
 ## Validation criteria
 
@@ -253,8 +249,8 @@ Implementation outcome:
 - No progression-stage labels are introduced.
 - Keybind categories and actions follow the screenshots from top to bottom.
 - Every keybind category has its own table.
-- Screenshot bindings are not mislabeled as official defaults.
-- No undocumented default key is invented.
+- Every keybind table uses only Action and Recommended key columns with consistent widths.
+- Unbound recommended actions remain blank.
 - The recommended HUD layout and its saved image agree.
 - Libraries and APIs do not appear as player-facing mod entries.
 - Markdown headings, internal links, and duplicate entry labels are checked before handoff.

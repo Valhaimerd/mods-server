@@ -11,7 +11,7 @@ Capture set reviewed: 2026-10-09. These images were made in a disposable experim
 | File | Handbook location | Status |
 |---|---|---|
 | `01-race-selection.png` | Choosing a race | Captured |
-| `02-class-loadout.png` | Choosing a class | Captured |
+| `02-class-specialization-tree.png` | Choosing a class; explains specialization paths | Captured |
 | `02-spell-hotbar.png` | Choosing a class | Captured |
 | `03-rpg-tree.png` | Skills, abilities, spells, and runes | Captured |
 | `04-skill-perks.png` | Skills, abilities, spells, and runes | Captured |

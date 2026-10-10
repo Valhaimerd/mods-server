@@ -1,18 +1,33 @@
 @page {
   size: A4;
-  margin: 18mm 16mm 20mm;
+  margin: 15mm 15mm 17mm;
+
+  @bottom-left {
+    content: "26.2 RPG SERIES BY VALHAIMERD / PLAYER FIELD GUIDE";
+    color: #555;
+    font: 7pt "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.08em;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #111;
+    font: 8pt "Segoe UI", Arial, sans-serif;
+  }
 }
 
 :root {
-  color: #20242a;
+  color: #111;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 10.5pt;
-  line-height: 1.45;
+  font-size: 9.5pt;
+  line-height: 1.34;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 body {
   margin: 0;
-  color: #20242a;
+  color: #111;
   background: #fff;
 }
 
@@ -20,108 +35,122 @@ h1,
 h2,
 h3,
 h4 {
-  color: #163f67;
-  line-height: 1.2;
+  color: #111;
+  line-height: 1.16;
   break-after: avoid;
   page-break-after: avoid;
 }
 
-h1 {
-  font-size: 24pt;
+body > h1:first-of-type {
+  margin: 8mm 0 5mm;
+  padding: 13mm 12mm 8mm;
+  color: #fff;
+  background: #17352f;
+  border-bottom: 5pt solid #c78a2d;
+  font-size: 31pt;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  break-after: avoid;
+}
+
+.edition-label {
+  margin: 0 12mm;
+  color: #a56716;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.cover-deck {
+  max-width: 145mm;
+  margin: 8mm 12mm 12mm;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16pt;
+  line-height: 1.35;
+}
+
+.cover-meta {
+  margin: 0 12mm 16mm;
+  padding: 5mm 6mm;
+  border-left: 3pt solid #c78a2d;
+  background: #f2f0e8;
+  line-height: 1.7;
+}
+
+body > h1:first-of-type ~ h2:first-of-type {
+  margin-top: 0;
 }
 
 h2 {
-  margin-top: 0;
+  margin: 9mm 0 3mm;
+  padding: 0 0 2mm;
+  border-bottom: 1.5pt solid #c78a2d;
   font-size: 18pt;
 }
 
+h2[id^="part-"] {
+  margin-top: 0;
+  padding: 7mm 6mm 4mm;
+  color: #fff;
+  background: #17352f;
+  border: 0;
+  border-left: 5pt solid #c78a2d;
+  font-size: 22pt;
+}
+
 h3 {
-  font-size: 14pt;
+  margin: 6mm 0 2mm;
+  padding-left: 2.5mm;
+  border-left: 2pt solid #c78a2d;
+  font-size: 13pt;
 }
 
 h4 {
-  font-size: 11.5pt;
+  margin: 4mm 0 1.5mm;
+  color: #24584e;
+  font-size: 10.5pt;
 }
 
-p,
-li {
+p {
+  margin: 0 0 2.5mm;
   orphans: 3;
   widows: 3;
 }
 
+ul,
+ol {
+  margin: 1.5mm 0 3mm;
+  padding-left: 6mm;
+}
+
+li {
+  margin: 0 0 1mm;
+  orphans: 2;
+  widows: 2;
+}
+
 a {
-  color: #175f96;
-  text-decoration: none;
+  color: #24584e;
+  text-decoration-color: #c78a2d;
+  text-underline-offset: 1.5pt;
 }
 
 code {
+  color: #111;
   font-family: "Cascadia Mono", Consolas, monospace;
-  font-size: 0.92em;
-  background: #eef3f7;
+  font-size: 0.9em;
+  background: #efeee8;
   border-radius: 2px;
-  padding: 0.06em 0.2em;
+  padding: 0.04em 0.18em;
 }
 
 table {
   width: 100%;
-  margin: 0.7em 0 1em;
+  margin: 2mm 0 4mm;
   border-collapse: collapse;
-  font-size: 9pt;
-}
-
-.quick-reference {
-  font-size: 9.5pt;
-}
-
-.quick-reference h3 {
-  margin: 0.65em 0 0.3em;
-}
-
-.quick-reference ol {
-  margin: 0.35em 0 0.6em;
-}
-
-.quick-reference table {
-  margin: 0.4em 0 0.6em;
-  font-size: 8pt;
+  font-size: 8.2pt;
   line-height: 1.25;
-}
-
-.quick-reference th,
-.quick-reference td {
-  padding: 2pt 4pt;
-}
-
-.alphabetical-index,
-.gameplay-tag-index {
-  column-count: 3;
-  column-gap: 8mm;
-  font-size: 8.5pt;
-  line-height: 1.3;
-}
-
-.alphabetical-index ul,
-.gameplay-tag-index ul {
-  margin-top: 0.25em;
-  padding-left: 1.2em;
-}
-
-.alphabetical-index li,
-.gameplay-tag-index li {
-  break-inside: avoid;
-  page-break-inside: avoid;
-}
-
-.gameplay-tag-index h4 {
-  margin: 0.55em 0 0.15em;
-  break-after: avoid;
-  page-break-after: avoid;
-}
-
-.gameplay-tag-index h4 + ul {
-  margin-top: 0;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 thead {
@@ -137,48 +166,165 @@ th {
 
 th,
 td {
-  border: 0.5pt solid #9eacb8;
-  padding: 4pt 5pt;
+  padding: 2pt 3pt;
+  border: 0.45pt solid #c5c1b5;
   text-align: left;
   vertical-align: top;
 }
 
 th {
-  color: #102f4d;
-  background: #e6eef5;
+  color: #111;
+  background: #e9e2d2;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7f6f1;
+}
+
+.quick-reference {
+  font-size: 9pt;
+}
+
+.quick-reference h3 {
+  margin: 4mm 0 1.5mm;
+}
+
+.quick-reference ol {
+  margin: 1mm 0 3mm;
+}
+
+.quick-reference p {
+  margin-bottom: 4mm;
+}
+
+.keybind-section {
+  font-size: 8.6pt;
+}
+
+.keybind-section h4 {
+  margin: 2.5mm 0 1mm;
+  padding: 1mm 2mm;
+  color: #111;
+  background: #f2f0e8;
+  border-left: 2pt solid #c78a2d;
+}
+
+.keybind-section table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 0 2.5mm;
+  font-size: 7.2pt;
+  line-height: 1.15;
+}
+
+.keybind-section th:first-child,
+.keybind-section td:first-child {
+  width: 65%;
+}
+
+.keybind-section th:last-child,
+.keybind-section td:last-child {
+  width: 35%;
+}
+
+.keybind-section th,
+.keybind-section td {
+  padding: 1.4pt 2.2pt;
+}
+
+.keybind-section h3 + p {
+  margin-bottom: 2mm;
+}
+
+.mod-entry {
+  list-style: none;
+  margin: 0 0 3mm -6mm;
+  padding: 0 0 2.5mm 3mm;
+  border-left: 2pt solid #c78a2d;
+  border-bottom: 0.55pt solid #c5c1b5;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.mod-entry-block {
+  margin-left: 0;
+}
+
+.mod-entry-heading {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  min-height: 14mm;
+  margin: 0 0 1.5mm;
+}
+
+h4.mod-entry-primary {
+  margin: 4mm 0 2mm;
+  padding: 0 0 1.5mm 2.5mm;
+  border-left: 2pt solid #c78a2d;
+  border-bottom: 0.55pt solid #c5c1b5;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.mod-entry-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 20mm;
+  max-height: 14mm;
+  margin: 0;
+  object-fit: contain;
+}
+
+.mod-entry-title {
+  color: #17352f;
+  font-size: 14pt;
+  line-height: 1.15;
+}
+
+.mod-entry-title strong {
+  font-weight: 750;
+}
+
+.mod-entry-description {
+  margin: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
+  max-height: 225mm;
   height: auto;
+  margin: 2mm auto;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
 figure {
-  margin: 1em 0;
+  margin: 3mm 0 5mm;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
 figcaption {
-  margin-top: 0.35em;
-  color: #52606d;
-  font-size: 8.5pt;
+  margin-top: 1mm;
+  color: #444;
+  font-size: 8pt;
 }
 
-/* Markdown renderers normally emit image and caption paragraphs instead of figure elements. */
 p:has(> img:only-child) {
-  margin: 1em 0 0.2em;
+  margin: 3mm 0 0;
   break-after: avoid;
   page-break-after: avoid;
 }
 
 p:has(> img:only-child) + p:has(> em:only-child) {
-  margin: 0 0 1em;
-  color: #52606d;
-  font-size: 8.5pt;
+  margin: 0 0 4mm;
+  color: #444;
+  font-size: 8pt;
   break-before: avoid;
   page-break-before: avoid;
 }
@@ -188,7 +334,134 @@ p:has(> img:only-child) + p:has(> em:only-child) {
   page-break-before: always;
 }
 
+.alphabetical-index,
+.gameplay-tag-index {
+  column-count: 3;
+  column-gap: 7mm;
+  font-size: 7.5pt;
+  line-height: 1.18;
+}
+
+.alphabetical-index {
+  font-size: 7.2pt;
+  line-height: 1.12;
+}
+
+.contents-page {
+  margin-top: 5mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.contents-page > #table-of-contents {
+  margin: 0 0 3mm;
+  padding: 3mm 4mm 2.5mm;
+  border-left: 2mm solid #bd7a24;
+  background: #f2f5f0;
+}
+
+.toc-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 8.7pt;
+  line-height: 1.15;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.toc-table td {
+  padding: 2pt 2pt;
+  border: 0;
+  background: transparent;
+}
+
+.toc-table td:first-child {
+  border-bottom: 0.45pt dotted #c8c4ba;
+}
+
+.toc-table td:first-child {
+  width: auto;
+}
+
+.toc-table td:last-child {
+  width: 9mm;
+  color: #174b38;
+  text-align: right;
+  font-weight: 600;
+}
+
+.toc-table a {
+  color: #174b38;
+  text-decoration-color: #bd7a24;
+  text-underline-offset: 1pt;
+}
+
+.toc-table .toc-part td {
+  padding-top: 2.5pt;
+  color: #173d31;
+  font-weight: 700;
+}
+
+.toc-table .toc-part td:first-child {
+  border-bottom-color: #bd7a24;
+}
+
+.toc-table .toc-subsection td:first-child {
+  padding-left: 4mm;
+}
+
+.alphabetical-index ul,
+.gameplay-tag-index ul {
+  margin: 0 0 2mm;
+  padding-left: 4mm;
+}
+
+.alphabetical-index li,
+.gameplay-tag-index li {
+  margin: 0 0 0.5mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.alphabetical-index li {
+  margin-bottom: 0.25mm;
+}
+
+.gameplay-tag-index h4 {
+  margin: 2mm 0 0.5mm;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.gameplay-tag-index > h3 {
+  column-span: all;
+  margin: 0 0 1.5mm;
+  padding: 2mm 3mm;
+  border-left: 2mm solid #bd7a24;
+  background: #f2f5f0;
+  color: #173d31;
+  font-size: 13pt;
+  line-height: 1.15;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.gameplay-tag-index h4 + ul {
+  margin-top: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 @media screen {
+  body {
+    max-width: 180mm;
+    margin: 18mm auto;
+    padding: 12mm;
+    box-shadow: 0 3mm 14mm #0002;
+  }
+
   .page-break {
     display: none;
   }

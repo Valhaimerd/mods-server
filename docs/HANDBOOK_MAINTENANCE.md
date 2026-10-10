@@ -32,7 +32,7 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
    git status --short -- mods 'mod store'
    ```
 
-2. Inspect every added, removed, or renamed JAR. Read its embedded metadata and official page before deciding whether it is player-facing. Do not infer a feature from the filename alone.
+2. Inspect every added, removed, or renamed JAR. Read its embedded metadata and official page before deciding whether it is player-facing. Do not infer a feature from the filename alone. When a pack-local build targets a version not yet listed on the public project page, use the JAR metadata for the installed pack version and do not imply upstream release status beyond what the page confirms.
 3. Classify player-facing additions as a focused entry, integrated expansion, utility, interface feature, or optional client feature. Select the section that best explains the mod's main player use; use gameplay tags for secondary roles.
 4. Update all affected handbook locations:
 
@@ -52,11 +52,11 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
 
 Current verified baseline:
 
-- 282 main-pack JARs;
+- 285 main-pack JARs;
 - 4 optional client-store JARs;
-- 214 alphabetical gameplay entries;
-- 206 verified CurseForge project icons for individual mods plus user-provided Bifrost artwork; seven group overviews remain image-free;
-- 41 keybind tables;
+- 217 alphabetical gameplay entries;
+- 209 verified CurseForge project icons for individual mods plus user-provided Bifrost artwork; seven group overviews remain image-free;
+- 39 keybind tables;
 - 5 handbook parts;
 - zero broken internal links.
 
@@ -86,7 +86,7 @@ $alphaEntries = $handbook[($alphaStart + 1)..($tagStart - 1)] | Where-Object { $
 $alphaNames = $alphaEntries -replace '^- \[([^]]+)\].*$', '$1'
 $alphaEntries.Count
 $alphaNames | Group-Object | Where-Object Count -gt 1
-Compare-Object $alphaNames ($alphaNames | Sort-Object)
+if (($alphaNames -join "`n") -cne (@($alphaNames | Sort-Object) -join "`n")) { throw 'Alphabetical mod index is not sorted.' }
 ```
 
 The count should match the reviewed catalog, and the last two commands should produce no output. Then run:

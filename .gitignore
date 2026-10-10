@@ -15,6 +15,10 @@ banned-players.json
 *.log
 *.lck
 
+# Local mod repair workspace
+/mod fixing/
+/compat/
+
 # Installer build output
 installer/bin/
 installer/obj/

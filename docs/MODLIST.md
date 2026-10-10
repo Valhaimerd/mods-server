@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A practical player guide to the RPG systems, exploration, survival loops, and tools that reshape this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 282 synchronized JARs · 4 optional client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 285 synchronized JARs · 4 optional client extras</p>
 
 Last audited: 2026-10-10<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 282 synchronized JARs plus 4 optional client-store JARs
+Current distribution: 285 synchronized JARs plus 4 optional client-store JARs
 
 ## About this handbook
 
@@ -50,31 +50,31 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
     <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
     <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
     <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>27</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>32</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>40</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>44</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>44</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>51</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>57</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>41</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>44</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>45</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>53</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>59</td></tr>
   </tbody>
 </table>
 
@@ -120,13 +120,6 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Recommended key |
 |---|---|
 | Expand Tooltip | `Left Shift` |
-
-#### Moonstone (月之石)
-
-| Action | Recommended key |
-|---|---|
-| Summon Zombies / Recall | `K` |
-| Skill | `J` |
 
 #### Starcatcher keybinds
 
@@ -248,13 +241,6 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Recommended key |
 |---|---|
 | Open Skill Tree | `T` |
-
-#### Vital Relics
-
-| Action | Recommended key |
-|---|---|
-| Cast Spell | `X` |
-| Switch Spell | `Shift + X` |
 
 #### PatPat
 
@@ -556,11 +542,11 @@ Changing weapons or books is how to try another archetype; choosing a race does 
 
 ### Skills, abilities, spells, and runes
 
-The pack combines two separate progression systems with two sources of active powers. They work together, but their points, abilities, and controls are not interchangeable.
+Class abilities, weapon specialization, and general perks belong to separate systems, each with its own controls and progression.
 
 The RPG class and weapon tree (`T`) uses skill points earned through XP to unlock specializations that modify class books, weapon skills, and passive combat effects. Skill Perks (`G`) is a separate, XP-based progression path for broader survival, mobility, utility, and combat benefits. Their points and reset methods are separate; spending or resetting one does not change the other.
 
-A compatible class book or weapon supplies class abilities through the Spell Engine hotbar. Its displayed slot keys depend on the equipped loadout; hold `Left Ctrl` with a number key to select the corresponding ordinary hotbar item instead. Vital Relics are a separate source of active powers: in this profile, press `X` to cast the selected relic spell and `Shift + X` to switch spells. Check the equipped relic's tooltip and cooldown before relying on its ability.
+A compatible class book or weapon supplies class abilities through the Spell Engine hotbar. Its displayed slot keys depend on the equipped loadout; hold `Left Ctrl` with a number key to select the corresponding ordinary hotbar item instead.
 
 The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
 
@@ -582,10 +568,10 @@ See [Skill trees and character progression](#skill-trees-and-character-progressi
 
 Complete these steps before the first long expedition:
 
-- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `P` for races, `T` for the RPG tree, `G` for Skill Perks, `E` for rolling, `B` for parties, `O` for Alex's Caves, and `X` / `Shift + X` for Vital Relics.
+- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `P` for races, `T` for the RPG tree, `G` for Skill Perks, `E` for rolling, `B` for parties, and `O` for Alex's Caves.
 - Open the race menu with `P`, read every trait, and choose the character's persistent race.
 - Pick an initial archetype from the role guide above, then obtain its appropriate weapon and class book.
-- Equip the class book in the Curios spell-book slot and hold a compatible weapon; confirm that the Spell Engine hotbar appears and check any rune cost. If you equip a Vital Relic, test its active spell separately with `X` to cast and `Shift + X` to switch spells.
+- Equip the class book in the Curios spell-book slot and hold a compatible weapon; confirm that the Spell Engine hotbar appears and check any rune cost.
 - Open `T` and inspect the class and weapon branches before spending points. Read each node's prerequisites and what it modifies; some nodes affect a weapon skill or spell you must already have equipped. Open `G` separately and remember that its perks spend XP.
 - Practice a full basic attack sequence and one directional roll in a safe area.
 - In multiplayer, create or join a party with `B`, review friendly fire and XP sharing, and set the party HUD to the recommended right-side vertical layout.
@@ -713,8 +699,9 @@ Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipme
 - **Armory** — Adds RPG armor sets with distinct designs and set bonuses.
 - **Jewelry** — Adds Curios-equipped rings and necklaces with combat attributes, supported by mining, crafting, trading, and loot.
 - **Relics** — Adds Curios-equipped trinkets with active or passive mechanics that can reshape a build.
-- **Vital Relics** — Adds equippable relics with attributes, passive effects, and optional active abilities; combinations can change combat and exploration, so read each relic's tooltip and cooldown HUD.
-- **Moonstone** — Adds an integrated adventure-and-equipment progression with accessories, challenges, and hostile encounters. Its guidebook explains how to discover and obtain its content; use it rather than treating every item as ordinary loot.
+- **Artifacts** — Adds powerful Curios artifacts as exploration rewards from structure chests and archaeology; rare finds can also come from worn mob loot. Underground campsites may contain Mimics, so approach unfamiliar camps with care.
+- **Nameless Trinkets** — Adds a broad collection of trinkets with distinct abilities. Find them in structure chests or craft them, then hold `Shift` over a trinket to inspect its effect before choosing a build slot.
+- **Scalar RPG Utils** — Turns materials into components with Burnishers, then uses those components to craft Curios gloves, necklaces, and rings with material-dependent buffs. Compare the resulting bonuses before committing a loadout slot.
 - **Tool Belt** — Stores tools and other eligible non-stackable items in a wearable belt, then lets you select them from a radial menu. Upgrade the belt with pouches for more slots; use `Shift + Q` to open the belt-slot inventory and `Q` to swap tools in the recommended profile.
 - **Dedicated Elytra Slot** — Adds a separate inventory slot for an Elytra so it can be equipped alongside a chestplate. Put the Elytra in that slot through the inventory; flight remains the familiar vanilla Elytra workflow.
 - **Too Many Bows** — Expands ranged builds with bows that have different abilities and combat attributes.
@@ -771,7 +758,8 @@ DarkSmithing makes smithing templates craftable through custom recipes; use JEI 
 #### Sources for equipment and enchanting
 
 - [Arsenal](https://modrinth.com/mod/arsenal-rpg-series), [Armory](https://modrinth.com/mod/armory-rpg-series), [Jewelry](https://modrinth.com/mod/jewelry), and [Relics](https://modrinth.com/mod/relics-rpg)
-- [Vital Relics](https://www.curseforge.com/minecraft/mc-mods/vital-relics), [Moonstone](https://modrinth.com/mod/moonstone), [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt), and [Dedicated Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot)
+- [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts), [Nameless Trinkets](https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets), and [Scalar RPG Utils](https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils)
+- [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt) and [Dedicated Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot)
 - [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
 - [Enchanting Infuser](https://modrinth.com/mod/enchanting-infuser), [Easy Magic](https://modrinth.com/mod/easy-magic), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
 - [DarkSmithing](https://modrinth.com/mod/darksmithing), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
@@ -1064,6 +1052,7 @@ Try a short chain on a small vein or crop row before holding the action near val
 - **Core idea:** Expands farming, cooking tools, food preparation, meals, and kitchen-centered survival.
 - **Player guidance:** Build around preparation, heat, and serving rather than treating every meal as an ordinary crafting-grid recipe. Use JEI to identify the required workstation and container for the food being made.
 
+- **Expanded Delight** — Extends Farmer's Delight with additional crops, blocks, workstations, and functionality. Check JEI for each recipe's exact preparation station rather than assuming a new ingredient uses the vanilla cooking loop.
 - **Kaleidoscope Cookery** — Adds more ingredients and recipes around the cooking loop.
 - **Better Rotten Flesh** — Adds useful ways to process and consume rotten flesh and new zombie-feeding behavior.
 - **Universal Bone Meal** — Makes bone meal work on a wider range of plants.
@@ -1109,6 +1098,7 @@ Starcatcher's difficulty and presentation have accessibility settings, including
 - **Also affects:** Magic, Equipment, Food
 - **Core idea:** Reimagines potion brewing as a simplified, Potion Craft-inspired alchemy system.
 - **Player guidance:** Alchemia is an ingredient-navigation system rather than a replacement skin for the Brewing Stand. Learn it at an Alchemical Cauldron and keep ordinary brewing recipes as a separate workflow.
+- **FF Bandage** — Adds a consumable bandage crafted from 2 paper and 1 stick. It restores 1 or 2 hearts, depending on the mod's configuration, as a small direct-healing option.
 - **Potion Time Stacker** — Lets repeated potion effects extend their remaining duration.
 - **Potions Stack** — Allows ordinary potions to stack in small groups.
 
@@ -1233,9 +1223,9 @@ For a clear listing, compare similar offers, account for the server's registered
 #### Sources for survival and creation
 
 - [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf)
-- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
+- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight), [Expanded Delight](https://www.curseforge.com/minecraft/mc-mods/expanded-delight), and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
 - [Starcatcher](https://modrinth.com/mod/starcatcher)
-- [Alchemia](https://modrinth.com/mod/alchemia), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
+- [Alchemia](https://modrinth.com/mod/alchemia), [FFBandage](https://www.curseforge.com/minecraft/mc-mods/ffbandage), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
 - [Macaw's building mods](https://www.curseforge.com/members/sketch_macaw/projects), [Effortless Building](https://modrinth.com/mod/effortless-building), [Armor Statues](https://modrinth.com/mod/armor-statues), [Stonecutting Upgrade](https://www.curseforge.com/minecraft/mc-mods/stonecutting-upgrade), [Arcane Lanterns](https://modrinth.com/mod/arcane-lanterns), and [Traps and Barricades](https://www.curseforge.com/minecraft/mc-mods/traps-and-brricades)
 - [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks), [Tom's Simple Storage](https://modrinth.com/mod/toms-storage), [Linked Chests](https://modrinth.com/mod/new-linked-chests), and [Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes)
 - [Golden Hopper](https://www.curseforge.com/minecraft/mc-mods/golden-hopper), [Hopper Gadgetry](https://modrinth.com/mod/hopper-gadgetry), [Sophisticated Inventory Interactions](https://modrinth.com/mod/sophisticated-inventory-interactions), and [Sophisticated Item Actions](https://modrinth.com/mod/sophisticated-item-actions)
@@ -1405,6 +1395,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Armory](#weapons-armor-jewelry-and-relics)
 - [Arrow+](#weapons-armor-jewelry-and-relics)
 - [Arsenal](#weapons-armor-jewelry-and-relics)
+- [Artifacts](#weapons-armor-jewelry-and-relics)
 - [ATi Structures: Vanilla Edition](#structures-and-dungeons)
 - [Attack Speed Enchantment](#weapons-armor-jewelry-and-relics)
 - [Awesome Dungeon](#structures-and-dungeons)
@@ -1453,9 +1444,11 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Enchantment Insights](#information-overlays-and-tooltips)
 - [Enchantments collection](#weapons-armor-jewelry-and-relics)
 - [Ender Zoology](#creatures-and-hostile-mobs)
+- [Expanded Delight](#farmers-delight)
 - [Explorer's Compass](#travel-maps-compasses-and-teleportation)
 - [Explorify](#structures-and-dungeons)
 - [Farmer's Delight](#farmers-delight)
+- [FF Bandage](#potions-and-alchemy)
 - [Fletching Recipe](#weapons-armor-jewelry-and-relics)
 - [Floating Damage Indicators](#information-overlays-and-tooltips)
 - [Food Effect Tooltips](#information-overlays-and-tooltips)
@@ -1511,11 +1504,11 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Moog's structure collection](#structures-and-dungeons)
 - [Moog's Temples Reimagined](#structures-and-dungeons)
 - [Moog's Voyager Structures](#structures-and-dungeons)
-- [Moonstone](#weapons-armor-jewelry-and-relics)
 - [Mounts and Monsters](#creatures-and-hostile-mobs)
 - [Much More Dungeons](#structures-and-dungeons)
 - [Mutants and Zombies](#creatures-and-hostile-mobs)
 - [Name Tag Upgrade](#companions-pets-villagers-and-settlements)
+- [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
 - [Naturally Trimmed](#enchanting-and-equipment-improvement)
 - [Nature's Compass](#travel-maps-compasses-and-teleportation)
 - [No Crop Destruction](#farming-food-and-cooking)
@@ -1541,13 +1534,13 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Rogues & Warriors](#rpg-classes)
 - [RPG classes](#rpg-classes)
 - [Runes](#abilities-spells-runes-and-resources)
+- [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
 - [Seaworthy Boats](#vehicles-and-travel-equipment)
 - [Serene Seasons](#integrated-world-and-dimension-expansions)
 - [Shield Upgrades](#weapons-armor-jewelry-and-relics)
 - [Show My Recipes](#recipe-and-loot-information)
-- [SimpleHats Lite](#cosmetic-and-animation-changes)
 - [Shroomcraft](#shroomcraft)
-- [Spiky Enchantment](#weapons-armor-jewelry-and-relics)
+- [SimpleHats Lite](#cosmetic-and-animation-changes)
 - [Skill Perks](#skill-trees-and-character-progression)
 - [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
 - [Sodium](#optional-client-features)
@@ -1556,6 +1549,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Sophisticated Inventory Interactions](#item-transport-and-logistics)
 - [Sophisticated Item Actions](#item-transport-and-logistics)
 - [Spell Engine](#abilities-spells-runes-and-resources)
+- [Spiky Enchantment](#weapons-armor-jewelry-and-relics)
 - [Starcatcher](#starcatcher)
 - [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#building-and-decoration)
@@ -1576,7 +1570,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Universal Bone Meal](#farming-food-and-cooking)
 - [Universal Enchants](#enchanting-and-equipment-improvement)
 - [Vehicle Upgrade](#vehicles-and-travel-equipment)
-- [Vital Relics](#weapons-armor-jewelry-and-relics)
 - [Waystones](#travel-maps-compasses-and-teleportation)
 - [Wild Pets](#companions-pets-villagers-and-settlements)
 - [William Wythers' Overhauled Overworld](#integrated-world-and-dimension-expansions)
@@ -1592,7 +1585,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Combat
 
-- [Vital Relics](#weapons-armor-jewelry-and-relics)
+- [FF Bandage](#potions-and-alchemy)
 - [Better Combat](#combat-controls-and-dodge-rolling)
 - [Combat Roll](#combat-controls-and-dodge-rolling)
 - [Target Dummy](#combat-controls-and-dodge-rolling)
@@ -1616,7 +1609,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Magic
 
-- [Vital Relics](#weapons-armor-jewelry-and-relics)
 - [RPG classes](#rpg-classes)
 - [Spell Engine](#abilities-spells-runes-and-resources)
 - [Runes](#abilities-spells-runes-and-resources)
@@ -1625,14 +1617,15 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Equipment
 
+- [Artifacts](#weapons-armor-jewelry-and-relics)
 - [Arsenal](#weapons-armor-jewelry-and-relics)
 - [Armory](#weapons-armor-jewelry-and-relics)
 - [Charm of Undying: Reborn](#death-revival-graves-and-respawning)
 - [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
 - [Jewelry](#weapons-armor-jewelry-and-relics)
+- [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
 - [Relics](#weapons-armor-jewelry-and-relics)
-- [Vital Relics](#weapons-armor-jewelry-and-relics)
-- [Moonstone](#weapons-armor-jewelry-and-relics)
+- [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
 - [Tool Belt](#weapons-armor-jewelry-and-relics)
 - [Alex's Caves](#alexs-caves)
 - [Stellarity](#stellarity)
@@ -1663,6 +1656,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Structures
 
+- [Artifacts](#weapons-armor-jewelry-and-relics)
 - [Dungeons and Taverns](#structures-and-dungeons)
 - [Moog's structure collection](#structures-and-dungeons)
 - [Towns and Towers](#structures-and-dungeons)
@@ -1675,7 +1669,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Party Creepers](#creatures-and-hostile-mobs)
 - [Shroomcraft](#shroomcraft)
 - [Ender Zoology](#creatures-and-hostile-mobs)
-- [Moonstone](#weapons-armor-jewelry-and-relics)
 
 #### Companions
 
@@ -1687,6 +1680,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Farming
 
+- [Expanded Delight](#farmers-delight)
 - [Farmer's Delight](#farmers-delight)
 - [Kaleidoscope Cookery](#farming-food-and-cooking)
 - [OneKeyMiner](#resource-gathering-and-repetitive-actions)
@@ -1695,6 +1689,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Food
 
+- [Expanded Delight](#farmers-delight)
 - [Farmer's Delight](#farmers-delight)
 - [Kaleidoscope Cookery](#farming-food-and-cooking)
 - [Starcatcher](#starcatcher)

@@ -1,7 +1,7 @@
 # Installer Client and Server Modes Design
 
 Date: 2026-10-10
-Status: Approved in chat; implementation plan under review
+Status: Approved; implementation in progress
 
 ## Purpose
 

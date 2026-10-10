@@ -6,13 +6,15 @@ See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics
 
 ## Installer
 
-Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/releases/latest/download/ModsServerInstaller.exe), close Minecraft, and run it. The default destination is determined per user:
+Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/releases/latest/download/ModsServerInstaller.exe), close Minecraft, and run it.
 
-```text
-%APPDATA%\.minecraft\mods
-```
+With no command-line options, use the arrow keys and Enter to choose Client or Server; Esc goes back. The installer does not ask for a typed confirmation or path.
 
-The installer reads the `mods` and `mod store` folders from this public repository, compares Git hashes, and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
+For Client, select TLauncher (the only currently enabled launcher). The installer automatically targets `%APPDATA%\.minecraft\mods` and installs JARs from both repository folders: `mods` and `mod store`. Legacy Launcher, Prism Launcher, and CurseForge App are shown as future options but are not selectable yet.
+
+For Server, choose `Select file location…` and select the server's existing `mods` directory. The folder name must be `mods` (case-insensitive). Server installs use only the repository's `mods` folder; UI/client JARs from `mod store` are excluded.
+
+For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 
 After a successful install or repair, the installer opens the [player handbook PDF](https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf) in the default browser. It also opens the guide when the installation is already current; `--check`, cancellation, and failed updates do not open it.
 
@@ -26,7 +28,7 @@ ModsServerInstaller.exe --target "D:\Launcher\Instance\mods"
 ModsServerInstaller.exe --yes
 ```
 
-`--check` reports what would change without changing files. The custom target must be a folder named `mods`.
+`--check` reports what would change without changing files and does not create a missing target folder. `--target` installs the client mod set to another folder named `mods`. `--yes` is retained for compatibility and has no effect; no typed confirmation is used.
 
 ## Build the installer
 

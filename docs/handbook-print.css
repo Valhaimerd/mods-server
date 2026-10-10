@@ -69,6 +69,61 @@ table {
   font-size: 9pt;
 }
 
+.quick-reference {
+  font-size: 9.5pt;
+}
+
+.quick-reference h3 {
+  margin: 0.65em 0 0.3em;
+}
+
+.quick-reference ol {
+  margin: 0.35em 0 0.6em;
+}
+
+.quick-reference table {
+  margin: 0.4em 0 0.6em;
+  font-size: 8pt;
+  line-height: 1.25;
+}
+
+.quick-reference th,
+.quick-reference td {
+  padding: 2pt 4pt;
+}
+
+.alphabetical-index,
+.gameplay-tag-index {
+  column-count: 3;
+  column-gap: 8mm;
+  font-size: 8.5pt;
+  line-height: 1.3;
+}
+
+.alphabetical-index ul,
+.gameplay-tag-index ul {
+  margin-top: 0.25em;
+  padding-left: 1.2em;
+}
+
+.alphabetical-index li,
+.gameplay-tag-index li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.gameplay-tag-index h4 {
+  margin: 0.55em 0 0.15em;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.gameplay-tag-index h4 + ul {
+  margin-top: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 thead {
   display: table-header-group;
 }

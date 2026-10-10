@@ -149,6 +149,25 @@ git diff --cached --name-status
 
 Expected result: the handbook counts reflect the current reviewed pack, the alphabetical index is ordered and duplicate-free, Markdown has no whitespace errors, screenshot references point to real files, and unrelated workspace changes remain unstaged.
 
+## PDF build and review
+
+Build the distributable handbook from the repository root:
+
+```powershell
+.\docs\build-handbook.ps1
+```
+
+The script converts `docs/MODLIST.md` to HTML, restores GitHub-style heading anchors for internal links, applies `docs/handbook-print.css`, and prints an A4 PDF with Microsoft Edge or Google Chrome. Its generated working files go under `tmp/pdfs/`, and the finished artifact is `output/pdf/modpack-player-handbook.pdf`. The generated directories remain ignored by Git; commit the Markdown, stylesheet, screenshots, and build script rather than the output copy.
+
+Before distribution, render and inspect every PDF page. Confirm that:
+
+- every screenshot is present, legible, and paired with its caption;
+- tables, headings, and images are not clipped or split incorrectly;
+- Quick Reference remains on one page;
+- the alphabetical and gameplay-tag indexes remain readable;
+- internal links are clickable and resolve to real headings;
+- no blank or nearly blank page was introduced unintentionally.
+
 ## Recovery
 
 - Before committing, use `git diff -- <path>` to isolate and correct an accidental documentation edit.

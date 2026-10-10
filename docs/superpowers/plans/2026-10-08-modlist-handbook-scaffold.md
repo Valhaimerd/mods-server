@@ -12,9 +12,9 @@
 
 **Spec:** `docs/superpowers/specs/2026-10-08-modlist-handbook-scaffold-design.md`
 
-**Current presentation additions:** The print title is `26.2 RPG Series`; the linked contents is followed by the alphabetical mod index and Gameplay-tag index near the front. Verified project icons are stored in `docs/assets/mod-icons/` and rendered beside catalog titles; unresolved collection icons are omitted, and Bifrost's custom illustration remains pending an exact local crop.
+**Current presentation additions:** The print title is `26.2 RPG Series by Valhaimerd`; the linked contents is followed by the alphabetical mod index and Gameplay-tag index near the front. Verified project icons are stored in `docs/assets/mod-icons/` and rendered beside catalog titles; unresolved collection icons are omitted, and Bifrost's supplied custom illustration is included.
 
-**Current keybind-table revision:** The player-facing tables now contain only `Action` and `Recommended key`, with one shared 65/35 column split across all categories. Later additions bring the count to 42: Moonstone is immediately before Starcatcher, Vital Relics follows Puffish Skills, and Tool Belt is last. These updates supersede the original category numbering below.
+**Current keybind-table revision:** The player-facing tables now contain only `Action` and `Recommended key`, with one shared 65/35 column split across all categories. The current count is 41: Moonstone is immediately before Starcatcher, Vital Relics follows Puffish Skills, and Tool Belt is last; the removed Locked In Slots category is not included. These updates supersede the original category numbering below.
 
 ## Global Constraints
 
@@ -264,7 +264,7 @@ git commit -m "docs: organize mods by player topic"
 
 **Interfaces:**
 - Consumes: the Part I `Essential keybinds and conflict resolution` chapter from Task 1.
-- Produces: 42 tables with the exact action order below.
+- Historical implementation produced 42 tables; the current handbook has 41 after Locked In Slots was removed.
 
 - [x] **Step 1: Add the keybind-source notice**
 
@@ -349,12 +349,12 @@ $doc = Get-Content -LiteralPath '.\docs\MODLIST.md' -Raw
   "#### Xaero's World Map",'#### Effortless Building','#### Spell Engine','#### Better Combat','#### Better Party',
   '#### Curios','#### Hovering Hotbar','#### Iourus Races','#### Item Interactions','#### JEI — Cheat Mode',
   '#### JEI — Dev Tools','#### JEI — Edit Mode','#### JEI — Hovering over Config Button','#### JEI — Hovering with Mouse','#### JEI — Overlays',
-  '#### JEI — Recipes','#### JEI — Search Filter','#### Locked In Slots','#### Pet Vault','#### Pro Placer',
+  '#### JEI — Recipes','#### JEI — Search Filter','#### Pet Vault','#### Pro Placer',
   '#### Skill Perks','#### Sophisticated Backpacks','#### Sophisticated Mods','#### Sophisticated Item Actions','#### Tool Belt'
 ) | ForEach-Object { if (-not $doc.Contains($_)) { throw "Missing keybind category: $_" } }
 
 $tableHeaders = (Select-String -Path '.\docs\MODLIST.md' -SimpleMatch '| Action | Recommended key |').Count
-if ($tableHeaders -ne 42) { throw "Expected 42 two-column keybind tables; found $tableHeaders" }
+if ($tableHeaders -ne 41) { throw "Expected 41 two-column keybind tables; found $tableHeaders" }
 $css = Get-Content -LiteralPath '.\docs\handbook-print.css' -Raw
 $tableRule = [regex]::Match($css, '(?s)\.keybind-section table\s*\{([^}]*)\}').Groups[1].Value
 $firstRule = [regex]::Match($css, '(?s)\.keybind-section th:first-child,\s*\.keybind-section td:first-child\s*\{([^}]*)\}').Groups[1].Value
@@ -362,7 +362,7 @@ $lastRule = [regex]::Match($css, '(?s)\.keybind-section th:last-child,\s*\.keybi
 if ($tableRule -notmatch 'table-layout:\s*fixed;' -or $tableRule -notmatch 'width:\s*100%;' -or $firstRule -notmatch 'width:\s*65%;' -or $lastRule -notmatch 'width:\s*35%;') { throw 'Keybind table column widths are not consistent.' }
 ```
 
-Expected: no exception, exactly 42 two-column keybind tables, and a consistent 65/35 width rule.
+Expected: no exception, exactly 41 two-column keybind tables, and a consistent 65/35 width rule.
 
 - [x] **Step 8: Commit the keybind reference**
 

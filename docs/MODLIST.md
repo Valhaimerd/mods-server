@@ -126,7 +126,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Recommended key |
 |---|---|
 | Summon Zombies / Recall | `K` |
-| Skill | `L` |
+| Skill | `J` |
 
 #### Starcatcher keybinds
 

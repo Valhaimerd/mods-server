@@ -160,32 +160,7 @@ Rules:
 - Use the same full table width and column proportions for every keybind category. The print style fixes the columns to 65% for Action and 35% for Recommended key.
 - Check the recommended profile for conflicts before publishing; do not add a conflict-notes column to the player tables.
 
-The current 42-category sequence is: LibTooltips, Moonstone (月之石), Starcatcher keybinds, Movement, Miscellaneous, Multiplayer keybinds, Gameplay, Inventory, Creative Mode, Spectator, Debug, Puffish Skills, Vital Relics, PatPat, Jade, Iris, Coordinates Display, Xaero's World Map, Effortless Building, Spell Engine, Better Combat, Better Party, Curios, Hovering Hotbar, Iourus Races, Item Interactions, JEI — Cheat Mode, JEI — Dev Tools, JEI — Edit Mode, JEI — Hovering over Config Button, JEI — Hovering with Mouse, JEI — Overlays, JEI — Recipes, JEI — Search Filter, Locked In Slots, Pet Vault, Pro Placer, Skill Perks, Sophisticated Backpacks, Sophisticated Mods, Sophisticated Item Actions, and Tool Belt.
-15. Coordinates Display
-16. Xaero's World Map
-17. Effortless Building
-18. Spell Engine
-19. Better Combat
-20. Better Party
-21. Curios
-22. Hovering Hotbar
-23. Iourus Races
-24. Item Interactions
-25. JEI — Cheat Mode
-26. JEI — Dev Tools
-27. JEI — Edit Mode
-28. JEI — Hovering over Config Button
-29. JEI — Hovering with Mouse
-30. JEI — Overlays
-31. JEI — Recipes
-32. JEI — Search Filter
-33. Locked In Slots
-34. Pet Vault
-35. Pro Placer
-36. Skill Perks
-37. Sophisticated Backpacks
-38. Sophisticated Mods
-39. Sophisticated Item Actions
+The current 41-category sequence is: LibTooltips, Moonstone (月之石), Starcatcher keybinds, Movement, Miscellaneous, Multiplayer keybinds, Gameplay, Inventory, Creative Mode, Spectator, Debug, Puffish Skills, Vital Relics, PatPat, Jade, Iris, Coordinates Display, Xaero's World Map, Effortless Building, Spell Engine, Better Combat, Better Party, Curios, Hovering Hotbar, Iourus Races, Item Interactions, JEI — Cheat Mode, JEI — Dev Tools, JEI — Edit Mode, JEI — Hovering over Config Button, JEI — Hovering with Mouse, JEI — Overlays, JEI — Recipes, JEI — Search Filter, Pet Vault, Pro Placer, Skill Perks, Sophisticated Backpacks, Sophisticated Mods, Sophisticated Item Actions, and Tool Belt. Locked In Slots was removed from the current controls reference.
 
 Keep these tables together in Part I. Other handbook chapters may mention a key in prose when it helps explain an interaction, but do not repeat controls in tables elsewhere. Prefer prose or concise lists for ordinary mod guidance; reserve comparison tables for genuinely different workflows.
 
@@ -232,11 +207,11 @@ The approved layout mockup is currently saved at `output/playwright/hud-layout-r
 
 The implementation restructured `docs/MODLIST.md` as the handbook scaffold, then expanded it into the maintained player handbook. It includes the full screenshot-derived keybind tables, approved recommended bindings, topic-by-topic mechanic guidance, a quick reference, verified gameplay screenshots, print styling, and a maintenance runbook. It intentionally does not enumerate every item, creature, block, recipe, structure, enchantment, or loot drop.
 
-The print handbook is titled **26.2 RPG Series**. Its linked Table of Contents is followed by the alphabetical mod index and separately titled Gameplay-tag index in the opening pages, then the Quick Reference and five topic-based parts. Verified project icons are staged in `docs/assets/mod-icons/` and rendered beside catalog titles. Grouped collections may require multiple icons, and no similarly named project artwork should be substituted when a source is uncertain.
+The print handbook is titled **26.2 RPG Series by Valhaimerd**. Its linked Table of Contents is followed by the alphabetical mod index and separately titled Gameplay-tag index in the opening pages, then the Quick Reference and five topic-based parts. Verified project icons are staged in `docs/assets/mod-icons/` and rendered beside catalog titles. Grouped collections may require multiple icons, and no similarly named project artwork should be substituted when a source is uncertain.
 
 Implementation outcome:
 
-1. The complete keybind inventory is shown in 42 ordered category tables with only Action and Recommended key columns; all tables share fixed 65/35 widths.
+1. The complete keybind inventory is shown in 41 ordered category tables with only Action and Recommended key columns; all tables share fixed 65/35 widths.
 2. The recommended profile preserves the confirmed control assignments and leaves unbound actions blank.
 3. Core mechanics were expanded and reviewed against official documentation and installed JAR evidence.
 4. Fifteen verified gameplay screenshots and one HUD layout diagram were embedded with descriptive captions.

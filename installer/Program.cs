@@ -13,7 +13,6 @@ internal static class Program
     private const string Branch = "main";
     private const string HandbookFileName = "modpack-player-handbook.pdf";
     private static string HandbookUrl => $"https://github.com/{Repository}/blob/{Branch}/{HandbookFileName}";
-    private static readonly string[] SourceFolders = ["mods", "mod store"];
 
     public static async Task<int> Main(string[] args)
     {
@@ -34,22 +33,38 @@ internal static class Program
                 return 0;
             }
 
-            var target = Path.GetFullPath(options.Target ?? DefaultModsFolder());
-            if (!Path.GetFileName(target.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar))
-                    .Equals("mods", StringComparison.OrdinalIgnoreCase))
+            var useInteractiveWizard = InstallerBehavior.ShouldUseInteractiveWizard(
+                args.Length, Console.IsInputRedirected, Console.IsOutputRedirected);
+            if (args.Length == 0 && !useInteractiveWizard)
+            {
+                Console.Error.WriteLine("Interactive setup needs a console. Relaunch without redirection or use --help for command-line options.");
+                return 2;
+            }
+
+            InstallRequest? request = useInteractiveWizard
+                ? ChooseInteractiveInstallRequest()
+                : new InstallRequest(InstallMode.Client, options.Target ?? DefaultModsFolder());
+            if (request is null)
+            {
+                Console.WriteLine("Cancelled. No files were changed.");
+                return 0;
+            }
+
+            var target = Path.GetFullPath(request.Target);
+            if (!InstallerBehavior.IsModsFolder(target))
             {
                 throw new ArgumentException("The target folder must be named 'mods'.");
             }
 
-            Console.WriteLine("Minecraft Mod Pack Installer");
+            Console.WriteLine(InteractiveMenu.Header);
+            Console.WriteLine($"Mode: {(request.Mode == InstallMode.Client ? "Client (TLauncher)" : "Server")}");
             Console.WriteLine($"Target: {target}");
             Console.WriteLine("Reading the current pack from GitHub...");
 
             using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(30) };
             http.DefaultRequestHeaders.UserAgent.ParseAdd("ModsServerInstaller/1.0");
 
-            var package = await LoadPackageAsync(http);
-            Directory.CreateDirectory(target);
+            var package = await LoadPackageAsync(http, request.Mode);
             var plan = await BuildPlanAsync(target, package);
 
             PrintPlan(plan);
@@ -66,12 +81,7 @@ internal static class Program
                 return 0;
             }
 
-            if (!options.Yes && !Confirm())
-            {
-                Console.WriteLine("Cancelled. No files were changed.");
-                return 0;
-            }
-
+            Directory.CreateDirectory(target);
             var backup = await ApplyPlanAsync(http, target, plan);
             Console.WriteLine("Install/repair completed successfully.");
             if (backup is not null)
@@ -89,7 +99,7 @@ internal static class Program
         }
         finally
         {
-            if (args.Length == 0 && !Console.IsInputRedirected)
+            if (args.Length == 0 && !Console.IsInputRedirected && !Console.IsOutputRedirected)
             {
                 Console.WriteLine();
                 Console.Write("Press Enter to close...");
@@ -101,11 +111,87 @@ internal static class Program
     private static string DefaultModsFolder() =>
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft", "mods");
 
-    private static async Task<IReadOnlyList<PackageFile>> LoadPackageAsync(HttpClient http)
+    private static InstallRequest? ChooseInteractiveInstallRequest()
+    {
+        while (true)
+        {
+            var mode = InteractiveMenu.Select(
+                "Choose an installation type\n\nClose Minecraft before continuing.",
+                [new MenuOption("Client"), new MenuOption("Server")]);
+            if (mode < 0)
+            {
+                return null;
+            }
+
+            if (mode == 0)
+            {
+                var launcher = InteractiveMenu.Select(
+                    "Client launchers",
+                    [
+                        new MenuOption("TLauncher"),
+                        new MenuOption("Legacy Launcher (Future development)", Enabled: false),
+                        new MenuOption("Prism Launcher (Future development)", Enabled: false),
+                        new MenuOption("CurseForge App (Future development)", Enabled: false),
+                    ]);
+                if (launcher >= 0)
+                {
+                    return new InstallRequest(InstallMode.Client, DefaultModsFolder());
+                }
+
+                continue;
+            }
+
+            var serverTarget = ChooseServerModsFolder();
+            if (serverTarget is not null)
+            {
+                return new InstallRequest(InstallMode.Server, serverTarget);
+            }
+        }
+    }
+
+    private static string? ChooseServerModsFolder()
+    {
+        string? status = null;
+        while (true)
+        {
+            var title = status is null
+                ? "Server installation"
+                : $"Server installation\n\n{status}";
+            var action = InteractiveMenu.Select(title, [new MenuOption("Select file location…")]);
+            if (action < 0)
+            {
+                return null;
+            }
+
+            var selectedPath = InteractiveMenu.PickFolder(
+                "Select the server's existing mods folder.",
+                FolderPickerStartPath());
+            if (selectedPath is null)
+            {
+                continue;
+            }
+
+            if (!InstallerBehavior.IsModsFolder(selectedPath))
+            {
+                status = "Choose an existing folder named 'mods'. Press Enter to retry, or Esc to go back.";
+                continue;
+            }
+
+            return selectedPath;
+        }
+    }
+
+    private static string? FolderPickerStartPath()
+    {
+        var desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+        return Directory.Exists(desktop) ? desktop : null;
+    }
+
+    private static async Task<IReadOnlyList<PackageFile>> LoadPackageAsync(HttpClient http, InstallMode mode)
     {
         var package = new Dictionary<string, PackageFile>(StringComparer.OrdinalIgnoreCase);
 
-        foreach (var folder in SourceFolders)
+        foreach (var folder in InstallerBehavior.SourceFoldersFor(mode))
         {
             var escaped = Uri.EscapeDataString(folder);
             var url = $"https://api.github.com/repos/{Repository}/contents/{escaped}?ref={Branch}";
@@ -131,8 +217,10 @@ internal static class Program
 
     private static async Task<InstallPlan> BuildPlanAsync(string target, IReadOnlyList<PackageFile> package)
     {
-        var local = Directory.EnumerateFiles(target, "*.jar", SearchOption.TopDirectoryOnly)
-            .ToDictionary(path => Path.GetFileName(path)!, StringComparer.OrdinalIgnoreCase);
+        var local = Directory.Exists(target)
+            ? Directory.EnumerateFiles(target, "*.jar", SearchOption.TopDirectoryOnly)
+                .ToDictionary(path => Path.GetFileName(path)!, StringComparer.OrdinalIgnoreCase)
+            : new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         var wanted = package.ToDictionary(x => x.Name, StringComparer.OrdinalIgnoreCase);
         var downloads = new List<PackageFile>();
         var unchanged = 0;
@@ -167,12 +255,6 @@ internal static class Program
         Console.WriteLine($"Missing or changed: {plan.Downloads.Count} ({FormatBytes(bytes)})");
         Console.WriteLine($"Extra mods to move into backup: {plan.Extras.Count}");
         Console.WriteLine();
-    }
-
-    private static bool Confirm()
-    {
-        Console.Write("Close Minecraft, then type YES to continue: ");
-        return string.Equals(Console.ReadLine(), "YES", StringComparison.OrdinalIgnoreCase);
     }
 
     private static async Task<string?> ApplyPlanAsync(HttpClient http, string target, InstallPlan plan)
@@ -417,6 +499,36 @@ internal static class Program
             throw new InvalidOperationException("Self-test failed: interactive wizard launch detection is incorrect.");
         }
 
+        const string customTarget = "D:\\ServerA\\mods";
+        if (!Options.Parse(["--help"]).ShowHelp ||
+            !Options.Parse(["--check"]).CheckOnly ||
+            Options.Parse(["--target", customTarget]).Target != customTarget ||
+            !Options.Parse(["--self-test"]).SelfTest ||
+            Options.Parse(["--yes"]) != Options.Parse(Array.Empty<string>()))
+        {
+            throw new InvalidOperationException("Self-test failed: installer arguments changed or --yes is not a no-op.");
+        }
+
+        var missingTargetRoot = Path.Combine(Path.GetTempPath(), $"installer-check-{Guid.NewGuid():N}");
+        var missingTarget = Path.Combine(missingTargetRoot, "mods");
+        Directory.CreateDirectory(missingTargetRoot);
+        try
+        {
+            var missingTargetPlan = await BuildPlanAsync(
+                missingTarget,
+                [new PackageFile("ExampleMod.jar", "unused-sha", 1, "https://example.invalid/ExampleMod.jar")]);
+            if (missingTargetPlan.Downloads.Count != 1 ||
+                missingTargetPlan.Extras.Count != 0 ||
+                Directory.Exists(missingTarget))
+            {
+                throw new InvalidOperationException("Self-test failed: planning a missing target must stay read-only.");
+            }
+        }
+        finally
+        {
+            Directory.Delete(missingTargetRoot, recursive: true);
+        }
+
         if (HandbookFileName != "modpack-player-handbook.pdf" ||
             HandbookUrl != "https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf")
         {
@@ -452,14 +564,16 @@ internal static class Program
 
     private static void PrintHelp()
     {
-        Console.WriteLine("ModsServerInstaller [--check] [--yes] [--target <mods-folder>]");
+        Console.WriteLine("ModsServerInstaller [--check] [--target <mods-folder>] [--yes]");
         Console.WriteLine();
+        Console.WriteLine("Run without options for the Client/Server keyboard menu.");
         Console.WriteLine("  --check    Show required changes without modifying files.");
-        Console.WriteLine("  --yes      Apply changes without the confirmation prompt.");
-        Console.WriteLine("  --target   Use another launcher instance's mods folder.");
+        Console.WriteLine("  --target   Use another client's mods folder; loads the client mod set.");
+        Console.WriteLine("  --yes      Compatibility-only option; no confirmation prompt is used.");
     }
 
     private sealed record PackageFile(string Name, string Sha, long Size, string DownloadUrl);
+    private sealed record InstallRequest(InstallMode Mode, string Target);
     private sealed record InstallPlan(IReadOnlyList<PackageFile> Downloads, IReadOnlyList<string> Extras, int Unchanged)
     {
         public bool HasChanges => Downloads.Count > 0 || Extras.Count > 0;
@@ -472,13 +586,12 @@ internal static class Program
         [property: JsonPropertyName("size")] long Size,
         [property: JsonPropertyName("download_url")] string? DownloadUrl);
 
-    private sealed record Options(string? Target, bool CheckOnly, bool Yes, bool ShowHelp, bool SelfTest)
+    private sealed record Options(string? Target, bool CheckOnly, bool ShowHelp, bool SelfTest)
     {
         public static Options Parse(string[] args)
         {
             string? target = null;
             var check = false;
-            var yes = false;
             var help = false;
             var selfTest = false;
 
@@ -493,7 +606,6 @@ internal static class Program
                         check = true;
                         break;
                     case "--yes":
-                        yes = true;
                         break;
                     case "--help" or "-h":
                         help = true;
@@ -506,7 +618,7 @@ internal static class Program
                 }
             }
 
-            return new Options(target, check, yes, help, selfTest);
+            return new Options(target, check, help, selfTest);
         }
     }
 }

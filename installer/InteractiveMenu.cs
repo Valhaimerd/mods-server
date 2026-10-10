@@ -13,7 +13,7 @@ internal sealed record MenuKeyResult(int SelectedIndex, MenuAction Action);
 
 internal static class InteractiveMenu
 {
-    private const string Header = "Minecraft Java RPG Series by Valhaimerd";
+    public const string Header = "Minecraft Java RPG Series by Valhaimerd";
 
     public static MenuKeyResult HandleKey(ConsoleKey key, IReadOnlyList<MenuOption> options, int selectedIndex)
     {

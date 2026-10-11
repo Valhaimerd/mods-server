@@ -368,11 +368,18 @@ img {
   page-break-inside: avoid;
 }
 
+.feature-source {
+  color: #555;
+  font-size: 8pt;
+  margin-top: 1mm;
+}
+
 h3.feature-heading {
   display: flex;
   align-items: center;
   gap: 2mm;
   min-height: 10mm;
+  margin-top: 3mm;
   margin-bottom: 1.5mm;
   border-bottom: 0.55pt solid #c5c1b5;
 }

@@ -59,7 +59,7 @@ if (Test-Path -LiteralPath $iconManifest) {
 }
 
 $keybindContentStart = $body.IndexOf('<h3>Essential keybinds and conflict resolution</h3>', [System.StringComparison]::Ordinal)
-$keybindContentEnd = $body.IndexOf('<h3>Choosing a race</h3>', $keybindContentStart, [System.StringComparison]::Ordinal)
+$keybindContentEnd = $body.IndexOf('<h2>Part II ', $keybindContentStart, [System.StringComparison]::Ordinal)
 if ($keybindContentStart -lt 0 -or $keybindContentEnd -lt $keybindContentStart) {
     throw 'Could not locate the keybind section boundaries before formatting catalog icons.'
 }
@@ -132,6 +132,7 @@ $body = [regex]::Replace(
         $level = $match.Groups[1].Value
         $attributes = $match.Groups[2].Value
         $content = $match.Groups[3].Value
+        if ($attributes -match '\bid=') { return $match.Value }
         $baseAnchor = Get-HandbookAnchor $content
         if ($anchorCounts.ContainsKey($baseAnchor)) {
             $anchorCounts[$baseAnchor]++
@@ -140,16 +141,12 @@ $body = [regex]::Replace(
             $anchorCounts[$baseAnchor] = 0
             $anchor = $baseAnchor
         }
-        if ($attributes -match '\bid=') {
-            "<h$level$attributes>$content</h$level>"
-        } else {
-            "<h$level$attributes id=`"$anchor`">$content</h$level>"
-        }
+        "<h$level$attributes id=`"$anchor`">$content</h$level>"
     }
 )
 
 $keybindHeading = '<h3 id="essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</h3>'
-$raceHeading = '<h3 id="choosing-a-race">Choosing a race</h3>'
+$featuresHeadingStart = '<h2 id="part-ii--features-and-mechanics">'
 $partyHeading = '<h3 id="parties-downed-players-and-death">Parties, downed players, and death</h3>'
 
 $contentsHeading = '<h2 id="table-of-contents">Table of Contents</h2>'
@@ -163,12 +160,15 @@ $contentsEnd += '<section class="contents-page">'.Length
 $body = $body.Insert($contentsEnd, '</section>')
 
 $quickHeading = '<h2 id="quick-reference">Quick Reference</h2>'
-$partOneStart = '<div class="page-break" aria-hidden="true"></div><h2 id="part-i--start-here">'
+$partOneStart = '<div class="page-break" aria-hidden="true"></div><h2 id="part-i--keybinds-and-configuration">'
 $body = $body.Replace($quickHeading, "$quickHeading<div class=`"quick-reference`">")
 $body = $body.Replace($partOneStart, "</div>$partOneStart")
 
 $body = $body.Replace($keybindHeading, "<div class=`"keybind-section`">$keybindHeading")
-$body = $body.Replace($raceHeading, "</div>$raceHeading")
+if (-not $body.Contains($pageBreak + $featuresHeadingStart)) {
+    throw 'Could not locate the page break before Features and Mechanics.'
+}
+$body = $body.Replace($pageBreak + $featuresHeadingStart, "</div>$pageBreak$featuresHeadingStart")
 
 $alphabeticalHeading = '<h3 id="alphabetical-mod-index">Alphabetical mod index</h3>'
 $gameplayBreak = '<div class="page-break" aria-hidden="true"></div><h3 id="gameplay-tag-index">Gameplay-tag index</h3>'

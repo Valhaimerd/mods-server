@@ -8,6 +8,8 @@ Current catalog snapshot: 163 entries use verified CurseForge project icons, inc
 
 The project icons remain the property of their respective creators. A project's software license does not necessarily grant reuse rights for its artwork. The manifest links back to each original page for attribution and review; confirm applicable artwork terms before distributing a handbook that reproduces these icons.
 
+The featured systems grid reuses those verified icons. Its extra `curios.png` comes from the [Curios API CurseForge project](https://www.curseforge.com/minecraft/mc-mods/curios) ([image source](https://media.forgecdn.net/avatars/thumbnails/195/772/256/256/636881112930494939.png)); Curios is not an alphabetical catalog entry, so it is not in the catalog manifest.
+
 To refresh the current catalog after changing mod entries, run from the repository root:
 
 ```powershell

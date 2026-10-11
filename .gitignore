@@ -15,8 +15,12 @@ banned-players.json
 *.log
 *.lck
 
-# Local mod repair workspace
-/mod fixing/
+# Local mod repair workspace; keep only the agent handoff notes versioned
+/mod fixing/*
+!/mod fixing/README.md
+!/mod fixing/delight extras (optional)/
+/mod fixing/delight extras (optional)/*
+!/mod fixing/delight extras (optional)/README.md
 /compat/
 
 # Installer build output

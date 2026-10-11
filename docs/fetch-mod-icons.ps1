@@ -36,8 +36,7 @@ $approvedCurseForgeProjects = @{
     'Better Nether' = '1422293'
     'Blood Moon' = '1555594'
     'Dungeons and Taverns' = '853794'
-    'Easy Magic' = '456239'
-    'Enchanting Infuser' = '551151'
+    'Adventurer Skills' = '1397003'
     'Expanded Delight' = '620770'
     "Explorer's Compass" = '491794'
     "Farmer's Delight" = '398521'
@@ -53,6 +52,7 @@ $approvedCurseForgeProjects = @{
     'Awesome Dungeon' = '530465'
     'Awesome Dungeon End Edition' = '537531'
     'Awesome Dungeon Ocean Edition' = '556490'
+    'Stronger Skill Tree' = '1262113'
     'DnT Mineshaft Overhaul' = '1494838'
     'Ly-Fangs Enchantment' = '1388436'
     'Thunder Strike Enchantment' = '1388424'
@@ -73,6 +73,7 @@ $approvedCurseForgeProjects = @{
     'Relics' = '1204049'
     'Shroomcraft' = '1371092'
     'Scalar RPG Utils' = '1392170'
+    'Penchant' = '1602528'
     'Skill Tree (RPG Series)' = '1311513'
     'The Graveyard' = '1568170'
     "Tom's Simple Storage" = '378609'
@@ -141,15 +142,16 @@ $approvedTitleExceptions = @{
     'Runes' = 'enchantingrunes'
     'Xaero''s Map Multiplayer' = 'xaerosmapsmultiplayer'
 }
-$groupedEntries = @(
-    'Animal Garden collection',
-    'Awesome Dungeon collection',
-    'Dungeons and Taverns overhauls',
-    'Enchantments collection',
-    'Macaw''s building collection',
-    'Moog''s structure collection',
-    'RPG classes'
-)
+$groupRepresentatives = @{
+    'Animal Garden collection' = 'Animal Garden: Capybara'
+    'Awesome Dungeon collection' = 'Awesome Dungeon'
+    'Dungeons and Taverns overhauls' = 'DnT Ancient City Overhaul'
+    'Enchantments collection' = 'Ice Enchantments'
+    'Macaw''s building collection' = 'Macaw''s Bridges'
+    'Moog''s structure collection' = 'Moog''s Bountiful Structures'
+    'RPG classes' = 'Archers'
+}
+$groupedEntries = @($groupRepresentatives.Keys)
 
 function Normalize-ProjectTitle([string]$value) {
     return [regex]::Replace($value.ToLowerInvariant(), '[^a-z0-9]', '')
@@ -181,6 +183,29 @@ foreach ($name in $names) {
     }
 
     if ($name -in $groupedEntries) {
+        $representativeName = $groupRepresentatives[$name]
+        $sourceRow = $null
+        foreach ($sourceName in @($name, $representativeName)) {
+            if (-not $previousRows.ContainsKey($sourceName)) { continue }
+            $candidate = $previousRows[$sourceName]
+            $candidateFile = Join-Path $AssetDirectory $candidate.LocalFile
+            if ($candidate.Platform -eq 'CurseForge' -and $candidate.Status -eq 'Downloaded' -and
+                $candidate.ProjectURL -match '^https://www\.curseforge\.com/minecraft/mc-mods/' -and
+                $candidate.IconURL -match '^https://media\.forgecdn\.net/' -and
+                (Test-Path -LiteralPath $candidateFile -PathType Leaf)) {
+                $sourceRow = $candidate
+                break
+            }
+        }
+        if (-not $sourceRow) {
+            throw "No verified representative icon is available for $name ($representativeName). Restore its current group mapping or representative row before refreshing."
+        }
+        $row.ProjectTitle = $sourceRow.ProjectTitle
+        $row.Platform = $sourceRow.Platform
+        $row.ProjectURL = $sourceRow.ProjectURL
+        $row.IconURL = $sourceRow.IconURL
+        $row.LocalFile = $sourceRow.LocalFile
+        $row.Status = 'Downloaded'
         $manifestRows.Add([pscustomobject]$row)
         continue
     }

@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-10<br>
+Last verified: 2026-10-11<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2
 
 ## Purpose
@@ -18,7 +18,7 @@ Use this checklist whenever the pack adds, removes, renames, or substantially re
 
 Add a canonical handbook entry when a mod exposes meaningful content or behavior during ordinary play: mechanics, progression, creatures, structures, equipment, interfaces, travel, building, storage, or other visible utilities.
 
-Do not add libraries, APIs, loaders, compatibility bridges, performance internals, or server-only plumbing to the gameplay catalog. A support mod may still appear in the complete keybind tables if it exposes a control that players can see. Keep broad mods integrated rather than duplicating them across every feature category. When a group contains separately installed, player-facing modules, retain the image-free group overview and add a distinct titled entry for each installed member with its own verified icon.
+Do not add libraries, APIs, loaders, compatibility bridges, performance internals, or server-only plumbing to the gameplay catalog. A support mod may still appear in the complete keybind tables if it exposes a control that players can see. Keep broad mods integrated rather than duplicating them across every feature category. When several separately installed modules form a clear family, use one compact group entry, one representative icon from a verified member, and a concise member list. Remove separate member descriptions and index rows for those grouped modules; keep standalone mechanics with enough player impact to warrant their own detailed entry.
 
 Keep the full category-ordered keybind tables together at the beginning of Part I, before race, class, skills, abilities, and first-session onboarding. The print builder preserves this order and keeps the complete keybind block together; do not split or duplicate its tables. Other chapters may mention a shortcut when it helps explain a mechanic, but should describe it in prose rather than repeat it in a table. Keep comparison tables only when they clarify genuinely different workflows; use compact lists or short paragraphs for ordinary mod descriptions.
 
@@ -33,6 +33,7 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
    ```
 
 2. Inspect every added, removed, or renamed JAR. Read its embedded metadata and official page before deciding whether it is player-facing. Do not infer a feature from the filename alone. When a pack-local build targets a version not yet listed on the public project page, use the JAR metadata for the installed pack version and do not imply upstream release status beyond what the page confirms.
+   - For Pufferfish's Skills add-ons, verify required dependencies such as Pufferfish's Attributes against the installed JARs before describing their effects as available. For Penchant, describe its core behavior separately from optional datapack modules selected per world; do not guess which modules a world enables.
 3. Classify player-facing additions as a focused entry, integrated expansion, utility, interface feature, or optional client feature. Select the section that best explains the mod's main player use; use gameplay tags for secondary roles.
 4. Update all affected handbook locations:
 
@@ -46,17 +47,17 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
 6. Update screenshots through [the screenshot queue](assets/screenshots/README.md). Use real captures from the current pack, follow the privacy and readability standards, replace the matching `handbook-figure` marker only after the PNG exists, and update its queue status.
 7. Update the handbook's `Last audited` date and distribution counts. Treat the baselines below as values that must change deliberately when the pack changes, not as permanent constants.
 8. Run the verification checks, review the documentation diff, and stage documentation files explicitly. Do not stage unrelated mod-folder changes.
-9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/` with `fetch-mod-icons.ps1`. Use CurseForge artwork only for this pack, verify every project match, and do not substitute a similar result. Keep the seven grouped overview entries image-free, but register each installed member mod as its own player-facing entry with the corresponding project icon. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
+9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/` with `fetch-mod-icons.ps1`. Use CurseForge artwork only for this pack, verify every project match, and do not substitute a similar result. The seven compact groups use the representative member mappings in `fetch-mod-icons.ps1`; preserve the member's official project title, page URL, icon URL, and image filename on the group row. Do not add separate index rows for grouped members. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
 
 ## Verification
 
 Current verified baseline:
 
-- 285 main-pack JARs;
+- 288 main-pack JARs;
 - 4 optional client-store JARs;
-- 217 alphabetical gameplay entries;
-- 209 verified CurseForge project icons for individual mods plus user-provided Bifrost artwork; seven group overviews remain image-free;
-- 39 keybind tables;
+- 164 alphabetical gameplay entries;
+- 163 entries with verified CurseForge project icons, including seven group entries with representative member artwork, plus user-provided Bifrost artwork;
+- 38 keybind tables;
 - 5 handbook parts;
 - zero broken internal links.
 

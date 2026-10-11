@@ -21,19 +21,22 @@ foreach ($entry in $downloaded) {
     }
 }
 
-$groupedEntries = @(
-    'Animal Garden collection',
-    'Awesome Dungeon collection',
-    'Dungeons and Taverns overhauls',
-    'Enchantments collection',
-    'Macaw''s building collection',
-    'Moog''s structure collection',
-    'RPG classes'
-)
+$groupRepresentatives = @{
+    'Animal Garden collection' = 'animal-garden-capybara.gif'
+    'Awesome Dungeon collection' = 'awesome-dungeon.png'
+    'Dungeons and Taverns overhauls' = 'dnt-ancient-city-overhaul.png'
+    'Enchantments collection' = 'ice-enchantments.png'
+    'Macaw''s building collection' = 'macaw-s-bridges.jpg'
+    'Moog''s structure collection' = 'moog-s-bountiful-structures.png'
+    'RPG classes' = 'archers.png'
+}
+$groupedEntries = @($groupRepresentatives.Keys)
 foreach ($name in $groupedEntries) {
     $row = $rows | Where-Object HandbookEntry -eq $name | Select-Object -First 1
     if (-not $row) { throw "Missing expected grouped entry: $name" }
-    if ($row.LocalFile -or $row.IconURL) { throw "Grouped entry should remain icon-free: $name" }
+    if ($row.LocalFile -ne $groupRepresentatives[$name] -or $row.Status -ne 'Downloaded') {
+        throw "Grouped entry should use its approved representative member icon: $name"
+    }
 }
 $missingMemberIcons = @($rows | Where-Object {
     $_.HandbookEntry -notin $groupedEntries -and $_.HandbookEntry -ne 'Bifrost Teleport' -and $_.Status -ne 'Downloaded'
@@ -56,4 +59,4 @@ if ($rows.HandbookEntry -contains 'Locked In Slots' -or $rows.HandbookEntry -con
     throw 'Removed mods must not appear in the icon manifest.'
 }
 
-"PASS: $($downloaded.Count) downloaded icons are CurseForge-sourced; grouped entries stay icon-free and Bifrost uses supplied artwork."
+"PASS: $($downloaded.Count) downloaded icons are CurseForge-sourced; grouped entries use approved representative artwork and Bifrost uses supplied artwork."

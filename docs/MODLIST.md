@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A practical player guide to the RPG systems, exploration, survival loops, and tools that reshape this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 285 synchronized JARs · 4 optional client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 288 synchronized JARs · 4 optional client extras</p>
 
-Last audited: 2026-10-10<br>
+Last audited: 2026-10-11<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 285 synchronized JARs plus 4 optional client-store JARs
+Current distribution: 288 synchronized JARs plus 4 optional client-store JARs
 
 ## About this handbook
 
@@ -39,42 +39,42 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
     <tr class="toc-subsection"><td><a href="#choosing-a-class">Choosing a class</a></td><td>12</td></tr>
     <tr class="toc-subsection"><td><a href="#skills-abilities-spells-and-runes">Skills, abilities, spells, and runes</a></td><td>13</td></tr>
     <tr class="toc-subsection"><td><a href="#first-session-checklist">First-session checklist</a></td><td>15</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-downed-players-and-death">Parties, downed players, and death</a></td><td>16</td></tr>
-    <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>21</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>21</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>27</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>41</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>44</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>46</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>53</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-downed-players-and-death">Parties, downed players, and death</a></td><td>15</td></tr>
+    <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>23</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>24</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>25</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>35</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>44</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>45</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>47</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>51</td></tr>
   </tbody>
 </table>
 
@@ -89,13 +89,13 @@ Use this page to get a new character playable quickly. The complete explanations
 1. Apply the recommended controls, resolving highlighted conflicts from the top of the Controls screen downward.
 2. Press `P`, read the racial traits, and choose a race.
 3. Obtain a weapon and class book for the archetype you want to try; equip both together.
-4. Press `T` to inspect class and weapon trees, then `G` to inspect the separate general perk tree.
+4. Press `T` to inspect the class and weapon trees and their added skill categories.
 5. In multiplayer, press `B` to join or create a party before traveling.
 6. Press `M` for the world map and `N` for the coordinate HUD; place the Paper Doll above the coordinates at the upper-left.
 
 ### Your first controls
 
-The recommended profile keeps the first-session actions close at hand: `P` opens races, `T` opens class and weapon trees, `G` opens general perks, and `B` opens the party menu. Navigation uses `M` for the world map and `N` for the coordinate HUD. The full recommended profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
+The recommended profile keeps first-session actions close at hand: `P` opens races, `T` opens the skill tree, and `B` opens the party menu. Navigation uses `M` for the world map and `N` for the coordinate HUD. The full recommended profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
 
 For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; `Ctrl + G` opens Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
 
@@ -113,7 +113,7 @@ Configure controls from the top of Minecraft's Controls screen to the bottom. Th
 
 The tables follow the Minecraft Controls screen category by category. A blank **Recommended key** means **leave the action unbound** unless you personally need it.
 
-The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, and `G` for progression and equipment.
+The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, and `T` for skill progression.
 
 #### LibTooltips
 
@@ -453,12 +453,6 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 |---|---|
 | Toggle Fast Block Placement |  |
 
-#### Skill Perks
-
-| Action | Recommended key |
-|---|---|
-| Open Perk Tree | `G` |
-
 #### Sophisticated Backpacks
 
 | Action | Recommended key |
@@ -542,21 +536,17 @@ Changing weapons or books is how to try another archetype; choosing a race does 
 
 ### Skills, abilities, spells, and runes
 
-Class abilities, weapon specialization, and general perks belong to separate systems, each with its own controls and progression.
+Class abilities, weapon specialization, and skill categories belong to separate systems, each with its own progression.
 
-The RPG class and weapon tree (`T`) uses skill points earned through XP to unlock specializations that modify class books, weapon skills, and passive combat effects. Skill Perks (`G`) is a separate, XP-based progression path for broader survival, mobility, utility, and combat benefits. Their points and reset methods are separate; spending or resetting one does not change the other.
+The RPG class and weapon tree (`T`) uses skill points earned through XP to unlock specializations that modify class books, weapon skills, and passive combat effects. Pufferfish's Skills also hosts the installed Adventurer Skills and Stronger Skill Tree categories. Adventurer Skills adds a rebalanced progression tree; Stronger Skill Tree adds Combat, Mining, and Chopping Wood categories.
 
 A compatible class book or weapon supplies class abilities through the Spell Engine hotbar. Its displayed slot keys depend on the equipped loadout; hold `Left Ctrl` with a number key to select the corresponding ordinary hotbar item instead.
 
-The RPG tree is content supplied through Pufferfish's Skills; Pufferfish's Skills itself is the framework behind the `T` screen. The tree contains meaningful branches rather than one mandatory route, and a dedicated reset item can refund its points if a build needs to be changed later.
+Pufferfish's Skills is the framework behind the skill-tree screen. The RPG tree contains meaningful branches rather than one mandatory route, and the installed Stronger Skill Tree project lists Pufferfish's Attributes as a required dependency. That dependency is not present in this pack's `mods/` folder, so its attribute effects should not be assumed to work.
 
 ![Full RPG skill tree with colored branches for different class and weapon paths](assets/screenshots/03-rpg-tree.png)
 
 *Press `T` to inspect the large class and weapon tree before spending its skill points.*
-
-![Skill Perks tree with the Redoubt perk tooltip explaining its shield-triggered armor bonus](assets/screenshots/04-skill-perks.png)
-
-*Press `G` for the separate general perk tree; hovering a node explains its effect, trigger, and cooldown.*
 
 Class spells consume runes, much like bows consume arrows. Runes can be crafted normally, while the Rune Crafting Altar produces them more efficiently. Treat a displayed class ability as a short action loop: confirm that its icon is available, select the intended slot, meet any target or resource requirement, then wait for its cooldown before trying again. Some abilities require the compatible weapon to remain in hand. If a spell refuses to cast, check the equipped book and weapon, selected ability, cooldown, and rune cost before assuming a keybind is broken.
 
@@ -568,11 +558,11 @@ See [Skill trees and character progression](#skill-trees-and-character-progressi
 
 Complete these steps before the first long expedition:
 
-- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `P` for races, `T` for the RPG tree, `G` for Skill Perks, `E` for rolling, `B` for parties, and `O` for Alex's Caves.
+- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `P` for races, `T` for the RPG tree, `E` for rolling, `B` for parties, and `O` for Alex's Caves.
 - Open the race menu with `P`, read every trait, and choose the character's persistent race.
 - Pick an initial archetype from the role guide above, then obtain its appropriate weapon and class book.
 - Equip the class book in the Curios spell-book slot and hold a compatible weapon; confirm that the Spell Engine hotbar appears and check any rune cost.
-- Open `T` and inspect the class and weapon branches before spending points. Read each node's prerequisites and what it modifies; some nodes affect a weapon skill or spell you must already have equipped. Open `G` separately and remember that its perks spend XP.
+- Open `T` and inspect the available skill categories before spending points. Read each node's prerequisites and what it modifies; some RPG nodes affect a weapon skill or spell you must already have equipped.
 - Practice a full basic attack sequence and one directional roll in a safe area.
 - In multiplayer, create or join a party with `B`, review friendly fire and XP sharing, and set the party HUD to the recommended right-side vertical layout.
 - Learn the downed and grave screens before carrying valuable equipment far from the base.
@@ -610,7 +600,7 @@ See [Death, revival, graves, and respawning](#death-revival-graves-and-respawnin
 
 - [Iourus Races](https://modrinth.com/mod/iourus-races)
 - [Archers](https://modrinth.com/mod/archers), [Paladins & Priests](https://modrinth.com/mod/paladins-and-priests), [Rogues & Warriors](https://modrinth.com/mod/rogues-and-warriors), and [Wizards](https://modrinth.com/mod/wizards)
-- [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree), [Pufferfish's Skills](https://modrinth.com/mod/skills), and [Skill Perks](https://www.curseforge.com/minecraft/mc-mods/skill-perks)
+- [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree), [Pufferfish's Skills](https://modrinth.com/mod/skills), [Adventurer Skills](https://www.curseforge.com/minecraft/mc-mods/adventurer-skills-pufferfishs-skills), and [Stronger Skill Tree](https://www.curseforge.com/minecraft/mc-mods/stronger-skill-tree-for-pufferfishs-skills)
 - [Spell Engine](https://modrinth.com/mod/spell-engine), [Runes](https://modrinth.com/mod/runes), [Better Combat](https://modrinth.com/mod/better-combat), and [Combat Roll](https://modrinth.com/mod/combat-roll)
 - [Better Party](https://modrinth.com/mod/better-party), [PlayerRevive](https://modrinth.com/mod/playerrevive), [Better Revive](https://www.curseforge.com/minecraft/mc-mods/better-revive), [Better Revive × PlayerRevive](https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive), and [Better Respawn](https://modrinth.com/mod/better-respawn)
 
@@ -618,7 +608,7 @@ See [Death, revival, graves, and respawning](#death-revival-graves-and-respawnin
 
 ## Part II — Character and Core Systems
 
-This part explains how a character is assembled and how its combat systems interact. Race is the persistent foundation; class identity comes from equipment; the RPG trees and general perks add separate progression choices. Treat the weapon, class book, ability bar, armor, and accessories as one loadout, then test the whole combination before investing more experience.
+This part explains how a character is assembled and how its combat systems interact. Race is the persistent foundation; class identity comes from equipment; skill categories add progression choices. Treat the weapon, class book, ability bar, armor, and accessories as one loadout, then test the whole combination before investing more experience.
 
 ### Races and racial traits
 
@@ -636,29 +626,23 @@ Race selection defines persistent character traits and belongs at the beginning 
 - **Core idea:** Four installed RPG Series modules provide Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through weapons, class books, spells, and matching equipment.
 - **Onboarding:** There is no permanent class-selection screen. Follow [Choosing a class](#choosing-a-class) to assemble and test a loadout.
 
-- **Archers** — Adds the Archer class module and its bow-focused equipment and progression options.
-- **Paladins & Priests** — Adds the Paladin and Priest class module with defensive, melee, healing, and support progression options.
-- **Rogues & Warriors** — Adds Rogue and Warrior class options with agile and martial combat progression.
-- **Wizards** — Adds the Wizard class module and its spell-focused equipment and progression options.
+**Installed modules:** Archers; Paladins & Priests; Rogues & Warriors; Wizards.
 
 ### Skill trees and character progression
 
 - **Skill Tree (RPG Series)** — Supplies class and weapon trees that modify spells, add passive combat effects, and turn gathered XP into skill points.
 - **Pufferfish's Skills** — Provides the configurable progression framework and the `T` skill-tree screen used by the RPG trees.
-- **Skill Perks** — Spends XP on a separate set of general survival, mobility, utility, and combat perks opened with `G`.
+- **Adventurer Skills** — Adds a rebalanced Pufferfish skill tree with Offensive, Defensive, Utility, and Versatile categories.
+- **Stronger Skill Tree** — Adds Combat, Mining, and Chopping Wood categories.
 
-The `T` and `G` screens are separate systems. Inspect both before spending points so class specialization and general utility choices remain deliberate.
-
-Use the RPG tree to specialize a chosen class or weapon; use Skill Perks to invest in broader utility that survives a change in combat style. XP gathered during ordinary play feeds both systems, but their points and resets are separate. A point in one screen does not unlock a node in the other.
-
-Their reset methods are also separate. Use an **Orb of Oblivion** to reset and refund points spent in the RPG class tree. The Skill Perks screen has its own **Respec** action; the server can disable it and controls whether spent XP levels are refunded, so read its confirmation result before rebuilding the general perk tree.
+Use `T` to inspect the available categories before spending points. The RPG tree specializes class books and weapons; Adventurer Skills and Stronger Skill Tree add separate category content to the same framework.
 
 ### Abilities, spells, runes, and resources
 
 - **Spell Engine** — Connects equipped class books and compatible weapons to the visible ability hotbar, casting rules, targeting, costs, and cooldowns.
 - **Runes** — Adds craftable ammunition consumed by class spells.
 
-The installed class modules are separate entries in the RPG Series. **Archers** develops bow-centered combat; **Paladins & Priests** covers defense, healing, and support; **Rogues & Warriors** covers agile and martial combat; and **Wizards** focuses on spellcasting. The available class book, weapon, and skill-tree content determines the exact options in each loadout.
+The installed RPG Series modules supply distinct class books, weapons, and progression options. The available class book, weapon, and skill-tree content determines the exact options in each loadout.
 
 Equip a class book in its Curios slot, hold a compatible weapon, and use the keys displayed on the ability hotbar. Hold `Left Ctrl` with a number key when the normal item hotbar must take priority. If casting fails, read the hotbar message and check the target, cooldown, equipped loadout, and rune cost. Runes can be crafted normally or produced more efficiently with a Rune Crafting Altar.
 
@@ -708,17 +692,7 @@ Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipme
 - **Arrow+** — Adds craftable arrow tiers with different damage levels using familiar materials.
 - **Fletching Recipe** — Gives the fletching table a crafting interface for efficient ordinary-arrow production and explosive arrows.
 - **Shield Upgrades** — Adds durable specialized shields whose attributes or defensive effects support different situations.
-- **Enchantments collection** — A group overview for the installed enchantment modules below; each adds a distinct enchantment family.
-- **Ice Enchantments** — Adds Frost Aspect for swords and Frost for bows, applying freezing damage and slowing targets; their fire-enchantment counterparts are incompatible.
-- **Air Jump Enchantment** — Adds a boot enchantment that grants an extra jump while falling.
-- **Attack Speed Enchantment** — Adds an enchantment that shortens the weapon's attack cooldown, increasing attack speed.
-- **Double Hit Enchantment** — Adds an enchantment that can trigger an additional hit.
-- **Downfall Enchantment** — Adds a boot enchantment that creates a shockwave when the wearer hits the ground.
-- **Life Steal Enchantment** — Adds a weapon enchantment that steals health from the target; higher levels restore more health.
-- **Ly-Fangs Enchantment** — Adds a combat enchantment; check its tooltip for the exact activation and equipment rules.
-- **Spiky Enchantment** — Adds a shield enchantment that damages attackers who are blocked; higher levels increase the damage.
-- **Thunder Strike Enchantment** — Adds a mace enchantment that summons lightning when a charged attack lands.
-- **True Shot Enchantment** — Adds a bow enchantment that makes arrows ignore gravity.
+- **Enchantments collection** — Adds focused enchantment families: Air Jump Enchantment, Attack Speed Enchantment, Double Hit Enchantment, Downfall Enchantment, Ice Enchantments, Life Steal Enchantment, Ly-Fangs Enchantment, Max Protection, Spiky Enchantment, Thunder Strike Enchantment, Toughness Enchantment, and True Shot Enchantment. Their effects include an extra falling jump, faster attacks, additional hits, landing shockwaves, freezing, life steal, combat effects, compatible protection combinations, armor toughness, shield retaliation, lightning strikes, and arrows that ignore gravity. Read each tooltip for its exact trigger, level, and equipment rules.
 
 #### Ranged and defensive equipment
 
@@ -736,18 +710,19 @@ Armor Quick Swap has no required hotkey: right-click an armor piece in the inven
 
 ### Enchanting and equipment improvement
 
-The pack keeps the vanilla enchanting route but also provides a deterministic alternative. Both still depend on experience and the enchanting setup, so choose the workflow that matches the job instead of assuming one station replaces every other station.
+Penchant changes enchantment progression: many enchantments can gain levels through use instead of relying only on a new random table offer. The exact progression can vary with the optional modules selected for a world, so read the enchantment and station tooltips in the current world.
 
-For a quick random offer, use the **Enchanting Table with Easy Magic**: items and lapis stay put, and offers can be rerolled for a small lapis and XP cost. To choose a specific enchantment, use the **Enchanting Infuser**; its stronger options still depend on bookshelves and XP. The **Advanced Enchanting Infuser** can rework finished gear, repair it with XP, or remove enchantments and recover XP. **Easy Anvils** keeps items in place and reduces prior-work penalties. **Universal Enchants** widens equipment compatibility, subject to server configuration.
+Penchant's built-in datapack modules are selected per world in its Data Packs screen. They can alter table behavior, bookshelf placement, durability, drops and loot, anvil book combining, and librarian trades. This repository has no world selection, so it cannot confirm which modules are enabled. **Easy Anvils** keeps items in place and reduces prior-work penalties. **Universal Enchants** widens equipment compatibility, subject to server configuration.
 
-Use Enchantment Insights tooltips and the station interface to confirm what an unfamiliar enchantment does and whether the current item accepts it. Universal Enchants broadens the rules, but it does not mean every enchantment belongs on every item or that every normally exclusive combination is enabled on this server.
+**Max Protection** allows the different Protection enchantments to coexist on one armor piece without changing vanilla levels. **Toughness Enchantment** adds a three-level armor-toughness enchantment. Use Enchantment Insights and in-game tooltips to confirm what an unfamiliar enchantment does and whether the current item accepts it; server configuration still determines which combinations are available.
 
 #### Included improvement systems
 
-- **Enchanting Infuser** — Provides basic and advanced stations for choosing, modifying, repairing, or removing enchantments without relying entirely on random offers.
+- **Penchant** — Adds use-based enchantment leveling and optional modules selected for each world.
 - **Easy Anvils** — Keeps items in anvils and makes combining, repairing, and renaming equipment less punitive.
-- **Easy Magic** — Keeps items in enchanting tables and adds a low-cost way to reroll random offers.
 - **Universal Enchants** — Broadens which equipment can accept existing enchantments and improves selected vanilla enchantment behavior.
+- **Max Protection** — Allows the different Protection enchantments to coexist on one armor piece.
+- **Toughness Enchantment** — Adds an armor-toughness enchantment with three levels.
 - **DarkSmithing** — Adds custom ways to craft smithing templates.
 - **Elytra Trims** — Allows elytra to receive armor trims, dyes, banner patterns, and other visual treatments.
 - **Naturally Trimmed** — Applies trims to some equipment generated through mobs, loot, and trades, making found gear visually distinct.
@@ -761,7 +736,8 @@ DarkSmithing makes smithing templates craftable through custom recipes; use JEI 
 - [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts), [Nameless Trinkets](https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets), and [Scalar RPG Utils](https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils)
 - [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt) and [Dedicated Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot)
 - [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
-- [Enchanting Infuser](https://modrinth.com/mod/enchanting-infuser), [Easy Magic](https://modrinth.com/mod/easy-magic), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [Penchant Reforged](https://www.curseforge.com/minecraft/mc-mods/penchant-reforged), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [Max Protection](https://www.curseforge.com/minecraft/mc-mods/max-protection) and [Toughness Enchantment](https://modrinth.com/datapack/toughness-enchantment)
 - [DarkSmithing](https://modrinth.com/mod/darksmithing), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
 - [Elytra Trims](https://modrinth.com/mod/elytra-trims), [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed), [Armor Trim Item Fix](https://modrinth.com/mod/armor-trim-item-fix), and [Fletching Recipe](https://modrinth.com/mod/fletching-recipe)
 
@@ -916,22 +892,9 @@ The Overworld changes are not one biome pack. Biomes O' Plenty adds its own plan
 - **Integrated-expansion structures** — Several world expansions add structures as part of a larger ecosystem. See [Alex's Caves](#alexs-caves), [Better Nether](#better-nether), [Stellarity](#stellarity), and [The Graveyard](#the-graveyard).
 
 - **Dungeons and Taverns** — Adds taverns, ruins, camps, and dungeons throughout the world.
-- **Dungeons and Taverns overhauls** — A group overview for the four standalone DnT structure overhauls listed below.
-- **DnT Ancient City Overhaul** — Reworks ancient-city exploration as a standalone Dungeons and Taverns series module.
-- **DnT Mineshaft Overhaul** — Reworks mineshaft generation with a distinct exploration layout.
-- **DnT Pillager Outpost Overhaul** — Reworks pillager outposts as larger exploration and combat destinations.
-- **DnT Stronghold Overhaul** — Reworks stronghold generation and exploration.
-- **Awesome Dungeon collection** — A group overview for the Overworld, End, and Ocean dungeon modules listed below.
-- **Awesome Dungeon** — Adds dungeon structures and combat exploration to the Overworld.
-- **Awesome Dungeon End Edition** — Adds dungeon structures to End exploration.
-- **Awesome Dungeon Ocean Edition** — Adds dungeon, temple, and ruin structures to ocean exploration.
-- **Moog's structure collection** — A group overview for the six world-structure modules listed below.
-- **Moog's Bountiful Structures** — Adds varied structures and exploration sites to the world.
-- **Moog's End Structures** — Adds new structures to End exploration.
-- **Moog's Nether Structures** — Adds structures and landmarks to the Nether.
-- **Moog's Ocean Structures** — Adds structures to ocean exploration.
-- **Moog's Temples Reimagined** — Adds redesigned temple structures to explore.
-- **Moog's Voyager Structures** — Adds structures intended to create new exploration destinations.
+- **Dungeons and Taverns overhauls** — A collection of standalone structure updates: DnT Ancient City Overhaul, DnT Mineshaft Overhaul, DnT Pillager Outpost Overhaul, and DnT Stronghold Overhaul.
+- **Awesome Dungeon collection** — Adds dungeon structures across the Overworld, End, and Ocean through Awesome Dungeon, Awesome Dungeon End Edition, and Awesome Dungeon Ocean Edition.
+- **Moog's structure collection** — Adds exploration sites across dimensions through Moog's Bountiful Structures, Moog's End Structures, Moog's Nether Structures, Moog's Ocean Structures, Moog's Temples Reimagined, and Moog's Voyager Structures.
 - **Towns and Towers** — Expands villages, pillager outposts, and ships while keeping a vanilla-like style.
 - **Explorify** — Adds lightweight exploration structures designed to blend with vanilla generation.
 - **ATi Structures: Vanilla Edition** — Adds a collection of custom structures and dungeons built with vanilla materials.
@@ -969,21 +932,7 @@ Use this same loop for unfamiliar structures without requiring a room-by-room sp
 - **Player guidance:** Treat its creatures, cultivation, food, and building materials as one ecosystem. Use observed behavior, Jade identification, and JEI recipes instead of assuming every mushroom creature is either hostile or decorative.
 
 - **Alex's Mobs** — Adds a large roster of real and fantasy creatures with distinct behaviors and rewards.
-- **Animal Garden collection** — A group overview for the individual wildlife modules listed below; each module adds its named animal.
-- **Animal Garden: Bull Shark** — Adds bull sharks, an aggressive aquatic creature; take care when exploring its habitat.
-- **Animal Garden: Capybara** — Adds greater capybaras to the world.
-- **Animal Garden: Fennec Fox** — Adds fennec foxes to the world.
-- **Animal Garden: Harp Seal** — Adds harp seals to the world.
-- **Animal Garden: Hippopotamus** — Adds hippopotamuses to the world.
-- **Animal Garden: Lion** — Adds lions to the world.
-- **Animal Garden: Narwhal** — Adds narwhals to aquatic environments.
-- **Animal Garden: Owl** — Adds owls to the world.
-- **Animal Garden: Prairie Dog** — Adds prairie dogs to the world.
-- **Animal Garden: Red Panda** — Adds red pandas to the world.
-- **Animal Garden: Red River Hog** — Adds red river hogs to the world.
-- **Animal Garden: Spotted Hyena** — Adds spotted hyenas to the world.
-- **Animal Garden: Springhare** — Adds springhares to the world.
-- **Animal Garden: Yellow Mongoose** — Adds yellow mongooses to the world.
+- **Animal Garden collection** — Adds the Animal Garden: Bull Shark, Animal Garden: Capybara, Animal Garden: Fennec Fox, Animal Garden: Harp Seal, Animal Garden: Hippopotamus, Animal Garden: Lion, Animal Garden: Narwhal, Animal Garden: Owl, Animal Garden: Prairie Dog, Animal Garden: Red Panda, Animal Garden: Red River Hog, Animal Garden: Spotted Hyena, Animal Garden: Springhare, and Animal Garden: Yellow Mongoose wildlife modules.
 - **Ender Zoology** — Adds hostile mobs designed to feel like extensions of the vanilla roster.
 - **Lullaby's Mobs** — Adds additional custom hostile creatures.
 - **Mutants and Zombies** — Adds stronger mutant zombie enemies.
@@ -1124,18 +1073,7 @@ Keep a note of successful Alchemia ingredient paths for effects you use often. I
 - **Core idea:** Adds coordinated bridges, doors, fences, furniture, decorations, lights, paintings, paths, roofs, stairs, trapdoors, and windows.
 - **Player guidance:** Treat the collection as coordinated block families. Search by the source mod in JEI or filter by the material being used instead of browsing every decorative variant individually.
 
-- **Macaw's Bridges** — Adds bridge designs and variants for crossing rivers, ravines, and other gaps.
-- **Macaw's Doors** — Adds additional door designs and wood variants.
-- **Macaw's Fences and Walls** — Adds coordinated fence and wall variants for building.
-- **Macaw's Furniture** — Adds craftable furniture and interior details.
-- **Macaw's Holidays** — Adds seasonal and holiday-themed decorative blocks.
-- **Macaw's Lights and Lamps** — Adds decorative lighting options.
-- **Macaw's Paintings** — Adds paintings in additional sizes and designs.
-- **Macaw's Paths and Pavings** — Adds path and paving block variants.
-- **Macaw's Roofs** — Adds roof shapes and material variants.
-- **Macaw's Stairs** — Adds additional stair designs and variants.
-- **Macaw's Trapdoors** — Adds trapdoor designs in additional wood variants.
-- **Macaw's Windows** — Adds window designs and building details.
+- **Installed modules:** Macaw's Bridges, Macaw's Doors, Macaw's Fences and Walls, Macaw's Furniture, Macaw's Holidays, Macaw's Lights and Lamps, Macaw's Paintings, Macaw's Paths and Pavings, Macaw's Roofs, Macaw's Stairs, Macaw's Trapdoors, and Macaw's Windows.
 
 - **Display Delight** — Adds decorative ways to display food and related items.
 - **Functional Sculptures** — Adds a collection of craftable statues, monuments, and memorials for decorative builds.
@@ -1249,6 +1187,10 @@ Use the interface in layers: a tooltip answers an immediate question, JEI helps 
 - **Floating Damage Indicators** — Displays configurable, color-coded damage numbers for dealt and received damage.
 - **Controlling** — Adds keybind search, conflict filtering, and a view of currently available keys to the Controls screen.
 
+#### Sources for interface and client features
+
+[Jade](https://modrinth.com/mod/jade), [AppleSkin](https://modrinth.com/mod/appleskin), [Effect Insights](https://modrinth.com/mod/effect-insights), [Enchantment Insights](https://modrinth.com/mod/enchantment-insights), [Food Effect Tooltips](https://modrinth.com/mod/foodeffecttooltips), [Floating Damage Indicators](https://modrinth.com/mod/floating-damage-indicators), and [Controlling](https://modrinth.com/mod/controlling); [Just Enough Items](https://modrinth.com/mod/jei), [JEI Trades](https://modrinth.com/mod/jei-trades), [Just Enough Filters](https://modrinth.com/mod/just-enough-filters), [Advanced Loot Info](https://modrinth.com/mod/advanced-loot-info), and [Advanced Worldgen Info](https://modrinth.com/mod/advanced-worldgen-info); [Coordinates Display](https://modrinth.com/mod/coordinates-display), [Paper Doll](https://modrinth.com/mod/paper-doll), [Hovering Hotbar](https://modrinth.com/mod/hovering-hotbar), and [Overflowing Bars](https://modrinth.com/mod/overflowing-bars); [SimpleHats Lite](https://www.curseforge.com/minecraft/mc-mods/simplehats-lite), [Distinct Potions](https://modrinth.com/mod/distinct-potions), [Quick Skin](https://modrinth.com/mod/quick-skin), and [PatPat](https://modrinth.com/plugin/patpat); [Charm of Undying: Reborn](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-reborn), [Harder Natural Healing](https://modrinth.com/mod/harder-natural-healing), [Iris](https://modrinth.com/mod/iris), and [Sodium](https://modrinth.com/mod/sodium).
+
 #### Reading the information layers
 
 To identify a block or creature, aim at it and read **Jade**; the default overlay toggle is `Numpad 1`, while the Mods screen opens its configuration if your keyboard lacks a numpad. For an item recipe or use, hover it and press `R` or `U` in **JEI**. **Effect Insights** and **Enchantment Insights** explain status effects and enchantments in their tooltips; hold `Left Shift` when LibTooltips indicates more text. Before eating, read **AppleSkin** for hunger and saturation and **Food Effect Tooltips** for status effects. **Floating Damage Indicators** shows damage over the target, with colors and prefixes for configured damage types.
@@ -1328,15 +1270,13 @@ Hovering Hotbar uses `Up Arrow` and `Down Arrow` in the recommended profile for 
 
 ### Cosmetic and animation changes
 
-- **SimpleHats Lite** — Adds wearable hats and cosmetic variations. Use the Curios head slot to equip them; grab bags, crafting, dyeing, and variants are cosmetic systems rather than a combat progression path.
+- **SimpleHats Lite** — Wear hats in functional or cosmetic Curios Head, Face, or Hat slots; the pack's fix allows layered vanity looks. Grab bags and dyes add variants.
 - **Distinct Potions** — Gives potion categories clearer names, colors, and bottle appearances so they are easier to distinguish.
 - **Quick Skin** — Adds in-game skin, model, and cape management without returning to the launcher.
 - **PatPat** — Adds a friendly player-to-player and player-to-creature pat interaction.
 - **Kingdom Cats Replacer** — Replaces vanilla cat visuals with seven animated models while preserving vanilla cat behavior.
 
-These features mainly change presentation. Kingdom Cats Replacer does not create a second cat progression system, while Distinct Potions changes recognition rather than potion effects. Quick Skin controls appearance; whether other players see a selected skin or cape depends on the server connection and their compatible setup.
-
-To pat a supported player or creature, hold the configured Sneak key and right-click. With the recommended profile that means hold `C` and use the normal right mouse button; the interaction is contextual and does not replace ordinary use actions on every target.
+Hold `C` and right-click a supported player or creature to pat it; the contextual interaction leaves ordinary use actions intact.
 
 ### Optional client features
 
@@ -1344,18 +1284,8 @@ To pat a supported player or creature, hold the configured Sneak key and right-c
 - **Iris** — Enables shader-pack support.
 - **Sodium** — Replaces the renderer to improve frame rate and reduce rendering stutter.
 
-These client-only options affect your interface or rendering, not shared server rules.
+These client-only options affect the interface and rendering. Sodium improves rendering; manage Iris shader packs in Video Settings, use `Alt + R` to reload them, and disable shaders first when troubleshooting.
 
-Sodium enables supported renderer optimizations by default; use advanced settings only for troubleshooting. Iris manages optional shader packs in Video Settings; `Alt + R` reloads them in this profile. If performance or visual artifacts worsen, disable shaders and retest before changing other graphics settings.
-
-#### Sources for interface and client features
-
-- [Jade](https://modrinth.com/mod/jade), [AppleSkin](https://modrinth.com/mod/appleskin), [Effect Insights](https://modrinth.com/mod/effect-insights), [Enchantment Insights](https://modrinth.com/mod/enchantment-insights), [Food Effect Tooltips](https://modrinth.com/mod/foodeffecttooltips), [Floating Damage Indicators](https://modrinth.com/mod/floating-damage-indicators), and [Controlling](https://modrinth.com/mod/controlling)
-- [Just Enough Items](https://modrinth.com/mod/jei), [JEI Trades](https://modrinth.com/mod/jei-trades), [Just Enough Filters](https://modrinth.com/mod/just-enough-filters), [Advanced Loot Info](https://modrinth.com/mod/advanced-loot-info), and [Advanced Worldgen Info](https://modrinth.com/mod/advanced-worldgen-info)
-- [Coordinates Display](https://modrinth.com/mod/coordinates-display), [Paper Doll](https://modrinth.com/mod/paper-doll), [Hovering Hotbar](https://modrinth.com/mod/hovering-hotbar), and [Overflowing Bars](https://modrinth.com/mod/overflowing-bars)
-- [SimpleHats Lite](https://www.curseforge.com/minecraft/mc-mods/simplehats-lite), [Distinct Potions](https://modrinth.com/mod/distinct-potions), [Quick Skin](https://modrinth.com/mod/quick-skin), and [PatPat](https://modrinth.com/plugin/patpat)
-- [Charm of Undying: Reborn](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-reborn) and [Harder Natural Healing](https://www.curseforge.com/minecraft/mc-mods/harder-natural-healing)
-- [Iris](https://modrinth.com/mod/iris) and [Sodium](https://modrinth.com/mod/sodium)
 
 <div class="page-break" aria-hidden="true"></div>
 
@@ -1364,30 +1294,15 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Abyssal Ocean](#integrated-world-and-dimension-expansions)
 - [Advanced Loot Info](#recipe-and-loot-information)
 - [Advanced Worldgen Info](#recipe-and-loot-information)
-- [Air Jump Enchantment](#weapons-armor-jewelry-and-relics)
+- [Adventurer Skills](#skill-trees-and-character-progression)
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
 - [Alex's Mobs](#creatures-and-hostile-mobs)
 - [Animal Garden collection](#creatures-and-hostile-mobs)
-- [Animal Garden: Bull Shark](#creatures-and-hostile-mobs)
-- [Animal Garden: Capybara](#creatures-and-hostile-mobs)
-- [Animal Garden: Fennec Fox](#creatures-and-hostile-mobs)
-- [Animal Garden: Harp Seal](#creatures-and-hostile-mobs)
-- [Animal Garden: Hippopotamus](#creatures-and-hostile-mobs)
-- [Animal Garden: Lion](#creatures-and-hostile-mobs)
-- [Animal Garden: Narwhal](#creatures-and-hostile-mobs)
-- [Animal Garden: Owl](#creatures-and-hostile-mobs)
-- [Animal Garden: Prairie Dog](#creatures-and-hostile-mobs)
-- [Animal Garden: Red Panda](#creatures-and-hostile-mobs)
-- [Animal Garden: Red River Hog](#creatures-and-hostile-mobs)
-- [Animal Garden: Spotted Hyena](#creatures-and-hostile-mobs)
-- [Animal Garden: Springhare](#creatures-and-hostile-mobs)
-- [Animal Garden: Yellow Mongoose](#creatures-and-hostile-mobs)
 - [Animal Pen](#companions-pets-villagers-and-settlements)
 - [Antique Trading Ship](#structures-and-dungeons)
 - [AppleSkin](#information-overlays-and-tooltips)
 - [Arcane Lanterns](#building-and-decoration)
-- [Archers](#rpg-classes)
 - [Armor Quick Swap](#weapons-armor-jewelry-and-relics)
 - [Armor Statues](#building-and-decoration)
 - [Armor Trim Item Fix](#enchanting-and-equipment-improvement)
@@ -1397,11 +1312,7 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Arsenal](#weapons-armor-jewelry-and-relics)
 - [Artifacts](#weapons-armor-jewelry-and-relics)
 - [ATi Structures: Vanilla Edition](#structures-and-dungeons)
-- [Attack Speed Enchantment](#weapons-armor-jewelry-and-relics)
-- [Awesome Dungeon](#structures-and-dungeons)
 - [Awesome Dungeon collection](#structures-and-dungeons)
-- [Awesome Dungeon End Edition](#structures-and-dungeons)
-- [Awesome Dungeon Ocean Edition](#structures-and-dungeons)
 - [Barricades](#building-and-decoration)
 - [Better Combat](#combat-controls-and-dodge-rolling)
 - [Better Nether](#better-nether)
@@ -1425,22 +1336,14 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
 - [Display Delight](#building-and-decoration)
 - [Distinct Potions](#cosmetic-and-animation-changes)
-- [DnT Ancient City Overhaul](#structures-and-dungeons)
-- [DnT Mineshaft Overhaul](#structures-and-dungeons)
-- [DnT Pillager Outpost Overhaul](#structures-and-dungeons)
-- [DnT Stronghold Overhaul](#structures-and-dungeons)
-- [Double Hit Enchantment](#weapons-armor-jewelry-and-relics)
-- [Downfall Enchantment](#weapons-armor-jewelry-and-relics)
 - [Dungeons and Taverns](#structures-and-dungeons)
 - [Dungeons and Taverns overhauls](#structures-and-dungeons)
 - [Dungeons Dimensions: Nether](#integrated-world-and-dimension-expansions)
 - [Easy Anvils](#enchanting-and-equipment-improvement)
-- [Easy Magic](#enchanting-and-equipment-improvement)
 - [Easy Shulker Boxes](#storage-and-inventory-management)
 - [Effect Insights](#information-overlays-and-tooltips)
 - [Effortless Building](#building-and-decoration)
 - [Elytra Trims](#enchanting-and-equipment-improvement)
-- [Enchanting Infuser](#enchanting-and-equipment-improvement)
 - [Enchantment Insights](#information-overlays-and-tooltips)
 - [Enchantments collection](#weapons-armor-jewelry-and-relics)
 - [Ender Zoology](#creatures-and-hostile-mobs)
@@ -1463,7 +1366,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Hopo Better Underwater Ruins](#structures-and-dungeons)
 - [Hopper Gadgetry](#item-transport-and-logistics)
 - [Hovering Hotbar](#hud-changes-and-customization)
-- [Ice Enchantments](#weapons-armor-jewelry-and-relics)
 - [Illager Invasion](#invasions-and-wave-events)
 - [Improved Village Placement](#structures-and-dungeons)
 - [Invasion](#invasions-and-wave-events)
@@ -1478,32 +1380,12 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Just Enough Items](#recipe-and-loot-information)
 - [Kaleidoscope Cookery](#farming-food-and-cooking)
 - [Kingdom Cats Replacer](#cosmetic-and-animation-changes)
-- [Life Steal Enchantment](#weapons-armor-jewelry-and-relics)
 - [Linked Chests](#storage-and-inventory-management)
 - [Lullaby's Mobs](#creatures-and-hostile-mobs)
-- [Ly-Fangs Enchantment](#weapons-armor-jewelry-and-relics)
-- [Macaw's Bridges](#macaws-building-collection)
 - [Macaw's building collection](#macaws-building-collection)
-- [Macaw's Doors](#macaws-building-collection)
-- [Macaw's Fences and Walls](#macaws-building-collection)
-- [Macaw's Furniture](#macaws-building-collection)
-- [Macaw's Holidays](#macaws-building-collection)
-- [Macaw's Lights and Lamps](#macaws-building-collection)
-- [Macaw's Paintings](#macaws-building-collection)
-- [Macaw's Paths and Pavings](#macaws-building-collection)
-- [Macaw's Roofs](#macaws-building-collection)
-- [Macaw's Stairs](#macaws-building-collection)
-- [Macaw's Trapdoors](#macaws-building-collection)
-- [Macaw's Windows](#macaws-building-collection)
 - [Market Board](#trading-and-multiplayer-economy)
 - [Moblets](#creatures-and-hostile-mobs)
-- [Moog's Bountiful Structures](#structures-and-dungeons)
-- [Moog's End Structures](#structures-and-dungeons)
-- [Moog's Nether Structures](#structures-and-dungeons)
-- [Moog's Ocean Structures](#structures-and-dungeons)
 - [Moog's structure collection](#structures-and-dungeons)
-- [Moog's Temples Reimagined](#structures-and-dungeons)
-- [Moog's Voyager Structures](#structures-and-dungeons)
 - [Mounts and Monsters](#creatures-and-hostile-mobs)
 - [Much More Dungeons](#structures-and-dungeons)
 - [Mutants and Zombies](#creatures-and-hostile-mobs)
@@ -1516,10 +1398,10 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Ocean Lily Pad Village](#structures-and-dungeons)
 - [OneKeyMiner](#resource-gathering-and-repetitive-actions)
 - [Overflowing Bars](#hud-changes-and-customization)
-- [Paladins & Priests](#rpg-classes)
 - [Paper Doll](#hud-changes-and-customization)
 - [Party Creepers](#creatures-and-hostile-mobs)
 - [PatPat](#cosmetic-and-animation-changes)
+- [Penchant](#enchanting-and-equipment-improvement)
 - [Pet Status](#companions-pets-villagers-and-settlements)
 - [Pet Vault](#companions-pets-villagers-and-settlements)
 - [PlayerRevive](#death-revival-graves-and-respawning)
@@ -1531,7 +1413,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Quick Skin](#cosmetic-and-animation-changes)
 - [Relics](#weapons-armor-jewelry-and-relics)
 - [Ribbits](#creatures-and-hostile-mobs)
-- [Rogues & Warriors](#rpg-classes)
 - [RPG classes](#rpg-classes)
 - [Runes](#abilities-spells-runes-and-resources)
 - [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
@@ -1541,7 +1422,6 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Show My Recipes](#recipe-and-loot-information)
 - [Shroomcraft](#shroomcraft)
 - [SimpleHats Lite](#cosmetic-and-animation-changes)
-- [Skill Perks](#skill-trees-and-character-progression)
 - [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
 - [Sodium](#optional-client-features)
 - [Somnora](#dangerous-nights-and-environmental-threats)
@@ -1549,22 +1429,20 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Sophisticated Inventory Interactions](#item-transport-and-logistics)
 - [Sophisticated Item Actions](#item-transport-and-logistics)
 - [Spell Engine](#abilities-spells-runes-and-resources)
-- [Spiky Enchantment](#weapons-armor-jewelry-and-relics)
 - [Starcatcher](#starcatcher)
 - [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#building-and-decoration)
 - [Stoneworks](#building-and-decoration)
+- [Stronger Skill Tree](#skill-trees-and-character-progression)
 - [Target Dummy](#combat-controls-and-dodge-rolling)
 - [Terralith](#integrated-world-and-dimension-expansions)
 - [The Darkness Will Find You](#dangerous-nights-and-environmental-threats)
 - [The Graveyard](#the-graveyard)
-- [Thunder Strike Enchantment](#weapons-armor-jewelry-and-relics)
 - [Tom's Simple Storage](#storage-and-inventory-management)
 - [Too Many Bows](#weapons-armor-jewelry-and-relics)
 - [Tool Belt](#weapons-armor-jewelry-and-relics)
 - [Towers of Chambers](#structures-and-dungeons)
 - [Towns and Towers](#structures-and-dungeons)
-- [True Shot Enchantment](#weapons-armor-jewelry-and-relics)
 - [Ultimate Warden](#bosses-and-major-encounters)
 - [Underground Villages](#structures-and-dungeons)
 - [Universal Bone Meal](#farming-food-and-cooking)
@@ -1574,11 +1452,9 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Wild Pets](#companions-pets-villagers-and-settlements)
 - [William Wythers' Overhauled Overworld](#integrated-world-and-dimension-expansions)
 - [Withered Lands](#withered-lands)
-- [Wizards](#rpg-classes)
 - [World Bosses](#bosses-and-major-encounters)
 - [Xaero's Map Multiplayer](#travel-maps-compasses-and-teleportation)
 - [Xaero's World Map](#travel-maps-compasses-and-teleportation)
-
 <div class="page-break" aria-hidden="true"></div>
 
 ### Gameplay-tag index
@@ -1595,17 +1471,19 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 
 #### Character
 
+- [Adventurer Skills](#skill-trees-and-character-progression)
 - [Iourus Races](#races-and-racial-traits)
+- [Pufferfish's Skills](#skill-trees-and-character-progression)
 - [RPG classes](#rpg-classes)
 - [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Pufferfish's Skills](#skill-trees-and-character-progression)
-- [Skill Perks](#skill-trees-and-character-progression)
+- [Stronger Skill Tree](#skill-trees-and-character-progression)
 
 #### Skills
 
-- [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
+- [Adventurer Skills](#skill-trees-and-character-progression)
 - [Pufferfish's Skills](#skill-trees-and-character-progression)
-- [Skill Perks](#skill-trees-and-character-progression)
+- [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
+- [Stronger Skill Tree](#skill-trees-and-character-progression)
 
 #### Magic
 
@@ -1622,7 +1500,9 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 - [Armory](#weapons-armor-jewelry-and-relics)
 - [Charm of Undying: Reborn](#death-revival-graves-and-respawning)
 - [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
+- [Enchantments collection](#weapons-armor-jewelry-and-relics)
 - [Jewelry](#weapons-armor-jewelry-and-relics)
+- [Penchant](#enchanting-and-equipment-improvement)
 - [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
 - [Relics](#weapons-armor-jewelry-and-relics)
 - [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
@@ -1657,7 +1537,9 @@ Sodium enables supported renderer optimizations by default; use advanced setting
 #### Structures
 
 - [Artifacts](#weapons-armor-jewelry-and-relics)
+- [Awesome Dungeon collection](#structures-and-dungeons)
 - [Dungeons and Taverns](#structures-and-dungeons)
+- [Dungeons and Taverns overhauls](#structures-and-dungeons)
 - [Moog's structure collection](#structures-and-dungeons)
 - [Towns and Towers](#structures-and-dungeons)
 - [The Graveyard](#the-graveyard)

@@ -14,7 +14,6 @@ Capture set reviewed: 2026-10-09. These images were made in a disposable experim
 | `02-class-specialization-tree.png` | Choosing a class; explains specialization paths | Captured |
 | `02-spell-hotbar.png` | Choosing a class | Captured |
 | `03-rpg-tree.png` | Skills, abilities, spells, and runes | Captured |
-| `04-skill-perks.png` | Skills, abilities, spells, and runes | Captured |
 | `05-better-party-button.png` | Parties, downed players, and death | Captured |
 | `05-better-party-menu.png` | Parties, downed players, and death | Captured |
 | `06-jei-recipe-and-uses.png` | JEI everyday workflow | Captured |

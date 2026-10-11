@@ -2,7 +2,7 @@
 
 # 26.2 RPG Series by Valhaimerd
 
-<p class="cover-deck">A practical player guide to the RPG systems, exploration, survival loops, and tools that reshape this pack.</p>
+<p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 289 synchronized JARs · 4 optional client extras</p>
 
@@ -12,17 +12,15 @@ Current distribution: 289 synchronized JARs plus 4 optional client-store JARs
 
 ## About this handbook
 
-This handbook is written for players who understand vanilla Minecraft but are new to this modpack. It prioritizes changed mechanics, controls, configuration, and relationships between systems rather than exhaustive lists of items, creatures, blocks, recipes, structures, or loot.
+This guide starts with controls and the systems that most change a playthrough. Featured Mechanics gives the full walkthrough for major mods; Parts III–VI provide a quicker reference to the rest of the pack, grouped by what players do with them. Each entry names its core mechanic, offers a practical cue, and links to the mod's project page when one is public.
 
-Libraries, APIs, compatibility bridges, and invisible server internals are omitted from the gameplay catalog. A support mod may still appear in the keybind reference when it exposes controls to players.
+The alphabetical index finds a mod by name, while the gameplay-tag index groups mods by shared activities. Use those indexes to jump into a category, then follow the official page link when you need the complete item or configuration reference. Libraries, APIs, and invisible server internals stay outside the gameplay catalogue.
 
 ## How entries are organized
 
-Each mod has one primary entry. Secondary topics link back to that entry instead of repeating it. Broad mods use an Integrated expansion type when they combine multiple substantial systems.
+Each part opens with the role its systems play in a new world. Distinct category bars and inset icon entries make the relationships visible without repeating a full walkthrough for every mod. A short category paragraph closes each group; significant mechanics remain fully explained in Part II.
 
 **Entry types:** Core system; Integrated expansion; Focused content; Utility; Interface feature; Optional client feature.
-
-**Integrated-expansion subtypes:** Integrated world expansion; Integrated dimension expansion; Integrated adventure expansion; Integrated character-progression suite; Integrated survival or profession expansion; Integrated building expansion.
 
 **Cross-reference tags:** Combat; Character; Skills; Magic; Equipment; Bosses; Events; World Generation; Structures; Creatures; Companions; Farming; Food; Building; Storage; Travel; Multiplayer; Controls; HUD.
 
@@ -39,42 +37,42 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
     <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>21</td></tr>
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>21</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>21</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>21</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>23</td></tr>
     <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>23</td></tr>
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>24</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>29</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>39</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>44</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>46</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>49</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>31</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>41</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>45</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>56</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>62</td></tr>
   </tbody>
 </table>
 
@@ -980,7 +978,9 @@ Boards of the same type share market data across the world. Listing limits, curr
 
 ## Part III — Character and Core Systems
 
-This part is a compact reference to the character and combat mods. The featured systems in Part II contain the step-by-step guides.
+A character develops through several connected choices. Iourus Races supplies a lasting identity, while RPG Series class books and weapons define a role that can change with the loadout. Skill trees, spells, runes, and combat controls then refine how that role feels in play. Read equipment as a complete build: an armor set, a Curios accessory, or a weapon effect may matter more than one displayed armor or damage value.
+
+Progress continues through enchantment use, exploration rewards, and specialized gear. Survival systems also shape the build: a party can rescue a downed player, graves protect recovery, and food or healing changes determine how long a fight remains sustainable. The entries below are quick references; Part II gives the full walkthrough for the featured systems.
 
 <section class="core-category">
 <h3>Races and racial traits</h3>
@@ -995,6 +995,8 @@ This part is a compact reference to the character and combat mods. The featured 
 - **Player guidance:** Compare the seven race descriptions before confirming a lasting choice.
 
 A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/iourus-races">Official mod page</a></p>
 
 </div>
 
@@ -1016,6 +1018,8 @@ A race changes the traits you carry through the whole playthrough. It does not l
 
 Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main playstyles. Changing their equipment changes the active role without replacing the character.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/archers">Official mod page</a></p>
+
 </div>
 
 </div>
@@ -1036,6 +1040,8 @@ Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main 
 
 The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1047,6 +1053,8 @@ The RPG trees specialize the weapon and class book currently supporting the buil
 - **Player guidance:** Use T to view the installed skill trees.
 
 This mod supplies the common skill screen and progression framework. The other skill modules contribute the actual categories and nodes.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/puffish-skills">Official mod page</a></p>
 
 </div>
 
@@ -1060,6 +1068,8 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Its broad choices can support many class loadouts. Read each node for conditions and prerequisites before buying it.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/adventurer-skills-pufferfishs-skills">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1071,6 +1081,8 @@ Its broad choices can support many class loadouts. Read each node for conditions
 - **Player guidance:** Review Combat, Mining, and Chopping Wood branches.
 
 This tree adds practical growth for fighting and gathering. Its bonuses sit alongside the RPG and Adventurer tracks.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stronger-skill-tree-for-pufferfishs-skills">Official mod page</a></p>
 
 </div>
 
@@ -1092,6 +1104,8 @@ This tree adds practical growth for fighting and gathering. Its bonuses sit alon
 
 The equipped class book and weapon determine which abilities appear. A failed cast usually has a target, cooldown, or resource requirement.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/spell-engine">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1103,6 +1117,8 @@ The equipped class book and weapon determine which abilities appear. A failed ca
 - **Player guidance:** Carry the rune type required by the equipped spells.
 
 Runes are ammunition for applicable class abilities. Craft them before a long expedition so the spell bar stays useful.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/runes">Official mod page</a></p>
 
 </div>
 
@@ -1124,6 +1140,8 @@ Runes are ammunition for applicable class abilities. Craft them before a long ex
 
 Attack sequences and dual wielding change the rhythm of a fight. Judge a weapon across a full combo rather than a single hit.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-combat">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1135,6 +1153,8 @@ Attack sequences and dual wielding change the rhythm of a fight. Judge a weapon 
 - **Player guidance:** Press E to dodge away from a telegraphed hit.
 
 Roll timing gives melee builds room to reposition. Attributes and enchantments can change how the roll performs.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/combat-roll">Official mod page</a></p>
 
 </div>
 
@@ -1148,6 +1168,8 @@ Roll timing gives melee builds room to reposition. Attributes and enchantments c
 
 A repeatable target makes weapon and spell comparisons easier. Include cooldowns, passive effects, and full combos in the comparison.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/target-dummy">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1156,9 +1178,11 @@ A repeatable target makes weapon and spell comparisons easier. Include cooldowns
 
 - **Type:** Combat
 - **Core mechanic:** Shows damage values during combat so loadouts are easier to compare.
-- **Player guidance:** Watch repeated hits rather than only the largest number.
+- **Player guidance:** Compare several hits under the same conditions.
 
-The floating values make damage changes visible during a fight. They are most useful when testing the same target under the same conditions.
+Color-coded values show damage during combat. One large number may hide slower attack timing or passive triggers.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/floating-damage-indicators">Official mod page</a></p>
 
 </div>
 
@@ -1181,6 +1205,8 @@ The floating values make damage changes visible during a fight. They are most us
 
 The ribbon switches between functional slots and purple vanity slots. Cosmetic items change appearance without granting their normal gameplay effects.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/curios">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1189,9 +1215,11 @@ The ribbon switches between functional slots and purple vanity slots. Cosmetic i
 
 - **Type:** Equipment
 - **Core mechanic:** Adds hats that can occupy functional or vanity Head, Face, and Hat slots.
-- **Player guidance:** Place a hat in a functional or vanity Head, Face, or Hat slot.
+- **Player guidance:** Use functional or purple vanity Head, Face, and Hat slots.
 
-Vanity placement lets several hats shape the character’s look. Keep functional headgear in an ordinary slot when its effect matters.
+Vanity placement supports layered looks without replacing useful headgear. A functional slot still follows the hat's own gameplay effects.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/simplehats-lite">Official mod page</a></p>
 
 </div>
 
@@ -1205,6 +1233,8 @@ Vanity placement lets several hats shape the character’s look. Keep functional
 
 These rare weapons carry built-in passive spells. Compare their effect and combat rhythm with the current class loadout.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/arsenal-rpg-series">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1216,6 +1246,8 @@ These rare weapons carry built-in passive spells. Compare their effect and comba
 - **Player guidance:** Inspect class set bonuses before replacing an armor piece.
 
 A full set can be stronger for a role than a mix of higher armor values. Upgrade materials come from later exploration and combat.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armory-rpg-series">Official mod page</a></p>
 
 </div>
 
@@ -1229,6 +1261,8 @@ A full set can be stronger for a role than a mix of higher armor values. Upgrade
 
 Gem and material tiers affect the available bonuses. Use jewelry to strengthen the attributes the chosen class actually uses.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/jewelry">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1240,6 +1274,8 @@ Gem and material tiers affect the available bonuses. Use jewelry to strengthen t
 - **Player guidance:** Read each active or passive effect before equipping it.
 
 A relic can alter how a build plays rather than simply raising a stat. Valuable relics are often exploration rewards.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/relics-rpg">Official mod page</a></p>
 
 </div>
 
@@ -1253,6 +1289,8 @@ A relic can alter how a build plays rather than simply raising a stat. Valuable 
 
 Artifacts can supply powerful passive effects in accessory slots. Check each item’s slot and effect before planning around it.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/artifacts">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1264,6 +1302,8 @@ Artifacts can supply powerful passive effects in accessory slots. Check each ite
 - **Player guidance:** Compare the slot and ability shown on each trinket.
 
 The collection mixes crafted and discovered accessories. Choose one for its effect, not only its rarity.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets">Official mod page</a></p>
 
 </div>
 
@@ -1277,6 +1317,8 @@ The collection mixes crafted and discovered accessories. Choose one for its effe
 
 Its gloves, necklaces, and rings create another equipment progression path. Compare their attributes with existing jewelry.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1288,6 +1330,8 @@ Its gloves, necklaces, and rings create another equipment progression path. Comp
 - **Player guidance:** Wear the belt and use its radial selector for stored tools.
 
 Pouch upgrades expand its capacity. Keep the most frequently swapped tools together for travel and building.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/tool-belt">Official mod page</a></p>
 
 </div>
 
@@ -1301,6 +1345,8 @@ Pouch upgrades expand its capacity. Keep the most frequently swapped tools toget
 
 The separate slot preserves chest armor while travelling. Check the Elytra’s own durability before a long flight.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1312,6 +1358,8 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 - **Player guidance:** Compare draw speed, damage, and special behavior.
 
 The bows are distinct ranged options rather than cosmetic variants. Test them with the ammunition used by the current build.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/too-many-bows">Official mod page</a></p>
 
 </div>
 
@@ -1325,6 +1373,8 @@ The bows are distinct ranged options rather than cosmetic variants. Test them wi
 
 Different arrow materials change ranged damage. Use JEI to check the installed recipes and requirements.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/arrow">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1336,6 +1386,8 @@ Different arrow materials change ranged damage. Use JEI to check the installed r
 - **Player guidance:** Use the fletching table for its added arrow recipes.
 
 The table now has a practical role in ammunition preparation. Check JEI for ordinary and explosive options.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/fletching-recipe">Official mod page</a></p>
 
 </div>
 
@@ -1349,6 +1401,8 @@ The table now has a practical role in ammunition preparation. Check JEI for ordi
 
 Specialized shields offer different defensive strengths. A new shield may be a sidegrade rather than a direct upgrade.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/shield-upgrades">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1360,6 +1414,8 @@ Specialized shields offer different defensive strengths. A new shield may be a s
 - **Player guidance:** Use the inventory or armor stand to change gear quickly.
 
 Keep separate combat, travel, and utility sets when useful. The swap replaces the manual movement of several armor pieces.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armor-quick-swap">Official mod page</a></p>
 
 </div>
 
@@ -1381,6 +1437,8 @@ Keep separate combat, travel, and utility sets when useful. The swap replaces th
 
 Eligible enchantments grow as their item is used. Its optional world modules also alter table, durability, loot, and anvil behavior as detailed in Part II.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/penchant-reforged">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1392,6 +1450,8 @@ Eligible enchantments grow as their item is used. Its optional world modules als
 - **Player guidance:** Use anvils for repair, combining, and renaming.
 
 The anvil workflow is more forgiving than vanilla. Penchant’s world settings can still affect enchanted books.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/easy-anvils">Official mod page</a></p>
 
 </div>
 
@@ -1405,6 +1465,8 @@ The anvil workflow is more forgiving than vanilla. Penchant’s world settings c
 
 This mod broadens where existing enchantments may be applied. Server settings determine the final combinations.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/universal-enchants">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1416,6 +1478,8 @@ This mod broadens where existing enchantments may be applied. Server settings de
 - **Player guidance:** Look up smithing-template recipes in JEI.
 
 Custom template crafting creates another route to equipment decoration. The installed recipes determine material costs.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/darksmithing">Official mod page</a></p>
 
 </div>
 
@@ -1429,6 +1493,8 @@ Custom template crafting creates another route to equipment decoration. The inst
 
 This extends visual customization to flight gear. Decoration does not by itself change the Elytra’s travel mechanics.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/elytra-trims">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1440,6 +1506,8 @@ This extends visual customization to flight gear. Decoration does not by itself 
 - **Player guidance:** Look for decorated equipment in generated loot and trades.
 
 Some found gear arrives with a trim already applied. The trim primarily changes its appearance.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/naturally-trimmed">Official mod page</a></p>
 
 </div>
 
@@ -1453,6 +1521,8 @@ Some found gear arrives with a trim already applied. The trim primarily changes 
 
 Its item icon shows the applied pattern more clearly. This helps identify decorated equipment without equipping it.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armor-trim-item-fix">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1464,6 +1534,8 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
 The collection adds movement, attack, defense, and arrow effects, including extra jumps and gravity-free shots. Max Protection and Toughness add further armor choices.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 
 </div>
 
@@ -1485,6 +1557,8 @@ The collection adds movement, attack, defense, and arrow effects, including extr
 
 A downed player can still be rescued before normal death handling completes. Coordinate help quickly during group encounters.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/playerrevive">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1496,6 +1570,8 @@ A downed player can still be rescued before normal death handling completes. Coo
 - **Player guidance:** Use its grave and revival tools to recover after a death.
 
 The installed bridge coordinates its recovery flow with PlayerRevive. Graves help protect dropped items and experience.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-revive">Official mod page</a></p>
 
 </div>
 
@@ -1509,6 +1585,8 @@ The installed bridge coordinates its recovery flow with PlayerRevive. Graves hel
 
 A death site may become the respawn area. Spawn points, dimensions, and End travel can change the result.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-respawn">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1521,6 +1599,8 @@ A death site may become the respawn area. Spawn points, dimensions, and End trav
 
 The charm consumes the totem when it saves the player. Restock it after activation.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-reborn">Official mod page</a></p>
+
 </div>
 
 <div class="core-mod-entry">
@@ -1532,6 +1612,8 @@ The charm consumes the totem when it saves the player. Restock it after activati
 - **Player guidance:** Carry enough food and healing for the journey.
 
 Natural recovery no longer follows the usual vanilla pace. Server settings control its exact speed and hunger cost.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/harder-natural-healing">Official mod page</a></p>
 
 </div>
 
@@ -1553,6 +1635,8 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 
 Groups can share nearby experience and show a live roster. Roles, friendly-fire rules, and visibility depend on the party’s settings.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-party">Official mod page</a></p>
+
 </div>
 
 </div>
@@ -1563,886 +1647,2346 @@ Groups can share nearby experience and show a live roster. Roles, friendly-fire 
 
 ## Part IV — Adventure and Challenge
 
-This pack rewards exploration, but unfamiliar landmarks can begin boss fights, raids, or persistent threats. Before a long trip, open the world map with `M`, confirm that Coordinates Display can be toggled with `N`, record the route home, and carry supplies for both the journey out and the return.
+Exploration is a chain of decisions rather than a list of places to visit. A map shows terrain already explored, compasses seek chosen targets, and waypoints or activated travel points protect the return trip. Mark home, check the current dimension, and carry the food, runes, arrows, and recovery items that the chosen build uses. A discovered structure or rare biome can begin an encounter with its own rules, so scout before activating unfamiliar blocks or summoning items.
 
-Treat new terrain as a collection of overlapping systems. A biome can contain a structure from another mod, seasonal effects can change crops or temperature, and each dimension has its own equipment and enemy progression. Identify the destination first, then pack for its likely hazards instead of carrying every tool you own.
+World generation, seasons, creatures, bosses, and multiplayer events can overlap in the same journey. Newly generated chunks reveal new terrain after a pack update, while familiar explored areas retain their older layout. Read the local cues, record a retreat route, and prepare for the destination rather than carrying every possible tool. The categories below show which mod supplies each kind of travel, threat, or reward.
 
-### Expedition checklist
+<section class="core-category">
+<h3>Travel, maps, compasses, and teleportation</h3>
+<div class="core-category-entries">
 
-- Place or activate a return point before entering a new dimension or beginning a major encounter.
-- Carry food, ordinary combat supplies, and any runes or arrows required by the current build.
-- Keep one inventory route available for unexpected loot instead of leaving every slot full.
-- In multiplayer, form the party with `B` before combat so the HUD, friendly-fire rules, shared experience, and revive flow are already working.
-- Treat unfamiliar structures as active encounters. Observe the site, identify exits, and avoid opening containers or activating blocks until the group is ready.
-- Watch the sky and chat at night. Blood Moons and other environmental threats can make an otherwise routine return trip unsafe.
+<div class="core-mod-entry">
 
-### Travel, maps, compasses, and teleportation
+#### Waystones
 
-- **Waystones** — Adds discoverable and craftable travel points that must be activated before they can be selected as destinations.
-- **Bifrost Teleport** — Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
-- **Explorer's Compass** — Searches for vanilla and modded structures through an item interface.
-- **Nature's Compass** — Searches for vanilla and modded biomes and displays information about the selected result.
-- **Xaero's Map Multiplayer** — Adds multiplayer-oriented features to Xaero's maps.
+- **Type:** Travel and navigation
+- **Core mechanic:** Adds discoverable and craftable travel points that must be activated before they can be selected as destinations.
+- **Player guidance:** Activate a new point before treating it as a return destination.
+
+A discovered point only becomes useful after activation. Keep a known point near home before crossing dimensions or travelling far.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/waystones">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Bifrost Teleport
+
+- **Type:** Travel and navigation
+- **Core mechanic:** Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
+- **Player guidance:** Name and confirm a marker before travelling to it.
+
+Named markers support deliberate routes between known places. Check the destination and return path before using a mythic weapon to travel.
+
+<p class="core-mod-source"><a href="https://github.com/Valhaimerd/mods-server/blob/main/mods/bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar">Pack-distributed JAR</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Explorer's Compass
+
+- **Type:** Travel and navigation
+- **Core mechanic:** Searches for vanilla and modded structures through an item interface.
+- **Player guidance:** Select the structure to search for, then plan a route around obstacles.
+
+The compass supplies direction and distance, not a safe path. Check the dimension before walking toward the target.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/explorers-compass">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Nature's Compass
+
+- **Type:** Travel and navigation
+- **Core mechanic:** Searches for vanilla and modded biomes and displays information about the selected result.
+- **Player guidance:** Select a biome target and reset the search when plans change.
+
+Biome searching narrows the destination but leaves the trip itself unexplored. Mark a return point before following the needle.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/natures-compass">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Xaero's Map Multiplayer
+
+- **Type:** Travel and navigation
+- **Core mechanic:** Adds multiplayer-oriented features to Xaero's maps.
+- **Player guidance:** Use its shared map features when travelling with a group.
+
+Coordinate landmarks and waypoints with the party before separating. Each player should still keep a personal return route.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-maps-multiplayer-plus">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
 
 #### Xaero's World Map
 
-- **Type:** Interface feature
-- **Primary topic:** Travel, maps, compasses, and teleportation
-- **Also affects:** Exploration, Travel
-- **Core idea:** Builds a full-screen map from terrain the player has explored.
-- **Player guidance:** In the installed profile, `M` opens the map. Use it to review known routes and landmarks, then keep Coordinates Display (`N`) visible for the return trip.
+- **Type:** Travel and navigation
+- **Core mechanic:** Builds a full-screen map from terrain the player has explored.
+- **Player guidance:** Press M to inspect known terrain and mark a return route.
 
-The map fills in as you explore; a blank area is unknown terrain, not a promise that the area is empty or safe. It does not reveal unexplored terrain or replace a structure/biome search. Pan by dragging and zoom with the wheel, and compare the map with the current dimension before following a route.
+The map records explored ground and leaves new areas blank. Pan and zoom to compare landmarks, then use coordinates to confirm the route.
 
-![Xaero's World Map showing explored terrain, the player marker, map controls, biome, and coordinates](assets/screenshots/07-world-map-and-coordinates.png)
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map">Official mod page</a></p>
 
-*The map records explored terrain; its blank regions still need to be explored.*
+</div>
 
-#### Finding destinations and getting home
+</div>
+<p class="core-category-description">Travel tools serve different jobs: maps preserve routes you have explored, compasses seek a selected destination, and teleport systems shorten a known return trip. Mark home before setting out, verify the current dimension, and remember that a direction or waypoint does not guarantee a safe path.</p>
+</section>
 
-The **Explorer's Compass** searches for structures; the **Nature's Compass** searches for biomes. Right-click to select a target, and sneak-right-click the Nature's Compass to reset it. A compass gives a direction and distance, not a safe route. Mark a return point before leaving, verify that a destination belongs to the current dimension, and use activated **Waystones** or **Bifrost Teleport** markers only after confirming the destination.
+<section class="core-category">
+<h3>Integrated world and dimension expansions</h3>
+<div class="core-category-entries">
 
-### Integrated world and dimension expansions
-
-World-generation changes appear in newly generated terrain. Existing explored chunks normally retain their old layout, so travel beyond familiar borders when searching for a new biome or structure after a pack update.
+<div class="core-mod-entry">
 
 #### Alex's Caves
 
-- **Type:** Integrated world expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** Combat, Equipment, World Generation, Creatures
-- **Core idea:** Adds six rare underground cave biomes with distinct environments, hazards, creatures, materials, and progression.
-- **Player guidance:** Begin by finding an Underground Cabin, which can appear in caves throughout the Overworld. Its Cave Tablet and Spelunkery Table start the route to a Cave Codex and a matching Cave Map.
+- **Type:** World expansion
+- **Core mechanic:** Adds six rare underground cave biomes with distinct environments, hazards, creatures, materials, and progression.
+- **Player guidance:** Find an Underground Cabin and follow its Cave Tablet toward a Codex.
 
-Use the cabin's Cave Tablet with paper on the Spelunkery Table, then follow the table's rune and lens instructions to translate it. The tablet allows only five attempts, so take care with each one. Complete three translations to create a Cave Codex. The Codex teaches you about its cave biome, and an extra Codex plus paper makes a Cave Map that points to the nearest cave of that type.
+A Codex explains a cave biome's resources and hazards; an extra Codex with paper can lead to a matching Cave Map. Prepare for that cave's particular risks.
 
-Read the Codex before entering and prepare for the specific terrain rather than treating every cave as an ordinary mineshaft. For example, Magnetic Caves pull or repel iron and netherite items and contain dangerous Tesla Bulbs; Toxic Caves have acid that corrodes armor and radioactive hazards that can suppress natural healing; in the Forlorn Hollows, placed light can draw unwanted attention. Carry a return route, healing, food, and suitable combat gear, and use the Codex to check the biome's resources and risks.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/alexs-caves">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
 
 #### Better Nether
 
-- **Type:** Integrated dimension expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** World Generation, Structures, Creatures, Equipment
-- **Core idea:** Expands Nether terrain, biomes, vegetation, structures, creatures, and exploration rewards.
-- **Player guidance:** Expect the Nether to contain unfamiliar plants, materials, mobs, and large structures. Mark the portal immediately and bring spare ignition because ordinary visual landmarks are less reliable in the denser terrain.
+- **Type:** World expansion
+- **Core mechanic:** Expands Nether terrain, biomes, vegetation, structures, creatures, and exploration rewards.
+- **Player guidance:** Mark the portal before exploring new Nether terrain.
+
+The denser landscape changes navigation as well as the materials and encounters. Carry supplies for a return trip through unfamiliar structures.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/betternether-neoforge">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
 
 #### Stellarity
 
-- **Type:** Integrated dimension expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** World Generation, Structures, Creatures, Equipment, Bosses
-- **Core idea:** Expands the End with new terrain, structures, enemies, equipment, and progression.
-- **Player guidance:** Treat the End as a full adventure dimension rather than a short dragon trip. Strongholds, the dragon, outer-island terrain, End Cities, crafting interactions, and boss encounters are all changed; some Stellarity recipes and rewards do not appear normally in JEI, so preserve written or in-world clues.
+- **Type:** World expansion
+- **Core mechanic:** Expands the End with new terrain, structures, enemies, equipment, and progression.
+- **Player guidance:** Plan for a longer End journey and preserve in-world clues.
 
-- **Biomes O' Plenty** — Adds more than 50 biomes plus matching plants and blocks.
-- **Terralith** — Rebuilds Overworld terrain around almost 100 realistic and light-fantasy biomes made from vanilla blocks.
-- **William Wythers' Overhauled Overworld** — Reinterprets vanilla biomes with larger, more realistic, and atmospheric terrain.
-- **Dungeons Dimensions: Nether** — Brings Minecraft Dungeons-inspired detail and encounters to the Nether.
-- **Nullscape** — Reworks End terrain and island generation.
-- **Clear End City** — Adds cinematic End structures, void gardens, crashed citadels, and new loot locations.
-- **Serene Seasons** — Adds seasonal color, temperature, and environmental changes.
-- **Abyssal Ocean** — Generates rare, extremely deep offshore ocean regions that become darker toward bedrock.
+End terrain, structures, equipment, and boss progression all change. The dragon encounter can overlap with Bosslike Ender Dragon, so follow the current fight's cues.
 
-Serene Seasons affects more than scenery: weather, temperature, and crop growth can change across the year. Nature's Compass finds a biome; Explorer's Compass finds a structure; neither replaces preparation for the seasonal or dimensional conditions around the target.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stellarity">Official mod page</a></p>
 
-The Overworld changes are not one biome pack. Biomes O' Plenty adds its own plants and blocks, Terralith and William Wythers reshape terrain using largely familiar materials, and Serene Seasons changes the calendar across those landscapes. Abyssal Ocean is a rare deep-ocean destination, while Better Nether, Nullscape, and Stellarity alter separate dimensions. To see new generation after an update, travel beyond explored chunks; existing terrain does not retroactively rebuild.
+</div>
 
-### Fishing and collection systems
+<div class="core-mod-entry">
+
+#### Biomes O' Plenty
+
+- **Type:** World expansion
+- **Core mechanic:** Adds more than 50 biomes plus matching plants and blocks.
+- **Player guidance:** Search newly generated Overworld terrain for its plants and blocks.
+
+Its biomes add materials as well as scenery. Explore beyond old chunks after a pack update to find new generation.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Terralith
+
+- **Type:** World expansion
+- **Core mechanic:** Rebuilds Overworld terrain around almost 100 realistic and light-fantasy biomes made from vanilla blocks.
+- **Player guidance:** Travel into new chunks to see its terrain shapes.
+
+It reshapes Overworld exploration with large natural and fantasy landscapes. Most of its terrain uses familiar vanilla blocks.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/terralith">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### William Wythers' Overhauled Overworld
+
+- **Type:** World expansion
+- **Core mechanic:** Reinterprets vanilla biomes with larger, more realistic, and atmospheric terrain.
+- **Player guidance:** Watch how familiar biomes change in scale and atmosphere.
+
+The mod reinterprets existing terrain rather than adding a separate destination list. Use map landmarks to orient yourself in broader landscapes.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Dungeons Dimensions: Nether
+
+- **Type:** World expansion
+- **Core mechanic:** Brings Minecraft Dungeons-inspired detail and encounters to the Nether.
+- **Player guidance:** Treat Nether structures as active encounters.
+
+Its dungeon-inspired additions give the dimension more places to explore. Carry a portal route and combat supplies before entering unfamiliar sites.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/dungeons-dimensions-nether">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Nullscape
+
+- **Type:** World expansion
+- **Core mechanic:** Reworks End terrain and island generation.
+- **Player guidance:** Expect End islands and terrain to differ from vanilla routes.
+
+Generation changes the ground between major End destinations. Keep bridging supplies and a safe return plan.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/nullscape">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Clear End City
+
+- **Type:** World expansion
+- **Core mechanic:** Adds cinematic End structures, void gardens, crashed citadels, and new loot locations.
+- **Player guidance:** Look for its structures during outer-End exploration.
+
+The added sites make the End more than a short End City search. Keep unique finds until their uses are clear.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/clear-end-city">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Serene Seasons
+
+- **Type:** World expansion
+- **Core mechanic:** Adds seasonal color, temperature, and environmental changes.
+- **Player guidance:** Check the current season when crops or temperatures change.
+
+A known biome can behave differently over the year. Adjust farming plans before assuming light or hydration is the only issue.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/serene-seasons">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Abyssal Ocean
+
+- **Type:** World expansion
+- **Core mechanic:** Generates rare, extremely deep offshore ocean regions that become darker toward bedrock.
+- **Player guidance:** Prepare for depth and darkness before entering its rare ocean regions.
+
+These offshore areas can extend far below ordinary ocean terrain. Bring a reliable ascent and return route.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/abyssal-ocean">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Terrain, biome, structure, and dimension mods overlap to create the landscape of a journey. Existing chunks keep their earlier generation, so travel into new terrain to find newly added features. Prepare for each dimension’s hazards and progression rather than assuming a familiar biome contains familiar enemies.</p>
+</section>
+
+<section class="core-category">
+<h3>Fishing and collection systems</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Starcatcher
 
-- **Type:** Integrated survival or profession expansion
-- **Primary topic:** Fishing and collection systems
-- **Also affects:** Food, Equipment, Events, Multiplayer
-- **Core idea:** Reworks fishing around more than 100 collectible fish, condition-based catches, a skill minigame, rod attachments, trophies, and tournaments.
-- **Player guidance:** Use discovered guide entries and the catalogue to plan each catch. This profile hides fish entries until they are caught; species can depend on biome, dimension, weather, time, elevation, and other conditions, so changing the fishing spot may matter more than casting repeatedly.
+- **Type:** Fishing and collection
+- **Core mechanic:** Reworks fishing around more than 100 collectible fish, condition-based catches, a skill minigame, rod attachments, trophies, and tournaments.
+- **Player guidance:** Open the guide with Ctrl + Space; use Space for a minigame hit.
 
-#### Starcatcher first-catch flow
+Species depend on conditions such as biome, weather, time, and dimension. Check the catalogue before using a rare first catch.
 
-1. The current profile awards the guide when you join a world. If you still need a Starcatcher rod, fish once with a vanilla rod; the profile also awards the rod on that first catch. Open the guide with `Ctrl + Space` and read its help pages before choosing a destination.
-2. Check the guide for a fish's conditions and the catalogue for what you have already caught. Avoid spending a rare first catch before it has been recorded.
-3. Set up a rod with the hooks, bobbers, and bait that fit the target. Tackle Boxes store fish and let you organize or change attachments; use JEI for recipes the guide does not show.
-4. Cast normally and follow the minigame's on-screen target. The installed profile uses `Space` for **Minigame Hit**; some fish have different minigame patterns and difficulty.
-5. Record new catches, then decide whether to keep them for the collection, display them in an aquarium, use them for food, or sell them. Trophies, secrets, and tournaments add longer-term and multiplayer goals.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/starcatcher">Official mod page</a></p>
 
-Starcatcher's settings include ways to adjust or disable the minigame and to change the radar, tracker, and overlay presentation. This profile enables catch sharing for online FTB Team members; offline members do not receive shared discoveries. Server settings decide which options are available. Use the guide's current fish conditions instead of trying to memorize a complete species list.
+</div>
 
-### Companions, pets, villagers, and settlements
+</div>
+<p class="core-category-description">Starcatcher turns fishing into a location and conditions puzzle with gear, a minigame, and a growing catalogue. Read its guide and check weather, biome, time, and dimension before changing equipment or repeatedly casting in one spot.</p>
+</section>
 
-- **Companions: Dogfolk** — Adds dogfolk companions.
-- **Wild Pets** — Makes polar bears, pandas, and foxes tameable; tamed bears can also be ridden.
-- **Puffsprout** — Adds a small companion that learns over time.
-- **Animal Pen** — Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
-- **Compact Villagers** — Lets players carry villagers and trade through compact booths.
-- **Name Tag Upgrade** — Allows on-the-go renaming and adds convenience improvements to name-tag use.
-- **Pet Status** — Exposes useful health and status information for owned pets.
-- **Iron Wolf Armor** — Adds protective equipment for wolves.
+<section class="core-category">
+<h3>Companions, pets, villagers, and settlements</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Companions: Dogfolk
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Adds dogfolk companions.
+- **Player guidance:** Observe a companion's behavior before taking it into danger.
+
+Dogfolk adds another kind of travelling ally. Keep its safety in mind when crossing difficult terrain or starting a boss encounter.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/companions-dogfolk">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Wild Pets
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Makes polar bears, pandas, and foxes tameable; tamed bears can also be ridden.
+- **Player guidance:** Check each species' taming and riding behavior in play.
+
+Tameable wildlife gives exploration a companion goal. Bring safe transport and supplies before moving a new pet far from its home biome.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/wild-pets">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Puffsprout
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Adds a small companion that learns over time.
+- **Player guidance:** Give the small companion time to develop.
+
+Its learning makes it more than a static decoration. Keep it safe while discovering what it can do.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/puffsprout">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Animal Pen
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
+- **Player guidance:** Use the pen for a compact group of farm animals.
+
+One block can simplify husbandry and reduce loose entities around a base. Confirm the animals and output before changing an established farm.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/animalpen">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Compact Villagers
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Lets players carry villagers and trade through compact booths.
+- **Player guidance:** Move villagers carefully and set up trade booths where needed.
+
+Portable villagers can make trading more accessible. Protect valuable traders before experimenting with placement.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/compact-villagers">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Name Tag Upgrade
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Allows on-the-go renaming and adds convenience improvements to name-tag use.
+- **Player guidance:** Carry the tool when renaming companions away from base.
+
+On-the-go naming is useful during exploration and animal care. Confirm the target before applying a name.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/name-tag-upgrade">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Pet Status
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Exposes useful health and status information for owned pets.
+- **Player guidance:** Use Shift + R to check an owned pet before travelling.
+
+Health and location information helps find a missing companion. An unloaded pet may show its last known position rather than live status.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pet-status">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Iron Wolf Armor
+
+- **Type:** Companions and settlements
+- **Core mechanic:** Adds protective equipment for wolves.
+- **Player guidance:** Equip protection before bringing wolves into combat.
+
+The armor helps a wolf survive hazards that would quickly harm an unprotected pet. It does not replace watching the pet's health.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/iron-wolf-armor">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
 
 #### Pet Vault
 
-- **Type:** Focused companion system
-- **Primary topic:** Companions, pets, villagers, and settlements
-- **Also affects:** Travel, Multiplayer
-- **Core idea:** Stores, summons, and manages owned pets and mounts through the Keeper's Locket radial menu.
-- **Player guidance:** This installed profile requires the locket in Curios' Necklace slot: `allowUnequippedLocket` is `false`, and the locket is tagged for that slot.
+- **Type:** Companions and settlements
+- **Core mechanic:** Stores, summons, and manages owned pets and mounts through the Keeper's Locket radial menu.
+- **Player guidance:** Equip the Keeper's Locket in a Curios Necklace slot; press R for its menu.
 
-Right-click a tamed companion you own to register it. Press `R` to open the radial menu, then left-click its slice to summon or store it; the current server config allows ten stored pets. Use Pet Status (`Shift + R`) to check health and location before a trip. If a pet is unloaded, the display may show its last-known position rather than live status.
+Register an owned pet, then left-click its slice to store or summon it. Right-clicking a summoned pet unregisters it instead.
 
-Be careful with the other mouse button: right-clicking a summoned companion unregisters it permanently from the vault, but leaves the animal in the world. That action does not store it. Use left-click when the goal is to put a pet away.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pet-vault">Official mod page</a></p>
 
-### Bosses and major encounters
+</div>
 
-- **Stellarity encounters** — The End expansion includes major combat progression. See [Stellarity](#stellarity).
+</div>
+<p class="core-category-description">These mods add animals to tame, companions to manage, and more ways to protect or trade with settlements. Pet Vault handles storage and summoning, while Pet Status supplies a quick health and location check; villagers and other social creatures use their own interaction rules.</p>
+</section>
 
-- **World Bosses** — Adds shrine-based encounters summoned through rituals, with multiplayer scaling, changing attack patterns, and shared reward caches.
-- **Bosslike Ender Dragon** — Reworks the dragon into a multi-phase fight that scales with the number of players and becomes stronger after previous victories.
-- **Ultimate Warden** — Turns the Warden into a boss encounter with a visible boss bar, dedicated dungeon, and custom rewards.
-- **Gateway of Doom** — Opens timed, wave-based arena encounters with an on-screen boss bar, escalating enemies, and rewards for completing every wave.
+<section class="core-category">
+<h3>Bosses and major encounters</h3>
+<div class="core-category-entries">
 
-Each encounter asks for a different kind of preparation. **World Bosses** begin at a shrine and scale for a group, so treat the site as an arena and bring recovery supplies. The **Bosslike Ender Dragon** can ward recalled crystals; stand in the glowing ring at a pillar's base before breaking one. **Ultimate Warden** requires a Dungeon Key held for 30 seconds to enter its contained boss area; keep the exit key awarded afterward and hold it for 10 seconds to leave. **Gateway of Doom** opens when a Devil Eye finds a safe placement, or through an enabled automatic event; watch its boss bar for wave, enemy count, and timer.
+<div class="core-mod-entry">
 
-For every major encounter, place the respawn and recovery route first, then clear ordinary enemies around the arena. The Shrine Locator Compass can cycle between World Boss shrine targets, which is safer than searching blindly with ritual items already packed. Gateway enemies are kept near their event area, so regroup outside its boundary instead of dragging the wave toward a base. Hell Wards protect complete chunks from every normal Gateway placement method; right-click a placed Ward to inspect its protected chunks on the built-in map.
+#### World Bosses
 
-Both Bosslike Ender Dragon and Stellarity modify the dragon encounter. Expect their mechanics to overlap, follow the telegraphs and boss-bar state shown by the current server, and do not rely on a vanilla dragon walkthrough.
+- **Type:** Boss encounter
+- **Core mechanic:** Adds shrine-based encounters summoned through rituals, with multiplayer scaling, changing attack patterns, and shared reward caches.
+- **Player guidance:** Prepare the shrine area and a group recovery route before a ritual.
 
-Before using a summoning item, identify the retreat path and agree on a regroup point. Do not place a shrine or Gateway beside storage or a settlement. After victory, check the arena and nearby ground for rewards before leaving; some drops are part of a mod's progression and may not be replaceable through ordinary crafting.
+Encounters can scale with the party and change attack patterns. Check the shared reward cache before leaving the arena.
 
-### Invasions and wave events
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/world-bosses">Official mod page</a></p>
 
-- **Invasion** — Starts increasingly difficult Nexus-defense events whose attackers can build, dig, and adapt to the terrain.
-- **Illager Invasion** — Adds new illager combat and support roles to raids and places others in structures.
-- **It Takes a Pillage** — Adds pillager encampments, fortresses, patrol threats, and related rewards.
+</div>
 
-These systems are not interchangeable. **Invasion** begins around a placed and activated Nexus, while **Illager Invasion** makes village raids and related encounters more varied, and **It Takes a Pillage** adds hostile pillager locations to exploration.
+<div class="core-mod-entry">
 
-Do not test a Nexus beside an irreplaceable home. Invasion enemies can bridge gaps, place ladders, and destroy blocks while trying to reach it. Use a prepared defense site, provide sight lines and fallback paths, and move valuable storage outside the likely damage area. A Gateway of Doom is also wave-based, but it is a timed arena challenge rather than a Nexus defense.
+#### Bosslike Ender Dragon
 
-### Dangerous nights and environmental threats
+- **Type:** Boss encounter
+- **Core mechanic:** Reworks the dragon into a multi-phase fight that scales with the number of players and becomes stronger after previous victories.
+- **Player guidance:** Watch the current phase and pillar cues.
+
+The dragon can grow stronger after previous victories and with more players. Follow the live telegraphs rather than a vanilla fight script.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/bosslike-ender-dragon">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Ultimate Warden
+
+- **Type:** Boss encounter
+- **Core mechanic:** Turns the Warden into a boss encounter with a visible boss bar, dedicated dungeon, and custom rewards.
+- **Player guidance:** Keep the Dungeon Key and plan the exit before entering.
+
+The boss has a contained arena and custom rewards. Treat the key and exit procedure as part of the encounter.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ultimate-warden">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Gateway of Doom
+
+- **Type:** Boss encounter
+- **Core mechanic:** Opens timed, wave-based arena encounters with an on-screen boss bar, escalating enemies, and rewards for completing every wave.
+- **Player guidance:** Watch its boss bar for waves, enemies, and remaining time.
+
+The event keeps enemies near its arena. Regroup outside the boundary instead of drawing the wave toward a base.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/gateway-of-doom">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Major fights range from shrines and dragon phases to timed waves and a dedicated Warden dungeon. Scout the arena, set a retreat and respawn route, and carry recovery supplies before triggering a ritual or summoning item. Follow the live boss bar and arena cues when multiple mods affect the same encounter.</p>
+</section>
+
+<section class="core-category">
+<h3>Invasions and wave events</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Invasion
+
+- **Type:** Event and defense
+- **Core mechanic:** Starts increasingly difficult Nexus-defense events whose attackers can build, dig, and adapt to the terrain.
+- **Player guidance:** Build a defense site away from valuable storage before placing a Nexus.
+
+Attackers can bridge, dig, and build toward the objective. Leave a fallback path and test the encounter with repair supplies ready.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/invasion-mod-unofficial">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Illager Invasion
+
+- **Type:** Event and defense
+- **Core mechanic:** Adds new illager combat and support roles to raids and places others in structures.
+- **Player guidance:** Expect more roles in raids and structure fights.
+
+The new illagers change how a group encounter develops. Identify support enemies before focusing only on damage dealers.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/illager-invasion">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### It Takes a Pillage
+
+- **Type:** Event and defense
+- **Core mechanic:** Adds pillager encampments, fortresses, patrol threats, and related rewards.
+- **Player guidance:** Scout camps and fortresses before closing in.
+
+New pillager locations add threats during ordinary exploration. Mark an exit and clear the perimeter before collecting rewards.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/it-takes-a-pillage">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Invasion centers on a defended Nexus, while the illager mods expand raids and hostile outposts. Choose a prepared defense site with clear sight lines and a fallback route; some attackers can alter the terrain, so valuable storage should sit outside the likely combat area.</p>
+</section>
+
+<section class="core-category">
+<h3>Dangerous nights and environmental threats</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Withered Lands
 
-- **Type:** Integrated adventure expansion
-- **Primary topic:** Dangerous nights and environmental threats
-- **Also affects:** Combat, Events, Creatures, Structures, Equipment
-- **Core idea:** Makes exploration more hostile through wither-themed enemies, behaviors, encounters, and rewards.
-- **Player guidance:** Expect its structures, creatures, and rewards to belong to one hostile theme. Scout new sites from a safe distance and use Jade and JEI to identify unfamiliar content without needing an exhaustive enemy list.
+- **Type:** Environmental threat
+- **Core mechanic:** Makes exploration more hostile through wither-themed enemies, behaviors, encounters, and rewards.
+- **Player guidance:** Approach its themed structures and enemies cautiously.
+
+Its creatures and rewards belong to a wider hostile ecosystem. Use Jade to identify unfamiliar targets before entering a site.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/withered-lands">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
 
 #### The Graveyard
 
-- **Type:** Integrated adventure expansion
-- **Primary topic:** Dangerous nights and environmental threats
-- **Also affects:** Structures, Creatures, Combat, Equipment
-- **Core idea:** Adds graveyard-themed locations, enemies, atmosphere, and adventure rewards.
-- **Player guidance:** Graveyard structures are adventure locations rather than decoration. Enter with an escape route, light the surrounding ground, and expect their atmosphere, enemies, and loot to be connected.
+- **Type:** Environmental threat
+- **Core mechanic:** Adds graveyard-themed locations, enemies, atmosphere, and adventure rewards.
+- **Player guidance:** Light and scout a graveyard location before entering.
 
-- **Blood Moon** — Replaces every fourth full moon with an Overworld event that strengthens hostile mobs, increases phantom pressure, and prevents sleeping through the night.
-- **The Darkness Will Find You** — Adds a progression-based Deep Dark curse that can make night, sleep, dark dimensions, sculk spread, and hostile events increasingly dangerous until the player pursues its protection and resolution systems.
-- **Armored Foes** — Lets more hostile mob families spawn wearing visible equipment and makes illagers equip armor during raids.
+These structures are adventure sites with connected enemies and loot. Keep a retreat route rather than treating them as scenery.
 
-- **Somnora** — Replaces the instant night skip with accelerated world time, including visible sky and weather progression, multiplayer-aware sleeping, plant growth, and configurable ambience.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port">Official mod page</a></p>
 
-#### When the night changes
+</div>
 
-During a Blood Moon, sheltering underground or leaving the Overworld avoids the event, but a bed cannot skip it. If the night is ordinary, Somnora still means sleep advances the world instead of cutting instantly to morning. The Darkness Will Find You can separately make sleep unreliable after its curse begins, so read current messages and effects rather than assuming every failed sleep has the same cause.
+<div class="core-mod-entry">
 
-### Structures and dungeons
+#### Blood Moon
 
-- **Integrated-expansion structures** — Several world expansions add structures as part of a larger ecosystem. See [Alex's Caves](#alexs-caves), [Better Nether](#better-nether), [Stellarity](#stellarity), and [The Graveyard](#the-graveyard).
+- **Type:** Environmental threat
+- **Core mechanic:** Replaces every fourth full moon with an Overworld event that strengthens hostile mobs, increases phantom pressure, and prevents sleeping through the night.
+- **Player guidance:** Shelter or leave the Overworld; a bed cannot skip the event.
 
-- **Dungeons and Taverns** — Adds taverns, ruins, camps, and dungeons throughout the world.
-- **Dungeons and Taverns overhauls** — A collection of standalone structure updates: DnT Ancient City Overhaul, DnT Mineshaft Overhaul, DnT Pillager Outpost Overhaul, and DnT Stronghold Overhaul.
-- **Awesome Dungeon collection** — Adds dungeon structures across the Overworld, End, and Ocean through Awesome Dungeon, Awesome Dungeon End Edition, and Awesome Dungeon Ocean Edition.
-- **Moog's structure collection** — Adds exploration sites across dimensions through Moog's Bountiful Structures, Moog's End Structures, Moog's Nether Structures, Moog's Ocean Structures, Moog's Temples Reimagined, and Moog's Voyager Structures.
-- **Towns and Towers** — Expands villages, pillager outposts, and ships while keeping a vanilla-like style.
-- **Explorify** — Adds lightweight exploration structures designed to blend with vanilla generation.
-- **ATi Structures: Vanilla Edition** — Adds a collection of custom structures and dungeons built with vanilla materials.
-- **Much More Dungeons** — Adds more dungeon layouts and exploration targets.
-- **Towers of Chambers** — Turns trial chambers into large, vertical combat towers.
-- **Underground Villages** — Generates functioning villages below ground.
-- **Ocean Lily Pad Village** — Generates villages built across the ocean surface.
-- **Antique Trading Ship** — Places a discoverable villager trading ship in ocean biomes.
-- **Hopo Better Underwater Ruins** — Replaces small underwater ruins with larger and more interesting sites.
-- **Improved Village Placement** — Chooses terrain that produces more natural village layouts.
-- **Gazebos** — Adds village gazebos that contain small spell libraries.
+Hostile pressure rises during the special night. Plan a safe return before dark rather than relying on sleep.
 
-#### Exploring generated structures
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/blood-moon-updated">Official mod page</a></p>
 
-Use this same loop for unfamiliar structures without requiring a room-by-room spoiler:
+</div>
 
-1. Mark the entrance and identify a retreat route before descending or activating anything.
-2. Use Jade to identify unfamiliar blocks and entities, then find recovered items in JEI and left-click or right-click them to inspect recipes and uses.
-3. Secure one area at a time. Structure mods can overlap with the pack's expanded hostile roster, so a familiar building shape does not guarantee familiar enemies.
-4. Keep unique books, maps, templates, keys, and named components until their purpose is understood.
-5. Recheck villages for useful services. Gazebos can supply spell libraries, guards can protect settlements, and some structure overhauls change where progression landmarks appear.
+<div class="core-mod-entry">
 
-### Creatures and hostile mobs
+#### The Darkness Will Find You
 
-- **Alex's Caves creatures** — Cave-specific creatures belong to the broader cave ecosystem. See [Alex's Caves](#alexs-caves).
-- **Better Nether creatures** — Nether creatures are documented with their dimension systems. See [Better Nether](#better-nether).
-- **Stellarity creatures** — End creatures are documented with their dimension progression. See [Stellarity](#stellarity).
+- **Type:** Environmental threat
+- **Core mechanic:** Adds a progression-based Deep Dark curse that can make night, sleep, dark dimensions, sculk spread, and hostile events increasingly dangerous until the player pursues its protection and resolution systems.
+- **Player guidance:** Read the curse's current effects and clues.
+
+The threat can grow with progression and make familiar dark places more dangerous. Follow its protection and resolution path before treating the effects as permanent background difficulty.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/the-darkness-will-find-you">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Armored Foes
+
+- **Type:** Environmental threat
+- **Core mechanic:** Lets more hostile mob families spawn wearing visible equipment and makes illagers equip armor during raids.
+- **Player guidance:** Inspect visible enemy gear before engaging.
+
+Equipped mobs may survive longer or deal more damage than expected. Raids can include armored illagers as well.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armored-foes">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Somnora
+
+- **Type:** Environmental threat
+- **Core mechanic:** Replaces the instant night skip with accelerated world time, including visible sky and weather progression, multiplayer-aware sleeping, plant growth, and configurable ambience.
+- **Player guidance:** Expect sleep to advance the world rather than instantly skip time.
+
+The sky, weather, and plants can continue changing while players sleep. A failed sleep during another event may have a different cause.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/somnora">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Night hazards can come from a moon event, a growing curse, stronger equipped enemies, or the surrounding structure. Blood Moons cannot be slept through, while ordinary sleep can still advance time under Somnora. Read current messages and effects before assuming two dangerous nights follow the same rules.</p>
+</section>
+
+<section class="core-category">
+<h3>Structures and dungeons</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Dungeons and Taverns
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds taverns, ruins, camps, and dungeons throughout the world.
+- **Player guidance:** Mark an entrance before descending into a new site.
+
+The collection adds several kinds of Overworld exploration stop. Clear one area at a time and keep unusual loot.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Dungeons and Taverns overhauls
+
+- **Type:** Structures and exploration
+- **Core mechanic:** A collection of standalone structure updates: DnT Ancient City Overhaul, DnT Mineshaft Overhaul, DnT Pillager Outpost Overhaul, and DnT Stronghold Overhaul.
+- **Player guidance:** Recheck familiar landmark types for changed layouts.
+
+The installed modules update ancient cities, mineshafts, outposts, and strongholds. An old route through one of these structures may no longer apply.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/dnt-ancient-city-overhaul">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Awesome Dungeon collection
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds dungeon structures across the Overworld, End, and Ocean through Awesome Dungeon, Awesome Dungeon End Edition, and Awesome Dungeon Ocean Edition.
+- **Player guidance:** Identify the dimension and dungeon theme before entering.
+
+The collection spreads sites across the Overworld, End, and Ocean. Bring equipment suited to that location rather than one generic dungeon kit.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/awesome-dungeon-neoforge">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Moog's structure collection
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds exploration sites across dimensions through Moog's Bountiful Structures, Moog's End Structures, Moog's Nether Structures, Moog's Ocean Structures, Moog's Temples Reimagined, and Moog's Voyager Structures.
+- **Player guidance:** Use maps and landmarks to track the many site types.
+
+Its modules place structures across several dimensions and biomes. Keep an exit route when a site overlaps other hostile content.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/mbs-moogs-bountiful-structures">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Towns and Towers
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Expands villages, pillager outposts, and ships while keeping a vanilla-like style.
+- **Player guidance:** Revisit villages and outposts for expanded layouts.
+
+Settlements and ships keep a familiar style while offering new places to explore. Check for services as well as loot.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/towns-and-towers">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Explorify
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds lightweight exploration structures designed to blend with vanilla generation.
+- **Player guidance:** Treat small sites as useful landmarks on longer routes.
+
+Its lightweight structures blend into ordinary terrain. Mark them on the map when they help navigate a region.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/explorify">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### ATi Structures: Vanilla Edition
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds a collection of custom structures and dungeons built with vanilla materials.
+- **Player guidance:** Explore with ordinary dungeon preparation.
+
+The custom structures use vanilla materials but can still hold unfamiliar encounters. Scout before assuming a familiar block palette means safety.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ati-structures-datapack-vanilla">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Much More Dungeons
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds more dungeon layouts and exploration targets.
+- **Player guidance:** Carry spare light and a return marker into deeper layouts.
+
+More dungeon destinations increase the chance of finding rewards off a planned route. Keep inventory space for unknown items.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/much-more-dungeons">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Towers of Chambers
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Turns trial chambers into large, vertical combat towers.
+- **Player guidance:** Prepare for a vertical trial-chamber fight.
+
+Height changes both retreat and enemy approach. Secure each level before climbing farther.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/towers-of-chambers">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Underground Villages
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Generates functioning villages below ground.
+- **Player guidance:** Search below ground for functioning settlements.
+
+These villages bring trade and shelter into caves. Check their entrances and protect villagers from nearby hostile spawns.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/underground-villages">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Ocean Lily Pad Village
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Generates villages built across the ocean surface.
+- **Player guidance:** Approach the surface settlement by a safe water route.
+
+The village's ocean placement changes how players arrive and leave. Keep a boat or other return option nearby.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ocean-lily-pad-village">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Antique Trading Ship
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Places a discoverable villager trading ship in ocean biomes.
+- **Player guidance:** Inspect the ship and its traders before unloading cargo.
+
+A travelling trade destination can be useful during ocean exploration. Compare offers before spending rare materials.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/antique-trading-ship">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Hopo Better Underwater Ruins
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Replaces small underwater ruins with larger and more interesting sites.
+- **Player guidance:** Bring air and light for larger ruins.
+
+The expanded sites reward a deliberate underwater search. Keep a surface marker so exploration does not become a navigation problem.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/hopo-better-underwater-ruins">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Improved Village Placement
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Chooses terrain that produces more natural village layouts.
+- **Player guidance:** Look for villages fitted more naturally to their terrain.
+
+The mod changes where settlements sit in the landscape. Approach paths and nearby hazards still vary by biome.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/improved-village-placement">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Gazebos
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds village gazebos that contain small spell libraries.
+- **Player guidance:** Check village gazebos for spell libraries.
+
+A small structure can be a useful magical resource. Revisit settled areas when assembling a new class loadout.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/gazebos">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Structure mods provide destinations rather than a fixed linear route. Mark the entrance, identify a retreat path, and keep unknown keys, maps, templates, and named components until their use is clear. A familiar building can still contain enemies and rewards from other installed mods.</p>
+</section>
+
+<section class="core-category">
+<h3>Creatures and hostile mobs</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Shroomcraft
 
-- **Type:** Integrated adventure expansion
-- **Primary topic:** Creatures and hostile mobs
-- **Also affects:** Creatures, Farming, Food, Building
-- **Core idea:** Adds mushroom creatures, crops, colorful shroomwood, and connected survival content.
-- **Player guidance:** Treat its creatures, cultivation, food, and building materials as one ecosystem. Use observed behavior, Jade identification, and JEI recipes instead of assuming every mushroom creature is either hostile or decorative.
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds mushroom creatures, crops, colorful shroomwood, and connected survival content.
+- **Player guidance:** Identify creatures and crops before using them.
 
-- **Alex's Mobs** — Adds a large roster of real and fantasy creatures with distinct behaviors and rewards.
-- **Animal Garden collection** — Adds the Animal Garden: Bull Shark, Animal Garden: Capybara, Animal Garden: Fennec Fox, Animal Garden: Harp Seal, Animal Garden: Hippopotamus, Animal Garden: Lion, Animal Garden: Narwhal, Animal Garden: Owl, Animal Garden: Prairie Dog, Animal Garden: Red Panda, Animal Garden: Red River Hog, Animal Garden: Spotted Hyena, Animal Garden: Springhare, and Animal Garden: Yellow Mongoose wildlife modules.
-- **Ender Zoology** — Adds hostile mobs designed to feel like extensions of the vanilla roster.
-- **Lullaby's Mobs** — Adds additional custom hostile creatures.
-- **Mutants and Zombies** — Adds stronger mutant zombie enemies.
-- **Moblets** — Adds small and baby variants of existing mobs.
-- **Mounts and Monsters** — Adds rideable creatures and new monsters.
-- **Craftable Creatures Evolution** — Makes mobs and mob spawners obtainable through crafting-based progression.
-- **Ribbits** — Adds social frog-like villagers to swamps.
-- **Guard Ribbits** — Adds armed protectors for Ribbit settlements.
-- **Guard Villagers** — Adds armed defenders to ordinary villages.
-- **Goblin Traders** — Adds wandering goblins with unusual trades.
-- **Party Creepers** — Replaces destructive creeper damage with a decorative party-style explosion.
+Its mushrooms connect combat, cultivation, food, and building. Not every unusual mushroom creature is hostile or decorative.
 
-Do not judge an unfamiliar creature only by its model. Watch whether it is passive, defensive, territorial, tameable, rideable, or openly hostile before approaching. Jade supplies the name and health information; JEI can explain known drops and uses without turning this handbook into a species catalogue. Guard Villagers and Guard Ribbits are settlement defenders, while Goblin Traders and Ribbits are social or trading encounters rather than ordinary hostile spawns.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/shroomcrafted">Official mod page</a></p>
 
-#### Sources for adventure and exploration
+</div>
 
-- [World Bosses](https://www.curseforge.com/minecraft/mc-mods/world-bosses), [Bosslike Ender Dragon](https://www.curseforge.com/minecraft/mc-mods/bosslike-ender-dragon), [Ultimate Warden](https://www.curseforge.com/minecraft/mc-mods/ultimate-warden), and [Gateway of Doom](https://modrinth.com/mod/gateway-of-doom)
-- [Invasion Mod Fork](https://modrinth.com/mod/invasion-mod-unofficial), [Illager Invasion](https://modrinth.com/mod/illager-invasion), and [It Takes a Pillage Continuation](https://modrinth.com/mod/it-takes-a-pillage-continuation)
-- [Withered Lands](https://modrinth.com/mod/withered-lands), [The Graveyard unofficial port](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port), [Blood Moon](https://modrinth.com/datapack/ks-blood-moon), [The Darkness Will Find You](https://modrinth.com/mod/the-darkness-will-find-you), [Armored Foes](https://modrinth.com/mod/armored-foes), and [Somnora](https://www.curseforge.com/minecraft/mc-mods/somnora)
-- [Waystones](https://modrinth.com/mod/waystones), [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass), [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass), and [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)
-- [Alex's Caves Continued, the installed 26.2 build](https://modrinth.com/mod/alexs-caves-continued), the original [Alex's Caves Getting Started guide](https://alexscaves.wiki.gg/wiki/Guides/Getting_Started), [BetterNether](https://modrinth.com/mod/betternether), [Stellarity](https://modrinth.com/datapack/stellarity), and [Serene Seasons](https://modrinth.com/mod/serene-seasons)
-- [Starcatcher](https://www.curseforge.com/minecraft/mc-mods/starcatcher)
-- [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status) and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
+<div class="core-mod-entry">
+
+#### Alex's Mobs
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds a large roster of real and fantasy creatures with distinct behaviors and rewards.
+- **Player guidance:** Watch a new creature before approaching or attacking.
+
+The roster mixes real and fantasy behavior. Some animals have useful interactions or rewards beyond simple drops.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Animal Garden collection
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds the Animal Garden: Bull Shark, Animal Garden: Capybara, Animal Garden: Fennec Fox, Animal Garden: Harp Seal, Animal Garden: Hippopotamus, Animal Garden: Lion, Animal Garden: Narwhal, Animal Garden: Owl, Animal Garden: Prairie Dog, Animal Garden: Red Panda, Animal Garden: Red River Hog, Animal Garden: Spotted Hyena, Animal Garden: Springhare, and Animal Garden: Yellow Mongoose wildlife modules.
+- **Player guidance:** Observe wildlife before trying to tame or fight it.
+
+The modules add many species with different habitats and behavior. Treat each encounter on its own terms.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/animal-garden-capybara">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Ender Zoology
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds hostile mobs designed to feel like extensions of the vanilla roster.
+- **Player guidance:** Prepare for unfamiliar hostile variants in their habitats.
+
+These enemies extend the ordinary mob roster without replacing it. Watch their attack pattern before closing distance.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ender-zoology">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Lullaby's Mobs
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds additional custom hostile creatures.
+- **Player guidance:** Identify new hostile creatures with Jade.
+
+Added mobs can change the danger of a familiar route. Keep space to retreat until their behavior is known.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/lullabys-mobs">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Mutants and Zombies
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds stronger mutant zombie enemies.
+- **Player guidance:** Avoid treating mutant zombies like ordinary undead.
+
+Stronger variants may require more room and supplies. Clear nearby small enemies before committing to the fight.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/mutants-and-zombies">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Moblets
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds small and baby variants of existing mobs.
+- **Player guidance:** Expect small variants of familiar mobs.
+
+A smaller model does not necessarily make an encounter harmless. Check its name and behavior before approaching.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/moblets">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Mounts and Monsters
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds rideable creatures and new monsters.
+- **Player guidance:** Identify whether a new creature is rideable or hostile.
+
+The mod expands both travel and combat encounters. Secure a safe area before experimenting with a mount.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/mounts-monsters">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Craftable Creatures Evolution
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Makes mobs and mob spawners obtainable through crafting-based progression.
+- **Player guidance:** Inspect crafting progression before producing mobs or spawners.
+
+Its recipe path can create encounters as well as resources. Build an enclosed test area first.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/craftable-creatures-evolution">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Ribbits
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds social frog-like villagers to swamps.
+- **Player guidance:** Approach swamp settlements as social encounters.
+
+These frog-like villagers add interaction to swamp exploration. Look for trade or community behavior before attacking.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ribbits">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Guard Ribbits
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds armed protectors for Ribbit settlements.
+- **Player guidance:** Recognize armed Ribbits as settlement protectors.
+
+Their role is to defend the local group. Avoid drawing hostile mobs into the village.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/guard-ribbits">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Guard Villagers
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds armed defenders to ordinary villages.
+- **Player guidance:** Let defenders handle threats around a settlement when possible.
+
+Armed villagers change the way raids and night attacks unfold. Help them without blocking their route.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/guard-villagers">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Goblin Traders
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Adds wandering goblins with unusual trades.
+- **Player guidance:** Check the offered trade before spending rare items.
+
+Wandering goblins are merchants rather than ordinary enemies. Their unusual offers may suit a specialized build.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/goblin-traders">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Party Creepers
+
+- **Type:** Creatures and encounters
+- **Core mechanic:** Replaces destructive creeper damage with a decorative party-style explosion.
+- **Player guidance:** Watch the altered explosion before assuming ordinary creeper damage.
+
+Their party-style effect changes a familiar threat. Give them room until the local behavior is clear.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/party-creepers">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">The expanded roster includes wildlife, social creatures, settlement defenders, and dangerous variants. Observe behavior before approaching and use Jade for names and health; JEI can explain known drops without turning this guide into an exhaustive species catalogue.</p>
+</section>
 
 <div class="page-break" aria-hidden="true"></div>
 
 ## Part V — Survival and Creation
 
-These systems turn gathered resources into long-term infrastructure. The useful order is simple: establish repeatable food, organize portable and base storage, then add faster building, item routing, vehicles, and player trading as those needs appear.
+Survival turns collected resources into repeatable systems. Gathering provides materials, farms and kitchens turn them into supplies, storage keeps the result accessible, and building or logistics makes the base easier to use. Start with a reliable food and storage loop, then add specialized workstations, transport, and faster construction when the need appears. The right tool depends on whether the job is portable, local to a base, or shared with other players.
 
-Think of this part as a set of work loops. Gathering turns tools and time into materials; cooking turns ingredients into food and effects; storage preserves and routes output; building converts materials into infrastructure; trade moves surplus between players. A new feature is most useful when it closes one of these loops for your base or expedition.
+Recipes and workstations matter more here than memorizing long item lists. Use JEI to inspect the desired output and its actual station, then test a small batch before building an entire production line. Controls that affect bulk actions are noted where they help: OneKeyMiner uses Grave Accent, Effortless Building opens its radial menu with Alt, and an equipped backpack opens with V.
 
-### Resource gathering and repetitive actions
+<section class="core-category">
+<h3>Resource gathering and repetitive actions</h3>
+<div class="core-category-entries">
 
-- **OneKeyMiner** — Adds vein mining, crop harvesting, and automatic replanting.
+<div class="core-mod-entry">
 
-Hold the recommended `Grave Accent` key while mining, farming, or planting to chain matching actions. OneKeyMiner still consumes the relevant tool durability and can be limited by hunger, durability thresholds, block limits, and server settings, so inspect the tool before clearing a large group.
+#### OneKeyMiner
 
-Try a short chain on a small vein or crop row before holding the action near valuable blocks. The chain still needs a suitable tool and spends its durability; it can use durability much faster than a single break.
+- **Type:** Gathering utility
+- **Core mechanic:** Adds vein mining, crop harvesting, and automatic replanting.
+- **Player guidance:** Hold Grave Accent for a short trial and watch tool durability.
 
-### Farming, food, and cooking
+A chain still consumes the relevant tool’s durability and follows server limits. Stop before the tool reaches a risky threshold.
 
-- **Shroomcraft cultivation** — Mushroom crops connect to a wider creature and building ecosystem. See [Shroomcraft](#shroomcraft).
-- **Starcatcher food and collection** — See the [Part IV Starcatcher guide](#starcatcher) for fish conditions, rod setup, and collection rewards.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/onekeyminer">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">OneKeyMiner makes repeated mining and farming actions faster, but it still spends tool durability and follows server limits. Try a short chain first, especially near valuable blocks or a tool close to breaking.</p>
+</section>
+
+<section class="core-category">
+<h3>Farming, food, and cooking</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Farmer's Delight
 
-- **Type:** Integrated survival or profession expansion
-- **Primary topic:** Farming, food, and cooking
-- **Also affects:** Farming, Food, Equipment, Building
-- **Core idea:** Expands farming, cooking tools, food preparation, meals, and kitchen-centered survival.
-- **Player guidance:** Build around preparation, heat, and serving rather than treating every meal as an ordinary crafting-grid recipe. Use JEI to identify the required workstation and container for the food being made.
+- **Type:** Food and farming
+- **Core mechanic:** Expands farming, cooking tools, food preparation, meals, and kitchen-centered survival.
+- **Player guidance:** Inspect a desired meal in JEI for its station and serving container.
 
-- **Expanded Delight** — Extends Farmer's Delight with additional crops, blocks, workstations, and functionality. Check JEI for each recipe's exact preparation station rather than assuming a new ingredient uses the vanilla cooking loop.
-- **Kaleidoscope Cookery** — Adds more ingredients and recipes around the cooking loop.
-- **Better Rotten Flesh** — Adds useful ways to process and consume rotten flesh and new zombie-feeding behavior.
-- **Universal Bone Meal** — Makes bone meal work on a wider range of plants.
-- **No Crop Destruction** — Prevents farmland and crops from being trampled during normal play.
+Preparation, heating, and serving may be separate steps. Follow the station shown by the recipe instead of assuming a crafting-grid result.
 
-#### Kitchen workflow
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight">Official mod page</a></p>
 
-The kitchen has several distinct jobs. **Prepare ingredients** on cutting boards and other stations shown by JEI; preparation can improve yield or create an ingredient for the next step. **Cook** on the required heated cookware or stove. **Batch meals** use pots and may require a serving container. **Kaleidoscope Cookery** adds its own chopping, milling, cooking, and steaming recipe categories, so similarly named stations are not interchangeable. Some feast and display blocks serve portions in the world instead of behaving like ordinary food items.
+</div>
 
-Farmer's Delight and Kaleidoscope Cookery overlap in theme but do not make every workstation interchangeable. Search the desired result in JEI, left-click it to open its recipe, and follow the station shown there. Better Rotten Flesh provides a use for a normally poor food source, but its processed results and zombie interactions should still be tested away from villagers and livestock.
+<div class="core-mod-entry">
 
-Serene Seasons can change crop growth across the year. Universal Bone Meal broadens which plants accept bone meal, while No Crop Destruction protects the farm from ordinary trampling; neither guarantees that every crop will grow equally well in every season or environment.
+#### Expanded Delight
 
-When a crop is slow, check light, hydration, season, and the plant's own growth conditions before replacing the farm. Use bone meal only after confirming that the plant accepts it, and protect paths around farmland even though the pack prevents ordinary trampling.
+- **Type:** Food and farming
+- **Core mechanic:** Extends Farmer's Delight with additional crops, blocks, workstations, and functionality. Check JEI for each recipe's exact preparation station rather than assuming a new ingredient uses the vanilla cooking loop.
+- **Player guidance:** Use JEI to identify its crops and workstation recipes.
 
-### Potions and alchemy
+The addition broadens Farmer's Delight's kitchen loop. Check the exact station instead of treating every new ingredient as a crafting-grid recipe.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/expanded-delight">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Kaleidoscope Cookery
+
+- **Type:** Food and farming
+- **Core mechanic:** Adds more ingredients and recipes around the cooking loop.
+- **Player guidance:** Look up chopping, milling, cooking, and steaming recipes separately.
+
+Its stations add another preparation path alongside Farmer's Delight. Similar dishes can require different tools.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/kaleidoscope-cookery">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Better Rotten Flesh
+
+- **Type:** Food and farming
+- **Core mechanic:** Adds useful ways to process and consume rotten flesh and new zombie-feeding behavior.
+- **Player guidance:** Process rotten flesh before treating it as ordinary food.
+
+The mod gives a poor resource more uses. Test zombie-related interactions away from livestock and villagers.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-rotten-flesh">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Universal Bone Meal
+
+- **Type:** Food and farming
+- **Core mechanic:** Makes bone meal work on a wider range of plants.
+- **Player guidance:** Confirm a plant accepts bone meal before spending it.
+
+More crops can be accelerated, but the item does not override every growth condition. Season and light can still matter.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/universal-bone-meal">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### No Crop Destruction
+
+- **Type:** Food and farming
+- **Core mechanic:** Prevents farmland and crops from being trampled during normal play.
+- **Player guidance:** Keep farm paths organized even with trampling protection.
+
+Ordinary movement is less likely to ruin planted land. Good lighting and crop conditions remain necessary.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/no-crop-destruction">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Food production now has several steps: grow or gather ingredients, prepare them at the proper station, cook them, and serve them. Farmer’s Delight and its additions do not make every workstation interchangeable, so inspect the desired dish in JEI and follow the recipe display.</p>
+</section>
+
+<section class="core-category">
+<h3>Potions and alchemy</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Alchemia
 
-- **Type:** Integrated survival or profession expansion
-- **Primary topic:** Potions and alchemy
-- **Also affects:** Magic, Equipment, Food
-- **Core idea:** Reimagines potion brewing as a simplified, Potion Craft-inspired alchemy system.
-- **Player guidance:** Alchemia is an ingredient-navigation system rather than a replacement skin for the Brewing Stand. Learn it at an Alchemical Cauldron and keep ordinary brewing recipes as a separate workflow.
-- **FF Bandage** — Adds a consumable bandage crafted from 2 paper and 1 stick. It restores 1 or 2 hearts, depending on the mod's configuration, as a small direct-healing option.
-- **Potion Time Stacker** — Lets repeated potion effects extend their remaining duration.
-- **Potions Stack** — Allows ordinary potions to stack in small groups.
+- **Type:** Potion and healing
+- **Core mechanic:** Reimagines potion brewing as a simplified, Potion Craft-inspired alchemy system.
+- **Player guidance:** Build an Alchemical Cauldron and record successful ingredient paths.
 
-#### Alchemia workflow
+Each ingredient shifts the mixture on a radial effect map. Bottle the result only after confirming the intended effect and keep a record of successful paths.
 
-1. Place an ordinary cauldron over a campfire to create the Alchemical Cauldron setup.
-2. Add discovered alchemy ingredients. Each one moves the mixture's bias in a direction on the radial effect map.
-3. Continue adjusting the mixture until the water changes to the desired effect. Combining paths can produce a potion with more than one effect; the last effect added is generally the strongest.
-4. Use glass bottles on the completed cauldron to collect the result. One full cauldron can fill four bottles.
-5. Record useful ingredient paths and confirm unfamiliar ingredients or outputs with JEI before consuming the result.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/alchemia-potion-crafting">Official mod page</a></p>
 
-Potion Time Stacker changes repeated use: drinking another potion with the same active effect adds duration instead of simply replacing the old timer. Splash-potion stacking and the maximum duration are server-configurable, so check the actual effect timer after use. Potions Stack changes inventory capacity only; potions still stack only when their item data matches.
+</div>
 
-Keep a note of successful Alchemia ingredient paths for effects you use often. Ingredient positions matter, and a small adjustment can move the route away from the intended result. Make one experimental batch at a time, confirm the result in the tooltip, then scale up ingredients for a supply run.
+<div class="core-mod-entry">
 
-### Building and decoration
+#### FF Bandage
+
+- **Type:** Potion and healing
+- **Core mechanic:** Adds a consumable bandage crafted from 2 paper and 1 stick. It restores 1 or 2 hearts, depending on the mod's configuration, as a small direct-healing option.
+- **Player guidance:** Carry a few for small, immediate healing needs.
+
+A bandage offers direct recovery without a full potion setup. Its healing amount follows the installed configuration.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ffbandage">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Potion Time Stacker
+
+- **Type:** Potion and healing
+- **Core mechanic:** Lets repeated potion effects extend their remaining duration.
+- **Player guidance:** Watch the active effect timer after drinking another potion.
+
+Repeated effects can extend their duration. Server settings control the cap and splash behavior.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/potion-time-stacker">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Potions Stack
+
+- **Type:** Potion and healing
+- **Core mechanic:** Allows ordinary potions to stack in small groups.
+- **Player guidance:** Group identical potions to save inventory space.
+
+Stacks require matching item data. This improves carrying capacity without changing what a potion does.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/potions-stack">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Alchemia’s cauldron uses ingredient paths to discover effects, while ordinary potions and support mods handle a separate brewing and inventory loop. Record successful recipes, inspect the finished bottle, and watch actual effect timers when repeated potion use stacks duration.</p>
+</section>
+
+<section class="core-category">
+<h3>Building and decoration</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
 
 #### Macaw's building collection
 
-- **Type:** Integrated building expansion
-- **Primary topic:** Building and decoration
-- **Also affects:** Building, Storage
-- **Core idea:** Adds coordinated bridges, doors, fences, furniture, decorations, lights, paintings, paths, roofs, stairs, trapdoors, and windows.
-- **Player guidance:** Treat the collection as coordinated block families. Search by the source mod in JEI or filter by the material being used instead of browsing every decorative variant individually.
+- **Type:** Building
+- **Core mechanic:** Adds coordinated bridges, doors, fences, furniture, decorations, lights, paintings, paths, roofs, stairs, trapdoors, and windows.
+- **Player guidance:** Search JEI by module or material before choosing a block family.
 
-- **Installed modules:** Macaw's Bridges, Macaw's Doors, Macaw's Fences and Walls, Macaw's Furniture, Macaw's Holidays, Macaw's Lights and Lamps, Macaw's Paintings, Macaw's Paths and Pavings, Macaw's Roofs, Macaw's Stairs, Macaw's Trapdoors, and Macaw's Windows.
+The modules coordinate doors, bridges, furniture, roofs, windows, and more. Choose a palette first to avoid browsing every variant at once.
 
-- **Display Delight** — Adds decorative ways to display food and related items.
-- **Functional Sculptures** — Adds a collection of craftable statues, monuments, and memorials for decorative builds.
-- **Armor Statues** — Unlocks detailed posing and customization for armor stands.
-- **Stoneworks** — Adds building variants for vanilla stone families.
-- **Effortless Building** — Adds tools for placing and editing large shapes and repeated structures quickly.
-- **Pro Placer** — Improves precise placement, reach-based building, and bridging.
-- **Stonecutting Upgrade** — Expands the stonecutter interface, remembers recipes, and supports quick material refills.
-- **Arcane Lanterns** — Uses catalysts to give lanterns different magical area effects.
-- **Barricades** — Adds defensive barricades, contact-damage obstacles, and resettable traps.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/macaws-bridges">Official mod page</a></p>
 
-#### Bulk-building workflow
+</div>
 
-1. Prototype a small section with ordinary placement and confirm the palette, orientation, and block count.
-2. Hold `Alt` to open Effortless Building's radial menu, choose a shape, and review its fill and replacement options.
-3. With the building block selected, right-click the first position, aim at the endpoint, and right-click again to place the previewed shape. Survival use consumes the correct blocks from inventory.
-4. Undo and Redo are unbound in this profile; assign their controls in Controls before relying on keyboard recovery. Server limits still control reach, shape size, breaking, and replacement behavior.
-5. Use mirrors or arrays for repeated sections only after one section is correct. Pro Placer supports precise single-block work and bridging where a bulk shape would be excessive.
+<div class="core-mod-entry">
 
-![Effortless Building radial menu with shape tools and filling options](assets/screenshots/10-effortless-building.png)
+#### Display Delight
 
-*Hold `Alt` to choose a building shape and configure whether it is filled or hollow.*
+- **Type:** Building
+- **Core mechanic:** Adds decorative ways to display food and related items.
+- **Player guidance:** Use displays where food should remain visible in a build.
 
-Effortless Building can place, break, or apply tool interactions across a selected shape. Check the preview before confirming, especially near storage, redstone, or irreplaceable blocks. The Randomizer tool can vary a palette, while an empty weighted slot can intentionally leave gaps.
+The mod adds decorative presentation to the kitchen. Check placement and retrieval before using valuable meals.
 
-Stonecutting Upgrade expands the stonecutter recipe area and remembers the previous selection. Press `Space` inside the stonecutter to refill one input item, or hold `Shift` with `Space` to refill a stack. These are interface actions, not global building keybinds.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/display-delight">Official mod page</a></p>
 
-Armor Statues provides a dedicated interface for poses, body-part rotation, visibility, alignment, and display options. Arcane Lanterns uses a Lantern Maker and catalysts to create area effects; read the JEI description before placement because some effects help farms or movement while others repel, contain, debuff, or damage entities. Barricades and traps are functional defenses, so test their reset and contact behavior before placing them on a shared path.
+</div>
 
-### Storage and inventory management
+<div class="core-mod-entry">
 
-- **Sophisticated Backpacks** — Adds upgradeable portable storage with functional upgrade slots.
-- **Tom's Simple Storage** — Joins ordinary containers into one searchable storage network.
-- **Linked Chests** — Lets separate chests share an inventory.
-- **Easy Shulker Boxes** — Allows shulker boxes to be used directly from the inventory.
+#### Functional Sculptures
 
-Choose the storage system by the job. **Sophisticated Backpacks** provide portable capacity and configurable upgrades; `V` opens an equipped pack. **Tom's Simple Storage** connects nearby containers to one searchable network, accessed at a placed terminal. **Linked Chests** share inventories between locations through matching dye channels, with personal channels and a portable pouch available. **Easy Shulker Boxes** lets you browse a packed shulker without placing it.
+- **Type:** Building
+- **Core mechanic:** Adds a collection of craftable statues, monuments, and memorials for decorative builds.
+- **Player guidance:** Choose a monument that fits the build's scale.
 
-![Tom's Simple Storage inventory connector linking two nearby container inventories](assets/screenshots/09-storage.png)
+Craftable statues and memorials add focal points. Test a piece in a small area before repeating it across a base.
 
-*The connector indexes linked inventories; Jade reports their combined capacity and connected-container count.*
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/functional-statues">Official mod page</a></p>
 
-![Tom's Simple Storage terminal showing items from connected containers in one searchable interface](assets/screenshots/09-storage-interface.png)
+</div>
 
-*The terminal browses the network as one inventory while the items remain in their connected containers.*
+<div class="core-mod-entry">
 
-Sophisticated Backpacks can also be placed as blocks and used with hoppers or other inventory automation. Keep its role distinct from a Tom's network: a backpack is a portable container with upgrades, while Tom's Simple Storage indexes connected inventories rather than moving everything into one giant chest.
+#### Armor Statues
 
-Linked Chests share data by channel, not by physical adjacency. Label the three-color combination, decide whether the channel is shared or personal, and test a second chest before trusting it with important materials. Easy Shulker Boxes are an inventory convenience; they do not expand a storage network.
+- **Type:** Building
+- **Core mechanic:** Unlocks detailed posing and customization for armor stands.
+- **Player guidance:** Use its interface to pose an armor stand precisely.
 
-Set a Linked Chest channel with dyes on its three color controls; any chest using the same ordered combination opens that channel's shared inventory. Use a diamond on the latch to convert it to a larger player-specific channel. To configure portable access, sneak-use a Linked Pouch on the target chest so the pouch copies that channel.
+Rotation, visibility, and alignment change the display without changing worn combat gear. Save a working pose before complex edits.
 
-### Item transport and logistics
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armor-statues">Official mod page</a></p>
 
-- **Golden Hopper** — Adds a hopper with configurable filtering behavior.
-- **Hopper Gadgetry** — Adds more capable hopper controls and item-routing tools.
-- **Sophisticated Inventory Interactions** — Brings search, sorting, and transfer controls to eligible container screens.
-- **Sophisticated Item Actions** — Finds nearby inventories containing an item and supports direct restocking or depositing.
+</div>
 
-#### Choosing a transport tool
+<div class="core-mod-entry">
 
-Use a **Golden Hopper** when one physical filter item should control what it pulls and pushes; that filter consumes a real item slot. A **Grated Hopper** uses configured filter slots, so confirm that its filters match the items you expect. **Ducts** push items along connected routes but do not pull or collect loose drops. **Chutes** collect loose items and move them downward without storing them. **Sophisticated Inventory Interactions** adds search, sorting, and transfer actions to supported screens; filtered transfers depend on what is already in the destination. **Sophisticated Item Actions** can highlight matching nearby storage or transfer items directly, so test its filters with disposable stacks before using bulk actions.
+#### Stoneworks
 
-The Sophisticated interaction and item-action keybinds are intentionally left unbound in the recommended profile. Assign only the actions you will use, then test them with disposable items: deposit and transfer operations can affect many stacks at once.
+- **Type:** Building
+- **Core mechanic:** Adds building variants for vanilla stone families.
+- **Player guidance:** Search stone variants by the base material.
 
-### Vehicles and travel equipment
+The added shapes make a coherent palette easier to build. Check stonecutter or crafting routes in JEI.
 
-- **Seaworthy Boats** — Gives boats health and armor, then adds faster and tougher reinforcement tiers plus a shipyard repair loop.
-- **Vehicle Upgrade** — Improves mount and vehicle behavior, including swimming, terrain handling, rider inventory access, mounted mining, and reduced wandering.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stoneworks">Official mod page</a></p>
 
-Use a Shipyard near the boat to switch between repair and upgrade work. Repairs consume planks; reinforcement consumes the configured material and normally advances through the available tiers in sequence. The riding HUD shows boat health when enabled, so return for repairs before a damaged boat breaks far from shore.
+</div>
 
-Vehicle Upgrade affects many rideable entities rather than supplying a new vehicle family. Saddled mounts can stay where they are left, mounts can handle water and leaves more reliably, and passengers interact with nearby blocks more safely. Some features are configurable, so observed server behavior takes precedence over the full feature list.
+<div class="core-mod-entry">
 
-### Trading and multiplayer economy
+#### Effortless Building
 
-- **Market Board** — Provides a shared multiplayer marketplace where players can list, buy, remove, and collect proceeds from item sales.
+- **Type:** Building
+- **Core mechanic:** Adds tools for placing and editing large shapes and repeated structures quickly.
+- **Player guidance:** Hold Alt for the radial menu and inspect the shape preview.
 
-Right-click a placed board to browse and buy; sneak-right-click it to open the management interface for selling items, removing listings, or collecting sale proceeds. Use its search, sorting, and scrolling controls to review existing listings before creating one. When selling, verify the item, quantity, accepted server currency, and price before confirming. The ordinary Market Board uses one configured currency, while Market Board Plus can accept multiple registered currencies in one price. The server administrator controls which currencies are registered, and currency items themselves cannot be sold through the system.
+Survival placement spends matching blocks, while server rules can limit range and size. Be careful near storage, redstone, and irreplaceable blocks.
 
-Market Board is for asynchronous player listings. Goblin Traders and other unusual traders remain direct creature interactions and are documented under [Creatures and hostile mobs](#creatures-and-hostile-mobs).
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/effortless-building">Official mod page</a></p>
 
-For a clear listing, compare similar offers, account for the server's registered currency, and state the exact quantity. A player must find the board and accept the displayed terms; collect proceeds separately through its management screen.
+</div>
 
-#### Sources for survival and creation
+<div class="core-mod-entry">
 
-- [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf)
-- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight), [Expanded Delight](https://www.curseforge.com/minecraft/mc-mods/expanded-delight), and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
-- [Alchemia](https://modrinth.com/mod/alchemia), [FFBandage](https://www.curseforge.com/minecraft/mc-mods/ffbandage), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
-- [Macaw's building mods](https://www.curseforge.com/members/sketch_macaw/projects), [Effortless Building](https://modrinth.com/mod/effortless-building), [Armor Statues](https://modrinth.com/mod/armor-statues), [Stonecutting Upgrade](https://www.curseforge.com/minecraft/mc-mods/stonecutting-upgrade), [Arcane Lanterns](https://modrinth.com/mod/arcane-lanterns), and [Traps and Barricades](https://www.curseforge.com/minecraft/mc-mods/traps-and-brricades)
-- [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks), [Tom's Simple Storage](https://modrinth.com/mod/toms-storage), [Linked Chests](https://modrinth.com/mod/new-linked-chests), and [Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes)
-- [Golden Hopper](https://www.curseforge.com/minecraft/mc-mods/golden-hopper), [Hopper Gadgetry](https://modrinth.com/mod/hopper-gadgetry), [Sophisticated Inventory Interactions](https://modrinth.com/mod/sophisticated-inventory-interactions), and [Sophisticated Item Actions](https://modrinth.com/mod/sophisticated-item-actions)
-- [Seaworthy Boats](https://modrinth.com/mod/seaworthy-boats), [Vehicle Upgrade](https://modrinth.com/mod/vehicle-upgrade), and [The Market Board](https://www.curseforge.com/minecraft/mc-mods/market-board)
+#### Pro Placer
+
+- **Type:** Building
+- **Core mechanic:** Improves precise placement, reach-based building, and bridging.
+- **Player guidance:** Use it for precise single-block placement and bridging.
+
+It complements bulk building when a large shape is too much. Test its reach and placement behavior before working over a drop.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pro-placer">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Stonecutting Upgrade
+
+- **Type:** Building
+- **Core mechanic:** Expands the stonecutter interface, remembers recipes, and supports quick material refills.
+- **Player guidance:** Use Space inside the stonecutter to refill one item.
+
+The interface remembers recipes and offers a larger selection area. Shift + Space refills a stack when the materials are available.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stonecutting-upgrade">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Arcane Lanterns
+
+- **Type:** Building
+- **Core mechanic:** Uses catalysts to give lanterns different magical area effects.
+- **Player guidance:** Read a catalyst's effect before placing the lantern.
+
+Some area effects help farms or movement; others affect nearby entities. Test the radius away from shared paths.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/arcane-lanterns">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Barricades
+
+- **Type:** Building
+- **Core mechanic:** Adds defensive barricades, contact-damage obstacles, and resettable traps.
+- **Player guidance:** Try a trap's contact and reset behavior in a safe area.
+
+Defensive blocks can affect traffic as well as enemies. Leave a clear route for allies.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/barricades">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">This category ranges from small block families and furniture to large shape placement. Prototype a section before using Effortless Building at scale; hold Alt for its radial menu and inspect the preview before confirming a placement near storage or redstone.</p>
+</section>
+
+<section class="core-category">
+<h3>Storage and inventory management</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Sophisticated Backpacks
+
+- **Type:** Storage
+- **Core mechanic:** Adds upgradeable portable storage with functional upgrade slots.
+- **Player guidance:** Press V to open an equipped pack and choose upgrades for its job.
+
+A pack travels with the player and can also work as a placed container. Its upgrades add utilities rather than simply more slots.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Tom's Simple Storage
+
+- **Type:** Storage
+- **Core mechanic:** Joins ordinary containers into one searchable storage network.
+- **Player guidance:** Connect containers to a terminal and test the searchable network.
+
+A terminal searches connected inventories while the items remain in their containers. Test capacity and connections before expanding the network.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/toms-storage">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Linked Chests
+
+- **Type:** Storage
+- **Core mechanic:** Lets separate chests share an inventory.
+- **Player guidance:** Label and test the ordered dye channel before storing valuables.
+
+Chests with matching colors share inventory even when separated. A personal channel and portable pouch add different access options.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/linked-chests">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Easy Shulker Boxes
+
+- **Type:** Storage
+- **Core mechanic:** Allows shulker boxes to be used directly from the inventory.
+- **Player guidance:** Open a packed shulker from inventory when checking supplies.
+
+This saves repeated placement while travelling. It does not link distant storage or increase the box's capacity.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/easy-shulker-boxes">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Portable storage, connected base storage, linked inventories, and inventory shortcuts solve different problems. A backpack travels with the player, Tom’s indexes connected containers, Linked Chests share a channel, and shulker access remains a local convenience. Label channels and test transfers with expendable items first.</p>
+</section>
+
+<section class="core-category">
+<h3>Item transport and logistics</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Golden Hopper
+
+- **Type:** Logistics
+- **Core mechanic:** Adds a hopper with configurable filtering behavior.
+- **Player guidance:** Place a real filter item before trusting the route.
+
+Its filter uses inventory space, so capacity and direction both matter. Test with expendable items first.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/golden-hopper">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Hopper Gadgetry
+
+- **Type:** Logistics
+- **Core mechanic:** Adds more capable hopper controls and item-routing tools.
+- **Player guidance:** Compare the filter, duct, and chute needed for the route.
+
+Some pieces push, collect, or move items downward in different ways. Check direction before connecting a valuable store.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/hopper-gadgetry">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Sophisticated Inventory Interactions
+
+- **Type:** Logistics
+- **Core mechanic:** Brings search, sorting, and transfer controls to eligible container screens.
+- **Player guidance:** Test sorting or transfer controls on a small container.
+
+Supported screens gain faster inventory actions. A filtered transfer still depends on destination contents.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-inventory-interactions">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Sophisticated Item Actions
+
+- **Type:** Logistics
+- **Core mechanic:** Finds nearby inventories containing an item and supports direct restocking or depositing.
+- **Player guidance:** Use a small test stack before depositing or restocking.
+
+Nearby-inventory search can save time at a large base. Bulk actions should be checked for the intended filter and target.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-item-actions">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Hoppers and ducts route physical items, while Sophisticated controls act through inventory screens or nearby containers. Choose filters and directions deliberately, and test bulk transfer with disposable stacks before connecting valuable storage.</p>
+</section>
+
+<section class="core-category">
+<h3>Vehicles and travel equipment</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Seaworthy Boats
+
+- **Type:** Travel equipment
+- **Core mechanic:** Gives boats health and armor, then adds faster and tougher reinforcement tiers plus a shipyard repair loop.
+- **Player guidance:** Watch boat health and use a Shipyard for repair.
+
+Reinforcement can make a boat tougher and faster. Return to shore before damage strands an ocean journey.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/seaworthy-boats">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Vehicle Upgrade
+
+- **Type:** Travel equipment
+- **Core mechanic:** Improves mount and vehicle behavior, including swimming, terrain handling, rider inventory access, mounted mining, and reduced wandering.
+- **Player guidance:** Test a mount's new handling near the base.
+
+Swimming, terrain movement, and rider interactions can change. Server configuration decides which conveniences are active.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/vehicle-upgrade">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Seaworthy Boats gives boats a repair and reinforcement path, while Vehicle Upgrade changes how several mounts and vehicles behave. Check a boat’s condition before crossing a large ocean and test mount handling locally before depending on it during an expedition.</p>
+</section>
+
+<section class="core-category">
+<h3>Trading and multiplayer economy</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Market Board
+
+- **Type:** Multiplayer economy
+- **Core mechanic:** Provides a shared multiplayer marketplace where players can list, buy, remove, and collect proceeds from item sales.
+- **Player guidance:** Verify the item, quantity, and currency before posting a listing.
+
+Sales are asynchronous player listings. Collect the proceeds through the board’s management screen after an item sells.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/market-board">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Market Board turns surplus items into asynchronous player listings. Browse comparable offers, verify the item, quantity, and server currency, then collect proceeds through the board’s management interface. Creature traders remain separate direct interactions.</p>
+</section>
 
 <div class="page-break" aria-hidden="true"></div>
 
 ## Part VI — Interface and Reference
 
-The pack exposes far more information than vanilla Minecraft, but every overlay does a different job. Use Jade for the thing in front of you, JEI for items and recipes, tooltips for details already in your inventory, and the permanent HUD only for information needed while moving. The recommended layout below keeps those layers readable without turning the screen into a dashboard.
+The interface is most useful when each layer has a clear job. Jade identifies a block or creature in front of you; JEI answers what an item makes or where it is used; tooltips explain the gear and food already in hand. Keep the permanent HUD for information needed while moving, such as position, health, and the party roster. Turning on every panel at once can cover the view during combat or building.
 
-Use the interface in layers: a tooltip answers an immediate question, JEI helps plan a craft or search a mod, and the HUD stays visible for information needed while moving. Turn on extra overlays only when they solve a current problem; overlapping panels make combat and building harder to read.
+This section lists the installed information, recipe, and display tools as a quick reference. Use the mouse actions visible in JEI for recipes and uses, and consult Part I before adding a shortcut that may conflict with another mod. Arrange HUD elements for the current GUI scale and resolution, then revisit the layout when a server scoreboard or larger party changes the available screen space.
 
-### Information overlays and tooltips
+<section class="core-category">
+<h3>Information overlays and tooltips</h3>
+<div class="core-category-entries">
 
-- **AppleSkin** — Visualizes hunger, saturation, exhaustion, and the food value of held items without changing those mechanics.
-- **Jade** — Identifies the block or entity being looked at and displays relevant state information in an on-screen overlay.
-- **Effect Insights** — Adds readable descriptions to potion and food effects, including active effects viewed from the inventory.
-- **Enchantment Insights** — Adds enchantment descriptions, levels, and optional technical details to tooltips and enchanting hints.
-- **Food Effect Tooltips** — Shows the status effects supplied by a food before it is eaten.
-- **Floating Damage Indicators** — Displays configurable, color-coded damage numbers for dealt and received damage.
-- **Controlling** — Adds keybind search, conflict filtering, and a view of currently available keys to the Controls screen.
+<div class="core-mod-entry">
 
-#### Sources for interface and client features
+#### AppleSkin
 
-[Jade](https://modrinth.com/mod/jade), [AppleSkin](https://modrinth.com/mod/appleskin), [Effect Insights](https://modrinth.com/mod/effect-insights), [Enchantment Insights](https://modrinth.com/mod/enchantment-insights), [Food Effect Tooltips](https://modrinth.com/mod/foodeffecttooltips), [Floating Damage Indicators](https://modrinth.com/mod/floating-damage-indicators), and [Controlling](https://modrinth.com/mod/controlling); [Just Enough Items](https://modrinth.com/mod/jei), [JEI Trades](https://modrinth.com/mod/jei-trades), [Just Enough Filters](https://modrinth.com/mod/just-enough-filters), [Advanced Loot Info](https://modrinth.com/mod/advanced-loot-info), and [Advanced Worldgen Info](https://modrinth.com/mod/advanced-worldgen-info); [Coordinates Display](https://modrinth.com/mod/coordinates-display), [Paper Doll](https://modrinth.com/mod/paper-doll), [Hovering Hotbar](https://modrinth.com/mod/hovering-hotbar), and [Overflowing Bars](https://modrinth.com/mod/overflowing-bars); [SimpleHats Lite](https://www.curseforge.com/minecraft/mc-mods/simplehats-lite), [Distinct Potions](https://modrinth.com/mod/distinct-potions), [Quick Skin](https://modrinth.com/mod/quick-skin), and [PatPat](https://modrinth.com/plugin/patpat); [Charm of Undying: Reborn](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-reborn), [Harder Natural Healing](https://modrinth.com/mod/harder-natural-healing), [Iris](https://modrinth.com/mod/iris), and [Sodium](https://modrinth.com/mod/sodium).
+- **Type:** Information interface
+- **Core mechanic:** Visualizes hunger, saturation, exhaustion, and the food value of held items without changing those mechanics.
+- **Player guidance:** Read the hunger and saturation preview before eating.
 
-#### Reading the information layers
+AppleSkin shows food value without changing the hunger rules. Compare meals before a long fight or expedition.
 
-To identify a block or creature, aim at it and read **Jade**; the default overlay toggle is `Numpad 1`, while the Mods screen opens its configuration if your keyboard lacks a numpad. In **JEI**, left-click an item in the list to view its recipe or right-click it to view its uses; those keyboard shortcuts are unbound in this profile. **Effect Insights** and **Enchantment Insights** explain status effects and enchantments in their tooltips; hold `Left Shift` when LibTooltips indicates more text. Before eating, read **AppleSkin** for hunger and saturation and **Food Effect Tooltips** for status effects. **Floating Damage Indicators** shows damage over the target, with colors and prefixes for configured damage types.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/appleskin">Official mod page</a></p>
 
-Jade's `Numpad 2` toggles its fluid display and `Numpad 5` narrates the current target. Its recipe and usage shortcuts are left unchanged; JEI uses left-click for recipes and right-click for uses, with the keyboard shortcuts unbound. Players without a numpad can open the mod's configuration through the Mods screen or rebind only the Jade actions they actually use.
+</div>
 
-The recommended profile assigns `F2` to advanced tooltips, so the normal screenshot action is intentionally unbound. Advanced tooltips are best used temporarily when an item ID, durability value, or other technical detail is needed. Controlling's search and conflict views should be the first place to check when a shortcut does nothing.
+<div class="core-mod-entry">
 
-### Recipe and loot information
+#### Jade
 
-- **Just Enough Items** — Provides searchable item, recipe, and usage views.
-- **JEI Trades** — Adds villager trade information to the recipe browser.
-- **Just Enough Filters** — Adds more ways to filter the item browser.
-- **Advanced Loot Info** — Shows detailed loot-table and trade information in the recipe browser.
-- **Advanced Worldgen Info** — Shows where world-generation features and resources can appear.
-- **Show My Recipes** — Unlocks crafting recipes in the recipe book so players can discover what is available.
+- **Type:** Information interface
+- **Core mechanic:** Identifies the block or entity being looked at and displays relevant state information in an on-screen overlay.
+- **Player guidance:** Aim at a target; use Numpad 1 for the overlay toggle if needed.
 
-#### JEI everyday workflow
+Its target overlay reports a block or entity’s identity and available state. Open mod settings if a keyboard lacks the recommended numpad controls.
 
-1. Open an inventory and use the search field to narrow the item list. Press `Ctrl + F` to focus the field quickly.
-2. In the JEI item list, left-click an ingredient or result for its recipe, or right-click it for uses. The corresponding keyboard shortcuts are unbound in this profile.
-3. Scroll to move between item-list or recipe pages. Click a recipe-category name to see every recipe in that category.
-4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
-5. Show/Hide JEI Overlays is unbound in this profile; assign its control in Controls if you want to hide or restore the item list with a key.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/jade">Official mod page</a></p>
 
-![JEI recipe view with a crafting recipe on the left and the searchable item browser on the right](assets/screenshots/06-jei-recipe-and-uses.png)
+</div>
 
-*Recipe and usage views keep the selected process visible beside JEI's filtered item browser.*
+<div class="core-mod-entry">
 
-JEI search can combine ordinary words with filters. Prefix a term with `@` to search by source mod, prefix an unwanted term with `-` to exclude it, and wrap a phrase in quotation marks when its words must stay together. This is the quickest way to browse one large content mod without listing every item in this handbook.
+#### Effect Insights
 
-JEI's companion features answer different questions: **JEI Trades** reads current registered villager trades; **Just Enough Filters** narrows large item lists; **Advanced Loot Info** shows loot tables and trades; **Advanced Worldgen Info** describes where configured features and resources can generate; **Show My Recipes** makes the vanilla recipe book a broader discovery aid. Availability still depends on what the current world and server register.
+- **Type:** Information interface
+- **Core mechanic:** Adds readable descriptions to potion and food effects, including active effects viewed from the inventory.
+- **Player guidance:** Read effect details before relying on a food or potion.
 
-JEI's cheat, edit, and developer controls are reference entries rather than normal-player tools. They remain unbound in the recommended profile. On a survival server, use JEI for information and recipe transfer only; permissions and server rules remain authoritative.
+The tooltip explains status effects in a familiar place. Confirm duration and strength on the actual item.
 
-### HUD changes and customization
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/effect-insights">Official mod page</a></p>
 
-#### Recommended HUD arrangement
+</div>
 
-![Recommended HUD layout: Paper Doll above Coordinates Display at the upper-left, with Better Party on the right](assets/hud-layout-recommended.png)
+<div class="core-mod-entry">
 
-*Layout diagram: stack personal information on the upper-left and reserve the right edge for the party roster.*
+#### Enchantment Insights
 
-![In-game recommended HUD with Paper Doll above Coordinates Display on the left and the Better Party roster on the right](assets/screenshots/11-hud-layout-in-game.png)
+- **Type:** Information interface
+- **Core mechanic:** Adds enchantment descriptions, levels, and optional technical details to tooltips and enchanting hints.
+- **Player guidance:** Inspect unfamiliar enchantments on the current item.
 
-*In-game example: the arrangement preserves the center while keeping character, location, and party information visible.*
+Descriptions and level information help compare gear. Technical details can be expanded when a rule is unclear.
 
-This is the pack recommendation, not a locked layout. It gives personal status elements a consistent upper-left stack, leaves the center clear for combat, and gives a multiplayer roster enough vertical space on the right.
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/enchantment-insights">Official mod page</a></p>
 
-1. Open Better Party with `B`, set its roster to a vertical arrangement, and place it on the right.
-2. Open Paper Doll's configuration and place the model in the upper-left. Adjust its scale and action-based visibility before positioning the coordinates beneath it.
-3. Press `Ctrl + N` to open Coordinates Display, then use `Alt + N` for HUD positioning. Place the coordinate panel directly below Paper Doll.
-4. Use `Shift + N` to cycle coordinate display modes and choose the amount of navigation information that remains readable at the current GUI scale.
-5. Test the result with status effects visible, the chat open, and a full party. Move the right-side roster if a server scoreboard or effect list competes for the same edge.
+</div>
 
-Recheck the layout after changing GUI scale or resolution. The image shows the relationship between elements; it is not a pixel-perfect requirement for every display.
+<div class="core-mod-entry">
 
-#### Coordinates Display configuration
+#### Food Effect Tooltips
 
-Coordinates Display can show precise position, chunk position, facing direction, biome, and other navigation information. Its display modes offer different densities: a minimal mode keeps the footprint small, a compass-oriented mode emphasizes direction, and a hotbar-oriented mode moves the readout closer to the lower center of the screen. Use the mode that fits the current activity; the upper-left arrangement above is simply the most balanced general setup.
+- **Type:** Information interface
+- **Core mechanic:** Shows the status effects supplied by a food before it is eaten.
+- **Player guidance:** Read food effects before eating an unfamiliar meal.
 
-The recommended coordinate group is `N` to toggle the HUD, `Shift + N` to cycle modes, `Alt + N` to reposition it, and `Ctrl + N` to open its GUI. `Y` sends the current position in chat and `H` toggles the 3D compass. Marking, clipboard, and `/tp` actions remain unbound unless a player needs them.
+A status effect may matter as much as hunger restoration. Compare the tooltip with AppleSkin's hunger preview.
 
-#### Better Party configuration
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge">Official mod page</a></p>
 
-Better Party's HUD is most useful when it shows the roster without obscuring the player's own status information. Keep it vertical on the right and scale it for the usual party size. If status effects or a server scoreboard also occupy that side, move or reduce the party panel rather than stacking interfaces on top of one another. Party creation, roles, chat, friendly fire, XP sharing, and revival coordination are covered under [Parties and multiplayer cooperation](#parties-and-multiplayer-cooperation).
+</div>
 
-#### Paper Doll configuration
+<div class="core-mod-entry">
 
-Paper Doll shows a small player model during configured actions such as sprinting, swimming, crouching, flying, or gliding. Its position, size, display duration, head movement, and visibility rules are configurable. Place it first because its model needs more vertical space than a coordinate line; then position Coordinates Display directly beneath it.
+#### Floating Damage Indicators
 
-- **Hovering Hotbar** — Raises the hotbar from the screen edge with a configurable offset and optional experience-level placement.
-- **Overflowing Bars** — Compresses health, armor, and armor-toughness values beyond vanilla limits into layered bars with readable counters.
-- **Paper Doll** — Adds a configurable, action-aware player model to the HUD.
+- **Type:** Information interface
+- **Core mechanic:** Displays configurable, color-coded damage numbers for dealt and received damage.
+- **Player guidance:** Compare several hits under the same conditions.
 
-Hovering Hotbar uses `Up Arrow` and `Down Arrow` in the recommended profile for quick positioning. Overflowing Bars becomes important when RPG equipment raises defensive or health values beyond the normal display range; its layers and counters represent additional capacity rather than a second, separate health pool.
+Color-coded values show damage during combat. One large number may hide slower attack timing or passive triggers.
 
-### Cosmetic and animation changes
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/floating-damage-indicators">Official mod page</a></p>
 
-- **SimpleHats Lite** — Wear hats in functional or cosmetic Curios Head, Face, or Hat slots; the pack's fix allows layered vanity looks. Grab bags and dyes add variants.
-- **Distinct Potions** — Gives potion categories clearer names, colors, and bottle appearances so they are easier to distinguish.
-- **Quick Skin** — Adds in-game skin, model, and cape management without returning to the launcher.
-- **PatPat** — Adds a friendly player-to-player and player-to-creature pat interaction.
-- **Kingdom Cats Replacer** — Replaces vanilla cat visuals with seven animated models while preserving vanilla cat behavior.
+</div>
 
-Hold `C` and right-click a supported player or creature to pat it; the contextual interaction leaves ordinary use actions intact.
+<div class="core-mod-entry">
 
-### Optional client features
+#### Controlling
 
-- **Coordinates Display** — Shows the player's coordinates and related navigation information on a configurable HUD.
-- **Iris** — Enables shader-pack support.
-- **Sodium** — Replaces the renderer to improve frame rate and reduce rendering stutter.
+- **Type:** Information interface
+- **Core mechanic:** Adds keybind search, conflict filtering, and a view of currently available keys to the Controls screen.
+- **Player guidance:** Search Controls for an action or a conflicting key.
 
-These client-only options affect the interface and rendering. Sodium improves rendering; manage Iris shader packs in Video Settings, use `Alt + R` to reload them, and disable shaders first when troubleshooting.
+The conflict view helps explain a shortcut that does nothing. Leave unnecessary bindings unbound.
 
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/controlling">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Each information layer answers a different question: Jade identifies what is in front of you, item tooltips explain held gear, and food and effect helpers reveal costs or benefits before use. Keep only the overlays needed for the current task and use Controlling when a shortcut conflicts.</p>
+</section>
+
+<section class="core-category">
+<h3>Recipe and loot information</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Just Enough Items
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Provides searchable item, recipe, and usage views.
+- **Player guidance:** Left-click an item for recipes and right-click it for uses.
+
+Use the search field to narrow the item list and the recipe transfer button when available. A transfer places owned ingredients but never creates missing ones.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/jei">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### JEI Trades
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Adds villager trade information to the recipe browser.
+- **Player guidance:** Inspect registered villager offers before travelling to trade.
+
+Trade information appears beside the broader recipe reference. Actual offers still depend on the world and villager.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/jei-trades">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Just Enough Filters
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Adds more ways to filter the item browser.
+- **Player guidance:** Narrow a large JEI item list by the needed property.
+
+Filtering makes exploration mods easier to browse. Clear the filter when a known item seems to disappear.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-filters">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Advanced Loot Info
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Shows detailed loot-table and trade information in the recipe browser.
+- **Player guidance:** Review loot and trade information while planning a target.
+
+The data helps identify possible sources for a reward. Current world and server registration determine availability.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Advanced Worldgen Info
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Shows where world-generation features and resources can appear.
+- **Player guidance:** Check where a configured resource or feature can appear.
+
+Generation information helps choose an exploration region. Existing chunks may not gain new features after an update.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/advanced-worldgen-info">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Show My Recipes
+
+- **Type:** Recipe and loot reference
+- **Core mechanic:** Unlocks crafting recipes in the recipe book so players can discover what is available.
+- **Player guidance:** Browse the recipe book for discoverable crafts.
+
+The book becomes a broader reminder of available crafting paths. Use JEI when the exact workstation or ingredient relationship is unclear.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/show-my-recipes">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">JEI is the main planning tool for items and recipes; left-click an item for its recipe and right-click it for uses. Its companion mods add trade, loot, filtering, and generation information. The cheat, edit, and developer shortcuts remain unbound in the recommended profile.</p>
+</section>
+
+<section class="core-category">
+<h3>HUD changes and customization</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Hovering Hotbar
+
+- **Type:** HUD
+- **Core mechanic:** Raises the hotbar from the screen edge with a configurable offset and optional experience-level placement.
+- **Player guidance:** Use Up Arrow or Down Arrow to adjust its position.
+
+The offset can free space near the bottom of the screen. Recheck it after changing GUI scale.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/hovering-hotbar">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Overflowing Bars
+
+- **Type:** HUD
+- **Core mechanic:** Compresses health, armor, and armor-toughness values beyond vanilla limits into layered bars with readable counters.
+- **Player guidance:** Read the layers and counters when stats exceed vanilla limits.
+
+RPG gear can push health or armor past the ordinary bar. Extra layers represent capacity, not a separate resource.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/overflowing-bars">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Paper Doll
+
+- **Type:** HUD
+- **Core mechanic:** Adds a configurable, action-aware player model to the HUD.
+- **Player guidance:** Place its player model before arranging the coordinate panel.
+
+Action-based visibility can show the model during movement and gliding. Scale it so it does not cover tooltips or combat cues.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/paper-doll">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">A readable HUD keeps position and character status near the left edge and the party roster on the right. Arrange Paper Doll first, then place Coordinates Display beneath it with Alt + N; open Better Party with B to adjust its roster. Recheck spacing after a GUI-scale or resolution change.</p>
+</section>
+
+<section class="core-category">
+<h3>Cosmetic and animation changes</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### SimpleHats Lite
+
+- **Type:** Cosmetic
+- **Core mechanic:** Wear hats in functional or cosmetic Curios Head, Face, or Hat slots; the pack's fix allows layered vanity looks. Grab bags and dyes add variants.
+- **Player guidance:** Use functional or purple vanity Head, Face, and Hat slots.
+
+Vanity placement supports layered looks without replacing useful headgear. A functional slot still follows the hat's own gameplay effects.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/simplehats-lite">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Distinct Potions
+
+- **Type:** Cosmetic
+- **Core mechanic:** Gives potion categories clearer names, colors, and bottle appearances so they are easier to distinguish.
+- **Player guidance:** Compare potion names and bottle appearances before use.
+
+Visual differences help distinguish categories in a crowded inventory. Read the effect tooltip for the actual result.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/distinct-potions">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Quick Skin
+
+- **Type:** Cosmetic
+- **Core mechanic:** Adds in-game skin, model, and cape management without returning to the launcher.
+- **Player guidance:** Adjust the skin, model, or cape in game.
+
+Appearance changes no longer require a launcher round trip. Preview the result before returning to play.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/quick-skin">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### PatPat
+
+- **Type:** Cosmetic
+- **Core mechanic:** Adds a friendly player-to-player and player-to-creature pat interaction.
+- **Player guidance:** Hold C and right-click a supported player or creature.
+
+The interaction is social and cosmetic. It leaves the usual use action available outside that context.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/patpat">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Kingdom Cats Replacer
+
+- **Type:** Cosmetic
+- **Core mechanic:** Replaces vanilla cat visuals with seven animated models while preserving vanilla cat behavior.
+- **Player guidance:** Expect new cat models while keeping vanilla cat behavior.
+
+The visual variants make tamed cats easier to recognize. Care and interaction rules remain familiar.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/cute-cats">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">Cosmetic mods change how a character or item looks and how players interact socially, without replacing the core equipment loop. SimpleHats Lite can use vanity Curios slots, while skin, potion, cat, and pat effects have their own visual roles.</p>
+</section>
+
+<section class="core-category">
+<h3>Optional client features</h3>
+<div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Coordinates Display
+
+- **Type:** Optional client feature
+- **Core mechanic:** Shows the player's coordinates and related navigation information on a configurable HUD.
+- **Player guidance:** Use N to toggle, Shift + N to cycle, and Alt + N to position the display.
+
+Choose a compact mode that preserves the navigation details you use. Reposition it after changing GUI scale.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/coordinates-display">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Iris
+
+- **Type:** Optional client feature
+- **Core mechanic:** Enables shader-pack support.
+- **Player guidance:** Manage shader packs in Video Settings; Alt + R reloads them.
+
+Shaders change rendering rather than world mechanics. Disable a pack first when investigating a visual problem.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/irisshaders">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Sodium
+
+- **Type:** Optional client feature
+- **Core mechanic:** Replaces the renderer to improve frame rate and reduce rendering stutter.
+- **Player guidance:** Use its video options when adjusting performance.
+
+The renderer can improve frame rate and reduce stutter. Pair settings with the display and shader workload actually in use.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sodium">Official mod page</a></p>
+
+</div>
+
+</div>
+<p class="core-category-description">These client-side options affect navigation display and rendering. Configure coordinates for the amount of detail you need, manage shader packs through Iris, and treat Sodium as the renderer that supports smoother frame rates.</p>
+</section>
 
 <div class="page-break" aria-hidden="true"></div>
 
 ### Alphabetical mod index
 
-- [Abyssal Ocean](#integrated-world-and-dimension-expansions)
-- [Advanced Loot Info](#recipe-and-loot-information)
-- [Advanced Worldgen Info](#recipe-and-loot-information)
-- [Adventurer Skills](#skill-trees-and-character-progression)
+- [Abyssal Ocean](#abyssal-ocean)
+- [Advanced Loot Info](#advanced-loot-info)
+- [Advanced Worldgen Info](#advanced-worldgen-info)
+- [Adventurer Skills](#adventurer-skills)
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
-- [Alex's Mobs](#creatures-and-hostile-mobs)
-- [Animal Garden collection](#creatures-and-hostile-mobs)
-- [Animal Pen](#companions-pets-villagers-and-settlements)
-- [Antique Trading Ship](#structures-and-dungeons)
-- [AppleSkin](#information-overlays-and-tooltips)
-- [Arcane Lanterns](#building-and-decoration)
-- [Armor Quick Swap](#weapons-armor-jewelry-and-relics)
-- [Armor Statues](#building-and-decoration)
-- [Armor Trim Item Fix](#enchanting-and-equipment-improvement)
-- [Armored Foes](#dangerous-nights-and-environmental-threats)
-- [Armory](#weapons-armor-jewelry-and-relics)
-- [Arrow+](#weapons-armor-jewelry-and-relics)
-- [Arsenal](#weapons-armor-jewelry-and-relics)
-- [Artifacts](#weapons-armor-jewelry-and-relics)
-- [ATi Structures: Vanilla Edition](#structures-and-dungeons)
-- [Awesome Dungeon collection](#structures-and-dungeons)
-- [Barricades](#building-and-decoration)
-- [Better Combat](#combat-controls-and-dodge-rolling)
+- [Alex's Mobs](#alexs-mobs)
+- [Animal Garden collection](#animal-garden-collection)
+- [Animal Pen](#animal-pen)
+- [Antique Trading Ship](#antique-trading-ship)
+- [AppleSkin](#appleskin)
+- [Arcane Lanterns](#arcane-lanterns)
+- [Armored Foes](#armored-foes)
+- [Armor Quick Swap](#armor-quick-swap)
+- [Armor Statues](#armor-statues)
+- [Armor Trim Item Fix](#armor-trim-item-fix)
+- [Armory](#armory)
+- [Arrow+](#arrow)
+- [Arsenal](#arsenal)
+- [Artifacts](#artifacts-1)
+- [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)
+- [Awesome Dungeon collection](#awesome-dungeon-collection)
+- [Barricades](#barricades)
+- [Better Combat](#better-combat-1)
 - [Better Nether](#better-nether)
-- [Better Party](#parties-and-multiplayer-cooperation)
-- [Better Respawn](#death-revival-graves-and-respawning)
-- [Better Revive](#death-revival-graves-and-respawning)
-- [Better Rotten Flesh](#farming-food-and-cooking)
-- [Bifrost Teleport](#travel-maps-compasses-and-teleportation)
-- [Biomes O' Plenty](#integrated-world-and-dimension-expansions)
-- [Blood Moon](#dangerous-nights-and-environmental-threats)
-- [Bosslike Ender Dragon](#bosses-and-major-encounters)
-- [Charm of Undying: Reborn](#death-revival-graves-and-respawning)
-- [Clear End City](#integrated-world-and-dimension-expansions)
-- [Combat Roll](#combat-controls-and-dodge-rolling)
-- [Compact Villagers](#companions-pets-villagers-and-settlements)
-- [Companions: Dogfolk](#companions-pets-villagers-and-settlements)
-- [Controlling](#information-overlays-and-tooltips)
-- [Coordinates Display](#optional-client-features)
-- [Craftable Creatures Evolution](#creatures-and-hostile-mobs)
-- [DarkSmithing](#enchanting-and-equipment-improvement)
-- [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
-- [Display Delight](#building-and-decoration)
-- [Distinct Potions](#cosmetic-and-animation-changes)
-- [Dungeons and Taverns](#structures-and-dungeons)
-- [Dungeons and Taverns overhauls](#structures-and-dungeons)
-- [Dungeons Dimensions: Nether](#integrated-world-and-dimension-expansions)
-- [Easy Anvils](#enchanting-and-equipment-improvement)
-- [Easy Shulker Boxes](#storage-and-inventory-management)
-- [Effect Insights](#information-overlays-and-tooltips)
-- [Effortless Building](#building-and-decoration)
-- [Elytra Trims](#enchanting-and-equipment-improvement)
-- [Enchantment Insights](#information-overlays-and-tooltips)
-- [Enchantments collection](#weapons-armor-jewelry-and-relics)
-- [Ender Zoology](#creatures-and-hostile-mobs)
-- [Expanded Delight](#farmers-delight)
-- [Explorer's Compass](#travel-maps-compasses-and-teleportation)
-- [Explorify](#structures-and-dungeons)
+- [Better Party](#better-party-1)
+- [Better Respawn](#better-respawn)
+- [Better Revive](#better-revive)
+- [Better Rotten Flesh](#better-rotten-flesh)
+- [Bifrost Teleport](#bifrost-teleport)
+- [Biomes O' Plenty](#biomes-o-plenty)
+- [Blood Moon](#blood-moon)
+- [Bosslike Ender Dragon](#bosslike-ender-dragon)
+- [Charm of Undying: Reborn](#charm-of-undying-reborn)
+- [Clear End City](#clear-end-city)
+- [Combat Roll](#combat-roll)
+- [Compact Villagers](#compact-villagers)
+- [Companions: Dogfolk](#companions-dogfolk)
+- [Controlling](#controlling)
+- [Coordinates Display](#coordinates-display-1)
+- [Craftable Creatures Evolution](#craftable-creatures-evolution)
+- [Curios](#curios-1)
+- [DarkSmithing](#darksmithing)
+- [Dedicated Elytra Slot](#dedicated-elytra-slot)
+- [Display Delight](#display-delight)
+- [Distinct Potions](#distinct-potions)
+- [Dungeons and Taverns](#dungeons-and-taverns)
+- [Dungeons and Taverns overhauls](#dungeons-and-taverns-overhauls)
+- [Dungeons Dimensions: Nether](#dungeons-dimensions-nether)
+- [Easy Anvils](#easy-anvils)
+- [Easy Shulker Boxes](#easy-shulker-boxes)
+- [Effect Insights](#effect-insights)
+- [Effortless Building](#effortless-building-1)
+- [Elytra Trims](#elytra-trims)
+- [Enchantment Insights](#enchantment-insights)
+- [Enchantments collection](#enchantments-collection)
+- [Ender Zoology](#ender-zoology)
+- [Expanded Delight](#expanded-delight)
+- [Explorer's Compass](#explorers-compass)
+- [Explorify](#explorify)
 - [Farmer's Delight](#farmers-delight)
-- [FF Bandage](#potions-and-alchemy)
-- [Fletching Recipe](#weapons-armor-jewelry-and-relics)
-- [Floating Damage Indicators](#information-overlays-and-tooltips)
-- [Food Effect Tooltips](#information-overlays-and-tooltips)
-- [Functional Sculptures](#building-and-decoration)
-- [Gateway of Doom](#bosses-and-major-encounters)
-- [Gazebos](#structures-and-dungeons)
-- [Goblin Traders](#creatures-and-hostile-mobs)
-- [Golden Hopper](#item-transport-and-logistics)
-- [Guard Ribbits](#creatures-and-hostile-mobs)
-- [Guard Villagers](#creatures-and-hostile-mobs)
-- [Harder Natural Healing](#death-revival-graves-and-respawning)
-- [Hopo Better Underwater Ruins](#structures-and-dungeons)
-- [Hopper Gadgetry](#item-transport-and-logistics)
-- [Hovering Hotbar](#hud-changes-and-customization)
-- [Illager Invasion](#invasions-and-wave-events)
-- [Improved Village Placement](#structures-and-dungeons)
-- [Invasion](#invasions-and-wave-events)
-- [Iourus Races](#races-and-racial-traits)
-- [Iris](#optional-client-features)
-- [Iron Wolf Armor](#companions-pets-villagers-and-settlements)
-- [It Takes a Pillage](#invasions-and-wave-events)
-- [Jade](#information-overlays-and-tooltips)
-- [JEI Trades](#recipe-and-loot-information)
-- [Jewelry](#weapons-armor-jewelry-and-relics)
-- [Just Enough Filters](#recipe-and-loot-information)
-- [Just Enough Items](#recipe-and-loot-information)
-- [Kaleidoscope Cookery](#farming-food-and-cooking)
-- [Kingdom Cats Replacer](#cosmetic-and-animation-changes)
-- [Linked Chests](#storage-and-inventory-management)
-- [Lullaby's Mobs](#creatures-and-hostile-mobs)
+- [FF Bandage](#ff-bandage)
+- [Fletching Recipe](#fletching-recipe)
+- [Floating Damage Indicators](#floating-damage-indicators-1)
+- [Food Effect Tooltips](#food-effect-tooltips)
+- [Functional Sculptures](#functional-sculptures)
+- [Gateway of Doom](#gateway-of-doom)
+- [Gazebos](#gazebos)
+- [Goblin Traders](#goblin-traders)
+- [Golden Hopper](#golden-hopper)
+- [Guard Ribbits](#guard-ribbits)
+- [Guard Villagers](#guard-villagers)
+- [Harder Natural Healing](#harder-natural-healing)
+- [Hopo Better Underwater Ruins](#hopo-better-underwater-ruins)
+- [Hopper Gadgetry](#hopper-gadgetry)
+- [Hovering Hotbar](#hovering-hotbar-1)
+- [Illager Invasion](#illager-invasion)
+- [Improved Village Placement](#improved-village-placement)
+- [Invasion](#invasion)
+- [Iourus Races](#iourus-races-1)
+- [Iris](#iris-1)
+- [Iron Wolf Armor](#iron-wolf-armor)
+- [It Takes a Pillage](#it-takes-a-pillage)
+- [Jade](#jade-1)
+- [JEI Trades](#jei-trades)
+- [Jewelry](#jewelry)
+- [Just Enough Filters](#just-enough-filters)
+- [Just Enough Items](#just-enough-items)
+- [Kaleidoscope Cookery](#kaleidoscope-cookery)
+- [Kingdom Cats Replacer](#kingdom-cats-replacer)
+- [Linked Chests](#linked-chests)
+- [Lullaby's Mobs](#lullabys-mobs)
 - [Macaw's building collection](#macaws-building-collection)
-- [Market Board](#trading-and-multiplayer-economy)
-- [Moblets](#creatures-and-hostile-mobs)
-- [Moog's structure collection](#structures-and-dungeons)
-- [Mounts and Monsters](#creatures-and-hostile-mobs)
-- [Much More Dungeons](#structures-and-dungeons)
-- [Mutants and Zombies](#creatures-and-hostile-mobs)
-- [Name Tag Upgrade](#companions-pets-villagers-and-settlements)
-- [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
-- [Naturally Trimmed](#enchanting-and-equipment-improvement)
-- [Nature's Compass](#travel-maps-compasses-and-teleportation)
-- [No Crop Destruction](#farming-food-and-cooking)
-- [Nullscape](#integrated-world-and-dimension-expansions)
-- [Ocean Lily Pad Village](#structures-and-dungeons)
-- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
-- [Overflowing Bars](#hud-changes-and-customization)
-- [Paper Doll](#hud-changes-and-customization)
-- [Party Creepers](#creatures-and-hostile-mobs)
-- [PatPat](#cosmetic-and-animation-changes)
+- [Market Board](#market-board)
+- [Moblets](#moblets)
+- [Moog's structure collection](#moogs-structure-collection)
+- [Mounts and Monsters](#mounts-and-monsters)
+- [Much More Dungeons](#much-more-dungeons)
+- [Mutants and Zombies](#mutants-and-zombies)
+- [Nameless Trinkets](#nameless-trinkets)
+- [Name Tag Upgrade](#name-tag-upgrade)
+- [Naturally Trimmed](#naturally-trimmed)
+- [Nature's Compass](#natures-compass)
+- [No Crop Destruction](#no-crop-destruction)
+- [Nullscape](#nullscape)
+- [Ocean Lily Pad Village](#ocean-lily-pad-village)
+- [OneKeyMiner](#onekeyminer)
+- [Overflowing Bars](#overflowing-bars)
+- [Paper Doll](#paper-doll)
+- [Party Creepers](#party-creepers)
+- [PatPat](#patpat-1)
 - [Penchant](#penchant)
-- [Pet Status](#companions-pets-villagers-and-settlements)
+- [Pet Status](#pet-status)
 - [Pet Vault](#pet-vault)
-- [PlayerRevive](#death-revival-graves-and-respawning)
-- [Potion Time Stacker](#potions-and-alchemy)
-- [Potions Stack](#potions-and-alchemy)
-- [Pro Placer](#building-and-decoration)
-- [Pufferfish's Skills](#skill-trees-and-character-progression)
-- [Puffsprout](#companions-pets-villagers-and-settlements)
-- [Quick Skin](#cosmetic-and-animation-changes)
-- [Relics](#weapons-armor-jewelry-and-relics)
-- [Ribbits](#creatures-and-hostile-mobs)
-- [RPG classes](#classes-and-playstyles)
-- [Runes](#abilities-spells-runes-and-resources)
-- [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
-- [Seaworthy Boats](#vehicles-and-travel-equipment)
-- [Serene Seasons](#integrated-world-and-dimension-expansions)
-- [Shield Upgrades](#weapons-armor-jewelry-and-relics)
-- [Show My Recipes](#recipe-and-loot-information)
+- [PlayerRevive](#playerrevive)
+- [Potions Stack](#potions-stack)
+- [Potion Time Stacker](#potion-time-stacker)
+- [Pro Placer](#pro-placer-1)
+- [Pufferfish's Skills](#pufferfishs-skills)
+- [Puffsprout](#puffsprout)
+- [Quick Skin](#quick-skin)
+- [Relics](#relics)
+- [Ribbits](#ribbits)
+- [RPG classes](#rpg-classes)
+- [Runes](#runes)
+- [Scalar RPG Utils](#scalar-rpg-utils)
+- [Seaworthy Boats](#seaworthy-boats)
+- [Serene Seasons](#serene-seasons)
+- [Shield Upgrades](#shield-upgrades)
+- [Show My Recipes](#show-my-recipes)
 - [Shroomcraft](#shroomcraft)
-- [SimpleHats Lite](#cosmetic-and-animation-changes)
-- [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Sodium](#optional-client-features)
-- [Somnora](#dangerous-nights-and-environmental-threats)
-- [Sophisticated Backpacks](#storage-and-inventory-management)
-- [Sophisticated Inventory Interactions](#item-transport-and-logistics)
-- [Sophisticated Item Actions](#item-transport-and-logistics)
-- [Spell Engine](#abilities-spells-runes-and-resources)
+- [SimpleHats Lite](#simplehats-lite-1)
+- [Skill Tree (RPG Series)](#skill-tree-rpg-series)
+- [Sodium](#sodium)
+- [Somnora](#somnora)
+- [Sophisticated Backpacks](#sophisticated-backpacks-1)
+- [Sophisticated Inventory Interactions](#sophisticated-inventory-interactions)
+- [Sophisticated Item Actions](#sophisticated-item-actions-1)
+- [Spell Engine](#spell-engine-1)
 - [Starcatcher](#starcatcher)
 - [Stellarity](#stellarity)
-- [Stonecutting Upgrade](#building-and-decoration)
-- [Stoneworks](#building-and-decoration)
-- [Stronger Skill Tree](#skill-trees-and-character-progression)
-- [Target Dummy](#combat-controls-and-dodge-rolling)
-- [Terralith](#integrated-world-and-dimension-expansions)
-- [The Darkness Will Find You](#dangerous-nights-and-environmental-threats)
+- [Stonecutting Upgrade](#stonecutting-upgrade)
+- [Stoneworks](#stoneworks)
+- [Stronger Skill Tree](#stronger-skill-tree)
+- [Target Dummy](#target-dummy)
+- [Terralith](#terralith)
+- [The Darkness Will Find You](#the-darkness-will-find-you)
 - [The Graveyard](#the-graveyard)
-- [Tom's Simple Storage](#storage-and-inventory-management)
-- [Too Many Bows](#weapons-armor-jewelry-and-relics)
-- [Tool Belt](#weapons-armor-jewelry-and-relics)
-- [Towers of Chambers](#structures-and-dungeons)
-- [Towns and Towers](#structures-and-dungeons)
-- [Ultimate Warden](#bosses-and-major-encounters)
-- [Underground Villages](#structures-and-dungeons)
-- [Universal Bone Meal](#farming-food-and-cooking)
-- [Universal Enchants](#enchanting-and-equipment-improvement)
-- [Vehicle Upgrade](#vehicles-and-travel-equipment)
-- [Waystones](#travel-maps-compasses-and-teleportation)
-- [Wild Pets](#companions-pets-villagers-and-settlements)
-- [William Wythers' Overhauled Overworld](#integrated-world-and-dimension-expansions)
+- [Tom's Simple Storage](#toms-simple-storage)
+- [Tool Belt](#tool-belt-1)
+- [Too Many Bows](#too-many-bows)
+- [Towers of Chambers](#towers-of-chambers)
+- [Towns and Towers](#towns-and-towers)
+- [Ultimate Warden](#ultimate-warden)
+- [Underground Villages](#underground-villages)
+- [Universal Bone Meal](#universal-bone-meal)
+- [Universal Enchants](#universal-enchants)
+- [Vehicle Upgrade](#vehicle-upgrade)
+- [Waystones](#waystones)
+- [Wild Pets](#wild-pets)
+- [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 - [Withered Lands](#withered-lands)
-- [World Bosses](#bosses-and-major-encounters)
-- [Xaero's Map Multiplayer](#travel-maps-compasses-and-teleportation)
+- [World Bosses](#world-bosses)
+- [Xaero's Map Multiplayer](#xaeros-map-multiplayer)
 - [Xaero's World Map](#xaeros-world-map)
+
 <div class="page-break" aria-hidden="true"></div>
 
 ### Gameplay-tag index
 
 #### Combat
 
-- [FF Bandage](#potions-and-alchemy)
-- [Better Combat](#combat-controls-and-dodge-rolling)
-- [Combat Roll](#combat-controls-and-dodge-rolling)
-- [Target Dummy](#combat-controls-and-dodge-rolling)
-- [RPG classes](#classes-and-playstyles)
-- [World Bosses](#bosses-and-major-encounters)
-- [Invasion](#invasions-and-wave-events)
+- [Better Combat](#better-combat-1)
+- [Combat Roll](#combat-roll)
+- [Floating Damage Indicators](#floating-damage-indicators-1)
+- [Target Dummy](#target-dummy)
 
 #### Character
 
-- [Adventurer Skills](#skill-trees-and-character-progression)
-- [Iourus Races](#races-and-racial-traits)
-- [Pufferfish's Skills](#skill-trees-and-character-progression)
-- [RPG classes](#classes-and-playstyles)
-- [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Stronger Skill Tree](#skill-trees-and-character-progression)
+- [Distinct Potions](#distinct-potions)
+- [Iourus Races](#iourus-races-1)
+- [Kingdom Cats Replacer](#kingdom-cats-replacer)
+- [PatPat](#patpat-1)
+- [Quick Skin](#quick-skin)
+- [RPG classes](#rpg-classes)
+- [SimpleHats Lite](#simplehats-lite-1)
 
 #### Skills
 
-- [Adventurer Skills](#skill-trees-and-character-progression)
-- [Pufferfish's Skills](#skill-trees-and-character-progression)
-- [Skill Tree (RPG Series)](#skill-trees-and-character-progression)
-- [Stronger Skill Tree](#skill-trees-and-character-progression)
+- [Adventurer Skills](#adventurer-skills)
+- [Pufferfish's Skills](#pufferfishs-skills)
+- [Skill Tree (RPG Series)](#skill-tree-rpg-series)
+- [Stronger Skill Tree](#stronger-skill-tree)
 
 #### Magic
 
-- [RPG classes](#classes-and-playstyles)
-- [Spell Engine](#abilities-spells-runes-and-resources)
-- [Runes](#abilities-spells-runes-and-resources)
 - [Alchemia](#alchemia)
-- [Arcane Lanterns](#building-and-decoration)
+- [FF Bandage](#ff-bandage)
+- [Potions Stack](#potions-stack)
+- [Potion Time Stacker](#potion-time-stacker)
+- [Runes](#runes)
+- [Spell Engine](#spell-engine-1)
 
 #### Equipment
 
-- [Artifacts](#weapons-armor-jewelry-and-relics)
-- [Arsenal](#weapons-armor-jewelry-and-relics)
-- [Armory](#weapons-armor-jewelry-and-relics)
-- [Charm of Undying: Reborn](#death-revival-graves-and-respawning)
-- [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
-- [Enchantments collection](#weapons-armor-jewelry-and-relics)
-- [Jewelry](#weapons-armor-jewelry-and-relics)
+- [Armor Quick Swap](#armor-quick-swap)
+- [Armor Trim Item Fix](#armor-trim-item-fix)
+- [Armory](#armory)
+- [Arrow+](#arrow)
+- [Arsenal](#arsenal)
+- [Artifacts](#artifacts-1)
+- [Curios](#curios-1)
+- [DarkSmithing](#darksmithing)
+- [Dedicated Elytra Slot](#dedicated-elytra-slot)
+- [Easy Anvils](#easy-anvils)
+- [Elytra Trims](#elytra-trims)
+- [Enchantments collection](#enchantments-collection)
+- [Fletching Recipe](#fletching-recipe)
+- [Jewelry](#jewelry)
+- [Nameless Trinkets](#nameless-trinkets)
+- [Naturally Trimmed](#naturally-trimmed)
 - [Penchant](#penchant)
-- [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
-- [Relics](#weapons-armor-jewelry-and-relics)
-- [SimpleHats Lite](#cosmetic-and-animation-changes)
-- [Starcatcher](#starcatcher)
-- [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
-- [Tool Belt](#weapons-armor-jewelry-and-relics)
-- [Alex's Caves](#alexs-caves)
-- [Stellarity](#stellarity)
+- [Relics](#relics)
+- [Scalar RPG Utils](#scalar-rpg-utils)
+- [Shield Upgrades](#shield-upgrades)
+- [SimpleHats Lite](#simplehats-lite-1)
+- [Tool Belt](#tool-belt-1)
+- [Too Many Bows](#too-many-bows)
+- [Universal Enchants](#universal-enchants)
 
 #### Bosses
 
-- [World Bosses](#bosses-and-major-encounters)
-- [Bosslike Ender Dragon](#bosses-and-major-encounters)
-- [Ultimate Warden](#bosses-and-major-encounters)
-- [Gateway of Doom](#bosses-and-major-encounters)
+- [Bosslike Ender Dragon](#bosslike-ender-dragon)
+- [Gateway of Doom](#gateway-of-doom)
+- [Ultimate Warden](#ultimate-warden)
+- [World Bosses](#world-bosses)
 
 #### Events
 
-- [Invasion](#invasions-and-wave-events)
-- [Blood Moon](#dangerous-nights-and-environmental-threats)
-- [Illager Invasion](#invasions-and-wave-events)
-- [It Takes a Pillage](#invasions-and-wave-events)
-- [Starcatcher](#starcatcher)
+- [Armored Foes](#armored-foes)
+- [Blood Moon](#blood-moon)
+- [Illager Invasion](#illager-invasion)
+- [Invasion](#invasion)
+- [It Takes a Pillage](#it-takes-a-pillage)
+- [Somnora](#somnora)
+- [The Darkness Will Find You](#the-darkness-will-find-you)
+- [The Graveyard](#the-graveyard)
+- [Withered Lands](#withered-lands)
 
 #### World Generation
 
+- [Abyssal Ocean](#abyssal-ocean)
 - [Alex's Caves](#alexs-caves)
-- [Biomes O' Plenty](#integrated-world-and-dimension-expansions)
-- [Terralith](#integrated-world-and-dimension-expansions)
 - [Better Nether](#better-nether)
-- [Nullscape](#integrated-world-and-dimension-expansions)
+- [Biomes O' Plenty](#biomes-o-plenty)
+- [Clear End City](#clear-end-city)
+- [Dungeons Dimensions: Nether](#dungeons-dimensions-nether)
+- [Nullscape](#nullscape)
+- [Serene Seasons](#serene-seasons)
 - [Stellarity](#stellarity)
+- [Terralith](#terralith)
+- [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 
 #### Structures
 
-- [Artifacts](#weapons-armor-jewelry-and-relics)
-- [Awesome Dungeon collection](#structures-and-dungeons)
-- [Dungeons and Taverns](#structures-and-dungeons)
-- [Dungeons and Taverns overhauls](#structures-and-dungeons)
-- [Moog's structure collection](#structures-and-dungeons)
-- [Towns and Towers](#structures-and-dungeons)
-- [The Graveyard](#the-graveyard)
+- [Antique Trading Ship](#antique-trading-ship)
+- [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)
+- [Awesome Dungeon collection](#awesome-dungeon-collection)
+- [Dungeons and Taverns](#dungeons-and-taverns)
+- [Dungeons and Taverns overhauls](#dungeons-and-taverns-overhauls)
+- [Explorify](#explorify)
+- [Gazebos](#gazebos)
+- [Hopo Better Underwater Ruins](#hopo-better-underwater-ruins)
+- [Improved Village Placement](#improved-village-placement)
+- [Moog's structure collection](#moogs-structure-collection)
+- [Much More Dungeons](#much-more-dungeons)
+- [Ocean Lily Pad Village](#ocean-lily-pad-village)
+- [Towers of Chambers](#towers-of-chambers)
+- [Towns and Towers](#towns-and-towers)
+- [Underground Villages](#underground-villages)
 
 #### Creatures
 
-- [Alex's Mobs](#creatures-and-hostile-mobs)
-- [Animal Garden collection](#creatures-and-hostile-mobs)
-- [Party Creepers](#creatures-and-hostile-mobs)
+- [Alex's Mobs](#alexs-mobs)
+- [Animal Garden collection](#animal-garden-collection)
+- [Craftable Creatures Evolution](#craftable-creatures-evolution)
+- [Ender Zoology](#ender-zoology)
+- [Goblin Traders](#goblin-traders)
+- [Guard Ribbits](#guard-ribbits)
+- [Guard Villagers](#guard-villagers)
+- [Lullaby's Mobs](#lullabys-mobs)
+- [Moblets](#moblets)
+- [Mounts and Monsters](#mounts-and-monsters)
+- [Mutants and Zombies](#mutants-and-zombies)
+- [Party Creepers](#party-creepers)
+- [Ribbits](#ribbits)
 - [Shroomcraft](#shroomcraft)
-- [Ender Zoology](#creatures-and-hostile-mobs)
 
 #### Companions
 
-- [Companions: Dogfolk](#companions-pets-villagers-and-settlements)
-- [Wild Pets](#companions-pets-villagers-and-settlements)
-- [Puffsprout](#companions-pets-villagers-and-settlements)
+- [Animal Pen](#animal-pen)
+- [Compact Villagers](#compact-villagers)
+- [Companions: Dogfolk](#companions-dogfolk)
+- [Iron Wolf Armor](#iron-wolf-armor)
+- [Name Tag Upgrade](#name-tag-upgrade)
+- [Pet Status](#pet-status)
 - [Pet Vault](#pet-vault)
-- [Pet Status](#companions-pets-villagers-and-settlements)
+- [Puffsprout](#puffsprout)
+- [Wild Pets](#wild-pets)
 
 #### Farming
 
-- [Expanded Delight](#farmers-delight)
+- [Better Rotten Flesh](#better-rotten-flesh)
+- [Expanded Delight](#expanded-delight)
 - [Farmer's Delight](#farmers-delight)
-- [Kaleidoscope Cookery](#farming-food-and-cooking)
-- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
-- [Shroomcraft](#shroomcraft)
-- [Universal Bone Meal](#farming-food-and-cooking)
+- [Kaleidoscope Cookery](#kaleidoscope-cookery)
+- [No Crop Destruction](#no-crop-destruction)
+- [Universal Bone Meal](#universal-bone-meal)
 
 #### Food
 
-- [Expanded Delight](#farmers-delight)
-- [Farmer's Delight](#farmers-delight)
-- [Kaleidoscope Cookery](#farming-food-and-cooking)
 - [Starcatcher](#starcatcher)
-- [Better Rotten Flesh](#farming-food-and-cooking)
-- [Harder Natural Healing](#death-revival-graves-and-respawning)
 
 #### Building
 
+- [Arcane Lanterns](#arcane-lanterns)
+- [Armor Statues](#armor-statues)
+- [Barricades](#barricades)
+- [Display Delight](#display-delight)
+- [Effortless Building](#effortless-building-1)
+- [Functional Sculptures](#functional-sculptures)
 - [Macaw's building collection](#macaws-building-collection)
-- [Effortless Building](#building-and-decoration)
-- [Stoneworks](#building-and-decoration)
-- [Pro Placer](#building-and-decoration)
+- [Pro Placer](#pro-placer-1)
+- [Stonecutting Upgrade](#stonecutting-upgrade)
+- [Stoneworks](#stoneworks)
 
 #### Storage
 
-- [Sophisticated Backpacks](#storage-and-inventory-management)
-- [Tom's Simple Storage](#storage-and-inventory-management)
-- [Linked Chests](#storage-and-inventory-management)
+- [Easy Shulker Boxes](#easy-shulker-boxes)
+- [Golden Hopper](#golden-hopper)
+- [Hopper Gadgetry](#hopper-gadgetry)
+- [Linked Chests](#linked-chests)
+- [Sophisticated Backpacks](#sophisticated-backpacks-1)
+- [Sophisticated Inventory Interactions](#sophisticated-inventory-interactions)
+- [Sophisticated Item Actions](#sophisticated-item-actions-1)
+- [Tom's Simple Storage](#toms-simple-storage)
 
 #### Travel
 
-- [Waystones](#travel-maps-compasses-and-teleportation)
-- [Bifrost Teleport](#travel-maps-compasses-and-teleportation)
+- [Bifrost Teleport](#bifrost-teleport)
+- [Explorer's Compass](#explorers-compass)
+- [Nature's Compass](#natures-compass)
+- [Seaworthy Boats](#seaworthy-boats)
+- [Vehicle Upgrade](#vehicle-upgrade)
+- [Waystones](#waystones)
+- [Xaero's Map Multiplayer](#xaeros-map-multiplayer)
 - [Xaero's World Map](#xaeros-world-map)
-- [Seaworthy Boats](#vehicles-and-travel-equipment)
-- [Vehicle Upgrade](#vehicles-and-travel-equipment)
-- [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
 
 #### Multiplayer
 
-- [Better Party](#parties-and-multiplayer-cooperation)
-- [Market Board](#trading-and-multiplayer-economy)
-- [PlayerRevive](#death-revival-graves-and-respawning)
-- [Better Revive](#death-revival-graves-and-respawning)
+- [Better Party](#better-party-1)
+- [Better Respawn](#better-respawn)
+- [Better Revive](#better-revive)
+- [Charm of Undying: Reborn](#charm-of-undying-reborn)
+- [Harder Natural Healing](#harder-natural-healing)
+- [Market Board](#market-board)
+- [PlayerRevive](#playerrevive)
 
 #### Controls
 
-- [Better Combat](#combat-controls-and-dodge-rolling)
-- [Combat Roll](#combat-controls-and-dodge-rolling)
-- [Spell Engine](#abilities-spells-runes-and-resources)
-- [OneKeyMiner](#resource-gathering-and-repetitive-actions)
-- [Effortless Building](#building-and-decoration)
-- [Tool Belt](#weapons-armor-jewelry-and-relics)
+- [Advanced Loot Info](#advanced-loot-info)
+- [Advanced Worldgen Info](#advanced-worldgen-info)
+- [JEI Trades](#jei-trades)
+- [Just Enough Filters](#just-enough-filters)
+- [Just Enough Items](#just-enough-items)
+- [OneKeyMiner](#onekeyminer)
+- [Show My Recipes](#show-my-recipes)
 
 #### HUD
 
-- [Paper Doll](#hud-changes-and-customization)
-- [Coordinates Display](#optional-client-features)
-- [Better Party](#parties-and-multiplayer-cooperation)
-- [Hovering Hotbar](#hud-changes-and-customization)
-- [Overflowing Bars](#hud-changes-and-customization)
+- [AppleSkin](#appleskin)
+- [Controlling](#controlling)
+- [Coordinates Display](#coordinates-display-1)
+- [Effect Insights](#effect-insights)
+- [Enchantment Insights](#enchantment-insights)
+- [Floating Damage Indicators](#floating-damage-indicators-1)
+- [Food Effect Tooltips](#food-effect-tooltips)
+- [Hovering Hotbar](#hovering-hotbar-1)
+- [Iris](#iris-1)
+- [Jade](#jade-1)
+- [Overflowing Bars](#overflowing-bars)
+- [Paper Doll](#paper-doll)
+- [Sodium](#sodium)

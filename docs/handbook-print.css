@@ -341,10 +341,6 @@ img {
   page-break-inside: avoid;
 }
 
-.feature-card:last-child {
-  grid-column: 2;
-}
-
 .feature-card img {
   width: 11mm;
   height: 11mm;
@@ -367,9 +363,38 @@ img {
   line-height: 1.15;
 }
 
-h3[id^="feature-"] + p {
+.feature-detail {
   break-inside: avoid;
   page-break-inside: avoid;
+}
+
+h3.feature-heading {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  min-height: 10mm;
+  margin-bottom: 1.5mm;
+  border-bottom: 0.55pt solid #c5c1b5;
+}
+
+h3.feature-heading img {
+  width: 8mm;
+  height: 8mm;
+  margin: 0;
+  object-fit: contain;
+}
+
+h3[id^="feature-"] + ul {
+  margin: 0 0 1.5mm;
+  padding-left: 6mm;
+}
+
+h3[id^="feature-"] + ul li {
+  margin: 0 0 0.5mm;
+}
+
+h3[id^="feature-"] + ul + p {
+  margin-top: 0;
 }
 
 p:has(> img:only-child) > img {

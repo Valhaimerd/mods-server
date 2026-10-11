@@ -146,7 +146,7 @@ $body = [regex]::Replace(
 )
 
 $keybindHeading = '<h3 id="essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</h3>'
-$featuresHeadingStart = '<h2 id="part-ii--features-and-mechanics">'
+$featuresHeadingStart = '<h2 id="part-ii--featured-mechanics">'
 $partyHeading = '<h3 id="parties-downed-players-and-death">Parties, downed players, and death</h3>'
 
 $contentsHeading = '<h2 id="table-of-contents">Table of Contents</h2>'
@@ -166,7 +166,7 @@ $body = $body.Replace($partOneStart, "</div>$partOneStart")
 
 $body = $body.Replace($keybindHeading, "<div class=`"keybind-section`">$keybindHeading")
 if (-not $body.Contains($pageBreak + $featuresHeadingStart)) {
-    throw 'Could not locate the page break before Features and Mechanics.'
+    throw 'Could not locate the page break before Featured Mechanics.'
 }
 $body = $body.Replace($pageBreak + $featuresHeadingStart, "</div>$pageBreak$featuresHeadingStart")
 

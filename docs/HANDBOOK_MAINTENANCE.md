@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-11<br>
+Last verified: 2026-10-12<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2
 
 ## Purpose
@@ -53,18 +53,18 @@ Keep narrow equipment add-ons, small structure packs, cosmetic variants, and sec
 6. Update screenshots through [the screenshot queue](assets/screenshots/README.md). Use real captures from the current pack, follow the privacy and readability standards, replace the matching `handbook-figure` marker only after the PNG exists, and update its queue status. Keep supplied PNG files at their captured resolution; standalone handbook screenshots display centered at about 75% of the text column and no taller than 150 mm, while mod-entry icons keep their existing dimensions.
 7. Update the handbook's `Last audited` date and distribution counts. Treat the baselines below as values that must change deliberately when the pack changes, not as permanent constants.
 8. Run the verification checks, review the documentation diff, and stage documentation files explicitly. Do not stage unrelated mod-folder changes.
-9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/` with `fetch-mod-icons.ps1`. Use CurseForge artwork only for this pack, verify every project match, and do not substitute a similar result. The seven compact groups use the representative member mappings in `fetch-mod-icons.ps1`; preserve the member's official project title, page URL, icon URL, and image filename on the group row. Do not add separate index rows for grouped members. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
+9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/`. Prefer verified CurseForge artwork; an author icon embedded in the exact installed mod JAR is also acceptable when the public icon URL is unavailable, with its provenance recorded in the manifest. Do not substitute artwork from a similar project. The seven compact groups use the representative member mappings in `fetch-mod-icons.ps1`; preserve the member's official project title, page URL, icon URL, and image filename on the group row. Do not add separate index rows for grouped members. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
 
 ## Verification
 
 Current verified baseline:
 
-- 289 main-pack JARs;
+- 292 main-pack JARs;
 - 4 optional client-store JARs;
-- 164 alphabetical gameplay entries;
-- 163 entries with verified CurseForge project icons, including seven group entries with representative member artwork, plus user-provided Bifrost artwork;
+- 167 alphabetical gameplay entries;
+- 163 entries with verified CurseForge project icons, including seven group entries with representative member artwork, plus three author icons from installed JARs and user-provided Bifrost artwork;
 - 38 keybind tables;
-- 5 handbook parts;
+- 6 handbook parts;
 - zero broken internal links.
 
 Check the simple counts:

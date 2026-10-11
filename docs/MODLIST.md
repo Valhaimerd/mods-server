@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 289 synchronized JARs · 4 optional client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 292 synchronized JARs · 4 optional client extras</p>
 
-Last audited: 2026-10-11<br>
+Last audited: 2026-10-12<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 289 synchronized JARs plus 4 optional client-store JARs
+Current distribution: 292 synchronized JARs plus 4 optional client-store JARs
 
 ## About this handbook
 
@@ -18,7 +18,7 @@ The alphabetical index finds a mod by name, while the gameplay-tag index groups 
 
 ## How entries are organized
 
-Each part opens with the role its systems play in a new world. Distinct category bars and inset icon entries make the relationships visible without repeating a full walkthrough for every mod. A short category paragraph closes each group; significant mechanics remain fully explained in Part II.
+Each part opens with the role its systems play in a new world. Distinct category bars and inset icon entries make the relationships visible without repeating a full walkthrough for every mod. A short category paragraph closes each group; featured mechanics remain fully explained in Part II.
 
 **Entry types:** Core system; Integrated expansion; Focused content; Utility; Interface feature; Optional client feature.
 
@@ -30,55 +30,55 @@ Each part opens with the role its systems play in a new world. Distinct category
   <tbody>
     <tr><td><a href="#alphabetical-mod-index">Alphabetical mod index</a></td><td>3</td></tr>
     <tr><td><a href="#gameplay-tag-index">Gameplay-tag index</a></td><td>4</td></tr>
-    <tr><td><a href="#quick-reference">Quick Reference</a></td><td>5</td></tr>
-    <tr class="toc-part"><td><a href="#part-i--keybinds-and-configuration">Part I — Keybinds and Configuration</a></td><td>6</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>6</td></tr>
-    <tr class="toc-part"><td><a href="#part-ii--featured-mechanics">Part II — Featured Mechanics</a></td><td>14</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-iourus-races">Races, RPG classes, and skill trees</a></td><td>15</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, revival, mining, and enchantments</a></td><td>16</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-xaeros-world-map">World map, caves, Nether, and End</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-starcatcher">Fishing and Curios accessories</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-farmers-delight">Cooking and alchemy</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-sophisticated-backpacks">Backpacks, storage, and player trade</a></td><td>21</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>23</td></tr>
-    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>23</td></tr>
-    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>23</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>24</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>33</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>40</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>40</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>41</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>47</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>58</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>62</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>63</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>64</td></tr>
+    <tr><td><a href="#quick-reference">Quick Reference</a></td><td>6</td></tr>
+    <tr class="toc-part"><td><a href="#part-i--keybinds-and-configuration">Part I — Keybinds and Configuration</a></td><td>7</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>7</td></tr>
+    <tr class="toc-part"><td><a href="#part-ii--featured-mechanics">Part II — Featured Mechanics</a></td><td>15</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-iourus-races">Races, RPG classes, and Astral Dimension</a></td><td>16</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, revival, mining, and enchantments</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-xaeros-world-map">World map, caves, Nether, and End</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-starcatcher">Fishing and Chrono Dawn</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-farmers-delight">Cooking and alchemy</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-sophisticated-backpacks">Backpacks, storage, and player trade</a></td><td>22</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>35</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>44</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>45</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>49</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>60</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>63</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>64</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>65</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>66</td></tr>
   </tbody>
 </table>
 
@@ -93,6 +93,7 @@ Use this page to get a new character playable quickly. Controls begin in [Part I
 - **Build an RPG character:** choose a lasting race, assemble a flexible weapon-and-book loadout, then grow it through skill trees, spells, runes, and gear. Start with [Choosing a class](#feature-rpg-series) and [Skill trees and character progression](#skill-trees-and-character-progression).
 - **Connect gear and progression:** Curios holds pack-provided accessories and the cosmetic layer, while Penchant lets eligible enchantments grow as you use their gear. See [Curios slots and vanity cosmetics](#curios-slots-and-vanity-cosmetics) and [Penchant](#penchant).
 - **Explore with intent:** use the explored-terrain map to plan routes, then follow the Cave Codex and Cave Map to find Alex's Caves. See [Xaero's World Map](#xaeros-world-map) and [Alex's Caves](#alexs-caves).
+- **Prepare for longer dimensions:** Astral Dimension branches into the Setback after its Void bosses; Chrono Dawn begins with a one-way portal until you stabilize it. Read [Astral Dimension](#feature-astral-dimension) and [Chrono Dawn](#feature-chrono-dawn) before crossing either portal.
 - **Build a collection loop:** Starcatcher makes fishing depend on location and fish conditions, with gear, a minigame, and a catalogue. See [Starcatcher](#starcatcher).
 - **Bring companions safely:** Pet Vault stores and summons owned pets, while Pet Status helps check their health and last-known location. See [Pet Vault](#pet-vault).
 
@@ -526,7 +527,7 @@ These systems change how you build a character, explore, survive, and manage you
 <div class="feature-grid" aria-label="Featured gameplay systems">
   <a class="feature-card" href="#feature-iourus-races"><img src="assets/mod-icons/iourus-races.png" alt=""><span class="feature-card-name">Iourus Races</span><span class="feature-card-desc">Lasting strengths, traits, and tradeoffs.</span></a>
   <a class="feature-card" href="#feature-rpg-series"><img src="assets/mod-icons/archers.png" alt=""><span class="feature-card-name">RPG Series</span><span class="feature-card-desc">Six builds from weapons and class books.</span></a>
-  <a class="feature-card" href="#feature-skill-trees"><img src="assets/mod-icons/pufferfish-s-skills.png" alt=""><span class="feature-card-name">Skill Trees</span><span class="feature-card-desc">RPG, Adventurer, and Stronger progression.</span></a>
+  <a class="feature-card" href="#feature-astral-dimension"><img src="assets/mod-icons/astral-dimension.png" alt=""><span class="feature-card-name">Astral Dimension</span><span class="feature-card-desc">Two realms and a multi-boss Void journey.</span></a>
   <a class="feature-card" href="#feature-better-party"><img src="assets/mod-icons/better-party.jpg" alt=""><span class="feature-card-name">Better Party</span><span class="feature-card-desc">Roles, shared XP, and a group HUD.</span></a>
   <a class="feature-card" href="#feature-better-revive"><img src="assets/mod-icons/better-revive.jpg" alt=""><span class="feature-card-name">Better Revive</span><span class="feature-card-desc">Rescue, graves, and item recovery.</span></a>
   <a class="feature-card" href="#feature-one-key-miner"><img src="assets/mod-icons/onekeyminer.png" alt=""><span class="feature-card-name">OneKeyMiner</span><span class="feature-card-desc">Vein mining, harvesting, and replanting.</span></a>
@@ -536,7 +537,7 @@ These systems change how you build a character, explore, survive, and manage you
   <a class="feature-card" href="#feature-better-nether"><img src="assets/mod-icons/better-nether.png" alt=""><span class="feature-card-name">Better Nether</span><span class="feature-card-desc">New Nether terrain, life, and loot.</span></a>
   <a class="feature-card" href="#feature-stellarity"><img src="assets/mod-icons/stellarity.png" alt=""><span class="feature-card-name">Stellarity</span><span class="feature-card-desc">A deeper End journey and progression.</span></a>
   <a class="feature-card" href="#feature-starcatcher"><img src="assets/mod-icons/starcatcher.png" alt=""><span class="feature-card-name">Starcatcher</span><span class="feature-card-desc">Condition-based fishing and collecting.</span></a>
-  <a class="feature-card" href="#feature-curios"><img src="assets/mod-icons/curios.png" alt=""><span class="feature-card-name">Curios</span><span class="feature-card-desc">Accessory slots and vanity layers.</span></a>
+  <a class="feature-card" href="#feature-chrono-dawn"><img src="assets/mod-icons/chrono-dawn.png" alt=""><span class="feature-card-name">Chrono Dawn</span><span class="feature-card-desc">A time-locked dimension and boss progression.</span></a>
   <a class="feature-card" href="#feature-farmers-delight"><img src="assets/mod-icons/farmer-s-delight.png" alt=""><span class="feature-card-name">Farmer's Delight</span><span class="feature-card-desc">Prepare, cook, and serve better meals.</span></a>
   <a class="feature-card" href="#feature-alchemia"><img src="assets/mod-icons/alchemia.png" alt=""><span class="feature-card-name">Alchemia</span><span class="feature-card-desc">Discover potion effects through ingredients.</span></a>
   <a class="feature-card" href="#feature-sophisticated-backpacks"><img src="assets/mod-icons/sophisticated-backpacks.png" alt=""><span class="feature-card-name">Sophisticated Backpacks</span><span class="feature-card-desc">Portable storage with useful upgrades.</span></a>
@@ -594,27 +595,26 @@ There is no permanent class-selection screen. If an ability fails, check the wea
 </section>
 
 <section class="feature-detail">
-<h3 id="feature-skill-trees" class="feature-heading"><img src="assets/mod-icons/pufferfish-s-skills.png" alt="">Skill Trees</h3>
+<h3 id="feature-astral-dimension" class="feature-heading"><img src="assets/mod-icons/astral-dimension.png" alt="">Astral Dimension</h3>
 
-- **Framework:** Pufferfish's Skills hosts the pack's separate progression trees.
-- **Tracks:** RPG Series specializations, Adventurer Skills, and Stronger Skill Tree cover combat, survival, and gathering choices.
-- **Points:** XP and tree rules unlock nodes with prerequisites; later choices build on earlier investments.
-- **Limits:** Some bonuses apply only with a matching class or weapon, and some attributes depend on pack support.
+- **Entry:** Build a Nether-shaped frame with at least ten Glowing Obsidian blocks and ignite it with Glint and Steel.
+- **Exploration:** The Astral realm has ten biomes, dangerous Void Liquid, unusual creatures, and scattered structures; bring an Elytra and a safe return route.
+- **Progression:** Astral Eyes, the Amethyst Sanctuary, Void materials, and the Void Egg lead to the Void Titan.
+- **Next realm:** The later Setback dimension opens with Gloomy Obsidian and a Nanta Star, continuing the boss and gear progression.
 
+**From the portal to the Void Titan**
 
+1. Make the Glowing Obsidian portal, activate it with Glint and Steel, and mark your arrival point on Xaero's map. Void Liquid and broken terrain make flight and spare supplies valuable.
+2. Explore the Fiery Forest for Burning Orbs. Their shards, four Glowstone Dust, and an Ender Pearl make an Astral Eye. Prepare at least four Eyes for the Amethyst Sanctuary.
+3. At the Sanctuary, use the Eyes on the Postrum Eyes, defeat the four Amethyst Knights, and use their keys to reach Broken Amethyst Shards.
+4. Mine Void Ore between Y -40 and -12 for Void Gems, and fight Void Menaces for four Void Fangs. Use these materials for a Void Pillar and Astral Altar, then place them at a Void Egg's portal to summon the Titan.
+5. After the Titan, search the Tormented Mansion and its Void Visage encounter. The later Setback portal requires ten Gloomy Obsidian and a Nanta Star; enter with upgraded gear.
 
-**Spending points well**
+This pack contains an Astral Dimension 3.0 build ported to Minecraft 26.2. The public project page currently lists other game versions, so use the installed recipes and JEI for any details that differ. The two realms form a long expedition: establish a safe foothold, collect boss-gating materials, then tackle each structure in order.
 
-1. Open the tree with `T` and compare its three progression tracks before buying a node.
-2. Use RPG nodes for class and weapon specializations. Adventurer offers Offensive, Defensive, Utility, and Versatile choices; Stronger adds Combat, Mining, and Chopping Wood.
-3. Read each prerequisite and effect, then build toward a path that supports your equipment.
-4. Recheck the tree after changing class books or weapons. A bonus tied to one loadout may not help the next one.
+<p class="feature-tip"><strong>Quick tip</strong> Set a map waypoint at the Astral portal before crossing broken terrain.</p>
 
-Pufferfish's Skills displays the trees; the installed tree data decides point costs and available attributes. The on-screen node text is the final rule.
-
-<p class="feature-tip"><strong>Quick tip</strong> Open the tree with `T` and read prerequisites before spending points.</p>
-
-<p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/skills">official mod page</a>.</p>
+<p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/astral-dimension">official mod page</a>.</p>
 </section>
 
 <section class="feature-detail">
@@ -835,27 +835,26 @@ This profile hides uncaught fish entries and shares catches with online FTB Team
 </section>
 
 <section class="feature-detail">
-<h3 id="feature-curios" class="feature-heading"><img src="assets/mod-icons/curios.png" alt="">Curios</h3>
+<h3 id="feature-chrono-dawn" class="feature-heading"><img src="assets/mod-icons/chrono-dawn.png" alt="">Chrono Dawn</h3>
 
-- **Slots:** The inventory panel groups accessory types added by the pack and other mods.
-- **Compatibility:** Items are accepted by their configured slot types, so different headwear and trinkets have different homes.
-- **Vanity:** The ribbon switches to purple cosmetic slots; those items change appearance without gameplay effects.
-- **Layering:** SimpleHats Lite can occupy Head, Face, or Hat in functional or cosmetic mode while other headgear stays equipped.
+- **Entry:** Find Ancient Ruins in the Overworld, gather Clockstone, and activate a Clockstone portal with a Time Hourglass.
+- **Travel rule:** The first crossing is one-way. Find the Forgotten Library and a Portal Stabilizer to enable travel back.
+- **World:** Eleven time-themed biomes, slowed hostile mobs, new creatures, dungeons, and equipment fill the dimension.
+- **Goal:** Four dungeon bosses supply a Chrono Aegis; the Time Guardian and Master Clock lead to the Time Tyrant.
 
+**A safe first Chrono Dawn expedition**
 
+1. Search taiga or dark forest for Ancient Ruins. For a directed search, mine Overworld Chronite Ore, craft a Time Compass, and follow it to the nearest ruins.
+2. Gather Clockstone and build a portal frame at least 4 by 5 blocks; activate it with a Time Hourglass. Pack food, tools, and a way to survive in the dimension because entry initially has no return trip.
+3. Read the Chronicle guidebook given on arrival. Find the Forgotten Library for the Portal Stabilizer recipe, then gather Enhanced Clockstone from a Desert Clock Tower and stabilize the portal for two-way travel.
+4. Explore Guardian Vault, Clockwork Depths, Phantom Catacombs, and Entropy Crypt. Their bosses drop the four materials for a Chrono Aegis, which grants a timed advantage against the final boss.
+5. Defeat the Time Guardian for the Master Clock Key, open the Master Clock, and face the Time Tyrant. Its Stasis Core fragments support later time-themed artifacts.
 
-**Functional gear and vanity layers**
+The dimension changes combat pacing because hostile mobs move slowly, but dungeon bosses still demand preparation. The guidebook and the installed JEI recipes are the best references while progressing; place a waypoint at the portal once return travel is unlocked.
 
-1. Open Curios from the visible inventory button and inspect the labeled slots before placing a class book, belt, ring, hat, or trinket.
-2. Equip items in functional slots when you want their attributes or effects. Some items support several slot types.
-3. Use the ribbon above the slots to switch to the purple cosmetic layer. Items there change appearance without supplying gameplay effects.
-4. Keep functional headgear in an ordinary Head slot, then layer SimpleHats Lite pieces across cosmetic Head, Face, and Hat slots.
+<p class="feature-tip"><strong>Quick tip</strong> Treat the first portal crossing as a one-way expedition until you have a Portal Stabilizer.</p>
 
-Installed mods and pack configuration supply the slots and usable items. A hat in a purple slot is visual only; read tooltips to decide what stays equipped underneath.
-
-<p class="feature-tip"><strong>Quick tip</strong> Purple slots are for appearance; functional gear belongs in ordinary slots.</p>
-
-<p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/curios">official mod page</a>.</p>
+<p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/chrono-dawn">official mod page</a>.</p>
 </section>
 
 <section class="feature-detail">
@@ -3477,6 +3476,20 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 <div class="core-mod-entry">
 
+#### Auras
+
+- **Type:** Cosmetic equipment customization
+- **Core mechanic:** Collect Norse-inspired runes and apply their colored auras to tools, weapons, or armor in place of the enchantment glint.
+- **Player guidance:** Explore loot chests for rune colors. Hold a discharged rune while collecting XP to recharge it.
+
+A second rune of the same type and a different color creates a two-color fade; a different type replaces the current aura. Looted emblems adjust the aura's look or speed.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/auras">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### SimpleHats Lite
 
 - **Type:** Cosmetic
@@ -3546,7 +3559,7 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 </div>
 
 </div>
-<p class="core-category-description">Cosmetic mods change how a character or item looks and how players interact socially, without replacing the core equipment loop. SimpleHats Lite can use vanity Curios slots, while skin, potion, cat, and pat effects have their own visual roles.</p>
+<p class="core-category-description">Cosmetic mods change how characters and items look and how players interact socially. Auras customizes the enchantment glint on equipment, SimpleHats Lite can use vanity Curios slots, and skin, potion, cat, and pat effects have their own visual roles.</p>
 </section>
 
 <section class="core-category">
@@ -3623,6 +3636,8 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Arrow+](#arrow)
 - [Arsenal](#arsenal)
 - [Artifacts](#artifacts-1)
+- [Astral Dimension](#feature-astral-dimension)
+- [Auras](#auras)
 - [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
 - [Barricades](#barricades)
@@ -3637,6 +3652,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Blood Moon](#blood-moon)
 - [Bosslike Ender Dragon](#bosslike-ender-dragon)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
+- [Chrono Dawn](#feature-chrono-dawn)
 - [Clear End City](#clear-end-city)
 - [Combat Roll](#combat-roll)
 - [Compact Villagers](#compact-villagers)
@@ -3808,6 +3824,8 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 #### Equipment
 
+- [Auras](#auras)
+
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
 - [Armory](#armory)
@@ -3835,6 +3853,9 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 #### Bosses
 
+- [Astral Dimension](#feature-astral-dimension)
+- [Chrono Dawn](#feature-chrono-dawn)
+
 - [Bosslike Ender Dragon](#bosslike-ender-dragon)
 - [Gateway of Doom](#gateway-of-doom)
 - [Ultimate Warden](#ultimate-warden)
@@ -3854,6 +3875,9 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 #### World Generation
 
+- [Astral Dimension](#feature-astral-dimension)
+- [Chrono Dawn](#feature-chrono-dawn)
+
 - [Abyssal Ocean](#abyssal-ocean)
 - [Alex's Caves](#alexs-caves)
 - [Better Nether](#better-nether)
@@ -3867,6 +3891,9 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 
 #### Structures
+
+- [Astral Dimension](#feature-astral-dimension)
+- [Chrono Dawn](#feature-chrono-dawn)
 
 - [Antique Trading Ship](#antique-trading-ship)
 - [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)

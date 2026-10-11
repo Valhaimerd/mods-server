@@ -110,7 +110,7 @@ Use this page to get a new character playable quickly. The complete explanations
 
 The recommended profile keeps `T` for the skill tree, `B` for the Better Party menu, `M` for the world map, `N` for the coordinate HUD, and `X` for Alex's Caves ability. The Iourus Races menu key is unbound; assign it in Controls if you need a direct shortcut. The full profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
 
-For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; use the button in the inventory screen to open Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
+For everyday play, left-click an item in JEI to view its recipe and right-click it to view its uses; `V` opens the equipped backpack; use the button in the inventory screen to open Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
 
 ### Screen layout
 
@@ -417,9 +417,9 @@ The recommended profile keeps frequently used actions easy to remember: `T` open
 | Craft Bookmarked Recipe (One) |  |
 | Quick Move Ghost Item |  |
 | Share Item to Chat |  |
-| Show Recipe | `R` |
+| Show Recipe |  |
 | Show Recipe | `Left Mouse Button` |
-| Show Uses | `U` |
+| Show Uses |  |
 | Show Uses | `Right Mouse Button` |
 
 #### JEI — Overlays
@@ -673,7 +673,7 @@ Equipment is part of the build rather than a simple armor-value ladder. Check at
 
 Start with a **weapon and class book** that support the same combat rhythm. Add **armor** whose set effects match the chosen class or damage type. Use **Jewelry** in Curios slots to reinforce the role, then add a **Relic** when its active or passive effect complements the build. Finish by refining the setup with enchantments; this order makes each upgrade easier to evaluate.
 
-Use the button in the inventory screen to inspect equipped Curios; its direct keybind is unbound in this profile. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+Use the button in the inventory screen to inspect equipped Curios; its direct keybind is unbound in this profile. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments. To inspect an item's recipe or uses, find it in JEI and left-click or right-click it, respectively.
 
 #### Curios slots and vanity cosmetics
 
@@ -999,7 +999,7 @@ During a Blood Moon, sheltering underground or leaving the Overworld avoids the 
 Use this same loop for unfamiliar structures without requiring a room-by-room spoiler:
 
 1. Mark the entrance and identify a retreat route before descending or activating anything.
-2. Use Jade to identify unfamiliar blocks and entities, then `R` and `U` over recovered items to inspect their recipes and uses in JEI.
+2. Use Jade to identify unfamiliar blocks and entities, then find recovered items in JEI and left-click or right-click them to inspect recipes and uses.
 3. Secure one area at a time. Structure mods can overlap with the pack's expanded hostile roster, so a familiar building shape does not guarantee familiar enemies.
 4. Keep unique books, maps, templates, keys, and named components until their purpose is understood.
 5. Recheck villages for useful services. Gazebos can supply spell libraries, guards can protect settlements, and some structure overhauls change where progression landmarks appear.
@@ -1083,7 +1083,7 @@ Try a short chain on a small vein or crop row before holding the action near val
 
 The kitchen has several distinct jobs. **Prepare ingredients** on cutting boards and other stations shown by JEI; preparation can improve yield or create an ingredient for the next step. **Cook** on the required heated cookware or stove. **Batch meals** use pots and may require a serving container. **Kaleidoscope Cookery** adds its own chopping, milling, cooking, and steaming recipe categories, so similarly named stations are not interchangeable. Some feast and display blocks serve portions in the world instead of behaving like ordinary food items.
 
-Farmer's Delight and Kaleidoscope Cookery overlap in theme but do not make every workstation interchangeable. Search the desired result in JEI, open its recipe with `R`, and follow the station shown there. Better Rotten Flesh provides a use for a normally poor food source, but its processed results and zombie interactions should still be tested away from villagers and livestock.
+Farmer's Delight and Kaleidoscope Cookery overlap in theme but do not make every workstation interchangeable. Search the desired result in JEI, left-click it to open its recipe, and follow the station shown there. Better Rotten Flesh provides a use for a normally poor food source, but its processed results and zombie interactions should still be tested away from villagers and livestock.
 
 Serene Seasons can change crop growth across the year. Universal Bone Meal broadens which plants accept bone meal, while No Crop Destruction protects the farm from ordinary trampling; neither guarantees that every crop will grow equally well in every season or environment.
 
@@ -1243,9 +1243,9 @@ Use the interface in layers: a tooltip answers an immediate question, JEI helps 
 
 #### Reading the information layers
 
-To identify a block or creature, aim at it and read **Jade**; the default overlay toggle is `Numpad 1`, while the Mods screen opens its configuration if your keyboard lacks a numpad. For an item recipe or use, hover it and press `R` or `U` in **JEI**. **Effect Insights** and **Enchantment Insights** explain status effects and enchantments in their tooltips; hold `Left Shift` when LibTooltips indicates more text. Before eating, read **AppleSkin** for hunger and saturation and **Food Effect Tooltips** for status effects. **Floating Damage Indicators** shows damage over the target, with colors and prefixes for configured damage types.
+To identify a block or creature, aim at it and read **Jade**; the default overlay toggle is `Numpad 1`, while the Mods screen opens its configuration if your keyboard lacks a numpad. In **JEI**, left-click an item in the list to view its recipe or right-click it to view its uses; those keyboard shortcuts are unbound in this profile. **Effect Insights** and **Enchantment Insights** explain status effects and enchantments in their tooltips; hold `Left Shift` when LibTooltips indicates more text. Before eating, read **AppleSkin** for hunger and saturation and **Food Effect Tooltips** for status effects. **Floating Damage Indicators** shows damage over the target, with colors and prefixes for configured damage types.
 
-Jade's `Numpad 2` toggles its fluid display and `Numpad 5` narrates the current target. Its recipe and usage shortcuts are left unchanged, but JEI's `R` and `U` workflow is the consistent recommendation throughout this handbook. Players without a numpad can open the mod's configuration through the Mods screen or rebind only the Jade actions they actually use.
+Jade's `Numpad 2` toggles its fluid display and `Numpad 5` narrates the current target. Its recipe and usage shortcuts are left unchanged; JEI uses left-click for recipes and right-click for uses, with the keyboard shortcuts unbound. Players without a numpad can open the mod's configuration through the Mods screen or rebind only the Jade actions they actually use.
 
 The recommended profile assigns `F2` to advanced tooltips, so the normal screenshot action is intentionally unbound. Advanced tooltips are best used temporarily when an item ID, durability value, or other technical detail is needed. Controlling's search and conflict views should be the first place to check when a shortcut does nothing.
 
@@ -1261,7 +1261,7 @@ The recommended profile assigns `F2` to advanced tooltips, so the normal screens
 #### JEI everyday workflow
 
 1. Open an inventory and use the search field to narrow the item list. Press `Ctrl + F` to focus the field quickly.
-2. Hover an ingredient or result and press `R` for recipes or `U` for uses. In the JEI item list, left-click and right-click perform the same two actions.
+2. In the JEI item list, left-click an ingredient or result for its recipe, or right-click it for uses. The corresponding keyboard shortcuts are unbound in this profile.
 3. Scroll to move between item-list or recipe pages. Click a recipe-category name to see every recipe in that category.
 4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
 5. Show/Hide JEI Overlays is unbound in this profile; assign its control in Controls if you want to hide or restore the item list with a key.

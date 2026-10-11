@@ -36,47 +36,47 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
     <tr class="toc-part"><td><a href="#part-i--keybinds-and-configuration">Part I — Keybinds and Configuration</a></td><td>6</td></tr>
     <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>6</td></tr>
     <tr class="toc-part"><td><a href="#part-ii--featured-mechanics">Part II — Featured Mechanics</a></td><td>12</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#curios-slots-and-vanity-cosmetics">Curios slots and vanity cosmetics</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>22</td></tr>
-    <tr class="toc-subsection"><td><a href="#penchant">Penchant</a></td><td>22</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>24</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>24</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>32</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>34</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>41</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>44</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>46</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>50</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#curios-slots-and-vanity-cosmetics">Curios slots and vanity cosmetics</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#penchant">Penchant</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>27</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--adventure-and-challenge">Part IV — Adventure and Challenge</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>35</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>37</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>41</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>44</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>47</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>53</td></tr>
   </tbody>
 </table>
 
@@ -552,7 +552,15 @@ These systems change how you build a character, explore, survive, and manage you
 - **Progression:** Race is saved with the character, while class remains a separate equipment choice.
 - **Decision:** Read each race's in-game traits before confirming. An ordinary player cannot freely replace a selected race.
 
-Pick a race for the way you want to survive, move, and fight. The mod author describes elves as mobile, orcs as combat-oriented, dwarves as durable, and humans as versatile; use the installed selection screen for the exact traits in this pack.
+
+
+**Choosing a race**
+
+1. At the selection screen, compare every race's listed strengths, weaknesses, attributes, and passive traits. The installed build offers seven options.
+2. Choose for the playstyle you want to keep. The author describes elves as mobile, orcs as combat-focused, dwarves as resilient, and humans as versatile; inspect the game for the exact current traits.
+3. After confirming, build an equipment-based class around that foundation. A class can change with gear, but an ordinary player cannot freely replace a confirmed race.
+
+A race affects survival and combat beyond appearance. Resetting one requires an administrator, so read the full selection before committing.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/iourus-races">official mod page</a>.</p>
 </section>
@@ -565,7 +573,16 @@ Pick a race for the way you want to survive, move, and fight. The mod author des
 - **Spellcasting:** Spell Engine supplies the ability bar, cooldowns, and rune costs for applicable skills.
 - **Growth:** Specialized weapons, armor, and spell books deepen each archetype rather than locking your character to one class.
 
-Build around a role, then mix equipment as you discover new options. Spell books come from the Spell Binding Table, and a compatible held weapon reveals their abilities.
+
+
+**Building a class loadout**
+
+1. Choose an archetype: Archer for ranged play, Paladin for protection, Priest for healing, Rogue for mobile melee, Warrior for heavy melee, or Wizard for magic.
+2. Pair its weapon with a class book. Use a Spell Binding Table to make books, then equip one in the Curios spell-book slot.
+3. Hold the compatible weapon to reveal Spell Engine abilities. Follow the keys shown on the ability bar and carry runes for spells that consume them. Hold `Left Ctrl` when the ordinary hotbar needs priority.
+4. Add class armor, skill nodes, and accessories that reinforce the same role.
+
+There is no permanent class-selection screen. If an ability fails, check the weapon, book, runes, target, and cooldown before changing the build.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/wizards">official mod page</a>.</p>
 </section>
@@ -578,7 +595,16 @@ Build around a role, then mix equipment as you discover new options. Spell books
 - **Points:** XP and tree rules unlock nodes with prerequisites; later choices build on earlier investments.
 - **Limits:** Some bonuses apply only with a matching class or weapon, and some attributes depend on pack support.
 
-The three trees let two players with the same class develop differently. Inspect each node's requirement and effect before committing points, especially when a benefit names a weapon type or attribute.
+
+
+**Spending points well**
+
+1. Open the tree with `T` and compare its three progression tracks before buying a node.
+2. Use RPG nodes for class and weapon specializations. Adventurer offers Offensive, Defensive, Utility, and Versatile choices; Stronger adds Combat, Mining, and Chopping Wood.
+3. Read each prerequisite and effect, then build toward a path that supports your equipment.
+4. Recheck the tree after changing class books or weapons. A bonus tied to one loadout may not help the next one.
+
+Pufferfish's Skills displays the trees; the installed tree data decides point costs and available attributes. The on-screen node text is the final rule.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/skills">official mod page</a>.</p>
 </section>
@@ -591,7 +617,16 @@ The three trees let two players with the same class develop differently. Inspect
 - **Shared XP:** Nearby experience can be divided among eligible members when the server permits it.
 - **Control:** Leaders set party rules within server limits; each player can adjust their own HUD.
 
-A party persists beyond a single encounter and makes coordinated RPG play easier. Server owners can limit size, sharing distance, privacy, and protection, so unavailable options may appear locked.
+
+
+**Playing as a group**
+
+1. Open the party menu with `B` or its inventory button. Create or join a public, invite-only, or password-protected group.
+2. Assign leader, officer, and member roles. The leader can adjust access and, when the server permits, friendly fire, nearby XP sharing, and the member locator.
+3. Use `/p <message>` for party chat. Keep the live roster visible, and move or scale it in personal HUD settings if it covers combat.
+4. Check the sharing radius before splitting up; members outside it may not receive XP.
+
+Party membership can persist across restarts. Server rules set the limits, while each player controls only their own HUD layout.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/better-party">official mod page</a>.</p>
 </section>
@@ -604,7 +639,16 @@ A party persists beyond a single encounter and makes coordinated RPG play easier
 - **Graves:** Inventory, equipment, experience, and supported mod slots are stored for later recovery.
 - **Recovery:** A Grave Compass locates active graves; respawning ends the rescue chance but leaves the grave.
 
-The installed Curios bridge includes equipped accessories in grave storage. Protection and timer settings are server-controlled, and an unclaimed grave can eventually enter a public collection phase.
+
+
+**Rescue and grave recovery**
+
+1. When a revivable death occurs, watch the downed timer. A teammate must help before that window closes.
+2. Throw a Revive Potion near the grave or try the Life Pulse interaction. The downed player must accept the offer. Higher potion tiers restore more health.
+3. If you respawn, follow the Grave Compass back and right-click your grave to reclaim stored belongings and experience.
+4. A Revive Scroll can return you near a distant active grave; it does not revive someone who is still downed.
+
+The installed Curios bridge stores supported accessories in graves too. Rescue locks, timers, and grave protection follow server settings.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/better-revive">official mod page</a>.</p>
 </section>
@@ -617,7 +661,16 @@ The installed Curios bridge includes equipped accessories in grave storage. Prot
 - **Costs:** Tools still lose durability and the action can depend on hunger or configured limits.
 - **Control:** The chain action only runs while its assigned activation control is held.
 
-This turns repetitive resource gathering into one continuous action, but it does not make tools or crops free. Check the target block and your tool before using it beside a build.
+
+
+**Mining and farming in chains**
+
+1. Hold `Grave Accent` while breaking a small group of matching blocks to see how far the chain spreads.
+2. Try the same action on mature crops. The mod can chain harvesting and nearby planting when the needed items are available.
+3. Check hunger and tool durability before clearing a large vein or field. Chained work still spends normal resources.
+4. Open its configuration with `Ctrl + Grave Accent` when you need to inspect block limits or tool-protection rules.
+
+Test beside a safe patch first. Connected blocks may extend farther than the one break you intended, and server settings can stop a chain early.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/onekeyminer_nf">official mod page</a>.</p>
 </section>
@@ -630,7 +683,16 @@ This turns repetitive resource gathering into one continuous action, but it does
 - **Limit:** A full bar raises that enchantment by one level until its maximum is reached.
 - **Modules:** Per-world datapacks can also rework tables, bookshelves, durability, loot, and anvils.
 
-Penchant makes using favorite equipment part of its advancement. Items without durability may not gain progress; a world's enabled modules determine which extra enchanting rules apply.
+
+
+**Growing an enchantment**
+
+1. Enchant a tool, weapon, or armor piece. Eligible enchantments begin at level one.
+2. Use it in ways that normally cost durability: mine, attack, or take armor damage. Each enchantment fills its own bar.
+3. Hover the gear and hold `Left Ctrl` to inspect progress. A full bar raises one enchantment level and resets until the maximum is reached.
+4. Check the world's Data Packs screen before relying on any optional table, bookshelf, durability, anvil, or loot changes.
+
+**The pack's new-world modules.** Table Rework offers selectable enchantments with XP and bookshelf requirements and a one-lapis application cost. Bookshelf Placement counts shelves in a wider area and can use enchanted books stored nearby to reveal more choices. Durability Rework changes Mending and Unbreaking; No Anvil Books prevents books from being applied to gear in an anvil. Loot Rework and Guaranteed Drops alter where enchanted equipment appears. Existing worlds keep their saved module selection, and items without durability may not gain progress.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/penchant">official mod page</a>.</p>
 </section>
@@ -643,7 +705,16 @@ Penchant makes using favorite equipment part of its advancement. Items without d
 - **Waypoints:** Mark important destinations and return points for later journeys.
 - **Limit:** Unvisited space stays blank; the map does not reveal hidden terrain ahead of exploration.
 
-Use the map as a memory of where you have been and a plan for where to go next. Biome and structure compasses remain separate tools for finding a specific undiscovered target.
+
+
+**Planning a route**
+
+1. Open the full-screen world map with `M`, then pan and zoom through terrain already explored.
+2. Mark home, portals, bases, and important structures with waypoints. Compare known landmarks before choosing a route.
+3. Keep coordinates visible with `N` when a precise return point matters, especially before entering a cave or another dimension.
+4. Use Nature's Compass or Explorer's Compass to seek an undiscovered biome or structure. Blank map areas do not reveal them.
+
+The map is a memory of travel, not a preview of unexplored land. It becomes more useful as paths and waypoints accumulate.
 
 <p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map">official mod page</a>.</p>
 </section>
@@ -656,7 +727,16 @@ Use the map as a memory of where you have been and a plan for where to go next. 
 - **Preparation:** Each biome asks for different supplies and tactics, from hazardous terrain to unusual creatures.
 - **Rewards:** Exploration opens new resources, gear, and creature encounters rather than just another ore layer.
 
-The caves are destinations to investigate, not ordinary tunnels to stumble through. Follow the cabin clues first, then prepare for the biome named by your map.
+
+
+**Finding a rare cave**
+
+1. Search the Overworld for an Underground Cabin. Its barrels contain Cave Tablets, and the Cave Compendium explains the discovery system.
+2. Put a Cave Tablet and paper in the Spelunkery Table. Solve three translation levels, each with five guesses, to produce a Cave Codex; a failed or interrupted translation consumes the tablet. Craft the codex with paper into its Cave Biome Map.
+3. Read the map before descending. Magnetic, Primordial, Toxic, Abyssal, Forlorn, and Candy caves have different creatures, hazards, and resources.
+4. Bring supplies for the named cave. If equipped Alex's Caves gear grants a special ability, use `G` to activate it.
+
+Use the Cave Codex to unlock biome chapters in the Cave Compendium before spending it on a map. Each cave is a destination with its own rules rather than another ordinary ore layer.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/alexs-caves">official mod page</a>.</p>
 </section>
@@ -669,7 +749,16 @@ The caves are destinations to investigate, not ordinary tunnels to stumble throu
 - **Resources:** New plants, foods, tools, and blocks can be gathered or farmed.
 - **Generation:** Terrain changes appear in newly generated chunks, leaving already visited terrain intact.
 
-Better Nether changes the dimension's survival and exploration loop. Mark the return portal and expect unfamiliar routes, enemies, and useful plants throughout new areas.
+
+
+**Exploring the changed Nether**
+
+1. Mark the portal and carry food, spare equipment, and a return route before crossing unfamiliar terrain.
+2. Explore beyond fortresses. New biomes hold plants, materials, creatures, dungeons, and rare Nether Cities.
+3. Bring home useful flora and resources for tools, building, and farms. Some materials can be grown or gathered repeatedly.
+4. After a pack update, travel into new chunks to see new generation; visited terrain stays as it was.
+
+Better Nether varies biomes vertically as well as across the map. Routes at different heights can expose different terrain and dangers.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/betternether">official mod page</a>.</p>
 </section>
@@ -682,7 +771,16 @@ Better Nether changes the dimension's survival and exploration loop. Mark the re
 - **Rewards:** New equipment, potions, and crafting materials come from End exploration and encounters.
 - **Crafting:** The Altar of the Accursed unlocks after the dragon and crafts some late-game gear through world interactions.
 
-The End is more than one boss fight. Keep unfamiliar items and clues; Stellarity's altar recipes may not appear in a normal recipe viewer. The installed pack also changes the dragon through another mod, so the active encounter may combine mechanics.
+
+
+**A longer End journey**
+
+1. Prepare for a changed dragon encounter and bring supplies for more than one arena fight.
+2. After the dragon, explore altered islands, End Cities, and structures for new materials, equipment, and clues.
+3. Find the Altar of the Accursed. Some late-game gear is made by placing the right ingredients on it rather than using a crafting-grid recipe.
+4. Keep unusual books and materials until their purpose is clear; some altar recipes do not appear in JEI. In the Hallow biome, placing certain items in the water can transform them into other materials.
+
+The pack also has another dragon overhaul, so follow the boss mechanics visible in your world. Stellarity continues progression through End exploration and crafting.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/datapack/stellarity">official mod page</a>.</p>
 </section>
@@ -695,7 +793,17 @@ The End is more than one boss fight. Keep unfamiliar items and clues; Stellarity
 - **Fishing:** A skill-based minigame replaces passive waiting for many catches.
 - **Long-term goals:** The catalogue, trophies, displays, aquariums, and tournaments reward varied catches.
 
-Choose a target fish, learn its conditions, and equip suitable tackle before traveling. Bigger catches can also feed into the mod's selling and display systems.
+
+
+**First catch and collection loop**
+
+1. The current profile awards the guide on joining a world. If you still need a Starcatcher rod, fish once with a vanilla rod; the profile also awards the rod on that first catch.
+2. Open the guide with `Ctrl + Space`. Read its help pages and a target fish's biome, dimension, weather, time, elevation, and other conditions.
+3. Fit the rod with suitable hooks, bobbers, and bait. A Tackle Box stores fish and helps organize attachments.
+4. Cast and follow the on-screen minigame. Press `Space` for **Minigame Hit**; different fish can change the pattern and difficulty.
+5. Record the catch in the catalogue, then keep it, display it, cook it, or sell it. Trophies, secrets, and tournaments give longer goals.
+
+This profile hides uncaught fish entries and shares catches with online FTB Team members. Changing location or tackle often matters more than repeated casts at one spot.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/starcatcher">official mod page</a>.</p>
 </section>
@@ -708,7 +816,16 @@ Choose a target fish, learn its conditions, and equip suitable tackle before tra
 - **Vanity:** The ribbon switches to purple cosmetic slots; those items change appearance without gameplay effects.
 - **Layering:** SimpleHats Lite can occupy Head, Face, or Hat in functional or cosmetic mode while other headgear stays equipped.
 
-Curios itself supplies the shared equipment interface; the installed mods provide the slots and usable items. Use functional slots for effects and vanity slots for appearance combinations.
+
+
+**Functional gear and vanity layers**
+
+1. Open Curios from the visible inventory button and inspect the labeled slots before placing a class book, belt, ring, hat, or trinket.
+2. Equip items in functional slots when you want their attributes or effects. Some items support several slot types.
+3. Use the ribbon above the slots to switch to the purple cosmetic layer. Items there change appearance without supplying gameplay effects.
+4. Keep functional headgear in an ordinary Head slot, then layer SimpleHats Lite pieces across cosmetic Head, Face, and Hat slots.
+
+Installed mods and pack configuration supply the slots and usable items. A hat in a purple slot is visual only; read tooltips to decide what stays equipped underneath.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/curios">official mod page</a>.</p>
 </section>
@@ -721,7 +838,16 @@ Curios itself supplies the shared equipment interface; the installed mods provid
 - **Cooking:** Stoves, skillets, and Cooking Pots handle different dishes and batch meals.
 - **Serving:** Some cooked foods need containers, while feasts provide portions in the world.
 
-A meal can have several steps between harvest and eating. Follow the specific workstation shown for a recipe, then use rich soil and crop systems to sustain the kitchen.
+
+
+**From harvest to meal**
+
+1. Grow crops or gather ingredients, then inspect a desired dish in JEI for its workstation and serving container.
+2. Use a Knife and Cutting Board for ingredients that need a cutting recipe.
+3. Heat a Stove, Skillet, or Cooking Pot for the relevant dish. A pot can prepare several servings and may need bowls or other containers.
+4. Serve the meal or place a feast for shared portions. Rich soil and crop systems can sustain the kitchen's ingredient supply.
+
+Cooking is a chain of preparation, heat, and serving rather than a single crafting recipe. Similar dishes may need different stations, so follow the recipe display.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/farmers-delight">official mod page</a>.</p>
 </section>
@@ -735,7 +861,17 @@ A meal can have several steps between harvest and eating. Follow the specific wo
 - **Discovery:** The map is generated per world, so memorized recipes from another world may not work.
 - **Guide:** An Alchemist's Guide records discovered effects, ingredients, and paths for repeat brewing.
 
-Alchemia turns potion making into ingredient navigation and experimentation. One full cauldron can fill four bottles; save useful paths in the guide before making larger batches.
+
+
+**Brewing by ingredient path**
+
+1. Place a vanilla cauldron over a lit campfire to make an Alchemical Cauldron, then add water and ingredients.
+2. Watch the radial map as each ingredient moves the potion along a path. Land near the desired effect; closeness affects potency.
+3. Continue carefully to combine effects. The last effect added is generally the strongest.
+4. Bottle the result with glass bottles; a full cauldron yields four bottles.
+5. Craft an Alchemist's Guide with a book and an ingredient. It records discoveries and paths; select a saved recipe, then sneak-right-click the cauldron to repeat it.
+
+The effect map is generated per world, so a recipe from another save may lead somewhere else. Experiment in small batches before brewing expedition supplies.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/project/alchemia">official mod page</a>.</p>
 </section>
@@ -748,7 +884,16 @@ Alchemia turns potion making into ingredient navigation and experimentation. One
 - **Placement:** A backpack can travel with you or be placed and connected to inventory automation.
 - **Customization:** Dye colors and upgrade configurations help dedicate packs to different jobs.
 
-Start with portable capacity, then choose upgrades for mining, building, travel, or sorting. A backpack keeps its contents in the item, while a home storage network solves a different problem.
+
+
+**Preparing a travel pack**
+
+1. Obtain a backpack and upgrade its tier as you need more storage and upgrade slots.
+2. Choose modules for the job: Pickup gathers drops, filters control contents, Refill maintains supplies, and Crafting adds a work surface.
+3. Open the equipped pack with `V` and configure its upgrades before an expedition.
+4. Dye separate packs for mining, building, or travel. A placed pack can also interact with hoppers and inventory automation.
+
+Automation follows each upgrade's filter, so inspect settings before carrying valuable items. The pack's tier controls its available capacity and upgrade choices.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/sophisticated-backpacks">official mod page</a>.</p>
 </section>
@@ -761,7 +906,16 @@ Start with portable capacity, then choose upgrades for mining, building, travel,
 - **Crafting:** A crafting terminal can combine item access with recipe assembly.
 - **Expansion:** Cables, filtered connectors, and wireless terminals extend the basic network.
 
-Containers remain physical storage blocks; the system indexes them rather than merging them into one chest. It is most useful at a base where many inventories need one place to search and withdraw from.
+
+
+**Building a storage network**
+
+1. Put an Inventory Connector beside a group of ordinary containers and attach a Storage Terminal.
+2. Add connectors and cables as the storage room grows. Items stay in physical containers while the terminal shows a searchable view.
+3. Use the terminal to find and withdraw supplies. A Crafting Terminal combines storage access with recipe assembly.
+4. Add filters to control connected inventories; a wireless terminal can extend access when built and configured.
+
+Start with a few chests and confirm each appears in the terminal before expanding. The network organizes a base, while a backpack carries supplies away from it.
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/toms-storage">official mod page</a>.</p>
 </section>
@@ -774,7 +928,16 @@ Containers remain physical storage blocks; the system indexes them rather than m
 - **Currency:** A standard board uses one configured currency; Market Board Plus can support several registered currencies.
 - **Limits:** Listing counts and accepted currencies are controlled by the server.
 
-The market lets trade continue while a seller is away. Check quantity and price before listing; placed boards of the same type share market data across the world.
+
+
+**Buying and selling with players**
+
+1. Place a Market Board and right-click it to browse shared listings. Search and sort before buying, and check item quantities.
+2. Sneak-right-click to manage your listings, remove an offer, or collect proceeds from a sale.
+3. Confirm the configured currency and price before listing. The standard board uses one currency; Market Board Plus can accept several registered currencies.
+4. Collect returned unsold goods when an offer expires, and leave inventory space for purchases and recovered items.
+
+Boards of the same type share market data across the world. Listing limits, currencies, and expiration behavior follow server settings.
 
 <p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/market-board">official mod page</a>.</p>
 </section>

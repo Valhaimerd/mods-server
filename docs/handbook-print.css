@@ -342,10 +342,10 @@ img {
 }
 
 .feature-card img {
-  width: 11mm;
-  height: 11mm;
-  max-width: 11mm;
-  max-height: 11mm;
+  width: 14mm;
+  height: 14mm;
+  max-width: 14mm;
+  max-height: 14mm;
   margin: 0 auto 1mm;
   object-fit: contain;
 }
@@ -364,8 +364,8 @@ img {
 }
 
 .feature-detail {
-  break-inside: avoid;
-  page-break-inside: avoid;
+  break-inside: auto;
+  page-break-inside: auto;
 }
 
 .feature-source {
@@ -378,20 +378,30 @@ h3.feature-heading {
   display: flex;
   align-items: center;
   gap: 2mm;
-  min-height: 10mm;
-  margin-top: 3mm;
+  min-height: 14mm;
+  margin-top: 2mm;
   margin-bottom: 1.5mm;
   border-bottom: 0.55pt solid #c5c1b5;
 }
 
 h3.feature-heading img {
-  width: 8mm;
-  height: 8mm;
+  width: 13mm;
+  height: 13mm;
   margin: 0;
   object-fit: contain;
 }
 
+.feature-detail ol {
+  margin: 1mm 0 2.5mm;
+}
+
+.feature-detail ol li {
+  margin-bottom: 1mm;
+}
+
 h3[id^="feature-"] + ul {
+  break-inside: avoid;
+  page-break-inside: avoid;
   margin: 0 0 1.5mm;
   padding-left: 6mm;
 }

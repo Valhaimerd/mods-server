@@ -364,8 +364,29 @@ img {
 }
 
 .feature-detail {
+  margin-bottom: 3.5mm;
+  padding-bottom: 3mm;
+  border-bottom: 0.8pt solid #c5c1b5;
   break-inside: auto;
   page-break-inside: auto;
+}
+
+.feature-detail:last-of-type {
+  border-bottom: 0;
+}
+
+.feature-tip {
+  margin: 1mm 0 1.5mm;
+  padding: 1.5mm 2.5mm;
+  border-left: 2pt solid #c78a2d;
+  background: #f1f4ef;
+  color: #17352f;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.feature-tip strong {
+  margin-right: 1.5mm;
 }
 
 .feature-source {

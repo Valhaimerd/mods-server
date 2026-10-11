@@ -213,9 +213,9 @@ tbody tr:nth-child(even) {
 .keybind-section table {
   width: 100%;
   table-layout: fixed;
-  margin: 0 0 2.5mm;
-  font-size: 7.2pt;
-  line-height: 1.15;
+  margin: 0 0 2.2mm;
+  font-size: 10pt;
+  line-height: 1.25;
 }
 
 .keybind-section th:first-child,
@@ -230,7 +230,7 @@ tbody tr:nth-child(even) {
 
 .keybind-section th,
 .keybind-section td {
-  padding: 1.4pt 2.2pt;
+  padding: 2.8pt 4pt;
 }
 
 .keybind-section td:last-child:empty {

@@ -435,6 +435,48 @@ h3[id^="feature-"] + ul + p {
   margin-top: 0;
 }
 
+.core-category {
+  margin: 5mm 0 0;
+  padding: 0 0 4mm;
+  border-bottom: 0.8pt solid #c5c1b5;
+  break-inside: auto;
+}
+
+.core-category > h3 {
+  margin: 0 0 2.5mm;
+  padding: 2mm 3mm;
+  border-left: 3pt solid #c78a2d;
+  background: #f1f0e8;
+  color: #17352f;
+  font-size: 14pt;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.core-mod-list {
+  margin: 0 0 3mm 5mm;
+  padding: 1mm 0 0 7mm;
+  border-left: 1pt solid #d9d1c1;
+}
+
+.core-mod-list li {
+  margin: 0 0 1.5mm;
+  padding-left: 0.5mm;
+  break-inside: avoid;
+}
+
+.core-mod-list li b {
+  color: #17352f;
+}
+
+.core-summary {
+  margin: 0 0 0 5mm;
+  padding: 1.5mm 2.5mm;
+  background: #f7f5ef;
+  color: #333;
+  break-inside: avoid;
+}
+
 p:has(> img:only-child) > img {
   max-width: 75%;
   max-height: 150mm;

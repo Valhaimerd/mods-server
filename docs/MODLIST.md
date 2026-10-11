@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A practical player guide to the RPG systems, exploration, survival loops, and tools that reshape this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 288 synchronized JARs · 4 optional client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 289 synchronized JARs · 4 optional client extras</p>
 
 Last audited: 2026-10-11<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 288 synchronized JARs plus 4 optional client-store JARs
+Current distribution: 289 synchronized JARs plus 4 optional client-store JARs
 
 ## About this handbook
 
@@ -36,45 +36,51 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
     <tr class="toc-part"><td><a href="#part-i--start-here">Part I — Start Here</a></td><td>6</td></tr>
     <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>6</td></tr>
     <tr class="toc-subsection"><td><a href="#choosing-a-race">Choosing a race</a></td><td>11</td></tr>
-    <tr class="toc-subsection"><td><a href="#choosing-a-class">Choosing a class</a></td><td>12</td></tr>
+    <tr class="toc-subsection"><td><a href="#choosing-a-class">Choosing a class</a></td><td>11</td></tr>
     <tr class="toc-subsection"><td><a href="#skills-abilities-spells-and-runes">Skills, abilities, spells, and runes</a></td><td>13</td></tr>
-    <tr class="toc-subsection"><td><a href="#first-session-checklist">First-session checklist</a></td><td>15</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-downed-players-and-death">Parties, downed players, and death</a></td><td>15</td></tr>
-    <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>23</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>24</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>25</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>35</td></tr>
+    <tr class="toc-subsection"><td><a href="#first-session-checklist">First-session checklist</a></td><td>14</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-downed-players-and-death">Parties, downed players, and death</a></td><td>14</td></tr>
+    <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#curios-slots-and-vanity-cosmetics">Curios slots and vanity cosmetics</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#penchant">Penchant</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>23</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>24</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>25</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">World and dimension expansions</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>34</td></tr>
     <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>37</td></tr>
     <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>37</td></tr>
     <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>40</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>41</td></tr>
     <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>43</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>44</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>45</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>46</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>46</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>47</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>44</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>45</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>45</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>50</td></tr>
   </tbody>
 </table>
 
@@ -84,20 +90,27 @@ Each mod has one primary entry. Secondary topics link back to that entry instead
 
 Use this page to get a new character playable quickly. The complete explanations and every configurable action begin in [Part I](#part-i--start-here).
 
+### Major systems that change how you play
+
+- **Build an RPG character:** choose a lasting race, assemble a flexible weapon-and-book loadout, then grow it through skill trees, spells, runes, and gear. Start with [Choosing a class](#choosing-a-class) and [Skill trees and character progression](#skill-trees-and-character-progression).
+- **Connect gear and progression:** Curios holds pack-provided accessories and the cosmetic layer, while Penchant lets eligible enchantments grow as you use their gear. See [Curios slots and vanity cosmetics](#curios-slots-and-vanity-cosmetics) and [Penchant](#penchant).
+- **Explore with intent:** use the explored-terrain map to plan routes, then follow the Cave Codex and Cave Map to find Alex's Caves. See [Xaero's World Map](#xaeros-world-map) and [Alex's Caves](#alexs-caves).
+- **Build a collection loop:** Starcatcher makes fishing depend on location and fish conditions, with gear, a minigame, and a catalogue. See [Starcatcher](#starcatcher).
+- **Bring companions safely:** Pet Vault stores and summons owned pets, while Pet Status helps check their health and last-known location. See [Pet Vault](#pet-vault).
+
 ### First ten minutes
 
 1. Apply the recommended controls, resolving highlighted conflicts from the top of the Controls screen downward.
-2. Press `P`, read the racial traits, and choose a race.
-3. Obtain a weapon and class book for the archetype you want to try; equip both together.
-4. Press `T` to inspect the class and weapon trees and their added skill categories.
-5. In multiplayer, press `B` to join or create a party before traveling.
-6. Press `M` for the world map and `N` for the coordinate HUD; place the Paper Doll above the coordinates at the upper-left.
+2. Use `P` to compare racial traits and choose the character's lasting race.
+3. Pick a class role, then equip its book and a compatible weapon together.
+4. Use `T` to review the available skill categories before spending points; test a spell or attack with the complete loadout.
+5. Before an expedition, use `M` to plan a route and `N` to keep coordinates visible. In multiplayer, join or create a party with `B`.
 
 ### Your first controls
 
 The recommended profile keeps first-session actions close at hand: `P` opens races, `T` opens the skill tree, and `B` opens the party menu. Navigation uses `M` for the world map and `N` for the coordinate HUD. The full recommended profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
 
-For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; `Ctrl + G` opens Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
+For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; assign the recommended `Ctrl + G` binding or use the inventory button to open Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
 
 ### Screen layout
 
@@ -287,7 +300,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Toggle 3D Compass Rendering | `H` |
 | Toggle HUD | `N` |
 
-#### Xaero's World Map
+#### Xaero's World Map keybinds
 
 | Action | Recommended key |
 |---|---|
@@ -440,7 +453,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Next Search |  |
 | Previous Search | `Up Arrow` |
 
-#### Pet Vault
+#### Pet Vault keybinds
 
 | Action | Recommended key |
 |---|---|
@@ -521,7 +534,7 @@ To activate the full class kit:
 1. Obtain a weapon appropriate for the intended archetype. Some caster weapons already provide a basic spell.
 2. Find a Spell Binding Table in a village gazebo, or build one and surround it with bookshelves.
 3. Create the corresponding class book at the table.
-4. Equip the book in the Curios spell-book slot (`Ctrl + G` opens the Curios interface), then hold a compatible weapon. The spell or skill hotbar should expose the available abilities.
+4. Equip the book in the Curios spell-book slot (open Curios with the inventory button or assign `Ctrl + G`), then hold a compatible weapon. The spell or skill hotbar should expose the available abilities.
 5. Test the loadout somewhere safe before spending progression points.
 
 Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
@@ -608,7 +621,7 @@ See [Death, revival, graves, and respawning](#death-revival-graves-and-respawnin
 
 ## Part II — Character and Core Systems
 
-This part explains how a character is assembled and how its combat systems interact. Race is the persistent foundation; class identity comes from equipment; skill categories add progression choices. Treat the weapon, class book, ability bar, armor, and accessories as one loadout, then test the whole combination before investing more experience.
+Build the character in layers: race sets the lasting foundation, the weapon-and-book loadout defines a flexible class, and skill trees, spells, gear stats, and accessories refine it. Enchanted equipment adds another progression loop as it is used. The sections below connect those choices without repeating each mod's full description.
 
 ### Races and racial traits
 
@@ -660,11 +673,17 @@ Equipment is part of the build rather than a simple armor-value ladder. Check at
 
 Start with a **weapon and class book** that support the same combat rhythm. Add **armor** whose set effects match the chosen class or damage type. Use **Jewelry** in Curios slots to reinforce the role, then add a **Relic** when its active or passive effect complements the build. Finish by refining the setup with enchantments; this order makes each upgrade easier to evaluate.
 
-Use the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+Use the inventory button or assign the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+
+#### Curios slots and vanity cosmetics
+
+Curios is the shared equipment-slot interface; the installed mods and pack configuration supply the slot types and the items that fit them. Check each item's own attributes and effects to see whether it changes combat or another statistic. The keybind tables list `Ctrl + G` as the recommended way to open the panel. If it has not been assigned in Controls, use the inventory button or bind the recommended key first.
+
+The ribbon control above the slot list switches to the cosmetic layer. Its purple slots are vanity slots: they change appearance without supplying the equipment's gameplay effects. In this pack, SimpleHats Lite hats can be placed in functional or vanity **Head**, **Face**, and **Hat** slots. This lets a player keep functional headgear, such as an Artifact, in the ordinary Head slot while layering one or more hats in the cosmetic slots. A hat in a functional slot still uses that item's own effects; the purple vanity copy is visual only.
 
 ![Curios inventory opened beside the normal inventory with accessory slots grouped vertically](assets/screenshots/12-curios-interface.png)
 
-*The Curios screen keeps the spell-book and accessory slots separate from ordinary armor and inventory slots.*
+*The Curios panel keeps the spell-book and accessory slots separate from ordinary armor and inventory slots.*
 
 #### Acquisition and upgrade paths
 
@@ -710,15 +729,22 @@ Armor Quick Swap has no required hotkey: right-click an armor piece in the inven
 
 ### Enchanting and equipment improvement
 
-Penchant changes enchantment progression: many enchantments can gain levels through use instead of relying only on a new random table offer. The exact progression can vary with the optional modules selected for a world, so read the enchantment and station tooltips in the current world.
+#### Penchant
 
-Penchant's built-in datapack modules are selected per world in its Data Packs screen. They can alter table behavior, bookshelf placement, durability, drops and loot, anvil book combining, and librarian trades. This repository has no world selection, so it cannot confirm which modules are enabled. **Easy Anvils** keeps items in place and reduces prior-work penalties. **Universal Enchants** widens equipment compatibility, subject to server configuration.
+- **Type:** Core progression system
+- **Primary topic:** Enchanting and equipment improvement
+- **Also affects:** Equipment, Combat, Loot
+- **Core idea:** Enchantments begin at level 1 and eligible enchantments gain levels as their enchanted item is used.
+- **Player guidance:** Hold `Left Ctrl` over enchanted gear to see its progress bars. Check the current world's Data Packs screen before relying on optional table, durability, loot, or anvil changes.
 
-**Max Protection** allows the different Protection enchantments to coexist on one armor piece without changing vanilla levels. **Toughness Enchantment** adds a three-level armor-toughness enchantment. Use Enchantment Insights and in-game tooltips to confirm what an unfamiliar enchantment does and whether the current item accepts it; server configuration still determines which combinations are available.
+The installed 26.2 build is an **unofficial NeoForge port** of Penchant. Its Tome says every applied enchantment starts at level 1. Mining, attacking, and taking armor damage add progress when they reduce durability; filling a bar raises that enchantment by one level. Higher-durability equipment can require more use per level. The Tome also describes use-based leveling for compatible modded enchantments.
+
+This profile's `config/penchant/server.toml` preselects **Durability Rework**, **Bookshelf Placement**, **Table Rework**, **No Anvil Books**, **Loot Rework**, and **Guaranteed Drops** for new worlds; **Randomized Librarians** is off. Existing worlds keep their saved selections, so use the world's Data Packs screen to confirm which modules are active. With Table Rework enabled, the table lets you select enchantments, nearby chiseled bookshelves can unlock more options, and a nearby grindstone can extract enchantments onto books.
+
+**Easy Anvils** changes anvil repair and rename handling; it does not cancel the No Anvil Books module when that module is enabled. **Universal Enchants** widens equipment compatibility, subject to server configuration. **Max Protection** allows different Protection enchantments to coexist on one armor piece, and **Toughness Enchantment** adds a three-level armor-toughness enchantment. Use Enchantment Insights and the current item tooltip to check an unfamiliar effect or compatibility.
 
 #### Included improvement systems
 
-- **Penchant** — Adds use-based enchantment leveling and optional modules selected for each world.
 - **Easy Anvils** — Keeps items in anvils and makes combining, repairing, and renaming equipment less punitive.
 - **Universal Enchants** — Broadens which equipment can accept existing enchantments and improves selected vanilla enchantment behavior.
 - **Max Protection** — Allows the different Protection enchantments to coexist on one armor piece.
@@ -736,7 +762,8 @@ DarkSmithing makes smithing templates craftable through custom recipes; use JEI 
 - [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts), [Nameless Trinkets](https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets), and [Scalar RPG Utils](https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils)
 - [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt) and [Dedicated Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot)
 - [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
-- [Penchant Reforged](https://www.curseforge.com/minecraft/mc-mods/penchant-reforged), [Easy Anvils](https://modrinth.com/mod/easy-anvils), and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [Penchant Reforged, the unofficial NeoForge port](https://www.curseforge.com/minecraft/mc-mods/penchant-reforged) and its [NeoForge source](https://github.com/WoXayZ/PenchantNeoforged); [Easy Anvils](https://modrinth.com/mod/easy-anvils) and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) and [SimpleHats Lite](https://www.curseforge.com/minecraft/mc-mods/simplehats-lite)
 - [Max Protection](https://www.curseforge.com/minecraft/mc-mods/max-protection) and [Toughness Enchantment](https://modrinth.com/datapack/toughness-enchantment)
 - [DarkSmithing](https://modrinth.com/mod/darksmithing), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
 - [Elytra Trims](https://modrinth.com/mod/elytra-trims), [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed), [Armor Trim Item Fix](https://modrinth.com/mod/armor-trim-item-fix), and [Fletching Recipe](https://modrinth.com/mod/fletching-recipe)
@@ -773,6 +800,120 @@ Treat new terrain as a collection of overlapping systems. A biome can contain a 
 - In multiplayer, form the party with `B` before combat so the HUD, friendly-fire rules, shared experience, and revive flow are already working.
 - Treat unfamiliar structures as active encounters. Observe the site, identify exits, and avoid opening containers or activating blocks until the group is ready.
 - Watch the sky and chat at night. Blood Moons and other environmental threats can make an otherwise routine return trip unsafe.
+
+### Travel, maps, compasses, and teleportation
+
+- **Waystones** — Adds discoverable and craftable travel points that must be activated before they can be selected as destinations.
+- **Bifrost Teleport** — Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
+- **Explorer's Compass** — Searches for vanilla and modded structures through an item interface.
+- **Nature's Compass** — Searches for vanilla and modded biomes and displays information about the selected result.
+- **Xaero's Map Multiplayer** — Adds multiplayer-oriented features to Xaero's maps.
+
+#### Xaero's World Map
+
+- **Type:** Interface feature
+- **Primary topic:** Travel, maps, compasses, and teleportation
+- **Also affects:** Exploration, Travel
+- **Core idea:** Builds a full-screen map from terrain the player has explored.
+- **Player guidance:** In the installed profile, `M` opens the map. Use it to review known routes and landmarks, then keep Coordinates Display (`N`) visible for the return trip.
+
+The map fills in as you explore; a blank area is unknown terrain, not a promise that the area is empty or safe. It does not reveal unexplored terrain or replace a structure/biome search. Pan by dragging and zoom with the wheel, and compare the map with the current dimension before following a route.
+
+![Xaero's World Map showing explored terrain, the player marker, map controls, biome, and coordinates](assets/screenshots/07-world-map-and-coordinates.png)
+
+*The map records explored terrain; its blank regions still need to be explored.*
+
+#### Finding destinations and getting home
+
+The **Explorer's Compass** searches for structures; the **Nature's Compass** searches for biomes. Right-click to select a target, and sneak-right-click the Nature's Compass to reset it. A compass gives a direction and distance, not a safe route. Mark a return point before leaving, verify that a destination belongs to the current dimension, and use activated **Waystones** or **Bifrost Teleport** markers only after confirming the destination.
+
+### Integrated world and dimension expansions
+
+World-generation changes appear in newly generated terrain. Existing explored chunks normally retain their old layout, so travel beyond familiar borders when searching for a new biome or structure after a pack update.
+
+#### Alex's Caves
+
+- **Type:** Integrated world expansion
+- **Primary topic:** Integrated world and dimension expansions
+- **Also affects:** Combat, Equipment, World Generation, Creatures
+- **Core idea:** Adds six rare underground cave biomes with distinct environments, hazards, creatures, materials, and progression.
+- **Player guidance:** Begin by finding an Underground Cabin, which can appear in caves throughout the Overworld. Its Cave Tablet and Spelunkery Table start the route to a Cave Codex and a matching Cave Map.
+
+Use the cabin's Cave Tablet with paper on the Spelunkery Table, then follow the table's rune and lens instructions to translate it. The tablet allows only five attempts, so take care with each one. Complete three translations to create a Cave Codex. The Codex teaches you about its cave biome, and an extra Codex plus paper makes a Cave Map that points to the nearest cave of that type.
+
+Read the Codex before entering and prepare for the specific terrain rather than treating every cave as an ordinary mineshaft. For example, Magnetic Caves pull or repel iron and netherite items and contain dangerous Tesla Bulbs; Toxic Caves have acid that corrodes armor and radioactive hazards that can suppress natural healing; in the Forlorn Hollows, placed light can draw unwanted attention. Carry a return route, healing, food, and suitable combat gear, and use the Codex to check the biome's resources and risks.
+
+#### Better Nether
+
+- **Type:** Integrated dimension expansion
+- **Primary topic:** Integrated world and dimension expansions
+- **Also affects:** World Generation, Structures, Creatures, Equipment
+- **Core idea:** Expands Nether terrain, biomes, vegetation, structures, creatures, and exploration rewards.
+- **Player guidance:** Expect the Nether to contain unfamiliar plants, materials, mobs, and large structures. Mark the portal immediately and bring spare ignition because ordinary visual landmarks are less reliable in the denser terrain.
+
+#### Stellarity
+
+- **Type:** Integrated dimension expansion
+- **Primary topic:** Integrated world and dimension expansions
+- **Also affects:** World Generation, Structures, Creatures, Equipment, Bosses
+- **Core idea:** Expands the End with new terrain, structures, enemies, equipment, and progression.
+- **Player guidance:** Treat the End as a full adventure dimension rather than a short dragon trip. Strongholds, the dragon, outer-island terrain, End Cities, crafting interactions, and boss encounters are all changed; some Stellarity recipes and rewards do not appear normally in JEI, so preserve written or in-world clues.
+
+- **Biomes O' Plenty** — Adds more than 50 biomes plus matching plants and blocks.
+- **Terralith** — Rebuilds Overworld terrain around almost 100 realistic and light-fantasy biomes made from vanilla blocks.
+- **William Wythers' Overhauled Overworld** — Reinterprets vanilla biomes with larger, more realistic, and atmospheric terrain.
+- **Dungeons Dimensions: Nether** — Brings Minecraft Dungeons-inspired detail and encounters to the Nether.
+- **Nullscape** — Reworks End terrain and island generation.
+- **Clear End City** — Adds cinematic End structures, void gardens, crashed citadels, and new loot locations.
+- **Serene Seasons** — Adds seasonal color, temperature, and environmental changes.
+- **Abyssal Ocean** — Generates rare, extremely deep offshore ocean regions that become darker toward bedrock.
+
+Serene Seasons affects more than scenery: weather, temperature, and crop growth can change across the year. Nature's Compass finds a biome; Explorer's Compass finds a structure; neither replaces preparation for the seasonal or dimensional conditions around the target.
+
+The Overworld changes are not one biome pack. Biomes O' Plenty adds its own plants and blocks, Terralith and William Wythers reshape terrain using largely familiar materials, and Serene Seasons changes the calendar across those landscapes. Abyssal Ocean is a rare deep-ocean destination, while Better Nether, Nullscape, and Stellarity alter separate dimensions. To see new generation after an update, travel beyond explored chunks; existing terrain does not retroactively rebuild.
+
+### Fishing and collection systems
+
+#### Starcatcher
+
+- **Type:** Integrated survival or profession expansion
+- **Primary topic:** Fishing and collection systems
+- **Also affects:** Food, Equipment, Events, Multiplayer
+- **Core idea:** Reworks fishing around more than 100 collectible fish, condition-based catches, a skill minigame, rod attachments, trophies, and tournaments.
+- **Player guidance:** Use discovered guide entries and the catalogue to plan each catch. This profile hides fish entries until they are caught; species can depend on biome, dimension, weather, time, elevation, and other conditions, so changing the fishing spot may matter more than casting repeatedly.
+
+#### Starcatcher first-catch flow
+
+1. The current profile awards the guide when you join a world. If you still need a Starcatcher rod, fish once with a vanilla rod; the profile also awards the rod on that first catch. Open the guide with `Ctrl + Space` and read its help pages before choosing a destination.
+2. Check the guide for a fish's conditions and the catalogue for what you have already caught. Avoid spending a rare first catch before it has been recorded.
+3. Set up a rod with the hooks, bobbers, and bait that fit the target. Tackle Boxes store fish and let you organize or change attachments; use JEI for recipes the guide does not show.
+4. Cast normally and follow the minigame's on-screen target. The installed profile uses `Space` for **Minigame Hit**; some fish have different minigame patterns and difficulty.
+5. Record new catches, then decide whether to keep them for the collection, display them in an aquarium, use them for food, or sell them. Trophies, secrets, and tournaments add longer-term and multiplayer goals.
+
+Starcatcher's settings include ways to adjust or disable the minigame and to change the radar, tracker, and overlay presentation. This profile enables catch sharing for online FTB Team members; offline members do not receive shared discoveries. Server settings decide which options are available. Use the guide's current fish conditions instead of trying to memorize a complete species list.
+
+### Companions, pets, villagers, and settlements
+
+- **Companions: Dogfolk** — Adds dogfolk companions.
+- **Wild Pets** — Makes polar bears, pandas, and foxes tameable; tamed bears can also be ridden.
+- **Puffsprout** — Adds a small companion that learns over time.
+- **Animal Pen** — Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
+- **Compact Villagers** — Lets players carry villagers and trade through compact booths.
+- **Name Tag Upgrade** — Allows on-the-go renaming and adds convenience improvements to name-tag use.
+- **Pet Status** — Exposes useful health and status information for owned pets.
+- **Iron Wolf Armor** — Adds protective equipment for wolves.
+
+#### Pet Vault
+
+- **Type:** Focused companion system
+- **Primary topic:** Companions, pets, villagers, and settlements
+- **Also affects:** Travel, Multiplayer
+- **Core idea:** Stores, summons, and manages owned pets and mounts through the Keeper's Locket radial menu.
+- **Player guidance:** This installed profile requires the locket in Curios' Necklace slot: `allowUnequippedLocket` is `false`, and the locket is tagged for that slot.
+
+Right-click a tamed companion you own to register it. Press `R` to open the radial menu, then left-click its slice to summon or store it; the current server config allows ten stored pets. Use Pet Status (`Shift + R`) to check health and location before a trip. If a pet is unloaded, the display may show its last-known position rather than live status.
+
+Be careful with the other mouse button: right-clicking a summoned companion unregisters it permanently from the vault, but leaves the animal in the world. That action does not store it. Use left-click when the goal is to put a pet away.
 
 ### Bosses and major encounters
 
@@ -828,64 +969,6 @@ Do not test a Nexus beside an irreplaceable home. Invasion enemies can bridge ga
 #### When the night changes
 
 During a Blood Moon, sheltering underground or leaving the Overworld avoids the event, but a bed cannot skip it. If the night is ordinary, Somnora still means sleep advances the world instead of cutting instantly to morning. The Darkness Will Find You can separately make sleep unreliable after its curse begins, so read current messages and effects rather than assuming every failed sleep has the same cause.
-
-### Travel, maps, compasses, and teleportation
-
-- **Waystones** — Adds discoverable and craftable travel points that must be activated before they can be selected as destinations.
-- **Bifrost Teleport** — Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
-- **Explorer's Compass** — Searches for vanilla and modded structures through an item interface.
-- **Nature's Compass** — Searches for vanilla and modded biomes and displays information about the selected result.
-- **Xaero's World Map** — Builds a full-screen map from terrain the player has explored.
-- **Xaero's Map Multiplayer** — Adds multiplayer-oriented features to Xaero's maps.
-
-Use **Xaero's World Map** (`M`) to review terrain you have already explored; pan by dragging and zoom with the wheel. **Coordinates Display** (`N`) keeps position visible, opens its settings with `Ctrl + N`, and can send a position to chat with `Y`. The **Explorer's Compass** locates structures, while the **Nature's Compass** searches biomes; right-click to search and select, and sneak-right-click the Nature's Compass to reset its target. **Waystones** form a return network as you discover and activate them. **Bifrost Teleport** is for named destinations, so establish and verify markers before depending on one as your route home.
-
-![Xaero's World Map showing explored terrain, the player marker, map controls, biome, and coordinates](assets/screenshots/07-world-map-and-coordinates.png)
-
-*The map reveals only explored terrain and keeps the current biome and coordinates visible at the top.*
-
-A compass identifies a direction and distance; it does not make the destination safe or automatically map the route. Add a map marker before leaving, and verify that the destination belongs to the current dimension. The world map only reveals explored terrain, so blank regions are unknown—not empty.
-
-### Integrated world and dimension expansions
-
-World-generation changes appear in newly generated terrain. Existing explored chunks normally retain their old layout, so travel beyond familiar borders when searching for a new biome or structure after a pack update.
-
-#### Alex's Caves
-
-- **Type:** Integrated world expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** Combat, Equipment, World Generation, Creatures
-- **Core idea:** Adds rare underground ecosystems with their own creatures, materials, equipment, and progression.
-- **Player guidance:** Begin with an Underground Cabin and its Cave Compendium. The book teaches the intended discovery route, while the recommended `O` binding is reserved for equipment that exposes Alex's Caves' special ability action.
-
-#### Better Nether
-
-- **Type:** Integrated dimension expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** World Generation, Structures, Creatures, Equipment
-- **Core idea:** Expands Nether terrain, biomes, vegetation, structures, creatures, and exploration rewards.
-- **Player guidance:** Expect the Nether to contain unfamiliar plants, materials, mobs, and large structures. Mark the portal immediately and bring spare ignition because ordinary visual landmarks are less reliable in the denser terrain.
-
-#### Stellarity
-
-- **Type:** Integrated dimension expansion
-- **Primary topic:** Integrated world and dimension expansions
-- **Also affects:** World Generation, Structures, Creatures, Equipment, Bosses
-- **Core idea:** Expands the End with new terrain, structures, enemies, equipment, and progression.
-- **Player guidance:** Treat the End as a full adventure dimension rather than a short dragon trip. Strongholds, the dragon, outer-island terrain, End Cities, crafting interactions, and boss encounters are all changed; some Stellarity recipes and rewards do not appear normally in JEI, so preserve written or in-world clues.
-
-- **Biomes O' Plenty** — Adds more than 50 biomes plus matching plants and blocks.
-- **Terralith** — Rebuilds Overworld terrain around almost 100 realistic and light-fantasy biomes made from vanilla blocks.
-- **William Wythers' Overhauled Overworld** — Reinterprets vanilla biomes with larger, more realistic, and atmospheric terrain.
-- **Dungeons Dimensions: Nether** — Brings Minecraft Dungeons-inspired detail and encounters to the Nether.
-- **Nullscape** — Reworks End terrain and island generation.
-- **Clear End City** — Adds cinematic End structures, void gardens, crashed citadels, and new loot locations.
-- **Serene Seasons** — Adds seasonal color, temperature, and environmental changes.
-- **Abyssal Ocean** — Generates rare, extremely deep offshore ocean regions that become darker toward bedrock.
-
-Serene Seasons affects more than scenery: weather, temperature, and crop growth can change across the year. Nature's Compass finds a biome; Explorer's Compass finds a structure; neither replaces preparation for the seasonal or dimensional conditions around the target.
-
-The Overworld changes are not one biome pack. Biomes O' Plenty adds its own plants and blocks, Terralith and William Wythers reshape terrain using largely familiar materials, and Serene Seasons changes the calendar across those landscapes. Abyssal Ocean is a rare deep-ocean destination, while Better Nether, Nullscape, and Stellarity alter separate dimensions. To see new generation after an update, travel beyond explored chunks; existing terrain does not retroactively rebuild.
 
 ### Structures and dungeons
 
@@ -947,29 +1030,14 @@ Use this same loop for unfamiliar structures without requiring a room-by-room sp
 
 Do not judge an unfamiliar creature only by its model. Watch whether it is passive, defensive, territorial, tameable, rideable, or openly hostile before approaching. Jade supplies the name and health information; JEI can explain known drops and uses without turning this handbook into a species catalogue. Guard Villagers and Guard Ribbits are settlement defenders, while Goblin Traders and Ribbits are social or trading encounters rather than ordinary hostile spawns.
 
-### Companions, pets, villagers, and settlements
-
-- **Companions: Dogfolk** — Adds dogfolk companions.
-- **Wild Pets** — Makes polar bears, pandas, and foxes tameable; tamed bears can also be ridden.
-- **Puffsprout** — Adds a small companion that learns over time.
-- **Animal Pen** — Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
-- **Compact Villagers** — Lets players carry villagers and trade through compact booths.
-- **Name Tag Upgrade** — Allows on-the-go renaming and adds convenience improvements to name-tag use.
-- **Pet Vault** — Stores, summons, and manages owned pets and mounts through the Keeper's Locket radial menu.
-- **Pet Status** — Exposes useful health and status information for owned pets.
-- **Iron Wolf Armor** — Adds protective equipment for wolves.
-
-For owned pets, use `Shift + R` to review Pet Status and `R` to open the Pet Vault radial menu. Both shortcuts are listed in the Part I controls tables; Pet Vault is easiest to use away from an item-hover context. Better Party uses `B` and manages players, not pets.
-
-Pet Status is the quickest health and location check before travel; unloaded pets show last-known rather than live information. To begin using Pet Vault, equip a Keeper's Locket in its Curios necklace slot and right-click a tamed companion you own to register it. In the `R` radial menu, left-click that pet's slice to summon or store it. Right-clicking a summoned companion unregisters it permanently from the vault but leaves the animal in the world, so do not use that interaction when the intent is only to store it. Animal Pen and Compact Villagers reduce crowded entity management at settlements; verify that a creature or villager is stored safely before changing or removing the containing block.
-
 #### Sources for adventure and exploration
 
 - [World Bosses](https://www.curseforge.com/minecraft/mc-mods/world-bosses), [Bosslike Ender Dragon](https://www.curseforge.com/minecraft/mc-mods/bosslike-ender-dragon), [Ultimate Warden](https://www.curseforge.com/minecraft/mc-mods/ultimate-warden), and [Gateway of Doom](https://modrinth.com/mod/gateway-of-doom)
 - [Invasion Mod Fork](https://modrinth.com/mod/invasion-mod-unofficial), [Illager Invasion](https://modrinth.com/mod/illager-invasion), and [It Takes a Pillage Continuation](https://modrinth.com/mod/it-takes-a-pillage-continuation)
 - [Withered Lands](https://modrinth.com/mod/withered-lands), [The Graveyard unofficial port](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port), [Blood Moon](https://modrinth.com/datapack/ks-blood-moon), [The Darkness Will Find You](https://modrinth.com/mod/the-darkness-will-find-you), [Armored Foes](https://modrinth.com/mod/armored-foes), and [Somnora](https://www.curseforge.com/minecraft/mc-mods/somnora)
 - [Waystones](https://modrinth.com/mod/waystones), [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass), [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass), and [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)
-- [Alex's Caves](https://modrinth.com/mod/alexs-caves), [BetterNether](https://modrinth.com/mod/betternether), [Stellarity](https://modrinth.com/datapack/stellarity), and [Serene Seasons](https://modrinth.com/mod/serene-seasons)
+- [Alex's Caves Continued, the installed 26.2 build](https://modrinth.com/mod/alexs-caves-continued), the original [Alex's Caves Getting Started guide](https://alexscaves.wiki.gg/wiki/Guides/Getting_Started), [BetterNether](https://modrinth.com/mod/betternether), [Stellarity](https://modrinth.com/datapack/stellarity), and [Serene Seasons](https://modrinth.com/mod/serene-seasons)
+- [Starcatcher](https://www.curseforge.com/minecraft/mc-mods/starcatcher)
 - [Pet Status](https://www.curseforge.com/minecraft/mc-mods/pet-status) and [Pet Vault](https://www.curseforge.com/minecraft/mc-mods/pet-vault)
 
 <div class="page-break" aria-hidden="true"></div>
@@ -991,7 +1059,7 @@ Try a short chain on a small vein or crop row before holding the action near val
 ### Farming, food, and cooking
 
 - **Shroomcraft cultivation** — Mushroom crops connect to a wider creature and building ecosystem. See [Shroomcraft](#shroomcraft).
-- **Starcatcher food and collection** — Fishing rewards connect collection systems with food and equipment. See [Starcatcher](#starcatcher).
+- **Starcatcher food and collection** — See the [Part III Starcatcher guide](#starcatcher) for fish conditions, rod setup, and collection rewards.
 
 #### Farmer's Delight
 
@@ -1016,27 +1084,6 @@ Farmer's Delight and Kaleidoscope Cookery overlap in theme but do not make every
 Serene Seasons can change crop growth across the year. Universal Bone Meal broadens which plants accept bone meal, while No Crop Destruction protects the farm from ordinary trampling; neither guarantees that every crop will grow equally well in every season or environment.
 
 When a crop is slow, check light, hydration, season, and the plant's own growth conditions before replacing the farm. Use bone meal only after confirming that the plant accepts it, and protect paths around farmland even though the pack prevents ordinary trampling.
-
-### Fishing and collection systems
-
-#### Starcatcher
-
-- **Type:** Integrated survival or profession expansion
-- **Primary topic:** Fishing and collection systems
-- **Also affects:** Food, Equipment, Events, Multiplayer
-- **Core idea:** Adds collectible fish, fishing minigames, equipment, trophies, tournaments, and a guidebook.
-- **Player guidance:** Fish are selected by conditions such as biome, weather, time, and elevation. Use the guide and catalogue to plan where to fish instead of expecting one location to provide every catch.
-
-#### Starcatcher first-catch flow
-
-1. If the guide is missing, fish once with a vanilla rod to receive the Starcatcher guide and rod. Open the guide with `Ctrl + Space` and review its help pages before choosing a fishing location.
-2. Prepare the rod and tackle box. Hooks, bobbers, and bait alter the setup, and uncommon catches can require the right combination.
-3. Cast normally. When the minigame begins, follow its on-screen target and use `Space` for **Minigame Hit**; this shares Jump safely because the action is minigame-specific.
-4. Check the catalogue after the catch. It records discoveries and their measurements, while JEI covers recipes that the guide does not.
-5. During a tournament, use `Tab` for the tournament overlay. This intentionally shares the key with Inventory because the contexts are separate.
-6. Decide whether the catch belongs in food preparation, a display or aquarium, the collection, or the selling system.
-
-Starcatcher's difficulty and presentation have accessibility settings, including an option to disable the minigame. Treat the server configuration as authoritative. This handbook explains the loop without listing every fish or hidden condition.
 
 ### Potions and alchemy
 
@@ -1162,7 +1209,6 @@ For a clear listing, compare similar offers, account for the server's registered
 
 - [OneKeyMiner](https://modrinth.com/mod/onekeyminer_nf)
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight), [Expanded Delight](https://www.curseforge.com/minecraft/mc-mods/expanded-delight), and [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery)
-- [Starcatcher](https://modrinth.com/mod/starcatcher)
 - [Alchemia](https://modrinth.com/mod/alchemia), [FFBandage](https://www.curseforge.com/minecraft/mc-mods/ffbandage), [Potion Time Stacker](https://modrinth.com/mod/potion-time-stacker), and [Potions Stack](https://www.curseforge.com/minecraft/mc-mods/potions-stack)
 - [Macaw's building mods](https://www.curseforge.com/members/sketch_macaw/projects), [Effortless Building](https://modrinth.com/mod/effortless-building), [Armor Statues](https://modrinth.com/mod/armor-statues), [Stonecutting Upgrade](https://www.curseforge.com/minecraft/mc-mods/stonecutting-upgrade), [Arcane Lanterns](https://modrinth.com/mod/arcane-lanterns), and [Traps and Barricades](https://www.curseforge.com/minecraft/mc-mods/traps-and-brricades)
 - [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks), [Tom's Simple Storage](https://modrinth.com/mod/toms-storage), [Linked Chests](https://modrinth.com/mod/new-linked-chests), and [Easy Shulker Boxes](https://modrinth.com/mod/easy-shulker-boxes)
@@ -1401,9 +1447,9 @@ These client-only options affect the interface and rendering. Sodium improves re
 - [Paper Doll](#hud-changes-and-customization)
 - [Party Creepers](#creatures-and-hostile-mobs)
 - [PatPat](#cosmetic-and-animation-changes)
-- [Penchant](#enchanting-and-equipment-improvement)
+- [Penchant](#penchant)
 - [Pet Status](#companions-pets-villagers-and-settlements)
-- [Pet Vault](#companions-pets-villagers-and-settlements)
+- [Pet Vault](#pet-vault)
 - [PlayerRevive](#death-revival-graves-and-respawning)
 - [Potion Time Stacker](#potions-and-alchemy)
 - [Potions Stack](#potions-and-alchemy)
@@ -1454,7 +1500,7 @@ These client-only options affect the interface and rendering. Sodium improves re
 - [Withered Lands](#withered-lands)
 - [World Bosses](#bosses-and-major-encounters)
 - [Xaero's Map Multiplayer](#travel-maps-compasses-and-teleportation)
-- [Xaero's World Map](#travel-maps-compasses-and-teleportation)
+- [Xaero's World Map](#xaeros-world-map)
 <div class="page-break" aria-hidden="true"></div>
 
 ### Gameplay-tag index
@@ -1502,9 +1548,11 @@ These client-only options affect the interface and rendering. Sodium improves re
 - [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)
 - [Enchantments collection](#weapons-armor-jewelry-and-relics)
 - [Jewelry](#weapons-armor-jewelry-and-relics)
-- [Penchant](#enchanting-and-equipment-improvement)
+- [Penchant](#penchant)
 - [Nameless Trinkets](#weapons-armor-jewelry-and-relics)
 - [Relics](#weapons-armor-jewelry-and-relics)
+- [SimpleHats Lite](#cosmetic-and-animation-changes)
+- [Starcatcher](#starcatcher)
 - [Scalar RPG Utils](#weapons-armor-jewelry-and-relics)
 - [Tool Belt](#weapons-armor-jewelry-and-relics)
 - [Alex's Caves](#alexs-caves)
@@ -1557,7 +1605,7 @@ These client-only options affect the interface and rendering. Sodium improves re
 - [Companions: Dogfolk](#companions-pets-villagers-and-settlements)
 - [Wild Pets](#companions-pets-villagers-and-settlements)
 - [Puffsprout](#companions-pets-villagers-and-settlements)
-- [Pet Vault](#companions-pets-villagers-and-settlements)
+- [Pet Vault](#pet-vault)
 - [Pet Status](#companions-pets-villagers-and-settlements)
 
 #### Farming
@@ -1595,7 +1643,7 @@ These client-only options affect the interface and rendering. Sodium improves re
 
 - [Waystones](#travel-maps-compasses-and-teleportation)
 - [Bifrost Teleport](#travel-maps-compasses-and-teleportation)
-- [Xaero's World Map](#travel-maps-compasses-and-teleportation)
+- [Xaero's World Map](#xaeros-world-map)
 - [Seaworthy Boats](#vehicles-and-travel-equipment)
 - [Vehicle Upgrade](#vehicles-and-travel-equipment)
 - [Dedicated Elytra Slot](#weapons-armor-jewelry-and-relics)

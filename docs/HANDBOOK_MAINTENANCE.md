@@ -22,6 +22,12 @@ Do not add libraries, APIs, loaders, compatibility bridges, performance internal
 
 Keep the full category-ordered keybind tables together at the beginning of Part I, before race, class, skills, abilities, and first-session onboarding. The print builder preserves this order and keeps the complete keybind block together; do not split or duplicate its tables. Other chapters may mention a shortcut when it helps explain a mechanic, but should describe it in prose rather than repeat it in a table. Keep comparison tables only when they clarify genuinely different workflows; use compact lists or short paragraphs for ordinary mod descriptions.
 
+### Guide prominence and entry depth
+
+Give a full player guide to a mod or integrated system that changes a recurring gameplay loop, meaningful progression, exploration decisions, equipment loadouts, or multiplayer preparation. Place that guide where a player first needs it, then use links instead of repeating its full description. A detailed guide should explain why the system matters, how to begin, its repeated loop and progression or rewards, connected equipment or controls, and any confusion, risk, version, or configuration caveat that affects players.
+
+Keep narrow equipment add-ons, small structure packs, cosmetic variants, and secondary conveniences as concise summaries. Do not lengthen every entry to match a major system. Treat the installed pack's behavior as authoritative; use upstream pages as feature references, and label ports or version-specific behavior clearly.
+
 ## Update procedure
 
 1. Inventory the pack and compare it with Git:
@@ -44,7 +50,7 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
    - onboarding or mechanic guidance when the change affects what a new player must do.
 
 5. Update keybinds from the top of Minecraft's Controls screen downward. Keep one table per category with only `Action` and `Recommended key`; leave an action's recommendation blank when it should remain unbound. In print, blank cells render as muted italic `Unbound` labels to distinguish them from configured keys. The print stylesheet fixes every keybind table to the same 65/35 column split. Resolve assignments in the actual profile before publishing, but keep default-key and conflict explanations out of the player tables.
-6. Update screenshots through [the screenshot queue](assets/screenshots/README.md). Use real captures from the current pack, follow the privacy and readability standards, replace the matching `handbook-figure` marker only after the PNG exists, and update its queue status.
+6. Update screenshots through [the screenshot queue](assets/screenshots/README.md). Use real captures from the current pack, follow the privacy and readability standards, replace the matching `handbook-figure` marker only after the PNG exists, and update its queue status. Keep supplied PNG files at their captured resolution; standalone handbook screenshots display centered at about 75% of the text column and no taller than 150 mm, while mod-entry icons keep their existing dimensions.
 7. Update the handbook's `Last audited` date and distribution counts. Treat the baselines below as values that must change deliberately when the pack changes, not as permanent constants.
 8. Run the verification checks, review the documentation diff, and stage documentation files explicitly. Do not stage unrelated mod-folder changes.
 9. When the canonical catalog changes, refresh `assets/mod-icons/manifest.csv` and `assets/mod-icons/` with `fetch-mod-icons.ps1`. Use CurseForge artwork only for this pack, verify every project match, and do not substitute a similar result. The seven compact groups use the representative member mappings in `fetch-mod-icons.ps1`; preserve the member's official project title, page URL, icon URL, and image filename on the group row. Do not add separate index rows for grouped members. Track Bifrost's user-supplied illustration separately from official project logos. The builder pairs each available verified icon beside its title and puts details below it. Check artwork reuse terms before distributing reproduced icons.
@@ -53,7 +59,7 @@ Keep the full category-ordered keybind tables together at the beginning of Part 
 
 Current verified baseline:
 
-- 288 main-pack JARs;
+- 289 main-pack JARs;
 - 4 optional client-store JARs;
 - 164 alphabetical gameplay entries;
 - 163 entries with verified CurseForge project icons, including seven group entries with representative member artwork, plus user-provided Bifrost artwork;
@@ -174,6 +180,8 @@ The script converts `docs/MODLIST.md` to HTML, restores GitHub-style heading anc
 The visual system uses black body text, forest-green part openers, and amber accents. Preserve that hierarchy and compact rhythm when adjusting the print styles. The Quick Reference keeps control reminders in prose; only the Part I controls chapter carries keybind tables.
 
 The handbook cover title is `26.2 RPG Series by Valhaimerd`. Keep the linked, one-page Table of Contents after the introduction. Its page numbers are maintained in `MODLIST.md`; after any pagination-affecting edit, rebuild the PDF and update those numbers to match the rendered pages. In the PDF, place the alphabetical mod index immediately after the contents, then the Gameplay-tag index with its own title bar, followed by Quick Reference. The source may keep both index sections at the end of `MODLIST.md`; `build-handbook.ps1` moves them into the front matter for print.
+
+The print stylesheet constrains standalone screenshot figures to approximately 75% of the printable text width and 150 mm tall, preserving aspect ratio and centering them. This selector applies to a screenshot alone in a paragraph; keep `.mod-entry-icon` at its current dimensions and do not resize the source PNG files.
 
 Project artwork is staged in `assets/mod-icons/`, with origin URLs and match status in its manifest. The PDF builder renders verified icons beside prominent mod titles, followed by each entry's details, with a slim amber vertical accent and horizontal separator. Image proportions are preserved; unresolved icons are omitted rather than substituted. Confirm artwork terms before public distribution.
 

@@ -14,7 +14,7 @@ if ($handbook -match '(?i)two sources of active powers') {
 if (-not $handbook.Contains('- **FF Bandage**')) {
     throw 'FF Bandage needs one concise player-facing catalog entry.'
 }
-if ($handbook -notmatch '(?m)^- \[FF Bandage\]\(#potions-and-alchemy\)$') {
+if ($handbook -notmatch '(?m)^- \[FF Bandage\]\(#potions-and-alchemy\)\r?$') {
     throw 'FF Bandage must appear in the alphabetical mod index.'
 }
 if ($handbook -notmatch '\[FFBandage\]\(https://www\.curseforge\.com/minecraft/mc-mods/ffbandage\)') {

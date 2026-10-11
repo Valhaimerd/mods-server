@@ -16,13 +16,13 @@ $repositoryRoot = Split-Path $PSScriptRoot -Parent
 $rootPdfPath = Join-Path $repositoryRoot 'modpack-player-handbook.pdf'
 $workingPath = [System.IO.Path]::GetFullPath($WorkingDirectory)
 
-$edgeCandidates = @(
-    'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe',
-    'C:\Program Files\Microsoft\Edge\Application\msedge.exe',
+$browserCandidates = @(
     'C:\Program Files\Google\Chrome\Application\chrome.exe',
-    'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+    'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
+    'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe',
+    'C:\Program Files\Microsoft\Edge\Application\msedge.exe'
 )
-$browserPath = $edgeCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
+$browserPath = $browserCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
 if (-not $browserPath) {
     throw 'Microsoft Edge or Google Chrome is required to build the handbook PDF.'
 }

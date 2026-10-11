@@ -313,6 +313,11 @@ img {
   page-break-inside: avoid;
 }
 
+p:has(> img:only-child) > img {
+  max-width: 75%;
+  max-height: 150mm;
+}
+
 figure {
   margin: 3mm 0 5mm;
   break-inside: avoid;
@@ -375,14 +380,14 @@ p:has(> img:only-child) + p:has(> em:only-child) {
   margin: 0;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 8.7pt;
-  line-height: 1.15;
+  font-size: 8.5pt;
+  line-height: 1.08;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
 .toc-table td {
-  padding: 2pt 2pt;
+  padding: 1pt 2pt;
   border: 0;
   background: transparent;
 }
@@ -409,7 +414,7 @@ p:has(> img:only-child) + p:has(> em:only-child) {
 }
 
 .toc-table .toc-part td {
-  padding-top: 2.5pt;
+  padding-top: 1.5pt;
   color: #173d31;
   font-weight: 700;
 }

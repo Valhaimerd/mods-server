@@ -101,16 +101,16 @@ Use this page to get a new character playable quickly. The complete explanations
 ### First ten minutes
 
 1. Apply the recommended controls, resolving highlighted conflicts from the top of the Controls screen downward.
-2. Use `P` to compare racial traits and choose the character's lasting race.
+2. Compare the racial traits and choose the character's lasting race from the Iourus Races selection screen. Its direct menu key is unbound in this profile; assign one in Controls if you need a shortcut later.
 3. Pick a class role, then equip its book and a compatible weapon together.
 4. Use `T` to review the available skill categories before spending points; test a spell or attack with the complete loadout.
-5. Before an expedition, use `M` to plan a route and `N` to keep coordinates visible. In multiplayer, join or create a party with `B`.
+5. Before an expedition, use `M` to plan a route and `N` to keep coordinates visible. Use `X` for Alex's Caves special ability; in multiplayer, join or create a party with `B`.
 
 ### Your first controls
 
-The recommended profile keeps first-session actions close at hand: `P` opens races, `T` opens the skill tree, and `B` opens the party menu. Navigation uses `M` for the world map and `N` for the coordinate HUD. The full recommended profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
+The recommended profile keeps `T` for the skill tree, `B` for the Better Party menu, `M` for the world map, `N` for the coordinate HUD, and `X` for Alex's Caves ability. The Iourus Races menu key is unbound; assign it in Controls if you need a direct shortcut. The full profile appears in [Part I's keybind reference](#essential-keybinds-and-conflict-resolution).
 
-For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; assign the recommended `Ctrl + G` binding or use the inventory button to open Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
+For everyday play, `R` and `U` show an item's recipe and uses in JEI; `V` opens the equipped backpack; use the button in the inventory screen to open Curios; and `E` performs a combat roll. These are reminders only. Use the single complete controls section when changing bindings.
 
 ### Screen layout
 
@@ -124,9 +124,9 @@ Place Paper Doll at the upper-left with Coordinates Display immediately below it
 
 Configure controls from the top of Minecraft's Controls screen to the bottom. The compact tables show only each action and its recommended key, so you can follow the same order in-game without comparing separate columns.
 
-The tables follow the Minecraft Controls screen category by category. A blank **Recommended key** means **leave the action unbound** unless you personally need it.
+The tables follow the Minecraft Controls screen category by category. A blank **Recommended key** means **leave the action unbound** unless you personally need it. When an existing screen already has a visible button, use that route instead of adding a shortcut; the Curios panel, for example, opens from its button in the inventory screen. Better Party keeps `B` for its menu.
 
-The recommended profile keeps frequently used RPG systems on simple keys and groups related tools by letter: `M` for the world map, `N` for coordinates, `R` for pets, and `T` for skill progression.
+The recommended profile keeps frequently used actions easy to remember: `T` opens the skill tree, `B` opens the Better Party menu, `M` opens the world map, `N` toggles coordinates, and `X` triggers Alex's Caves ability. The Iourus Races menu and the direct Curios shortcut are unbound; Curios remains accessible through the button in the inventory screen.
 
 #### LibTooltips
 
@@ -160,7 +160,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Recommended key |
 |---|---|
 | Advancements | `L` |
-| Alex's Caves Special Ability | `O` |
+| Alex's Caves Special Ability | `X` |
 | Quick Actions |  |
 | Take Screenshot |  |
 | Toggle Cinematic Camera |  |
@@ -304,8 +304,8 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Open Server Settings | `Shift + M` |
-| Open Settings | `Ctrl + M` |
+| Open Server Settings |  |
+| Open Settings |  |
 | Open World Map | `M` |
 | Quick Manual Confirmation |  |
 | Toggle Chunk Claims |  |
@@ -319,9 +319,9 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Action | Recommended key |
 |---|---|
 | Open Modifier Settings |  |
-| Open Radial Menu | `Left Alt` |
-| Redo | `Ctrl + Y` |
-| Undo | `Ctrl + Z` |
+| Open Radial Menu | `Alt` |
+| Redo |  |
+| Undo |  |
 
 #### Spell Engine
 
@@ -356,7 +356,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Open/Close Curios Inventory | `Ctrl + G` |
+| Open/Close Curios Inventory |  |
 
 #### Hovering Hotbar
 
@@ -369,7 +369,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Open Race Menu | `P` |
+| Open Race Menu |  |
 
 #### Item Interactions
 
@@ -382,9 +382,9 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Cheat 1 Item | `Right Mouse Button` |
 | Cheat 1 Item |  |
-| Cheat 1 Stack | `Left Mouse Button` |
+| Cheat 1 Item |  |
+| Cheat 1 Stack |  |
 | Cheat 1 Stack |  |
 | Toggle Cheat Mode |  |
 
@@ -398,8 +398,8 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Hide Ingredient | `Ctrl + Left Mouse Button` |
-| Hide Ingredient (With Wildcard) | `Ctrl + Right Mouse Button` |
+| Hide Ingredient |  |
+| Hide Ingredient (With Wildcard) |  |
 | Toggle Hide Ingredients Mode |  |
 
 #### JEI — Hovering over Config Button
@@ -430,7 +430,7 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 | Previous Page | `Mouse Wheel Up` |
 | Select Search Bar | `Ctrl + F` |
 | Show/Hide Bookmarked Ingredients |  |
-| Show/Hide JEI Overlays | `Ctrl + O` |
+| Show/Hide JEI Overlays |  |
 
 #### JEI — Recipes
 
@@ -449,9 +449,9 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 
 | Action | Recommended key |
 |---|---|
-| Clear Search Filter | `Right Mouse Button` |
+| Clear Search Filter |  |
 | Next Search |  |
-| Previous Search | `Up Arrow` |
+| Previous Search |  |
 
 #### Pet Vault keybinds
 
@@ -501,12 +501,12 @@ The recommended profile keeps frequently used RPG systems on simple keys and gro
 |---|---|
 | Cycle Tool Left |  |
 | Cycle Tool Right |  |
-| Open Belt Slot Inventory | `Shift + Q` |
+| Open Belt Slot Inventory |  |
 | Swap Tool | `Q` |
 
 ### Choosing a race
 
-Press `P` to open the Iourus Races menu. The installed 1.1.0 version offers seven choices: Human, Elf, Dwarf, Orc, Goblin, Melfork, and Draconic. A race is not merely cosmetic: it is saved with the character and changes strengths, weaknesses, attributes, or passive behavior. Read the in-game traits before confirming instead of choosing only by appearance.
+The recommended controls leave **Open Race Menu** unbound; assign a key in Controls when you need direct access to that screen. The installed 1.1.0 version offers seven choices: Human, Elf, Dwarf, Orc, Goblin, Melfork, and Draconic. A race is not merely cosmetic: it is saved with the character and changes strengths, weaknesses, attributes, or passive behavior. Read the in-game traits before confirming instead of choosing only by appearance.
 
 Race and class are independent. Race establishes the character's persistent foundation; the class system below comes from equipment and can be changed by changing the loadout. Ordinary players cannot freely replace a confirmed race. The installed version provides `/race reset`, but restricts it to server administrators, so ask an administrator if a genuine reset is needed.
 
@@ -534,7 +534,7 @@ To activate the full class kit:
 1. Obtain a weapon appropriate for the intended archetype. Some caster weapons already provide a basic spell.
 2. Find a Spell Binding Table in a village gazebo, or build one and surround it with bookshelves.
 3. Create the corresponding class book at the table.
-4. Equip the book in the Curios spell-book slot (open Curios with the inventory button or assign `Ctrl + G`), then hold a compatible weapon. The spell or skill hotbar should expose the available abilities.
+4. Equip the book in the Curios spell-book slot (open Curios with the button in the inventory screen), then hold a compatible weapon. The spell or skill hotbar should expose the available abilities.
 5. Test the loadout somewhere safe before spending progression points.
 
 Changing weapons or books is how to try another archetype; choosing a race does not lock the character to a class. See [Classes and playstyles](#classes-and-playstyles).
@@ -571,8 +571,8 @@ See [Skill trees and character progression](#skill-trees-and-character-progressi
 
 Complete these steps before the first long expedition:
 
-- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `P` for races, `T` for the RPG tree, `E` for rolling, `B` for parties, and `O` for Alex's Caves.
-- Open the race menu with `P`, read every trait, and choose the character's persistent race.
+- Before playing, use the [complete recommended keybind tables](#essential-keybinds-and-conflict-resolution) to set `T` for the RPG tree, `E` for rolling, `B` for parties, and `X` for Alex's Caves. The race menu is unbound in this profile; assign its key if you need direct access.
+- Read every trait on the race selection screen and choose the character's persistent race.
 - Pick an initial archetype from the role guide above, then obtain its appropriate weapon and class book.
 - Equip the class book in the Curios spell-book slot and hold a compatible weapon; confirm that the Spell Engine hotbar appears and check any rune cost.
 - Open `T` and inspect the available skill categories before spending points. Read each node's prerequisites and what it modifies; some RPG nodes affect a weapon skill or spell you must already have equipped.
@@ -673,11 +673,11 @@ Equipment is part of the build rather than a simple armor-value ladder. Check at
 
 Start with a **weapon and class book** that support the same combat rhythm. Add **armor** whose set effects match the chosen class or damage type. Use **Jewelry** in Curios slots to reinforce the role, then add a **Relic** when its active or passive effect complements the build. Finish by refining the setup with enchantments; this order makes each upgrade easier to evaluate.
 
-Use the inventory button or assign the recommended `Ctrl + G` binding to inspect equipped Curios. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
+Use the button in the inventory screen to inspect equipped Curios; its direct keybind is unbound in this profile. Hover equipment and read its full tooltip before comparing it; [Enchantment Insights](#information-overlays-and-tooltips) explains unfamiliar enchantments, while `R` and `U` over an item open its JEI recipe and uses.
 
 #### Curios slots and vanity cosmetics
 
-Curios is the shared equipment-slot interface; the installed mods and pack configuration supply the slot types and the items that fit them. Check each item's own attributes and effects to see whether it changes combat or another statistic. The keybind tables list `Ctrl + G` as the recommended way to open the panel. If it has not been assigned in Controls, use the inventory button or bind the recommended key first.
+Curios is the shared equipment-slot interface; the installed mods and pack configuration supply the slot types and the items that fit them. Check each item's own attributes and effects to see whether it changes combat or another statistic. Open the panel with its visible button in the inventory screen; the separate Curios keybind is intentionally unbound in this profile.
 
 The ribbon control above the slot list switches to the cosmetic layer. Its purple slots are vanity slots: they change appearance without supplying the equipment's gameplay effects. In this pack, SimpleHats Lite hats can be placed in functional or vanity **Head**, **Face**, and **Hat** slots. This lets a player keep functional headgear, such as an Artifact, in the ordinary Head slot while layering one or more hats in the cosmetic slots. A hat in a functional slot still uses that item's own effects; the purple vanity copy is visual only.
 
@@ -705,7 +705,7 @@ The ribbon control above the slot list switches to the cosmetic layer. Its purpl
 - **Artifacts** — Adds powerful Curios artifacts as exploration rewards from structure chests and archaeology; rare finds can also come from worn mob loot. Underground campsites may contain Mimics, so approach unfamiliar camps with care.
 - **Nameless Trinkets** — Adds a broad collection of trinkets with distinct abilities. Find them in structure chests or craft them, then hold `Shift` over a trinket to inspect its effect before choosing a build slot.
 - **Scalar RPG Utils** — Turns materials into components with Burnishers, then uses those components to craft Curios gloves, necklaces, and rings with material-dependent buffs. Compare the resulting bonuses before committing a loadout slot.
-- **Tool Belt** — Stores tools and other eligible non-stackable items in a wearable belt, then lets you select them from a radial menu. Upgrade the belt with pouches for more slots; use `Shift + Q` to open the belt-slot inventory and `Q` to swap tools in the recommended profile.
+- **Tool Belt** — Stores tools and other eligible non-stackable items in a wearable belt, then lets you select them from a radial menu. Upgrade the belt with pouches for more slots; the belt-slot inventory shortcut is unbound in this profile, while `Q` swaps tools.
 - **Dedicated Elytra Slot** — Adds a separate inventory slot for an Elytra so it can be equipped alongside a chestplate. Put the Elytra in that slot through the inventory; flight remains the familiar vanilla Elytra workflow.
 - **Too Many Bows** — Expands ranged builds with bows that have different abilities and combat attributes.
 - **Arrow+** — Adds craftable arrow tiers with different damage levels using familiar materials.
@@ -737,9 +737,13 @@ Armor Quick Swap has no required hotkey: right-click an armor piece in the inven
 - **Core idea:** Enchantments begin at level 1 and eligible enchantments gain levels as their enchanted item is used.
 - **Player guidance:** Hold `Left Ctrl` over enchanted gear to see its progress bars. Check the current world's Data Packs screen before relying on optional table, durability, loot, or anvil changes.
 
-The installed 26.2 build is an **unofficial NeoForge port** of Penchant. Its Tome says every applied enchantment starts at level 1. Mining, attacking, and taking armor damage add progress when they reduce durability; filling a bar raises that enchantment by one level. Higher-durability equipment can require more use per level. The Tome also describes use-based leveling for compatible modded enchantments.
+Penchant's core progression loop is use-based: enchantments begin at level 1, then actions that normally wear down the enchanted item—such as mining, attacking, or taking armor damage—fill a progress bar for each eligible enchantment. When a bar fills, that enchantment gains one level and its bar resets until it reaches its maximum. Hold `Left Ctrl` over enchanted gear to inspect progress. This makes using equipped gear part of its advancement; most modded enchantments can also level unless their data disables it. Items without durability may not gain progress.
 
-This profile's `config/penchant/server.toml` preselects **Durability Rework**, **Bookshelf Placement**, **Table Rework**, **No Anvil Books**, **Loot Rework**, and **Guaranteed Drops** for new worlds; **Randomized Librarians** is off. Existing worlds keep their saved selections, so use the world's Data Packs screen to confirm which modules are active. With Table Rework enabled, the table lets you select enchantments, nearby chiseled bookshelves can unlock more options, and a nearby grindstone can extract enchantments onto books.
+The original mod organizes its extra behavior into optional datapack modules that can be enabled per world. This pack's defaults for new worlds enable **Durability Rework**, **Bookshelf Placement**, **Table Rework**, **No Anvil Books**, **Loot Rework**, and **Guaranteed Drops**; **Randomized Librarians** is off. Existing worlds keep their saved selections, so check that world's Data Packs screen before relying on a module.
+
+With **Table Rework**, the enchanting table lists selectable enchantments instead of offering the usual random choices. Each option has an XP cost and bookshelf requirement, and applying it costs 1 lapis lazuli. **Bookshelf Placement** lets shelves count in a 7×4×7 area around the table (one block below and two above), without requiring a clear line of sight; three books in a chiseled bookshelf or lectern count as one ordinary bookshelf. Place enchanted books in nearby shelves to unlock additional table options. A grindstone within the bookshelf area can extract enchantments from gear onto books. The table module includes advancements that guide this reworked setup.
+
+**Durability Rework** makes Mending stop repairing equipment and gives Unbreaking five levels; reaching its final level makes the item unbreakable. Existing Mending enchantments remain on items but no longer work. With **No Anvil Books**, enchanted books cannot be applied to equipment in an anvil, although tools can still be combined. **Loot Rework** redistributes enchantments by rarity and source: basic options are available early, while specialized and powerful ones require trades, loot, or particular structures. **Guaranteed Drops** helps recover enchanted mob equipment for extraction; the 26.2 NeoForge port narrows this to equipment with a non-common enchantment. If enabled, **Randomized Librarians** sell a different enchanted book with each purchase.
 
 **Easy Anvils** changes anvil repair and rename handling; it does not cancel the No Anvil Books module when that module is enabled. **Universal Enchants** widens equipment compatibility, subject to server configuration. **Max Protection** allows different Protection enchantments to coexist on one armor piece, and **Toughness Enchantment** adds a three-level armor-toughness enchantment. Use Enchantment Insights and the current item tooltip to check an unfamiliar effect or compatibility.
 
@@ -762,7 +766,7 @@ DarkSmithing makes smithing templates craftable through custom recipes; use JEI 
 - [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts), [Nameless Trinkets](https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets), and [Scalar RPG Utils](https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils)
 - [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt) and [Dedicated Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/dedicated-elytra-slot)
 - [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows), [Arrow+](https://www.curseforge.com/minecraft/mc-mods/arrow), and [Shield Upgrades](https://www.curseforge.com/minecraft/mc-mods/shield-upgrades)
-- [Penchant Reforged, the unofficial NeoForge port](https://www.curseforge.com/minecraft/mc-mods/penchant-reforged) and its [NeoForge source](https://github.com/WoXayZ/PenchantNeoforged); [Easy Anvils](https://modrinth.com/mod/easy-anvils) and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
+- [Penchant, the original mod page](https://modrinth.com/mod/penchant), and its [official wiki](https://github.com/ThePotatoArchivist/Penchant/wiki) for the core system and modules; [Penchant Reforged, the unofficial NeoForge port](https://www.curseforge.com/minecraft/mc-mods/penchant-reforged) and its [NeoForge source](https://github.com/WoXayZ/PenchantNeoforged) for 26.2-specific behavior; [Easy Anvils](https://modrinth.com/mod/easy-anvils) and [Universal Enchants](https://modrinth.com/mod/universal-enchants)
 - [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) and [SimpleHats Lite](https://www.curseforge.com/minecraft/mc-mods/simplehats-lite)
 - [Max Protection](https://www.curseforge.com/minecraft/mc-mods/max-protection) and [Toughness Enchantment](https://modrinth.com/datapack/toughness-enchantment)
 - [DarkSmithing](https://modrinth.com/mod/darksmithing), [Armor Quick Swap](https://modrinth.com/mod/armor-quick-swap), and [Target Dummy](https://modrinth.com/datapack/target-dummy)
@@ -1135,14 +1139,14 @@ Keep a note of successful Alchemia ingredient paths for effects you use often. I
 #### Bulk-building workflow
 
 1. Prototype a small section with ordinary placement and confirm the palette, orientation, and block count.
-2. Hold `Left Alt` to open Effortless Building's radial menu, choose a shape, and review its fill and replacement options.
+2. Hold `Alt` to open Effortless Building's radial menu, choose a shape, and review its fill and replacement options.
 3. With the building block selected, right-click the first position, aim at the endpoint, and right-click again to place the previewed shape. Survival use consumes the correct blocks from inventory.
-4. Use `Ctrl + Z` and `Ctrl + Y` for undo and redo when the result is wrong. Server limits still control reach, shape size, breaking, and replacement behavior.
+4. Undo and Redo are unbound in this profile; assign their controls in Controls before relying on keyboard recovery. Server limits still control reach, shape size, breaking, and replacement behavior.
 5. Use mirrors or arrays for repeated sections only after one section is correct. Pro Placer supports precise single-block work and bridging where a bulk shape would be excessive.
 
 ![Effortless Building radial menu with shape tools and filling options](assets/screenshots/10-effortless-building.png)
 
-*Hold `Left Alt` to choose a building shape and configure whether it is filled or hollow.*
+*Hold `Alt` to choose a building shape and configure whether it is filled or hollow.*
 
 Effortless Building can place, break, or apply tool interactions across a selected shape. Check the preview before confirming, especially near storage, redstone, or irreplaceable blocks. The Randomizer tool can vary a palette, while an empty weighted slot can intentionally leave gaps.
 
@@ -1260,7 +1264,7 @@ The recommended profile assigns `F2` to advanced tooltips, so the normal screens
 2. Hover an ingredient or result and press `R` for recipes or `U` for uses. In the JEI item list, left-click and right-click perform the same two actions.
 3. Scroll to move between item-list or recipe pages. Click a recipe-category name to see every recipe in that category.
 4. When a recipe supports transfer, use its `+` button to place available ingredients into the crafting area; a transfer does not create missing ingredients.
-5. Press `Ctrl + O` if the item list needs to be hidden or restored.
+5. Show/Hide JEI Overlays is unbound in this profile; assign its control in Controls if you want to hide or restore the item list with a key.
 
 ![JEI recipe view with a crafting recipe on the left and the searchable item browser on the right](assets/screenshots/06-jei-recipe-and-uses.png)
 

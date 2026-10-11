@@ -28,6 +28,7 @@
 - **Pet Vault locket access:** local handbook guidance and the currently published upstream page differ. Test whether the installed pack requires the Curios necklace slot, inventory, or both, then use that one verified behavior everywhere.
 - **Curios vanity behavior:** confirm the purple cosmetic layer, functional slots, hat/head/face placements, and how the ribbon toggle changes the UI before writing user instructions.
 - **Source and icon accuracy:** do not imply upstream support for this pack's local ports or use an approximate Penchant icon; verify the current exact source and image permissions.
+- **Screenshot scale:** standalone screenshots should stay readable but use a moderate display size, centered at about 75% of the text column and no taller than 150 mm; do not change the supplied image files or the size of mod-entry icons.
 - **PDF navigation:** moves can change anchors and pagination. Verify internal links, alphabetical/tag indexes, TOC page numbers, screenshot references, and printed layout after the build.
 
 ---
@@ -107,7 +108,7 @@
 - Modify: `docs/MODLIST.md` — TOC page numbers, audited counts/date, alphabetical/tag indexes, source links, and any final cross-references.
 - Modify: `docs/HANDBOOK_MAINTENANCE.md` — add the prominence rubric and single-canonical-guide rule for major systems.
 - Modify: `docs/assets/mod-icons/manifest.csv`, `docs/assets/mod-icons/README.md`, and `docs/assets/screenshots/README.md` only for verified catalog/artifact changes.
-- Modify: `docs/build-handbook.ps1` or `docs/handbook-print.css` only if the existing pipeline cannot preserve the specified order or printed layout without a targeted adjustment.
+- Modify: `docs/handbook-print.css` to size standalone screenshot images; keep `.mod-entry-icon` dimensions unchanged. Modify `docs/build-handbook.ps1` only if the existing image markup cannot target screenshot figures without affecting icons.
 
 **Interfaces:**
 - Consumes: the finished content and real visual assets from Tasks 1–4.
@@ -117,9 +118,10 @@
 - [ ] **Step 2: Update the TOC and handbook audit metadata.** Preserve the TOC's one-page layout; rebuild after pagination changes and correct every printed page number.
 - [ ] **Step 3: Add the future maintenance rubric to `HANDBOOK_MAINTENANCE.md`.** Explain how to select major system guides versus concise mod summaries, and require installed-pack verification for controls/configuration.
 - [ ] **Step 4: Run the existing handbook checks from `docs/HANDBOOK_MAINTENANCE.md`.** Verify distribution/catalog counts, index order and uniqueness, internal anchors, local images, screenshot queue parity, icon sources/rendering, and `git diff --check`. Add no new automated test suite for this documentation-only change.
-- [ ] **Step 5: Build the PDF with `.\docs\build-handbook.ps1` and inspect every page.** Confirm the original visual system remains intact; the TOC stays one page; links and numbers resolve; screenshots are real, legible, and uncropped; headings/tables do not clip; and no unintended blank pages appear.
-- [ ] **Step 6: Review the final diff and stage only exact handbook paths changed by this plan.** Leave unrelated `mods/`, `mod store/`, and unrelated `docs/assets/` changes untouched; do not use `git add -A` or stage the entire assets directory.
-- [ ] **Step 7: Commit the reviewed handbook change.**
+- [ ] **Step 5: Size standalone screenshot figures in `docs/handbook-print.css`.** Target screenshot images inside their own Markdown paragraph (for example `p:has(> img:only-child) > img`), center them, cap width at approximately 75% of the text column and height at 150 mm, and preserve aspect ratio. Leave mod-entry icons unchanged and retain supplied PNG files at their original resolution.
+- [ ] **Step 6: Build the PDF with `.\docs\build-handbook.ps1` and inspect every page.** Confirm the original visual system remains intact; the TOC stays one page; links and numbers resolve; screenshots are real, legible, and uncropped; headings/tables do not clip; and no unintended blank pages appear.
+- [ ] **Step 7: Review the final diff and stage only exact handbook paths changed by this plan.** Leave unrelated `mods/`, `mod store/`, and unrelated `docs/assets/` changes untouched; do not use `git add -A` or stage the entire assets directory.
+- [ ] **Step 8: Commit the reviewed handbook change.**
 
 ```powershell
 git commit -m "docs: highlight major handbook systems"

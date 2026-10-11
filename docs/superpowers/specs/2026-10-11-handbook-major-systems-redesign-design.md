@@ -19,6 +19,7 @@ The intended result is a field guide organized around what changes the player's 
 - Promote the major exploration and collection loops: Xaero's World Map, Alex's Caves, Starcatcher, and Pet Vault.
 - Explain a large system through its effect on ordinary play, its first steps, its main loop, its progression or rewards, and relevant cautions or connections.
 - Keep the existing visual language for mod headings, icons, entry metadata, screenshots, navigation, and print styling.
+- Display standalone handbook screenshots at a restrained, readable size: centered, approximately 75% of the text-column width, aspect ratio preserved, and capped at 150 mm tall. This applies to screenshot figures, not the small mod-entry icons.
 - Preserve concise summaries for small equipment add-ons, individual structures, and other lower-priority content.
 - Keep one canonical explanation for each player-facing mod and use links elsewhere instead of duplicating its full description.
 
@@ -41,6 +42,7 @@ The intended result is a field guide organized around what changes the player's 
 - Move the detailed Starcatcher profile from Part IV into Part III's exploration and collection flow. Leave a short link in its former Part IV context so readers looking for fishing from the survival section can find it.
 - Treat the installed JAR metadata and the current pack's in-game behavior as authoritative for pack-specific claims. Official mod pages and guides are research inputs, not proof that every upstream feature or default is enabled in this pack.
 - Keep screenshots real and drawn from the current 26.2 pack. Use the existing screenshot queue and capture standards; never use fabricated or unrelated promotional images.
+- Do not stretch screenshots to the full printable width or near-full page height. Scale their display in the handbook; keep the original screenshot files intact.
 - Preserve the current one-page Table of Contents and update all destinations and page numbers after PDF pagination changes.
 
 ## Proposed reading flow
@@ -130,3 +132,4 @@ Use a short overview bullet for a mod that adds a narrow equipment option, a sma
 - Minor equipment and structure entries retain their concise treatment.
 - The original cover, five-part organization, typography, keybind table style, icon presentation, TOC page, and print hierarchy are preserved.
 - The rebuilt PDF has correct links and page numbers, readable real screenshots, no clipping or unintended blank pages, and a one-page TOC.
+- Standalone screenshots are centered, visibly smaller than the printable text column, legible at approximately 75% column width, and do not dominate a page; mod-entry icons retain their existing dimensions.

@@ -453,25 +453,34 @@ h3[id^="feature-"] + ul + p {
   page-break-after: avoid;
 }
 
-.core-mod-list {
-  margin: 0 0 3mm 5mm;
-  padding: 1mm 0 0 7mm;
+.core-category-entries {
+  margin-left: 5mm;
+  padding-left: 3mm;
   border-left: 1pt solid #d9d1c1;
 }
 
-.core-mod-list li {
-  margin: 0 0 1.5mm;
-  padding-left: 0.5mm;
+.core-mod-entry {
+  margin-bottom: 3mm;
   break-inside: avoid;
+  page-break-inside: avoid;
 }
 
-.core-mod-list li b {
-  color: #17352f;
+.core-mod-entry h4.mod-entry-primary {
+  margin-top: 0;
 }
 
-.core-summary {
-  margin: 0 0 0 5mm;
-  padding: 1.5mm 2.5mm;
+.core-mod-entry ul {
+  margin-bottom: 1.5mm;
+}
+
+.core-mod-entry p {
+  margin-top: 0;
+}
+
+.core-category-description {
+  margin: 3mm 0 0 5mm;
+  padding: 2mm 3mm;
+  border-left: 1.5pt solid #c78a2d;
   background: #f7f5ef;
   color: #333;
   break-inside: avoid;

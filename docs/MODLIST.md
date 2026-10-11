@@ -34,6 +34,12 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-part"><td><a href="#part-i--keybinds-and-configuration">Part I — Keybinds and Configuration</a></td><td>6</td></tr>
     <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>6</td></tr>
     <tr class="toc-part"><td><a href="#part-ii--featured-mechanics">Part II — Featured Mechanics</a></td><td>14</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-iourus-races">Races, RPG classes, and skill trees</a></td><td>15</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, revival, mining, and enchantments</a></td><td>16</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-xaeros-world-map">World map, caves, Nether, and End</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-starcatcher">Fishing and Curios accessories</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-farmers-delight">Cooking and alchemy</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-sophisticated-backpacks">Backpacks, storage, and player trade</a></td><td>21</td></tr>
     <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>23</td></tr>
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>23</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>23</td></tr>

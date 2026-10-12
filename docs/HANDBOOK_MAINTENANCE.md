@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-12<br>
+Last verified: 2026-10-13<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2
 
 ## Purpose
@@ -59,8 +59,8 @@ Keep narrow equipment add-ons, small structure packs, cosmetic variants, and sec
 
 Current verified baseline:
 
-- 292 main-pack JARs;
-- 4 optional client-store JARs;
+- 291 main-pack JARs;
+- 5 client-store JARs;
 - 167 alphabetical gameplay entries;
 - 163 entries with verified CurseForge project icons, including seven group entries with representative member artwork, plus three author icons from installed JARs and user-provided Bifrost artwork;
 - 38 keybind tables;

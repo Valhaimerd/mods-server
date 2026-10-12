@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 292 synchronized JARs · 4 optional client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 291 synchronized JARs · 5 client extras</p>
 
-Last audited: 2026-10-12<br>
+Last audited: 2026-10-13<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 292 synchronized JARs plus 4 optional client-store JARs
+Current distribution: 291 synchronized JARs plus 5 client-store JARs
 
 ## About this handbook
 
@@ -3478,11 +3478,11 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 #### Auras
 
-- **Type:** Cosmetic equipment customization
+- **Type:** Client-side cosmetic equipment customization
 - **Core mechanic:** Collect Norse-inspired runes and apply their colored auras to tools, weapons, or armor in place of the enchantment glint.
 - **Player guidance:** Explore loot chests for rune colors. Hold a discharged rune while collecting XP to recharge it.
 
-A second rune of the same type and a different color creates a two-color fade; a different type replaces the current aura. Looted emblems adjust the aura's look or speed.
+A second rune of the same type and a different color creates a two-color fade; a different type replaces the current aura. Looted emblems adjust the aura's look or speed. This JAR is distributed from `mod store` for clients because it crashes the server when installed there.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/auras">Official mod page</a></p>
 

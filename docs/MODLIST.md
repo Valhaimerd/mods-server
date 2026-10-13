@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 291 synchronized JARs · 5 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 294 synchronized JARs · 5 client extras</p>
 
 Last audited: 2026-10-13<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 291 synchronized JARs plus 5 client-store JARs
+Current distribution: 294 synchronized JARs plus 5 client-store JARs
 
 ## About this handbook
 
@@ -2320,6 +2320,34 @@ The collection spreads sites across the Overworld, End, and Ocean. Bring equipme
 
 <div class="core-mod-entry">
 
+#### When Dungeons Arise collection
+
+- **Type:** Structures and exploration
+- **Core mechanic:** When Dungeons Arise adds large, hostile dungeons and structures; Seven Seas extends the collection with ships and other ocean vessels.
+- **Player guidance:** Scout the whole site and mark a safe return route before entering or boarding.
+
+These sites can be much larger than a vanilla dungeon, with enemies and loot spread across several areas. Explore in stages and leave room to carry rewards back.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise">When Dungeons Arise</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas">Seven Seas</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Hellish Trials
+
+- **Type:** Nether structures and combat
+- **Core mechanic:** Generates trial chambers in the Nether with trial spawners, vaults, Breezes, and wind-charge hazards.
+- **Player guidance:** Bring fire protection and supplies for repeated combat before opening a vault.
+
+The chambers turn a Nether detour into a sustained trial rather than a quick loot stop. Watch the room's spawners and terrain before committing to a fight.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/hellish-trials">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Moog's structure collection
 
 - **Type:** Structures and exploration
@@ -3692,6 +3720,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Guard Ribbits](#guard-ribbits)
 - [Guard Villagers](#guard-villagers)
 - [Harder Natural Healing](#harder-natural-healing)
+- [Hellish Trials](#hellish-trials)
 - [Hopo Better Underwater Ruins](#hopo-better-underwater-ruins)
 - [Hopper Gadgetry](#hopper-gadgetry)
 - [Hovering Hotbar](#hovering-hotbar-1)
@@ -3778,6 +3807,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Universal Enchants](#universal-enchants)
 - [Vehicle Upgrade](#vehicle-upgrade)
 - [Waystones](#waystones)
+- [When Dungeons Arise collection](#when-dungeons-arise-collection)
 - [Wild Pets](#wild-pets)
 - [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 - [Withered Lands](#withered-lands)
@@ -3902,6 +3932,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Dungeons and Taverns overhauls](#dungeons-and-taverns-overhauls)
 - [Explorify](#explorify)
 - [Gazebos](#gazebos)
+- [Hellish Trials](#hellish-trials)
 - [Hopo Better Underwater Ruins](#hopo-better-underwater-ruins)
 - [Improved Village Placement](#improved-village-placement)
 - [Moog's structure collection](#moogs-structure-collection)
@@ -3910,6 +3941,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
 - [Underground Villages](#underground-villages)
+- [When Dungeons Arise collection](#when-dungeons-arise-collection)
 
 #### Creatures
 

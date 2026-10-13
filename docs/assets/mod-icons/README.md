@@ -4,7 +4,7 @@ This folder holds the verified project icons used beside player-facing mod title
 
 `manifest.csv` records each alphabetical handbook entry's image source, local filename, and match status. Group rows retain the CurseForge page and icon source of their approved representative member. The pack's downloaded mods were sourced from CurseForge, so this handbook uses CurseForge artwork only. The retrieval script accepts exact project-title matches and manually reviewed aliases, verifies the downloaded image format from its file signature, and does not substitute a merely similar search result.
 
-Current catalog snapshot: 163 entries use verified CurseForge project icons, including the seven compact group entries. Each group uses one approved member's official icon as representative artwork; it is not a combined collection logo. Bifrost Teleport has no official icon; `bifrost-teleport.png` is the user's square illustrative artwork, not a project logo.
+Current catalog snapshot: 166 entries use verified CurseForge project icons, including the eight compact group entries. Each group uses one approved member's official icon as representative artwork; it is not a combined collection logo. Bifrost Teleport has no official icon; `bifrost-teleport.png` is the user's square illustrative artwork, not a project logo.
 
 The project icons remain the property of their respective creators. A project's software license does not necessarily grant reuse rights for its artwork. The manifest links back to each original page for attribution and review; confirm applicable artwork terms before distributing a handbook that reproduces these icons.
 

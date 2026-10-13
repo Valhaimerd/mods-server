@@ -18,6 +18,7 @@ banned-players.json
 # Local mod repair workspace; keep only the agent handoff notes versioned
 /mod fixing/*
 !/mod fixing/README.md
+!/mod fixing/server bugs.md
 !/mod fixing/delight extras (optional)/
 /mod fixing/delight extras (optional)/*
 !/mod fixing/delight extras (optional)/README.md
@@ -33,3 +34,4 @@ installer/obj/
 /.superpowers/
 /output/
 /tmp/
+/mod backup/

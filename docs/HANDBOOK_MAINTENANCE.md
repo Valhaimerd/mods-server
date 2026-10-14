@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-13<br>
+Last verified: 2026-10-14<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2
 
 ## Purpose

@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 294 synchronized JARs · 5 client extras</p>
 
-Last audited: 2026-10-13<br>
+Last audited: 2026-10-14<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2<br>
 Current distribution: 294 synchronized JARs plus 5 client-store JARs
 
@@ -1079,20 +1079,20 @@ Its broad choices can support many class loadouts. Read each node for conditions
 
 <div class="core-mod-entry">
 
-#### Stronger Skill Tree
+#### Default Skill Trees
 
 - **Type:** Character progression
-- **Core mechanic:** Adds Combat, Mining, and Chopping Wood paths.
-- **Player guidance:** Review Combat, Mining, and Chopping Wood branches.
+- **Core mechanic:** Adds Combat and Mining trees with modest attribute improvements.
+- **Player guidance:** Earn Combat experience from kills and Mining experience from stone and ores, then choose nodes that fit your build.
 
-This tree adds practical growth for fighting and gathering. Its bonuses sit alongside the RPG and Adventurer tracks.
+Combat offers health, damage, and other survival bonuses; Mining improves speed and fortune. These trees use the same skill screen as the RPG and Adventurer tracks.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stronger-skill-tree-for-pufferfishs-skills">Official mod page</a></p>
-
-</div>
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/default-skill-trees">Official mod page</a></p>
 
 </div>
-<p class="core-category-description">Several skill modules share one progression interface but reward different activities. RPG trees deepen a class or weapon, while Adventurer and Stronger trees offer broader combat and gathering paths. Use the T screen to see which nodes are available for the current build.</p>
+
+</div>
+<p class="core-category-description">Several skill modules share one progression interface but reward different activities. RPG trees deepen a class or weapon, Adventurer Skills offers broad choices, and Default Skill Trees grows through combat and mining. Use T to review your paths. When the Orb of Oblivion resets spent RPG Series points, this pack also refunds spent Adventurer and Default Skill Trees points while preserving their earned experience.</p>
 </section>
 
 <section class="core-category">
@@ -3691,6 +3691,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Curios](#curios-1)
 - [DarkSmithing](#darksmithing)
 - [Dedicated Elytra Slot](#dedicated-elytra-slot)
+- [Default Skill Trees](#default-skill-trees)
 - [Display Delight](#display-delight)
 - [Distinct Potions](#distinct-potions)
 - [Dungeons and Taverns](#dungeons-and-taverns)
@@ -3791,7 +3792,6 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#stonecutting-upgrade)
 - [Stoneworks](#stoneworks)
-- [Stronger Skill Tree](#stronger-skill-tree)
 - [Target Dummy](#target-dummy)
 - [Terralith](#terralith)
 - [The Darkness Will Find You](#the-darkness-will-find-you)
@@ -3839,9 +3839,9 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 #### Skills
 
 - [Adventurer Skills](#adventurer-skills)
+- [Default Skill Trees](#default-skill-trees)
 - [Pufferfish's Skills](#pufferfishs-skills)
 - [Skill Tree (RPG Series)](#skill-tree-rpg-series)
-- [Stronger Skill Tree](#stronger-skill-tree)
 
 #### Magic
 

@@ -54,7 +54,6 @@ $approvedCurseForgeProjects = @{
     'Awesome Dungeon Ocean Edition' = '556490'
     'When Dungeons Arise' = '442508'
     'Hellish Trials' = '1414295'
-    'Stronger Skill Tree' = '1262113'
     'DnT Mineshaft Overhaul' = '1494838'
     'Ly-Fangs Enchantment' = '1388436'
     'Thunder Strike Enchantment' = '1388424'

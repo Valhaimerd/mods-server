@@ -1,5 +1,6 @@
 # Local configuration and credentials
 server.properties
+/options.txt
 
 # Generated Minecraft/NeoForge server data
 eula.txt

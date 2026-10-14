@@ -9,4 +9,7 @@
     <RootNamespace>ModsServerInstaller</RootNamespace>
     <DebugType>none</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="recommended-keybinds.txt" LogicalName="ModsServerInstaller.RecommendedKeybinds" />
+  </ItemGroup>
 </Project>

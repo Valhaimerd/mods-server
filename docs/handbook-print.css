@@ -541,6 +541,22 @@ p:has(> img:only-child) + p:has(> em:only-child) {
   line-height: 1.12;
 }
 
+.gameplay-tag-index {
+  column-count: 4;
+  column-gap: 4mm;
+  font-size: 7pt;
+  line-height: 1.12;
+}
+
+.gameplay-tag-index ul {
+  padding-left: 3mm;
+}
+
+.gameplay-tag-index a {
+  overflow-wrap: normal;
+  white-space: nowrap;
+}
+
 .contents-page {
   margin-top: 5mm;
   break-inside: avoid;

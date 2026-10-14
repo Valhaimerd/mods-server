@@ -59,7 +59,7 @@ if (Test-Path -LiteralPath $iconManifest) {
 }
 
 $keybindContentStart = $body.IndexOf('<h3>Essential keybinds and conflict resolution</h3>', [System.StringComparison]::Ordinal)
-$keybindContentEnd = $body.IndexOf('<h2>Part II ', $keybindContentStart, [System.StringComparison]::Ordinal)
+$keybindContentEnd = $body.IndexOf('<h3>Alphabetical mod index</h3>', $keybindContentStart, [System.StringComparison]::Ordinal)
 if ($keybindContentStart -lt 0 -or $keybindContentEnd -lt $keybindContentStart) {
     throw 'Could not locate the keybind section boundaries before formatting catalog icons.'
 }
@@ -146,7 +146,8 @@ $body = [regex]::Replace(
 )
 
 $keybindHeading = '<h3 id="essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</h3>'
-$featuresHeadingStart = '<h2 id="part-ii--featured-mechanics">'
+$featuresHeadingStart = '<h2 id="part-i--featured-mechanics">'
+$alphabeticalHeading = '<h3 id="alphabetical-mod-index">Alphabetical mod index</h3>'
 $partyHeading = '<h3 id="parties-downed-players-and-death">Parties, downed players, and death</h3>'
 
 $contentsHeading = '<h2 id="table-of-contents">Table of Contents</h2>'
@@ -160,17 +161,16 @@ $contentsEnd += '<section class="contents-page">'.Length
 $body = $body.Insert($contentsEnd, '</section>')
 
 $quickHeading = '<h2 id="quick-reference">Quick Reference</h2>'
-$partOneStart = '<div class="page-break" aria-hidden="true"></div><h2 id="part-i--keybinds-and-configuration">'
+$partOneStart = '<div class="page-break" aria-hidden="true"></div><h2 id="part-i--featured-mechanics">'
 $body = $body.Replace($quickHeading, "$quickHeading<div class=`"quick-reference`">")
 $body = $body.Replace($partOneStart, "</div>$partOneStart")
 
 $body = $body.Replace($keybindHeading, "<div class=`"keybind-section`">$keybindHeading")
-if (-not $body.Contains($pageBreak + $featuresHeadingStart)) {
-    throw 'Could not locate the page break before Featured Mechanics.'
+if (-not $body.Contains($pageBreak + $alphabeticalHeading)) {
+    throw 'Could not locate the page break before the indexes.'
 }
-$body = $body.Replace($pageBreak + $featuresHeadingStart, "</div>$pageBreak$featuresHeadingStart")
+$body = $body.Replace($pageBreak + $alphabeticalHeading, "</div>$pageBreak$alphabeticalHeading")
 
-$alphabeticalHeading = '<h3 id="alphabetical-mod-index">Alphabetical mod index</h3>'
 $gameplayBreak = '<div class="page-break" aria-hidden="true"></div><h3 id="gameplay-tag-index">Gameplay-tag index</h3>'
 $body = $body.Replace($alphabeticalHeading, "$alphabeticalHeading<div class=`"alphabetical-index`">")
 $body = $body.Replace($gameplayBreak, "</div><div class=`"gameplay-tag-index`"><h3 id=`"gameplay-tag-index`">Gameplay-tag index</h3>")
@@ -183,6 +183,16 @@ if ($alphabeticalStart -lt 0 -or $tagStart -lt $alphabeticalStart -or $tagEnd -l
 }
 $alphabeticalBlock = $body.Substring($alphabeticalStart, $tagStart - $alphabeticalStart)
 $tagBlock = $body.Substring($tagStart, $tagEnd + '</div>'.Length - $tagStart)
+$tagBlock = [regex]::Replace($tagBlock, '<a href="([^"]+)">([^<]+)</a>', {
+    param($match)
+    $fullName = [System.Net.WebUtility]::HtmlDecode($match.Groups[2].Value)
+    if ($fullName.Length -le 27) { return $match.Value }
+    $shortName = $fullName.Substring(0, 26).TrimEnd()
+    $href = $match.Groups[1].Value
+    $title = [System.Net.WebUtility]::HtmlEncode($fullName)
+    $label = [System.Net.WebUtility]::HtmlEncode($shortName) + '&hellip;'
+    '<a href="' + $href + '" title="' + $title + '">' + $label + '</a>'
+})
 $precedingPageBreak = $body.LastIndexOf($pageBreak, $alphabeticalStart, [System.StringComparison]::Ordinal)
 if ($precedingPageBreak -lt 0 -or $body.Substring($precedingPageBreak + $pageBreak.Length, $alphabeticalStart - ($precedingPageBreak + $pageBreak.Length)).Trim().Length -ne 0) {
     throw 'Could not locate the page break immediately before the indexes.'

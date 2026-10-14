@@ -43,7 +43,7 @@ internal static class Program
 
             InstallRequest? request = useInteractiveWizard
                 ? ChooseInteractiveInstallRequest()
-                : new InstallRequest(InstallMode.Client, options.Target ?? DefaultModsFolder());
+                : new InstallRequest(InstallMode.Client, options.Target ?? DefaultModsFolder(), false);
             if (request is null)
             {
                 Console.WriteLine("Cancelled. No files were changed.");
@@ -68,25 +68,37 @@ internal static class Program
             var plan = await BuildPlanAsync(target, package);
 
             PrintPlan(plan);
-            if (!plan.HasChanges)
-            {
-                Console.WriteLine("Everything is already up to date.");
-                OpenHandbookAfterRun(options.CheckOnly, cancelled: false, updateSucceeded: true);
-                return 0;
-            }
-
             if (options.CheckOnly)
             {
                 Console.WriteLine("Check only: no files were changed.");
                 return 0;
             }
 
-            Directory.CreateDirectory(target);
-            var backup = await ApplyPlanAsync(http, target, plan);
-            Console.WriteLine("Install/repair completed successfully.");
-            if (backup is not null)
+            if (plan.HasChanges)
             {
-                Console.WriteLine($"Backup: {backup}");
+                Directory.CreateDirectory(target);
+                var backup = await ApplyPlanAsync(http, target, plan);
+                Console.WriteLine("Install/repair completed successfully.");
+                if (backup is not null)
+                {
+                    Console.WriteLine($"Backup: {backup}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Mods are already up to date.");
+            }
+
+            if (request.ApplyRecommendedKeybinds)
+            {
+                var result = await RecommendedKeybinds.ApplyAsync(target);
+                Console.WriteLine(result.Changed
+                    ? "Recommended keybinds applied."
+                    : "Recommended keybinds are already current.");
+                if (result.BackupPath is not null)
+                {
+                    Console.WriteLine($"Previous controls backup: {result.BackupPath}");
+                }
             }
 
             OpenHandbookAfterRun(options.CheckOnly, cancelled: false, updateSucceeded: true);
@@ -135,7 +147,19 @@ internal static class Program
                     ]);
                 if (launcher >= 0)
                 {
-                    return new InstallRequest(InstallMode.Client, DefaultModsFolder());
+                    var keybindChoice = InteractiveMenu.Select(
+                        "Apply Recommended Keybinds?\n\n" +
+                        "Sets pack shortcuts and leaves unused mod actions unbound to reduce conflicts.\n" +
+                        "C is shared by Sneak and OneKeyMiner; you can change either later.\n" +
+                        "Your other settings stay in place, and existing controls are backed up.",
+                        [new MenuOption("Yes, apply recommended keybinds"),
+                         new MenuOption("No, keep my current keybinds")]);
+                    if (keybindChoice >= 0)
+                    {
+                        return new InstallRequest(InstallMode.Client, DefaultModsFolder(), keybindChoice == 0);
+                    }
+
+                    continue;
                 }
 
                 continue;
@@ -144,7 +168,7 @@ internal static class Program
             var serverTarget = ChooseServerModsFolder();
             if (serverTarget is not null)
             {
-                return new InstallRequest(InstallMode.Server, serverTarget);
+                return new InstallRequest(InstallMode.Server, serverTarget, false);
             }
         }
     }
@@ -573,7 +597,7 @@ internal static class Program
     }
 
     private sealed record PackageFile(string Name, string Sha, long Size, string DownloadUrl);
-    private sealed record InstallRequest(InstallMode Mode, string Target);
+    private sealed record InstallRequest(InstallMode Mode, string Target, bool ApplyRecommendedKeybinds);
     private sealed record InstallPlan(IReadOnlyList<PackageFile> Downloads, IReadOnlyList<string> Extras, int Unchanged)
     {
         public bool HasChanges => Downloads.Count > 0 || Extras.Count > 0;

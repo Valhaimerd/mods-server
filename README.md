@@ -12,7 +12,7 @@ Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/rel
 
 With no command-line options, use the arrow keys and Enter to choose Client or Server; Esc goes back. The installer does not ask for a typed confirmation or path.
 
-For Client, select TLauncher (the only currently enabled launcher). The installer automatically targets `%APPDATA%\.minecraft\mods` and installs JARs from both repository folders: `mods` and `mod store`. Legacy Launcher, Prism Launcher, and CurseForge App are shown as future options but are not selectable yet.
+For Client, select TLauncher (the only currently enabled launcher), then choose whether to apply Recommended Keybinds. Yes merges the pack's keybind profile into `%APPDATA%\.minecraft\options.txt`, backing up an existing file under `modpack-backups`; No leaves controls untouched. Other settings such as graphics and audio are preserved. Either choice continues the usual install to `%APPDATA%\.minecraft\mods` with JARs from both `mods` and `mod store`. Legacy Launcher, Prism Launcher, and CurseForge App are shown as future options but are not selectable yet.
 
 For Server, choose `Select file location…` and select the server's existing `mods` directory. The folder name must be `mods` (case-insensitive). Server installs use only the repository's `mods` folder; UI/client JARs from `mod store` are excluded.
 
@@ -33,6 +33,8 @@ ModsServerInstaller.exe --yes
 ```
 
 `--check` reports what would change without changing files and does not create a missing target folder. `--target` installs the client mod set to another folder named `mods`. `--yes` is retained for compatibility and has no effect; no typed confirmation is used.
+
+The keybind choice appears only in the interactive TLauncher flow. Command-line installs and server installs leave `options.txt` untouched. The embedded profile is curated from the pack's controls; the copied personal `options.txt` is excluded from Git.
 
 ## Build the installer
 

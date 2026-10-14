@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 293 synchronized JARs · 21 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 293 synchronized JARs · 20 client extras</p>
 
 Last audited: 2026-10-14<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 293 synchronized JARs plus 21 client-store JARs
+Current distribution: 293 synchronized JARs plus 20 client-store JARs
 
 ## About this handbook
 
@@ -296,12 +296,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Send Current Position in Chat | `Y` |
 | Toggle 3D Compass Rendering | `H` |
 | Toggle HUD | `N` |
-
-#### Keybindslots
-
-| Action | Recommended key |
-|---|---|
-| Open Keybind Slots | `K` |
 
 #### Xaero's World Map keybinds
 
@@ -3628,20 +3622,6 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 
 <div class="core-mod-entry">
 
-#### Keybindslots
-
-- **Type:** Optional client controls utility
-- **Core mechanic:** Saves named snapshots of controls and client options so a player can switch layouts.
-- **Player guidance:** Press `K` during play, save the current setup to a named slot, and choose global or version-specific storage.
-
-Loading a slot replaces the active `options.txt`, including settings beyond keybinds. Save the current setup before trying another layout. This client-only JAR lives in `mod store`.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/keybindslots">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### AmbientSounds
 
 - **Type:** Optional client audio
@@ -3829,7 +3809,6 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
 - [Kaleidoscope Cookery](#kaleidoscope-cookery)
-- [Keybindslots](#keybindslots-1)
 - [Kingdom Cats Replacer](#kingdom-cats-replacer)
 - [Linked Chests](#linked-chests)
 - [Lullaby's Mobs](#lullabys-mobs)
@@ -4136,7 +4115,6 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [JEI Trades](#jei-trades)
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
-- [Keybindslots](#keybindslots-1)
 - [OneKeyMiner](#onekeyminer)
 - [Show My Recipes](#show-my-recipes)
 

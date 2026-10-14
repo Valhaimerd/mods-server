@@ -2,6 +2,8 @@
 
 This repository contains the current Minecraft mod collection and a Windows installer that keeps a player's mod folder in sync with it.
 
+The current pack requires Minecraft 26.2, NeoForge **26.2.0.90 or newer**, and Java 25 or newer. Install the matching NeoForge version on both client and server before syncing mods; the mod installer updates JARs but does not change the loader.
+
 See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics, controls, exploration, building, and quality-of-life features in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from its gameplay catalog.
 
 ## Installer
@@ -13,6 +15,8 @@ With no command-line options, use the arrow keys and Enter to choose Client or S
 For Client, select TLauncher (the only currently enabled launcher). The installer automatically targets `%APPDATA%\.minecraft\mods` and installs JARs from both repository folders: `mods` and `mod store`. Legacy Launcher, Prism Launcher, and CurseForge App are shown as future options but are not selectable yet.
 
 For Server, choose `Select file location…` and select the server's existing `mods` directory. The folder name must be `mods` (case-insensitive). Server installs use only the repository's `mods` folder; UI/client JARs from `mod store` are excluded.
+
+The Advanced Core/Loot/Worldgen Info group and ALICompat are in `mod store` because Advanced Worldgen Info's worldgen scan held the dedicated server thread after startup. Their client features may be limited when the server does not provide their data.
 
 For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 

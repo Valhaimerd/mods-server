@@ -11,13 +11,13 @@ if ($handbook -match '(?i)two sources of active powers') {
     throw 'The handbook must not retain obsolete guidance about the removed relic-power system.'
 }
 
-if (-not $handbook.Contains('- **FF Bandage**')) {
+if (-not $handbook.Contains('#### FF Bandage')) {
     throw 'FF Bandage needs one concise player-facing catalog entry.'
 }
-if ($handbook -notmatch '(?m)^- \[FF Bandage\]\(#potions-and-alchemy\)\r?$') {
+if ($handbook -notmatch '(?m)^- \[FF Bandage\]\(#ff-bandage\)\r?$') {
     throw 'FF Bandage must appear in the alphabetical mod index.'
 }
-if ($handbook -notmatch '\[FFBandage\]\(https://www\.curseforge\.com/minecraft/mc-mods/ffbandage\)') {
+if ($handbook -notmatch 'href="https://www\.curseforge\.com/minecraft/mc-mods/ffbandage"') {
     throw 'FF Bandage must link to its official CurseForge project.'
 }
 

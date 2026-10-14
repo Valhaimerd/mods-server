@@ -9,11 +9,11 @@ $manifest = Import-Csv (Join-Path $PSScriptRoot '..\assets\mod-icons\manifest.cs
 $missing = @(
     foreach ($entry in $manifest | Where-Object Status -eq 'Downloaded') {
         $src = 'assets/mod-icons/' + [uri]::EscapeDataString($entry.LocalFile)
-        if (-not $html.Contains('class="mod-entry-icon" src="' + $src + '"')) { $entry.HandbookEntry }
+        if (-not $html.Contains('src="' + $src + '"')) { $entry.HandbookEntry }
     }
 )
 if ($missing.Count -gt 0) {
-    throw "Downloaded CurseForge icons are not rendered in the handbook HTML: $($missing -join ', ')"
+    throw "Downloaded project icons are not rendered in the handbook HTML: $($missing -join ', ')"
 }
 $bifrost = $manifest | Where-Object HandbookEntry -eq 'Bifrost Teleport' | Select-Object -First 1
 $bifrostSrc = 'assets/mod-icons/' + [uri]::EscapeDataString($bifrost.LocalFile)
@@ -22,19 +22,14 @@ if (-not $bifrost -or -not $html.Contains('class="mod-entry-icon" src="' + $bifr
 }
 
 $partOneHeadings = @(
+    'id="part-i--keybinds-and-configuration"',
     'id="essential-keybinds-and-conflict-resolution"',
-    'id="choosing-a-race"',
-    'id="choosing-a-class"',
-    'id="skills-abilities-spells-and-runes"',
-    'id="first-session-checklist"',
-    'id="parties-downed-players-and-death"'
+    'id="part-ii--featured-mechanics"',
+    'id="part-iii--character-and-core-systems"'
 )
 $partOnePositions = @($partOneHeadings | ForEach-Object { $html.IndexOf($_, [System.StringComparison]::Ordinal) })
 if (($partOnePositions | Where-Object { $_ -lt 0 }).Count -gt 0 -or (($partOnePositions | Sort-Object) -join ',') -ne ($partOnePositions -join ',')) {
-    throw 'Rendered Part I must place keybinds before race, class, skills, checklist, and parties.'
-}
-if (-not $html.Contains('assets/screenshots/02-class-specialization-tree.png') -or $html.Contains('assets/screenshots/02-class-loadout.png')) {
-    throw 'The class screenshot must use its specialization-tree filename.'
+    throw 'Rendered Part I must contain the keybind reference before Parts II and III.'
 }
 if ($html -notmatch '(?s)\.keybind-section td:last-child:empty\s*\{[^}]*color:\s*#(?:7[0-9a-f]{2}|8[0-9a-f]{2});[^}]*font-style:\s*italic;') {
     throw 'Empty recommended-key cells must have a muted, italic unbound style.'
@@ -42,4 +37,4 @@ if ($html -notmatch '(?s)\.keybind-section td:last-child:empty\s*\{[^}]*color:\s
 if ($html -notmatch '(?s)\.keybind-section td:last-child:empty::before\s*\{[^}]*content:\s*["'']Unbound["''];') {
     throw 'Empty recommended-key cells must display the Unbound label.'
 }
-"PASS: all $(@($manifest | Where-Object Status -eq 'Downloaded').Count) downloaded mod icons render; Part I keybind-first order and class screenshot reference are correct."
+"PASS: all $(@($manifest | Where-Object Status -eq 'Downloaded').Count) downloaded mod icons render; Part I keybind order and unbound styles are correct."

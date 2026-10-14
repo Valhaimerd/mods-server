@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 294 synchronized JARs · 5 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 293 synchronized JARs · 21 client extras</p>
 
 Last audited: 2026-10-14<br>
-Pack target: Minecraft 26.2 with NeoForge 26.2<br>
-Current distribution: 294 synchronized JARs plus 5 client-store JARs
+Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
+Current distribution: 293 synchronized JARs plus 21 client-store JARs
 
 ## About this handbook
 
@@ -22,7 +22,7 @@ Each part opens with the role its systems play in a new world. Distinct category
 
 **Entry types:** Core system; Integrated expansion; Focused content; Utility; Interface feature; Optional client feature.
 
-**Cross-reference tags:** Combat; Character; Skills; Magic; Equipment; Bosses; Events; World Generation; Structures; Creatures; Companions; Farming; Food; Building; Storage; Travel; Multiplayer; Controls; HUD.
+**Cross-reference tags:** Combat; Character; Skills; Magic; Equipment; Bosses; Events; World Generation; Structures; Creatures; Companions; Farming; Food; Building; Storage; Travel; Multiplayer; Controls; HUD; Audio and Atmosphere.
 
 ## Table of Contents
 
@@ -35,11 +35,11 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>7</td></tr>
     <tr class="toc-part"><td><a href="#part-ii--featured-mechanics">Part II — Featured Mechanics</a></td><td>15</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-iourus-races">Races, RPG classes, and Astral Dimension</a></td><td>16</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, revival, mining, and enchantments</a></td><td>17</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, The Sift, mining, and enchantments</a></td><td>17</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-xaeros-world-map">World map, caves, Nether, and End</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-starcatcher">Fishing and Chrono Dawn</a></td><td>21</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-farmers-delight">Cooking and alchemy</a></td><td>22</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-sophisticated-backpacks">Backpacks, storage, and player trade</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-sophisticated-backpacks">Backpacks, storage, and player trade</a></td><td>23</td></tr>
     <tr class="toc-part"><td><a href="#part-iii--character-and-core-systems">Part III — Character and Core Systems</a></td><td>25</td></tr>
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>25</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>25</td></tr>
@@ -63,22 +63,22 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>43</td></tr>
     <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>44</td></tr>
     <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>49</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>60</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>63</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>64</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>65</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>66</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>50</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--survival-and-creation">Part V — Survival and Creation</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>61</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--interface-and-reference">Part VI — Interface and Reference</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>64</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>65</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>66</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>67</td></tr>
   </tbody>
 </table>
 
@@ -296,6 +296,12 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Send Current Position in Chat | `Y` |
 | Toggle 3D Compass Rendering | `H` |
 | Toggle HUD | `N` |
+
+#### Keybindslots
+
+| Action | Recommended key |
+|---|---|
+| Open Keybind Slots | `K` |
 
 #### Xaero's World Map keybinds
 
@@ -529,7 +535,7 @@ These systems change how you build a character, explore, survive, and manage you
   <a class="feature-card" href="#feature-rpg-series"><img src="assets/mod-icons/archers.png" alt=""><span class="feature-card-name">RPG Series</span><span class="feature-card-desc">Six builds from weapons and class books.</span></a>
   <a class="feature-card" href="#feature-astral-dimension"><img src="assets/mod-icons/astral-dimension.png" alt=""><span class="feature-card-name">Astral Dimension</span><span class="feature-card-desc">Two realms and a multi-boss Void journey.</span></a>
   <a class="feature-card" href="#feature-better-party"><img src="assets/mod-icons/better-party.jpg" alt=""><span class="feature-card-name">Better Party</span><span class="feature-card-desc">Roles, shared XP, and a group HUD.</span></a>
-  <a class="feature-card" href="#feature-better-revive"><img src="assets/mod-icons/better-revive.jpg" alt=""><span class="feature-card-name">Better Revive</span><span class="feature-card-desc">Rescue, graves, and item recovery.</span></a>
+  <a class="feature-card" href="#feature-the-sift"><img src="assets/mod-icons/mielons-the-sift.webp" alt=""><span class="feature-card-name">The Sift</span><span class="feature-card-desc">Awaken an Ancient City portal and explore a strange realm.</span></a>
   <a class="feature-card" href="#feature-one-key-miner"><img src="assets/mod-icons/onekeyminer.png" alt=""><span class="feature-card-name">OneKeyMiner</span><span class="feature-card-desc">Vein mining, harvesting, and replanting.</span></a>
   <a class="feature-card" href="#feature-penchant"><img src="assets/mod-icons/penchant.png" alt=""><span class="feature-card-name">Penchant</span><span class="feature-card-desc">Enchantments grow as gear is used.</span></a>
   <a class="feature-card" href="#feature-xaeros-world-map"><img src="assets/mod-icons/xaero-s-world-map.png" alt=""><span class="feature-card-name">Xaero's World Map</span><span class="feature-card-desc">A map of the terrain you have explored.</span></a>
@@ -642,27 +648,25 @@ Party membership can persist across restarts. Server rules set the limits, while
 </section>
 
 <section class="feature-detail">
-<h3 id="feature-better-revive" class="feature-heading"><img src="assets/mod-icons/better-revive.jpg" alt="">Better Revive</h3>
+<h3 id="feature-the-sift" class="feature-heading"><img src="assets/mod-icons/mielons-the-sift.webp" alt="">Mielon's The Sift</h3>
 
-- **Downed state:** A revivable death gives teammates a timed rescue opportunity before ordinary respawn.
-- **Rescue:** Revive Potions or the Life Pulse interaction can return a player if the downed player accepts.
-- **Graves:** Inventory, equipment, experience, and supported mod slots are stored for later recovery.
-- **Recovery:** A Grave Compass locates active graves; respawning ends the rescue chance but leaves the grave.
+- **Entry:** An Ancient City portal opens through a Singer's melody and eight Note Blocks on Sonorous Deepslate.
+- **Exploration:** The Sift has ten biomes, living sculk, unfamiliar creatures, abandoned portals, and restorative Ichor.
+- **Travel:** Temporary Rifts connect the realm and Overworld for five minutes; do not depend on one as a permanent return route.
+- **Rewards:** Siftite upgrades Netherite gear, while Charoite changes enchanting choices.
 
+**From Ancient City to first expedition**
 
+1. Find an Ancient City with Sonorous Deepslate near its Reinforced Deepslate frame. Play a Goat Horn in the city center to summon a Singer and awaken the eight blocks.
+2. Put a Note Block on each awakened block. Right-click to set notes 1 through 8, then left-click the blocks in this order: **1, 3, 7, 6, 5, 2, 4, 8**. The order played matters, not where the blocks stand.
+3. Mark the portal and enter prepared for a long trip. Follow the mod's advancement tab for its creatures, materials, and Ichor. Ichor grants regeneration on contact but slows movement slightly.
+4. Search abandoned portals for supplies and rare upgrade materials. Use Siftite with Netherite gear and a Siftite Upgrade Smithing Template; compare Charoite enchanting against ordinary lapis before spending levels.
 
-**Rescue and grave recovery**
+Natural Rifts may appear after time in The Sift, but they close after five minutes. Keep a reliable route to the Ancient City portal and use a map marker before exploring farther. This pack uses a community NeoForge 26.2 port and requires NeoForge **26.2.0.90 or newer**; check JEI and in-game advancements if a port detail differs from the upstream guide.
 
-1. When a revivable death occurs, watch the downed timer. A teammate must help before that window closes.
-2. Throw a Revive Potion near the grave or try the Life Pulse interaction. The downed player must accept the offer. Higher potion tiers restore more health.
-3. If you respawn, follow the Grave Compass back and right-click your grave to reclaim stored belongings and experience.
-4. A Revive Scroll can return you near a distant active grave; it does not revive someone who is still downed.
+<p class="feature-tip"><strong>Quick tip</strong> The portal melody is 1–3–7–6–5–2–4–8; mark your way home before chasing a Rift.</p>
 
-The installed Curios bridge stores supported accessories in graves too. Rescue locks, timers, and grave protection follow server settings.
-
-<p class="feature-tip"><strong>Quick tip</strong> After respawning, follow the Grave Compass before the trail grows cold.</p>
-
-<p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/better-revive">official mod page</a>.</p>
+<p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/mielons-the-sift">official mod page</a>.</p>
 </section>
 
 <section class="feature-detail">
@@ -1568,15 +1572,15 @@ A downed player can still be rescued before normal death handling completes. Coo
 
 <div class="core-mod-entry">
 
-#### Better Revive
+#### Graveless
 
 - **Type:** Survival and recovery
-- **Core mechanic:** Adds consent-based revival, protected graves, and recovery tools.
-- **Player guidance:** Use its grave and revival tools to recover after a death.
+- **Core mechanic:** Stores death drops with a ghost at the death site, without a physical grave block.
+- **Player guidance:** Follow the Spirit Compass and beacon, then click the ghost to restore items and experience.
 
-The installed bridge coordinates its recovery flow with PlayerRevive. Graves help protect dropped items and experience.
+The Spirit Compass opens a browser for older death records and can point to one you choose. Items return to their prior hotbar, armor, offhand, and supported Curios slots when space is available. PlayerRevive still handles the earlier downed window; Graveless handles recovery after death.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-revive">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/graveless">Official mod page</a></p>
 
 </div>
 
@@ -1623,7 +1627,7 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 </div>
 
 </div>
-<p class="core-category-description">The recovery systems address different moments: rescue during the downed window, item protection after death, and the location and condition of the return. Prepare totems, food, and group support before dangerous trips; Part II covers the full multiplayer rescue flow.</p>
+<p class="core-category-description">The recovery systems address different moments: PlayerRevive allows rescue during a downed window, Graveless protects items after death, and Better Respawn changes where you return. Prepare totems, food, and group support before dangerous trips. Follow the Spirit Compass after respawning; a teammate can help if you grant access to a ghost.</p>
 </section>
 
 <section class="core-category">
@@ -2100,20 +2104,6 @@ The dragon can grow stronger after previous victories and with more players. Fol
 
 <div class="core-mod-entry">
 
-#### Ultimate Warden
-
-- **Type:** Boss encounter
-- **Core mechanic:** Turns the Warden into a boss encounter with a visible boss bar, dedicated dungeon, and custom rewards.
-- **Player guidance:** Keep the Dungeon Key and plan the exit before entering.
-
-The boss has a contained arena and custom rewards. Treat the key and exit procedure as part of the encounter.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ultimate-warden">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### Gateway of Doom
 
 - **Type:** Boss encounter
@@ -2127,7 +2117,7 @@ The event keeps enemies near its arena. Regroup outside the boundary instead of 
 </div>
 
 </div>
-<p class="core-category-description">Major fights range from shrines and dragon phases to timed waves and a dedicated Warden dungeon. Scout the arena, set a retreat and respawn route, and carry recovery supplies before triggering a ritual or summoning item. Follow the live boss bar and arena cues when multiple mods affect the same encounter.</p>
+<p class="core-category-description">Major fights range from shrines and dragon phases to timed waves. Scout the arena, set a retreat and respawn route, and carry recovery supplies before triggering a ritual or summoning item. Follow the live boss bar and arena cues when multiple mods affect the same encounter.</p>
 </section>
 
 <section class="core-category">
@@ -2320,6 +2310,20 @@ The collection spreads sites across the Overworld, End, and Ocean. Bring equipme
 
 <div class="core-mod-entry">
 
+#### Epic Structures collection
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Adds distinct villages, dungeons, igloos, witch huts, and jungle temples through five installed modules.
+- **Player guidance:** Expect unfamiliar layouts at familiar structure types; scout entrances and carry a map marker.
+
+The standalone Villages edition adds its towns separately from vanilla villages. Dungeons vary in size and rarity, large igloos can hide underground pieces, and the temple and hut modules reshape their own sites. The replacing Villages edition is not installed.
+
+<p class="core-mod-source">Official pages: <a href="https://modrinth.com/datapack/epic-structures-villages-standalone-edition">Villages</a> · <a href="https://modrinth.com/datapack/epic-structures-dungeons">Dungeons</a> · <a href="https://modrinth.com/datapack/epic-structures-igloo">Igloos</a> · <a href="https://modrinth.com/datapack/epic-structures-witch-huts">Witch Huts</a> · <a href="https://modrinth.com/datapack/epic-structures-jungle-temples">Jungle Temples</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### When Dungeons Arise collection
 
 - **Type:** Structures and exploration
@@ -2390,15 +2394,15 @@ Its lightweight structures blend into ordinary terrain. Mark them on the map whe
 
 <div class="core-mod-entry">
 
-#### ATi Structures: Vanilla Edition
+#### ATi Structures
 
 - **Type:** Structures and exploration
-- **Core mechanic:** Adds a collection of custom structures and dungeons built with vanilla materials.
-- **Player guidance:** Explore with ordinary dungeon preparation.
+- **Core mechanic:** Places fantasy and medieval structures above and below ground, with custom loot in the installed main edition.
+- **Player guidance:** Check chests and guarded rooms rather than assuming familiar blocks mean familiar rewards.
 
-The custom structures use vanilla materials but can still hold unfamiliar encounters. Scout before assuming a familiar block palette means safety.
+This main edition replaces the Vanilla Edition in the pack. Its structures share much of the same layout, but this edition keeps the author's custom loot and encounters.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ati-structures-datapack-vanilla">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://modrinth.com/datapack/ati-structures-fabricforge">Official mod page</a></p>
 
 </div>
 
@@ -2441,6 +2445,20 @@ Height changes both retreat and enemy approach. Secure each level before climbin
 These villages bring trade and shelter into caves. Check their entrances and protect villagers from nearby hostile spawns.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/underground-villages">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Stoneholm
+
+- **Type:** Structures and settlements
+- **Core mechanic:** Adds sprawling underground villages with halls, rooms, and villagers.
+- **Player guidance:** Search below ground for connected settlement corridors and secure a route back to the surface.
+
+Stoneholm is a separate installed mod from Underground Villages, so both can generate different subterranean settlements.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/underground-village-stoneholm">Official mod page</a></p>
 
 </div>
 
@@ -2502,6 +2520,20 @@ The mod changes where settlements sit in the landscape. Approach paths and nearb
 
 <div class="core-mod-entry">
 
+#### Yggdrasil
+
+- **Type:** Structures and exploration
+- **Core mechanic:** Places large and small themed structures with lore and rewards across the world.
+- **Player guidance:** Treat the larger sites as expeditions; mark your entry point and read clues before taking rare loot.
+
+Its several mega structures offer longer exploration than an ordinary ruin. Keep inventory space and a return route when following a structure deeper.
+
+<p class="core-mod-source"><a href="https://modrinth.com/datapack/yggdrasil-structure">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Gazebos
 
 - **Type:** Structures and exploration
@@ -2515,7 +2547,7 @@ A small structure can be a useful magical resource. Revisit settled areas when a
 </div>
 
 </div>
-<p class="core-category-description">Structure mods provide destinations rather than a fixed linear route. Mark the entrance, identify a retreat path, and keep unknown keys, maps, templates, and named components until their use is clear. A familiar building can still contain enemies and rewards from other installed mods.</p>
+<p class="core-category-description">Structure mods, including the new Epic Structures modules, ATi Structures, Stoneholm, and Yggdrasil, provide destinations rather than a fixed linear route. Mark the entrance, identify a retreat path, and keep unknown keys, maps, templates, and named components until their use is clear. A familiar building can still contain enemies and rewards from other installed mods.</p>
 </section>
 
 <section class="core-category">
@@ -3596,6 +3628,62 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 
 <div class="core-mod-entry">
 
+#### Keybindslots
+
+- **Type:** Optional client controls utility
+- **Core mechanic:** Saves named snapshots of controls and client options so a player can switch layouts.
+- **Player guidance:** Press `K` during play, save the current setup to a named slot, and choose global or version-specific storage.
+
+Loading a slot replaces the active `options.txt`, including settings beyond keybinds. Save the current setup before trying another layout. This client-only JAR lives in `mod store`.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/keybindslots">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### AmbientSounds
+
+- **Type:** Optional client audio
+- **Core mechanic:** Adds environmental soundscapes that respond to surroundings and biomes.
+- **Player guidance:** Use its client sound settings when an ambient layer is too loud.
+
+This client-store extra changes atmosphere only. It does not need to be installed on the dedicated server.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ambientsounds">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Illuminations Reimagined
+
+- **Type:** Optional client visuals
+- **Core mechanic:** Adds decorative particles and environmental effects to the client view.
+- **Player guidance:** Adjust its visual settings if effects obscure combat or reduce frame rate.
+
+The installed Reimagined build is a client visual extra. It occupies a different visual role from shaders and does not change world generation.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/illuminations-reimagined">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Sound Physics Remastered
+
+- **Type:** Optional client audio
+- **Core mechanic:** Changes sound attenuation, absorption, and reverberation through surrounding blocks.
+- **Player guidance:** Listen for the changed acoustic cues in caves and enclosed rooms; tune the client audio settings to taste.
+
+The effect depends on the space around a sound. It is a client-store extra rather than a new gameplay system or server dependency.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Coordinates Display
 
 - **Type:** Optional client feature
@@ -3637,7 +3725,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 </div>
 
 </div>
-<p class="core-category-description">These client-side options affect navigation display and rendering. Configure coordinates for the amount of detail you need, manage shader packs through Iris, and treat Sodium as the renderer that supports smoother frame rates.</p>
+<p class="core-category-description">These client-side options affect navigation, rendering, ambience, and acoustics. Configure coordinates for useful detail, manage shaders through Iris, and adjust AmbientSounds, Illuminations Reimagined, and Sound Physics Remastered in client settings.</p>
 </section>
 
 <div class="page-break" aria-hidden="true"></div>
@@ -3651,29 +3739,29 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
 - [Alex's Mobs](#alexs-mobs)
+- [AmbientSounds](#ambientsounds)
 - [Animal Garden collection](#animal-garden-collection)
 - [Animal Pen](#animal-pen)
 - [Antique Trading Ship](#antique-trading-ship)
 - [AppleSkin](#appleskin)
 - [Arcane Lanterns](#arcane-lanterns)
-- [Armored Foes](#armored-foes)
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Statues](#armor-statues)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
+- [Armored Foes](#armored-foes)
 - [Armory](#armory)
 - [Arrow+](#arrow)
 - [Arsenal](#arsenal)
 - [Artifacts](#artifacts-1)
 - [Astral Dimension](#feature-astral-dimension)
+- [ATi Structures](#ati-structures)
 - [Auras](#auras)
-- [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
 - [Barricades](#barricades)
 - [Better Combat](#better-combat-1)
 - [Better Nether](#better-nether)
 - [Better Party](#better-party-1)
 - [Better Respawn](#better-respawn)
-- [Better Revive](#better-revive)
 - [Better Rotten Flesh](#better-rotten-flesh)
 - [Bifrost Teleport](#bifrost-teleport)
 - [Biomes O' Plenty](#biomes-o-plenty)
@@ -3705,6 +3793,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Enchantment Insights](#enchantment-insights)
 - [Enchantments collection](#enchantments-collection)
 - [Ender Zoology](#ender-zoology)
+- [Epic Structures collection](#epic-structures-collection)
 - [Expanded Delight](#expanded-delight)
 - [Explorer's Compass](#explorers-compass)
 - [Explorify](#explorify)
@@ -3718,6 +3807,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Gazebos](#gazebos)
 - [Goblin Traders](#goblin-traders)
 - [Golden Hopper](#golden-hopper)
+- [Graveless](#graveless)
 - [Guard Ribbits](#guard-ribbits)
 - [Guard Villagers](#guard-villagers)
 - [Harder Natural Healing](#harder-natural-healing)
@@ -3726,6 +3816,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Hopper Gadgetry](#hopper-gadgetry)
 - [Hovering Hotbar](#hovering-hotbar-1)
 - [Illager Invasion](#illager-invasion)
+- [Illuminations Reimagined](#illuminations-reimagined)
 - [Improved Village Placement](#improved-village-placement)
 - [Invasion](#invasion)
 - [Iourus Races](#iourus-races-1)
@@ -3738,18 +3829,20 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
 - [Kaleidoscope Cookery](#kaleidoscope-cookery)
+- [Keybindslots](#keybindslots-1)
 - [Kingdom Cats Replacer](#kingdom-cats-replacer)
 - [Linked Chests](#linked-chests)
 - [Lullaby's Mobs](#lullabys-mobs)
 - [Macaw's building collection](#macaws-building-collection)
 - [Market Board](#market-board)
+- [Mielon's The Sift](#feature-the-sift)
 - [Moblets](#moblets)
 - [Moog's structure collection](#moogs-structure-collection)
 - [Mounts and Monsters](#mounts-and-monsters)
 - [Much More Dungeons](#much-more-dungeons)
 - [Mutants and Zombies](#mutants-and-zombies)
-- [Nameless Trinkets](#nameless-trinkets)
 - [Name Tag Upgrade](#name-tag-upgrade)
+- [Nameless Trinkets](#nameless-trinkets)
 - [Naturally Trimmed](#naturally-trimmed)
 - [Nature's Compass](#natures-compass)
 - [No Crop Destruction](#no-crop-destruction)
@@ -3764,8 +3857,8 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Pet Status](#pet-status)
 - [Pet Vault](#pet-vault)
 - [PlayerRevive](#playerrevive)
-- [Potions Stack](#potions-stack)
 - [Potion Time Stacker](#potion-time-stacker)
+- [Potions Stack](#potions-stack)
 - [Pro Placer](#pro-placer-1)
 - [Pufferfish's Skills](#pufferfishs-skills)
 - [Puffsprout](#puffsprout)
@@ -3787,21 +3880,22 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Sophisticated Backpacks](#sophisticated-backpacks-1)
 - [Sophisticated Inventory Interactions](#sophisticated-inventory-interactions)
 - [Sophisticated Item Actions](#sophisticated-item-actions-1)
+- [Sound Physics Remastered](#sound-physics-remastered)
 - [Spell Engine](#spell-engine-1)
 - [Starcatcher](#starcatcher)
 - [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#stonecutting-upgrade)
+- [Stoneholm](#stoneholm)
 - [Stoneworks](#stoneworks)
 - [Target Dummy](#target-dummy)
 - [Terralith](#terralith)
 - [The Darkness Will Find You](#the-darkness-will-find-you)
 - [The Graveyard](#the-graveyard)
 - [Tom's Simple Storage](#toms-simple-storage)
-- [Tool Belt](#tool-belt-1)
 - [Too Many Bows](#too-many-bows)
+- [Tool Belt](#tool-belt-1)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
-- [Ultimate Warden](#ultimate-warden)
 - [Underground Villages](#underground-villages)
 - [Universal Bone Meal](#universal-bone-meal)
 - [Universal Enchants](#universal-enchants)
@@ -3814,6 +3908,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [World Bosses](#world-bosses)
 - [Xaero's Map Multiplayer](#xaeros-map-multiplayer)
 - [Xaero's World Map](#xaeros-world-map)
+- [Yggdrasil](#yggdrasil)
 
 <div class="page-break" aria-hidden="true"></div>
 
@@ -3888,7 +3983,6 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 - [Bosslike Ender Dragon](#bosslike-ender-dragon)
 - [Gateway of Doom](#gateway-of-doom)
-- [Ultimate Warden](#ultimate-warden)
 - [World Bosses](#world-bosses)
 
 #### Events
@@ -3905,31 +3999,32 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 #### World Generation
 
-- [Astral Dimension](#feature-astral-dimension)
-- [Chrono Dawn](#feature-chrono-dawn)
-
 - [Abyssal Ocean](#abyssal-ocean)
 - [Alex's Caves](#alexs-caves)
+- [Astral Dimension](#feature-astral-dimension)
 - [Better Nether](#better-nether)
 - [Biomes O' Plenty](#biomes-o-plenty)
+- [Chrono Dawn](#feature-chrono-dawn)
 - [Clear End City](#clear-end-city)
 - [Dungeons Dimensions: Nether](#dungeons-dimensions-nether)
+- [Mielon's The Sift](#feature-the-sift)
 - [Nullscape](#nullscape)
 - [Serene Seasons](#serene-seasons)
 - [Stellarity](#stellarity)
 - [Terralith](#terralith)
 - [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
+- [Yggdrasil](#yggdrasil)
 
 #### Structures
 
-- [Astral Dimension](#feature-astral-dimension)
-- [Chrono Dawn](#feature-chrono-dawn)
-
 - [Antique Trading Ship](#antique-trading-ship)
-- [ATi Structures: Vanilla Edition](#ati-structures-vanilla-edition)
+- [Astral Dimension](#feature-astral-dimension)
+- [ATi Structures](#ati-structures)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
+- [Chrono Dawn](#feature-chrono-dawn)
 - [Dungeons and Taverns](#dungeons-and-taverns)
 - [Dungeons and Taverns overhauls](#dungeons-and-taverns-overhauls)
+- [Epic Structures collection](#epic-structures-collection)
 - [Explorify](#explorify)
 - [Gazebos](#gazebos)
 - [Hellish Trials](#hellish-trials)
@@ -3938,10 +4033,12 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Moog's structure collection](#moogs-structure-collection)
 - [Much More Dungeons](#much-more-dungeons)
 - [Ocean Lily Pad Village](#ocean-lily-pad-village)
+- [Stoneholm](#stoneholm)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
 - [Underground Villages](#underground-villages)
 - [When Dungeons Arise collection](#when-dungeons-arise-collection)
+- [Yggdrasil](#yggdrasil)
 
 #### Creatures
 
@@ -4013,8 +4110,10 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 - [Bifrost Teleport](#bifrost-teleport)
 - [Explorer's Compass](#explorers-compass)
+- [Mielon's The Sift](#feature-the-sift)
 - [Nature's Compass](#natures-compass)
 - [Seaworthy Boats](#seaworthy-boats)
+- [Stoneholm](#stoneholm)
 - [Vehicle Upgrade](#vehicle-upgrade)
 - [Waystones](#waystones)
 - [Xaero's Map Multiplayer](#xaeros-map-multiplayer)
@@ -4024,7 +4123,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 - [Better Party](#better-party-1)
 - [Better Respawn](#better-respawn)
-- [Better Revive](#better-revive)
+- [Graveless](#graveless)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
 - [Harder Natural Healing](#harder-natural-healing)
 - [Market Board](#market-board)
@@ -4037,6 +4136,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [JEI Trades](#jei-trades)
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
+- [Keybindslots](#keybindslots-1)
 - [OneKeyMiner](#onekeyminer)
 - [Show My Recipes](#show-my-recipes)
 
@@ -4055,3 +4155,9 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 - [Overflowing Bars](#overflowing-bars)
 - [Paper Doll](#paper-doll)
 - [Sodium](#sodium)
+
+#### Audio and Atmosphere
+
+- [AmbientSounds](#ambientsounds)
+- [Illuminations Reimagined](#illuminations-reimagined)
+- [Sound Physics Remastered](#sound-physics-remastered)

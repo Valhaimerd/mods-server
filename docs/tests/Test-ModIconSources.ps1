@@ -3,17 +3,21 @@ $manifestPath = Join-Path $PSScriptRoot '..\assets\mod-icons\manifest.csv'
 $rows = Import-Csv -LiteralPath $manifestPath
 
 $downloaded = @($rows | Where-Object Status -eq 'Downloaded')
-$nonCurseForge = @($downloaded | Where-Object Platform -ne 'CurseForge')
-if ($nonCurseForge.Count -gt 0) {
-    $names = ($nonCurseForge.HandbookEntry -join ', ')
-    throw "Downloaded mod icons must come from CurseForge. Found other sources for: $names"
+$unsupported = @($downloaded | Where-Object Platform -notin @('CurseForge', 'Modrinth'))
+if ($unsupported.Count -gt 0) {
+    throw "Downloaded icons must come from CurseForge or Modrinth: $($unsupported.HandbookEntry -join ', ')"
 }
 $invalidSource = @($downloaded | Where-Object {
-    $_.ProjectURL -notmatch '^https://www\.curseforge\.com/minecraft/mc-mods/' -or
-    $_.IconURL -notmatch '^https://media\.forgecdn\.net/'
+    if ($_.Platform -eq 'CurseForge') {
+        $_.ProjectURL -notmatch '^https://www\.curseforge\.com/minecraft/mc-mods/' -or
+        $_.IconURL -notmatch '^https://media\.forgecdn\.net/'
+    } else {
+        $_.ProjectURL -notmatch '^https://modrinth\.com/(mod|datapack)/' -or
+        $_.IconURL -notmatch '^https://cdn\.modrinth\.com/data/'
+    }
 })
 if ($invalidSource.Count -gt 0) {
-    throw "Downloaded icons must retain official CurseForge project links and ForgeCDN artwork URLs: $($invalidSource.HandbookEntry -join ', ')"
+    throw "Downloaded icons must retain official project and artwork URLs: $($invalidSource.HandbookEntry -join ', ')"
 }
 foreach ($entry in $downloaded) {
     if (-not (Test-Path -LiteralPath (Join-Path (Split-Path $manifestPath -Parent) $entry.LocalFile) -PathType Leaf)) {
@@ -26,9 +30,11 @@ $groupRepresentatives = @{
     'Awesome Dungeon collection' = 'awesome-dungeon.png'
     'Dungeons and Taverns overhauls' = 'dnt-ancient-city-overhaul.png'
     'Enchantments collection' = 'ice-enchantments.png'
+    'Epic Structures collection' = 'epic-structures-collection.webp'
     'Macaw''s building collection' = 'macaw-s-bridges.jpg'
     'Moog''s structure collection' = 'moog-s-bountiful-structures.png'
     'RPG classes' = 'archers.png'
+    'When Dungeons Arise collection' = 'when-dungeons-arise-collection.png'
 }
 $groupedEntries = @($groupRepresentatives.Keys)
 foreach ($name in $groupedEntries) {
@@ -39,10 +45,11 @@ foreach ($name in $groupedEntries) {
     }
 }
 $missingMemberIcons = @($rows | Where-Object {
-    $_.HandbookEntry -notin $groupedEntries -and $_.HandbookEntry -ne 'Bifrost Teleport' -and $_.Status -ne 'Downloaded'
+    $_.HandbookEntry -notin $groupedEntries -and $_.HandbookEntry -ne 'Bifrost Teleport' -and
+    $_.Status -ne 'Downloaded' -and $_.Status -notmatch '^Embedded author (logo|icon) from installed JAR$'
 })
 if ($missingMemberIcons.Count -gt 0) {
-    throw "Individual mods must have verified CurseForge project icons: $($missingMemberIcons.HandbookEntry -join ', ')"
+    throw "Individual mods must have verified project or embedded author icons: $($missingMemberIcons.HandbookEntry -join ', ')"
 }
 
 $bifrost = $rows | Where-Object HandbookEntry -eq 'Bifrost Teleport' | Select-Object -First 1
@@ -59,4 +66,4 @@ if ($rows.HandbookEntry -contains 'Locked In Slots' -or $rows.HandbookEntry -con
     throw 'Removed mods must not appear in the icon manifest.'
 }
 
-"PASS: $($downloaded.Count) downloaded icons are CurseForge-sourced; grouped entries use approved representative artwork and Bifrost uses supplied artwork."
+"PASS: $($downloaded.Count) downloaded icons have verified CurseForge or Modrinth sources; grouped entries use approved representative artwork and Bifrost uses supplied artwork."

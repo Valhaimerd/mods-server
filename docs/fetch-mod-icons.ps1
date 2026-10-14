@@ -31,7 +31,6 @@ $approvedCurseForgeProjects = @{
     'Armory' = '1311561'
     'Arsenal' = '1230054'
     'Artifacts' = '312353'
-    'ATi Structures: Vanilla Edition' = '1158208'
     'Animal Pen' = '1409534'
     'Better Nether' = '1422293'
     'Blood Moon' = '1555594'
@@ -146,6 +145,7 @@ $approvedTitleExceptions = @{
 $groupRepresentatives = @{
     'Animal Garden collection' = 'Animal Garden: Capybara'
     'Awesome Dungeon collection' = 'Awesome Dungeon'
+    'Epic Structures collection' = 'Epic Structures: Villages Standalone Edition'
     'When Dungeons Arise collection' = 'When Dungeons Arise'
     'Dungeons and Taverns overhauls' = 'DnT Ancient City Overhaul'
     'Enchantments collection' = 'Ice Enchantments'
@@ -191,9 +191,9 @@ foreach ($name in $names) {
             if (-not $previousRows.ContainsKey($sourceName)) { continue }
             $candidate = $previousRows[$sourceName]
             $candidateFile = Join-Path $AssetDirectory $candidate.LocalFile
-            if ($candidate.Platform -eq 'CurseForge' -and $candidate.Status -eq 'Downloaded' -and
-                $candidate.ProjectURL -match '^https://www\.curseforge\.com/minecraft/mc-mods/' -and
-                $candidate.IconURL -match '^https://media\.forgecdn\.net/' -and
+            $verifiedCurseForge = $candidate.Platform -eq 'CurseForge' -and $candidate.ProjectURL -match '^https://www\.curseforge\.com/minecraft/mc-mods/' -and $candidate.IconURL -match '^https://media\.forgecdn\.net/'
+            $verifiedModrinth = $candidate.Platform -eq 'Modrinth' -and $candidate.ProjectURL -match '^https://modrinth\.com/(mod|datapack)/' -and $candidate.IconURL -match '^https://cdn\.modrinth\.com/'
+            if (($verifiedCurseForge -or $verifiedModrinth) -and $candidate.Status -eq 'Downloaded' -and
                 (Test-Path -LiteralPath $candidateFile -PathType Leaf)) {
                 $sourceRow = $candidate
                 break
@@ -230,8 +230,9 @@ foreach ($name in $names) {
     if (-not $RefreshExisting -and $previousRows.ContainsKey($name)) {
         $existing = $previousRows[$name]
         $existingFile = Join-Path $AssetDirectory $existing.LocalFile
-        if ($existing.Platform -eq 'CurseForge' -and $existing.Status -eq 'Downloaded' -and
-            $existing.IconURL -match '^https://media\.forgecdn\.net/' -and
+        $verifiedExisting = ($existing.Platform -eq 'CurseForge' -and $existing.IconURL -match '^https://media\.forgecdn\.net/') -or
+                            ($existing.Platform -eq 'Modrinth' -and $existing.IconURL -match '^https://cdn\.modrinth\.com/')
+        if ($verifiedExisting -and $existing.Status -eq 'Downloaded' -and
             (Test-Path -LiteralPath $existingFile -PathType Leaf) -and
             ([System.IO.Path]::GetExtension($existingFile) -eq (Get-ActualImageExtension $existingFile))) {
             $existing.CheckedAt = Get-Date -Format 'yyyy-MM-dd'

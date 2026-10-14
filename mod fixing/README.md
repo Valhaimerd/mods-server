@@ -29,3 +29,7 @@ Keep a fix in the existing mod entry when that is what the user requested. Do no
 Default Skill Trees replaces Stronger Skill Tree in the active client and server packs. The retired Stronger JAR is kept in `retired packs` for recovery. `orb_of_oblivion_puffish_compat-1.0.1.jar` replaces version 1.0.0 in `1 fixed packs`, `mods/`, and the server's `mods/` folder.
 
 The add-on now refunds spent points in `adventurer_skills:adventurer_skills`, `puffish_skills:combat`, and `puffish_skills:mining` when the RPG Series Orb of Oblivion successfully resets spent RPG skill points. Earned category experience is preserved. The original orb requires spent RPG skill points to trigger, so points spent only in Adventurer or Default Skill Trees cannot activate this reset. The local source and build notes are in `source/orb-oblivion-puffish-compat/`.
+
+## Withered Lands Slime Rain removal
+
+`Withered-Lands-26.2-1.6.9-no-slime-rain.jar` replaces the original in the pack, client, and server `mods/` folders. Its only changed archive entry is `SlimeRainEvent.class`: natural and command starts are blocked, and a previously saved active event ends on its next tick. Other Withered Lands content remains in the JAR. The original is in `retired packs`; the finished repack is in `1 fixed packs`. The installed client and server `withered_lands.toml` files also set `"Slime Rain event enable" = false`. Rebuild instructions are in `source/withered-lands-no-slime-rain/README.md`.

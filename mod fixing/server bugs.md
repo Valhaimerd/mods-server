@@ -1,5 +1,18 @@
 # Server bugs — NeoForge 26.2 audit
 
+## 14 October 2026 — client/server split check
+
+An isolated NeoForge **26.2.0.90** server loaded all **293 repository `mods` JARs** with a copy of the live world and config on port 25942. It reached `Done`, answered `list`, and stopped cleanly with exit code 0. The live server folder was not changed. Evidence: [`latest.log`](../tmp/server-client-split-test/logs/latest.log). This is a startup and existing-world check; no player joined or new terrain was deliberately explored.
+
+The first run also included the four Advanced Core/Loot/Worldgen Info and ALICompat JARs. It reached `Done`, but Advanced Worldgen Info kept the server thread in `FeatureConfigurationCollectorUtils.collectCompositeFeatureConfigurationBlocks` for more than three minutes; queued commands did not run. This matches the earlier watchdog investigation. Those four JARs now live in `mod store`, so server installs exclude them. `underground_village` also required Better Library 2.1.0 or newer; the verified 2.1.2 NeoForge JAR was added to `mods` before the successful run.
+
+The successful run still logged nonfatal data errors. In addition to the older AddonsLib, Guard Villagers, Animal Pen, Penchant, Better Nether, and Starcatcher issues below, these new entries need review:
+
+- **Stoneholm:** four loot tables fail to load. Three reference Create items absent from this pack; the cleric table uses the removed `minecraft:set_nbt` function. Gate the Create loot behind its dependency and port the cleric loot function.
+- **When Dungeons Arise:** five structure advancements use an outdated item-predicate shape, and two dependent advancements do not load. Its `ignores_ensnaring` entity tag also has missing references, so the associated predicate is rejected. Repair its data resources for 26.2.
+
+These data errors did not prevent server startup. They do mean that affected loot, advancements, and recipes should not be considered working until repaired and checked in game.
+
 Audited **13 October 2026, 01:47–01:50 (Taiwan time)** against `C:\Users\Valhaimerd\Desktop\Minecraft-NeoForge-Server`. I copied its world and configuration into an isolated instance, used the same NeoForge **26.2.0.88** launch files, and loaded all **287 current server JARs**. The test instance used a random port; the original world and server configuration were not changed. The server reached `Done`, answered `list`, remained running until the normal empty-server pause, and stopped cleanly with `stop`. There was **no crash report** in this run. Its log recorded **10 ERROR** and **330 WARN** lines; counts include repeated messages.
 
 Evidence: [current test log](../tmp/server-audit-current-2026-10-13/logs/latest.log). This was a startup and copied-world test. No player joined and no new terrain was deliberately generated, so it does not prove every mod interaction or world-generation path is safe.

@@ -60,13 +60,17 @@ public final class PatchDeathFix implements Opcodes {
                 m.instructions.add(new InsnNode(ARETURN));
                 changes++;
             } else if (m.name.equals("isConfiguredFinalDeath")) {
+                int listContainsCalls = 0;
                 for (AbstractInsnNode insn : m.instructions) {
                     if (insn instanceof MethodInsnNode call && call.owner.equals("java/util/List") && call.name.equals("contains")) {
-                        m.instructions.set(call, new MethodInsnNode(INVOKESTATIC, FIX, "isFinalDamageType", "(Ljava/util/List;Ljava/lang/String;)Z", false));
-                        changes++;
-                        break;
+                        if (++listContainsCalls == 2) {
+                            m.instructions.set(call, new MethodInsnNode(INVOKESTATIC, FIX, "isFinalDamageType", "(Ljava/util/List;Ljava/lang/String;)Z", false));
+                            changes++;
+                            break;
+                        }
                     }
                 }
+                if (listContainsCalls != 2) throw new IllegalStateException("Expected dimension and damage type checks");
             }
         }
         return changes;

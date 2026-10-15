@@ -3,35 +3,40 @@ package de.mrstilu2k6.better_revive.util;
 import de.mrstilu2k6.better_revive.config.ReviveConfig;
 import de.mrstilu2k6.better_revive.event.ModEvents;
 import de.mrstilu2k6.better_revive.block.GraveBlockEntity;
+import de.mrstilu2k6.better_revive.item.GraveCompassItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap.Types;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerRespawnEvent;
 import team.creative.playerrevive.server.PlayerReviveServer;
 import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 /** Keeps final death, grave placement, and compass state consistent. */
 public final class DeathFix {
+    private static final Set<UUID> RESTORE_ON_NEXT_TICK = new HashSet<>();
     private DeathFix() {}
 
     public static boolean isFinalDamageType(List<String> configured, String damageType) {
         return !"minecraft:lava".equals(damageType) && configured.contains(damageType);
     }
 
-    public static void afterEnterDowned(ServerPlayer player) {
-        if (PlayerReviveServer.isBleeding(player)) {
-            DownedPlayerManager.finalizeDeath(player);
-        }
+    public static boolean shouldCompletePlayerReviveDeath(ServerPlayer player) {
+        return PlayerReviveServer.isBleeding(player);
     }
 
     public static void onRespawn(PlayerRespawnEvent event) {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
+        RESTORE_ON_NEXT_TICK.add(player.getUUID());
         DownedPlayerManager.clearAfterRealDeath(player);
         if (PlayerReviveServer.isBleeding(player)) {
             PlayerReviveServer.getBleeding(player).revive(player);
@@ -45,7 +50,53 @@ public final class DeathFix {
         return ReviveConfig.collectionDurationSeconds > 0 || location.expiresAtMs() <= 0 || location.expiresAtMs() > System.currentTimeMillis();
     }
 
+    public static int compassSlot(Inventory inventory) {
+        return 8;
+    }
+
+    public static boolean placeDisplacedHotbarItem(Inventory inventory, ItemStack stack) {
+        for (int slot = 9; slot < 36; slot++) {
+            if (inventory.getItem(slot).isEmpty()) {
+                inventory.setItem(slot, stack.copy());
+                return true;
+            }
+        }
+        return inventory.add(stack);
+    }
+
+    public static void enforceCompassSlots(ServerPlayer player) {
+        Inventory inventory = player.getInventory();
+        Set<UUID> seen = new HashSet<>();
+        int firstCompassSlot = -1;
+        for (int slot = 0; slot < inventory.getContainerSize(); slot++) {
+            ItemStack stack = inventory.getItem(slot);
+            if (!GraveCompassItem.isGraveCompass(stack)) continue;
+            ItemStack migrated = GraveCompassItem.migrateLegacyCompass(stack);
+            if (!seen.add(CompassHelper.readMarkerId(migrated))) {
+                inventory.setItem(slot, ItemStack.EMPTY);
+            } else {
+                inventory.setItem(slot, migrated);
+                if (firstCompassSlot < 0) firstCompassSlot = slot;
+            }
+        }
+        if (firstCompassSlot < 0 || firstCompassSlot == 8) return;
+        ItemStack compass = inventory.getItem(firstCompassSlot).copy();
+        ItemStack displaced = inventory.getItem(8).copy();
+        inventory.setItem(firstCompassSlot, ItemStack.EMPTY);
+        inventory.setItem(8, compass);
+        if (!displaced.isEmpty() && !placeDisplacedHotbarItem(inventory, displaced)) {
+            player.drop(displaced, false);
+        }
+    }
+
     public static void onServerTick(MinecraftServer server) {
+        if (!RESTORE_ON_NEXT_TICK.isEmpty()) {
+            for (UUID id : List.copyOf(RESTORE_ON_NEXT_TICK)) {
+                ServerPlayer player = server.getPlayerList().getPlayer(id);
+                if (player != null) KeepGear.restore(player);
+                RESTORE_ON_NEXT_TICK.remove(id);
+            }
+        }
         if (server.getTickCount() % 20 != 0) return;
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
             CompassHelper.removeStaleCompasses(player);

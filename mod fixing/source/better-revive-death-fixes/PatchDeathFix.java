@@ -14,7 +14,7 @@ public final class PatchDeathFix implements Opcodes {
             ClassNode node = new ClassNode();
             new ClassReader(Files.readAllBytes(input.resolve(name + ".class"))).accept(node, 0);
             int changes = name.endsWith("ModEvents") ? patchEvents(node) : name.endsWith("CompassHelper") ? patchCompass(node) : patchDowned(node);
-            int expected = name.endsWith("ModEvents") ? 5 : name.endsWith("CompassHelper") ? 2 : 1;
+            int expected = name.endsWith("ModEvents") ? 5 : name.endsWith("CompassHelper") ? 6 : 1;
             if (changes != expected) throw new IllegalStateException(name + ": " + changes + " changes; expected " + expected);
             ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
             node.accept(writer);
@@ -32,9 +32,23 @@ public final class PatchDeathFix implements Opcodes {
                     if (insn instanceof MethodInsnNode call && call.owner.equals(BASE + "util/DownedPlayerManager") && call.name.equals("enterDowned")) {
                         InsnList extra = new InsnList();
                         extra.add(new VarInsnNode(ALOAD, 1));
-                        extra.add(new MethodInsnNode(INVOKESTATIC, FIX, "afterEnterDowned", "(" + PLAYER + ")V", false));
-                        // Local 1 is the pattern-matched ServerPlayer in this build.
-                        m.instructions.insert(insn, extra);
+                        extra.add(new MethodInsnNode(INVOKESTATIC, FIX, "shouldCompletePlayerReviveDeath", "(" + PLAYER + ")Z", false));
+                        LabelNode continueDowned = new LabelNode();
+                        extra.add(new JumpInsnNode(IFEQ, continueDowned));
+                        extra.add(new InsnNode(RETURN));
+                        extra.add(continueDowned);
+                        extra.add(new FrameNode(F_SAME, 0, null, 0, null));
+                        // PlayerRevive's give-up invokes die() at zero health. A nested
+                        // hurtServer() cannot finish that death, so let the original event proceed.
+                        m.instructions.insertBefore(insn.getPrevious(), extra);
+                        // Remove the old post-enter hook from the previous repack.
+                        for (AbstractInsnNode next = insn.getNext(); next != null; next = next.getNext()) {
+                            if (next instanceof MethodInsnNode old && old.owner.equals(FIX) && old.name.equals("afterEnterDowned")) {
+                                m.instructions.remove(next.getPrevious());
+                                m.instructions.remove(next);
+                                break;
+                            }
+                        }
                         changes++;
                         break;
                     }
@@ -79,6 +93,34 @@ public final class PatchDeathFix implements Opcodes {
     private static int patchCompass(ClassNode node) {
         int changes = 0;
         for (MethodNode m : node.methods) {
+            if (m.name.equals("enforceCompassSlot")) {
+                m.instructions.clear(); m.tryCatchBlocks.clear();
+                m.instructions.add(new VarInsnNode(ALOAD, 0));
+                m.instructions.add(new MethodInsnNode(INVOKESTATIC, FIX, "enforceCompassSlots", "(" + PLAYER + ")V", false));
+                m.instructions.add(new InsnNode(RETURN));
+                changes++;
+            }
+            if (m.name.equals("giveOrDropCompass")) {
+                for (AbstractInsnNode insn : m.instructions.toArray()) {
+                    if (!(insn instanceof MethodInsnNode call) || !call.owner.equals("net/minecraft/world/entity/player/Inventory")) continue;
+                    if (call.name.equals("add")) {
+                        m.instructions.set(call, new MethodInsnNode(INVOKESTATIC, FIX, "placeDisplacedHotbarItem",
+                                "(Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/ItemStack;)Z", false));
+                        changes++;
+                        continue;
+                    }
+                    if (!(call.name.equals("getItem") || call.name.equals("setItem"))) continue;
+                    AbstractInsnNode slot = call.getPrevious();
+                    while (slot != null && slot.getOpcode() != ICONST_0) slot = slot.getPrevious();
+                    if (slot == null || slot.getPrevious().getOpcode() != ALOAD) throw new IllegalStateException("Compass slot pattern changed");
+                    InsnList replacement = new InsnList();
+                    replacement.add(new InsnNode(DUP));
+                    replacement.add(new MethodInsnNode(INVOKESTATIC, FIX, "compassSlot", "(Lnet/minecraft/world/entity/player/Inventory;)I", false));
+                    m.instructions.insertBefore(slot, replacement);
+                    m.instructions.remove(slot);
+                    changes++;
+                }
+            }
             if (!m.name.equals("removeStaleCompasses") && !m.name.equals("lambda$removeStaleCompasses$0")) continue;
             for (AbstractInsnNode insn : m.instructions) {
                 if (insn instanceof MethodInsnNode call && call.owner.equals(BASE + "util/GraveRegistry") && call.name.equals("isRegistered")) {

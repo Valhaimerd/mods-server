@@ -912,7 +912,7 @@ Its gloves, necklaces, and rings create another equipment progression path. Comp
 - **Core mechanic:** Stores eligible tools in a wearable belt with pouch upgrades and a radial selector.
 - **Player guidance:** Wear the belt and use its radial selector for stored tools.
 
-Pouch upgrades expand its capacity. Keep the most frequently swapped tools together for travel and building.
+Pouch upgrades expand its capacity. Keep the most frequently swapped tools together for travel and building. The dedicated belt slot opens with `Shift + Q` and remains equipped after Better Revive death and respawn.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/tool-belt">Official mod page</a></p>
 
@@ -1152,7 +1152,7 @@ A downed player can still be rescued before normal death handling completes. Wit
 - **Core mechanic:** Stores the main inventory and experience in a protected grave while retaining the hotbar, armor, offhand, and most equipped Curios.
 - **Player guidance:** Accept a teammate's revive request, or respawn and use the Grave Compass to return to your grave.
 
-Teammates can throw a Revive Potion near the grave or start the Life Pulse minigame; the downed player must accept the attempt. The pack's death rule returns your hotbar, armor, offhand, and equipped Curios after revival or respawn. Sophisticated Backpacks always go to the grave, including ones in those slots. Use the Grave Compass to retrieve the rest within 20 minutes; the grave expires when owner protection ends, with no public collection phase. Better Revive X PlayerRevive prevents repeated bleed-out loops.
+Teammates can throw a Revive Potion near the grave or start the Life Pulse minigame; the downed player must accept the attempt. The pack's death rule returns your hotbar, armor, offhand, equipped Curios, and Tool Belt's dedicated belt slot after revival or respawn. Sophisticated Backpacks always go to the grave, including ones in those slots. Use the Grave Compass to retrieve the rest within 20 minutes; the grave expires when owner protection ends, with no public collection phase. Better Revive X PlayerRevive prevents repeated bleed-out loops.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-revive">Official mod page</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive">PlayerRevive integration</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-curios">Curios integration</a></p>
 

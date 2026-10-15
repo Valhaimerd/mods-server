@@ -14,7 +14,7 @@ public final class PatchDeathFix implements Opcodes {
             ClassNode node = new ClassNode();
             new ClassReader(Files.readAllBytes(input.resolve(name + ".class"))).accept(node, 0);
             int changes = name.endsWith("ModEvents") ? patchEvents(node) : name.endsWith("CompassHelper") ? patchCompass(node) : name.endsWith("GraveRegistry") ? patchRegistry(node) : name.endsWith("GraveBlockEntity") ? patchDisplay(node) : patchDowned(node);
-            int expected = name.endsWith("ModEvents") ? 5 : name.endsWith("CompassHelper") ? 6 : 1;
+            int expected = name.endsWith("ModEvents") ? 7 : name.endsWith("CompassHelper") ? 6 : 1;
             if (changes != expected) throw new IllegalStateException(name + ": " + changes + " changes; expected " + expected);
             ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
             node.accept(writer);
@@ -85,6 +85,22 @@ public final class PatchDeathFix implements Opcodes {
                     }
                 }
                 if (listContainsCalls != 2) throw new IllegalStateException("Expected dimension and damage type checks");
+            }
+            // The upstream second-death path makes a new grave temporary whenever
+            // another active grave exists. Normal respawn converts that temporary
+            // grave to a collection crate, which expires immediately with this
+            // pack's zero-second collection duration. Every death grave needs its
+            // own ordinary registration and deadline instead.
+            for (AbstractInsnNode insn : m.instructions.toArray()) {
+                if (insn instanceof MethodInsnNode call && call.owner.equals(BASE + "util/GraveRegistry")
+                        && call.name.equals("hasActiveGraves") && call.desc.equals("(Ljava/util/UUID;)Z")) {
+                    InsnList replacement = new InsnList();
+                    replacement.add(new InsnNode(POP));
+                    replacement.add(new InsnNode(ICONST_0));
+                    m.instructions.insertBefore(call, replacement);
+                    m.instructions.remove(call);
+                    changes++;
+                }
             }
         }
         return changes;

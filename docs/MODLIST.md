@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 293 synchronized JARs · 20 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 303 synchronized JARs · 15 client extras</p>
 
 Last audited: 2026-10-14<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 293 synchronized JARs plus 20 client-store JARs
+Current distribution: 303 synchronized JARs plus 15 client-store JARs
 
 ## About this handbook
 
@@ -130,7 +130,7 @@ These systems change how you build a character, explore, survive, and manage you
   <a class="feature-card" href="#feature-xaeros-world-map"><img src="assets/mod-icons/xaero-s-world-map.png" alt=""><span class="feature-card-name">Xaero's World Map</span><span class="feature-card-desc">A map of the terrain you have explored.</span></a>
   <a class="feature-card" href="#feature-alexs-caves"><img src="assets/mod-icons/alex-s-caves.png" alt=""><span class="feature-card-name">Alex's Caves</span><span class="feature-card-desc">Rare biomes below the Overworld.</span></a>
   <a class="feature-card" href="#feature-better-nether"><img src="assets/mod-icons/better-nether.png" alt=""><span class="feature-card-name">Better Nether</span><span class="feature-card-desc">New Nether terrain, life, and loot.</span></a>
-  <a class="feature-card" href="#feature-stellarity"><img src="assets/mod-icons/stellarity.png" alt=""><span class="feature-card-name">Stellarity</span><span class="feature-card-desc">A deeper End journey and progression.</span></a>
+  <a class="feature-card" href="#feature-better-end"><img src="assets/mod-icons/better-end.png" alt=""><span class="feature-card-name">Better End</span><span class="feature-card-desc">New End biomes, resources, and creatures.</span></a>
   <a class="feature-card" href="#feature-starcatcher"><img src="assets/mod-icons/starcatcher.png" alt=""><span class="feature-card-name">Starcatcher</span><span class="feature-card-desc">Condition-based fishing and collecting.</span></a>
   <a class="feature-card" href="#feature-chrono-dawn"><img src="assets/mod-icons/chrono-dawn.png" alt=""><span class="feature-card-name">Chrono Dawn</span><span class="feature-card-desc">A time-locked dimension and boss progression.</span></a>
   <a class="feature-card" href="#feature-farmers-delight"><img src="assets/mod-icons/farmer-s-delight.png" alt=""><span class="feature-card-name">Farmer's Delight</span><span class="feature-card-desc">Prepare, cook, and serve better meals.</span></a>
@@ -286,7 +286,7 @@ Test beside a safe patch first. Connected blocks may extend farther than the one
 <h3 id="feature-penchant" class="feature-heading"><img src="assets/mod-icons/penchant.png" alt="">Penchant</h3>
 
 - **Leveling:** Eligible enchantments begin at level one and improve as enchanted gear is used.
-- **Progress:** Mining, attacking, or taking armor damage fills a separate bar for each enchantment.
+- **Progress:** Mining, attacking, or taking armor damage fills a separate bar for each enchantment. This pack's progression target is 40% of the original, so levels arrive about 2.5 times faster.
 - **Limit:** A full bar raises that enchantment by one level until its maximum is reached.
 - **Modules:** Per-world datapacks can also rework tables, bookshelves, durability, loot, and anvils.
 
@@ -379,27 +379,25 @@ Better Nether varies biomes vertically as well as across the map. Routes at diff
 </section>
 
 <section class="feature-detail">
-<h3 id="feature-stellarity" class="feature-heading"><img src="assets/mod-icons/stellarity.png" alt="">Stellarity</h3>
+<h3 id="feature-better-end" class="feature-heading"><img src="assets/mod-icons/better-end.png" alt="">Better End</h3>
 
-- **End overhaul:** Terrain, biomes, structures, and outer-island exploration become a longer journey.
-- **Combat:** The dragon encounter and additional bosses depart from the vanilla End progression.
-- **Rewards:** New equipment, potions, and crafting materials come from End exploration and encounters.
-- **Crafting:** The Altar of the Accursed unlocks after the dragon and crafts some late-game gear through world interactions.
+- **World generation:** The End gains many new biomes, varied island shapes, caves, and structures.
+- **Exploration:** New plants, blocks, resources, and creatures distinguish the biomes.
+- **Equipment:** End materials support new tools, armor, weapons, and building choices.
+- **Existing worlds:** Travel into new chunks to find newly generated terrain.
 
+**Exploring the changed End**
 
+1. Prepare for the dragon and establish a safe route through the central island before leaving it.
+2. Cross into unexplored islands and survey each biome for its terrain, plants, creatures, and resources.
+3. Bring home new materials to explore their recipes and equipment options in the recipe interface.
+4. Mark a return route before crossing large gaps or descending into caves.
 
-**A longer End journey**
+Better End focuses on End exploration and resources. Its world generation changes newly visited areas; already generated chunks keep their existing terrain.
 
-1. Prepare for a changed dragon encounter and bring supplies for more than one arena fight.
-2. After the dragon, explore altered islands, End Cities, and structures for new materials, equipment, and clues.
-3. Find the Altar of the Accursed. Some late-game gear is made by placing the right ingredients on it rather than using a crafting-grid recipe.
-4. Keep unusual books and materials until their purpose is clear; some altar recipes do not appear in JEI. In the Hallow biome, placing certain items in the water can transform them into other materials.
+<p class="feature-tip"><strong>Quick tip</strong> Mark a return route while exploring the new islands.</p>
 
-The pack also has another dragon overhaul, so follow the boss mechanics visible in your world. Stellarity continues progression through End exploration and crafting.
-
-<p class="feature-tip"><strong>Quick tip</strong> Keep odd End finds; some altar recipes are absent from JEI.</p>
-
-<p class="feature-source">Mechanics source: <a href="https://modrinth.com/datapack/stellarity">official mod page</a>.</p>
+<p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge">official mod page</a>.</p>
 </section>
 
 <section class="feature-detail">
@@ -507,6 +505,7 @@ The effect map is generated per world, so a recipe from another save may lead so
 - **Upgrades:** Modules can collect drops, filter contents, refill supplies, or add crafting and other utilities.
 - **Placement:** A backpack can travel with you or be placed and connected to inventory automation.
 - **Customization:** Dye colors and upgrade configurations help dedicate packs to different jobs.
+- **Death rule:** A Sophisticated Backpack goes to the grave even when carried in the hotbar, offhand, armor, or Curios.
 
 
 
@@ -517,7 +516,7 @@ The effect map is generated per world, so a recipe from another save may lead so
 3. Open the equipped pack with `V` and configure its upgrades before an expedition.
 4. Dye separate packs for mining, building, or travel. A placed pack can also interact with hoppers and inventory automation.
 
-Automation follows each upgrade's filter, so inspect settings before carrying valuable items. The pack's tier controls its available capacity and upgrade choices.
+Automation follows each upgrade's filter, so inspect settings before carrying valuable items. The pack's tier controls its available capacity and upgrade choices. After a death, recover the backpack from the grave; its equipped position does not exempt it.
 
 <p class="feature-tip"><strong>Quick tip</strong> Configure Pickup and filter upgrades before your next loot run.</p>
 
@@ -670,22 +669,8 @@ Its broad choices can support many class loadouts. Read each node for conditions
 
 </div>
 
-<div class="core-mod-entry">
-
-#### Default Skill Trees
-
-- **Type:** Character progression
-- **Core mechanic:** Adds Combat and Mining trees with modest attribute improvements.
-- **Player guidance:** Earn Combat experience from kills and Mining experience from stone and ores, then choose nodes that fit your build.
-
-Combat offers health, damage, and other survival bonuses; Mining improves speed and fortune. These trees use the same skill screen as the RPG and Adventurer tracks.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/default-skill-trees">Official mod page</a></p>
-
 </div>
-
-</div>
-<p class="core-category-description">Several skill modules share one progression interface but reward different activities. RPG trees deepen a class or weapon, Adventurer Skills offers broad choices, and Default Skill Trees grows through combat and mining. Use T to review your paths. When the Orb of Oblivion resets spent RPG Series points, this pack also refunds spent Adventurer and Default Skill Trees points while preserving their earned experience.</p>
+<p class="core-category-description">The RPG Series trees specialize your current class and weapon, while Adventurer Skills is the general stat tree for Offensive, Defensive, Utility, and Versatile growth. Both use Pufferfish's skill interface; press T to compare available paths and prerequisites. The Orb of Oblivion refunds spent points in the RPG and Adventurer categories while preserving earned category experience. It also works when only Adventurer points have been spent.</p>
 </section>
 
 <section class="core-category">
@@ -1033,7 +1018,7 @@ Keep separate combat, travel, and utility sets when useful. The swap replaces th
 - **Core mechanic:** Levels eligible enchantments through use and can change enchanting through world modules.
 - **Player guidance:** Hold Left Ctrl over enchanted gear to view progress.
 
-Eligible enchantments grow as their item is used. Its optional world modules also alter table, durability, loot, and anvil behavior as detailed in Part I.
+Eligible enchantments grow as their item is used, with progression targets reduced to 40% in this pack. Its optional world modules also alter table, durability, loot, and anvil behavior as detailed in Part I.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/penchant-reforged">Official mod page</a></p>
 
@@ -1153,7 +1138,7 @@ The collection adds movement, attack, defense, and arrow effects, including extr
 - **Core mechanic:** Gives teammates a short downed window in which they can intervene.
 - **Player guidance:** Watch for a teammate’s short downed window.
 
-A downed player can still be rescued before normal death handling completes. Coordinate help quickly during group encounters.
+A downed player can still be rescued before normal death handling completes. With Better Revive X PlayerRevive installed, this is the first rescue window; bleeding out or giving up passes the player to Better Revive's grave and longer revival window.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/playerrevive">Official mod page</a></p>
 
@@ -1161,15 +1146,15 @@ A downed player can still be rescued before normal death handling completes. Coo
 
 <div class="core-mod-entry">
 
-#### Graveless
+#### Better Revive
 
 - **Type:** Survival and recovery
-- **Core mechanic:** Stores death drops with a ghost at the death site, without a physical grave block.
-- **Player guidance:** Follow the Spirit Compass and beacon, then click the ghost to restore items and experience.
+- **Core mechanic:** Stores the main inventory and experience in a protected grave while retaining the hotbar, armor, offhand, and most equipped Curios.
+- **Player guidance:** Accept a teammate's revive request, or respawn and use the Grave Compass to return to your grave.
 
-The Spirit Compass opens a browser for older death records and can point to one you choose. Items return to their prior hotbar, armor, offhand, and supported Curios slots when space is available. PlayerRevive still handles the earlier downed window; Graveless handles recovery after death.
+Teammates can throw a Revive Potion near the grave or start the Life Pulse minigame; the downed player must accept the attempt. The pack's death rule returns your hotbar, armor, offhand, and equipped Curios after revival or respawn. Sophisticated Backpacks always go to the grave, including ones in those slots. Use the Grave Compass to retrieve the rest within 20 minutes; the grave expires when owner protection ends, with no public collection phase. Better Revive X PlayerRevive prevents repeated bleed-out loops.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/graveless">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-revive">Official mod page</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive">PlayerRevive integration</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-curios">Curios integration</a></p>
 
 </div>
 
@@ -1216,7 +1201,7 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 </div>
 
 </div>
-<p class="core-category-description">The recovery systems address different moments: PlayerRevive allows rescue during a downed window, Graveless protects items after death, and Better Respawn changes where you return. Prepare totems, food, and group support before dangerous trips. Follow the Spirit Compass after respawning; a teammate can help if you grant access to a ghost.</p>
+<p class="core-category-description">Recovery happens in stages: PlayerRevive gives teammates the first rescue window; if that ends, Better Revive protects most inventory and experience in a grave and allows another revival attempt. Hotbar items, armor, offhand equipment, and equipped Curios return to you; Sophisticated Backpacks always remain in the grave. Better Respawn can change the return point after final death. Prepare totems, food, and group support before dangerous trips, then follow the Grave Compass if you respawn with a grave still active.</p>
 </section>
 
 <section class="core-category">
@@ -1375,15 +1360,15 @@ The denser landscape changes navigation as well as the materials and encounters.
 
 <div class="core-mod-entry">
 
-#### Stellarity
+#### Better End
 
 - **Type:** World expansion
-- **Core mechanic:** Expands the End with new terrain, structures, enemies, equipment, and progression.
-- **Player guidance:** Plan for a longer End journey and preserve in-world clues.
+- **Core mechanic:** Adds End biomes, island terrain, caves, plants, mobs, materials, and structures.
+- **Player guidance:** Explore newly generated End chunks and mark a return route between islands.
 
-End terrain, structures, equipment, and boss progression all change. The dragon encounter can overlap with Bosslike Ender Dragon, so follow the current fight's cues.
+Distinct biomes and resources make outer-island travel more varied. Check the recipe interface for ways to use new End materials.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/stellarity">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge">Official mod page</a></p>
 
 </div>
 
@@ -1554,20 +1539,6 @@ Dogfolk adds another kind of travelling ally. Keep its safety in mind when cross
 Tameable wildlife gives exploration a companion goal. Bring safe transport and supplies before moving a new pet far from its home biome.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/wild-pets">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
-#### Puffsprout
-
-- **Type:** Companions and settlements
-- **Core mechanic:** Adds a small companion that learns over time.
-- **Player guidance:** Give the small companion time to develop.
-
-Its learning makes it more than a static decoration. Keep it safe while discovering what it can do.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/puffsprout">Official mod page</a></p>
 
 </div>
 
@@ -2689,7 +2660,7 @@ Defensive blocks can affect traffic as well as enemies. Leave a clear route for 
 - **Core mechanic:** Adds upgradeable portable storage with functional upgrade slots.
 - **Player guidance:** Press V to open an equipped pack and choose upgrades for its job.
 
-A pack travels with the player and can also work as a placed container. Its upgrades add utilities rather than simply more slots.
+A pack travels with the player and can also work as a placed container. Its upgrades add utilities rather than simply more slots. Sophisticated Backpacks are stored in Better Revive graves on death, even when equipped or carried on the hotbar.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks">Official mod page</a></p>
 
@@ -3231,20 +3202,6 @@ This client-store extra changes atmosphere only. It does not need to be installe
 
 <div class="core-mod-entry">
 
-#### Illuminations Reimagined
-
-- **Type:** Optional client visuals
-- **Core mechanic:** Adds decorative particles and environmental effects to the client view.
-- **Player guidance:** Adjust its visual settings if effects obscure combat or reduce frame rate.
-
-The installed Reimagined build is a client visual extra. It occupies a different visual role from shaders and does not change world generation.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/illuminations-reimagined">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### Sound Physics Remastered
 
 - **Type:** Optional client audio
@@ -3300,7 +3257,7 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 </div>
 
 </div>
-<p class="core-category-description">These client-side options affect navigation, rendering, ambience, and acoustics. Configure coordinates for useful detail, manage shaders through Iris, and adjust AmbientSounds, Illuminations Reimagined, and Sound Physics Remastered in client settings.</p>
+<p class="core-category-description">These client-side options affect navigation, rendering, ambience, and acoustics. Configure coordinates for useful detail, manage shaders through Iris, and adjust AmbientSounds and Sound Physics Remastered in client settings.</p>
 </section>
 
 <div class="page-break" aria-hidden="true"></div>
@@ -3737,8 +3694,10 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
 - [Barricades](#barricades)
 - [Better Combat](#better-combat-1)
+- [Better End](#better-end)
 - [Better Nether](#better-nether)
 - [Better Party](#better-party-1)
+- [Better Revive](#better-revive)
 - [Better Respawn](#better-respawn)
 - [Better Rotten Flesh](#better-rotten-flesh)
 - [Bifrost Teleport](#bifrost-teleport)
@@ -3757,7 +3716,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Curios](#curios-1)
 - [DarkSmithing](#darksmithing)
 - [Dedicated Elytra Slot](#dedicated-elytra-slot)
-- [Default Skill Trees](#default-skill-trees)
 - [Display Delight](#display-delight)
 - [Distinct Potions](#distinct-potions)
 - [Dungeons and Taverns](#dungeons-and-taverns)
@@ -3785,7 +3743,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Gazebos](#gazebos)
 - [Goblin Traders](#goblin-traders)
 - [Golden Hopper](#golden-hopper)
-- [Graveless](#graveless)
 - [Guard Ribbits](#guard-ribbits)
 - [Guard Villagers](#guard-villagers)
 - [Harder Natural Healing](#harder-natural-healing)
@@ -3794,7 +3751,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Hopper Gadgetry](#hopper-gadgetry)
 - [Hovering Hotbar](#hovering-hotbar-1)
 - [Illager Invasion](#illager-invasion)
-- [Illuminations Reimagined](#illuminations-reimagined)
 - [Improved Village Placement](#improved-village-placement)
 - [Invasion](#invasion)
 - [Iourus Races](#iourus-races-1)
@@ -3838,7 +3794,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Potions Stack](#potions-stack)
 - [Pro Placer](#pro-placer-1)
 - [Pufferfish's Skills](#pufferfishs-skills)
-- [Puffsprout](#puffsprout)
 - [Quick Skin](#quick-skin)
 - [Relics](#relics)
 - [Ribbits](#ribbits)
@@ -3860,7 +3815,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Sound Physics Remastered](#sound-physics-remastered)
 - [Spell Engine](#spell-engine-1)
 - [Starcatcher](#starcatcher)
-- [Stellarity](#stellarity)
 - [Stonecutting Upgrade](#stonecutting-upgrade)
 - [Stoneholm](#stoneholm)
 - [Stoneworks](#stoneworks)
@@ -3911,7 +3865,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 #### Skills
 
 - [Adventurer Skills](#adventurer-skills)
-- [Default Skill Trees](#default-skill-trees)
 - [Pufferfish's Skills](#pufferfishs-skills)
 - [Skill Tree (RPG Series)](#skill-tree-rpg-series)
 
@@ -3977,6 +3930,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Abyssal Ocean](#abyssal-ocean)
 - [Alex's Caves](#alexs-caves)
 - [Astral Dimension](#feature-astral-dimension)
+- [Better End](#better-end)
 - [Better Nether](#better-nether)
 - [Biomes O' Plenty](#biomes-o-plenty)
 - [Chrono Dawn](#feature-chrono-dawn)
@@ -3985,7 +3939,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Mielon's The Sift](#feature-the-sift)
 - [Nullscape](#nullscape)
 - [Serene Seasons](#serene-seasons)
-- [Stellarity](#stellarity)
 - [Terralith](#terralith)
 - [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 - [Yggdrasil](#yggdrasil)
@@ -4041,7 +3994,6 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Name Tag Upgrade](#name-tag-upgrade)
 - [Pet Status](#pet-status)
 - [Pet Vault](#pet-vault)
-- [Puffsprout](#puffsprout)
 - [Wild Pets](#wild-pets)
 
 #### Farming & Food
@@ -4094,8 +4046,8 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 #### Multiplayer
 
 - [Better Party](#better-party-1)
+- [Better Revive](#better-revive)
 - [Better Respawn](#better-respawn)
-- [Graveless](#graveless)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
 - [Harder Natural Healing](#harder-natural-healing)
 - [Market Board](#market-board)
@@ -4130,5 +4082,4 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 #### Audio and Atmosphere
 
 - [AmbientSounds](#ambientsounds)
-- [Illuminations Reimagined](#illuminations-reimagined)
 - [Sound Physics Remastered](#sound-physics-remastered)

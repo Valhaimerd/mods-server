@@ -14,6 +14,10 @@ Read this file first, then read the note in any task-specific folder. For option
 
 Treat JARs already in `1 fixed packs` as completed. Reopen one only when the user asks for another change or reports a follow-up issue.
 
+## Gateway of Doom targeting
+
+The active `gatewayofdoom-neoforge-26.2-2.2.1-PlayerReviveTargetFix.jar` skips players downed by PlayerRevive or Better Revive when selecting a gateway mob's target. The original two combat goals used the nearest player and treated a downed player as alive; that prevented them from selecting a nearby active teammate. The portal's initial target search follows the same rule. Patch source is in `source/gateway-of-doom-downed-target/`; the original JAR is in `retired packs/`. The new JAR is installed only in this project, not the separate desktop server.
+
 ## Death and grave system
 
 The active Better Revive JAR is now `Better Revive - 2.2.0 - NeoForge - 26.2-GraveGuard-Java25.jar`. The grave already had unbreakable hardness, explosion resistance, an explosion callback that does nothing, an explosion affected-list filter, and a canceled player break event. The guard additionally restores the original block entity and its stored contents on the next server tick if another world edit removes an active grave. It does not restore a grave after normal retrieval or its five-minute expiry. This repack was installed only in this project; the separate desktop server was not changed. Patch source is in `source/better-revive-grave-guard/` and the previous project JARs are in `retired packs/`.

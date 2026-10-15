@@ -1149,10 +1149,10 @@ A downed player can still be rescued before normal death handling completes. Wit
 #### Better Revive
 
 - **Type:** Survival and recovery
-- **Core mechanic:** Stores the main inventory and experience in a protected grave while retaining the hotbar, armor, offhand, and most equipped Curios.
+- **Core mechanic:** Stores inventory, equipped Curios, and experience in a protected grave while retaining the hotbar, armor, and offhand.
 - **Player guidance:** Accept a teammate's revive request, or respawn and use the Grave Compass to return to your grave.
 
-Teammates can throw a Revive Potion near the grave or start the Life Pulse minigame; the downed player must accept the attempt. The pack's death rule returns your hotbar, armor, offhand, equipped Curios, and Tool Belt's dedicated belt slot after revival or respawn. Sophisticated Backpacks always go to the grave, including ones in those slots. Use the Grave Compass to retrieve the rest within 20 minutes; the grave expires when owner protection ends, with no public collection phase. Better Revive X PlayerRevive prevents repeated bleed-out loops.
+Teammates can throw a Revive Potion near the grave or start the Life Pulse minigame; the downed player must accept the attempt. After death, your hotbar, armor, and offhand return on respawn, and Tool Belt's separate belt slot stays equipped. Equipped Curios go to the grave through Better Revive X Curios; its Grave Compass exception still helps you find the grave. Sophisticated Backpacks always go to the grave, including ones in the retained slots. Retrieve the grave within 20 minutes; it expires when owner protection ends, with no public collection phase. Better Revive X PlayerRevive prevents repeated bleed-out loops.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-revive">Official mod page</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-playerrevive">PlayerRevive integration</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/better-revive-x-curios">Curios integration</a></p>
 
@@ -1201,7 +1201,7 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 </div>
 
 </div>
-<p class="core-category-description">Recovery happens in stages: PlayerRevive gives teammates the first rescue window; if that ends, Better Revive protects most inventory and experience in a grave and allows another revival attempt. Hotbar items, armor, offhand equipment, and equipped Curios return to you; Sophisticated Backpacks always remain in the grave. Better Respawn can change the return point after final death. Prepare totems, food, and group support before dangerous trips, then follow the Grave Compass if you respawn with a grave still active.</p>
+<p class="core-category-description">Recovery happens in stages: PlayerRevive gives teammates the first rescue window; if that ends, Better Revive protects most inventory and experience in a grave and allows another revival attempt. Hotbar items, armor, and offhand equipment return to you, while equipped Curios go into the grave. Tool Belt's separate slot remains equipped, and Sophisticated Backpacks always remain in the grave. Better Respawn can change the return point after final death. Prepare totems, food, and group support before dangerous trips, then follow the Grave Compass if you respawn with a grave still active.</p>
 </section>
 
 <section class="core-category">

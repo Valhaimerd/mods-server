@@ -7,6 +7,7 @@ Use the user's latest request to choose the relevant workflow below. Read the li
 - Read `README.md` for the pack's Minecraft, NeoForge, Java, installer, and client/server folder rules.
 - Check `git status --short` and the actual JARs in `mods/` and `mod store/`. Preserve unrelated user changes and ignored backups.
 - `mods/` is the server-compatible pack; `mod store/` is for client-side JARs. Never infer side compatibility, dependencies, or a mod's behavior from its filename alone. Inspect JAR metadata and the mod's official page when those facts matter.
+- For a repack of an existing mod/version, keep its current active JAR filename and replace its contents. The installer compares Git content hashes, so changed bytes are detected without a new filename. Rename a JAR only for an actual mod/version change or when the user explicitly asks.
 - The separate desktop server and the user's personal `.minecraft` are outside this repository. Use isolated test instances unless the user asks to change those installations.
 - Use skills when available and relevant: `caveman:investigate-first` or `superpowers:systematic-debugging` for reported defects; `living-docs` for documentation synchronization; `pdf:pdf` for PDF inspection; `quality-gate` for requested verification. The folder instructions below remain the pack-specific source of truth. A named skill from the user also applies.
 

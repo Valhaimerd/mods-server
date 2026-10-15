@@ -89,6 +89,48 @@ public final class DeathFix {
         }
     }
 
+    /** Keep the one hotbar compass aimed at the newest unexpired grave. */
+    public static void syncOwnerCompass(ServerPlayer player) {
+        UUID newestId = findNewestGraveId(player.getUUID());
+        if (newestId == null) return;
+        GraveRegistry.GraveLocation newest = GraveRegistry.getGraveLocation(newestId);
+        if (newest == null) return;
+
+        Inventory inventory = player.getInventory();
+        boolean hasTarget = false;
+        for (int slot = 0; slot < inventory.getContainerSize(); slot++) {
+            ItemStack stack = inventory.getItem(slot);
+            if (!GraveCompassItem.isGraveCompass(stack)) continue;
+            UUID id = CompassHelper.readMarkerId(stack);
+            if (newestId.equals(id)) {
+                hasTarget = true;
+            } else {
+                GraveRegistry.GraveLocation location = GraveRegistry.getGraveLocation(id);
+                if (location != null && player.getUUID().equals(location.ownerUuid())) {
+                    inventory.setItem(slot, ItemStack.EMPTY);
+                }
+            }
+        }
+        if (!hasTarget) {
+            BlockPos pos = newest.pos();
+            CompassHelper.giveOrDropCompass(player, GraveCompassItem.createCompass(
+                pos.getX(), pos.getY(), pos.getZ(),
+                newest.dimension().identifier().toString(), newestId));
+        }
+        enforceCompassSlots(player);
+    }
+
+    public static UUID findNewestGraveId(UUID owner) {
+        GraveRegistry.GraveEntry newest = null;
+        for (GraveRegistry.GraveEntry entry : GraveRegistry.entriesByOwner(owner)) {
+            if (isCompassValid(entry.graveId()) &&
+                (newest == null || entry.location().sequence() > newest.location().sequence())) {
+                newest = entry;
+            }
+        }
+        return newest == null ? null : newest.graveId();
+    }
+
     public static void onServerTick(MinecraftServer server) {
         if (!RESTORE_ON_NEXT_TICK.isEmpty()) {
             for (UUID id : List.copyOf(RESTORE_ON_NEXT_TICK)) {
@@ -100,6 +142,7 @@ public final class DeathFix {
         if (server.getTickCount() % 20 != 0) return;
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
             CompassHelper.removeStaleCompasses(player);
+            syncOwnerCompass(player);
         }
     }
 

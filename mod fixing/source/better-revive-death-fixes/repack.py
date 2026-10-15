@@ -3,7 +3,7 @@ import zipfile
 from pathlib import Path
 source, target, patch_dir = map(Path, sys.argv[1:])
 base = 'de/mrstilu2k6/better_revive/'
-replacements = {base + name + '.class': (patch_dir / 'patched' / base / (name + '.class')).read_bytes() for name in ('event/ModEvents', 'util/CompassHelper', 'util/DownedPlayerManager')}
+replacements = {base + name + '.class': (patch_dir / 'patched' / base / (name + '.class')).read_bytes() for name in ('event/ModEvents', 'util/CompassHelper', 'util/DownedPlayerManager', 'util/GraveRegistry', 'block/GraveBlockEntity')}
 replacements[base + 'util/DeathFix.class'] = (patch_dir / 'classes' / base / 'util/DeathFix.class').read_bytes()
 with zipfile.ZipFile(source) as original, zipfile.ZipFile(target, 'w') as output:
     for info in original.infolist():

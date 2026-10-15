@@ -10,10 +10,10 @@ public final class PatchDeathFix implements Opcodes {
     public static void main(String[] args) throws Exception {
         Path input = Path.of(args[0]);
         Path output = Path.of(args[1]);
-        for (String name : new String[]{"event/ModEvents", "util/CompassHelper", "util/DownedPlayerManager"}) {
+        for (String name : new String[]{"event/ModEvents", "util/CompassHelper", "util/DownedPlayerManager", "util/GraveRegistry", "block/GraveBlockEntity"}) {
             ClassNode node = new ClassNode();
             new ClassReader(Files.readAllBytes(input.resolve(name + ".class"))).accept(node, 0);
-            int changes = name.endsWith("ModEvents") ? patchEvents(node) : name.endsWith("CompassHelper") ? patchCompass(node) : patchDowned(node);
+            int changes = name.endsWith("ModEvents") ? patchEvents(node) : name.endsWith("CompassHelper") ? patchCompass(node) : name.endsWith("GraveRegistry") ? patchRegistry(node) : name.endsWith("GraveBlockEntity") ? patchDisplay(node) : patchDowned(node);
             int expected = name.endsWith("ModEvents") ? 5 : name.endsWith("CompassHelper") ? 6 : 1;
             if (changes != expected) throw new IllegalStateException(name + ": " + changes + " changes; expected " + expected);
             ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
@@ -157,5 +157,37 @@ public final class PatchDeathFix implements Opcodes {
         m.instructions.add(new InsnNode(RETURN));
         node.methods.add(m);
         return 1;
+    }
+
+    private static int patchRegistry(ClassNode node) {
+        for (MethodNode method : node.methods) {
+            if (!method.name.equals("findPreferredGraveId")) continue;
+            method.instructions.clear(); method.tryCatchBlocks.clear();
+            method.instructions.add(new VarInsnNode(ALOAD, 0));
+            method.instructions.add(new MethodInsnNode(INVOKESTATIC, FIX, "findNewestGraveId", "(Ljava/util/UUID;)Ljava/util/UUID;", false));
+            method.instructions.add(new InsnNode(ARETURN));
+            return 1;
+        }
+        return 0;
+    }
+
+    private static int patchDisplay(ClassNode node) {
+        for (MethodNode method : node.methods) {
+            if (!method.name.equals("updateTextDisplay")) continue;
+            for (AbstractInsnNode instruction : method.instructions.toArray()) {
+                if (instruction instanceof VarInsnNode store && store.getOpcode() == ASTORE && store.var == 2) {
+                    LabelNode present = new LabelNode();
+                    InsnList guard = new InsnList();
+                    guard.add(new VarInsnNode(ALOAD, 2));
+                    guard.add(new JumpInsnNode(IFNONNULL, present));
+                    guard.add(new InsnNode(RETURN));
+                    guard.add(present);
+                    guard.add(new FrameNode(F_APPEND, 1, new Object[]{"net/minecraft/world/entity/Display$TextDisplay"}, 0, null));
+                    method.instructions.insert(instruction, guard);
+                    return 1;
+                }
+            }
+        }
+        return 0;
     }
 }

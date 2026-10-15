@@ -1,5 +1,7 @@
 # Better Revive death and compass fixes
 
+The pack JAR was renamed to `Better Revive - 2.2.0 - NeoForge - 26.2-MultiGraveFix-Java25.jar` on 2026-10-16 for clear identification. Its bytes are identical to the preceding `DeathFix-Java25` build; this rename is not a code change. The user's full-pack single-player test still reports that the first grave block disappears immediately after a second death, despite the isolated multiple-grave checks below. This needs a separate reproduction and root-cause fix.
+
 The prior JAR already contains the grave guard, XP fix, retained-gear rule, and five-minute expiry. The active repack modifies three original classes and adds `DeathFix`.
 
 Root causes:

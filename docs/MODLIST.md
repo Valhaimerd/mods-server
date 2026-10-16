@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 303 synchronized JARs · 15 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 306 synchronized JARs · 15 client extras</p>
 
-Last audited: 2026-10-14<br>
+Last audited: 2026-10-16<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 303 synchronized JARs plus 15 client-store JARs
+Current distribution: 306 synchronized JARs plus 15 client-store JARs
 
 ## About this handbook
 
@@ -962,6 +962,20 @@ Different arrow materials change ranged damage. Use JEI to check the installed r
 
 <div class="core-mod-entry">
 
+#### All Arrows Infinity Fix
+
+- **Type:** Equipment utility
+- **Core mechanic:** Extends the Infinity enchantment to every arrow type.
+- **Player guidance:** Pair an Infinity bow with the arrow type suited to your target.
+
+One carried arrow can supply repeated shots when Infinity applies. Check special arrow effects and bow compatibility in the installed game.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/all-arrows-infinity-fix">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Fletching Recipe
 
 - **Type:** Equipment
@@ -1667,10 +1681,10 @@ The dragon can grow stronger after previous victories and with more players. Fol
 #### Gateway of Doom
 
 - **Type:** Boss encounter
-- **Core mechanic:** Opens timed, wave-based arena encounters with an on-screen boss bar, escalating enemies, and rewards for completing every wave.
-- **Player guidance:** Watch its boss bar for waves, enemies, and remaining time.
+- **Core mechanic:** Opens four themed Gateways with timed waves, 20 custom mobs, and Runeroot, Reaper, Voidwing, or Azure Ronin as the final boss.
+- **Player guidance:** Find a Gateway Key in dimension-appropriate loot, throw it on open ground, and watch the wave timer and boss bar.
 
-The event keeps enemies near its arena. Its mobs reconsider nearby active players about every three seconds, so a teammate who moves closer may draw their attacks; downed players are skipped. Regroup outside the boundary instead of drawing the wave toward a base.
+The new wave AI periodically shares pressure among nearby players and can switch toward an attacker; bosses also consider distance and damage dealt. This pack's repack excludes players downed by PlayerRevive or Better Revive from target selection, so active teammates can draw aggro. Finish the timed waves and final boss for the encounter reward; Hell Wards can prevent new Gateways from opening near a base.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/gateway-of-doom">Official mod page</a></p>
 
@@ -2139,6 +2153,20 @@ Its mushrooms connect combat, cultivation, food, and building. Not every unusual
 The roster mixes real and fantasy behavior. Some animals have useful interactions or rewards beyond simple drops.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### More Axolotl Variants Mod
+
+- **Type:** Creature variety
+- **Core mechanic:** Adds more visual variants of axolotls.
+- **Player guidance:** Look for new axolotl appearances while exploring water habitats.
+
+The variants make collected axolotls easier to distinguish. The installed More Axolotl Variants API supplies the underlying variant support.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/mavm">Official mod page</a></p>
 
 </div>
 
@@ -3674,6 +3702,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
 - [Alex's Mobs](#alexs-mobs)
+- [All Arrows Infinity Fix](#all-arrows-infinity-fix)
 - [AmbientSounds](#ambientsounds)
 - [Animal Garden collection](#animal-garden-collection)
 - [Animal Pen](#animal-pen)
@@ -3697,8 +3726,8 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Better End](#better-end)
 - [Better Nether](#better-nether)
 - [Better Party](#better-party-1)
-- [Better Revive](#better-revive)
 - [Better Respawn](#better-respawn)
+- [Better Revive](#better-revive)
 - [Better Rotten Flesh](#better-rotten-flesh)
 - [Bifrost Teleport](#bifrost-teleport)
 - [Biomes O' Plenty](#biomes-o-plenty)
@@ -3771,6 +3800,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Mielon's The Sift](#feature-the-sift)
 - [Moblets](#moblets)
 - [Moog's structure collection](#moogs-structure-collection)
+- [More Axolotl Variants Mod](#more-axolotl-variants-mod)
 - [Mounts and Monsters](#mounts-and-monsters)
 - [Much More Dungeons](#much-more-dungeons)
 - [Mutants and Zombies](#mutants-and-zombies)
@@ -3879,6 +3909,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 #### Equipment
 
+- [All Arrows Infinity Fix](#all-arrows-infinity-fix)
 - [Auras](#auras)
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
@@ -3974,11 +4005,13 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Animal Garden collection](#animal-garden-collection)
 - [Craftable Creatures Evolution](#craftable-creatures-evolution)
 - [Ender Zoology](#ender-zoology)
+- [Gateway of Doom](#gateway-of-doom)
 - [Goblin Traders](#goblin-traders)
 - [Guard Ribbits](#guard-ribbits)
 - [Guard Villagers](#guard-villagers)
 - [Lullaby's Mobs](#lullabys-mobs)
 - [Moblets](#moblets)
+- [More Axolotl Variants Mod](#more-axolotl-variants-mod)
 - [Mounts and Monsters](#mounts-and-monsters)
 - [Mutants and Zombies](#mutants-and-zombies)
 - [Party Creepers](#party-creepers)

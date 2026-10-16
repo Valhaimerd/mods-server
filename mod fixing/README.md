@@ -16,7 +16,7 @@ Treat JARs already in `1 fixed packs` as completed. Reopen one only when the use
 
 ## Gateway of Doom targeting
 
-The active `gatewayofdoom-neoforge-26.2-2.2.1-PlayerReviveTargetFix.jar` skips players downed by PlayerRevive or Better Revive when selecting a gateway mob's target. The original two combat goals used the nearest player and treated a downed player as alive; that prevented them from selecting a nearby active teammate. The portal's initial target search follows the same rule. Both running mob goals now reconsider the nearest eligible player from each mob's position every three seconds, so an active teammate who moves closer can draw aggro before the original target dies or leaves range. Aggression retains its daytime/land restriction. Patch source is in `source/gateway-of-doom-downed-target/`; the original JAR is in `retired packs/`. The new JAR is installed only in this project, not the separate desktop server.
+The active `gatewayofdoom-neoforge-26.2-2.3.4.jar` keeps upstream 2.3.4's pressure-sharing wave AI, attacker reactions, periodic target review, four bosses, and custom mobs. Its repack changes only target validity: players downed by PlayerRevive or Better Revive are ineligible while other upstream rules remain. The guard covers the shared wave selector, boss focus and entity validators, and custom Rogue, Kobold, Stone Golem, and Cinder Wraith validators. Patch source is in `source/gateway-of-doom-2.3.4-downed-target/`; upstream 2.3.4 and the previous fixed 2.2.1 JAR are in `retired packs/`. The archive and Java 25 class versions were inspected, but a multiplayer encounter has not yet been run for this version. The new JAR is installed only in this project, not the separate desktop server.
 
 ## Death and grave system
 

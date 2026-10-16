@@ -14,16 +14,16 @@
 
 - Source: `shaders/Modded Swords x Punchy! 1.21.1 v1.3.2.zip` (read-only; despite its folder, this is a **resource pack**, not a shader pack).
 - Installed mods: `mod store/punchy-2.8f-neoforge-26.2.jar`, `mods/bettercombat-neoforge-3.2.2+26.2.jar`, and the RPG Series weapon modules in `mods/`.
-- Result: `mod store/modded-swords-x-punchy-compat-26.2-1.3.2.jar`, with a build script under ignored `tmp/punchy-26-2-client/`. Keep the original ZIP for comparison. The source pack is marked All Rights Reserved; redistribution permission has not been verified.
+- Trial result: the converted `modded-swords-x-punchy-compat-26.2-1.3.2.jar` was removed from `mod store` after reports of broken claymore, custom skill, and bow idle animations, an invisible crossbow, and a held model visible on the pause screen. It is retained locally under `mod fixing/retired packs/` for comparison. Keep the original ZIP for reference. The source pack is marked All Rights Reserved; redistribution permission has not been verified.
 - In an isolated 26.2 client, sustained attack input and ordinary Better Combat combos show one moving held weapon, with no frozen duplicate. Check both hands, idle, mining, use, weapon switching, and reload after enabling the pack.
 - If the same duplicate appears with the compatibility ZIP disabled, stop treating the ZIP as the cause. Investigate Punchy's Better Combat setting or the renderer interaction before editing 174 mappings.
-- No changes to the player's personal `.minecraft` or worlds during development. Decide separately whether and how the finished resource pack is distributed; the installer currently syncs mod JARs, not resource packs.
+- Isolated client work left personal worlds untouched. On 2026-10-16, the user's live Punchy config was found to have `bettercombatCompat: false` despite the new JAR default. The config was backed up and set to `true`. After restarting, the user confirmed that the same weapon view showed one set of hands. The installer now applies the same setting to existing client configs.
 
 ## Findings from the installed files
 
 - The legacy ZIP contains **174 compat JSON files** at `assets/minecraft/punchy/compat/`, plus `pack.mcmeta`, `pack.png`, and a blacklist note. It declares `pack_format: 15` and `supported_formats: [15, 34]`.
 - Punchy 2.8f's embedded 26.2 pack declares `pack_format: 88`, `min_format: 88`, and `max_format: 88`. Use that installed pack as the metadata reference; do not assume the old format range covers 26.2.
-- Punchy 2.8f's generated `config/punchy/punchy_config.json` has `bettercombatCompat: false` by default, as confirmed in the isolated client. This is a plausible contributor to duplicate held-item animation and must be tested visually before claiming the root cause.
+- The original Punchy 2.8f generated `config/punchy/punchy_config.json` with `bettercombatCompat: false` in the isolated client. The user's existing config also retained `false`; changing that saved value to `true` and restarting removed the duplicate hands in the reported view.
 - The pack's Punchy 2.8f JAR now changes only `punchy/config/PunchyConfig$Data.class`: its constructor sets `bettercombatCompat` to `true` instead of `false`. A fresh isolated client generated `bettercombatCompat: true` and loaded the compatibility JAR. Existing client configs preserve their saved value and must be switched separately.
 - The old JSON already uses Punchy's `customGroups`, `item`, `itemSpecific`, `customAnimation`, and `betterCombat` fields. It is therefore **not** merely missing a Better Combat definition. Punchy 2.8f still has a `bettercombatCompat` setting and a `BetterCombatEntry` type with `melee_combo` attack slots; verify how the current parser applies each legacy field before changing values.
 - The old pack references **107 weapon IDs** across the five installed `archers`, `arsenal`, `wizards`, `rogues`, and `paladins` namespaces. The corresponding item filenames exist in the installed 26.2 JARs. That establishes useful starting coverage, not proof that animations or item semantics still match.
@@ -36,7 +36,7 @@
 | --- | --- |
 | `shaders/Modded Swords x Punchy! 1.21.1 v1.3.2.zip` | Immutable reference archive. |
 | `tmp/punchy-26-2-client/` | Ignored isolated client, build script, logs, and captured comparisons. |
-| `mod store/modded-swords-x-punchy-compat-26.2-1.3.2.jar` | Client-only NeoForge resource JAR with the source pack's 174 compat JSON files and 26.2 pack metadata. |
+| `mod fixing/retired packs/modded-swords-x-punchy-compat-26.2-1.3.2.jar` | Retained local copy of the client-only NeoForge resource JAR for the comparison. |
 | `docs/superpowers/plans/2026-10-16-punchy-modded-swords-26-2.md` | Decisions, test observations, and any scope changes. |
 | `README.md` and `docs/MODLIST.md` | Update only when a working pack is actually installed or distributed. |
 
@@ -72,7 +72,7 @@
 
 ### Task 5: Integrate the proven result
 
-- [x] Place the converted resource JAR in `mod store/`, the pack's client-only JAR folder. The installer can discover it by content hash after it is committed, subject to the source author's redistribution terms.
+- [x] Place the converted resource JAR in `mod store/` for the initial trial; remove it from the active pack for the next comparison. The installer removes obsolete extras when the revised pack is synced.
 - [ ] Update the README and Punchy handbook entry with the exact enable order and any required Punchy setting, only after observing a working result.
 - [x] Identify the original pack's **All Rights Reserved** terms. Redistribution permission has not been verified; the user requested a main-branch push of this converted JAR.
 - [ ] Record tested versions, results, and any remaining affected weapons. Commit or push only when requested.

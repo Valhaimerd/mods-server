@@ -14,6 +14,10 @@ Read this file first, then read the note in any task-specific folder. For option
 
 Treat JARs already in `1 fixed packs` as completed. Reopen one only when the user asks for another change or reports a follow-up issue.
 
+## Punchy and Better Combat first-person rendering
+
+The active Punchy 2.8f client JAR defaults `bettercombatCompat` to `true` for new configs. The duplicate hands reported on 2026-10-16 remained because the user's existing `config/punchy/punchy_config.json` still stored `false`; a JAR default does not override saved settings. The existing config was backed up under `.minecraft/modpack-backups` and changed to `true`. After restarting Minecraft, the user confirmed that the same weapon view showed one set of hands. The installer now updates this single setting on client installs and backs up the previous config. The separate Modded Swords x Punchy! resource JAR was removed from `mod store` for a comparison after the user reported broken claymore, custom skill, and bow idle animations, an invisible crossbow, and a held model visible on the pause screen. The JAR is retained locally in `retired packs`. Its involvement is not confirmed until the comparison is complete.
+
 ## Gateway of Doom targeting
 
 The active `gatewayofdoom-neoforge-26.2-2.3.4.jar` keeps upstream 2.3.4's pressure-sharing wave AI, attacker reactions, periodic target review, four bosses, and custom mobs. Its repack changes only target validity: players downed by PlayerRevive or Better Revive are ineligible while other upstream rules remain. The guard covers the shared wave selector, boss focus and entity validators, and custom Rogue, Kobold, Stone Golem, and Cinder Wraith validators. Patch source is in `source/gateway-of-doom-2.3.4-downed-target/`; upstream 2.3.4 and the previous fixed 2.2.1 JAR are in `retired packs/`. The archive and Java 25 class versions were inspected, but a multiplayer encounter has not yet been run for this version. The new JAR is installed only in this project, not the separate desktop server.

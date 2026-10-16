@@ -101,6 +101,16 @@ internal static class Program
                 }
             }
 
+            if (request.Mode == InstallMode.Client)
+            {
+                var punchyBackup = await PunchyCompatibility.EnableBetterCombatAsync(target);
+                if (punchyBackup is not null)
+                {
+                    Console.WriteLine("Punchy Better Combat compatibility enabled. Restart Minecraft to apply it.");
+                    Console.WriteLine($"Previous Punchy config backup: {punchyBackup}");
+                }
+            }
+
             OpenHandbookAfterRun(options.CheckOnly, cancelled: false, updateSucceeded: true);
             return 0;
         }

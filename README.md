@@ -18,6 +18,8 @@ For Server, choose `Select file location…` and select the server's existing `m
 
 The Advanced Core/Loot/Worldgen Info group and ALICompat are in `mod store` because Advanced Worldgen Info's worldgen scan held the dedicated server thread after startup. Their client features may be limited when the server does not provide their data.
 
+Punchy is in `mod store`: its first-person animations run on the client and do not require a dedicated-server copy.
+
 For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 
 After a successful install or repair, the installer opens the [player handbook PDF](https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf) in the default browser. It also opens the guide when the installation is already current; `--check`, cancellation, and failed updates do not open it.

@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 306 synchronized JARs · 15 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 16 client extras</p>
 
 Last audited: 2026-10-16<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 306 synchronized JARs plus 15 client-store JARs
+Current distribution: 307 synchronized JARs plus 16 client-store JARs
 
 ## About this handbook
 
@@ -33,7 +33,7 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr><td><a href="#quick-reference">Quick Reference</a></td><td>5</td></tr>
     <tr class="toc-part"><td><a href="#part-i--featured-mechanics">Part I — Featured Mechanics</a></td><td>6</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-iourus-races">Races, RPG classes, and Astral Dimension</a></td><td>7</td></tr>
-    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, The Sift, mining, and enchantments</a></td><td>8</td></tr>
+    <tr class="toc-subsection"><td><a href="#feature-better-party">Party, The Sift, archeology, and enchantments</a></td><td>8</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-xaeros-world-map">World map, caves, Nether, and End</a></td><td>10</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-starcatcher">Fishing and Chrono Dawn</a></td><td>12</td></tr>
     <tr class="toc-subsection"><td><a href="#feature-farmers-delight">Cooking and alchemy</a></td><td>13</td></tr>
@@ -76,9 +76,9 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>55</td></tr>
     <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>56</td></tr>
     <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>58</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>59</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>61</td></tr>
   </tbody>
 </table>
 
@@ -125,7 +125,7 @@ These systems change how you build a character, explore, survive, and manage you
   <a class="feature-card" href="#feature-astral-dimension"><img src="assets/mod-icons/astral-dimension.png" alt=""><span class="feature-card-name">Astral Dimension</span><span class="feature-card-desc">Two realms and a multi-boss Void journey.</span></a>
   <a class="feature-card" href="#feature-better-party"><img src="assets/mod-icons/better-party.jpg" alt=""><span class="feature-card-name">Better Party</span><span class="feature-card-desc">Roles, shared XP, and a group HUD.</span></a>
   <a class="feature-card" href="#feature-the-sift"><img src="assets/mod-icons/mielons-the-sift.webp" alt=""><span class="feature-card-name">The Sift</span><span class="feature-card-desc">Awaken an Ancient City portal and explore a strange realm.</span></a>
-  <a class="feature-card" href="#feature-one-key-miner"><img src="assets/mod-icons/onekeyminer.png" alt=""><span class="feature-card-name">OneKeyMiner</span><span class="feature-card-desc">Vein mining, harvesting, and replanting.</span></a>
+  <a class="feature-card" href="#feature-better-archeology"><img src="assets/mod-icons/better-archeology.png" alt=""><span class="feature-card-name">Better Archeology</span><span class="feature-card-desc">Brush fossils and identify ancient artifacts.</span></a>
   <a class="feature-card" href="#feature-penchant"><img src="assets/mod-icons/penchant.png" alt=""><span class="feature-card-name">Penchant</span><span class="feature-card-desc">Enchantments grow as gear is used.</span></a>
   <a class="feature-card" href="#feature-xaeros-world-map"><img src="assets/mod-icons/xaero-s-world-map.png" alt=""><span class="feature-card-name">Xaero's World Map</span><span class="feature-card-desc">A map of the terrain you have explored.</span></a>
   <a class="feature-card" href="#feature-alexs-caves"><img src="assets/mod-icons/alex-s-caves.png" alt=""><span class="feature-card-name">Alex's Caves</span><span class="feature-card-desc">Rare biomes below the Overworld.</span></a>
@@ -259,27 +259,27 @@ Natural Rifts may appear after time in The Sift, but they close after five minut
 </section>
 
 <section class="feature-detail">
-<h3 id="feature-one-key-miner" class="feature-heading"><img src="assets/mod-icons/onekeyminer.png" alt="">OneKeyMiner</h3>
+<h3 id="feature-better-archeology" class="feature-heading"><img src="assets/mod-icons/better-archeology.png" alt="">Better Archeology</h3>
 
-- **Chain mining:** Breaking one block can clear adjacent matching blocks in a connected group.
-- **Farming:** Matching crop harvests and nearby planting can be chained as well.
-- **Costs:** Tools still lose durability and the action can depend on hunger or configured limits.
-- **Control:** The chain action only runs while its assigned activation control is held.
+- **Sites:** New structures and fossil sites turn ordinary exploration into archeological expeditions.
+- **Brushing:** Suspicious blocks and fossiliferous dirt can reveal artifact shards and fossil pieces.
+- **Artifacts:** Combine shards into an unidentified artifact, then analyze it at an Archeology Table with a brush.
+- **Rewards:** Identified artifacts can provide special enchantments; completed fossils can also serve as displays.
 
 
 
-**Mining and farming in chains**
+**From a dig site to an artifact**
 
-1. Hold `C` while breaking a small group of matching blocks to see how far the chain spreads.
-2. Try the same action on mature crops. The mod can chain harvesting and nearby planting when the needed items are available.
-3. Check hunger and tool durability before clearing a large vein or field. Chained work still spends normal resources.
-4. Open its configuration with `Ctrl + C` when you need to inspect block limits or tool-protection rules.
+1. Carry a brush while exploring ruins, old graves, and fossil sites. Look for suspicious blocks, pots, and fossiliferous dirt before breaking the surrounding terrain.
+2. Brush promising blocks to collect finds. Fossil pieces come from fossiliferous dirt at their respective sites; artifact shards can come from pots and suspicious blocks.
+3. Gather enough shards for an unidentified artifact. Use a brush at an Archeology Table to reveal the artifact, then inspect its effect and equipment requirements.
+4. Assemble fossil pieces for a collection or display. Check JEI for the installed recipes before spending rare finds.
 
-Test beside a safe patch first. Connected blocks may extend farther than the one break you intended, and server settings can stop a chain early.
+Bring spare brushes and mark promising sites on the world map so you can return after clearing your inventory. The mod adds structures to world generation, so search unexplored chunks for new sites in an existing world.
 
-<p class="feature-tip"><strong>Quick tip</strong> Try a short chain first, then check the tool before a large vein.</p>
+<p class="feature-tip"><strong>Quick tip</strong> Brush the dig site before mining through it; fragile clues may be lost when blocks are broken.</p>
 
-<p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/onekeyminer_nf">official mod page</a>.</p>
+<p class="feature-source">Mechanics source: <a href="https://www.curseforge.com/minecraft/mc-mods/better-archeology">official mod page</a> · <a href="https://github.com/Pandarix/BetterArcheology/wiki">author's guide</a>.</p>
 </section>
 
 <section class="feature-detail">
@@ -1842,6 +1842,20 @@ The sky, weather, and plants can continue changing while players sleep. A failed
 
 <div class="core-mod-entry">
 
+#### Better Archeology
+
+- **Type:** Archeology and exploration
+- **Core mechanic:** Adds dig sites, fossils, and artifacts to the world.
+- **Player guidance:** Bring a brush and inspect suspicious blocks before clearing a structure.
+
+Its fossil and artifact route is explained in the [featured guide](#feature-better-archeology). New sites appear in unexplored terrain.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-archeology">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Dungeons and Taverns
 
 - **Type:** Structures and exploration
@@ -3166,6 +3180,20 @@ Visual differences help distinguish categories in a crowded inventory. Read the 
 
 <div class="core-mod-entry">
 
+#### Punchy
+
+- **Type:** Client-side animation feature
+- **Core mechanic:** Adds fluid first-person hand and held-item animations with in-hand physics.
+- **Player guidance:** Tune the visual settings in the mod's in-game configuration screen if an animation obscures an action.
+
+Punchy changes presentation on each player's client without changing server combat rules. It is distributed from `mod store` and does not need a dedicated-server copy.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/punchy-fpa">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Quick Skin
 
 - **Type:** Cosmetic
@@ -3207,7 +3235,7 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 </div>
 
 </div>
-<p class="core-category-description">Cosmetic mods change how characters and items look and how players interact socially. Auras customizes the enchantment glint on equipment, SimpleHats Lite can use vanity Curios slots, and skin, potion, cat, and pat effects have their own visual roles.</p>
+<p class="core-category-description">Cosmetic mods change how characters and items look and how players interact socially. Auras customizes the enchantment glint on equipment, SimpleHats Lite can use vanity Curios slots, and Punchy adds first-person animation on the client. Skin, potion, cat, and pat effects have their own visual roles.</p>
 </section>
 
 <section class="core-category">
@@ -3722,6 +3750,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Auras](#auras)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
 - [Barricades](#barricades)
+- [Better Archeology](#feature-better-archeology)
 - [Better Combat](#better-combat-1)
 - [Better End](#better-end)
 - [Better Nether](#better-nether)
@@ -3824,6 +3853,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Potions Stack](#potions-stack)
 - [Pro Placer](#pro-placer-1)
 - [Pufferfish's Skills](#pufferfishs-skills)
+- [Punchy](#punchy)
 - [Quick Skin](#quick-skin)
 - [Relics](#relics)
 - [Ribbits](#ribbits)
@@ -3980,6 +4010,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Astral Dimension](#feature-astral-dimension)
 - [ATi Structures](#ati-structures)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
+- [Better Archeology](#feature-better-archeology)
 - [Chrono Dawn](#feature-chrono-dawn)
 - [Dungeons and Taverns](#dungeons-and-taverns)
 - [Dungeons and Taverns overhauls](#dungeons-and-taverns-overhauls)

@@ -36,3 +36,7 @@ installer/obj/
 /output/
 /tmp/
 /mod backup/
+
+# Local Punchy compatibility references; not part of the installed pack
+/shaders/Modded Swords x Punchy! 1.21.1 v1.3.2.zip
+/shaders/modded-swords-x-punchy-compat-26.2-1.3.2.jar

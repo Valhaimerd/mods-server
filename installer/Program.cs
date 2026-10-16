@@ -103,10 +103,10 @@ internal static class Program
 
             if (request.Mode == InstallMode.Client)
             {
-                var punchyBackup = await PunchyCompatibility.EnableBetterCombatAsync(target);
+                var punchyBackup = await PunchyCompatibility.ApplyRecommendedSettingsAsync(target);
                 if (punchyBackup is not null)
                 {
-                    Console.WriteLine("Punchy Better Combat compatibility enabled. Restart Minecraft to apply it.");
+                    Console.WriteLine("Punchy RPG combat compatibility configured. Restart Minecraft to apply it.");
                     Console.WriteLine($"Previous Punchy config backup: {punchyBackup}");
                 }
             }

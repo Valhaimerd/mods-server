@@ -1670,7 +1670,7 @@ The dragon can grow stronger after previous victories and with more players. Fol
 - **Core mechanic:** Opens timed, wave-based arena encounters with an on-screen boss bar, escalating enemies, and rewards for completing every wave.
 - **Player guidance:** Watch its boss bar for waves, enemies, and remaining time.
 
-The event keeps enemies near its arena. Regroup outside the boundary instead of drawing the wave toward a base.
+The event keeps enemies near its arena. Its mobs reconsider nearby active players about every three seconds, so a teammate who moves closer may draw their attacks; downed players are skipped. Regroup outside the boundary instead of drawing the wave toward a base.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/gateway-of-doom">Official mod page</a></p>
 

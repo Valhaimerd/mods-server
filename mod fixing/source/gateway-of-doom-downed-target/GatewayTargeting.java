@@ -12,6 +12,7 @@ import de.mrstilu2k6.better_revive.util.DownedPlayerManager;
 
 /** Shared gateway targeting rules for rescue-aware multiplayer combat. */
 public final class GatewayTargeting {
+    private static final int RETARGET_INTERVAL_TICKS = 60;
     private GatewayTargeting() {}
 
     public static boolean isActive(Player player) {
@@ -21,11 +22,15 @@ public final class GatewayTargeting {
     }
 
     public static Player nearestActive(Mob mob, double range) {
+        return nearestActive(mob, range, false);
+    }
+
+    public static Player nearestActive(Mob mob, double range, boolean daytimeLandOnly) {
         Level level = mob.level();
         Player nearest = null;
         double best = range * range;
         for (Player player : level.players()) {
-            if (!isActive(player)) continue;
+            if (!isActive(player) || !canAttackInCurrentMode(mob, player, daytimeLandOnly)) continue;
             double distance = mob.distanceToSqr(player);
             if (distance <= best) {
                 best = distance;
@@ -33,6 +38,19 @@ public final class GatewayTargeting {
             }
         }
         return nearest;
+    }
+
+    private static boolean canAttackInCurrentMode(Mob mob, Player player, boolean daytimeLandOnly) {
+        return !daytimeLandOnly || !mob.level().isBrightOutside() || !player.isInWater();
+    }
+
+    /** Reconsider the nearest eligible player every three seconds per mob. */
+    public static Player refreshTarget(Mob mob, Player current, double range, boolean daytimeLandOnly) {
+        if (current != null && mob.tickCount % RETARGET_INTERVAL_TICKS != 0
+                && isActive(current) && canAttackInCurrentMode(mob, current, daytimeLandOnly)) {
+            return current;
+        }
+        return nearestActive(mob, range, daytimeLandOnly);
     }
 
     public static ServerPlayer nearestActive(ServerLevel level, Entity origin) {

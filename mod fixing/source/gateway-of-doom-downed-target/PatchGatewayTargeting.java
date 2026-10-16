@@ -23,9 +23,11 @@ public final class PatchGatewayTargeting implements Opcodes {
                     replaceAliveCheck(method); changes++;
                 } else if (name.equals("GatewayAggressionGoal") && method.name.equals("canContinueToUse")) {
                     replaceAliveCheck(method); changes++;
+                } else if (!name.equals("GatewayPortalEntity") && method.name.equals("tick")) {
+                    refreshMobTarget(method, name); changes++;
                 }
             }
-            int expected = name.equals("GatewayPortalEntity") ? 1 : 2;
+            int expected = name.equals("GatewayPortalEntity") ? 1 : 3;
             if (changes != expected) throw new IllegalStateException(name + ": " + changes + " changes");
             ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
             node.accept(writer);
@@ -47,8 +49,34 @@ public final class PatchGatewayTargeting implements Opcodes {
         method.instructions.add(new FieldInsnNode(GETFIELD, BASE + owner, "mob", "Lnet/minecraft/world/entity/Mob;"));
         method.instructions.add(new VarInsnNode(ALOAD, 0));
         method.instructions.add(new FieldInsnNode(GETFIELD, BASE + owner, owner.equals("GatewayForceTargetGoal") ? "range" : "followRange", "D"));
-        method.instructions.add(new MethodInsnNode(INVOKESTATIC, TARGETING, "nearestActive", "(Lnet/minecraft/world/entity/Mob;D)" + PLAYER, false));
+        if (owner.equals("GatewayAggressionGoal")) {
+            method.instructions.add(new VarInsnNode(ALOAD, 0));
+            method.instructions.add(new FieldInsnNode(GETFIELD, BASE + owner, "daytimeLandOnly", "Z"));
+            method.instructions.add(new MethodInsnNode(INVOKESTATIC, TARGETING, "nearestActive", "(Lnet/minecraft/world/entity/Mob;DZ)" + PLAYER, false));
+        } else {
+            method.instructions.add(new MethodInsnNode(INVOKESTATIC, TARGETING, "nearestActive", "(Lnet/minecraft/world/entity/Mob;D)" + PLAYER, false));
+        }
         method.instructions.add(new InsnNode(ARETURN));
+    }
+
+    private static void refreshMobTarget(MethodNode method, String owner) {
+        InsnList prefix = new InsnList();
+        prefix.add(new VarInsnNode(ALOAD, 0));
+        prefix.add(new VarInsnNode(ALOAD, 0));
+        prefix.add(new FieldInsnNode(GETFIELD, BASE + owner, "mob", "Lnet/minecraft/world/entity/Mob;"));
+        prefix.add(new VarInsnNode(ALOAD, 0));
+        prefix.add(new FieldInsnNode(GETFIELD, BASE + owner, "target", PLAYER));
+        prefix.add(new VarInsnNode(ALOAD, 0));
+        prefix.add(new FieldInsnNode(GETFIELD, BASE + owner, owner.equals("GatewayForceTargetGoal") ? "range" : "followRange", "D"));
+        if (owner.equals("GatewayAggressionGoal")) {
+            prefix.add(new VarInsnNode(ALOAD, 0));
+            prefix.add(new FieldInsnNode(GETFIELD, BASE + owner, "daytimeLandOnly", "Z"));
+        } else {
+            prefix.add(new InsnNode(ICONST_0));
+        }
+        prefix.add(new MethodInsnNode(INVOKESTATIC, TARGETING, "refreshTarget", "(Lnet/minecraft/world/entity/Mob;" + PLAYER + "DZ)" + PLAYER, false));
+        prefix.add(new FieldInsnNode(PUTFIELD, BASE + owner, "target", PLAYER));
+        method.instructions.insert(prefix);
     }
 
     private static void replaceAliveCheck(MethodNode method) {

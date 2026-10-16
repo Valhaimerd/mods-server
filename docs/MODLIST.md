@@ -3186,7 +3186,7 @@ Visual differences help distinguish categories in a crowded inventory. Read the 
 - **Core mechanic:** Adds fluid first-person hand and held-item animations with in-hand physics.
 - **Player guidance:** Tune the visual settings in the mod's in-game configuration screen if an animation obscures an action.
 
-Punchy changes presentation on each player's client without changing server combat rules. It is distributed from `mod store` and does not need a dedicated-server copy. The pack enables Better Combat integration and lets Better Combat and Spell Engine show RPG Series weapons and skill animations in first person. The client installer updates saved Punchy settings with a backup. Restart the game after installing to apply them.
+Punchy changes presentation on each player's client without changing server combat rules. It is distributed from `mod store` and does not need a dedicated-server copy. This pack uses the original NeoForge 26.2 Punchy release and does not change saved Punchy settings during installation. Modded Swords x Punchy! compatibility is being revised separately.
 
 <p class="core-mod-source"><a href="https://modrinth.com/mod/punchy-fpa">Official mod page</a></p>
 

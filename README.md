@@ -18,7 +18,7 @@ For Server, choose `Select file location…` and select the server's existing `m
 
 The Advanced Core/Loot/Worldgen Info group and ALICompat are in `mod store` because Advanced Worldgen Info's worldgen scan held the dedicated server thread after startup. Their client features may be limited when the server does not provide their data.
 
-Punchy is in `mod store`: its first-person animations run on the client and do not require a dedicated-server copy. The repacked JAR enables Better Combat compatibility and hands RPG Series weapons to Better Combat and Spell Engine for their first-person weapon and skill animations. Client installs merge these defaults into an existing `config/punchy/punchy_config.json`, preserve other settings, and back up the previous config under `modpack-backups`. Restart Minecraft after installation. Server installs and `--check` leave the config untouched. The optional Modded Swords x Punchy! compatibility resource is not part of the installed pack.
+Punchy is in `mod store`: its first-person animations run on the client and do not require a dedicated-server copy. The active JAR is the original upstream NeoForge 26.2 release. The installer leaves `config/punchy/punchy_config.json` untouched. Modded Swords x Punchy! is retained locally for a separate 26.2 compatibility pass and is not part of the installed pack.
 
 For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 

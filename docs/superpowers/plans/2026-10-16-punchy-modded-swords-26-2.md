@@ -1,5 +1,11 @@
 # Modded Swords x Punchy! 26.2 Compatibility Plan
 
+## Current baseline and next pass (2026-10-16)
+
+The active `mod store/punchy-2.8f-neoforge-26.2.jar` is again the exact upstream NeoForge 26.2 file from Modrinth version `3Kktuo5t`. The installer no longer changes Punchy settings, and the user's saved `bettercombatCompat` is `false`. Earlier notes below describe past trials, not the current distributed state. The converted compatibility JAR remains inactive in `shaders/`; do not publish its All Rights Reserved content without checking redistribution permission.
+
+For the next isolated pass, start with upstream Punchy plus Better Combat and one RPG weapon module. Compare compatibility off and on, with and without the converted resource, using a claymore, bow, crossbow, and a skill weapon. Trace which renderer submits the held item during idle, attack, cast, and pause. Port only the matching RPG JSON mappings to the 26.2 schema and current item IDs; correct pose and attack names one weapon family at a time. Keep Punchy's Better Combat flag separate from the weapon mappings so a single result does not mask another. Require one visible weapon and intact idle, attack, draw, skill, and pause states before including the resource in `mod store/`. Keep the user's profile out of those trials.
+
 > **For agentic workers:** Implement this plan task by task after the user asks for the conversion. Keep the supplied ZIP intact and use an isolated client profile for runtime checks.
 
 **Goal:** Make the installed Punchy 2.8f and Better Combat 3.2.2 show one correctly animated held weapon during attacks in Minecraft 26.2, while retaining relevant modded-weapon tuning from the supplied resource pack.

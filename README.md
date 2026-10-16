@@ -48,6 +48,8 @@ dotnet publish .\installer\ModsServerInstaller.csproj -c Release -r win-x64 --se
 
 The resulting self-contained `dist\ModsServerInstaller.exe` runs on 64-bit Windows without requiring a separate .NET installation.
 
+For GitHub releases, create a draft release and push its `installer-v*` tag. The Windows installer workflow builds that tag, runs `--self-test`, uploads `ModsServerInstaller.exe`, and publishes the release as latest. It can also be run manually for an existing release tag.
+
 ## Maintaining the handbook
 
 When the pack changes, follow the [player handbook maintenance checklist](docs/HANDBOOK_MAINTENANCE.md) to audit player-facing mods, controls, screenshots, indexes, and distribution counts without adding libraries or APIs to the gameplay catalog.

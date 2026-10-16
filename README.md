@@ -18,7 +18,7 @@ For Server, choose `Select file location…` and select the server's existing `m
 
 The Advanced Core/Loot/Worldgen Info group and ALICompat are in `mod store` because Advanced Worldgen Info's worldgen scan held the dedicated server thread after startup. Their client features may be limited when the server does not provide their data.
 
-Punchy is in `mod store`: its first-person animations run on the client and do not require a dedicated-server copy.
+Punchy is in `mod store`: its first-person animations run on the client and do not require a dedicated-server copy. This pack sets Punchy's Better Combat compatibility on by default for new client configs and includes the Modded Swords x Punchy! 26.2 resource compatibility JAR. Existing Punchy configs keep their saved choice; set `bettercombatCompat` to `true` in `config/punchy/punchy_config.json` or the in-game Punchy configuration to use the integration.
 
 For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
 

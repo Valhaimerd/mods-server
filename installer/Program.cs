@@ -89,6 +89,16 @@ internal static class Program
                 Console.WriteLine("Mods are already up to date.");
             }
 
+            if (request.Mode == InstallMode.Client)
+            {
+                var punchy = await PunchyCompatibility.ApplyAsync(target);
+                Console.WriteLine(punchy.Changed
+                    ? "Punchy Better Combat compatibility enabled."
+                    : "Punchy Better Combat compatibility is already enabled.");
+                if (punchy.BackupPath is not null)
+                    Console.WriteLine($"Previous Punchy config backup: {punchy.BackupPath}");
+            }
+
             if (request.ApplyRecommendedKeybinds)
             {
                 var result = await RecommendedKeybinds.ApplyAsync(target);
@@ -532,6 +542,8 @@ internal static class Program
         {
             throw new InvalidOperationException("Self-test failed: installer arguments changed or --yes is not a no-op.");
         }
+
+        await PunchyCompatibility.RunSelfTestAsync();
 
         var missingTargetRoot = Path.Combine(Path.GetTempPath(), $"installer-check-{Guid.NewGuid():N}");
         var missingTarget = Path.Combine(missingTargetRoot, "mods");

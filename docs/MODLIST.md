@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 16 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 17 client extras</p>
 
 Last audited: 2026-10-16<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 307 synchronized JARs plus 16 client-store JARs
+Current distribution: 307 synchronized JARs plus 17 client-store JARs
 
 ## About this handbook
 
@@ -3186,7 +3186,7 @@ Visual differences help distinguish categories in a crowded inventory. Read the 
 - **Core mechanic:** Adds fluid first-person hand and held-item animations with in-hand physics.
 - **Player guidance:** Tune the visual settings in the mod's in-game configuration screen if an animation obscures an action.
 
-Punchy changes presentation on each player's client without changing server combat rules. It is distributed from `mod store` and does not need a dedicated-server copy. This pack uses the original NeoForge 26.2 Punchy release and does not change saved Punchy settings during installation. Modded Swords x Punchy! compatibility is being revised separately.
+Punchy changes presentation on each player's client without changing server combat rules. Its local 26.2 repair and the revised Modded Swords x Punchy! mappings are client-only extras. RPG weapons follow the animated hands; skills keep their original Spell Engine motions, then return to Punchy. Client installs enable Punchy's Better Combat compatibility automatically and back up existing configs; other settings are preserved. Remove old RPG item blacklist entries to use the mappings.
 
 <p class="core-mod-source"><a href="https://modrinth.com/mod/punchy-fpa">Official mod page</a></p>
 

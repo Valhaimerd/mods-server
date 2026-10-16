@@ -1,5 +1,7 @@
 # Punchy Combat Animation Compatibility Implementation Plan
 
+> **Historical fallback investigation:** The current full RPG-weapon and skills implementation is tracked in [the Modded Swords x Punchy 26.2 plan](2026-10-16-punchy-modded-swords-26-2.md#current-implementation-pass-2026-10-16). Its current-pass section supersedes this document's completed blacklist/repack claims; that repack and installer override were rolled back. Namespace blacklisting is not acceptance for the new request.
+
 > **For agentic workers:** Use `superpowers:executing-plans` to work through this plan. Keep the supplied screenshots and the user's confirmed comparison as evidence; do not assume that the retired Modded Swords overlay caused these symptoms.
 
 **Goal:** Preserve Punchy's single set of first-person hands while making claymores, bows, crossbows, and RPG skill animations display correctly with Better Combat and Spell Engine on Minecraft 26.2.

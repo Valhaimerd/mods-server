@@ -1,10 +1,49 @@
 # Modded Swords x Punchy! 26.2 Compatibility Plan
 
-## Current baseline and next pass (2026-10-16)
+## Current implementation pass (2026-10-16)
 
-The active `mod store/punchy-2.8f-neoforge-26.2.jar` is again the exact upstream NeoForge 26.2 file from Modrinth version `3Kktuo5t`. The installer no longer changes Punchy settings, and the user's saved `bettercombatCompat` is `false`. Earlier notes below describe past trials, not the current distributed state. The converted compatibility JAR remains inactive in `shaders/`; do not publish its All Rights Reserved content without checking redistribution permission.
+This section supersedes the historical conversion, blacklist trials and rollback claims below.
 
-For the next isolated pass, start with upstream Punchy plus Better Combat and one RPG weapon module. Compare compatibility off and on, with and without the converted resource, using a claymore, bow, crossbow, and a skill weapon. Trace which renderer submits the held item during idle, attack, cast, and pause. Port only the matching RPG JSON mappings to the 26.2 schema and current item IDs; correct pose and attack names one weapon family at a time. Keep Punchy's Better Combat flag separate from the weapon mappings so a single result does not mask another. Require one visible weapon and intact idle, attack, draw, skill, and pause states before including the resource in `mod store/`. Keep the user's profile out of those trials.
+**Installed result:** `mod store/punchy-2.8f-neoforge-26.2.jar` is now a local repair of upstream NeoForge 26.2 version `3Kktuo5t`, with the same active filename. `mod store/modded-swords-x-punchy-compat-26.2-1.3.2.jar` is the revised client resource. Both final artifacts are in `mod fixing/1 fixed packs/`. The exact upstream file and original ZIP remain available locally. Upstream 2.8f remains the newest NeoForge 26.2 release; the 26.3 hotfix is not a compatible update.
+
+**User decisions:** preserve original skill motions; fix the distant/detached first-person hands; stop the remaining individual weapon passes. Those decisions take precedence over the historical full-matrix checklist below. The follow-up client-installer change now merges `bettercombatCompat: true`, with a backup and other settings preserved; server installs and `--check` stay read-only for Punchy. No personal profile, personal world, or separate desktop server was changed in this pass.
+
+### Root causes and changes
+
+1. **Renderer conflict:** PAL's `PlayerModelMixin.translateToHand` replaces `ModelPart.translateAndRotate` while a combat pose is active. This bypasses Punchy's explicit-matrix correction, so an arm can render correctly while its held item disappears. The repair consumes Punchy's existing matrix directly only in its private held-item pass. No vanilla or third-person rendering method is patched. The unsuccessful model-normalization trial was removed.
+2. **Outdated resource:** the old ZIP covers 107 of 139 current RPG weapon-attribute definitions, reuses a hammer group alias for sickles, contains `ttack_critical`, and lacks many combo/ranged mappings. The new resource uses exact item rules for all 139 definitions (Archers 17, Arsenal 41, Paladins 33, Rogues 30, Wizards 18), removes collisions, resolves every referenced Punchy clip and supplies explicit combos/ranged mappings. Optional material variants register only when their providers are loaded.
+3. **Native skills:** Punchy's global compatibility code suppresses Spell Engine's first-person mode. The repair temporarily yields both hands when the engine's casting/release/misc layers are active, including fade-out, and resumes Punchy afterward. Original clips, positions, rotations, speed, and third-person poses are retained; native first-person arm visibility is enabled. No added body translation or scaling remains. The body-offset trial caused the detached-hands view and was removed after the user's report.
+4. **Configuration:** a newly generated Punchy config defaults `bettercombatCompat` to `true`, with no item blacklist. Client installation/repair now enables compatibility in saved configs too, backing up any changed file and preserving other settings. This also runs with already-current JARs and with recommended keybinds declined. Existing clients should remove old RPG namespace blacklist rules to use the mappings; keep native combat/spell first-person animation settings on `AUTO` for the handoff.
+
+### Verification and limits
+
+| Check | Result | Evidence / limit |
+| --- | --- | --- |
+| Old resource regression | Expected failure: 107/139; 101 diagnostics | `verify.py` against the immutable ZIP. |
+| Revised mappings | PASS: 139/139; zero diagnostics | `verify.py` against the installed compatibility JAR. |
+| Exact crossbow A/B | Item invisible before, visible after matrix fix | `tmp/punchy-analysis/crossbow-mapping-only.png` and `crossbow-matrix-fix.png`. |
+| Representative melee/ranged | Claymore attack and Arsenal bow idle/draw visible | `claymore-attack-fixed.png`, `bow-idle-fixed.png`, `bow-draw-fixed.png`. |
+| Skill handoff/recovery | PASS: hammer overhead animation and real Paladin barrier cast; native modes restored, Punchy resumed | `focused-skills-final.json`; no offset in packaged code. The overhead hammer can naturally cross the camera during its original motion. |
+| Individual weapon sweep | 124 idle captures; remaining passes stopped by user request | `tmp/punchy-analysis/weapons/`. These are not claims that every combo/use state passed. |
+| New-client defaults | Baseline fails, repaired constructor passes | `CheckDefaults.java`: compatibility enabled; no persistent weapon blacklist. |
+| Archive/classes | PASS: integrity and Java 25 major 69 | Three modified upstream classes and three added helper classes; no probe or obsolete positioning class. |
+| Handbook | Updated to 307 server-compatible + 17 client extras; PDF rebuilt | Same 68-page pagination; player controls and gameplay catalog count unchanged. |
+| PDF render/link check | PASS | All 68 pages rendered; 66 pixel-identical to the previous PDF. Only cover and Punchy page changed and were visually reviewed. No blank pages or missing HTML anchors. |
+| Whitespace | PASS | `git diff --check`. |
+| Icon source check | FAIL, unchanged baseline issue | `docs/tests/Test-ModIconSources.ps1`: Better Revive's existing downloaded-icon manifest row has an empty IconURL. Manifest and test are unchanged from HEAD. |
+| Icon rendering check | FAIL, stale baseline expectation | `docs/tests/Test-ModIconRendering.ps1` expects the keybind reference in Part I; the existing handbook/maintenance rules put it in Part VI. Heading order and test are unchanged from HEAD. Icons themselves render in the generated PDF. |
+
+
+Runtime: Minecraft 26.2, NeoForge 26.2.0.90, Punchy 2.8f, Better Combat 3.2.2, Spell Engine 1.10.5, Player Animation Library 1.2.6, Arsenal 1.5.1, RPG class modules 3.1.2. The client used an isolated flat test world and no shaders. Better End/Nether and required libraries were added to register material-dependent equipment. No full shader, left-handed, dual-wield, multiplayer, every-skill or every-weapon animation matrix is claimed. Individual passes were deliberately stopped, not silently marked complete.
+
+### Artifacts and rebuild
+
+- `mod fixing/source/punchy-rpg-26.2/README.md`: root cause, rebuild and verification commands; source workspace is intentionally ignored.
+- `mod fixing/source/punchy-rpg-26.2/{build.py,verify.py,PatchRpg.java,RpgRenderCompat.java,CheckDefaults.java}`: local implementation. Build pins the upstream SHA-512 and refuses a changed baseline or unexpected bytecode patch sites.
+- `tmp/punchy-analysis/`: coverage manifest, diagnostic captures and focused runtime report. `tmp/punchy-26-2-client/` contains the test-only probe and client; never distribute that probe.
+- `README.md`, `docs/MODLIST.md`, `docs/HANDBOOK_MAINTENANCE.md`, `mod fixing/README.md`, and `modpack-player-handbook.pdf`: synchronized with the installed result.
+
+The user subsequently requested publishing the completed pack to GitHub main and updating the installer release. Release installer-v1.4.0 includes the client compatibility merge. The original resource remains All Rights Reserved; this record does not claim upstream redistribution permission. The historical 174-file all-mod conversion below is retained as history, not current installation guidance.
 
 > **For agentic workers:** Implement this plan task by task after the user asks for the conversion. Keep the supplied ZIP intact and use an isolated client profile for runtime checks.
 

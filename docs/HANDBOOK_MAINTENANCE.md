@@ -60,10 +60,10 @@ Keep narrow equipment add-ons, small structure packs, cosmetic variants, and sec
 Current verified baseline:
 
 - 309 main-pack JARs;
-- 22 client-store JARs;
-- 181 alphabetical gameplay entries;
-- 173 entries with verified project icons from CurseForge or Modrinth, including nine group entries with representative member artwork, plus seven author icons from installed JARs and user-provided Bifrost artwork;
-- 43 keybind tables;
+- 23 client-store JARs;
+- 182 alphabetical gameplay entries;
+- 174 entries with verified project icons from CurseForge or Modrinth, including nine group entries with representative member artwork, plus seven author icons from installed JARs and user-provided Bifrost artwork;
+- 44 keybind tables;
 - 6 handbook parts;
 - zero broken internal links.
 

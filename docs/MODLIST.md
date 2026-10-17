@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 22 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 23 client extras</p>
 
 Last audited: 2026-10-17<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 309 synchronized JARs plus 22 client-store JARs
+Current distribution: 309 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -76,9 +76,9 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>56</td></tr>
     <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>57</td></tr>
     <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>60</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>62</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>61</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>63</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>63</td></tr>
   </tbody>
 </table>
 
@@ -3194,6 +3194,20 @@ Includes the client-only Borrow Their Emote add-on: look at an emoting player, u
 
 <div class="core-mod-entry">
 
+#### Armor Hider
+
+- **Type:** Client-side cosmetic display
+- **Core mechanic:** Hides selected armor pieces and elytra on your client without unequipping them or removing their protection.
+- **Player guidance:** Assign Open Armor Hider Menu in Controls, then choose the pieces and whether to affect yourself or all players.
+
+Helmets start hidden for all players in this mod's default settings. Choose Off to restore normal visibility; your settings do not change what another player's client renders.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/wades-armor-hider">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Auras
 
 - **Type:** Client-side cosmetic equipment customization
@@ -3782,6 +3796,12 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Open Emote Wheel |  |
 | Stop Playing Emote |  |
 
+#### Armor Hider
+
+| Action | Recommended key |
+|---|---|
+| Open Armor Hider Menu |  |
+
 #### Emotecraft: Borrow Their Emote
 
 | Action | Recommended key |
@@ -3795,7 +3815,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 |---|---|
 | Open Vectors |  |
 
-New emote and Vectors controls have no pack-assigned shortcut yet. Configure them in Controls before use; the existing recommended profile does not configure these additions.
+New emote, Vectors, and Armor Hider controls have no pack-assigned shortcut yet. Configure them in Controls before use; the existing recommended profile does not configure these additions.
 
 <div class="page-break" aria-hidden="true"></div>
 
@@ -3815,6 +3835,7 @@ New emote and Vectors controls have no pack-assigned shortcut yet. Configure the
 - [Antique Trading Ship](#antique-trading-ship)
 - [AppleSkin](#appleskin)
 - [Arcane Lanterns](#arcane-lanterns)
+- [Armor Hider](#armor-hider)
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Statues](#armor-statues)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
@@ -4205,6 +4226,7 @@ New emote and Vectors controls have no pack-assigned shortcut yet. Configure the
 
 #### Controls
 
+- [Armor Hider](#armor-hider)
 - [Advanced Loot Info](#advanced-loot-info)
 - [Advanced Worldgen Info](#advanced-worldgen-info)
 - [Emotecraft](#emotecraft)

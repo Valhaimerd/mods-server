@@ -13,7 +13,9 @@ Keep the ZIPs here; do not commit extracted duplicates. Installer v1.4.3 or newe
 
 Each archive must contain flat `.emotecraft` entries, preserving original Unicode filenames. The installer verifies each Git blob hash before extraction and rejects paths, links, and duplicate filenames within an archive. Updating or adding archives requires no further installer rebuild. Only clients install emotes; `--check` reports each pack without downloading ZIPs or creating folders.
 
-The destination is `emotes/Mods Server Pack` beside the selected instance's `mods` folder. Dances keeps its original flat destination and `modpack-state/emotes.json` tracking file for existing installations. Each additional archive uses a subfolder named after its ZIP without the extension, with separate `modpack-state/emotes-<pack>.json` tracking. This keeps identical filenames in different sets independent. The default TLauncher instance is `%APPDATA%\.minecraft`.
+The destination is `emotes/Mods Server Pack` beside the selected instance's `mods` folder. Installer v1.4.4 gives every archive a subfolder named after its ZIP without the extension. Dances retains its `modpack-state/emotes.json` tracking file; other sets use `modpack-state/emotes-<pack>.json`. Tracked legacy Dances files are backed up and removed from the flat parent folder during migration, including edited copies; untracked personal files stay in place. This keeps identical filenames in different sets independent. The default TLauncher instance is `%APPDATA%\.minecraft`.
+
+The client-store SPEmotes Translations JAR loads translations automatically for Minecraft 26.2, including local English additions for Dances 5. Select English in Minecraft for English names and descriptions; original filenames stay unchanged. See [packaging and rebuild notes](../docs/patches/spemotes-translations/README.md).
 
 Emotecraft reads emotes recursively. Open the wheel with G, then use All Emotes and add favorites to wheel slots. Installing files preserves wheel assignments and Emotecraft configuration.
 

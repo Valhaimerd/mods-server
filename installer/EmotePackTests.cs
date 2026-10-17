@@ -88,6 +88,36 @@ internal static class EmotePackTests
             catch (InvalidDataException) { invalidScope = true; }
             Require(invalidScope, "reject escaping pack scope");
 
+            var migrationGame = Path.Combine(root, "migration");
+            var migrationMods = Path.Combine(migrationGame, "mods");
+            var legacyPack = Path.Combine(migrationGame, "emotes", "Mods Server Pack");
+            var legacy = handler.Set(("dance.emotecraft", "dance"), ("edited.emotecraft", "original"))
+                with { Name = "SPEmotes Dances 5.zip" };
+            await EmotePack.ApplyAsync(http, migrationMods, legacy);
+            await File.WriteAllTextAsync(Path.Combine(legacyPack, "edited.emotecraft"), "user edit");
+            await File.WriteAllTextAsync(Path.Combine(legacyPack, "personal.emotecraft"), "personal");
+            var dances = legacy with { Scope = "SPEmotes Dances 5" };
+            Require(!await EmotePack.IsCurrentAsync(migrationMods, dances), "legacy Dances needs migration");
+            using (var locked = new FileStream(Path.Combine(migrationGame, "modpack-state", "emotes.json"),
+                FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                var failed = false;
+                try { await EmotePack.ApplyAsync(http, migrationMods, dances); }
+                catch (Exception ex) when (ex is IOException or UnauthorizedAccessException) { failed = true; }
+                Require(failed && File.Exists(Path.Combine(legacyPack, "dance.emotecraft")) &&
+                    await File.ReadAllTextAsync(Path.Combine(legacyPack, "edited.emotecraft")) == "user edit" &&
+                    !File.Exists(Path.Combine(legacyPack, dances.Scope, "dance.emotecraft")),
+                    "failed Dances migration restores legacy files");
+            }
+            var migrated = await EmotePack.ApplyAsync(http, migrationMods, dances);
+            Require(migrated.BackupPath is not null &&
+                await File.ReadAllTextAsync(Path.Combine(migrated.BackupPath!, "legacy", "edited.emotecraft")) == "user edit" &&
+                !File.Exists(Path.Combine(legacyPack, "dance.emotecraft")) &&
+                !File.Exists(Path.Combine(legacyPack, "edited.emotecraft")) &&
+                File.Exists(Path.Combine(legacyPack, "personal.emotecraft")) &&
+                await EmotePack.IsCurrentAsync(migrationMods, dances), "migrate only tracked legacy Dances with backups");
+            Require(!(await EmotePack.ApplyAsync(http, migrationMods, dances)).Changed, "Dances migration is idempotent");
+
             var collisionGame = Path.Combine(root, "collision");
             var collisionPack = Path.Combine(collisionGame, "emotes", "Mods Server Pack");
             Directory.CreateDirectory(collisionPack);

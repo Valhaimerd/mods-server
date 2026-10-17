@@ -13,7 +13,9 @@ internal static class EmotePack
     private static string GameFolder(string mods) => Directory.GetParent(Path.GetFullPath(mods))!.FullName;
     private static string PackFolder(string game, EmoteArchive archive) => Path.Combine(game, "emotes", "Mods Server Pack", archive.Scope);
     private static string StatePath(string game, EmoteArchive archive) => Path.Combine(game, "modpack-state",
-        archive.Scope.Length == 0 ? "emotes.json" : $"emotes-{archive.Scope}.json");
+        archive.Scope.Length == 0 || IsDances(archive) ? "emotes.json" : $"emotes-{archive.Scope}.json");
+    private static bool IsDances(EmoteArchive archive) =>
+        archive.Name == "SPEmotes Dances 5.zip" && archive.Scope == "SPEmotes Dances 5";
 
     internal static async Task<bool> IsCurrentAsync(string mods, EmoteArchive archive)
     {
@@ -21,6 +23,8 @@ internal static class EmotePack
         ValidateFolders(game, archive);
         var state = await ReadStateAsync(game, archive);
         if (state is null || state.ArchiveSha != archive.Sha) return false;
+        if (IsDances(archive) && state.Files.Keys.Any(name =>
+            File.Exists(Path.Combine(game, "emotes", "Mods Server Pack", name)))) return false;
         foreach (var (name, hash) in state.Files)
         {
             var path = Path.Combine(PackFolder(game, archive), name);
@@ -106,6 +110,18 @@ internal static class EmotePack
                 File.Move(original, saved);
                 moved.Add((original, saved));
             }
+            if (IsDances(archive) && oldState is not null)
+                foreach (var name in oldState.Files.Keys)
+                {
+                    var original = Path.Combine(game, "emotes", "Mods Server Pack", name);
+                    RejectLink(original);
+                    if (!File.Exists(original)) continue;
+                    var legacyBackup = Path.Combine(backup, "legacy");
+                    Directory.CreateDirectory(legacyBackup);
+                    var saved = Path.Combine(legacyBackup, name);
+                    File.Move(original, saved);
+                    moved.Add((original, saved));
+                }
             foreach (var name in replace)
             {
                 var destination = Path.Combine(pack, name);

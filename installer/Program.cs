@@ -251,8 +251,7 @@ internal static class Program
         if (archives.Length == 0 || archives.Any(archive => archive.DownloadUrl is null))
             throw new InvalidDataException("The repository's emotes folder must contain downloadable ZIPs.");
         return archives.Select(archive => new EmoteArchive(archive.Name, archive.Sha, archive.DownloadUrl!,
-            // Preserve the original Dances installation and tracking file on upgrades.
-            archive.Name == "SPEmotes Dances 5.zip" ? "" : Path.GetFileNameWithoutExtension(archive.Name))).ToArray();
+            Path.GetFileNameWithoutExtension(archive.Name))).ToArray();
     }
 
     private static async Task<IReadOnlyList<PackageFile>> LoadPackageAsync(HttpClient http, InstallMode mode)

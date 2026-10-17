@@ -10,8 +10,10 @@ Rebuild from the repository root with Python 3:
 python docs/patches/spemotes-translations/build.py
 ```
 
-The builder downloads the version-pinned official ZIP, verifies SHA-256 `6d174030ccef4b627a2b88151733f25f5f59969fb4a38d6db2abd2599e5b70b5`, writes a deterministic JAR and checks that all 252 unique translation keys used by the current 127 emotes have English values without Cyrillic text. English labels require an English game language; Russian filenames on disk are intentionally preserved.
+The builder downloads the version-pinned official ZIP, verifies SHA-256 `6d174030ccef4b627a2b88151733f25f5f59969fb4a38d6db2abd2599e5b70b5`, writes a deterministic JAR and checks that all 370 unique translation keys used by the current 186 emotes have English values without Cyrillic text. English labels require an English game language; Russian filenames on disk are intentionally preserved.
 
 Installer v1.4.4 also moves Dances 5 into `emotes/Mods Server Pack/SPEmotes Dances 5`. Its existing `modpack-state/emotes.json` remains the tracking file. On upgrade, only tracked legacy files are moved out of the flat parent folder, with backups (including any edited copies) under `modpack-backups/emotes-*/legacy`; untracked parent files remain. Failed replacements restore both legacy and scoped files. The installer self-test covers migration, repeat runs, user-file preservation and rollback during a locked tracking-file replacement.
 
 Verified on 2026-10-17 in an isolated Minecraft 26.2 / NeoForge 26.2.0.90 client with Emotecraft 3.4.0-b.build.170 and PAL 1.2.6: the JAR was discovered and its resources loaded automatically; all 127 loaded names and descriptions were English; the registry contained exactly the three named pack folders. All emote archive bytes remained unchanged.
+
+Additional sets verified on 2026-10-17: Dances (12), Dances 3 (30) and Nightmares 2 (17). The unchanged translation JAR covers all 370 unique keys across the six sets; the isolated client loaded all 186 animations with English names/descriptions in six named folders.

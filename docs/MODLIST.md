@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 23 client extras</p>
 
 Last audited: 2026-10-17<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 310 synchronized JARs plus 23 client-store JARs
+Current distribution: 309 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -1100,7 +1100,7 @@ This extends visual customization to flight gear. Decoration does not by itself 
 
 - **Type:** Equipment improvement
 - **Core mechanic:** Places trims on some generated mob, loot, and trade equipment.
-- **Player guidance:** Look for decorated equipment in generated loot and trades. The pack repairs a crash when TradeView previews a short trade pool.
+- **Player guidance:** Look for decorated equipment in generated loot and trades. The pack safely handles short trade pools.
 
 Some found gear arrives with a trim already applied. The trim primarily changes its appearance.
 
@@ -2874,20 +2874,6 @@ Swimming, terrain movement, and rider interactions can change. Server configurat
 
 <div class="core-mod-entry">
 
-#### TradeView
-
-- **Type:** Villager trade reference
-- **Core mechanic:** Previews a villager's future profession-level offers in the trading screen.
-- **Player guidance:** Use the Preview button while trading and scroll through the later levels before investing in that villager.
-
-The installed 1.0.5 build previews reserved future offers; they still need their normal profession levels to unlock. Displayed base prices can change with demand, reputation, and discounts. Multiplayer requires the mod on both client and server.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/villager-trade-preview">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### Market Board
 
 - **Type:** Multiplayer economy
@@ -3184,7 +3170,7 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 - **Type:** Social animation
 - **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
-- **Player guidance:** Client installs include 127 emotes from SPEmotes Dances 5, KSEPSP 2, and Nightmares 3 automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
+- **Player guidance:** Client installs include 186 emotes from six SPEmotes packs automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
 
 Includes the client-only Borrow Their Emote add-on: assign Borrow Emote in Controls, then use that combination while looking at an emoting player and stop crouching to join. Borrow Emote is currently unbound; Reverse Sound uses `Left Ctrl`. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
 
@@ -4011,7 +3997,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Tool Belt](#tool-belt-1)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
-- [TradeView](#tradeview)
 - [Underground Villages](#underground-villages)
 - [Universal Bone Meal](#universal-bone-meal)
 - [Universal Enchantment Info](#universal-enchantment-info)
@@ -4245,7 +4230,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Harder Natural Healing](#harder-natural-healing)
 - [Market Board](#market-board)
 - [PlayerRevive](#playerrevive)
-- [TradeView](#tradeview)
 
 #### Controls
 

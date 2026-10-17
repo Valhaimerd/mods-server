@@ -1,6 +1,6 @@
 # Naturally Trimmed 3.5.0: appended trade range repair
 
-The pack retains `mods/naturally_trimmed-3.5.0+26.1-neoforge.jar` and TradeView 1.0.5 for Minecraft 26.2 / NeoForge 26.2.0.90. This is a local same-version repair, not an upstream release. [Upstream source and LGPL-3.0 license](https://github.com/Imajo24I/Naturally-Trimmed) remain applicable.
+The pack retains `mods/naturally_trimmed-3.5.0+26.1-neoforge.jar` for Minecraft 26.2 / NeoForge 26.2.0.90. TradeView 1.0.5 was subsequently removed at the owner's request; the repair and historical two-mod test remain documented here. This is a local same-version repair, not an upstream release. [Upstream source and LGPL-3.0 license](https://github.com/Imajo24I/Naturally-Trimmed) remain applicable.
 
 ## Cause and change
 

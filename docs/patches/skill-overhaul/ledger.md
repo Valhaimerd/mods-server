@@ -1,0 +1,13 @@
+# Implementation ledger
+
+- Completed: data transformation, migration/pet support, isolated validation and handbook/PDF verification on 2026-10-18.
+- Ruling: extend the existing Orb compatibility mod for pet bonuses and migration; no extra pack entry.
+- Ruling: once per player, refund Adventurer allocations with category XP and point budget preserved. RPG category/skill IDs are retained.
+- Ruling: new health/healing side nodes use the normal one-point cost.
+- Ruling: Martial Prowess/Hunter damage terminals use the explicit across-the-tree 1% target; keep their other requested stats.
+- Ruling: native critical modifiers were insufficient for fixed percentage points with additive gear; the bridge compensates for existing multipliers. Bare/geared cases pass.
+- Runtime: 43 checks pass, including controlled school damage, native wolf attacks, knockback occurrence, incoming damage and bow/crossbow drawing timing. Client skill screen and zoomed tree render successfully.
+- XP A/B: real loaded kill-XP calculations change 70 to 94.5 and 120 to 162 (both RPG categories), exactly 1.35x; original/modified runs use separate worlds. Skill XP awards retain framework integer rounding.
+- Review: independent code review found no remaining blocker after the fixed-critical-point correction. Knockback distance and every modded pet AI were not quantitatively tested.
+- Packaging: three active same-filename JARs match tested candidates and fixed-pack copies. Originals preserved in ignored retired packs. No installer/release changes or GitHub publication performed.
+- Documentation: guide updated; rebuilt 71-page PDF, contents destinations checked, all pages rendered/reviewed and handbook checks passed. Duplicate Better Party closing prose consolidated to avoid a nearly empty page.

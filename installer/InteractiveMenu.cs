@@ -44,6 +44,7 @@ internal static class InteractiveMenu
         {
             Console.Clear();
             Console.WriteLine(Header);
+            Console.WriteLine(Program.VersionBanner);
             Console.WriteLine();
             Console.WriteLine(title);
             Console.WriteLine();

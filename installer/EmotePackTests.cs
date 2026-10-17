@@ -2,6 +2,7 @@ using System.IO.Compression;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 
 namespace ModsServerInstaller;
 
@@ -96,7 +97,17 @@ internal static class EmotePackTests
             await EmotePack.ApplyAsync(http, migrationMods, legacy);
             await File.WriteAllTextAsync(Path.Combine(legacyPack, "edited.emotecraft"), "user edit");
             await File.WriteAllTextAsync(Path.Combine(legacyPack, "personal.emotecraft"), "personal");
-            var dances = legacy with { Scope = "SPEmotes Dances 5" };
+            handler.DirectoryListing = JsonSerializer.Serialize(new[] {
+                new { name = legacy.Name, type = "file", sha = legacy.Sha, size = 1, download_url = legacy.DownloadUrl },
+                new { name = "SPEmotes Dances.zip", type = "file", sha = legacy.Sha, size = 1, download_url = legacy.DownloadUrl },
+                new { name = "README.md", type = "file", sha = legacy.Sha, size = 1, download_url = legacy.DownloadUrl }
+            });
+            var load = typeof(Program).GetMethod("LoadEmoteArchivesAsync",
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)!;
+            var discovered = await (Task<IReadOnlyList<EmoteArchive>>)load.Invoke(null, [http])!;
+            Require(discovered.Count == 2 && discovered.All(a => a.Scope == Path.GetFileNameWithoutExtension(a.Name)),
+                "repository discovery gives every pack its own folder including Dances 5");
+            var dances = discovered.Single(a => a.Name == legacy.Name);
             Require(!await EmotePack.IsCurrentAsync(migrationMods, dances), "legacy Dances needs migration");
             using (var locked = new FileStream(Path.Combine(migrationGame, "modpack-state", "emotes.json"),
                 FileMode.Open, FileAccess.Read, FileShare.Read))
@@ -143,6 +154,7 @@ internal static class EmotePackTests
     private sealed class ArchiveHandler : HttpMessageHandler
     {
         private byte[] bytes = [];
+        internal string? DirectoryListing { get; set; }
         internal int Requests { get; private set; }
         internal EmoteArchive Set(params (string Name, string Content)[] entries)
         {
@@ -162,6 +174,9 @@ internal static class EmotePackTests
         }
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
+            if (DirectoryListing is not null && request.RequestUri!.AbsolutePath.EndsWith("/contents/emotes"))
+                return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK) {
+                    Content = new StringContent(DirectoryListing, Encoding.UTF8, "application/json") });
             Requests++;
             return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK) { Content = new ByteArrayContent(bytes) });
         }

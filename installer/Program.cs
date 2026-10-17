@@ -11,12 +11,15 @@ internal static class Program
 {
     private const string Repository = "Valhaimerd/mods-server";
     private const string Branch = "main";
+    internal static string Version => typeof(Program).Assembly.GetName().Version!.ToString(3);
+    internal static string VersionBanner => $"Mods Server Installer v{Version}";
     private const string HandbookFileName = "modpack-player-handbook.pdf";
     private static string HandbookUrl => $"https://github.com/{Repository}/blob/{Branch}/{HandbookFileName}";
 
     public static async Task<int> Main(string[] args)
     {
         Console.OutputEncoding = Encoding.UTF8;
+        Console.WriteLine(VersionBanner);
 
         try
         {
@@ -62,7 +65,7 @@ internal static class Program
             Console.WriteLine("Reading the current pack from GitHub...");
 
             using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(30) };
-            http.DefaultRequestHeaders.UserAgent.ParseAdd("ModsServerInstaller/1.0");
+            http.DefaultRequestHeaders.UserAgent.ParseAdd($"ModsServerInstaller/{Version}");
 
             var package = await LoadPackageAsync(http, request.Mode);
             IReadOnlyList<EmoteArchive> emoteArchives = request.Mode == InstallMode.Client ? await LoadEmoteArchivesAsync(http) : [];

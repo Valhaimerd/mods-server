@@ -884,7 +884,7 @@ Artifacts can supply powerful passive effects in accessory slots. Check each ite
 - **Core mechanic:** Adds craftable and lootable trinkets with varied abilities.
 - **Player guidance:** Compare the slot and ability shown on each trinket.
 
-The collection mixes crafted and discovered accessories. Choose one for its effect, not only its rarity.
+The pack retains 42 trinkets and removes 12 stronger or unwanted relics, including both crowns, Dying Star, flight wings, Lunar Crest, Speed Force and the larger magnets. Remaining damage, mining, movement and defensive bonuses use the pack's revised balance. Titan's Mark keeps its larger size and refreshes +10 maximum hearts and Resistance I for five seconds, with Slowness I for one minute; it no longer boosts attack damage. The added health capacity does not instantly heal you, and the effects expire after removal. The local repair also fixes the dedicated-server Lunar Crest damage crash. Compare each item's effects and drawbacks before equipping it.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets">Official mod page</a></p>
 

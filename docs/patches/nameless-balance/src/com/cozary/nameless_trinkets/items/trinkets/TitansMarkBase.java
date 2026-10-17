@@ -1,0 +1,45 @@
+package com.cozary.nameless_trinkets.items.trinkets;
+
+import com.cozary.nameless_trinkets.items.subTrinket.TrinketData;
+import com.cozary.nameless_trinkets.items.subTrinket.TrinketItem;
+import com.cozary.nameless_trinkets.items.subTrinket.TrinketsStats;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
+
+import java.util.function.Consumer;
+
+public class TitansMarkBase extends TrinketItem<TitansMarkBase.Stats> {
+    public static TitansMarkBase INSTANCE;
+
+    public TitansMarkBase() {
+        super(new TrinketData("titans_mark", null, null, Stats.class));
+
+        INSTANCE = this;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> tooltip, TooltipFlag flag) {
+        Stats config = TitansMarkBase.INSTANCE.getTrinketConfig();
+        if (!config.isEnable) {
+            tooltip.accept(Component.translatable("tooltip.nameless_trinkets.isDisabled").withStyle(ChatFormatting.RED));
+        } else {
+            tooltip.accept(Component.translatable("tooltip.nameless_trinkets.titans_mark_lore").withStyle(ChatFormatting.AQUA, ChatFormatting.ITALIC));
+            if (Minecraft.getInstance().hasShiftDown()) {
+                tooltip.accept(Component.translatable("tooltip.nameless_trinkets.titans_mark_1", config.extraScalePercentage + "%").withStyle(ChatFormatting.GOLD));
+                tooltip.accept(Component.literal("Slowness I (60s), +10 hearts (5s), Resistance I (5s); refreshed while worn.").withStyle(ChatFormatting.GOLD));
+            } else {
+                tooltip.accept(Component.translatable("tooltip.nameless_trinkets.hold_shift"));
+            }
+        }
+    }
+
+    public static class Stats extends TrinketsStats {
+        public float extraScalePercentage = 50.0F;
+        public float attackDamagePercentage = 0.0f;
+        public boolean isEnable = true;
+    }
+}

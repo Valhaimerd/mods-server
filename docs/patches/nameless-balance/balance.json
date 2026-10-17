@@ -1,0 +1,88 @@
+{
+  "removed": [
+    "broken_magnet",
+    "cracked_crown",
+    "dying_star",
+    "electric_paddle",
+    "ethereal_wings",
+    "gods_crown",
+    "lunar_crest",
+    "pocket_lightning_rod",
+    "reforger",
+    "speed_force",
+    "super_magnet",
+    "what_magnet"
+  ],
+  "overrides": {
+    "AmphibiousHands": {
+      "miningUnderwaterSpeedPercentage": 125.0
+    },
+    "EclipseAshes": {
+      "spawnIntervalTicks": 20,
+      "activeDurationSeconds": 5.0
+    },
+    "ExperienceBattery": {
+      "extraExperiencePercentage": 50.0
+    },
+    "FracturedNullstone": {
+      "magicDamageReductionPercentage": 30.0
+    },
+    "GhastEye": {
+      "extraHearts": 6.0,
+      "regenerationTime": 100,
+      "regenerationExtraTime": 50
+    },
+    "IceCube": {
+      "slownessLevel": 0,
+      "slownessTime": 100,
+      "frostWalkerLevel": 1
+    },
+    "LightGloves": {
+      "miningSpeedPercentage": 150.0
+    },
+    "MissingPage": {
+      "activationPercentage": 100.0,
+      "percentageOfDamage": 5.0
+    },
+    "PufferFishLiver": {
+      "chanceToApplyPoison": 100.0,
+      "poisonLevel": 0,
+      "poisonTime": 60
+    },
+    "RageMind": {
+      "damageMultiplierPercentage": 125.0
+    },
+    "ReverseCard": {
+      "chanceToActivate": 25.0
+    },
+    "ScarabAmulet": {
+      "speedMultiplierPercentage": 50.0
+    },
+    "ShrinkingVeil": {
+      "speedPercentage": 25.0
+    },
+    "TitansMark": {
+      "attackDamagePercentage": 0.0
+    },
+    "TrueHeartOfTheSea": {
+      "miningUnderwaterSpeedPercentage": 125.0
+    },
+    "VampireBlood": {
+      "damageMultiplierPercentage": 20.0
+    }
+  },
+  "titanEffects": {
+    "slowness": {
+      "duration": 1200,
+      "amplifier": 0
+    },
+    "health_boost": {
+      "duration": 100,
+      "amplifier": 4
+    },
+    "resistance": {
+      "duration": 100,
+      "amplifier": 0
+    }
+  }
+}

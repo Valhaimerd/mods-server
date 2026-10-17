@@ -1,0 +1,8 @@
+# Nameless Trinkets pack balance and dedicated-server repair
+
+1. Preserve the installed same-version JAR and an isolated patch source tree. Record requested removals and numeric overrides in `docs/patches/nameless-balance/balance.json`.
+2. Test that the original JAR fails the requested balance/removal checks. Apply pack policy at the common config assignment boundary so old generated JSON cannot restore removed relics or stale values. Keep registry IDs for save compatibility, disable their effects/equipping, filter acquisition tags, creative output, loot pools and recipes.
+3. Remove the Lunar Crest damage subscriber and client-only class dependency from its shared handler. Add Titan's Mark refresh: Slowness I 1200 ticks, Health Boost V (+20 HP) 100 ticks, Resistance I 100 ticks; remove attack damage, keep existing scale. Make Reverse Card's chance exactly 25%.
+4. Compile only the changed classes against the installed pack. Repack the current filename, preserving unrelated ZIP entries. Verify archive integrity, exact settings, removed acquisition paths, config migration and tooltips.
+5. Run isolated dedicated-server damage and Curios tests with only required dependencies; compare the failing baseline against the repaired JAR. Exercise Titan duration/amplifiers, health and old attack modifier cleanup, and affected damage/proc calculations. Keep personal installations untouched.
+6. Install final JAR in `mods/` and ignored fixed packs; update effects Markdown, fix notes and handbook/PDF. Run focused checks and inspect changed PDF pages. No GitHub push is requested in this turn.

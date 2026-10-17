@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 17 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 22 client extras</p>
 
-Last audited: 2026-10-16<br>
+Last audited: 2026-10-17<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 307 synchronized JARs plus 17 client-store JARs
+Current distribution: 309 synchronized JARs plus 22 client-store JARs
 
 ## About this handbook
 
@@ -46,7 +46,7 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>18</td></tr>
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>23</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>24</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>25</td></tr>
     <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>26</td></tr>
     <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>27</td></tr>
     <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>27</td></tr>
@@ -70,15 +70,15 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>50</td></tr>
     <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>51</td></tr>
     <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>52</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>59</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>53</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>60</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>62</td></tr>
   </tbody>
 </table>
 
@@ -1954,6 +1954,20 @@ Its modules place structures across several dimensions and biomes. Keep an exit 
 
 <div class="core-mod-entry">
 
+#### Sky Village-Islands
+
+- **Type:** Structure expansion
+- **Core mechanic:** Adds floating village islands linked by bridges.
+- **Player guidance:** Explore new terrain and prepare a safe route up.
+
+New village layouts and mostly vanilla chest loot appear in newly generated chunks.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/sky-village-islands">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Towns and Towers
 
 - **Type:** Structures and exploration
@@ -2353,7 +2367,7 @@ Their party-style effect changes a familiar threat. Give them room until the loc
 </div>
 
 </div>
-<p class="core-category-description">The expanded roster includes wildlife, social creatures, settlement defenders, and dangerous variants. Observe behavior before approaching and use Jade for names and health; JEI can explain known drops without turning this guide into an exhaustive species catalogue.</p>
+<p class="core-category-description">Observe unfamiliar creatures before approaching; Jade identifies them and JEI lists known drops.</p>
 </section>
 
 <div class="page-break" aria-hidden="true"></div>
@@ -2565,10 +2579,10 @@ The modules coordinate doors, bridges, furniture, roofs, windows, and more. Choo
 #### Display Delight
 
 - **Type:** Building
-- **Core mechanic:** Adds decorative ways to display food and related items.
-- **Player guidance:** Use displays where food should remain visible in a build.
+- **Core mechanic:** Displays supported meals in 3D, with food recoverable for eating.
+- **Player guidance:** Hold an original edible bowl or bottled meal and press C + right-click to display it. With an empty main hand, right-click to retrieve one food; C + right-click takes all food from a plate. C is the pack's Sneak key.
 
-The mod adds decorative presentation to the kitchen. Check placement and retrieval before using valuable meals.
+The pack's repaired port returns the original edible meal from a bowl display and leaves an empty plate after its last food is taken. Display Delight's creative-list food items are display blocks and place with ordinary right-click; displays for missing add-ons remain decorative.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/display-delight">Official mod page</a></p>
 
@@ -2860,6 +2874,20 @@ Swimming, terrain movement, and rider interactions can change. Server configurat
 
 <div class="core-mod-entry">
 
+#### TradeView
+
+- **Type:** Villager trade reference
+- **Core mechanic:** Previews a villager's future profession-level offers in the trading screen.
+- **Player guidance:** Use the Preview button while trading and scroll through the later levels before investing in that villager.
+
+The installed 1.0.5 build previews reserved future offers; they still need their normal profession levels to unlock. Displayed base prices can change with demand, reputation, and discounts. Multiplayer requires the mod on both client and server.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/villager-trade-preview">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Market Board
 
 - **Type:** Multiplayer economy
@@ -3038,13 +3066,27 @@ Filtering makes exploration mods easier to browse. Clear the filter when a known
 
 <div class="core-mod-entry">
 
+#### Universal Enchantment Info
+
+- **Type:** Recipe reference
+- **Core mechanic:** Adds enchantment descriptions, maximum levels, applicable items, incompatibilities, and availability flags to JEI.
+- **Player guidance:** Use JEI's recipe action on an enchanted book for its details, or its uses action on equipment to inspect applicable enchantments.
+
+This client-only reference explains existing enchantments; it does not change their effects or compatibility rules. Its panels can scroll when an enchantment has many applicable items.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/uei">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Advanced Loot Info
 
 - **Type:** Recipe and loot reference
 - **Core mechanic:** Shows detailed loot-table and trade information in the recipe browser.
 - **Player guidance:** Review loot and trade information while planning a target.
 
-The data helps identify possible sources for a reward. Current world and server registration determine availability.
+The installed ALI 2.4.0 and ALICompat 1.3.0 extend the loot reference to supported third-party systems. Advanced Core Info 1.5.0 supplies their shared data support. Actual results still depend on the world's registered loot tables.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info">Official mod page</a></p>
 
@@ -3058,7 +3100,7 @@ The data helps identify possible sources for a reward. Current world and server 
 - **Core mechanic:** Shows where world-generation features and resources can appear.
 - **Player guidance:** Check where a configured resource or feature can appear.
 
-Generation information helps choose an exploration region. Existing chunks may not gain new features after an update.
+Distributed only to clients because this pack previously stalled during dedicated-server information collection. Multiplayer data may be limited without server support. Existing chunks do not gain new features from this reference tool.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/advanced-worldgen-info">Official mod page</a></p>
 
@@ -3135,6 +3177,20 @@ Action-based visibility can show the model during movement and gliding. Scale it
 <section class="core-category">
 <h3>Cosmetic and animation changes</h3>
 <div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Emotecraft
+
+- **Type:** Social animation
+- **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
+- **Player guidance:** Assign Open Emote Wheel in Controls, choose emotes in its menu, and add compatible custom files to the instance's `emotes` folder.
+
+Includes the client-only Borrow Their Emote add-on: look at an emoting player, use its configured Borrow Emote combination, then stop crouching to join. Configure that combination around this pack's C Sneak key. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/emotecraft">Emotecraft</a> | <a href="https://modrinth.com/mod/emotecraft-borrow-their-emote">Borrow Their Emote</a></p>
+
+</div>
 
 <div class="core-mod-entry">
 
@@ -3719,6 +3775,28 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Open Belt Slot Inventory | `Shift + Q` |
 | Swap Tool | `Q` |
 
+#### Emotecraft
+
+| Action | Recommended key |
+|---|---|
+| Open Emote Wheel |  |
+| Stop Playing Emote |  |
+
+#### Emotecraft: Borrow Their Emote
+
+| Action | Recommended key |
+|---|---|
+| Borrow Emote |  |
+| Reverse Sound |  |
+
+#### Vectors
+
+| Action | Recommended key |
+|---|---|
+| Open Vectors |  |
+
+New emote and Vectors controls have no pack-assigned shortcut yet. Configure them in Controls before use; the existing recommended profile does not configure these additions.
+
 <div class="page-break" aria-hidden="true"></div>
 
 ### Alphabetical mod index
@@ -3784,6 +3862,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Effect Insights](#effect-insights)
 - [Effortless Building](#effortless-building-1)
 - [Elytra Trims](#elytra-trims)
+- [Emotecraft](#emotecraft)
 - [Enchantment Insights](#enchantment-insights)
 - [Enchantments collection](#enchantments-collection)
 - [Ender Zoology](#ender-zoology)
@@ -3867,6 +3946,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Shroomcraft](#shroomcraft)
 - [SimpleHats Lite](#simplehats-lite-1)
 - [Skill Tree (RPG Series)](#skill-tree-rpg-series)
+- [Sky Village-Islands](#sky-village-islands)
 - [Sodium](#sodium)
 - [Somnora](#somnora)
 - [Sophisticated Backpacks](#sophisticated-backpacks-1)
@@ -3887,8 +3967,10 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Tool Belt](#tool-belt-1)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
+- [TradeView](#tradeview)
 - [Underground Villages](#underground-villages)
 - [Universal Bone Meal](#universal-bone-meal)
+- [Universal Enchantment Info](#universal-enchantment-info)
 - [Universal Enchants](#universal-enchants)
 - [Vehicle Upgrade](#vehicle-upgrade)
 - [Waystones](#waystones)
@@ -4000,6 +4082,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Mielon's The Sift](#feature-the-sift)
 - [Nullscape](#nullscape)
 - [Serene Seasons](#serene-seasons)
+- [Sky Village-Islands](#sky-village-islands)
 - [Terralith](#terralith)
 - [William Wythers' Overhauled Overworld](#william-wythers-overhauled-overworld)
 - [Yggdrasil](#yggdrasil)
@@ -4023,6 +4106,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 - [Moog's structure collection](#moogs-structure-collection)
 - [Much More Dungeons](#much-more-dungeons)
 - [Ocean Lily Pad Village](#ocean-lily-pad-village)
+- [Sky Village-Islands](#sky-village-islands)
 - [Stoneholm](#stoneholm)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
@@ -4110,22 +4194,26 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 #### Multiplayer
 
 - [Better Party](#better-party-1)
-- [Better Revive](#better-revive)
 - [Better Respawn](#better-respawn)
+- [Better Revive](#better-revive)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
+- [Emotecraft](#emotecraft)
 - [Harder Natural Healing](#harder-natural-healing)
 - [Market Board](#market-board)
 - [PlayerRevive](#playerrevive)
+- [TradeView](#tradeview)
 
 #### Controls
 
 - [Advanced Loot Info](#advanced-loot-info)
 - [Advanced Worldgen Info](#advanced-worldgen-info)
+- [Emotecraft](#emotecraft)
 - [JEI Trades](#jei-trades)
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
 - [OneKeyMiner](#onekeyminer)
 - [Show My Recipes](#show-my-recipes)
+- [Universal Enchantment Info](#universal-enchantment-info)
 
 #### HUD
 

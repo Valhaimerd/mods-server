@@ -1,5 +1,9 @@
 # Server bugs — NeoForge 26.2 audit
 
+## 17 October 2026 — current distribution note
+
+The current repository distributes Advanced Loot Info 2.4.0, ALICompat 1.3.0, and required Advanced Core Info 1.5.0 in `mods`. Advanced Worldgen Info 1.2.0 is in `mod store` to preserve the prior server-stall isolation. Older statements below that all four JARs are excluded describe the historical audit set. Emotecraft is now in `mods`; its borrowing add-on, MossyLib, Universal Enchantment Info, and the local Vectors NeoForge alpha are client extras. The new combination has been inspected for metadata/dependencies, not rerun through the historical full server audit.
+
 ## 14 October 2026 — client/server split check
 
 An isolated NeoForge **26.2.0.90** server loaded all **293 repository `mods` JARs** with a copy of the live world and config on port 25942. It reached `Done`, answered `list`, and stopped cleanly with exit code 0. The live server folder was not changed. Evidence: [`latest.log`](../tmp/server-client-split-test/logs/latest.log). This is a startup and existing-world check; no player joined or new terrain was deliberately explored.

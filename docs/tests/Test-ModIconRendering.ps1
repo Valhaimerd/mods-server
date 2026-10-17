@@ -21,15 +21,16 @@ if (-not $bifrost -or -not $html.Contains('class="mod-entry-icon" src="' + $bifr
     throw 'The supplied Bifrost artwork is not rendered beside its mod entry.'
 }
 
-$partOneHeadings = @(
-    'id="part-i--keybinds-and-configuration"',
-    'id="essential-keybinds-and-conflict-resolution"',
-    'id="part-ii--featured-mechanics"',
-    'id="part-iii--character-and-core-systems"'
+$partHeadings = @(
+    'id="part-i--featured-mechanics"',
+    'id="part-ii--character-and-core-systems"',
+    'id="part-v--interface-and-reference"',
+    'id="part-vi--keybinds-and-configuration"',
+    'id="essential-keybinds-and-conflict-resolution"'
 )
-$partOnePositions = @($partOneHeadings | ForEach-Object { $html.IndexOf($_, [System.StringComparison]::Ordinal) })
-if (($partOnePositions | Where-Object { $_ -lt 0 }).Count -gt 0 -or (($partOnePositions | Sort-Object) -join ',') -ne ($partOnePositions -join ',')) {
-    throw 'Rendered Part I must contain the keybind reference before Parts II and III.'
+$partPositions = @($partHeadings | ForEach-Object { $html.IndexOf($_, [System.StringComparison]::Ordinal) })
+if (($partPositions | Where-Object { $_ -lt 0 }).Count -gt 0 -or (($partPositions | Sort-Object) -join ',') -ne ($partPositions -join ',')) {
+    throw 'Rendered keybind reference must remain in Part VI after the gameplay chapters.'
 }
 if ($html -notmatch '(?s)\.keybind-section td:last-child:empty\s*\{[^}]*color:\s*#(?:7[0-9a-f]{2}|8[0-9a-f]{2});[^}]*font-style:\s*italic;') {
     throw 'Empty recommended-key cells must have a muted, italic unbound style.'
@@ -37,4 +38,4 @@ if ($html -notmatch '(?s)\.keybind-section td:last-child:empty\s*\{[^}]*color:\s
 if ($html -notmatch '(?s)\.keybind-section td:last-child:empty::before\s*\{[^}]*content:\s*["'']Unbound["''];') {
     throw 'Empty recommended-key cells must display the Unbound label.'
 }
-"PASS: all $(@($manifest | Where-Object Status -eq 'Downloaded').Count) downloaded mod icons render; Part I keybind order and unbound styles are correct."
+"PASS: all $(@($manifest | Where-Object Status -eq 'Downloaded').Count) downloaded mod icons render; Part VI keybind order and unbound styles are correct."

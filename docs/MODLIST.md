@@ -3184,7 +3184,7 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 - **Type:** Social animation
 - **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
-- **Player guidance:** Client installs include 41 SPEmotes Dances 5 emotes automatically. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
+- **Player guidance:** Client installs include 127 emotes from SPEmotes Dances 5, KSEPSP 2, and Nightmares 3 automatically. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
 
 Includes the client-only Borrow Their Emote add-on: assign Borrow Emote in Controls, then use that combination while looking at an emoting player and stop crouching to join. Borrow Emote is currently unbound; Reverse Sound uses `Left Ctrl`. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
 

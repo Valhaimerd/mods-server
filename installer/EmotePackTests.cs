@@ -70,6 +70,24 @@ internal static class EmotePackTests
             handler.Set(("Dance (Танец).emotecraft", "updated"), ("new.emotecraft", "new"));
             Require(!(await EmotePack.ApplyAsync(http, mods, second)).Changed, "rollback preserves tracking state");
 
+            var scoped = handler.Set(("new.emotecraft", "separate pack")) with { Scope = "Second Pack" };
+            await EmotePack.ApplyAsync(http, mods, scoped);
+            Require(await File.ReadAllTextAsync(Path.Combine(pack, "new.emotecraft")) == "new" &&
+                await File.ReadAllTextAsync(Path.Combine(pack, "Second Pack", "new.emotecraft")) == "separate pack" &&
+                await EmotePack.IsCurrentAsync(mods, second) && await EmotePack.IsCurrentAsync(mods, scoped),
+                "separate packs preserve colliding filenames and independent tracking");
+            var requests = handler.Requests;
+            Require(!(await EmotePack.ApplyAsync(http, mods, scoped)).Changed && handler.Requests == requests,
+                "skip current scoped pack download");
+            var scopedUpdate = handler.Set(("replacement.emotecraft", "replacement")) with { Scope = "Second Pack" };
+            await EmotePack.ApplyAsync(http, mods, scopedUpdate);
+            Require(!File.Exists(Path.Combine(pack, "Second Pack", "new.emotecraft")) &&
+                await EmotePack.IsCurrentAsync(mods, second), "scoped retirement leaves original pack intact");
+            var invalidScope = false;
+            try { await EmotePack.ApplyAsync(http, mods, scopedUpdate with { Scope = ".." }); }
+            catch (InvalidDataException) { invalidScope = true; }
+            Require(invalidScope, "reject escaping pack scope");
+
             var collisionGame = Path.Combine(root, "collision");
             var collisionPack = Path.Combine(collisionGame, "emotes", "Mods Server Pack");
             Directory.CreateDirectory(collisionPack);

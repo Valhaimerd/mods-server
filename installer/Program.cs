@@ -65,11 +65,11 @@ internal static class Program
             http.DefaultRequestHeaders.UserAgent.ParseAdd("ModsServerInstaller/1.0");
 
             var package = await LoadPackageAsync(http, request.Mode);
-            var emoteArchive = request.Mode == InstallMode.Client ? await LoadEmoteArchiveAsync(http) : null;
+            IReadOnlyList<EmoteArchive> emoteArchives = request.Mode == InstallMode.Client ? await LoadEmoteArchivesAsync(http) : [];
             var plan = await BuildPlanAsync(target, package);
 
             PrintPlan(plan);
-            if (emoteArchive is not null)
+            foreach (var emoteArchive in emoteArchives)
                 Console.WriteLine(await EmotePack.IsCurrentAsync(target, emoteArchive)
                     ? $"Emote pack is current: {emoteArchive.Name}"
                     : $"Emote pack needs installation/repair: {emoteArchive.Name}");
@@ -96,12 +96,15 @@ internal static class Program
 
             if (request.Mode == InstallMode.Client)
             {
-                var emotes = await EmotePack.ApplyAsync(http, target, emoteArchive!);
-                Console.WriteLine(emotes.Changed
-                    ? $"Installed/repaired {emotes.Count} pack emotes."
-                    : $"All {emotes.Count} pack emotes are current.");
-                if (emotes.BackupPath is not null)
-                    Console.WriteLine($"Previous emote files backup: {emotes.BackupPath}");
+                foreach (var emoteArchive in emoteArchives)
+                {
+                    var emotes = await EmotePack.ApplyAsync(http, target, emoteArchive);
+                    Console.WriteLine(emotes.Changed
+                        ? $"Installed/repaired {emotes.Count} emotes: {emoteArchive.Name}"
+                        : $"All {emotes.Count} emotes are current: {emoteArchive.Name}");
+                    if (emotes.BackupPath is not null)
+                        Console.WriteLine($"Previous emote files backup: {emotes.BackupPath}");
+                }
                 var punchy = await PunchyCompatibility.ApplyAsync(target);
                 Console.WriteLine(punchy.Changed
                     ? "Punchy Better Combat compatibility enabled."
@@ -238,17 +241,18 @@ internal static class Program
         return Directory.Exists(desktop) ? desktop : null;
     }
 
-    private static async Task<EmoteArchive> LoadEmoteArchiveAsync(HttpClient http)
+    private static async Task<IReadOnlyList<EmoteArchive>> LoadEmoteArchivesAsync(HttpClient http)
     {
         var entries = await http.GetFromJsonAsync<List<GitHubEntry>>(
             $"https://api.github.com/repos/{Repository}/contents/emotes?ref={Branch}")
             ?? throw new InvalidOperationException("GitHub returned no emote pack.");
         var archives = entries.Where(entry => entry.Type == "file" &&
-            entry.Name.EndsWith(".zip", StringComparison.OrdinalIgnoreCase)).ToArray();
-        if (archives.Length != 1 || archives[0].DownloadUrl is null)
-            throw new InvalidDataException("The repository's emotes folder must contain exactly one downloadable ZIP.");
-        var archive = archives[0];
-        return new EmoteArchive(archive.Name, archive.Sha, archive.DownloadUrl!);
+            entry.Name.EndsWith(".zip", StringComparison.OrdinalIgnoreCase)).OrderBy(entry => entry.Name, StringComparer.OrdinalIgnoreCase).ToArray();
+        if (archives.Length == 0 || archives.Any(archive => archive.DownloadUrl is null))
+            throw new InvalidDataException("The repository's emotes folder must contain downloadable ZIPs.");
+        return archives.Select(archive => new EmoteArchive(archive.Name, archive.Sha, archive.DownloadUrl!,
+            // Preserve the original Dances installation and tracking file on upgrades.
+            archive.Name == "SPEmotes Dances 5.zip" ? "" : Path.GetFileNameWithoutExtension(archive.Name))).ToArray();
     }
 
     private static async Task<IReadOnlyList<PackageFile>> LoadPackageAsync(HttpClient http, InstallMode mode)

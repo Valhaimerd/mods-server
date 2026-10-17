@@ -4,25 +4,26 @@ using System.Text.Json;
 
 namespace ModsServerInstaller;
 
-internal sealed record EmoteArchive(string Name, string Sha, string DownloadUrl);
+internal sealed record EmoteArchive(string Name, string Sha, string DownloadUrl, string Scope = "");
 internal sealed record EmoteApplyResult(bool Changed, string? BackupPath, int Count);
 
 internal static class EmotePack
 {
     private sealed record State(string ArchiveSha, Dictionary<string, string> Files);
     private static string GameFolder(string mods) => Directory.GetParent(Path.GetFullPath(mods))!.FullName;
-    private static string PackFolder(string game) => Path.Combine(game, "emotes", "Mods Server Pack");
-    private static string StatePath(string game) => Path.Combine(game, "modpack-state", "emotes.json");
+    private static string PackFolder(string game, EmoteArchive archive) => Path.Combine(game, "emotes", "Mods Server Pack", archive.Scope);
+    private static string StatePath(string game, EmoteArchive archive) => Path.Combine(game, "modpack-state",
+        archive.Scope.Length == 0 ? "emotes.json" : $"emotes-{archive.Scope}.json");
 
     internal static async Task<bool> IsCurrentAsync(string mods, EmoteArchive archive)
     {
         var game = GameFolder(mods);
-        ValidateFolders(game);
-        var state = await ReadStateAsync(game);
+        ValidateFolders(game, archive);
+        var state = await ReadStateAsync(game, archive);
         if (state is null || state.ArchiveSha != archive.Sha) return false;
         foreach (var (name, hash) in state.Files)
         {
-            var path = Path.Combine(PackFolder(game), name);
+            var path = Path.Combine(PackFolder(game, archive), name);
             RejectLink(path);
             if (!File.Exists(path) || await HashAsync(path) != hash) return false;
         }
@@ -33,8 +34,8 @@ internal static class EmotePack
     {
         var game = GameFolder(mods);
         if (await IsCurrentAsync(mods, archive))
-            return new EmoteApplyResult(false, null, (await ReadStateAsync(game))!.Files.Count);
-        var oldState = await ReadStateAsync(game);
+            return new EmoteApplyResult(false, null, (await ReadStateAsync(game, archive))!.Files.Count);
+        var oldState = await ReadStateAsync(game, archive);
         var staging = Path.Combine(game, $".emotes-installer-staging-{Guid.NewGuid():N}");
         var backup = Path.Combine(game, "modpack-backups", $"emotes-{Guid.NewGuid():N}");
         var moved = new List<(string Original, string Backup)>();
@@ -68,7 +69,7 @@ internal static class EmotePack
             if (files.Count == 0) throw new InvalidDataException("Emote ZIP contains no emotes.");
 
             // Only names from the current archive or our previous tracking file can be changed.
-            var pack = PackFolder(game);
+            var pack = PackFolder(game, archive);
             var replace = new List<string>();
             foreach (var (name, hash) in files)
             {
@@ -90,11 +91,11 @@ internal static class EmotePack
             var newState = Path.Combine(staging, "state.json");
             await File.WriteAllTextAsync(newState, JsonSerializer.Serialize(new State(archive.Sha, files)) + "\n");
             Directory.CreateDirectory(pack);
-            Directory.CreateDirectory(Path.GetDirectoryName(StatePath(game))!);
-            if (File.Exists(StatePath(game)))
+            Directory.CreateDirectory(Path.GetDirectoryName(StatePath(game, archive))!);
+            if (File.Exists(StatePath(game, archive)))
             {
                 Directory.CreateDirectory(backup);
-                File.Copy(StatePath(game), Path.Combine(backup, "emotes-state.json"));
+                File.Copy(StatePath(game, archive), Path.Combine(backup, "emotes-state.json"));
             }
             foreach (var name in replace.Concat(retire))
             {
@@ -111,7 +112,7 @@ internal static class EmotePack
                 File.Move(Path.Combine(staging, name), destination);
                 installed.Add(destination);
             }
-            File.Move(newState, StatePath(game), overwrite: true);
+            File.Move(newState, StatePath(game, archive), overwrite: true);
             return new EmoteApplyResult(true, Directory.Exists(backup) ? backup : null, files.Count);
         }
         catch
@@ -130,9 +131,9 @@ internal static class EmotePack
         }
     }
 
-    private static async Task<State?> ReadStateAsync(string game)
+    private static async Task<State?> ReadStateAsync(string game, EmoteArchive archive)
     {
-        var path = StatePath(game);
+        var path = StatePath(game, archive);
         RejectLink(path);
         if (!File.Exists(path)) return null;
         var state = JsonSerializer.Deserialize<State>(await File.ReadAllTextAsync(path))
@@ -151,9 +152,12 @@ internal static class EmotePack
             throw new InvalidDataException($"Expected a flat .emotecraft filename in the pack: {name}");
     }
 
-    private static void ValidateFolders(string game)
+    private static void ValidateFolders(string game, EmoteArchive archive)
     {
-        foreach (var path in new[] { Path.Combine(game, "emotes"), PackFolder(game),
+        if (archive.Scope is "." or ".." || Path.GetFileName(archive.Scope) != archive.Scope ||
+            archive.Scope.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+            throw new InvalidDataException("Invalid emote pack folder name.");
+        foreach (var path in new[] { Path.Combine(game, "emotes"), Path.Combine(game, "emotes", "Mods Server Pack"), PackFolder(game, archive),
             Path.Combine(game, "modpack-state"), Path.Combine(game, "modpack-backups") }) RejectLink(path);
     }
 

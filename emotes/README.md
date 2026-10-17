@@ -1,11 +1,22 @@
 # Bundled emotes
 
-`SPEmotes Dances 5.zip` is the user-supplied pack of 41 `.emotecraft` animation files. Keep the ZIP here; do not commit extracted duplicates. The Windows installer reads this folder from GitHub main and downloads the archive separately from the mods.
+These user-supplied sets install automatically with the client pack:
 
-Maintain exactly one ZIP with flat `.emotecraft` entries, preserving the original Unicode filenames. The installer verifies the Git blob hash before extraction, rejects paths and duplicate filenames, and installs only for clients. Updating the archive's bytes is sufficient to trigger a client pack update; no installer rebuild is needed for archive-only changes.
+| Archive | Emotes |
+| --- | ---: |
+| `SPEmotes Dances 5.zip` | 41 |
+| `SPEmotes KSEPSP 2.zip` | 46 |
+| `SPEmotes Nightmares 3.zip` | 40 |
+| **Total** | **127** |
 
-The destination is `emotes/Mods Server Pack` beside the selected instance's `mods` folder. The default TLauncher instance is `%APPDATA%\.minecraft`. Emotecraft reads emotes recursively, so these files appear in its menu without manual extraction. Open the wheel with G, then use All Emotes and add favorites to wheel slots. Installing the files does not replace a player's wheel assignments or Emotecraft configuration.
+Keep the ZIPs here; do not commit extracted duplicates. Installer v1.4.3 or newer reads all ZIPs from GitHub main and downloads each separately from the mods. Older installers supporting only one ZIP must be replaced with the latest release.
 
-Installed-file hashes are recorded separately in `modpack-state/emotes.json`. Missing or changed current pack files are repaired. Replacements and unchanged files removed from a later pack are backed up; modified retired files and untracked files with other names are preserved. A file sharing an incoming pack filename is backed up before replacement. Add personal emotes outside `Mods Server Pack` so future pack repairs do not replace them.
+Each archive must contain flat `.emotecraft` entries, preserving original Unicode filenames. The installer verifies each Git blob hash before extraction and rejects paths, links, and duplicate filenames within an archive. Updating or adding archives requires no further installer rebuild. Only clients install emotes; `--check` reports each pack without downloading ZIPs or creating folders.
 
-Verified on 2026-10-17: all 41 extracted files matched the original ZIP bytes and appeared in Emotecraft's loaded emote registry in an isolated Minecraft 26.2 / NeoForge 26.2.0.90 client with Emotecraft 3.4.0-b.build.170 and PAL 1.2.6. The installer's `--self-test` covers Unicode extraction, intact-pack download skipping, missing-file repair, updates and retirement, personal-file preservation, checksum/path/duplicate rejection, filename collision backups, and rollback after a failed tracking-file replacement.
+The destination is `emotes/Mods Server Pack` beside the selected instance's `mods` folder. Dances keeps its original flat destination and `modpack-state/emotes.json` tracking file for existing installations. Each additional archive uses a subfolder named after its ZIP without the extension, with separate `modpack-state/emotes-<pack>.json` tracking. This keeps identical filenames in different sets independent. The default TLauncher instance is `%APPDATA%\.minecraft`.
+
+Emotecraft reads emotes recursively. Open the wheel with G, then use All Emotes and add favorites to wheel slots. Installing files preserves wheel assignments and Emotecraft configuration.
+
+Missing or changed current pack files are repaired. Replacements and unchanged files retired from an updated archive are backed up under `modpack-backups/emotes-*`; modified retired files and untracked files with other names are preserved. An incoming filename collision is backed up before replacement. Add personal emotes outside `Mods Server Pack`. Removing an entire ZIP from this repository does not automatically delete its previously installed folder.
+
+Validation: all three ZIPs pass CRC checks and contain 127 flat animation files. Installer self-tests cover Unicode extraction, independent packs with colliding filenames, per-pack download skipping and retirement, missing-file repair, personal-file preservation, checksum/path/duplicate rejection, collision backups, and rollback after a failed tracking-file replacement. The original Dances set was also verified in Emotecraft's loaded registry in an isolated Minecraft 26.2 / NeoForge 26.2.0.90 client with Emotecraft 3.4.0-b.build.170 and PAL 1.2.6.

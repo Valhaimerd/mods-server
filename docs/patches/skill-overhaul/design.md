@@ -3,6 +3,19 @@
 Status: requirements and recommendations only; no installed skill data changed.
 Recorded: 2026-10-17. Updated: 2026-10-18.
 
+## Balance revision ? 2026-10-18
+
+This revision supersedes earlier values below; all other decisions remain in force.
+
+- Martial Prowess: +5% melee damage, +5% attack speed, +10% armor penetration.
+- Hunter: +5% ranged damage, +1 Luck, +5% movement speed, +5% jump strength.
+- Magistrate: +20% Arcane/Fire/Frost power, +10 percentage points spell critical chance; retain +5% spell haste. Ordinary caster nodes: +5% power in those three schools, +2.5 critical points, +3% spell haste. No added healing or health.
+- Aegis: +15% magic resistance and +15% ranged resistance. Colossus: +6 hearts (+12 HP), retaining +6% healing.
+- Icons: Magistrate Ender Eye; Aegis Golden Apple; Bulwark Netherite Chestplate.
+- Specialization titles and Companion use explicit blue text, including Packleader and Guardian Stead.
+- RPG Class/Weapon Arcane, Fire and Frost power rewards: +5%. Priest healing stays +3%; Paladin defaults and Rogue +3% attack speed remain unchanged.
+- This is a balance/presentation update using the same skill IDs. Retain the existing one-time migration marker; do not reset already migrated players again.
+
 ## Scope
 
 Plan adjustments to Adventurer Skills and the RPG Series skill trees. The requested changes below cover Adventurer Skills and RPG Series attribute rewards. The goal is to buff the magical path while adjusting melee and ranged progression, preserving Paladin defaults. Do not apply the Adventurer restrictions across RPG class/weapon categories without a separate decision.

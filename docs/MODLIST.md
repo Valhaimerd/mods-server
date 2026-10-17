@@ -635,7 +635,7 @@ Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main 
 - **Core mechanic:** Specializes class and weapon abilities by spending earned skill points.
 - **Player guidance:** Open the skill screen with T and inspect class and weapon prerequisites.
 
-The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire, Frost and Priest Healing Power nodes +3%, and Rogue Attack Speed nodes +3%. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate.
+The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +5%, Priest Healing Power nodes +3%, and Rogue Attack Speed nodes +3%. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
 
@@ -665,9 +665,9 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Offensive, Defensive and Companion alternatives lock at their first path nodes. You can develop different branches together. Utilities has no exclusions or specialties. Completion nodes grant stats without item gifts. Adventurer skill XP gains are 1.35 times their original rate.
 
-Offensive offers melee, ranged and **Magistrate** casting. Ordinary damage nodes grant +1%, attack speed +3%, spell haste +2% and spell critical chance +2 percentage points. Magistrate ends with +5% Arcane/Fire/Frost power, +5 critical points and +5% spell haste. Its power excludes healing. The ranged path improves draw speed for bows and crossbows, projectile speed and damage.
+Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +1% and attack speed +3%. Caster nodes grant +5% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +20% school power, +10 critical points and +5% spell haste. Martial Prowess grants +5% melee damage/+5% attack speed/+10% penetration; Hunter grants +5% ranged damage/+1 Luck/+5% movement/+5% jump. Its power excludes healing. The ranged path improves draw speed for bows and crossbows, projectile speed and damage.
 
-Defensive offers **Aegis** (+10% magic/+10% ranged resistance), **Colossus** (+5 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
+Defensive offers **Aegis** (+15% magic/+15% ranged resistance), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
 
 **Companion** improves owned pets. **Packleader** favors damage, speed and attack knockback; its final node grants +20% pet damage, +15% pet speed and +10% pet resistance. **Guardian Stead** favors survival, ending with +10 pet hearts, +25% pet resistance and +30% knockback resistance. Ordinary pet resistance gives flat reduction; specialty resistance is a percentage. Added hearts need healing to fill.
 

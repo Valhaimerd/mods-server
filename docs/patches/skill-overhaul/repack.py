@@ -40,33 +40,36 @@ def define(key,title,rewards,icon='minecraft:book',description=None):
  if description:d[key]['description']={'text':description}
 def node(id,key):assert id in s;s[id]['definition']=key
 schools=['arcane','fire','frost']
-define('caster_power','+3% Arcane, Fire and Frost Power',[attr('spell_power:'+x,.03) for x in schools],'minecraft:blaze_powder')
-define('caster_haste','+2% Spell Haste',[attr('spell_power:haste',.02)],'minecraft:clock')
+define('caster_power','+5% Arcane, Fire and Frost Power',[attr('spell_power:'+x,.05) for x in schools],'minecraft:blaze_powder')
+define('caster_haste','+3% Spell Haste',[attr('spell_power:haste',.03)],'minecraft:clock')
 # The compatibility bridge grants fixed critical-chance points after innate/gear scaling.
-define('caster_critical','+2% Spell Critical Chance',[],'minecraft:amethyst_shard')
+define('caster_critical','+2.5% Spell Critical Chance',[],'minecraft:amethyst_shard')
 define('draw_speed','+3% Draw Speed (Bow and Crossbow)',[attr('ranged_weapon:haste',.03)],'minecraft:crossbow')
 define('projectile_both','+25% Bow and Crossbow Projectile Speed',[attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)],'minecraft:arrow')
 for id,key in {'3gpel3ejgsuvozax':'caster_power','v3lnj0ubt40kezxm':'caster_haste','ro3sae58m8jzn4yz':'caster_critical','m1aqebilvun2ycc7':'caster_power','qosdkbl0x44scigj':'caster_power','0oz1hx0q08v2i8j5':'caster_power','k6s01bg1bgnsqrew':'caster_haste','gs6jmtskmyhpbcnu':'caster_critical','8qdaale4k86t2ntn':'draw_speed','02did3uvilfob8c2':'draw_speed','ui0gusk2hniqwghe':'projectile_both','vxmb1u84wzfwpuq6':'projectile_both','k5g9ddvqzlzkxv9f':'ranged_damage+3%'}.items():node(id,key)
-define('magistrate','Magistrate',[*[attr('spell_power:'+x,.05) for x in schools],attr('spell_power:haste',.05)],'minecraft:enchanted_book','+5% Arcane/Fire/Frost Power\n+5% Spell Critical Chance\n+5% Spell Haste')
+define('magistrate','Magistrate',[*[attr('spell_power:'+x,.2) for x in schools],attr('spell_power:haste',.05)],'minecraft:ender_eye','+20% Arcane/Fire/Frost Power\n+10% Spell Critical Chance\n+5% Spell Haste')
 node('zdfpatqypd5nnqx8','magistrate')
 for key,remove in [('martial_prowess','puffish_attributes:resistance'),('hunter','puffish_attributes:ranged_resistance')]:
  v=d[key];v['rewards']=[r for r in v['rewards'] if r['data'].get('attribute')!=remove]
  for r in v['rewards']:
   a=r['data'].get('attribute','')
-  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.01
-  if a=='attack_speed':r['data']['value']=.03
- v['description']={'text':'+1% Melee Damage\n+5% Armor Penetration\n+3% Attack Speed' if key=='martial_prowess' else '+1% Ranged Damage\n+0.5 Luck\n+3% Movement Speed\n+4% Jump Strength'}
+  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.05
+  if a=='attack_speed':r['data']['value']=.05
+  if a=='puffish_attributes:armor_shred':r['data']['value']=.1
+  if a=='luck':r['data']['value']=1
+  if a in ['movement_speed','puffish_attributes:jump']:r['data']['value']=.05
+ v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+5% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
 mid=['zhraasg53ibsn3dk','6i5us24w9a9ar7v1','rvzvos2233a9pi4g','rr6e15vhxj8hdyt4','owk0eiqwgomn6jwb']
 for id,key in zip(mid,['health+2','healing+3%','health+2','healing+3%','health+2']):node(id,key)
 for id,host,key in [('new_colossus_health',mid[-1],'health+2'),('new_colossus_healing',mid[-2],'healing+3%')]:
  s[id]={'definition':key,'x':s[host]['x'],'y':-50,'root':False};c['normal']['bidirectional'].append([host,id])
-define('colossus','Colossus',[attr('minecraft:max_health',10,'addition'),attr('puffish_attributes:healing',.06)],'minecraft:totem_of_undying','+5 Hearts\n+6% Healing')
+define('colossus','Colossus',[attr('minecraft:max_health',12,'addition'),attr('puffish_attributes:healing',.06)],'minecraft:totem_of_undying','+6 Hearts\n+6% Healing')
 top=['xzau8wf7cmkahump','arcimlg0c3igwe0e','-7_-4','d67mbc3a2pg8781z','4zj68e0t9ythniot','2wtk419203if3s6n','bxm9laus4f3lfqjk']
 for id,key in zip(top,['magic_resistance+2%','ranged_resistance+2%']*3+['magic_resistance+2%']):node(id,key)
-define('aegis','Aegis',[attr('puffish_attributes:magic_resistance',.1),attr('puffish_attributes:ranged_resistance',.1)],'minecraft:shield','+10% Magic Resistance\n+10% Ranged Resistance');node('6tinz5atn533lzo9','aegis')
+define('aegis','Aegis',[attr('puffish_attributes:magic_resistance',.15),attr('puffish_attributes:ranged_resistance',.15)],'minecraft:golden_apple','+15% Magic Resistance\n+15% Ranged Resistance');node('6tinz5atn533lzo9','aegis')
 bottom=['5h6pmokx7ro45qtw','sgg10fjuiiqlos8w','-7_4','fxxc8k4yljxkbepz','00zagtopdfilmaw7','8meyqbog5d7qmyzg','bvasjpryldz0yhpx','v2pojgmi36k5fuxe','vgrpua0glqz5sem5']
 for id,key in zip(bottom,['resistance+1%','armor+1','resistance+1%','ranged_resistance+2%','armor+1','resistance+1%','ranged_resistance+2%','armor+1','ranged_resistance+2%']):node(id,key)
-define('bulwark','Bulwark',[attr('puffish_attributes:resistance',.02),attr('puffish_attributes:ranged_resistance',.04),attr('minecraft:armor',2,'addition'),attr('minecraft:knockback_resistance',.2,'addition')],'minecraft:iron_chestplate','+2% Resistance\n+4% Ranged Resistance\n+2 Armor\n+20% Knockback Resistance')
+define('bulwark','Bulwark',[attr('puffish_attributes:resistance',.02),attr('puffish_attributes:ranged_resistance',.04),attr('minecraft:armor',2,'addition'),attr('minecraft:knockback_resistance',.2,'addition')],'minecraft:netherite_chestplate','+2% Resistance\n+4% Ranged Resistance\n+2 Armor\n+20% Knockback Resistance')
 for id,key in {'2pj0fbogctx589t3':'orbs_experience+25%','yts2dfnkpz3xqziu':'movement_speed+3%','gk57oho18h66ghxe':'anvil_repair_cost-5%','vaios6drja2eapyg':'fortune+0.1'}.items():node(id,key)
 removed=['i0j6pbbluuqne53e','s02hkhd2ha87ji1n','qxcrnvfslhwdg5ip','a036s916b2cp7hb2','i2oo5vl75gyj6b3d','usqd6s5h8ypx5gud','ijsno4eog2w0unyr','bysc5yiqm9ni1mkf']
 for id in removed:del s[id]
@@ -86,6 +89,8 @@ pets(['qp2x45h0nbr233e1','e7fyzt06vz8mu5iv','5grntvcsxgm61gbq','vyt2xj8si9zbat4x
 pets(['828iwet0erdpwynl','00ojkscfhac0ifpm','ha05s7wy4h135376','iswxmklicwgn4xmp','q0ul30ow7ifhtq6j','mk08ei1wfvcssxs6','mxm9kmy816lzgkbt','rbfta22ujrmwzugp','fjtdo0ic4650e43d','6vlgfj2olene3csb','fr0yn9kxau3qimvv'],['hp','res','hp','kr','res','hp','res','hp','kr','damage','speed'])
 define('packleader','Packleader',[],'minecraft:bone','+20% Pet Damage\n+15% Pet Speed\n+10% Pet Resistance');node('iggdp0a33bljw4kl','packleader');pet['iggdp0a33bljw4kl']={'damage_pct':.2,'speed':.15,'res_pct':.1}
 define('guardian_stead','Guardian Stead',[],'minecraft:totem_of_undying','+10 Pet Hearts\n+25% Pet Resistance\n+30% Pet Knockback Resistance');node('8wjzxjnmc1gr7dvq','guardian_stead');pet['8wjzxjnmc1gr7dvq']={'hp':20,'res_pct':.25,'kr':.3}
+for key,title in {'martial_prowess':'Martial Prowess','hunter':'Hunter','magistrate':'Magistrate','aegis':'Aegis','colossus':'Colossus','bulwark':'Bulwark','packleader':'Packleader','guardian_stead':'Guardian Stead','root_versatile':'Companion'}.items():
+ d[key]['title']={'text':title,'color':'blue'}
 # Only emitted definitions can award anything; discard deleted and superseded definitions.
 d={k:v for k,v in d.items() if k in {v['definition'] for v in s.values()}}
 for n,obj in [('definitions',d),('skills',s),('connections',c)]:put(f,b+n+'.json',obj)
@@ -101,9 +106,9 @@ for cat in ['class_skills','weapon_skills']:
   if k.startswith('paladin'):continue
   for r in v.get('rewards',[]):
    a=r.get('data',{}).get('attribute')
-   if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.03
+   if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.05 if a in ['spell_power:arcane','spell_power:fire','spell_power:frost'] else .03
   if any(r.get('data',{}).get('attribute') in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] for r in v.get('rewards',[])) or k in ['rogue_root','rogue_boost']:
-   v['description']={'text':'+3% '+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
+   v['description']={'text':('+5% ' if k.split('_')[0] in schools else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
  assert all(v==d[k] for k,v in original.items() if k.startswith('paladin'))
  put(f,b+'definitions.json',d);xp(f,b)
 write(RPG,f)

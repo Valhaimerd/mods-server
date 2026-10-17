@@ -23,6 +23,9 @@ public class OverhaulProbe {
  void near(double actual,double expected,String label){check(Math.abs(actual-expected)<.0001,label+" actual="+actual+" expected="+expected);}
  void unlock(String...ids){for(var id:ids)tree.getSkill(id).orElseThrow().unlock(player);SkillOverhaul.applyCritical(player);}
  void reset(){tree.resetSkills(player);tree.setExtraPoints(player,1000);SkillOverhaul.applyCritical(player);}
+ void stat(String node,String attribute,double bonus,boolean flat){
+  reset();var holder=BuiltInRegistries.ATTRIBUTE.get(Identifier.parse(attribute)).orElseThrow();var instance=player.getAttribute(holder);boolean dynamic=attribute.startsWith("puffish_attributes:");if(!dynamic)instance.setBaseValue(10);double before=dynamic ? DynamicModification.create().withPositive(holder,player).applyTo(100):instance.getValue();unlock(node);double after=dynamic ? DynamicModification.create().withPositive(holder,player).applyTo(100):instance.getValue();near(after,flat ? before+bonus:before*(1+bonus),node+" "+attribute);
+ }
  double value(String id){return player.getAttributeValue(BuiltInRegistries.ATTRIBUTE.getOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.ATTRIBUTE,Identifier.parse(id))));}
  int useTicks(Item item)throws Exception{
   player.stopUsingItem();player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new ItemStack(item));player.startUsingItem(net.minecraft.world.InteractionHand.MAIN_HAND);
@@ -55,18 +58,18 @@ public class OverhaulProbe {
    unlock("50jkue9gpbpznlfd");SkillOverhaul.migrate(player);check(tree.getSkill("50jkue9gpbpznlfd").orElseThrow().getState(player)==Skill.State.UNLOCKED,"migration runs once");reset();
    unlock("50jkue9gpbpznlfd","3gpel3ejgsuvozax");check(tree.getSkill("ei4d3ri7bngns8lj").orElseThrow().getState(player)==Skill.State.EXCLUDED,"ranged entrance excluded after caster choice");
    reset();unlock("6xmqgm3uw97hrynh","15trz7ezr8z7kcp8","qp2x45h0nbr233e1");check(tree.getSkill("828iwet0erdpwynl").orElseThrow().getState(player)==Skill.State.EXCLUDED,"Companion right excluded after left choice");
-   reset();double crit=value("spell_power:critical_chance"),haste=value("spell_power:haste");unlock("ro3sae58m8jzn4yz");near(value("spell_power:critical_chance")-crit,2,"ordinary critical chance adds two points");unlock("zdfpatqypd5nnqx8");near(value("spell_power:critical_chance")-crit,7,"Magistrate adds five critical points");near(value("spell_power:haste")/haste,1.05,"Magistrate haste");
+   reset();double crit=value("spell_power:critical_chance"),haste=value("spell_power:haste");unlock("ro3sae58m8jzn4yz");near(value("spell_power:critical_chance")-crit,2.5,"ordinary critical chance adds 2.5 points");unlock("zdfpatqypd5nnqx8");near(value("spell_power:critical_chance")-crit,12.5,"Magistrate adds ten critical points");near(value("spell_power:haste")/haste,1.05,"Magistrate haste");
    reset();var schools=List.of(SpellSchools.ARCANE,SpellSchools.FIRE,SpellSchools.FROST);var powerBefore=new ArrayList<Double>();
    for(var school:schools){player.getAttribute(school.attributeEntry).setBaseValue(10);powerBefore.add(SpellPower.getSpellPower(school,player).baseValue());}
    double healingBefore=value("spell_power:healing"),healthBefore=player.getMaxHealth();unlock("zdfpatqypd5nnqx8");
    for(int i=0;i<schools.size();i++){
-    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.05,"Magistrate school power "+i);
+    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.2,"Magistrate school power "+i);
     var victim=EntityTypes.PIG.create(server.overworld(),EntitySpawnReason.COMMAND);victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);victim.setHealth(100);
     victim.hurtServer(server.overworld(),SpellDamageSource.player(school,player),(float)power);near(100-victim.getHealth(),power,"school damage uses enhanced power "+i);
    }
    near(value("spell_power:healing"),healingBefore,"Magistrate excludes healing power");near(player.getMaxHealth(),healthBefore,"Magistrate excludes health");
    reset();var ca=player.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("spell_power:critical_chance")).orElseThrow());
-   var gear=Identifier.parse("overhaul_probe:critical_gear");ca.addTransientModifier(new AttributeModifier(gear,20,AttributeModifier.Operation.ADD_VALUE));crit=value("spell_power:critical_chance");unlock("ro3sae58m8jzn4yz");near(value("spell_power:critical_chance")-crit,2,"critical points stay fixed with additive gear");ca.removeModifier(gear);
+   var gear=Identifier.parse("overhaul_probe:critical_gear");ca.addTransientModifier(new AttributeModifier(gear,20,AttributeModifier.Operation.ADD_VALUE));crit=value("spell_power:critical_chance");unlock("ro3sae58m8jzn4yz");near(value("spell_power:critical_chance")-crit,2.5,"critical points stay fixed with additive gear");ca.removeModifier(gear);
    reset();unlock("46o8u8oydffa04o6");near(DynamicModification.create().withPositive(PuffishAttributes.REPAIR_COST,player).applyTo(100),80,"one anvil node 20 percent discount");unlock("gh96zb6t67hnmswd","gk57oho18h66ghxe");near(DynamicModification.create().withPositive(PuffishAttributes.REPAIR_COST,player).applyTo(100),51.2,"three anvil discounts compose safely");
    reset();var wolf=EntityTypes.WOLF.create(server.overworld(),EntitySpawnReason.COMMAND);wolf.tame(player);wolf.setOwner(player);
    // Fake players are not in the level's entity lookup; ensure the reference resolves.
@@ -86,7 +89,11 @@ public class OverhaulProbe {
    check(useTicks(Items.BOW)>bowTicks,"bow drawing advances faster");check(useTicks(Items.CROSSBOW)>crossbowTicks,"crossbow charging advances faster");
    reset();double normalRanged=DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1);
    unlock("ui0gusk2hniqwghe");near(DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1)/normalRanged,1.25,"bow projectile speed");near(DynamicModification.create().withPositive(PuffishAttributes.CROSSBOW_PROJECTILE_SPEED,player).applyTo(1),1.25,"crossbow projectile speed");
-   reset();var hp=player.getMaxHealth();unlock("ebhti3huj2v7zvny");near(player.getMaxHealth(),hp+10,"Colossus five hearts");
+   reset();var hp=player.getMaxHealth();unlock("ebhti3huj2v7zvny");near(player.getMaxHealth(),hp+12,"Colossus six hearts");
+   stat("r7mv8vq583ntlk4y","puffish_attributes:melee_damage",.05,false);stat("r7mv8vq583ntlk4y","minecraft:attack_speed",.05,false);stat("r7mv8vq583ntlk4y","puffish_attributes:armor_shred",.1,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.05,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
+   stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.15,false);
+   stat("3gpel3ejgsuvozax","spell_power:arcane",.05,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
    for(var catName:List.of("class_skills","weapon_skills")) {
     var cat=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:"+catName)).orElseThrow();check(cat.getExperience().isPresent(),catName+" loads");
    }

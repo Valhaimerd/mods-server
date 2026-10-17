@@ -1,0 +1,23 @@
+{
+  "profile": "performance",
+  "hiddenChests": true,
+  "adaptive": false,
+  "autoRenderDistance": false,
+  "entities": true,
+  "blockEntities": true,
+  "particles": true,
+  "weather": true,
+  "passiveDistance": 64,
+  "hostileDistance": 96,
+  "itemDistance": 32,
+  "decorativeDistance": 48,
+  "chestDistance": 64,
+  "signDistance": 48,
+  "bannerDistance": 48,
+  "particleBudget": 100,
+  "particleDistance": 48,
+  "weatherDensity": 50,
+  "weatherParticleDensity": 50,
+  "weatherDistance": 6,
+  "reduceExpensive": true
+}

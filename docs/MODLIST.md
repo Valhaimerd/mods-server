@@ -99,7 +99,7 @@ Use this page to begin a new world. [Featured Mechanics](#part-i--featured-mecha
 
 ### First ten minutes
 
-1. Compare the seven Iourus racial traits and choose a lasting race. Its direct menu key is `P`; the selection screen explains each option.
+1. Compare the seven Iourus racial traits and choose a lasting race. Its direct menu shortcut is unbound; assign Open Race Menu in Controls to reopen the selection screen and read each option.
 2. Equip a class book with a matching weapon. Changing the loadout changes your role, so try a few combinations.
 3. Open the skill tree with `T` and read node requirements before spending points. Test your equipped spell or attack against an easy target.
 4. Open the world map with `M`, mark a route, and keep coordinates visible with `N`. Check the Cave Codex before hunting for Alex's Caves.
@@ -107,7 +107,7 @@ Use this page to begin a new world. [Featured Mechanics](#part-i--featured-mecha
 
 ### Controls when you need them
 
-The copied profile uses `T` for skills, `P` for the race menu, `M` for the world map, `N` for coordinates, `G` for Alex's Caves ability, `V` for the equipped backpack, and `E` for a combat roll. Better Party opens from its inventory button. In JEI, left-click shows recipes and right-click shows uses. Curios opens from the inventory button. If a binding conflicts, use the complete [controls reference](#essential-keybinds-and-conflict-resolution) at the end; press **Esc** while editing a binding to leave it unbound.
+The copied profile uses `T` for skills, `M` for the world map, `N` for coordinates, `G` for the emote wheel, `V` for the equipped backpack, and `E` for a combat roll. Better Party opens from its inventory button. In JEI, left-click shows recipes and right-click shows uses. Curios opens from the inventory button. If a binding conflicts, use the complete [controls reference](#essential-keybinds-and-conflict-resolution) at the end; press **Esc** while editing a binding to leave it unbound.
 
 ### Screen layout
 
@@ -179,7 +179,7 @@ A race affects survival and combat beyond appearance. Resetting one requires an 
 
 1. Choose an archetype: Archer for ranged play, Paladin for protection, Priest for healing, Rogue for mobile melee, Warrior for heavy melee, or Wizard for magic.
 2. Pair its weapon with a class book. Use a Spell Binding Table to make books, then equip one in the Curios spell-book slot.
-3. Hold the compatible weapon to reveal Spell Engine abilities. Follow the keys shown on the ability bar and carry runes for spells that consume them. Hold `Left Alt` when the ordinary hotbar needs priority.
+3. Hold the compatible weapon to reveal Spell Engine abilities. Follow the keys shown on the ability bar and carry runes for spells that consume them. Bypass Spell Hotbar is unbound in this profile; assign it in Controls if you want a manual override for the ordinary hotbar.
 4. Add class armor, skill nodes, and accessories that reinforce the same role.
 
 There is no permanent class-selection screen. If an ability fails, check the weapon, book, runes, target, and cooldown before changing the build.
@@ -345,7 +345,7 @@ The map is a memory of travel, not a preview of unexplored land. It becomes more
 1. Search the Overworld for an Underground Cabin. Its barrels contain Cave Tablets, and the Cave Compendium explains the discovery system.
 2. Put a Cave Tablet and paper in the Spelunkery Table. Solve three translation levels, each with five guesses, to produce a Cave Codex; a failed or interrupted translation consumes the tablet. Craft the codex with paper into its Cave Biome Map.
 3. Read the map before descending. Magnetic, Primordial, Toxic, Abyssal, Forlorn, and Candy caves have different creatures, hazards, and resources.
-4. Bring supplies for the named cave. If equipped Alex's Caves gear grants a special ability, use `G` to activate it.
+4. Bring supplies for the named cave. If equipped Alex's Caves gear grants a special ability, assign Alex's Caves Special Ability in Controls to activate it; this profile leaves it unbound.
 
 Use the Cave Codex to unlock biome chapters in the Cave Compendium before spending it on a map. Each cave is a destination with its own rules rather than another ordinary ore layer.
 
@@ -3184,9 +3184,9 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 - **Type:** Social animation
 - **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
-- **Player guidance:** Assign Open Emote Wheel in Controls, choose emotes in its menu, and add compatible custom files to the instance's `emotes` folder.
+- **Player guidance:** Press `G` to open the emote wheel, choose emotes in its menu, and add compatible custom files to the instance's `emotes` folder.
 
-Includes the client-only Borrow Their Emote add-on: look at an emoting player, use its configured Borrow Emote combination, then stop crouching to join. Configure that combination around this pack's C Sneak key. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
+Includes the client-only Borrow Their Emote add-on: assign Borrow Emote in Controls, then use that combination while looking at an emoting player and stop crouching to join. Borrow Emote is currently unbound; Reverse Sound uses `Left Ctrl`. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
 
 <p class="core-mod-source"><a href="https://modrinth.com/mod/emotecraft">Emotecraft</a> | <a href="https://modrinth.com/mod/emotecraft-borrow-their-emote">Borrow Their Emote</a></p>
 
@@ -3198,7 +3198,7 @@ Includes the client-only Borrow Their Emote add-on: look at an emoting player, u
 
 - **Type:** Client-side cosmetic display
 - **Core mechanic:** Hides selected armor pieces and elytra on your client without unequipping them or removing their protection.
-- **Player guidance:** Assign Open Armor Hider Menu in Controls, then choose the pieces and whether to affect yourself or all players.
+- **Player guidance:** Press `K` to open Armor Hider, then choose the pieces and whether to affect yourself or all players.
 
 Helmets start hidden for all players in this mod's default settings. Choose Off to restore normal visibility; your settings do not change what another player's client renders.
 
@@ -3256,7 +3256,7 @@ Visual differences help distinguish categories in a crowded inventory. Read the 
 - **Core mechanic:** Adds fluid first-person hand and held-item animations with in-hand physics.
 - **Player guidance:** Tune the visual settings in the mod's in-game configuration screen if an animation obscures an action.
 
-Punchy changes presentation on each player's client without changing server combat rules. Its local 26.2 repair and the revised Modded Swords x Punchy! mappings are client-only extras. RPG weapons follow the animated hands; skills keep their original Spell Engine motions, then return to Punchy. Client installs enable Punchy's Better Combat compatibility automatically and back up existing configs; other settings are preserved. Remove old RPG item blacklist entries to use the mappings.
+Punchy changes presentation on each player's client without changing server combat rules. Its local 26.2 repair and the revised Modded Swords x Punchy! mappings are client-only extras. RPG weapons follow the animated hands; skills keep their original Spell Engine motions, then return to Punchy. Press `I` to inspect the held item. Client installs enable Punchy's Better Combat compatibility automatically and back up existing configs; other settings are preserved. Remove old RPG item blacklist entries to use the mappings.
 
 <p class="core-mod-source"><a href="https://modrinth.com/mod/punchy-fpa">Official mod page</a></p>
 
@@ -3394,7 +3394,7 @@ These tables reflect the copied `options.txt` profile. `C` is assigned to both S
 
 ### Essential keybinds and conflict resolution
 
-Follow the categories from top to bottom. A blank **Recommended key** means **Unbound**. The copied profile uses `T` for skills, `P` for Iourus Races, `M` for the world map, `N` for coordinates, and `G` for Alex's Caves. Better Party and Curios open from inventory buttons.
+Follow the categories from top to bottom. A blank **Recommended key** means **Unbound**. The copied profile uses `T` for skills, `M` for the world map, `N` for coordinates, and `G` for the emote wheel. Better Party and Curios open from inventory buttons.
 
 #### LibTooltips
 
@@ -3414,6 +3414,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 | Action | Recommended key |
 |---|---|
+| Fly using Magma Wings | `Space` |
 | Jump | `Space` |
 | Roll | `E` |
 | Sneak | `C` |
@@ -3428,7 +3429,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Action | Recommended key |
 |---|---|
 | Advancements | `B` |
-| Alex's Caves Special Ability | `G` |
+| Alex's Caves Special Ability |  |
 | Quick Actions |  |
 | Take Screenshot |  |
 | Toggle Cinematic Camera |  |
@@ -3595,7 +3596,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 | Action | Recommended key |
 |---|---|
-| Bypass Spell Hotbar | `Left Alt` |
+| Bypass Spell Hotbar |  |
 | Spell Hotbar Slot 1 |  |
 | Spell Hotbar Slot 2 |  |
 | Spell Hotbar Slot 3 |  |
@@ -3648,7 +3649,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 | Action | Recommended key |
 |---|---|
-| Open Race Menu | `P` |
+| Open Race Menu |  |
 
 #### Item Interactions
 
@@ -3793,21 +3794,21 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 | Action | Recommended key |
 |---|---|
-| Open Emote Wheel |  |
+| Open Emote Wheel | `G` |
 | Stop Playing Emote |  |
 
 #### Armor Hider
 
 | Action | Recommended key |
 |---|---|
-| Open Armor Hider Menu |  |
+| Open Armor Hider Menu | `K` |
 
 #### Emotecraft: Borrow Their Emote
 
 | Action | Recommended key |
 |---|---|
 | Borrow Emote |  |
-| Reverse Sound |  |
+| Reverse Sound | `Left Ctrl` |
 
 #### Vectors
 
@@ -3815,7 +3816,29 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 |---|---|
 | Open Vectors |  |
 
-New emote, Vectors, and Armor Hider controls have no pack-assigned shortcut yet. Configure them in Controls before use; the existing recommended profile does not configure these additions.
+#### Punchy!
+
+| Action | Recommended key |
+|---|---|
+| Inspect | `I` |
+| Open Punchy Menu |  |
+
+#### Punchy Triggerable Animations
+
+| Action | Recommended key |
+|---|---|
+| Sword Inspect Old (`sword_inspect_old`) |  |
+| Sword Inspect Rework (`sword_inspect_rework`) |  |
+| Punchy Sword Inspect Old (`punchy_sword_inspect_old`) |  |
+| Punchy Sword Inspect Rework (`punchy_sword_inspect_rework`) |  |
+
+#### Chiseled Bookshelf Visualizer
+
+| Action | Recommended key |
+|---|---|
+| Enable/Disable the Visualizer |  |
+
+Client installs and repairs apply Vectors' **Maximum Performance** preset, including its rendering distances, particle/weather limits, and expensive-effect reduction. Adaptive quality and automatic render-distance adjustment remain off for this preset. Existing config files are backed up and unrelated interface settings are preserved. Open Vectors is unbound; reach its settings through the in-game mod menu or assign a shortcut. Server installs and `--check` do not change this client setting.
 
 <div class="page-break" aria-hidden="true"></div>
 

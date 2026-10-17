@@ -89,6 +89,33 @@ internal static class RecommendedKeybinds
         return new KeybindApplyResult(true, backupPath);
     }
 
+    internal static async Task RunSelfTestAsync()
+    {
+        var root = Path.Combine(Path.GetTempPath(), $"controls-installer-{Guid.NewGuid():N}");
+        var options = Path.Combine(root, "options.txt");
+        Directory.CreateDirectory(root);
+        const string original = "music:0.3\nkey_key.emotecraft.fastchoose:key.keyboard.b\nkey_custom.mod:key.keyboard.p\n";
+        try
+        {
+            await File.WriteAllTextAsync(options, original);
+            var result = await ApplyAsync(Path.Combine(root, "mods"));
+            var saved = await File.ReadAllTextAsync(options);
+            var profile = LoadProfile();
+            if (!result.Changed || result.BackupPath is null ||
+                await File.ReadAllTextAsync(result.BackupPath) != original ||
+                !saved.Contains("music:0.3\n") || !saved.Contains("key_custom.mod:key.keyboard.p\n") ||
+                profile.Values.Any(line => !saved.Split('\n').Contains(line)) ||
+                profile["key_key.emotecraft.fastchoose"] != "key_key.emotecraft.fastchoose:key.keyboard.g" ||
+                profile["key_key.punchy.inspect"] != "key_key.punchy.inspect:key.keyboard.i" ||
+                profile["key_key.armorhider.open_menu"] != "key_key.armorhider.open_menu:key.keyboard.k" ||
+                profile["key_key.special_ability"] != "key_key.special_ability:key.keyboard.unknown")
+                throw new InvalidOperationException("Self-test failed: current controls merge/backup.");
+            if ((await ApplyAsync(Path.Combine(root, "mods"))).Changed || await File.ReadAllTextAsync(options) != saved)
+                throw new InvalidOperationException("Self-test failed: controls merge must be idempotent.");
+        }
+        finally { Directory.Delete(root, recursive: true); }
+    }
+
     private static Dictionary<string, string> LoadProfile()
     {
         using var stream = typeof(RecommendedKeybinds).Assembly.GetManifestResourceStream(ResourceName)

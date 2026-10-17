@@ -1100,7 +1100,7 @@ This extends visual customization to flight gear. Decoration does not by itself 
 
 - **Type:** Equipment improvement
 - **Core mechanic:** Places trims on some generated mob, loot, and trade equipment.
-- **Player guidance:** Look for decorated equipment in generated loot and trades.
+- **Player guidance:** Look for decorated equipment in generated loot and trades. The pack repairs a crash when TradeView previews a short trade pool.
 
 Some found gear arrives with a trim already applied. The trim primarily changes its appearance.
 

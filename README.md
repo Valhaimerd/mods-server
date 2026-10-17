@@ -1,6 +1,6 @@
 # Mods Server Pack
 
-This repository contains the current Minecraft mod collection and a Windows installer that keeps a player's mod folder in sync with it.
+This repository contains the current Minecraft mod collection and a Windows installer that keeps a player's mod folder and bundled emote pack in sync with it.
 
 The current pack requires Minecraft 26.2, NeoForge **26.2.0.90 or newer**, and Java 25 or newer. Install the matching NeoForge version on both client and server before syncing mods; the mod installer updates JARs but does not change the loader.
 
@@ -16,13 +16,17 @@ For Client, select TLauncher (the only currently enabled launcher), then choose 
 
 For Server, choose `Select file location…` and select the server's existing `mods` directory. The folder name must be `mods` (case-insensitive). Server installs use only the repository's `mods` folder; UI/client JARs from `mod store` are excluded.
 
+Client installs and repairs also download the ZIP from `emotes/`, verify its Git content hash, and automatically extract its 41 SPEmotes Dances 5 files to `%APPDATA%\.minecraft\emotes\Mods Server Pack`. No manual extraction is needed. This runs independently of the keybind choice, including when the mods are already current. For `--target`, the emotes go beside that instance's `mods` folder instead. Server installs do not install the emote pack; `--check` reports its status without downloading or extracting the ZIP or creating folders.
+
+The installer tracks its emote files in `modpack-state/emotes.json`, skips downloading an intact current pack, and repairs missing or changed pack files. Replaced files and unchanged retired pack files move to `modpack-backups/emotes-*`; failures during replacement restore the previous files. Personal emotes outside the managed subfolder and untracked files with other names inside it are preserved. An existing file that shares an incoming pack filename is backed up before replacement. A user-edited retired pack file is also kept. Keep the repository's `emotes/` folder to one ZIP containing flat `.emotecraft` files; see [emote pack maintenance](emotes/README.md).
+
 Advanced Loot Info 2.4.0, Advanced Worldgen Info 1.3.2, ALICompat 1.3.0, and Advanced Core Info 1.5.0 are in `mods` for client/server data sharing. Their initial information collection can take several minutes; the pack owner reports waiting about eight minutes for ALI to finish. Allow collection to complete before using the reference data. A dedicated server may need a longer `max-tick-time` watchdog allowance for this startup work.
 
 Emotecraft is installed on clients and servers. Borrow Their Emote and its MossyLib dependency, Universal Enchantment Info, Armor Hider, and the local NeoForge Vectors alpha are client-only extras in `mod store`. The recommended profile, refreshed from the owner's current controls, uses G for the emote wheel, I for Punchy inspect, and K for Armor Hider. The race menu, Alex's Caves ability, and Spell Engine hotbar bypass are unbound. See the handbook for all controls. Client installs and repairs also apply Vectors' Maximum Performance preset to `config/vectors.json`, backing up an existing file and preserving unrelated interface settings. This runs independently of the keybind choice; server installs and `--check` leave it untouched.
 
 Punchy and the revised Modded Swords x Punchy! resource JAR are client-only extras in `mod store`. The local Punchy 2.8f repair keeps RPG weapons attached to its animated hands and yields to the original Spell Engine skill motions while they play, then resumes Punchy. The resource supplies mappings for the 139 RPG Series weapon definitions. Client installs and repairs set `bettercombatCompat` to `true` in `config/punchy/punchy_config.json`, backing up an existing file under `modpack-backups` and preserving other settings. This also runs when the JARs are already current, independently of the keybind choice. Server installs and `--check` do not change Punchy settings. Remove any old RPG namespace blacklist entries to use these mappings. See the [compatibility implementation and test notes](docs/superpowers/plans/2026-10-16-punchy-modded-swords-26-2.md).
 
-For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. Downloads are verified before the existing installation is changed, and a failed update is rolled back.
+For either mode, the installer compares Git hashes and downloads only missing or changed JARs. Extra and replaced JARs are moved to a timestamped `modpack-backups` folder beside the target `mods` folder. JAR downloads are verified before the mod folder is changed, and a failed mod replacement is rolled back. Emote replacement has its own verification and rollback; an error in a later step does not undo a completed mod update.
 
 After a successful install or repair, the installer opens the [player handbook PDF](https://github.com/Valhaimerd/mods-server/blob/main/modpack-player-handbook.pdf) in the default browser. It also opens the guide when the installation is already current; `--check`, cancellation, and failed updates do not open it.
 

@@ -65,9 +65,14 @@ internal static class Program
             http.DefaultRequestHeaders.UserAgent.ParseAdd("ModsServerInstaller/1.0");
 
             var package = await LoadPackageAsync(http, request.Mode);
+            var emoteArchive = request.Mode == InstallMode.Client ? await LoadEmoteArchiveAsync(http) : null;
             var plan = await BuildPlanAsync(target, package);
 
             PrintPlan(plan);
+            if (emoteArchive is not null)
+                Console.WriteLine(await EmotePack.IsCurrentAsync(target, emoteArchive)
+                    ? $"Emote pack is current: {emoteArchive.Name}"
+                    : $"Emote pack needs installation/repair: {emoteArchive.Name}");
             if (options.CheckOnly)
             {
                 Console.WriteLine("Check only: no files were changed.");
@@ -91,6 +96,12 @@ internal static class Program
 
             if (request.Mode == InstallMode.Client)
             {
+                var emotes = await EmotePack.ApplyAsync(http, target, emoteArchive!);
+                Console.WriteLine(emotes.Changed
+                    ? $"Installed/repaired {emotes.Count} pack emotes."
+                    : $"All {emotes.Count} pack emotes are current.");
+                if (emotes.BackupPath is not null)
+                    Console.WriteLine($"Previous emote files backup: {emotes.BackupPath}");
                 var punchy = await PunchyCompatibility.ApplyAsync(target);
                 Console.WriteLine(punchy.Changed
                     ? "Punchy Better Combat compatibility enabled."
@@ -225,6 +236,19 @@ internal static class Program
     {
         var desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
         return Directory.Exists(desktop) ? desktop : null;
+    }
+
+    private static async Task<EmoteArchive> LoadEmoteArchiveAsync(HttpClient http)
+    {
+        var entries = await http.GetFromJsonAsync<List<GitHubEntry>>(
+            $"https://api.github.com/repos/{Repository}/contents/emotes?ref={Branch}")
+            ?? throw new InvalidOperationException("GitHub returned no emote pack.");
+        var archives = entries.Where(entry => entry.Type == "file" &&
+            entry.Name.EndsWith(".zip", StringComparison.OrdinalIgnoreCase)).ToArray();
+        if (archives.Length != 1 || archives[0].DownloadUrl is null)
+            throw new InvalidDataException("The repository's emotes folder must contain exactly one downloadable ZIP.");
+        var archive = archives[0];
+        return new EmoteArchive(archive.Name, archive.Sha, archive.DownloadUrl!);
     }
 
     private static async Task<IReadOnlyList<PackageFile>> LoadPackageAsync(HttpClient http, InstallMode mode)
@@ -388,7 +412,7 @@ internal static class Program
         }
     }
 
-    private static async Task<string> GitBlobShaAsync(string path)
+    internal static async Task<string> GitBlobShaAsync(string path)
     {
         var length = new FileInfo(path).Length;
         using var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA1);
@@ -552,6 +576,7 @@ internal static class Program
         await PunchyCompatibility.RunSelfTestAsync();
         await VectorsProfile.RunSelfTestAsync();
         await RecommendedKeybinds.RunSelfTestAsync();
+        await EmotePackTests.RunAsync();
 
         var missingTargetRoot = Path.Combine(Path.GetTempPath(), $"installer-check-{Guid.NewGuid():N}");
         var missingTarget = Path.Combine(missingTargetRoot, "mods");
@@ -611,6 +636,7 @@ internal static class Program
         Console.WriteLine("ModsServerInstaller [--check] [--target <mods-folder>] [--yes]");
         Console.WriteLine();
         Console.WriteLine("Run without options for the Client/Server keyboard menu.");
+        Console.WriteLine("Client installs include the bundled emote ZIP with automatic extraction.");
         Console.WriteLine("  --check    Show required changes without modifying files.");
         Console.WriteLine("  --target   Use another client's mods folder; loads the client mod set.");
         Console.WriteLine("  --yes      Compatibility-only option; no confirmation prompt is used.");

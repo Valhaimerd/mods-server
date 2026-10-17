@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 22 client extras</p>
 
 Last audited: 2026-10-17<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 309 synchronized JARs plus 23 client-store JARs
+Current distribution: 310 synchronized JARs plus 22 client-store JARs
 
 ## About this handbook
 
@@ -3100,7 +3100,7 @@ The installed ALI 2.4.0 and ALICompat 1.3.0 extend the loot reference to support
 - **Core mechanic:** Shows where world-generation features and resources can appear.
 - **Player guidance:** Check where a configured resource or feature can appear.
 
-Distributed only to clients because this pack previously stalled during dedicated-server information collection. Multiplayer data may be limited without server support. Existing chunks do not gain new features from this reference tool.
+AWI 1.3.2 runs on clients and servers with ALI and ACI. Initial collection can take several minutes; the pack owner reports about eight minutes for ALI. Wait for collection to finish before using its data.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/advanced-worldgen-info">Official mod page</a></p>
 

@@ -16,7 +16,7 @@ For Client, select TLauncher (the only currently enabled launcher), then choose 
 
 For Server, choose `Select file location…` and select the server's existing `mods` directory. The folder name must be `mods` (case-insensitive). Server installs use only the repository's `mods` folder; UI/client JARs from `mod store` are excluded.
 
-Advanced Loot Info 2.4.0, ALICompat 1.3.0, and their required Advanced Core Info 1.5.0 are in `mods` for client/server data sharing. Advanced Worldgen Info remains in `mod store` because its worldgen scan previously held the dedicated server thread after startup; its multiplayer information may be limited without server support.
+Advanced Loot Info 2.4.0, Advanced Worldgen Info 1.3.2, ALICompat 1.3.0, and Advanced Core Info 1.5.0 are in `mods` for client/server data sharing. Their initial information collection can take several minutes; the pack owner reports waiting about eight minutes for ALI to finish. Allow collection to complete before using the reference data. A dedicated server may need a longer `max-tick-time` watchdog allowance for this startup work.
 
 Emotecraft is installed on clients and servers. Borrow Their Emote and its MossyLib dependency, Universal Enchantment Info, Armor Hider, and the local NeoForge Vectors alpha are client-only extras in `mod store`. Configure the new emote, Vectors, and Armor Hider controls in-game; the existing recommended keybind profile does not assign them.
 

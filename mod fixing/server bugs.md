@@ -2,7 +2,9 @@
 
 ## 17 October 2026 — current distribution note
 
-The current repository distributes Advanced Loot Info 2.4.0, ALICompat 1.3.0, and required Advanced Core Info 1.5.0 in `mods`. Advanced Worldgen Info 1.2.0 is in `mod store` to preserve the prior server-stall isolation. Older statements below that all four JARs are excluded describe the historical audit set. Emotecraft is now in `mods`; its borrowing add-on, MossyLib, Universal Enchantment Info, and the local Vectors NeoForge alpha are client extras. The new combination has been inspected for metadata/dependencies, not rerun through the historical full server audit.
+The current repository distributes Advanced Worldgen Info 1.3.2, Advanced Loot Info 2.4.0, ALICompat 1.3.0, and required Advanced Core Info 1.5.0 in `mods`. The user explicitly chose full client/server reference data despite lengthy startup collection and reports ALI finishing after about eight minutes. This supersedes the previous AWI client-extra workaround. Statements below about excluding the four JARs describe historical audit sets. Emotecraft is in `mods`; its borrowing add-on, MossyLib, Universal Enchantment Info, Armor Hider, and the local Vectors NeoForge alpha are client extras.
+
+The new 310-JAR isolated flat-world test reached `Done` after about 84.5 seconds. AWI logged a 16.6-second base-layout scan, then the server remained in its composite-feature collector without answering queued `list` commands during the four-minute observation. The test was stopped at its time limit; that short observation does not prove a permanent hang or disprove eventual completion. Successful completion of the full information scan remains unverified in this pass. The thread sample and console log are in `tmp/awi-1.3.2-test/`; personal worlds and the separate desktop server were untouched. A dedicated server's watchdog allowance may need adjustment for the accepted multi-minute initialization.
 
 ## 14 October 2026 — client/server split check
 

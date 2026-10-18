@@ -16,18 +16,25 @@ These values supersede older planning and verification snapshots below.
 - Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**.
   Martial's ordinary route is damage / attack speed / damage / attack speed /
   damage; its ordinary penetration node becomes attack speed. Final Martial
-  Prowess retains 5% damage, 5% attack speed and 10% penetration.
+  Prowess grants 8% damage, 5% attack speed, 10% physical critical chance and
+  10% critical damage, with no armor penetration.
 - Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
   to its existing final rewards. Earlier ordinary projectile-speed node retained;
   later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
 - RPG Class/Weapon normal school-power rewards: **4%**; melee attack-damage
   rewards (including conditional weapon roots): **2%**; ranged attack-damage
-  rewards: **3%**. Other mechanics and the 1.35x progression multiplier remain.
+  rewards: **2%**. Warrior/Archer root and boost descriptions explicitly show
+  2%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
 - Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
 - The local PvP replacement applies **50% attributed PvP damage**, including
   standard spells. No flagging remains; Better Party controls party protection.
   It does not scale PvE damage.
 
+
+The latest presentation update uses Bow for ranged damage, Crossbow for draw speed,
+Enchanted Golden Apple for Aegis, Apple for pet hearts, Rabbit Foot for pet
+speed, Leather Chestplate for pet resistance and Iron Horse Armor for pet
+knockback resistance. **Pack Leader** is blue and uses Cooked Beef (steak).
 
 ## Behavior and units
 
@@ -35,7 +42,7 @@ Offensive, Defensive and Companion alternatives exclude each other at their firs
 
 The [data transformer](repack.py) records every ordinary node assignment. Author amounts remain where requested, with explicit exceptions for damage, attack speed, caster stats, pet stats and anvil reductions. Anvil nodes each multiply remaining cost by 0.8, so three leave 51.2% before integer rounding. Bow draw haste also accelerates crossbow charging through Ranged Weapon API. Projectile nodes modify both bow and crossbow attributes.
 
-Companion applies to loaded living entities implementing Minecraft's `OwnableEntity` whose owner resolves to an online server player. It does not change pet AI or manufacture missing attributes on modded entities. Ordinary pet damage/resistance are flat +1; attack knockback and knockback resistance add 0.1; speed adds 3%; health adds four HP/two hearts. Packleader grants 20% damage, 15% speed and 10% resistance; Guardian Stead grants 20 HP/ten hearts, 25% resistance and 0.3 knockback resistance. Shared entrance and ordinary bonuses also apply. Health adds capacity, without filling it.
+Companion applies to loaded living entities implementing Minecraft's `OwnableEntity` whose owner resolves to an online server player. It does not change pet AI or manufacture missing attributes on modded entities. Ordinary pet damage/resistance are flat +1; attack knockback and knockback resistance add 0.1; speed adds 3%; health adds four HP/two hearts. Pack Leader grants 20% damage, 15% speed and 10% resistance; Guardian Stead grants 20 HP/ten hearts, 25% resistance and 0.3 knockback resistance. Shared entrance and ordinary bonuses also apply. Health adds capacity, without filling it.
 
 The bridge uses stable transient attribute modifiers, refreshes every 20 ticks and removes its own bonuses when allocations or ownership change. Speed bonuses sum within the bridge before applying one total multiplier. Incoming pet damage is reduced after armor by `(damage - flat pet resistance) * (1 - percentage pet resistance)`, clamped to zero; damage types bypassing effects remain untouched. Critical chance is corrected for existing base/total multipliers so the requested bonus remains fixed percentage points even with gear.
 
@@ -43,7 +50,7 @@ On the first login after installation, Adventurer allocations reset once, preser
 
 All configured skill XP calculations are multiplied by 1.35 exactly once. Level curves, point costs and caps are unchanged. Award rounding remains Pufferfish's normal integer rounding; Minecraft enchanting XP is not globally multiplied.
 
-The 18 October balance revision also sets Martial Prowess to 5% melee damage/5% attack speed/10% penetration, Hunter to 5% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis a Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
+The 18 October balance revision also sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 5% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
 
 ## Rebuild
 
@@ -70,3 +77,5 @@ These are focused runtime checks, not a full multiplayer playthrough or a test o
 Latest Aegis/icon follow-up: **55 isolated dedicated-server checks passed**, including the new **6% movement-speed modifier**. Structural checks verify Guardian Stead uses `minecraft:diamond_horse_armor`. Only Adventurer tree data changed; the RPG and compatibility-bridge JARs were left untouched. No new migration/reset marker is introduced.
 
 PvP balance revision: **64 dedicated-server skill checks passed**, including 12% Magistrate power, 4% ordinary power, the physical-node changes and actual armored arrow-source damage with bow/crossbow held. Structural checks cover both RPG categories and Hunter. [PvP port and its 50% damage checks](../pvp-flagging-26.2/README.md).
+
+Latest physical balance and presentation verification: **70 isolated server checks passed**, including native Critical Strike chance (+10 percentage points at its base-100 baseline), critical damage (1.1x its existing multiplier), no Martial armor penetration and actual Warrior/Archer 2% rewards. The isolated client verified eight explicit RPG descriptions across both categories, Pack Leader spelling and nine blue titles. Critical chance uses `multiply_base` and critical damage uses `multiply_total`; these are physical Critical Strike attributes, separate from spell critical chance. Existing gear can affect native attribute scaling.

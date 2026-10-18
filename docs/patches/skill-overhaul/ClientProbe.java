@@ -23,6 +23,17 @@ public class ClientProbe {
     for(var key:java.util.List.of("martial_prowess","hunter","magistrate","aegis","colossus","bulwark","packleader","guardian_stead","root_versatile")){
      var title=cat.getConfig().definitions().get(key).title();if(title.getStyle().getColor()==null || title.getStyle().getColor().getValue()!=0x5555ff)throw new AssertionError("Not blue: "+key);
     }
+    if(!cat.getConfig().definitions().get("packleader").title().getString().equals("Pack Leader"))throw new AssertionError("Pack Leader title mismatch");
+    var dataField=screen.getClass().getDeclaredField("data");dataField.setAccessible(true);
+    var data=(net.puffish.skillsmod.client.data.ClientSkillScreenData)dataField.get(screen);
+    for(var categoryName:java.util.List.of("class_skills","weapon_skills")){
+     var cfg=data.getCategory(net.minecraft.resources.Identifier.parse("skill_tree_rpgs:"+categoryName)).orElseThrow().getConfig();
+     for(var key:java.util.List.of("warrior_root","warrior_boost","archer_root","archer_boost")){
+      var text=cfg.definitions().get(key).description().getString();
+      if(!text.equals("+2% "+(key.startsWith("archer") ? "Ranged Damage":"Attack Damage")))throw new AssertionError("Stale tooltip "+categoryName+"/"+key+": "+text);
+     }
+    }
+    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS 8 client RPG 2% descriptions; Pack Leader name and 9 blue specialization titles");
     Files.writeString(mc.gameDirectory.toPath().resolve("title-check.txt"),"PASS 9 blue client title components");
    }catch(Exception ex){throw new RuntimeException(ex);}
   }

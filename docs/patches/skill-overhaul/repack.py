@@ -66,6 +66,9 @@ define('ranged_penetration','+5% Armor Penetration',[attr('puffish_attributes:ar
 node('vxmb1u84wzfwpuq6','ranged_penetration')
 d['hunter']['rewards'] += [attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)]
 d['hunter']['description']['text'] += '\n+10% Armor Penetration\n+25% Bow and Crossbow Projectile Speed'
+d['martial_prowess']['rewards']=[attr('puffish_attributes:melee_damage',.08),attr('attack_speed',.05),attr('critical_strike:chance',.1,'multiply_base'),attr('critical_strike:damage',.1)]
+d['martial_prowess']['description']={'text':'+8% Melee Damage\n+5% Attack Speed\n+10% Critical Chance\n+10% Critical Damage'}
+d['ranged_damage+3%']['icon']={'type':'item','data':{'item':'minecraft:bow'}}
 mid=['zhraasg53ibsn3dk','6i5us24w9a9ar7v1','rvzvos2233a9pi4g','rr6e15vhxj8hdyt4','owk0eiqwgomn6jwb']
 for id,key in zip(mid,['health+2','healing+3%','health+2','healing+3%','health+2']):node(id,key)
 for id,host,key in [('new_colossus_health',mid[-1],'health+2'),('new_colossus_healing',mid[-2],'healing+3%')]:
@@ -73,7 +76,7 @@ for id,host,key in [('new_colossus_health',mid[-1],'health+2'),('new_colossus_he
 define('colossus','Colossus',[attr('minecraft:max_health',12,'addition'),attr('puffish_attributes:healing',.06)],'minecraft:totem_of_undying','+6 Hearts\n+6% Healing')
 top=['xzau8wf7cmkahump','arcimlg0c3igwe0e','-7_-4','d67mbc3a2pg8781z','4zj68e0t9ythniot','2wtk419203if3s6n','bxm9laus4f3lfqjk']
 for id,key in zip(top,['magic_resistance+2%','ranged_resistance+2%']*3+['magic_resistance+2%']):node(id,key)
-define('aegis','Aegis',[attr('puffish_attributes:magic_resistance',.15),attr('puffish_attributes:ranged_resistance',.1),attr('minecraft:movement_speed',.06)],'minecraft:golden_apple','+15% Magic Resistance\n+10% Ranged Resistance\n+6% Movement Speed');node('6tinz5atn533lzo9','aegis')
+define('aegis','Aegis',[attr('puffish_attributes:magic_resistance',.15),attr('puffish_attributes:ranged_resistance',.1),attr('minecraft:movement_speed',.06)],'minecraft:enchanted_golden_apple','+15% Magic Resistance\n+10% Ranged Resistance\n+6% Movement Speed');node('6tinz5atn533lzo9','aegis')
 bottom=['5h6pmokx7ro45qtw','sgg10fjuiiqlos8w','-7_4','fxxc8k4yljxkbepz','00zagtopdfilmaw7','8meyqbog5d7qmyzg','bvasjpryldz0yhpx','v2pojgmi36k5fuxe','vgrpua0glqz5sem5']
 for id,key in zip(bottom,['resistance+1%','armor+1','resistance+1%','ranged_resistance+2%','armor+1','resistance+1%','ranged_resistance+2%','armor+1','ranged_resistance+2%']):node(id,key)
 define('bulwark','Bulwark',[attr('puffish_attributes:resistance',.02),attr('puffish_attributes:ranged_resistance',.04),attr('minecraft:armor',2,'addition'),attr('minecraft:knockback_resistance',.2,'addition')],'minecraft:netherite_chestplate','+2% Resistance\n+4% Ranged Resistance\n+2 Armor\n+20% Knockback Resistance')
@@ -87,22 +90,22 @@ for group in [['3gpel3ejgsuvozax','ei4d3ri7bngns8lj',next(k for k,v in s.items()
  c['exclusive']['bidirectional'].extend(map(list,itertools.combinations(group,2)))
 d['root_versatile']['title']='Companion';d['root_versatile']['description']={'text':'Strengthen your pets to fight harder and survive longer.'};d['root_versatile']['icon']={'type':'item','data':{'item':'minecraft:bone'}}
 pet={}
-pet_specs={'damage':('Pet Damage +1',{'damage':1},'minecraft:bone'),'speed':('+3% Pet Speed',{'speed':.03},'minecraft:feather'),'knock':('+0.1 Pet Attack Knockback',{'knock':.1},'minecraft:piston'),'res':('+1 Pet Resistance',{'res':1},'minecraft:shield'),'kr':('+10% Pet Knockback Resistance',{'kr':.1},'minecraft:iron_boots'),'hp':('+2 Pet Hearts',{'hp':4},'minecraft:golden_apple')}
+pet_specs={'damage':('Pet Damage +1',{'damage':1},'minecraft:bone'),'speed':('+3% Pet Speed',{'speed':.03},'minecraft:rabbit_foot'),'knock':('+0.1 Pet Attack Knockback',{'knock':.1},'minecraft:piston'),'res':('+1 Pet Resistance',{'res':1},'minecraft:leather_chestplate'),'kr':('+10% Pet Knockback Resistance',{'kr':.1},'minecraft:iron_horse_armor'),'hp':('+2 Pet Hearts',{'hp':4},'minecraft:apple')}
 for key,(title,effect,icon) in pet_specs.items():define('pet_'+key,title,[],icon)
 def pets(ids,types):
  for id,key in zip(ids,types):node(id,'pet_'+key);pet[id]=pet_specs[key][1]
 pets(['15trz7ezr8z7kcp8'],['damage'])
 pets(['qp2x45h0nbr233e1','e7fyzt06vz8mu5iv','5grntvcsxgm61gbq','vyt2xj8si9zbat4x','z6awauxhc53s0bhl','5frbav4zdc1hwquo','xz6a8myofnhkv0e0','o3fd9bzo883nqd57','629rr01c70gc90kj','kbheklivvbq2aaj8','87cn8ldpzmjljp0q'],['damage','speed','knock','damage','speed','res','knock','speed','damage','kr','hp'])
 pets(['828iwet0erdpwynl','00ojkscfhac0ifpm','ha05s7wy4h135376','iswxmklicwgn4xmp','q0ul30ow7ifhtq6j','mk08ei1wfvcssxs6','mxm9kmy816lzgkbt','rbfta22ujrmwzugp','fjtdo0ic4650e43d','6vlgfj2olene3csb','fr0yn9kxau3qimvv'],['hp','res','hp','kr','res','hp','res','hp','kr','damage','speed'])
-define('packleader','Packleader',[],'minecraft:bone','+20% Pet Damage\n+15% Pet Speed\n+10% Pet Resistance');node('iggdp0a33bljw4kl','packleader');pet['iggdp0a33bljw4kl']={'damage_pct':.2,'speed':.15,'res_pct':.1}
+define('packleader','Pack Leader',[],'minecraft:cooked_beef','+20% Pet Damage\n+15% Pet Speed\n+10% Pet Resistance');node('iggdp0a33bljw4kl','packleader');pet['iggdp0a33bljw4kl']={'damage_pct':.2,'speed':.15,'res_pct':.1}
 define('guardian_stead','Guardian Stead',[],'minecraft:diamond_horse_armor','+10 Pet Hearts\n+25% Pet Resistance\n+30% Pet Knockback Resistance');node('8wjzxjnmc1gr7dvq','guardian_stead');pet['8wjzxjnmc1gr7dvq']={'hp':20,'res_pct':.25,'kr':.3}
-for key,title in {'martial_prowess':'Martial Prowess','hunter':'Hunter','magistrate':'Magistrate','aegis':'Aegis','colossus':'Colossus','bulwark':'Bulwark','packleader':'Packleader','guardian_stead':'Guardian Stead','root_versatile':'Companion'}.items():
+for key,title in {'martial_prowess':'Martial Prowess','hunter':'Hunter','magistrate':'Magistrate','aegis':'Aegis','colossus':'Colossus','bulwark':'Bulwark','packleader':'Pack Leader','guardian_stead':'Guardian Stead','root_versatile':'Companion'}.items():
  d[key]['title']={'text':title,'color':'blue'}
 # Only emitted definitions can award anything; discard deleted and superseded definitions.
 d={k:v for k,v in d.items() if k in {v['definition'] for v in s.values()}}
 for n,obj in [('definitions',d),('skills',s),('connections',c)]:put(f,b+n+'.json',obj)
 xp(f,b)
-for mod,version in [('minecraft','[26.2,26.3)'),('spell_power','[1.6.1,)'),('ranged_weapon_api','[4.0.0,)'),('orb_of_oblivion_puffish_compat','[1.0.2,)')]:
+for mod,version in [('minecraft','[26.2,26.3)'),('spell_power','[1.6.1,)'),('critical_strike','[1.0.5,)'),('ranged_weapon_api','[4.0.0,)'),('orb_of_oblivion_puffish_compat','[1.0.2,)')]:
  f['META-INF/neoforge.mods.toml']+=f'\n[[dependencies.adventurer_skills]]\nmodId="{mod}"\ntype="required"\nversionRange="{version}"\nordering="NONE"\nside="BOTH"\n'.encode()
 write(ADV,f)
 (WORK/'pet-bonuses.json').write_text(json.dumps(pet,indent=2)+'\n')
@@ -115,7 +118,10 @@ for cat in ['class_skills','weapon_skills']:
    a=r.get('data',{}).get('attribute')
    if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.04 if a in ['spell_power:arcane','spell_power:fire','spell_power:frost'] else .03
    if a=='minecraft:attack_damage':r['data']['value']=.02
-   if a=='ranged_weapon:damage':r['data']['value']=.03
+   if a=='ranged_weapon:damage':r['data']['value']=.02
+  # Generated Java node descriptions retain upstream defaults; override the visible text too.
+  if k in ['warrior_root','warrior_boost','archer_root','archer_boost']:
+   v['description']={'text':'+2% '+('Ranged Damage' if k.startswith('archer') else 'Attack Damage')}
   if any(r.get('data',{}).get('attribute') in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] for r in v.get('rewards',[])) or k in ['rogue_root','rogue_boost']:
    v['description']={'text':('+4% ' if k.split('_')[0] in schools else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
  assert all(v==d[k] for k,v in original.items() if k.startswith('paladin'))

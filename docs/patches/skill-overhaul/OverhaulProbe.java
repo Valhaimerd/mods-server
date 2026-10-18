@@ -90,7 +90,17 @@ public class OverhaulProbe {
    reset();double normalRanged=DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1);
    unlock("ui0gusk2hniqwghe");near(DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1)/normalRanged,1.25,"bow projectile speed");near(DynamicModification.create().withPositive(PuffishAttributes.CROSSBOW_PROJECTILE_SPEED,player).applyTo(1),1.25,"crossbow projectile speed");
    reset();var hp=player.getMaxHealth();unlock("ebhti3huj2v7zvny");near(player.getMaxHealth(),hp+12,"Colossus six hearts");
-   stat("r7mv8vq583ntlk4y","puffish_attributes:melee_damage",.05,false);stat("r7mv8vq583ntlk4y","minecraft:attack_speed",.05,false);stat("r7mv8vq583ntlk4y","puffish_attributes:armor_shred",.1,false);
+   stat("r7mv8vq583ntlk4y","puffish_attributes:melee_damage",.08,false);stat("r7mv8vq583ntlk4y","minecraft:attack_speed",.05,false);
+   // Critical Strike uses a 100-point baseline; the generic stat helper's 10 is below its minimum.
+   reset();double penBefore=DynamicModification.create().withPositive(PuffishAttributes.ARMOR_SHRED,player).applyTo(100);
+   unlock("r7mv8vq583ntlk4y");near(DynamicModification.create().withPositive(PuffishAttributes.ARMOR_SHRED,player).applyTo(100),penBefore,"Martial no armor penetration");
+   reset();player.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("critical_strike:chance")).orElseThrow()).setBaseValue(100);
+   player.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("critical_strike:damage")).orElseThrow()).setBaseValue(100);
+   var striker=Class.forName("net.critical_strike.internal.CriticalStriker");
+   var chanceMethod=striker.getMethod("rng_criticalChance");var damageMethod=striker.getMethod("rng_criticalDamageMultiplier");
+   double physicalChance=(Double)chanceMethod.invoke(player),physicalDamage=(Double)damageMethod.invoke(player);
+   unlock("r7mv8vq583ntlk4y");near((Double)chanceMethod.invoke(player)-physicalChance,.1,"native physical critical chance plus ten points");
+   near((Double)damageMethod.invoke(player)/physicalDamage,1.1,"native physical critical damage multiplied by 1.1");
    stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.05,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
    stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.1,false);stat("6tinz5atn533lzo9","minecraft:movement_speed",.06,false);
    stat("3gpel3ejgsuvozax","spell_power:arcane",.04,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
@@ -114,6 +124,10 @@ public class OverhaulProbe {
    for(var catName:List.of("class_skills","weapon_skills")) {
     var cat=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:"+catName)).orElseThrow();check(cat.getExperience().isPresent(),catName+" loads");
    }
+   reset();var adventurerTree=tree;tree=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:class_skills")).orElseThrow();tree.unlock(player);
+   stat("e5ljj7jx6pmdjatf","minecraft:attack_damage",.02,false);stat("jo7zae6quimtvale","minecraft:attack_damage",.02,false);
+   stat("418rsvnd17egwkse","ranged_weapon:damage",.02,false);stat("3uptt2jhtdh025ei","ranged_weapon:damage",.02,false);
+   reset();tree=adventurerTree;
    Files.writeString(Path.of("result.txt"),"PASS "+checks+" checks\n");
   }catch(Throwable ex){ex.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+ex+"\n");}catch(Exception ignored){}}
   finally{server.halt(false);}

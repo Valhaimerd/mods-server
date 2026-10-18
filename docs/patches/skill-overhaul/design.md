@@ -13,17 +13,24 @@ These values supersede older planning and verification snapshots below.
 - Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**.
   Martial's ordinary route is damage / attack speed / damage / attack speed /
   damage; its ordinary penetration node becomes attack speed. Final Martial
-  Prowess retains 5% damage, 5% attack speed and 10% penetration.
+  Prowess grants 8% damage, 5% attack speed, 10% physical critical chance and
+  10% critical damage, with no armor penetration.
 - Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
   to its existing final rewards. Earlier ordinary projectile-speed node retained;
   later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
 - RPG Class/Weapon normal school-power rewards: **4%**; melee attack-damage
   rewards (including conditional weapon roots): **2%**; ranged attack-damage
-  rewards: **3%**. Other mechanics and the 1.35x progression multiplier remain.
+  rewards: **2%**. Warrior/Archer root and boost descriptions explicitly show
+  2%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
 - Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
 - The local PvP replacement applies **50% attributed PvP damage**, including
   standard spells. No flagging remains; Better Party controls party protection.
   It does not scale PvE damage.
+
+The latest presentation update uses Bow for ranged damage, Crossbow for draw speed,
+Enchanted Golden Apple for Aegis, Apple for pet hearts, Rabbit Foot for pet
+speed, Leather Chestplate for pet resistance and Iron Horse Armor for pet
+knockback resistance. **Pack Leader** is blue and uses Cooked Beef (steak).
 
 ## Balance revision ? 2026-10-18
 
@@ -34,7 +41,7 @@ This revision supersedes earlier values below; all other decisions remain in for
 - Magistrate: +20% Arcane/Fire/Frost power, +10 percentage points spell critical chance; retain +5% spell haste. Ordinary caster nodes: +5% power in those three schools, +2.5 critical points, +3% spell haste. No added healing or health.
 - Aegis: +15% magic resistance, +15% ranged resistance and +6% movement speed. Colossus: +6 hearts (+12 HP), retaining +6% healing.
 - Icons: Magistrate Ender Eye; Aegis Golden Apple; Bulwark Netherite Chestplate; Guardian Stead Diamond Horse Armor.
-- Specialization titles and Companion use explicit blue text, including Packleader and Guardian Stead.
+- Specialization titles and Companion use explicit blue text, including Pack Leader and Guardian Stead.
 - RPG Class/Weapon Arcane, Fire and Frost power rewards: +5%. Priest healing stays +3%; Paladin defaults and Rogue +3% attack speed remain unchanged.
 - This is a balance/presentation update using the same skill IDs. Retain the existing one-time migration marker; do not reset already migrated players again.
 
@@ -77,7 +84,7 @@ The author has no ordinary Spell Haste or Spell Critical Chance definitions in t
 - Preserve the common category root and the existing branch layout wherever possible.
 - Keep the selected branch's internal paths usable. The restriction chooses a specialization; it should not arbitrarily remove choices inside that specialization.
 - Treat this as one branch per category, not one category for the entire character. Selecting an Offensive branch does not automatically prohibit Defensive or Utilities investment.
-- Replace Versatile/Versatility with Companion as specified below. Companion also requires a choice at its two branch entrances: only Packleader or Guardian Stead can be completed.
+- Replace Versatile/Versatility with Companion as specified below. Companion also requires a choice at its two branch entrances: only Pack Leader or Guardian Stead can be completed.
 
 The installed Adventurer tree already has bidirectional exclusive connections between terminal specializations. The planned change moves the meaningful choice to the entrance. Implementation must also check for alternate routes through later nodes that could bypass the entrance restriction.
 
@@ -403,9 +410,9 @@ For Knockback Resistance, distinguish the unit from Attack Knockback: 0 is no re
 
 Reference: [NeoForge attribute documentation](https://docs.neoforged.net/docs/entities/attributes/). These are candidate modifiers on the pet's actual attributes; implementation must verify wolf support and observed combat behavior.
 
-### Final left specialty: Packleader
+### Final left specialty: Pack Leader
 
-The user selected **Packleader** as the replacement for Enlightenment (`iggdp0a33bljw4kl`). Its final reward set is:
+The user selected **Pack Leader** as the replacement for Enlightenment (`iggdp0a33bljw4kl`). Its final reward set is:
 
 | Pet reward | Target |
 | --- | --- |
@@ -415,13 +422,13 @@ The user selected **Packleader** as the replacement for Enlightenment (`iggdp0a3
 
 These are percentage bonuses, distinct from ordinary +1 flat Pet Damage. Verify damage/resistance attribute operations so the final rewards produce the intended percentage behavior; do not encode a literal +20 flat damage or +10 flat resistance. The final Pet Resistance is damage resistance, not knockback resistance.
 
-This replaces the earlier suggested terminal Attack Knockback bonus: Packleader now grants the three user-specified bonuses above. Do not inherit experience, anvil-cost, magic-resistance or item-gift rewards from Enlightenment.
+This replaces the earlier suggested terminal Attack Knockback bonus: Pack Leader now grants the three user-specified bonuses above. Do not inherit experience, anvil-cost, magic-resistance or item-gift rewards from Enlightenment.
 
 Implementation must verify ownership-scoped modifiers, remove/reapply bonuses cleanly on respec, avoid accumulating buffs on reload, and cover both existing and newly tamed pets. Test wolf chase behavior and repeated attacks: excessive attack knockback can push targets out of bite range, so choose its amount alongside movement speed rather than assuming more knockback always increases damage output.
 
 ### Companion right: Guardian Stead path
 
-Selected final specialty name: **Guardian Stead**. This path makes an owned pet durable enough to hold enemies in place, complementing Packleader's damage and pursuit focus. Preserve the pictured layout and connections. The following node assignments define the planned right path; the final name and numerical rewards have now been specified by the user.
+Selected final specialty name: **Guardian Stead**. This path makes an owned pet durable enough to hold enemies in place, complementing Pack Leader's damage and pursuit focus. Preserve the pictured layout and connections. The following node assignments define the planned right path; the final name and numerical rewards have now been specified by the user.
 
 | Position in the supplied right-path layout | Current reward/icon | Planned pet reward |
 | --- | --- | --- |
@@ -457,11 +464,11 @@ These replace the earlier suggested Guardian name and +6-heart/+20%-resistance/+
 
 With all right-path ordinary nodes and Guardian Stead allocated, the planned health bonuses total **+18 hearts (+36 HP)**: four +2-heart nodes plus the +10-heart terminal. The two ordinary knockback-resistance nodes plus the terminal total **+0.5 additive (+50 percentage points)** before other sources and attribute clamping. Pet Resistance stacking must still be verified against the installed attribute implementation; do not report an untested combined damage-reduction percentage.
 
-The current right terminal is `8wjzxjnmc1gr7dvq`, using the author's `pack_leader` definition. Rename/redefine this right node as Guardian Stead while the left terminal becomes the user-selected Packleader; do not globally rename the old definition in a way that swaps the two planned specialties. Remove all inherited non-pet rewards and completion item grants from the right specialty.
+The current right terminal is `8wjzxjnmc1gr7dvq`, using the author's `pack_leader` definition. Rename/redefine this right node as Guardian Stead while the left terminal becomes the user-selected Pack Leader; do not globally rename the old definition in a way that swaps the two planned specialties. Remove all inherited non-pet rewards and completion item grants from the right specialty.
 
 ### Remaining Companion design decisions
 
-- The left-path reward types and Packleader final rewards are assigned above. Ordinary knockback values are confirmed and ordinary Pet Resistance scaling still needs verification; the right-path node map and Guardian Stead final name/amounts are recorded above. Do not treat retained non-pet bonuses as the final approved design.
+- The left-path reward types and Pack Leader final rewards are assigned above. Ordinary knockback values are confirmed and ordinary Pet Resistance scaling still needs verification; the right-path node map and Guardian Stead final name/amounts are recorded above. Do not treat retained non-pet bonuses as the final approved design.
 - **Only one Companion path may be completed.** Add mutual exclusions at the first left/right branch-specific nodes after the shared Pet Damage entrance, preventing investment into both paths; do not defer the choice until the final specialties. Keep the shared root/entrance available and check for deeper bypass routes. Utilities remains unrestricted.
 - Verify which installed pets and damage sources respond to the available pet attributes before promising effects for every companion mod.
 - The global removal of branch-completion gift items also applies to Companion. Do not introduce replacement item gifts.
@@ -534,7 +541,7 @@ The requested bonus values, three-school coverage, Adventurer-only healing exclu
 - Check that links display red at the intended split and that deeper connections cannot unlock a second branch by another route.
 - Verify each intended category independently, including the Companion rename and central-path removal.
 - Verify Companion shows the selected starter sentence, has no five deleted middle-path nodes or dangling links, and retains its shared Pet Damage entrance and both reachable outer paths.
-- Verify the left Companion ordinary amounts (+1 flat Pet Damage, +3% Pet Movement Speed, +2 hearts) and Packleader final bonuses (+20% Pet Damage, +15% Pet Movement Speed, +10% Pet Resistance).
+- Verify the left Companion ordinary amounts (+1 flat Pet Damage, +3% Pet Movement Speed, +2 hearts) and Pack Leader final bonuses (+20% Pet Damage, +15% Pet Movement Speed, +10% Pet Resistance).
 - Verify the right Companion reward map and Guardian Stead final bonuses (+10 hearts, +25% Pet Resistance, +0.3 Knockback Resistance), including the complete-path +18-heart/+0.5-knockback-resistance totals and clamping; ensure the left/right specialty names and saved node identities are not swapped.
 - Verify the left Companion reward map applies to owned pets rather than the player; test wolf damage, chase speed, outgoing attack knockback and the three minor defensive bonuses. Confirm respec/reload cannot duplicate pet modifiers.
 - Verify Utilities contains no Fitness, Excavator or Insightful specialty nodes or dangling references, and that one character can acquire every remaining Utility node through normal progression without mutual exclusions.

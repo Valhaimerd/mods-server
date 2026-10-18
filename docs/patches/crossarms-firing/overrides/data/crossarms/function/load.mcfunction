@@ -36,3 +36,4 @@ scoreboard objectives add frenzy_stage dummy
 scoreboard objectives add frenzy_shots dummy
 scoreboard objectives add frenzy_idle dummy
 scoreboard objectives add frenzy_empty dummy
+scoreboard objectives add frenzy_notice dummy

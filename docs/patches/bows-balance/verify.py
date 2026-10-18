@@ -43,6 +43,9 @@ with ZipFile(folder/'crossarms-1.4.jar') as a,ZipFile(folder/'expanded-crossbow-
  frenzy=json.loads(a.read('data/crossarms/enchantment/frenzy.json'))
  assert 'minecraft:ammo_use' not in frenzy['effects'] and 'minecraft:crossbow_charge_time' not in frenzy['effects']
  assert 'frenzy_empty' in a.read('data/crossarms/function/enchantment/frenzy/tick.mcfunction').decode()
+ assert 'frenzy_notice' in a.read('data/crossarms/function/load.mcfunction').decode()
+ assert 'matches 0 run title' in a.read('data/crossarms/function/enchantment/frenzy/notice/tick.mcfunction').decode()
+ assert 'scores={frenzy_empty=1}] run title' not in a.read('data/crossarms/function/tick.mcfunction').decode()
  assert '60..' in a.read('data/crossarms/function/enchantment/frenzy/burst/tick.mcfunction').decode()
  assert a.read('data/crossarms/function/tick.mcfunction').decode().count('function crossarms:enchantment/frenzy/burst/tick')==1
 print('PASS active crossbow integration data')

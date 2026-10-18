@@ -9,4 +9,4 @@ execute as @e[tag=FRENZY] at @s run function crossarms:enchantment/frenzy/arrow/
 execute as @e[scores={heat=1..}] at @s run function crossarms:enchantment/frenzy/heat/tick
 execute as @a[scores={death=1..}] run function crossarms:enchantment/frenzy/heat/reset
 execute as @a[scores={frenzy_shots=1..}] run function crossarms:enchantment/frenzy/burst/tick
-execute as @a[scores={frenzy_empty=1}] run title @s actionbar {"translate":"crossarms.pack.frenzy.empty","fallback":"Empty - Reload","color":"yellow"}
+execute as @a[scores={frenzy_notice=1..}] run function crossarms:enchantment/frenzy/notice/tick

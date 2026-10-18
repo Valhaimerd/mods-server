@@ -1,0 +1,57 @@
+package io.redspace.pvp_flagging.command;
+
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.tree.LiteralCommandNode;
+import io.redspace.pvp_flagging.core.PlayerFlagManager;
+import io.redspace.pvp_flagging.core.PvpZoneManager;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.Component;
+
+public class PvpFlagCommand {
+    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+        LiteralCommandNode<CommandSourceStack> command = dispatcher.register(Commands.literal("pvpFlag")
+                .executes((context) -> toggleFlag(context.getSource()))
+                .then(Commands.literal("on")
+                        .executes((context) -> flag(context.getSource())))
+                .then(Commands.literal("off")
+                        .executes((context) -> unflag(context.getSource())))
+                .then(Commands.literal("status")
+                        .executes((context) -> status(context.getSource())))
+        );
+    }
+
+    private static int toggleFlag(CommandSourceStack source) {
+        if (source.getPlayer() != null && PlayerFlagManager.INSTANCE.isPlayerFlagged(source.getPlayer()) && !PlayerFlagManager.INSTANCE.isScheduledToUnflag(source.getPlayer())) {
+            unflag(source);
+        } else {
+            flag(source);
+        }
+        return 1;
+    }
+
+    private static int unflag(CommandSourceStack source) {
+        if (source.getPlayer() == null) {
+            return 0;
+        }
+        if (PvpZoneManager.getInstance(source.getPlayer().level()).boundsCheckShouldFlag(source.getPlayer())) {
+            //Prevent unflagging from inside a pvp zone
+            source.sendFailure(Component.translatable("ui.pvp_flagging.pvp_zone.prevent_unflag"));
+            return 0;
+        } else {
+            PlayerFlagManager.INSTANCE.unflagPlayer(source.getPlayer());
+            return 1;
+        }
+    }
+
+    private static int flag(CommandSourceStack source) {
+        PlayerFlagManager.INSTANCE.flagPlayer(source.getPlayer());
+        return 1;
+    }
+
+    private static int status(CommandSourceStack source) {
+        var isPlayerFlagged = PlayerFlagManager.INSTANCE.isPlayerFlagged(source.getPlayer());
+        source.sendSuccess(() -> Component.translatable("ui.pvp_flagging.pvp_status", isPlayerFlagged), true);
+        return 1;
+    }
+}

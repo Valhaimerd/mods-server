@@ -1,0 +1,5 @@
+{
+  "upstream_sha256": "dbc1313dd4328c0ebc39702f7d940ca2bb78b1d27f5f8219cfb3f7a1fc97b64e",
+  "output_sha256": "c553b09ff98b867eb6088bf9df95832a56cf2d390debb3852461b3c9544eb3ac",
+  "default_pvp_damage_multiplier": 0.5
+}

@@ -1,7 +1,28 @@
 # Skill tree changes — planning draft
 
-Status: requirements and recommendations only; no installed skill data changed.
+Status: implemented; current values are summarized below. Historical design notes follow.
 Recorded: 2026-10-17. Updated: 2026-10-18.
+
+## Current balance — 18 October PvP revision
+
+These values supersede older planning and verification snapshots below.
+
+- Aegis: **15% magic resistance, 10% ranged resistance, 6% movement speed**.
+- Ordinary Adventurer Arcane/Fire/Frost power: **4%**; Magistrate school power:
+  **12%**. Spell haste, critical chance, Priest healing and Paladin defaults remain.
+- Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**.
+  Martial's ordinary route is damage / attack speed / damage / attack speed /
+  damage; its ordinary penetration node becomes attack speed. Final Martial
+  Prowess retains 5% damage, 5% attack speed and 10% penetration.
+- Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
+  to its existing final rewards. Earlier ordinary projectile-speed node retained;
+  later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
+- RPG Class/Weapon normal school-power rewards: **4%**; melee attack-damage
+  rewards (including conditional weapon roots): **2%**; ranged attack-damage
+  rewards: **3%**. Other mechanics and the 1.35x progression multiplier remain.
+- Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
+- PvP Flagging is ported separately to 26.2 and applies **50% attributed PvP
+  damage**, including standard spells. It does not scale PvE damage.
 
 ## Balance revision ? 2026-10-18
 
@@ -10,8 +31,8 @@ This revision supersedes earlier values below; all other decisions remain in for
 - Martial Prowess: +5% melee damage, +5% attack speed, +10% armor penetration.
 - Hunter: +5% ranged damage, +1 Luck, +5% movement speed, +5% jump strength.
 - Magistrate: +20% Arcane/Fire/Frost power, +10 percentage points spell critical chance; retain +5% spell haste. Ordinary caster nodes: +5% power in those three schools, +2.5 critical points, +3% spell haste. No added healing or health.
-- Aegis: +15% magic resistance and +15% ranged resistance. Colossus: +6 hearts (+12 HP), retaining +6% healing.
-- Icons: Magistrate Ender Eye; Aegis Golden Apple; Bulwark Netherite Chestplate.
+- Aegis: +15% magic resistance, +15% ranged resistance and +6% movement speed. Colossus: +6 hearts (+12 HP), retaining +6% healing.
+- Icons: Magistrate Ender Eye; Aegis Golden Apple; Bulwark Netherite Chestplate; Guardian Stead Diamond Horse Armor.
 - Specialization titles and Companion use explicit blue text, including Packleader and Guardian Stead.
 - RPG Class/Weapon Arcane, Fire and Frost power rewards: +5%. Priest healing stays +3%; Paladin defaults and Rogue +3% attack speed remain unchanged.
 - This is a balance/presentation update using the same skill IDs. Retain the existing one-time migration marker; do not reset already migrated players again.
@@ -215,6 +236,8 @@ The main progression alternates **Magic Resistance -> Ranged Resistance -> Magic
 Implementation reference: main-route IDs are `xzau8wf7cmkahump`, `arcimlg0c3igwe0e`, `-7_-4`, `d67mbc3a2pg8781z`, `4zj68e0t9ythniot`, `2wtk419203if3s6n`; the hanging side node is `bxm9laus4f3lfqjk`; the terminal to rename is `6tinz5atn533lzo9`. Assign branch-specific definitions without altering shared rewards elsewhere.
 
 ### Final specialty: Aegis
+
+**18 October follow-up:** final Aegis also grants **+6% movement speed**, using a total movement-speed multiplier reward. Existing resistance rewards remain **15% each**.
 
 | Reward | Requested target |
 | --- | --- |
@@ -420,6 +443,8 @@ Use the established Companion ordinary amounts where applicable: **+2 hearts (+4
 Inspected node IDs in table order: `828iwet0erdpwynl`, `00ojkscfhac0ifpm`, `ha05s7wy4h135376`, `iswxmklicwgn4xmp`, `q0ul30ow7ifhtq6j`, `mk08ei1wfvcssxs6`, `mxm9kmy816lzgkbt`, `rbfta22ujrmwzugp`, `fjtdo0ic4650e43d`, `6vlgfj2olene3csb`, `fr0yn9kxau3qimvv`.
 
 ### Final right specialty: Guardian Stead
+
+**Icon:** `minecraft:diamond_horse_armor` (**Diamond Horse Armor**).
 
 | Pet reward | Confirmed final bonus |
 | --- | --- |

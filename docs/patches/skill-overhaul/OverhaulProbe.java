@@ -63,7 +63,7 @@ public class OverhaulProbe {
    for(var school:schools){player.getAttribute(school.attributeEntry).setBaseValue(10);powerBefore.add(SpellPower.getSpellPower(school,player).baseValue());}
    double healingBefore=value("spell_power:healing"),healthBefore=player.getMaxHealth();unlock("zdfpatqypd5nnqx8");
    for(int i=0;i<schools.size();i++){
-    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.2,"Magistrate school power "+i);
+    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.12,"Magistrate school power "+i);
     var victim=EntityTypes.PIG.create(server.overworld(),EntitySpawnReason.COMMAND);victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);victim.setHealth(100);
     victim.hurtServer(server.overworld(),SpellDamageSource.player(school,player),(float)power);near(100-victim.getHealth(),power,"school damage uses enhanced power "+i);
    }
@@ -92,8 +92,25 @@ public class OverhaulProbe {
    reset();var hp=player.getMaxHealth();unlock("ebhti3huj2v7zvny");near(player.getMaxHealth(),hp+12,"Colossus six hearts");
    stat("r7mv8vq583ntlk4y","puffish_attributes:melee_damage",.05,false);stat("r7mv8vq583ntlk4y","minecraft:attack_speed",.05,false);stat("r7mv8vq583ntlk4y","puffish_attributes:armor_shred",.1,false);
    stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.05,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
-   stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.15,false);
-   stat("3gpel3ejgsuvozax","spell_power:arcane",.05,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
+   stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.1,false);stat("6tinz5atn533lzo9","minecraft:movement_speed",.06,false);
+   stat("3gpel3ejgsuvozax","spell_power:arcane",.04,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
+   stat("510lurvlze473o6j","puffish_attributes:melee_damage",.02,false);
+   stat("8qdaale4k86t2ntn","ranged_weapon:haste",.03,false);
+   stat("vxmb1u84wzfwpuq6","puffish_attributes:armor_shred",.05,false);
+   stat("f8rbbpxi0myhi3cg","minecraft:attack_speed",.03,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:armor_shred",.1,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:bow_projectile_speed",.25,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:crossbow_projectile_speed",.25,false);
+   reset();var armorVictim=EntityTypes.PIG.create(server.overworld(),EntitySpawnReason.COMMAND);
+   armorVictim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);armorVictim.getAttribute(Attributes.ARMOR).setBaseValue(20);
+   var testArrow=EntityTypes.ARROW.create(server.overworld(),EntitySpawnReason.COMMAND);
+   var arrowSource=server.overworld().damageSources().arrow(testArrow,player);
+   for(var weapon:List.of(Items.BOW,Items.CROSSBOW)){
+    reset();player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new ItemStack(weapon));
+    armorVictim.setHealth(100);armorVictim.invulnerableTime=0;armorVictim.hurtServer(server.overworld(),arrowSource,10);float normal=100-armorVictim.getHealth();
+    unlock("vxmb1u84wzfwpuq6");armorVictim.setHealth(100);armorVictim.invulnerableTime=0;armorVictim.hurtServer(server.overworld(),arrowSource,10);
+    check(100-armorVictim.getHealth()>normal,"five percent penetration increases armored projectile damage with "+weapon);
+   }
    for(var catName:List.of("class_skills","weapon_skills")) {
     var cat=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:"+catName)).orElseThrow();check(cat.getExperience().isPresent(),catName+" loads");
    }

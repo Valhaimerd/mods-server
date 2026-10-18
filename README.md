@@ -22,6 +22,8 @@ Installer v1.4.5 displays its version on startup and in the menu. Replace older 
 
 Advanced Loot Info 2.4.0, Advanced Worldgen Info 1.3.2, ALICompat 1.3.0, and Advanced Core Info 1.5.0 are in `mods` for client/server data sharing. Their initial information collection can take several minutes; the pack owner reports waiting about eight minutes for ALI to finish. Allow collection to complete before using the reference data. A dedicated server may need a longer `max-tick-time` watchdog allowance for this startup work.
 
+PVP Flagging is locally ported to 26.2: both players must opt in, team protections remain, and attributed player-to-player melee, ranged and magic damage is halved. Other damage is not globally scaled. The same update sets ordinary school power to 4%, Magistrate to 12%, ordinary melee/ranged damage to 2%/3%, and revises Aegis and Hunter. See [the PvP port](docs/patches/pvp-flagging-26.2/README.md) and [skill balance](docs/patches/skill-overhaul/README.md).
+
 Artifacts 15.1.3+26.2.1 has a same-filename balance update: reduced melee damage, attack speed, life steal, sprint speed and knockback bonuses; longer defensive cooldowns; and four extra hearts from Crystal Heart. Charm of Shrinking retains half size and adds 1.2x movement speed with refreshing Weakness I. See [the effective values and verification](docs/patches/artifacts-balance/README.md).
 
 Naturally Trimmed 3.5.0 has a same-filename local repair for TradeView previews and short trade pools: only newly generated offers are trimmed, preventing the negative-list-index server crash. TradeView has since been removed from the pack; the trade-range repair remains. See [the patch and isolated runtime results](docs/patches/naturally-trimmed-trades/README.md).

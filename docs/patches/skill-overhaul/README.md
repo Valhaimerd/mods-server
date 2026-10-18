@@ -6,9 +6,31 @@ Implements the approved [design](design.md) in Minecraft 26.2 / NeoForge 26.2.0.
 - `skill_tree-neoforge-1.6.1+26.2.jar`: RPG class/weapon power and Rogue speed nodes, plus XP calculations. Paladin definitions remain identical to the original.
 - `orb_of_oblivion_puffish_compat-1.0.2.jar`: retains Orb reset support and adds the Companion attribute bridge, fixed spell critical percentage points and migration.
 
+## Current balance — 18 October PvP revision
+
+These values supersede older planning and verification snapshots below.
+
+- Aegis: **15% magic resistance, 10% ranged resistance, 6% movement speed**.
+- Ordinary Adventurer Arcane/Fire/Frost power: **4%**; Magistrate school power:
+  **12%**. Spell haste, critical chance, Priest healing and Paladin defaults remain.
+- Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**.
+  Martial's ordinary route is damage / attack speed / damage / attack speed /
+  damage; its ordinary penetration node becomes attack speed. Final Martial
+  Prowess retains 5% damage, 5% attack speed and 10% penetration.
+- Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
+  to its existing final rewards. Earlier ordinary projectile-speed node retained;
+  later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
+- RPG Class/Weapon normal school-power rewards: **4%**; melee attack-damage
+  rewards (including conditional weapon roots): **2%**; ranged attack-damage
+  rewards: **3%**. Other mechanics and the 1.35x progression multiplier remain.
+- Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
+- PvP Flagging is ported separately to 26.2 and applies **50% attributed PvP
+  damage**, including standard spells. It does not scale PvE damage.
+
+
 ## Behavior and units
 
-Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 5%. Ordinary Adventurer caster power is 5%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 20% power, 5% haste and ten critical points, without health or healing power.
+Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 4%. Ordinary Adventurer caster power is 4%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 12% power, 5% haste and ten critical points, without health or healing power.
 
 The [data transformer](repack.py) records every ordinary node assignment. Author amounts remain where requested, with explicit exceptions for damage, attack speed, caster stats, pet stats and anvil reductions. Anvil nodes each multiply remaining cost by 0.8, so three leave 51.2% before integer rounding. Bow draw haste also accelerates crossbow charging through Ranged Weapon API. Projectile nodes modify both bow and crossbow attributes.
 
@@ -20,7 +42,7 @@ On the first login after installation, Adventurer allocations reset once, preser
 
 All configured skill XP calculations are multiplied by 1.35 exactly once. Level curves, point costs and caps are unchanged. Award rounding remains Pufferfish's normal integer rounding; Minecraft enchanting XP is not globally multiplied.
 
-The 18 October balance revision also sets Martial Prowess to 5% melee damage/5% attack speed/10% penetration, Hunter to 5% ranged damage/+1 Luck/5% movement/5% jump, Aegis to 15% magic and ranged resistance, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis a Golden Apple and Bulwark a Netherite Chestplate. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
+The 18 October balance revision also sets Martial Prowess to 5% melee damage/5% attack speed/10% penetration, Hunter to 5% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis a Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
 
 ## Rebuild
 
@@ -43,3 +65,7 @@ The build writes three candidates under ignored `tmp/skill-overhaul`; it does no
 - An isolated client loaded the repacked category, opened its skill screen and rendered the zoomed-out tree. Client-side parsed title checks verify all nine specialization/Companion titles are blue; the integrated server and client shut down normally. Test data/logs and screenshots remain under `tmp/skill-overhaul/`.
 
 These are focused runtime checks, not a full multiplayer playthrough or a test of every modded pet's AI. The wolf knockback check confirms that a real attack moves its target; it does not quantify the incremental distance. Personal worlds, the personal `.minecraft` instance and the separate desktop server were not modified.
+
+Latest Aegis/icon follow-up: **55 isolated dedicated-server checks passed**, including the new **6% movement-speed modifier**. Structural checks verify Guardian Stead uses `minecraft:diamond_horse_armor`. Only Adventurer tree data changed; the RPG and compatibility-bridge JARs were left untouched. No new migration/reset marker is introduced.
+
+PvP balance revision: **64 dedicated-server skill checks passed**, including 12% Magistrate power, 4% ordinary power, the physical-node changes and actual armored arrow-source damage with bow/crossbow held. Structural checks cover both RPG categories and Hunter. [PvP port and its 50% damage checks](../pvp-flagging-26.2/README.md).

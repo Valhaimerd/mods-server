@@ -54,12 +54,12 @@ for key,remove in [('martial_prowess','puffish_attributes:resistance'),('hunter'
  v=d[key];v['rewards']=[r for r in v['rewards'] if r['data'].get('attribute')!=remove]
  for r in v['rewards']:
   a=r['data'].get('attribute','')
-  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.05
+  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.1 if key=='hunter' else .05
   if a=='attack_speed':r['data']['value']=.05
   if a=='puffish_attributes:armor_shred':r['data']['value']=.1
   if a=='luck':r['data']['value']=1
   if a in ['movement_speed','puffish_attributes:jump']:r['data']['value']=.05
- v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+5% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
+ v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+10% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
 # Martial ordinary route: damage / speed / damage / speed / damage.
 node('f8rbbpxi0myhi3cg','attack_speed+5%')
 define('ranged_penetration','+5% Armor Penetration',[attr('puffish_attributes:armor_shred',.05)],'minecraft:flint')
@@ -122,6 +122,8 @@ for cat in ['class_skills','weapon_skills']:
   # Generated Java node descriptions retain upstream defaults; override the visible text too.
   if k in ['warrior_root','warrior_boost','archer_root','archer_boost']:
    v['description']={'text':'+2% '+('Ranged Damage' if k.startswith('archer') else 'Attack Damage')}
+  if k=='weapon_bow_root':
+   v['description']={'text':'+2% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]}
   if any(r.get('data',{}).get('attribute') in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] for r in v.get('rewards',[])) or k in ['rogue_root','rogue_boost']:
    v['description']={'text':('+4% ' if k.split('_')[0] in schools else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
  assert all(v==d[k] for k,v in original.items() if k.startswith('paladin'))

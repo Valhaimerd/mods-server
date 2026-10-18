@@ -1,5 +1,9 @@
 # Skill tree overhaul — 18 October 2026
 
+Latest ranged follow-up (18 October): **Hunter grants 10% ranged damage**. RPG Class/Weapon ordinary bow damage remains **2%**; its conditional bow description now explicitly shows 2% and retains the equipment condition. These values supersede older Hunter amounts below.
+
+This follow-up passed **70 isolated server checks**, including Hunter's 10% modifier and unchanged secondary rewards. The client passed its RPG root/boost descriptions and both conditional bow descriptions. No new allocation reset or migration marker is introduced.
+
 Implements the approved [design](design.md) in Minecraft 26.2 / NeoForge 26.2.0.90. The working planning document remains under `mod fixing/Skill tree changes - planning.md`. These are same-version local repacks; install all three together on clients and servers:
 
 - `adventurerskills-EN-1.3-26.2-neoforge-fixed.jar`: Adventurer tree data, descriptions, prerequisites, exclusions and XP calculations.
@@ -50,7 +54,7 @@ On the first login after installation, Adventurer allocations reset once, preser
 
 All configured skill XP calculations are multiplied by 1.35 exactly once. Level curves, point costs and caps are unchanged. Award rounding remains Pufferfish's normal integer rounding; Minecraft enchanting XP is not globally multiplied.
 
-The 18 October balance revision also sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 5% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
+The 18 October balance revision also sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 10% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
 
 ## Rebuild
 

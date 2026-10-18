@@ -32,6 +32,7 @@ public class ClientProbe {
       var text=cfg.definitions().get(key).description().getString();
       if(!text.equals("+2% "+(key.startsWith("archer") ? "Ranged Damage":"Attack Damage")))throw new AssertionError("Stale tooltip "+categoryName+"/"+key+": "+text);
      }
+     if(!cfg.definitions().get("weapon_bow_root").description().getString().startsWith("+2% Ranged Damage"))throw new AssertionError("Stale conditional bow description "+categoryName);
     }
     Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS 8 client RPG 2% descriptions; Pack Leader name and 9 blue specialization titles");
     Files.writeString(mc.gameDirectory.toPath().resolve("title-check.txt"),"PASS 9 blue client title components");

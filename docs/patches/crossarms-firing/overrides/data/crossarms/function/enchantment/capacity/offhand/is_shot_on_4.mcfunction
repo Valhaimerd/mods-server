@@ -1,0 +1,3 @@
+
+execute if items entity @s weapon.offhand #minecraft:enchantable/crossbow[minecraft:charged_projectiles=[]] if data entity @s {equipment:{offhand:{components:{"minecraft:custom_data":{crossarms:{ammo:4b}}}}}} run return 1
+return fail

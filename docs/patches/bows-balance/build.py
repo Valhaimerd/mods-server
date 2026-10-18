@@ -5,17 +5,19 @@ import argparse,hashlib,json,subprocess
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;WORK=ROOT/'tmp/bows-balance'
 p=argparse.ArgumentParser();p.add_argument('--classpath-file',default=str(WORK/'classpath.txt'));args=p.parse_args()
 manifest=json.loads((HERE/'upstream.json').read_text())
+manifest={name:sha for name,sha in manifest.items() if not name.startswith('Too_Many')}
 for name,sha in manifest.items():assert hashlib.sha256((WORK/('original-'+name)).read_bytes()).hexdigest()==sha,name
-sources=sorted((HERE/'src').rglob('*.java'))
+sources=[] # Too Many Bows and its local bridge are retired from the active pack.
 for stale in (WORK/'classes').rglob('*.class'):stale.unlink()
 a=['--release','25','-encoding','UTF-8','-cp',Path(args.classpath_file).read_text().strip(),'-d',str(WORK/'classes'),*[str(x) for x in sources]]
 (WORK/'compile.args').write_text('\n'.join('"'+x.replace('\\','/')+'"' for x in a))
-subprocess.run(['C:/Program Files/Eclipse Adoptium/jdk-26.0.2.101-hotspot/bin/javac.exe','@'+str(WORK/'compile.args')],check=True)
+if sources:subprocess.run(['C:/Program Files/Eclipse Adoptium/jdk-26.0.2.101-hotspot/bin/javac.exe','@'+str(WORK/'compile.args')],check=True)
 removed={'too_many_bows:'+x for x in ['stormbound_signet','sharpshot_ring','dead_eyes_pendant']}
 with ZipFile(WORK/'original-crossarms-1.4.jar') as z:
  shared={n:json.loads(z.read(n)) for n in ['data/minecraft/enchantment/multishot.json','data/minecraft/enchantment/piercing.json']}
 for obj in shared.values():obj['exclusive_set']=[]
 report={}
+crossarms_overrides=ROOT/'docs/patches/crossarms-firing/overrides'
 for name in manifest:
  changed=[]
  with ZipFile(WORK/('original-'+name)) as src,ZipFile(WORK/name,'w') as dst:
@@ -40,11 +42,19 @@ for name in manifest:
     obj=json.loads(data)
     obj['effects']['minecraft:equipment_drops'][0]['requirements']['predicate']={'minecraft:entity_type':'minecraft:player'}
     data=(json.dumps(obj,indent=2)+'\n').encode()
+   if name=='crossarms-1.4.jar' and (crossarms_overrides/n).is_file():data=(crossarms_overrides/n).read_bytes()
    if data!=old:changed.append(n)
    dst.writestr(entry,data)
   if name.startswith('Too_Many'):
    for f in sorted((WORK/'classes').rglob('*.class')):
     n=f.relative_to(WORK/'classes').as_posix()
+    if n not in src.namelist():
+     info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED
+     dst.writestr(info,f.read_bytes());changed.append(n)
+  if name=='crossarms-1.4.jar':
+   for f in sorted(crossarms_overrides.rglob('*')):
+    if not f.is_file():continue
+    n=f.relative_to(crossarms_overrides).as_posix()
     if n not in src.namelist():
      info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED
      dst.writestr(info,f.read_bytes());changed.append(n)

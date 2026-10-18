@@ -14,7 +14,7 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     operations={r['data']['attribute']:r['data']['operation'] for r in d['martial_prowess']['rewards']}
     assert operations['critical_strike:chance']=='multiply_base'
     assert operations['critical_strike:damage']=='multiply_total'
-    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.05,'luck':1,'movement_speed':.05,'puffish_attributes:jump':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
+    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.1,'luck':1,'movement_speed':.05,'puffish_attributes:jump':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('magistrate')=={**{'spell_power:'+x:.12 for x in ['arcane','fire','frost']},'spell_power:haste':.05}
     assert rewards('caster_power')=={'spell_power:'+x:.04 for x in ['arcane','fire','frost']}
     assert rewards('caster_haste')=={'spell_power:haste':.03}
@@ -46,6 +46,7 @@ with zipfile.ZipFile(folder/'skill_tree-neoforge-1.6.1+26.2.jar') as z:
                 if a=='ranged_weapon:damage':assert r['data']['value']==.02
         for k in ['archer_root','archer_boost','warrior_root','warrior_boost']:
             assert d[k]['description']=={'text':'+2% '+('Ranged Damage' if k.startswith('archer') else 'Attack Damage')},(cat,k)
+        assert d['weapon_bow_root']['description']=={'text':'+2% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]},cat
         assert d['paladin_root']['rewards'][0]['data']['value']==.2
         assert d['paladin_root']['rewards'][0]['data']['operation']=='addition'
         exp=json.loads(z.read(b+'experience.json'));assert '1.35' in exp['sources'][0]['data']['experience']

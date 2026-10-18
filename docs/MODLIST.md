@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 313 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 23 client extras</p>
 
 Last audited: 2026-10-18<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 313 synchronized JARs plus 23 client-store JARs
+Current distribution: 310 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -45,40 +45,40 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>18</td></tr>
     <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>24</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>26</td></tr>
     <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>28</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>44</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>56</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>64</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>66</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>66</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>35</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>35</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>43</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>47</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>47</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>47</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>50</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>55</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>63</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>65</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>65</td></tr>
   </tbody>
 </table>
 
@@ -665,7 +665,7 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Offensive, Defensive and Companion alternatives lock at their first path nodes. You can develop different branches together. Utilities has no exclusions or specialties. Completion nodes grant stats without item gifts. Adventurer skill XP gains are 1.35 times their original rate.
 
-Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +2% melee or +3% ranged damage and attack speed +3%. Caster nodes grant +4% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +12% school power, +10 critical points and +5% spell haste. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +5% ranged damage/+1 Luck/+5% movement/+5% jump, plus +10% armor penetration and +25% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. The ranged path improves draw speed for bows and crossbows, projectile speed and damage. Bow icons mark ranged damage; Crossbows mark draw speed.
+Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +2% melee or +3% ranged damage and attack speed +3%. Caster nodes grant +4% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +12% school power, +10 critical points and +5% spell haste. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +10% ranged damage/+1 Luck/+5% movement/+5% jump, plus +10% armor penetration and +25% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. The ranged path improves draw speed for bows and crossbows, projectile speed and damage. Bow icons mark ranged damage; Crossbows mark draw speed.
 
 Defensive offers **Aegis** (+15% magic/+10% ranged resistance/+6% movement speed), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
 
@@ -942,27 +942,13 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 
 <div class="core-mod-entry">
 
-#### Too Many Bows
-
-- **Type:** Equipment
-- **Core mechanic:** Adds bows with different ranged attributes and abilities.
-- **Player guidance:** Compare draw speed, damage, and special behavior.
-
-The installed 4.0.0 bows are distinct ranged options rather than cosmetic variants. Test them with the ammunition used by the current build. Stormbound Signet (+30% bow damage), Sharpshot Ring (+15% bow damage) and Dead Eye’s Pendant (bow critical chance) are removed from acquisition, creative tabs and JEI in this pack. Existing copies remain registered for saves but cannot equip or grant bonuses. Use RPG jewelry for combat accessories; other Too Many Bows items remain available.
-
-Ranged-damage tooltips now use each usable bow’s own configured base instead of the shared 6 default: Wind Bow shows 3, Sentinel’s Wrath 5 and Ancient Sage 7. Damage normalization matches that base, and native ranged scaling is protected against applying twice. Special effects and target-specific damage still follow each bow’s own rules.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/too-many-bows">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### CrossArms
 
 - **Type:** Crossbow enchantments and cosmetics
 - **Core mechanic:** Gives crossbows magazine, high-velocity, automatic-fire and projectile-control options.
 - **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Check JEI and the enchantment tooltip before combining books.
+
+The local repair lets Capacity and Frenzy recognize modded crossbows and uses each weapon's actual durability limits. Capacity fires one arrow per trigger; its magazine provides several shots before the next reload.
 
 CrossArms 1.4 adds eight enchantments to the existing crossbow. Capacity I–IV stores 4/8/12/16 normal arrows per charge, with longer loading; Acceleration I–V increases projectile velocity; Frenzy feeds normal arrows automatically and builds heat. Bombard turns shots into explosives that can destroy blocks and costs extra durability. Zero Drop removes arrow gravity but disables critical hits; Ricochet adds bounces; Deflector reflects projectiles; Recycling returns some normal arrows after hits. These create different firing roles; they do not guarantee equal damage against every bow.
 
@@ -983,20 +969,6 @@ Multishot now reaches level III, firing up to seven projectiles with wider sprea
 The local 1.11 integration preserves CrossArms’s Multishot III effects and Piercing trails instead of overwriting them with vanilla-style definitions. Looting still supports melee weapons. Its older entity predicate is repaired for 26.2 so the server can load the enchantment registry.
 
 <p class="core-mod-source"><a href="https://modrinth.com/datapack/expanded-crossbow-enchantings">Official project page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
-#### Arrow+
-
-- **Type:** Equipment
-- **Core mechanic:** Adds craftable arrow tiers with different damage values.
-- **Player guidance:** Craft an arrow tier suited to the target.
-
-Different arrow materials change ranged damage. Use JEI to check the installed recipes and requirements.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/arrow">Official mod page</a></p>
 
 </div>
 
@@ -3917,7 +3889,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Armor Trim Item Fix](#armor-trim-item-fix)
 - [Armored Foes](#armored-foes)
 - [Armory](#armory)
-- [Arrow+](#arrow)
 - [Arsenal](#arsenal)
 - [Artifacts](#artifacts-1)
 - [Astral Dimension](#feature-astral-dimension)
@@ -4064,7 +4035,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [The Darkness Will Find You](#the-darkness-will-find-you)
 - [The Graveyard](#the-graveyard)
 - [Tom's Simple Storage](#toms-simple-storage)
-- [Too Many Bows](#too-many-bows)
 - [Tool Belt](#tool-belt-1)
 - [Towers of Chambers](#towers-of-chambers)
 - [Towns and Towers](#towns-and-towers)
@@ -4129,7 +4099,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
 - [Armory](#armory)
-- [Arrow+](#arrow)
 - [Arsenal](#arsenal)
 - [Artifacts](#artifacts-1)
 - [Curios](#curios-1)
@@ -4148,7 +4117,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Shield Upgrades](#shield-upgrades)
 - [SimpleHats Lite](#simplehats-lite-1)
 - [Tool Belt](#tool-belt-1)
-- [Too Many Bows](#too-many-bows)
 - [Universal Enchants](#universal-enchants)
 
 #### Bosses

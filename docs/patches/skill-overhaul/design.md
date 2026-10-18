@@ -1,5 +1,7 @@
 # Skill tree changes — planning draft
 
+Latest ranged follow-up (18 October): **Hunter grants 10% ranged damage**. RPG Class/Weapon ordinary bow damage remains **2%**; its conditional bow description now explicitly shows 2% and retains the equipment condition. These values supersede older Hunter amounts below.
+
 Status: implemented; current values are summarized below. Historical design notes follow.
 Recorded: 2026-10-17. Updated: 2026-10-18.
 

@@ -1,5 +1,7 @@
 # Too Many Bows accessories and crossbow integration
 
+**Retired:** Too Many Bows was removed from the active pack at the owner's request. Its accessory and damage-bridge notes below are historical. Only the CrossArms/Expanded Crossbow integration remains active; default builds omit Too Many Bows.
+
 Minecraft 26.2, NeoForge 26.2.0.90, Java 25+; 18 October 2026.
 
 Too Many Bows **4.0.0-26.2** replaces **1.0.1-26.2**. The supplied archive’s metadata declares both-side Architectury and Curios dependencies. The old active JAR is retired to the ignored backup folder. This is a local repack of the supplied 4.0.0 file, not a claim of an unmodified upstream release.
@@ -17,6 +19,10 @@ IDs stay registered for existing saves. Their Curios providers grant no modifier
 CrossArms **1.4** adds eight crossbow enchantments, Multishot III, projectile mechanics and cosmetic skins. Expanded Crossbow Enchantings **1.11** adds crossbow Looting and permits Multishot/Piercing together. Both supplied files override Multishot/Piercing; vanilla-style Expanded definitions would erase CrossArms effects depending on resource order. Both archives now contain identical merged definitions, retaining CrossArms effects and removing only the mutual vanilla Multishot/Piercing exclusion. Other CrossArms exclusions remain, including Capacity versus Multishot. Expanded’s Looting predicate is updated from `type` to 26.2’s `minecraft:entity_type`; the original causes a fatal enchantment-registry loading error. Looting still supports melee weapons.
 
 No speculative crossbow damage multiplier is added. CrossArms supplies distinct weapon roles; equal DPS against every bow has not been established.
+
+## Removed ammunition and enchantment
+
+The active pack no longer includes `arrowplus-neoforge-26.2-26.2.0.jar` or `true-shot-enchantment-v1.0.3.jar`. The owner requested full removal after observing excessive Obsidian Arrow damage. Regular flint arrows remain available. Original archives are retained only in the ignored retired-packs folder; no other installed mod declares either removed mod as a dependency. The player catalog and icon manifest omit Arrow+; True Shot had no standalone catalog entry. No personal worlds or configurations were modified.
 
 ## Native bow damage in Ranged Weapon API
 

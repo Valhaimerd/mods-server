@@ -33,3 +33,6 @@ scoreboard objectives add color dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add frenzy_hurt dummy
 scoreboard objectives add frenzy_stage dummy
+scoreboard objectives add frenzy_shots dummy
+scoreboard objectives add frenzy_idle dummy
+scoreboard objectives add frenzy_empty dummy

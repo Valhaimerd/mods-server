@@ -63,7 +63,7 @@ for name in manifest:
      info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED
      dst.writestr(info,f.read_bytes());changed.append(n)
   if name=='crossarms-1.4.jar':
-   config={'required':True,'minVersion':'0.8','package':'local.crossarms.mixin','compatibilityLevel':'JAVA_25','mixins':['FrenzyAccuracyMixin'],'injectors':{'defaultRequire':1}}
+   config={'required':True,'minVersion':'0.8','package':'local.crossarms.mixin','compatibilityLevel':'JAVA_25','mixins':['FrenzyAccuracyMixin','FrenzyReloadMixin'],'injectors':{'defaultRequire':1}}
    additions={'crossarms-pack.mixins.json':(json.dumps(config,indent=2)+'\n').encode()}
    additions.update({f.relative_to(WORK/'classes').as_posix():f.read_bytes() for f in (WORK/'classes').rglob('*.class')})
    for n,data in additions.items():

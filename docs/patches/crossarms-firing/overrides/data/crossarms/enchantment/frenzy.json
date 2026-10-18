@@ -1,0 +1,56 @@
+{
+  "anvil_cost": 10,
+  "description": {
+    "translate": "enchantment.crossarms.frenzy",
+    "fallback": "Frenzy"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "crossarms:enchantment/frenzy/untag"
+        }
+      }
+    ],
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "crossarms:enchantment/frenzy/tag"
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "crossarms:enchantment/frenzy"
+        }
+      }
+    ]
+  },
+  "exclusive_set": [
+    "crossarms:acceleration",
+    "minecraft:multishot",
+    "crossarms:deflector",
+    "crossarms:bombard",
+    "minecraft:quick_charge",
+    "minecraft:piercing"
+  ],
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": "#minecraft:enchantable/crossbow",
+  "weight": 3
+}

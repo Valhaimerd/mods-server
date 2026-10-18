@@ -1,3 +1,4 @@
+execute if score @s frenzy_empty matches 1 run return fail
 execute store result score @s inventory_ammo run clear @s minecraft:arrow 0
 execute if score @s[gamemode=!creative] inventory_ammo matches 0 run return fail
 # Infinity still requires one normal arrow, but does not consume it.

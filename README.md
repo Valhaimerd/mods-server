@@ -26,7 +26,7 @@ The local PVP Flagging replacement only retains 50% of attributed player-to-play
 
 Arrow+ and True Shot Enchantment have been removed from the pack. RPG bow damage rewards remain 2%, with their conditional bow tooltip corrected; Adventurer Hunter now grants 10% ranged damage.
 
-Too Many Bows has been removed from the pack, alongside Arrow+ and True Shot. CrossArms and Expanded Crossbow Enchantings remain, including the Capacity/Frenzy firing repair for modded crossbows. See [the firing repair](docs/patches/crossarms-firing/README.md).
+Too Many Bows has been removed from the pack, alongside Arrow+ and True Shot. CrossArms and Expanded Crossbow Enchantings remain, including the Frenzy firing repair for modded crossbows. Capacity is removed. Frenzy retains 50/60/75/100% damage by heat tier, uses 5% normal spread and deals 1/2/4 magic self-damage every 40 ticks at its third/fourth/fifth heat bars. Forced overheating durability loss is removed. See [the firing repair](docs/patches/crossarms-firing/README.md).
 
 Artifacts 15.1.3+26.2.1 has a same-filename balance update: reduced melee damage, attack speed, life steal, sprint speed and knockback bonuses; longer defensive cooldowns; and four extra hearts from Crystal Heart. Charm of Shrinking retains half size and adds 1.2x movement speed with refreshing Weakness I. See [the effective values and verification](docs/patches/artifacts-balance/README.md).
 

@@ -945,14 +945,14 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 #### CrossArms
 
 - **Type:** Crossbow enchantments and cosmetics
-- **Core mechanic:** Gives crossbows magazine, high-velocity, automatic-fire and projectile-control options.
-- **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Check JEI and the enchantment tooltip before combining books.
+- **Core mechanic:** Adds automatic fire, high-velocity shots and projectile-control options.
+- **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Frenzy heat is now a tradeoff between damage and magic self-damage.
 
-The local repair lets Capacity and Frenzy recognize modded crossbows and uses each weapon's actual durability limits. Capacity fires one arrow per trigger; its magazine provides several shots before the next reload.
+CrossArms 1.4 supplies seven enchantments in this pack. **Capacity has been removed.** Frenzy auto-feeds normal arrows and uses a very tight spread (5% of ordinary crossbow spread). It starts at 50% shot damage, reaches 60% at the third/red heat bar, 75% at the fourth/dark red bar and 100% at the fifth/black bar. Heat deals magic damage every 40 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
 
-CrossArms 1.4 adds eight enchantments to the existing crossbow. Capacity I–IV stores 4/8/12/16 normal arrows per charge, with longer loading; Acceleration I–V increases projectile velocity; Frenzy feeds normal arrows automatically and builds heat. Bombard turns shots into explosives that can destroy blocks and costs extra durability. Zero Drop removes arrow gravity but disables critical hits; Ricochet adds bounces; Deflector reflects projectiles; Recycling returns some normal arrows after hits. These create different firing roles; they do not guarantee equal damage against every bow.
+Overheating no longer forces durability down. Ordinary firing wear remains, and auto-feeding stops at one remaining durability. The local firing repair supports vanilla and modded crossbows in either hand. Acceleration increases velocity; Bombard creates block-damaging explosions; Zero Drop removes gravity but disables critical hits; Ricochet adds bounces; Deflector reflects projectiles; Recycling can return normal arrows.
 
-Multishot now reaches level III, firing up to seven projectiles with wider spread and a close-range neighboring-arrow damage mechanic. The pack merges this with Expanded Crossbow Enchantings so Multishot and Piercing can share a crossbow, while CrossArms’s other exclusions remain. Capacity and Multishot still exclude each other. Cosmetic skins use the smithing table and can be reverted with a stick. No new keybind is required.
+Multishot reaches level III with up to seven projectiles, wider spread and a close-range neighboring-arrow damage effect. The pack preserves those mechanics while Expanded Crossbow Enchantings permits Multishot with Piercing; other restrictions remain. Cosmetic skins use a smithing table and can be reverted with a stick. No new keybind is required.
 
 <p class="core-mod-source"><a href="https://modrinth.com/datapack/crossarms">Official project page</a></p>
 

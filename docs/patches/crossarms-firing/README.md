@@ -1,31 +1,37 @@
-# CrossArms Capacity and Frenzy on modded crossbows
+# CrossArms Frenzy balance
 
 Minecraft 26.2 / NeoForge 26.2.0.90, CrossArms 1.4. Same active JAR filename.
 
-CrossArms allows its enchantments on `#minecraft:enchantable/crossbow`, but its firing functions and predicates checked only `minecraft:crossbow`. An Arsenal crossbow could receive Capacity and fire its first loaded arrow, then never refill. Frenzy's enchantment blocked ordinary loading while its vanilla-only checks prevented auto-feed. Vanilla firing worked in the isolated baseline.
+Capacity is removed entirely: its enchantment definition, functions, predicates, item modifiers and acquisition/exclusion references no longer ship. Capacity can no longer be obtained or applied in this pack. CrossArms now supplies seven enchantments. The Multishot/Piercing integration remains.
 
-The data-only overrides use the supported crossbow tag for magazine and auto-feed checks. Frenzy's broken-item predicate now tests remaining durability instead of the vanilla damage value 464. Overheating derives the effective maximum durability through the native item modifier and leaves two durability, preserving the crossbow's own maximum. No Java classes or new mod are required. The existing Multishot/Piercing merge remains in place.
+## Frenzy rules
 
-Capacity fires **one arrow per trigger**, with **4/8/12/16 shots before reloading**, rather than firing the whole magazine at once. It only magazines normal arrows; tipped arrows retain a single loaded shot. Frenzy automatically feeds normal arrows, consumes one per feed, increases heat and loses normal firing durability. It stops feeding at one remaining durability.
+| Heat display | Heat score | Shot damage retained | Magic self-damage per 40 ticks |
+| --- | --- | --- | --- |
+| Low / first two bars | 0-300 | 50% | None |
+| Third / red bar | 301-450 | 60% | 1 HP |
+| Fourth / dark red bar | 451-610 | 75% | 2 HP |
+| Fifth / black bar | 611+ | 100% | 4 HP |
+
+The timer begins on entering damaging heat and resets on cooling below it; sustained heat deals damage every 40 ticks (two seconds at 20 TPS). The amount uses the current bar at the damage tick. Damage uses `minecraft:magic`, so Fire Resistance does not cancel it. Heat cools by two units per world tick and remains attached to the player when switching weapons; death clears heat and its timer.
+
+Shot damage is a multiplier on the existing projectile damage, preserving weapon bonuses and Ranged Weapon API scaling. The projectile reads its actual owner's heat, rather than a nearby player's. The requested 95% accuracy is implemented as **5% of ordinary crossbow spread**, not a guaranteed hit chance. Ordinary crossbows retain their spread. A narrow mixin changes only the Frenzy crossbow firing argument.
+
+Overheating no longer forces the crossbow down to two durability. Normal one-durability firing wear remains, and auto-feeding still stops at one remaining durability. Frenzy consumes normal arrows and auto-feeds on vanilla and modded crossbows in either hand. The earlier firing fix uses `#minecraft:enchantable/crossbow`, rather than hardcoding the vanilla item. The former Capacity magazine repair is superseded by full Capacity removal.
 
 ## Rebuild
 
-The canonical combined build automatically applies every file in `overrides/` after merging the CrossArms enchantment definitions:
-
 ```powershell
-python docs/patches/bows-balance/build.py
+python docs/patches/bows-balance/build.py --classpath-file tmp/bows-balance/classpath.txt
+python docs/patches/bows-balance/verify.py tmp/bows-balance
 ```
 
-For a focused candidate over an already integrated archive:
-
-```powershell
-python docs/patches/crossarms-firing/build.py --input mods/crossarms-1.4.jar --output tmp/crossarms-firing/crossarms-1.4.jar
-```
-
-Original and final hashes are recorded by the combined [bow build manifest](../bows-balance/artifacts.json). Upstream attribution and license: [CrossArms](https://modrinth.com/datapack/crossarms), AlmazmanElytra, Din37r and IceBan; CC-BY-4.0.
+The canonical build applies `overrides/`, removes Capacity data/references, and compiles only `src/` into production. It registers `crossarms-pack.mixins.json` for the accuracy hook. Provide a Java 25+ compiler and the NeoForge-patched 26.2 server/FML/Mixin dependency classpath. Original inputs are hash-pinned in the combined builder's `upstream.json`; final active hashes are in [artifacts.json](../bows-balance/artifacts.json). Tests never enter production archives. Personal worlds and configs are untouched.
 
 ## Verification
 
-The baseline reproduced Arsenal `unique_heavy_crossbow_1` failing Capacity's second shot. The repaired isolated server passed **260 checks** with Ranged Weapon API 4.0.0, Arsenal 1.5.1 and Expanded Crossbow Enchantings 1.11. Tests drive real `CrossbowItem` loading/firing and enchantment ticks, counting spawned arrow entities, for vanilla and Arsenal crossbows in both hands.
+The final isolated server passed **145 current Frenzy checks**, testing real firing on vanilla and Arsenal 1.5.1 crossbows, in both hands, with Ranged Weapon API 4.0.0 and Expanded Crossbow Enchantings 1.11. Coverage includes Capacity absent from the enchantment registry; 50/60/75/100% damage relative to ordinary shots; repeated auto-feeding and one-arrow consumption; ordinary firing wear with no forced overheat break; exact magic self-damage after 40 ticks with Fire Resistance active; and the loaded accuracy hook returning 0.05 versus the unchanged ordinary spread of 1.0. Logs remain under `tmp/crossarms-firing/server`.
 
-Coverage: all four magazine sizes, empty magazine after the final shot, six consecutive Frenzy shots, exact ammunition consumption, durability loss, heat increase, overheat leaving two durability for maximums 465 and 4062, feeding stopping at one durability, tipped ammunition staying single-shot and ordinary crossbows still requiring a reload. Test startup explicitly invokes the normal CrossArms load function because the fake-player probe runs before the first world tick. Test sources are excluded from production archives. This is focused firing verification, not a claim about every modded crossbow's custom abilities.
+The first regression run failed because Capacity still existed. Review also caught an orphaned Capacity function and malformed actionbar continuations; both are removed/fixed, and the current archive has no function parse errors. The historical modded-crossbow repair passed 260 checks before Capacity was removed; those magazine checks describe the previous build, not this one.
+
+Sources and attribution: [CrossArms](https://modrinth.com/datapack/crossarms), AlmazmanElytra, Din37r and IceBan; upstream content CC-BY-4.0. Original metadata and credits are retained.

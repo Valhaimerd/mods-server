@@ -32,6 +32,10 @@ Existing pull-time, velocity and unrelated modifiers are preserved. Values load 
 
 Thirteen native projectile paths and Scatter already read ranged damage. Their shared bow hook marks that scaling as handled so RWA does not apply it again. Sentinel, Solar and Shulker also do this for tipped/spectral ammunition; other bows' vanilla ammunition paths retain ordinary API scaling. The API dependency is explicit so this local integration cannot silently load without its required classes.
 
+## Current CrossArms rules
+
+Capacity is now removed. The current Frenzy damage, magic heat, spread and durability rules supersede earlier descriptions above; see [the current firing policy](../crossarms-firing/README.md).
+
 ## Rebuild
 
 Preserve the exact three supplied JARs as `tmp/bows-balance/original-<filename>`; SHA-256 values are in [upstream.json](upstream.json). Supply a classpath containing the NeoForge-patched 26.2 server JAR, NeoForge/FML/event libraries, the original Too Many Bows archive, Architectury, Curios and JEI API. The development environment caches it in `tmp/bows-balance/classpath.txt`.

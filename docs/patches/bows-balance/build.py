@@ -7,7 +7,7 @@ p=argparse.ArgumentParser();p.add_argument('--classpath-file',default=str(WORK/'
 manifest=json.loads((HERE/'upstream.json').read_text())
 manifest={name:sha for name,sha in manifest.items() if not name.startswith('Too_Many')}
 for name,sha in manifest.items():assert hashlib.sha256((WORK/('original-'+name)).read_bytes()).hexdigest()==sha,name
-sources=[] # Too Many Bows and its local bridge are retired from the active pack.
+sources=sorted((ROOT/'docs/patches/crossarms-firing/src').rglob('*.java'))
 for stale in (WORK/'classes').rglob('*.class'):stale.unlink()
 a=['--release','25','-encoding','UTF-8','-cp',Path(args.classpath_file).read_text().strip(),'-d',str(WORK/'classes'),*[str(x) for x in sources]]
 (WORK/'compile.args').write_text('\n'.join('"'+x.replace('\\','/')+'"' for x in a))
@@ -23,6 +23,8 @@ for name in manifest:
  with ZipFile(WORK/('original-'+name)) as src,ZipFile(WORK/name,'w') as dst:
   for entry in src.infolist():
    n=entry.filename;old=src.read(n);data=old
+   if name=='crossarms-1.4.jar' and ('/capacity/' in n or n.endswith(('/capacity.json','/capacity.mcfunction')) or n in ['data/crossarms/function/enchantment/frenzy/break.mcfunction','data/crossarms/function/enchantment/frenzy/read_damage_mainhand.mcfunction','data/crossarms/function/enchantment/frenzy/read_damage_offhand.mcfunction','data/crossarms/function/enchantment/frenzy/set_damage.mcfunction']):
+    changed.append('deleted '+n);continue
    if name.startswith('Too_Many'):
     candidate=WORK/'classes'/n
     if n.endswith('.class') and candidate.is_file():data=candidate.read_bytes()
@@ -43,6 +45,15 @@ for name in manifest:
     obj['effects']['minecraft:equipment_drops'][0]['requirements']['predicate']={'minecraft:entity_type':'minecraft:player'}
     data=(json.dumps(obj,indent=2)+'\n').encode()
    if name=='crossarms-1.4.jar' and (crossarms_overrides/n).is_file():data=(crossarms_overrides/n).read_bytes()
+   if name=='crossarms-1.4.jar' and n.endswith('.json') and n.startswith('data/'):
+    def filter_capacity(obj):
+     if isinstance(obj,list):return [filter_capacity(x) for x in obj if x!='crossarms:capacity']
+     if isinstance(obj,dict):return {k:filter_capacity(v) for k,v in obj.items() if k!='crossarms:capacity'}
+     return obj
+    obj=json.loads(data);filtered=filter_capacity(obj)
+    if filtered!=obj:data=(json.dumps(filtered,indent=2)+'\n').encode()
+   if name=='crossarms-1.4.jar' and n=='META-INF/neoforge.mods.toml':
+    data+=b'\n[[mixins]]\nconfig="crossarms-pack.mixins.json"\n'
    if data!=old:changed.append(n)
    dst.writestr(entry,data)
   if name.startswith('Too_Many'):
@@ -52,6 +63,11 @@ for name in manifest:
      info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED
      dst.writestr(info,f.read_bytes());changed.append(n)
   if name=='crossarms-1.4.jar':
+   config={'required':True,'minVersion':'0.8','package':'local.crossarms.mixin','compatibilityLevel':'JAVA_25','mixins':['FrenzyAccuracyMixin'],'injectors':{'defaultRequire':1}}
+   additions={'crossarms-pack.mixins.json':(json.dumps(config,indent=2)+'\n').encode()}
+   additions.update({f.relative_to(WORK/'classes').as_posix():f.read_bytes() for f in (WORK/'classes').rglob('*.class')})
+   for n,data in additions.items():
+    info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED;dst.writestr(info,data);changed.append(n)
    for f in sorted(crossarms_overrides.rglob('*')):
     if not f.is_file():continue
     n=f.relative_to(crossarms_overrides).as_posix()

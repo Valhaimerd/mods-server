@@ -20,11 +20,17 @@ with ZipFile(folder/'crossarms-1.4.jar') as a,ZipFile(folder/'expanded-crossbow-
   key='data/minecraft/enchantment/'+name+'.json';first=json.loads(a.read(key));assert first==json.loads(b.read(key));assert first['exclusive_set']==[]
  assert json.loads(a.read('data/minecraft/enchantment/multishot.json'))['max_level']==3
  loot=json.loads(b.read('data/minecraft/enchantment/looting.json'));assert loot['effects']['minecraft:equipment_drops'][0]['requirements']['predicate']=={'minecraft:entity_type':'minecraft:player'}
- assert all('data/crossarms/enchantment/'+name+'.json' in a.namelist() for name in ['acceleration','bombard','capacity','deflector','frenzy','recycling','ricochet','zero_drop'])
+ assert all('data/crossarms/enchantment/'+name+'.json' in a.namelist() for name in ['acceleration','bombard','deflector','frenzy','recycling','ricochet','zero_drop'])
+ assert not any(n.startswith('data/') and ('/capacity/' in n or n.endswith(('/capacity.json','/capacity.mcfunction'))) for n in a.namelist())
+ for n in a.namelist():
+  if n.startswith('data/') and n.endswith('.json'):assert 'crossarms:capacity' not in a.read(n).decode(),n
  for hand in ['mainhand','offhand']:
   predicate=json.loads(a.read(f'data/crossarms/predicate/frenzy/{hand}.json'))
   assert predicate['predicate']['equipment'][hand]['items']=='#minecraft:enchantable/crossbow'
   broken=json.loads(a.read(f'data/crossarms/predicate/frenzy/broken_{hand}.json'))
   assert broken['predicate']['equipment'][hand]['predicates']['minecraft:damage']['durability']['max']==1
- assert 'scoreboard players remove @s temp 2' in a.read('data/crossarms/function/enchantment/frenzy/break.mcfunction').decode()
+ assert 'data/crossarms/function/enchantment/frenzy/break.mcfunction' not in a.namelist()
+ assert 'minecraft:magic' in a.read('data/crossarms/function/enchantment/frenzy/heat/damage.mcfunction').decode()
+ assert 'local/crossarms/mixin/FrenzyAccuracyMixin.class' in a.namelist()
+ assert 'FrenzyAccuracyMixin' in json.loads(a.read('crossarms-pack.mixins.json'))['mixins']
 print('PASS active crossbow integration data')

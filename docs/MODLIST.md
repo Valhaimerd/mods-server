@@ -878,7 +878,7 @@ A relic can alter how a build plays rather than simply raising a stat. Valuable 
 - **Core mechanic:** Adds powerful accessories found through exploration, chests, and archaeology.
 - **Player guidance:** Explore structures and archaeology sites for accessories.
 
-Artifacts can supply powerful passive effects in accessory slots. Check each item’s slot and effect before planning around it.
+Artifacts use pack balance: Power Glove gives +2 damage, Feral Claws +15% base attack speed, Vampiric Glove 10% life steal capped at two hearts per hit, and Running Shoes +20% sprint speed. Crystal Heart adds four hearts. Defensive necklace cooldowns are longer. Charm of Shrinking gives half size, 1.2x movement speed and refreshing Weakness I while active. Check each item's slot and drawbacks before equipping it.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/artifacts">Official mod page</a></p>
 

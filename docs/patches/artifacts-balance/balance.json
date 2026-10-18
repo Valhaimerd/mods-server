@@ -1,0 +1,20 @@
+{
+  "cross_necklace.cooldown": 5,
+  "panic_necklace.speedLevel": 1,
+  "panic_necklace.speedDuration": 5,
+  "panic_necklace.cooldown": 7,
+  "shock_pendant.cooldown": 3,
+  "thorn_pendant.cooldown": 3,
+  "crystal_heart.healthBonus": 8.0,
+  "feral_claws.attackSpeedBonus": 0.15,
+  "vampiric_glove.maxHealingPerHit": 4,
+  "vampiric_glove.absorptionRatio": 0.1,
+  "running_shoes.sprintingSpeedBonus": 0.2,
+  "power_glove.attackDamageBonus": 2.0,
+  "pocket_piston.attackKnockbackBonus": 0.3,
+  "steadfast_spikes.knockbackResistance": 0.5,
+  "charm_of_shrinking.scaleModifier": -0.5,
+  "obsidian_skull.fireResistanceDuration": 30,
+  "obsidian_skull.cooldown": 60,
+  "steadfast_spikes.slipperinessReduction": 1.0
+}

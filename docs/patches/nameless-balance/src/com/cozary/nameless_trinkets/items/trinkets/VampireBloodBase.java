@@ -31,6 +31,7 @@ public class VampireBloodBase extends TrinketItem<VampireBloodBase.Stats> {
             if (Minecraft.getInstance().hasShiftDown()) {
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.vampire_blood_1", config.damageMultiplierPercentage + "%").withStyle(ChatFormatting.GOLD));
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.vampire_blood_2", config.healingPercentage + "%").withStyle(ChatFormatting.GOLD));
+                tooltip.accept(Component.literal("Movement speed: +10% (1.1x).").withStyle(ChatFormatting.GOLD));
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.vampire_blood_3").withStyle(ChatFormatting.GOLD));
             } else {
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.hold_shift"));
@@ -40,6 +41,7 @@ public class VampireBloodBase extends TrinketItem<VampireBloodBase.Stats> {
 
     public static class Stats extends TrinketsStats {
         public double damageMultiplierPercentage = 20.0;
+        public float movementSpeedPercentage = 10.0f;
         public float healingPercentage = 10.0f;
         public double sunDamage = 2.0f;
         public boolean isEnable = true;

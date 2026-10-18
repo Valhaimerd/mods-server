@@ -30,7 +30,7 @@ public class TitansMarkBase extends TrinketItem<TitansMarkBase.Stats> {
             tooltip.accept(Component.translatable("tooltip.nameless_trinkets.titans_mark_lore").withStyle(ChatFormatting.AQUA, ChatFormatting.ITALIC));
             if (Minecraft.getInstance().hasShiftDown()) {
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.titans_mark_1", config.extraScalePercentage + "%").withStyle(ChatFormatting.GOLD));
-                tooltip.accept(Component.literal("Slowness I (60s), +10 hearts (5s), Resistance I (5s); refreshed while worn.").withStyle(ChatFormatting.GOLD));
+                tooltip.accept(Component.literal("+10% attack damage; Slowness I (60s), +10 hearts (5s), Resistance I (5s); refreshed while worn.").withStyle(ChatFormatting.GOLD));
             } else {
                 tooltip.accept(Component.translatable("tooltip.nameless_trinkets.hold_shift"));
             }
@@ -38,8 +38,8 @@ public class TitansMarkBase extends TrinketItem<TitansMarkBase.Stats> {
     }
 
     public static class Stats extends TrinketsStats {
-        public float extraScalePercentage = 50.0F;
-        public float attackDamagePercentage = 0.0f;
+        public float extraScalePercentage = 25.0F;
+        public float attackDamagePercentage = 10.0f;
         public boolean isEnable = true;
     }
 }

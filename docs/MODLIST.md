@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 23 client extras</p>
 
 Last audited: 2026-10-18<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 309 synchronized JARs plus 23 client-store JARs
+Current distribution: 310 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -47,38 +47,38 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>23</td></tr>
     <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>26</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>41</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>45</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>47</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>53</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>61</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>63</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>63</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>27</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>35</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>42</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>46</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>54</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>62</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>64</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>64</td></tr>
   </tbody>
 </table>
 
@@ -892,7 +892,7 @@ Artifacts use pack balance: Power Glove gives +2 damage, Feral Claws +15% base a
 - **Core mechanic:** Adds craftable and lootable trinkets with varied abilities.
 - **Player guidance:** Compare the slot and ability shown on each trinket.
 
-The pack retains 42 trinkets and removes 12 stronger or unwanted relics, including both crowns, Dying Star, flight wings, Lunar Crest, Speed Force and the larger magnets. Remaining damage, mining, movement and defensive bonuses use the pack's revised balance. Titan's Mark keeps its larger size and refreshes +10 maximum hearts and Resistance I for five seconds, with Slowness I for one minute; it no longer boosts attack damage. The added health capacity does not instantly heal you, and the effects expire after removal. The local repair also fixes the dedicated-server Lunar Crest damage crash. Compare each item's effects and drawbacks before equipping it.
+Only one copy of each Nameless trinket can be active; duplicate equips are blocked and existing extras remain inactive. Different trinket types work together. The pack retains 42 trinkets and removes 12 relics, including both crowns, Dying Star, flight wings, Lunar Crest, Speed Force and the larger magnets. Titan's Mark gives +25% size/+10% attack damage, refreshing +10 maximum hearts and Resistance I for five seconds and Slowness I for a minute. Added hearts need healing to fill. Fractured Nullstone reduces magic damage by 25%; Rage Mind deals 1.15x damage to marked creature types. Vampire Blood gives 1.2x attack damage/1.1x movement speed and locks removal for two full Minecraft days worn (48,000 ticks); its timer persists. Shrinking Veil refreshes Weakness I for a minute. Missing Page affects eligible targets within five blocks. Effects can linger after removal. The Lunar Crest dedicated-server crash is repaired. Read each trinket's drawbacks before equipping it.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets">Official mod page</a></p>
 
@@ -1191,6 +1191,20 @@ Teammates can throw a Revive Potion near the grave or start the Life Pulse minig
 A death site may become the respawn area. Spawn points, dimensions, and End travel can change the result.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-respawn">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Spread Spawnpoints
+
+- **Type:** Multiplayer utility
+- **Core mechanic:** Assigns new players initial spawnpoints using the server's chosen pattern.
+- **Player guidance:** Your first arrival may be away from other players; coordinate a meeting point.
+
+Operators can choose vanilla, random, grid, or spring placement. The active pattern depends on the world's settings.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/spreadspawnpoints">Official mod page</a></p>
 
 </div>
 
@@ -3177,7 +3191,7 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 - **Type:** Social animation
 - **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
-- **Player guidance:** Client installs include 253 emotes from nine SPEmotes packs automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
+- **Player guidance:** Client installs include 328 emotes from twelve SPEmotes packs automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
 
 Includes the client-only Borrow Their Emote add-on: assign Borrow Emote in Controls, then use that combination while looking at an emoting player and stop crouching to join. Borrow Emote is currently unbound; Reverse Sound uses `Left Ctrl`. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
 
@@ -3991,6 +4005,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Sophisticated Item Actions](#sophisticated-item-actions-1)
 - [Sound Physics Remastered](#sound-physics-remastered)
 - [Spell Engine](#spell-engine-1)
+- [Spread Spawnpoints](#spread-spawnpoints)
 - [Starcatcher](#starcatcher)
 - [Stonecutting Upgrade](#stonecutting-upgrade)
 - [Stoneholm](#stoneholm)
@@ -4231,6 +4246,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 - [Better Party](#better-party-1)
 - [Better Respawn](#better-respawn)
+- [Spread Spawnpoints](#spread-spawnpoints)
 - [Better Revive](#better-revive)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
 - [Emotecraft](#emotecraft)

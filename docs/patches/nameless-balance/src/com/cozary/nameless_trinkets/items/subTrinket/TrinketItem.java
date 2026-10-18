@@ -3,7 +3,12 @@ package com.cozary.nameless_trinkets.items.subTrinket;
 import net.minecraft.world.item.Item;
 
 
-public abstract class TrinketItem<T extends TrinketsStats> extends Item {
+public abstract class TrinketItem<T extends TrinketsStats> extends Item implements top.theillusivec4.curios.api.type.capability.ICurioItem {
+
+    @Override
+    public boolean canEquip(top.theillusivec4.curios.api.SlotContext context,net.minecraft.world.item.ItemStack stack) {
+        return com.cozary.nameless_trinkets.pack.PackUniqueness.canEquip(context,stack);
+    }
 
     protected TrinketData trinketData;
     protected T trinketConfig;

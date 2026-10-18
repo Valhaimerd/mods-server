@@ -37,7 +37,7 @@ public class FracturedNullstoneBase extends TrinketItem<FracturedNullstoneBase.S
     }
 
     public static class Stats extends TrinketsStats {
-        public float magicDamageReductionPercentage = 30.0f;
+        public float magicDamageReductionPercentage = 25.0f;
         public boolean isEnable = true;
 
     }

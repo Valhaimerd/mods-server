@@ -25,7 +25,7 @@
       "extraExperiencePercentage": 50.0
     },
     "FracturedNullstone": {
-      "magicDamageReductionPercentage": 30.0
+      "magicDamageReductionPercentage": 25.0
     },
     "GhastEye": {
       "extraHearts": 6.0,
@@ -42,7 +42,8 @@
     },
     "MissingPage": {
       "activationPercentage": 100.0,
-      "percentageOfDamage": 5.0
+      "percentageOfDamage": 5.0,
+      "radiusInBlocks": 5.0
     },
     "PufferFishLiver": {
       "chanceToApplyPoison": 100.0,
@@ -50,7 +51,7 @@
       "poisonTime": 60
     },
     "RageMind": {
-      "damageMultiplierPercentage": 125.0
+      "damageMultiplierPercentage": 115.0
     },
     "ReverseCard": {
       "chanceToActivate": 25.0
@@ -62,13 +63,15 @@
       "speedPercentage": 25.0
     },
     "TitansMark": {
-      "attackDamagePercentage": 0.0
+      "attackDamagePercentage": 10.0,
+      "extraScalePercentage": 25.0
     },
     "TrueHeartOfTheSea": {
       "miningUnderwaterSpeedPercentage": 125.0
     },
     "VampireBlood": {
-      "damageMultiplierPercentage": 20.0
+      "damageMultiplierPercentage": 20.0,
+      "movementSpeedPercentage": 10.0
     }
   },
   "titanEffects": {
@@ -84,5 +87,11 @@
       "duration": 100,
       "amplifier": 0
     }
-  }
+  },
+  "vampireRemovalTicks": 48000,
+  "veilWeakness": {
+    "duration": 1200,
+    "amplifier": 0
+  },
+  "maxActiveCopiesPerTrinket": 1
 }

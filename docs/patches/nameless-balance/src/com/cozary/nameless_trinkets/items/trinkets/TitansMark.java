@@ -39,28 +39,30 @@ public class TitansMark extends TitansMarkBase implements ICurioItem {
         if (world.isClientSide())
             return;
 
-        AttributeInstance attribScale = livingEntity.getAttribute(Attributes.SCALE);
-        AttributeModifier scaleModifier = new AttributeModifier(
-                Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID, "titans_mark_scale"),
-                config.extraScalePercentage / 100,
-                AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
-
-        assert attribScale != null;
-        CommonUtils.applyAttributeModifier(attribScale, scaleModifier);
-
-        livingEntity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(
-                Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID, "titans_mark_attack_damage"));
+        refreshAttributes(livingEntity, config);
     }
 
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         var entity = slotContext.entity();
         if (entity.level().isClientSide() || !INSTANCE.getTrinketConfig().isEnable) return;
-        var attack = entity.getAttribute(Attributes.ATTACK_DAMAGE);
-        if (attack != null) attack.removeModifier(Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID, "titans_mark_attack_damage"));
+        refreshAttributes(entity, INSTANCE.getTrinketConfig());
         entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.SLOWNESS, 1200, 0, true, false));
         entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.HEALTH_BOOST, 100, 4, true, false));
         entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.RESISTANCE, 100, 0, true, false));
+    }
+
+    private static void refreshAttributes(LivingEntity entity, Stats config) {
+        update(entity.getAttribute(Attributes.SCALE),"titans_mark_scale",config.extraScalePercentage/100D);
+        update(entity.getAttribute(Attributes.ATTACK_DAMAGE),"titans_mark_attack_damage",config.attackDamagePercentage/100D);
+    }
+    private static void update(AttributeInstance instance,String key,double amount) {
+        if(instance==null)return;
+        var id=Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID,key);
+        var old=instance.getModifier(id);
+        if(old!=null && old.amount()==amount && old.operation()==AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)return;
+        instance.removeModifier(id);
+        instance.addTransientModifier(new AttributeModifier(id,amount,AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     }
 
     @Override

@@ -19,7 +19,7 @@ public final class PackBalance {
      number(config,"extraExperiencePercentage",50.0);
     }
     case "FracturedNullstone" -> {
-     number(config,"magicDamageReductionPercentage",30.0);
+     number(config,"magicDamageReductionPercentage",25.0);
     }
     case "GhastEye" -> {
      number(config,"extraHearts",6.0);
@@ -37,6 +37,7 @@ public final class PackBalance {
     case "MissingPage" -> {
      number(config,"activationPercentage",100.0);
      number(config,"percentageOfDamage",5.0);
+     number(config,"radiusInBlocks",5.0);
     }
     case "PufferFishLiver" -> {
      number(config,"chanceToApplyPoison",100.0);
@@ -44,7 +45,7 @@ public final class PackBalance {
      number(config,"poisonTime",60);
     }
     case "RageMind" -> {
-     number(config,"damageMultiplierPercentage",125.0);
+     number(config,"damageMultiplierPercentage",115.0);
     }
     case "ReverseCard" -> {
      number(config,"chanceToActivate",25.0);
@@ -56,13 +57,15 @@ public final class PackBalance {
      number(config,"speedPercentage",25.0);
     }
     case "TitansMark" -> {
-     number(config,"attackDamagePercentage",0.0);
+     number(config,"attackDamagePercentage",10.0);
+     number(config,"extraScalePercentage",25.0);
     }
     case "TrueHeartOfTheSea" -> {
      number(config,"miningUnderwaterSpeedPercentage",125.0);
     }
     case "VampireBlood" -> {
      number(config,"damageMultiplierPercentage",20.0);
+     number(config,"movementSpeedPercentage",10.0);
     }
     case "BrokenMagnet","CrackedCrown","DyingStar","ElectricPaddle","EtherealWings","GodsCrown","LunarCrest","PocketLightningRod","Reforger","SpeedForce","SuperMagnet","WhatMagnet" -> config.getClass().getField("isEnable").setBoolean(config,false);
    }

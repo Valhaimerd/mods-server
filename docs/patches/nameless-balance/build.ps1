@@ -11,5 +11,11 @@ $sources = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'src') -Recurse
     Select-Object -ExpandProperty FullName)
 & (Join-Path $JavaDirectory 'javac.exe') --release 25 -cp $ClassPath -d $classes @sources
 if ($LASTEXITCODE -ne 0) { throw 'Nameless balance compilation failed.' }
+$guardTools = Join-Path $work 'guard-tools'
+New-Item -ItemType Directory -Force -Path $guardTools | Out-Null
+& (Join-Path $JavaDirectory 'javac.exe') --release 25 -cp $ClassPath -d $guardTools (Join-Path $PSScriptRoot 'tools/GuardDuplicates.java')
+if ($LASTEXITCODE -ne 0) { throw 'Duplicate callback guard compilation failed.' }
+$env:NAMELESS_GUARD_JAVA = Join-Path $JavaDirectory 'java.exe'
+$env:NAMELESS_GUARD_CP = "$classes;$guardTools;$ClassPath"
 & python (Join-Path $PSScriptRoot 'repack.py')
 if ($LASTEXITCODE -ne 0) { throw 'Nameless balance repack failed.' }

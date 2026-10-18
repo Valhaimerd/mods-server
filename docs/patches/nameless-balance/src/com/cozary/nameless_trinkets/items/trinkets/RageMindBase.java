@@ -38,7 +38,7 @@ public class RageMindBase extends TrinketItem<RageMindBase.Stats> {
     }
 
     public static class Stats extends TrinketsStats {
-        public float damageMultiplierPercentage = 125.0f;
+        public float damageMultiplierPercentage = 115.0f;
         public float range = 50;
         public boolean isEnable = true;
     }

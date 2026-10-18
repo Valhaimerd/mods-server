@@ -24,25 +24,33 @@ import net.minecraft.core.registries.*;import net.minecraft.resources.Identifier
  void spread(boolean frenzy)throws Exception{
   var hook=Arrays.stream(ProjectileWeaponItem.class.getDeclaredMethods()).filter(m->m.getName().contains("tightSpread")).findFirst().orElseThrow();hook.setAccessible(true);
   float actual=(Float)hook.invoke(bow().getItem(),1f,l,p,hand,bow(),List.of(new ItemStack(Items.ARROW)),3f,1f,false,null);
-  near(actual,frenzy?.10:1,"loaded accuracy hook "+(frenzy?"10% spread":"ordinary unchanged"));
+  near(actual,frenzy?.15:1,"loaded accuracy hook "+(frenzy?"15% spread":"ordinary unchanged"));
  }
  public FiringProbe(){NeoForge.EVENT_BUS.addListener(this::start);}
  void start(ServerStartedEvent e){var s=e.getServer();s.execute(()->{try{
   l=s.overworld();p=FakePlayerFactory.getMinecraft(l);p.setPos(0,80,0);l.getChunk(0,0);command("function crossarms:load");
   check(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("crossarms:capacity")).isEmpty(),"Capacity absent from enchantment registry");
   NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event)->{if(event.getEntity() instanceof net.minecraft.world.entity.projectile.arrow.AbstractArrow arrow)arrows.add(arrow);});
+  hand=InteractionHand.MAIN_HAND;setup("minecraft:crossbow",true);bow().enchant(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("minecraft:infinity")).orElseThrow(),1);ticks(8);check(p.getInventory().countItem(Items.ARROW)==64,"Infinity does not consume its first loaded arrow");
   for(var testHand:InteractionHand.values()){hand=testHand;for(var item:List.of("minecraft:crossbow","arsenal:unique_heavy_crossbow_1")){for(double damageAttribute:new double[]{0,64}){
    p.getAttribute(net.rpg_foundation.ranged_weapon.api.EntityAttributes_RangedWeapon.DAMAGE.entry).setBaseValue(damageAttribute);
    setup(item,false);spread(false);load();double normal=shootDamage();double normalHit=impact();System.out.println("RAW_HIT "+item+" "+hand+" rangedAttribute="+damageAttribute+" damage="+normalHit+" coefficient="+normal);check(!CrossbowItem.isCharged(bow()),item+" ordinary requires reload");check(!p.hasEffect(net.minecraft.world.effect.MobEffects.SLOWNESS),"ordinary shot does not add Frenzy slowdown");
-   int[] heat={0,320,480,650};double[] factor={.5,.6,.75,1};
+   int[] heat={0,200,320,480,650};double[] factor={.4,.4,.5,.7,.9};
    for(int i=0;i<heat.length;i++){setup(item,true);spread(true);ticks(8);check(CrossbowItem.isCharged(bow()),item+" Frenzy auto-feeds");command("scoreboard players set @s heat "+heat[i]);near(shootDamage()/normal,factor[i],item+" "+hand+" heat="+heat[i]+" damage ratio");double hit=impact();check(Math.abs(hit-normalHit*factor[i])<=1,item+" first/tapped impact ratio heat="+heat[i]+" actual="+hit+" ordinary="+normalHit);
     var slow=p.getEffect(net.minecraft.world.effect.MobEffects.SLOWNESS);check(slow!=null&&slow.getAmplifier()==1&&slow.getDuration()==20,"first shot immediately slows 30% for 20 ticks");p.removeEffect(net.minecraft.world.effect.MobEffects.SLOWNESS);}
    setup(item,true);ticks(8);for(int i=0;i<6;i++){check(CrossbowItem.isCharged(bow()),"Frenzy repeat ready");shootDamage();ticks(8);}check(p.getInventory().countItem(Items.ARROW)==57,"one arrow consumed per feed");check(bow().getDamageValue()==6,"normal durability wear retained");command("scoreboard players set @s heat 1000");fire();ticks(8);check(bow().getDamageValue()==7,"no forced heat durability reduction");
+   setup(item,true);bow().enchant(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("minecraft:infinity")).orElseThrow(),1);ticks(8);
+   for(int i=0;i<6;i++){shootDamage();check(arrows.getLast().pickup==net.minecraft.world.entity.projectile.arrow.AbstractArrow.Pickup.CREATIVE_ONLY,"Infinity arrows cannot be collected");ticks(8);}
+   check(p.getInventory().countItem(Items.ARROW)==64,"Infinity preserves arrows after repeated Frenzy shots");
+   setup(item,true);bow().enchant(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("minecraft:infinity")).orElseThrow(),1);p.getInventory().setItem(1,new ItemStack(Items.ARROW));ticks(8);shootDamage();ticks(8);check(p.getInventory().countItem(Items.ARROW)==1&&CrossbowItem.isCharged(bow()),"Infinity works with one normal arrow");
+   setup(item,true);bow().enchant(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("minecraft:infinity")).orElseThrow(),1);p.getInventory().setItem(1,ItemStack.EMPTY);ticks(8);check(!CrossbowItem.isCharged(bow()),"Infinity still requires an arrow in survival");
+   setup(item,true);p.setItemInHand(hand==InteractionHand.MAIN_HAND?InteractionHand.OFF_HAND:InteractionHand.MAIN_HAND,new ItemStack(Items.CROSSBOW));p.getItemInHand(hand==InteractionHand.MAIN_HAND?InteractionHand.OFF_HAND:InteractionHand.MAIN_HAND).enchant(l.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("minecraft:infinity")).orElseThrow(),1);
+   ticks(8);check(p.getInventory().countItem(Items.ARROW)==63,"Infinity on another hand does not grant free ammunition");
   }}}
   p.setGameMode(net.minecraft.world.level.GameType.SURVIVAL);p.setInvulnerable(false);p.connection.markClientLoaded();p.getAbilities().invulnerable=false;p.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue(100);p.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.FIRE_RESISTANCE,10000,0));
   for(var sample:Map.of(200,0,400,1,550,2,750,4).entrySet()){
    p.setHealth(100);p.invulnerableTime=0;command("scoreboard players set @s frenzy_hurt 0");command("scoreboard players set @s heat "+sample.getKey());
-   for(int i=0;i<39;i++)command("function crossarms:enchantment/frenzy/heat/tick");near(p.getHealth(),100,"no heat damage before 40 ticks heat="+sample.getKey());command("function crossarms:enchantment/frenzy/heat/tick");System.out.println("HEAT_DIAG "+sample+" score="+l.getScoreboard().getOrCreatePlayerScore(p,l.getScoreboard().getObjective("heat")).get()+" timer="+l.getScoreboard().getOrCreatePlayerScore(p,l.getScoreboard().getObjective("frenzy_hurt")).get());near(p.getHealth(),100-sample.getValue(),"magic heat damage at 40 ticks heat="+sample.getKey());
+   for(int i=0;i<19;i++)command("function crossarms:enchantment/frenzy/heat/tick");near(p.getHealth(),100,"no heat damage before 20 ticks heat="+sample.getKey());command("function crossarms:enchantment/frenzy/heat/tick");System.out.println("HEAT_DIAG "+sample+" score="+l.getScoreboard().getOrCreatePlayerScore(p,l.getScoreboard().getObjective("heat")).get()+" timer="+l.getScoreboard().getOrCreatePlayerScore(p,l.getScoreboard().getObjective("frenzy_hurt")).get());near(p.getHealth(),100-sample.getValue(),"magic heat damage at 20 ticks heat="+sample.getKey());
   }
   Files.writeString(Path.of("result.txt"),"PASS "+checks+" current Frenzy checks\n");
  }catch(Throwable t){t.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+t);}catch(Exception ignored){}}s.halt(false);});}

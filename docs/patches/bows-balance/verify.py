@@ -30,6 +30,12 @@ with ZipFile(folder/'crossarms-1.4.jar') as a,ZipFile(folder/'expanded-crossbow-
   broken=json.loads(a.read(f'data/crossarms/predicate/frenzy/broken_{hand}.json'))
   assert broken['predicate']['equipment'][hand]['predicates']['minecraft:damage']['durability']['max']==1
  assert 'data/crossarms/function/enchantment/frenzy/break.mcfunction' not in a.namelist()
+ assert 'matches 20..' in a.read('data/crossarms/function/enchantment/frenzy/heat/tick.mcfunction').decode()
+ for hand in ['mainhand','offhand']:
+  predicate=json.loads(a.read(f'data/crossarms/predicate/frenzy/infinity_{hand}.json'))
+  assert predicate['predicate']['equipment'][hand]['predicates']['minecraft:enchantments']==[{'enchantments':'minecraft:infinity','levels':{'min':1}}]
+ assert 'minecraft:intangible_projectile' in a.read('data/crossarms/item_modifier/frenzy/charge_infinite.json').decode()
+ assert 'unless predicate crossarms:frenzy/infinity_$(slot)' in a.read('data/crossarms/function/enchantment/frenzy/reload.mcfunction').decode()
  assert 'minecraft:magic' in a.read('data/crossarms/function/enchantment/frenzy/heat/damage.mcfunction').decode()
  assert 'local/crossarms/mixin/FrenzyAccuracyMixin.class' in a.namelist()
  assert 'FrenzyAccuracyMixin' in json.loads(a.read('crossarms-pack.mixins.json'))['mixins']

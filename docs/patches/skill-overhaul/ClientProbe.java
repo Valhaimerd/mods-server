@@ -24,6 +24,8 @@ public class ClientProbe {
      var title=cat.getConfig().definitions().get(key).title();if(title.getStyle().getColor()==null || title.getStyle().getColor().getValue()!=0x5555ff)throw new AssertionError("Not blue: "+key);
     }
     if(!cat.getConfig().definitions().get("packleader").title().getString().equals("Pack Leader"))throw new AssertionError("Pack Leader title mismatch");
+    if(!cat.getConfig().definitions().get("ranged_damage+3%").title().getString().equals("+2% Ranged Damage"))throw new AssertionError("Stale Adventurer ranged title");
+    if(!cat.getConfig().definitions().get("hunter").description().getString().startsWith("+6% Ranged Damage"))throw new AssertionError("Stale Hunter description");
     var dataField=screen.getClass().getDeclaredField("data");dataField.setAccessible(true);
     var data=(net.puffish.skillsmod.client.data.ClientSkillScreenData)dataField.get(screen);
     for(var categoryName:java.util.List.of("class_skills","weapon_skills")){
@@ -34,7 +36,7 @@ public class ClientProbe {
      }
      if(!cfg.definitions().get("weapon_bow_root").description().getString().startsWith("+2% Ranged Damage"))throw new AssertionError("Stale conditional bow description "+categoryName);
     }
-    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS 8 client RPG 2% descriptions; Pack Leader name and 9 blue specialization titles");
+    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS Hunter 6% and Adventurer ordinary ranged 2%; 8 client RPG 2% descriptions; Pack Leader name and 9 blue specialization titles");
     Files.writeString(mc.gameDirectory.toPath().resolve("title-check.txt"),"PASS 9 blue client title components");
    }catch(Exception ex){throw new RuntimeException(ex);}
   }

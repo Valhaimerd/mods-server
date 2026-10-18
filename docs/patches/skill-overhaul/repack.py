@@ -32,7 +32,7 @@ for key,v in d.items():
   for text in v['description']:
    if 'text' in text:text['text']='\n'.join(l for l in text['text'].splitlines() if not l.startswith('\u00a7e'))
  if key in ['melee_damage+3%','ranged_damage+3%']:
-  amount=.02 if key=='melee_damage+3%' else .03
+  amount=.02
   v['title']=v['title'].replace('3%',str(round(amount*100))+'%');v['rewards'][0]['data']['value']=amount
  if key=='attack_speed+5%':v['title']=v['title'].replace('5%','3%');v['rewards'][0]['data']['value']=.03
  if key=='anvil_repair_cost-5%':v['title']='-20% Anvil Repair Cost';v['rewards']=[attr('puffish_attributes:repair_cost',-.2)]
@@ -54,12 +54,12 @@ for key,remove in [('martial_prowess','puffish_attributes:resistance'),('hunter'
  v=d[key];v['rewards']=[r for r in v['rewards'] if r['data'].get('attribute')!=remove]
  for r in v['rewards']:
   a=r['data'].get('attribute','')
-  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.1 if key=='hunter' else .05
+  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.06 if key=='hunter' else .05
   if a=='attack_speed':r['data']['value']=.05
   if a=='puffish_attributes:armor_shred':r['data']['value']=.1
   if a=='luck':r['data']['value']=1
   if a in ['movement_speed','puffish_attributes:jump']:r['data']['value']=.05
- v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+10% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
+ v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+6% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
 # Martial ordinary route: damage / speed / damage / speed / damage.
 node('f8rbbpxi0myhi3cg','attack_speed+5%')
 define('ranged_penetration','+5% Armor Penetration',[attr('puffish_attributes:armor_shred',.05)],'minecraft:flint')

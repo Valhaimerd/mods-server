@@ -101,9 +101,10 @@ public class OverhaulProbe {
    double physicalChance=(Double)chanceMethod.invoke(player),physicalDamage=(Double)damageMethod.invoke(player);
    unlock("r7mv8vq583ntlk4y");near((Double)chanceMethod.invoke(player)-physicalChance,.1,"native physical critical chance plus ten points");
    near((Double)damageMethod.invoke(player)/physicalDamage,1.1,"native physical critical damage multiplied by 1.1");
-   stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.1,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.06,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
    stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.1,false);stat("6tinz5atn533lzo9","minecraft:movement_speed",.06,false);
    stat("3gpel3ejgsuvozax","spell_power:arcane",.04,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
+   stat("fs2egvfn4fa47moq","puffish_attributes:ranged_damage",.02,false);
    stat("510lurvlze473o6j","puffish_attributes:melee_damage",.02,false);
    stat("8qdaale4k86t2ntn","ranged_weapon:haste",.03,false);
    stat("vxmb1u84wzfwpuq6","puffish_attributes:armor_shred",.05,false);

@@ -14,13 +14,14 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     operations={r['data']['attribute']:r['data']['operation'] for r in d['martial_prowess']['rewards']}
     assert operations['critical_strike:chance']=='multiply_base'
     assert operations['critical_strike:damage']=='multiply_total'
-    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.1,'luck':1,'movement_speed':.05,'puffish_attributes:jump':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
+    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.06,'luck':1,'movement_speed':.05,'puffish_attributes:jump':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('magistrate')=={**{'spell_power:'+x:.12 for x in ['arcane','fire','frost']},'spell_power:haste':.05}
     assert rewards('caster_power')=={'spell_power:'+x:.04 for x in ['arcane','fire','frost']}
     assert rewards('caster_haste')=={'spell_power:haste':.03}
     assert rewards('aegis')=={'puffish_attributes:magic_resistance':.15,'puffish_attributes:ranged_resistance':.1,'minecraft:movement_speed':.06}
     assert rewards('melee_damage+3%')=={'puffish_attributes:melee_damage':.02}
-    assert rewards('ranged_damage+3%')=={'puffish_attributes:ranged_damage':.03}
+    assert d['ranged_damage+3%']['title']=='+2% Ranged Damage'
+    assert rewards('ranged_damage+3%')=={'puffish_attributes:ranged_damage':.02}
     assert s['f8rbbpxi0myhi3cg']['definition']=='attack_speed+5%'
     assert rewards(s['vxmb1u84wzfwpuq6']['definition'])=={'puffish_attributes:armor_shred':.05}
     assert rewards('colossus')=={'minecraft:max_health':12,'puffish_attributes:healing':.06}

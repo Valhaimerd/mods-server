@@ -24,8 +24,9 @@ These values supersede older planning and verification snapshots below.
   rewards (including conditional weapon roots): **2%**; ranged attack-damage
   rewards: **3%**. Other mechanics and the 1.35x progression multiplier remain.
 - Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
-- PvP Flagging is ported separately to 26.2 and applies **50% attributed PvP
-  damage**, including standard spells. It does not scale PvE damage.
+- The local PvP replacement applies **50% attributed PvP damage**, including
+  standard spells. No flagging remains; Better Party controls party protection.
+  It does not scale PvE damage.
 
 
 ## Behavior and units

@@ -1,91 +1,15 @@
 package io.redspace.pvp_flagging.events;
 
-import io.redspace.pvp_flagging.PvpFlagging;
-import io.redspace.pvp_flagging.config.PvpConfig;
-import io.redspace.pvp_flagging.core.PlayerFlagManager;
-import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.ClickEvent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.Style;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.player.Player;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
-@EventBusSubscriber(modid = PvpFlagging.MODID)
-public class ServerEventsForge {
-    @SubscribeEvent
-    public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-        if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-            if (PlayerFlagManager.INSTANCE != null) {
-                PlayerFlagManager.INSTANCE.syncToPlayer(serverPlayer);
-                switch (PvpConfig.SERVER.PLAYER_LOGIN_STATE.get()) {
-                    case FLAG -> PlayerFlagManager.INSTANCE.flagPlayer(serverPlayer);
-                    case UNFLAG -> PlayerFlagManager.INSTANCE.unflagPlayerImmediate(serverPlayer);
-                }
-                PlayerFlagManager.INSTANCE.syncToPlayer(serverPlayer);
-            }
-            if (PvpConfig.SERVER.WELCOME_MESSAGE.get()) {
-                var persisted = serverPlayer.getPersistentData();
-                var compound = persisted.getCompound(Player.PERSISTED_NBT_TAG).orElse(new CompoundTag());
-                if (!compound.getBoolean("pvp_flagging_hint").orElse(false)) {
-                    compound.putBoolean("pvp_flagging_hint", true);
-                    persisted.put(Player.PERSISTED_NBT_TAG, compound);
-                    serverPlayer.sendSystemMessage(
-                            Component.translatable("ui.pvp_flagging.system_message",
-                                    Component.translatable("ui.pvp_flagging.welcome",
-                                            Component.translatable("ui.pvp_flagging.welcome.command_hint")
-                                                    .withStyle(Style.EMPTY.withClickEvent(new ClickEvent.SuggestCommand("/pvpFlag")))
-                                                    .withStyle(ChatFormatting.RED, ChatFormatting.UNDERLINE)
-                                    ).withStyle(ChatFormatting.YELLOW)
-                            ).withStyle(ChatFormatting.GOLD)
-                    );
-                }
-            }
-        }
-    }
+public final class ServerEventsForge {
+    private ServerEventsForge() {}
 
-    @SubscribeEvent
-    public static void onPlayerLoggedOut(PlayerEvent.PlayerLoggedOutEvent event) {
-        if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-            if (PlayerFlagManager.INSTANCE != null) {
-                PlayerFlagManager.INSTANCE.cancelScheduledUnflag(serverPlayer);
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public static void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
-        if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-            if (PlayerFlagManager.INSTANCE != null) {
-                switch (PvpConfig.SERVER.PLAYER_RESPAWN_STATE.get()) {
-                    case FLAG -> PlayerFlagManager.INSTANCE.flagPlayer(serverPlayer);
-                    case UNFLAG -> PlayerFlagManager.INSTANCE.unflagPlayerImmediate(serverPlayer);
-                }
-                PlayerFlagManager.INSTANCE.syncToPlayer(serverPlayer);
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public static void onLivingHurtEvent(LivingDamageEvent.Pre event) {
-        var victim = event.getEntity();
-        var attacker = event.getSource().getEntity();
-        boolean pvp = victim instanceof ServerPlayer && attacker instanceof ServerPlayer;
-        if (!pvp) {
-            return;
-        }
-        if (PlayerFlagManager.INSTANCE.anyPlayersScheduledToUnflag()) {
-            PlayerFlagManager.INSTANCE.cancelScheduledUnflag((ServerPlayer) victim);
-            PlayerFlagManager.INSTANCE.cancelScheduledUnflag((ServerPlayer) attacker);
-        }
-        // Enforce the pack policy even if another mod writes the old value at runtime.
-        float pvpDamageMultiplier = 0.5f;
-        if (pvpDamageMultiplier != 1.0f) {
-            event.setNewDamage(pvpDamageMultiplier * event.getNewDamage());
+    public static void retainPvpDamage(LivingDamageEvent.Pre event) {
+        if (event.getEntity() instanceof ServerPlayer
+                && event.getSource().getEntity() instanceof ServerPlayer) {
+            event.setNewDamage(event.getNewDamage() * 0.5F);
         }
     }
 }

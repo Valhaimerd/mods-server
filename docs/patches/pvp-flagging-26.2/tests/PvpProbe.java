@@ -2,8 +2,8 @@ package local.pvp;
 import java.nio.file.*;
 import java.util.*;
 import com.mojang.authlib.GameProfile;
-import io.redspace.pvp_flagging.core.PlayerFlagManager;
-import io.redspace.pvp_flagging.config.PvpConfig;
+import dev.betterparty.party.*;
+
 import net.minecraft.server.level.*;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -35,43 +35,32 @@ public class PvpProbe {
   var a=player(server,l,"PvPAttacker","00000000-0000-0000-0000-000000001111");
   var b=player(server,l,"PvPVictim","00000000-0000-0000-0000-000000002222");
   a.setGameMode(GameType.SURVIVAL);b.setGameMode(GameType.SURVIVAL);a.getAbilities().invulnerable=false;b.getAbilities().invulnerable=false;
-  var field=PlayerFlagManager.class.getDeclaredField("flaggedPlayers");field.setAccessible(true);
-  var flagged=(Set<UUID>)field.get(PlayerFlagManager.INSTANCE);flagged.add(a.getUUID());flagged.add(b.getUUID());
-  check(a.canHarmPlayer(b),"both flagged may fight");
-  near(PvpConfig.SERVER.PVP_DAMAGE_MULIPLIER.get().doubleValue(),.5,"default multiplier .5");
-  near(hit(l,b,l.damageSources().playerAttack(a)),10,"melee PvP halved");
+  check(a.canHarmPlayer(b),"strangers can fight without flags");
   var arrow=EntityTypes.ARROW.create(l,EntitySpawnReason.COMMAND);
-  near(hit(l,b,l.damageSources().arrow(arrow,a)),10,"projectile PvP halved");
-  for(var school:List.of(SpellSchools.ARCANE,SpellSchools.FIRE,SpellSchools.FROST)){
-   var source=SpellDamageSource.player(school,a);
-   check(source.getEntity()==a,"spell caster attribution "+school.id);
-   near(hit(l,b,source),10,"spell PvP halved "+school.id);
+  var sources=List.of(l.damageSources().playerAttack(a),l.damageSources().arrow(arrow,a),SpellDamageSource.player(SpellSchools.ARCANE,a),SpellDamageSource.player(SpellSchools.FIRE,a),SpellDamageSource.player(SpellSchools.FROST,a));
+  for(var source:sources){
+   near(hit(l,b,source),10,"stranger PvP halved "+source.type().msgId());
    var pig=EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND);
-   near(hit(l,pig,source),20,"spell PvE unchanged "+school.id);
+   near(hit(l,pig,source),20,"PvE unchanged "+source.type().msgId());
   }
-  PvpConfig.SERVER.PVP_DAMAGE_MULIPLIER.set(1D);
-  near(hit(l,b,SpellDamageSource.player(SpellSchools.ARCANE,a)),10,"stale config cannot restore full PvP damage");
-  flagged.remove(b.getUUID());check(!a.canHarmPlayer(b),"unflagged target protected");
-  near(hit(l,b,l.damageSources().playerAttack(a)),0,"unflagged melee blocked");
-  near(hit(l,b,SpellDamageSource.player(SpellSchools.ARCANE,a)),0,"unflagged spell blocked");
-  flagged.add(b.getUUID());flagged.remove(a.getUUID());check(!a.canHarmPlayer(b),"unflagged attacker protected");
-  near(hit(l,b,l.damageSources().playerAttack(a)),0,"unflagged attacker cannot melee");
-  near(hit(l,b,SpellDamageSource.player(SpellSchools.FROST,a)),0,"unflagged attacker cannot cast harmful spell");
-  var pig=EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND);
-  near(hit(l,pig,l.damageSources().playerAttack(a)),20,"melee PvE unchanged");
-  flagged.add(a.getUUID());flagged.remove(b.getUUID());
-  var board=server.getScoreboard();var team=board.addPlayerTeam("probe-team");board.addPlayerToTeam(a.getScoreboardName(),team);
-  check(!a.canHarmPlayer(b),"team membership cannot bypass unflagged target protection");
-  flagged.add(b.getUUID());check(a.canHarmPlayer(b),"flagged opposing teams can fight");
-  board.addPlayerToTeam(b.getScoreboardName(),team);team.setAllowFriendlyFire(false);
-  check(!a.canHarmPlayer(b),"allied friendly-fire protection");
-  team.setAllowFriendlyFire(true);check(a.canHarmPlayer(b),"flagged allied friendly fire allowed");
-  flagged.remove(b.getUUID());check(!a.canHarmPlayer(b),"friendly fire does not bypass unflagged protection");
-  flagged.add(b.getUUID());
-  var saved=PlayerFlagManager.INSTANCE.save();flagged.clear();PlayerFlagManager.INSTANCE.load(saved);
-  check(flagged.contains(a.getUUID())&&flagged.contains(b.getUUID()),"flag state NBT roundtrip");
-  board.removePlayerTeam(team);
-  flagged.clear();
+  near(hit(l,b,l.damageSources().generic()),20,"ownerless damage unchanged");
+  check(server.getCommands().getDispatcher().getRoot().getChild("pvpFlag")==null,"flag command absent");
+  check(server.getCommands().getDispatcher().getRoot().getChild("pvpZone")==null,"zone command absent");
+  var manager=PartyManager.forServer(server);var party=new Party(UUID.randomUUID());
+  party.addMember(new PartyMember(a.getUUID(),"PvPAttacker",PartyRole.LEADER));
+  party.addMember(new PartyMember(b.getUUID(),"PvPVictim",PartyRole.MEMBER));party.setFriendlyFire(false);
+  var pf=PartyManager.class.getDeclaredField("parties");pf.setAccessible(true);var parties=(Map<UUID,Party>)pf.get(manager);parties.put(party.id(),party);
+  var mf=PartyManager.class.getDeclaredField("playerParties");mf.setAccessible(true);var memberships=(Map<UUID,UUID>)mf.get(manager);memberships.put(a.getUUID(),party.id());memberships.put(b.getUUID(),party.id());
+  check(manager.blocksFriendlyFire(a,b),"Better Party blocks friendly fire");
+  for(var source:sources)near(hit(l,b,source),0,"protected party damage blocked "+source.type().msgId());
+  party.setFriendlyFire(true);check(!manager.blocksFriendlyFire(a,b),"Better Party permits chosen friendly fire");
+  for(var source:sources)near(hit(l,b,source),10,"enabled party damage halved "+source.type().msgId());
+  party.setFriendlyFire(false);memberships.remove(b.getUUID());party.removeMember(b.getUUID());
+  near(hit(l,b,SpellDamageSource.player(SpellSchools.ARCANE,a)),10,"leaving party restores halved PvP");
+  memberships.remove(a.getUUID());parties.remove(party.id());
+  var board=server.getScoreboard();var team=board.addPlayerTeam("retention-team");board.addPlayerToTeam(a.getScoreboardName(),team);board.addPlayerToTeam(b.getScoreboardName(),team);team.setAllowFriendlyFire(false);
+  near(hit(l,b,l.damageSources().playerAttack(a)),0,"vanilla team protection respected");
+  team.setAllowFriendlyFire(true);near(hit(l,b,l.damageSources().playerAttack(a)),10,"vanilla team allowed damage halved");board.removePlayerTeam(team);
   Files.writeString(Path.of("result.txt"),"PASS "+checks+" checks\n");
  }catch(Throwable t){t.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+t);}catch(Exception ignored){}}
  finally{server.halt(false);}}

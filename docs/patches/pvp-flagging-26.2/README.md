@@ -1,81 +1,86 @@
-# PVP Flagging — 26.2 port and 50% PvP damage
+# PvP damage retention — 26.2 pack replacement
 
-Installed filename: `pvp_flagging-26.2-1.1.2.jar`, Minecraft **26.2**,
-NeoForge **26.2.0.90+**, Java **25+**. Install the same archive on clients and server.
-
-Based on [the upstream 26.1.2 branch](https://github.com/Redspace-io/pvp-flagging/tree/26.1.2),
-commit `80e2434f48860a16dbe94197fd3a622a4d2eb0fe`. Original archive SHA-256:
-`dbc1313dd4328c0ebc39702f7d940ca2bb78b1d27f5f8219cfb3f7a1fc97b64e`.
-Upstream authors are Iron431 and Smalls; upstream license metadata and resources
-are retained. This is a local port, not an upstream 26.2 release.
+The archive remains `pvp_flagging-26.2-1.1.2.jar` and retains mod ID
+`pvp_flagging` so the installer replaces the previous build. The implementation
+now has one purpose: **retain 50% of attributed player-to-player damage**.
 
 ## Player behavior
 
-- `/pvpFlag` toggles PvP; `/pvpFlag on`, `/pvpFlag off`, and `/pvpFlag status`
-  explicitly manage it. Both players must be flagged before player combat works.
-- Once allowed, attributed player-to-player damage is multiplied by **0.5**.
-  The same rule covers melee, arrows and standard Spell Engine school damage.
-  This does not halve PvE damage or change spell/weapon attributes.
-- Team rules still apply after flag eligibility. Friendly fire disabled on an
-  allied team blocks combat. Team membership cannot bypass an unflagged player.
-- Unflagging retains the upstream **15-second** default wait and combat
-  cancellation behavior; server operators can configure PvP zones using
-  `/pvpZone`. Existing flags and zones retain their saved-data format.
-- HUD and nametag indicators show the flag state. No new keybind is added.
+- Everyone can fight by default. There is **no flagging or unflagging**, no PvP
+  cooldown, no zones, no flag commands, and no flag icons, HUD, or nametag changes.
+- Better Party decides whether party members may damage one another. With
+  party **Friendly Fire off**, protected hits are blocked. With it on, allowed
+  player hits retain **50%** damage. The server must allow Better Party's
+  friendly-fire protection setting; the installed defaults do.
+- Minecraft's normal combat permissions remain in force. Keep `pvp=true` for
+  normal player combat; vanilla team friendly-fire restrictions are respected.
+  This replacement does not forcibly enable combat against those protections.
+- Standard melee, arrows and caster-attributed Arcane, Fire and Frost hits are
+  halved. PvE and damage with no player attacker are unchanged. Pet ownership is
+  not converted into a player source, and ownerless DOT is not reattributed.
 
-In the server config `pvp_flagging-server.toml`, `[PVP_FLAGGING]` contains
-`pvp_damage_multiplier = 0.5`. The pack fixes this setting to half damage:
-older values are corrected on config load and the damage handler enforces 0.5
-even if another mod writes a different value during the session. Other settings
-remain configurable.
+The damage handler runs on `LivingDamageEvent.Pre`, after Better Party's incoming
+damage cancellation. It changes only the amount; it never uncancels an event or
+changes party/team membership. Other combat modifiers can still affect final damage.
 
-Damage must retain a `ServerPlayer` attacker. Ownerless status damage and attacks
-from pet entities are not reclassified as player hits by this port. The multiplier
-uses NeoForge's `LivingDamageEvent.Pre` damage; armor, enchantments, resistances,
-and other event handlers can affect the final observed damage.
+## Removed systems and existing worlds
 
-## Port details
+All upstream flag managers, configs, commands, client code, zones, network
+payloads, saved-data handlers, and mixins are absent from the built JAR. Only
+two production classes remain: the entry point and the damage handler. No config
+file is registered; **0.5** is the fixed pack policy.
 
-All Java sources are compiled against 26.2. Client overlay messages now use
-`Minecraft.gui.hud`, and HUD visibility uses `Hud.isHidden()`. Metadata targets
-Minecraft `[26.2,26.3)` and NeoForge `[26.2.0.90,)`; mixin descriptors retain
-official names without the absent upstream refmap. The flag-check mixin also fixes
-the upstream team branch that permitted attacks without both players opting in.
+Old `pvp_flagging-server.toml`, client settings, flags and zone saved data are
+ignored, not deleted. Existing worlds need no manual unflagging or migration.
+Better Party data is untouched. The simplified mod has no client-only references
+or custom networking; it is server-functional without client integration, and
+the pack continues distributing the same JAR to both sides. Restart Minecraft
+and the server after replacement. Personal installations were not changed.
 
 ## Rebuild
 
-Run `python docs/patches/pvp-flagging-26.2/build.py`. The script uses the cached
-NeoForge-patched client/common classpath in `tmp/artifacts-balance/classpath.txt`
-and the cached JetBrains annotations library. Java release 25 is used.
-Prepare those dependencies for a new workspace before rebuilding.
+Run `python docs/patches/pvp-flagging-26.2/build.py` with Java 25+ and Python.
+The script uses `tmp/artifacts-balance/classpath.txt`, a cached classpath containing
+the NeoForge-patched Minecraft 26.2 client/common JAR and NeoForge/FML libraries.
+Prepare equivalent development dependencies in a new workspace.
 
-Place the hash-pinned original under `tmp/pvp-26.2/upstream.jar`, or retain the
-original pending input at `mod fixing/1 pending packs/pvp_flagging-26.1.2-1.1.2.jar`.
-The script verifies its hash, preserves upstream resources and metadata notices,
-compiles `src/`, and produces a candidate under ignored `tmp/pvp-26.2/`.
-Probe classes under `tests/` are never included in production. Verify candidates
-before copying to `mods/` and the ignored fixed-packs folder.
+The preserved original lives at `tmp/pvp-26.2/upstream.jar`, SHA-256
+`dbc1313dd4328c0ebc39702f7d940ca2bb78b1d27f5f8219cfb3f7a1fc97b64e`.
+It was sourced from [PVP Flagging's 26.1.2 branch](https://github.com/Redspace-io/pvp-flagging/tree/26.1.2),
+commit `80e2434f48860a16dbe94197fd3a622a4d2eb0fe`. The hash is checked before
+building. Original metadata attribution, notices and project icon are preserved;
+the original mixin registration and feature description are replaced. No upstream
+flagging classes, language assets or client resources are copied into production.
+The candidate is written under ignored `tmp/pvp-26.2/`; install only after verification.
 
-## Verification
+Source and rebuilt archive preserve the existing archive version/filename because
+this is another local repack of the same port. Changed bytes are picked up by the
+installer's Git hash comparison; no installer rebuild is needed.
 
-Isolated Minecraft **26.2 / NeoForge 26.2.0.90 / Java 26**, with Spell Engine
-**1.10.5+26.2**, Spell Power **1.6.1+26.2**, and the skill-test dependencies.
-The 100% baseline failed the expected multiplier test. The upstream team behavior
-failed the unflagged-team protection test before the universal guard was added.
+## Verification — 18 October 2026
 
-The final dedicated-server probe passes **27 checks** using ordinary `ServerPlayer`
-entities with test connections, not NeoForge `FakePlayer` (which refuses PvP).
-For controlled 20-point inputs, actual melee, projectile and Arcane/Fire/Frost
-damage remove **10 health** from a flagged player; the tested PvE targets lose
-**20**. Checks also cover unflagged attackers/targets, team eligibility, friendly
-fire, config enforcement and flag-state save/load roundtrip.
+Isolated Minecraft **26.2**, NeoForge **26.2.0.90**, Java **26**, Better Party
+**1.1.7**, Spell Engine **1.10.5+26.2**, Spell Power **1.6.1+26.2**.
 
-An isolated client with an integrated server passes flag synchronization,
-unflag-request/cancellation packets and their HUD-message paths, tab-name flag
-decoration, and skill title checks, and shuts down normally. HUD rendering and
-the skill screen were captured. These are focused checks, not a public-server
-load test or a claim that every modded damage source preserves ownership.
+The old flagging build failed the new no-flags eligibility check. The replacement
+passed **29 dedicated-server checks** with ordinary `ServerPlayer` test entities:
 
-Test sources: `tests/PvpProbe.java` and the combined
-`../skill-overhaul/ClientProbe.java`. Local logs and screenshots remain ignored
-under `tmp/pvp-26.2/` and `tmp/skill-overhaul/client/`.
+- strangers can fight without any flag state; 20-point melee, arrow and each
+  Arcane/Fire/Frost input remove **10 health**;
+- the same PvE inputs and ownerless damage remove **20 health**;
+- real Better Party membership and its incoming-damage handler block all five
+  sources when party friendly fire is off, allow **10 health** when on, and
+  restore normal half-damage PvP after leaving the party;
+- vanilla team protection still blocks hits; allowed team hits are halved;
+- `/pvpFlag` and `/pvpZone` are absent.
+
+The test inserts party membership into Better Party's manager directly to avoid
+simulating invitation UI/network sessions; it exercises actual damage events and
+the installed Better Party protection code, not a mocked permission function.
+An isolated integrated client loads both mods and verifies the old commands/HUD
+classes are absent. The client shuts down normally, with a clean-HUD screenshot.
+No public-server load or exhaustive modded-damage-source test is claimed.
+
+Tests: `tests/PvpProbe.java`, `tests/RetentionClientProbe.java`. Build hash report:
+`artifacts.json`. Local logs/screenshots remain ignored under `tmp/pvp-26.2/`
+and `tmp/skill-overhaul/client/`.

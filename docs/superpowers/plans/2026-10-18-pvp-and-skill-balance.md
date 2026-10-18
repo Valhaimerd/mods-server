@@ -1,5 +1,11 @@
 # PvP 26.2 and skill rebalance
 
+Follow-up implemented: the PvP archive is now a damage-only replacement. All
+flagging, zones, cooldowns, commands, client indicators and networking were removed.
+Better Party controls party friendly fire; vanilla combat permissions remain.
+The final implementation passes 29 server checks with Better Party plus an
+integrated-client check. The initial port plan below is retained as history.
+
 User-approved implementation, inline execution; publish all resulting changes to main.
 
 1. Revise structural tests, observe failure against installed skill JARs, then update

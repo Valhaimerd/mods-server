@@ -1249,10 +1249,10 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 #### PVP Flagging
 
 - **Type:** Multiplayer combat
-- **Core mechanic:** Opt-in player combat, with server-defined PvP zones.
-- **Player guidance:** Use `/pvpFlag on`, `/pvpFlag off`, or `/pvpFlag status`.
+- **Core mechanic:** Retains 50% of player-to-player damage without flagging.
+- **Player guidance:** Join a Better Party with Friendly Fire off to protect party members.
 
-Both players must be flagged; team friendly-fire rules still apply. Allowed player-to-player hits deal 50% of the damage supplied to the PvP handler, including standard player-cast spells. Tested PvE damage is unchanged. Unflagging normally takes 15 seconds and combat cancels the request. This pack uses a local 26.2 port; HUD and name indicators show flag state.
+Everyone can fight by default. Allowed player-to-player hits retain 50% damage, including standard player-cast spells. Better Party controls party friendly fire; vanilla combat permissions still apply. Tested PvE damage is unchanged. This local replacement has no flag commands, cooldowns, zones or indicators.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pvp-flagging">Official mod page</a></p>
 
@@ -1266,7 +1266,7 @@ Both players must be flagged; team friendly-fire rules still apply. Allowed play
 - **Core mechanic:** Adds group roles, nearby XP sharing, private chat, friendly-fire rules, and a live HUD.
 - **Player guidance:** Open the party menu from its inventory button or use /p for private chat.
 
-Groups can share nearby experience and show a live roster. Roles, friendly-fire rules, and visibility depend on the party’s settings.
+Groups can share nearby experience and show a live roster. Turn party Friendly Fire off to protect members from melee, arrows and standard spells. Allowed PvP hits retain 50% damage. Roles, friendly-fire rules, and visibility depend on the party’s settings and server policy.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-party">Official mod page</a></p>
 

@@ -63,7 +63,7 @@ public class OverhaulProbe {
    for(var school:schools){player.getAttribute(school.attributeEntry).setBaseValue(10);powerBefore.add(SpellPower.getSpellPower(school,player).baseValue());}
    double healingBefore=value("spell_power:healing"),healthBefore=player.getMaxHealth();unlock("zdfpatqypd5nnqx8");
    for(int i=0;i<schools.size();i++){
-    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.12,"Magistrate school power "+i);
+    var school=schools.get(i);double power=SpellPower.getSpellPower(school,player).baseValue();near(power/powerBefore.get(i),1.10,"Magistrate school power "+i);
     var victim=EntityTypes.PIG.create(server.overworld(),EntitySpawnReason.COMMAND);victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);victim.setHealth(100);
     victim.hurtServer(server.overworld(),SpellDamageSource.player(school,player),(float)power);near(100-victim.getHealth(),power,"school damage uses enhanced power "+i);
    }
@@ -85,7 +85,7 @@ public class OverhaulProbe {
    wolf.setHealth(wolf.getMaxHealth());var wolfHP=wolf.getHealth();wolf.invulnerableTime=0;wolf.hurtServer(server.overworld(),server.overworld().damageSources().generic(),20);near(wolfHP-wolf.getHealth(),12.75,"actual incoming pet damage event");
    reset();unlock("ad8qet8e75ys5sek","5h6pmokx7ro45qtw");check(tree.getSkill("xzau8wf7cmkahump").orElseThrow().getState(player)==Skill.State.EXCLUDED,"Defensive exclusivity");
    reset();var ranged=net.rpg_foundation.ranged_weapon.api.EntityAttributes_RangedWeapon.HASTE.entry;
-   var normalDraw=player.getAttributeValue(ranged);int bowTicks=useTicks(Items.BOW),crossbowTicks=useTicks(Items.CROSSBOW);unlock("8qdaale4k86t2ntn","02did3uvilfob8c2");near(player.getAttributeValue(ranged)/normalDraw,1.03*1.03,"two draw-speed nodes");
+   var normalDraw=player.getAttributeValue(ranged);int bowTicks=useTicks(Items.BOW),crossbowTicks=useTicks(Items.CROSSBOW);unlock("8qdaale4k86t2ntn","02did3uvilfob8c2");near(player.getAttributeValue(ranged)/normalDraw,1.05*1.05,"two draw-speed nodes");
    check(useTicks(Items.BOW)>bowTicks,"bow drawing advances faster");check(useTicks(Items.CROSSBOW)>crossbowTicks,"crossbow charging advances faster");
    reset();double normalRanged=DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1);
    unlock("ui0gusk2hniqwghe");near(DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1)/normalRanged,1.25,"bow projectile speed");near(DynamicModification.create().withPositive(PuffishAttributes.CROSSBOW_PROJECTILE_SPEED,player).applyTo(1),1.25,"crossbow projectile speed");
@@ -101,12 +101,12 @@ public class OverhaulProbe {
    double physicalChance=(Double)chanceMethod.invoke(player),physicalDamage=(Double)damageMethod.invoke(player);
    unlock("r7mv8vq583ntlk4y");near((Double)chanceMethod.invoke(player)-physicalChance,.1,"native physical critical chance plus ten points");
    near((Double)damageMethod.invoke(player)/physicalDamage,1.1,"native physical critical damage multiplied by 1.1");
-   stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.06,false);stat("5es0kwe84yl9t3yb","minecraft:luck",1,true);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",.05,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:ranged_damage",.09,false);stat("5es0kwe84yl9t3yb","ranged_weapon:haste",.05,false);stat("5es0kwe84yl9t3yb","minecraft:movement_speed",.05,false);stat("5es0kwe84yl9t3yb","puffish_attributes:jump",0,false);stat("5es0kwe84yl9t3yb","minecraft:luck",0,true);stat("zdfpatqypd5nnqx8","puffish_attributes:magic_resistance",.05,false);
    stat("6tinz5atn533lzo9","puffish_attributes:magic_resistance",.15,false);stat("6tinz5atn533lzo9","puffish_attributes:ranged_resistance",.1,false);stat("6tinz5atn533lzo9","minecraft:movement_speed",.06,false);
-   stat("3gpel3ejgsuvozax","spell_power:arcane",.04,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
-   stat("fs2egvfn4fa47moq","puffish_attributes:ranged_damage",.02,false);
+   stat("3gpel3ejgsuvozax","spell_power:arcane",.03,false);stat("v3lnj0ubt40kezxm","spell_power:haste",.03,false);
+   stat("fs2egvfn4fa47moq","puffish_attributes:ranged_damage",.03,false);
    stat("510lurvlze473o6j","puffish_attributes:melee_damage",.02,false);
-   stat("8qdaale4k86t2ntn","ranged_weapon:haste",.03,false);
+   stat("8qdaale4k86t2ntn","ranged_weapon:haste",.05,false);
    stat("vxmb1u84wzfwpuq6","puffish_attributes:armor_shred",.05,false);
    stat("f8rbbpxi0myhi3cg","minecraft:attack_speed",.03,false);
    stat("5es0kwe84yl9t3yb","puffish_attributes:armor_shred",.1,false);
@@ -127,7 +127,12 @@ public class OverhaulProbe {
    }
    reset();var adventurerTree=tree;tree=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:class_skills")).orElseThrow();tree.unlock(player);
    stat("e5ljj7jx6pmdjatf","minecraft:attack_damage",.02,false);stat("jo7zae6quimtvale","minecraft:attack_damage",.02,false);
-   stat("418rsvnd17egwkse","ranged_weapon:damage",.02,false);stat("3uptt2jhtdh025ei","ranged_weapon:damage",.02,false);
+   stat("418rsvnd17egwkse","ranged_weapon:damage",.03,false);stat("3uptt2jhtdh025ei","ranged_weapon:damage",.03,false);
+   stat("63gwys64onqg00ry","minecraft:attack_speed",.02,false);
+   for(var catName:List.of("class_skills")){
+    reset();tree=SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:"+catName)).orElseThrow();tree.unlock(player);
+    stat("qr4fdarqqqm5ifoa","spell_power:arcane",.03,false);stat("m1pc5vz73nx4b28c","spell_power:fire",.03,false);stat("akyr8k2dv9xsy70c","spell_power:frost",.03,false);stat("iaztym6bad9vpl6j","minecraft:attack_speed",.02,false);
+   }
    reset();tree=adventurerTree;
    Files.writeString(Path.of("result.txt"),"PASS "+checks+" checks\n");
   }catch(Throwable ex){ex.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+ex+"\n");}catch(Exception ignored){}}

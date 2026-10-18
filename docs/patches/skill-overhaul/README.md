@@ -1,8 +1,8 @@
-# Skill tree overhaul — 18 October 2026
+# Skill tree overhaul - 19 October 2026
 
-Latest ranged follow-up (18 October): **Hunter grants 6% ranged damage**, and ordinary Adventurer ranged nodes grant and display **2%**. RPG Class/Weapon ordinary bow damage remains **2%**; its conditional bow description now explicitly shows 2% and retains the equipment condition. These values supersede older Hunter amounts below.
+Latest balance (19 October): **Hunter grants 9% ranged damage, 5% draw speed and 5% movement speed**, retaining 10% armor penetration and 25% bow/crossbow projectile speed. Luck and Jump Strength rewards are removed. Adventurer ordinary ranged damage and draw speed stay separate at **3%** and **5%**. RPG ranged rewards and tooltips are **3%**, with no added draw-speed reward on Archer nodes. Assassin/Rogue attack-speed rewards and tooltips are **2%** in both RPG categories. Ordinary Arcane/Fire/Frost power is **3%** in both mods. Magistrate grants **10% school power and 5% magic resistance**, retaining its critical chance and spell haste.
 
-This follow-up passed **71 isolated server checks**, including Hunter's 6% modifier and ordinary ranged 2% and unchanged secondary rewards. The client passed Hunter's 6% description, ordinary Adventurer ranged 2% title, RPG root/boost descriptions and both conditional bow descriptions. No new allocation reset or migration marker is introduced.
+The current revision passed **78 isolated server checks** and client checks of the revised Adventurer/RPG tooltips and blue titles. Runtime checks include Hunter haste and removed bonuses, Magistrate power/resistance, ordinary damage/haste, and RPG school power and Assassin speed, with both categories loading. Existing IDs, allocations, Paladin defaults, Priest healing and the 1.35x XP multiplier remain; no new reset marker.
 
 Implements the approved [design](design.md) in Minecraft 26.2 / NeoForge 26.2.0.90. The working planning document remains under `mod fixing/Skill tree changes - planning.md`. These are same-version local repacks; install all three together on clients and servers:
 
@@ -10,14 +10,14 @@ Implements the approved [design](design.md) in Minecraft 26.2 / NeoForge 26.2.0.
 - `skill_tree-neoforge-1.6.1+26.2.jar`: RPG class/weapon power and Rogue speed nodes, plus XP calculations. Paladin definitions remain identical to the original.
 - `orb_of_oblivion_puffish_compat-1.0.2.jar`: retains Orb reset support and adds the Companion attribute bridge, fixed spell critical percentage points and migration.
 
-## Current balance — 18 October PvP revision
+## Current balance - 19 October revision
 
 These values supersede older planning and verification snapshots below.
 
 - Aegis: **15% magic resistance, 10% ranged resistance, 6% movement speed**.
-- Ordinary Adventurer Arcane/Fire/Frost power: **4%**; Magistrate school power:
-  **12%**. Spell haste, critical chance, Priest healing and Paladin defaults remain.
-- Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **2%**.
+- Ordinary Adventurer Arcane/Fire/Frost power: **3%**; Magistrate school power:
+  **10%**, plus **5% magic resistance**. Spell haste, critical chance, Priest healing and Paladin defaults remain.
+- Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**; separate ordinary draw-speed nodes: **5%**.
   Martial's ordinary route is damage / attack speed / damage / attack speed /
   damage; its ordinary penetration node becomes attack speed. Final Martial
   Prowess grants 8% damage, 5% attack speed, 10% physical critical chance and
@@ -25,10 +25,10 @@ These values supersede older planning and verification snapshots below.
 - Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
   to its existing final rewards. Earlier ordinary projectile-speed node retained;
   later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
-- RPG Class/Weapon normal school-power rewards: **4%**; melee attack-damage
+- RPG Class/Weapon normal school-power rewards: **3%**; melee attack-damage
   rewards (including conditional weapon roots): **2%**; ranged attack-damage
-  rewards: **2%**. Warrior/Archer root and boost descriptions explicitly show
-  2%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
+  rewards: **3%**. Warrior/Archer root and boost descriptions explicitly show
+  2%/3%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
 - Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
 - The local PvP replacement applies **50% attributed PvP damage**, including
   standard spells. No flagging remains; Better Party controls party protection.
@@ -42,7 +42,7 @@ knockback resistance. **Pack Leader** is blue and uses Cooked Beef (steak).
 
 ## Behavior and units
 
-Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 4%. Ordinary Adventurer caster power is 4%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 12% power, 5% haste and ten critical points, without health or healing power.
+Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 3%. Ordinary Adventurer caster power is 3%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 10% power, 5% magic resistance, 5% haste and ten critical points, without health or healing power.
 
 The [data transformer](repack.py) records every ordinary node assignment. Author amounts remain where requested, with explicit exceptions for damage, attack speed, caster stats, pet stats and anvil reductions. Anvil nodes each multiply remaining cost by 0.8, so three leave 51.2% before integer rounding. Bow draw haste also accelerates crossbow charging through Ranged Weapon API. Projectile nodes modify both bow and crossbow attributes.
 
@@ -54,7 +54,7 @@ On the first login after installation, Adventurer allocations reset once, preser
 
 All configured skill XP calculations are multiplied by 1.35 exactly once. Level curves, point costs and caps are unchanged. Award rounding remains Pufferfish's normal integer rounding; Minecraft enchanting XP is not globally multiplied.
 
-The 18 October balance revision also sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 6% ranged damage/+1 Luck/5% movement/5% jump plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
+The current balance sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 9% ranged damage/5% draw speed/5% movement with Luck and Jump removed plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
 
 ## Rebuild
 

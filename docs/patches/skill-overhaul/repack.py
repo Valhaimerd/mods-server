@@ -32,7 +32,7 @@ for key,v in d.items():
   for text in v['description']:
    if 'text' in text:text['text']='\n'.join(l for l in text['text'].splitlines() if not l.startswith('\u00a7e'))
  if key in ['melee_damage+3%','ranged_damage+3%']:
-  amount=.02
+  amount=.03 if key=='ranged_damage+3%' else .02
   v['title']=v['title'].replace('3%',str(round(amount*100))+'%');v['rewards'][0]['data']['value']=amount
  if key=='attack_speed+5%':v['title']=v['title'].replace('5%','3%');v['rewards'][0]['data']['value']=.03
  if key=='anvil_repair_cost-5%':v['title']='-20% Anvil Repair Cost';v['rewards']=[attr('puffish_attributes:repair_cost',-.2)]
@@ -41,30 +41,31 @@ def define(key,title,rewards,icon='minecraft:book',description=None):
  if description:d[key]['description']={'text':description}
 def node(id,key):assert id in s;s[id]['definition']=key
 schools=['arcane','fire','frost']
-define('caster_power','+4% Arcane, Fire and Frost Power',[attr('spell_power:'+x,.04) for x in schools],'minecraft:blaze_powder')
+define('caster_power','+3% Arcane, Fire and Frost Power',[attr('spell_power:'+x,.03) for x in schools],'minecraft:blaze_powder')
 define('caster_haste','+3% Spell Haste',[attr('spell_power:haste',.03)],'minecraft:clock')
 # The compatibility bridge grants fixed critical-chance points after innate/gear scaling.
 define('caster_critical','+2.5% Spell Critical Chance',[],'minecraft:amethyst_shard')
-define('draw_speed','+3% Draw Speed (Bow and Crossbow)',[attr('ranged_weapon:haste',.03)],'minecraft:crossbow')
+define('draw_speed','+5% Draw Speed (Bow and Crossbow)',[attr('ranged_weapon:haste',.05)],'minecraft:crossbow')
 define('projectile_both','+25% Bow and Crossbow Projectile Speed',[attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)],'minecraft:arrow')
 for id,key in {'3gpel3ejgsuvozax':'caster_power','v3lnj0ubt40kezxm':'caster_haste','ro3sae58m8jzn4yz':'caster_critical','m1aqebilvun2ycc7':'caster_power','qosdkbl0x44scigj':'caster_power','0oz1hx0q08v2i8j5':'caster_power','k6s01bg1bgnsqrew':'caster_haste','gs6jmtskmyhpbcnu':'caster_critical','8qdaale4k86t2ntn':'draw_speed','02did3uvilfob8c2':'draw_speed','ui0gusk2hniqwghe':'projectile_both','vxmb1u84wzfwpuq6':'projectile_both','k5g9ddvqzlzkxv9f':'ranged_damage+3%'}.items():node(id,key)
-define('magistrate','Magistrate',[*[attr('spell_power:'+x,.12) for x in schools],attr('spell_power:haste',.05)],'minecraft:ender_eye','+12% Arcane/Fire/Frost Power\n+10% Spell Critical Chance\n+5% Spell Haste')
+define('magistrate','Magistrate',[*[attr('spell_power:'+x,.1) for x in schools],attr('spell_power:haste',.05),attr('puffish_attributes:magic_resistance',.05)],'minecraft:ender_eye','+10% Arcane/Fire/Frost Power\n+10% Spell Critical Chance\n+5% Spell Haste\n+5% Magic Resistance')
 node('zdfpatqypd5nnqx8','magistrate')
 for key,remove in [('martial_prowess','puffish_attributes:resistance'),('hunter','puffish_attributes:ranged_resistance')]:
  v=d[key];v['rewards']=[r for r in v['rewards'] if r['data'].get('attribute')!=remove]
  for r in v['rewards']:
   a=r['data'].get('attribute','')
-  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.06 if key=='hunter' else .05
+  if a in ['puffish_attributes:melee_damage','puffish_attributes:ranged_damage']:r['data']['value']=.09 if key=='hunter' else .05
   if a=='attack_speed':r['data']['value']=.05
   if a=='puffish_attributes:armor_shred':r['data']['value']=.1
   if a=='luck':r['data']['value']=1
   if a in ['movement_speed','puffish_attributes:jump']:r['data']['value']=.05
- v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+6% Ranged Damage\n+1 Luck\n+5% Movement Speed\n+5% Jump Strength'}
+ v['description']={'text':'+5% Melee Damage\n+10% Armor Penetration\n+5% Attack Speed' if key=='martial_prowess' else '+9% Ranged Damage\n+5% Movement Speed\n+5% Draw Speed (Bow and Crossbow)'}
 # Martial ordinary route: damage / speed / damage / speed / damage.
 node('f8rbbpxi0myhi3cg','attack_speed+5%')
 define('ranged_penetration','+5% Armor Penetration',[attr('puffish_attributes:armor_shred',.05)],'minecraft:flint')
 node('vxmb1u84wzfwpuq6','ranged_penetration')
-d['hunter']['rewards'] += [attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)]
+d['hunter']['rewards']=[r for r in d['hunter']['rewards'] if r['data'].get('attribute') not in ['luck','puffish_attributes:jump']]
+d['hunter']['rewards'] += [attr('ranged_weapon:haste',.05),attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)]
 d['hunter']['description']['text'] += '\n+10% Armor Penetration\n+25% Bow and Crossbow Projectile Speed'
 d['martial_prowess']['rewards']=[attr('puffish_attributes:melee_damage',.08),attr('attack_speed',.05),attr('critical_strike:chance',.1,'multiply_base'),attr('critical_strike:damage',.1)]
 d['martial_prowess']['description']={'text':'+8% Melee Damage\n+5% Attack Speed\n+10% Critical Chance\n+10% Critical Damage'}
@@ -116,16 +117,16 @@ for cat in ['class_skills','weapon_skills']:
   if k.startswith('paladin'):continue
   for r in v.get('rewards',[]):
    a=r.get('data',{}).get('attribute')
-   if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.04 if a in ['spell_power:arcane','spell_power:fire','spell_power:frost'] else .03
+   if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.02 if k.startswith('rogue') else .03
    if a=='minecraft:attack_damage':r['data']['value']=.02
-   if a=='ranged_weapon:damage':r['data']['value']=.02
+   if a=='ranged_weapon:damage':r['data']['value']=.03
   # Generated Java node descriptions retain upstream defaults; override the visible text too.
   if k in ['warrior_root','warrior_boost','archer_root','archer_boost']:
-   v['description']={'text':'+2% '+('Ranged Damage' if k.startswith('archer') else 'Attack Damage')}
+   v['description']={'text':'+3% Ranged Damage' if k.startswith('archer') else '+2% Attack Damage'}
   if k=='weapon_bow_root':
-   v['description']={'text':'+2% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]}
+   v['description']={'text':'+3% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]}
   if any(r.get('data',{}).get('attribute') in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] for r in v.get('rewards',[])) or k in ['rogue_root','rogue_boost']:
-   v['description']={'text':('+4% ' if k.split('_')[0] in schools else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
+   v['description']={'text':('+2% ' if k.startswith('rogue') else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
  assert all(v==d[k] for k,v in original.items() if k.startswith('paladin'))
  put(f,b+'definitions.json',d);xp(f,b)
 write(RPG,f)

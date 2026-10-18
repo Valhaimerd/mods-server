@@ -21,6 +21,7 @@ public class BalanceProbe {
  void started(ServerStartedEvent event){var server=event.getServer();server.execute(()->{
   try{
    var player=FakePlayerFactory.getMinecraft(server.overworld());
+   RangedDamageProbe.run(player,server.overworld());
    for(var id:PackPolicy.REMOVED){
     var item=BuiltInRegistries.ITEM.getValue(Identifier.parse(id));check(item!=Items.AIR,"legacy registration "+id);
     String name=id.endsWith("stormbound_signet")?"StormboundSignetCurio":id.endsWith("sharpshot_ring")?"SharpshotRingCurio":"DeadEyesPendantCurio";

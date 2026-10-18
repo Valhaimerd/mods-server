@@ -6,6 +6,9 @@ removed={'too_many_bows:'+s for s in ['stormbound_signet','sharpshot_ring','dead
 with ZipFile(folder/'Too_Many_Bows-neoforge-4.0.0-26.2.jar') as z:
  assert 'version="4.0.0-26.2"' in z.read('META-INF/neoforge.mods.toml').decode()
  for name in ['PackPolicy','PackJeiPlugin']:assert f'net/bandit/many_bows/pack/{name}.class' in z.namelist()
+ assert 'net/bandit/many_bows/pack/BowRangedBridge.class' in z.namelist()
+ assert 'PackRangedDamageMixin' in json.loads(z.read('too_many_bows.mixins.json'))['mixins']
+ assert 'modId="ranged_weapon_api"' in z.read('META-INF/neoforge.mods.toml').decode()
  for n in z.namelist():
   if n.startswith('data/') and n.endswith('.json'):
    obj=json.loads(z.read(n))

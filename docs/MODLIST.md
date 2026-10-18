@@ -950,6 +950,8 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 
 The installed 4.0.0 bows are distinct ranged options rather than cosmetic variants. Test them with the ammunition used by the current build. Stormbound Signet (+30% bow damage), Sharpshot Ring (+15% bow damage) and Dead Eye’s Pendant (bow critical chance) are removed from acquisition, creative tabs and JEI in this pack. Existing copies remain registered for saves but cannot equip or grant bonuses. Use RPG jewelry for combat accessories; other Too Many Bows items remain available.
 
+Ranged-damage tooltips now use each usable bow’s own configured base instead of the shared 6 default: Wind Bow shows 3, Sentinel’s Wrath 5 and Ancient Sage 7. Damage normalization matches that base, and native ranged scaling is protected against applying twice. Special effects and target-specific damage still follow each bow’s own rules.
+
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/too-many-bows">Official mod page</a></p>
 
 </div>

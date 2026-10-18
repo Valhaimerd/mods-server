@@ -24,6 +24,10 @@ for name in manifest:
    if name.startswith('Too_Many'):
     candidate=WORK/'classes'/n
     if n.endswith('.class') and candidate.is_file():data=candidate.read_bytes()
+    if n=='too_many_bows.mixins.json':
+     mixins=json.loads(data);mixins['mixins'].append('PackRangedDamageMixin');data=(json.dumps(mixins,indent=2)+'\n').encode()
+    if n=='META-INF/neoforge.mods.toml':
+     data+=b'\n[[dependencies.too_many_bows]]\nmodId="ranged_weapon_api"\ntype="required"\nversionRange="[4.0.0,)"\nordering="AFTER"\nside="BOTH"\n'
     if n.startswith('data/') and n.endswith('.json'):
      obj=json.loads(data)
      if any(x in n for x in ['/recipe/','/advancement/']) and any('"'+key+'"' in data.decode() for key in removed):changed.append('deleted '+n);continue

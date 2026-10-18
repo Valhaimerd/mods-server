@@ -29,7 +29,13 @@ public class ClientProbe {
     if(text.stream().noneMatch(s->s.contains("legacy item has no effect")))throw new AssertionError("Stale tooltip "+id+text);
     if(text.stream().anyMatch(s->s.contains("Increases bow")))throw new AssertionError("Old bonus advertised "+id);
    }
-   Files.writeString(mc.gameDirectory.toPath().resolve("bows-client-result.txt"),"PASS removed accessories absent from JEI; glove retained; all three legacy tooltips inert\n");
+   for(var sample:java.util.Map.of("wind_bow",3,"sentinels_wrath",5,"ancient_sage_bow",7).entrySet()){
+    var stack=new ItemStack(BuiltInRegistries.ITEM.getValue(Identifier.parse("too_many_bows:"+sample.getKey())));
+    var text=stack.getTooltipLines(Item.TooltipContext.of(mc.level),mc.player,TooltipFlag.NORMAL).stream().map(c->c.getString()).toList();
+    System.out.println("BOW_TOOLTIP "+sample.getKey()+" "+text);
+    if(text.stream().noneMatch(s->s.contains("Ranged Damage")&&s.matches(".*\\b"+sample.getValue()+"(?:\\.0)?\\b.*")))throw new AssertionError("Incorrect ranged tooltip "+sample.getKey()+text);
+   }
+   Files.writeString(mc.gameDirectory.toPath().resolve("bows-client-result.txt"),"PASS removed accessories absent from JEI; glove retained; legacy tooltips inert; Wind/Sentinel/Ancient ranged tooltips 3/5/7\n");
   }catch(Throwable t){t.printStackTrace();try{Files.writeString(mc.gameDirectory.toPath().resolve("bows-client-result.txt"),"FAIL "+t);}catch(Exception ignored){}}
   mc.stop();
  }

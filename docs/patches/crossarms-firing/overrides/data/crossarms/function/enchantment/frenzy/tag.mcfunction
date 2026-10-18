@@ -1,4 +1,6 @@
 tag @s add FRENZY
+# Apply immediately on every actual shot, including the first; refresh while firing.
+execute on origin run effect give @s minecraft:slowness 1 1 true
 # Read the actual projectile owner, rather than the nearest player.
 scoreboard players set @s frenzy_stage 0
 execute store result score @s frenzy_stage run execute on origin run scoreboard players get @s heat

@@ -1,0 +1,48 @@
+"""Rebuild three same-filename candidates; originals remain under tmp/bows-balance."""
+from pathlib import Path
+from zipfile import ZipFile,ZipInfo,ZIP_DEFLATED
+import argparse,hashlib,json,subprocess
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;WORK=ROOT/'tmp/bows-balance'
+p=argparse.ArgumentParser();p.add_argument('--classpath-file',default=str(WORK/'classpath.txt'));args=p.parse_args()
+manifest=json.loads((HERE/'upstream.json').read_text())
+for name,sha in manifest.items():assert hashlib.sha256((WORK/('original-'+name)).read_bytes()).hexdigest()==sha,name
+sources=sorted((HERE/'src').rglob('*.java'))
+for stale in (WORK/'classes').rglob('*.class'):stale.unlink()
+a=['--release','25','-encoding','UTF-8','-cp',Path(args.classpath_file).read_text().strip(),'-d',str(WORK/'classes'),*[str(x) for x in sources]]
+(WORK/'compile.args').write_text('\n'.join('"'+x.replace('\\','/')+'"' for x in a))
+subprocess.run(['C:/Program Files/Eclipse Adoptium/jdk-26.0.2.101-hotspot/bin/javac.exe','@'+str(WORK/'compile.args')],check=True)
+removed={'too_many_bows:'+x for x in ['stormbound_signet','sharpshot_ring','dead_eyes_pendant']}
+with ZipFile(WORK/'original-crossarms-1.4.jar') as z:
+ shared={n:json.loads(z.read(n)) for n in ['data/minecraft/enchantment/multishot.json','data/minecraft/enchantment/piercing.json']}
+for obj in shared.values():obj['exclusive_set']=[]
+report={}
+for name in manifest:
+ changed=[]
+ with ZipFile(WORK/('original-'+name)) as src,ZipFile(WORK/name,'w') as dst:
+  for entry in src.infolist():
+   n=entry.filename;old=src.read(n);data=old
+   if name.startswith('Too_Many'):
+    candidate=WORK/'classes'/n
+    if n.endswith('.class') and candidate.is_file():data=candidate.read_bytes()
+    if n.startswith('data/') and n.endswith('.json'):
+     obj=json.loads(data)
+     if any(x in n for x in ['/recipe/','/advancement/']) and any('"'+key+'"' in data.decode() for key in removed):changed.append('deleted '+n);continue
+     if '/tags/item/' in n and 'values' in obj:
+      kept=[x for x in obj['values'] if (x if isinstance(x,str) else x.get('id')) not in removed]
+      if kept!=obj['values']:
+       obj['values']=kept;data=(json.dumps(obj,indent=2)+'\n').encode()
+   elif n in shared:data=(json.dumps(shared[n],indent=2)+'\n').encode()
+   elif name.startswith('expanded-') and n=='data/minecraft/enchantment/looting.json':
+    obj=json.loads(data)
+    obj['effects']['minecraft:equipment_drops'][0]['requirements']['predicate']={'minecraft:entity_type':'minecraft:player'}
+    data=(json.dumps(obj,indent=2)+'\n').encode()
+   if data!=old:changed.append(n)
+   dst.writestr(entry,data)
+  if name.startswith('Too_Many'):
+   for f in sorted((WORK/'classes').rglob('*.class')):
+    n=f.relative_to(WORK/'classes').as_posix()
+    if n not in src.namelist():
+     info=ZipInfo(n,(1980,1,1,0,0,0));info.compress_type=ZIP_DEFLATED
+     dst.writestr(info,f.read_bytes());changed.append(n)
+ report[name]={'sha256':hashlib.sha256((WORK/name).read_bytes()).hexdigest(),'changed':changed}
+(WORK/'build-result.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

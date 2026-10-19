@@ -14,3 +14,5 @@
 
 - Balance revision: Martial/Hunter 5% damage, requested secondary bonuses; Magistrate 20% power/10 critical points with ordinary 5% power/2.5 critical points/3% haste; Aegis 15%/15%; Colossus six hearts; blue titles and requested icons. RPG three-school power is 5%; Priest remains 3% and Paladin is unchanged. Same IDs/migration marker preserve existing choices.
 - Rebalance verification: 54 dedicated-server checks pass; all nine titles parse as blue in the client. Active/server/client/fixed JAR hashes match and all archives pass CRC checks. Rebuilt PDF remains 71 pages; only page 17 changes visually, with contents destinations unchanged.
+
+- 20 October physical revision: Double Hit removed; Adventurer/RPG ordinary melee 3% and ranged 2%; Hunter ranged 6%, Hunter and ordinary projectile speed 15%. Same IDs, unchanged bridge and XP. Structural checks and 78 isolated server checks passed. No new client visual test.

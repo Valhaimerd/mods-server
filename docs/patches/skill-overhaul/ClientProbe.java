@@ -24,8 +24,8 @@ public class ClientProbe {
      var title=cat.getConfig().definitions().get(key).title();if(title.getStyle().getColor()==null || title.getStyle().getColor().getValue()!=0x5555ff)throw new AssertionError("Not blue: "+key);
     }
     if(!cat.getConfig().definitions().get("packleader").title().getString().equals("Pack Leader"))throw new AssertionError("Pack Leader title mismatch");
-    if(!cat.getConfig().definitions().get("ranged_damage+3%").title().getString().equals("+3% Ranged Damage"))throw new AssertionError("Stale Adventurer ranged title");
-    if(!cat.getConfig().definitions().get("hunter").description().getString().startsWith("+9% Ranged Damage"))throw new AssertionError("Stale Hunter description");
+    if(!cat.getConfig().definitions().get("ranged_damage+3%").title().getString().equals("+2% Ranged Damage"))throw new AssertionError("Stale Adventurer ranged title");
+    if(!cat.getConfig().definitions().get("hunter").description().getString().startsWith("+6% Ranged Damage"))throw new AssertionError("Stale Hunter description");
     var hunter=cat.getConfig().definitions().get("hunter").description().getString();if(hunter.contains("Luck")||hunter.contains("Jump")||!hunter.contains("+5% Draw Speed"))throw new AssertionError("Stale Hunter bonuses");
     if(!cat.getConfig().definitions().get("draw_speed").title().getString().startsWith("+5%"))throw new AssertionError("Stale draw speed");
     if(!cat.getConfig().definitions().get("caster_power").title().getString().startsWith("+3%"))throw new AssertionError("Stale ordinary spell power");
@@ -36,13 +36,13 @@ public class ClientProbe {
      var cfg=data.getCategory(net.minecraft.resources.Identifier.parse("skill_tree_rpgs:"+categoryName)).orElseThrow().getConfig();
      for(var key:java.util.List.of("warrior_root","warrior_boost","archer_root","archer_boost")){
       var text=cfg.definitions().get(key).description().getString();
-      if(!text.equals((key.startsWith("archer") ? "+3% Ranged Damage":"+2% Attack Damage")))throw new AssertionError("Stale tooltip "+categoryName+"/"+key+": "+text);
+      if(!text.equals((key.startsWith("archer") ? "+2% Ranged Damage":"+3% Attack Damage")))throw new AssertionError("Stale tooltip "+categoryName+"/"+key+": "+text);
      }
      for(var key:java.util.List.of("rogue_root","rogue_boost"))if(!cfg.definitions().get(key).description().getString().equals("+2% Attack Speed"))throw new AssertionError("Stale assassin description");
      for(var school:java.util.List.of("arcane","fire","frost"))for(var suffix:java.util.List.of("root","boost"))if(!cfg.definitions().get(school+"_"+suffix).description().getString().startsWith("+3%"))throw new AssertionError("Stale school power description");
-     if(!cfg.definitions().get("weapon_bow_root").description().getString().startsWith("+3% Ranged Damage"))throw new AssertionError("Stale conditional bow description "+categoryName);
+     if(!cfg.definitions().get("weapon_bow_root").description().getString().startsWith("+2% Ranged Damage"))throw new AssertionError("Stale conditional bow description "+categoryName);
     }
-    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS October 19: Hunter9/haste5 withoutLuckJump; Magistrate10/resistance5; ordinary ranged3/draw5/power3; RPG ranged3/assassin2/power3; blue titles");
+    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS October 20: Hunter6/projectile15/haste5 withoutLuckJump; Magistrate10/resistance5; ordinary ranged2/melee3/projectile15/draw5/power3; RPG ranged2/melee3/assassin2/power3; blue titles");
     Files.writeString(mc.gameDirectory.toPath().resolve("title-check.txt"),"PASS 9 blue client title components");
    }catch(Exception ex){throw new RuntimeException(ex);}
   }

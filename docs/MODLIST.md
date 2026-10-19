@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 24 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
 
 Last audited: 2026-10-20<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 310 synchronized JARs plus 24 client-store JARs
+Current distribution: 309 synchronized JARs plus 24 client-store JARs
 
 ## About this handbook
 
@@ -635,7 +635,7 @@ Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main 
 - **Core mechanic:** Specializes class and weapon abilities by spending earned skill points.
 - **Player guidance:** Open the skill screen with T and inspect class and weapon prerequisites.
 
-The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +2%. Ordinary melee/ranged damage rewards grant +2%/+3%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips show 2% and 3% respectively. RPG Archer damage nodes receive no extra draw speed. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate.
+The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +2%. Ordinary melee/ranged damage rewards grant +3%/+2%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips show 3% and 2% respectively. RPG Archer damage nodes receive no extra draw speed. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
 
@@ -665,7 +665,7 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Offensive, Defensive and Companion alternatives lock at their first path nodes. You can develop different branches together. Utilities has no exclusions or specialties. Completion nodes grant stats without item gifts. Adventurer skill XP gains are 1.35 times their original rate.
 
-Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +2% melee or +3% ranged damage and attack speed +3%. Caster nodes grant +3% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +10% school power, +10 critical points, +5% spell haste and +5% magic resistance. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +9% ranged damage/+5% movement/+5% draw speed, plus +10% armor penetration and +25% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The ranged path also improves projectile speed and damage. Bow icons mark ranged damage; Crossbows mark draw speed.
+Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +3% melee or +2% ranged damage and attack speed +3%. Caster nodes grant +3% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +10% school power, +10 critical points, +5% spell haste and +5% magic resistance. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +6% ranged damage/+5% movement/+5% draw speed, plus +10% armor penetration and +15% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The earlier ordinary projectile-speed node grants +15% for bows and crossbows. Bow icons mark ranged damage; Crossbows mark draw speed.
 
 Defensive offers **Aegis** (+15% magic/+10% ranged resistance/+6% movement speed), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
 
@@ -1144,7 +1144,7 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Core mechanic:** Adds focused enchantment effects for movement, combat, armor, shields, and arrows.
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
-The collection adds movement, attack, defense, and arrow effects, including extra jumps and gravity-free shots. Max Protection and Toughness add further armor choices.
+The collection adds movement, attack, defense, and arrow effects, including extra jumps and gravity-free shots. Max Protection and Toughness add further armor choices. Double Hit is excluded from this pack.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 

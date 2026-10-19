@@ -16,3 +16,5 @@
 - Rebalance verification: 54 dedicated-server checks pass; all nine titles parse as blue in the client. Active/server/client/fixed JAR hashes match and all archives pass CRC checks. Rebuilt PDF remains 71 pages; only page 17 changes visually, with contents destinations unchanged.
 
 - 20 October physical revision: Double Hit removed; Adventurer/RPG ordinary melee 3% and ranged 2%; Hunter ranged 6%, Hunter and ordinary projectile speed 15%. Same IDs, unchanged bridge and XP. Structural checks and 78 isolated server checks passed. No new client visual test.
+
+- Latest projectile follow-up: ordinary/Hunter projectile speed restored to 25%. Voltaic Shot definition, functions, tag, translations and five loot outcomes removed from the existing registry-fixed Dungeons Arise. 79 isolated server checks passed, including loaded-registry absence. Unrelated ensnaring tag/predicate data warning is unchanged.

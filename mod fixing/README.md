@@ -115,3 +115,9 @@ The add-on registers `adventurer_skills:adventurer_skills` with the RPG Series O
 ## Building replacement - 2026-10-20
 
 Effortless Building 4.3 is retired from the active pack, replaced by the supplied Sophisticated Building 5.1.0 (`sophisticatedbuilding`). Its metadata targets Minecraft 26.2 / NeoForge 26.2.0.88+, and the installed Backpacks 3.26.2 / Core 1.5.0 meet its optional integration requirements. No other installed mod declares an Effortless Building dependency. The old JAR is retained in retired packs. The installer source profile now binds the new radial-menu key to Alt, and leaves the other six actions unbound. Existing old-mod items/settings are not claimed to migrate automatically across the changed namespace.
+
+## Voltaic Shot removal - 2026-10-20
+
+The existing `DungeonsArise-26.1.2-2.1.70-release-26.2-registryfix.jar` keeps its prior registry repair and all classes/worldgen. Voltaic Shot is removed: its enchantment definition, tag, two functions, translation keys and five special loot outcomes. Those outcomes become equally weighted empty rolls, preserving all other loot chances. Existing items can no longer resolve this enchantment. Rebuild with `python docs/patches/remove-voltaic-shot.py <prior-registry-fixed.jar> <output.jar>`; run with only a JAR argument to verify complete absence. Prior active bytes are retained in ignored retired packs.
+
+79 isolated NeoForge 26.2.0.90 server checks passed with the repacked Dungeons Arise, including registry absence and the restored 25% ordinary/Hunter bow and crossbow projectile bonuses. The original ensnaring entity tag still references removed `minecraft:potion`, producing a tag and dependent-predicate reload warning; these unrelated resources are byte-identical. See `docs/patches/voltaic-removal-verification.json`.

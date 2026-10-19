@@ -46,7 +46,7 @@ define('caster_haste','+3% Spell Haste',[attr('spell_power:haste',.03)],'minecra
 # The compatibility bridge grants fixed critical-chance points after innate/gear scaling.
 define('caster_critical','+2.5% Spell Critical Chance',[],'minecraft:amethyst_shard')
 define('draw_speed','+5% Draw Speed (Bow and Crossbow)',[attr('ranged_weapon:haste',.05)],'minecraft:crossbow')
-define('projectile_both','+15% Bow and Crossbow Projectile Speed',[attr('puffish_attributes:bow_projectile_speed',.15),attr('puffish_attributes:crossbow_projectile_speed',.15)],'minecraft:arrow')
+define('projectile_both','+25% Bow and Crossbow Projectile Speed',[attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)],'minecraft:arrow')
 for id,key in {'3gpel3ejgsuvozax':'caster_power','v3lnj0ubt40kezxm':'caster_haste','ro3sae58m8jzn4yz':'caster_critical','m1aqebilvun2ycc7':'caster_power','qosdkbl0x44scigj':'caster_power','0oz1hx0q08v2i8j5':'caster_power','k6s01bg1bgnsqrew':'caster_haste','gs6jmtskmyhpbcnu':'caster_critical','8qdaale4k86t2ntn':'draw_speed','02did3uvilfob8c2':'draw_speed','ui0gusk2hniqwghe':'projectile_both','vxmb1u84wzfwpuq6':'projectile_both','k5g9ddvqzlzkxv9f':'ranged_damage+3%'}.items():node(id,key)
 define('magistrate','Magistrate',[*[attr('spell_power:'+x,.1) for x in schools],attr('spell_power:haste',.05),attr('puffish_attributes:magic_resistance',.05)],'minecraft:ender_eye','+10% Arcane/Fire/Frost Power\n+10% Spell Critical Chance\n+5% Spell Haste\n+5% Magic Resistance')
 node('zdfpatqypd5nnqx8','magistrate')
@@ -65,8 +65,8 @@ node('f8rbbpxi0myhi3cg','attack_speed+5%')
 define('ranged_penetration','+5% Armor Penetration',[attr('puffish_attributes:armor_shred',.05)],'minecraft:flint')
 node('vxmb1u84wzfwpuq6','ranged_penetration')
 d['hunter']['rewards']=[r for r in d['hunter']['rewards'] if r['data'].get('attribute') not in ['luck','puffish_attributes:jump']]
-d['hunter']['rewards'] += [attr('ranged_weapon:haste',.05),attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.15),attr('puffish_attributes:crossbow_projectile_speed',.15)]
-d['hunter']['description']['text'] += '\n+10% Armor Penetration\n+15% Bow and Crossbow Projectile Speed'
+d['hunter']['rewards'] += [attr('ranged_weapon:haste',.05),attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)]
+d['hunter']['description']['text'] += '\n+10% Armor Penetration\n+25% Bow and Crossbow Projectile Speed'
 d['martial_prowess']['rewards']=[attr('puffish_attributes:melee_damage',.08),attr('attack_speed',.05),attr('critical_strike:chance',.1,'multiply_base'),attr('critical_strike:damage',.1)]
 d['martial_prowess']['description']={'text':'+8% Melee Damage\n+5% Attack Speed\n+10% Critical Chance\n+10% Critical Damage'}
 d['ranged_damage+3%']['icon']={'type':'item','data':{'item':'minecraft:bow'}}

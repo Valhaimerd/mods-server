@@ -14,14 +14,14 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     operations={r['data']['attribute']:r['data']['operation'] for r in d['martial_prowess']['rewards']}
     assert operations['critical_strike:chance']=='multiply_base'
     assert operations['critical_strike:damage']=='multiply_total'
-    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.06,'movement_speed':.05,'ranged_weapon:haste':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.15,'puffish_attributes:crossbow_projectile_speed':.15}
+    assert rewards('hunter')=={'puffish_attributes:ranged_damage':.06,'movement_speed':.05,'ranged_weapon:haste':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('magistrate')=={**{'spell_power:'+x:.1 for x in ['arcane','fire','frost']},'spell_power:haste':.05,'puffish_attributes:magic_resistance':.05}
     assert rewards('caster_power')=={'spell_power:'+x:.03 for x in ['arcane','fire','frost']}
     assert d['hunter']['description']['text'].startswith('+6% Ranged Damage')
-    assert '+15% Bow and Crossbow Projectile Speed' in d['hunter']['description']['text']
+    assert '+25% Bow and Crossbow Projectile Speed' in d['hunter']['description']['text']
     assert d['melee_damage+3%']['title']=='+3% Melee Damage'
-    assert d['projectile_both']['title']=='+15% Bow and Crossbow Projectile Speed'
-    assert rewards('projectile_both')=={'puffish_attributes:bow_projectile_speed':.15,'puffish_attributes:crossbow_projectile_speed':.15}
+    assert d['projectile_both']['title']=='+25% Bow and Crossbow Projectile Speed'
+    assert rewards('projectile_both')=={'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('draw_speed')=={'ranged_weapon:haste':.05}
     assert rewards('caster_haste')=={'spell_power:haste':.03}
     assert rewards('aegis')=={'puffish_attributes:magic_resistance':.15,'puffish_attributes:ranged_resistance':.1,'minecraft:movement_speed':.06}

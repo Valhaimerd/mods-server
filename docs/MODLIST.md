@@ -665,7 +665,7 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Offensive, Defensive and Companion alternatives lock at their first path nodes. You can develop different branches together. Utilities has no exclusions or specialties. Completion nodes grant stats without item gifts. Adventurer skill XP gains are 1.35 times their original rate.
 
-Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +3% melee or +2% ranged damage and attack speed +3%. Caster nodes grant +3% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +10% school power, +10 critical points, +5% spell haste and +5% magic resistance. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +6% ranged damage/+5% movement/+5% draw speed, plus +10% armor penetration and +15% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The earlier ordinary projectile-speed node grants +15% for bows and crossbows. Bow icons mark ranged damage; Crossbows mark draw speed.
+Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +3% melee or +2% ranged damage and attack speed +3%. Caster nodes grant +3% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +10% school power, +10 critical points, +5% spell haste and +5% magic resistance. Martial Prowess grants +8% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +6% ranged damage/+5% movement/+5% draw speed, plus +10% armor penetration and +25% bow/crossbow projectile speed. Its later ordinary projectile node gives +5% penetration; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The earlier ordinary projectile-speed node grants +25% for bows and crossbows. Bow icons mark ranged damage; Crossbows mark draw speed.
 
 Defensive offers **Aegis** (+15% magic/+10% ranged resistance/+6% movement speed), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
 
@@ -1144,7 +1144,7 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Core mechanic:** Adds focused enchantment effects for movement, combat, armor, shields, and arrows.
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
-The collection adds movement, attack, defense, and arrow effects, including extra jumps and gravity-free shots. Max Protection and Toughness add further armor choices. Double Hit is excluded from this pack.
+The collection adds movement, attack, defense, and arrow effects, including extra jumps and specialized projectile effects. Max Protection and Toughness add further armor choices. Double Hit is excluded from this pack.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 
@@ -1976,7 +1976,7 @@ The standalone Villages edition adds its towns separately from vanilla villages.
 - **Core mechanic:** When Dungeons Arise adds large, hostile dungeons and structures; Seven Seas extends the collection with ships and other ocean vessels.
 - **Player guidance:** Scout the whole site and mark a safe return route before entering or boarding.
 
-These sites can be much larger than a vanilla dungeon, with enemies and loot spread across several areas. Explore in stages and leave room to carry rewards back.
+These sites can be much larger than a vanilla dungeon, with enemies and loot spread across several areas. Explore in stages and leave room to carry rewards back. Voltaic Shot is removed from this pack, including its special book and crossbow loot rolls.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise">When Dungeons Arise</a> · <a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas">Seven Seas</a></p>
 

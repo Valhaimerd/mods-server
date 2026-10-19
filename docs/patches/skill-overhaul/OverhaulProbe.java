@@ -88,7 +88,7 @@ public class OverhaulProbe {
    var normalDraw=player.getAttributeValue(ranged);int bowTicks=useTicks(Items.BOW),crossbowTicks=useTicks(Items.CROSSBOW);unlock("8qdaale4k86t2ntn","02did3uvilfob8c2");near(player.getAttributeValue(ranged)/normalDraw,1.05*1.05,"two draw-speed nodes");
    check(useTicks(Items.BOW)>bowTicks,"bow drawing advances faster");check(useTicks(Items.CROSSBOW)>crossbowTicks,"crossbow charging advances faster");
    reset();double normalRanged=DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1);
-   unlock("ui0gusk2hniqwghe");near(DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1)/normalRanged,1.15,"bow projectile speed");near(DynamicModification.create().withPositive(PuffishAttributes.CROSSBOW_PROJECTILE_SPEED,player).applyTo(1),1.15,"crossbow projectile speed");
+   unlock("ui0gusk2hniqwghe");near(DynamicModification.create().withPositive(PuffishAttributes.BOW_PROJECTILE_SPEED,player).applyTo(1)/normalRanged,1.25,"bow projectile speed");near(DynamicModification.create().withPositive(PuffishAttributes.CROSSBOW_PROJECTILE_SPEED,player).applyTo(1),1.25,"crossbow projectile speed");
    reset();var hp=player.getMaxHealth();unlock("ebhti3huj2v7zvny");near(player.getMaxHealth(),hp+12,"Colossus six hearts");
    stat("r7mv8vq583ntlk4y","puffish_attributes:melee_damage",.08,false);stat("r7mv8vq583ntlk4y","minecraft:attack_speed",.05,false);
    // Critical Strike uses a 100-point baseline; the generic stat helper's 10 is below its minimum.
@@ -110,8 +110,8 @@ public class OverhaulProbe {
    stat("vxmb1u84wzfwpuq6","puffish_attributes:armor_shred",.05,false);
    stat("f8rbbpxi0myhi3cg","minecraft:attack_speed",.03,false);
    stat("5es0kwe84yl9t3yb","puffish_attributes:armor_shred",.1,false);
-   stat("5es0kwe84yl9t3yb","puffish_attributes:bow_projectile_speed",.15,false);
-   stat("5es0kwe84yl9t3yb","puffish_attributes:crossbow_projectile_speed",.15,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:bow_projectile_speed",.25,false);
+   stat("5es0kwe84yl9t3yb","puffish_attributes:crossbow_projectile_speed",.25,false);
    reset();var armorVictim=EntityTypes.PIG.create(server.overworld(),EntitySpawnReason.COMMAND);
    armorVictim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);armorVictim.getAttribute(Attributes.ARMOR).setBaseValue(20);
    var testArrow=EntityTypes.ARROW.create(server.overworld(),EntitySpawnReason.COMMAND);
@@ -134,6 +134,7 @@ public class OverhaulProbe {
     stat("qr4fdarqqqm5ifoa","spell_power:arcane",.03,false);stat("m1pc5vz73nx4b28c","spell_power:fire",.03,false);stat("akyr8k2dv9xsy70c","spell_power:frost",.03,false);stat("iaztym6bad9vpl6j","minecraft:attack_speed",.02,false);
    }
    reset();tree=adventurerTree;
+   check(server.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.ENCHANTMENT).get(Identifier.parse("dungeons_arise:voltaic_shot")).isEmpty(),"Voltaic Shot absent from loaded enchantment registry");
    Files.writeString(Path.of("result.txt"),"PASS "+checks+" checks\n");
   }catch(Throwable ex){ex.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+ex+"\n");}catch(Exception ignored){}}
   finally{server.halt(false);}

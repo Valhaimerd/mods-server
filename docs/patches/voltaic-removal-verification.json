@@ -1,0 +1,36 @@
+{
+  "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar": {
+    "before_sha256": "e3b7fd68ca43ecdda63d6dc258f9fcb2e6242d61a1111132184495cecf9fc954",
+    "after_sha256": "90f49a81288628f9f700540f6e9831f955acb3b76ecb4d329bb47bb80665c489",
+    "changed_entries": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ],
+    "removed_entries": []
+  },
+  "skill_tree-neoforge-1.6.1+26.2.jar": {
+    "before_sha256": "4dca2866a8d309737cdfb9c32b8eda170365be7e2e0b67eaad70f74ba47f23fb",
+    "after_sha256": "e72189968d0480c5175def2da9b86cd8cad11c49a1037f91a438be69c313d591",
+    "changed_entries": [],
+    "removed_entries": []
+  },
+  "DungeonsArise-26.1.2-2.1.70-release-26.2-registryfix.jar": {
+    "before_sha256": "a13fe000cb14fcae3060b04430058aa24143fa67f6e307895c9de3c6280da12a",
+    "after_sha256": "a2418b125d2b00c091535e099193661809604343662c30b65ea5abccd855d807",
+    "changed_entries": [
+      "assets/dungeons_arise/lang/en_us.json",
+      "data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_equipment.json",
+      "data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_treasure.json",
+      "data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_treasure.json"
+    ],
+    "removed_entries": [
+      "data/dungeons_arise/enchantment/voltaic_shot.json",
+      "data/dungeons_arise/function/voltaic_arrows.mcfunction",
+      "data/dungeons_arise/function/voltaic_arrows_impact_particles.mcfunction",
+      "data/dungeons_arise/tags/enchantment/voltaic_shot.json"
+    ]
+  },
+  "date": "2026-10-20",
+  "runtime": "PASS 79 checks",
+  "existing_data_warning": "Unchanged ignores_ensnaring entity tag references minecraft:potion; the dependent predicate also logs a reload error. Server and requested checks complete.",
+  "client_visual_test": false
+}

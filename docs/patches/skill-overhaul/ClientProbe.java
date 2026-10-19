@@ -42,7 +42,7 @@ public class ClientProbe {
      for(var school:java.util.List.of("arcane","fire","frost"))for(var suffix:java.util.List.of("root","boost"))if(!cfg.definitions().get(school+"_"+suffix).description().getString().startsWith("+3%"))throw new AssertionError("Stale school power description");
      if(!cfg.definitions().get("weapon_bow_root").description().getString().startsWith("+2% Ranged Damage"))throw new AssertionError("Stale conditional bow description "+categoryName);
     }
-    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS October 20: Hunter6/projectile15/haste5 withoutLuckJump; Magistrate10/resistance5; ordinary ranged2/melee3/projectile15/draw5/power3; RPG ranged2/melee3/assassin2/power3; blue titles");
+    Files.writeString(mc.gameDirectory.toPath().resolve("rpg-tooltip-result.txt"),"PASS October 20: Hunter6/projectile25/haste5 withoutLuckJump; Magistrate10/resistance5; ordinary ranged2/melee3/projectile25/draw5/power3; RPG ranged2/melee3/assassin2/power3; blue titles");
     Files.writeString(mc.gameDirectory.toPath().resolve("title-check.txt"),"PASS 9 blue client title components");
    }catch(Exception ex){throw new RuntimeException(ex);}
   }

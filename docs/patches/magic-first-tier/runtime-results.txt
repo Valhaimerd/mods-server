@@ -1,0 +1,42 @@
+arcane_missile damage at 10: 2.66668701171875
+arcane_missile cooldown at 10: 10.0
+arcane_explosion damage at 10: 28.0
+arcane_explosion cooldown at 10: 10.0
+fire_breath damage at 10: 2.79998779296875
+fire_breath cooldown at 10: 4.0
+fire_slash damage at 10: 15.0
+fire_slash cooldown at 10: 3.0
+frost_nova damage at 10: 20.0
+frost_nova cooldown at 10: 10.0
+frost_nova frozen duration at 10: 40.0
+frost_spikes damage at 10: 24.0
+frost_spikes cooldown at 10: 8.0
+frost_spikes frozen duration at 10: 40.0
+arcane_missile damage at 40: 10.66668701171875
+arcane_missile cooldown at 40: 10.0
+arcane_explosion damage at 40: 112.0
+arcane_explosion cooldown at 40: 10.0
+fire_breath damage at 40: 11.20001220703125
+fire_breath cooldown at 40: 4.0
+fire_slash damage at 40: 60.0
+fire_slash cooldown at 40: 3.0
+frost_nova damage at 40: 80.0
+frost_nova cooldown at 40: 10.0
+frost_nova frozen duration at 40: 40.0
+frost_spikes damage at 40: 96.0
+frost_spikes cooldown at 40: 8.0
+frost_spikes frozen duration at 40: 40.0
+arcane_missile damage at 80: 21.33331298828125
+arcane_missile cooldown at 80: 10.0
+arcane_explosion damage at 80: 224.0
+arcane_explosion cooldown at 80: 10.0
+fire_breath damage at 80: 22.4000244140625
+fire_breath cooldown at 80: 4.0
+fire_slash damage at 80: 120.0
+fire_slash cooldown at 80: 3.0
+frost_nova damage at 80: 160.0
+frost_nova cooldown at 80: 10.0
+frost_nova frozen duration at 80: 40.0
+frost_spikes damage at 80: 192.0
+frost_spikes cooldown at 80: 8.0
+frost_spikes frozen duration at 80: 40.0

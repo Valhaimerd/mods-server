@@ -1,0 +1,12 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "e72189968d0480c5175def2da9b86cd8cad11c49a1037f91a438be69c313d591",
+    "after_sha256": "4c3126b781107c883191c793942d67a6f8b7372f053ddb8c45dd6d0df819fef2"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "faaf669005f2bd5ac76fb6cddb04e0b9c34e62ed20e35a68b5fe2d00bbcacdaa",
+    "after_sha256": "232990ce7421160e218c79fc210ba6404f3f977e5913d387b40d98ae475a2aa4"
+  }
+]

@@ -58,6 +58,8 @@ The current balance sets Martial Prowess to 8% melee damage/5% attack speed/10% 
 
 ## Rebuild
 
+The current pack also includes the [first-tier magic resource rework](../magic-first-tier/README.md). Reapply that transformation after rebuilding Skill Tree here, so its spell/node changes are retained.
+
 Use Python and Java 25+ (tested with Java 26.0.2, `--release 25`). Preserve the three original archives under `tmp/skill-overhaul/original-<filename>`; scripts verify their SHA-256 hashes. They can be recovered from repository commit `d4a4ce5fba8ea4ebb68c8bc95ca7498be32bd40e` using Python's `subprocess.check_output(['git', 'show', '<commit>:mods/<filename>'])` and `Path.write_bytes`, avoiding binary redirection through Windows PowerShell.
 
 `build.py` uses the cached isolated NeoForge 26.2.0.90 server libraries under `tmp/nameless-balance/server` and installed pack dependencies. For another workspace, prepare that server cache or adjust its classpath paths. The patched Minecraft server JAR must precede dependencies; do not include installer tool fat JARs, which shadow Gson classes. Set `SKILL_PATCH_JAVA` to another JDK's `bin` directory if needed.

@@ -1,0 +1,86 @@
+package local.audit;
+
+import java.nio.file.*;
+import java.util.*;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartedEvent;
+import net.neoforged.neoforge.common.util.FakePlayerFactory;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.spell_engine.api.spell.registry.SpellRegistry;
+import net.spell_engine.api.spell.Spell;
+import net.spell_engine.internals.SpellParameters;
+import net.spell_engine.internals.SpellExecution;
+import net.spell_engine.internals.impact.SpellImpacts;
+import net.spell_power.api.SpellPower;
+
+@Mod("overhaul_probe")
+public class MagicReworkProbe {
+    int checks;
+    final List<String> results = new ArrayList<>();
+
+    void check(String label, double actual, double expected) {
+        if (Math.abs(actual - expected) > .003) throw new AssertionError(label + ": " + actual + " != " + expected);
+        checks++;
+        results.add(label + ": " + actual);
+    }
+
+    public MagicReworkProbe() { NeoForge.EVENT_BUS.addListener(this::start); }
+
+    void start(ServerStartedEvent event) {
+        var server = event.getServer();
+        server.execute(() -> {
+            try {
+                var level = server.overworld();
+                var player = FakePlayerFactory.get(level, new com.mojang.authlib.GameProfile(UUID.fromString("36baa39f-f31a-41ae-bf89-682889d12589"), "MagicRework"));
+                player.setPos(0, 80, 0);
+                String[] ids = {"arcane_missile", "arcane_explosion", "fire_breath", "fire_slash", "frost_nova", "frost_spikes"};
+                double[] damage = {40 * 3.2 / 12, 112, 11.2, 60, 80, 96};
+                double[] cooldown = {10, 10, 4, 3, 10, 8};
+                for (int power : List.of(10, 40, 80)) {
+                    for (int i = 0; i < ids.length; i++) {
+                        var holder = SpellRegistry.from(level).get(Identifier.parse("wizards:" + ids[i])).orElseThrow();
+                        var spell = holder.value();
+                        player.removeAllEffects();
+                        player.getAttribute(spell.school.attributeEntry).setBaseValue(power);
+                        var victim = EntityTypes.PIG.create(level, EntitySpawnReason.COMMAND);
+                        victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(1000);
+                        victim.setHealth(1000);
+                        victim.setPos(1, 80, 0);
+                        float multiplier = SpellParameters.channelValueMultiplier(spell);
+                        if (multiplier == 0) multiplier = 1;
+                        var context = new SpellExecution.ImpactContext().power(new SpellPower.Result(spell.school, power, 0, 1.5)).channeled(multiplier);
+                        SpellImpacts.performImpacts(level, player, victim, victim, holder,
+                            spell.impacts.stream().filter(x -> x.action.type == Spell.Impact.Action.Type.DAMAGE).toList(), context);
+                        check(ids[i] + " damage at " + power, 1000 - victim.getHealth(), damage[i] * power / 40.0);
+                        check(ids[i] + " cooldown at " + power, SpellParameters.getCooldownDuration(player, holder), cooldown[i]);
+                        if (ids[i].startsWith("frost")) {
+                            SpellImpacts.performImpacts(level, player, victim, victim, holder,
+                                spell.impacts.stream().filter(x -> x.action.type == Spell.Impact.Action.Type.STATUS_EFFECT).toList(), context);
+                            var frozen = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen")).orElseThrow();
+                            if (!victim.hasEffect(frozen)) throw new AssertionError("Freeze rejected 1,000 HP target");
+                            checks++;
+                            check(ids[i] + " frozen duration at " + power, victim.getEffect(frozen).getDuration(), 40);
+                        }
+                        victim.discard();
+                    }
+                }
+                // Loading these entries also proves the new placement data parsed successfully.
+                for (String id : List.of("frost_tier_2_spell_2_modifier_1", "frost_tier_2_spell_2_modifier_2", "fire_tier_2_spell_1_modifier_1")) {
+                    SpellRegistry.from(level).get(Identifier.parse("skill_tree_rpgs:" + id)).orElseThrow();
+                    checks++;
+                }
+                Files.write(Path.of("magic-rework-results.txt"), results);
+                Files.writeString(Path.of("magic-rework-result.txt"), "PASS " + checks + " checks: loaded registry, actual controlled impacts, cooldowns and 1,000 HP target freezing. Not a live cast or multiplayer playtest.");
+            } catch (Throwable failure) {
+                failure.printStackTrace();
+                try { Files.writeString(Path.of("magic-rework-result.txt"), "FAIL " + failure); } catch (Exception ignored) {}
+            } finally {
+                server.halt(false);
+            }
+        });
+    }
+}

@@ -613,7 +613,7 @@ A race changes the traits you carry through the whole playthrough. It does not l
 - **Core mechanic:** Four RPG Series modules supply Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through class books, weapons, and spells.
 - **Player guidance:** Equip a class book and a compatible weapon to form a loadout.
 
-Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main playstyles. Changing their equipment changes the active role without replacing the character.
+Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply the six main playstyles. Changing their equipment changes the active role without replacing the character. First-tier Wizard spells have revised damage and cooldowns: Fire Breath has no distance falloff, Flame Slash casts quickly, and Frost Nova/Spikes freeze for two seconds without a health threshold. Improved Frost Nova adds one second.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/archers">Official mod page</a></p>
 

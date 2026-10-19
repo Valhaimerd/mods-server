@@ -1,7 +1,7 @@
 import java.nio.file.*;
 import org.objectweb.asm.*;
 
-/** Alex's Caves Continued 1.0.11: preview levels have no chunk source. */
+/** Alex's Caves Continued 1.0.11 / 1.1.2: preview levels have no chunk source. */
 public final class ACFluidsPreviewGuard {
     public static void main(String[] args) throws Exception {
         var reader = new ClassReader(Files.readAllBytes(Path.of(args[0])));

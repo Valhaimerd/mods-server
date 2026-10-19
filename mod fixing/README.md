@@ -32,7 +32,7 @@ The same-name `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar` now applie
 
 ## Emotecraft wheel and list previews
 
-Alex's Caves Continued 1.0.11 caused the blank Emotecraft previews: its fluid helper dereferenced the preview mannequin's dummy level's null chunk source. The same-filename repair in `mods/alexscaves-1.0.11-neoforge+26.2.jar` returns zero/false for levels without chunks in the height and eye checks, retaining the original real-world paths. All eight wheel models and the left list preview were observed working in an isolated NeoForge 26.2.0.90 client with Vectors at Maximum Performance, with no preview exceptions. The original and final JARs are retained in the ignored retired/fixed folders. See [the source patch, rebuild instructions and verification limits](../docs/patches/README.md).
+Alex's Caves Continued 1.0.11 caused the blank Emotecraft previews: its fluid helper dereferenced the preview mannequin's dummy level's null chunk source. The repair carried forward to `mods/alexscaves-1.1.2-neoforge+26.2.jar` on 2026-10-20 returns zero/false for levels without chunks in the height and eye checks, retaining the original real-world paths. On the original repaired 1.0.11, all eight wheel models and the left list preview were observed working in an isolated NeoForge 26.2.0.90 client with Vectors at Maximum Performance, with no preview exceptions. The 1.1.2 upstream still lacked the guard; the new repack passes ten focused JVM fixture checks, with only ACFluids changed. The obsolete 1.0.11 and upstream 1.1.2 are retained in ignored retired packs; the new final JAR is also in fixed packs. No new client visual test was performed. See [the source patch, rebuild instructions and verification limits](../docs/patches/README.md).
 
 ## Gateway of Doom targeting
 
@@ -111,3 +111,7 @@ The add-on registers `adventurer_skills:adventurer_skills` with the RPG Series O
 ## Withered Lands Slime Rain removal
 
 `Withered-Lands-26.2-1.6.9-no-slime-rain.jar` replaces the original in the pack, client, and server `mods/` folders. Its only changed archive entry is `SlimeRainEvent.class`: natural and command starts are blocked, and a previously saved active event ends on its next tick. Other Withered Lands content remains in the JAR. The original is in `retired packs`; the finished repack is in `1 fixed packs`. The installed client and server `withered_lands.toml` files also set `"Slime Rain event enable" = false`. Rebuild instructions are in `source/withered-lands-no-slime-rain/README.md`.
+
+## Building replacement - 2026-10-20
+
+Effortless Building 4.3 is retired from the active pack, replaced by the supplied Sophisticated Building 5.1.0 (`sophisticatedbuilding`). Its metadata targets Minecraft 26.2 / NeoForge 26.2.0.88+, and the installed Backpacks 3.26.2 / Core 1.5.0 meet its optional integration requirements. No other installed mod declares an Effortless Building dependency. The old JAR is retained in retired packs. The installer source profile now binds the new radial-menu key to Alt, and leaves the other six actions unbound. Existing old-mod items/settings are not claimed to migrate automatically across the changed namespace.

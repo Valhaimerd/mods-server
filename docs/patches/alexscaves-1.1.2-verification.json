@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-20",
+  "alexscaves": {
+    "version": "1.1.2",
+    "upstream_sha256": "5a9ca503775705e574c42d1c7d8f4b65f96b8bc6b862676202245d8efba07d3c",
+    "patched_sha256": "70976ac92ec6abdc9e778b8f23ef2e73a3a67e8b869a81ea9d69144fd6fa3a2a",
+    "changed_entries": [
+      "com/github/alexmodguy/alexscaves/server/misc/ACFluids.class"
+    ],
+    "archive_crc": "passed",
+    "fixture_jvm_checks": 10,
+    "unpatched_fixture": "failed with NullPointerException",
+    "patched_fixture": "passed with -Xverify:all",
+    "dependency": "CodxLib 1.6.0 satisfies 1.3.6+",
+    "previous_1.0.11": "retired from active and fixed folders"
+  },
+  "building": {
+    "installed": "sophisticatedbuilding-neoforge-26.2-5.1.0.jar",
+    "sha256": "c0dfc2931bc066800832b6a767621285cda45e679ea221381e4b857946fae847",
+    "retired": "effortlessbuilding-neoforge-26.2-4.3.jar",
+    "other_installed_metadata_requires_retired_mod": false,
+    "optional_integration_versions": "Backpacks 3.26.2, Core 1.5.0; both meet declared minimums",
+    "source_profile": "seven verified key IDs; Alt radial, six unbound; no installer release built"
+  },
+  "docs": {
+    "main_pack_jars": 310,
+    "client_store_jars": 24,
+    "gameplay_entries": 183,
+    "internal_links": "passed",
+    "icon_sources_and_rendering": "passed",
+    "handbook_pages": 74,
+    "visual_review": "all-page overview and detailed pages 52/70",
+    "handbook_sha256": "cb0e0d1d80797a3a94a70e7072eec4b6efdfea3744b67ac8b0101d4fa28313a5",
+    "root_output_copies": "identical"
+  },
+  "limits": [
+    "No new in-game Caves preview test",
+    "No building gameplay test",
+    "No personal game/server changes",
+    "No commit or push"
+  ]
+}

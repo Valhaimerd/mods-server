@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-20",
+  "status": "implemented_locally_not_committed_or_pushed",
+  "upstream_sha256": "20b63910decdb07caabf90dc0c0620aa6fdd93982b1a44ec84f140a39b481dc7",
+  "installed_sha256": "569a2fecd4ba65e9b37bae575baf9e4428c5a1c2fa5a5e5111eaab5ae055fc32",
+  "active_jar": "mods/world-bosses-neoforge-26.2-2.0.0.jar",
+  "candidate_server_active_fixed_hashes_match": true,
+  "removed_recipes": 25,
+  "removed_advancements": 1,
+  "changed_original_classes": 28,
+  "runtime": {
+    "minecraft": "26.2",
+    "neoforge": "26.2.0.90",
+    "java": "26.0.2.1",
+    "bytecode_target": 25,
+    "world_bosses": "2.0.0",
+    "geckolib": "5.5.6",
+    "spell_engine": "1.10.5+26.2",
+    "spell_power": "1.6.1+26.2",
+    "player_animation_library": "1.2.8",
+    "bendable_cuboids": "2.0.4",
+    "cloth_config": "26.2.155"
+  },
+  "checks": {
+    "pure_math": "passed",
+    "isolated_server": "PASS 248 checks",
+    "source_owned_damage_and_unrelated_magic_regressions": "passed",
+    "gear_conversion_and_creative_tabs": "passed",
+    "terrain_warnings_and_safe_movement": "passed",
+    "reward_tiers_advancements_and_ledger_reload": "passed",
+    "mod_icon_sources": "passed: 173 icons",
+    "mod_icon_rendering": "passed",
+    "handbook_copies_match": true,
+    "removed_mods_and_bandage_docs": "passed",
+    "git_diff_check": "passed"
+  },
+  "handbook": {
+    "pages": 74,
+    "visually_reviewed_changed_pages": [
+      36,
+      37
+    ],
+    "sha256": "72e26c616ffa4a58f79914e70f481bc1996f6a98bc3df7227eb6e4bb17f5e516"
+  },
+  "limitations": [
+    "No full-pack human raid or measured fight-duration test",
+    "No client visual/animation playtest",
+    "No personal server or world modified"
+  ],
+  "git": {
+    "committed": false,
+    "pushed": false
+  }
+}

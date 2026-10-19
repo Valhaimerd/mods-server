@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 310 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-18<br>
+Last audited: 2026-10-20<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 310 synchronized JARs plus 23 client-store JARs
+Current distribution: 310 synchronized JARs plus 24 client-store JARs
 
 ## About this handbook
 
@@ -57,28 +57,28 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>33</td></tr>
     <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>33</td></tr>
     <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>43</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>47</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>47</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>47</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>55</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>63</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>65</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>65</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>44</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>48</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>50</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>56</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>64</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>66</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>66</td></tr>
   </tbody>
 </table>
 
@@ -1395,7 +1395,7 @@ The map records explored ground and leaves new areas blank. Pan and zoom to comp
 
 A Codex explains a cave biome's resources and hazards; an extra Codex with paper can lead to a matching Cave Map. Prepare for that cave's particular risks.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/alexs-caves">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://modrinth.com/mod/alexs-caves-continued">Official mod page</a></p>
 
 </div>
 
@@ -1693,27 +1693,44 @@ Register an owned pet, then left-click its slice to store or summon it. Right-cl
 
 #### World Bosses
 
-- **Type:** Boss encounter
-- **Core mechanic:** Adds shrine-based encounters summoned through rituals, with multiplayer scaling, changing attack patterns, and shared reward caches.
-- **Player guidance:** Prepare the shrine area and a group recovery route before a ritual.
+- **Type:** Late-game raid encounters
+- **Core mechanic:** Eleven ritual and realm bosses with changing attack patterns, party scaling and personal reward caches. This pack replaces their equipment progression with materials and supplies.
+- **Player guidance:** Bring a prepared group, RPG equipment, healing and recovery supplies. Use the Boss Codex and realm progression items to find and unlock encounters.
 
-Encounters can scale with the party and change attack patterns. Check the shared reward cache before leaving the arena.
+These are intended for late-game groups, with **4–6 equipped players recommended**. Regional bosses lead toward Astrael and the realm encounters, including Shadow King, Dragon Mother, Storm Griffin and Shadow Weaver. Recover and reposition between attacks; a player's best damage window is not their sustained damage for the entire fight.
+
+| Boss | Base HP | Base armor | Base healing per second |
+| --- | --- | --- | --- |
+| Sylvaron | 7,000 | 16 | 10 HP |
+| Aureon | 8,000 | 14 | 10 HP |
+| Nekhraz | 9,000 | 18 | 11 HP |
+| Varkhul | 10,000 | 20 | 12 HP |
+| Morvath | 11,000 | 16 | 13 HP |
+| Elyndra | 12,000 | 18 | 14 HP |
+| Shadow King | 14,000 | 20 | 16 HP |
+| Dragon Mother | 15,000 | 20 | 17 HP |
+| Storm Griffin | 14,500 | 18 | 16 HP |
+| Astrael | 18,000 | 22 | 19 HP |
+| Shadow Weaver | 20,000 | 22 | 20 HP |
+
+Each additional active participant adds **15% of base health**, **10% of base healing** and **10% of base armor**, up to eight participants. These bonuses add together rather than multiply repeatedly. Four participants mean **1.45× health** and **1.30× healing/armor**. Armor remains capped at 30 points. Party size does not increase outgoing boss damage or attack rate, and leaving does not reduce a fight's reached scaling.
+
+Combat regeneration begins after ten seconds and pauses during scripted invulnerability. Major attacks have warning time; overlapping boss damage is limited, but staying in hazards or fighting while already injured remains dangerous. Bosses can pressure ranged attackers and challenge pillars, walls and narrow hiding places. Prolonged unreachable positioning triggers warned eruptions and, if it continues, a separately warned move to a checked open arena position. These responses do not destroy buildings. A wipe or abandoned fight resets the encounter.
+
+**Rewards are personal and participation-based**, including recorded damage, tanking or healing an engaged ally. Standing nearby alone does not qualify. Contributors who die before the clear receive their pending rewards after returning alive. Use the cache to receive its full guaranteed supply package; the pack replaces the upstream random gear reel.
+
+| Encounter tier | Regular golden apples | Netherite ingots | Totems | Diamonds | Experience bottles |
+| --- | --- | --- | --- | --- | --- |
+| Sylvaron / Aureon / Nekhraz | 4 | 1 | 1 | 8 | 32 |
+| Varkhul / Morvath / Elyndra | 6 | 2 | 1 | 12 | 48 |
+| Shadow King / Dragon Mother / Storm Griffin | 8 | 3 | 1 | 16 | 64 |
+| Astrael / Shadow Weaver | 10 | 4 | 2 | 24 | 96 |
+
+Required progression drops remain available, with existing trophies and tiered vanilla XP. Each player's first clear of Astrael and first clear of Shadow Weaver also grants one Nether Star. **Enchanted golden apples and World Bosses combat gear are excluded from raid rewards.** Shrines and altars recover for 30 minutes.
+
+**Worldbreaker and Shadowbreaker weapons, tools, armor and shields are retired**, along with their gear upgrades. Existing copies convert into the matching vanilla netherite item or vanilla shield when loaded, retaining supported enchantments and names while losing the retired gear's special modifiers. Continue using the pack's RPG equipment progression. Codices, ritual items, portal materials and noncombat collectibles remain.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/world-bosses">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
-#### Bosslike Ender Dragon
-
-- **Type:** Boss encounter
-- **Core mechanic:** Reworks the dragon into a multi-phase fight that scales with the number of players and becomes stronger after previous victories.
-- **Player guidance:** Watch the current phase and pillar cues.
-
-The dragon can grow stronger after previous victories and with more players. Follow the live telegraphs rather than a vanilla fight script.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/bosslike-ender-dragon">Official mod page</a></p>
 
 </div>
 
@@ -1732,7 +1749,7 @@ The new wave AI periodically shares pressure among nearby players and can switch
 </div>
 
 </div>
-<p class="core-category-description">Major fights range from shrines and dragon phases to timed waves. Scout the arena, set a retreat and respawn route, and carry recovery supplies before triggering a ritual or summoning item. Follow the live boss bar and arena cues when multiple mods affect the same encounter.</p>
+<p class="core-category-description">Major fights range from shrine rituals to timed waves. Scout the arena, set a retreat and respawn route, and carry recovery supplies before triggering a ritual or summoning item. Follow the live boss bar and arena cues when multiple mods affect the same encounter.</p>
 </section>
 
 <section class="core-category">
@@ -2417,7 +2434,7 @@ Their party-style effect changes a familiar threat. Give them room until the loc
 
 Survival turns collected resources into repeatable systems. Gathering provides materials, farms and kitchens turn them into supplies, storage keeps the result accessible, and building or logistics makes the base easier to use. Start with a reliable food and storage loop, then add specialized workstations, transport, and faster construction when the need appears. The right tool depends on whether the job is portable, local to a base, or shared with other players.
 
-Recipes and workstations matter more here than memorizing long item lists. Use JEI to inspect the desired output and its actual station, then test a small batch before building an entire production line. Controls that affect bulk actions are noted where they help: OneKeyMiner uses `C`, Effortless Building opens its radial menu with Alt, and an equipped backpack opens with V.
+Recipes and workstations matter more here than memorizing long item lists. Use JEI to inspect the desired output and its actual station, then test a small batch before building an entire production line. Controls that affect bulk actions are noted where they help: OneKeyMiner uses `C`, Effortless Building: Sophisticated opens its radial menu with Alt, and an equipped backpack opens with V.
 
 <section class="core-category">
 <h3>Resource gathering and repetitive actions</h3>
@@ -2673,15 +2690,15 @@ The added shapes make a coherent palette easier to build. Check stonecutter or c
 
 <div class="core-mod-entry">
 
-#### Effortless Building
+#### Effortless Building: Sophisticated
 
 - **Type:** Building
-- **Core mechanic:** Adds tools for placing and editing large shapes and repeated structures quickly.
+- **Core mechanic:** Replaces Effortless Building with shape placement, mirrors, arrays, survival material tracking and backpack building upgrades.
 - **Player guidance:** Hold Alt for the radial menu and inspect the shape preview.
 
-Survival placement spends matching blocks, while server rules can limit range and size. Be careful near storage, redstone, and irreplaceable blocks.
+Hold a block, choose a shape, mark its points and inspect the live material preview before placing. Survival builds spend matching blocks. Reach Upgrades raise building limits; Building Upgrades let the installed Sophisticated Backpacks supply materials. Choose Disable in the radial menu to return to ordinary placement and mining. Server rules still control reach, size and replacement near storage or redstone.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/effortless-building">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/effortlessbuilding-sophisticated">Official mod page</a></p>
 
 </div>
 
@@ -2742,7 +2759,7 @@ Defensive blocks can affect traffic as well as enemies. Leave a clear route for 
 </div>
 
 </div>
-<p class="core-category-description">This category ranges from small block families and furniture to large shape placement. Prototype a section before using Effortless Building at scale; hold Alt for its radial menu and inspect the preview before confirming a placement near storage or redstone.</p>
+<p class="core-category-description">This category ranges from small block families and furniture to large shape placement. Prototype a section before using Effortless Building: Sophisticated at scale; hold Alt for its radial menu and inspect the preview before confirming a placement near storage or redstone.</p>
 </section>
 
 <section class="core-category">
@@ -3211,7 +3228,7 @@ Action-based visibility can show the model during movement and gliding. Scale it
 
 - **Type:** Social animation
 - **Core mechanic:** Plays character emotes and organizes favorites in a quick-select wheel.
-- **Player guidance:** Client installs include 328 emotes from twelve SPEmotes packs automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
+- **Player guidance:** Client installs include 352 emotes from thirteen bundled packs automatically, each in its own folder. Bundled translations provide English names and descriptions when the game language is English. Press `G`, open All Emotes, and assign favorites to wheel slots. Add personal custom files to the instance's `emotes` folder, outside the installer's `Mods Server Pack` subfolder; pack repairs can replace files within that subfolder. Existing wheel assignments are preserved.
 
 Includes the client-only Borrow Their Emote add-on: assign Borrow Emote in Controls, then use that combination while looking at an emoting player and stop crouching to join. Borrow Emote is currently unbound; Reverse Sound uses `Left Ctrl`. Other players need compatible emote support to see the animation; the main mod is also installed on the server for sharing.
 
@@ -3338,6 +3355,20 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 <section class="core-category">
 <h3>Optional client features</h3>
 <div class="core-category-entries">
+
+<div class="core-mod-entry">
+
+#### Advancements Reloaded
+
+- **Type:** Optional client interface
+- **Core mechanic:** Expands the advancements screen with stable tab ordering and searches across advancements and their criteria.
+- **Player guidance:** Press `B` to open Advancements, then search for an objective or inspect its missing criteria.
+
+This replaces the client screen without adding new advancement objectives. Use it to find progression requirements from the installed content mods; its settings control layout, colors and ordering.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/advancements-reloaded">Official mod page</a></p>
+
+</div>
 
 <div class="core-mod-entry">
 
@@ -3610,14 +3641,17 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Zoom In (alternative) |  |
 | Zoom Out (alternative) |  |
 
-#### Effortless Building
+#### Effortless Building: Sophisticated
 
 | Action | Recommended key |
 |---|---|
-| Open Modifier Settings |  |
-| Open Radial Menu | `Alt` |
+| Modifier Menu |  |
+| Radial Menu | `Alt` |
 | Redo |  |
 | Undo |  |
+| Activate Previous Build Mode |  |
+| Toggle Disabled <> Previous Build Mode |  |
+| Open Player Settings |  |
 
 #### Spell Engine
 
@@ -3874,6 +3908,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Abyssal Ocean](#abyssal-ocean)
 - [Advanced Loot Info](#advanced-loot-info)
 - [Advanced Worldgen Info](#advanced-worldgen-info)
+- [Advancements Reloaded](#advancements-reloaded)
 - [Adventurer Skills](#adventurer-skills)
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
@@ -3909,7 +3944,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Bifrost Teleport](#bifrost-teleport)
 - [Biomes O' Plenty](#biomes-o-plenty)
 - [Blood Moon](#blood-moon)
-- [Bosslike Ender Dragon](#bosslike-ender-dragon)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
 - [Chrono Dawn](#feature-chrono-dawn)
 - [Clear End City](#clear-end-city)
@@ -3931,7 +3965,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Easy Anvils](#easy-anvils)
 - [Easy Shulker Boxes](#easy-shulker-boxes)
 - [Effect Insights](#effect-insights)
-- [Effortless Building](#effortless-building-1)
+- [Effortless Building: Sophisticated](#effortless-building-sophisticated-1)
 - [Elytra Trims](#elytra-trims)
 - [Emotecraft](#emotecraft)
 - [Enchantment Insights](#enchantment-insights)
@@ -4125,7 +4159,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 - [Astral Dimension](#feature-astral-dimension)
 - [Chrono Dawn](#feature-chrono-dawn)
-- [Bosslike Ender Dragon](#bosslike-ender-dragon)
 - [Gateway of Doom](#gateway-of-doom)
 - [World Bosses](#world-bosses)
 
@@ -4233,7 +4266,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Armor Statues](#armor-statues)
 - [Barricades](#barricades)
 - [Display Delight](#display-delight)
-- [Effortless Building](#effortless-building-1)
+- [Effortless Building: Sophisticated](#effortless-building-sophisticated-1)
 - [Functional Sculptures](#functional-sculptures)
 - [Macaw's building collection](#macaws-building-collection)
 - [Pro Placer](#pro-placer-1)
@@ -4291,6 +4324,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 #### HUD
 
+- [Advancements Reloaded](#advancements-reloaded)
 - [AppleSkin](#appleskin)
 - [Controlling](#controlling)
 - [Coordinates Display](#coordinates-display-1)

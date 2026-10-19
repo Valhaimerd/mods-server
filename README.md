@@ -28,7 +28,7 @@ The local PVP Flagging replacement only retains 50% of attributed player-to-play
 
 World Bosses 2.0.0 has a same-filename late-game raid update: 7,000–20,000 base HP, 10–20 base HP/s regeneration, and additive +15% HP / +10% regeneration / +10% armor per extra active participant (maximum eight; armor capped at 30). Its twenty Worldbreaker/Shadowbreaker combat items and gear upgrades are retired; existing gear converts to corresponding vanilla equipment. Personal participation-based caches give materials and regular golden apples, with no enchanted golden apples or World Bosses combat gear. See [the raid changes and verification](docs/patches/worldbosses-rpg/README.md).
 
-Alex's Caves Continued is updated to 1.1.2 with the existing Emotecraft preview guard carried forward; the old 1.0.11 is retired. Effortless Building 4.3 is replaced by Effortless Building: Sophisticated 5.1.0, with its radial menu assigned to Alt in the installer source profile. See [the Caves patch and update checks](docs/patches/README.md).
+Alex's Caves Continued is updated to 1.1.2 with the existing Emotecraft preview guard carried forward; the old 1.0.11 is retired. Effortless Building 4.3 is replaced by Effortless Building: Sophisticated 5.1.0, with its radial menu assigned to Alt and its other six controls unbound. The recommended keybind profile was checked against the owner's Minecraft options on 20 October 2026; it contains the Sophisticated Building bindings and no retired Effortless Building bindings. See [the Caves patch and update checks](docs/patches/README.md).
 
 Advancements Reloaded 0.14.0 is a client-only addition in `mod store`, expanding the advancements screen with search and stable ordering. Open it with the existing B binding.
 

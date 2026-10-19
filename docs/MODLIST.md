@@ -2694,7 +2694,7 @@ The added shapes make a coherent palette easier to build. Check stonecutter or c
 
 - **Type:** Building
 - **Core mechanic:** Replaces Effortless Building with shape placement, mirrors, arrays, survival material tracking and backpack building upgrades.
-- **Player guidance:** Hold Alt for the radial menu and inspect the shape preview.
+- **Player guidance:** Hold Alt for the radial menu and inspect the shape preview. The other six building controls are unbound in the recommended profile.
 
 Hold a block, choose a shape, mark its points and inspect the live material preview before placing. Survival builds spend matching blocks. Reach Upgrades raise building limits; Building Upgrades let the installed Sophisticated Backpacks supply materials. Choose Disable in the radial menu to return to ordinary placement and mining. Server rules still control reach, size and replacement near storage or redstone.
 

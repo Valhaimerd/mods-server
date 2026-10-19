@@ -8,7 +8,7 @@ Damage percentages multiply the matching school's effective damage value. Critic
 
 | Spell | Damage | Cast / channel | Base cooldown | Reach |
 | --- | --- | --- | --- | --- |
-| Arcane Missiles | 26.67% per base missile, 320% over 12 | 4 s channel | 10 s, proportional | 64 blocks, existing homing |
+| Arcane Missiles | 26.67% per base missile, 320% over 12 | 4 s channel | 4 s, proportional | 64 blocks, existing homing |
 | Arcane Explosion | 280% per target | 1.5 s | 10 s | Radius 7; improved radius 9 |
 | Fire Breath | 28% per delivery, 700% over 25 | 5 s channel | 4 s, proportional | 8 blocks; no distance falloff |
 | Flame Slash | 150% per impact | 0.1 s standard cast | 3 s | 16 blocks; velocity 0.9 |
@@ -46,7 +46,7 @@ Apply this resource transformation **after** any rebuild of the broader skill-ov
 
 ## Observed verification
 
-- The prior archives fail the new cooldown assertion (2 seconds versus requested 10).
+- The prior archives fail the new cooldown assertion (2 seconds versus requested 4).
 - **44 structural checks pass**: normalized channel output, spell timings, proc settings, freeze limit removal, exact spike placements and changed-entry allowlists. All untouched archive entries are byte-identical, including classes, allocation/category files, later tiers and Wave after Wave. All JSON parses and archive CRCs pass.
 - **51 isolated dedicated-server checks pass** on Java 26.0.2: loaded spell registry; actual impact damage at school damage values 10, 40 and 80; cooldown calculations; and both Frost effects applying for 40 ticks to a **1,000-HP target**, above all old tested health thresholds. Vanilla's attribute cap prevents a plain pig test fixture from actually reaching 20,000 HP, so the probe uses 1,000 HP explicitly.
 - At effective school damage 40, observed unmodified impacts are: Missiles **10.667 per missile** (128 over 12), Explosion **112**, Breath **11.2 per delivery** (280 over 25), Slash **60**, Nova **80**, and Spikes **96 per eligible impact**. These are controlled unarmored, noncritical samples, not damage guarantees.

@@ -30,7 +30,7 @@ def transform(files, namespace):
         return p
 
     if namespace == 'wizards':
-        edit('arcane_missile', lambda d: d['cost']['cooldown'].update(duration=10.0))
+        edit('arcane_missile', lambda d: d['cost']['cooldown'].update(duration=4.0, proportional=True))
         def explosion(d):
             damage(d, 2.8)
             d['range'] = 7.0

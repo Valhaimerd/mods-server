@@ -39,7 +39,7 @@ public class MagicReworkProbe {
                 player.setPos(0, 80, 0);
                 String[] ids = {"arcane_missile", "arcane_explosion", "fire_breath", "fire_slash", "frost_nova", "frost_spikes"};
                 double[] damage = {40 * 3.2 / 12, 112, 11.2, 60, 80, 96};
-                double[] cooldown = {10, 10, 4, 3, 10, 8};
+                double[] cooldown = {4, 10, 4, 3, 10, 8};
                 for (int power : List.of(10, 40, 80)) {
                     for (int i = 0; i < ids.length; i++) {
                         var holder = SpellRegistry.from(level).get(Identifier.parse("wizards:" + ids[i])).orElseThrow();

@@ -26,7 +26,7 @@ def dmg(d):
 
 
 missile = load('wizards', 'arcane_missile')
-check(missile['cost']['cooldown']['duration'], 10, 'Missiles cooldown')
+check(missile['cost']['cooldown']['duration'], 4, 'Missiles cooldown')
 check(missile['cost']['cooldown']['proportional'], True, 'Missiles proportional')
 check(missile['active']['cast']['duration'] * dmg(missile), 3.2, 'Missiles total channel coefficient')
 explosion = load('wizards', 'arcane_explosion')

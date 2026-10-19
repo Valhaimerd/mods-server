@@ -6,7 +6,7 @@ The current pack requires Minecraft 26.2, NeoForge **26.2.0.90 or newer**, and J
 
 See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics, controls, exploration, building, and quality-of-life features in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from its gameplay catalog.
 
-Wizards' first active spell tier has a [local damage, cooldown and node rework](docs/patches/magic-first-tier/README.md), including stronger Fire/Frost alternatives, a 10-second Arcane Missiles cooldown and expanded Frost spike rows. Both affected JARs retain their active filenames.
+Wizards' first active spell tier has a [local damage, cooldown and node rework](docs/patches/magic-first-tier/README.md), including stronger Fire/Frost alternatives, a 4-second proportional Arcane Missiles cooldown and expanded Frost spike rows. Both affected JARs retain their active filenames.
 
 ## Installer
 

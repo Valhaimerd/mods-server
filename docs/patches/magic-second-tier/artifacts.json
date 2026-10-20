@@ -1,0 +1,44 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "ca51635fe838737b9eeef446ebdc74a5f45f3053dc44182065b910eeb7cf21cc",
+    "after_sha256": "bf580bbcacf6bdc6f19f83509756d177501034356c357bf57a22870a081d6dc1",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_2.json"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "e00b54ab1914a8c01eb3bf0084cae48a65cf05b35bf3904da44f59c56548877d",
+    "after_sha256": "84d343a8f1c62fa616ba3a472f4c675e46e7fd25089be4139ea421d709c3cdcd",
+    "changed_entries": [
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class"
+    ],
+    "added_entries": [
+      "net/spell_engine/internals/SecondTierRules.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "843e33b063819e0860509081fe55a79861b0d8e1b3657ab2ab2fbdbdd11abf20",
+    "after_sha256": "be395ef043f27ee1217856fbca9bd9cf4c11881cc0370f9ec118d42bfdefae75",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_barrage.json",
+      "data/wizards/spell/arcane_beam.json",
+      "data/wizards/spell/fire_meteor.json",
+      "data/wizards/spell/fire_storm.json",
+      "data/wizards/spell/frost_lance.json",
+      "data/wizards/spell/frost_shield.json"
+    ],
+    "added_entries": []
+  }
+]

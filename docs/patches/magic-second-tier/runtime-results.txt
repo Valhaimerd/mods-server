@@ -1,0 +1,18 @@
+arcane_beam cooldown progress 0.0: 20.0
+arcane_beam cooldown progress 0.5: 25.000001907348633
+arcane_beam cooldown progress 1.0: 30.0
+fire_storm cooldown progress 0.0: 15.000000953674316
+fire_storm cooldown progress 0.5: 20.0
+fire_storm cooldown progress 1.0: 25.0
+First-tier missile proportional behavior retained: 2.0
+arcane_beam actual damage at 40: 8.0
+fire_meteor actual damage at 40: 60.0
+fire_storm actual damage at 40: 28.0
+frost_lance actual damage at 40: 80.0
+Shield duration: 60.0
+Shield movement: 0.0
+Nimble offsets half shield movement penalty: 0.05000000074505806
+No immediate Lance freeze: 0.0
+No freeze at tick nine: 0.0
+Freeze present after tick ten on 1000 HP target: 1.0
+Delayed frozen full duration: 80.0

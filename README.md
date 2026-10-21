@@ -6,7 +6,7 @@ The current pack requires Minecraft 26.2, NeoForge **26.2.0.90 or newer**, and J
 
 See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics, controls, exploration, building, and quality-of-life features in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from its gameplay catalog.
 
-Wizards' first active spell tier has a [local damage, cooldown and node rework](docs/patches/magic-first-tier/README.md), including stronger Fire/Frost alternatives, a 4-second proportional Arcane Missiles cooldown and expanded Frost spike rows. Both affected JARs retain their active filenames. The [second-tier rework](docs/patches/magic-second-tier/README.md) adds minimum channel cooldowns for Beam/Firestorm and delayed Ice Lance freezing; Wizards, Skill Tree and Spell Engine retain their filenames.
+Wizards' first two active tiers use a [local magic balance rework](docs/patches/magic-revision-four/README.md): Missiles has an 8-16-second channel-based cooldown, Explosion centers on the target, Charged Beam grows during its channel, Shattering Lance separates direct and splash damage, and Frost Shield grants damage immunity followed by a freeze burst. Wizards, Skill Tree and Spell Engine retain their active filenames.
 
 ## Installer
 

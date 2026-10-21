@@ -1,0 +1,114 @@
+arcane_missile cooldown 0.0: 8.0
+arcane_missile cooldown 0.5: 12.0
+arcane_missile cooldown 1.0: 16.0
+arcane_beam cooldown 0.0: 15.0
+arcane_beam cooldown 0.5: 22.5
+arcane_beam cooldown 1.0: 30.0
+fire_storm cooldown 0.0: 15.000000953674316
+fire_storm cooldown 0.5: 20.0
+fire_storm cooldown 1.0: 25.0
+fire_breath cooldown 0.0: 4.0
+fire_breath cooldown 0.5: 6.0
+fire_breath cooldown 1.0: 8.0
+Normal beam cast duration: 5.0
+Charged Beam duration: 10.0
+Charged Beam cast ticks: 200.0
+Charged Beam deliveries: 50.0
+Charged Beam actual delivery 0: 4.0
+Charged Beam actual delivery 1: 4.05999755859375
+Charged Beam actual delivery 2: 4.1199951171875
+Charged Beam actual delivery 3: 4.17999267578125
+Charged Beam actual delivery 4: 4.239990234375
+Charged Beam actual delivery 5: 4.29998779296875
+Charged Beam actual delivery 6: 4.3599853515625
+Charged Beam actual delivery 7: 4.41998291015625
+Charged Beam actual delivery 8: 4.47998046875
+Charged Beam actual delivery 9: 4.53997802734375
+Charged Beam actual delivery 10: 4.5999755859375
+Charged Beam actual delivery 11: 4.65997314453125
+Charged Beam actual delivery 12: 4.719970703125
+Charged Beam actual delivery 13: 4.780029296875
+Charged Beam actual delivery 14: 4.84002685546875
+Charged Beam actual delivery 15: 4.9000244140625
+Charged Beam actual delivery 16: 4.96002197265625
+Charged Beam actual delivery 17: 5.02001953125
+Charged Beam actual delivery 18: 5.08001708984375
+Charged Beam actual delivery 19: 5.1400146484375
+Charged Beam actual delivery 20: 5.20001220703125
+Charged Beam actual delivery 21: 5.260009765625
+Charged Beam actual delivery 22: 5.32000732421875
+Charged Beam actual delivery 23: 5.3800048828125
+Charged Beam actual delivery 24: 5.44000244140625
+Charged Beam actual delivery 25: 5.5
+Charged Beam actual delivery 26: 5.55999755859375
+Charged Beam actual delivery 27: 5.6199951171875
+Charged Beam actual delivery 28: 5.67999267578125
+Charged Beam actual delivery 29: 5.739990234375
+Charged Beam actual delivery 30: 5.79998779296875
+Charged Beam actual delivery 31: 5.8599853515625
+Charged Beam actual delivery 32: 5.91998291015625
+Charged Beam actual delivery 33: 5.97998046875
+Charged Beam actual delivery 34: 6.0
+Charged Beam actual delivery 35: 6.0
+Charged Beam actual delivery 36: 6.0
+Charged Beam actual delivery 37: 6.0
+Charged Beam actual delivery 38: 6.0
+Charged Beam actual delivery 39: 6.0
+Charged Beam actual delivery 40: 6.0
+Charged Beam actual delivery 41: 6.0
+Charged Beam actual delivery 42: 6.0
+Charged Beam actual delivery 43: 6.0
+Charged Beam actual delivery 44: 6.0
+Charged Beam actual delivery 45: 6.0
+Charged Beam actual delivery 46: 6.0
+Charged Beam actual delivery 47: 6.0
+Charged Beam actual delivery 48: 6.0
+Charged Beam actual delivery 49: 6.0
+Charged Beam full base channel at 40: 265.66
+Charged beam initial width: 0.10399999469518661
+Charged beam width at delivery 25: 0.18079999089241028
+Charged beam width cap: 0.23999999463558197
+Exposure max 25 levels: 1.0
+arcane_missile base damage at 40: 11.20001220703125
+arcane_explosion base damage at 40: 112.0
+fire_breath base damage at 40: 6.0
+fire_slash base damage at 40: 52.0
+fire_storm base damage at 40: 16.0
+fire_meteor base damage at 40: 60.0
+frost_nova base damage at 40: 72.0
+frost_spikes base damage at 40: 32.0
+Frost Fan actual damage with required root: 10.0
+Echoing Blast actual damage: 72.0
+Echo source registered: 1.0
+Echo cast attempt: 1.0
+Caster attackable for passive effect: 1.0
+Guaranteed Echo reset: 0.0
+Geometry target indexed: 1.0
+Shattering direct damage: 80.0
+Shattering splash damage at five blocks: 20.0
+Outside Shattering radius: 0.0
+Shattering direct Frozen duration: 79.0
+Shattering splash Frozen duration: 19.0
+Chain not immediate: 0.0
+Guaranteed delayed chain at struck mob: 12.0
+Chain surrounding enemy with retained falloff: 7.489990234375
+Chain does not center on caster: 0.0
+Unshielded fixture takes damage: 999.0
+Shield base duration ticks: 60.0
+Shield immune to minecraft:generic: 1000.0
+Shield immune to minecraft:magic: 1000.0
+Shield immune to minecraft:on_fire: 1000.0
+Shield immune to minecraft:fall: 1000.0
+Shield immune to minecraft:out_of_world: 1000.0
+Shield immune to minecraft:generic_kill: 1000.0
+No burst before shield expiry: 0.0
+Shield naturally expires: 0.0
+Expiry burst freezes nearby enemy: 1.0
+Expiry freeze duration: 40.0
+Expiry burst deals no damage: 1000.0
+Enemy outside five blocks stays unfrozen: 0.0
+Shield immunity ends on expiry: 999.0
+Dispel does not trigger burst: 0.0
+Durable Shield duration ticks: 80.0
+Durable burst waits for extended expiry: 0.0
+Durable Shield also bursts on expiry: 1.0

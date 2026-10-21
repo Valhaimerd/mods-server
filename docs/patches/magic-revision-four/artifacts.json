@@ -1,0 +1,37 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "9f49abdfe36f642ee04224816998df3fd582166669400f01206ff86cb0b55170",
+    "after_sha256": "c6fb61c9b2cf85d6d595916348809019f6a69b5aa0c386ed985d1cabc9e015de",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_barrage.json",
+      "data/wizards/spell/arcane_explosion.json",
+      "data/wizards/spell/arcane_missile.json",
+      "data/wizards/spell/fire_breath.json",
+      "net/wizards/effect/WizardsEffects.class"
+    ],
+    "added_entries": [
+      "data/wizards/spell/frost_shield_burst.json",
+      "net/wizards/effect/ShieldRework.class"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "b7a2a3396fe78bbbb2e235097617501fc740a1c85de69249a1f2d346bb28ba4a",
+    "after_sha256": "ffdcd888891a15f636c76431776b1475d032ebdaabddc7d29fb45084e177ed77",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "d4277538406f93cf651834e1effed75c81a51823b9000be8a5e1d120769375f1",
+    "after_sha256": "4b2d2f16308241911d8e66e3307124d0eb90b6da3c43a59895b23f46bdfe19ad",
+    "changed_entries": [
+      "net/spell_engine/internals/RevisionRules.class"
+    ],
+    "added_entries": []
+  }
+]

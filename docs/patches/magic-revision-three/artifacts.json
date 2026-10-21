@@ -1,0 +1,52 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "bf580bbcacf6bdc6f19f83509756d177501034356c357bf57a22870a081d6dc1",
+    "after_sha256": "b7a2a3396fe78bbbb2e235097617501fc740a1c85de69249a1f2d346bb28ba4a",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_2.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "84d343a8f1c62fa616ba3a472f4c675e46e7fd25089be4139ea421d709c3cdcd",
+    "after_sha256": "d4277538406f93cf651834e1effed75c81a51823b9000be8a5e1d120769375f1",
+    "changed_entries": [
+      "net/spell_engine/internals/SpellParameters.class",
+      "net/spell_engine/internals/casting/SpellCaster$Entity.class",
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class"
+    ],
+    "added_entries": [
+      "net/spell_engine/internals/RevisionRules.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "be395ef043f27ee1217856fbca9bd9cf4c11881cc0370f9ec118d42bfdefae75",
+    "after_sha256": "9f49abdfe36f642ee04224816998df3fd582166669400f01206ff86cb0b55170",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_beam.json",
+      "data/wizards/spell/arcane_explosion.json",
+      "data/wizards/spell/arcane_missile.json",
+      "data/wizards/spell/fire_breath.json",
+      "data/wizards/spell/fire_meteor.json",
+      "data/wizards/spell/fire_storm.json",
+      "data/wizards/spell/frost_nova.json",
+      "data/wizards/spell/frost_spikes.json"
+    ],
+    "added_entries": []
+  }
+]

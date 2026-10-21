@@ -1,0 +1,91 @@
+arcane_missile cooldown 0.0: 8.0
+arcane_missile cooldown 0.5: 12.0
+arcane_missile cooldown 1.0: 16.0
+arcane_beam cooldown 0.0: 15.0
+arcane_beam cooldown 0.5: 22.5
+arcane_beam cooldown 1.0: 30.0
+fire_storm cooldown 0.0: 15.000000953674316
+fire_storm cooldown 0.5: 20.0
+fire_storm cooldown 1.0: 25.0
+Normal beam cast duration: 5.0
+Charged Beam duration: 10.0
+Charged Beam cast ticks: 200.0
+Charged Beam deliveries: 50.0
+Charged Beam actual delivery 0: 4.0
+Charged Beam actual delivery 1: 4.0999755859375
+Charged Beam actual delivery 2: 4.20001220703125
+Charged Beam actual delivery 3: 4.29998779296875
+Charged Beam actual delivery 4: 4.4000244140625
+Charged Beam actual delivery 5: 4.5
+Charged Beam actual delivery 6: 4.5999755859375
+Charged Beam actual delivery 7: 4.70001220703125
+Charged Beam actual delivery 8: 4.79998779296875
+Charged Beam actual delivery 9: 4.9000244140625
+Charged Beam actual delivery 10: 5.0
+Charged Beam actual delivery 11: 5.0999755859375
+Charged Beam actual delivery 12: 5.20001220703125
+Charged Beam actual delivery 13: 5.29998779296875
+Charged Beam actual delivery 14: 5.4000244140625
+Charged Beam actual delivery 15: 5.5
+Charged Beam actual delivery 16: 5.5999755859375
+Charged Beam actual delivery 17: 5.70001220703125
+Charged Beam actual delivery 18: 5.79998779296875
+Charged Beam actual delivery 19: 5.9000244140625
+Charged Beam actual delivery 20: 6.0
+Charged Beam actual delivery 21: 6.0999755859375
+Charged Beam actual delivery 22: 6.20001220703125
+Charged Beam actual delivery 23: 6.29998779296875
+Charged Beam actual delivery 24: 6.4000244140625
+Charged Beam actual delivery 25: 6.5
+Charged Beam actual delivery 26: 6.5999755859375
+Charged Beam actual delivery 27: 6.70001220703125
+Charged Beam actual delivery 28: 6.79998779296875
+Charged Beam actual delivery 29: 6.9000244140625
+Charged Beam actual delivery 30: 7.0
+Charged Beam actual delivery 31: 7.0999755859375
+Charged Beam actual delivery 32: 7.20001220703125
+Charged Beam actual delivery 33: 7.29998779296875
+Charged Beam actual delivery 34: 7.4000244140625
+Charged Beam actual delivery 35: 7.5
+Charged Beam actual delivery 36: 7.5999755859375
+Charged Beam actual delivery 37: 7.70001220703125
+Charged Beam actual delivery 38: 7.79998779296875
+Charged Beam actual delivery 39: 7.9000244140625
+Charged Beam actual delivery 40: 8.0
+Charged Beam actual delivery 41: 8.0
+Charged Beam actual delivery 42: 8.0
+Charged Beam actual delivery 43: 8.0
+Charged Beam actual delivery 44: 8.0
+Charged Beam actual delivery 45: 8.0
+Charged Beam actual delivery 46: 8.0
+Charged Beam actual delivery 47: 8.0
+Charged Beam actual delivery 48: 8.0
+Charged Beam actual delivery 49: 8.0
+Charged Beam full base channel at 40: 318.0
+Charged beam initial width: 0.10399999469518661
+Charged beam width at delivery 25: 0.18079999089241028
+Charged beam width cap: 0.23999999463558197
+Exposure max 25 levels: 1.0
+arcane_missile base damage at 40: 9.5999755859375
+arcane_explosion base damage at 40: 112.0
+fire_breath base damage at 40: 6.0
+fire_slash base damage at 40: 52.0
+fire_storm base damage at 40: 16.0
+fire_meteor base damage at 40: 60.0
+frost_nova base damage at 40: 72.0
+frost_spikes base damage at 40: 32.0
+Frost Fan actual damage with required root: 10.0
+Echoing Blast actual damage: 80.0
+Echo source registered: 1.0
+Echo cast attempt: 1.0
+Caster attackable for passive effect: 1.0
+Guaranteed Echo reset: 0.0
+Shattering direct damage: 80.0
+Shattering splash damage at five blocks: 20.0
+Outside Shattering radius: 0.0
+Shattering direct Frozen duration: 79.0
+Shattering splash Frozen duration: 19.0
+Chain not immediate: 0.0
+Guaranteed delayed chain at struck mob: 12.0
+Chain surrounding enemy with retained falloff: 7.489990234375
+Chain does not center on caster: 0.0

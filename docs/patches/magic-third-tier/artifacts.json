@@ -2,7 +2,7 @@
   {
     "jar": "wizards-neoforge-3.1.2+26.2.jar",
     "before_sha256": "df5a96cbeab19a806cfc45328996ce1c34d4853976109289aced091231e8f78e",
-    "after_sha256": "3bade93c2549cb313d04cdcec28f8569368f37e687136a60b47dd4d67320d4b2",
+    "after_sha256": "ade322e7e2ee4a4df0d50d5f06abd523d9c22a47bf32f7d0e03743f040ad6a0b",
     "changed_entries": [
       "assets/wizards/lang/en_us.json",
       "data/wizards/spell/arcane_blink.json",
@@ -27,7 +27,7 @@
   {
     "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
     "before_sha256": "fc9cfdddc37313968af6741c31017134180e5e02b6a3a7205b8dd5a68aece630",
-    "after_sha256": "11c8a96600e016922df25e75dfd6b81626c71b1e1fac995987cb4728e1f63a8f",
+    "after_sha256": "f753c6d2db821e64d26d7a068caa038d61246bbb814250395f5f167aae58af78",
     "changed_entries": [
       "assets/skill_tree_rpgs/lang/en_us.json",
       "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json",
@@ -67,7 +67,7 @@
   {
     "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
     "before_sha256": "a7de42b240d84658b01fd834aea1ed472a01944ee00bed7fe9df0aca7289021a",
-    "after_sha256": "c649692ca4ddc09d040f40f5ecfd18ffc02d3df82f7c97d9053d968245f0f34e",
+    "after_sha256": "e8c9afa5cae9bd03f4bcd36e11d177e05780db334949dc8e8b4d4164a2a55246",
     "changed_entries": [
       "net/spell_engine/client/casting/ClientCastController.class",
       "net/spell_engine/entity/SpellCloud.class",

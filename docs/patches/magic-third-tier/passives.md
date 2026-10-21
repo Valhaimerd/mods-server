@@ -13,7 +13,7 @@
 
 | Fire pair | Node | Trigger and effect | Base cooldown |
 | --- | --- | --- | --- |
-| 1 | Scorching Flames | Active Fire damage: 50% chance to add Fire Vulnerability for 8 s, +4% damage per stack, up to five stacks / +20%. | 0 |
+| 1 | Scorching Flames | Active Fire damage: 50% chance to add Fire Vulnerability for 2 s, +4% damage per stack, up to five stacks / +20%. | 0 |
 | 1 | Hot Impact | Fire damage: 20% chance to stun for 2 s. Eligibility includes living bosses and normally effect-immune entities. | 8 s |
 | 2 | Flame Trap | Roll leaves a 5 s trap, radius 1.5: 30% P and exactly 4 s burning. Replaces its former vulnerability application. | 0 |
 | 2 | Blazing Speed | Roll guarantees +50% base movement speed for 2 s. | 4 s |
@@ -22,7 +22,7 @@
 
 | Frost pair | Node | Trigger and effect | Base cooldown |
 | --- | --- | --- | --- |
-| 1 | Winter's Chill | Active Frost damage guarantees the 8 s debuff: +10 percentage points of Frost critical-damage vulnerability per stack, up to five stacks. | 0 |
+| 1 | Winter's Chill | Active Frost damage guarantees the 2 s debuff: +8 percentage points of Frost critical-damage vulnerability per stack, up to five stacks / +40 points. | 0 |
 | 1 | Frostbite | Active Frost damage guarantees Frozen for 3 s. Eligible direct damage can break Frozen early. | 12 s |
 | 2 | Frost Trap | Roll leaves a 5 s trap, radius 1.5: Frozen for 4 s, no damage. | 0 |
 | 2 | Arctic Reflex | Roll guarantees a 5 s readiness buff. The next Frost spell deals 1.2x damage across its deliveries and targets. No instant cast. | 10 s |
@@ -44,10 +44,10 @@ Absorption is temporary HP, shown as golden hearts. Existing absorption is prese
 
 ## Runtime implementation and validation
 
-`passives_data.py` updates the eighteen definitions and tooltips without changing skill IDs, allocations or exclusions. The SkillEffects registration hook changes Fire Vulnerability from 0.05 to 0.04, registers a separate 0.20 Arcane Vulnerability, and removes only the two superseded InstantCast registrations. The native Beam Exposure effect remains separate.
+`passives_data.py` updates the eighteen definitions and tooltips without changing skill IDs, allocations or exclusions. The SkillEffects registration hook sets Fire Vulnerability to 0.04 and Frost critical vulnerability to 0.08 per stack, registers a separate 0.20 Arcane Vulnerability, and removes only the two superseded InstantCast registrations. The native Beam Exposure effect remains separate.
 
 Presence/Reflex readiness uses the existing effect IDs with direct self-status delivery. `PassiveRules` consumes readiness when the next matching active spell actually delivers. A channel is identified by spell ID and process start; a mid-channel roll cannot empower a channel already in progress. A serializable marker in a copied impact context carries the selected spell's effect into delayed projectiles, clouds and other targets without changing shared registry definitions. Existing charge modifiers are copied and retained. Reflex multiplies damage coefficients only, after the earlier per-spell rules; it does not multiply healing or summon attributes. A non-damaging matching spell still consumes readiness, and an unused buff expires after five seconds.
 
 The shared party guard runs for appended vulnerability and all stun impacts. Universal stun application bypasses health/boss/type eligibility gates, preserves native status callbacks/action impairment, and uses the existing physical movement hold alongside Frozen. Non-living blocks, items and projectiles do not have living-entity status effects. Scripted teleports and bespoke boss attacks are not claimed to be disabled by the movement hold alone.
 
-Verification: 126 archive/resource checks and 770 isolated dedicated-server checks, including the preceding spell, party, Hydra and wall cases. New fixtures cover all eighteen haste cooldowns, actual ward absorption at P40, native Blink/roll grants, removal of instant casting, real Explosion vulnerability and its damage multiplier, whole-channel and delayed-Lance Reflex behavior, following-cast isolation, Cold Snap exclusions, six-tick immunity, actual trap damage/Weakness/burn, Fire Vulnerability damage and Radiance healing/cooldown. Party fixtures check stun immunity bypass, Ender Dragon movement/recovery and party/pet protection. The patched wall client input test also passes with JVM verification. These are isolated pipeline tests, not a full-pack manual playtest.
+Verification: 128 archive/resource checks and 855 isolated dedicated-server checks, including the preceding spell, party, Hydra and wall cases. New fixtures cover all eighteen haste cooldowns, actual ward absorption at P40, native Blink/roll grants, removal of instant casting, real Explosion vulnerability and its damage multiplier, whole-channel and delayed-Lance Reflex behavior, following-cast isolation, Cold Snap exclusions, six-tick immunity, actual trap damage/Weakness/burn, Fire Vulnerability damage and Radiance healing/cooldown. Party fixtures check stun immunity bypass, Ender Dragon movement/recovery and party/pet protection. The patched wall client input test also passes with JVM verification. These are isolated pipeline tests, not a full-pack manual playtest.

@@ -26,6 +26,8 @@ public final class PassiveRules {
     public static void configure(ConfigFile.Effects config) {
         ((SpellVulnerabilityStatusEffect)net.skill_tree_rpgs.effect.SkillEffects.FIRE_VULNERABILITY.effect)
             .setVulnerability(SpellSchools.FIRE,new SpellPower.Vulnerability(.04f,0,0));
+        ((SpellVulnerabilityStatusEffect)net.skill_tree_rpgs.effect.SkillEffects.FROST_VULNERABILITY.effect)
+            .setVulnerability(SpellSchools.FROST,new SpellPower.Vulnerability(0,0,.08f));
         var entries=net.skill_tree_rpgs.effect.SkillEffects.entries;
         if(entries.stream().noneMatch(e->e.id.toString().equals("skill_tree_rpgs:arcane_vulnerability")))
             entries.add(new Effects.Entry(Identifier.parse("skill_tree_rpgs:arcane_vulnerability"),"Arcane Vulnerability",

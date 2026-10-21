@@ -38,7 +38,7 @@ def transform(name, files):
         breath['active']['cast']['duration']=5
         breath['active']['cast']['channel']={'ticks':25}
         breath['target']['area'].update(angle_degrees=40,distance_dropoff='NONE')
-        breath['impacts'][0]['action']['damage']['spell_power_coefficient']=.6
+        breath['impacts'][0]['action']['damage']['spell_power_coefficient']=1.2
         breath['cost']={'cooldown':{'duration':0,'haste_affected':False}}
         for p in breath['active']['cast'].get('particles',[]): p['batch']['angle']=40
         put('data/wizards/spell/ancient_hydra_breath.json',breath)
@@ -52,7 +52,7 @@ def transform(name, files):
         lang['spell.wizards.legion_frost_nova.name']='Legion Super Nova'
         lang['spell.wizards.legion_frost_nova.description']='Deal 180%% of this elemental\'s own Frost power within 6 blocks, freezing enemies for 0.5 sec.'
         lang['spell.wizards.ancient_hydra_breath.name']='Ancient Hydra Fire Breath'
-        lang['spell.wizards.ancient_hydra_breath.description']='Continuously breathe fire in a 40-degree cone, dealing 12%% of own Fire power per delivery. Targets the nearest visible enemy within 12 blocks.'
+        lang['spell.wizards.ancient_hydra_breath.description']='Continuously breathe fire in a 40-degree cone, dealing 24%% of own Fire power per delivery. Targets the nearest visible enemy within 12 blocks.'
         lang['spell.wizards.hydra_fireball.name']='Hydra Fireball'
         lang['spell.wizards.hydra_fireball.description']="Deal 55%% of the hydra's own Fire power."
         put(path,lang)

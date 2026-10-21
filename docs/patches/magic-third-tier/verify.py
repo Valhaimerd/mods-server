@@ -50,7 +50,7 @@ with zipfile.ZipFile(ROOT / 'wizards-neoforge-3.1.2+26.2.jar') as wiz, zipfile.Z
     breath = spell('wizards:ancient_hydra_breath')
     check(breath['range'], 12); check(breath['target']['area']['angle_degrees'], 40)
     check(breath['active']['cast']['duration'], 5); check(breath['active']['cast']['channel']['ticks'], 25)
-    check(breath['impacts'][0]['action']['damage']['spell_power_coefficient'] * 5 / 25, .12)
+    check(breath['impacts'][0]['action']['damage']['spell_power_coefficient'] * 5 / 25, .24)
     check(breath['cost']['cooldown']['duration'], 0)
     check(spell('wizards:hydra_fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .55)
     check(spell('wizards:fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .8)
@@ -91,6 +91,8 @@ with zipfile.ZipFile(ROOT / 'wizards-neoforge-3.1.2+26.2.jar') as wiz, zipfile.Z
     check(passive('fire_tier_3_passive_1')['impacts'][0]['action']['damage']['spell_power_coefficient'], .3)
     check(passive('frost_tier_2_passive_1')['impacts'][0]['action']['status_effect']['duration'], 4)
     check(passive('frost_tier_3_passive_1')['impacts'][0]['action']['cooldown']['actives']['id'], '~^wizards:frost(?!_blizzard$|_elemental$).*')
+    for id in ['fire_tier_1_passive_1','frost_tier_1_passive_1']:
+        check(passive(id)['impacts'][0]['action']['status_effect']['duration'], 2)
     # The earlier first-/second-tier revisions must survive this repack.
     for id, coefficient in [('arcane_missile', .78), ('arcane_explosion', 2.6), ('fire_breath', .65), ('fire_slash', 1)]:
         check(spell('wizards:' + id)['impacts'][0]['action']['damage']['spell_power_coefficient'], coefficient)

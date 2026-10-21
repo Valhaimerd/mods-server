@@ -49,14 +49,15 @@ public final class SummonProbe {
   eq("Ancient scale",h.getScale(),3,out);
   eq("Ancient target range",h.detectionRange(),12,out);
   eq("Ancient breath action",h.behaviour.actions.getFirst().spell_cast.spell_id.equals("wizards:ancient_hydra_breath")?1:0,1,out);
+  facing(h,level,out);
   h.setPos(0,80,0);
   var close=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);
   close.setPos(0,80,6);
-  h.lockRotationTo(close);
+  h.setTarget(close);h.lockRotationTo(close);
   var delta=close.getBoundingBox().getCenter().subtract(SummonRules.mouth(h)).normalize();
-  eq("Ancient mouth aim at close ground target",delta.dot(h.getLookAngle()),1,out);
+  eq("Ancient mouth aim at close ground target",delta.dot(SummonRules.breathDirection(h)),1,out);
   var breath=spell(level,"wizards:ancient_hydra_breath");
-  eq("Ancient damage per delivery",breath.value().impacts.getFirst().action.damage.spell_power_coefficient*SpellParameters.channelValueMultiplier(breath.value()),.12,out);
+  eq("Ancient damage per delivery",breath.value().impacts.getFirst().action.damage.spell_power_coefficient*SpellParameters.channelValueMultiplier(breath.value()),.24,out);
   eq("Ancient channel deliveries",breath.value().active.cast.channelTicks(),25,out);
   eq("Ancient cone",breath.value().target.area.angle_degrees,40,out);
   eq("Ancient cooldown",breath.value().cost.cooldown.duration,0,out);
@@ -67,6 +68,22 @@ public final class SummonProbe {
   eq("Player Nova range remains",spell(level,"wizards:frost_nova").value().range,10,out);
   eq("Player Nova freeze remains",spell(level,"wizards:frost_nova").value().impacts.get(1).action.status_effect.duration,2,out);
   eq("Shared summon Nova action unchanged",def.behaviour.actions.get(1).spell_cast.spell_id.equals("wizards:frost_nova")?1:0,1,out);
+ }
+ static void facing(SummonedEntity hydra,ServerLevel level,Consumer<String> out) {
+  var target=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);hydra.setPos(0,80,0);
+  target.setNoAi(true);target.setNoGravity(true);target.setPos(0,80,6);level.getChunkAt(target.blockPosition());level.addFreshEntity(target);
+  try {for(double angle:new double[]{0,90,180,-90})for(double distance:new double[]{1,3,5,6,10}) {
+   double a=Math.toRadians(angle);target.setPos(-Math.sin(a)*distance,80,Math.cos(a)*distance);
+   hydra.setTarget(target);hydra.lockRotationTo(target);
+   var toward=target.position().subtract(hydra.position()).multiply(1,0,1).normalize();
+   double yaw=Math.toRadians(hydra.getYRot());
+   eq("Ancient faces close enemy angle "+angle+" distance "+distance,new net.minecraft.world.phys.Vec3(-Math.sin(yaw),0,Math.cos(yaw)).dot(toward),1,out);
+   eq("Ancient head follows body angle "+angle+" distance "+distance,Math.cos(Math.toRadians(hydra.getYHeadRot()-hydra.yBodyRot)),1,out);
+   var aim=target.getBoundingBox().getCenter().subtract(SummonRules.mouth(hydra)).normalize();
+   eq("Ancient breath still aims at close enemy angle "+angle+" distance "+distance,aim.dot(SummonRules.breathDirection(hydra)),1,out);
+   eq("Ancient cone includes close enemy angle "+angle+" distance "+distance,SummonRules.targets(hydra).entities().contains(target)?1:0,1,out);
+  }
+  } finally {hydra.setTarget(null);target.discard();}
  }
  static void nova(ServerLevel level,SummonedEntity elemental,String mode,double power,Consumer<String> out)throws Exception {
   boolean legion=mode.equals("frost_legion");
@@ -116,12 +133,14 @@ public final class SummonProbe {
    eq("Hydra breath particle batches",packet.spawns().size(),3,out);
    for(var spawn:packet.spawns()) {
     eq("Hydra particle exact mouth origin",spawn.sourceLocation().distanceTo(SummonRules.mouth(hydra)),0,out);
-    eq("Hydra particle yaw",spawn.yaw(),hydra.getYRot(),out);eq("Hydra particle pitch",spawn.pitch(),hydra.getXRot(),out);
+    var aim=SummonRules.breathDirection(hydra);
+    eq("Hydra particle yaw follows mouth aim",spawn.yaw(),Math.toDegrees(Math.atan2(-aim.x,aim.z)),out);
+    eq("Hydra particle pitch follows mouth aim",spawn.pitch(),-Math.toDegrees(Math.asin(aim.y)),out);
     eq("Hydra visual cone",spawn.effect().batch.angle,40,out);
    }
    eq("Hydra packet produces flame instructions",net.spell_engine.fx.ParticleHelper.convertToInstructions(level,packet).isEmpty()?0:1,1,out);
    // Put two targets at 15 and 25 degrees around a level mouth aim: full cone is 40 degrees.
-   hydra.setYRot(0);hydra.setYBodyRot(0);hydra.setXRot(0);
+   hydra.setTarget(null);hydra.setYRot(0);hydra.setYBodyRot(0);hydra.setXRot(0);
    var mouth=SummonRules.mouth(hydra);
    for(int i=0;i<2;i++) {var t=i==0?near:far;double a=Math.toRadians(i==0?15:25);t.setPos(mouth.x+Math.sin(a)*4,mouth.y-t.getBbHeight()/2,mouth.z+Math.cos(a)*4);}
    eq("Hydra 40-degree cone includes fifteen degrees",SummonRules.targets(hydra).entities().contains(near)?1:0,1,out);
@@ -191,14 +210,14 @@ public final class SummonProbe {
     float before=target.getHealth();tick.invoke(controller,breath,breath.value());
     double damage=before-target.getHealth();
     if(damage>0) {
-     eq("Ancient actual breath hit tick "+t,damage,4.8,out);
+     eq("Ancient actual breath hit tick "+t,damage,9.6,out);
      eq("Ancient delivery cadence "+hits,t,2+4*hits,out);
      hits++;if(t<100)firstWindow++;else secondWindow++;
     }
    }
    eq("Ancient first five seconds actual deliveries",firstWindow,25,out);
    eq("Ancient next five seconds actual deliveries",secondWindow,25,out);
-   eq("Ancient continuous ten seconds total damage",1000-target.getHealth(),240,out);
+   eq("Ancient continuous ten seconds total damage",1000-target.getHealth(),480,out);
    eq("Ancient channel rollover start",hydra.getSpellCastProcess().startedAt(),start+100,out);
    eq("Ancient zero native cooldown",hydra.cooldownManager.isCoolingDown(breath)?1:0,0,out);
   } finally {data.setGameTime(start);hydra.declareCastProcess(null);target.discard();}

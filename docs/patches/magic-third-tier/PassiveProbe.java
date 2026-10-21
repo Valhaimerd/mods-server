@@ -141,9 +141,20 @@ public final class PassiveProbe {
    var trap=spell("fire_tier_2_passive_1");SpellImpacts.performImpacts(level,player,b,b,trap,trap.value().impacts,context(trap),false,null);
    eq("Fire trap actual30percent damage",1000-b.getHealth(),12);eq("Fire trap four-second burn",b.getRemainingFireTicks(),80);
    eq("Fire trap no vulnerability",b.hasEffect(effect("skill_tree_rpgs:fire_vulnerability"))?1:0,0);
-   b.addEffect(new MobEffectInstance(effect("skill_tree_rpgs:fire_vulnerability"),160,0));
+   var scorching=spell("fire_tier_1_passive_1");
+   SpellImpacts.performImpacts(level,player,b,b,scorching,scorching.value().impacts,context(scorching),false,null);
+   eq("Scorching Flames native debuff two seconds",b.getEffect(effect("skill_tree_rpgs:fire_vulnerability")).getDuration(),40);
    b.invulnerableTime=0;float before=b.getHealth();var ball=spell("wizards:fireball");SpellImpacts.performImpacts(level,player,b,b,ball,ball.value().impacts,context(ball));
    eq("Fire vulnerability actual4percent per level",before-b.getHealth(),33.28);
   }finally{b.discard();}
+  var frostVictim=victim();try{
+   var chill=spell("frost_tier_1_passive_1");
+   SpellImpacts.performImpacts(level,player,frostVictim,frostVictim,chill,chill.value().impacts,context(chill),false,null);
+   eq("Winter Chill debuff two seconds",frostVictim.getEffect(effect("skill_tree_rpgs:frost_vulnerability")).getDuration(),40);
+   eq("Winter Chill native eight critical vulnerability points",SpellPower.getVulnerability(frostVictim,SpellSchools.FROST).criticalDamageBonus(),.08);
+   for(int i=0;i<5;i++)SpellImpacts.performImpacts(level,player,frostVictim,frostVictim,chill,chill.value().impacts,context(chill),false,null);
+   eq("Winter Chill five-stack maximum",frostVictim.getEffect(effect("skill_tree_rpgs:frost_vulnerability")).getAmplifier(),4);
+   eq("Winter Chill maximum forty critical vulnerability points",SpellPower.getVulnerability(frostVictim,SpellSchools.FROST).criticalDamageBonus(),.4);
+  }finally{frostVictim.discard();}
  }
 }

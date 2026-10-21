@@ -47,7 +47,9 @@ def transform(name, files):
     chance('fire_tier_3_passive_1', 1); damage('fire_tier_3_passive_1', .3); cooldown('fire_tier_3_passive_1', 8)
     chance('fire_tier_3_passive_2', 1)
     node('fire_tier_3_passive_2')['deliver']['stash_effect']['amplifier_power_multiplier'] = .1
+    node('fire_tier_1_passive_1')['impacts'][0]['action']['status_effect']['duration'] = 2
     chance('frost_tier_1_passive_1', 1)
+    node('frost_tier_1_passive_1')['impacts'][0]['action']['status_effect']['duration'] = 2
     chance('frost_tier_1_passive_2', 1); cooldown('frost_tier_1_passive_2', 12)
     node('frost_tier_2_passive_1')['impacts'][0]['action']['status_effect']['duration'] = 4
     chance('frost_tier_2_passive_2', 1)
@@ -65,13 +67,13 @@ def transform(name, files):
         'arcane_tier_2_passive_2': 'Rolling grants 0.3 sec damage immunity. No additional cooldown.',
         'arcane_tier_3_passive_1': 'Burst Blink or Evocation readies your next Arcane spell for 5 sec. Its hits apply 20%% Arcane Vulnerability for 6 sec. Cooldown 16 sec before haste.',
         'arcane_tier_3_passive_2': 'Casting an Arcane spell grants an 8 sec ward. Absorption: 2 x (1 + floor(0.2 x Arcane power)) HP. Cooldown 16 sec before haste.',
-        'fire_tier_1_passive_1': 'Fire damage has a 50%% chance to add 4%% Fire Vulnerability per stack for 8 sec, up to 5 stacks.',
+        'fire_tier_1_passive_1': 'Fire damage has a 50%% chance to add 4%% Fire Vulnerability per stack for 2 sec, up to 5 stacks.',
         'fire_tier_1_passive_2': 'Fire damage has a 20%% chance to stun enemies for 2 sec. Cooldown 8 sec before haste.',
         'fire_tier_2_passive_1': 'Rolling leaves a trap for 5 sec: 30%% Fire damage and 4 sec burning. Radius 1.5 blocks.',
         'fire_tier_2_passive_2': 'Rolling grants +50%% base movement speed for 2 sec. Cooldown 4 sec before haste.',
         'fire_tier_3_passive_1': 'Taking damage causes an explosion for 30%% Fire power within 5 blocks. Cooldown 8 sec before haste.',
         'fire_tier_3_passive_2': 'Casting a Fire spell grants an 8 sec ward and 30%% power retaliation. Absorption: 2 x (1 + floor(0.1 x Fire power)) HP. Cooldown 16 sec before haste.',
-        'frost_tier_1_passive_1': "Frost damage adds Winter's Chill for 8 sec: +10 percentage points of Frost critical damage vulnerability per stack, up to 5 stacks.",
+        'frost_tier_1_passive_1': "Frost damage adds Winter's Chill for 2 sec: +8 percentage points of Frost critical damage vulnerability per stack, up to 5 stacks.",
         'frost_tier_1_passive_2': 'Frost damage freezes enemies for 3 sec. Cooldown 12 sec before haste.',
         'frost_tier_2_passive_1': 'Rolling leaves a trap for 5 sec, freezing enemies for 4 sec within 1.5 blocks.',
         'frost_tier_2_passive_2': 'Rolling readies your next Frost spell for 5 sec. That spell deals 1.2x damage. Cooldown 10 sec before haste.',

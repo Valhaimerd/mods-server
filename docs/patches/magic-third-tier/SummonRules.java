@@ -120,8 +120,9 @@ public final class SummonRules {
         Vec3 horizontal=target.getBoundingBox().getCenter().subtract(e.position());
         e.setYBodyRot((float)Math.toDegrees(Math.atan2(-horizontal.x,horizontal.z)));
         Vec3 delta=target.getBoundingBox().getCenter().subtract(mouth(e)).normalize();
-        float yaw=(float)Math.toDegrees(Math.atan2(-delta.x,delta.z));
-        e.setYRot(yaw);e.setYHeadRot(yaw);
+        // Facing uses the summon base. A nearby enemy can be behind the extended mouth,
+        // which must not reverse the model's yaw. Breath aim is calculated separately.
+        e.setYRot(e.yBodyRot);e.setYHeadRot(e.yBodyRot);
         e.setXRot((float)-Math.toDegrees(Math.asin(Math.max(-1,Math.min(1,delta.y)))));
     }
     public static Vec3 mouth(LivingEntity e) {
@@ -129,9 +130,17 @@ public final class SummonRules {
         double side=.050096541426800936*e.getScale(), forward=1.7454600712720936*e.getScale();
         return e.position().add(Math.cos(yaw)*side-Math.sin(yaw)*forward,1.9109827381010058*e.getScale(),Math.sin(yaw)*side+Math.cos(yaw)*forward);
     }
+    public static Vec3 breathDirection(SummonedEntity e) {
+        var target=e.getTarget();
+        if(target!=null && target.isAlive()) {
+            Vec3 delta=target.getBoundingBox().getCenter().subtract(mouth(e));
+            if(delta.lengthSqr()>1.0e-8) return delta.normalize();
+        }
+        return e.getLookAngle();
+    }
     public static Vec3 launch(Vec3 normal, LivingEntity e) { return ancient(e) ? mouth(e) : normal; }
     public static SpellTarget.SearchResult targets(SummonedEntity e) {
-        Vec3 origin=mouth(e), direction=e.getLookAngle();
+        Vec3 origin=mouth(e), direction=breathDirection(e);
         var targets=new ArrayList<Entity>();
         for(LivingEntity target:e.level().getEntitiesOfClass(LivingEntity.class,new AABB(origin,origin).inflate(12))) {
             if(e.distanceToSqr(target)>144 || target==e || !target.isAlive() || !EntityRelations.actionAllowed(SpellTarget.FocusMode.AREA,SpellTarget.Intent.HARMFUL,e,target)) continue;
@@ -159,8 +168,11 @@ public final class SummonRules {
     }
     public static net.spell_engine.network.Packets.ParticleEffects breathParticles(SummonedEntity e,Holder<Spell> entry) {
         var spawns=new ArrayList<net.spell_engine.network.Packets.ParticleEffects.Spawn>();
+        Vec3 direction=breathDirection(e);
+        float yaw=(float)Math.toDegrees(Math.atan2(-direction.x,direction.z));
+        float pitch=(float)-Math.toDegrees(Math.asin(Math.max(-1,Math.min(1,direction.y))));
         for(var group:entry.value().active.cast.particles)
-            spawns.add(new net.spell_engine.network.Packets.ParticleEffects.Spawn(0,e.getYRot(),e.getXRot(),mouth(e),group));
+            spawns.add(new net.spell_engine.network.Packets.ParticleEffects.Spawn(0,yaw,pitch,mouth(e),group));
         return new net.spell_engine.network.Packets.ParticleEffects(net.spell_engine.network.Packets.ParticleEffects.SourceType.COORDINATE,1,spawns);
     }
     /** Keep the native 25 deliveries/100 ticks cadence through successive channel windows. */

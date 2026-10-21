@@ -54,10 +54,47 @@ with zipfile.ZipFile(ROOT / 'wizards-neoforge-3.1.2+26.2.jar') as wiz, zipfile.Z
     check(breath['cost']['cooldown']['duration'], 0)
     check(spell('wizards:hydra_fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .55)
     check(spell('wizards:fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .8)
+    check(tree.read('assets/skill_tree_rpgs/textures/mob_effect/arcane_vulnerability.png'), tree.read('assets/skill_tree_rpgs/textures/mob_effect/arcane_exposure.png'))
+    def passive(id): return spell('skill_tree_rpgs:' + id)
+    for school in ['arcane', 'fire', 'frost']:
+        for tier in range(1, 4):
+            for number in [1, 2]:
+                check(passive(f'{school}_tier_{tier}_passive_{number}')['cost']['cooldown']['haste_affected'], True)
+    chances = {'arcane_tier_1_passive_1': .25, 'arcane_tier_1_passive_2': 1,
+               'arcane_tier_3_passive_1': 1, 'arcane_tier_3_passive_2': 1,
+               'fire_tier_1_passive_1': .5, 'fire_tier_1_passive_2': .2,
+               'fire_tier_2_passive_2': 1, 'fire_tier_3_passive_1': 1, 'fire_tier_3_passive_2': 1,
+               'frost_tier_1_passive_1': 1, 'frost_tier_1_passive_2': 1,
+               'frost_tier_2_passive_2': 1, 'frost_tier_3_passive_1': 1, 'frost_tier_3_passive_2': 1}
+    for id, value in chances.items():
+        for trigger in passive(id)['passive']['triggers']: check(trigger['chance'], value)
+    for id, value in {'arcane_tier_1_passive_2': 3, 'arcane_tier_2_passive_2': 0,
+                      'arcane_tier_3_passive_1': 16, 'fire_tier_1_passive_2': 8,
+                      'fire_tier_2_passive_2': 4, 'fire_tier_3_passive_1': 8,
+                      'fire_tier_3_passive_2': 16, 'frost_tier_1_passive_2': 12,
+                      'frost_tier_3_passive_1': 30, 'frost_tier_3_passive_2': 16}.items():
+        check(passive(id)['cost']['cooldown']['duration'], value)
+    check(passive('arcane_tier_1_passive_1')['area_impact']['radius'], 5)
+    check(passive('arcane_tier_2_passive_1')['impacts'][0]['action']['damage']['spell_power_coefficient'], .4)
+    weakness = passive('arcane_tier_2_passive_1')['impacts'][1]['action']['status_effect']
+    check(weakness['effect_id'], 'minecraft:weakness'); check(weakness['amplifier'], 1); check(weakness['duration'], 6)
+    check(passive('arcane_tier_2_passive_2')['impacts'][0]['action']['immunity']['duration_ticks'], 6)
+    for id in ['arcane_tier_3_passive_1', 'frost_tier_2_passive_2']:
+        d = passive(id); check(d['deliver']['type'], 'DIRECT')
+        check(d['impacts'][0]['action']['status_effect']['duration'], 5)
+    check(passive('arcane_tier_3_passive_2')['impacts'][0]['action']['status_effect']['amplifier_power_multiplier'], .2)
+    for school in ['fire', 'frost']:
+        check(passive(school + '_tier_3_passive_2')['deliver']['stash_effect']['amplifier_power_multiplier'], .1)
+    check(passive('fire_tier_2_passive_1')['impacts'][0]['action']['damage']['spell_power_coefficient'], .3)
+    check(passive('fire_tier_2_passive_1')['impacts'][1]['action']['fire']['duration'], 4)
+    check(passive('fire_tier_2_passive_1')['impacts'][1]['action']['fire']['tick_offset'], 0)
+    check(passive('fire_tier_3_passive_1')['impacts'][0]['action']['damage']['spell_power_coefficient'], .3)
+    check(passive('frost_tier_2_passive_1')['impacts'][0]['action']['status_effect']['duration'], 4)
+    check(passive('frost_tier_3_passive_1')['impacts'][0]['action']['cooldown']['actives']['id'], '~^wizards:frost(?!_blizzard$|_elemental$).*')
     # The earlier first-/second-tier revisions must survive this repack.
     for id, coefficient in [('arcane_missile', .78), ('arcane_explosion', 2.6), ('fire_breath', .65), ('fire_slash', 1)]:
         check(spell('wizards:' + id)['impacts'][0]['action']['damage']['spell_power_coefficient'], coefficient)
-    for name in ['RevisionRules', 'SecondTierRules', 'PartyRules', 'WallRules', 'SummonRules', 'ThirdTierRules']:
+    for name in ['RevisionRules', 'SecondTierRules', 'PartyRules', 'WallRules', 'SummonRules', 'ThirdTierRules', 'PassiveRules']:
         check(f'net/spell_engine/internals/{name}.class' in engine.namelist(), True)
     for z in [wiz, tree, engine]:
         check(z.testzip(), None)

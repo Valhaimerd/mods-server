@@ -8,6 +8,8 @@ See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics
 
 The [local magic rework](docs/patches/magic-third-tier/README.md) extends Wizards' earlier balance changes through the third tier: Burst Blink explodes at both ends, Wall of Flames allows four separate key presses within five seconds, Great Wall blocks living entities, and the Ancient Hydra continuously breathes fire at 12% of its own Fire power per delivery in a 40-degree cone. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes, with six-block Super Novas freezing for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power. Across class abilities, damage can target non-party players and passive mobs while party members and player-owned pets are protected; healing targets only the caster and party allies. Frost freezes no longer exclude targets by health or boss status. Wizards, Skill Tree and Spell Engine retain their active filenames.
 
+Wizard passive pairs now have haste-affected cooldowns, smaller guaranteed wards, revised roll traps, and next-spell buffs replacing Presence of Mind/Arctic Reflex instant casting. Stun eligibility includes living bosses while preserving party protection. See [all passive values and ward formulas](docs/patches/magic-third-tier/passives.md).
+
 ## Installer
 
 Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/releases/latest/download/ModsServerInstaller.exe), close Minecraft, and run it.

@@ -266,6 +266,7 @@ public class ThirdTierProbe {
     void thirdTier() throws Exception {
         level.setChunkForced(6,6,true); level.getChunk(6,6);
         checks += PartyProbe.run(server, out);
+        PassiveProbe.run(level,player,line->{checks++;out.add(line);});
         nodes(List.of(), List.of()); player.removeAllEffects();
         player.getAttribute(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(.4);
         SummonProbe.run(level, player, line -> { checks++; out.add(line); });

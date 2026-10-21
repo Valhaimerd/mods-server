@@ -70,30 +70,30 @@ public final class PartyRules {
         return helpful == allies(caster, target);
     }
 
-    private static boolean frost(Spell.Impact impact) {
+    private static boolean control(Spell.Impact impact) {
         return impact.action.type == Spell.Impact.Action.Type.STATUS_EFFECT
             && impact.action.status_effect.remove == null
-            && frost(impact.action.status_effect.effect_id);
+            && control(impact.action.status_effect.effect_id);
     }
 
-    private static boolean frost(String id) {
-        return "minecraft:slowness".equals(id) || "wizards:frozen".equals(id)
+    private static boolean control(String id) {
+        return "spell_engine:stun".equals(id) || "minecraft:slowness".equals(id) || "wizards:frozen".equals(id)
             || "wizards:frost_slowness".equals(id) || "skill_tree_rpgs:blizzard_slow".equals(id);
     }
 
     public static boolean underApplyLimit(SpellPower.Result power, LivingEntity target, SpellSchool school,
             Spell.Impact.Action.StatusEffect.ApplyLimit limit, Spell.Impact impact) {
-        return frost(impact) || SpellImpacts.underApplyLimit(power, target, school, limit);
+        return control(impact) || SpellImpacts.underApplyLimit(power, target, school, limit);
     }
 
     public static boolean bossGate(Entity target, TagKey<EntityType<?>> tag, Spell.Impact impact) {
-        return !frost(impact) && target.is(tag);
+        return !control(impact) && target.is(tag);
     }
 
     public static boolean addEffect(LivingEntity target, MobEffectInstance effect, Entity source) {
         String id = BuiltInRegistries.MOB_EFFECT.getKey(effect.getEffect().value()).toString();
         boolean applied = target.addEffect(effect, source);
-        if (applied || !frost(id)) return applied;
+        if (applied || !control(id)) return applied;
         // forceAddEffect also calls canBeAffected in 26.2. Use native callbacks
         // when a type/status immunity rejected this explicitly universal frost effect.
         MobEffectInstance current = target.getEffect(effect.getEffect());
@@ -107,7 +107,7 @@ public final class PartyRules {
             EffectCallbacks.UPDATED.invoke(target, current, true, source);
             return true;
         } catch (ReflectiveOperationException failure) {
-            throw new IllegalStateException("Universal frost effect callbacks failed", failure);
+            throw new IllegalStateException("Universal control effect callbacks failed", failure);
         }
     }
 

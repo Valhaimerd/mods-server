@@ -9,6 +9,7 @@ import zipfile
 import third_tier_data
 import summons_data
 import walls_data
+import passives_data
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
@@ -43,7 +44,7 @@ records = []
 for name in ['wizards-neoforge-3.1.2+26.2.jar', 'skill_tree-neoforge-1.6.1+26.2.jar', 'spell_engine-neoforge-1.10.5+26.2.jar']:
     with zipfile.ZipFile(SOURCE / name) as z:
         infos = z.infolist(); files = {i.filename: z.read(i) for i in infos}; original = dict(files)
-    for transform in [third_tier_data.transform, summons_data.transform, walls_data.transform]: transform(name, files)
+    for transform in [third_tier_data.transform, summons_data.transform, walls_data.transform, passives_data.transform]: transform(name, files)
     if name.startswith('spell_engine'):
         config = json.loads(files['spell_engine.mixins.json'])
         config['mixins'].append('thirdtier.FrozenEntityMoveMixin')
@@ -56,7 +57,11 @@ for name in ['wizards-neoforge-3.1.2+26.2.jar', 'skill_tree-neoforge-1.6.1+26.2.
         for path in ['client/casting/ClientCastController', 'internals/cost/SpellCooldowns', 'internals/cost/SpellCooldownManager', 'entity/SpellCloud', 'internals/impact/SpellImpacts']:
             patch(files, 'net/spell_engine/' + path + '.class', 'PatchWalls')
         patch(files, 'net/spell_engine/internals/cost/SpellCooldowns.class', 'PatchThirdTier', 'cooldown')
+        for path in ['internals/SpellExecution','internals/impact/SpellImpacts']:
+            patch(files,'net/spell_engine/'+path+'.class','PatchPassives')
         for p in (CLASSES / 'net').rglob('*.class'): files[p.relative_to(CLASSES).as_posix()] = p.read_bytes()
+    elif name.startswith('skill_tree'):
+        patch(files,'net/skill_tree_rpgs/effect/SkillEffects.class','PatchPassives')
     elif name.startswith('wizards'):
         patch(files, 'net/wizards/entity/FrostElementalEntity.class', 'PatchSummons', 'frost')
         patch(files, 'net/wizards/client/entity/FireHydraModel.class', 'PatchSummons', 'model')

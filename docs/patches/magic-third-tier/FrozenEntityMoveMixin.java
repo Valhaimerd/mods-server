@@ -16,6 +16,8 @@ public abstract class FrozenEntityMoveMixin {
         at = @At("HEAD"), argsOnly = true)
     private Vec3 thirdTierFrozenMovement(Vec3 movement) {
         if ((Object)this instanceof LivingEntity living) {
+            var stun = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("spell_engine:stun"));
+            if (stun.isPresent() && living.hasEffect(stun.get())) return Vec3.ZERO;
             var frozen = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen"));
             if (frozen.isPresent() && living.hasEffect(frozen.get())) return Vec3.ZERO;
         }

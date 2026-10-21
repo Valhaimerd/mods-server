@@ -1,5 +1,7 @@
 # Magic balance revision five
 
+Current installed third-tier and targeting rules: [third-tier rework](../magic-third-tier/README.md). First- and second-tier values below remain in effect.
+
 21 October 2026. Minecraft 26.2, NeoForge 26.2.0.90, Java 25+. Same-filename updates layered over [revision four](../magic-revision-four/README.md), retaining its mechanics and earlier pack fixes.
 
 Magistrate loses its ten spell-critical-chance points in both the live attribute helper and its displayed description. It retains +10% Arcane/Fire/Frost power, +5% haste and +5% magic resistance. Ordinary critical nodes still add 2.5 points each. Existing allocations are preserved; the helper removes an existing transient critical bonus on refresh.

@@ -6,7 +6,7 @@ The current pack requires Minecraft 26.2, NeoForge **26.2.0.90 or newer**, and J
 
 See [the player handbook](docs/MODLIST.md) for setup guidance, changed mechanics, controls, exploration, building, and quality-of-life features in the current pack. Libraries, APIs, and compatibility-only JARs are intentionally omitted from its gameplay catalog.
 
-Wizards' first two active tiers use a [local magic balance rework](docs/patches/magic-revision-five/README.md): Missiles has an 8-16-second channel-based cooldown, Explosion centers on the target, Charged Beam grows during its channel, Shattering Lance separates direct and splash damage, and Frost Shield grants damage immunity followed by a freeze burst. Wizards, Skill Tree and Spell Engine retain their active filenames.
+The [local magic rework](docs/patches/magic-third-tier/README.md) extends Wizards' earlier balance changes through the third tier: Burst Blink explodes at both ends, Wall of Flames allows four casts within five seconds, Great Wall blocks living entities, and the Ancient Hydra fires one breath. Elemental Legion summons have triple health and spell power; Colossus grants 2.5 times those stats. Across class abilities, damage can target non-party players and passive mobs while party members and player-owned pets are protected; healing targets only the caster and party allies. Frost freezes no longer exclude targets by health or boss status. Wizards, Skill Tree and Spell Engine retain their active filenames.
 
 ## Installer
 

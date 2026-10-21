@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-20<br>
+Last audited: 2026-10-21<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 309 synchronized JARs plus 24 client-store JARs
 
@@ -613,7 +613,7 @@ A race changes the traits you carry through the whole playthrough. It does not l
 - **Core mechanic:** Four RPG Series modules supply Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through class books, weapons, and spells.
 - **Player guidance:** Equip a class book and a compatible weapon to form a loadout.
 
-Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Wizard changes include target-centered Arcane Explosion, Fire Breath without distance falloff, fast Flame Slash, and two-second Frost Nova/Spikes freezing without a health threshold. Improved Nova adds half a second. Charged Beam grows during its longer channel; Beam and Firestorm cooldowns scale with channel completion. Frost Shield blocks every incoming damage hit for three seconds, then freezes nearby enemies; Ice Lance freezes after a short delay.
+Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Wizard changes include target-centered Arcane Explosion, a growing Charged Beam, and Frost Shield damage immunity followed by a freeze burst. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four casts within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra fires one breath. Elemental Legion triples summon health and spell power; Colossus multiplies them by 2.5.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/archers">Official mod page</a></p>
 
@@ -693,7 +693,7 @@ Utilities provides stamina, fortune, experience and mobility. Each anvil node re
 - **Core mechanic:** Connects class books and compatible weapons to the ability bar, targeting, costs, and cooldowns.
 - **Player guidance:** Check the ability bar for a spell’s target, cost, and cooldown.
 
-The equipped class book and weapon determine which abilities appear. A failed cast usually has a target, cooldown, or resource requirement.
+Class damage can hit non-party players and passive mobs; party players and owned pets are protected. Healing targets only self or party allies.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/spell-engine">Official mod page</a></p>
 

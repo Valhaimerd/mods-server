@@ -1,0 +1,69 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "df5a96cbeab19a806cfc45328996ce1c34d4853976109289aced091231e8f78e",
+    "after_sha256": "86c85c1a4caa6e7ab7d91dd58294163da10c5a2a2ba46bf378ecb9015e8e9733",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_blink.json",
+      "data/wizards/spell/arcane_evocation.json",
+      "data/wizards/spell/fire_hydra.json",
+      "data/wizards/spell/fire_wall.json",
+      "data/wizards/spell/frost_blizzard.json",
+      "data/wizards/spell/frost_elemental.json",
+      "net/wizards/client/entity/FireHydraModel.class",
+      "net/wizards/effect/WizardsEffects.class",
+      "net/wizards/entity/FrostElementalEntity.class"
+    ],
+    "added_entries": [
+      "data/wizards/spell/ancient_hydra_breath.json",
+      "data/wizards/spell/burst_blink_explosion.json",
+      "data/wizards/spell/elemental_frost_shard.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "fc9cfdddc37313968af6741c31017134180e5e02b6a3a7205b8dd5a68aece630",
+    "after_sha256": "7c46e63c704d4ef137c978e57b8fcb547616abb2f031222b2a0af0b1cf458449",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_4_spell_2_modifier_2.json"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "a7de42b240d84658b01fd834aea1ed472a01944ee00bed7fe9df0aca7289021a",
+    "after_sha256": "3ffb4933cb7e22ce69c617e9fcffca992dba20dea95929e7fef3e7ff7993a795",
+    "changed_entries": [
+      "net/spell_engine/entity/SpellCloud.class",
+      "net/spell_engine/entity/SummonedEntity.class",
+      "net/spell_engine/internals/casting/MobCastController.class",
+      "net/spell_engine/internals/cost/SpellCooldownManager.class",
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/delivery/LaunchGeometry.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class",
+      "net/spell_engine/internals/target/EntityRelations.class",
+      "spell_engine.mixins.json"
+    ],
+    "added_entries": [
+      "net/spell_engine/internals/PartyRules$Client.class",
+      "net/spell_engine/internals/PartyRules$EffectCallbacks.class",
+      "net/spell_engine/internals/PartyRules.class",
+      "net/spell_engine/internals/SummonRules.class",
+      "net/spell_engine/internals/ThirdTierRules.class",
+      "net/spell_engine/internals/WallRules$Burst.class",
+      "net/spell_engine/internals/WallRules.class",
+      "net/spell_engine/mixin/thirdtier/FrozenEntityMoveMixin.class"
+    ]
+  }
+]

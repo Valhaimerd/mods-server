@@ -76,7 +76,6 @@ public final class SkillOverhaul {
         double points=SkillsAPI.getCategory(CATEGORY).map(category->category.streamUnlockedSkills(player)
             .mapToDouble(skill->switch(skill.getId()) {
                 case "ro3sae58m8jzn4yz","gs6jmtskmyhpbcnu"->2.5;
-                case "zdfpatqypd5nnqx8"->10;
                 default->0;
             }).sum()).orElse(0D);
         var attribute=net.minecraft.core.registries.BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("spell_power:critical_chance")).orElse(null);

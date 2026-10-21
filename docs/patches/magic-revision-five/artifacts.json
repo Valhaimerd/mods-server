@@ -1,0 +1,56 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "c6fb61c9b2cf85d6d595916348809019f6a69b5aa0c386ed985d1cabc9e015de",
+    "after_sha256": "df5a96cbeab19a806cfc45328996ce1c34d4853976109289aced091231e8f78e",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_barrage.json",
+      "data/wizards/spell/arcane_explosion.json",
+      "data/wizards/spell/arcane_missile.json",
+      "data/wizards/spell/fire_breath.json",
+      "data/wizards/spell/fire_meteor.json",
+      "data/wizards/spell/fire_slash.json",
+      "data/wizards/spell/frost_nova.json"
+    ],
+    "added_entries": [
+      "data/wizards/spell/arcane_barrage_bolt.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "ffdcd888891a15f636c76431776b1475d032ebdaabddc7d29fb45084e177ed77",
+    "after_sha256": "fc9cfdddc37313968af6741c31017134180e5e02b6a3a7205b8dd5a68aece630",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "4b2d2f16308241911d8e66e3307124d0eb90b6da3c43a59895b23f46bdfe19ad",
+    "after_sha256": "a7de42b240d84658b01fd834aea1ed472a01944ee00bed7fe9df0aca7289021a",
+    "changed_entries": [
+      "net/spell_engine/internals/RevisionRules.class"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "90f49a81288628f9f700540f6e9831f955acb3b76ecb4d329bb47bb80665c489",
+    "after_sha256": "48f0f2c5d44a481ee671f8267e5ced2dbbb0e76fdcb44f85c199ef7b08e005c9",
+    "changed_entries": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ],
+    "added_entries": []
+  },
+  {
+    "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+    "before_sha256": "254938f0534f764a20382bf8b1e26b8127bada6668c0820d9747c774c011838f",
+    "after_sha256": "1b872aaa5f412e9df3920eb11c8c1f4d8d96b859933c2c658a2ba962805a7ac6",
+    "changed_entries": [
+      "net/valhaimerd/orboblivioncompat/SkillOverhaul.class"
+    ],
+    "added_entries": []
+  }
+]

@@ -48,7 +48,7 @@ define('caster_critical','+2.5% Spell Critical Chance',[],'minecraft:amethyst_sh
 define('draw_speed','+5% Draw Speed (Bow and Crossbow)',[attr('ranged_weapon:haste',.05)],'minecraft:crossbow')
 define('projectile_both','+25% Bow and Crossbow Projectile Speed',[attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)],'minecraft:arrow')
 for id,key in {'3gpel3ejgsuvozax':'caster_power','v3lnj0ubt40kezxm':'caster_haste','ro3sae58m8jzn4yz':'caster_critical','m1aqebilvun2ycc7':'caster_power','qosdkbl0x44scigj':'caster_power','0oz1hx0q08v2i8j5':'caster_power','k6s01bg1bgnsqrew':'caster_haste','gs6jmtskmyhpbcnu':'caster_critical','8qdaale4k86t2ntn':'draw_speed','02did3uvilfob8c2':'draw_speed','ui0gusk2hniqwghe':'projectile_both','vxmb1u84wzfwpuq6':'projectile_both','k5g9ddvqzlzkxv9f':'ranged_damage+3%'}.items():node(id,key)
-define('magistrate','Magistrate',[*[attr('spell_power:'+x,.1) for x in schools],attr('spell_power:haste',.05),attr('puffish_attributes:magic_resistance',.05)],'minecraft:ender_eye','+10% Arcane/Fire/Frost Power\n+10% Spell Critical Chance\n+5% Spell Haste\n+5% Magic Resistance')
+define('magistrate','Magistrate',[*[attr('spell_power:'+x,.1) for x in schools],attr('spell_power:haste',.05),attr('puffish_attributes:magic_resistance',.05)],'minecraft:ender_eye','+10% Arcane/Fire/Frost Power\n+5% Spell Haste\n+5% Magic Resistance')
 node('zdfpatqypd5nnqx8','magistrate')
 for key,remove in [('martial_prowess','puffish_attributes:resistance'),('hunter','puffish_attributes:ranged_resistance')]:
  v=d[key];v['rewards']=[r for r in v['rewards'] if r['data'].get('attribute')!=remove]

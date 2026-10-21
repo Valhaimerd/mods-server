@@ -1,7 +1,6 @@
 # Magic balance revision three
 
-> Historical revision: latest effective values are in [revision four](../magic-revision-four/README.md).
-
+Current installed balance: [revision five](../magic-revision-five/README.md). Numbers below describe this historical revision.
 
 20 October 2026. Minecraft 26.2, NeoForge 26.2.0.90, Java 25+. Same-filename repacks of Wizards 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5, layered on the previous first- and second-tier revisions. No new mod or migration/reset.
 

@@ -1,11 +1,12 @@
 # Magic balance revision four
 
+Current installed balance: [revision five](../magic-revision-five/README.md). Numbers below describe this historical revision.
+
 21 October 2026. Minecraft 26.2, NeoForge 26.2.0.90, Java 25+. Same-filename repacks of Wizards 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5, layered on the previous first- and second-tier revisions. No new mod or migration/reset.
 
 ## Confirmed interpretation
 
 This revision changes targeted Arcane Explosion to a two-second standard cast; the separate Arcane Blast weapon spell remains unchanged. Fire Breath now uses 4 + 4 times channel completion seconds before haste. The shield burst is non-damaging and occurs on natural expiry only.
-
 
 - Missiles cooldown is based on **channel completion**, not damage: 8 + 8 × completion seconds, before haste.
 - Charged Beam adds **0.04 times the original width per delivery**, not 0.4. First delivery starts at 1.3 times original width, maximum three times original width.

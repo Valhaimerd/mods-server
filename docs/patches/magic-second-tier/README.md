@@ -1,7 +1,6 @@
 # Second-tier magic rework
 
-> Historical revision: current effective values are in [magic balance revision three](../magic-revision-three/README.md). Preserve the staged build order described there.
-
+Current installed balance: [revision five](../magic-revision-five/README.md). Numbers below describe this historical revision.
 
 20 October 2026. Minecraft 26.2 / NeoForge 26.2.0.90, Java 25+. Applies after the [first-tier rework](../magic-first-tier/README.md), preserving its current replacements. Same active filenames for Wizards 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5. No extra compatibility mod.
 

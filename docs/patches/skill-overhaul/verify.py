@@ -16,6 +16,7 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     assert operations['critical_strike:damage']=='multiply_total'
     assert rewards('hunter')=={'puffish_attributes:ranged_damage':.06,'movement_speed':.05,'ranged_weapon:haste':.05,'puffish_attributes:armor_shred':.1,'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('magistrate')=={**{'spell_power:'+x:.1 for x in ['arcane','fire','frost']},'spell_power:haste':.05,'puffish_attributes:magic_resistance':.05}
+    assert 'Critical' not in d['magistrate']['description']['text']
     assert rewards('caster_power')=={'spell_power:'+x:.03 for x in ['arcane','fire','frost']}
     assert d['hunter']['description']['text'].startswith('+6% Ranged Damage')
     assert '+25% Bow and Crossbow Projectile Speed' in d['hunter']['description']['text']

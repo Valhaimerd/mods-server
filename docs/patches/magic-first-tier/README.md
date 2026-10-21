@@ -1,7 +1,6 @@
 # First-tier magic rework
 
-> Historical revision: current effective values are in [magic balance revision three](../magic-revision-three/README.md). Preserve the staged build order described there.
-
+Current installed balance: [revision five](../magic-revision-five/README.md). Numbers below describe this historical revision.
 
 20 October 2026, Minecraft 26.2 / NeoForge 26.2.0.90. Same-filename resource repacks of Wizards 3.1.2 and Skill Tree 1.6.1. No production classes or dependencies are added. All earlier physical, caster, companion and progression changes are retained.
 

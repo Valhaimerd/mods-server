@@ -1,6 +1,6 @@
 # Skill tree overhaul - 20 October 2026
 
-Latest balance (20 October): **Hunter grants 6% ranged damage, 5% draw speed and 5% movement speed**, retaining 10% armor penetration and 25% bow/crossbow projectile speed. Luck and Jump Strength rewards are removed. Adventurer ordinary ranged damage and draw speed stay separate at **2%** and **5%**. RPG ranged rewards and tooltips are **2%**, with no added draw-speed reward on Archer nodes. Assassin/Rogue attack-speed rewards and tooltips are **2%** in both RPG categories. Ordinary Arcane/Fire/Frost power is **3%** in both mods. Magistrate grants **10% school power and 5% magic resistance**, retaining its critical chance and spell haste.
+Current balance: **Hunter grants 6% ranged damage, 5% draw speed and 5% movement speed**, retaining 10% armor penetration and 25% bow/crossbow projectile speed. Luck and Jump Strength rewards are removed. Adventurer ordinary ranged damage and draw speed stay separate at **2%** and **5%**. RPG ranged rewards and tooltips are **2%**, with no added draw-speed reward on Archer nodes. Assassin/Rogue attack-speed rewards and tooltips are **2%** in both RPG categories. Ordinary Arcane/Fire/Frost power is **3%** in both mods. Magistrate grants **10% school power and 5% magic resistance**, retaining spell haste without a specialization critical-chance bonus.
 
 The latest 20 October revision passed **79 isolated server checks**, plus structural checks of revised Adventurer/RPG tooltip text and blue titles. Client rendering was previously checked on the 19 October revision; no new client visual test was performed. Runtime checks include Hunter haste and removed bonuses, Magistrate power/resistance, ordinary damage/haste, and RPG school power and Assassin speed, with both categories loading. Existing IDs, allocations, Paladin defaults, Priest healing and the 1.35x XP multiplier remain; no new reset marker.
 
@@ -34,7 +34,6 @@ These values supersede older planning and verification snapshots below.
   standard spells. No flagging remains; Better Party controls party protection.
   It does not scale PvE damage.
 
-
 The latest presentation update uses Bow for ranged damage, Crossbow for draw speed,
 Enchanted Golden Apple for Aegis, Apple for pet hearts, Rabbit Foot for pet
 speed, Leather Chestplate for pet resistance and Iron Horse Armor for pet
@@ -42,7 +41,7 @@ knockback resistance. **Pack Leader** is blue and uses Cooked Beef (steak).
 
 ## Behavior and units
 
-Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 3%. Ordinary Adventurer caster power is 3%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 10% power, 5% magic resistance, 5% haste and ten critical points, without health or healing power.
+Offensive, Defensive and Companion alternatives exclude each other at their first path nodes. Utilities is unrestricted, loses its three specialties and replaces combat bonuses with utility stats. All Adventurer completion item gifts are removed. Magistrate boosts Arcane, Fire and Frost; Priest healing remains exclusive to the RPG changes requested, where ordinary healing-power nodes grant 3%, while RPG Arcane/Fire/Frost power nodes grant 3%. Ordinary Adventurer caster power is 3%, spell haste is 3% and spell critical chance adds 2.5 percentage points. The final Magistrate grants 10% power, 5% magic resistance, 5% haste and no critical-chance bonus, without health or healing power.
 
 The [data transformer](repack.py) records every ordinary node assignment. Author amounts remain where requested, with explicit exceptions for damage, attack speed, caster stats, pet stats and anvil reductions. Anvil nodes each multiply remaining cost by 0.8, so three leave 51.2% before integer rounding. Bow draw haste also accelerates crossbow charging through Ranged Weapon API. Projectile nodes modify both bow and crossbow attributes.
 
@@ -93,3 +92,5 @@ Double Hit Enchantment 1.0.0 is removed from the active pack. No remaining insta
 The same 78-check isolated server probe passed with PAL 1.2.8 and Bendable Cuboids 2.0.4. Revised definition text is checked structurally; full client rendering and multiplayer balance playtesting are outside this follow-up. The previous active JARs and removed Double Hit archive are retained in ignored retired packs.
 
 Latest projectile follow-up: ordinary and Hunter bow/crossbow projectile speed is restored to **25%**. The 79-check isolated server run also confirms Voltaic Shot is absent from the loaded registry. [Removal and retained pre-existing data warning](../voltaic-removal-verification.json). Other damage, speed, haste and migration values stay as above.
+
+Latest Magistrate follow-up (21 October): the specialization no longer grants ten critical points; ordinary caster critical nodes retain 2.5 points each. Both its description and the live attribute helper change, with existing transient bonuses cleared on refresh. See [magic revision five](../magic-revision-five/README.md) for verification.

@@ -61,8 +61,17 @@ public class ShrinkingVeil extends ShrinkingVeilBase implements ICurioItem {
     @Override
     public void curioTick(SlotContext context, ItemStack stack) {
         var entity=context.entity();
-        if(!entity.level().isClientSide() && INSTANCE.getTrinketConfig().isEnable)
-            entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.WEAKNESS,1200,0,true,false));
+        if(!entity.level().isClientSide() && INSTANCE.getTrinketConfig().isEnable) {
+            var scale=entity.getAttribute(Attributes.SCALE);
+            var id=Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID,"shrinking_veil_scale");
+            double amount=-INSTANCE.getTrinketConfig().shrinkScalePercentage/100D;
+            var old=scale.getModifier(id);
+            if(old==null || old.amount()!=amount) {
+                scale.removeModifier(id);
+                scale.addTransientModifier(new AttributeModifier(id,amount,AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+            }
+            entity.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.WEAKNESS,1200,1,true,false));
+        }
     }
 
     @Override

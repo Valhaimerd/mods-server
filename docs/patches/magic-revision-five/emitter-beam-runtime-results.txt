@@ -1,0 +1,885 @@
+Magistrate no critical bonus and old transient cleared: 105.0000000745058
+Magistrate school power retained: 44.000000059604645
+Ordinary critical node retained: 2.5
+Both ordinary critical nodes retained: 5.0
+arcane_missile cooldown 0.0: 8.0
+arcane_missile cooldown 0.5: 12.0
+arcane_missile cooldown 1.0: 16.0
+arcane_beam cooldown 0.0: 15.0
+arcane_beam cooldown 0.5: 22.5
+arcane_beam cooldown 1.0: 30.0
+fire_storm cooldown 0.0: 15.000000953674316
+fire_storm cooldown 0.5: 20.0
+fire_storm cooldown 1.0: 25.0
+fire_breath cooldown 0.0: 4.0
+fire_breath cooldown 0.5: 6.0
+fire_breath cooldown 1.0: 8.0
+Frost Nova base cooldown: 12.0
+Meteor base cooldown: 20.0
+Improved Meteor cooldown: 18.0
+Emitter bolt damage at 40: 20.0
+Wand Arcane Bolt remains 70 percent: 28.0
+Normal beam cast duration: 5.0
+Charged Beam duration: 10.0
+Charged Beam cast ticks: 200.0
+Charged Beam deliveries: 50.0
+Charged Beam actual delivery 0: 4.0
+Charged Beam actual delivery 1: 4.05999755859375
+Charged Beam actual delivery 2: 4.1199951171875
+Charged Beam actual delivery 3: 4.17999267578125
+Charged Beam actual delivery 4: 4.239990234375
+Charged Beam actual delivery 5: 4.29998779296875
+Charged Beam actual delivery 6: 4.3599853515625
+Charged Beam actual delivery 7: 4.41998291015625
+Charged Beam actual delivery 8: 4.47998046875
+Charged Beam actual delivery 9: 4.53997802734375
+Charged Beam actual delivery 10: 4.5999755859375
+Charged Beam actual delivery 11: 4.65997314453125
+Charged Beam actual delivery 12: 4.719970703125
+Charged Beam actual delivery 13: 4.780029296875
+Charged Beam actual delivery 14: 4.84002685546875
+Charged Beam actual delivery 15: 4.9000244140625
+Charged Beam actual delivery 16: 4.96002197265625
+Charged Beam actual delivery 17: 5.02001953125
+Charged Beam actual delivery 18: 5.08001708984375
+Charged Beam actual delivery 19: 5.1400146484375
+Charged Beam actual delivery 20: 5.20001220703125
+Charged Beam actual delivery 21: 5.260009765625
+Charged Beam actual delivery 22: 5.32000732421875
+Charged Beam actual delivery 23: 5.3800048828125
+Charged Beam actual delivery 24: 5.44000244140625
+Charged Beam actual delivery 25: 5.5
+Charged Beam actual delivery 26: 5.55999755859375
+Charged Beam actual delivery 27: 5.6199951171875
+Charged Beam actual delivery 28: 5.67999267578125
+Charged Beam actual delivery 29: 5.739990234375
+Charged Beam actual delivery 30: 5.79998779296875
+Charged Beam actual delivery 31: 5.8599853515625
+Charged Beam actual delivery 32: 5.91998291015625
+Charged Beam actual delivery 33: 5.97998046875
+Charged Beam actual delivery 34: 6.0
+Charged Beam actual delivery 35: 6.0
+Charged Beam actual delivery 36: 6.0
+Charged Beam actual delivery 37: 6.0
+Charged Beam actual delivery 38: 6.0
+Charged Beam actual delivery 39: 6.0
+Charged Beam actual delivery 40: 6.0
+Charged Beam actual delivery 41: 6.0
+Charged Beam actual delivery 42: 6.0
+Charged Beam actual delivery 43: 6.0
+Charged Beam actual delivery 44: 6.0
+Charged Beam actual delivery 45: 6.0
+Charged Beam actual delivery 46: 6.0
+Charged Beam actual delivery 47: 6.0
+Charged Beam actual delivery 48: 6.0
+Charged Beam actual delivery 49: 6.0
+Charged Beam full base channel at 40: 265.66
+Charged beam initial width: 0.10399999469518661
+Charged beam width at delivery 25: 0.29600000381469727
+Charged beam width cap: 0.3999999761581421
+Charged beam just before cap: 0.3919999897480011
+Charged beam reaches cap on delivery 38: 0.3999999761581421
+Exposure max 25 levels: 1.0
+arcane_missile base damage at 40: 10.4000244140625
+arcane_explosion base damage at 40: 104.0
+fire_breath base damage at 40: 5.20001220703125
+fire_slash base damage at 40: 40.0
+fire_storm base damage at 40: 16.0
+fire_meteor base damage at 40: 60.0
+frost_nova base damage at 40: 72.0
+frost_spikes base damage at 40: 32.0
+Frost Fan actual damage with required root: 10.0
+Echoing Blast actual damage: 64.0
+Echo source registered: 1.0
+Echo cast attempt: 1.0
+Caster attackable for passive effect: 1.0
+Guaranteed Echo reset: 0.0
+Geometry target indexed: 1.0
+Shattering direct damage: 80.0
+Shattering splash damage at five blocks: 20.0
+Outside Shattering radius: 0.0
+Shattering direct Frozen duration: 79.0
+Shattering splash Frozen duration: 19.0
+Chain not immediate: 0.0
+Guaranteed delayed chain at struck mob: 12.0
+Chain surrounding enemy with retained falloff: 7.489990234375
+Chain does not center on caster: 0.0
+Unshielded fixture takes damage: 999.0
+Shield base duration ticks: 60.0
+Shield immune to minecraft:generic: 1000.0
+Shield immune to minecraft:magic: 1000.0
+Shield immune to minecraft:on_fire: 1000.0
+Shield immune to minecraft:fall: 1000.0
+Shield immune to minecraft:out_of_world: 1000.0
+Shield immune to minecraft:generic_kill: 1000.0
+Shield repeated hit blocked at tick 0: 1000.0
+Shield is not consumed at tick 0: 1.0
+Shield repeated hit blocked at tick 1: 1000.0
+Shield is not consumed at tick 1: 1.0
+Shield repeated hit blocked at tick 2: 1000.0
+Shield is not consumed at tick 2: 1.0
+Shield repeated hit blocked at tick 3: 1000.0
+Shield is not consumed at tick 3: 1.0
+Shield repeated hit blocked at tick 4: 1000.0
+Shield is not consumed at tick 4: 1.0
+Shield repeated hit blocked at tick 5: 1000.0
+Shield is not consumed at tick 5: 1.0
+Shield repeated hit blocked at tick 6: 1000.0
+Shield is not consumed at tick 6: 1.0
+Shield repeated hit blocked at tick 7: 1000.0
+Shield is not consumed at tick 7: 1.0
+Shield repeated hit blocked at tick 8: 1000.0
+Shield is not consumed at tick 8: 1.0
+Shield repeated hit blocked at tick 9: 1000.0
+Shield is not consumed at tick 9: 1.0
+Shield repeated hit blocked at tick 10: 1000.0
+Shield is not consumed at tick 10: 1.0
+Shield repeated hit blocked at tick 11: 1000.0
+Shield is not consumed at tick 11: 1.0
+Shield repeated hit blocked at tick 12: 1000.0
+Shield is not consumed at tick 12: 1.0
+Shield repeated hit blocked at tick 13: 1000.0
+Shield is not consumed at tick 13: 1.0
+Shield repeated hit blocked at tick 14: 1000.0
+Shield is not consumed at tick 14: 1.0
+Shield repeated hit blocked at tick 15: 1000.0
+Shield is not consumed at tick 15: 1.0
+Shield repeated hit blocked at tick 16: 1000.0
+Shield is not consumed at tick 16: 1.0
+Shield repeated hit blocked at tick 17: 1000.0
+Shield is not consumed at tick 17: 1.0
+Shield repeated hit blocked at tick 18: 1000.0
+Shield is not consumed at tick 18: 1.0
+Shield repeated hit blocked at tick 19: 1000.0
+Shield is not consumed at tick 19: 1.0
+Shield repeated hit blocked at tick 20: 1000.0
+Shield is not consumed at tick 20: 1.0
+Shield repeated hit blocked at tick 21: 1000.0
+Shield is not consumed at tick 21: 1.0
+Shield repeated hit blocked at tick 22: 1000.0
+Shield is not consumed at tick 22: 1.0
+Shield repeated hit blocked at tick 23: 1000.0
+Shield is not consumed at tick 23: 1.0
+Shield repeated hit blocked at tick 24: 1000.0
+Shield is not consumed at tick 24: 1.0
+Shield repeated hit blocked at tick 25: 1000.0
+Shield is not consumed at tick 25: 1.0
+Shield repeated hit blocked at tick 26: 1000.0
+Shield is not consumed at tick 26: 1.0
+Shield repeated hit blocked at tick 27: 1000.0
+Shield is not consumed at tick 27: 1.0
+Shield repeated hit blocked at tick 28: 1000.0
+Shield is not consumed at tick 28: 1.0
+Shield repeated hit blocked at tick 29: 1000.0
+Shield is not consumed at tick 29: 1.0
+Shield repeated hit blocked at tick 30: 1000.0
+Shield is not consumed at tick 30: 1.0
+Shield repeated hit blocked at tick 31: 1000.0
+Shield is not consumed at tick 31: 1.0
+Shield repeated hit blocked at tick 32: 1000.0
+Shield is not consumed at tick 32: 1.0
+Shield repeated hit blocked at tick 33: 1000.0
+Shield is not consumed at tick 33: 1.0
+Shield repeated hit blocked at tick 34: 1000.0
+Shield is not consumed at tick 34: 1.0
+Shield repeated hit blocked at tick 35: 1000.0
+Shield is not consumed at tick 35: 1.0
+Shield repeated hit blocked at tick 36: 1000.0
+Shield is not consumed at tick 36: 1.0
+Shield repeated hit blocked at tick 37: 1000.0
+Shield is not consumed at tick 37: 1.0
+Shield repeated hit blocked at tick 38: 1000.0
+Shield is not consumed at tick 38: 1.0
+Shield repeated hit blocked at tick 39: 1000.0
+Shield is not consumed at tick 39: 1.0
+Shield repeated hit blocked at tick 40: 1000.0
+Shield is not consumed at tick 40: 1.0
+Shield repeated hit blocked at tick 41: 1000.0
+Shield is not consumed at tick 41: 1.0
+Shield repeated hit blocked at tick 42: 1000.0
+Shield is not consumed at tick 42: 1.0
+Shield repeated hit blocked at tick 43: 1000.0
+Shield is not consumed at tick 43: 1.0
+Shield repeated hit blocked at tick 44: 1000.0
+Shield is not consumed at tick 44: 1.0
+Shield repeated hit blocked at tick 45: 1000.0
+Shield is not consumed at tick 45: 1.0
+Shield repeated hit blocked at tick 46: 1000.0
+Shield is not consumed at tick 46: 1.0
+Shield repeated hit blocked at tick 47: 1000.0
+Shield is not consumed at tick 47: 1.0
+Shield repeated hit blocked at tick 48: 1000.0
+Shield is not consumed at tick 48: 1.0
+Shield repeated hit blocked at tick 49: 1000.0
+Shield is not consumed at tick 49: 1.0
+Shield repeated hit blocked at tick 50: 1000.0
+Shield is not consumed at tick 50: 1.0
+Shield repeated hit blocked at tick 51: 1000.0
+Shield is not consumed at tick 51: 1.0
+Shield repeated hit blocked at tick 52: 1000.0
+Shield is not consumed at tick 52: 1.0
+Shield repeated hit blocked at tick 53: 1000.0
+Shield is not consumed at tick 53: 1.0
+Shield repeated hit blocked at tick 54: 1000.0
+Shield is not consumed at tick 54: 1.0
+Shield repeated hit blocked at tick 55: 1000.0
+Shield is not consumed at tick 55: 1.0
+Shield repeated hit blocked at tick 56: 1000.0
+Shield is not consumed at tick 56: 1.0
+Shield repeated hit blocked at tick 57: 1000.0
+Shield is not consumed at tick 57: 1.0
+Shield repeated hit blocked at tick 58: 1000.0
+Shield is not consumed at tick 58: 1.0
+Shield still blocks on final active tick: 1000.0
+No burst before shield expiry: 0.0
+Shield naturally expires: 0.0
+Expiry burst freezes nearby enemy: 1.0
+Expiry freeze duration: 40.0
+Expiry burst deals no damage: 1000.0
+Enemy outside five blocks stays unfrozen: 0.0
+Shield immunity ends on expiry: 999.0
+Dispel does not trigger burst: 0.0
+Durable Shield duration ticks: 80.0
+Durable burst waits for extended expiry: 0.0
+Durable Shield also bursts on expiry: 1.0
+Party: real Better Party API fixture: PASS
+Party: native player fixture damage before=1000.0 after=999.0 accepted=true
+Party: player fixture accepts native attributed PvP damage: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Judgement 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: Holy Light 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: Judgement ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: Holy Light ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Judgement a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=false: PASS
+Party: Holy Light a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Judgement 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: Holy Light 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: Judgement ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: Holy Light ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Judgement a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=false: PASS
+Party: Holy Light a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Judgement 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: Holy Light 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: Judgement ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: Holy Light ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Judgement a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=true: PASS
+Party: Holy Light a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy a13fb9d9-0b15-4959-812a-c855a7df5335 DIRECT FF=true: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Judgement 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: Holy Light 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: Judgement ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: Holy Light ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Judgement a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=true: PASS
+Party: Holy Light a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy a13fb9d9-0b15-4959-812a-c855a7df5335 AREA FF=true: PASS
+Party: actual Ender Dragon move fixture moves before freeze: PASS
+Party: actual Ender Dragon receives Frozen: PASS
+Party: actual Frozen Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves again after Frozen removed: PASS
+Party: actual Ender Dragon receives Stun: PASS
+Party: actual stunned Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves after Stun removed: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c DIRECT FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 91f2156d-c874-414a-997e-95632949e8d1 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf ef0c06c7-1df3-435d-a912-a36c9dedb92c AREA FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: actual area damage entity.minecraft.villager: PASS
+Party: actual burn eligibility entity.minecraft.villager: PASS
+Party: actual area damage entity.minecraft.iron_golem: PASS
+Party: actual burn eligibility entity.minecraft.iron_golem: PASS
+Party: actual area damage entity.minecraft.cow: PASS
+Party: actual burn eligibility entity.minecraft.cow: PASS
+Party: actual area damage entity.minecraft.creeper: PASS
+Party: actual burn eligibility entity.minecraft.creeper: PASS
+Party: actual area damage entity.minecraft.wolf: PASS
+Party: actual burn eligibility entity.minecraft.wolf: PASS
+Party: owned spell caster protects party player: PASS
+Party: owned spell caster protects sibling pet: PASS
+Party: actual party pet healing: PASS
+Party: self damage apply_to_caster blocked: PASS
+Party: self immunity retained: PASS
+Party: fixture rejects ordinary effect minecraft:slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:slowness: PASS
+Party: fixture rejects ordinary effect wizards:frozen: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frozen: PASS
+Party: fixture rejects ordinary effect wizards:frost_slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frost_slowness: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:blizzard_slow: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:blizzard_slow: PASS
+Party: fixture rejects ordinary effect spell_engine:stun: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates spell_engine:stun: PASS
+Passives: skill_tree_rpgs:arcane_tier_1_passive_1 haste cooldown: 0.5
+Passives: skill_tree_rpgs:arcane_tier_1_passive_2 haste cooldown: 1.5
+Passives: skill_tree_rpgs:arcane_tier_2_passive_1 haste cooldown: 0.0
+Passives: skill_tree_rpgs:arcane_tier_2_passive_2 haste cooldown: 0.0
+Passives: skill_tree_rpgs:arcane_tier_3_passive_1 haste cooldown: 8.0
+Passives: skill_tree_rpgs:arcane_tier_3_passive_2 haste cooldown: 8.0
+Passives: skill_tree_rpgs:fire_tier_1_passive_1 haste cooldown: 0.0
+Passives: skill_tree_rpgs:fire_tier_1_passive_2 haste cooldown: 4.0
+Passives: skill_tree_rpgs:fire_tier_2_passive_1 haste cooldown: 0.0
+Passives: skill_tree_rpgs:fire_tier_2_passive_2 haste cooldown: 2.0
+Passives: skill_tree_rpgs:fire_tier_3_passive_1 haste cooldown: 4.0
+Passives: skill_tree_rpgs:fire_tier_3_passive_2 haste cooldown: 8.0
+Passives: skill_tree_rpgs:frost_tier_1_passive_1 haste cooldown: 0.0
+Passives: skill_tree_rpgs:frost_tier_1_passive_2 haste cooldown: 6.0
+Passives: skill_tree_rpgs:frost_tier_2_passive_1 haste cooldown: 0.0
+Passives: skill_tree_rpgs:frost_tier_2_passive_2 haste cooldown: 5.0
+Passives: skill_tree_rpgs:frost_tier_3_passive_1 haste cooldown: 15.0
+Passives: skill_tree_rpgs:frost_tier_3_passive_2 haste cooldown: 8.0
+Passives: arcane actual ward absorption at40 power: 18.0
+Passives: arcane actual ward duration: 160.0
+Passives: fire actual ward absorption at40 power: 10.0
+Passives: fire actual ward duration: 160.0
+Passives: frost actual ward absorption at40 power: 10.0
+Passives: frost actual ward duration: 160.0
+Passives: Presence guaranteed native Blink trigger: 1.0
+Passives: Presence no longer instantifies: 0.0
+Passives: Presence consumed on next actual spell: 0.0
+Passives: Presence first hit base damage: 104.0
+Passives: Presence applies six-second vulnerability: 120.0
+Passives: Arcane vulnerability actual20percent damage increase: 33.5999755859375
+Passives: Reflex guaranteed native roll trigger: 1.0
+Passives: Reflex no longer instantifies: 0.0
+Passives: Reflex first actual spell damage1.2x: 86.4000244140625
+Passives: Reflex consumed: 0.0
+Passives: Following Frost spell unboosted: 72.0
+Passives: Wrong school does not consume Reflex: 1.0
+Passives: Delayed context retains consumed Reflex: 86.4000244140625
+Passives: Native projectile consumed Reflex before impact: 0.0
+Passives: Native delayed Lance retains20percent boost: 96.0
+Passives: Whole channel retains Reflex snapshot: 1.0
+Passives: Mid-channel roll cannot empower existing channel: 1.0
+Passives: Mid-channel roll retains buff for next spell: 1.0
+Passives: Cold Snap actual cooldown wizards:frost_nova: 0.0
+Passives: Cold Snap actual cooldown wizards:frost_spikes: 0.0
+Passives: Cold Snap actual cooldown wizards:frost_shield: 0.0
+Passives: Cold Snap actual cooldown wizards:frost_lance: 0.0
+Passives: Cold Snap actual cooldown wizards:frost_blizzard: 120.0
+Passives: Cold Snap actual cooldown wizards:frost_elemental: 120.0
+Passives: Cold Snap actual cooldown wizards:arcane_explosion: 120.0
+Passives: Phase Shift exactly six immunity ticks: 6.0
+Passives: Phase Shift no additional cooldown: 0.0
+Passives: Arcane trap actual40percent damage: 16.0
+Passives: Arcane trap Weakness II: 1.0
+Passives: Arcane trap weakness six seconds: 120.0
+Passives: Fire trap actual30percent damage: 12.0
+Passives: Fire trap four-second burn: 80.0
+Passives: Fire trap no vulnerability: 0.0
+Passives: Scorching Flames native debuff two seconds: 40.0
+Passives: Fire vulnerability actual4percent per level: 33.280029296875
+Passives: Winter Chill debuff two seconds: 40.0
+Passives: Winter Chill native eight critical vulnerability points: 0.07999999821186066
+Passives: Winter Chill five-stack maximum: 4.0
+Passives: Winter Chill maximum forty critical vulnerability points: 0.3999999761581421
+Passives: Radiance native trigger guarantees4HP heal at40 power: 14.0
+Passives: Radiance actual three-second cooldown: 60.0
+Passives: Radiance cooldown blocks repeated healing: 14.0
+elemental cooldown: 30.0
+elemental haste: 1.0
+base health: 50.0
+base armor: 8.2
+base melee: 20.0
+base scale: 1.0
+base frost: 8.0
+base pet owner: 1.0
+base Nova action: 1.0
+base Nova radius: 10.0
+base actual Nova damage from own Frost power: 14.4000244140625
+base actual Nova Frozen ticks: 40.0
+base Nova seven-block target damage: 14.4000244140625
+base Nova seven-block target freeze: 1.0
+Better Party collector elemental owner: 1.0
+Better Party collector elemental health: 50.0
+Better Party payload count: 1.0
+Better Party payload preserves elemental: 1.0
+Better Party payload readable bytes: 0.0
+base armor cap bypass: 150.0
+base health cap bypass: 3000.0
+frost_legion health: 40.0
+frost_legion armor: 6.56
+frost_legion melee: 16.0
+frost_legion scale: 1.0
+frost_legion frost: 6.4
+frost_legion pet owner: 1.0
+frost_legion Nova action: 1.0
+frost_legion Nova radius: 6.0
+frost_legion actual Nova damage from own Frost power: 11.52001953125
+frost_legion actual Nova Frozen ticks: 10.0
+frost_legion Nova seven-block target damage: 0.0
+frost_legion Nova seven-block target freeze: 0.0
+frost_legion armor cap bypass: 150.0
+frost_legion health cap bypass: 3000.0
+frost_colossus health: 100.0
+frost_colossus armor: 16.4
+frost_colossus melee: 40.0
+frost_colossus scale: 1.7000000476837158
+frost_colossus frost: 16.0
+frost_colossus pet owner: 1.0
+colossus owner knockback resistance: 0.4
+frost_colossus Nova action: 1.0
+frost_colossus Nova radius: 10.0
+frost_colossus actual Nova damage from own Frost power: 28.79998779296875
+frost_colossus actual Nova Frozen ticks: 40.0
+frost_colossus Nova seven-block target damage: 28.79998779296875
+frost_colossus Nova seven-block target freeze: 1.0
+frost_colossus armor cap bypass: 150.0
+frost_colossus health cap bypass: 3000.0
+Ancient exact count: 1.0
+Ancient scale: 3.0
+Ancient target range: 12.0
+Ancient breath action: 1.0
+Ancient faces close enemy angle 0.0 distance 1.0: 1.0
+Ancient head follows body angle 0.0 distance 1.0: 1.0
+Ancient breath still aims at close enemy angle 0.0 distance 1.0: 1.0
+Ancient cone includes close enemy angle 0.0 distance 1.0: 1.0
+Ancient faces close enemy angle 0.0 distance 3.0: 1.0
+Ancient head follows body angle 0.0 distance 3.0: 1.0
+Ancient breath still aims at close enemy angle 0.0 distance 3.0: 1.0
+Ancient cone includes close enemy angle 0.0 distance 3.0: 1.0
+Ancient faces close enemy angle 0.0 distance 5.0: 1.0
+Ancient head follows body angle 0.0 distance 5.0: 1.0
+Ancient breath still aims at close enemy angle 0.0 distance 5.0: 0.9999999999999998
+Ancient cone includes close enemy angle 0.0 distance 5.0: 1.0
+Ancient faces close enemy angle 0.0 distance 6.0: 1.0
+Ancient head follows body angle 0.0 distance 6.0: 1.0
+Ancient breath still aims at close enemy angle 0.0 distance 6.0: 1.0000000000000002
+Ancient cone includes close enemy angle 0.0 distance 6.0: 1.0
+Ancient faces close enemy angle 0.0 distance 10.0: 1.0
+Ancient head follows body angle 0.0 distance 10.0: 1.0
+Ancient breath still aims at close enemy angle 0.0 distance 10.0: 1.0
+Ancient cone includes close enemy angle 0.0 distance 10.0: 1.0
+Ancient faces close enemy angle 90.0 distance 1.0: 1.0
+Ancient head follows body angle 90.0 distance 1.0: 1.0
+Ancient breath still aims at close enemy angle 90.0 distance 1.0: 0.9999999999999999
+Ancient cone includes close enemy angle 90.0 distance 1.0: 1.0
+Ancient faces close enemy angle 90.0 distance 3.0: 1.0
+Ancient head follows body angle 90.0 distance 3.0: 1.0
+Ancient breath still aims at close enemy angle 90.0 distance 3.0: 1.0
+Ancient cone includes close enemy angle 90.0 distance 3.0: 1.0
+Ancient faces close enemy angle 90.0 distance 5.0: 1.0
+Ancient head follows body angle 90.0 distance 5.0: 1.0
+Ancient breath still aims at close enemy angle 90.0 distance 5.0: 0.9999999999999998
+Ancient cone includes close enemy angle 90.0 distance 5.0: 1.0
+Ancient faces close enemy angle 90.0 distance 6.0: 1.0
+Ancient head follows body angle 90.0 distance 6.0: 1.0
+Ancient breath still aims at close enemy angle 90.0 distance 6.0: 1.0000000000000002
+Ancient cone includes close enemy angle 90.0 distance 6.0: 1.0
+Ancient faces close enemy angle 90.0 distance 10.0: 1.0
+Ancient head follows body angle 90.0 distance 10.0: 1.0
+Ancient breath still aims at close enemy angle 90.0 distance 10.0: 0.9999999999999999
+Ancient cone includes close enemy angle 90.0 distance 10.0: 1.0
+Ancient faces close enemy angle 180.0 distance 1.0: 1.0
+Ancient head follows body angle 180.0 distance 1.0: 1.0
+Ancient breath still aims at close enemy angle 180.0 distance 1.0: 1.0
+Ancient cone includes close enemy angle 180.0 distance 1.0: 1.0
+Ancient faces close enemy angle 180.0 distance 3.0: 1.0
+Ancient head follows body angle 180.0 distance 3.0: 1.0
+Ancient breath still aims at close enemy angle 180.0 distance 3.0: 1.0
+Ancient cone includes close enemy angle 180.0 distance 3.0: 1.0
+Ancient faces close enemy angle 180.0 distance 5.0: 1.0
+Ancient head follows body angle 180.0 distance 5.0: 1.0
+Ancient breath still aims at close enemy angle 180.0 distance 5.0: 0.9999999999999998
+Ancient cone includes close enemy angle 180.0 distance 5.0: 1.0
+Ancient faces close enemy angle 180.0 distance 6.0: 1.0
+Ancient head follows body angle 180.0 distance 6.0: 1.0
+Ancient breath still aims at close enemy angle 180.0 distance 6.0: 1.0000000000000002
+Ancient cone includes close enemy angle 180.0 distance 6.0: 1.0
+Ancient faces close enemy angle 180.0 distance 10.0: 1.0
+Ancient head follows body angle 180.0 distance 10.0: 1.0
+Ancient breath still aims at close enemy angle 180.0 distance 10.0: 1.0
+Ancient cone includes close enemy angle 180.0 distance 10.0: 1.0
+Ancient faces close enemy angle -90.0 distance 1.0: 1.0
+Ancient head follows body angle -90.0 distance 1.0: 1.0
+Ancient breath still aims at close enemy angle -90.0 distance 1.0: 0.9999999999999999
+Ancient cone includes close enemy angle -90.0 distance 1.0: 1.0
+Ancient faces close enemy angle -90.0 distance 3.0: 1.0
+Ancient head follows body angle -90.0 distance 3.0: 1.0
+Ancient breath still aims at close enemy angle -90.0 distance 3.0: 1.0
+Ancient cone includes close enemy angle -90.0 distance 3.0: 1.0
+Ancient faces close enemy angle -90.0 distance 5.0: 1.0
+Ancient head follows body angle -90.0 distance 5.0: 1.0
+Ancient breath still aims at close enemy angle -90.0 distance 5.0: 0.9999999999999998
+Ancient cone includes close enemy angle -90.0 distance 5.0: 1.0
+Ancient faces close enemy angle -90.0 distance 6.0: 1.0
+Ancient head follows body angle -90.0 distance 6.0: 1.0
+Ancient breath still aims at close enemy angle -90.0 distance 6.0: 1.0000000000000002
+Ancient cone includes close enemy angle -90.0 distance 6.0: 1.0
+Ancient faces close enemy angle -90.0 distance 10.0: 1.0
+Ancient head follows body angle -90.0 distance 10.0: 1.0
+Ancient breath still aims at close enemy angle -90.0 distance 10.0: 0.9999999999999999
+Ancient cone includes close enemy angle -90.0 distance 10.0: 1.0
+Ancient mouth aim at close ground target: 1.0000000000000002
+Ancient damage per delivery: 0.24000000953674316
+Ancient channel deliveries: 25.0
+Ancient cone: 40.0
+Ancient cooldown: 0.0
+Ancient mouth cone selects actual ground enemy: 1.0
+Ancient actual breath hit tick 2: 9.5999755859375
+Ancient delivery cadence 0: 2.0
+Ancient actual breath hit tick 6: 9.5999755859375
+Ancient delivery cadence 1: 6.0
+Ancient actual breath hit tick 10: 9.5999755859375
+Ancient delivery cadence 2: 10.0
+Ancient actual breath hit tick 14: 9.5999755859375
+Ancient delivery cadence 3: 14.0
+Ancient actual breath hit tick 18: 9.5999755859375
+Ancient delivery cadence 4: 18.0
+Ancient actual breath hit tick 22: 9.5999755859375
+Ancient delivery cadence 5: 22.0
+Ancient actual breath hit tick 26: 9.5999755859375
+Ancient delivery cadence 6: 26.0
+Ancient actual breath hit tick 30: 9.5999755859375
+Ancient delivery cadence 7: 30.0
+Ancient actual breath hit tick 34: 9.5999755859375
+Ancient delivery cadence 8: 34.0
+Ancient actual breath hit tick 38: 9.5999755859375
+Ancient delivery cadence 9: 38.0
+Ancient actual breath hit tick 42: 9.5999755859375
+Ancient delivery cadence 10: 42.0
+Ancient actual breath hit tick 46: 9.5999755859375
+Ancient delivery cadence 11: 46.0
+Ancient actual breath hit tick 50: 9.5999755859375
+Ancient delivery cadence 12: 50.0
+Ancient actual breath hit tick 54: 9.5999755859375
+Ancient delivery cadence 13: 54.0
+Ancient actual breath hit tick 58: 9.5999755859375
+Ancient delivery cadence 14: 58.0
+Ancient actual breath hit tick 62: 9.5999755859375
+Ancient delivery cadence 15: 62.0
+Ancient actual breath hit tick 66: 9.5999755859375
+Ancient delivery cadence 16: 66.0
+Ancient actual breath hit tick 70: 9.5999755859375
+Ancient delivery cadence 17: 70.0
+Ancient actual breath hit tick 74: 9.5999755859375
+Ancient delivery cadence 18: 74.0
+Ancient actual breath hit tick 78: 9.5999755859375
+Ancient delivery cadence 19: 78.0
+Ancient actual breath hit tick 82: 9.5999755859375
+Ancient delivery cadence 20: 82.0
+Ancient actual breath hit tick 86: 9.5999755859375
+Ancient delivery cadence 21: 86.0
+Ancient actual breath hit tick 90: 9.5999755859375
+Ancient delivery cadence 22: 90.0
+Ancient actual breath hit tick 94: 9.5999755859375
+Ancient delivery cadence 23: 94.0
+Ancient actual breath hit tick 98: 9.5999755859375
+Ancient delivery cadence 24: 98.0
+Ancient actual breath hit tick 102: 9.5999755859375
+Ancient delivery cadence 25: 102.0
+Ancient actual breath hit tick 106: 9.5999755859375
+Ancient delivery cadence 26: 106.0
+Ancient actual breath hit tick 110: 9.5999755859375
+Ancient delivery cadence 27: 110.0
+Ancient actual breath hit tick 114: 9.5999755859375
+Ancient delivery cadence 28: 114.0
+Ancient actual breath hit tick 118: 9.5999755859375
+Ancient delivery cadence 29: 118.0
+Ancient actual breath hit tick 122: 9.5999755859375
+Ancient delivery cadence 30: 122.0
+Ancient actual breath hit tick 126: 9.5999755859375
+Ancient delivery cadence 31: 126.0
+Ancient actual breath hit tick 130: 9.5999755859375
+Ancient delivery cadence 32: 130.0
+Ancient actual breath hit tick 134: 9.5999755859375
+Ancient delivery cadence 33: 134.0
+Ancient actual breath hit tick 138: 9.5999755859375
+Ancient delivery cadence 34: 138.0
+Ancient actual breath hit tick 142: 9.5999755859375
+Ancient delivery cadence 35: 142.0
+Ancient actual breath hit tick 146: 9.5999755859375
+Ancient delivery cadence 36: 146.0
+Ancient actual breath hit tick 150: 9.5999755859375
+Ancient delivery cadence 37: 150.0
+Ancient actual breath hit tick 154: 9.5999755859375
+Ancient delivery cadence 38: 154.0
+Ancient actual breath hit tick 158: 9.5999755859375
+Ancient delivery cadence 39: 158.0
+Ancient actual breath hit tick 162: 9.5999755859375
+Ancient delivery cadence 40: 162.0
+Ancient actual breath hit tick 166: 9.5999755859375
+Ancient delivery cadence 41: 166.0
+Ancient actual breath hit tick 170: 9.5999755859375
+Ancient delivery cadence 42: 170.0
+Ancient actual breath hit tick 174: 9.5999755859375
+Ancient delivery cadence 43: 174.0
+Ancient actual breath hit tick 178: 9.5999755859375
+Ancient delivery cadence 44: 178.0
+Ancient actual breath hit tick 182: 9.5999755859375
+Ancient delivery cadence 45: 182.0
+Ancient actual breath hit tick 186: 9.5999755859375
+Ancient delivery cadence 46: 186.0
+Ancient actual breath hit tick 190: 9.5999755859375
+Ancient delivery cadence 47: 190.0
+Ancient actual breath hit tick 194: 9.5999755859375
+Ancient delivery cadence 48: 194.0
+Ancient actual breath hit tick 198: 9.5999755859375
+Ancient delivery cadence 49: 198.0
+Ancient first five seconds actual deliveries: 25.0
+Ancient next five seconds actual deliveries: 25.0
+Ancient continuous ten seconds total damage: 479.998779296875
+Ancient channel rollover start: 4458.0
+Ancient zero native cooldown: 0.0
+Hydra actual entity tick chooses nearest: 1.0
+Hydra native controller begins on local target: 1.0
+Hydra native channel continues on local target: 1.0
+Hydra native channel stops tracking escaped target: 0.0
+Hydra native controller can restart on replacement: 1.0
+Hydra escaped target replaced with local enemy: 1.0
+Hydra includes twelve-block boundary: 1.0
+Hydra drops targets beyond twelve blocks: 1.0
+Hydra reacquires returning enemy: 1.0
+Hydra breath packet coordinate source: 1.0
+Hydra breath particle batches: 3.0
+Hydra particle exact mouth origin: 0.0
+Hydra particle yaw follows mouth aim: 4.870781898498535
+Hydra particle pitch follows mouth aim: 70.07501220703125
+Hydra visual cone: 40.0
+Hydra particle exact mouth origin: 0.0
+Hydra particle yaw follows mouth aim: 4.870781898498535
+Hydra particle pitch follows mouth aim: 70.07501220703125
+Hydra visual cone: 40.0
+Hydra particle exact mouth origin: 0.0
+Hydra particle yaw follows mouth aim: 4.870781898498535
+Hydra particle pitch follows mouth aim: 70.07501220703125
+Hydra visual cone: 40.0
+Hydra packet produces flame instructions: 1.0
+Hydra 40-degree cone includes fifteen degrees: 1.0
+Hydra 40-degree cone excludes twenty-five degrees: 0.0
+Ordinary Hydra summon-only fireball: 1.0
+Ordinary Hydra target radius: 12.0
+Ordinary Hydra fireball own power coefficient: 0.550000011920929
+Player Fireball unchanged: 0.800000011920929
+Ordinary Hydra actual raw hit: 0.54998779296875
+Observed old 9.1 hit scales to new damage: 6.25625
+Elemental shard own power coefficient: 1.0
+Player Nova range remains: 10.0
+Player Nova freeze remains: 2.0
+Shared summon Nova action unchanged: 1.0
+Blizzard cooldown 0.0: 12.0
+Blizzard cooldown 0.5: 16.0
+Blizzard cooldown 1.0: 20.0
+Blizzard normalized shard at power40: 10.66668701171875
+Evocation full cooldown: 35.0
+Rapid Evocation stack cap: 12.0
+Rapid Evocation duration: 200.0
+Lasting Evocation duration: 300.0
+Evocation per stack critical base increase: 5.000000074505806
+Evocation per stack haste multiplier: 1.0299999993294477
+Burst Blink base distance: 10.0
+Blink actual landing: (0.0, 80.0, 109.5)
+Blink departure entity alive: true, section present: true
+Burst Blink successful teleport: 1.0
+Burst Blink departure damage immediate: 20.0
+Burst Blink arrival not immediate: 0.0
+Burst Blink arrival waits five ticks: 0.0
+Blink delayed fixture live: true, victim live: true
+Burst Blink fixed arrival damage: 20.0
+Wall real interactor four-press cast, held-repeat guard and hosting-item checks: PASS
+Great Wall native movement/projectile/geometry and four-cast checks: PASS
+wizards:fire_wall actual cloud damage at1.8blocks height: 8.0
+wizards:fire_wall excludes feet above2blocks: 0.0
+skill_tree_rpgs:fire_tier_3_spell_1_modifier_2 actual cloud damage at1.8blocks height: 4.0
+skill_tree_rpgs:fire_tier_3_spell_1_modifier_2 excludes feet above2blocks: 0.0
+Wall partial window at99ticks: PASS
+Wall automatic cooldown at100ticks without another cast: PASS

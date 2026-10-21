@@ -61,7 +61,7 @@ with ZipFile(upstream) as source, ZipFile(output, "w") as target:
                 "tooltip.nameless_trinkets.light_gloves_1": "Mining speed under cover: 1.5x.",
                 "tooltip.nameless_trinkets.rage_mind_2": "Deal +15% damage to the marked creature type.",
                 "tooltip.nameless_trinkets.scarab_amulet_1": "Movement speed on sand: 1.5x.",
-                "tooltip.nameless_trinkets.shrinking_veil_2": "Movement speed: 1.25x; Weakness I (60s), refreshed while worn.",
+                "tooltip.nameless_trinkets.shrinking_veil_2": "Movement speed: 1.25x; Weakness II (60s), refreshed while worn.",
                 "tooltip.nameless_trinkets.vampire_blood_3": "Sunlight hurts. Removal unlocks after 2 full Minecraft days worn (48,000 ticks).",
                 "tooltip.nameless_trinkets.true_heart_of_the_sea_4": "Underwater mining speed: 1.25x.",
             })

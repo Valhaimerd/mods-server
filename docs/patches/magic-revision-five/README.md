@@ -42,7 +42,7 @@ Damage percentages multiply the corresponding school's effective damage before c
 ### Second-tier node choices
 
 - **Beam:** Improved adds five critical-chance percentage points. Choose Beam Exposure (three seconds, +4% Arcane vulnerability per level, maximum 25 levels / +100%) or Charged Beam, replacing Beam Propulsion's movement/jump buff.
-- **Charged Beam:** Ten-second channel, 50 deliveries. Zero-based delivery index `n` deals `min(10 + 0.15n, 15)%`. Thus shot 1 is 10%, shot 35 reaches 15%, and the full base channel totals 664.15%. Width is `min(1.3 + 0.04n, 3)` times the original width: shot 1 is 1.3×, shot 44 reaches the 3× cap. Haste changes time, not these base delivery indices. Cooldown remains 15–30 s. The improved root's critical bonus still applies normally.
+- **Charged Beam:** Ten-second channel, 50 deliveries. Zero-based delivery index `n` deals `min(10 + 0.15n, 15)%`. Thus shot 1 is 10%, shot 35 reaches 15%, and the full base channel totals 664.15%. Width is `min(1.3 + 0.10n, 5)` times the original width: shot 1 is 1.3×, shot 38 reaches the 5× cap. Haste changes time, not these base delivery indices. Cooldown remains 15–30 s. The improved root's critical bonus still applies normally.
 - **Barrage:** Improved adds ten emitter critical-chance attribute points. Choose Arcane Battery (+1 emitter, four total) or Attuned Emitters (adds owner haste minus 100 to emitter haste). Their Arcane Bolt has a one-second base cast plus a five-tick AI action cooldown; this is not a fixed four shots/second rate.
 - **Meteor:** Improved reduces cooldown 20 to 18 s. Choose Meteor Shower (+1 meteor, four total) or Meteor Splash (starts after 0.25 s, radius 5, lifetime 6 s, 10% per impact, existing eight-tick / 0.4 s impact interval).
 - **Firestorm:** Improved adds +10% spell damage scaling. Choose Flame Whirlpool (Slowness II for one second refreshed by hits; inward -0.45 / upward +0.1 velocity across the same 15-block target area) or Raging Firestorm (+2 deliveries, ten total / 400% before root, +100% base knockback).
@@ -62,7 +62,7 @@ The default inputs are ignored `tmp/magic-revision-five/before/`. Use the previo
 
 Missiles and Breath JSON coefficients are 0.78 and 0.65 because channels normalize impacts by duration/delivery count: 0.78 * 4/12 = 26%; 0.65 * 5/25 = 13%. Explosion's base coefficient becomes 2.6. The existing per-caster `RevisionRules` override becomes 1.6 for Echoing Blast; all other helper behavior is retained. Nova and Meteor base cooldowns become 12/20 seconds; Improved Meteor retains its two-second deduction.
 
-Barrage's emitters previously cast the same `wizards:arcane_bolt` used by wands. A copied registry-only `wizards:arcane_barrage_bolt` has coefficient 0.4, and Barrage's summon action casts that copy. Its projectile/cast behavior is otherwise identical. Wand Arcane Bolt stays at 0.7. No learnable node or item is added.
+Barrage's emitters previously cast the same `wizards:arcane_bolt` used by wands. A copied registry-only `wizards:arcane_barrage_bolt` has coefficient 0.5, and Barrage's summon action casts that copy. Its projectile/cast behavior is otherwise identical. Wand Arcane Bolt stays at 0.7. No learnable node or item is added.
 
 Magistrate's old fixed +10 critical points are removed from `SkillOverhaul.applyCritical`; ordinary nodes remain. Its Adventurer definition and canonical rebuild description are updated together. No allocation reset or new migration marker is introduced. Tooltip descriptions also clarify target-centered Explosion, fixed-cast Slash, Breath deliveries and full-duration Shield immunity.
 
@@ -80,3 +80,21 @@ Production filenames remain unchanged in `mods/` and ignored fixed packs. Prior 
 - [Runtime probe](RevisionProbe.java), [measurements](runtime-results.txt) and [archive inventory](artifacts.json) record the checks. Local server/logs are under ignored `tmp/magic-revision-five/server` and `tmp/magic-revision-five/runtime.log`. Production/fixed copies match the tested candidates.
 
 These controlled dedicated-server checks do not claim a full client animation or multiplayer balance playtest. Shield uses a non-player living fixture to avoid fake-player invulnerability producing a false positive; player-cast durations still come from the actual parsed spell definitions.
+
+## Emitter and Charged Beam follow-up - 21 October
+
+Barrage bolts now deal **50% of their emitter?s Arcane damage**; ordinary wand Arcane Bolt remains 70%. Charged Beam starts at **1.3x original width**, adds **0.10x per zero-based delivery index**, and caps at **5x** on delivery 38. Damage growth, delivery count and cooldowns are unchanged. `tune-emitter-beam.py` layers these changes over the current installed JARs, preserving the later summon/passive/physical updates; candidates go to `tmp/arcane-emitter-beam`.
+
+Verification: **857 isolated runtime checks** passed, including actual emitter hit damage of 20 at 40 emitter power, unchanged wand bolt damage, initial width 0.104 (1.3x), delivery 25 width 0.296 (3.7x), delivery 37 width 0.392 (4.9x), and delivery 38+ width 0.4 (5x). Existing spell, passive, summon, party, wall and shield checks remain green. Hashes and exact ZIP changes are in `emitter-beam-artifacts.json`.
+
+The updated handbook remains 74 pages, with text changes confined to page 16. All pages were rendered and visually reviewed; no pagination changes or clipping were found. Raw spell/node references and in-game descriptions were regenerated. No new interactive client playtest was performed.
+
+## Simple descriptions and emitter rollback - 21 October
+
+Barrage bolts return to **40% of emitter Arcane damage**. Charged Beam keeps its 1.3x initial width, +0.10x per hit and 5x cap. RPG skill and class-spell English descriptions now show damage/healing as percentages rather than live calculated damage. Ward text uses absorption hearts in plain words, without `floor` expressions. Charged Beam and other wizard text use hits instead of deliveries, and internal proc terminology is removed. Detailed raw investigation notes retain their formulas.
+
+`python docs/patches/magic-revision-five/simple-descriptions.py` is the final description pass after earlier pack patches. It reads current installed JARs and writes candidates under `tmp/simple-skill-descriptions`. Its only gameplay-data change is the emitter coefficient rollback; the remaining changes are 72 English descriptions across Skill Tree, Wizards, Archers, Paladins and Rogues.
+
+Verification: all 72 changed strings are description keys; no damage/healing placeholders or floor formulas remain in the five class/node English description sets. ZIP comparisons confirm that no gameplay resource changes except the Barrage bolt coefficient (0.5 to 0.4). A fresh isolated world passed **857 runtime checks**, including emitter damage of 16 at 40 power and the retained Charged Beam width. Reused fixture worlds contained residual damage; the lance check now samples health immediately before impact, and the final run used a fresh world. Hashes and changed keys are in `simple-descriptions-artifacts.json`.
+
+The handbook remains 74 pages. All pages were rendered and reviewed, including detailed review of changed pages 16 and 17; no clipping or pagination changes were found. No new interactive client visual test was performed.

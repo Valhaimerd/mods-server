@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "jar": "artifacts-neoforge-15.1.3+26.2.1.jar",
+      "before_sha256": "567f61e66baa401c6d340a0183220276023404baa1f1e3d612935aeb03dfecb1",
+      "after_sha256": "b3dd7432591c9e1f8be4b0158366b237d7c758138b913305d9e56db9a8c71cdb"
+    },
+    {
+      "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
+      "before_sha256": "a9d7800221a968f04c596761eb7a1ab49c2eef7ede2950a7d9ef3a352aa60569",
+      "after_sha256": "ac3df41a23cf5f92d49f421b182c5460eb9bb5f7a1d41fdf53619901c81fed44"
+    }
+  ],
+  "runtime_checks": {
+    "artifacts": 67,
+    "nameless": 228
+  },
+  "functional_slots_before": 20,
+  "functional_slots_after": 21,
+  "client_visual_test": false
+}

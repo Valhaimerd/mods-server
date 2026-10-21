@@ -54,6 +54,7 @@ public final class PackBalance {
      number(config,"speedMultiplierPercentage",50.0);
     }
     case "ShrinkingVeil" -> {
+     number(config,"shrinkScalePercentage",25.0);
      number(config,"speedPercentage",25.0);
     }
     case "TitansMark" -> {

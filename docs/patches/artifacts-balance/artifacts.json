@@ -1,8 +1,16 @@
 {
   "upstream_sha256": "3be92116769cbba850acfc0e03bd0f3688c459e2b17144d97da36679fe35c104",
-  "output_sha256": "567f61e66baa401c6d340a0183220276023404baa1f1e3d612935aeb03dfecb1",
+  "output_sha256": "b3dd7432591c9e1f8be4b0158366b237d7c758138b913305d9e56db9a8c71cdb",
   "replaced": [
     "artifacts/config/value/ConfigValue.class",
     "artifacts/registry/ModItems.class"
+  ],
+  "added_resources": [
+    "data/artifacts/curios/entities/slots.json",
+    "data/artifacts/curios/slots/belt.json",
+    "data/artifacts/curios/slots/feet.json",
+    "data/artifacts/curios/slots/hands.json",
+    "data/artifacts/curios/slots/head.json",
+    "data/artifacts/curios/slots/necklace.json"
   ]
 }

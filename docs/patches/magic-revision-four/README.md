@@ -85,3 +85,5 @@ Production JARs retain active filenames and go to `mods/` and ignored fixed pack
 - The raw reference now documents 26 base/helper spell records, including the automatic shield burst and the engine overrides. The handbook remains 74 pages; only page 16 changes text, its rendered layout fits, and internal links resolve. Installed/fixed-pack hashes match tested candidates, and a fresh rebuild is byte-identical by archive entry to the tested JARs.
 
 These are controlled dedicated-server checks, not a full client animation or multiplayer playtest. Existing effect-config overrides and explicit target immunities can affect other modifiers and freeze acceptance.
+
+The current shared `RevisionRules.java` helper includes the later Charged Beam width adjustment: 1.3x plus 0.10x per delivery, capped at 5x. The tables above record this revision?s historical values; see magic-revision-five for the current follow-up.

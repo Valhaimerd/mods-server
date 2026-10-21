@@ -37,7 +37,7 @@ public final class RevisionRules {
     }
 
     public static float chargedWidth(int deliveryIndex) {
-        return .08f * Math.min(1.3f + .04f * Math.max(deliveryIndex, 0), 3f);
+        return .08f * Math.min(1.3f + .10f * Math.max(deliveryIndex, 0), 5f);
     }
 
     public static Spell.Target.Beam beam(SpellCaster.Entity caster) {

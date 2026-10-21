@@ -54,7 +54,7 @@ public final class ConfigValue<T> implements Value<T>, StringRepresentable {
             case "power_glove.attackDamageBonus" -> Double.valueOf(2.0);
             case "pocket_piston.attackKnockbackBonus" -> Double.valueOf(0.3);
             case "steadfast_spikes.knockbackResistance" -> Double.valueOf(0.5);
-            case "charm_of_shrinking.scaleModifier" -> Double.valueOf(-0.5);
+            case "charm_of_shrinking.scaleModifier" -> Double.valueOf(-0.25);
             case "obsidian_skull.fireResistanceDuration" -> Integer.valueOf(30);
             case "obsidian_skull.cooldown" -> Integer.valueOf(60);
             case "steadfast_spikes.slipperinessReduction" -> Double.valueOf(1.0);

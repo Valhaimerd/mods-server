@@ -1,0 +1,27 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "ade322e7e2ee4a4df0d50d5f06abd523d9c22a47bf32f7d0e03743f040ad6a0b",
+    "after_sha256": "59e2ad08d584f70cdc79b424a2d8b72affd2308b26c23f436b9cc41075388c6d",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_barrage_bolt.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "8602014041f73a4828e722dfb24c14a1c6e14a62292903ed8d2a1465982114ec",
+    "after_sha256": "c68732c70961c89492e206a6caa24a22f6c4900d43fe92ef4aa3c835aff957ca",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "e8c9afa5cae9bd03f4bcd36e11d177e05780db334949dc8e8b4d4164a2a55246",
+    "after_sha256": "23edb3c7b51970b007f890c7bba22994f6698007672457a4bccd33725b0c5bd0",
+    "changed_entries": [
+      "net/spell_engine/internals/RevisionRules.class"
+    ]
+  }
+]

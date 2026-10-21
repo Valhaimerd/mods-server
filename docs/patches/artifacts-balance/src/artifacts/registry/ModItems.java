@@ -345,7 +345,7 @@ public class ModItems {
             .toggleKey(ToggleIdentifier.CHARM_OF_SHRINKING)
             .modifiesAttributeTotal(Attributes.SCALE, config.scaleModifier)
             .modifiesAttributeTotal(Attributes.MOVEMENT_SPEED, Value.of(0.2D))
-            .mobEffect(MobEffects.WEAKNESS, Value.of(1), Value.of(60), () -> EntityCondition.ALWAYS)
+            .mobEffect(MobEffects.WEAKNESS, Value.of(2), Value.of(60), () -> EntityCondition.ALWAYS)
     );
 
     // belt

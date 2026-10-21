@@ -57,7 +57,7 @@ for name in ['wizards-neoforge-3.1.2+26.2.jar', 'skill_tree-neoforge-1.6.1+26.2.
         files['net/spell_engine/internals/RevisionRules.class'] = (CLASSES / 'net/spell_engine/internals/RevisionRules.class').read_bytes()
     else:
         path = 'assets/skill_tree_rpgs/lang/en_us.json'; lang = json.loads(files[path])
-        lang['spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_2.description'] = 'Channel for 10 sec over 50 deliveries. Damage starts at 10%%, increasing by 0.15 percentage points per delivery to 15%%. Beam width grows from 1.3x by 0.04x per delivery to 3x.'
+        lang['spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_2.description'] = 'Channel for 10 sec over 50 deliveries. Damage starts at 10%%, increasing by 0.15 percentage points per delivery to 15%%. Beam width grows from 1.3x by 0.10x per delivery to 5x.'
         lang['spell.skill_tree_rpgs.arcane_tier_2_spell_2_modifier_1.description'] = 'Arcane Explosion hits always reset its cooldown, but Explosion damage becomes 180%%. No proc cooldown.'
         files[path] = (json.dumps(lang, indent=2, ensure_ascii=False) + '\n').encode()
     changed = [n for n, data in original_files.items() if files[n] != data]

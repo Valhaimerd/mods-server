@@ -104,8 +104,10 @@ public class ThirdTierProbe {
             var process = new SpellCast.Process(player, beam, Items.STICK, 1, 200, level.getGameTime());
             ((SpellCaster.Player)player).getInteractor().setProcess(process); // exercise shared render appearance
             check("Charged beam initial width", ((SpellCaster.Entity)player).getBeam().width, .104);
-            check("Charged beam width at delivery 25", RevisionRules.chargedWidth(24), .1808);
-            check("Charged beam width cap", RevisionRules.chargedWidth(49), .24);
+            check("Charged beam width at delivery 25", RevisionRules.chargedWidth(24), .296);
+            check("Charged beam width cap", RevisionRules.chargedWidth(49), .4);
+            check("Charged beam just before cap", RevisionRules.chargedWidth(36), .392);
+            check("Charged beam reaches cap on delivery 38", RevisionRules.chargedWidth(37), .4);
             ((SpellCaster.Player)player).getInteractor().requestClear();
             nodes(List.of(), List.of());
             var exposureTarget = target(1);
@@ -148,11 +150,14 @@ public class ThirdTierProbe {
         ((WorldScheduler)level).schedule(40, () -> {
             try {
                 check("Geometry target indexed", level.getEntities(primary, primary.getBoundingBox().inflate(8)).contains(nearby) ? 1 : 0, 1);
+                // The indexing wait can expose fixtures to unrelated world damage.
+                float primaryBefore=primary.getHealth(), nearbyBefore=nearby.getHealth(), outsideBefore=outside.getHealth();
+                out.add("Shattering pre-impact health: "+primaryBefore+", "+nearbyBefore+", "+outsideBefore);
                 var ctx = context(lance, 0).position(primary.position());
                 SpellImpacts.performImpacts(level, player, primary, primary, lance, lance.value().impacts, ctx);
-                check("Shattering direct damage", 1000 - primary.getHealth(), 80);
-                check("Shattering splash damage at five blocks", 1000 - nearby.getHealth(), 20);
-                check("Outside Shattering radius", 1000 - outside.getHealth(), 0);
+                check("Shattering direct damage", primaryBefore - primary.getHealth(), 80);
+                check("Shattering splash damage at five blocks", nearbyBefore - nearby.getHealth(), 20);
+                check("Outside Shattering radius", outsideBefore - outside.getHealth(), 0);
                 ((WorldScheduler)level).schedule(11, () -> {
                     try {
                         var frozen = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen")).orElseThrow();

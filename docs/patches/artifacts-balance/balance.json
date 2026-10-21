@@ -13,7 +13,7 @@
   "power_glove.attackDamageBonus": 2.0,
   "pocket_piston.attackKnockbackBonus": 0.3,
   "steadfast_spikes.knockbackResistance": 0.5,
-  "charm_of_shrinking.scaleModifier": -0.5,
+  "charm_of_shrinking.scaleModifier": -0.25,
   "obsidian_skull.fireResistanceDuration": 30,
   "obsidian_skull.cooldown": 60,
   "steadfast_spikes.slipperinessReduction": 1.0

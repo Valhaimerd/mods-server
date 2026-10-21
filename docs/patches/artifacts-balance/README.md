@@ -13,7 +13,7 @@ The upstream license is preserved in `LICENSE.upstream` and in the archive.
 | Panic Necklace | **Speed I, 5 seconds**, cooldown **7 seconds**. |
 | Shock Pendant | Cooldown **3 seconds**; chance/immunity retained. |
 | Thorn Pendant | Cooldown **3 seconds**; damage/chance retained. |
-| Charm of Shrinking | Half size retained; **×1.2 movement speed** and refreshing **Weakness I, 60 seconds** while active. |
+| Charm of Shrinking | 75% of original size; **×1.2 movement speed** and refreshing **Weakness II, 60 seconds** while active. |
 | Obsidian Skull | **Fire Resistance II**; 30-second duration and 60-second cooldown retained. Level II has no extra vanilla fire-protection benefit over level I. |
 | Crystal Heart | **+8 maximum health / +4 hearts**. |
 | Feral Claws | **+15% base attack speed**. |
@@ -77,3 +77,11 @@ Probe source: `tests/ArtifactsProbe.java`. Test logs/results stay ignored under
 `tmp/artifacts-balance/`. This is focused server verification, not a full client,
 tooltip, combat-balance, or multiplayer playtest. Retained values use upstream
 mechanics; no claim is made that melee/ranged/caster outcomes are now equal.
+
+## Shrinking and missing-slot repair - 21 October
+
+Charm of Shrinking uses a -0.25 total-scale modifier (**75% normal size**) and refreshing **Weakness II**. Its 1.2x movement speed and native 60-second refresh/cleanup remain. Stale config cannot restore half size.
+
+The installed upstream archive omitted Artifacts player slot declarations. Steadfast Spikes belongs to Feet, but the pack assigned only Nameless Trinkets? separate Shoes slot. Restored resources assign Head, Necklace, Hands, Belt and Feet with one base slot each, using normal Curios merging. Shared slots remain shared; Feet is the missing type. This changes the current pack from 20 to 21 functional slots. Charm already exists through Nameless Trinkets, Starcatcher and Charm of Undying Reborn; Feet sorts before Charm, moving it into the bottom-right cell of the supplied three-column layout. No existing slots or items are removed. The build now also includes the six JSON files under `resources/`.
+
+Latest isolated server verification: **67 checks passed**, including the player Feet slot, Steadfast Spikes accepted in Feet and rejected from Necklace, 75% scale modifier, Weakness II and existing balance/toggle behavior. Runtime uses NeoForge 26.2.0.90 and Curios 16.0.0+26.2. The handbook remains 74 pages; visual review covers all pages and detailed review of the changed equipment entries. No new client UI playtest was performed. Hashes and slot totals are in `shrinking-slots-verification.json`.

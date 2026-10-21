@@ -90,8 +90,8 @@ public class RevisionProbe {
             var process = new SpellCast.Process(player, beam, Items.STICK, 1, 200, level.getGameTime());
             ((SpellCaster.Player)player).getInteractor().setProcess(process); // exercise shared render appearance
             check("Charged beam initial width", ((SpellCaster.Entity)player).getBeam().width, .104);
-            check("Charged beam width at delivery 25", RevisionRules.chargedWidth(24), .1808);
-            check("Charged beam width cap", RevisionRules.chargedWidth(49), .24);
+            check("Charged beam width at delivery 25", RevisionRules.chargedWidth(24), .296);
+            check("Charged beam width cap", RevisionRules.chargedWidth(49), .4);
             ((SpellCaster.Player)player).getInteractor().requestClear();
             nodes(List.of(), List.of());
             var exposureTarget = target(1);

@@ -1,0 +1,125 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "c68732c70961c89492e206a6caa24a22f6c4900d43fe92ef4aa3c835aff957ca",
+    "after_sha256": "a8adfdaa3db90a7560cabb4e726c6719ea5cbede2c7cc62cce18f18d14c1e214",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.skill_tree_rpgs.arcane_tier_1_passive_1.description",
+      "spell.skill_tree_rpgs.arcane_tier_1_passive_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_2_spell_2_modifier_1.description",
+      "spell.skill_tree_rpgs.arcane_tier_2_spell_2_modifier_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_passive_1.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_4_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.archer_tier_2_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.archer_tier_3_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.fire_tier_1_passive_2.description",
+      "spell.skill_tree_rpgs.fire_tier_2_passive_2.description",
+      "spell.skill_tree_rpgs.fire_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.fire_tier_3_passive_1.description",
+      "spell.skill_tree_rpgs.fire_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.fire_tier_4_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.frost_tier_1_passive_1.description",
+      "spell.skill_tree_rpgs.frost_tier_1_passive_2.description",
+      "spell.skill_tree_rpgs.frost_tier_2_passive_2.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_2_modifier_2.description",
+      "spell.skill_tree_rpgs.frost_tier_3_passive_1.description",
+      "spell.skill_tree_rpgs.frost_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.paladin_tier_2_spell_2_modifier_2.description",
+      "spell.skill_tree_rpgs.paladin_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.paladin_tier_4_spell_2_modifier_2.description",
+      "spell.skill_tree_rpgs.priest_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.priest_tier_4_spell_2_modifier_1.description",
+      "spell.skill_tree_rpgs.rogue_tier_1_passive_2.description",
+      "spell.skill_tree_rpgs.rogue_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.rogue_tier_4_spell_2_modifier_1.description",
+      "spell.skill_tree_rpgs.warrior_tier_4_spell_1_modifier_2.description"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "59e2ad08d584f70cdc79b424a2d8b72affd2308b26c23f436b9cc41075388c6d",
+    "after_sha256": "5d61fa101fd445c7fe62902714c48537399a785d891cbc65188260ded138b110",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_barrage_bolt.json"
+    ],
+    "description_keys": [
+      "spell.wizards.arcane_barrage.description",
+      "spell.wizards.arcane_beam.description",
+      "spell.wizards.arcane_blast.description",
+      "spell.wizards.arcane_bolt.description",
+      "spell.wizards.arcane_explosion.description",
+      "spell.wizards.arcane_missile.description",
+      "spell.wizards.fire_blast.description",
+      "spell.wizards.fire_breath.description",
+      "spell.wizards.fire_hydra.description",
+      "spell.wizards.fire_meteor.description",
+      "spell.wizards.fire_scorch.description",
+      "spell.wizards.fire_slash.description",
+      "spell.wizards.fire_storm.description",
+      "spell.wizards.fire_wall.description",
+      "spell.wizards.fireball.description",
+      "spell.wizards.frost_blizzard.description",
+      "spell.wizards.frost_elemental.description",
+      "spell.wizards.frost_lance.description",
+      "spell.wizards.frost_nova.description",
+      "spell.wizards.frost_shard.description",
+      "spell.wizards.frost_spikes.description",
+      "spell.wizards.frostbolt.description",
+      "spell.wizards.arcane_barrage_bolt.description",
+      "spell.wizards.elemental_frost_shard.description",
+      "spell.wizards.ancient_hydra_breath.description"
+    ]
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "8f06949adf07ab9c35f90c8548f4aff04d58463a261480faac441299033a52c5",
+    "after_sha256": "bfcfdfaccaa898593bfb5bccdaf1e355dfb4ab8be46c216e73186523ddd179e6",
+    "changed_entries": [
+      "assets/archers/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.archers.magic_arrow.description",
+      "spell.archers.rain_of_arrows.description"
+    ]
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "26009d4e638f8b52e6a5db94bc1006cc1e400ea5f9639e8f47dfbb36688ff164",
+    "after_sha256": "c96121749b367ee23801ba5a1e5fa2cce131f139aab65949338d5b0f345c9352",
+    "changed_entries": [
+      "assets/paladins/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.paladins.blessed_strikes.description",
+      "spell.paladins.circle_of_healing.description",
+      "spell.paladins.flash_heal.description",
+      "spell.paladins.heal.description",
+      "spell.paladins.holy_beam.description",
+      "spell.paladins.holy_shock.description",
+      "spell.paladins.immolation.description",
+      "spell.paladins.judgement.description",
+      "spell.paladins.lightwell_orb.description",
+      "spell.paladins.penance.description"
+    ]
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "40e1b322aac2ad99ecd726a3361222f33a8e5288be0e9f2b17406709fde39e56",
+    "after_sha256": "9cb1d621fe2e2c850bb88ac7eb283fb4985ded469d289624ad0c0f05573df602",
+    "changed_entries": [
+      "assets/rogues/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.rogues.bear_trap.description",
+      "spell.rogues.throw.description",
+      "spell.rogues.throw_net.description"
+    ]
+  }
+]

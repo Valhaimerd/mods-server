@@ -14,7 +14,7 @@ This same-version repair targets `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.
 ## Additional balance revision ? 18 October 2026
 
 - Vampire Blood uses a persistent per-stack removal countdown of 48,000 equipped server ticks (two full Minecraft days, nominally 40 minutes). Restoring equipped stacks preserves the countdown; normal removal clears it and a new equip starts a new lock. Offline/unequipped time and sleeping do not advance it. Creative players can remove it immediately. This follows the existing timed-removal concept without sharing the timer through global Stats.
-- Shrinking Veil refreshes Weakness I to 1,200 ticks/60 seconds while equipped. It can linger for its remaining duration after removal; other sources of Weakness are not forcibly cleared.
+- Shrinking Veil refreshes Weakness II to 1,200 ticks/60 seconds while equipped. It can linger for its remaining duration after removal; other sources of Weakness are not forcibly cleared.
 - Missing Page's radius setting is five blocks, with a distance check excluding the corners of the original cubic search. It retains 100% activation and 5% target maximum-health damage on qualifying incoming entity attacks.
 - Titan's Mark now uses +25% size and +10% attack damage, retaining its existing refreshed health, Slowness and Resistance effects.
 
@@ -55,3 +55,9 @@ The isolated client loads the revised JAR and confirms removed relics remain abs
 Latest follow-up verification: **131 dedicated-server checks passed**, including 25% actual magic reduction, 1.15x marked-type damage (unmarked types unchanged), and Vampire Blood?s 1.2x attack/1.1x movement, non-stacking and removal cleanup. The isolated client/JEI check also passed. Active/server/client/fixed copies match SHA-256 `215d97e344cb83436aaea78d626fd4c4a1d27b8d4a5f4e695db15282b33a4c5f`.
 
 Duplicate-prevention verification: **226 dedicated-server checks passed**. Every retained trinket rejects a second copy and permits its first copy. Four forced Vampire Blood copies receive only one damage/speed modifier and one tick callback; inactive removal, primary handover, last-copy cleanup, preserved stacks and timer restrictions pass. Live-slot checks also cover repeated same-tick equipment changes. The revised archive loads in the isolated client and retains the JEI exclusions. Active/server/client/fixed copies match SHA-256 `a9d7800221a968f04c596761eb7a1ab49c2eef7ede2950a7d9ef3a352aa60569`.
+
+## Shrinking revision - 21 October
+
+Shrinking Veil retains **75% original size** (25% reduction), refreshes **Weakness II for 60 seconds**, and keeps its 1.25x movement bonus. Defaults and stale-config enforcement set 25% shrink. Equipped legacy half-size modifiers refresh to the new amount without accumulating. Existing duplicate-trinket guards remain.
+
+Latest isolated server verification: **228 checks passed**, including 75% actual scale, repairing an already-equipped legacy half-size modifier, Weakness II refresh, stale-config enforcement, duplicate-copy restrictions and prior balance/removal coverage. No new client visual test was performed. Current hashes are recorded in `../artifacts-balance/shrinking-slots-verification.json`.

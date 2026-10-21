@@ -296,13 +296,13 @@ Toggleable **SINKING** in water, **+1.5 oxygen bonus attribute**, and prevention
 
 Toggleable **SIZE REDUCTION −50%**, a **×0.5 total scale multiplier**.
 
-**Planned:** retain **half size**; add **×1.2 movement speed (+20%)** and **Weakness I for 60 seconds**, refreshed while the shrinking ability is active. Stop refreshing when inactive; use native Artifacts unequip cleanup. Effects include the native **19-tick refresh padding**. Implemented through item data components: the installed item config exposes only scale, not speed or Weakness.
+**Planned:** retain **75% original size**; add **×1.2 movement speed (+20%)** and **Weakness II for 60 seconds**, refreshed while the shrinking ability is active. Stop refreshing when inactive; use native Artifacts unequip cleanup. Effects include the native **19-tick refresh padding**. Implemented through item data components: the installed item config exposes only scale, not speed or Weakness.
 
 | Setting | Default | Planned value |
 | --- | --- | --- |
-| `scaleModifier` | **-0.5** | **-0.5 (retain)** |
+| `scaleModifier` | **-0.5** | **-0.25 (75% original size)** |
 | Added movement multiplier (new behavior; no existing key) | None | **×1.2** |
-| Added Weakness (new behavior; no existing key) | None | **I, 60 seconds, refreshed while active** |
+| Added Weakness (new behavior; no existing key) | None | **II, 60 seconds, refreshed while active** |
 
 **Optional durability (disabled)** — section `[charm_of_shrinking.durability]`: `damagePerSecondActive` **0.1**; `maxDamage` **1800**.
 
@@ -742,3 +742,5 @@ The following **four recommendations are approved** and recorded in the individu
 - [Configuration definitions](https://github.com/ochotonida/artifacts/blob/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/config/ItemConfigs.java), [item definitions](https://github.com/ochotonida/artifacts/blob/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/registry/ModItems.java), [ability implementations](https://github.com/ochotonida/artifacts/tree/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/component/ability).
 
 Upstream reference established by static inspection. The implemented balance passed 64 checks on an isolated NeoForge dedicated server; no full client or comparative combat playtest was performed.
+
+21 October slot repair: the missing Artifacts Feet assignment is restored. Steadfast Spikes fits Feet (not Nameless Shoes). Existing Charm remains; adding Feet brings the current pack to 21 functional slots.

@@ -35,8 +35,10 @@ with ZipFile(upstream) as src,ZipFile(output,'w') as dst:
   old=src.read(info.filename);new=replacements.get(info.filename,old)
   if new!=old:changed.append(info.filename)
   dst.writestr(info,new)
+ for resource in sorted((HERE/'resources').rglob('*.json')):
+  dst.writestr(resource.relative_to(HERE/'resources').as_posix(),resource.read_bytes())
  dst.writestr('artifacts-pack-balance.json',(HERE/'balance.json').read_bytes())
 assert len(changed)==2,changed
-report={'upstream_sha256':UPSTREAM_SHA,'output_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'replaced':changed}
+report={'upstream_sha256':UPSTREAM_SHA,'output_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'replaced':changed,'added_resources':[f.relative_to(HERE/'resources').as_posix() for f in sorted((HERE/'resources').rglob('*.json'))]}
 (WORK/'build-result.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

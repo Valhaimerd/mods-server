@@ -60,7 +60,8 @@
       "speedMultiplierPercentage": 50.0
     },
     "ShrinkingVeil": {
-      "speedPercentage": 25.0
+      "speedPercentage": 25.0,
+      "shrinkScalePercentage": 25.0
     },
     "TitansMark": {
       "attackDamagePercentage": 10.0,
@@ -91,7 +92,7 @@
   "vampireRemovalTicks": 48000,
   "veilWeakness": {
     "duration": 1200,
-    "amplifier": 0
+    "amplifier": 1
   },
   "maxActiveCopiesPerTrinket": 1
 }

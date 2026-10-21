@@ -38,7 +38,7 @@ public class ShrinkingVeilBase extends TrinketItem<ShrinkingVeilBase.Stats> {
     }
 
     public static class Stats extends TrinketsStats {
-        public float shrinkScalePercentage = 50.0F;
+        public float shrinkScalePercentage = 25.0F;
         public float speedPercentage = 25.0f;
         public boolean isEnable = true;
     }

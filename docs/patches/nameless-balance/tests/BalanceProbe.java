@@ -118,9 +118,14 @@ public class BalanceProbe {
     var baseSpeed=player.getAttributeValue(Attributes.MOVEMENT_SPEED);
     var veil=(ICurioItem)ModItems.SHRINKING_VEIL.get();var veilStack=new ItemStack(ModItems.SHRINKING_VEIL.get());
     veil.onEquip(context,ItemStack.EMPTY,veilStack);
+    check(Math.abs(player.getAttributeValue(Attributes.SCALE)-.75)<0.0001,"Veil actual 75 percent scale");
     check(Math.abs(player.getAttributeValue(Attributes.MOVEMENT_SPEED)/baseSpeed-1.25)<0.0001,"Shrinking Veil actual 1.25x movement");
+    var legacyScale=net.minecraft.resources.Identifier.parse("nameless_trinkets:shrinking_veil_scale");
+    player.getAttribute(Attributes.SCALE).removeModifier(legacyScale);
+    player.getAttribute(Attributes.SCALE).addTransientModifier(new AttributeModifier(legacyScale,-.5,AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     veil.curioTick(context,veilStack);
-    check(player.getEffect(MobEffects.WEAKNESS).getAmplifier()==0 && player.getEffect(MobEffects.WEAKNESS).getDuration()==1200,"Veil Weakness I for sixty seconds");
+    check(Math.abs(player.getAttributeValue(Attributes.SCALE)-.75)<.0001,"Veil refresh repairs already equipped half-size modifier");
+    check(player.getEffect(MobEffects.WEAKNESS).getAmplifier()==1 && player.getEffect(MobEffects.WEAKNESS).getDuration()==1200,"Veil Weakness II for sixty seconds");
     player.removeEffect(MobEffects.WEAKNESS);player.addEffect(new net.minecraft.world.effect.MobEffectInstance(MobEffects.WEAKNESS,20,0));veil.curioTick(context,veilStack);
     check(player.getEffect(MobEffects.WEAKNESS).getDuration()==1200,"Veil refreshes Weakness while worn");
     veil.onUnequip(context,ItemStack.EMPTY,veilStack);player.removeEffect(MobEffects.WEAKNESS);

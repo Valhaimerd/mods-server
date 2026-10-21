@@ -42,6 +42,11 @@ with zipfile.ZipFile(ROOT / 'wizards-neoforge-3.1.2+26.2.jar') as wiz, zipfile.Z
         check(d['cost']['cooldown']['duration'], 30); check(d['cost']['cooldown']['haste_affected'], True)
         check(d['impacts'][0]['action']['summon']['behaviour']['lifespan']['active_seconds'], 20)
     check(spell('wizards:elemental_frost_shard')['impacts'][0]['action']['damage']['spell_power_coefficient'], 1)
+    for id, radius, duration in [('elemental_frost_nova', 10, 2), ('legion_frost_nova', 6, .5), ('frost_nova', 10, 2)]:
+        nova = spell('wizards:' + id)
+        check(nova['range'], radius)
+        check(nova['impacts'][0]['action']['damage']['spell_power_coefficient'], 1.8)
+        check(nova['impacts'][1]['action']['status_effect']['duration'], duration)
     breath = spell('wizards:ancient_hydra_breath')
     check(breath['range'], 12); check(breath['target']['area']['angle_degrees'], 20)
     check(breath['active']['cast']['duration'], 5); check(breath['active']['cast']['channel']['ticks'], 25)

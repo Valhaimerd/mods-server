@@ -251,22 +251,22 @@ Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=A
 Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
 Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
 Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
-Party: Judgement 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false: PASS
-Party: Holy Light 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false: PASS
-Party: Judgement bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false: PASS
-Party: Holy Light bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false: PASS
+Party: Judgement 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false: PASS
+Party: Holy Light 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false: PASS
+Party: Judgement 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false: PASS
+Party: Holy Light 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false: PASS
 Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=482.0
 Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
 Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=484.0
 Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
-Party: Judgement 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
-Party: loaded Falling Judgement damages enemy 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=false: PASS
-Party: Holy Light 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=false relation=HOSTILE before=500.0 after=468.0
-Party: loaded Holy Light mixed pipeline damages without healing enemy 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=false: PASS
+Party: Judgement 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=false: PASS
+Party: Holy Light 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=false: PASS
 Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=500.0
 Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
 Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=516.0
@@ -275,22 +275,22 @@ Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALL
 Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
 Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=516.0
 Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
-Party: Judgement 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false: PASS
-Party: Holy Light 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false: PASS
-Party: Judgement bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false: PASS
-Party: Holy Light bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false: PASS
+Party: Judgement 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false: PASS
+Party: Holy Light 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false: PASS
+Party: Judgement 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false: PASS
+Party: Holy Light 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false: PASS
 Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=482.0
 Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
 Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=484.0
 Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
-Party: Judgement 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=false relation=HOSTILE before=500.0 after=464.0
-Party: loaded Falling Judgement damages enemy 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=false: PASS
-Party: Holy Light 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=false relation=HOSTILE before=500.0 after=468.0
-Party: loaded Holy Light mixed pipeline damages without healing enemy 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=false: PASS
+Party: Judgement 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=false: PASS
+Party: Holy Light 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=false: PASS
 Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
 Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
 Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
@@ -299,22 +299,22 @@ Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=AL
 Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
 Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
 Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
-Party: Judgement 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true: PASS
-Party: Holy Light 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true: PASS
-Party: Judgement bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true: PASS
-Party: Holy Light bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true: PASS
+Party: Judgement 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true: PASS
+Party: Holy Light 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true: PASS
+Party: Judgement 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true: PASS
+Party: Holy Light 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true: PASS
 Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=482.0
 Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
 Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=484.0
 Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
-Party: Judgement 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
-Party: loaded Falling Judgement damages enemy 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=true: PASS
-Party: Holy Light 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=true relation=HOSTILE before=500.0 after=468.0
-Party: loaded Holy Light mixed pipeline damages without healing enemy 08ff6bdb-db52-4c9e-a269-658047f8467d DIRECT FF=true: PASS
+Party: Judgement 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=true: PASS
+Party: Holy Light 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa DIRECT FF=true: PASS
 Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=500.0
 Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
 Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=516.0
@@ -323,22 +323,22 @@ Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY
 Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
 Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=516.0
 Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
-Party: Judgement 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true: PASS
-Party: Holy Light 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true: PASS
-Party: Judgement bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true relation=ALLY before=500.0 after=500.0
-Party: loaded Falling Judgement protects ally bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true: PASS
-Party: Holy Light bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true relation=ALLY before=500.0 after=516.0
-Party: loaded Holy Light mixed pipeline heals ally bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true: PASS
+Party: Judgement 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true: PASS
+Party: Holy Light 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true: PASS
+Party: Judgement 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true: PASS
+Party: Holy Light 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true: PASS
 Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=482.0
 Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
 Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=484.0
 Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
-Party: Judgement 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=true relation=HOSTILE before=500.0 after=464.0
-Party: loaded Falling Judgement damages enemy 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=true: PASS
-Party: Holy Light 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=true relation=HOSTILE before=500.0 after=468.0
-Party: loaded Holy Light mixed pipeline damages without healing enemy 08ff6bdb-db52-4c9e-a269-658047f8467d AREA FF=true: PASS
+Party: Judgement 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=true: PASS
+Party: Holy Light 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 667a9a02-bd48-45ac-ba97-3ea9b99e3eaa AREA FF=true: PASS
 Party: actual Ender Dragon move fixture moves before freeze: PASS
 Party: actual Ender Dragon receives Frozen: PASS
 Party: actual Frozen Ender Dragon move clamped: PASS
@@ -349,12 +349,12 @@ Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-306
 Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
 Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
 Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
-Party: protect harmful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false: PASS
-Party: allow helpful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=false: PASS
-Party: protect harmful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false: PASS
-Party: allow helpful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=false: PASS
 Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
 Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
 Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
@@ -379,12 +379,12 @@ Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-306
 Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
 Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
 Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
-Party: protect harmful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false: PASS
-Party: allow helpful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=false: PASS
-Party: protect harmful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false: PASS
-Party: allow helpful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=false: PASS
 Party: allow offensive acquisition entity.minecraft.player AREA: PASS
 Party: deny healing acquisition entity.minecraft.player AREA: PASS
 Party: final enemy healing safety entity.minecraft.player AREA: PASS
@@ -409,12 +409,12 @@ Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-306
 Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
 Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
 Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
-Party: protect harmful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true: PASS
-Party: allow helpful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c DIRECT FF=true: PASS
-Party: protect harmful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true: PASS
-Party: allow helpful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba DIRECT FF=true: PASS
 Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
 Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
 Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
@@ -439,12 +439,12 @@ Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-306
 Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
 Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
 Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
-Party: protect harmful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true: PASS
-Party: allow helpful acquisition entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf 11ff84e8-33f2-49c7-812b-1ce3fbd94d3c AREA FF=true: PASS
-Party: protect harmful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true: PASS
-Party: allow helpful acquisition entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true: PASS
-Party: final damage/fire/freeze safety entity.minecraft.wolf bc66344b-08ce-47fe-b548-6c42966e67fa AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7056124c-78ad-4a11-a4ff-d312cebd2ddb AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 4d31b79b-f972-4204-823d-853eb05874ba AREA FF=true: PASS
 Party: allow offensive acquisition entity.minecraft.player AREA: PASS
 Party: deny healing acquisition entity.minecraft.player AREA: PASS
 Party: final enemy healing safety entity.minecraft.player AREA: PASS
@@ -492,8 +492,14 @@ base health: 50.0
 base armor: 8.2
 base melee: 20.0
 base scale: 1.0
-base frost: 20.0
+base frost: 8.0
 base pet owner: 1.0
+base Nova action: 1.0
+base Nova radius: 10.0
+base actual Nova damage from own Frost power: 14.4000244140625
+base actual Nova Frozen ticks: 40.0
+base Nova seven-block target damage: 14.4000244140625
+base Nova seven-block target freeze: 1.0
 Better Party collector elemental owner: 1.0
 Better Party collector elemental health: 50.0
 Better Party payload count: 1.0
@@ -504,18 +510,30 @@ base health cap bypass: 3000.0
 frost_legion health: 40.0
 frost_legion armor: 6.56
 frost_legion melee: 16.0
-frost_legion scale: 0.800000011920929
-frost_legion frost: 16.0
+frost_legion scale: 1.0
+frost_legion frost: 6.4
 frost_legion pet owner: 1.0
+frost_legion Nova action: 1.0
+frost_legion Nova radius: 6.0
+frost_legion actual Nova damage from own Frost power: 11.52001953125
+frost_legion actual Nova Frozen ticks: 10.0
+frost_legion Nova seven-block target damage: 0.0
+frost_legion Nova seven-block target freeze: 0.0
 frost_legion armor cap bypass: 150.0
 frost_legion health cap bypass: 3000.0
-frost_colossus health: 125.0
-frost_colossus armor: 20.5
-frost_colossus melee: 50.0
-frost_colossus scale: 2.5
-frost_colossus frost: 50.0
+frost_colossus health: 100.0
+frost_colossus armor: 16.4
+frost_colossus melee: 40.0
+frost_colossus scale: 1.7000000476837158
+frost_colossus frost: 16.0
 frost_colossus pet owner: 1.0
 colossus owner knockback resistance: 0.4
+frost_colossus Nova action: 1.0
+frost_colossus Nova radius: 10.0
+frost_colossus actual Nova damage from own Frost power: 28.79998779296875
+frost_colossus actual Nova Frozen ticks: 40.0
+frost_colossus Nova seven-block target damage: 28.79998779296875
+frost_colossus Nova seven-block target freeze: 1.0
 frost_colossus armor cap bypass: 150.0
 frost_colossus health cap bypass: 3000.0
 Ancient exact count: 1.0
@@ -631,9 +649,12 @@ Ancient delivery cadence 49: 198.0
 Ancient first five seconds actual deliveries: 25.0
 Ancient next five seconds actual deliveries: 25.0
 Ancient continuous ten seconds total damage: 100.0
-Ancient channel rollover start: 1385.0
+Ancient channel rollover start: 1636.0
 Ancient zero native cooldown: 0.0
 Elemental shard own power coefficient: 1.0
+Player Nova range remains: 10.0
+Player Nova freeze remains: 2.0
+Shared summon Nova action unchanged: 1.0
 Blizzard cooldown 0.0: 12.0
 Blizzard cooldown 0.5: 16.0
 Blizzard cooldown 1.0: 20.0

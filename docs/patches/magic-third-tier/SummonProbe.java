@@ -25,14 +25,15 @@ public final class SummonProbe {
    if(!mode.equals("base")){var en=new AttributeScaling.Entry();en.attribute_id="magic_pack:"+mode;scaling.entries.add(en);}
    var e=(SummonedEntity)net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.parse("wizards:frost_elemental")).create(level,EntitySpawnReason.MOB_SUMMONED);
    e.onSummonedBySpell(new SpellSummoned.Args(owner,frost,def.behaviour,scaling,new SpellExecution.ImpactContext()));
-   double f=mode.equals("base")?1:mode.equals("frost_legion")?.8:2.5;
+   double f=mode.equals("base")?1:mode.equals("frost_legion")?.8:2;
    eq(mode+" health",e.getMaxHealth(),(30+.5*power)*f,out);
    eq(mode+" armor",e.getAttributeValue(Attributes.ARMOR),(5+.08*power)*f,out);
    eq(mode+" melee",e.getAttributeValue(Attributes.ATTACK_DAMAGE),.5*power*f,out);
-   eq(mode+" scale",e.getScale(),f,out);
-   eq(mode+" frost",e.getAttributeValue(net.spell_engine.rpg_series.config.ConfigUtil.attribute("spell_power:frost").orElseThrow()),.5*power*f,out);
+   eq(mode+" scale",e.getScale(),mode.equals("frost_colossus")?1.7:1,out);
+   eq(mode+" frost",e.getAttributeValue(net.spell_engine.rpg_series.config.ConfigUtil.attribute("spell_power:frost").orElseThrow()),.2*power*f,out);
    eq(mode+" pet owner",e.getOwnerReference().getUUID().equals(owner.getUUID())?1:0,1,out);
-   if(f==2.5)eq("colossus owner knockback resistance",e.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE),owner.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE),out);
+   if(f==2)eq("colossus owner knockback resistance",e.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE),owner.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE),out);
+   nova(level,e,mode,.2*power*f,out);
    if(mode.equals("base")) partyDiscovery(level,owner,e,out);
    // Exercise caps beyond vanilla armor30/health1024 through actual entity accessors.
    e.getAttribute(Attributes.ARMOR).setBaseValue(150);eq(mode+" armor cap bypass",e.getAttributeValue(Attributes.ARMOR),150,out);
@@ -61,6 +62,33 @@ public final class SummonProbe {
   eq("Ancient cooldown",breath.value().cost.cooldown.duration,0,out);
   continuousBreath(level,owner,h,breath,out);
   eq("Elemental shard own power coefficient",spell(level,"wizards:elemental_frost_shard").value().impacts.getFirst().action.damage.spell_power_coefficient,1,out);
+  eq("Player Nova range remains",spell(level,"wizards:frost_nova").value().range,10,out);
+  eq("Player Nova freeze remains",spell(level,"wizards:frost_nova").value().impacts.get(1).action.status_effect.duration,2,out);
+  eq("Shared summon Nova action unchanged",def.behaviour.actions.get(1).spell_cast.spell_id.equals("wizards:frost_nova")?1:0,1,out);
+ }
+ static void nova(ServerLevel level,SummonedEntity elemental,String mode,double power,Consumer<String> out)throws Exception {
+  boolean legion=mode.equals("frost_legion");
+  var action=elemental.behaviour.actions.get(1).spell_cast;
+  eq(mode+" Nova action",action.spell_id.equals(legion?"wizards:legion_frost_nova":"wizards:elemental_frost_nova")?1:0,1,out);
+  var nova=spell(level,action.spell_id);
+  elemental.setPos(0,80,0);
+  elemental.getAttribute(net.spell_engine.rpg_series.config.ConfigUtil.attribute("spell_power:critical_chance").orElseThrow()).setBaseValue(0);
+  eq(mode+" Nova radius",SpellParameters.getRange(elemental,nova),legion?6:10,out);
+  var inside=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);
+  var outside=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);
+  for(var t:List.of(inside,outside)) {t.setNoAi(true);t.setNoGravity(true);t.getAttribute(Attributes.MAX_HEALTH).setBaseValue(1000);t.setHealth(1000);}
+  inside.setPos(0,80,5);outside.setPos(0,80,7);
+  for(var t:List.of(inside,outside)){level.getChunkAt(t.blockPosition());if(!level.addFreshEntity(t))throw new AssertionError("Nova target spawn failed");}
+  try {
+   var controller=new net.spell_engine.internals.casting.MobCastController(elemental,action);
+   var fire=controller.getClass().getDeclaredMethod("performSpell",Holder.class);fire.setAccessible(true);
+   fire.invoke(controller,nova);
+   eq(mode+" actual Nova damage from own Frost power",1000-inside.getHealth(),1.8*power,out);
+   var frozen=net.minecraft.core.registries.BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen")).orElseThrow();
+   eq(mode+" actual Nova Frozen ticks",inside.hasEffect(frozen)?inside.getEffect(frozen).getDuration():0,legion?10:40,out);
+   eq(mode+" Nova seven-block target damage",1000-outside.getHealth(),legion?0:1.8*power,out);
+   eq(mode+" Nova seven-block target freeze",outside.hasEffect(frozen)?1:0,legion?0:1,out);
+  }finally{inside.discard();outside.discard();}
  }
  @SuppressWarnings({"unchecked","rawtypes"})
  static void partyDiscovery(ServerLevel level,ServerPlayer owner,SummonedEntity pet,Consumer<String> out)throws Exception {

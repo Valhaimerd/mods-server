@@ -2,7 +2,7 @@
   {
     "jar": "wizards-neoforge-3.1.2+26.2.jar",
     "before_sha256": "df5a96cbeab19a806cfc45328996ce1c34d4853976109289aced091231e8f78e",
-    "after_sha256": "86c85c1a4caa6e7ab7d91dd58294163da10c5a2a2ba46bf378ecb9015e8e9733",
+    "after_sha256": "6460e9fdd54ed586b8a0dadc5f055ebc228382bbb445c3944e83ca4ba748a4ca",
     "changed_entries": [
       "assets/wizards/lang/en_us.json",
       "data/wizards/spell/arcane_blink.json",
@@ -18,13 +18,15 @@
     "added_entries": [
       "data/wizards/spell/ancient_hydra_breath.json",
       "data/wizards/spell/burst_blink_explosion.json",
-      "data/wizards/spell/elemental_frost_shard.json"
+      "data/wizards/spell/elemental_frost_nova.json",
+      "data/wizards/spell/elemental_frost_shard.json",
+      "data/wizards/spell/legion_frost_nova.json"
     ]
   },
   {
     "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
     "before_sha256": "fc9cfdddc37313968af6741c31017134180e5e02b6a3a7205b8dd5a68aece630",
-    "after_sha256": "7c46e63c704d4ef137c978e57b8fcb547616abb2f031222b2a0af0b1cf458449",
+    "after_sha256": "918df4ef8fb7bab1737e63bca3cc88896d0261b7621aa81e8eecd57727dd3e5d",
     "changed_entries": [
       "assets/skill_tree_rpgs/lang/en_us.json",
       "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_modifier_1.json",
@@ -43,7 +45,7 @@
   {
     "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
     "before_sha256": "a7de42b240d84658b01fd834aea1ed472a01944ee00bed7fe9df0aca7289021a",
-    "after_sha256": "3ffb4933cb7e22ce69c617e9fcffca992dba20dea95929e7fef3e7ff7993a795",
+    "after_sha256": "99187841f762b5a19aa79ce5acd97f12d56bcb1518c8868e1218a997f093b7ec",
     "changed_entries": [
       "net/spell_engine/entity/SpellCloud.class",
       "net/spell_engine/entity/SummonedEntity.class",

@@ -41,13 +41,14 @@ public final class SummonRules {
     public static void summoned(SummonedEntity e, SpellSummoned.Args args) {
         if (type(e,"frost_elemental")) {
             double p = SpellPower.getSpellPower(net.spell_power.api.SpellSchools.FROST,args.owner).nonCriticalValue();
-            double factor = marker(args.attribute_scaling,"frost_colossus") ? 2.5 : marker(args.attribute_scaling,"frost_legion") ? .8 : 1;
+            boolean colossus = marker(args.attribute_scaling,"frost_colossus");
+            double factor = colossus ? 2 : marker(args.attribute_scaling,"frost_legion") ? .8 : 1;
             set(e,Attributes.MAX_HEALTH,(30+.5*p)*factor);
             set(e,Attributes.ARMOR,(5+.08*p)*factor);
-            set(e,Attributes.SCALE,factor);
+            set(e,Attributes.SCALE,colossus ? 1.7 : 1);
             set(e,Attributes.ATTACK_DAMAGE,.5*p*factor);
-            net.spell_engine.rpg_series.config.ConfigUtil.attribute("spell_power:frost").ifPresent(a -> set(e,a,.5*p*factor));
-            if (factor == 2.5) set(e,Attributes.KNOCKBACK_RESISTANCE,args.owner.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
+            net.spell_engine.rpg_series.config.ConfigUtil.attribute("spell_power:frost").ifPresent(a -> set(e,a,.2*p*factor));
+            if (colossus) set(e,Attributes.KNOCKBACK_RESISTANCE,args.owner.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
             e.refreshDimensions();
             e.setHealth(e.getMaxHealth());
         } else if (type(e,"fire_hydra") && marker(args.attribute_scaling,"ancient_hydra")) {
@@ -56,6 +57,15 @@ public final class SummonRules {
         }
     }
     public static SpellSummoned.Args prepare(SpellSummoned.Args args) {
+        if (args.spell.is(Identifier.parse("wizards:frost_elemental"))) {
+            var b = new com.google.gson.Gson().fromJson(new com.google.gson.Gson().toJson(args.behaviour),SummonBehaviour.class);
+            boolean legion = marker(args.attribute_scaling,"frost_legion");
+            for (var action : b.actions) {
+                if (action.spell_cast != null && action.spell_cast.spell_id.equals("wizards:frost_nova"))
+                    action.spell_cast.spell_id = legion ? "wizards:legion_frost_nova" : "wizards:elemental_frost_nova";
+            }
+            return new SpellSummoned.Args(args.owner,args.spell,b,args.attribute_scaling,args.context);
+        }
         if (!marker(args.attribute_scaling,"ancient_hydra")) return args;
         var b = new com.google.gson.Gson().fromJson(new com.google.gson.Gson().toJson(args.behaviour),SummonBehaviour.class);
         var action = new SummonBehaviour.Action.SpellCast("wizards:ancient_hydra_breath",0);

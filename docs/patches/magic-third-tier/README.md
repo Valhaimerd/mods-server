@@ -21,7 +21,7 @@ Percentages use the corresponding school power before crits, defenses and PvP re
 | Wall of Flames | Four casts within 5 s of first cast; fourth cast or timeout starts normal 24 s cooldown. Five segments, 8 s lifetime, 20% Fire damage per impact, radius 0.9 and height 2 | +2 s lifetime, 10 s total | Great Wall: seven segments, radius 1.2, height 3 and living collision. Healing Flames: 0.5% power healing per eligible impact to self and party allies |
 | Fire Hydra | 30 s cooldown affected by haste; three stationary heads, 20 s active lifetime | +5 s lifetime, 25 s total | Hydra Brood: four heads. Ancient Hydra: one 3x head with continuous mouth-origin Fire Breath |
 | Blizzard | 8 s channel / 12 deliveries; raw coefficient 40%, normalized 26.67% per shard impact; 12-20 s proportional cooldown; range 32, splash radius 3 without falloff | +3 deliveries, 15 total | Hail Storm: +20% power. Snow Storm: existing 3 s stacking slow |
-| Frost Elemental | 30 s cooldown affected by haste; one owned pet, 20 s active lifetime; formulas below | +5 s lifetime, 25 s total | Elemental Legion: three at 80% of base attributes. Elemental Colossus: one at 250%, inheriting caster knockback resistance |
+| Frost Elemental | 30 s cooldown affected by haste; one owned pet, 20 s active lifetime; formulas below | +5 s lifetime, 25 s total | Elemental Legion: three at 80% of base attributes, normal size, Nova radius 6 / 0.5 s Frozen. Elemental Colossus: one at 200% attributes / 1.7x size, inheriting caster knockback resistance |
 
 Native Blink safety checks retain half-block collision padding, so an unobstructed nominal 10-block Blink lands 9.5 blocks forward (nominal 15 lands 14.5). Blocked/too-short teleports fizzle; unsuccessful movement cannot grant a free Purge buff. Both bursts use Arcane Explosion-style visuals and no damage falloff. Arrival is captured at teleport time, not the caster's later position.
 
@@ -35,16 +35,16 @@ Let P be the summoner's effective non-critical Frost power at summon time. These
 
 | Attribute | Base elemental | Legion:each of 3 | Colossus:one |
 | --- | --- | --- | --- |
-| Health | 30 + 0.5 P | 0.8(30 + 0.5 P) | 2.5(30 + 0.5 P) |
-| Armor | 5 + 0.08 P | 0.8(5 + 0.08 P) | 2.5(5 + 0.08 P) |
-| Scale | 1 x | 0.8 x | 2.5 x |
-| Frost power | 0.5 P | 0.4 P | 1.25 P |
-| Melee damage attribute | 0.5 P | 0.4 P | 1.25 P |
+| Health | 30 + 0.5 P | 0.8(30 + 0.5 P) | 2(30 + 0.5 P) |
+| Armor | 5 + 0.08 P | 0.8(5 + 0.08 P) | 2(5 + 0.08 P) |
+| Scale | 1 x | 1 x | 1.7 x |
+| Frost power | 0.2 P | 0.16 P | 0.4 P |
+| Melee damage attribute | 0.5 P | 0.4 P | 1 P |
 | Knockback resistance | Native base | Native base | Caster's attribute value |
 
-At P 40, base is 50 HP/8.2 armor/20 Frost power/20 melee; Legion is 40 HP/6.56 armor/16 power/16 melee each; Colossus is 125 HP/20.5 armor/50 power/50 melee. Native health/armor caps are bypassed only for elemental entity accessors so the requested formulas remain intact at higher power; native armor mitigation still applies. Ordinary companion attribute bonuses can still modify owned summons.
+At P 40, base is 50 HP/8.2 armor/8 Frost power/20 melee; Legion is 40 HP/6.56 armor/6.4 power/16 melee each; Colossus is 100 HP/16.4 armor/16 power/40 melee. Only Frost power inheritance changed to 20%; health, armor and melee retain their previous base formulas. Native health/armor caps are bypassed only for elemental entity accessors so the requested formulas remain intact at higher power; native armor mitigation still applies. Ordinary companion attribute bonuses can still modify owned summons.
 
-Elementals cast the summon-only `wizards:elemental_frost_shard` at 100% of their own Frost power; the original `wizards:frost_shard` remains unchanged. Other close Nova and melee behaviors remain. Node marker entries identify the selected summon form without mutating shared registry definitions; unknown marker attributes have empty modifiers and are skipped by ordinary scaling.
+Elementals cast the summon-only `wizards:elemental_frost_shard` at 100% of their own Frost power; the original `wizards:frost_shard` remains unchanged. Super Nova uses separate summon-only definitions and deals 180% of the elemental's own Frost power: at caster P 40, base/Legion/Colossus deal 14.4/11.52/28.8 raw damage per target before mitigation and criticals. Legion Nova reaches 6 blocks and applies Frozen for 0.5 s; base and Colossus retain range 10 and 2 s Frozen. Each elemental retains its own spell/AI cooldowns and close-range Nova trigger. Player Frost Nova is unchanged. Summon behavior is cloned per entity so Legion cannot alter other forms. Other melee behaviors remain. Node marker entries identify the selected summon form without mutating shared registry definitions; unknown marker attributes have empty modifiers and are skipped by ordinary scaling.
 
 ## Build and validation
 
@@ -56,14 +56,14 @@ python docs/patches/magic-third-tier/run_probe.py
 
 Default inputs are saved revision-five JARs under ignored `tmp/magic-third-tier/before`. Do not apply to pristine upstream archives. The build uses the cached audit/NeoForge Java classpath and JDK path in the scripts. It compiles helpers to Java 25, asserts every ASM hook, writes candidate archives and inventories changed entries; it does not install or publish. The test runner uses the existing isolated revision-five minimal dependency set, adds Better Party/Tamed Mobs/PvP retention, and needs its `libraries` linked to the cached NeoForge 26.2.0.90 library directory. It never uses a personal profile or the separate desktop server.
 
-**51 structural checks and 623 isolated dedicated-server checks pass.** [Runtime measurements](runtime-results.txt) and [archive fingerprints/entry inventory](artifacts.json) record the final candidates.
+**60 structural checks and 644 isolated dedicated-server checks pass.** [Runtime measurements](runtime-results.txt) and [archive fingerprints/entry inventory](artifacts.json) record the final candidates.
 
 - Real Better Party membership maps are seeded only in the isolated fixture and restored afterward. Both friendly-fire settings are tested with direct/area damage, burn, frost and healing. Loaded Falling Judgement and mixed Holy Light run through public SpellImpacts for party/enemy players and pets. Player fixtures retain native hurtServer and damage events after disabling FakePlayer-only invulnerability and its always-false PvP predicate.
 - Villagers, golems, cows, hostile mobs and enemy pets take actual area damage/burning; healing rejects enemies. An immune, boss-tagged 1,000-HP fixture receives all four frost statuses. A real Ender Dragon moves before Frozen, cannot move while Frozen, and moves again after removal.
-- The actual Better Party tamed-mob collector discovers a spawned elemental; its actual HUD payload round-trips through the codec. Elemental/Legion/Colossus formulas and high-value health/armor accessors are checked. Ancient Hydra deals 50 actual hits across two consecutive five-second channels, 25 per channel, with four-tick cadence and no cooldown gap.
+- The actual Better Party tamed-mob collector discovers a spawned elemental; its actual HUD payload round-trips through the codec. Elemental/Legion/Colossus formulas and high-value health/armor accessors are checked. Each form casts its actual summon-only Nova through MobCastController: damage follows its own Frost power, Legion freezes for ten ticks and excludes the seven-block target, while player Nova and the shared summon definition remain unchanged. Ancient Hydra deals 50 actual hits across two consecutive five-second channels, 25 per channel, with four-tick cadence and no cooldown gap.
 - Blink departure damage is immediate, arrival waits five ticks and remains anchored after the caster moves. Native teleport testing uses a non-player living fixture because FakePlayer's dummy connection does not perform real player teleportation. Native collision padding remains intact.
 - Great Wall clips a real ArmorStand movement at its bounding box, does not intercept projectiles and has synchronized radius/height. Actual wall and Meteor Splash cloud ticks damage a target whose feet are 1.8 blocks above ground, and exclude one whose feet are above two blocks. Four casts close the window immediately; a partial burst remains open at tick 99 and automatically starts cooldown at tick 100 without another cast.
 - Earlier first-/second-tier damage, proportional cooldowns, Charged Beam, delayed Lance freeze, target-centered Chain Detonation, and repeated-hit Shield protection remain covered. Production/fixed copies match the tested archives. No test classes or patch tools are shipped.
-- The handbook remains 74 pages, with text changes only on pages 1, 16 and 18. All pages were rendered and reviewed; contents destinations and internal links resolve. Main/client JAR counts remain 309/24.
+- The rebuilt handbook remains 74 pages; this elemental follow-up changes text only on pages 16 and 17. All pages were rendered and visually reviewed; internal links resolve. Main/client JAR counts remain 309/24.
 
 Client Hydra model bytecode passes ASM checking and JVM `-Xverify:all` linkage without initializing a client; rendered mouth alignment and particles have not been visually playtested. No commit or push is requested. Client model bytecode/linkage verification does not substitute for an observed client animation or full multiplayer playtest.

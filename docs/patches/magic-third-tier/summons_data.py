@@ -18,6 +18,17 @@ def transform(name, files):
         shard=get('data/wizards/spell/frost_shard.json')
         shard['impacts'][0]['action']['damage']['spell_power_coefficient']=1
         put('data/wizards/spell/elemental_frost_shard.json',shard)
+        nova=get('data/wizards/spell/frost_nova.json')
+        nova.pop('learn',None); nova['group']='elemental_nova'
+        nova['impacts'][0]['action']['damage']['spell_power_coefficient']=1.8
+        put('data/wizards/spell/elemental_frost_nova.json',nova)
+        legion_nova=copy.deepcopy(nova); legion_nova['range']=6
+        for impact in legion_nova['impacts']:
+            effect=impact['action'].get('status_effect')
+            if effect and effect.get('effect_id')=='wizards:frozen': effect['duration']=.5
+        for particle in legion_nova.get('release',{}).get('visuals',{}).get('particles',[]):
+            if 'scale' in particle.get('appearance',{}): particle['appearance']['scale']=6
+        put('data/wizards/spell/legion_frost_nova.json',legion_nova)
         breath=get('data/wizards/spell/fire_breath.json')
         breath.pop('learn',None); breath['group']='ancient_hydra'; breath['range']=12
         breath['active']['cast']['duration']=5
@@ -29,9 +40,13 @@ def transform(name, files):
         put('data/wizards/spell/ancient_hydra_breath.json',breath)
         path='assets/wizards/lang/en_us.json'; lang=get(path)
         lang['spell.wizards.fire_hydra.description']='Summon hydras for 20 sec (+5 sec with Improved Hydra). Cooldown 30 sec before haste.'
-        lang['spell.wizards.frost_elemental.description']='Summon an owned Frost Elemental for 20 sec (+5 sec with Improved Frost Elemental). Health 30 + 50%% of your Frost power; armor 5 + 8%%; Frost power and melee damage 50%%. Its Frost Shard deals 100%% of its own Frost power. Cooldown 30 sec before haste.'
+        lang['spell.wizards.frost_elemental.description']='Summon an owned Frost Elemental for 20 sec (+5 sec with Improved Frost Elemental). Health 30 + 50%% of your Frost power; armor 5 + 8%%; melee damage 50%%; own Frost power 20%%. Its Frost Shard deals 100%% and Super Nova 180%% of its own Frost power. Cooldown 30 sec before haste.'
         lang['spell.wizards.elemental_frost_shard.name']='Elemental Frost Shard'
         lang['spell.wizards.elemental_frost_shard.description']='Deal {damage} Frost damage.'
+        lang['spell.wizards.elemental_frost_nova.name']='Elemental Super Nova'
+        lang['spell.wizards.elemental_frost_nova.description']='Deal 180%% of the elemental\'s own Frost power and freeze enemies for 2 sec.'
+        lang['spell.wizards.legion_frost_nova.name']='Legion Super Nova'
+        lang['spell.wizards.legion_frost_nova.description']='Deal 180%% of this elemental\'s own Frost power within 6 blocks, freezing enemies for 0.5 sec.'
         lang['spell.wizards.ancient_hydra_breath.name']='Ancient Hydra Fire Breath'
         lang['spell.wizards.ancient_hydra_breath.description']='Channel fire from the hydra mouth.'
         put(path,lang)
@@ -43,6 +58,6 @@ def transform(name, files):
             put(full,d)
         path='assets/skill_tree_rpgs/lang/en_us.json'; lang=get(path)
         lang['spell.skill_tree_rpgs.fire_tier_4_spell_2_modifier_2.description']='Summon one giant hydra.'
-        lang['spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_1.description']='Summon three Frost Elementals, each with 80%% of the base attributes.'
-        lang['spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_2.description']='Summon one Frost Colossus with 250%% of the base attributes, inheriting your knockback resistance.'
+        lang['spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_1.description']='Summon three normal-sized Frost Elementals, each with 80%% of the base attributes. Each Super Nova reaches 6 blocks and freezes for 0.5 sec.'
+        lang['spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_2.description']='Summon one Frost Colossus at 1.7x size with double base attributes, inheriting your knockback resistance.'
         put(path,lang)

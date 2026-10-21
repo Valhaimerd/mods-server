@@ -1,6 +1,6 @@
 # Skill tree overhaul - 20 October 2026
 
-Current balance: **Hunter grants 6% ranged damage, 5% draw speed and 5% movement speed**, retaining 10% armor penetration and 25% bow/crossbow projectile speed. Luck and Jump Strength rewards are removed. Adventurer ordinary ranged damage and draw speed stay separate at **2%** and **5%**. RPG ranged rewards and tooltips are **2%**, with no added draw-speed reward on Archer nodes. Assassin/Rogue attack-speed rewards and tooltips are **2%** in both RPG categories. Ordinary Arcane/Fire/Frost power is **3%** in both mods. Magistrate grants **10% school power and 5% magic resistance**, retaining spell haste without a specialization critical-chance bonus.
+Current balance: **Hunter grants 6% ranged damage, 5% draw speed and 5% movement speed**, retaining 10% armor penetration and 25% bow/crossbow projectile speed. Luck and Jump Strength rewards are removed. Adventurer ordinary ranged damage and draw speed stay separate at **3%** and **5%**. RPG ranged rewards and tooltips are **3%**, with no added draw-speed reward on Archer nodes. Assassin/Rogue attack-speed rewards and tooltips are **2%** in both RPG categories. Ordinary Arcane/Fire/Frost power is **3%** in both mods. Magistrate grants **10% school power and 5% magic resistance**, retaining spell haste without a specialization critical-chance bonus.
 
 The latest 20 October revision passed **79 isolated server checks**, plus structural checks of revised Adventurer/RPG tooltip text and blue titles. Client rendering was previously checked on the 19 October revision; no new client visual test was performed. Runtime checks include Hunter haste and removed bonuses, Magistrate power/resistance, ordinary damage/haste, and RPG school power and Assassin speed, with both categories loading. Existing IDs, allocations, Paladin defaults, Priest healing and the 1.35x XP multiplier remain; no new reset marker.
 
@@ -17,18 +17,18 @@ These values supersede older planning and verification snapshots below.
 - Aegis: **15% magic resistance, 10% ranged resistance, 6% movement speed**.
 - Ordinary Adventurer Arcane/Fire/Frost power: **3%**; Magistrate school power:
   **10%**, plus **5% magic resistance**. Spell haste, critical chance, Priest healing and Paladin defaults remain.
-- Ordinary Adventurer melee damage: **3%**; ordinary ranged damage: **2%**; separate ordinary draw-speed nodes: **5%**.
+- Ordinary Adventurer melee damage: **2%**; ordinary ranged damage: **3%**; separate ordinary draw-speed nodes: **5%**.
   Martial's ordinary route is damage / attack speed / damage / attack speed /
   damage; its ordinary penetration node becomes attack speed. Final Martial
-  Prowess grants 8% damage, 5% attack speed, 10% physical critical chance and
+  Prowess grants 6% damage, 5% attack speed, 10% physical critical chance and
   10% critical damage, with no armor penetration.
 - Hunter adds **10% armor penetration** and **25% bow/crossbow projectile speed**
   to its existing final rewards. Earlier ordinary projectile-speed node grants **25%**;
   later node `vxmb1u84wzfwpuq6` becomes **5% armor penetration**.
 - RPG Class/Weapon normal school-power rewards: **3%**; melee attack-damage
-  rewards (including conditional weapon roots): **3%**; ranged attack-damage
-  rewards: **2%**. Warrior/Archer root and boost descriptions explicitly show
-  3%/2%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
+  rewards (including conditional weapon roots): **2%**; ranged attack-damage
+  rewards: **3%**. Warrior/Archer root and boost descriptions explicitly show
+  2%/3%, replacing stale Java-generated 1% text. Other mechanics and the 1.35x progression multiplier remain.
 - Guardian Stead uses **Diamond Horse Armor**. Titles remain blue.
 - The local PvP replacement applies **50% attributed PvP damage**, including
   standard spells. No flagging remains; Better Party controls party protection.
@@ -53,7 +53,7 @@ On the first login after installation, Adventurer allocations reset once, preser
 
 All configured skill XP calculations are multiplied by 1.35 exactly once. Level curves, point costs and caps are unchanged. Award rounding remains Pufferfish's normal integer rounding; Minecraft enchanting XP is not globally multiplied.
 
-The current balance sets Martial Prowess to 8% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 6% ranged damage/5% draw speed/5% movement with Luck and Jump removed plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
+The current balance sets Martial Prowess to 6% melee damage/5% attack speed/10% physical critical chance/10% critical damage, without armor penetration, Hunter to 6% ranged damage/5% draw speed/5% movement with Luck and Jump removed plus 10% penetration and 25% bow/crossbow projectile speed, Aegis to 15% magic/10% ranged resistance plus 6% movement speed, and Colossus to six hearts with 6% healing. Magistrate uses an Ender Eye, Aegis an Enchanted Golden Apple and Bulwark a Netherite Chestplate and Guardian Stead Diamond Horse Armor. Specialization titles and Companion explicitly use blue text. Existing skill IDs and the one-time migration marker are retained.
 
 ## Rebuild
 
@@ -94,3 +94,11 @@ The same 78-check isolated server probe passed with PAL 1.2.8 and Bendable Cuboi
 Latest projectile follow-up: ordinary and Hunter bow/crossbow projectile speed is restored to **25%**. The 79-check isolated server run also confirms Voltaic Shot is absent from the loaded registry. [Removal and retained pre-existing data warning](../voltaic-removal-verification.json). Other damage, speed, haste and migration values stay as above.
 
 Latest Magistrate follow-up (21 October): the specialization no longer grants ten critical points; ordinary caster critical nodes retain 2.5 points each. Both its description and the live attribute helper change, with existing transient bonuses cleared on refresh. See [magic revision five](../magic-revision-five/README.md) for verification.
+
+## Physical balance - 21 October follow-up
+
+Ordinary ranged damage is **3%** in Adventurer Skills and both RPG categories; ordinary melee damage is **2%**, including conditional weapon rewards. Martial Prowess grants **6% melee damage**. Its speed/critical rewards and Hunter?s 6% damage/25% projectile speed are unchanged. Existing skill IDs, allocations and XP remain.
+
+Run `python docs/patches/skill-overhaul/physical-rebalance.py` against the current installed pack to produce candidates under `tmp/physical-rebalance`. This changes only the three skill definition resources and CrossArms? Frenzy projectile multiplier function, preserving all later magic and passive patches. The original-data builder also carries the new physical values; apply subsequent magic patches when rebuilding from original archives. See `physical-rebalance-artifacts.json` for hashes.
+
+Verification: **79 isolated dedicated-server skill checks** passed with the current patched Spell Engine and compatibility bridge. Structural checks confirm both RPG categories, conditional weapon tooltips and Adventurer titles/rewards. CrossArms passed **1,341 isolated Frenzy checks** at the new 15/20/30/40% damage tiers. The current magic third-tier archive verification still passes all 128 checks. The handbook was rebuilt at 74 pages; all pages were visually reviewed, with detail review of changed pages 17, 18 and 23 and no pagination changes. No new interactive client playtest was performed. Logs remain under `tmp/skill-overhaul/server/physical-rebalance.log` and `tmp/crossarms-firing/server/physical-rebalance.log`.

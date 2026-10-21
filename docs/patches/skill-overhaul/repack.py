@@ -32,7 +32,7 @@ for key,v in d.items():
   for text in v['description']:
    if 'text' in text:text['text']='\n'.join(l for l in text['text'].splitlines() if not l.startswith('\u00a7e'))
  if key in ['melee_damage+3%','ranged_damage+3%']:
-  amount=.02 if key=='ranged_damage+3%' else .03
+  amount=.03 if key=='ranged_damage+3%' else .02
   v['title']=v['title'].replace('3%',str(round(amount*100))+'%');v['rewards'][0]['data']['value']=amount
  if key=='attack_speed+5%':v['title']=v['title'].replace('5%','3%');v['rewards'][0]['data']['value']=.03
  if key=='anvil_repair_cost-5%':v['title']='-20% Anvil Repair Cost';v['rewards']=[attr('puffish_attributes:repair_cost',-.2)]
@@ -67,8 +67,8 @@ node('vxmb1u84wzfwpuq6','ranged_penetration')
 d['hunter']['rewards']=[r for r in d['hunter']['rewards'] if r['data'].get('attribute') not in ['luck','puffish_attributes:jump']]
 d['hunter']['rewards'] += [attr('ranged_weapon:haste',.05),attr('puffish_attributes:armor_shred',.1),attr('puffish_attributes:bow_projectile_speed',.25),attr('puffish_attributes:crossbow_projectile_speed',.25)]
 d['hunter']['description']['text'] += '\n+10% Armor Penetration\n+25% Bow and Crossbow Projectile Speed'
-d['martial_prowess']['rewards']=[attr('puffish_attributes:melee_damage',.08),attr('attack_speed',.05),attr('critical_strike:chance',.1,'multiply_base'),attr('critical_strike:damage',.1)]
-d['martial_prowess']['description']={'text':'+8% Melee Damage\n+5% Attack Speed\n+10% Critical Chance\n+10% Critical Damage'}
+d['martial_prowess']['rewards']=[attr('puffish_attributes:melee_damage',.06),attr('attack_speed',.05),attr('critical_strike:chance',.1,'multiply_base'),attr('critical_strike:damage',.1)]
+d['martial_prowess']['description']={'text':'+6% Melee Damage\n+5% Attack Speed\n+10% Critical Chance\n+10% Critical Damage'}
 d['ranged_damage+3%']['icon']={'type':'item','data':{'item':'minecraft:bow'}}
 mid=['zhraasg53ibsn3dk','6i5us24w9a9ar7v1','rvzvos2233a9pi4g','rr6e15vhxj8hdyt4','owk0eiqwgomn6jwb']
 for id,key in zip(mid,['health+2','healing+3%','health+2','healing+3%','health+2']):node(id,key)
@@ -118,16 +118,16 @@ for cat in ['class_skills','weapon_skills']:
   for r in v.get('rewards',[]):
    a=r.get('data',{}).get('attribute')
    if a in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] or (k.startswith('rogue') and a=='minecraft:attack_speed'):r['data']['value']=.02 if k.startswith('rogue') else .03
-   if a=='minecraft:attack_damage':r['data']['value']=.03
-   if a=='ranged_weapon:damage':r['data']['value']=.02
+   if a=='minecraft:attack_damage':r['data']['value']=.02
+   if a=='ranged_weapon:damage':r['data']['value']=.03
   # Generated Java node descriptions retain upstream defaults; override the visible text too.
   if k in ['warrior_root','warrior_boost','archer_root','archer_boost']:
-   v['description']={'text':'+2% Ranged Damage' if k.startswith('archer') else '+3% Attack Damage'}
+   v['description']={'text':'+3% Ranged Damage' if k.startswith('archer') else '+2% Attack Damage'}
   if k=='weapon_bow_root':
-   v['description']={'text':'+2% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]}
+   v['description']={'text':'+3% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]}
   for r in v.get('rewards',[]):
    if r['type']=='skill_tree_rpgs:conditional_attribute' and r['data'].get('attribute')=='minecraft:attack_damage':
-    v['description']={'text':'+3% Attack Damage','extra':[{'text':'\n'},{'translate':r['data']['condition']['translationKey']}]}
+    v['description']={'text':'+2% Attack Damage','extra':[{'text':'\n'},{'translate':r['data']['condition']['translationKey']}]}
   if any(r.get('data',{}).get('attribute') in ['spell_power:arcane','spell_power:fire','spell_power:frost','spell_power:healing'] for r in v.get('rewards',[])) or k in ['rogue_root','rogue_boost']:
    v['description']={'text':('+2% ' if k.startswith('rogue') else '+3% ')+('Attack Speed' if k.startswith('rogue') else 'Healing Power' if k.startswith('priest') else k.split('_')[0].title()+' Spell Power')}
  assert all(v==d[k] for k,v in original.items() if k.startswith('paladin'))

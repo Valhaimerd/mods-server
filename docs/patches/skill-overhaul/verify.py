@@ -10,7 +10,7 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     for key,icon in [('magistrate','ender_eye'),('aegis','enchanted_golden_apple'),('bulwark','netherite_chestplate'),('guardian_stead','diamond_horse_armor'),('ranged_damage+3%','bow'),('draw_speed','crossbow'),('pet_hp','apple'),('pet_speed','rabbit_foot'),('pet_res','leather_chestplate'),('pet_kr','iron_horse_armor'),('packleader','cooked_beef')]:assert d[key]['icon']['data']['item']=='minecraft:'+icon,key
     assert d['packleader']['title']=={'text':'Pack Leader','color':'blue'}
     def rewards(key):return {r['data']['attribute']:r['data']['value'] for r in d[key]['rewards'] if r['type']=='puffish_skills:attribute'}
-    assert rewards('martial_prowess')=={'puffish_attributes:melee_damage':.08,'attack_speed':.05,'critical_strike:chance':.1,'critical_strike:damage':.1}
+    assert rewards('martial_prowess')=={'puffish_attributes:melee_damage':.06,'attack_speed':.05,'critical_strike:chance':.1,'critical_strike:damage':.1}
     operations={r['data']['attribute']:r['data']['operation'] for r in d['martial_prowess']['rewards']}
     assert operations['critical_strike:chance']=='multiply_base'
     assert operations['critical_strike:damage']=='multiply_total'
@@ -20,15 +20,15 @@ with zipfile.ZipFile(folder/'adventurerskills-EN-1.3-26.2-neoforge-fixed.jar') a
     assert rewards('caster_power')=={'spell_power:'+x:.03 for x in ['arcane','fire','frost']}
     assert d['hunter']['description']['text'].startswith('+6% Ranged Damage')
     assert '+25% Bow and Crossbow Projectile Speed' in d['hunter']['description']['text']
-    assert d['melee_damage+3%']['title']=='+3% Melee Damage'
+    assert d['melee_damage+3%']['title']=='+2% Melee Damage'
     assert d['projectile_both']['title']=='+25% Bow and Crossbow Projectile Speed'
     assert rewards('projectile_both')=={'puffish_attributes:bow_projectile_speed':.25,'puffish_attributes:crossbow_projectile_speed':.25}
     assert rewards('draw_speed')=={'ranged_weapon:haste':.05}
     assert rewards('caster_haste')=={'spell_power:haste':.03}
     assert rewards('aegis')=={'puffish_attributes:magic_resistance':.15,'puffish_attributes:ranged_resistance':.1,'minecraft:movement_speed':.06}
-    assert rewards('melee_damage+3%')=={'puffish_attributes:melee_damage':.03}
-    assert d['ranged_damage+3%']['title']=='+2% Ranged Damage'
-    assert rewards('ranged_damage+3%')=={'puffish_attributes:ranged_damage':.02}
+    assert rewards('melee_damage+3%')=={'puffish_attributes:melee_damage':.02}
+    assert d['ranged_damage+3%']['title']=='+3% Ranged Damage'
+    assert rewards('ranged_damage+3%')=={'puffish_attributes:ranged_damage':.03}
     assert s['f8rbbpxi0myhi3cg']['definition']=='attack_speed+5%'
     assert rewards(s['vxmb1u84wzfwpuq6']['definition'])=={'puffish_attributes:armor_shred':.05}
     assert rewards('colossus')=={'minecraft:max_health':12,'puffish_attributes:healing':.06}
@@ -51,15 +51,15 @@ with zipfile.ZipFile(folder/'skill_tree-neoforge-1.6.1+26.2.jar') as z:
             for r in v.get('rewards',[]):
                 a=r.get('data',{}).get('attribute')
                 if a=='minecraft:attack_damage':
-                    assert r['data']['value']==.03
+                    assert r['data']['value']==.02
                     if r['type']=='skill_tree_rpgs:conditional_attribute':
-                        assert v['description']=={'text':'+3% Attack Damage','extra':[{'text':'\n'},{'translate':r['data']['condition']['translationKey']}]}
-                if a=='ranged_weapon:damage':assert r['data']['value']==.02
+                        assert v['description']=={'text':'+2% Attack Damage','extra':[{'text':'\n'},{'translate':r['data']['condition']['translationKey']}]}
+                if a=='ranged_weapon:damage':assert r['data']['value']==.03
         for key in ['archer_root','archer_boost']:
             assert len(d[key]['rewards'])==1 and d[key]['rewards'][0]['data']['attribute']=='ranged_weapon:damage',key
         for k in ['archer_root','archer_boost','warrior_root','warrior_boost']:
-            assert d[k]['description']=={'text':'+2% Ranged Damage' if k.startswith('archer') else '+3% Attack Damage'},(cat,k)
-        assert d['weapon_bow_root']['description']=={'text':'+2% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]},cat
+            assert d[k]['description']=={'text':'+3% Ranged Damage' if k.startswith('archer') else '+2% Attack Damage'},(cat,k)
+        assert d['weapon_bow_root']['description']=={'text':'+3% Ranged Damage','extra':[{'text':'\n'},{'translate':'modifier_condition.skill_tree_rpgs.bow'}]},cat
         assert d['paladin_root']['rewards'][0]['data']['value']==.2
         assert d['paladin_root']['rewards'][0]['data']['operation']=='addition'
         exp=json.loads(z.read(b+'experience.json'));assert '1.35' in exp['sources'][0]['data']['experience']

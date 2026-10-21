@@ -8,12 +8,12 @@ Capacity is removed entirely: its enchantment definition, functions, predicates,
 
 | Heat display | Heat score | Shot damage retained | Normal spread | Magic self-damage per 20 ticks |
 | --- | --- | --- | --- | --- |
-| Zero bars | 0-10 / no score | 30% | 115% | None |
-| First bar | 11-150 | 30% | 125% | None |
-| Second bar | 151-300 | 30% | 140% | None |
-| Third / red bar | 301-450 | 40% | 160% | 1 HP |
-| Fourth / dark red bar | 451-610 | 50% | 185% | 2 HP |
-| Fifth / black bar | 611+ | 60% | 220% | 4 HP |
+| Zero bars | 0-10 / no score | 15% | 115% | None |
+| First bar | 11-150 | 15% | 125% | None |
+| Second bar | 151-300 | 15% | 140% | None |
+| Third / red bar | 301-450 | 20% | 160% | 1 HP |
+| Fourth / dark red bar | 451-610 | 30% | 185% | 2 HP |
+| Fifth / black bar | 611+ | 40% | 220% | 4 HP |
 
 The timer begins on entering damaging heat and resets on cooling below it; sustained heat deals damage every 20 ticks (one second at 20 TPS). The amount uses the current bar at the damage tick. Damage uses `minecraft:magic`, so Fire Resistance does not cancel it. Heat cools by two units per world tick and remains attached to the player when switching weapons; death clears heat and its timer.
 
@@ -40,7 +40,7 @@ The canonical build applies `overrides/`, removes Capacity data/references, and 
 
 ## Verification
 
-The final isolated server passed **1341 current Frenzy checks** with vanilla and Arsenal 1.5.1 crossbows, both hands, Ranged Weapon API 4.0.0 and Expanded Crossbow Enchantings 1.11. Checks cover actual 30/40/50/60% projectile/impact scaling, spread at every display boundary and a missing/negative score, the 26th-shot cutoff, no passive exhausted reset, notice remaining through tick 59 and expiring at tick 60 without unlocking, interrupted/early/full manual cranks, spare-weapon blocking, partial-counter timeout/restart, Infinity consumption/pickup, ordinary firing wear, first-shot slowdown and the exact 20-tick heat damage interval. A regression reproduced the review finding that a breaking final shot was not counted; eligibility is now captured before durability mutation, and a breaking 26th shot still blocks a preloaded spare.
+The final isolated server passed **1341 current Frenzy checks** with vanilla and Arsenal 1.5.1 crossbows, both hands, Ranged Weapon API 4.0.0 and Expanded Crossbow Enchantings 1.11. Checks cover actual 15/20/30/40% projectile/impact scaling, spread at every display boundary and a missing/negative score, the 26th-shot cutoff, no passive exhausted reset, notice remaining through tick 59 and expiring at tick 60 without unlocking, interrupted/early/full manual cranks, spare-weapon blocking, partial-counter timeout/restart, Infinity consumption/pickup, ordinary firing wear, first-shot slowdown and the exact 20-tick heat damage interval. A regression reproduced the review finding that a breaking final shot was not counted; eligibility is now captured before durability mutation, and a breaking 26th shot still blocks a preloaded spare.
 
 A 96-arrow-per-stage trajectory sample measured centered angular spread projected to a 20-block plane: about 0.22 blocks at cold heat versus 0.43 blocks at five bars in this run. This measures launch-direction scatter, not hit probability or a full flight/collision simulation. The first sample incorrectly measured distance from the aim axis rather than scatter around the sample center; the corrected centered variance removes the launch offset.
 
@@ -51,3 +51,5 @@ The controlled impact targets have zero armor, and random arrow critical damage 
 The first regression run failed because Capacity still existed. Review also caught an orphaned Capacity function and malformed actionbar continuations; both are removed/fixed, and the current archive has no function parse errors. The historical modded-crossbow repair passed 260 checks before Capacity was removed; those magazine checks describe the previous build, not this one.
 
 Sources and attribution: [CrossArms](https://modrinth.com/datapack/crossarms), AlmazmanElytra, Din37r and IceBan; upstream content CC-BY-4.0. Original metadata and credits are retained.
+
+21 October damage revision: cold/first/second bars retain **15%**, third **20%**, fourth **30%**, fifth **40%** of the normal shot. The updated isolated probe passed **1,341 checks**; spread, heat self-damage, Infinity and burst/reload rules are preserved. The resource-only repack and fingerprints are recorded in [the physical balance follow-up](../skill-overhaul/README.md#physical-balance---21-october-follow-up).

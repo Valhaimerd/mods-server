@@ -1,0 +1,27 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "48f0f2c5d44a481ee671f8267e5ced2dbbb0e76fdcb44f85c199ef7b08e005c9",
+    "after_sha256": "2a113d92aa9ce589fd9e790570f307f1c3e61d315aead64292c1feb71dbb8379",
+    "changed_entries": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "f753c6d2db821e64d26d7a068caa038d61246bbb814250395f5f167aae58af78",
+    "after_sha256": "8602014041f73a4828e722dfb24c14a1c6e14a62292903ed8d2a1465982114ec",
+    "changed_entries": [
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json"
+    ]
+  },
+  {
+    "jar": "crossarms-1.4.jar",
+    "before_sha256": "e139ae5980c7134463152a4e016128d734e48e7f0754a5a0bd94ef2fd34d92e7",
+    "after_sha256": "b259303b03edbcfd13a017fcb58e24cf1b6bc9ae9f38709919a05c054c4f2eac",
+    "changed_entries": [
+      "data/crossarms/function/enchantment/frenzy/tag.mcfunction"
+    ]
+  }
+]

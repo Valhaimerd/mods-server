@@ -48,10 +48,12 @@ with zipfile.ZipFile(ROOT / 'wizards-neoforge-3.1.2+26.2.jar') as wiz, zipfile.Z
         check(nova['impacts'][0]['action']['damage']['spell_power_coefficient'], 1.8)
         check(nova['impacts'][1]['action']['status_effect']['duration'], duration)
     breath = spell('wizards:ancient_hydra_breath')
-    check(breath['range'], 12); check(breath['target']['area']['angle_degrees'], 20)
+    check(breath['range'], 12); check(breath['target']['area']['angle_degrees'], 40)
     check(breath['active']['cast']['duration'], 5); check(breath['active']['cast']['channel']['ticks'], 25)
-    check(breath['impacts'][0]['action']['damage']['spell_power_coefficient'] * 5 / 25, .05)
+    check(breath['impacts'][0]['action']['damage']['spell_power_coefficient'] * 5 / 25, .12)
     check(breath['cost']['cooldown']['duration'], 0)
+    check(spell('wizards:hydra_fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .55)
+    check(spell('wizards:fireball')['impacts'][0]['action']['damage']['spell_power_coefficient'], .8)
     # The earlier first-/second-tier revisions must survive this repack.
     for id, coefficient in [('arcane_missile', .78), ('arcane_explosion', 2.6), ('fire_breath', .65), ('fire_slash', 1)]:
         check(spell('wizards:' + id)['impacts'][0]['action']['damage']['spell_power_coefficient'], coefficient)

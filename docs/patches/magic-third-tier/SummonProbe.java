@@ -56,11 +56,13 @@ public final class SummonProbe {
   var delta=close.getBoundingBox().getCenter().subtract(SummonRules.mouth(h)).normalize();
   eq("Ancient mouth aim at close ground target",delta.dot(h.getLookAngle()),1,out);
   var breath=spell(level,"wizards:ancient_hydra_breath");
-  eq("Ancient damage per delivery",breath.value().impacts.getFirst().action.damage.spell_power_coefficient*SpellParameters.channelValueMultiplier(breath.value()),.05,out);
+  eq("Ancient damage per delivery",breath.value().impacts.getFirst().action.damage.spell_power_coefficient*SpellParameters.channelValueMultiplier(breath.value()),.12,out);
   eq("Ancient channel deliveries",breath.value().active.cast.channelTicks(),25,out);
-  eq("Ancient cone",breath.value().target.area.angle_degrees,20,out);
+  eq("Ancient cone",breath.value().target.area.angle_degrees,40,out);
   eq("Ancient cooldown",breath.value().cost.cooldown.duration,0,out);
   continuousBreath(level,owner,h,breath,out);
+  hydraTargeting(level,h,breath,out);
+  ordinaryHydra(level,owner,hydra,hd,out);
   eq("Elemental shard own power coefficient",spell(level,"wizards:elemental_frost_shard").value().impacts.getFirst().action.damage.spell_power_coefficient,1,out);
   eq("Player Nova range remains",spell(level,"wizards:frost_nova").value().range,10,out);
   eq("Player Nova freeze remains",spell(level,"wizards:frost_nova").value().impacts.get(1).action.status_effect.duration,2,out);
@@ -89,6 +91,57 @@ public final class SummonProbe {
    eq(mode+" Nova seven-block target damage",1000-outside.getHealth(),legion?0:1.8*power,out);
    eq(mode+" Nova seven-block target freeze",outside.hasEffect(frozen)?1:0,legion?0:1,out);
   }finally{inside.discard();outside.discard();}
+ }
+ static void hydraTargeting(ServerLevel level,SummonedEntity hydra,Holder<Spell> breath,Consumer<String> out)throws Exception {
+  hydra.setPos(100,80,0);hydra.setNoAi(true);hydra.setNoGravity(true);
+  var near=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);
+  var far=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);
+  near.setPos(100,80,7);far.setPos(100,80,9);
+  for(var t:List.of(near,far)){t.setNoAi(true);t.setNoGravity(true);level.getChunkAt(t.blockPosition());if(!level.addFreshEntity(t))throw new AssertionError("Hydra targeting fixture failed");}
+  try {
+   hydra.tickCount=25;hydra.setTarget(far);hydra.tick();eq("Hydra actual entity tick chooses nearest",hydra.getTarget()==near?1:0,1,out);
+   var controller=new net.spell_engine.internals.casting.MobCastController(hydra,hydra.behaviour.actions.getFirst().spell_cast);
+   eq("Hydra native controller begins on local target",controller.canBegin()?1:0,1,out);controller.begin();
+   eq("Hydra native channel continues on local target",controller.shouldContinue()?1:0,1,out);
+   near.setPos(100,80,14);hydra.tick();
+   eq("Hydra native channel stops tracking escaped target",controller.shouldContinue()?1:0,0,out);controller.end();
+   eq("Hydra native controller can restart on replacement",controller.canBegin()?1:0,1,out);
+   eq("Hydra escaped target replaced with local enemy",hydra.getTarget()==far?1:0,1,out);
+   far.setPos(100,80,12);hydra.tick();eq("Hydra includes twelve-block boundary",hydra.getTarget()==far?1:0,1,out);
+   far.setPos(100,80,12.01);hydra.tick();eq("Hydra drops targets beyond twelve blocks",hydra.getTarget()==null?1:0,1,out);
+   near.setPos(100,80,7);hydra.tick();eq("Hydra reacquires returning enemy",hydra.getTarget()==near?1:0,1,out);
+   hydra.lockRotationTo(near);
+   var packet=SummonRules.breathParticles(hydra,breath);
+   eq("Hydra breath packet coordinate source",packet.sourceType()==net.spell_engine.network.Packets.ParticleEffects.SourceType.COORDINATE?1:0,1,out);
+   eq("Hydra breath particle batches",packet.spawns().size(),3,out);
+   for(var spawn:packet.spawns()) {
+    eq("Hydra particle exact mouth origin",spawn.sourceLocation().distanceTo(SummonRules.mouth(hydra)),0,out);
+    eq("Hydra particle yaw",spawn.yaw(),hydra.getYRot(),out);eq("Hydra particle pitch",spawn.pitch(),hydra.getXRot(),out);
+    eq("Hydra visual cone",spawn.effect().batch.angle,40,out);
+   }
+   eq("Hydra packet produces flame instructions",net.spell_engine.fx.ParticleHelper.convertToInstructions(level,packet).isEmpty()?0:1,1,out);
+   // Put two targets at 15 and 25 degrees around a level mouth aim: full cone is 40 degrees.
+   hydra.setYRot(0);hydra.setYBodyRot(0);hydra.setXRot(0);
+   var mouth=SummonRules.mouth(hydra);
+   for(int i=0;i<2;i++) {var t=i==0?near:far;double a=Math.toRadians(i==0?15:25);t.setPos(mouth.x+Math.sin(a)*4,mouth.y-t.getBbHeight()/2,mouth.z+Math.cos(a)*4);}
+   eq("Hydra 40-degree cone includes fifteen degrees",SummonRules.targets(hydra).entities().contains(near)?1:0,1,out);
+   eq("Hydra 40-degree cone excludes twenty-five degrees",SummonRules.targets(hydra).entities().contains(far)?1:0,0,out);
+  }finally{near.discard();far.discard();}
+ }
+ static void ordinaryHydra(ServerLevel level,ServerPlayer owner,Holder<Spell> summon,Spell.Impact.Action.Summon def,Consumer<String> out)throws Exception {
+  var hydra=(SummonedEntity)net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.parse("wizards:fire_hydra")).create(level,EntitySpawnReason.MOB_SUMMONED);
+  hydra.onSummonedBySpell(new SpellSummoned.Args(owner,summon,def.behaviour,def.attribute_scaling,new SpellExecution.ImpactContext()));
+  eq("Ordinary Hydra summon-only fireball",hydra.behaviour.actions.getFirst().spell_cast.spell_id.equals("wizards:hydra_fireball")?1:0,1,out);
+  eq("Ordinary Hydra target radius",hydra.detectionRange(),12,out);
+  var ball=spell(level,"wizards:hydra_fireball");
+  eq("Ordinary Hydra fireball own power coefficient",ball.value().impacts.getFirst().action.damage.spell_power_coefficient,.55,out);
+  eq("Player Fireball unchanged",spell(level,"wizards:fireball").value().impacts.getFirst().action.damage.spell_power_coefficient,.8,out);
+  var victim=net.minecraft.world.entity.EntityTypes.CREEPER.create(level,EntitySpawnReason.COMMAND);victim.setPos(0,80,6);victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(1000);victim.setHealth(1000);
+  var power=net.spell_power.api.SpellPower.getSpellPower(net.spell_power.api.SpellSchools.FIRE,hydra);
+  var context=new SpellExecution.ImpactContext().power(new net.spell_power.api.SpellPower.Result(net.spell_power.api.SpellSchools.FIRE,power.nonCriticalValue(),0,1.5));
+  net.spell_engine.internals.impact.SpellImpacts.performImpacts(level,hydra,victim,victim,ball,ball.value().impacts,context);
+  eq("Ordinary Hydra actual raw hit",1000-victim.getHealth(),.55*power.nonCriticalValue(),out);
+  eq("Observed old 9.1 hit scales to new damage",9.1*.55/.8,6.25625,out);
  }
  @SuppressWarnings({"unchecked","rawtypes"})
  static void partyDiscovery(ServerLevel level,ServerPlayer owner,SummonedEntity pet,Consumer<String> out)throws Exception {
@@ -138,14 +191,14 @@ public final class SummonProbe {
     float before=target.getHealth();tick.invoke(controller,breath,breath.value());
     double damage=before-target.getHealth();
     if(damage>0) {
-     eq("Ancient actual breath hit tick "+t,damage,2,out);
+     eq("Ancient actual breath hit tick "+t,damage,4.8,out);
      eq("Ancient delivery cadence "+hits,t,2+4*hits,out);
      hits++;if(t<100)firstWindow++;else secondWindow++;
     }
    }
    eq("Ancient first five seconds actual deliveries",firstWindow,25,out);
    eq("Ancient next five seconds actual deliveries",secondWindow,25,out);
-   eq("Ancient continuous ten seconds total damage",1000-target.getHealth(),100,out);
+   eq("Ancient continuous ten seconds total damage",1000-target.getHealth(),240,out);
    eq("Ancient channel rollover start",hydra.getSpellCastProcess().startedAt(),start+100,out);
    eq("Ancient zero native cooldown",hydra.cooldownManager.isCoolingDown(breath)?1:0,0,out);
   } finally {data.setGameTime(start);hydra.declareCastProcess(null);target.discard();}

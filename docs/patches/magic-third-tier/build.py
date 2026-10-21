@@ -53,7 +53,7 @@ for name in ['wizards-neoforge-3.1.2+26.2.jar', 'skill_tree-neoforge-1.6.1+26.2.
         for p in party.rglob('*.class'): files[p.relative_to(party).as_posix()] = p.read_bytes()
         for path, mode in [('entity/SummonedEntity', 'entity'), ('internals/impact/SpellImpacts', 'impacts'), ('internals/delivery/LaunchGeometry', 'launch'), ('internals/casting/MobCastController', 'controller')]:
             patch(files, 'net/spell_engine/' + path + '.class', 'PatchSummons', mode)
-        for path in ['internals/cost/SpellCooldowns', 'internals/cost/SpellCooldownManager', 'entity/SpellCloud', 'internals/impact/SpellImpacts']:
+        for path in ['client/casting/ClientCastController', 'internals/cost/SpellCooldowns', 'internals/cost/SpellCooldownManager', 'entity/SpellCloud', 'internals/impact/SpellImpacts']:
             patch(files, 'net/spell_engine/' + path + '.class', 'PatchWalls')
         patch(files, 'net/spell_engine/internals/cost/SpellCooldowns.class', 'PatchThirdTier', 'cooldown')
         for p in (CLASSES / 'net').rglob('*.class'): files[p.relative_to(CLASSES).as_posix()] = p.read_bytes()

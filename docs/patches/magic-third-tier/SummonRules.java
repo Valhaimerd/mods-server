@@ -66,8 +66,18 @@ public final class SummonRules {
             }
             return new SpellSummoned.Args(args.owner,args.spell,b,args.attribute_scaling,args.context);
         }
-        if (!marker(args.attribute_scaling,"ancient_hydra")) return args;
+        if (!args.spell.is(Identifier.parse("wizards:fire_hydra"))) return args;
         var b = new com.google.gson.Gson().fromJson(new com.google.gson.Gson().toJson(args.behaviour),SummonBehaviour.class);
+        b.targeting.automatic_targeting = SummonBehaviour.Targeting.AutoTarget.NONE;
+        b.targeting.attack_with_owner = false;
+        b.targeting.revenge = false;
+        b.targeting.detection_range.mode = SummonBehaviour.Targeting.DetectionRange.Mode.STATIC;
+        b.targeting.detection_range.value = 12;
+        if (!marker(args.attribute_scaling,"ancient_hydra")) {
+            for (var action : b.actions) if (action.spell_cast != null && action.spell_cast.spell_id.equals("wizards:fireball"))
+                action.spell_cast.spell_id = "wizards:hydra_fireball";
+            return new SpellSummoned.Args(args.owner,args.spell,b,args.attribute_scaling,args.context);
+        }
         var action = new SummonBehaviour.Action.SpellCast("wizards:ancient_hydra_breath",0);
         action.range.preferred = 1;
         action.cast_animation_variants = List.of(2);
@@ -98,7 +108,15 @@ public final class SummonRules {
         return Math.max(0,result);
     }
     public static void orient(SummonedEntity e, LivingEntity target) {
-        if(!ancient(e)) return;
+        if(!type(e,"fire_hydra")) return;
+        if(e.getTarget()!=null) target=e.getTarget();
+        if(!ancient(e)) {
+            Vec3 direction=target.getEyePosition().subtract(e.getEyePosition()).normalize();
+            float yaw=(float)Math.toDegrees(Math.atan2(-direction.x,direction.z));
+            e.setYRot(yaw);e.setYHeadRot(yaw);e.setYBodyRot(yaw);
+            e.setXRot((float)-Math.toDegrees(Math.asin(Math.max(-1,Math.min(1,direction.y)))));
+            return;
+        }
         Vec3 horizontal=target.getBoundingBox().getCenter().subtract(e.position());
         e.setYBodyRot((float)Math.toDegrees(Math.atan2(-horizontal.x,horizontal.z)));
         Vec3 delta=target.getBoundingBox().getCenter().subtract(mouth(e)).normalize();
@@ -116,14 +134,34 @@ public final class SummonRules {
         Vec3 origin=mouth(e), direction=e.getLookAngle();
         var targets=new ArrayList<Entity>();
         for(LivingEntity target:e.level().getEntitiesOfClass(LivingEntity.class,new AABB(origin,origin).inflate(12))) {
-            if(target==e || !target.isAlive() || !EntityRelations.actionAllowed(SpellTarget.FocusMode.AREA,SpellTarget.Intent.HARMFUL,e,target)) continue;
+            if(e.distanceToSqr(target)>144 || target==e || !target.isAlive() || !EntityRelations.actionAllowed(SpellTarget.FocusMode.AREA,SpellTarget.Intent.HARMFUL,e,target)) continue;
             Vec3 point=target.getBoundingBox().getCenter(), delta=point.subtract(origin);
             double distance=delta.length();
-            if(distance>12 || (distance>0 && delta.scale(1/distance).dot(direction)<Math.cos(Math.toRadians(10)))) continue;
+            if(distance>12 || (distance>0 && delta.scale(1/distance).dot(direction)<Math.cos(Math.toRadians(20)))) continue;
             if(e.level().clip(new ClipContext(origin,point,ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,e)).getType()!=HitResult.Type.MISS) continue;
             targets.add(target);
         }
         return new SpellTarget.SearchResult(targets,null);
+    }
+    /** Native target goals may retain an unreachable owner-hit target. Hydras use a strict local nearest-enemy policy. */
+    public static void tick(SummonedEntity e) {
+        if(e.level().isClientSide() || !type(e,"fire_hydra") || e.behaviour==null) return;
+        LivingEntity closest=null;double distance=144;
+        for(var candidate:e.level().getEntitiesOfClass(LivingEntity.class,e.getBoundingBox().inflate(12))) {
+            double d=e.distanceToSqr(candidate);
+            if(candidate==e || !candidate.isAlive() || candidate.isSpectator() || d>distance
+                || !PartyRules.harmfulAllowed(e,candidate)) continue;
+            Vec3 origin=ancient(e)?mouth(e):e.getEyePosition();
+            if(e.level().clip(new ClipContext(origin,candidate.getBoundingBox().getCenter(),ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,e)).getType()!=HitResult.Type.MISS) continue;
+            closest=candidate;distance=d;
+        }
+        if(e.getTarget()!=closest) e.setTarget(closest);
+    }
+    public static net.spell_engine.network.Packets.ParticleEffects breathParticles(SummonedEntity e,Holder<Spell> entry) {
+        var spawns=new ArrayList<net.spell_engine.network.Packets.ParticleEffects.Spawn>();
+        for(var group:entry.value().active.cast.particles)
+            spawns.add(new net.spell_engine.network.Packets.ParticleEffects.Spawn(0,e.getYRot(),e.getXRot(),mouth(e),group));
+        return new net.spell_engine.network.Packets.ParticleEffects(net.spell_engine.network.Packets.ParticleEffects.SourceType.COORDINATE,1,spawns);
     }
     /** Keep the native 25 deliveries/100 ticks cadence through successive channel windows. */
     public static boolean channel(SummonedEntity e, Holder<Spell> entry) {
@@ -140,6 +178,10 @@ public final class SummonRules {
             var context=new SpellExecution.ImpactContext().power(SpellPower.getSpellPower(entry.value().school,e)).target(SpellTarget.FocusMode.AREA).channeled(.2f);
             if(e.getOwner()!=null) context=context.effectiveCaster(e.getOwner());
             SpellDelivery.resolveAndDeliver(e.level(),e,entry,targets(e),context, completion -> {});
+            var packet=breathParticles(e,entry);
+            for(var player:net.spell_engine.Platform.tracking(e))
+                if(net.spell_engine.Platform.util().networkS2C_CanSend(player,net.spell_engine.network.Packets.ParticleEffects.ID))
+                    net.spell_engine.Platform.util().networkS2C_Send(player,packet);
         }
         return true;
     }

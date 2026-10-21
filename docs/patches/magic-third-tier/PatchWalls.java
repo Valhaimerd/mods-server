@@ -9,6 +9,15 @@ public final class PatchWalls implements Opcodes {
   r.accept(new ClassVisitor(ASM9,w) {
    public MethodVisitor visitMethod(int access,String name,String desc,String sig,String[] ex) {
     MethodVisitor out=super.visitMethod(access,name,desc,sig,ex);
+    if(r.getClassName().endsWith("/ClientCastController") && name.equals("keyHeld")) {
+     edits[0]++;return new MethodVisitor(ASM9,out) {
+      public void visitCode(){super.visitCode();mv.visitVarInsn(ALOAD,1);mv.visitVarInsn(ILOAD,2);mv.visitVarInsn(ILOAD,3);mv.visitInsn(IAND);
+       mv.visitMethodInsn(INVOKESTATIC,RULES,"ignoreHeldRepeat","(Lnet/spell_engine/internals/casting/SpellCast$Option;Z)Z",false);
+       Label normal=new Label();mv.visitJumpInsn(IFEQ,normal);
+       mv.visitFieldInsn(GETSTATIC,"net/spell_engine/client/casting/ClientCastController$Reaction","NOTHING","Lnet/spell_engine/client/casting/ClientCastController$Reaction;");mv.visitInsn(ARETURN);
+       mv.visitLabel(normal);mv.visitFrame(F_SAME,0,null,0,null);}
+     };
+    }
     if(r.getClassName().endsWith("/SpellCooldowns") && name.equals("imposeCooldown")) {
      edits[0]++; return new MethodVisitor(ASM9,out) {
       public void visitCode(){super.visitCode();mv.visitVarInsn(ALOAD,0);mv.visitVarInsn(ALOAD,1);mv.visitVarInsn(ALOAD,2);mv.visitVarInsn(FLOAD,3);

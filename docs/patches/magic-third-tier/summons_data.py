@@ -29,14 +29,18 @@ def transform(name, files):
         for particle in legion_nova.get('release',{}).get('visuals',{}).get('particles',[]):
             if 'scale' in particle.get('appearance',{}): particle['appearance']['scale']=6
         put('data/wizards/spell/legion_frost_nova.json',legion_nova)
+        fireball=get('data/wizards/spell/fireball.json')
+        fireball.pop('learn',None); fireball['group']='hydra_weapon'
+        fireball['impacts'][0]['action']['damage']['spell_power_coefficient']=.55
+        put('data/wizards/spell/hydra_fireball.json',fireball)
         breath=get('data/wizards/spell/fire_breath.json')
         breath.pop('learn',None); breath['group']='ancient_hydra'; breath['range']=12
         breath['active']['cast']['duration']=5
         breath['active']['cast']['channel']={'ticks':25}
-        breath['target']['area'].update(angle_degrees=20,distance_dropoff='NONE')
-        breath['impacts'][0]['action']['damage']['spell_power_coefficient']=.25
+        breath['target']['area'].update(angle_degrees=40,distance_dropoff='NONE')
+        breath['impacts'][0]['action']['damage']['spell_power_coefficient']=.6
         breath['cost']={'cooldown':{'duration':0,'haste_affected':False}}
-        for p in breath['active']['cast'].get('particles',[]): p['batch']['angle']=20
+        for p in breath['active']['cast'].get('particles',[]): p['batch']['angle']=40
         put('data/wizards/spell/ancient_hydra_breath.json',breath)
         path='assets/wizards/lang/en_us.json'; lang=get(path)
         lang['spell.wizards.fire_hydra.description']='Summon hydras for 20 sec (+5 sec with Improved Hydra). Cooldown 30 sec before haste.'
@@ -48,7 +52,9 @@ def transform(name, files):
         lang['spell.wizards.legion_frost_nova.name']='Legion Super Nova'
         lang['spell.wizards.legion_frost_nova.description']='Deal 180%% of this elemental\'s own Frost power within 6 blocks, freezing enemies for 0.5 sec.'
         lang['spell.wizards.ancient_hydra_breath.name']='Ancient Hydra Fire Breath'
-        lang['spell.wizards.ancient_hydra_breath.description']='Channel fire from the hydra mouth.'
+        lang['spell.wizards.ancient_hydra_breath.description']='Continuously breathe fire in a 40-degree cone, dealing 12%% of own Fire power per delivery. Targets the nearest visible enemy within 12 blocks.'
+        lang['spell.wizards.hydra_fireball.name']='Hydra Fireball'
+        lang['spell.wizards.hydra_fireball.description']="Deal 55%% of the hydra's own Fire power."
         put(path,lang)
     elif name.startswith('skill_tree-'):
         for path,id in [('fire_tier_4_spell_2_modifier_2','ancient_hydra'),('frost_tier_4_spell_2_modifier_1','frost_legion'),('frost_tier_4_spell_2_modifier_2','frost_colossus')]:

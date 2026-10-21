@@ -19,6 +19,31 @@ public final class WallProbe {
     private static int checks;
     static void check(boolean yes, String label) { if (!yes) throw new AssertionError(label); checks++; }
     static Holder<Spell> wall(ServerLevel l) { return SpellRegistry.from(l).get(Identifier.parse("wizards:fire_wall")).orElseThrow(); }
+    public static int fullCast(ServerLevel level,ServerPlayer player) {
+        checks=0;
+        var h=wall(level);var owner=(net.spell_engine.internals.container.SpellContainerSource.Owner)player;
+        var old=owner.getSpellContainers();
+        var container=new net.spell_engine.api.spell.container.SpellContainer(net.spell_engine.api.spell.container.SpellContainer.ContentType.NONE,"","",0,java.util.List.of("wizards:fire_wall"));
+        var book=new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BOOK);
+        var source=new net.spell_engine.internals.container.SpellContainerSource.SourcedContainer("wall_probe",book,container);
+        owner.setSpellContainers(new net.spell_engine.internals.container.SpellContainerSource.Result(old.activeContainer(),java.util.List.of(h),java.util.List.of(),java.util.List.of(),java.util.List.of(source)));
+        boolean creative=player.getAbilities().instabuild;player.getAbilities().instabuild=true;
+        var manager=((SpellCaster.Player)player).getCooldownManager();manager.remove(Identifier.parse("wizards:fire_wall"));
+        var option=net.spell_engine.internals.casting.SpellCast.Option.of(player,h);
+        try {
+            check(!WallRules.ignoreHeldRepeat(option,true),"wall fresh key press allowed");
+            check(WallRules.ignoreHeldRepeat(option,false),"wall held key cannot spend extra charges");
+            var other=net.spell_engine.internals.casting.SpellCast.Option.of(player,SpellRegistry.from(level).get(Identifier.parse("wizards:fire_hydra")).orElseThrow());
+            check(!WallRules.ignoreHeldRepeat(other,false),"other instant spells retain held-repeat behavior");
+            for(int i=1;i<=4;i++) {
+                ((SpellCaster.Player)player).getInteractor().requestCast(Identifier.parse("wizards:fire_wall"),new net.spell_engine.internals.casting.SpellCast.TargetSnapshot(java.util.List.of(),null));
+                check(manager.getCooldownDuration(h)==(i==4?480:0),"real wall cast "+i+" cooldown");
+                check(player.getCooldowns().getCooldownPercent(book,0)==0 || i==4,"wall book stays usable for remaining casts");
+            }
+            check(!net.spell_engine.internals.casting.SpellCasting.attempt(player,player.getMainHandItem(),Identifier.parse("wizards:fire_wall")).isSuccess(),"fifth actual wall cast blocked");
+        }finally{owner.setSpellContainers(old);player.getAbilities().instabuild=creative;player.getCooldowns().removeCooldown(Identifier.parse("minecraft:book"));}
+        return checks;
+    }
     public static int immediate(ServerLevel level, ServerPlayer player, Vec3 origin) {
         checks=0;
         Holder<Spell> h=wall(level);

@@ -43,6 +43,9 @@ public final class WallRules {
     private static String id(Holder<Spell> h) {
         return h == null ? "" : h.unwrapKey().map(k -> k.identifier().toString()).orElse("");
     }
+    public static boolean ignoreHeldRepeat(net.spell_engine.internals.casting.SpellCast.Option option, boolean fresh) {
+        return !fresh && WALL.equals(option.id().toString());
+    }
     public static boolean imposeCooldown(Player player, SpellContainerSource.SourcedContainer source, Holder<Spell> spell, float progress) {
         if (!WALL.equals(id(spell))) return false;
         if (player.level().isClientSide()) return true;
@@ -56,6 +59,8 @@ public final class WallRules {
             burst.casts++;
         }
         if (burst.casts >= 4) finish(player, burst);
+        else ((SpellCaster.Player)player).getCooldownManager().remove(net.minecraft.resources.Identifier.parse(WALL));
+        // Send an explicit zero cooldown to clear any client prediction during the remaining charges.
         return true;
     }
     private static void finish(Player player, Burst burst) {

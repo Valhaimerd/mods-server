@@ -60,6 +60,7 @@ public class ThirdTierProbe {
         try {
             player = FakePlayerFactory.get(level, new com.mojang.authlib.GameProfile(UUID.fromString("36baa39f-f31a-41ae-bf89-682889d12589"), "ThirdTier"));
             player.setPos(0, 80, 0);
+            level.setChunkForced(6,0,true);level.getChunk(6,0);
             for (String id : List.of("arcane", "fire", "frost")) player.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("spell_power:" + id)).orElseThrow()).setBaseValue(40);
             player.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("spell_power:critical_chance")).orElseThrow()).setBaseValue(0);
             magistrate();
@@ -325,6 +326,7 @@ public class ThirdTierProbe {
     void wallTests() throws Exception {
         nodes(List.of(),List.of()); player.removeAllEffects(); level.setChunkForced(6,6,true); level.getChunk(6,6); player.setPos(100,80,100);
         for(int x=95;x<=105;x++)for(int z=95;z<=105;z++)level.setBlock(new net.minecraft.core.BlockPos(x,79,z),net.minecraft.world.level.block.Blocks.STONE.defaultBlockState(),3);
+        checks+=WallProbe.fullCast(level,player);out.add("Wall real interactor four-press cast, held-repeat guard and hosting-item checks: PASS");
         checks += WallProbe.immediate(level,player,new net.minecraft.world.phys.Vec3(100,80,100));
         out.add("Great Wall native movement/projectile/geometry and four-cast checks: PASS");
         cloudHeightChecks();

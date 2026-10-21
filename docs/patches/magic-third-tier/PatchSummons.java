@@ -13,6 +13,9 @@ public class PatchSummons implements Opcodes {
      public void visitCode(){super.visitCode(); mv.visitVarInsn(ALOAD,1);mv.visitMethodInsn(INVOKESTATIC,RULES,"prepare","(Lnet/spell_engine/api/spell/summon/SpellSummoned$Args;)Lnet/spell_engine/api/spell/summon/SpellSummoned$Args;",false);mv.visitVarInsn(ASTORE,1);n[0]++;}
      public void visitInsn(int op){if(op==RETURN){mv.visitVarInsn(ALOAD,0);mv.visitVarInsn(ALOAD,1);mv.visitMethodInsn(INVOKESTATIC,RULES,"summoned","(Lnet/spell_engine/entity/SummonedEntity;Lnet/spell_engine/api/spell/summon/SpellSummoned$Args;)V",false);n[0]++;}super.visitInsn(op);}
     };
+    if(mode.equals("entity") && name.equals("tick")) return new MethodVisitor(ASM9,base) {
+     public void visitCode(){super.visitCode();mv.visitVarInsn(ALOAD,0);mv.visitMethodInsn(INVOKESTATIC,RULES,"tick","(Lnet/spell_engine/entity/SummonedEntity;)V",false);n[0]++;}
+    };
     if(mode.equals("entity") && name.equals("lockRotationTo")) return new MethodVisitor(ASM9,base) {
      public void visitInsn(int op){if(op==RETURN){mv.visitVarInsn(ALOAD,0);mv.visitVarInsn(ALOAD,1);mv.visitMethodInsn(INVOKESTATIC,RULES,"orient","(Lnet/spell_engine/entity/SummonedEntity;Lnet/minecraft/world/entity/LivingEntity;)V",false);n[0]++;}super.visitInsn(op);}
     };
@@ -46,7 +49,7 @@ public class PatchSummons implements Opcodes {
     super.visitEnd();
    }
   },0);
-  int expected=mode.equals("entity")?3:mode.equals("impacts")?2:1;
+  int expected=mode.equals("entity")?4:mode.equals("impacts")?2:1;
   if(n[0]!=expected)throw new AssertionError(mode+": expected "+expected+", got "+n[0]);
   Files.write(Path.of(args[2]),writer.toByteArray());
  }

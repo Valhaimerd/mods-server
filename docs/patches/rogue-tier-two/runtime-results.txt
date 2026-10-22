@@ -1,0 +1,2769 @@
+PASS Barrage cast actual=0.10000000149011612 expected=0.1
+PASS Barrage cooldown actual=8.0 expected=8.0
+PASS Barrage retained damage actual=0.6000000238418579 expected=0.6
+PASS Barrage interval three ticks actual=3.0 expected=3.0
+PASS Barrage zero divergence actual=0.0 expected=0.0
+PASS Extensive adds one arrow actual=1.0 expected=1.0
+PASS Blood Barrage six percent R actual=0.05999999865889549 expected=0.06
+PASS Wolf cooldown actual=35.0 expected=35.0
+PASS Wolf range actual=32.0 expected=32.0
+PASS Wolf active lifetime actual=20.0 expected=20.0
+PASS Enduring adds ten seconds actual=10.0 expected=10.0
+PASS archers:power_shot haste flag actual=1.0 expected=1.0
+PASS archers:power_shot native double haste halves cooldown actual=6.0 expected=6.0
+PASS archers:power_shot native double haste cast actual=0.0 expected=0.0
+PASS archers:entangling_roots haste flag actual=1.0 expected=1.0
+PASS archers:entangling_roots native double haste halves cooldown actual=6.0 expected=6.0
+PASS archers:entangling_roots native double haste cast actual=0.0 expected=0.0
+PASS archers:barrage haste flag actual=1.0 expected=1.0
+PASS archers:barrage native double haste halves cooldown actual=4.0 expected=4.0
+PASS archers:barrage native double haste cast actual=1.0 expected=1.0
+PASS archers:spirit_wolf haste flag actual=1.0 expected=1.0
+PASS archers:spirit_wolf native double haste halves cooldown actual=17.5 expected=17.5
+PASS archers:spirit_wolf native double haste cast actual=0.0 expected=0.0
+PASS archers:rain_of_arrows haste flag actual=1.0 expected=1.0
+PASS archers:rain_of_arrows native double haste halves cooldown actual=12.5 expected=12.5
+PASS archers:rain_of_arrows native double haste cast actual=5.0 expected=5.0
+PASS archers:magic_arrow haste flag actual=1.0 expected=1.0
+PASS archers:magic_arrow native double haste halves cooldown actual=12.5 expected=12.5
+PASS archers:magic_arrow native double haste cast actual=10.0 expected=10.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 native double haste halves cooldown actual=4.0 expected=4.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:archer_tier_2_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_passive_1 native double haste halves cooldown actual=0.5 expected=0.5
+PASS skill_tree_rpgs:archer_tier_2_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_passive_2 native double haste halves cooldown actual=5.0 expected=5.0
+PASS skill_tree_rpgs:archer_tier_3_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_3_passive_1 native double haste halves cooldown actual=4.0 expected=4.0
+PASS skill_tree_rpgs:archer_tier_3_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_3_passive_2 native double haste halves cooldown actual=20.0 expected=20.0
+PASS skill_tree_rpgs:weapon_bow_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_bow_passive_1 native double haste halves cooldown actual=1.5 expected=1.5
+PASS skill_tree_rpgs:weapon_bow_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_bow_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_1 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS Improved Barrage effective cooldown actual=7.0 expected=7.0
+PASS Momentum cooldown actual=1.0 expected=1.0
+PASS Momentum two stacks per roll capped five 1 actual=2.0 expected=2.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Momentum two stacks per roll capped five 2 actual=4.0 expected=4.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Momentum two stacks per roll capped five 3 actual=5.0 expected=5.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Tactical guaranteed roll trigger actual=1.0 expected=1.0
+PASS Tactical cooldown actual=10.0 expected=10.0
+PASS Power cooldown actual=12.0 expected=12.0
+PASS Mark six seconds actual=6.0 expected=6.0
+PASS Native prepared arrow window improved=false actual=160.0 expected=160.0
+PASS Native prepared arrow window improved=true actual=200.0 expected=200.0
+PASS Rain cooldown actual=25.0 expected=25.0
+PASS Rain damage actual=0.4000000059604645 expected=0.4
+PASS Rain splash actual=2.5 expected=2.5
+PASS Rain branch 0 count actual=32.0 expected=32.0
+PASS Rain branch 0 ticks actual=5.0 expected=5.0
+PASS Rain branch 0 scatter actual=10.0 expected=10.0
+PASS Rain branch 1 count actual=32.0 expected=32.0
+PASS Rain branch 1 ticks actual=2.0 expected=2.0
+PASS Rain branch 1 scatter actual=10.0 expected=10.0
+PASS Rain branch 2 count actual=76.0 expected=76.0
+PASS Rain branch 2 ticks actual=5.0 expected=5.0
+PASS Rain branch 2 scatter actual=11.0 expected=11.0
+PASS Scatter inside disk 0 actual=1.0 expected=1.0
+PASS Scatter inside disk 1 actual=1.0 expected=1.0
+PASS Scatter inside disk 2 actual=1.0 expected=1.0
+PASS Scatter inside disk 3 actual=1.0 expected=1.0
+PASS Scatter inside disk 4 actual=1.0 expected=1.0
+PASS Scatter inside disk 5 actual=1.0 expected=1.0
+PASS Scatter inside disk 6 actual=1.0 expected=1.0
+PASS Scatter inside disk 7 actual=1.0 expected=1.0
+PASS Scatter inside disk 8 actual=1.0 expected=1.0
+PASS Scatter inside disk 9 actual=1.0 expected=1.0
+PASS Scatter inside disk 10 actual=1.0 expected=1.0
+PASS Scatter inside disk 11 actual=1.0 expected=1.0
+PASS Scatter inside disk 12 actual=1.0 expected=1.0
+PASS Scatter inside disk 13 actual=1.0 expected=1.0
+PASS Scatter inside disk 14 actual=1.0 expected=1.0
+PASS Scatter inside disk 15 actual=1.0 expected=1.0
+PASS Scatter inside disk 16 actual=1.0 expected=1.0
+PASS Scatter inside disk 17 actual=1.0 expected=1.0
+PASS Scatter inside disk 18 actual=1.0 expected=1.0
+PASS Scatter inside disk 19 actual=1.0 expected=1.0
+PASS Scatter inside disk 20 actual=1.0 expected=1.0
+PASS Scatter inside disk 21 actual=1.0 expected=1.0
+PASS Scatter inside disk 22 actual=1.0 expected=1.0
+PASS Scatter inside disk 23 actual=1.0 expected=1.0
+PASS Scatter inside disk 24 actual=1.0 expected=1.0
+PASS Scatter inside disk 25 actual=1.0 expected=1.0
+PASS Scatter inside disk 26 actual=1.0 expected=1.0
+PASS Scatter inside disk 27 actual=1.0 expected=1.0
+PASS Scatter inside disk 28 actual=1.0 expected=1.0
+PASS Scatter inside disk 29 actual=1.0 expected=1.0
+PASS Scatter inside disk 30 actual=1.0 expected=1.0
+PASS Scatter inside disk 31 actual=1.0 expected=1.0
+PASS Scatter inside disk 32 actual=1.0 expected=1.0
+PASS Scatter inside disk 33 actual=1.0 expected=1.0
+PASS Scatter inside disk 34 actual=1.0 expected=1.0
+PASS Scatter inside disk 35 actual=1.0 expected=1.0
+PASS Scatter inside disk 36 actual=1.0 expected=1.0
+PASS Scatter inside disk 37 actual=1.0 expected=1.0
+PASS Scatter inside disk 38 actual=1.0 expected=1.0
+PASS Scatter inside disk 39 actual=1.0 expected=1.0
+PASS Scatter inside disk 40 actual=1.0 expected=1.0
+PASS Scatter inside disk 41 actual=1.0 expected=1.0
+PASS Scatter inside disk 42 actual=1.0 expected=1.0
+PASS Scatter inside disk 43 actual=1.0 expected=1.0
+PASS Scatter inside disk 44 actual=1.0 expected=1.0
+PASS Scatter inside disk 45 actual=1.0 expected=1.0
+PASS Scatter inside disk 46 actual=1.0 expected=1.0
+PASS Scatter inside disk 47 actual=1.0 expected=1.0
+PASS Scatter inside disk 48 actual=1.0 expected=1.0
+PASS Scatter inside disk 49 actual=1.0 expected=1.0
+PASS Scatter inside disk 50 actual=1.0 expected=1.0
+PASS Scatter inside disk 51 actual=1.0 expected=1.0
+PASS Scatter inside disk 52 actual=1.0 expected=1.0
+PASS Scatter inside disk 53 actual=1.0 expected=1.0
+PASS Scatter inside disk 54 actual=1.0 expected=1.0
+PASS Scatter inside disk 55 actual=1.0 expected=1.0
+PASS Scatter inside disk 56 actual=1.0 expected=1.0
+PASS Scatter inside disk 57 actual=1.0 expected=1.0
+PASS Scatter inside disk 58 actual=1.0 expected=1.0
+PASS Scatter inside disk 59 actual=1.0 expected=1.0
+PASS Scatter inside disk 60 actual=1.0 expected=1.0
+PASS Scatter inside disk 61 actual=1.0 expected=1.0
+PASS Scatter inside disk 62 actual=1.0 expected=1.0
+PASS Scatter inside disk 63 actual=1.0 expected=1.0
+PASS Scatter inside disk 64 actual=1.0 expected=1.0
+PASS Scatter inside disk 65 actual=1.0 expected=1.0
+PASS Scatter inside disk 66 actual=1.0 expected=1.0
+PASS Scatter inside disk 67 actual=1.0 expected=1.0
+PASS Scatter inside disk 68 actual=1.0 expected=1.0
+PASS Scatter inside disk 69 actual=1.0 expected=1.0
+PASS Scatter inside disk 70 actual=1.0 expected=1.0
+PASS Scatter inside disk 71 actual=1.0 expected=1.0
+PASS Scatter inside disk 72 actual=1.0 expected=1.0
+PASS Scatter inside disk 73 actual=1.0 expected=1.0
+PASS Scatter inside disk 74 actual=1.0 expected=1.0
+PASS Scatter inside disk 75 actual=1.0 expected=1.0
+PASS Scatter inside disk 76 actual=1.0 expected=1.0
+PASS Scatter inside disk 77 actual=1.0 expected=1.0
+PASS Scatter inside disk 78 actual=1.0 expected=1.0
+PASS Scatter inside disk 79 actual=1.0 expected=1.0
+PASS Scatter inside disk 80 actual=1.0 expected=1.0
+PASS Scatter inside disk 81 actual=1.0 expected=1.0
+PASS Scatter inside disk 82 actual=1.0 expected=1.0
+PASS Scatter inside disk 83 actual=1.0 expected=1.0
+PASS Scatter inside disk 84 actual=1.0 expected=1.0
+PASS Scatter inside disk 85 actual=1.0 expected=1.0
+PASS Scatter inside disk 86 actual=1.0 expected=1.0
+PASS Scatter inside disk 87 actual=1.0 expected=1.0
+PASS Scatter inside disk 88 actual=1.0 expected=1.0
+PASS Scatter inside disk 89 actual=1.0 expected=1.0
+PASS Scatter inside disk 90 actual=1.0 expected=1.0
+PASS Scatter inside disk 91 actual=1.0 expected=1.0
+PASS Scatter inside disk 92 actual=1.0 expected=1.0
+PASS Scatter inside disk 93 actual=1.0 expected=1.0
+PASS Scatter inside disk 94 actual=1.0 expected=1.0
+PASS Scatter inside disk 95 actual=1.0 expected=1.0
+PASS Scatter inside disk 96 actual=1.0 expected=1.0
+PASS Scatter inside disk 97 actual=1.0 expected=1.0
+PASS Scatter inside disk 98 actual=1.0 expected=1.0
+PASS Scatter inside disk 99 actual=1.0 expected=1.0
+PASS Scatter inside disk 100 actual=1.0 expected=1.0
+PASS Scatter inside disk 101 actual=1.0 expected=1.0
+PASS Scatter inside disk 102 actual=1.0 expected=1.0
+PASS Scatter inside disk 103 actual=1.0 expected=1.0
+PASS Scatter inside disk 104 actual=1.0 expected=1.0
+PASS Scatter inside disk 105 actual=1.0 expected=1.0
+PASS Scatter inside disk 106 actual=1.0 expected=1.0
+PASS Scatter inside disk 107 actual=1.0 expected=1.0
+PASS Scatter inside disk 108 actual=1.0 expected=1.0
+PASS Scatter inside disk 109 actual=1.0 expected=1.0
+PASS Scatter inside disk 110 actual=1.0 expected=1.0
+PASS Scatter inside disk 111 actual=1.0 expected=1.0
+PASS Scatter inside disk 112 actual=1.0 expected=1.0
+PASS Scatter inside disk 113 actual=1.0 expected=1.0
+PASS Scatter inside disk 114 actual=1.0 expected=1.0
+PASS Scatter inside disk 115 actual=1.0 expected=1.0
+PASS Scatter inside disk 116 actual=1.0 expected=1.0
+PASS Scatter inside disk 117 actual=1.0 expected=1.0
+PASS Scatter inside disk 118 actual=1.0 expected=1.0
+PASS Scatter inside disk 119 actual=1.0 expected=1.0
+PASS Scatter inside disk 120 actual=1.0 expected=1.0
+PASS Scatter inside disk 121 actual=1.0 expected=1.0
+PASS Scatter inside disk 122 actual=1.0 expected=1.0
+PASS Scatter inside disk 123 actual=1.0 expected=1.0
+PASS Scatter inside disk 124 actual=1.0 expected=1.0
+PASS Scatter inside disk 125 actual=1.0 expected=1.0
+PASS Scatter inside disk 126 actual=1.0 expected=1.0
+PASS Scatter inside disk 127 actual=1.0 expected=1.0
+PASS Scatter inside disk 128 actual=1.0 expected=1.0
+PASS Scatter inside disk 129 actual=1.0 expected=1.0
+PASS Scatter inside disk 130 actual=1.0 expected=1.0
+PASS Scatter inside disk 131 actual=1.0 expected=1.0
+PASS Scatter inside disk 132 actual=1.0 expected=1.0
+PASS Scatter inside disk 133 actual=1.0 expected=1.0
+PASS Scatter inside disk 134 actual=1.0 expected=1.0
+PASS Scatter inside disk 135 actual=1.0 expected=1.0
+PASS Scatter inside disk 136 actual=1.0 expected=1.0
+PASS Scatter inside disk 137 actual=1.0 expected=1.0
+PASS Scatter inside disk 138 actual=1.0 expected=1.0
+PASS Scatter inside disk 139 actual=1.0 expected=1.0
+PASS Scatter inside disk 140 actual=1.0 expected=1.0
+PASS Scatter inside disk 141 actual=1.0 expected=1.0
+PASS Scatter inside disk 142 actual=1.0 expected=1.0
+PASS Scatter inside disk 143 actual=1.0 expected=1.0
+PASS Scatter inside disk 144 actual=1.0 expected=1.0
+PASS Scatter inside disk 145 actual=1.0 expected=1.0
+PASS Scatter inside disk 146 actual=1.0 expected=1.0
+PASS Scatter inside disk 147 actual=1.0 expected=1.0
+PASS Scatter inside disk 148 actual=1.0 expected=1.0
+PASS Scatter inside disk 149 actual=1.0 expected=1.0
+PASS Scatter inside disk 150 actual=1.0 expected=1.0
+PASS Scatter inside disk 151 actual=1.0 expected=1.0
+PASS Scatter inside disk 152 actual=1.0 expected=1.0
+PASS Scatter inside disk 153 actual=1.0 expected=1.0
+PASS Scatter inside disk 154 actual=1.0 expected=1.0
+PASS Scatter inside disk 155 actual=1.0 expected=1.0
+PASS Scatter inside disk 156 actual=1.0 expected=1.0
+PASS Scatter inside disk 157 actual=1.0 expected=1.0
+PASS Scatter inside disk 158 actual=1.0 expected=1.0
+PASS Scatter inside disk 159 actual=1.0 expected=1.0
+PASS Scatter inside disk 160 actual=1.0 expected=1.0
+PASS Scatter inside disk 161 actual=1.0 expected=1.0
+PASS Scatter inside disk 162 actual=1.0 expected=1.0
+PASS Scatter inside disk 163 actual=1.0 expected=1.0
+PASS Scatter inside disk 164 actual=1.0 expected=1.0
+PASS Scatter inside disk 165 actual=1.0 expected=1.0
+PASS Scatter inside disk 166 actual=1.0 expected=1.0
+PASS Scatter inside disk 167 actual=1.0 expected=1.0
+PASS Scatter inside disk 168 actual=1.0 expected=1.0
+PASS Scatter inside disk 169 actual=1.0 expected=1.0
+PASS Scatter inside disk 170 actual=1.0 expected=1.0
+PASS Scatter inside disk 171 actual=1.0 expected=1.0
+PASS Scatter inside disk 172 actual=1.0 expected=1.0
+PASS Scatter inside disk 173 actual=1.0 expected=1.0
+PASS Scatter inside disk 174 actual=1.0 expected=1.0
+PASS Scatter inside disk 175 actual=1.0 expected=1.0
+PASS Scatter inside disk 176 actual=1.0 expected=1.0
+PASS Scatter inside disk 177 actual=1.0 expected=1.0
+PASS Scatter inside disk 178 actual=1.0 expected=1.0
+PASS Scatter inside disk 179 actual=1.0 expected=1.0
+PASS Scatter inside disk 180 actual=1.0 expected=1.0
+PASS Scatter inside disk 181 actual=1.0 expected=1.0
+PASS Scatter inside disk 182 actual=1.0 expected=1.0
+PASS Scatter inside disk 183 actual=1.0 expected=1.0
+PASS Scatter inside disk 184 actual=1.0 expected=1.0
+PASS Scatter inside disk 185 actual=1.0 expected=1.0
+PASS Scatter inside disk 186 actual=1.0 expected=1.0
+PASS Scatter inside disk 187 actual=1.0 expected=1.0
+PASS Scatter inside disk 188 actual=1.0 expected=1.0
+PASS Scatter inside disk 189 actual=1.0 expected=1.0
+PASS Scatter inside disk 190 actual=1.0 expected=1.0
+PASS Scatter inside disk 191 actual=1.0 expected=1.0
+PASS Scatter inside disk 192 actual=1.0 expected=1.0
+PASS Scatter inside disk 193 actual=1.0 expected=1.0
+PASS Scatter inside disk 194 actual=1.0 expected=1.0
+PASS Scatter inside disk 195 actual=1.0 expected=1.0
+PASS Scatter inside disk 196 actual=1.0 expected=1.0
+PASS Scatter inside disk 197 actual=1.0 expected=1.0
+PASS Scatter inside disk 198 actual=1.0 expected=1.0
+PASS Scatter inside disk 199 actual=1.0 expected=1.0
+PASS Scatter inside disk 200 actual=1.0 expected=1.0
+PASS Scatter inside disk 201 actual=1.0 expected=1.0
+PASS Scatter inside disk 202 actual=1.0 expected=1.0
+PASS Scatter inside disk 203 actual=1.0 expected=1.0
+PASS Scatter inside disk 204 actual=1.0 expected=1.0
+PASS Scatter inside disk 205 actual=1.0 expected=1.0
+PASS Scatter inside disk 206 actual=1.0 expected=1.0
+PASS Scatter inside disk 207 actual=1.0 expected=1.0
+PASS Scatter inside disk 208 actual=1.0 expected=1.0
+PASS Scatter inside disk 209 actual=1.0 expected=1.0
+PASS Scatter inside disk 210 actual=1.0 expected=1.0
+PASS Scatter inside disk 211 actual=1.0 expected=1.0
+PASS Scatter inside disk 212 actual=1.0 expected=1.0
+PASS Scatter inside disk 213 actual=1.0 expected=1.0
+PASS Scatter inside disk 214 actual=1.0 expected=1.0
+PASS Scatter inside disk 215 actual=1.0 expected=1.0
+PASS Scatter inside disk 216 actual=1.0 expected=1.0
+PASS Scatter inside disk 217 actual=1.0 expected=1.0
+PASS Scatter inside disk 218 actual=1.0 expected=1.0
+PASS Scatter inside disk 219 actual=1.0 expected=1.0
+PASS Scatter inside disk 220 actual=1.0 expected=1.0
+PASS Scatter inside disk 221 actual=1.0 expected=1.0
+PASS Scatter inside disk 222 actual=1.0 expected=1.0
+PASS Scatter inside disk 223 actual=1.0 expected=1.0
+PASS Scatter inside disk 224 actual=1.0 expected=1.0
+PASS Scatter inside disk 225 actual=1.0 expected=1.0
+PASS Scatter inside disk 226 actual=1.0 expected=1.0
+PASS Scatter inside disk 227 actual=1.0 expected=1.0
+PASS Scatter inside disk 228 actual=1.0 expected=1.0
+PASS Scatter inside disk 229 actual=1.0 expected=1.0
+PASS Scatter inside disk 230 actual=1.0 expected=1.0
+PASS Scatter inside disk 231 actual=1.0 expected=1.0
+PASS Scatter inside disk 232 actual=1.0 expected=1.0
+PASS Scatter inside disk 233 actual=1.0 expected=1.0
+PASS Scatter inside disk 234 actual=1.0 expected=1.0
+PASS Scatter inside disk 235 actual=1.0 expected=1.0
+PASS Scatter inside disk 236 actual=1.0 expected=1.0
+PASS Scatter inside disk 237 actual=1.0 expected=1.0
+PASS Scatter inside disk 238 actual=1.0 expected=1.0
+PASS Scatter inside disk 239 actual=1.0 expected=1.0
+PASS Scatter inside disk 240 actual=1.0 expected=1.0
+PASS Scatter inside disk 241 actual=1.0 expected=1.0
+PASS Scatter inside disk 242 actual=1.0 expected=1.0
+PASS Scatter inside disk 243 actual=1.0 expected=1.0
+PASS Scatter inside disk 244 actual=1.0 expected=1.0
+PASS Scatter inside disk 245 actual=1.0 expected=1.0
+PASS Scatter inside disk 246 actual=1.0 expected=1.0
+PASS Scatter inside disk 247 actual=1.0 expected=1.0
+PASS Scatter inside disk 248 actual=1.0 expected=1.0
+PASS Scatter inside disk 249 actual=1.0 expected=1.0
+PASS Scatter inside disk 250 actual=1.0 expected=1.0
+PASS Scatter inside disk 251 actual=1.0 expected=1.0
+PASS Scatter inside disk 252 actual=1.0 expected=1.0
+PASS Scatter inside disk 253 actual=1.0 expected=1.0
+PASS Scatter inside disk 254 actual=1.0 expected=1.0
+PASS Scatter inside disk 255 actual=1.0 expected=1.0
+PASS Scatter inside disk 256 actual=1.0 expected=1.0
+PASS Scatter inside disk 257 actual=1.0 expected=1.0
+PASS Scatter inside disk 258 actual=1.0 expected=1.0
+PASS Scatter inside disk 259 actual=1.0 expected=1.0
+PASS Scatter inside disk 260 actual=1.0 expected=1.0
+PASS Scatter inside disk 261 actual=1.0 expected=1.0
+PASS Scatter inside disk 262 actual=1.0 expected=1.0
+PASS Scatter inside disk 263 actual=1.0 expected=1.0
+PASS Scatter inside disk 264 actual=1.0 expected=1.0
+PASS Scatter inside disk 265 actual=1.0 expected=1.0
+PASS Scatter inside disk 266 actual=1.0 expected=1.0
+PASS Scatter inside disk 267 actual=1.0 expected=1.0
+PASS Scatter inside disk 268 actual=1.0 expected=1.0
+PASS Scatter inside disk 269 actual=1.0 expected=1.0
+PASS Scatter inside disk 270 actual=1.0 expected=1.0
+PASS Scatter inside disk 271 actual=1.0 expected=1.0
+PASS Scatter inside disk 272 actual=1.0 expected=1.0
+PASS Scatter inside disk 273 actual=1.0 expected=1.0
+PASS Scatter inside disk 274 actual=1.0 expected=1.0
+PASS Scatter inside disk 275 actual=1.0 expected=1.0
+PASS Scatter inside disk 276 actual=1.0 expected=1.0
+PASS Scatter inside disk 277 actual=1.0 expected=1.0
+PASS Scatter inside disk 278 actual=1.0 expected=1.0
+PASS Scatter inside disk 279 actual=1.0 expected=1.0
+PASS Scatter inside disk 280 actual=1.0 expected=1.0
+PASS Scatter inside disk 281 actual=1.0 expected=1.0
+PASS Scatter inside disk 282 actual=1.0 expected=1.0
+PASS Scatter inside disk 283 actual=1.0 expected=1.0
+PASS Scatter inside disk 284 actual=1.0 expected=1.0
+PASS Scatter inside disk 285 actual=1.0 expected=1.0
+PASS Scatter inside disk 286 actual=1.0 expected=1.0
+PASS Scatter inside disk 287 actual=1.0 expected=1.0
+PASS Scatter inside disk 288 actual=1.0 expected=1.0
+PASS Scatter inside disk 289 actual=1.0 expected=1.0
+PASS Scatter inside disk 290 actual=1.0 expected=1.0
+PASS Scatter inside disk 291 actual=1.0 expected=1.0
+PASS Scatter inside disk 292 actual=1.0 expected=1.0
+PASS Scatter inside disk 293 actual=1.0 expected=1.0
+PASS Scatter inside disk 294 actual=1.0 expected=1.0
+PASS Scatter inside disk 295 actual=1.0 expected=1.0
+PASS Scatter inside disk 296 actual=1.0 expected=1.0
+PASS Scatter inside disk 297 actual=1.0 expected=1.0
+PASS Scatter inside disk 298 actual=1.0 expected=1.0
+PASS Scatter inside disk 299 actual=1.0 expected=1.0
+PASS Scatter inside disk 300 actual=1.0 expected=1.0
+PASS Scatter inside disk 301 actual=1.0 expected=1.0
+PASS Scatter inside disk 302 actual=1.0 expected=1.0
+PASS Scatter inside disk 303 actual=1.0 expected=1.0
+PASS Scatter inside disk 304 actual=1.0 expected=1.0
+PASS Scatter inside disk 305 actual=1.0 expected=1.0
+PASS Scatter inside disk 306 actual=1.0 expected=1.0
+PASS Scatter inside disk 307 actual=1.0 expected=1.0
+PASS Scatter inside disk 308 actual=1.0 expected=1.0
+PASS Scatter inside disk 309 actual=1.0 expected=1.0
+PASS Scatter inside disk 310 actual=1.0 expected=1.0
+PASS Scatter inside disk 311 actual=1.0 expected=1.0
+PASS Scatter inside disk 312 actual=1.0 expected=1.0
+PASS Scatter inside disk 313 actual=1.0 expected=1.0
+PASS Scatter inside disk 314 actual=1.0 expected=1.0
+PASS Scatter inside disk 315 actual=1.0 expected=1.0
+PASS Scatter inside disk 316 actual=1.0 expected=1.0
+PASS Scatter inside disk 317 actual=1.0 expected=1.0
+PASS Scatter inside disk 318 actual=1.0 expected=1.0
+PASS Scatter inside disk 319 actual=1.0 expected=1.0
+PASS Scatter inside disk 320 actual=1.0 expected=1.0
+PASS Scatter inside disk 321 actual=1.0 expected=1.0
+PASS Scatter inside disk 322 actual=1.0 expected=1.0
+PASS Scatter inside disk 323 actual=1.0 expected=1.0
+PASS Scatter inside disk 324 actual=1.0 expected=1.0
+PASS Scatter inside disk 325 actual=1.0 expected=1.0
+PASS Scatter inside disk 326 actual=1.0 expected=1.0
+PASS Scatter inside disk 327 actual=1.0 expected=1.0
+PASS Scatter inside disk 328 actual=1.0 expected=1.0
+PASS Scatter inside disk 329 actual=1.0 expected=1.0
+PASS Scatter inside disk 330 actual=1.0 expected=1.0
+PASS Scatter inside disk 331 actual=1.0 expected=1.0
+PASS Scatter inside disk 332 actual=1.0 expected=1.0
+PASS Scatter inside disk 333 actual=1.0 expected=1.0
+PASS Scatter inside disk 334 actual=1.0 expected=1.0
+PASS Scatter inside disk 335 actual=1.0 expected=1.0
+PASS Scatter inside disk 336 actual=1.0 expected=1.0
+PASS Scatter inside disk 337 actual=1.0 expected=1.0
+PASS Scatter inside disk 338 actual=1.0 expected=1.0
+PASS Scatter inside disk 339 actual=1.0 expected=1.0
+PASS Scatter inside disk 340 actual=1.0 expected=1.0
+PASS Scatter inside disk 341 actual=1.0 expected=1.0
+PASS Scatter inside disk 342 actual=1.0 expected=1.0
+PASS Scatter inside disk 343 actual=1.0 expected=1.0
+PASS Scatter inside disk 344 actual=1.0 expected=1.0
+PASS Scatter inside disk 345 actual=1.0 expected=1.0
+PASS Scatter inside disk 346 actual=1.0 expected=1.0
+PASS Scatter inside disk 347 actual=1.0 expected=1.0
+PASS Scatter inside disk 348 actual=1.0 expected=1.0
+PASS Scatter inside disk 349 actual=1.0 expected=1.0
+PASS Scatter inside disk 350 actual=1.0 expected=1.0
+PASS Scatter inside disk 351 actual=1.0 expected=1.0
+PASS Scatter inside disk 352 actual=1.0 expected=1.0
+PASS Scatter inside disk 353 actual=1.0 expected=1.0
+PASS Scatter inside disk 354 actual=1.0 expected=1.0
+PASS Scatter inside disk 355 actual=1.0 expected=1.0
+PASS Scatter inside disk 356 actual=1.0 expected=1.0
+PASS Scatter inside disk 357 actual=1.0 expected=1.0
+PASS Scatter inside disk 358 actual=1.0 expected=1.0
+PASS Scatter inside disk 359 actual=1.0 expected=1.0
+PASS Scatter inside disk 360 actual=1.0 expected=1.0
+PASS Scatter inside disk 361 actual=1.0 expected=1.0
+PASS Scatter inside disk 362 actual=1.0 expected=1.0
+PASS Scatter inside disk 363 actual=1.0 expected=1.0
+PASS Scatter inside disk 364 actual=1.0 expected=1.0
+PASS Scatter inside disk 365 actual=1.0 expected=1.0
+PASS Scatter inside disk 366 actual=1.0 expected=1.0
+PASS Scatter inside disk 367 actual=1.0 expected=1.0
+PASS Scatter inside disk 368 actual=1.0 expected=1.0
+PASS Scatter inside disk 369 actual=1.0 expected=1.0
+PASS Scatter inside disk 370 actual=1.0 expected=1.0
+PASS Scatter inside disk 371 actual=1.0 expected=1.0
+PASS Scatter inside disk 372 actual=1.0 expected=1.0
+PASS Scatter inside disk 373 actual=1.0 expected=1.0
+PASS Scatter inside disk 374 actual=1.0 expected=1.0
+PASS Scatter inside disk 375 actual=1.0 expected=1.0
+PASS Scatter inside disk 376 actual=1.0 expected=1.0
+PASS Scatter inside disk 377 actual=1.0 expected=1.0
+PASS Scatter inside disk 378 actual=1.0 expected=1.0
+PASS Scatter inside disk 379 actual=1.0 expected=1.0
+PASS Scatter inside disk 380 actual=1.0 expected=1.0
+PASS Scatter inside disk 381 actual=1.0 expected=1.0
+PASS Scatter inside disk 382 actual=1.0 expected=1.0
+PASS Scatter inside disk 383 actual=1.0 expected=1.0
+PASS Scatter inside disk 384 actual=1.0 expected=1.0
+PASS Scatter inside disk 385 actual=1.0 expected=1.0
+PASS Scatter inside disk 386 actual=1.0 expected=1.0
+PASS Scatter inside disk 387 actual=1.0 expected=1.0
+PASS Scatter inside disk 388 actual=1.0 expected=1.0
+PASS Scatter inside disk 389 actual=1.0 expected=1.0
+PASS Scatter inside disk 390 actual=1.0 expected=1.0
+PASS Scatter inside disk 391 actual=1.0 expected=1.0
+PASS Scatter inside disk 392 actual=1.0 expected=1.0
+PASS Scatter inside disk 393 actual=1.0 expected=1.0
+PASS Scatter inside disk 394 actual=1.0 expected=1.0
+PASS Scatter inside disk 395 actual=1.0 expected=1.0
+PASS Scatter inside disk 396 actual=1.0 expected=1.0
+PASS Scatter inside disk 397 actual=1.0 expected=1.0
+PASS Scatter inside disk 398 actual=1.0 expected=1.0
+PASS Scatter inside disk 399 actual=1.0 expected=1.0
+PASS Scatter inside disk 400 actual=1.0 expected=1.0
+PASS Scatter inside disk 401 actual=1.0 expected=1.0
+PASS Scatter inside disk 402 actual=1.0 expected=1.0
+PASS Scatter inside disk 403 actual=1.0 expected=1.0
+PASS Scatter inside disk 404 actual=1.0 expected=1.0
+PASS Scatter inside disk 405 actual=1.0 expected=1.0
+PASS Scatter inside disk 406 actual=1.0 expected=1.0
+PASS Scatter inside disk 407 actual=1.0 expected=1.0
+PASS Scatter inside disk 408 actual=1.0 expected=1.0
+PASS Scatter inside disk 409 actual=1.0 expected=1.0
+PASS Scatter inside disk 410 actual=1.0 expected=1.0
+PASS Scatter inside disk 411 actual=1.0 expected=1.0
+PASS Scatter inside disk 412 actual=1.0 expected=1.0
+PASS Scatter inside disk 413 actual=1.0 expected=1.0
+PASS Scatter inside disk 414 actual=1.0 expected=1.0
+PASS Scatter inside disk 415 actual=1.0 expected=1.0
+PASS Scatter inside disk 416 actual=1.0 expected=1.0
+PASS Scatter inside disk 417 actual=1.0 expected=1.0
+PASS Scatter inside disk 418 actual=1.0 expected=1.0
+PASS Scatter inside disk 419 actual=1.0 expected=1.0
+PASS Scatter inside disk 420 actual=1.0 expected=1.0
+PASS Scatter inside disk 421 actual=1.0 expected=1.0
+PASS Scatter inside disk 422 actual=1.0 expected=1.0
+PASS Scatter inside disk 423 actual=1.0 expected=1.0
+PASS Scatter inside disk 424 actual=1.0 expected=1.0
+PASS Scatter inside disk 425 actual=1.0 expected=1.0
+PASS Scatter inside disk 426 actual=1.0 expected=1.0
+PASS Scatter inside disk 427 actual=1.0 expected=1.0
+PASS Scatter inside disk 428 actual=1.0 expected=1.0
+PASS Scatter inside disk 429 actual=1.0 expected=1.0
+PASS Scatter inside disk 430 actual=1.0 expected=1.0
+PASS Scatter inside disk 431 actual=1.0 expected=1.0
+PASS Scatter inside disk 432 actual=1.0 expected=1.0
+PASS Scatter inside disk 433 actual=1.0 expected=1.0
+PASS Scatter inside disk 434 actual=1.0 expected=1.0
+PASS Scatter inside disk 435 actual=1.0 expected=1.0
+PASS Scatter inside disk 436 actual=1.0 expected=1.0
+PASS Scatter inside disk 437 actual=1.0 expected=1.0
+PASS Scatter inside disk 438 actual=1.0 expected=1.0
+PASS Scatter inside disk 439 actual=1.0 expected=1.0
+PASS Scatter inside disk 440 actual=1.0 expected=1.0
+PASS Scatter inside disk 441 actual=1.0 expected=1.0
+PASS Scatter inside disk 442 actual=1.0 expected=1.0
+PASS Scatter inside disk 443 actual=1.0 expected=1.0
+PASS Scatter inside disk 444 actual=1.0 expected=1.0
+PASS Scatter inside disk 445 actual=1.0 expected=1.0
+PASS Scatter inside disk 446 actual=1.0 expected=1.0
+PASS Scatter inside disk 447 actual=1.0 expected=1.0
+PASS Scatter inside disk 448 actual=1.0 expected=1.0
+PASS Scatter inside disk 449 actual=1.0 expected=1.0
+PASS Scatter inside disk 450 actual=1.0 expected=1.0
+PASS Scatter inside disk 451 actual=1.0 expected=1.0
+PASS Scatter inside disk 452 actual=1.0 expected=1.0
+PASS Scatter inside disk 453 actual=1.0 expected=1.0
+PASS Scatter inside disk 454 actual=1.0 expected=1.0
+PASS Scatter inside disk 455 actual=1.0 expected=1.0
+PASS Scatter inside disk 456 actual=1.0 expected=1.0
+PASS Scatter inside disk 457 actual=1.0 expected=1.0
+PASS Scatter inside disk 458 actual=1.0 expected=1.0
+PASS Scatter inside disk 459 actual=1.0 expected=1.0
+PASS Scatter inside disk 460 actual=1.0 expected=1.0
+PASS Scatter inside disk 461 actual=1.0 expected=1.0
+PASS Scatter inside disk 462 actual=1.0 expected=1.0
+PASS Scatter inside disk 463 actual=1.0 expected=1.0
+PASS Scatter inside disk 464 actual=1.0 expected=1.0
+PASS Scatter inside disk 465 actual=1.0 expected=1.0
+PASS Scatter inside disk 466 actual=1.0 expected=1.0
+PASS Scatter inside disk 467 actual=1.0 expected=1.0
+PASS Scatter inside disk 468 actual=1.0 expected=1.0
+PASS Scatter inside disk 469 actual=1.0 expected=1.0
+PASS Scatter inside disk 470 actual=1.0 expected=1.0
+PASS Scatter inside disk 471 actual=1.0 expected=1.0
+PASS Scatter inside disk 472 actual=1.0 expected=1.0
+PASS Scatter inside disk 473 actual=1.0 expected=1.0
+PASS Scatter inside disk 474 actual=1.0 expected=1.0
+PASS Scatter inside disk 475 actual=1.0 expected=1.0
+PASS Scatter inside disk 476 actual=1.0 expected=1.0
+PASS Scatter inside disk 477 actual=1.0 expected=1.0
+PASS Scatter inside disk 478 actual=1.0 expected=1.0
+PASS Scatter inside disk 479 actual=1.0 expected=1.0
+PASS Scatter inside disk 480 actual=1.0 expected=1.0
+PASS Scatter inside disk 481 actual=1.0 expected=1.0
+PASS Scatter inside disk 482 actual=1.0 expected=1.0
+PASS Scatter inside disk 483 actual=1.0 expected=1.0
+PASS Scatter inside disk 484 actual=1.0 expected=1.0
+PASS Scatter inside disk 485 actual=1.0 expected=1.0
+PASS Scatter inside disk 486 actual=1.0 expected=1.0
+PASS Scatter inside disk 487 actual=1.0 expected=1.0
+PASS Scatter inside disk 488 actual=1.0 expected=1.0
+PASS Scatter inside disk 489 actual=1.0 expected=1.0
+PASS Scatter inside disk 490 actual=1.0 expected=1.0
+PASS Scatter inside disk 491 actual=1.0 expected=1.0
+PASS Scatter inside disk 492 actual=1.0 expected=1.0
+PASS Scatter inside disk 493 actual=1.0 expected=1.0
+PASS Scatter inside disk 494 actual=1.0 expected=1.0
+PASS Scatter inside disk 495 actual=1.0 expected=1.0
+PASS Scatter inside disk 496 actual=1.0 expected=1.0
+PASS Scatter inside disk 497 actual=1.0 expected=1.0
+PASS Scatter inside disk 498 actual=1.0 expected=1.0
+PASS Scatter inside disk 499 actual=1.0 expected=1.0
+PASS Scatter inside disk 500 actual=1.0 expected=1.0
+PASS Scatter inside disk 501 actual=1.0 expected=1.0
+PASS Scatter inside disk 502 actual=1.0 expected=1.0
+PASS Scatter inside disk 503 actual=1.0 expected=1.0
+PASS Scatter inside disk 504 actual=1.0 expected=1.0
+PASS Scatter inside disk 505 actual=1.0 expected=1.0
+PASS Scatter inside disk 506 actual=1.0 expected=1.0
+PASS Scatter inside disk 507 actual=1.0 expected=1.0
+PASS Scatter inside disk 508 actual=1.0 expected=1.0
+PASS Scatter inside disk 509 actual=1.0 expected=1.0
+PASS Scatter inside disk 510 actual=1.0 expected=1.0
+PASS Scatter inside disk 511 actual=1.0 expected=1.0
+PASS Scatter inside disk 512 actual=1.0 expected=1.0
+PASS Scatter inside disk 513 actual=1.0 expected=1.0
+PASS Scatter inside disk 514 actual=1.0 expected=1.0
+PASS Scatter inside disk 515 actual=1.0 expected=1.0
+PASS Scatter inside disk 516 actual=1.0 expected=1.0
+PASS Scatter inside disk 517 actual=1.0 expected=1.0
+PASS Scatter inside disk 518 actual=1.0 expected=1.0
+PASS Scatter inside disk 519 actual=1.0 expected=1.0
+PASS Scatter inside disk 520 actual=1.0 expected=1.0
+PASS Scatter inside disk 521 actual=1.0 expected=1.0
+PASS Scatter inside disk 522 actual=1.0 expected=1.0
+PASS Scatter inside disk 523 actual=1.0 expected=1.0
+PASS Scatter inside disk 524 actual=1.0 expected=1.0
+PASS Scatter inside disk 525 actual=1.0 expected=1.0
+PASS Scatter inside disk 526 actual=1.0 expected=1.0
+PASS Scatter inside disk 527 actual=1.0 expected=1.0
+PASS Scatter inside disk 528 actual=1.0 expected=1.0
+PASS Scatter inside disk 529 actual=1.0 expected=1.0
+PASS Scatter inside disk 530 actual=1.0 expected=1.0
+PASS Scatter inside disk 531 actual=1.0 expected=1.0
+PASS Scatter inside disk 532 actual=1.0 expected=1.0
+PASS Scatter inside disk 533 actual=1.0 expected=1.0
+PASS Scatter inside disk 534 actual=1.0 expected=1.0
+PASS Scatter inside disk 535 actual=1.0 expected=1.0
+PASS Scatter inside disk 536 actual=1.0 expected=1.0
+PASS Scatter inside disk 537 actual=1.0 expected=1.0
+PASS Scatter inside disk 538 actual=1.0 expected=1.0
+PASS Scatter inside disk 539 actual=1.0 expected=1.0
+PASS Scatter inside disk 540 actual=1.0 expected=1.0
+PASS Scatter inside disk 541 actual=1.0 expected=1.0
+PASS Scatter inside disk 542 actual=1.0 expected=1.0
+PASS Scatter inside disk 543 actual=1.0 expected=1.0
+PASS Scatter inside disk 544 actual=1.0 expected=1.0
+PASS Scatter inside disk 545 actual=1.0 expected=1.0
+PASS Scatter inside disk 546 actual=1.0 expected=1.0
+PASS Scatter inside disk 547 actual=1.0 expected=1.0
+PASS Scatter inside disk 548 actual=1.0 expected=1.0
+PASS Scatter inside disk 549 actual=1.0 expected=1.0
+PASS Scatter inside disk 550 actual=1.0 expected=1.0
+PASS Scatter inside disk 551 actual=1.0 expected=1.0
+PASS Scatter inside disk 552 actual=1.0 expected=1.0
+PASS Scatter inside disk 553 actual=1.0 expected=1.0
+PASS Scatter inside disk 554 actual=1.0 expected=1.0
+PASS Scatter inside disk 555 actual=1.0 expected=1.0
+PASS Scatter inside disk 556 actual=1.0 expected=1.0
+PASS Scatter inside disk 557 actual=1.0 expected=1.0
+PASS Scatter inside disk 558 actual=1.0 expected=1.0
+PASS Scatter inside disk 559 actual=1.0 expected=1.0
+PASS Scatter inside disk 560 actual=1.0 expected=1.0
+PASS Scatter inside disk 561 actual=1.0 expected=1.0
+PASS Scatter inside disk 562 actual=1.0 expected=1.0
+PASS Scatter inside disk 563 actual=1.0 expected=1.0
+PASS Scatter inside disk 564 actual=1.0 expected=1.0
+PASS Scatter inside disk 565 actual=1.0 expected=1.0
+PASS Scatter inside disk 566 actual=1.0 expected=1.0
+PASS Scatter inside disk 567 actual=1.0 expected=1.0
+PASS Scatter inside disk 568 actual=1.0 expected=1.0
+PASS Scatter inside disk 569 actual=1.0 expected=1.0
+PASS Scatter inside disk 570 actual=1.0 expected=1.0
+PASS Scatter inside disk 571 actual=1.0 expected=1.0
+PASS Scatter inside disk 572 actual=1.0 expected=1.0
+PASS Scatter inside disk 573 actual=1.0 expected=1.0
+PASS Scatter inside disk 574 actual=1.0 expected=1.0
+PASS Scatter inside disk 575 actual=1.0 expected=1.0
+PASS Scatter inside disk 576 actual=1.0 expected=1.0
+PASS Scatter inside disk 577 actual=1.0 expected=1.0
+PASS Scatter inside disk 578 actual=1.0 expected=1.0
+PASS Scatter inside disk 579 actual=1.0 expected=1.0
+PASS Scatter inside disk 580 actual=1.0 expected=1.0
+PASS Scatter inside disk 581 actual=1.0 expected=1.0
+PASS Scatter inside disk 582 actual=1.0 expected=1.0
+PASS Scatter inside disk 583 actual=1.0 expected=1.0
+PASS Scatter inside disk 584 actual=1.0 expected=1.0
+PASS Scatter inside disk 585 actual=1.0 expected=1.0
+PASS Scatter inside disk 586 actual=1.0 expected=1.0
+PASS Scatter inside disk 587 actual=1.0 expected=1.0
+PASS Scatter inside disk 588 actual=1.0 expected=1.0
+PASS Scatter inside disk 589 actual=1.0 expected=1.0
+PASS Scatter inside disk 590 actual=1.0 expected=1.0
+PASS Scatter inside disk 591 actual=1.0 expected=1.0
+PASS Scatter inside disk 592 actual=1.0 expected=1.0
+PASS Scatter inside disk 593 actual=1.0 expected=1.0
+PASS Scatter inside disk 594 actual=1.0 expected=1.0
+PASS Scatter inside disk 595 actual=1.0 expected=1.0
+PASS Scatter inside disk 596 actual=1.0 expected=1.0
+PASS Scatter inside disk 597 actual=1.0 expected=1.0
+PASS Scatter inside disk 598 actual=1.0 expected=1.0
+PASS Scatter inside disk 599 actual=1.0 expected=1.0
+PASS Scatter inside disk 600 actual=1.0 expected=1.0
+PASS Scatter inside disk 601 actual=1.0 expected=1.0
+PASS Scatter inside disk 602 actual=1.0 expected=1.0
+PASS Scatter inside disk 603 actual=1.0 expected=1.0
+PASS Scatter inside disk 604 actual=1.0 expected=1.0
+PASS Scatter inside disk 605 actual=1.0 expected=1.0
+PASS Scatter inside disk 606 actual=1.0 expected=1.0
+PASS Scatter inside disk 607 actual=1.0 expected=1.0
+PASS Scatter inside disk 608 actual=1.0 expected=1.0
+PASS Scatter inside disk 609 actual=1.0 expected=1.0
+PASS Scatter inside disk 610 actual=1.0 expected=1.0
+PASS Scatter inside disk 611 actual=1.0 expected=1.0
+PASS Scatter inside disk 612 actual=1.0 expected=1.0
+PASS Scatter inside disk 613 actual=1.0 expected=1.0
+PASS Scatter inside disk 614 actual=1.0 expected=1.0
+PASS Scatter inside disk 615 actual=1.0 expected=1.0
+PASS Scatter inside disk 616 actual=1.0 expected=1.0
+PASS Scatter inside disk 617 actual=1.0 expected=1.0
+PASS Scatter inside disk 618 actual=1.0 expected=1.0
+PASS Scatter inside disk 619 actual=1.0 expected=1.0
+PASS Scatter inside disk 620 actual=1.0 expected=1.0
+PASS Scatter inside disk 621 actual=1.0 expected=1.0
+PASS Scatter inside disk 622 actual=1.0 expected=1.0
+PASS Scatter inside disk 623 actual=1.0 expected=1.0
+PASS Scatter inside disk 624 actual=1.0 expected=1.0
+PASS Scatter inside disk 625 actual=1.0 expected=1.0
+PASS Scatter inside disk 626 actual=1.0 expected=1.0
+PASS Scatter inside disk 627 actual=1.0 expected=1.0
+PASS Scatter inside disk 628 actual=1.0 expected=1.0
+PASS Scatter inside disk 629 actual=1.0 expected=1.0
+PASS Scatter inside disk 630 actual=1.0 expected=1.0
+PASS Scatter inside disk 631 actual=1.0 expected=1.0
+PASS Scatter inside disk 632 actual=1.0 expected=1.0
+PASS Scatter inside disk 633 actual=1.0 expected=1.0
+PASS Scatter inside disk 634 actual=1.0 expected=1.0
+PASS Scatter inside disk 635 actual=1.0 expected=1.0
+PASS Scatter inside disk 636 actual=1.0 expected=1.0
+PASS Scatter inside disk 637 actual=1.0 expected=1.0
+PASS Scatter inside disk 638 actual=1.0 expected=1.0
+PASS Scatter inside disk 639 actual=1.0 expected=1.0
+PASS Scatter inside disk 640 actual=1.0 expected=1.0
+PASS Scatter inside disk 641 actual=1.0 expected=1.0
+PASS Scatter inside disk 642 actual=1.0 expected=1.0
+PASS Scatter inside disk 643 actual=1.0 expected=1.0
+PASS Scatter inside disk 644 actual=1.0 expected=1.0
+PASS Scatter inside disk 645 actual=1.0 expected=1.0
+PASS Scatter inside disk 646 actual=1.0 expected=1.0
+PASS Scatter inside disk 647 actual=1.0 expected=1.0
+PASS Scatter inside disk 648 actual=1.0 expected=1.0
+PASS Scatter inside disk 649 actual=1.0 expected=1.0
+PASS Scatter inside disk 650 actual=1.0 expected=1.0
+PASS Scatter inside disk 651 actual=1.0 expected=1.0
+PASS Scatter inside disk 652 actual=1.0 expected=1.0
+PASS Scatter inside disk 653 actual=1.0 expected=1.0
+PASS Scatter inside disk 654 actual=1.0 expected=1.0
+PASS Scatter inside disk 655 actual=1.0 expected=1.0
+PASS Scatter inside disk 656 actual=1.0 expected=1.0
+PASS Scatter inside disk 657 actual=1.0 expected=1.0
+PASS Scatter inside disk 658 actual=1.0 expected=1.0
+PASS Scatter inside disk 659 actual=1.0 expected=1.0
+PASS Scatter inside disk 660 actual=1.0 expected=1.0
+PASS Scatter inside disk 661 actual=1.0 expected=1.0
+PASS Scatter inside disk 662 actual=1.0 expected=1.0
+PASS Scatter inside disk 663 actual=1.0 expected=1.0
+PASS Scatter inside disk 664 actual=1.0 expected=1.0
+PASS Scatter inside disk 665 actual=1.0 expected=1.0
+PASS Scatter inside disk 666 actual=1.0 expected=1.0
+PASS Scatter inside disk 667 actual=1.0 expected=1.0
+PASS Scatter inside disk 668 actual=1.0 expected=1.0
+PASS Scatter inside disk 669 actual=1.0 expected=1.0
+PASS Scatter inside disk 670 actual=1.0 expected=1.0
+PASS Scatter inside disk 671 actual=1.0 expected=1.0
+PASS Scatter inside disk 672 actual=1.0 expected=1.0
+PASS Scatter inside disk 673 actual=1.0 expected=1.0
+PASS Scatter inside disk 674 actual=1.0 expected=1.0
+PASS Scatter inside disk 675 actual=1.0 expected=1.0
+PASS Scatter inside disk 676 actual=1.0 expected=1.0
+PASS Scatter inside disk 677 actual=1.0 expected=1.0
+PASS Scatter inside disk 678 actual=1.0 expected=1.0
+PASS Scatter inside disk 679 actual=1.0 expected=1.0
+PASS Scatter inside disk 680 actual=1.0 expected=1.0
+PASS Scatter inside disk 681 actual=1.0 expected=1.0
+PASS Scatter inside disk 682 actual=1.0 expected=1.0
+PASS Scatter inside disk 683 actual=1.0 expected=1.0
+PASS Scatter inside disk 684 actual=1.0 expected=1.0
+PASS Scatter inside disk 685 actual=1.0 expected=1.0
+PASS Scatter inside disk 686 actual=1.0 expected=1.0
+PASS Scatter inside disk 687 actual=1.0 expected=1.0
+PASS Scatter inside disk 688 actual=1.0 expected=1.0
+PASS Scatter inside disk 689 actual=1.0 expected=1.0
+PASS Scatter inside disk 690 actual=1.0 expected=1.0
+PASS Scatter inside disk 691 actual=1.0 expected=1.0
+PASS Scatter inside disk 692 actual=1.0 expected=1.0
+PASS Scatter inside disk 693 actual=1.0 expected=1.0
+PASS Scatter inside disk 694 actual=1.0 expected=1.0
+PASS Scatter inside disk 695 actual=1.0 expected=1.0
+PASS Scatter inside disk 696 actual=1.0 expected=1.0
+PASS Scatter inside disk 697 actual=1.0 expected=1.0
+PASS Scatter inside disk 698 actual=1.0 expected=1.0
+PASS Scatter inside disk 699 actual=1.0 expected=1.0
+PASS Scatter inside disk 700 actual=1.0 expected=1.0
+PASS Scatter inside disk 701 actual=1.0 expected=1.0
+PASS Scatter inside disk 702 actual=1.0 expected=1.0
+PASS Scatter inside disk 703 actual=1.0 expected=1.0
+PASS Scatter inside disk 704 actual=1.0 expected=1.0
+PASS Scatter inside disk 705 actual=1.0 expected=1.0
+PASS Scatter inside disk 706 actual=1.0 expected=1.0
+PASS Scatter inside disk 707 actual=1.0 expected=1.0
+PASS Scatter inside disk 708 actual=1.0 expected=1.0
+PASS Scatter inside disk 709 actual=1.0 expected=1.0
+PASS Scatter inside disk 710 actual=1.0 expected=1.0
+PASS Scatter inside disk 711 actual=1.0 expected=1.0
+PASS Scatter inside disk 712 actual=1.0 expected=1.0
+PASS Scatter inside disk 713 actual=1.0 expected=1.0
+PASS Scatter inside disk 714 actual=1.0 expected=1.0
+PASS Scatter inside disk 715 actual=1.0 expected=1.0
+PASS Scatter inside disk 716 actual=1.0 expected=1.0
+PASS Scatter inside disk 717 actual=1.0 expected=1.0
+PASS Scatter inside disk 718 actual=1.0 expected=1.0
+PASS Scatter inside disk 719 actual=1.0 expected=1.0
+PASS Scatter inside disk 720 actual=1.0 expected=1.0
+PASS Scatter inside disk 721 actual=1.0 expected=1.0
+PASS Scatter inside disk 722 actual=1.0 expected=1.0
+PASS Scatter inside disk 723 actual=1.0 expected=1.0
+PASS Scatter inside disk 724 actual=1.0 expected=1.0
+PASS Scatter inside disk 725 actual=1.0 expected=1.0
+PASS Scatter inside disk 726 actual=1.0 expected=1.0
+PASS Scatter inside disk 727 actual=1.0 expected=1.0
+PASS Scatter inside disk 728 actual=1.0 expected=1.0
+PASS Scatter inside disk 729 actual=1.0 expected=1.0
+PASS Scatter inside disk 730 actual=1.0 expected=1.0
+PASS Scatter inside disk 731 actual=1.0 expected=1.0
+PASS Scatter inside disk 732 actual=1.0 expected=1.0
+PASS Scatter inside disk 733 actual=1.0 expected=1.0
+PASS Scatter inside disk 734 actual=1.0 expected=1.0
+PASS Scatter inside disk 735 actual=1.0 expected=1.0
+PASS Scatter inside disk 736 actual=1.0 expected=1.0
+PASS Scatter inside disk 737 actual=1.0 expected=1.0
+PASS Scatter inside disk 738 actual=1.0 expected=1.0
+PASS Scatter inside disk 739 actual=1.0 expected=1.0
+PASS Scatter inside disk 740 actual=1.0 expected=1.0
+PASS Scatter inside disk 741 actual=1.0 expected=1.0
+PASS Scatter inside disk 742 actual=1.0 expected=1.0
+PASS Scatter inside disk 743 actual=1.0 expected=1.0
+PASS Scatter inside disk 744 actual=1.0 expected=1.0
+PASS Scatter inside disk 745 actual=1.0 expected=1.0
+PASS Scatter inside disk 746 actual=1.0 expected=1.0
+PASS Scatter inside disk 747 actual=1.0 expected=1.0
+PASS Scatter inside disk 748 actual=1.0 expected=1.0
+PASS Scatter inside disk 749 actual=1.0 expected=1.0
+PASS Scatter inside disk 750 actual=1.0 expected=1.0
+PASS Scatter inside disk 751 actual=1.0 expected=1.0
+PASS Scatter inside disk 752 actual=1.0 expected=1.0
+PASS Scatter inside disk 753 actual=1.0 expected=1.0
+PASS Scatter inside disk 754 actual=1.0 expected=1.0
+PASS Scatter inside disk 755 actual=1.0 expected=1.0
+PASS Scatter inside disk 756 actual=1.0 expected=1.0
+PASS Scatter inside disk 757 actual=1.0 expected=1.0
+PASS Scatter inside disk 758 actual=1.0 expected=1.0
+PASS Scatter inside disk 759 actual=1.0 expected=1.0
+PASS Scatter inside disk 760 actual=1.0 expected=1.0
+PASS Scatter inside disk 761 actual=1.0 expected=1.0
+PASS Scatter inside disk 762 actual=1.0 expected=1.0
+PASS Scatter inside disk 763 actual=1.0 expected=1.0
+PASS Scatter inside disk 764 actual=1.0 expected=1.0
+PASS Scatter inside disk 765 actual=1.0 expected=1.0
+PASS Scatter inside disk 766 actual=1.0 expected=1.0
+PASS Scatter inside disk 767 actual=1.0 expected=1.0
+PASS Scatter inside disk 768 actual=1.0 expected=1.0
+PASS Scatter inside disk 769 actual=1.0 expected=1.0
+PASS Scatter inside disk 770 actual=1.0 expected=1.0
+PASS Scatter inside disk 771 actual=1.0 expected=1.0
+PASS Scatter inside disk 772 actual=1.0 expected=1.0
+PASS Scatter inside disk 773 actual=1.0 expected=1.0
+PASS Scatter inside disk 774 actual=1.0 expected=1.0
+PASS Scatter inside disk 775 actual=1.0 expected=1.0
+PASS Scatter inside disk 776 actual=1.0 expected=1.0
+PASS Scatter inside disk 777 actual=1.0 expected=1.0
+PASS Scatter inside disk 778 actual=1.0 expected=1.0
+PASS Scatter inside disk 779 actual=1.0 expected=1.0
+PASS Scatter inside disk 780 actual=1.0 expected=1.0
+PASS Scatter inside disk 781 actual=1.0 expected=1.0
+PASS Scatter inside disk 782 actual=1.0 expected=1.0
+PASS Scatter inside disk 783 actual=1.0 expected=1.0
+PASS Scatter inside disk 784 actual=1.0 expected=1.0
+PASS Scatter inside disk 785 actual=1.0 expected=1.0
+PASS Scatter inside disk 786 actual=1.0 expected=1.0
+PASS Scatter inside disk 787 actual=1.0 expected=1.0
+PASS Scatter inside disk 788 actual=1.0 expected=1.0
+PASS Scatter inside disk 789 actual=1.0 expected=1.0
+PASS Scatter inside disk 790 actual=1.0 expected=1.0
+PASS Scatter inside disk 791 actual=1.0 expected=1.0
+PASS Scatter inside disk 792 actual=1.0 expected=1.0
+PASS Scatter inside disk 793 actual=1.0 expected=1.0
+PASS Scatter inside disk 794 actual=1.0 expected=1.0
+PASS Scatter inside disk 795 actual=1.0 expected=1.0
+PASS Scatter inside disk 796 actual=1.0 expected=1.0
+PASS Scatter inside disk 797 actual=1.0 expected=1.0
+PASS Scatter inside disk 798 actual=1.0 expected=1.0
+PASS Scatter inside disk 799 actual=1.0 expected=1.0
+PASS Scatter inside disk 800 actual=1.0 expected=1.0
+PASS Scatter inside disk 801 actual=1.0 expected=1.0
+PASS Scatter inside disk 802 actual=1.0 expected=1.0
+PASS Scatter inside disk 803 actual=1.0 expected=1.0
+PASS Scatter inside disk 804 actual=1.0 expected=1.0
+PASS Scatter inside disk 805 actual=1.0 expected=1.0
+PASS Scatter inside disk 806 actual=1.0 expected=1.0
+PASS Scatter inside disk 807 actual=1.0 expected=1.0
+PASS Scatter inside disk 808 actual=1.0 expected=1.0
+PASS Scatter inside disk 809 actual=1.0 expected=1.0
+PASS Scatter inside disk 810 actual=1.0 expected=1.0
+PASS Scatter inside disk 811 actual=1.0 expected=1.0
+PASS Scatter inside disk 812 actual=1.0 expected=1.0
+PASS Scatter inside disk 813 actual=1.0 expected=1.0
+PASS Scatter inside disk 814 actual=1.0 expected=1.0
+PASS Scatter inside disk 815 actual=1.0 expected=1.0
+PASS Scatter inside disk 816 actual=1.0 expected=1.0
+PASS Scatter inside disk 817 actual=1.0 expected=1.0
+PASS Scatter inside disk 818 actual=1.0 expected=1.0
+PASS Scatter inside disk 819 actual=1.0 expected=1.0
+PASS Scatter inside disk 820 actual=1.0 expected=1.0
+PASS Scatter inside disk 821 actual=1.0 expected=1.0
+PASS Scatter inside disk 822 actual=1.0 expected=1.0
+PASS Scatter inside disk 823 actual=1.0 expected=1.0
+PASS Scatter inside disk 824 actual=1.0 expected=1.0
+PASS Scatter inside disk 825 actual=1.0 expected=1.0
+PASS Scatter inside disk 826 actual=1.0 expected=1.0
+PASS Scatter inside disk 827 actual=1.0 expected=1.0
+PASS Scatter inside disk 828 actual=1.0 expected=1.0
+PASS Scatter inside disk 829 actual=1.0 expected=1.0
+PASS Scatter inside disk 830 actual=1.0 expected=1.0
+PASS Scatter inside disk 831 actual=1.0 expected=1.0
+PASS Scatter inside disk 832 actual=1.0 expected=1.0
+PASS Scatter inside disk 833 actual=1.0 expected=1.0
+PASS Scatter inside disk 834 actual=1.0 expected=1.0
+PASS Scatter inside disk 835 actual=1.0 expected=1.0
+PASS Scatter inside disk 836 actual=1.0 expected=1.0
+PASS Scatter inside disk 837 actual=1.0 expected=1.0
+PASS Scatter inside disk 838 actual=1.0 expected=1.0
+PASS Scatter inside disk 839 actual=1.0 expected=1.0
+PASS Scatter inside disk 840 actual=1.0 expected=1.0
+PASS Scatter inside disk 841 actual=1.0 expected=1.0
+PASS Scatter inside disk 842 actual=1.0 expected=1.0
+PASS Scatter inside disk 843 actual=1.0 expected=1.0
+PASS Scatter inside disk 844 actual=1.0 expected=1.0
+PASS Scatter inside disk 845 actual=1.0 expected=1.0
+PASS Scatter inside disk 846 actual=1.0 expected=1.0
+PASS Scatter inside disk 847 actual=1.0 expected=1.0
+PASS Scatter inside disk 848 actual=1.0 expected=1.0
+PASS Scatter inside disk 849 actual=1.0 expected=1.0
+PASS Scatter inside disk 850 actual=1.0 expected=1.0
+PASS Scatter inside disk 851 actual=1.0 expected=1.0
+PASS Scatter inside disk 852 actual=1.0 expected=1.0
+PASS Scatter inside disk 853 actual=1.0 expected=1.0
+PASS Scatter inside disk 854 actual=1.0 expected=1.0
+PASS Scatter inside disk 855 actual=1.0 expected=1.0
+PASS Scatter inside disk 856 actual=1.0 expected=1.0
+PASS Scatter inside disk 857 actual=1.0 expected=1.0
+PASS Scatter inside disk 858 actual=1.0 expected=1.0
+PASS Scatter inside disk 859 actual=1.0 expected=1.0
+PASS Scatter inside disk 860 actual=1.0 expected=1.0
+PASS Scatter inside disk 861 actual=1.0 expected=1.0
+PASS Scatter inside disk 862 actual=1.0 expected=1.0
+PASS Scatter inside disk 863 actual=1.0 expected=1.0
+PASS Scatter inside disk 864 actual=1.0 expected=1.0
+PASS Scatter inside disk 865 actual=1.0 expected=1.0
+PASS Scatter inside disk 866 actual=1.0 expected=1.0
+PASS Scatter inside disk 867 actual=1.0 expected=1.0
+PASS Scatter inside disk 868 actual=1.0 expected=1.0
+PASS Scatter inside disk 869 actual=1.0 expected=1.0
+PASS Scatter inside disk 870 actual=1.0 expected=1.0
+PASS Scatter inside disk 871 actual=1.0 expected=1.0
+PASS Scatter inside disk 872 actual=1.0 expected=1.0
+PASS Scatter inside disk 873 actual=1.0 expected=1.0
+PASS Scatter inside disk 874 actual=1.0 expected=1.0
+PASS Scatter inside disk 875 actual=1.0 expected=1.0
+PASS Scatter inside disk 876 actual=1.0 expected=1.0
+PASS Scatter inside disk 877 actual=1.0 expected=1.0
+PASS Scatter inside disk 878 actual=1.0 expected=1.0
+PASS Scatter inside disk 879 actual=1.0 expected=1.0
+PASS Scatter inside disk 880 actual=1.0 expected=1.0
+PASS Scatter inside disk 881 actual=1.0 expected=1.0
+PASS Scatter inside disk 882 actual=1.0 expected=1.0
+PASS Scatter inside disk 883 actual=1.0 expected=1.0
+PASS Scatter inside disk 884 actual=1.0 expected=1.0
+PASS Scatter inside disk 885 actual=1.0 expected=1.0
+PASS Scatter inside disk 886 actual=1.0 expected=1.0
+PASS Scatter inside disk 887 actual=1.0 expected=1.0
+PASS Scatter inside disk 888 actual=1.0 expected=1.0
+PASS Scatter inside disk 889 actual=1.0 expected=1.0
+PASS Scatter inside disk 890 actual=1.0 expected=1.0
+PASS Scatter inside disk 891 actual=1.0 expected=1.0
+PASS Scatter inside disk 892 actual=1.0 expected=1.0
+PASS Scatter inside disk 893 actual=1.0 expected=1.0
+PASS Scatter inside disk 894 actual=1.0 expected=1.0
+PASS Scatter inside disk 895 actual=1.0 expected=1.0
+PASS Scatter inside disk 896 actual=1.0 expected=1.0
+PASS Scatter inside disk 897 actual=1.0 expected=1.0
+PASS Scatter inside disk 898 actual=1.0 expected=1.0
+PASS Scatter inside disk 899 actual=1.0 expected=1.0
+PASS Scatter inside disk 900 actual=1.0 expected=1.0
+PASS Scatter inside disk 901 actual=1.0 expected=1.0
+PASS Scatter inside disk 902 actual=1.0 expected=1.0
+PASS Scatter inside disk 903 actual=1.0 expected=1.0
+PASS Scatter inside disk 904 actual=1.0 expected=1.0
+PASS Scatter inside disk 905 actual=1.0 expected=1.0
+PASS Scatter inside disk 906 actual=1.0 expected=1.0
+PASS Scatter inside disk 907 actual=1.0 expected=1.0
+PASS Scatter inside disk 908 actual=1.0 expected=1.0
+PASS Scatter inside disk 909 actual=1.0 expected=1.0
+PASS Scatter inside disk 910 actual=1.0 expected=1.0
+PASS Scatter inside disk 911 actual=1.0 expected=1.0
+PASS Scatter inside disk 912 actual=1.0 expected=1.0
+PASS Scatter inside disk 913 actual=1.0 expected=1.0
+PASS Scatter inside disk 914 actual=1.0 expected=1.0
+PASS Scatter inside disk 915 actual=1.0 expected=1.0
+PASS Scatter inside disk 916 actual=1.0 expected=1.0
+PASS Scatter inside disk 917 actual=1.0 expected=1.0
+PASS Scatter inside disk 918 actual=1.0 expected=1.0
+PASS Scatter inside disk 919 actual=1.0 expected=1.0
+PASS Scatter inside disk 920 actual=1.0 expected=1.0
+PASS Scatter inside disk 921 actual=1.0 expected=1.0
+PASS Scatter inside disk 922 actual=1.0 expected=1.0
+PASS Scatter inside disk 923 actual=1.0 expected=1.0
+PASS Scatter inside disk 924 actual=1.0 expected=1.0
+PASS Scatter inside disk 925 actual=1.0 expected=1.0
+PASS Scatter inside disk 926 actual=1.0 expected=1.0
+PASS Scatter inside disk 927 actual=1.0 expected=1.0
+PASS Scatter inside disk 928 actual=1.0 expected=1.0
+PASS Scatter inside disk 929 actual=1.0 expected=1.0
+PASS Scatter inside disk 930 actual=1.0 expected=1.0
+PASS Scatter inside disk 931 actual=1.0 expected=1.0
+PASS Scatter inside disk 932 actual=1.0 expected=1.0
+PASS Scatter inside disk 933 actual=1.0 expected=1.0
+PASS Scatter inside disk 934 actual=1.0 expected=1.0
+PASS Scatter inside disk 935 actual=1.0 expected=1.0
+PASS Scatter inside disk 936 actual=1.0 expected=1.0
+PASS Scatter inside disk 937 actual=1.0 expected=1.0
+PASS Scatter inside disk 938 actual=1.0 expected=1.0
+PASS Scatter inside disk 939 actual=1.0 expected=1.0
+PASS Scatter inside disk 940 actual=1.0 expected=1.0
+PASS Scatter inside disk 941 actual=1.0 expected=1.0
+PASS Scatter inside disk 942 actual=1.0 expected=1.0
+PASS Scatter inside disk 943 actual=1.0 expected=1.0
+PASS Scatter inside disk 944 actual=1.0 expected=1.0
+PASS Scatter inside disk 945 actual=1.0 expected=1.0
+PASS Scatter inside disk 946 actual=1.0 expected=1.0
+PASS Scatter inside disk 947 actual=1.0 expected=1.0
+PASS Scatter inside disk 948 actual=1.0 expected=1.0
+PASS Scatter inside disk 949 actual=1.0 expected=1.0
+PASS Scatter inside disk 950 actual=1.0 expected=1.0
+PASS Scatter inside disk 951 actual=1.0 expected=1.0
+PASS Scatter inside disk 952 actual=1.0 expected=1.0
+PASS Scatter inside disk 953 actual=1.0 expected=1.0
+PASS Scatter inside disk 954 actual=1.0 expected=1.0
+PASS Scatter inside disk 955 actual=1.0 expected=1.0
+PASS Scatter inside disk 956 actual=1.0 expected=1.0
+PASS Scatter inside disk 957 actual=1.0 expected=1.0
+PASS Scatter inside disk 958 actual=1.0 expected=1.0
+PASS Scatter inside disk 959 actual=1.0 expected=1.0
+PASS Scatter inside disk 960 actual=1.0 expected=1.0
+PASS Scatter inside disk 961 actual=1.0 expected=1.0
+PASS Scatter inside disk 962 actual=1.0 expected=1.0
+PASS Scatter inside disk 963 actual=1.0 expected=1.0
+PASS Scatter inside disk 964 actual=1.0 expected=1.0
+PASS Scatter inside disk 965 actual=1.0 expected=1.0
+PASS Scatter inside disk 966 actual=1.0 expected=1.0
+PASS Scatter inside disk 967 actual=1.0 expected=1.0
+PASS Scatter inside disk 968 actual=1.0 expected=1.0
+PASS Scatter inside disk 969 actual=1.0 expected=1.0
+PASS Scatter inside disk 970 actual=1.0 expected=1.0
+PASS Scatter inside disk 971 actual=1.0 expected=1.0
+PASS Scatter inside disk 972 actual=1.0 expected=1.0
+PASS Scatter inside disk 973 actual=1.0 expected=1.0
+PASS Scatter inside disk 974 actual=1.0 expected=1.0
+PASS Scatter inside disk 975 actual=1.0 expected=1.0
+PASS Scatter inside disk 976 actual=1.0 expected=1.0
+PASS Scatter inside disk 977 actual=1.0 expected=1.0
+PASS Scatter inside disk 978 actual=1.0 expected=1.0
+PASS Scatter inside disk 979 actual=1.0 expected=1.0
+PASS Scatter inside disk 980 actual=1.0 expected=1.0
+PASS Scatter inside disk 981 actual=1.0 expected=1.0
+PASS Scatter inside disk 982 actual=1.0 expected=1.0
+PASS Scatter inside disk 983 actual=1.0 expected=1.0
+PASS Scatter inside disk 984 actual=1.0 expected=1.0
+PASS Scatter inside disk 985 actual=1.0 expected=1.0
+PASS Scatter inside disk 986 actual=1.0 expected=1.0
+PASS Scatter inside disk 987 actual=1.0 expected=1.0
+PASS Scatter inside disk 988 actual=1.0 expected=1.0
+PASS Scatter inside disk 989 actual=1.0 expected=1.0
+PASS Scatter inside disk 990 actual=1.0 expected=1.0
+PASS Scatter inside disk 991 actual=1.0 expected=1.0
+PASS Scatter inside disk 992 actual=1.0 expected=1.0
+PASS Scatter inside disk 993 actual=1.0 expected=1.0
+PASS Scatter inside disk 994 actual=1.0 expected=1.0
+PASS Scatter inside disk 995 actual=1.0 expected=1.0
+PASS Scatter inside disk 996 actual=1.0 expected=1.0
+PASS Scatter inside disk 997 actual=1.0 expected=1.0
+PASS Scatter inside disk 998 actual=1.0 expected=1.0
+PASS Scatter inside disk 999 actual=1.0 expected=1.0
+PASS Scatter fills center, not ring actual=1.0 expected=1.0
+PASS Scatter uniform area mean squared radius actual=1.0 expected=1.0
+PASS Rain fixes aim location actual=1.0 expected=1.0
+PASS Rain removes following target actual=1.0 expected=1.0
+PASS Magic cooldown actual=25.0 expected=25.0
+PASS Magic count actual=4.0 expected=4.0
+PASS Magic spacing actual=5.0 expected=5.0
+PASS Magic requires no aim target actual=1.0 expected=1.0
+PASS Magic has charge casting actual=1.0 expected=1.0
+PASS Magic full charge one second actual=1.0 expected=1.0
+PASS Magic full-charge damage variant=0 actual=1.0 expected=1.0
+PASS Magic half-charge damage variant=0 actual=0.5 expected=0.5
+PASS Magic full-charge damage variant=1 actual=1.1000000014901161 expected=1.1
+PASS Magic half-charge damage variant=1 actual=0.5500000007450581 expected=0.55
+PASS Magic full-charge damage variant=2 actual=1.2500000074505806 expected=1.25
+PASS Magic half-charge damage variant=2 actual=0.6250000037252903 expected=0.625
+PASS Native turn full=false actual=4.999999999999919 expected=5.0
+PASS Native velocity preserved actual=1.5 expected=1.5
+PASS Native turn full=true actual=90.0 expected=90.0
+PASS Native velocity preserved actual=1.5000000000000002 expected=1.5
+PASS Native Rain scheduled arrows branch=0 actual=31.0 expected=31.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=0 actual=5.0 expected=5.0
+PASS Native Rain spawned total branch=0 actual=32.0 expected=32.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain scheduled arrows branch=1 actual=31.0 expected=31.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain scheduled gap branch=1 actual=2.0 expected=2.0
+PASS Native Rain spawned total branch=1 actual=32.0 expected=32.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain scheduled arrows branch=2 actual=75.0 expected=75.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain scheduled gap branch=2 actual=5.0 expected=5.0
+PASS Native Rain spawned total branch=2 actual=76.0 expected=76.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Native Rain stays at fixed disk actual=1.0 expected=1.0
+PASS Native Rain does not follow mob actual=1.0 expected=1.0
+PASS Magic schedules three extra arrows actual=3.0 expected=3.0
+PASS Magic scheduled interval actual=5.0 expected=5.0
+PASS Magic scheduled interval actual=5.0 expected=5.0
+PASS Magic scheduled interval actual=5.0 expected=5.0
+PASS Magic spawns four arrows without aim actual=4.0 expected=4.0
+PASS Native wall-passing damage improved=false actual=40.0 expected=40.0
+PASS Piercing arrow survives impact actual=1.0 expected=1.0
+PASS Native wall-passing damage improved=true actual=50.0 expected=50.0
+PASS Piercing arrow survives impact actual=1.0 expected=1.0
+PASS Acquires enemy while ignoring closer owned pet actual=1.0 expected=1.0
+PASS Acquires enemy between 16 and 32 blocks actual=1.0 expected=1.0
+PASS Releases target outside vicinity actual=1.0 expected=1.0
+PASS Acquires enemy behind arrow actual=1.0 expected=1.0
+PASS Alive before ten-second expiry actual=1.0 expected=1.0
+PASS Expires after ten seconds actual=1.0 expected=1.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=0.0 improved=false actual=20.0 expected=20.0
+PASS Wolf armor actual=10.0 expected=10.0
+PASS Wolf attack actual=3.0 expected=3.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=5.0 expected=5.0
+PASS Automatic pet HP actual=24.0 expected=24.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=0.1 expected=0.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=6.0 expected=6.0
+PASS Repeated pet updates do not stack actual=6.0 expected=6.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=0.0 improved=true actual=20.0 expected=20.0
+PASS Wolf armor actual=10.0 expected=10.0
+PASS Wolf attack actual=3.0 expected=3.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=5.0 expected=5.0
+PASS Automatic pet HP actual=24.0 expected=24.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=0.1 expected=0.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=6.0 expected=6.0
+PASS Repeated pet updates do not stack actual=6.0 expected=6.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=20.0 improved=false actual=28.0 expected=28.0
+PASS Wolf armor actual=11.0 expected=11.0
+PASS Wolf attack actual=6.0 expected=6.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=8.0 expected=8.0
+PASS Automatic pet HP actual=32.0 expected=32.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=2.1 expected=2.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=9.6 expected=9.6
+PASS Repeated pet updates do not stack actual=9.6 expected=9.6
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=20.0 improved=true actual=30.0 expected=30.0
+PASS Wolf armor actual=11.0 expected=11.0
+PASS Wolf attack actual=6.0 expected=6.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=8.0 expected=8.0
+PASS Automatic pet HP actual=34.0 expected=34.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=2.1 expected=2.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=9.6 expected=9.6
+PASS Repeated pet updates do not stack actual=9.6 expected=9.6
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=40.0 improved=false actual=36.0 expected=36.0
+PASS Wolf armor actual=12.0 expected=12.0
+PASS Wolf attack actual=9.0 expected=9.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=11.0 expected=11.0
+PASS Automatic pet HP actual=40.0 expected=40.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=4.1 expected=4.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=13.2 expected=13.2
+PASS Repeated pet updates do not stack actual=13.2 expected=13.2
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=40.0 improved=true actual=40.0 expected=40.0
+PASS Wolf armor actual=12.0 expected=12.0
+PASS Wolf attack actual=9.0 expected=9.0
+PASS Wolf resistance actual=0.0 expected=0.0
+PASS Automatic Adventurer +2 flat pet attack actual=11.0 expected=11.0
+PASS Automatic pet HP actual=44.0 expected=44.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=4.1 expected=4.1
+PASS Automatic pet knockback resistance actual=0.1 expected=0.1
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=13.2 expected=13.2
+PASS Repeated pet updates do not stack actual=13.2 expected=13.2
+Rogue PASS Shock cooldown actual=12.0 expected=12.0
+Rogue PASS Mob stun HP=100.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=130.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=131.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=1000.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Dragon bypass improved=false actual=20.0 expected=20.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=23.9 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=24.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Player current HP=30.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=100.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=130.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=131.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Mob stun HP=1000.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Dragon bypass improved=true actual=40.0 expected=40.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=23.9 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=24.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Player current HP=30.0 improved=true actual=40.0 expected=40.0
+Explosive fixture raw nearby=[entity.minecraft.villager@(5.0, 80.0, 0.0)] native lookup=1 block=Block{minecraft:air}
+Rogue PASS Explosive Powder direct damage actual=40.0 expected=40.0
+Rogue PASS Explosive Powder no distance falloff actual=40.0 expected=40.0
+Rogue PASS Explosive has no extra stun second actual=40.0 expected=40.0
+Rogue PASS Slice cooldown actual=12.0 expected=12.0
+Rogue PASS Slice native charges branch=0 actual=10.0 expected=10.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Owned pet hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Slice actual bonus branch=0 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=1 actual=12.0 expected=12.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Owned pet hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Slice actual bonus branch=1 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=2 actual=15.0 expected=15.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Owned pet hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Slice actual bonus branch=2 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=13 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 13 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 13 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=14 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 14 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 14 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=15 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 15 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 15 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Fracture cooldown actual=1.0 expected=1.0
+Rogue PASS Flat armor stack 1 actual=24.0 expected=24.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 2 actual=18.0 expected=18.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 3 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 4 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Dispel restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Expiry restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Coated cooldown actual=1.0 expected=1.0
+Rogue PASS Coated chance actual=0.25 expected=0.25
+Rogue II PASS Shadow range actual=14.0 expected=14.0
+Rogue II PASS Improved Shadow range actual=18.0 expected=18.0
+Rogue II PASS Mob accepts initial target actual=1.0 expected=1.0
+Rogue II PASS Ambush immediate damage actual=20.0 expected=20.0
+Rogue II PASS Ambush blindness duration actual=40.0 expected=40.0
+Rogue II PASS Ambush blindness level I actual=0.0 expected=0.0
+Rogue II PASS Ambush weakness duration actual=40.0 expected=40.0
+Rogue II PASS Ambush weakness level I actual=0.0 expected=0.0
+Rogue II PASS Ambush slowness duration actual=40.0 expected=40.0
+Rogue II PASS Ambush slowness level I actual=0.0 expected=0.0
+Shadow actual arrival=(8.0, 80.0, 8.0) near=(10.0, 80.0, 8.0)
+Rogue II PASS Nearby mob disrupted actual=30.0 expected=30.0
+Rogue II PASS Nearby target cleared actual=1.0 expected=1.0
+Rogue II PASS Reacquisition blocked actual=1.0 expected=1.0
+Rogue II PASS Distant mob unaffected actual=0.0 expected=0.0
+Rogue II PASS Reacquisition resumes actual=1.0 expected=1.0
+Rogue II PASS Unprotected damage actual=999.0 expected=999.0
+Rogue II PASS Cloak immunity ticks actual=20.0 expected=20.0
+Rogue II PASS Cloak repeat blocks Optional[ResourceKey[minecraft:damage_type / minecraft:generic]] actual=1000.0 expected=1000.0
+Rogue II PASS Cloak repeat blocks Optional[ResourceKey[minecraft:damage_type / minecraft:magic]] actual=1000.0 expected=1000.0
+Rogue II PASS Cloak repeat blocks Optional[ResourceKey[minecraft:damage_type / minecraft:in_fire]] actual=1000.0 expected=1000.0
+Rogue II PASS Cloak repeat blocks Optional[ResourceKey[minecraft:damage_type / minecraft:out_of_world]] actual=1000.0 expected=1000.0
+Rogue II PASS Cloak expires actual=999.0 expected=999.0
+Rogue II PASS Bear Trap roots immune boss actual=1.0 expected=1.0
+Rogue II PASS Bear Trap holds custom boss movement actual=0.0 expected=0.0
+Rogue II PASS Trap cast actual=0.20000000298023224 expected=0.2
+Rogue II PASS Trap cooldown actual=4.0 expected=4.0
+Rogue II PASS One placement actual=0.0 expected=0.0
+Rogue II PASS Forward placement actual=3.0 expected=3.0
+Rogue II PASS Trap height actual=2.5 expected=2.5
+Rogue II PASS Trap hit radius extensive=false actual=1.5 expected=1.5
+Rogue II PASS Trap cannot be targeted actual=0.0 expected=0.0
+Rogue II PASS Trap does not intercept projectiles actual=0.0 expected=0.0
+Rogue II PASS Trap arming visible actual=0.0 expected=0.0
+Rogue II PASS No damage while arming actual=1000.0 expected=1000.0
+Rogue II PASS Outer band and protected pet cannot activate actual=0.0 expected=0.0
+Rogue II PASS Armed trap hidden actual=1.0 expected=1.0
+Rogue II PASS Jumping enemy activates actual=1.0 expected=1.0
+Rogue II PASS Activated trap visible actual=0.0 expected=0.0
+Rogue II PASS Primary trap damage actual=24.0 expected=24.0
+Rogue II PASS Multiple enemies caught actual=24.0 expected=24.0
+Rogue II PASS Unrestricted high-health root actual=40.0 expected=40.0
+Rogue II PASS Trap Slowness I duration actual=80.0 expected=80.0
+Rogue II PASS Root physically holds actual=0.0 expected=0.0
+Rogue II PASS Unrestricted high-health root actual=40.0 expected=40.0
+Rogue II PASS Trap Slowness I duration actual=80.0 expected=80.0
+Rogue II PASS Root physically holds actual=0.0 expected=0.0
+Rogue II PASS Single detonation only actual=24.0 expected=24.0
+Rogue II PASS Protected pet unharmed by detonation actual=1000.0 expected=1000.0
+Rogue II PASS Protected pet not rooted actual=0.0 expected=0.0
+Rogue II PASS Trap height actual=2.5 expected=2.5
+Rogue II PASS Trap hit radius extensive=true actual=2.25 expected=2.25
+Rogue II PASS Trap cannot be targeted actual=0.0 expected=0.0
+Rogue II PASS Trap does not intercept projectiles actual=0.0 expected=0.0
+Rogue II PASS Trap arming visible actual=0.0 expected=0.0
+Rogue II PASS No damage while arming actual=1000.0 expected=1000.0
+Rogue II PASS Outer band and protected pet cannot activate actual=0.0 expected=0.0
+Rogue II PASS Armed trap hidden actual=1.0 expected=1.0
+Rogue II PASS Jumping enemy activates actual=1.0 expected=1.0
+Rogue II PASS Activated trap visible actual=0.0 expected=0.0
+Rogue II PASS Primary trap damage actual=30.0 expected=30.0
+Rogue II PASS Multiple enemies caught actual=30.0 expected=30.0
+Rogue II PASS Unrestricted high-health root actual=40.0 expected=40.0
+Rogue II PASS Trap Slowness I duration actual=80.0 expected=80.0
+Rogue II PASS Root physically holds actual=0.0 expected=0.0
+Rogue II PASS Unrestricted high-health root actual=40.0 expected=40.0
+Rogue II PASS Trap Slowness I duration actual=80.0 expected=80.0
+Rogue II PASS Root physically holds actual=0.0 expected=0.0
+Rogue II PASS Single detonation only actual=30.0 expected=30.0
+Rogue II PASS Protected pet unharmed by detonation actual=1000.0 expected=1000.0
+Rogue II PASS Protected pet not rooted actual=0.0 expected=0.0
+Rogue II PASS Improved trap damage with Serrated actual=30.0 expected=30.0
+Rogue II PASS Serrated five seconds actual=100.0 expected=100.0
+Rogue II PASS Improved does not amplify Bleed power actual=11.0 expected=11.0
+Rogue II PASS Sidestep nonstacking actual=0.0 expected=0.0
+Rogue II PASS Sidestep duration actual=40.0 expected=40.0
+Rogue II PASS Sidestep evasion actual=0.20000000298023224 expected=0.2
+Rogue II PASS Sidestep nonstacking actual=0.0 expected=0.0
+Rogue II PASS Sidestep duration actual=40.0 expected=40.0
+Rogue II PASS Sidestep evasion actual=0.20000000298023224 expected=0.2
+Rogue II PASS Sidestep nonstacking actual=0.0 expected=0.0
+Rogue II PASS Sidestep duration actual=40.0 expected=40.0
+Rogue II PASS Sidestep evasion actual=0.20000000298023224 expected=0.2
+Rogue II PASS Sidestep survives damage event actual=1.0 expected=1.0
+Rogue II PASS Sidestep no cooldown actual=0.0 expected=0.0
+Rogue II PASS Opportunist guaranteed proc actual=1.0 expected=1.0
+Rogue II PASS Opportunist extra critical damage points actual=20.000000298023224 expected=20.0
+Rogue II PASS Opportunist cooldown actual=6.0 expected=6.0
+Rogue II PASS rogues:shock_powder haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:shock_powder double haste cooldown actual=6.0 expected=6.0
+Rogue II PASS rogues:shock_powder haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:shock_powder double haste cast actual=0.0 expected=0.0
+Rogue II PASS rogues:slice_and_dice haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:slice_and_dice double haste cooldown actual=6.0 expected=6.0
+Rogue II PASS rogues:slice_and_dice haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:slice_and_dice double haste cast actual=0.0 expected=0.0
+Rogue II PASS rogues:shadow_step haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:shadow_step double haste cooldown actual=6.0 expected=6.0
+Rogue II PASS rogues:shadow_step haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:shadow_step double haste cast actual=0.0 expected=0.0
+Rogue II PASS rogues:bear_trap haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:bear_trap double haste cooldown actual=2.0 expected=2.0
+Rogue II PASS rogues:bear_trap haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:bear_trap double haste cast actual=2.0 expected=2.0
+Rogue II PASS rogues:vanish haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:vanish double haste cooldown actual=15.0 expected=15.0
+Rogue II PASS rogues:vanish haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:vanish double haste cast actual=0.0 expected=0.0
+Rogue II PASS rogues:mutilate haste flag actual=1.0 expected=1.0
+Rogue II PASS rogues:mutilate double haste cooldown actual=6.0 expected=6.0
+Rogue II PASS rogues:mutilate haste cast flag actual=1.0 expected=1.0
+Rogue II PASS rogues:mutilate double haste cast actual=0.0 expected=0.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_1_passive_1 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_1_passive_1 double haste cooldown actual=0.5 expected=0.5
+Rogue II PASS skill_tree_rpgs:rogue_tier_1_passive_2 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_1_passive_2 double haste cooldown actual=0.5 expected=0.5
+Rogue II PASS skill_tree_rpgs:rogue_tier_2_passive_1 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_2_passive_1 double haste cooldown actual=0.0 expected=0.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_2_passive_2 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_2_passive_2 double haste cooldown actual=3.0 expected=3.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_3_passive_1 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_3_passive_1 double haste cooldown actual=30.0 expected=30.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_3_passive_2 haste flag actual=1.0 expected=1.0
+Rogue II PASS skill_tree_rpgs:rogue_tier_3_passive_2 double haste cooldown actual=15.0 expected=15.0
+Rogue PASS Shock cooldown actual=12.0 expected=12.0
+Rogue PASS Mob stun HP=100.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=130.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=131.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=1000.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Dragon bypass improved=false actual=20.0 expected=20.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=23.9 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=24.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Player current HP=30.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=100.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=130.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=131.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Mob stun HP=1000.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Dragon bypass improved=true actual=40.0 expected=40.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=23.9 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=24.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Player current HP=30.0 improved=true actual=40.0 expected=40.0
+Explosive fixture raw nearby=[entity.minecraft.villager@(5.0, 80.0, 0.0)] native lookup=1 block=Block{minecraft:air}
+Rogue PASS Explosive Powder direct damage actual=40.0 expected=40.0
+Rogue PASS Explosive Powder no distance falloff actual=40.0 expected=40.0
+Rogue PASS Explosive has no extra stun second actual=40.0 expected=40.0
+Rogue PASS Slice cooldown actual=12.0 expected=12.0
+Rogue PASS Slice native charges branch=0 actual=10.0 expected=10.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Owned pet hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Slice actual bonus branch=0 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=1 actual=12.0 expected=12.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Owned pet hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Slice actual bonus branch=1 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=2 actual=15.0 expected=15.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Owned pet hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Slice actual bonus branch=2 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=13 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 13 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 13 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=14 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 14 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 14 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=15 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 15 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 15 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Fracture cooldown actual=1.0 expected=1.0
+Rogue PASS Flat armor stack 1 actual=24.0 expected=24.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 2 actual=18.0 expected=18.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 3 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 4 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Dispel restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Expiry restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Coated cooldown actual=1.0 expected=1.0
+Rogue PASS Coated chance actual=0.25 expected=0.25
+PASS archers:entangling_roots cost.cooldown.duration actual=12.0 expected=12.0
+PASS archers:entangling_roots deliver.clouds.0.volume.radius actual=6.0 expected=6.0
+PASS archers:entangling_roots deliver.clouds.0.time_to_live_seconds actual=6.0 expected=6.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_root modifiers.0.cooldown_duration_deduct actual=2.0 expected=2.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_1 modifiers.0.impacts.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_2 modifiers.0.impacts.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_2 modifiers.0.impacts.0.action.status_effect.duration actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_1_modifier_2 modifiers.0.replacing_area_impact.radius actual=5.0 expected=5.0
+PASS Charged Shot no falloff
+PASS skill_tree_rpgs:archer_tier_1_passive_1 passive.triggers.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 impacts.0.action.status_effect.duration actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 cost.cooldown.duration actual=8.0 expected=8.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 impacts.0.action.status_effect.duration actual=4.0 expected=4.0
+PASS roots -60% movement actual=0.09999999403953552 expected=0.1
+PASS roots -60% jump actual=0.16799998474121125 expected=0.16799999475479127
+PASS Hunter's Mark native incoming damage at 1 stacks actual=10.700000762939453 expected=10.700000000000001
+PASS Hunter's Mark native incoming damage at 2 stacks actual=11.399999618530273 expected=11.400000000000002
+PASS Hunter's Mark native incoming damage at 3 stacks actual=12.100000381469727 expected=12.1
+PASS Hunter's Mark native incoming damage at 4 stacks actual=12.799999237060547 expected=12.8
+PASS unmarked arrow hit triggers Rhythm 1
+PASS Rhythm stacks capped five 1 actual=1.0 expected=1.0
+PASS Rhythm refresh four seconds 1 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 1 actual=102.99999993294477 expected=103.0
+PASS unmarked arrow hit triggers Rhythm 2
+PASS Rhythm stacks capped five 2 actual=2.0 expected=2.0
+PASS Rhythm refresh four seconds 2 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 2 actual=105.99999986588955 expected=106.0
+PASS unmarked arrow hit triggers Rhythm 3
+PASS Rhythm stacks capped five 3 actual=3.0 expected=3.0
+PASS Rhythm refresh four seconds 3 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 3 actual=108.99999979883432 expected=109.00000000000001
+PASS unmarked arrow hit triggers Rhythm 4
+PASS Rhythm stacks capped five 4 actual=4.0 expected=4.0
+PASS Rhythm refresh four seconds 4 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 4 actual=111.9999997317791 expected=112.00000000000001
+PASS unmarked arrow hit triggers Rhythm 5
+PASS Rhythm stacks capped five 5 actual=5.0 expected=5.0
+PASS Rhythm refresh four seconds 5 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 5 actual=114.99999966472387 expected=114.99999999999999
+PASS unmarked arrow hit triggers Rhythm 6
+PASS Rhythm stacks capped five 6 actual=5.0 expected=5.0
+PASS Rhythm refresh four seconds 6 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 6 actual=114.99999966472387 expected=114.99999999999999
+PASS actual guaranteed Concussive Shot trigger
+PASS actual stun duration actual=20.0 expected=20.0
+PASS Concussive cooldown prevents immediate stun
+PASS Spirit Wolf native scaled HP R=0.0 improved=false actual=20.0 expected=20.0
+PASS Spirit Wolf native scaled armor R=0.0 actual=10.0 expected=10.0
+PASS Spirit Wolf native scaled melee R=0.0 actual=3.0 expected=3.0
+AUDIT Spirit Wolf R=0.0 improved=false HP=20.0 armor=10.0 attack=3.0 attackKnockback=0.0 knockbackResistance=0.0 detection=32.0
+PASS Spirit Wolf native scaled HP R=0.0 improved=true actual=20.0 expected=20.0
+PASS Spirit Wolf native scaled armor R=0.0 actual=10.0 expected=10.0
+PASS Spirit Wolf native scaled melee R=0.0 actual=3.0 expected=3.0
+AUDIT Spirit Wolf R=0.0 improved=true HP=20.0 armor=10.0 attack=3.0 attackKnockback=0.0 knockbackResistance=0.0 detection=32.0
+PASS Spirit Wolf native scaled HP R=20.0 improved=false actual=28.0 expected=28.0
+PASS Spirit Wolf native scaled armor R=20.0 actual=11.0 expected=11.0
+PASS Spirit Wolf native scaled melee R=20.0 actual=6.0 expected=6.0
+AUDIT Spirit Wolf R=20.0 improved=false HP=28.0 armor=11.0 attack=6.0 attackKnockback=2.0 knockbackResistance=0.0 detection=32.0
+PASS Spirit Wolf native scaled HP R=20.0 improved=true actual=30.0 expected=30.0
+PASS Spirit Wolf native scaled armor R=20.0 actual=11.0 expected=11.0
+PASS Spirit Wolf native scaled melee R=20.0 actual=6.0 expected=6.0
+AUDIT Spirit Wolf R=20.0 improved=true HP=30.0 armor=11.0 attack=6.0 attackKnockback=2.0 knockbackResistance=0.0 detection=32.0
+PASS Spirit Wolf native scaled HP R=40.0 improved=false actual=36.0 expected=36.0
+PASS Spirit Wolf native scaled armor R=40.0 actual=12.0 expected=12.0
+PASS Spirit Wolf native scaled melee R=40.0 actual=9.0 expected=9.0
+AUDIT Spirit Wolf R=40.0 improved=false HP=36.0 armor=12.0 attack=9.0 attackKnockback=4.0 knockbackResistance=0.0 detection=32.0
+PASS Spirit Wolf native scaled HP R=40.0 improved=true actual=40.0 expected=40.0
+PASS Spirit Wolf native scaled armor R=40.0 actual=12.0 expected=12.0
+PASS Spirit Wolf native scaled melee R=40.0 actual=9.0 expected=9.0
+AUDIT Spirit Wolf R=40.0 improved=true HP=40.0 armor=12.0 attack=9.0 attackKnockback=4.0 knockbackResistance=0.0 detection=32.0
+Party: real Better Party API fixture: PASS
+Party: native player fixture damage before=1000.0 after=999.0 accepted=true
+Party: player fixture accepts native attributed PvP damage: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Judgement 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: Holy Light 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: Judgement 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: Holy Light 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Judgement 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=false: PASS
+Party: Holy Light 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Judgement 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: Holy Light 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: Judgement 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: Holy Light 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Judgement 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=false: PASS
+Party: Holy Light 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Judgement 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: Holy Light 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: Judgement 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: Holy Light 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Judgement 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=true: PASS
+Party: Holy Light 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 DIRECT FF=true: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Judgement 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: Holy Light 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: Judgement 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: Holy Light 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Judgement 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=true: PASS
+Party: Holy Light 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 8ad2e2c0-6acd-4f50-91f3-3d84303d3cc8 AREA FF=true: PASS
+Party: actual Ender Dragon move fixture moves before freeze: PASS
+Party: actual Ender Dragon receives Frozen: PASS
+Party: actual Frozen Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves again after Frozen removed: PASS
+Party: actual Ender Dragon receives Stun: PASS
+Party: actual stunned Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves after Stun removed: PASS
+Party: actual Ender Dragon receives Nature's Grasp: PASS
+Party: actual Nature's Grasp clamps boss movement: PASS
+Party: actual boss moves after Nature's Grasp removed: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f DIRECT FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 6fe600d8-9818-4aa0-a9b8-e8291e64a39b AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 7fd17e0b-01f7-4784-a2f0-4115aeb5117f AREA FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: actual area damage entity.minecraft.villager: PASS
+Party: actual burn eligibility entity.minecraft.villager: PASS
+Party: actual area damage entity.minecraft.iron_golem: PASS
+Party: actual burn eligibility entity.minecraft.iron_golem: PASS
+Party: actual area damage entity.minecraft.cow: PASS
+Party: actual burn eligibility entity.minecraft.cow: PASS
+Party: actual area damage entity.minecraft.creeper: PASS
+Party: actual burn eligibility entity.minecraft.creeper: PASS
+Party: actual area damage entity.minecraft.wolf: PASS
+Party: actual burn eligibility entity.minecraft.wolf: PASS
+Party: owned spell caster protects party player: PASS
+Party: owned spell caster protects sibling pet: PASS
+Party: actual party pet healing: PASS
+Party: self damage apply_to_caster blocked: PASS
+Party: self immunity retained: PASS
+Party: fixture rejects ordinary effect minecraft:slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:slowness: PASS
+Party: fixture rejects ordinary effect wizards:frozen: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frozen: PASS
+Party: fixture rejects ordinary effect wizards:frost_slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frost_slowness: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:blizzard_slow: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:blizzard_slow: PASS
+Party: fixture rejects ordinary effect spell_engine:stun: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates spell_engine:stun: PASS
+Party: fixture rejects ordinary effect archers:entangling_roots: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates archers:entangling_roots: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:natures_grasp: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:natures_grasp: PASS
+Party: fixture rejects ordinary effect minecraft:poison: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:poison: PASS

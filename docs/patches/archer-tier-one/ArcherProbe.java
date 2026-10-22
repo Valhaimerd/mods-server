@@ -34,7 +34,7 @@ import net.spell_power.api.SpellPower;
  public ArcherProbe(){NeoForge.EVENT_BUS.addListener(this::start);}
  void start(ServerStartedEvent event){var server=event.getServer();server.execute(()->{try{
   world=server.overworld();player=FakePlayerFactory.getMinecraft(world);player.setPos(0,80,0);world.getChunk(0,0);
-  TierTwoProbe.run(world,player,results::add);RogueProbe.run(world,player,results::add);
+  TierTwoProbe.run(world,player,results::add);RogueProbe.run(world,player,results::add);RogueTierTwoProbe.run(world,player,results::add);
   value("archers:entangling_roots","cost.cooldown.duration",12);
   value("archers:entangling_roots","deliver.clouds.0.volume.radius",6);
   value("archers:entangling_roots","deliver.clouds.0.time_to_live_seconds",6);

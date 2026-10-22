@@ -64,7 +64,7 @@ python docs/patches/bows-balance/verify.py mods
 python docs/patches/crossarms-firing/export-archer-reference.py
 ```
 
-The latest build uses the three Rogue-preserving inputs in ignored `tmp/archer-tier-one/revision-before/`, pinned by revision-inputs.json. The original earlier inputs remain in `tmp/archer-tier-one/before/`.
+The latest build uses the three Rogue-tier-II-preserving inputs in ignored `tmp/archer-tier-one/follow-before/`, pinned by follow-inputs.json. The prior revision-inputs.json still records the earlier layer. The original earlier inputs remain in `tmp/archer-tier-one/before/`.
 [artifacts.json](artifacts.json) records original/final fingerprints and changed
 entries for all four final archives. CrossArms rebuilds from its existing pinned
 upstream input and canonical overrides. The Archer build adds focused helper
@@ -195,7 +195,7 @@ Tier-III handbook proof: all 74 pages rendered; only page 19 differs from
 the reviewed tier-II edition. The changed page was visually checked without
 clipping. All 461 internal links remain and root/output copies match.
 
-## Latest Archer rebalance (supersedes earlier tier tables)
+## Previous Archer rebalance (before the Rain repair)
 
 Power Shot is 12-second cooldown, eight-second ready duration, six-second
 refreshed Mark. Improved extends only readiness to ten seconds, through two
@@ -259,3 +259,53 @@ Matching active/fixed JARs retain Java 25 bytecode and the current filenames.
 Clarification handbook proof: all74 pages rendered, only page19 changed and
 visually checked without clipping. All461 internal links and matching PDF
 copies remain.
+
+## Rain follow/scatter repair and Conjured fan (current behavior)
+
+The player report exposed a mistake in the previous patch: native
+launchSequenceEligible treats 0 as disabled, not all sequences. The prior
+bounds-only checks accepted every arrow at the center; they did not prove
+nonzero scatter. Rain now uses offset rule -2147483647, enabling all 32/76
+arrow indices. The rotated offset still scales by sqrt(U), uniformly sampling
+the disk. The earlier rainTarget/rainLocation hooks are now identities, keeping
+the live native target reference in every scheduled launch. Each arrow starts
+above the mob's current position with 10/11-block random scatter; the native
+first-arrow follow rule is retained. Wizard meteors are unchanged.
+
+The new regression reproduces the removed follow reference on the old JAR.
+The strengthened fixture requires positive native radial spread, interior
+positions, movement to the impact plane and preserved horizontal offsets.
+It moves the target before executing the native scheduled shots and checks
+that later shots center on the new position. This supersedes the earlier
+fixed-center behavior and the previous inadequate scatter proof.
+
+Magic Arrows now deals 80%/90%/100% R at full charge for base/Improved/Punch.
+Both power modifiers add 12.5% of the 80% base coefficient. Conjured keeps
+four arrows at five-tick spacing and launches above the caster's eyes in four
+approximately 90-degree-separated directions, upward velocity 1.2 and lateral
+speed 0.9 (total 1.5). Each waits 10 ticks before acquisition/steering, then uses
+medium 10-degree-per-tick steering rather than 180. A native appended impact
+applies Glowing for 200 ticks to enemies hit; shared party/pet guards remain.
+Magic Punch and ordinary arrows retain their forward launch and five-degree
+steering. The 32-block search, ten-second lifetime, wall passage, charge scaling
+and cooldown stay unchanged.
+
+This build is rebased over the newer Rogue tier-II layer in ignored
+`tmp/archer-tier-one/follow-before/`, pinned by follow-inputs.json. It replaces
+only Archer data/descriptions, the Archer helper and one native launch call.
+Existing Rogue, magic, party and stash hooks are retained byte-for-byte.
+
+Final native dedicated-server fixture: 2,805 measurements passed, including
+both Rogue tiers and party guards. The actual native scheduler produces
+32/32/76 falling arrows with nonzero radial variance and interior samples;
+shots after target movement center on its new position. Arrows are ticked to
+the impact plane with scatter retained. Conjured tests run all ten startup
+ticks, require separated upward trajectories, verify medium steering after
+the delay, and measure native 36 damage at R = 40 plus 200-tick Glowing on an
+enemy while an owned pet remains unaffected. Base/Punch impacts measure 32/40.
+These are native server simulations, not a visual full-pack playthrough.
+
+Rain/Conjured handbook proof: all 74 pages rendered; only page 19 differs
+from the previous reviewed Rogue-tier-II edition. The changed page was
+visually checked without clipping. All 461 internal links remain, with
+matching root/output PDF copies.

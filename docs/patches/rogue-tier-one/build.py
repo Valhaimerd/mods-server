@@ -3,13 +3,25 @@ from zipfile import ZipFile,ZIP_DEFLATED
 import hashlib,json,subprocess
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;WORK=ROOT/'tmp/rogue-tier-one';OUT=WORK/'built';OUT.mkdir(exist_ok=True)
 JAVA=Path('C:/Program Files/Eclipse Adoptium/jdk-26.0.2.101-hotspot/bin');classes=WORK/'classes';classes.mkdir(exist_ok=True)
-base=(ROOT/'tmp/magic-third-tier/compile.args').read_text();cp=';'.join(p.as_posix() for p in (WORK/'before').glob('*.jar'))+';'+base.split('-cp\n')[1].split('\n-d')[0].strip().strip('"')
-sources=[HERE/'RogueRules.java',HERE/'PatchRogue.java',ROOT/'docs/patches/magic-third-tier/PartyRules.java',ROOT/'docs/patches/magic-third-tier/FrozenEntityMoveMixin.java']
+base=(ROOT/'tmp/magic-third-tier/compile.args').read_text();cp=';'.join(p.as_posix() for p in (WORK/'revision-before').glob('*.jar'))+';'+base.split('-cp\n')[1].split('\n-d')[0].strip().strip('"')
+sources=[HERE/'RogueRules.java',ROOT/'docs/patches/rogue-tier-two/TrapRules.java',ROOT/'docs/patches/rogue-tier-two/PatchTierTwo.java',HERE/'PatchRogue.java',ROOT/'docs/patches/magic-third-tier/PartyRules.java',ROOT/'docs/patches/magic-third-tier/FrozenEntityMoveMixin.java']
 args=['--release','25','-cp',cp,'-d',str(classes),*[str(p) for p in sources]];(WORK/'compile.args').write_text('\n'.join('"'+a.replace('\\','/')+'"' for a in args));subprocess.run([str(JAVA/'javac.exe'),'@'+str(WORK/'compile.args')],check=True)
 asm=next((ROOT/'tmp/nameless-balance/server/libraries/org/ow2/asm/asm').rglob('asm-*.jar'))
 def patch(data,mode):
  a=WORK/'input.class';b=WORK/'output.class';a.write_bytes(data);subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchRogue',str(a),str(b),mode],check=True);return b.read_bytes()
 def update(name,o):
+ if (name.startswith('data/rogues/spell/') and o.get('group','').startswith('rogue_')) or (name.startswith('data/skill_tree_rpgs/spell/rogue_') and o.get('type')!='MODIFIER'):
+  o.setdefault('cost',{}).setdefault('cooldown',{})['haste_affected']=True
+  if 'active' in o:o['active'].setdefault('cast',{})['haste_affected']=True
+ if name=='data/rogues/spell/shadow_step.json':o['range']=14;o['impacts']=o['impacts'][:1]
+ if name=='data/rogues/spell/bear_trap.json':
+  o['active']['cast']={'duration':.2,'haste_affected':True};o['cost']['cooldown']['duration']=4
+  cloud=o['deliver']['clouds'][0];cloud['placement']['location_offset_by_look']=3;cloud['additional_placements']=[];cloud['volume']['radius']=1.5
+  cloud['volume']['area']['vertical_range_multiplier']=1;cloud['spawn_ticks']=20;cloud['impact_tick_interval']=1
+  o['impacts'][0]['action']['damage']['spell_power_coefficient']=.6
+  status=o['impacts'][1]['action']['status_effect'];status['duration']=2;status.pop('apply_limit',None)
+  o['impacts'].append({'action':{'type':'STATUS_EFFECT','status_effect':{'effect_id':'minecraft:slowness','duration':4}}})
+
  if name=='data/rogues/spell/shock_powder.json':
   o['cost']['cooldown']['duration']=12;o['impacts'][0]['action']['status_effect'].pop('apply_limit',None)
  if name=='data/rogues/spell/slice_and_dice.json':
@@ -18,6 +30,16 @@ def update(name,o):
   o['impacts']=[{'action':{'type':'DAMAGE','damage':{'spell_power_coefficient':.15,'knockback':0}}},{'action':{'type':'STATUS_EFFECT','apply_to_caster':True,'status_effect':{'effect_id':'skill_tree_rpgs:slice_evasion','duration':4,'amplifier':1,'amplifier_cap':9,'apply_mode':'ADD'}}}]
  if name.startswith('data/skill_tree_rpgs/spell/rogue_'):
   key=Path(name).stem
+  if key=='rogue_tier_3_spell_1_root':o['modifiers'][0]['range_add']=4
+  if key=='rogue_tier_3_spell_1_modifier_1':o['modifiers'][0]['impacts']=[{'action':{'type':'IMMUNITY','apply_to_caster':True,'immunity':{'duration_ticks':20}}}]
+  if key=='rogue_tier_3_spell_1_modifier_2':
+   o['modifiers'][0]['impacts']=[{'action':{'type':'DAMAGE','damage':{'spell_power_coefficient':.5,'knockback':0}}}]+[{'action':{'type':'STATUS_EFFECT','status_effect':{'effect_id':'minecraft:'+effect,'duration':2}}} for effect in ['blindness','weakness','slowness']]
+  if key=='rogue_tier_3_spell_2_root':o['modifiers']=[{'spell_pattern':'rogues:bear_trap'}]
+  if key=='rogue_tier_3_spell_2_modifier_1':o['modifiers'][0]['impacts'][0]['action']['status_effect']['duration']=5
+  if key=='rogue_tier_3_spell_2_modifier_2':o['modifiers']=[{'spell_pattern':'rogues:bear_trap','cloud':{'radius_add':.75}}]
+  if key=='rogue_tier_2_passive_1':
+   o['deliver']={'type':'DIRECT'};o['impacts']=[{'action':{'type':'STATUS_EFFECT','apply_to_caster':True,'status_effect':{'effect_id':'skill_tree_rpgs:side_step','duration':2}}}]
+  if key=='rogue_tier_2_passive_2':o['passive']['triggers'][0]['chance']=1;o['cost']['cooldown']['duration']=6
   if key=='rogue_tier_2_spell_1_modifier_1':
    o['passive']['triggers'][0]['chance']=1;o['impacts'][0]['action']['damage']['spell_power_coefficient']=1;o['area_impact']['area']['distance_dropoff']='NONE'
   if key=='rogue_tier_2_spell_1_modifier_1_bonus':o['modifiers']=[]
@@ -30,17 +52,30 @@ def update(name,o):
   if key=='rogue_tier_1_passive_2':
    o['impacts']=[i for i in o['impacts'] if i['action']['type']!='DAMAGE'];o['impacts'][0]['action']['status_effect']['amplifier_cap']=2;o['cost']['cooldown']['duration']=1
  if name=='assets/rogues/lang/en_us.json':
+  o['spell.rogues.shadow_step.description']='Teleport behind an enemy within 14 blocks. Disrupt nearby hostile mobs within 4 blocks of arrival for 1.5 seconds.'
+  o['spell.rogues.bear_trap.description']='Place one trap 3 blocks ahead. After arming for 1 second it becomes hidden. An enemy within 1 block triggers 60%% dual-melee damage and 2 seconds of root to enemies within 1.5 blocks, plus Slowness I for 4 seconds. Jumping enemies can trigger it.'
+  o['effect.rogues.tracking_disruption']='Tracking Disruption'
+
   o['spell.rogues.shock_powder.description']='Stuns enemies within 5 blocks for 3 seconds, or 1 second for high-health mobs and players at 24 HP or more. Improved adds 1 second. Mob threshold: 50 HP plus twice your melee power; players below 24 current HP receive the longer stun.'
   o['spell.rogues.slice_and_dice.description']='For 10 seconds, your next 10 successful melee hits deal 15%% extra melee damage and gently pull enemies toward you. Each hit grants 5 percentage points of evasion for 4 seconds, stacking up to 50 points.'
  if name=='assets/skill_tree_rpgs/lang/en_us.json':
   desc={
+   'rogue_tier_3_spell_1_root':'Shadowstep reaches 18 blocks instead of 14.',
+   'rogue_tier_3_spell_1_modifier_1':'Shadowstep grants immunity to incoming damage for 1 second.',
+   'rogue_tier_3_spell_1_modifier_2':'Shadowstep immediately deals 50%% melee damage to the target and applies Blindness I, Weakness I and Slowness I for 2 seconds.',
+   'rogue_tier_3_spell_2_root':'Bear Trap deals 75%% dual-melee damage instead of 60%%.',
+   'rogue_tier_3_spell_2_modifier_1':'Bear Trap also causes Bleed for 5 seconds.',
+   'rogue_tier_3_spell_2_modifier_2':'Bear Trap affects a 2.25-block radius and activates when enemies enter within 1.5 blocks.',
+   'rogue_tier_2_passive_1':'Rolling grants 20 percentage points of evasion for 2 seconds. Does not stack or end when taking damage. No additional cooldown.',
+   'rogue_tier_2_passive_2':'Rolling readies a guaranteed critical melee hit with 20 percentage points of extra critical damage for 5 seconds. Base cooldown: 6 seconds, reduced by haste.',
+
    'rogue_tier_2_spell_1_root':'Shock Powder stuns last 1 second longer: 2 or 4 seconds.',
    'rogue_tier_2_spell_1_modifier_1':'Successful Shock Powder impacts always explode for 100%% melee damage within 2.5 blocks, without distance falloff.',
    'rogue_tier_2_spell_1_modifier_1_bonus':'Companion marker; adds no extra stun duration.',
    'rogue_tier_2_spell_1_modifier_2':'Shock Powder leaves a smoke screen for 8 seconds, granting allies inside 50 percentage points of evasion.',
    'rogue_tier_2_spell_2_root':'Slice & Dice empowers 12 successful hits instead of 10.',
    'rogue_tier_2_spell_2_modifier_1':'Slice & Dice empowers 15 successful hits with Improved Slice and Dice.',
-   'rogue_tier_2_spell_2_modifier_2':'Empowered Slice & Dice hits grant 5%% base movement speed per stack, up to 12 stacks, for 4 seconds. Further hits refresh the duration.',
+   'rogue_tier_2_spell_2_modifier_2':'Empowered Slice & Dice hits grant 3%% base movement speed per stack, up to 12 stacks, for 4 seconds. Further hits refresh the duration.',
    'rogue_tier_1_passive_1':'Melee hits have a 25%% chance to add stacking Poison for 8 seconds. Base cooldown: 1 second, reduced by haste.',
    'rogue_tier_1_passive_2':'Melee hits have a 25%% chance to reduce armor by 2 points plus 10%% of your melee power per stack, up to 3 stacks, for 6 seconds. Further procs refresh it. Base cooldown: 1 second, reduced by haste.'}
   for k,v in desc.items():o['spell.skill_tree_rpgs.'+k+'.description']=v
@@ -48,18 +83,21 @@ def update(name,o):
   o['effect.skill_tree_rpgs.slice_evasion']='Slice Evasion'
  return o
 records=[]
-for record in json.loads((HERE/'inputs.json').read_text()):
- jar=WORK/'before'/record['jar'];assert hashlib.sha256(jar.read_bytes()).hexdigest()==record['before_sha256']
+for record in json.loads((HERE/'revision-inputs.json').read_text()):
+ jar=WORK/'revision-before'/record['jar'];assert hashlib.sha256(jar.read_bytes()).hexdigest()==record['before_sha256']
  with ZipFile(jar) as z:files={n:z.read(n) for n in z.namelist()}
  old=dict(files)
  for n,data in list(files.items()):
   if n.endswith('.json') and (n.startswith('data/rogues/spell/') or n.startswith('data/skill_tree_rpgs/spell/rogue_') or n in ['assets/rogues/lang/en_us.json','assets/skill_tree_rpgs/lang/en_us.json']):
    original=json.loads(data);new=update(n,json.loads(data))
    if original!=new:files[n]=(json.dumps(new,indent=2,ensure_ascii=False)+'\n').encode()
- if jar.name.startswith('rogues-'):n='net/rogues/effect/RogueEffects.class';files[n]=patch(files[n],'rogue')
- if jar.name.startswith('skill_tree-'):n='net/skill_tree_rpgs/effect/SkillEffects.class';files[n]=patch(files[n],'skill')
+ if jar.name.startswith('rogues-'):
+  for n in ['net/rogues/client/entity/BearTrapEntityRenderer.class','net/rogues/client/entity/BearTrapEntityRenderer$State.class']:
+   a=WORK/'tier-two-input.class';b=WORK/'tier-two-output.class';a.write_bytes(files[n]);subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchTierTwo',str(a),str(b)],check=True);files[n]=b.read_bytes()
  if jar.name.startswith('spell_engine-'):
-  for n in ['net/spell_engine/internals/impact/SpellImpacts.class','net/spell_engine/internals/delivery/SpellStashHelper.class']:files[n]=patch(files[n],'')
+  n='net/spell_engine/entity/SpellCloud.class';a=WORK/'tier-two-input.class';b=WORK/'tier-two-output.class';a.write_bytes(files[n]);subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchTierTwo',str(a),str(b)],check=True);files[n]=b.read_bytes()
+  files['net/spell_engine/internals/TrapRules.class']=(classes/'net/spell_engine/internals/TrapRules.class').read_bytes()
+
   for n in ['net/spell_engine/internals/RogueRules.class','net/spell_engine/internals/PartyRules.class','net/spell_engine/internals/PartyRules$Client.class','net/spell_engine/internals/PartyRules$EffectCallbacks.class','net/spell_engine/mixin/thirdtier/FrozenEntityMoveMixin.class']:files[n]=(classes/n).read_bytes()
  with ZipFile(OUT/jar.name,'w',ZIP_DEFLATED) as z:
   for n,data in files.items():z.writestr(n,data)

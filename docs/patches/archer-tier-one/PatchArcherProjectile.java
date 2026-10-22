@@ -23,6 +23,9 @@ public final class PatchArcherProjectile implements Opcodes {
      }else super.visitFieldInsn(op,owner,field,desc);
     }
     public void visitMethodInsn(int op,String owner,String method,String desc,boolean itf){
+     if(mode.equals("conjured-launch")&&n.equals("shootProjectile")&&method.equals("addFreshEntity")&&desc.equals("(Lnet/minecraft/world/entity/Entity;)Z")){
+      mv.visitVarInsn(ALOAD,1);mv.visitVarInsn(ILOAD,5);mv.visitMethodInsn(INVOKESTATIC,RULES,"launch","(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/LivingEntity;I)Lnet/minecraft/world/entity/Entity;",false);edits[0]++;
+     }
      if(mode.equals("projectile")&&n.equals("followTarget")&&owner.equals("net/spell_engine/internals/ArcherProjectileRules")&&method.equals("homing")){super.visitMethodInsn(op,RULES,method,desc,itf);edits[0]++;return;}
      if(mode.equals("projectile")&&n.equals("tick")&&owner.equals("net/minecraft/world/entity/projectile/ProjectileUtil")&&method.equals("getHitResultOnMoveVector")){super.visitMethodInsn(op,RULES,"collision",desc,itf);edits[0]++;return;}
      super.visitMethodInsn(op,owner,method,desc,itf);
@@ -32,7 +35,7 @@ public final class PatchArcherProjectile implements Opcodes {
     }
    };
   }},0);
-  int expected=mode.equals("projectile")?3:2;
+  int expected=mode.equals("conjured-launch")?1:mode.equals("projectile")?3:2;
   if(edits[0]!=expected)throw new AssertionError(mode+" expected "+expected+" hooks, got "+edits[0]);Files.write(Path.of(args[1]),w.toByteArray());
  }
 }

@@ -19,10 +19,16 @@ public final class RogueRules {
  private static final Identifier SCALING=Identifier.parse("rogue_pack:fracture_scaling");
  private static boolean id(Holder<Spell> spell,String id){return spell!=null&&spell.is(Identifier.parse(id));}
  public static void rogue(ConfigFile.Effects config){
+  TrapRules.init();var key=Identifier.parse(TrapRules.DISRUPTION);
+  if(net.rogues.effect.RogueEffects.entries.stream().noneMatch(e->e.id.equals(key)))net.rogues.effect.RogueEffects.entries.add(new Effects.Entry(key,"Tracking Disruption","Temporarily unable to acquire a target.",new CustomStatusEffect(MobEffectCategory.HARMFUL,0xAAAAAA)));
+
   config.effects.put("rogues:slice_and_dice",new EffectConfig(List.of()));
  }
  public static void skill(ConfigFile.Effects config){
-  config.effects.put("skill_tree_rpgs:fleet_footed",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("minecraft:movement_speed",.05f,Operation.ADD_MULTIPLIED_BASE))));
+  config.effects.put("skill_tree_rpgs:side_step",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("spell_engine:evasion_chance",.2f,Operation.ADD_MULTIPLIED_BASE))));
+  config.effects.put("skill_tree_rpgs:opportunist",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("critical_strike:chance",1f,Operation.ADD_MULTIPLIED_BASE),new net.spell_engine.rpg_series.config.AttributeModifier("critical_strike:damage",.2f,Operation.ADD_MULTIPLIED_BASE))));
+
+  config.effects.put("skill_tree_rpgs:fleet_footed",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("minecraft:movement_speed",.03f,Operation.ADD_MULTIPLIED_BASE))));
   config.effects.put("skill_tree_rpgs:fracture",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("minecraft:armor",-2,Operation.ADD_VALUE))));
   config.effects.put("skill_tree_rpgs:smoke_screen",new EffectConfig(List.of(new net.spell_engine.rpg_series.config.AttributeModifier("spell_engine:evasion_chance",.5f,Operation.ADD_MULTIPLIED_BASE))));
   var key=Identifier.parse("skill_tree_rpgs:slice_evasion");
@@ -38,6 +44,9 @@ public final class RogueRules {
    boolean longStun=living instanceof Player?living.getHealth()<24:living.getMaxHealth()<=50+2*power;
    impact.action.status_effect.duration=longStun?3:1;
    impact.action.status_effect.apply_limit=null;
+  }
+  if(id(spell,"rogues:bear_trap")&&impact.action.type==Spell.Impact.Action.Type.DAMAGE&&caster instanceof net.spell_engine.internals.container.SpellContainerSource.Owner owner&&owner.getSpellContainers().modifiers().stream().anyMatch(h->h.is(Identifier.parse("skill_tree_rpgs:rogue_tier_3_spell_2_root")))){
+   impact=JSON.fromJson(JSON.toJson(impact),Spell.Impact.class);impact.action.damage.spell_power_coefficient=.75f;
   }
   return impact;
  }
@@ -62,6 +71,8 @@ public final class RogueRules {
   return SpellTriggers.evaluateTrigger(spell,trigger,event);
  }
  public static boolean after(boolean success,LivingEntity caster,Entity target,Holder<Spell> spell,Spell.Impact impact){
+  if(success&&id(spell,"rogues:shadow_step")&&impact.action.type==Spell.Impact.Action.Type.TELEPORT)TrapRules.disrupt(caster);
+
   if(success&&id(spell,"rogues:slice_and_dice")&&impact.action.type==Spell.Impact.Action.Type.DAMAGE&&target instanceof LivingEntity living&&!PartyRules.allies(caster,target)){
    var delta=caster.position().subtract(target.position()).multiply(1,0,1);double distance=delta.length();
    if(distance>.05){

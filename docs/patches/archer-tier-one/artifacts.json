@@ -1,29 +1,22 @@
 [
   {
     "jar": "archers-neoforge-3.1.2+26.2.jar",
-    "before_sha256": "7d9ca6d5447562fe6156ad7645ea68e826a9aeedb8733b9c5e08b2e547f93368",
-    "sha256": "6dae7819a439a6a8e5767135b7630cc23c6d8c6bed0fea64d5931bd1c9715cef",
+    "before_sha256": "6dae7819a439a6a8e5767135b7630cc23c6d8c6bed0fea64d5931bd1c9715cef",
+    "sha256": "602aa7946c19cf9929615076369b41dbc70456c55da5d70c9279ce2f6af69a15",
     "changed": [
       "assets/archers/lang/en_us.json",
-      "data/archers/spell/barrage.json",
       "data/archers/spell/magic_arrow.json",
-      "data/archers/spell/power_shot.json",
-      "data/archers/spell/rain_of_arrows.json",
-      "data/archers/spell/spirit_wolf.json"
+      "data/archers/spell/rain_of_arrows.json"
     ],
     "added": []
   },
   {
     "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
-    "before_sha256": "328773f0276dec30ca84d8390b52ba095c5da7c403f156f0c665c4738eed35f8",
-    "sha256": "c61440b7c4d69fe178904e973370038a48ebbf3e6e03fa59ce1bf08343d112e4",
+    "before_sha256": "3f67ff798a0adfb7fd226b6afe63dab9d2cb0a6e3c344a70079d240bbebbbe36",
+    "sha256": "03fa7ca75074c21f58a2d4b84ed241b78d22ba65899809942bfd39f728355da4",
     "changed": [
       "assets/skill_tree_rpgs/lang/en_us.json",
-      "data/skill_tree_rpgs/spell/archer_tier_2_spell_1_root.json",
-      "data/skill_tree_rpgs/spell/archer_tier_3_spell_1_modifier_1.json",
-      "data/skill_tree_rpgs/spell/archer_tier_3_spell_2_root.json",
-      "data/skill_tree_rpgs/spell/archer_tier_4_spell_1_modifier_1.json",
-      "data/skill_tree_rpgs/spell/archer_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_modifier_1.json",
       "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_modifier_2.json",
       "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_root.json"
     ],
@@ -31,16 +24,13 @@
   },
   {
     "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
-    "before_sha256": "4b9a4572f4cc284ee51a887a13a24064221155c0994368a95befd62872f879ed",
-    "sha256": "bf21ca04f24f38f73d836271b4f3e810f307f860d04b67c4876bcb069cf2a0d0",
+    "before_sha256": "ba2eaf03f0e67c0cc93c91d893f22eb00512552fe92bc4c5aac562eb90616fe9",
+    "sha256": "437dca47c9678546295b498792154c377d7cbfe5b97d82ea8d75234f79534474",
     "changed": [
-      "net/spell_engine/entity/SpellProjectile.class",
       "net/spell_engine/internals/delivery/ProjectileLauncher.class",
-      "net/spell_engine/internals/delivery/SpellDelivery.class"
-    ],
-    "added": [
       "net/spell_engine/entity/ArcherProjectileRules.class"
-    ]
+    ],
+    "added": []
   },
   {
     "jar": "crossarms-1.4.jar",

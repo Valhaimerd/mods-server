@@ -1,8 +1,8 @@
-# Rogue first-tier rework ? 22 October 2026
+# Rogue first- and second-tier rework ? 22 October 2026
 
 Minecraft 26.2 / NeoForge 26.2.0.90, Java 25 production classes. Three active
 filenames are retained: Rogues 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5.
-No mod is added or removed. Later Rogue tiers and passive pairs are unchanged.
+No mod is added or removed. Tier III mechanics remain unchanged; every Rogue tier explicitly enables haste. See [the tier-II extension](../rogue-tier-two/README.md).
 
 ## Implemented rules
 
@@ -23,7 +23,7 @@ No mod is added or removed. Later Rogue tiers and passive pairs are unchanged.
   to 0.2 toward the caster, respecting knockback resistance. The old stacking
   attack-damage modifier is removed, including from stale generated configs.
 - Empowered hits grant five percentage points of evasion per stack, cap ten,
-  for four seconds refreshed. Fleet Footed gives 5% base movement speed per
+  for four seconds refreshed. Fleet Footed gives 3% base movement speed per
   stack, cap twelve, for four seconds refreshed. It explicitly targets the
   caster after the new damage-targeted stash trigger. Misses have no native
   melee-impact event; self/party players and owned pets cannot spend charges.
@@ -45,8 +45,9 @@ mutated during combat.
 
 ## Rebuild and verification
 
-Pinned prior pack JARs live under ignored `tmp/rogue-tier-one/before/` and are
-fingerprinted in inputs.json. Build from the repository root:
+The current inputs are rebased onto the newer Archer layer, pinned under ignored
+`tmp/rogue-tier-one/revision-before/` and fingerprinted in revision-inputs.json.
+The historical before/ inputs remain intact. Build from the repository root:
 
 ```powershell
 python docs/patches/rogue-tier-one/build.py
@@ -87,3 +88,5 @@ Handbook proof: all 74 pages rendered, changed pages 2 and 16?18 visually
 reviewed without clipping. All 51 printed contents destinations match, all
 461 internal links remain, and root/output PDF copies match. Classes and
 playstyles now starts on page 17; its contents number is updated accordingly.
+
+Current behavior and build layering are described in [the tier-II notes](../rogue-tier-two/README.md); older results below describe their original revision.

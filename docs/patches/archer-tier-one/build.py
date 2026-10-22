@@ -3,7 +3,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 import hashlib,json,subprocess
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
-WORK=ROOT/'tmp/archer-tier-one';SOURCE=WORK/'revision-before';OUT=WORK/'built';OUT.mkdir(exist_ok=True)
+WORK=ROOT/'tmp/archer-tier-one';SOURCE=WORK/'follow-before';OUT=WORK/'built';OUT.mkdir(exist_ok=True)
 JAVA=Path('C:/Program Files/Eclipse Adoptium/jdk-26.0.2.101-hotspot/bin')
 classes=WORK/'classes';classes.mkdir(exist_ok=True)
 base=(ROOT/'tmp/magic-third-tier/compile.args').read_text()
@@ -29,7 +29,7 @@ def update(name,obj):
   obj['impacts'][0]['action']['status_effect']['duration']=6
  if name=='data/archers/spell/rain_of_arrows.json':
   obj['cost']['cooldown']['duration']=25
-  meteor=obj['deliver']['meteor'];meteor['launch_radius']=10;meteor['offset_requires_sequence']=0
+  meteor=obj['deliver']['meteor'];meteor['launch_radius']=10;meteor['offset_requires_sequence']=-2147483647
   meteor['launch_properties']['extra_launch_count']=31;meteor['launch_properties']['extra_launch_delay']=5
   obj['area_impact']['radius']=2.5
  if name=='data/archers/spell/magic_arrow.json':
@@ -37,7 +37,7 @@ def update(name,obj):
   obj['active']['cast']['type']='CHARGE';obj['active']['cast']['charge']={'output_scaling':1}
   obj['target']={'type':'NONE'}
   obj['cost']['cooldown']['duration']=25
-  obj['impacts'][0]['action']['damage']['spell_power_coefficient']=1
+  obj['impacts'][0]['action']['damage']['spell_power_coefficient']=.8
   projectile=obj['deliver']['projectile'];projectile['launch_properties'].update(extra_launch_count=3,extra_launch_delay=5)
   projectile['projectile']['homing_angle']=5
  if name=='data/archers/spell/barrage.json':
@@ -70,10 +70,10 @@ def update(name,obj):
    obj['modifiers'][0]['meteor_launch_radius_add']=0
   if key=='archer_tier_4_spell_1_modifier_2':
    obj={'school':'spell_power:physical_ranged','range':0,'tier':1,'type':'MODIFIER','modifiers':[{'spell_pattern':'archers:rain_of_arrows','meteor_launch_radius_add':1,'projectile_launch':{'velocity':0,'extra_launch_count':44,'extra_launch_delay':0}}]}
-  if key=='archer_tier_4_spell_2_root':obj['modifiers'][0]['power_modifier']['power_multiplier']=.1
-  if key=='archer_tier_4_spell_2_modifier_2':obj['modifiers'][0]['power_modifier']={'power_multiplier':.15}
+  if key=='archer_tier_4_spell_2_root':obj['modifiers'][0]['power_modifier']['power_multiplier']=.125
+  if key=='archer_tier_4_spell_2_modifier_2':obj['modifiers'][0]['power_modifier']={'power_multiplier':.125}
   if key=='archer_tier_4_spell_2_modifier_1':
-   obj={'school':'spell_power:physical_ranged','range':0,'tier':1,'type':'MODIFIER','modifiers':[{'spell_pattern':'archers:magic_arrow'}]}
+   obj={'school':'spell_power:physical_ranged','range':0,'tier':1,'type':'MODIFIER','modifiers':[{'spell_pattern':'archers:magic_arrow','mutate_impacts':'APPEND','impacts':[{'action':{'type':'STATUS_EFFECT','status_effect':{'effect_id':'minecraft:glowing','duration':10}}}]}]}
   if key=='archer_tier_3_passive_1':
    obj['passive']['triggers'][0]['chance']=1;obj['arrow_perks']['damage_multiplier']=1.25;obj['cost']['cooldown']['duration']=8
   if key=='archer_tier_3_passive_2':obj['cost']['cooldown']['duration']=40
@@ -114,14 +114,14 @@ def update(name,obj):
    'archer_tier_4_spell_1_root':'Rain of Arrows gains 5 percentage points of critical chance.',
    'archer_tier_4_spell_1_modifier_1':'Rains 32 arrows every 0.1 seconds across a random 10-block radius. Each impact splashes within 2.5 blocks.',
    'archer_tier_4_spell_1_modifier_2':'Adds 44 falling arrows, for 76 total, every 0.25 seconds across an 11-block radius. Each impact splashes within 2.5 blocks.',
-   'archer_tier_4_spell_2_root':'Magic Arrows deal 110%% of your Ranged Damage per arrow at full charge instead of 100%%.',
-   'archer_tier_4_spell_2_modifier_1':'Magic Arrows turn instantly toward the nearest eligible enemy within 32 blocks. They can pass through walls and last 10 seconds.',
-   'archer_tier_4_spell_2_modifier_2':'Magic Arrows deal 125%% of your Ranged Damage per arrow at full charge with Improved Magic Arrows, and gain 150%% extra base knockback.',
+   'archer_tier_4_spell_2_root':'Magic Arrows deal 90%% of your Ranged Damage per arrow at full charge instead of 80%%.',
+   'archer_tier_4_spell_2_modifier_1':'Fires Magic Arrows upward in a wide spread above you. After 0.5 seconds, they seek the nearest enemy within 32 blocks with medium homing. Hits reveal enemies for 10 seconds.',
+   'archer_tier_4_spell_2_modifier_2':'Magic Arrows deal 100%% of your Ranged Damage per arrow at full charge with Improved Magic Arrows, and gain 150%% extra base knockback.',
    'archer_tier_1_passive_1':'Arrow hits always stun enemies for 1 second. Base cooldown: 8 seconds, reduced by haste.',
    'archer_tier_1_passive_2':'Arrow hits grant 3%% ranged attack speed per stack, up to 15%%, for 4 seconds. Further hits refresh the duration.',
    'archer_tier_2_passive_1':'Rolling grants 2 Rhythm stacks for 4 seconds. Base cooldown: 1 second, reduced by haste.',
    'archer_tier_2_passive_2':'Rolling grants 200%% base roll recharge rate for 4 seconds. Base cooldown: 10 seconds, reduced by haste.',
-   'archer_tier_3_passive_1':'Arrow hits ready your next ordinary arrow to deal 125%% normal damage. Use it within 5 seconds; ranged haste is reduced by 25%% while ready. Base cooldown: 8 seconds, reduced by haste.',
+   'archer_tier_3_passive_1':'Arrow hits ready your next ordinary arrow to deal 100%% normal damage. Use it within 5 seconds; ranged haste is reduced by 25%% while ready. Base cooldown: 8 seconds, reduced by haste.',
    'archer_tier_3_passive_2':'Taking damage below 50%% health protects you from the next 3 eligible physical attacks for up to 10 seconds. Base cooldown: 40 seconds, reduced by haste.'
   }
   for key,desc in descriptions.items():obj['spell.skill_tree_rpgs.'+key+'.description']=desc
@@ -130,14 +130,14 @@ def update(name,obj):
   obj['spell.archers.power_shot.description']='Prepares your next 3 arrows for 8 seconds. Hits apply Hunter\'s Mark for 6 seconds, refreshed, increasing damage taken by 7%% per stack, up to 21%%.'
   obj['spell.archers.barrage.description']='Fires 3 accurate arrows every 0.15 seconds. Each deals 60%% normal shot damage.'
   obj['spell.archers.spirit_wolf.description']='Summons 2 Spirit Wolves for 20 seconds. Each has 20 HP plus 40%% of your Ranged Damage, and deals 3 damage plus 15%% of your Ranged Damage per melee hit. Pet bonuses apply.'
-  obj['spell.archers.rain_of_arrows.description']='Rains 32 arrows at 40%% of your Ranged Damage per impact. Arrows fall every 0.25 seconds throughout a random 10-block radius, with 2.5-block splash per impact.'
+  obj['spell.archers.rain_of_arrows.description']='Rains 32 arrows at 40%% of your Ranged Damage per impact. Arrows fall every 0.25 seconds throughout a random 10-block radius that follows the target, with 2.5-block splash per impact.'
   obj['spell.archers.magic_arrow.name']='Magic Arrows'
-  obj['spell.archers.magic_arrow.description']='Fires 4 seeking arrows every 0.25 seconds, each dealing up to 100%% of your Ranged Damage at full charge. Partial charges deal less damage. They find the nearest enemy within 32 blocks, turn gradually in any direction, pass through walls and last 10 seconds.'
+  obj['spell.archers.magic_arrow.description']='Fires 4 seeking arrows every 0.25 seconds, each dealing up to 80%% of your Ranged Damage at full charge. Partial charges deal less damage. They find the nearest enemy within 32 blocks, turn gradually in any direction, pass through walls and last 10 seconds.'
   obj['spell.archers.entangling_roots.description']='Creates roots in a 6-block radius for 6 seconds, reducing enemy movement speed and jump strength by 60%%. Party allies and owned pets are protected.'
  return obj
 
 records=[]
-pinned=json.loads((HERE/'revision-inputs.json').read_text())
+pinned=json.loads((HERE/'follow-inputs.json').read_text())
 for jar in SOURCE.glob('*.jar'):
  assert hashlib.sha256(jar.read_bytes()).hexdigest()==pinned[jar.name],jar.name
  with ZipFile(jar) as z:infos=z.infolist();original={i.filename:z.read(i) for i in infos}
@@ -147,15 +147,10 @@ for jar in SOURCE.glob('*.jar'):
    obj=json.loads(data);changed=update(name,json.loads(data))
    if changed!=obj:files[name]=(json.dumps(changed,indent=2,ensure_ascii=False)+'\n').encode()
  if jar.name.startswith('spell_engine-'):
-  key='net/spell_engine/entity/SpellProjectile.class'
-  a=WORK/'projectile-input.class';b=WORK/'projectile-output.class';a.write_bytes(files[key])
-  subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchArcherProjectile',str(a),str(b)],check=True)
-  files[key]=b.read_bytes()
   for p in (classes/'net/spell_engine/entity').glob('ArcherProjectileRules*.class'):files[p.relative_to(classes).as_posix()]=p.read_bytes()
   key='net/spell_engine/internals/delivery/ProjectileLauncher.class'
-  a.write_bytes(files[key]);subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchArcherProjectile',str(a),str(b),'launcher'],check=True);files[key]=b.read_bytes()
-  key='net/spell_engine/internals/delivery/SpellDelivery.class'
-  a.write_bytes(files[key]);subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchArcherProjectile',str(a),str(b),'stash'],check=True);files[key]=b.read_bytes()
+  a=WORK/'projectile-input.class';b=WORK/'projectile-output.class';a.write_bytes(files[key])
+  subprocess.run([str(JAVA/'java.exe'),'-cp',str(classes)+';'+str(asm),'PatchArcherProjectile',str(a),str(b),'conjured-launch'],check=True);files[key]=b.read_bytes()
  with ZipFile(OUT/jar.name,'w',ZIP_DEFLATED) as z:
   for name,data in files.items():z.writestr(name,data)
  with ZipFile(OUT/jar.name) as z:assert z.testzip() is None

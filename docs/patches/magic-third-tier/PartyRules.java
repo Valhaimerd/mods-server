@@ -77,7 +77,7 @@ public final class PartyRules {
     }
 
     private static boolean control(String id) {
-        return "spell_engine:stun".equals(id) || "rogues:shock".equals(id) || "minecraft:slowness".equals(id) || "wizards:frozen".equals(id)
+        return "spell_engine:stun".equals(id) || "rogues:shock".equals(id) || "rogues:bear_trap".equals(id) || "rogues:tracking_disruption".equals(id) || "minecraft:slowness".equals(id) || "wizards:frozen".equals(id)
             || "archers:entangling_roots".equals(id) || "skill_tree_rpgs:natures_grasp".equals(id) || "minecraft:poison".equals(id)
             || "wizards:frost_slowness".equals(id) || "skill_tree_rpgs:blizzard_slow".equals(id);
     }

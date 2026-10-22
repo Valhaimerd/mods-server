@@ -1,0 +1,1 @@
+PASS actual NeoForge client verifies patched renderer/state; hidden submit skips all render work; visible submit reaches original render path

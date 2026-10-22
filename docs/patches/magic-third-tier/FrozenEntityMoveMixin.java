@@ -20,6 +20,8 @@ public abstract class FrozenEntityMoveMixin {
             if (stun.isPresent() && living.hasEffect(stun.get())) return Vec3.ZERO;
             var shock = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("rogues:shock"));
             if (shock.isPresent() && living.hasEffect(shock.get())) return Vec3.ZERO;
+            var trap = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("rogues:bear_trap"));
+            if (trap.isPresent() && living.hasEffect(trap.get())) return Vec3.ZERO;
             var grasp = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("skill_tree_rpgs:natures_grasp"));
             if (grasp.isPresent() && living.hasEffect(grasp.get())) return Vec3.ZERO;
             var frozen = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen"));

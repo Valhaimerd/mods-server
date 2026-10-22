@@ -34,7 +34,7 @@ import net.spell_power.api.SpellPower;
  public ArcherProbe(){NeoForge.EVENT_BUS.addListener(this::start);}
  void start(ServerStartedEvent event){var server=event.getServer();server.execute(()->{try{
   world=server.overworld();player=FakePlayerFactory.getMinecraft(world);player.setPos(0,80,0);world.getChunk(0,0);
-  TierTwoProbe.run(world,player,results::add);
+  TierTwoProbe.run(world,player,results::add);RogueProbe.run(world,player,results::add);
   value("archers:entangling_roots","cost.cooldown.duration",12);
   value("archers:entangling_roots","deliver.clouds.0.volume.radius",6);
   value("archers:entangling_roots","deliver.clouds.0.time_to_live_seconds",6);
@@ -80,9 +80,9 @@ import net.spell_power.api.SpellPower;
    // Fake players are not world-resolvable by UUID; exercise the exact native scaling
    // method that setBehaviour calls when a real owner is present.
    var apply=net.spell_engine.entity.SummonedEntity.class.getDeclaredMethod("applyAttributeScaling",LivingEntity.class);apply.setAccessible(true);apply.invoke(wolf,player);
-   near("Spirit Wolf native scaled HP R="+r+" improved="+improved,wolf.getMaxHealth(),20+(improved?.7:.5)*r);
+   near("Spirit Wolf native scaled HP R="+r+" improved="+improved,wolf.getMaxHealth(),20+(improved?.5:.4)*r);
    near("Spirit Wolf native scaled armor R="+r,wolf.getAttributeValue(Attributes.ARMOR),10+.05*r);
-   near("Spirit Wolf native scaled melee R="+r,wolf.getAttributeValue(Attributes.ATTACK_DAMAGE),3+.2*r);
+   near("Spirit Wolf native scaled melee R="+r,wolf.getAttributeValue(Attributes.ATTACK_DAMAGE),3+.15*r);
 
    results.add("AUDIT Spirit Wolf R="+r+" improved="+improved+" HP="+wolf.getMaxHealth()+" armor="+wolf.getAttributeValue(Attributes.ARMOR)+" attack="+wolf.getAttributeValue(Attributes.ATTACK_DAMAGE)+" attackKnockback="+(wolf.getAttribute(Attributes.ATTACK_KNOCKBACK)==null?"absent":wolf.getAttributeValue(Attributes.ATTACK_KNOCKBACK))+" knockbackResistance="+wolf.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE)+" detection="+wolf.detectionRange());
   }}finally{ranged.setBaseValue(oldRanged);}

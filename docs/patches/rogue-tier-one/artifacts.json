@@ -1,0 +1,46 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "9cb1d621fe2e2c850bb88ac7eb283fb4985ded469d289624ad0c0f05573df602",
+    "sha256": "78f5a02d46c7ceadb3ca37811cb06759db3d4e5346e308e3438a907d39237963",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/shock_powder.json",
+      "data/rogues/spell/slice_and_dice.json",
+      "net/rogues/effect/RogueEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "4e989887aaf8ff5427f40da09f49a0805794e0871308e6ebd0768201e2ad8408",
+    "sha256": "328773f0276dec30ca84d8390b52ba095c5da7c403f156f0c665c4738eed35f8",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_1_bonus.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_root.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "22624b1c102a1ebe7b580ea471c051962e9df2e429b7e67fbbc2411004c3e662",
+    "sha256": "4b9a4572f4cc284ee51a887a13a24064221155c0994368a95befd62872f879ed",
+    "changed": [
+      "net/spell_engine/internals/delivery/SpellStashHelper.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class",
+      "net/spell_engine/internals/PartyRules.class",
+      "net/spell_engine/mixin/thirdtier/FrozenEntityMoveMixin.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/RogueRules.class"
+    ]
+  }
+]

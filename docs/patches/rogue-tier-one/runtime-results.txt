@@ -1,0 +1,884 @@
+PASS Barrage cast actual=0.10000000149011612 expected=0.1
+PASS Barrage cooldown actual=8.0 expected=8.0
+PASS Barrage retained damage actual=0.699999988079071 expected=0.7
+PASS Barrage interval three ticks actual=3.0 expected=3.0
+PASS Barrage zero divergence actual=0.0 expected=0.0
+PASS Extensive adds two arrows actual=2.0 expected=2.0
+PASS Blood Barrage six percent R actual=0.05999999865889549 expected=0.06
+PASS Wolf cooldown actual=35.0 expected=35.0
+PASS Wolf range actual=32.0 expected=32.0
+PASS Wolf active lifetime actual=20.0 expected=20.0
+PASS Enduring adds ten seconds actual=10.0 expected=10.0
+PASS archers:power_shot haste flag actual=1.0 expected=1.0
+PASS archers:power_shot native double haste halves cooldown actual=4.0 expected=4.0
+PASS archers:power_shot native double haste cast actual=0.0 expected=0.0
+PASS archers:entangling_roots haste flag actual=1.0 expected=1.0
+PASS archers:entangling_roots native double haste halves cooldown actual=6.0 expected=6.0
+PASS archers:entangling_roots native double haste cast actual=0.0 expected=0.0
+PASS archers:barrage haste flag actual=1.0 expected=1.0
+PASS archers:barrage native double haste halves cooldown actual=4.0 expected=4.0
+PASS archers:barrage native double haste cast actual=1.0 expected=1.0
+PASS archers:spirit_wolf haste flag actual=1.0 expected=1.0
+PASS archers:spirit_wolf native double haste halves cooldown actual=17.5 expected=17.5
+PASS archers:spirit_wolf native double haste cast actual=0.0 expected=0.0
+PASS archers:rain_of_arrows haste flag actual=1.0 expected=1.0
+PASS archers:rain_of_arrows native double haste halves cooldown actual=10.0 expected=10.0
+PASS archers:rain_of_arrows native double haste cast actual=5.0 expected=5.0
+PASS archers:magic_arrow haste flag actual=1.0 expected=1.0
+PASS archers:magic_arrow native double haste halves cooldown actual=7.0 expected=7.0
+PASS archers:magic_arrow native double haste cast actual=10.0 expected=10.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 native double haste halves cooldown actual=4.0 expected=4.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:archer_tier_2_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_passive_1 native double haste halves cooldown actual=0.5 expected=0.5
+PASS skill_tree_rpgs:archer_tier_2_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_passive_2 native double haste halves cooldown actual=5.0 expected=5.0
+PASS skill_tree_rpgs:archer_tier_3_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_3_passive_1 native double haste halves cooldown actual=4.0 expected=4.0
+PASS skill_tree_rpgs:archer_tier_3_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_3_passive_2 native double haste halves cooldown actual=20.0 expected=20.0
+PASS skill_tree_rpgs:weapon_bow_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_bow_passive_1 native double haste halves cooldown actual=1.5 expected=1.5
+PASS skill_tree_rpgs:weapon_bow_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_bow_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_1 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_1 native double haste halves cooldown actual=0.0 expected=0.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_2 haste flag actual=1.0 expected=1.0
+PASS skill_tree_rpgs:weapon_crossbow_passive_2 native double haste halves cooldown actual=0.0 expected=0.0
+PASS Improved Barrage effective cooldown actual=7.0 expected=7.0
+PASS Momentum cooldown actual=1.0 expected=1.0
+PASS Momentum two stacks per roll capped five 1 actual=2.0 expected=2.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Momentum two stacks per roll capped five 2 actual=4.0 expected=4.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Momentum two stacks per roll capped five 3 actual=5.0 expected=5.0
+PASS Momentum retains four-second Rhythm actual=80.0 expected=80.0
+PASS Tactical guaranteed roll trigger actual=1.0 expected=1.0
+PASS Tactical cooldown actual=10.0 expected=10.0
+PASS Rain cooldown actual=20.0 expected=20.0
+PASS Rain damage actual=0.4000000059604645 expected=0.4
+PASS Rain splash actual=2.5 expected=2.5
+PASS Rain branch 0 total arrows actual=30.0 expected=30.0
+PASS Rain branch 0 spacing ticks actual=5.0 expected=5.0
+PASS Rain branch 0 scatter actual=1.5 expected=1.5
+PASS Rain branch 0 splash unchanged actual=2.5 expected=2.5
+PASS Rain branch 1 total arrows actual=30.0 expected=30.0
+PASS Rain branch 1 spacing ticks actual=2.0 expected=2.0
+PASS Rain branch 1 scatter actual=2.0 expected=2.0
+PASS Rain branch 1 splash unchanged actual=2.5 expected=2.5
+PASS Rain branch 2 total arrows actual=40.0 expected=40.0
+PASS Rain branch 2 spacing ticks actual=5.0 expected=5.0
+PASS Rain branch 2 scatter actual=1.5 expected=1.5
+PASS Rain branch 2 splash unchanged actual=2.5 expected=2.5
+PASS Magic Arrow cooldown actual=14.0 expected=14.0
+PASS Magic Arrow base range actual=32.0 expected=32.0
+PASS Magic Arrow full range actual=128.0 expected=128.0
+PASS Magic Arrow coefficient actual=2.5 expected=2.5
+PASS Magic Arrow full-charge coefficient improved=false actual=2.5 expected=2.5
+PASS Magic Arrow half charge improved=false actual=1.25 expected=1.25
+PASS Magic Arrow full-charge coefficient improved=true actual=2.6999999955296516 expected=2.7
+PASS Magic Arrow half charge improved=true actual=1.3499999977648258 expected=1.35
+PASS Native homing turn full=false actual=10.000000000000012 expected=10.0
+PASS Homing preserves velocity actual=1.5000000000000002 expected=1.5
+PASS Native homing turn full=true actual=90.0 expected=90.0
+PASS Homing preserves velocity actual=1.5 expected=1.5
+PASS Shared arrow homing not mutated actual=10.0 expected=10.0
+PASS Supercharge chance actual=1.0 expected=1.0
+PASS Supercharge retained arrow damage actual=1.25 expected=1.25
+PASS Supercharge cooldown actual=8.0 expected=8.0
+PASS Deflection cooldown actual=40.0 expected=40.0
+PASS Deflection three charges actual=3.0 expected=3.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=0.0 improved=false actual=20.0 expected=20.0
+PASS Wolf armor actual=10.0 expected=10.0
+PASS Wolf attack actual=3.0 expected=3.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=5.0 expected=5.0
+PASS Automatic pet HP actual=24.0 expected=24.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=0.1 expected=0.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=6.0 expected=6.0
+PASS Repeated pet updates do not stack actual=6.0 expected=6.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=0.0 improved=true actual=20.0 expected=20.0
+PASS Wolf armor actual=10.0 expected=10.0
+PASS Wolf attack actual=3.0 expected=3.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=5.0 expected=5.0
+PASS Automatic pet HP actual=24.0 expected=24.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=0.1 expected=0.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=6.0 expected=6.0
+PASS Repeated pet updates do not stack actual=6.0 expected=6.0
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=20.0 improved=false actual=30.0 expected=30.0
+PASS Wolf armor actual=11.0 expected=11.0
+PASS Wolf attack actual=7.0 expected=7.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=9.0 expected=9.0
+PASS Automatic pet HP actual=34.0 expected=34.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=2.1 expected=2.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=10.799999999999999 expected=10.799999999999999
+PASS Repeated pet updates do not stack actual=10.799999999999999 expected=10.799999999999999
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=20.0 improved=true actual=34.0 expected=34.0
+PASS Wolf armor actual=11.0 expected=11.0
+PASS Wolf attack actual=7.0 expected=7.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=9.0 expected=9.0
+PASS Automatic pet HP actual=38.0 expected=38.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=2.1 expected=2.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=10.799999999999999 expected=10.799999999999999
+PASS Repeated pet updates do not stack actual=10.799999999999999 expected=10.799999999999999
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=40.0 improved=false actual=40.0 expected=40.0
+PASS Wolf armor actual=12.0 expected=12.0
+PASS Wolf attack actual=11.0 expected=11.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=13.0 expected=13.0
+PASS Automatic pet HP actual=44.0 expected=44.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=4.1 expected=4.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=15.6 expected=15.6
+PASS Repeated pet updates do not stack actual=15.6 expected=15.6
+PASS Spirit Wolf resolves actual owner actual=1.0 expected=1.0
+PASS Spirit Wolf native owner-scaled HP R=40.0 improved=true actual=48.0 expected=48.0
+PASS Wolf armor actual=12.0 expected=12.0
+PASS Wolf attack actual=11.0 expected=11.0
+PASS Wolf resistance actual=0.2 expected=0.2
+PASS Automatic Adventurer +2 flat pet attack actual=13.0 expected=13.0
+PASS Automatic pet HP actual=52.0 expected=52.0
+PASS Automatic pet speed actual=0.3605 expected=0.3605
+PASS Automatic pet knockback actual=4.1 expected=4.1
+PASS Automatic pet knockback resistance actual=0.30000000000000004 expected=0.3
+PASS Automatic pet damage reduction actual=19.0 expected=19.0
+PASS Pet flat damage then Pack Leader multiplier actual=15.6 expected=15.6
+PASS Repeated pet updates do not stack actual=15.6 expected=15.6
+Rogue PASS Shock cooldown actual=12.0 expected=12.0
+Rogue PASS Mob stun HP=100.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=130.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Mob stun HP=131.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=1000.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Dragon bypass improved=false actual=20.0 expected=20.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=23.9 improved=false actual=60.0 expected=60.0
+Rogue PASS Player current HP=24.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Player current HP=30.0 improved=false actual=20.0 expected=20.0
+Rogue PASS Mob stun HP=100.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=130.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Mob stun HP=131.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Mob stun HP=1000.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Dragon bypass improved=true actual=40.0 expected=40.0
+Rogue PASS Shocked boss movement held actual=0.0 expected=0.0
+Rogue PASS Player current HP=20.0 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=23.9 improved=true actual=80.0 expected=80.0
+Rogue PASS Player current HP=24.0 improved=true actual=40.0 expected=40.0
+Rogue PASS Player current HP=30.0 improved=true actual=40.0 expected=40.0
+Explosive fixture raw nearby=[entity.minecraft.villager@(5.0, 80.0, 0.0)] native lookup=1 block=Block{minecraft:air}
+Rogue PASS Explosive Powder direct damage actual=40.0 expected=40.0
+Rogue PASS Explosive Powder no distance falloff actual=40.0 expected=40.0
+Rogue PASS Explosive has no extra stun second actual=40.0 expected=40.0
+Rogue PASS Slice cooldown actual=12.0 expected=12.0
+Rogue PASS Slice native charges branch=0 actual=10.0 expected=10.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Owned pet hits preserve charges actual=10.0 expected=10.0
+Rogue PASS Slice actual bonus branch=0 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=0 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=1 actual=12.0 expected=12.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Owned pet hits preserve charges actual=12.0 expected=12.0
+Rogue PASS Slice actual bonus branch=1 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=1 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Slice native charges branch=2 actual=15.0 expected=15.0
+Rogue PASS Slice no attack damage stacking actual=40.0 expected=40.0
+Rogue PASS Self hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Owned pet hits preserve charges actual=15.0 expected=15.0
+Rogue PASS Slice actual bonus branch=2 hit=1 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 1 actual=1.0 expected=1.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.05000000074505806 expected=0.05
+Rogue PASS Fleet stacks 1 actual=1.0 expected=1.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=2 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 2 actual=2.0 expected=2.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.10000000149011612 expected=0.1
+Rogue PASS Fleet stacks 2 actual=2.0 expected=2.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=3 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 3 actual=3.0 expected=3.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.15000000223517418 expected=0.15000000000000002
+Rogue PASS Fleet stacks 3 actual=3.0 expected=3.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=4 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 4 actual=4.0 expected=4.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.20000000298023224 expected=0.2
+Rogue PASS Fleet stacks 4 actual=4.0 expected=4.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=5 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 5 actual=5.0 expected=5.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.2500000037252903 expected=0.25
+Rogue PASS Fleet stacks 5 actual=5.0 expected=5.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=6 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 6 actual=6.0 expected=6.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.30000000447034836 expected=0.30000000000000004
+Rogue PASS Fleet stacks 6 actual=6.0 expected=6.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=7 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 7 actual=7.0 expected=7.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.3500000052154064 expected=0.35000000000000003
+Rogue PASS Fleet stacks 7 actual=7.0 expected=7.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=8 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 8 actual=8.0 expected=8.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.4000000059604645 expected=0.4
+Rogue PASS Fleet stacks 8 actual=8.0 expected=8.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=9 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 9 actual=9.0 expected=9.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.45000000670552254 expected=0.45
+Rogue PASS Fleet stacks 9 actual=9.0 expected=9.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=10 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 10 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 10 actual=10.0 expected=10.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=11 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 11 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 11 actual=11.0 expected=11.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=12 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 12 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 12 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=13 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 13 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 13 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=14 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 14 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 14 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice actual bonus branch=2 hit=15 actual=6.0 expected=6.0
+Rogue PASS Evasion stacks 15 actual=10.0 expected=10.0
+Rogue PASS Evasion four-second refresh actual=80.0 expected=80.0
+Rogue PASS Native evasion chance actual=0.5000000074505806 expected=0.5
+Rogue PASS Fleet stacks 15 actual=12.0 expected=12.0
+Rogue PASS Fleet refresh actual=80.0 expected=80.0
+Rogue PASS Pull toward caster actual=-0.2 expected=-0.2
+Rogue PASS Slice exhausted actual=0.0 expected=0.0
+Rogue PASS No bonus beyond charge cap actual=0.0 expected=0.0
+Rogue PASS Fracture cooldown actual=1.0 expected=1.0
+Rogue PASS Flat armor stack 1 actual=24.0 expected=24.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 2 actual=18.0 expected=18.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 3 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Flat armor stack 4 actual=12.0 expected=12.0
+Rogue PASS Fracture has no damage actual=1000.0 expected=1000.0
+Rogue PASS Fracture refresh actual=120.0 expected=120.0
+Rogue PASS Dispel restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Expiry restores scaled armor actual=30.0 expected=30.0
+Rogue PASS Coated cooldown actual=1.0 expected=1.0
+Rogue PASS Coated chance actual=0.25 expected=0.25
+PASS archers:entangling_roots cost.cooldown.duration actual=12.0 expected=12.0
+PASS archers:entangling_roots deliver.clouds.0.volume.radius actual=6.0 expected=6.0
+PASS archers:entangling_roots deliver.clouds.0.time_to_live_seconds actual=6.0 expected=6.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_root modifiers.0.cooldown_duration_deduct actual=2.0 expected=2.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_1 modifiers.0.impacts.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_2 modifiers.0.impacts.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_2_modifier_2 modifiers.0.impacts.0.action.status_effect.duration actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_2_spell_1_modifier_2 modifiers.0.replacing_area_impact.radius actual=5.0 expected=5.0
+PASS Charged Shot no falloff
+PASS skill_tree_rpgs:archer_tier_1_passive_1 passive.triggers.0.chance actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 impacts.0.action.status_effect.duration actual=1.0 expected=1.0
+PASS skill_tree_rpgs:archer_tier_1_passive_1 cost.cooldown.duration actual=8.0 expected=8.0
+PASS skill_tree_rpgs:archer_tier_1_passive_2 impacts.0.action.status_effect.duration actual=4.0 expected=4.0
+PASS roots -60% movement actual=0.09999999403953552 expected=0.1
+PASS roots -60% jump actual=0.16799998474121125 expected=0.16799999475479127
+PASS Hunter's Mark native incoming damage at 1 stacks actual=10.700000762939453 expected=10.700000000000001
+PASS Hunter's Mark native incoming damage at 2 stacks actual=11.399999618530273 expected=11.400000000000002
+PASS Hunter's Mark native incoming damage at 3 stacks actual=12.100000381469727 expected=12.1
+PASS Hunter's Mark native incoming damage at 4 stacks actual=12.799999237060547 expected=12.8
+PASS unmarked arrow hit triggers Rhythm 1
+PASS Rhythm stacks capped five 1 actual=1.0 expected=1.0
+PASS Rhythm refresh four seconds 1 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 1 actual=102.99999993294477 expected=103.0
+PASS unmarked arrow hit triggers Rhythm 2
+PASS Rhythm stacks capped five 2 actual=2.0 expected=2.0
+PASS Rhythm refresh four seconds 2 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 2 actual=105.99999986588955 expected=106.0
+PASS unmarked arrow hit triggers Rhythm 3
+PASS Rhythm stacks capped five 3 actual=3.0 expected=3.0
+PASS Rhythm refresh four seconds 3 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 3 actual=108.99999979883432 expected=109.00000000000001
+PASS unmarked arrow hit triggers Rhythm 4
+PASS Rhythm stacks capped five 4 actual=4.0 expected=4.0
+PASS Rhythm refresh four seconds 4 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 4 actual=111.9999997317791 expected=112.00000000000001
+PASS unmarked arrow hit triggers Rhythm 5
+PASS Rhythm stacks capped five 5 actual=5.0 expected=5.0
+PASS Rhythm refresh four seconds 5 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 5 actual=114.99999966472387 expected=114.99999999999999
+PASS unmarked arrow hit triggers Rhythm 6
+PASS Rhythm stacks capped five 6 actual=5.0 expected=5.0
+PASS Rhythm refresh four seconds 6 actual=80.0 expected=80.0
+PASS Rhythm three percent per stack 6 actual=114.99999966472387 expected=114.99999999999999
+PASS actual guaranteed Concussive Shot trigger
+PASS actual stun duration actual=20.0 expected=20.0
+PASS Concussive cooldown prevents immediate stun
+PASS Spirit Wolf native scaled HP R=0.0 improved=false actual=20.0 expected=20.0
+PASS Spirit Wolf native scaled armor R=0.0 actual=10.0 expected=10.0
+PASS Spirit Wolf native scaled melee R=0.0 actual=3.0 expected=3.0
+AUDIT Spirit Wolf R=0.0 improved=false HP=20.0 armor=10.0 attack=3.0 attackKnockback=0.0 knockbackResistance=0.2 detection=32.0
+PASS Spirit Wolf native scaled HP R=0.0 improved=true actual=20.0 expected=20.0
+PASS Spirit Wolf native scaled armor R=0.0 actual=10.0 expected=10.0
+PASS Spirit Wolf native scaled melee R=0.0 actual=3.0 expected=3.0
+AUDIT Spirit Wolf R=0.0 improved=true HP=20.0 armor=10.0 attack=3.0 attackKnockback=0.0 knockbackResistance=0.2 detection=32.0
+PASS Spirit Wolf native scaled HP R=20.0 improved=false actual=30.0 expected=30.0
+PASS Spirit Wolf native scaled armor R=20.0 actual=11.0 expected=11.0
+PASS Spirit Wolf native scaled melee R=20.0 actual=7.0 expected=7.0
+AUDIT Spirit Wolf R=20.0 improved=false HP=30.0 armor=11.0 attack=7.0 attackKnockback=2.0 knockbackResistance=0.2 detection=32.0
+PASS Spirit Wolf native scaled HP R=20.0 improved=true actual=34.0 expected=34.0
+PASS Spirit Wolf native scaled armor R=20.0 actual=11.0 expected=11.0
+PASS Spirit Wolf native scaled melee R=20.0 actual=7.0 expected=7.0
+AUDIT Spirit Wolf R=20.0 improved=true HP=34.0 armor=11.0 attack=7.0 attackKnockback=2.0 knockbackResistance=0.2 detection=32.0
+PASS Spirit Wolf native scaled HP R=40.0 improved=false actual=40.0 expected=40.0
+PASS Spirit Wolf native scaled armor R=40.0 actual=12.0 expected=12.0
+PASS Spirit Wolf native scaled melee R=40.0 actual=11.0 expected=11.0
+AUDIT Spirit Wolf R=40.0 improved=false HP=40.0 armor=12.0 attack=11.0 attackKnockback=4.0 knockbackResistance=0.2 detection=32.0
+PASS Spirit Wolf native scaled HP R=40.0 improved=true actual=48.0 expected=48.0
+PASS Spirit Wolf native scaled armor R=40.0 actual=12.0 expected=12.0
+PASS Spirit Wolf native scaled melee R=40.0 actual=11.0 expected=11.0
+AUDIT Spirit Wolf R=40.0 improved=true HP=48.0 armor=12.0 attack=11.0 attackKnockback=4.0 knockbackResistance=0.2 detection=32.0
+Party: real Better Party API fixture: PASS
+Party: native player fixture damage before=1000.0 after=999.0 accepted=true
+Party: player fixture accepts native attributed PvP damage: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Judgement 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: Holy Light 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: Judgement 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: Holy Light 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Judgement 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=false: PASS
+Party: Holy Light 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Judgement 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: Holy Light 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: Judgement 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: Holy Light 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Judgement 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=false: PASS
+Party: Holy Light 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=false relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Judgement 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: Holy Light 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: Judgement 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: Holy Light 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Judgement 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=true: PASS
+Party: Holy Light 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe DIRECT FF=true: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Judgement 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: Holy Light 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: Judgement 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: Holy Light 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true relation=ALLY before=500.0 after=516.0
+Party: loaded Holy Light mixed pipeline heals ally 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=482.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=484.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Judgement 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=true: PASS
+Party: Holy Light 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=true relation=HOSTILE before=500.0 after=468.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy 3560a01f-32e9-4fc0-b6ca-d33aaca0fafe AREA FF=true: PASS
+Party: actual Ender Dragon move fixture moves before freeze: PASS
+Party: actual Ender Dragon receives Frozen: PASS
+Party: actual Frozen Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves again after Frozen removed: PASS
+Party: actual Ender Dragon receives Stun: PASS
+Party: actual stunned Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves after Stun removed: PASS
+Party: actual Ender Dragon receives Nature's Grasp: PASS
+Party: actual Nature's Grasp clamps boss movement: PASS
+Party: actual boss moves after Nature's Grasp removed: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c DIRECT FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 978f935f-f875-41a7-9c45-1783156013ac AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 5600c639-af09-415f-b8e7-026c5db3134c AREA FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: actual area damage entity.minecraft.villager: PASS
+Party: actual burn eligibility entity.minecraft.villager: PASS
+Party: actual area damage entity.minecraft.iron_golem: PASS
+Party: actual burn eligibility entity.minecraft.iron_golem: PASS
+Party: actual area damage entity.minecraft.cow: PASS
+Party: actual burn eligibility entity.minecraft.cow: PASS
+Party: actual area damage entity.minecraft.creeper: PASS
+Party: actual burn eligibility entity.minecraft.creeper: PASS
+Party: actual area damage entity.minecraft.wolf: PASS
+Party: actual burn eligibility entity.minecraft.wolf: PASS
+Party: owned spell caster protects party player: PASS
+Party: owned spell caster protects sibling pet: PASS
+Party: actual party pet healing: PASS
+Party: self damage apply_to_caster blocked: PASS
+Party: self immunity retained: PASS
+Party: fixture rejects ordinary effect minecraft:slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:slowness: PASS
+Party: fixture rejects ordinary effect wizards:frozen: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frozen: PASS
+Party: fixture rejects ordinary effect wizards:frost_slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frost_slowness: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:blizzard_slow: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:blizzard_slow: PASS
+Party: fixture rejects ordinary effect spell_engine:stun: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates spell_engine:stun: PASS
+Party: fixture rejects ordinary effect archers:entangling_roots: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates archers:entangling_roots: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:natures_grasp: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:natures_grasp: PASS
+Party: fixture rejects ordinary effect minecraft:poison: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:poison: PASS

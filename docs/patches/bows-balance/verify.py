@@ -38,7 +38,7 @@ with ZipFile(folder/'crossarms-1.4.jar') as a,ZipFile(folder/'expanded-crossbow-
  assert 'unless predicate crossarms:frenzy/infinity_$(slot)' in a.read('data/crossarms/function/enchantment/frenzy/reload.mcfunction').decode()
  assert 'minecraft:magic' in a.read('data/crossarms/function/enchantment/frenzy/heat/damage.mcfunction').decode()
  tag=a.read('data/crossarms/function/enchantment/frenzy/tag.mcfunction').decode()
- for heat,multiplier in [('..300','0.0000003'),('301..450','0.0000004'),('451..610','0.0000005'),('611..','0.0000006')]:
+ for heat,multiplier in [('..300','0.0000002'),('301..450','0.0000003'),('451..610','0.0000004'),('611..','0.0000005')]:
   assert f'matches {heat} store result entity @s damage double {multiplier} run data get entity @s damage 1000000' in tag
  assert 'local/crossarms/mixin/FrenzyAccuracyMixin.class' in a.namelist()
  assert set(json.loads(a.read('crossarms-pack.mixins.json'))['mixins'])=={'FrenzyAccuracyMixin','FrenzyReloadMixin','FrenzyRecoilMixin'}

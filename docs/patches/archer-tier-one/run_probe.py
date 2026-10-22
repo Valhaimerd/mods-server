@@ -10,14 +10,14 @@ if not (SERVER/'libraries').exists():
 mods=SERVER/'mods';mods.mkdir(exist_ok=True)
 for p in (ROOT/'tmp/magic-third-tier/server/mods').glob('*.jar'):
  if p.name!='overhaul-probe.jar':shutil.copy2(ROOT/'mods'/p.name,mods/p.name)
-for p in (WORK/('before' if '--baseline' in sys.argv else 'built')).glob('*.jar'):shutil.copy2(p,mods/p.name)
+for p in (WORK/('revision-before' if '--baseline' in sys.argv else 'built')).glob('*.jar'):shutil.copy2(p,mods/p.name)
 if not (SERVER/'server.properties').exists():
  text=(ROOT/'tmp/magic-third-tier/server/server.properties').read_text().replace('server-port=25594','server-port=0').replace('level-name=simple-descriptions-20261021','level-name=ArcherTierOne')
  (SERVER/'server.properties').write_text(text);(SERVER/'eula.txt').write_text('eula=true\n')
 base=(ROOT/'tmp/magic-third-tier/compile.args').read_text(encoding='utf-8')
 cp=';'.join(p.as_posix() for p in mods.glob('*.jar'))+';'+base.split('-cp\n')[1].split('\n-d')[0].strip().strip('"')
 classes=WORK/'test-classes';classes.mkdir(exist_ok=True)
-args=['--release','25','-cp',cp,'-d',str(classes),str(HERE/'ArcherProbe.java'),str(HERE/'TierTwoProbe.java'),str(ROOT/'docs/patches/magic-third-tier/PartyProbe.java')]
+args=['--release','25','-cp',cp,'-d',str(classes),str(HERE/'ArcherProbe.java'),str(HERE/'TierTwoProbe.java'),str(HERE/'ArcherRevisionProbe.java'),str(ROOT/'docs/patches/rogue-tier-one/RogueProbe.java'),str(ROOT/'docs/patches/magic-third-tier/PartyProbe.java')]
 (WORK/'test.args').write_text('\n'.join('"'+a.replace('\\','/')+'"' for a in args))
 subprocess.run([str(JAVA/'javac.exe'),'@'+str(WORK/'test.args')],check=True)
 with ZipFile(mods/'archer-probe.jar','w',ZIP_DEFLATED) as z:

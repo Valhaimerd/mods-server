@@ -17,7 +17,7 @@ Four active filenames are retained; no mod was added or removed.
 | Concussive Shot | Guaranteed one-second stun; eight-second base cooldown |
 | Rhythm | Any enemy arrow hit; no Mark requirement; 3% base ranged attack speed per stack, five-stack cap, four-second duration refreshed |
 | Momentum | Applies the same revised four-second Rhythm duration |
-| Frenzy | 30% at zero/two bars, 40% at third, 50% at fourth, 60% at fifth |
+| Frenzy | 20% at zero/two bars, 30% at third, 40% at fourth, 50% at fifth |
 
 The base Roots effect slows; Nature's Grasp provides complete immobilization.
 Pulse interval stays 15 ticks (0.75 seconds at 20 TPS). Neither Roots nor the
@@ -64,7 +64,7 @@ python docs/patches/bows-balance/verify.py mods
 python docs/patches/crossarms-firing/export-archer-reference.py
 ```
 
-Preserve the exact three inputs in ignored `tmp/archer-tier-one/before/`.
+The latest build uses the three Rogue-preserving inputs in ignored `tmp/archer-tier-one/revision-before/`, pinned by revision-inputs.json. The original earlier inputs remain in `tmp/archer-tier-one/before/`.
 [artifacts.json](artifacts.json) records original/final fingerprints and changed
 entries for all four final archives. CrossArms rebuilds from its existing pinned
 upstream input and canonical overrides. The Archer build adds focused helper
@@ -194,3 +194,68 @@ visual/balance playthrough. Prior active JARs are backed up in ignored
 Tier-III handbook proof: all 74 pages rendered; only page 19 differs from
 the reviewed tier-II edition. The changed page was visually checked without
 clipping. All 461 internal links remain and root/output copies match.
+
+## Latest Archer rebalance (supersedes earlier tier tables)
+
+Power Shot is 12-second cooldown, eight-second ready duration, six-second
+refreshed Mark. Improved extends only readiness to ten seconds, through two
+narrow native stash-duration reads; its old Mark-duration modifier is zero.
+Barrage arrows retain 60% damage; Extensive adds one for four total. Wolves
+use HP20+0.4R (Improved20+0.5R), attack3+0.15R, zero innate knockback
+resistance. Existing pet bonuses still apply normally.
+
+Rain has 25-second cooldown, 32 arrows every five ticks, ten-block scatter
+and 2.5-block splash. Torrential uses two-tick spacing and the same area;
+Endless adds 44 arrows (76 total), radius11, five-tick spacing. Native scatter
+was a fixed-radius ring; the Archer-only hook scales its rotated offset by
+sqrt(U), making the area uniform and including the center. The first arrow
+also scatters. Initial target position is snapshotted and the target reference
+removed before native extra-shot closures, preventing a moving barrage.
+
+Magic Arrows retains its registry ID, but charges for one second with linear charge
+scaling and fires four projectiles five ticks apart on a 25-second cooldown.
+Each deals 100% R, phases through blocks, searches 32 blocks around itself for
+the nearest eligible enemy every tick, and expires after 200 ticks rather than
+traveled range. Five-degree steering can gradually turn in any direction;
+Conjured permits 180-degree steering. Native entity impacts, criticals, piercing,
+hit history and party guards remain authoritative. Improved gives 110% R at full charge;
+Magic Punch gives 125% with Improved and adds its old 150% base knockback.
+The owner confirmed 32-block searching, Improved at 110% full-charge damage,
+and Magic Punch at 125% full-charge damage. All Archer descriptions use concrete
+percentages and timings, without unresolved impact placeholders.
+
+This build layers over the current Rogue JARs; its shared delivery hook keeps
+the prior Rogue and magic code intact. Only declared Archer resources and
+projectile/stash hooks change. Do not rebuild the old Rogue layer over this
+newer Archer layer without rebasing its inputs. Personal worlds untouched.
+
+Final latest-revision checks: 2,316 isolated Archer/Rogue/party measurements
+passed. Native launch scheduling verified 32/32/76 Rain arrows, 5/2/5-tick
+spacing, fixed aim after target movement, random interior positions and all
+four Magic Arrows with five-tick spacing. Actual projectile ticks dealt 40/48
+damage at R = 40 through a stone wall, reacquired enemies behind the projectile,
+and expired at 200 ticks. The fixture explicitly advances the age value, as
+normal world entity ticking does; it is not a ten-second visual recording.
+A 1,000-sample disk audit checked bounds, center occupancy and radial moment.
+CrossArms independently passed 1,387 native firing checks. Earlier Rogue
+runtime checks run in the same final Archer fixture, preserving that layer.
+
+Latest handbook: all 74 pages rendered; only pages 19 and 23 changed from
+the previous reviewed edition. Both were visually inspected without clipping.
+All 461 internal links remain, with matching root/output PDF bytes.
+
+Magic Arrows clarification: full charge takes one base second, with linear
+partial-charge output. Base/Improved/Magic Punch deal 100%/110%/125% R per
+arrow at full charge. The two native power modifiers add 10 and 15 percentage
+points respectively; knockback is preserved. Automatic acquisition now searches
+32 blocks around each projectile. The four-shot burst, ten-second lifetime,
+wall passage and party/pet safety remain.
+
+Clarification verification: 2,325 isolated Archer/Rogue/party measurements
+passed, including base/Improved/Punch full- and half-charge coefficients,
+125% native impact through a wall, and acquisition between 16 and 32 blocks.
+Matching active/fixed JARs retain Java 25 bytecode and the current filenames.
+
+Clarification handbook proof: all74 pages rendered, only page19 changed and
+visually checked without clipping. All461 internal links and matching PDF
+copies remain.

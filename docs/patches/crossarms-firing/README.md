@@ -8,12 +8,12 @@ Capacity is removed entirely: its enchantment definition, functions, predicates,
 
 | Heat display | Heat score | Shot damage retained | Normal spread | Magic self-damage per 20 ticks |
 | --- | --- | --- | --- | --- |
-| Zero bars | 0-10 / no score | 30% | 115% | None |
-| First bar | 11-150 | 30% | 125% | None |
-| Second bar | 151-300 | 30% | 140% | None |
-| Third / red bar | 301-450 | 40% | 160% | 1 HP |
-| Fourth / dark red bar | 451-610 | 50% | 185% | 2 HP |
-| Fifth / black bar | 611+ | 60% | 220% | 4 HP |
+| Zero bars | 0-10 / no score | 20% | 115% | None |
+| First bar | 11-150 | 20% | 125% | None |
+| Second bar | 151-300 | 20% | 140% | None |
+| Third / red bar | 301-450 | 30% | 160% | 1 HP |
+| Fourth / dark red bar | 451-610 | 40% | 185% | 2 HP |
+| Fifth / black bar | 611+ | 50% | 220% | 4 HP |
 
 The timer begins on entering damaging heat and resets on cooling below it; sustained heat deals damage every 20 ticks (one second at 20 TPS). The amount uses the current bar at the damage tick. Damage uses `minecraft:magic`, so Fire Resistance does not cancel it. Heat cools by two units per world tick and remains attached to the player when switching weapons; death clears heat and its timer.
 
@@ -96,3 +96,5 @@ The real integrated client passed main/off-hand early-swing checks and eight
 actual server shots with eight observed client recoil restarts. Localized
 Archer descriptions were also checked for valid percentage formatting.
 See [the Archer revision](../archer-tier-one/README.md) for combined artifacts.
+
+Latest Archer balance follow-up: Frenzy now retains 20/30/40/50% damage at cold/third/fourth/fifth bars. The native CrossArms fixture passed 1,387 checks with these values, including first/tapped shots, both hands, Might exclusion, Infinity and burst/crank behavior. Other Frenzy mechanics are unchanged.

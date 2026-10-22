@@ -31,8 +31,9 @@ public final class FrenzyState {
     public static void notice(LivingEntity entity) {
         if(score(entity,"frenzy_notice")>0&&entity instanceof ServerPlayer player) player.sendOverlayMessage(Component.translatableWithFallback("crossarms.pack.frenzy.empty","Empty - Reload"));
     }
-    public static void fired(LivingEntity entity) {
+    public static void fired(LivingEntity entity, net.minecraft.world.InteractionHand hand) {
         if (!(entity instanceof ServerPlayer)) return;
+        entity.swingTime=-1;entity.swing(hand,true);
         int count=score(entity,"frenzy_shots")+1;set(entity,"frenzy_shots",count);set(entity,"frenzy_idle",0);
         if(count>=26){set(entity,"frenzy_empty",1);set(entity,"frenzy_notice",60);notice(entity);}
     }

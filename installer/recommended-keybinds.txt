@@ -158,7 +158,7 @@ key_key.sophisticatedbuilding.redo.desc:key.keyboard.unknown
 key_key.sophisticatedbuilding.previous_build_mode.desc:key.keyboard.unknown
 key_key.sophisticatedbuilding.disable_build_mode_toggle.desc:key.keyboard.unknown
 key_key.sophisticatedbuilding.player_settings.desc:key.keyboard.unknown
-key_keybindings.spell_engine.tooltip_details:key.keyboard.unknown
+key_keybindings.spell_engine.tooltip_details:key.keyboard.left.control
 key_keybindings.spell_engine.bypass_spell_hotbar:key.keyboard.unknown
 key_keybindings.spell_engine.spell_hotbar_1:key.keyboard.unknown
 key_keybindings.spell_engine.spell_hotbar_2:key.keyboard.unknown

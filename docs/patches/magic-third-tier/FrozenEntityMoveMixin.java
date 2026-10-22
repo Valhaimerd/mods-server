@@ -18,6 +18,8 @@ public abstract class FrozenEntityMoveMixin {
         if ((Object)this instanceof LivingEntity living) {
             var stun = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("spell_engine:stun"));
             if (stun.isPresent() && living.hasEffect(stun.get())) return Vec3.ZERO;
+            var grasp = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("skill_tree_rpgs:natures_grasp"));
+            if (grasp.isPresent() && living.hasEffect(grasp.get())) return Vec3.ZERO;
             var frozen = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen"));
             if (frozen.isPresent() && living.hasEffect(frozen.get())) return Vec3.ZERO;
         }

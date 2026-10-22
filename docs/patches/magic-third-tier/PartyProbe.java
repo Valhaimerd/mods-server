@@ -146,6 +146,14 @@ public final class PartyProbe {
             check("actual stunned Ender Dragon move clamped",dragon.position().distanceToSqr(stunnedPosition)<.000001);
             dragon.removeEffect(stun);dragon.move(MoverType.SELF,new net.minecraft.world.phys.Vec3(1,0,0));
             check("actual Ender Dragon moves after Stun removed",dragon.position().distanceTo(stunnedPosition)>.5);
+            var grasp=BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("skill_tree_rpgs:natures_grasp")).orElseThrow();
+            impact(caster,dragon,frost("skill_tree_rpgs:natures_grasp"),SpellTarget.FocusMode.AREA);
+            check("actual Ender Dragon receives Nature's Grasp",dragon.hasEffect(grasp));
+            var rootedPosition=dragon.position();dragon.move(MoverType.SELF,new net.minecraft.world.phys.Vec3(2,1,3));
+            check("actual Nature's Grasp clamps boss movement",dragon.position().distanceToSqr(rootedPosition)<.000001);
+            dragon.removeEffect(grasp);dragon.move(MoverType.SELF,new net.minecraft.world.phys.Vec3(1,0,0));
+            check("actual boss moves after Nature's Grasp removed",dragon.position().distanceTo(rootedPosition)>.5);
+
             for (boolean friendlyFire : new boolean[]{false, true}) {
                 party.setFriendlyFire(friendlyFire);
                 for (var focus : SpellTarget.FocusMode.values()) {
@@ -158,6 +166,7 @@ public final class PartyProbe {
                         impact(caster, target, frost("wizards:frozen"), focus);
                         impact(caster,target,frost("spell_engine:stun"),focus);
                         check("party stun safety "+label,!target.hasEffect(stun));
+                        for(String id:List.of("archers:entangling_roots","skill_tree_rpgs:natures_grasp","minecraft:poison")){impact(caster,target,frost(id),focus);check("party Archer debuff safety "+id+" "+label,!target.hasEffect(BuiltInRegistries.MOB_EFFECT.get(Identifier.parse(id)).orElseThrow()));}
                         check("final damage/fire/freeze safety " + label, target.getHealth() == hp && target.getRemainingFireTicks() <= 0
                             && !target.hasEffect(BuiltInRegistries.MOB_EFFECT.get(Identifier.parse("wizards:frozen")).orElseThrow()));
                     }
@@ -186,7 +195,7 @@ public final class PartyProbe {
             check("self damage apply_to_caster blocked", !PartyRules.impactAllowed(world, caster, enemy, damage, context(SpellTarget.FocusMode.AREA)));
             var immunity = action(Spell.Impact.Action.Type.IMMUNITY); immunity.action.apply_to_caster = true;
             check("self immunity retained", PartyRules.impactAllowed(world, caster, enemy, immunity, context(SpellTarget.FocusMode.AREA)));
-            for (String id : List.of("minecraft:slowness", "wizards:frozen", "wizards:frost_slowness", "skill_tree_rpgs:blizzard_slow", "spell_engine:stun")) {
+            for (String id : List.of("minecraft:slowness", "wizards:frozen", "wizards:frost_slowness", "skill_tree_rpgs:blizzard_slow", "spell_engine:stun", "archers:entangling_roots", "skill_tree_rpgs:natures_grasp", "minecraft:poison")) {
                 var effect = BuiltInRegistries.MOB_EFFECT.get(Identifier.parse(id)).orElseThrow();
                 check("fixture rejects ordinary effect " + id, !immune.canBeAffected(new MobEffectInstance(effect, 120)));
                 impact(caster, immune, frost(id), SpellTarget.FocusMode.AREA);

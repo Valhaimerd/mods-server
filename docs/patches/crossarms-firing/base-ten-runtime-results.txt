@@ -1,0 +1,7 @@
+Minecraft 26.2 / NeoForge 26.2.0.90 / Java 26
+Before: FAIL minecraft:crossbow MAIN_HAND heat=0 damage ratio actual=0.15 expected=0.1
+After: PASS 1341 current Frenzy checks
+Test: tests/FiringProbe.java; vanilla/Arsenal crossbows, both hands, ranged attribute 0/64, impact/shot ratios, heat boundaries, spread, Infinity, 26-shot exhaustion and crank, notice expiry, slowdown, 20-tick heat damage.
+Logs remain under ignored tmp/crossarms-firing/base-ten-before.log and base-ten-after.log.
+The exact player build with Might V and Critical Hit V was not reproduced.
+Handbook: 74 pages rendered and compared with reviewed baseline; only page 23 changed, visually checked without clipping; 461 internal links and matching root/output copies.

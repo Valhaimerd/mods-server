@@ -38,12 +38,14 @@ with ZipFile(folder/'crossarms-1.4.jar') as a,ZipFile(folder/'expanded-crossbow-
  assert 'unless predicate crossarms:frenzy/infinity_$(slot)' in a.read('data/crossarms/function/enchantment/frenzy/reload.mcfunction').decode()
  assert 'minecraft:magic' in a.read('data/crossarms/function/enchantment/frenzy/heat/damage.mcfunction').decode()
  tag=a.read('data/crossarms/function/enchantment/frenzy/tag.mcfunction').decode()
- for heat,multiplier in [('..300','0.00000015'),('301..450','0.0000002'),('451..610','0.0000003'),('611..','0.0000004')]:
+ for heat,multiplier in [('..300','0.0000003'),('301..450','0.0000004'),('451..610','0.0000005'),('611..','0.0000006')]:
   assert f'matches {heat} store result entity @s damage double {multiplier} run data get entity @s damage 1000000' in tag
  assert 'local/crossarms/mixin/FrenzyAccuracyMixin.class' in a.namelist()
- assert set(json.loads(a.read('crossarms-pack.mixins.json'))['mixins'])=={'FrenzyAccuracyMixin','FrenzyReloadMixin'}
+ assert set(json.loads(a.read('crossarms-pack.mixins.json'))['mixins'])=={'FrenzyAccuracyMixin','FrenzyReloadMixin','FrenzyRecoilMixin'}
  assert 'local/crossarms/runtime/FrenzyState.class' in a.namelist()
+ assert json.loads(a.read('data/crossarms/tags/enchantment/frenzy_conflicts.json'))['values'][-1]=={'id':'nova_structures:power','required':False}
  frenzy=json.loads(a.read('data/crossarms/enchantment/frenzy.json'))
+ assert frenzy['exclusive_set']=='#crossarms:frenzy_conflicts'
  assert 'minecraft:ammo_use' not in frenzy['effects'] and 'minecraft:crossbow_charge_time' not in frenzy['effects']
  assert 'frenzy_empty' in a.read('data/crossarms/function/enchantment/frenzy/tick.mcfunction').decode()
  assert 'frenzy_notice' in a.read('data/crossarms/function/load.mcfunction').decode()

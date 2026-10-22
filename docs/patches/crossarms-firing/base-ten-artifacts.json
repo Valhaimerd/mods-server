@@ -1,0 +1,7 @@
+{
+  "before_sha256": "b259303b03edbcfd13a017fcb58e24cf1b6bc9ae9f38709919a05c054c4f2eac",
+  "sha256": "dac02917504330503594f8c3b2ed059504509d495d67c414b65b0f62bf18ca64",
+  "changed": [
+    "data/crossarms/function/enchantment/frenzy/tag.mcfunction"
+  ]
+}

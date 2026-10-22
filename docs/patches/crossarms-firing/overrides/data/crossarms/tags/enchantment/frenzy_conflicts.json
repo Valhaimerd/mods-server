@@ -1,0 +1,14 @@
+{
+  "values": [
+    "crossarms:acceleration",
+    "minecraft:multishot",
+    "crossarms:deflector",
+    "crossarms:bombard",
+    "minecraft:quick_charge",
+    "minecraft:piercing",
+    {
+      "id": "nova_structures:power",
+      "required": false
+    }
+  ]
+}

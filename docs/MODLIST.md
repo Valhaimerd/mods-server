@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-21<br>
+Last audited: 2026-10-22<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 309 synchronized JARs plus 24 client-store JARs
 
@@ -42,10 +42,10 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>24</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
     <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>26</td></tr>
     <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>28</td></tr>
     <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>29</td></tr>
@@ -516,7 +516,7 @@ The effect map is generated per world, so a recipe from another save may lead so
 3. Open the equipped pack with `V` and configure its upgrades before an expedition.
 4. Dye separate packs for mining, building, or travel. A placed pack can also interact with hoppers and inventory automation.
 
-Automation follows each upgrade's filter, so inspect settings before carrying valuable items. The pack's tier controls its available capacity and upgrade choices. After a death, recover the backpack from the grave; its equipped position does not exempt it.
+Automation follows each upgrade's filter, so inspect settings before carrying valuable items. Feeding and Alchemy pause for downed players, preserving food and drinks until rescue. The pack's tier controls its available capacity and upgrade choices. After a death, recover the backpack from the grave; its equipped position does not exempt it.
 
 <p class="feature-tip"><strong>Quick tip</strong> Configure Pickup and filter upgrades before your next loot run.</p>
 
@@ -693,7 +693,7 @@ Utilities provides stamina, fortune, experience and mobility. Each anvil node re
 - **Core mechanic:** Connects class books and compatible weapons to the ability bar, targeting, costs, and cooldowns.
 - **Player guidance:** Check the ability bar for a spell’s target, cost, and cooldown.
 
-Class damage can hit non-party players and passive mobs; party players and owned pets are protected. Healing targets only self or party allies.
+Class damage hits non-party players and passive mobs; healing targets self and party allies. Party players and owned pets are protected. Archer Roots slows movement/jumping by 60% within six blocks for six seconds: 12-second cooldown, or 10 with Improved. Nettle Sprouts guarantees poison; Nature's Grasp immobilizes for one second per pulse. Charged Shot splashes five blocks without falloff. Concussive Shot guarantees a one-second stun on an eight-second cooldown. Rhythm works on unmarked enemies: 3% ranged attack speed per stack, five-stack cap, four-second refresh. Mark adds 7% incoming damage per stack: 21% normally, 28% with its extra-stack upgrade. Debuffs affect living bosses and immune enemies. All Archer casts/cooldowns scale with haste. Barrage casts in 0.1 seconds: three accurate 70% arrows, eight-second cooldown. Spirit Wolves are two pets active for 20 seconds (30 with Enduring), with Companion bonuses and 35-second cooldown. Rain drops 30 arrows at 40% ranged damage: 20-second cooldown; Torrential fires faster, Endless adds ten. Magic Arrow reaches 128 blocks at full charge: 250% ranged damage (270% Improved), 14-second cooldown; Conjured gives full homing. Supercharge guarantees a 125%-damage ordinary arrow every eight seconds. Deflection blocks three eligible attacks every 40 seconds.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/spell-engine">Official mod page</a></p>
 
@@ -948,7 +948,7 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 - **Core mechanic:** Adds automatic fire, high-velocity shots and projectile-control options.
 - **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Frenzy heat is now a tradeoff between damage and magic self-damage.
 
-CrossArms 1.4 supplies seven enchantments in this pack. **Capacity has been removed.** Frenzy auto-feeds normal arrows. Infinity on the firing crossbow prevents consumption, still requires one normal arrow, and makes its free arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot immediately applies Slowness II (30% movement reduction) for one second, refreshed while firing. The first shot and repeated taps use the same heat multiplier. It starts at 15% shot damage through the first two bars, reaches 20% at the third/red heat bar, 30% at the fourth/dark red bar and 40% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
+CrossArms 1.4 supplies seven enchantments in this pack. **Capacity has been removed.** Might and Frenzy cannot be combined; held legacy combinations retain Might and lose Frenzy. Each Frenzy shot restarts its recoil animation. Frenzy auto-feeds normal arrows. Infinity on the firing crossbow prevents consumption, still requires one normal arrow, and makes its free arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot immediately applies Slowness II (30% movement reduction) for one second, refreshed while firing. The first shot and repeated taps use the same heat multiplier. It starts at 30% shot damage through the first two bars, reaches 40% at the third/red heat bar, 50% at the fourth/dark red bar and 60% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
 
 The 26th arrow fires, then the crossbow displays **Empty - Reload** for three seconds and stops auto-feeding. The notice disappearing does not reload it. Hold Use to complete a normal crossbow crank; an interrupted crank or waiting will not clear exhaustion. Three seconds without firing resets a partial counter only. Frenzy weapons share the player's counter across both hands, so swapping cannot skip the crank. Infinity prevents ammunition consumption but does not skip cranking.
 
@@ -1166,7 +1166,7 @@ The collection adds movement, attack, defense, and arrow effects, including extr
 - **Core mechanic:** Gives teammates a short downed window in which they can intervene.
 - **Player guidance:** Watch for a teammate’s short downed window.
 
-A downed player can still be rescued before normal death handling completes. With Better Revive X PlayerRevive installed, this is the first rescue window; bleeding out or giving up passes the player to Better Revive's grave and longer revival window.
+A downed player can still be rescued before normal death handling completes. Knockdown restores the player to their current maximum health, including gear bonuses; health granted after rescue follows the revive settings. With Better Revive X PlayerRevive installed, this is the first rescue window; bleeding out or giving up passes the player to Better Revive's grave and longer revival window.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/playerrevive">Official mod page</a></p>
 
@@ -3667,7 +3667,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Spell Hotbar Slot 7 |  |
 | Spell Hotbar Slot 8 |  |
 | Spell Hotbar Slot 9 |  |
-| Tooltip Spell Details |  |
+| Tooltip Spell Details | Left Ctrl |
 
 #### Artifacts
 

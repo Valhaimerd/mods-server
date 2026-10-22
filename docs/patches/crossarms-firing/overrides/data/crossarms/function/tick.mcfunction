@@ -1,3 +1,5 @@
+# Might wins on old/command-created combined crossbows; remove only Frenzy.
+execute as @a run function crossarms:enchantment/frenzy/conflict
 execute as @e[tag=MULTISHOT] at @s run function crossarms:enchantment/multishot/calc_damage
 execute as @e[tag=BOMBARD] at @s run particle minecraft:dust{scale:4,color:[1,0,0]} ~ ~ ~ 0 0 0 0 1 force
 execute as @e[tag=ACCELERATION] at @s run particle minecraft:electric_spark ~ ~ ~ 0 0 0 1 10

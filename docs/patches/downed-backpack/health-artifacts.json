@@ -1,0 +1,19 @@
+[
+  {
+    "jar": "PlayerRevive_NEOFORGE_v2.1.2_mc26.2.jar",
+    "before_sha256": "208da992b409d77414df048703cbdf04d655a51d3381dbe4508416604cef533e",
+    "after_sha256": "5162a51c5fa2a605c74be63636caddfded26ee4d3a1eb55c9655ccd8a8e988eb",
+    "changed_entries": [
+      "team/creative/playerrevive/server/PlayerReviveServer.class",
+      "team/creative/playerrevive/server/ReviveEventServer.class"
+    ]
+  },
+  {
+    "jar": "Better Revive - 2.2.0 - NeoForge - 26.2-MultiGraveFix-Java25.jar",
+    "before_sha256": "3e883f32cf27bb0519da5bb73ad4be88541ee2f13abdc6f94c43d2f2abd7a750",
+    "after_sha256": "ccf67e296c9a178c38e1de7fc6350834e69355dde584a4ad586de9e9db32f723",
+    "changed_entries": [
+      "de/mrstilu2k6/better_revive/util/DownedPlayerManager.class"
+    ]
+  }
+]

@@ -30,14 +30,7 @@
       }
     ]
   },
-  "exclusive_set": [
-    "crossarms:acceleration",
-    "minecraft:multishot",
-    "crossarms:deflector",
-    "crossarms:bombard",
-    "minecraft:quick_charge",
-    "minecraft:piercing"
-  ],
+  "exclusive_set": "#crossarms:frenzy_conflicts",
   "max_cost": {
     "base": 50,
     "per_level_above_first": 0

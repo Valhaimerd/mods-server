@@ -1,0 +1,12 @@
+{
+  "jar": "sophisticatedcore-26.2-1.5.0.2337.jar",
+  "before_sha256": "3479a05f86fc65064c77099ec93e67c6f8e31953b1ef506ce5f83eec556c71a6",
+  "after_sha256": "6fbdaeba9f4d0abd29d9996e1d03911249ce4857864527826fbcc267bf9ae9f1",
+  "changed_entries": [
+    "net/p3pp3rf1y/sophisticatedcore/upgrades/feeding/FeedingUpgradeWrapper.class",
+    "net/p3pp3rf1y/sophisticatedcore/upgrades/alchemy/AlchemyUpgradeWrapper.class"
+  ],
+  "added_entries": [
+    "net/p3pp3rf1y/sophisticatedcore/compat/DownedConsumables.class"
+  ]
+}

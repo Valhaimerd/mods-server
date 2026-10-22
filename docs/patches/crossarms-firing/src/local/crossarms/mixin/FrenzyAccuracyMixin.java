@@ -26,6 +26,6 @@ public class FrenzyAccuracyMixin {
     }
     @Inject(method="shoot",at=@At("RETURN"))
     private void crossarms$countShot(ServerLevel level,LivingEntity shooter,InteractionHand hand,ItemStack stack,List<ItemStack> arrows,float speed,float inaccuracy,boolean critical,LivingEntity target,CallbackInfo ci,@Share("crossarms$frenzyShot") LocalBooleanRef frenzy){
-        if(frenzy.get()) FrenzyState.fired(shooter);
+        if(frenzy.get()) FrenzyState.fired(shooter,hand);
     }
 }

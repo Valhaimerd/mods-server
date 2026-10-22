@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "nova_structures:power",
+      "required": false
+    }
+  ]
+}

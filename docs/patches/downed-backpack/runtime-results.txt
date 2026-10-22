@@ -1,0 +1,28 @@
+PASS healthy player consumes one apple
+PASS healthy feeding raises hunger
+PASS native PlayerRevive downed flag set
+PASS downed feeding consumes no food across repeated attempts
+PASS downed feeding leaves hunger untouched
+PASS guard recognizes PlayerRevive
+PASS guard clears after PlayerRevive rescue
+PASS guard recognizes Better Revive independently
+PASS Better Revive state also preserves food
+PASS feeding works after state clears
+PASS downed holder does not start drinking
+PASS downed holder has no drink timer
+PASS placed alchemy excludes downed target
+PASS healthy player begins drinking
+PASS in-progress placed drink pauses when target becomes downed
+PASS paused drink applies no buff
+PASS paused drink retains reserved potion
+PASS drink completes after rescue and grants its original buff
+PASS drink timer finishes normally
+
+Without optional revive mods:
+PASS healthy player consumes one apple
+PASS healthy feeding raises hunger
+PASS optional revive mods absent: healthy player allowed
+PASS feeding works after state clears
+PASS healthy player begins drinking
+PASS drink completes after rescue and grants its original buff
+PASS drink timer finishes normally

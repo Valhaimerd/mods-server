@@ -125,4 +125,3 @@ public final class TierTwoProbe {
   }finally{tree.resetSkills(player);damage.setBaseValue(before);if(added)level.players().remove(player);}
  }
 }
-

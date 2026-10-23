@@ -1,0 +1,39 @@
+PASS 2842 Archer/party measurements
+
+Rogue II PASS III Stealth seven seconds mode=0 actual=140.0 expected=140.0
+Rogue II PASS III Movement penalty mode=0 actual=0.5 expected=0.5
+Rogue II PASS III Movement restored on dispel mode=0 actual=0.10000000149011612 expected=0.10000000149011612
+Rogue II PASS III Stealth seven seconds mode=1 actual=140.0 expected=140.0
+Rogue II PASS III Movement penalty mode=1 actual=0.6000000014901161 expected=0.6
+Rogue II PASS III Movement restored on dispel mode=1 actual=0.10000000149011612 expected=0.10000000149011612
+Rogue II PASS III Stealth seven seconds mode=2 actual=140.0 expected=140.0
+Rogue II PASS III Movement penalty mode=2 actual=0.8000000044703484 expected=0.8
+Rogue II PASS III Movement restored on dispel mode=2 actual=0.10000000149011612 expected=0.10000000149011612
+Rogue II PASS III Stealth action=0 shadow=false actual=0.0 expected=0.0
+Rogue II PASS III Stealth action=1 shadow=false actual=0.0 expected=0.0
+Rogue II PASS III Stealth action=2 shadow=false actual=0.0 expected=0.0
+Rogue II PASS III Stealth action=3 shadow=false actual=0.0 expected=0.0
+Rogue II PASS III Natural expiry shadow=false actual=0.0 expected=0.0
+Rogue II PASS III Expiry cleans movement actual=0.10000000149011612 expected=0.10000000149011612
+Rogue II PASS III Stealth action=0 shadow=true actual=1.0 expected=1.0
+Rogue II PASS III Stealth action=1 shadow=true actual=1.0 expected=1.0
+Rogue II PASS III Stealth action=2 shadow=true actual=1.0 expected=1.0
+Rogue II PASS III Stealth action=3 shadow=true actual=1.0 expected=1.0
+Rogue II PASS III Natural expiry shadow=true actual=0.0 expected=0.0
+Rogue II PASS III Expiry cleans movement actual=0.10000000149011612 expected=0.10000000149011612
+Rogue II PASS III Mutilate 200% dual power actual=80.0 expected=80.0
+Rogue II PASS III Mutilate 200% dual power actual=80.0 expected=80.0
+Rogue II PASS III Crimson still 10% dual power actual=4.0 expected=4.0
+Rogue II PASS III Bloody Strikes duration actual=150.0 expected=150.0
+Rogue II PASS III Bloody Strikes no Poison actual=0.0 expected=0.0
+Rogue II PASS III Cheat Death immunity duration actual=60.0 expected=60.0
+Rogue II PASS III Speed III actual=2.0 expected=2.0
+Rogue II PASS III Speed 3 seconds actual=60.0 expected=60.0
+Rogue II PASS III Jump Boost III actual=2.0 expected=2.0
+Rogue II PASS III Jump 3 seconds actual=60.0 expected=60.0
+Rogue II PASS III Evasion six seconds actual=120.0 expected=120.0
+Rogue II PASS III Evasion thirty points actual=0.30000001192092896 expected=0.3
+Rogue II PASS III Counter targets attacker at 25% dual power actual=10.0 expected=10.0
+Rogue II PASS III Counter sets cooldown actual=1.0 expected=1.0
+Rogue II PASS III Counter cooldown prevents repeat actual=10.0 expected=10.0
+Rogue II PASS III Counter protects owned pet actual=1000.0 expected=1000.0

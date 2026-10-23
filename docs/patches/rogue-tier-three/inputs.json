@@ -1,0 +1,14 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "b2c445f06c5f5c1e47859d1dfeca4005ee50389a3013f45cc3923ee39ec27b3b"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "a42b077a017e1e2a2b3a389973f056f66274ad9954054bd3b5a58fea6268bbd8"
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "5eb5dc21c162508acce3f1d4b45ba95be042edb12d38650edac7cc2051cc54cb"
+  }
+]

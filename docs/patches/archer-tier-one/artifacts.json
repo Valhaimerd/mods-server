@@ -2,7 +2,7 @@
   {
     "jar": "archers-neoforge-3.1.2+26.2.jar",
     "before_sha256": "6dae7819a439a6a8e5767135b7630cc23c6d8c6bed0fea64d5931bd1c9715cef",
-    "sha256": "602aa7946c19cf9929615076369b41dbc70456c55da5d70c9279ce2f6af69a15",
+    "sha256": "cc6ec524a3d804ed587c0aa062cd87f73a9ce52a78e62711add27784b97bb07e",
     "changed": [
       "assets/archers/lang/en_us.json",
       "data/archers/spell/magic_arrow.json",
@@ -13,9 +13,10 @@
   {
     "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
     "before_sha256": "3f67ff798a0adfb7fd226b6afe63dab9d2cb0a6e3c344a70079d240bbebbbe36",
-    "sha256": "03fa7ca75074c21f58a2d4b84ed241b78d22ba65899809942bfd39f728355da4",
+    "sha256": "a42b077a017e1e2a2b3a389973f056f66274ad9954054bd3b5a58fea6268bbd8",
     "changed": [
       "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/archer_tier_4_spell_1_modifier_2.json",
       "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_modifier_1.json",
       "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_modifier_2.json",
       "data/skill_tree_rpgs/spell/archer_tier_4_spell_2_root.json"
@@ -25,7 +26,7 @@
   {
     "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
     "before_sha256": "ba2eaf03f0e67c0cc93c91d893f22eb00512552fe92bc4c5aac562eb90616fe9",
-    "sha256": "437dca47c9678546295b498792154c377d7cbfe5b97d82ea8d75234f79534474",
+    "sha256": "5eb5dc21c162508acce3f1d4b45ba95be042edb12d38650edac7cc2051cc54cb",
     "changed": [
       "net/spell_engine/internals/delivery/ProjectileLauncher.class",
       "net/spell_engine/entity/ArcherProjectileRules.class"

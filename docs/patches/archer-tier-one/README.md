@@ -309,3 +309,23 @@ Rain/Conjured handbook proof: all 74 pages rendered; only page 19 differs
 from the previous reviewed Rogue-tier-II edition. The changed page was
 visually checked without clipping. All 461 internal links remain, with
 matching root/output PDF copies.
+
+## Rain count/radius follow-up (current values)
+
+Rain of Arrows: 40 arrows, 30-second haste-affected base cooldown and eight-
+block random scatter. Torrential retains 40 arrows and the same eight-block
+scatter, firing every two ticks (0.1s). Endless adds 20 arrows for 60 total,
+with the same eight-block scatter, firing every five ticks (0.25s). Base Rain
+also retains five-tick spacing. First-to-last launch spans are 9.75s/3.9s/14.75s
+for base/Torrential/Endless. All retain 40% R per impact, 2.5-block splash,
+uniform interior scatter, native target following and party/pet protection.
+Magic Arrows and Conjured behavior are unchanged.
+
+Count/radius verification: all 2,805 native Archer/Rogue/party measurements
+passed with the revised 40/40/60 arrow totals, 30-second Rain cooldown,
+eight-block radius for every branch, native launch spacing and moving-target
+scatter. Magic Arrows, Conjured and both Rogue tiers remain passing.
+
+Count/radius handbook proof: all 74 pages rendered; only page 19 changed
+from the reviewed Rain/Conjured edition and was visually checked without
+clipping. All 461 internal links and matching PDF copies remain.

@@ -94,19 +94,23 @@ Tracking disruption is an arrival-centered mob effect. It clears the native targ
 
 | Attribute | Vanish | Mutilate |
 | --- | --- | --- |
-| Cast / cooldown | Instant / **30 s** | Instant / **12 s** |
-| Main effect | **8 s Stealth**, -50% base movement speed | Native dual-melee strike, not an added JSON damage coefficient |
-| Delivery | Self status; stealth removed by attacks, other spell casts or item use | **0.5 s attack delay**; hitbox width **0.5**, height **0.2**, arc **160 degrees**, no additional same-target hits |
-| Power | No direct hit | Uses dual-melee school **D** for relevant appended spell impacts; native melee delivery follows its own attack rules |
-| Improved/root | **Improved Vanish:** +2 s, **10 s total** | **Improved Mutilate:** cooldown -2 s, **10 s total** |
-| Branch A | **Stealth Speed:** +50% base movement speed counters the stealth slow; appended effect base **8 s**, also receives Improved duration modifier | **Crimson Strikes:** heals caster for **10% D per enemy struck** |
-| Branch B | **Deep Stealth:** +8 s, **18 s total** with Improved | **Envenom:** adds **8 s Poison**; one level per application, maximum level **2 + trunc(0.5D)** |
+| Cast / cooldown | Instant / **8 s**, haste affected | Native attack animation / **12 s**, haste affected |
+| Main effect | **7 s Stealth**, -50% base movement speed | **200% D per enemy**, one combined dual-wield hit |
+| Delivery | Self; normally breaks on attacks, other casts, item use and incoming attributed hits | Equipped melee reach, **160-degree sweep**; damage lands halfway through attack animation, not after a fixed 0.5 s |
+| Improved/root | **Improved Vanish:** reduces movement penalty to **-40%**, no added duration | **Improved Mutilate:** cooldown -2 s, **10 s** before haste |
+| Branch A | **Stealth Speed:** another 20 percentage points less movement penalty, leaving **-20%** with Improved | **Crimson Strikes:** heals **10% D per enemy struck**, independent of the 200% attack multiplier |
+| Branch B | **Shadow Stealth:** actions and taking hits no longer cancel Stealth; still expires after **7 s** and can be explicitly dispelled | **Bloody Strikes:** applies the existing Rogue Bleed for **7.5 s**, replacing Poison |
 
-## Third passive pair - unchanged, review with tier III
+Mutilate uses the native full-strength player attack with a +100% damage bonus, combining main-hand power and the calculated off-hand contribution. Crits, enchantments and defenses still apply. Bloody Strikes uses the same Bleed scaling as Serrated Traps: its status amplifier is 1 plus one quarter of D, rounded down. Each Bleed tick (every 25 ticks / 1.25 s) deals one damage per status level, multiplied by 0.5 to 2 depending on horizontal movement speed. This is the existing Bleed mechanic, not an additional Mutilate strike. Vanish's native mob tracking reduction remains unchanged.
 
-| Cheat Death | Preparation |
-| --- | --- |
-| Fatal incoming damage trigger; 3 s defensive effect; 60 s haste-affected cooldown | Evade has 25% chance to reset #rogues:rogue active cooldowns; 30 s haste-affected cooldown |
+## Third passive pair - Cheat Death OR Prepared Counter
+
+| Attribute | Cheat Death | Prepared Counter |
+| --- | --- | --- |
+| Trigger / chance | Qualifying fatal incoming hit / **100%** | Evade an enemy attack / **100%** |
+| Effect | **3 s damage immunity**, **Speed III for 3 s**, **Jump Boost III for 3 s**, **+30 evasion percentage points for 6 s** | Deal **25% D** to the attributed attacker; no cooldown reset |
+| Base cooldown | **60 s**, haste affected | **1 s**, haste affected |
+| Limits | Existing fatal-hit trigger requires an attributed attacker; no heal | Party allies and owned pets remain protected; attacker-less damage cannot be countered |
 
 ### Status defaults checked in installed bytecode
 
@@ -122,8 +126,9 @@ Tracking disruption is an arrival-centered mob effect. It clears the native targ
 | Ambush | attack_damage, +0.5 ADD_MULTIPLIED_BASE; consumed on melee hit |
 | Opportunist | critical_strike:chance +1 and critical_strike:damage +0.2 ADD_MULTIPLIED_BASE; consumed by the stashed melee trigger |
 | Cheat Death | spell_engine:damage_taken, -1 ADD_MULTIPLIED_TOTAL; custom CheatDeathStatusEffect also applies |
-| Stealth / Stealth Speed | movement_speed, -0.5 / +0.5 ADD_MULTIPLIED_BASE |
+| Stealth / Improved Stealth / Stealth Speed | movement_speed, -0.5 / +0.1 / +0.2 ADD_MULTIPLIED_BASE; seven seconds each |
+| Cheat Death Evasion | spell_engine:evasion_chance, +0.3 ADD_MULTIPLIED_BASE; six seconds |
 
 Evasion's native base is 100; its chance conversion is (attribute - 100) / 100. Thus Smoke Screen's base-scaled +50 attribute gives +50 percentage points at the native base. Other sources, server angle restrictions, casting/item-use restrictions and damage eligibility can affect whether an attack is evaded.
 
-Verification scope: archive/resource extraction, hidden reward mapping, default schema fields and installed effect/engine bytecode inspection. The first-/second-tier implementation is additionally exercised by the isolated Rogue fixture; see docs/patches/rogue-tier-one/README.md for current results and limits.
+Verification scope: archive/resource extraction, hidden reward mapping, default schema fields and installed effect/engine bytecode inspection. The isolated Rogue fixtures additionally exercise implemented combat behavior; see docs/patches/rogue-tier-three/README.md for tier III results and limits.

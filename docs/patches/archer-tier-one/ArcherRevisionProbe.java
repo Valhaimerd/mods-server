@@ -32,12 +32,12 @@ public class ArcherRevisionProbe {
    eq("Native prepared arrow window improved="+improved,player.getEffect(stash).getDuration(),improved?200:160);
   }
   player.removeAllEffects();
-  eq("Rain cooldown",rain.value().cost.cooldown.duration,25);eq("Rain damage",rain.value().impacts.getFirst().action.damage.spell_power_coefficient,.4);eq("Rain splash",rain.value().area_impact.radius,2.5);
+  eq("Rain cooldown",rain.value().cost.cooldown.duration,30);eq("Rain damage",rain.value().impacts.getFirst().action.damage.spell_power_coefficient,.4);eq("Rain splash",rain.value().area_impact.radius,2.5);
   for(int branch=0;branch<3;branch++){
    equip(List.of(),branch==0?List.of():List.of("skill_tree_rpgs:archer_tier_4_spell_1_modifier_"+branch));
    var meteor=rain.value().deliver.meteor;var launch=meteor.launch_properties.copy();float radius=meteor.launch_radius;
    for(var m:SpellModifiers.of(player,rain)){if(m.projectile_launch!=null)launch.mutatingCombine(m.projectile_launch);radius+=m.meteor_launch_radius_add;}
-   eq("Rain branch "+branch+" count",1+launch.extra_launch_count,branch==2?76:32);eq("Rain branch "+branch+" ticks",launch.extra_launch_delay,branch==1?2:5);eq("Rain branch "+branch+" scatter",radius,branch==2?11:10);
+   eq("Rain branch "+branch+" count",1+launch.extra_launch_count,branch==2?60:40);eq("Rain branch "+branch+" ticks",launch.extra_launch_delay,branch==1?2:5);eq("Rain branch "+branch+" scatter",radius,8);
   }
   double sum=0;int center=0;for(int i=0;i<1000;i++){
    Vec3 offset=ArcherProjectileRules.scatter(new Vec3(10,0,0).yRot((float)(i*.2)),rain,level);double r2=offset.lengthSqr();check("Scatter inside disk "+i,r2<=100);sum+=r2;if(r2<25)center++;
@@ -73,16 +73,16 @@ public class ArcherRevisionProbe {
     var aim=(LivingEntity)BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.parse("minecraft:zombie")).create(level,EntitySpawnReason.COMMAND);aim.setPos(5,80,5);
     ProjectileLauncher.fallProjectile(level,player,aim,null,rain,context(rain));aim.setPos(9,80,9);
     var queue=new TreeMap<>(scheduled.getScheduledTasks());scheduled.getScheduledTasks().clear();
-    eq("Native Rain scheduled arrows branch="+branch,queue.values().stream().mapToInt(List::size).sum(),branch==2?75:31);
+    eq("Native Rain scheduled arrows branch="+branch,queue.values().stream().mapToInt(List::size).sum(),branch==2?59:39);
     long previous=scheduled.getSchedulerTime();for(var entry:queue.entrySet()){eq("Native Rain scheduled gap branch="+branch,entry.getKey()-previous,branch==1?2:5);previous=entry.getKey();entry.getValue().forEach(Runnable::run);}
-    eq("Native Rain spawned total branch="+branch,falling.size(),branch==2?76:32);
+    eq("Native Rain spawned total branch="+branch,falling.size(),branch==2?60:40);
     double maxRadius=0,minRadius=1000;int index=0;
     for(var p:falling){double aimCenter=index==0?5:9,dx=p.getX()-aimCenter,dz=p.getZ()-aimCenter,radius=Math.sqrt(dx*dx+dz*dz);maxRadius=Math.max(maxRadius,radius);minRadius=Math.min(minRadius,radius);
-     check("Native Rain follows current mob center",radius<=(branch==2?11:10)+.001);check("Native first-arrow homing retained",index==0?p.getFollowedTarget()==aim:p.getFollowedTarget()==null);
+     check("Native Rain follows current mob center",radius<=(8)+.001);check("Native first-arrow homing retained",index==0?p.getFollowedTarget()==aim:p.getFollowedTarget()==null);
      double originalX=p.getX(),originalZ=p.getZ();for(int tick=0;tick<10&&!p.isRemoved();tick++){p.tickCount=tick;p.tick();}
      check("Rain actually falls to the impact plane",p.getY()<83);check("Rain flight preserves random horizontal offset",Math.hypot(p.getX()-originalX,p.getZ()-originalZ)<2);p.discard();index++;
     }
-    check("Native Rain actually scatters away from center",maxRadius>(branch==2?11:10)*.5);check("Native Rain includes interior points",minRadius<(branch==2?11:10)*.75);
+    check("Native Rain actually scatters away from center",maxRadius>(8)*.5);check("Native Rain includes interior points",minRadius<(8)*.75);
     aim.discard();
    }
    equip(List.of(),List.of());ProjectileLauncher.shootProjectile(level,player,null,magic,context(magic));

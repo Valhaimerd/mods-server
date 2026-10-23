@@ -1,0 +1,44 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "b2c445f06c5f5c1e47859d1dfeca4005ee50389a3013f45cc3923ee39ec27b3b",
+    "sha256": "078f6d3dd62831e8b1904eb6d296971e4f334919f0b5238f50ca7a2a65a08034",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/mutilate.json",
+      "data/rogues/spell/vanish.json",
+      "net/rogues/effect/RogueEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "a42b077a017e1e2a2b3a389973f056f66274ad9954054bd3b5a58fea6268bbd8",
+    "sha256": "1e567ef5f1438ef16fb456ec987e9679d4c811289927b238dc11c18d49525743",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "5eb5dc21c162508acce3f1d4b45ba95be042edb12d38650edac7cc2051cc54cb",
+    "sha256": "f2d32e63f4978126ea2a4fe1a648ab910d73711c91e48f63b7d8c8c315b238a0",
+    "changed": [
+      "net/spell_engine/SpellEngineMod.class",
+      "net/spell_engine/internals/delivery/melee/Melee.class",
+      "spell_engine.mixins.json"
+    ],
+    "added": [
+      "net/spell_engine/internals/RogueTierThree.class",
+      "net/spell_engine/mixin/thirdtier/RogueAttackAccess.class"
+    ]
+  }
+]

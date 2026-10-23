@@ -29,7 +29,7 @@ def update(name,obj):
   obj['impacts'][0]['action']['status_effect']['duration']=6
  if name=='data/archers/spell/rain_of_arrows.json':
   obj['cost']['cooldown']['duration']=30
-  meteor=obj['deliver']['meteor'];meteor['launch_radius']=8;meteor['offset_requires_sequence']=-2147483647
+  meteor=obj['deliver']['meteor'];meteor['launch_radius']=6;meteor['offset_requires_sequence']=-2147483647
   meteor['launch_properties']['extra_launch_count']=39;meteor['launch_properties']['extra_launch_delay']=5
   obj['area_impact']['radius']=2.5
  if name=='data/archers/spell/magic_arrow.json':
@@ -112,8 +112,8 @@ def update(name,obj):
    'archer_tier_3_spell_2_modifier_1':'Summons 1 additional Spirit Wolf, for 3 total.',
    'archer_tier_3_spell_2_modifier_2':'Spirit Wolves remain active 10 seconds longer, for 30 seconds total.',
    'archer_tier_4_spell_1_root':'Rain of Arrows gains 5 percentage points of critical chance.',
-   'archer_tier_4_spell_1_modifier_1':'Rains 40 arrows every 0.1 seconds across a random 8-block radius. Each impact splashes within 2.5 blocks.',
-   'archer_tier_4_spell_1_modifier_2':'Adds 20 falling arrows, for 60 total, every 0.25 seconds across an 8-block radius. Each impact splashes within 2.5 blocks.',
+   'archer_tier_4_spell_1_modifier_1':'Rains 40 arrows every 0.1 seconds across a random 6-block radius. Each impact splashes within 2.5 blocks.',
+   'archer_tier_4_spell_1_modifier_2':'Adds 20 falling arrows, for 60 total, every 0.25 seconds across an 6-block radius. Each impact splashes within 2.5 blocks.',
    'archer_tier_4_spell_2_root':'Magic Arrows deal 90%% of your Ranged Damage per arrow at full charge instead of 80%%.',
    'archer_tier_4_spell_2_modifier_1':'Fires Magic Arrows upward in a wide spread above you. After 0.5 seconds, they seek the nearest enemy within 32 blocks with medium homing. Hits reveal enemies for 10 seconds.',
    'archer_tier_4_spell_2_modifier_2':'Magic Arrows deal 100%% of your Ranged Damage per arrow at full charge with Improved Magic Arrows, and gain 150%% extra base knockback.',
@@ -130,7 +130,7 @@ def update(name,obj):
   obj['spell.archers.power_shot.description']='Prepares your next 3 arrows for 8 seconds. Hits apply Hunter\'s Mark for 6 seconds, refreshed, increasing damage taken by 7%% per stack, up to 21%%.'
   obj['spell.archers.barrage.description']='Fires 3 accurate arrows every 0.15 seconds. Each deals 60%% normal shot damage.'
   obj['spell.archers.spirit_wolf.description']='Summons 2 Spirit Wolves for 20 seconds. Each has 20 HP plus 40%% of your Ranged Damage, and deals 3 damage plus 15%% of your Ranged Damage per melee hit. Pet bonuses apply.'
-  obj['spell.archers.rain_of_arrows.description']='Rains 40 arrows at 40%% of your Ranged Damage per impact. Arrows fall every 0.25 seconds throughout a random 8-block radius that follows the target, with 2.5-block splash per impact.'
+  obj['spell.archers.rain_of_arrows.description']='Rains 40 arrows at 40%% of your Ranged Damage per impact. Arrows fall every 0.25 seconds throughout a random 6-block radius that follows the target, with 2.5-block splash per impact.'
   obj['spell.archers.magic_arrow.name']='Magic Arrows'
   obj['spell.archers.magic_arrow.description']='Fires 4 seeking arrows every 0.25 seconds, each dealing up to 80%% of your Ranged Damage at full charge. Partial charges deal less damage. They find the nearest enemy within 32 blocks, turn gradually in any direction, pass through walls and last 10 seconds.'
   obj['spell.archers.entangling_roots.description']='Creates roots in a 6-block radius for 6 seconds, reducing enemy movement speed and jump strength by 60%%. Party allies and owned pets are protected.'

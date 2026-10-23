@@ -1,0 +1,10 @@
+{
+  "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar": {
+    "input": "mod fixing/retired packs/ranged-enchantments-2026-10-23/penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "sha256": "d3f4ce92622ee2d20a3724393062e2385e2894c23bd3f9a6493d6a1e67b40c7a"
+  },
+  "crossarms-1.4.jar": {
+    "input": "mod fixing/retired packs/ranged-enchantments-2026-10-23/crossarms-1.4.jar",
+    "sha256": "87d65d8bf73ebd0a30f518667e1bccc6390f99b0c19d2921039463994541b1ef"
+  }
+}

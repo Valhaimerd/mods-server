@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:fire_protection",
+    "minecraft:blast_protection",
+    {
+      "id": "fangs_enchantment:fangs",
+      "required": false
+    }
+  ]
+}

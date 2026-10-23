@@ -329,3 +329,7 @@ scatter. Magic Arrows, Conjured and both Rogue tiers remain passing.
 Count/radius handbook proof: all 74 pages rendered; only page 19 changed
 from the reviewed Rain/Conjured edition and was visually checked without
 clipping. All 461 internal links and matching PDF copies remain.
+
+## Six-block Rain scatter follow-up
+
+The current base, Torrential and Endless scatter radius is **six blocks**. Counts, intervals and impact splash retain their values above. See [the resource-only patch and verification](../rain-radius/README.md).

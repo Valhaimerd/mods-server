@@ -1,0 +1,3 @@
+Before: FAIL java.lang.NullPointerException: Cannot read field "speed" because "cast.animation" is null
+After: PASS actual NeoForge client: 40 Bear Trap cast/stop cycles, 120 animation updates at normal/double speed; 0.2s cast and 4s cooldown retained
+Server: PASS 2842 Archer/party measurements

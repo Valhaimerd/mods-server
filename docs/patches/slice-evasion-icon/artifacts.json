@@ -1,0 +1,14 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "a0cfee6f0bb50f63fe42eca29bd56b35ca4e2a2df40e64b6364f854754bd719e",
+    "sha256": "13ca868dc37ea27002f8c70364e141808b6ea5d769c39acb640c842fe825f4a1",
+    "changed": [],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/slice_evasion.png"
+    ],
+    "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "source_entry": "assets/rogues/textures/mob_effect/slice_and_dice.png",
+    "icon_sha256": "132b096e8111319f8ef806f81719c2f6f805dc40d4c2b22e6d45bdccf7ef11d4"
+  }
+]

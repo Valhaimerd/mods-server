@@ -12,8 +12,17 @@ for r in json.loads((HERE/'artifacts.json').read_text()):
  downstream=next((x for x in json.loads(downstream_file.read_text()) if x['jar']==r['jar']),None) if downstream_file.exists() else None
  if downstream and downstream['before_sha256']==expected:
   expected=downstream['sha256']
+ radius_file=ROOT/'docs/patches/rain-radius/artifacts.json'
+ radius=next((x for x in json.loads(radius_file.read_text()) if x['jar']==r['jar']),None) if radius_file.exists() else None
+ if radius and radius['before_sha256']==expected:expected=radius['sha256']
+ icon_file=ROOT/'docs/patches/slice-evasion-icon/artifacts.json'
+ icon=next((x for x in json.loads(icon_file.read_text()) if x['jar']==active.name),None) if icon_file.exists() else None
+ if icon and icon['before_sha256']==expected:expected=icon['sha256']
+ cast_file=ROOT/'docs/patches/bear-trap-cast/artifacts.json'
+ cast=next((x for x in json.loads(cast_file.read_text()) if x['jar']==active.name),None) if cast_file.exists() else None
+ if cast and cast['before_sha256']==expected:expected=cast['sha256']
  assert hashlib.sha256(active.read_bytes()).hexdigest()==expected
- audited=ROOT/'tmp/archer-tier-one/follow-before'/r['jar'] if layered else ROOT/'tmp/rogue-tier-three/before'/r['jar'] if downstream and downstream['before_sha256']==r['sha256'] else active
+ audited=ROOT/'tmp/archer-tier-one/follow-before'/r['jar'] if layered else ROOT/'tmp/rogue-tier-three/before'/r['jar'] if downstream and downstream['before_sha256']==r['sha256'] else ROOT/'tmp/bear-trap-cast'/('before-'+r['jar']) if cast and cast['before_sha256']==r['sha256'] else active
  assert hashlib.sha256(audited.read_bytes()).hexdigest()==r['sha256']
  assert active.read_bytes()==fixed.read_bytes()
  with ZipFile(before) as a,ZipFile(audited) as b:

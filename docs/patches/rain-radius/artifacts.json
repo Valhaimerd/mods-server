@@ -1,0 +1,21 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "cc6ec524a3d804ed587c0aa062cd87f73a9ce52a78e62711add27784b97bb07e",
+    "sha256": "7cd1fb91f5433932967cfee1aa9430f62144c49a761b2ca17aaa8d50c7371094",
+    "changed": [
+      "assets/archers/lang/en_us.json",
+      "data/archers/spell/rain_of_arrows.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "1e567ef5f1438ef16fb456ec987e9679d4c811289927b238dc11c18d49525743",
+    "sha256": "a0cfee6f0bb50f63fe42eca29bd56b35ca4e2a2df40e64b6364f854754bd719e",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "added": []
+  }
+]

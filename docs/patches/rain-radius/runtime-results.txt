@@ -1,0 +1,14 @@
+PASS 2842 Archer/party measurements
+
+PASS Rain cooldown actual=30.0 expected=30.0
+PASS Rain damage actual=0.4000000059604645 expected=0.4
+PASS Rain splash actual=2.5 expected=2.5
+PASS Rain branch 0 count actual=40.0 expected=40.0
+PASS Rain branch 0 ticks actual=5.0 expected=5.0
+PASS Rain branch 0 scatter actual=6.0 expected=6.0
+PASS Rain branch 1 count actual=40.0 expected=40.0
+PASS Rain branch 1 ticks actual=2.0 expected=2.0
+PASS Rain branch 1 scatter actual=6.0 expected=6.0
+PASS Rain branch 2 count actual=60.0 expected=60.0
+PASS Rain branch 2 ticks actual=5.0 expected=5.0
+PASS Rain branch 2 scatter actual=6.0 expected=6.0

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:piercing",
+      "required": false
+    },
+    {
+      "id": "nova_structures:gravity",
+      "required": false
+    }
+  ]
+}

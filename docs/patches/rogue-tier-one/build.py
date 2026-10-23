@@ -15,7 +15,7 @@ def update(name,o):
   if 'active' in o:o['active'].setdefault('cast',{})['haste_affected']=True
  if name=='data/rogues/spell/shadow_step.json':o['range']=14;o['impacts']=o['impacts'][:1]
  if name=='data/rogues/spell/bear_trap.json':
-  o['active']['cast']={'duration':.2,'haste_affected':True};o['cost']['cooldown']['duration']=4
+  o['active'].setdefault('cast',{}).update(duration=.2,haste_affected=True,animation={'id':'spell_engine:one_handed_ground_charge'});o['cost']['cooldown']['duration']=4
   cloud=o['deliver']['clouds'][0];cloud['placement']['location_offset_by_look']=3;cloud['additional_placements']=[];cloud['volume']['radius']=1.5
   cloud['volume']['area']['vertical_range_multiplier']=1;cloud['spawn_ticks']=20;cloud['impact_tick_interval']=1
   o['impacts'][0]['action']['damage']['spell_power_coefficient']=.6

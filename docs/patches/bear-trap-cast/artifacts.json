@@ -1,0 +1,11 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "078f6d3dd62831e8b1904eb6d296971e4f334919f0b5238f50ca7a2a65a08034",
+    "sha256": "a007ec97df732dfe34871c67b94f004c2abb2bedca3845fedd8362bfed22ecfe",
+    "changed": [
+      "data/rogues/spell/bear_trap.json"
+    ],
+    "added": []
+  }
+]

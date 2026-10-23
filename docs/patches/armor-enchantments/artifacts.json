@@ -1,0 +1,11 @@
+{
+  "filename": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "input_sha256": "7b08656bffcc78a93809b24eebe4f014b55d4aa86b266ad1a886a3eadbedb4b7",
+  "input": "mod fixing/retired packs/armor-enchantments-2026-10-23/penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "output_sha256": "d3f4ce92622ee2d20a3724393062e2385e2894c23bd3f9a6493d6a1e67b40c7a",
+  "changed_entries": [
+    "data/minecraft/tags/enchantment/exclusive_set/frost_walker.json",
+    "data/minecraft/tags/enchantment/exclusive_set/thorns.json",
+    "data/penchant/tags/enchantment/disabled.json"
+  ]
+}

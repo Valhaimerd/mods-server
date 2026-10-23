@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "crossarms:bombard",
+      "required": false
+    },
+    {
+      "id": "minecraft:multishot",
+      "required": false
+    },
+    {
+      "id": "minecraft:piercing",
+      "required": false
+    }
+  ]
+}

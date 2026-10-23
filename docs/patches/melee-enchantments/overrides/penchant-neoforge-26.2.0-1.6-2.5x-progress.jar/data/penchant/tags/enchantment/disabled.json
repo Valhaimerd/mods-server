@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "protection_grace_enchantment:protection_grace",
+      "required": false
+    },
+    {
+      "id": "nova_structures:antidote",
+      "required": false
+    },
+    {
+      "id": "nova_structures:traveler",
+      "required": false
+    },
+    {
+      "id": "enderzoology:soulbound",
+      "required": false
+    },
+    {
+      "id": "air_jump_enchantment:air_jump",
+      "required": false
+    },
+    {
+      "id": "tense_enchantment:tense",
+      "required": false
+    },
+    {
+      "id": "enderzoology:withering",
+      "required": false
+    },
+    {
+      "id": "crossarms:deflector",
+      "required": false
+    },
+    {
+      "id": "crossarms:bombard",
+      "required": false
+    },
+    {
+      "id": "crossarms:recycling",
+      "required": false
+    },
+    {
+      "id": "nova_structures:ghasted",
+      "required": false
+    },
+    {
+      "id": "minecraft:sweeping_edge",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:penetrating_strike",
+      "required": false
+    },
+    {
+      "id": "nova_structures:spiteful",
+      "required": false
+    },
+    {
+      "id": "enderzoology:decay",
+      "required": false
+    }
+  ]
+}

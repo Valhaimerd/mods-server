@@ -1,0 +1,23 @@
+{
+  "values": [
+    {
+      "id": "dungeons_arise:ensnaring",
+      "required": false
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "required": false
+    },
+    {
+      "id": "nova_structures:aerials_bane",
+      "required": false
+    },
+    {
+      "id": "nova_structures:illagers_bane",
+      "required": false
+    }
+  ],
+  "remove": [
+    "minecraft:sharpness"
+  ]
+}

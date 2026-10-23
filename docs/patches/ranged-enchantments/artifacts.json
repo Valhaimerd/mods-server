@@ -1,0 +1,40 @@
+{
+  "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar": {
+    "input": "mod fixing/retired packs/ranged-enchantments-2026-10-23/penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "sha256": "d3f4ce92622ee2d20a3724393062e2385e2894c23bd3f9a6493d6a1e67b40c7a",
+    "output_sha256": "3dfb7fcaa8061ecd2fd96eacf997f5e82de909e0276a2b3ee7b3994b2fbeee23",
+    "changed_entries": [
+      "data/crossarms/tags/enchantment/exclusive_set/acceleration.json",
+      "data/crossarms/tags/enchantment/exclusive_set/frenzy.json",
+      "data/crossarms/tags/enchantment/inclusive_set/acceleration.json",
+      "data/crossarms/tags/enchantment/inclusive_set/bombard.json",
+      "data/crossarms/tags/enchantment/inclusive_set/deflector.json",
+      "data/crossarms/tags/enchantment/inclusive_set/frenzy.json",
+      "data/crossarms/tags/enchantment/inclusive_set/ricochet.json",
+      "data/crossarms/tags/enchantment/inclusive_set/zero_drop.json",
+      "data/ice_enchantments/tags/enchantment/exclusive_set/frost.json",
+      "data/minecraft/tags/enchantment/exclusive_set/flame.json",
+      "data/minecraft/tags/enchantment/exclusive_set/multishot.json",
+      "data/minecraft/tags/enchantment/exclusive_set/power.json",
+      "data/minecraft/tags/enchantment/inclusive_set/multishot.json",
+      "data/nova_structures/tags/enchantment/exclusive_set/gravity.json",
+      "data/nova_structures/tags/enchantment/exclusive_set/multishot.json",
+      "data/nova_structures/tags/enchantment/exclusive_set/power.json",
+      "data/nova_structures/tags/enchantment/inclusive_set/ghasted.json",
+      "data/nova_structures/tags/enchantment/inclusive_set/gravity.json",
+      "data/nova_structures/tags/enchantment/inclusive_set/power.json",
+      "data/penchant/tags/enchantment/disabled.json",
+      "data/spectral_enchantment/tags/enchantment/exclusive_set/spectral.json"
+    ]
+  },
+  "crossarms-1.4.jar": {
+    "input": "mod fixing/retired packs/ranged-enchantments-2026-10-23/crossarms-1.4.jar",
+    "sha256": "87d65d8bf73ebd0a30f518667e1bccc6390f99b0c19d2921039463994541b1ef",
+    "output_sha256": "dc890b74a6191ffe6c0a8f92623eada02206802efadc1ced5ac044d58375c0f8",
+    "changed_entries": [
+      "crossarms-pack.mixins.json",
+      "data/crossarms/function/enchantment/zero_drop.mcfunction",
+      "local/crossarms/mixin/ZeroDropCriticalMixin.class"
+    ]
+  }
+}

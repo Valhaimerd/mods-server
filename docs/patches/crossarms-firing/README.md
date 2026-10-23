@@ -1,5 +1,13 @@
 # CrossArms Frenzy balance
 
+Current 23 October ranged policy: Bombard, Deflector and Recycling are hidden;
+Multishot/Might/Acceleration/Frenzy are mutually exclusive. Piercing and Zero
+Drop have no pairwise conflicts. Gravity excludes Frenzy but allows Multishot,
+Might and Acceleration. Zero Drop now prevents both vanilla and RPG critical
+hits through an optional projectile-scoped guard. The later Penchant tag
+overlay and same-filename CrossArms repack are documented in
+[the ranged policy and native checks](../ranged-enchantments/README.md).
+
 Minecraft 26.2 / NeoForge 26.2.0.90, CrossArms 1.4. Same active JAR filename.
 
 Capacity is removed entirely: its enchantment definition, functions, predicates, item modifiers and acquisition/exclusion references no longer ship. Capacity can no longer be obtained or applied in this pack. CrossArms now supplies seven enchantments. The Multishot/Piercing integration remains.

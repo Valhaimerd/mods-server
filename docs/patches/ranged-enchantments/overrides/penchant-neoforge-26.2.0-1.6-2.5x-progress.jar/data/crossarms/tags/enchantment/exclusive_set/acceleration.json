@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "crossarms:frenzy",
+      "required": false
+    },
+    {
+      "id": "minecraft:multishot",
+      "required": false
+    },
+    {
+      "id": "nova_structures:power",
+      "required": false
+    }
+  ]
+}

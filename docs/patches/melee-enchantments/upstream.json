@@ -1,0 +1,10 @@
+{
+  "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar": {
+    "input": "mod fixing/retired packs/melee-enchantments-2026-10-23/penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "sha256": "3dfb7fcaa8061ecd2fd96eacf997f5e82de909e0276a2b3ee7b3994b2fbeee23"
+  },
+  "life-steal-enchantment-v1.1.0.jar": {
+    "input": "mod fixing/retired packs/melee-enchantments-2026-10-23/life-steal-enchantment-v1.1.0.jar",
+    "sha256": "b8d204aa88fd6bd913078657b44fd61447401754b5a5c383672bb6e2bd958040"
+  }
+}

@@ -37,7 +37,7 @@ public class ArcherRevisionProbe {
    equip(List.of(),branch==0?List.of():List.of("skill_tree_rpgs:archer_tier_4_spell_1_modifier_"+branch));
    var meteor=rain.value().deliver.meteor;var launch=meteor.launch_properties.copy();float radius=meteor.launch_radius;
    for(var m:SpellModifiers.of(player,rain)){if(m.projectile_launch!=null)launch.mutatingCombine(m.projectile_launch);radius+=m.meteor_launch_radius_add;}
-   eq("Rain branch "+branch+" count",1+launch.extra_launch_count,branch==2?60:40);eq("Rain branch "+branch+" ticks",launch.extra_launch_delay,branch==1?2:5);eq("Rain branch "+branch+" scatter",radius,8);
+   eq("Rain branch "+branch+" count",1+launch.extra_launch_count,branch==2?60:40);eq("Rain branch "+branch+" ticks",launch.extra_launch_delay,branch==1?2:5);eq("Rain branch "+branch+" scatter",radius,6);
   }
   double sum=0;int center=0;for(int i=0;i<1000;i++){
    Vec3 offset=ArcherProjectileRules.scatter(new Vec3(10,0,0).yRot((float)(i*.2)),rain,level);double r2=offset.lengthSqr();check("Scatter inside disk "+i,r2<=100);sum+=r2;if(r2<25)center++;
@@ -78,11 +78,11 @@ public class ArcherRevisionProbe {
     eq("Native Rain spawned total branch="+branch,falling.size(),branch==2?60:40);
     double maxRadius=0,minRadius=1000;int index=0;
     for(var p:falling){double aimCenter=index==0?5:9,dx=p.getX()-aimCenter,dz=p.getZ()-aimCenter,radius=Math.sqrt(dx*dx+dz*dz);maxRadius=Math.max(maxRadius,radius);minRadius=Math.min(minRadius,radius);
-     check("Native Rain follows current mob center",radius<=(8)+.001);check("Native first-arrow homing retained",index==0?p.getFollowedTarget()==aim:p.getFollowedTarget()==null);
+     check("Native Rain follows current mob center",radius<=(6)+.001);check("Native first-arrow homing retained",index==0?p.getFollowedTarget()==aim:p.getFollowedTarget()==null);
      double originalX=p.getX(),originalZ=p.getZ();for(int tick=0;tick<10&&!p.isRemoved();tick++){p.tickCount=tick;p.tick();}
      check("Rain actually falls to the impact plane",p.getY()<83);check("Rain flight preserves random horizontal offset",Math.hypot(p.getX()-originalX,p.getZ()-originalZ)<2);p.discard();index++;
     }
-    check("Native Rain actually scatters away from center",maxRadius>(8)*.5);check("Native Rain includes interior points",minRadius<(8)*.75);
+    check("Native Rain actually scatters away from center",maxRadius>(6)*.5);check("Native Rain includes interior points",minRadius<(6)*.75);
     aim.discard();
    }
    equip(List.of(),List.of());ProjectileLauncher.shootProjectile(level,player,null,magic,context(magic));

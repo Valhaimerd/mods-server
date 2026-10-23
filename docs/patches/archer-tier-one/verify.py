@@ -12,6 +12,13 @@ for record in json.loads((HERE/'artifacts.json').read_text()):
  if downstream_file.exists():
   downstream=next((r for r in json.loads(downstream_file.read_text()) if r['jar']==record['jar']),None)
   if downstream and downstream['before_sha256']==expected:expected=downstream['sha256']
+ radius_file=ROOT/'docs/patches/rain-radius/artifacts.json'
+ if radius_file.exists():
+  radius=next((r for r in json.loads(radius_file.read_text()) if r['jar']==record['jar']),None)
+  if radius and radius['before_sha256']==expected:expected=radius['sha256']
+ icon_file=ROOT/'docs/patches/slice-evasion-icon/artifacts.json'
+ icon=next((x for x in json.loads(icon_file.read_text()) if x['jar']==active.name),None) if icon_file.exists() else None
+ if icon and icon['before_sha256']==expected:expected=icon['sha256']
  assert hashlib.sha256(active.read_bytes()).hexdigest()==expected
  assert active.read_bytes()==fixed.read_bytes()
  with ZipFile(active) as z:
@@ -28,7 +35,7 @@ for record in json.loads((HERE/'artifacts.json').read_text()):
    assert barrage['arrow_perks']['damage_multiplier']==.6 and barrage['deliver']['shoot_arrow']['divergence']==0
    assert barrage['deliver']['shoot_arrow']['launch_properties']['extra_launch_delay']==3
    power=json.loads(z.read('data/archers/spell/power_shot.json'));assert power['cost']['cooldown']['duration']==12 and power['deliver']['stash_effect']['duration']==8 and power['impacts'][0]['action']['status_effect']['duration']==6
-   rain=json.loads(z.read('data/archers/spell/rain_of_arrows.json'));assert rain['cost']['cooldown']['duration']==30 and rain['deliver']['meteor']['launch_radius']==8 and rain['deliver']['meteor']['launch_properties']['extra_launch_count']==39 and rain['deliver']['meteor']['offset_requires_sequence']< -76
+   rain=json.loads(z.read('data/archers/spell/rain_of_arrows.json'));assert rain['cost']['cooldown']['duration']==30 and rain['deliver']['meteor']['launch_radius']==6 and rain['deliver']['meteor']['launch_properties']['extra_launch_count']==39 and rain['deliver']['meteor']['offset_requires_sequence']< -76
    magic=json.loads(z.read('data/archers/spell/magic_arrow.json'));assert magic['target']['type']=='NONE' and magic['cost']['cooldown']['duration']==25 and magic['deliver']['projectile']['launch_properties']['extra_launch_count']==3 and magic['impacts'][0]['action']['damage']['spell_power_coefficient']==.8
    wolf=json.loads(z.read('data/archers/spell/spirit_wolf.json'))
    assert wolf['cost']['cooldown']['duration']==35 and wolf['range']==32

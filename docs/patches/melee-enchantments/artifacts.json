@@ -1,0 +1,35 @@
+{
+  "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar": {
+    "input": "mod fixing/retired packs/melee-enchantments-2026-10-23/penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "sha256": "3dfb7fcaa8061ecd2fd96eacf997f5e82de909e0276a2b3ee7b3994b2fbeee23",
+    "output_sha256": "57728737159bba59e0c9303da0d0672c2d8e64b34d35baea387c5717e162bf61",
+    "changed_entries": [
+      "data/dungeons_arise/tags/enchantment/exclusive_set/discharge.json",
+      "data/dungeons_arise/tags/enchantment/exclusive_set/ensnaring.json",
+      "data/dungeons_arise/tags/enchantment/inclusive_set/ensnaring.json",
+      "data/ice_enchantments/tags/enchantment/exclusive_set/frost_aspect.json",
+      "data/minecraft/tags/enchantment/exclusive_set/bane_of_arthropods.json",
+      "data/minecraft/tags/enchantment/exclusive_set/fire_aspect.json",
+      "data/minecraft/tags/enchantment/exclusive_set/sharpness.json",
+      "data/minecraft/tags/enchantment/exclusive_set/smite.json",
+      "data/minecraft/tags/enchantment/inclusive_set/bane_of_arthropods.json",
+      "data/minecraft/tags/enchantment/inclusive_set/sharpness.json",
+      "data/minecraft/tags/enchantment/inclusive_set/smite.json",
+      "data/nova_structures/tags/enchantment/exclusive_set/aerials_bane.json",
+      "data/nova_structures/tags/enchantment/exclusive_set/illagers_bane.json",
+      "data/nova_structures/tags/enchantment/inclusive_set/aerials_bane.json",
+      "data/nova_structures/tags/enchantment/inclusive_set/illagers_bane.json",
+      "data/penchant/tags/enchantment/disabled.json"
+    ]
+  },
+  "life-steal-enchantment-v1.1.0.jar": {
+    "input": "mod fixing/retired packs/melee-enchantments-2026-10-23/life-steal-enchantment-v1.1.0.jar",
+    "sha256": "b8d204aa88fd6bd913078657b44fd61447401754b5a5c383672bb6e2bd958040",
+    "output_sha256": "26ddecfa0f912d3628473b8289d4de74178746a58165e321750e1ec8143d60f9",
+    "changed_entries": [
+      "data/life_steal_enchantment/function/damage_dealt.mcfunction",
+      "data/life_steal_enchantment/function/heal.mcfunction",
+      "local/lifesteal/LifeStealPack.class"
+    ]
+  }
+}

@@ -10,7 +10,8 @@ if not (SERVER/'libraries').exists():
 mods=SERVER/'mods';mods.mkdir(exist_ok=True)
 for p in (ROOT/'tmp/magic-third-tier/server/mods').glob('*.jar'):
  if p.name!='overhaul-probe.jar':shutil.copy2(ROOT/'mods'/p.name,mods/p.name)
-for p in (WORK/('before' if '--baseline' in sys.argv else 'built')).glob('*.jar'):shutil.copy2(p,mods/p.name)
+candidates=Path(sys.argv[sys.argv.index('--candidates')+1]) if '--candidates' in sys.argv else WORK/('before' if '--baseline' in sys.argv else 'built')
+for p in candidates.glob('*.jar'):shutil.copy2(p,mods/p.name)
 if not (SERVER/'server.properties').exists():
  text=(ROOT/'tmp/magic-third-tier/server/server.properties').read_text().replace('server-port=25594','server-port=0').replace('level-name=simple-descriptions-20261021','level-name=ArcherTierOne')
  (SERVER/'server.properties').write_text(text);(SERVER/'eula.txt').write_text('eula=true\n')

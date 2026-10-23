@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "crossarms:acceleration",
+      "required": false
+    },
+    {
+      "id": "crossarms:frenzy",
+      "required": false
+    },
+    {
+      "id": "minecraft:multishot",
+      "required": false
+    }
+  ]
+}

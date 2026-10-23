@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "ice_enchantments:frost_aspect",
+      "required": false
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "required": false
+    }
+  ]
+}

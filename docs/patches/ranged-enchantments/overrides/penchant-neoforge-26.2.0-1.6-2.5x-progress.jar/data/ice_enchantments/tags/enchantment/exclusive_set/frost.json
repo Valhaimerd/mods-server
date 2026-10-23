@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:flame",
+      "required": false
+    },
+    {
+      "id": "spectral_enchantment:spectral",
+      "required": false
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-22<br>
+Last audited: 2026-10-23<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 309 synchronized JARs plus 24 client-store JARs
 
@@ -46,39 +46,39 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
     <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>20</td></tr>
     <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>28</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>29</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>35</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>44</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>48</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>50</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>56</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>59</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>64</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>66</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>66</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>29</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>30</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>45</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>49</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>57</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>61</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>65</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>67</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>67</td></tr>
   </tbody>
 </table>
 
@@ -693,7 +693,7 @@ Utilities provides stamina, fortune, experience and mobility. Each anvil node re
 - **Core mechanic:** Connects class books and compatible weapons to the ability bar, targeting, costs, and cooldowns.
 - **Player guidance:** Check the ability bar for a spell’s target, cost, and cooldown.
 
-Class damage hits non-party players and passive mobs; healing targets self and party allies. Party players and owned pets are protected. Roots slows movement/jumping by 60% within six blocks for six seconds: 12-second cooldown, or ten Improved. Nettle guarantees Poison; Nature's Grasp immobilizes for one second per pulse. Charged Shot splashes five blocks without falloff. Concussive guarantees a one-second stun on an eight-second cooldown. Rhythm grants 3% ranged attack speed per stack, capped at 15%, refreshed for four seconds. Mark grants 7% incoming damage per stack, capped at 21% or 28% upgraded. Power Shot prepares arrows for eight seconds (ten Improved); Mark lasts six seconds, refreshed; cooldown is 12 seconds. Barrage fires three accurate 60% arrows; Extensive adds one. Wolves have 20 HP plus 40% ranged damage (50% Improved), attack 3 plus 15%, and no innate knockback resistance; pet bonuses apply. Rain follows its target, firing 40 arrows across an eight-block disk; Torrential fires faster, Endless increases the total to 60 with the same radius. Magic Arrows fires four wall-passing seekers lasting ten seconds: 80% ranged damage at full charge, 90% Improved or 100% with Magic Punch. Conjured launches a wide upward fan, begins medium homing after 0.5 seconds and reveals enemies for ten seconds on hit. Search radius is 32 blocks. Rain cooldown is 30 seconds; Magic Arrows remains 25 seconds. Archer casts/cooldowns scale with haste; debuffs affect living bosses.
+Class damage hits non-party players and passive mobs; healing targets self and party allies. Party players and owned pets are protected. Roots slows movement/jumping by 60% within six blocks for six seconds: 12-second cooldown, or ten Improved. Nettle guarantees Poison; Nature's Grasp immobilizes for one second per pulse. Charged Shot splashes five blocks without falloff. Concussive guarantees a one-second stun on an eight-second cooldown. Rhythm grants 3% ranged attack speed per stack, capped at 15%, refreshed for four seconds. Mark grants 7% incoming damage per stack, capped at 21% or 28% upgraded. Power Shot prepares arrows for eight seconds (ten Improved); Mark lasts six seconds, refreshed; cooldown is 12 seconds. Barrage fires three accurate 60% arrows; Extensive adds one. Wolves have 20 HP plus 40% ranged damage (50% Improved), attack 3 plus 15%, and no innate knockback resistance; pet bonuses apply. Rain follows its target, firing 40 arrows across a six-block disk; Torrential fires faster, Endless increases the total to 60 with the same radius. Magic Arrows fires four wall-passing seekers lasting ten seconds: 80% ranged damage at full charge, 90% Improved or 100% with Magic Punch. Conjured launches a wide upward fan, begins medium homing after 0.5 seconds and reveals enemies for ten seconds on hit. Search radius is 32 blocks. Rain cooldown is 30 seconds; Magic Arrows remains 25 seconds. Archer casts/cooldowns scale with haste; debuffs affect living bosses.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/spell-engine">Official mod page</a></p>
 
@@ -948,13 +948,13 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 - **Core mechanic:** Adds automatic fire, high-velocity shots and projectile-control options.
 - **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Frenzy heat is now a tradeoff between damage and magic self-damage.
 
-CrossArms 1.4 supplies seven enchantments in this pack. **Capacity has been removed.** Might and Frenzy cannot be combined; held legacy combinations retain Might and lose Frenzy. Each Frenzy shot restarts its recoil animation. Frenzy auto-feeds normal arrows. Infinity on the firing crossbow prevents consumption, still requires one normal arrow, and makes its free arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot immediately applies Slowness II (30% movement reduction) for one second, refreshed while firing. The first shot and repeated taps use the same heat multiplier. It starts at 20% shot damage through the first two bars, reaches 30% at the third/red heat bar, 40% at the fourth/dark red bar and 50% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
+CrossArms 1.4 offers Acceleration, Frenzy, Ricochet and Zero Drop. **Capacity is removed; Bombard, Deflector and Recycling are hidden.** Held legacy Might/Frenzy combinations lose Frenzy. Each Frenzy shot restarts its recoil animation. Frenzy auto-feeds normal arrows; Infinity preserves them but still requires one arrow and makes fired arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot applies Slowness II (-30% movement) for one second, refreshed while firing; first shots and taps use the same heat multiplier. It starts at 20% shot damage through the first two bars, reaches 30% at the third/red heat bar, 40% at the fourth/dark red bar and 50% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
 
 The 26th arrow fires, then the crossbow displays **Empty - Reload** for three seconds and stops auto-feeding. The notice disappearing does not reload it. Hold Use to complete a normal crossbow crank; an interrupted crank or waiting will not clear exhaustion. Three seconds without firing resets a partial counter only. Frenzy weapons share the player's counter across both hands, so swapping cannot skip the crank. Infinity prevents ammunition consumption but does not skip cranking.
 
-Overheating no longer forces durability down. Ordinary firing wear remains, and auto-feeding stops at one remaining durability. The local firing repair supports vanilla and modded crossbows in either hand. Acceleration increases velocity; Bombard creates block-damaging explosions; Zero Drop removes gravity but disables critical hits; Ricochet adds bounces; Deflector reflects projectiles; Recycling can return normal arrows.
+Overheating no longer forces durability down. Ordinary firing wear remains, and auto-feeding stops at one remaining durability. The local firing repair supports vanilla and modded crossbows in either hand. Acceleration increases velocity; Zero Drop removes gravity but disables both vanilla arrow and RPG critical hits; Ricochet adds bounces.
 
-Multishot reaches level III with up to seven projectiles, wider spread and a close-range neighboring-arrow damage effect. The pack preserves those mechanics while Expanded Crossbow Enchantings permits Multishot with Piercing; other restrictions remain. Cosmetic skins use a smithing table and can be reverted with a stick. No new keybind is required.
+Multishot reaches level III with up to seven projectiles, wider spread and a close-range neighboring-arrow damage effect. Multishot, Might, Acceleration and Frenzy are mutually exclusive. Piercing and Zero Drop have no pairwise enchantment conflicts. Gravity conflicts with Frenzy but permits Multishot, Might and Acceleration. Apply skins at a smithing table; revert with a stick. No new keybind is required.
 
 <p class="core-mod-source"><a href="https://modrinth.com/datapack/crossarms">Official project page</a></p>
 
@@ -1144,7 +1144,7 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Core mechanic:** Adds focused enchantment effects for movement, combat, armor, shields, and arrows.
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
-The collection adds movement, attack, defense, and arrow effects, including extra jumps and specialized projectile effects. Max Protection and Toughness add further armor choices. Double Hit is excluded from this pack.
+Toughness adds armor toughness. Hidden from acquisition and creative/recipe lists: Protection Grace, Antidote, Traveler, Soulbound, Air Jump, Tense, Withering, Deflector, Bombard, Recycling, Ghasted, Sweeping Edge, Penetrating Strike, Spiteful and Decay. Flame/Frost/Spectral are mutually exclusive; Tri-Shot excludes Power. Thorns excludes Fire Protection, Blast Protection and Fangs on one piece. Boots cannot combine Frost Walker with Soul Speed. Double Hit is excluded. Sharpness excludes Smite and the Arthropod/Aerial/Illager Banes; those four can combine with each other and Ensnaring. Ensnaring excludes Sharpness. Discharge excludes Fire Aspect/Frost Aspect. Life Steal I/II/III heals 3 HP per 20/16/12 HP dealt.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 
@@ -1246,7 +1246,7 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 <p class="core-category-description">Recovery happens in stages: PlayerRevive gives teammates the first rescue window; if that ends, Better Revive protects most inventory and experience in a grave and allows another revival attempt. Hotbar items, armor, and offhand equipment return to you, while equipped Curios go into the grave. Tool Belt's separate slot remains equipped, and Sophisticated Backpacks always remain in the grave. Better Respawn can change the return point after final death. Prepare totems, food, and group support before dangerous trips, then follow the Grave Compass if you respawn with a grave still active.</p>
 </section>
 
-<section class="core-category">
+<section class="core-category" style="break-inside: avoid;">
 <h3>Parties and multiplayer cooperation</h3>
 <div class="core-category-entries">
 

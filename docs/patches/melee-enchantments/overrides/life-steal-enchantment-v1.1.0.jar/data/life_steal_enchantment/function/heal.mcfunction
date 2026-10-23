@@ -1,0 +1,2 @@
+modpack_lifesteal_heal
+scoreboard players reset @s life_steal_enchantment.player.damage_dealt

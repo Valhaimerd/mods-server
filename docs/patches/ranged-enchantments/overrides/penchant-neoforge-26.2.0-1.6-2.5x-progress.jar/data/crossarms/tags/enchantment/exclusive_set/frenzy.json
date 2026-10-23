@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "crossarms:acceleration",
+      "required": false
+    },
+    {
+      "id": "minecraft:multishot",
+      "required": false
+    },
+    {
+      "id": "nova_structures:gravity",
+      "required": false
+    },
+    {
+      "id": "nova_structures:power",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+PASS native crafting recipe exists bifrost_marker
+PASS ingredient pickup unlocks recipe book bifrost_marker
+PASS native crafting recipe exists heimdalls_sword
+PASS ingredient pickup unlocks recipe book heimdalls_sword
+PASS native crafting recipe exists thors_hammer
+PASS ingredient pickup unlocks recipe book thors_hammer
+PASS native crafting recipe exists stormbreaker
+PASS ingredient pickup unlocks recipe book stormbreaker
+PASS server recipe fixture ready
+FAIL creative search includes bifrost_marker
+FAIL expected parent creative tab includes bifrost_marker
+FAIL creative search includes heimdalls_sword
+FAIL expected parent creative tab includes heimdalls_sword
+FAIL creative search includes thors_hammer
+FAIL expected parent creative tab includes thors_hammer
+FAIL creative search includes stormbreaker
+FAIL expected parent creative tab includes stormbreaker
+PASS JEI visible crafting recipe bifrost_marker
+PASS JEI visible crafting recipe heimdalls_sword
+PASS JEI visible crafting recipe thors_hammer
+PASS JEI visible crafting recipe stormbreaker
+FAIL JEI ingredient list includes bifrost_marker
+FAIL JEI ingredient list includes heimdalls_sword
+FAIL JEI ingredient list includes thors_hammer
+FAIL JEI ingredient list includes stormbreaker

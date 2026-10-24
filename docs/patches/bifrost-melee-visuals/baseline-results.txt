@@ -1,0 +1,27 @@
+PASS bifrost:thors_hammer unclaimed ordinary-use diagnostic
+FIRST bifrost:thors_hammer health=100.0 canUse=false
+PASS bifrost:thors_hammer unclaimed weapon remains blocked as requested
+PASS bifrost:thors_hammer attack does not silently bind an unclaimed weapon
+PASS bifrost:thors_hammer claimed owner eligible
+DIRECT bifrost:thors_hammer health=83.68 canUse=true
+PASS bifrost:thors_hammer claimed native melee damages golem
+BETTERCOMBAT bifrost:thors_hammer health=94.18227 canUse=true
+PASS bifrost:thors_hammer claimed Better Combat melee damages golem
+PASS bifrost:stormbreaker unclaimed ordinary-use diagnostic
+FIRST bifrost:stormbreaker health=100.0 canUse=false
+PASS bifrost:stormbreaker unclaimed weapon remains blocked as requested
+PASS bifrost:stormbreaker attack does not silently bind an unclaimed weapon
+PASS bifrost:stormbreaker claimed owner eligible
+DIRECT bifrost:stormbreaker health=75.8464 canUse=true
+PASS bifrost:stormbreaker claimed native melee damages golem
+BETTERCOMBAT bifrost:stormbreaker health=75.8464 canUse=true
+PASS bifrost:stormbreaker claimed Better Combat melee damages golem
+FAIL bifrost:stormbreaker resolved Punchy combo equals RPG reference
+PUNCHY bifrost:stormbreaker [{"type":"melee_combo","attack_1":"attack_1","attack_2":"attack_1","attack_3":"attack_2","attack_4":"attack_2","attack_5":"attack_combo_double_1","attack_6":"attack_combo_double_2"}]
+FAIL bifrost:thors_hammer resolved Punchy combo equals RPG reference
+PUNCHY bifrost:thors_hammer [{"type":"melee_combo","attack_1":"attack_1","attack_2":"attack_1","attack_3":"attack_2","attack_4":"attack_2","attack_5":"attack_combo_double_1","attack_6":"attack_combo_double_2"}]
+FAIL bifrost:heimdalls_sword resolved Punchy combo equals RPG reference
+PUNCHY bifrost:heimdalls_sword [{"type":"melee_combo","attack_1":"attack_1","attack_2":"attack_1","attack_3":"attack_2","attack_4":"attack_2","attack_5":"attack_combo_double_1","attack_6":"attack_combo_double_2"}]
+PASS Stormbreaker native third-person attack is two-handed slam
+OBSERVED attack clip attack_1
+FAIL Punchy first-person plays the reference downward-smash clip

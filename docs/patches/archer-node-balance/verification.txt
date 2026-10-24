@@ -1,0 +1,5 @@
+PASS 573 archive preservation and node checks.
+PASS active/fixed hashes match candidates.
+Only three skill definition resources changed; unrelated rewards, IDs, connections, translations and gameplay classes preserved.
+Handbook: 77 pages rendered, pages 2/18/19 reviewed, contents aligned, root/output copies match.
+No fresh runtime gameplay test or GitHub push performed.

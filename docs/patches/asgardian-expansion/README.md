@@ -66,3 +66,11 @@ python docs/patches/asgardian-expansion/verify.py --runtime
 Disposable server/client runners inject probes only into their test copies. Production archives contain no probe classes or test metadata. Test instances, backups, logs and screenshots remain ignored; neither the personal Minecraft profile nor the separate desktop server is changed. The predecessor is archived under `mod fixing/retired packs/asgardian-expansion-2026-10-24/`; the tested production archive is mirrored in `mod fixing/1 fixed packs/`.
 
 See [runtime-results.txt](runtime-results.txt) for final evidence. These are functional tests, not a measurement of final race/class balance. No claim is made for full-pack multiplayer latency, low-FPS stress, every third-party storage mod, every give-up/bleed-out timing combination, or audible human listening. Actual connected-client sound play events and rendered phase screenshots were checked. Further gameplay testing should compare the complete race/class/weapon rotation with equivalent late-game gear.
+
+## Bifrost visual follow-up - 25 October 2026
+
+[Resource-only repair](../bifrost-melee-visuals/README.md): Stormbreaker uses the RPG great-hammer Punchy mapping, Mjolnir uses its mace mapping, and Hofund uses its claymore mapping. Stormbreaker is 1.5 times its previous held size with a smaller tilted inventory view; Bifrost uses Pixel Rainbow Portal Vortex. Damage and ownership remain unchanged after the user confirmed the apparent zero damage came from unclaimed weapons.
+
+## Creative discovery follow-up - 25 October 2026
+
+[Creative and JEI discovery repair](../bifrost-creative-discovery/README.md) adds the marker to Functional Blocks and the three weapons to Combat/search. All four recipe-book unlocks and JEI recipes/listings were checked in a connected client; 26 checks pass. Only item creative registration changed.

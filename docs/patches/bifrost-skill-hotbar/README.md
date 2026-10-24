@@ -1,6 +1,6 @@
 # Bifrost native skill hotbar - 25 October 2026
 
-Bifrost is now a native Spell Engine active skill appended after existing weapon, book/class and active accessory skills. Opening destinations is instant with a zero-second spell cooldown. The existing three-second teleport charge and five-second travel cooldown are unchanged. The user-supplied Rainbow Rune Portal Gateway PNG is used unchanged as the skill icon.
+Bifrost is now a native Spell Engine active skill appended after existing weapon, book/class and active accessory skills. Opening destinations is instant with a zero-second spell cooldown. The existing three-second teleport charge and five-second travel cooldown are unchanged. The initial user-supplied Rainbow Rune Portal Gateway PNG was the skill icon; the [visual follow-up](../bifrost-melee-visuals/README.md) replaces it with Pixel Rainbow Portal Vortex.
 
 Hofund now matches `paladins:diamond_claymore` attributes and the native two-handed claymore combat profile, granting Flurry. Mjolnir retains Netherite Mace/Smash; Stormbreaker retains Netherite Great Hammer/Ground Slam and 0.8 attack speed. The prior long-handle/model repair remains.
 
@@ -38,3 +38,5 @@ Build layers over the pinned pre-pass repaired Bifrost archive in `tmp/bifrost-s
 The baseline fails because no native Bifrost spell exists. The replacement passes **42 connected-client/integrated-server checks** on Minecraft 26.2 / NeoForge 26.2.0.90, with Spell Engine 1.10.5, RPG modules 3.1.2, Better Combat 3.2.2, Punchy 2.8f and Player Animation Library 1.2.8. Checks cover all three weapon sources, single tail entry, source removal/re-equipping, book/accessory ordering, exact claymore attributes/profile, zero cooldown, server race denial, rejection of all four old intent actions, disabled primary/selector/owned throws, retained owner claims, native cast-to-menu and actual numeric hotbar activation. Book and active accessory entries are fixture sources through the native container API, not a full live Curios equipment matrix.
 
 The final in-game capture visually confirms the supplied portal icon on skill number 5. A rebuilt handbook page is visually checked; total pagination remains 77 pages. This was not a new dedicated-server smoke run or full multiplayer/shader/teleport stress test. Transit implementation and timings were preserved byte-for-byte. No personal Minecraft installation, external server or world was changed. Nothing was committed or pushed.
+
+The [25 October visual repair](../bifrost-melee-visuals/README.md) also enlarges Stormbreaker, fits its inventory model and adds exact Punchy resource mappings. Historical output hashes below this layer are superseded by that overlay.

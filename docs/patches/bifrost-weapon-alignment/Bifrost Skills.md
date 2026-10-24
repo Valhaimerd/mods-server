@@ -22,7 +22,7 @@ The normal RPG weapon skill remains separate from Bifrost. Stormbreaker's longer
 - **Input:** the normal Spell Engine skill-hotbar binding for that position. It follows the current loadout and user bindings instead of reserving a fixed numeric key.
 - **Example:** with the weapon skill on right-click, three class skills on 1-3 and an active trinket on 4, Bifrost occupies 5.
 - **Travel remains unchanged:** selecting a destination starts the existing three-second teleport charge and five-second travel cooldown. The zero-second cooldown applies to opening the menu.
-- **Icon:** the supplied Rainbow Rune Portal Gateway image.
+- **Icon:** the supplied Pixel Rainbow Portal Vortex image.
 - **Unavailable for now:** default hammer/axe throwing, beam/slash channels, custom selector moves and both custom healing passives. Right-click no longer starts these custom actions or opens Bifrost in air; it remains available to the native RPG weapon skill. Marker interaction remains available.
 
 ## Future appended-slot plan

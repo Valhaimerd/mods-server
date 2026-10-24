@@ -253,3 +253,19 @@ Berserker now fully heals on every pulse; fifth-pulse Speed IV and ending effect
 ## Bifrost native skill hotbar - 25 October 2026
 
 Only the appended native Bifrost custom skill is enabled. It opens destinations instantly with zero spell cooldown; the existing teleport charge/travel cooldown remains. It follows class/accessory skills (verified right-click, 1-4, then Bifrost 5) and uses the supplied portal icon. Hofund is now a two-handed Diamond Claymore with Flurry. Old custom combat, throws, healing passives and selector/packet activation are dormant; ownership/death recovery and recipes remain. The same-filename replacement passed 42 connected-client/integrated-server checks, and the icon/handbook page were visually checked. [Build, scope and future slots](../docs/patches/bifrost-skill-hotbar/README.md). Active/fixed copies match; predecessors archived. No personal installation changes or push.
+
+## Bifrost/Punchy weapon visuals - 25 October 2026
+
+Added exact reference Punchy aliases for Stormbreaker, Mjolnir and Hofund; the client now plays the reference downward `attack_mace` clip for Stormbreaker instead of a generic sword clip. Enlarged Stormbreaker held displays by 1.5x, tilted/shrank its inventory thumbnail, and replaced Bifrost?s icon with the supplied Pixel Rainbow Portal Vortex. Seventeen native client/integrated-server assertions pass; first-person/third-person/inventory frames were visually checked. The reported damage issue was confirmed to be unclaimed weapons, and gameplay/ownership code remains byte-identical as requested. [Build, proof and scope](../docs/patches/bifrost-melee-visuals/README.md). Matching active/fixed copies installed; predecessors archived locally. No personal installation changes or push.
+
+## Archer ordinary node balance (2026-10-25)
+
+[Tracked patch](../docs/patches/archer-node-balance/README.md): ordinary ranged damage is 2% in Adventurer Skills and RPG class/weapon trees, including conditional bow rewards. Adventurer ranged penetration becomes 3% movement speed; Hunter loses 10% penetration, retaining its other bonuses. Node IDs and saved unlocks remain. Two same-name active/fixed JARs replaced after 573 archive/node checks; prior copies retired locally. No push requested.
+
+## Bifrost creative and JEI discovery - 25 October 2026
+
+[Repair and evidence](../docs/patches/bifrost-creative-discovery/README.md): missing creative registration hid all four items from creative search and JEI item listing. Marker now appears in Functional Blocks; weapons in Combat. Existing crafting recipes and recipe-book unlocks remain intact. The exact tested one-class replacement passed 26 connected-client/integrated-server checks and was installed under its unchanged filename in active/fixed folders; predecessors retired locally. No push.
+
+## Rogue dual-power and attack-speed balance (2026-10-25)
+
+[Source and tests](../docs/patches/rogue-dual-balance/README.md): all Rogue physical-melee spell schools now use combined dual-wield power. Explosive Powder 40% D; Slice bonus 8% D; Fracture 2 armor + 5% D/stack; Ambush 30% D; Crimson 15% D once/cast; Bloody Strikes 10s; Counter +15% D. Flat Bleed is 1/4 HP stationary/moving per 25 ticks. Adventurer ordinary attack speed is 2%, RPG Rogue ordinary attack speed 1%. Four same-name active/fixed JARs replaced after 971 native regression checks. Originals retired locally. No push or external installation changes.

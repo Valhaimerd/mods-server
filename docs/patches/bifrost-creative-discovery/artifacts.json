@@ -1,0 +1,9 @@
+{
+  "jar": "bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar",
+  "before_sha256": "444d4d53aa89fca87bdea9bb77e04b513f68760d14d5db973cd67ee634d5e921",
+  "sha256": "6fc28ed3f6ceabc302ec4f1fe60a33c98685dae87a27cab79010c81bce959fd0",
+  "changed": [
+    "com/emandev/bifrost/ModItems.class"
+  ],
+  "source_sha256": "a863f82850be8072dc5fe37f4b36aeedd1a6cc9c652e30b93e66ab4d80f2b54f"
+}

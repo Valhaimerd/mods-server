@@ -1,0 +1,69 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "e9ebcbe5aa207d544f8063ee4e5f03ba76aebfd89711169b216e6a95996dd106",
+    "sha256": "9520ed566e0277a989197359f3a8f9bb9886a594b9b257c243b4814bbf469317",
+    "changed": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ]
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "ffa829a97402ae4129e16b525755fa3144e270313bd9a2a5c48adae0a445cd68",
+    "sha256": "a8fba08f17cff1ba9b160feaf9f8861bfd03caaf9c910bd71cfbb5b97aa70a3e",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/shadow_step.json",
+      "data/rogues/spell/shock_powder.json",
+      "data/rogues/spell/slice_and_dice.json",
+      "data/rogues/spell/vanish.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "d4cee89275dac63a6bb1623ae1b466254abf5c4eef240551aab2f5e01499849f",
+    "sha256": "7ad31c83be1b5d3e104ab5d7289e409a9201530379d5d6d3ad472ca6db7080bb",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_1_bonus.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_root.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "f098c0d73361c109f469e87fd2447b9bbce5b95e3d5016712d74eb5ded5f4539",
+    "sha256": "4683c0535aaf3cfd2a386b33e6c358f78f691ff710cba872c450f6bb398735b3",
+    "changed": [
+      "net/spell_engine/api/effect/BleedStatusEffect.class",
+      "net/spell_engine/internals/RogueRules.class",
+      "net/spell_engine/internals/PreparedCounter.class",
+      "crimson_heal.json",
+      "net/spell_engine/internals/CrimsonHealing.class"
+    ]
+  }
+]

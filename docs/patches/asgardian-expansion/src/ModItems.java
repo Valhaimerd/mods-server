@@ -15,6 +15,7 @@ import net.spell_engine.api.spell.container.SpellContainer;
 import net.spell_engine.rpg_series.item.Weapons;
 import net.spell_engine.rpg_series.item.Weapon;
 import net.paladins.PaladinsMod;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
 final class ModItems {
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("bifrost");
@@ -23,7 +24,13 @@ final class ModItems {
     static final DeferredItem<BifrostFocusItem> THORS_HAMMER=ITEMS.registerItem("thors_hammer",p->new BifrostFocusItem(p,"Mjolnir"),()->weapon(9,1.2));
     static final DeferredItem<BifrostFocusItem> STORMBREAKER=ITEMS.registerItem("stormbreaker",p->new BifrostFocusItem(p,"Stormbreaker"),()->weapon(10,0.8));
     static Item.Properties weapon(double damage,double speed){return new Item.Properties().stacksTo(1).component(DataComponents.UNBREAKABLE,Unit.INSTANCE).attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE,new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID,damage-1,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND).add(Attributes.ATTACK_SPEED,new AttributeModifier(Item.BASE_ATTACK_SPEED_ID,speed-4,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND).build());}
-    static void register(IEventBus bus){ITEMS.register(bus);bus.addListener(ModItems::weaponDefaults);}
+    static void register(IEventBus bus){ITEMS.register(bus);bus.addListener(ModItems::weaponDefaults);bus.addListener(ModItems::creativeContents);}
+    private static void creativeContents(BuildCreativeModeTabContentsEvent event){
+        if(event.getTabKey().equals(CreativeModeTabs.FUNCTIONAL_BLOCKS))event.accept(BIFROST_MARKER.get());
+        if(event.getTabKey().equals(CreativeModeTabs.COMBAT)){
+            event.accept(HEIMDALLS_SWORD.get());event.accept(THORS_HAMMER.get());event.accept(STORMBREAKER.get());
+        }
+    }
     private static void weaponDefaults(ModifyDefaultComponentsEvent event){
         match(event,HEIMDALLS_SWORD.get(),"paladins:diamond_claymore",Weapons.CLAYMORE_CONTAINER);
         match(event,THORS_HAMMER.get(),"paladins:netherite_mace",Weapons.MACE_CONTAINER);

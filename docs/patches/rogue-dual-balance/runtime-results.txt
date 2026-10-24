@@ -1,0 +1,7 @@
+PASS 971 Warrior/shield/party checks
+Baseline: Crimson Strikes at 40 dual power healed 4 HP rather than 6 HP.
+Candidate: native Slice bonus 3.2, Explosive Powder 16, Ambush 12, Fracture 4 armor/stack, Counter +6, Crimson +6 once/cast at D=40.
+Bleed checks cover stationary/vertical/horizontal movement, old amplifier normalization, NBT decoding, unchanged cadence, and 2.5s/10s node durations.
+NeoForge 26.2.0.90, Java-25 classes, -Xverify:all; isolated world. Global PvP mod excluded to measure raw coefficients.
+PASS 3535 installed archive/node/school/preservation checks.
+Handbook: 77 pages rendered, changed pages 17/18/19/32 reviewed, contents correct, root/output copies match.

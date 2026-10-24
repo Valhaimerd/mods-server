@@ -1,0 +1,32 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "2a113d92aa9ce589fd9e790570f307f1c3e61d315aead64292c1feb71dbb8379",
+    "sha256": "e9ebcbe5aa207d544f8063ee4e5f03ba76aebfd89711169b216e6a95996dd106",
+    "changed": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ],
+    "node_edits": [
+      "ranged_damage+3%",
+      "ranged_penetration",
+      "hunter"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "f850338e7d6e7615f628985731994ba0d3265289ce4d6e79a7833c73a8dccfa1",
+    "sha256": "d4cee89275dac63a6bb1623ae1b466254abf5c4eef240551aab2f5e01499849f",
+    "changed": [
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json"
+    ],
+    "node_edits": [
+      "archer_boost",
+      "archer_root",
+      "weapon_bow_root",
+      "archer_boost",
+      "archer_root",
+      "weapon_bow_root"
+    ]
+  }
+]

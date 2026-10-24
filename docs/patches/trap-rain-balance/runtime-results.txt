@@ -1,0 +1,23 @@
+PASS 2842 Archer/party measurements
+
+PASS Rain damage actual=0.6000000238418579 expected=0.6
+PASS Rain branch 0 count actual=40.0 expected=40.0
+PASS Rain branch 0 ticks actual=5.0 expected=5.0
+PASS Rain branch 0 scatter actual=6.0 expected=6.0
+PASS Rain branch 1 count actual=40.0 expected=40.0
+PASS Rain branch 1 ticks actual=2.0 expected=2.0
+PASS Rain branch 1 scatter actual=6.0 expected=6.0
+PASS Rain branch 2 count actual=60.0 expected=60.0
+PASS Rain branch 2 ticks actual=7.0 expected=7.0
+PASS Rain branch 2 scatter actual=6.0 expected=6.0
+Rogue II PASS Primary trap damage actual=16.0 expected=16.0
+Rogue II PASS Unrestricted high-health root actual=20.0 expected=20.0
+Rogue II PASS Trap Slowness I duration actual=60.0 expected=60.0
+Rogue II PASS Unrestricted high-health root actual=20.0 expected=20.0
+Rogue II PASS Trap Slowness I duration actual=60.0 expected=60.0
+Rogue II PASS Primary trap damage actual=30.0 expected=30.0
+Rogue II PASS Unrestricted high-health root actual=20.0 expected=20.0
+Rogue II PASS Trap Slowness I duration actual=60.0 expected=60.0
+Rogue II PASS Unrestricted high-health root actual=20.0 expected=20.0
+Rogue II PASS Trap Slowness I duration actual=60.0 expected=60.0
+Rogue II PASS Improved trap damage with Serrated actual=30.0 expected=30.0

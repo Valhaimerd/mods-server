@@ -1,0 +1,16 @@
+{
+  "item.bifrost.heimdalls_sword": "Hofund",
+  "item.bifrost.thors_hammer": "Mjolnir",
+  "block.bifrost.bifrost_marker": "Bifrost Marker",
+  "item.bifrost.stormbreaker": "Stormbreaker",
+  "key.bifrost.asgardian_ability": "Asgardian Ability",
+  "key.categories.bifrost.abilities": "Asgardian abilities",
+  "screen.bifrost.abilities": "Asgardian Abilities",
+  "screen.bifrost.activate": "Activate",
+  "subtitles.bifrost.transit_charge": "Bifrost gathers power",
+  "subtitles.bifrost.transit_descent": "Bifrost descends",
+  "subtitles.bifrost.transit_impact": "Bifrost strikes the ground",
+  "subtitles.bifrost.transit_closure": "Bifrost rises and closes",
+  "death.attack.bifrost.lightning": "%1$s was struck by Asgardian lightning",
+  "death.attack.bifrost.lightning.player": "%1$s was struck by %2$s\u2019s Asgardian lightning"
+}

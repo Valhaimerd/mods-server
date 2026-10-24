@@ -1,0 +1,51 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "e22fad2c8083deeaa3764bde89132df1c668545dc20609a44ed034c06459e1f6",
+    "sha256": "9a07d9d9ed5e35f410804bab9d5d1b12b8d45b2525ee2f1e2d11d585add9f851",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/last_stand.json",
+      "data/rogues/spell/mortal_strike.json",
+      "net/rogues/effect/RogueEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "a8644d6a6298930808be279fa97aac84c0b18ff10c88620de0b8ef559cdf4890",
+    "sha256": "97dfb1d16b1184010025a85f1a35c6b651fe878115ca3c3d12d3f4bd8cd9a3fa",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_2_root.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "37adab2213caa3704fe56c2c3289547f90553cec2f4fb498ed5cfb01d6aad2a1",
+    "sha256": "45f5bf7996e465fc8926d0a892cc1f2a26689826cc6ca28d06a913688054983e",
+    "changed": [
+      "net/spell_engine/internals/SpellParameters.class",
+      "net/spell_engine/internals/SpellTriggers.class",
+      "spell_engine.mixins.json",
+      "net/spell_engine/entity/WarriorRules.class"
+    ],
+    "added": [
+      "net/spell_engine/entity/TenacityAbsorbEffect.class",
+      "net/spell_engine/entity/WarriorUltimates$Channel.class",
+      "net/spell_engine/entity/WarriorUltimates$Rage.class",
+      "net/spell_engine/entity/WarriorUltimates.class",
+      "net/spell_engine/mixin/warrior/WarriorBasicAttackMixin.class",
+      "net/spell_engine/mixin/warrior/WarriorChannelMixin.class"
+    ]
+  }
+]

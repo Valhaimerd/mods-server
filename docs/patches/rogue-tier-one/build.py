@@ -18,9 +18,9 @@ def update(name,o):
   o['active'].setdefault('cast',{}).update(duration=.2,haste_affected=True,animation={'id':'spell_engine:one_handed_ground_charge'});o['cost']['cooldown']['duration']=4
   cloud=o['deliver']['clouds'][0];cloud['placement']['location_offset_by_look']=3;cloud['additional_placements']=[];cloud['volume']['radius']=1.5
   cloud['volume']['area']['vertical_range_multiplier']=1;cloud['spawn_ticks']=20;cloud['impact_tick_interval']=1
-  o['impacts'][0]['action']['damage']['spell_power_coefficient']=.6
-  status=o['impacts'][1]['action']['status_effect'];status['duration']=2;status.pop('apply_limit',None)
-  o['impacts'].append({'action':{'type':'STATUS_EFFECT','status_effect':{'effect_id':'minecraft:slowness','duration':4}}})
+  o['impacts'][0]['action']['damage']['spell_power_coefficient']=.4
+  status=o['impacts'][1]['action']['status_effect'];status['duration']=1;status.pop('apply_limit',None)
+  o['impacts'].append({'action':{'type':'STATUS_EFFECT','status_effect':{'effect_id':'minecraft:slowness','duration':3}}})
 
  if name=='data/rogues/spell/shock_powder.json':
   o['cost']['cooldown']['duration']=12;o['impacts'][0]['action']['status_effect'].pop('apply_limit',None)
@@ -53,7 +53,7 @@ def update(name,o):
    o['impacts']=[i for i in o['impacts'] if i['action']['type']!='DAMAGE'];o['impacts'][0]['action']['status_effect']['amplifier_cap']=2;o['cost']['cooldown']['duration']=1
  if name=='assets/rogues/lang/en_us.json':
   o['spell.rogues.shadow_step.description']='Teleport behind an enemy within 14 blocks. Disrupt nearby hostile mobs within 4 blocks of arrival for 1.5 seconds.'
-  o['spell.rogues.bear_trap.description']='Place one trap 3 blocks ahead. After arming for 1 second it becomes hidden. An enemy within 1 block triggers 60%% dual-melee damage and 2 seconds of root to enemies within 1.5 blocks, plus Slowness I for 4 seconds. Jumping enemies can trigger it.'
+  o['spell.rogues.bear_trap.description']='Place one trap 3 blocks ahead. After arming for 1 second it becomes hidden. An enemy within 1 block triggers 40%% dual-melee damage and 1 second of root to enemies within 1.5 blocks, plus Slowness I for 3 seconds. Jumping enemies can trigger it.'
   o['effect.rogues.tracking_disruption']='Tracking Disruption'
 
   o['spell.rogues.shock_powder.description']='Stuns enemies within 5 blocks for 3 seconds, or 1 second for high-health mobs and players at 24 HP or more. Improved adds 1 second. Mob threshold: 50 HP plus twice your melee power; players below 24 current HP receive the longer stun.'
@@ -63,7 +63,7 @@ def update(name,o):
    'rogue_tier_3_spell_1_root':'Shadowstep reaches 18 blocks instead of 14.',
    'rogue_tier_3_spell_1_modifier_1':'Shadowstep grants immunity to incoming damage for 1 second.',
    'rogue_tier_3_spell_1_modifier_2':'Shadowstep immediately deals 50%% melee damage to the target and applies Blindness I, Weakness I and Slowness I for 2 seconds.',
-   'rogue_tier_3_spell_2_root':'Bear Trap deals 75%% dual-melee damage instead of 60%%.',
+   'rogue_tier_3_spell_2_root':'Bear Trap deals 75%% dual-melee damage instead of 40%%.',
    'rogue_tier_3_spell_2_modifier_1':'Bear Trap also causes Bleed for 5 seconds.',
    'rogue_tier_3_spell_2_modifier_2':'Bear Trap affects a 2.25-block radius and activates when enemies enter within 1.5 blocks.',
    'rogue_tier_2_passive_1':'Rolling grants 20 percentage points of evasion for 2 seconds. Does not stack or end when taking damage. No additional cooldown.',

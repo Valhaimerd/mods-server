@@ -213,7 +213,7 @@ foreach ($name in $names) {
         continue
     }
 
-    if ($name -eq 'Bifrost Teleport') {
+    if ($name -eq 'Asgardian_Mod (Bifrost Teleport)') {
         $artworkFile = 'bifrost-teleport.png'
         $artworkPath = Join-Path $AssetDirectory $artworkFile
         $row.Platform = 'User supplied'

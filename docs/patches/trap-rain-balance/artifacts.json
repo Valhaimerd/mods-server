@@ -1,0 +1,32 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "a007ec97df732dfe34871c67b94f004c2abb2bedca3845fedd8362bfed22ecfe",
+    "sha256": "c5b77bd4702ec55a11cba807bc639f80afbb1aac385951e920f730d8d6dfc2a7",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/bear_trap.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "7cd1fb91f5433932967cfee1aa9430f62144c49a761b2ca17aaa8d50c7371094",
+    "sha256": "17c042ef0a2680d363b21e52c10d0dc894f7267c67113268f2d7a0d02c34491f",
+    "changed": [
+      "assets/archers/lang/en_us.json",
+      "data/archers/spell/rain_of_arrows.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "13ca868dc37ea27002f8c70364e141808b6ea5d769c39acb640c842fe825f4a1",
+    "sha256": "d74d72ecb1c046073071571c02343997c890fae4b273ed5059c1e57411bdf457",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/archer_tier_4_spell_1_modifier_2.json"
+    ],
+    "added": []
+  }
+]

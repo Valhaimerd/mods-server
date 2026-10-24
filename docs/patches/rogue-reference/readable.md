@@ -65,9 +65,9 @@ Fracture snapshots the latest applying caster's melee power for the whole curren
 | Cast / base cooldown | Instant / **12 s** | **0.2 s** / **4 s** |
 | Haste | Cast/cooldown haste enabled | Cast/cooldown haste enabled |
 | Main effect | Teleport behind an aimed enemy within **14 blocks** | Place **one trap 3 blocks directly ahead** |
-| Damage | No direct base damage | **60% D**, zero knockback |
+| Damage | No direct base damage | **40% D**, zero knockback |
 | Tracking | Nearby hostile mobs within **4 blocks of arrival** lose their targets and cannot reacquire for **1.5 s**; players, self, party allies and owned pets are excluded | No tracking effect |
-| Control | No baseline stun | **2 s unrestricted root** plus **Slowness I for 4 s** |
+| Control | No baseline stun | **1 s unrestricted root** plus **Slowness I for 3 s** |
 | Lifetime / visibility | Native teleport; disruption expires after 30 ticks | Visible **1 s arming**; hidden while armed; visible on activation; retained **20 s active lifetime**, one detonation |
 | Activation radius | Required aimed enemy | **1 block**, or **1.5 blocks with Extensive Coverage** |
 | Hit radius | Single target for Ambush | **1.5 blocks**, or **2.25 with Extensive Coverage**; every eligible enemy in the hit volume is affected by the one activation |

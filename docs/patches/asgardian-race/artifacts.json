@@ -1,0 +1,19 @@
+[
+  {
+    "jar": "iourusraces-1.1.0.jar",
+    "before_sha256": "c5ce71589f95fde4e50f8efbdfbb15a239422ad09c2f0c4415ecf67487841ee7",
+    "sha256": "a84a86e15fb416ca8956fe4c86e3319784623247a9c1f54f74a2e8c995e68770",
+    "changed": [
+      "com/eiden/iourusraces/client/gui/RaceSelectionScreen$1.class",
+      "com/eiden/iourusraces/client/gui/RaceSelectionScreen.class",
+      "com/eiden/iourusraces/network/RaceNetworkHandler.class",
+      "com/eiden/iourusraces/race/Race.class",
+      "com/eiden/iourusraces/race/RaceAttributes.class",
+      "assets/iourusraces/lang/en_us.json",
+      "assets/iourusraces/lang/es_es.json"
+    ],
+    "added": [
+      "com/eiden/iourusraces/race/AsgardianRules.class"
+    ]
+  }
+]

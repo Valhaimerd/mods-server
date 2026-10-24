@@ -45,22 +45,22 @@ foreach ($name in $groupedEntries) {
     }
 }
 $missingMemberIcons = @($rows | Where-Object {
-    $_.HandbookEntry -notin $groupedEntries -and $_.HandbookEntry -ne 'Bifrost Teleport' -and
+    $_.HandbookEntry -notin $groupedEntries -and $_.HandbookEntry -ne 'Asgardian_Mod (Bifrost Teleport)' -and
     $_.Status -ne 'Downloaded' -and $_.Status -notmatch '^Embedded author (logo|icon) from installed JAR$'
 })
 if ($missingMemberIcons.Count -gt 0) {
     throw "Individual mods must have verified project or embedded author icons: $($missingMemberIcons.HandbookEntry -join ', ')"
 }
 
-$bifrost = $rows | Where-Object HandbookEntry -eq 'Bifrost Teleport' | Select-Object -First 1
+$bifrost = $rows | Where-Object HandbookEntry -eq 'Asgardian_Mod (Bifrost Teleport)' | Select-Object -First 1
 if (-not $bifrost -or $bifrost.Platform -ne 'User supplied') {
-    throw 'Bifrost Teleport should remain a separate user-art entry.'
+    throw 'Asgardian_Mod (Bifrost Teleport) should remain a separate user-art entry.'
 }
 if ($bifrost.LocalFile -ne 'bifrost-teleport.png' -or $bifrost.Status -ne 'User-provided artwork') {
-    throw 'Bifrost Teleport should map to the supplied square artwork.'
+    throw 'Asgardian_Mod (Bifrost Teleport) should map to the supplied square artwork.'
 }
 if (-not (Test-Path -LiteralPath (Join-Path (Split-Path $manifestPath -Parent) $bifrost.LocalFile) -PathType Leaf)) {
-    throw 'Bifrost Teleport artwork file is missing.'
+    throw 'Asgardian_Mod (Bifrost Teleport) artwork file is missing.'
 }
 if ($rows.HandbookEntry -contains 'Locked In Slots' -or $rows.HandbookEntry -contains 'Eating Animation') {
     throw 'Removed mods must not appear in the icon manifest.'

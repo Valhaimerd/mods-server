@@ -17,8 +17,13 @@ for r in json.loads((HERE/'artifacts.json').read_text()) if (HERE/'artifacts.jso
  icon_file=ROOT/'docs/patches/slice-evasion-icon/artifacts.json'
  icon=next((x for x in json.loads(icon_file.read_text()) if x['jar']==after.name),None) if icon_file.exists() else None
  layered=folder==ROOT/'mods' and icon and icon['before_sha256']==r['sha256']
- assert hashlib.sha256(after.read_bytes()).hexdigest()==(icon['sha256'] if layered else r['sha256'])
- audited=ROOT/'tmp/slice-evasion-icon'/('before-'+r['jar']) if layered else after
+ expected=icon['sha256'] if layered else r['sha256']
+ tuning_file=ROOT/'docs/patches/trap-rain-balance/artifacts.json'
+ tuning=next((x for x in json.loads(tuning_file.read_text()) if x['jar']==after.name),None) if tuning_file.exists() else None
+ tuned=folder==ROOT/'mods' and tuning and tuning['before_sha256']==expected
+ if tuned:expected=tuning['sha256']
+ assert hashlib.sha256(after.read_bytes()).hexdigest()==expected
+ audited=ROOT/'tmp/slice-evasion-icon'/('before-'+r['jar']) if layered else ROOT/'tmp/trap-rain-balance/before'/r['jar'] if tuned else after
  with ZipFile(before) as a,ZipFile(audited) as b:
   assert b.testzip() is None and set(a.namelist())==set(b.namelist())
   changed={n for n in a.namelist() if a.read(n)!=b.read(n)};assert changed==set(r['changed'])

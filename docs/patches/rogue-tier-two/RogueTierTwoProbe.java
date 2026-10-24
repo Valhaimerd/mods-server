@@ -69,8 +69,8 @@ public final class RogueTierTwoProbe {
    var band=mob("minecraft:villager",extensive?10.1:9.6,80,8);trap.tickCount=19;trap.tick();eq("Trap arming visible",TrapRules.hidden(trap)?1:0,0);eq("No damage while arming",band.getHealth(),1000);
    var pet=(net.minecraft.world.entity.animal.wolf.Wolf)mob("minecraft:wolf",8.3,80,8);pet.setOwnerReference(EntityReference.of(player.getUUID()));trap.tickCount=20;trap.tick();eq("Outer band and protected pet cannot activate",trap.isSprung()?1:0,0);eq("Armed trap hidden",TrapRules.hidden(trap)?1:0,1);
    var jumping=mob("minecraft:villager",8.7,81.2,8);jumping.setOnGround(false);trap.tickCount=21;trap.tick();eq("Jumping enemy activates",trap.isSprung()?1:0,1);eq("Activated trap visible",TrapRules.hidden(trap)?1:0,0);
-   double damage=extensive?30:24;eq("Primary trap damage",1000-jumping.getHealth(),damage);eq("Multiple enemies caught",1000-band.getHealth(),damage);
-   for(var m:List.of(band,jumping)){eq("Unrestricted high-health root",m.getEffect(effect("rogues:bear_trap")).getDuration(),40);eq("Trap Slowness I duration",m.getEffect(effect("minecraft:slowness")).getDuration(),80);var pos=m.position();m.move(MoverType.SELF,new net.minecraft.world.phys.Vec3(1,1,0));eq("Root physically holds",m.position().distanceToSqr(pos),0);}
+   double damage=extensive?30:16;eq("Primary trap damage",1000-jumping.getHealth(),damage);eq("Multiple enemies caught",1000-band.getHealth(),damage);
+   for(var m:List.of(band,jumping)){eq("Unrestricted high-health root",m.getEffect(effect("rogues:bear_trap")).getDuration(),20);eq("Trap Slowness I duration",m.getEffect(effect("minecraft:slowness")).getDuration(),60);var pos=m.position();m.move(MoverType.SELF,new net.minecraft.world.phys.Vec3(1,1,0));eq("Root physically holds",m.position().distanceToSqr(pos),0);}
    trap.tickCount=22;trap.tick();eq("Single detonation only",1000-band.getHealth(),damage);eq("Protected pet unharmed by detonation",pet.getHealth(),1000);eq("Protected pet not rooted",pet.hasEffect(effect("rogues:bear_trap"))?1:0,0);trap.discard();band.discard();jumping.discard();pet.discard();
   }
  }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "OC ",
+    "OB ",
+    " B "
+  ],
+  "key": {
+    "O": "minecraft:obsidian",
+    "C": "minecraft:crying_obsidian",
+    "B": "minecraft:blaze_rod"
+  },
+  "result": {
+    "id": "bifrost:stormbreaker",
+    "count": 1
+  }
+}

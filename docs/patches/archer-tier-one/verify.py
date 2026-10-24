@@ -19,6 +19,9 @@ for record in json.loads((HERE/'artifacts.json').read_text()):
  icon_file=ROOT/'docs/patches/slice-evasion-icon/artifacts.json'
  icon=next((x for x in json.loads(icon_file.read_text()) if x['jar']==active.name),None) if icon_file.exists() else None
  if icon and icon['before_sha256']==expected:expected=icon['sha256']
+ tuning_file=ROOT/'docs/patches/trap-rain-balance/artifacts.json'
+ tuning=next((x for x in json.loads(tuning_file.read_text()) if x['jar']==active.name),None) if tuning_file.exists() else None
+ if tuning and tuning['before_sha256']==expected:expected=tuning['sha256']
  assert hashlib.sha256(active.read_bytes()).hexdigest()==expected
  assert active.read_bytes()==fixed.read_bytes()
  with ZipFile(active) as z:

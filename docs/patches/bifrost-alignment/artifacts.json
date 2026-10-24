@@ -1,0 +1,20 @@
+{
+  "jar": "bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar",
+  "before_sha256": "f5b9938610d93e110e0b6ba1a700bf760e95079b194a345aa2403487bad504e1",
+  "sha256": "c7cc566fb59afc5cbccfeef4338dd6810171db0d9f88cc14d9ed540ed4e43813",
+  "changed": [
+    "META-INF/neoforge.mods.toml",
+    "assets/bifrost/lang/en_us.json",
+    "com/emandev/bifrost/BifrostFocusItem.class",
+    "com/emandev/bifrost/BifrostMarkerBlock.class",
+    "com/emandev/bifrost/BifrostMarkerService.class",
+    "com/emandev/bifrost/BifrostMenuService.class",
+    "com/emandev/bifrost/BifrostMod.class",
+    "com/emandev/bifrost/BifrostNetworking.class",
+    "com/emandev/bifrost/BifrostTeleportManager.class",
+    "com/emandev/bifrost/ModItems.class"
+  ],
+  "added": [
+    "com/emandev/bifrost/AsgardianAccess.class"
+  ]
+}

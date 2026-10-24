@@ -142,13 +142,13 @@ The native entity dimensions are 0.8 blocks wide / 0.925 high. Wolves teleport-f
 | --- | --- | --- |
 | Cast | **0.5 s** | **1 s** full charge; partial charges deal less damage |
 | Base cooldown | **30 s**, haste-affected | **25 s**, haste-affected |
-| Damage | **40% R per impact** | **80% R per arrow at full charge**, four arrows |
+| Damage | **60% R per impact** | **80% R per arrow at full charge**, four arrows |
 | Range / area | **32 blocks** aiming; follows the targeted mob, **6-block random scatter**, **2.5-block splash per impact** | Automatically seeks nearest eligible enemy within **32 blocks of each arrow**, without pretargeting |
 | Delivery | **40 arrows**, every **0.25 s**; launch span **9.75 s** | **4 arrows**, every **0.25 s**; launch span **0.75 s**, velocity **1.5** |
 | Behavior | Uniform random disk scatter includes the middle, without following a moving target | Slight **5-degree steering per tick**, can turn all the way around over time; passes through blocks; **10 s lifetime**; effectively unlimited enemy piercing, without hitting the same entity twice |
 | Improved/root | **+5 percentage points critical chance** | Full-charge damage becomes **90% R per arrow** |
 | Branch A | **Torrential Arrows:** 40 arrows every **0.1 s**, same **6-block scatter / 2.5-block splash**; launch span **3.9 s** | **Conjured Arrow:** four widely separated upward launches above the caster; after **0.5 s** each arrow begins **medium homing (10 degrees/tick)**. Hits reveal enemies for **10 s** |
-| Branch B | **Endless Volley:** **+20 arrows**, **60 total**, every **0.25 s**, **6-block scatter / 2.5-block splash**; launch span **14.75 s** | **Magic Punch:** full-charge damage becomes **100% R per arrow** with Improved, plus **150% extra base knockback**, giving **5.0** instead of **2.0** |
+| Branch B | **Endless Volley:** **+20 arrows**, **60 total**, every **0.35 s**, **6-block scatter / 2.5-block splash**; launch span **20.65 s** | **Magic Punch:** full-charge damage becomes **100% R per arrow** with Improved, plus **150% extra base knockback**, giving **5.0** instead of **2.0** |
 
 Magic Arrows keeps its registry ID for save compatibility. Party allies and owned pets are excluded from automatic acquisition and final damage. It reacquires the nearest eligible enemy every tick, excluding already-hit enemies. Solid blocks do not prevent its entity collision checks. Range is no longer a traveled-distance lifetime limit; the projectile expires after 200 ticks. Improved deals 90% R per arrow at full charge; Magic Punch adds another 10 percentage points, giving 100% R. Charge output scales linearly; half charge gives half the full-charge damage. Each arrow searches within 32 blocks. Conjured reveals enemies on hit with Glowing for 10 seconds; ordinary and Magic Punch arrows retain slight steering without the upward fan. Rain retains the native live target reference: each scheduled launch centers on the target's current position. Its offset sequence rule is negative, enabling every arrow; zero would disable scatter.
 

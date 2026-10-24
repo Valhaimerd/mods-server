@@ -63,7 +63,7 @@ Current verified baseline:
 - 24 client-store JARs;
 - 183 alphabetical gameplay entries;
 - 174 entries with verified project icons from CurseForge or Modrinth, including nine group entries with representative member artwork, plus eight author icons from installed JARs and user-provided Bifrost artwork;
-- 47 keybind tables;
+- 48 keybind tables;
 - 6 handbook parts;
 - zero broken internal links.
 

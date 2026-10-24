@@ -333,3 +333,5 @@ clipping. All 461 internal links and matching PDF copies remain.
 ## Six-block Rain scatter follow-up
 
 The current base, Torrential and Endless scatter radius is **six blocks**. Counts, intervals and impact splash retain their values above. See [the resource-only patch and verification](../rain-radius/README.md).
+
+Current numeric follow-up: [Bear Trap 40% damage / one-second root / three-second slow, Rain 60%, Endless seven-tick spacing](../trap-rain-balance/README.md).

@@ -121,3 +121,29 @@ Effortless Building 4.3 is retired from the active pack, replaced by the supplie
 The existing `DungeonsArise-26.1.2-2.1.70-release-26.2-registryfix.jar` keeps its prior registry repair and all classes/worldgen. Voltaic Shot is removed: its enchantment definition, tag, two functions, translation keys and five special loot outcomes. Those outcomes become equally weighted empty rolls, preserving all other loot chances. Existing items can no longer resolve this enchantment. Rebuild with `python docs/patches/remove-voltaic-shot.py <prior-registry-fixed.jar> <output.jar>`; run with only a JAR argument to verify complete absence. Prior active bytes are retained in ignored retired packs.
 
 79 isolated NeoForge 26.2.0.90 server checks passed with the repacked Dungeons Arise, including registry absence and the restored 25% ordinary/Hunter bow and crossbow projectile bonuses. The original ensnaring entity tag still references removed `minecraft:potion`, producing a tag and dependent-predicate reload warning; these unrelated resources are byte-identical. See `docs/patches/voltaic-removal-verification.json`.
+
+## Warrior tier I and directional shields ? 23 October 2026
+
+The same-filename Rogues, Skill Tree and Spell Engine repacks now include Throw Weapon, pulling/area nets, hit-based Killing Spree, direct-damage Endured Vitality and explicit haste across all Warrior tiers. Shields apply an independent 80% frontal reduction, retaining activation delay and durability while preventing axe/component disable and damage-tag/piercing bypass. The isolated NeoForge 26.2.0.90 server passed 625 scripted checks, including party/pet protection and existing Rogue tier-II regressions. Active and `1 fixed packs` copies match; prior copies are retained in `retired packs/warrior-tier-one-2026-10-23/`. See `docs/patches/warrior-tier-one/README.md` for inputs, rebuild, exact values and limitations. No personal installations or worlds were touched; nothing was committed or pushed.
+
+## Asgardian Bifrost travel alignment
+
+The earlier travel-only same-filename Bifrost 0.4.3-alpha replacement is displayed as Asgardian_Mod and renames Heimdall's Sword to Hofund. That historical layer preserved marker saves, IDs, travel effects and timing; the full expansion below supersedes its mechanics and test scope. Stored Iourus Asgardian identity is required for focus use/attacks, marker placement/use/rename, menus, commands and packets; dead, spectator and downed actors cannot activate travel. Losing eligibility cancels charging. Both sides require matching Bifrost and Asgardian-enabled Iourus builds. Combat additions and passenger transit were pending at that stage; they are implemented by the full expansion below. See [source and isolated client/server evidence](../docs/patches/bifrost-alignment/README.md). The previous JAR is in retired packs and the final is also in fixed packs; personal installations were not changed.
+
+## Warrior tier II and scaling ? 23 October 2026
+
+The current three Warrior repacks include six-second nets (four with Multiple Nets), half-point melee-power scaling for Vitality armor and Warm Up healing, Wild Charge and Shout purification/control protection, revised second-tier upgrades and the guaranteed Momentum roll/next-hit buff. Wild Charge retains a two-second base and Improved adds one second per the final clarification. The isolated server passed 762 measurements, including previous shield/throw/party regressions. Source, exact behavior, client-check scope and inputs are in `docs/patches/warrior-tier-two/README.md`; previous active/fixed copies are in `retired packs/warrior-tier-two-2026-10-23/`. Personal installations and worlds remain untouched; no commit or push was requested.
+
+## Full Asgardian expansion - 24 October 2026
+
+The full 2026-10-24 Asgardian/Bifrost expansion adds server-authoritative weapon skills, bound hammer/axe ownership and protected final-death recovery, mixed-race passenger transit, original models and four phase sounds. The same active filename is retained. See [the implementation and isolated test scope](../docs/patches/asgardian-expansion/README.md). This extends the earlier travel-only alignment; neither isolated runtime checks nor the initial coefficients establish final class balance.
+
+## Warrior ultimates - 24 October 2026
+
+Installed same-filename Rogues, Skill Tree and Spell Engine overlay: Berserker, revised Last Stand, five-hit Momentum, health-based Enrage and Tenacity. [Build and test record](../docs/patches/warrior-tier-three/README.md). Isolated NeoForge checks: 944 passed. Matching fixed copies retained; prior active/fixed archives are in ignored `retired packs/warrior-tier-three-2026-10-24/`. No personal worlds changed; no GitHub push requested.
+
+## Archer and Wizard descriptions - 24 October 2026
+
+Audited 135 Archer/Arcane/Fire/Frost descriptions and simplified 55. Same-filename language-only Archers, Wizards and Skill Tree overlays preserve all gameplay resources and bytecode. Percentage descriptions, ranges and timings replace template tokens; Nimble Shield wording now matches its half-penalty offset. [Audit and rebuild record](../docs/patches/class-descriptions/README.md). Previous archives are retained in ignored retired packs; fixed copies match.
+
+Confirmed Warrior follow-up: Tenacity now triggers at 1-30% HP with twelve-second absorption. Enrage size stacking and the five ultimate cooldown steps are confirmed. [Rebuild and isolated proof](../docs/patches/tenacity-followup/README.md).

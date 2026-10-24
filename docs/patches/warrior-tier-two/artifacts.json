@@ -1,0 +1,46 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "7ddf6475b011eca40bc5fc35c03496cf2465d91a4758d550de5647dc7f64c50d",
+    "sha256": "e22fad2c8083deeaa3764bde89132df1c668545dc20609a44ed034c06459e1f6",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/charge.json",
+      "data/rogues/spell/shout.json",
+      "data/rogues/spell/throw_net.json",
+      "net/rogues/effect/RogueEffects.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "7a6350b5b6ae9cba6e01f763d799b86efb830f0b9716719e330a4438d528d09f",
+    "sha256": "a8644d6a6298930808be279fa97aac84c0b18ff10c88620de0b8ef559cdf4890",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_2_root.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "573467f77ea5d5a996a7a547c7d91274877ac67d481d02b56f7e7d5028fa78a7",
+    "sha256": "37adab2213caa3704fe56c2c3289547f90553cec2f4fb498ed5cfb01d6aad2a1",
+    "changed": [
+      "net/spell_engine/client/casting/ClientCastController.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class",
+      "spell_engine.mixins.json",
+      "net/spell_engine/entity/WarriorRules.class"
+    ],
+    "added": [
+      "net/spell_engine/entity/WarriorTierTwo.class",
+      "net/spell_engine/mixin/warrior/WarriorFreedomMixin.class"
+    ]
+  }
+]

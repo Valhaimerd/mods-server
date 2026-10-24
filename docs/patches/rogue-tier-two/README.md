@@ -101,3 +101,5 @@ PDF bytes match. The Rogue reference was regenerated from the installed JARs.
 The final expanded run also verifies an immune Ender Dragon receives Bear
 Trap root and its custom movement is held, plus native doubled-haste cast
 timing for every Rogue active. Total: 2,769 measurements.
+
+Current numeric follow-up: [Bear Trap 40% damage / one-second root / three-second slow, Rain 60%, Endless seven-tick spacing](../trap-rain-balance/README.md).

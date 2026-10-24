@@ -16,6 +16,9 @@ for r in json.loads((HERE/'artifacts.json').read_text()):
  cast=next((x for x in json.loads(cast_file.read_text()) if x['jar']==active.name),None) if cast_file.exists() else None
  cast_layered=cast and cast['before_sha256']==expected
  if cast_layered:expected=cast['sha256']
+ tuning_file=ROOT/'docs/patches/trap-rain-balance/artifacts.json'
+ tuning=next((x for x in json.loads(tuning_file.read_text()) if x['jar']==active.name),None) if tuning_file.exists() else None
+ if tuning and tuning['before_sha256']==expected:expected=tuning['sha256']
  assert hashlib.sha256(active.read_bytes()).hexdigest()==expected
  audited=ROOT/'tmp/rain-radius/before'/r['jar'] if layered else ROOT/'tmp/bear-trap-cast'/('before-'+r['jar']) if cast_layered else active
 

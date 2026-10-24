@@ -15,7 +15,7 @@ $missing = @(
 if ($missing.Count -gt 0) {
     throw "Downloaded project icons are not rendered in the handbook HTML: $($missing -join ', ')"
 }
-$bifrost = $manifest | Where-Object HandbookEntry -eq 'Bifrost Teleport' | Select-Object -First 1
+$bifrost = $manifest | Where-Object HandbookEntry -eq 'Asgardian_Mod (Bifrost Teleport)' | Select-Object -First 1
 $bifrostSrc = 'assets/mod-icons/' + [uri]::EscapeDataString($bifrost.LocalFile)
 if (-not $bifrost -or -not $html.Contains('class="mod-entry-icon" src="' + $bifrostSrc + '"')) {
     throw 'The supplied Bifrost artwork is not rendered beside its mod entry.'

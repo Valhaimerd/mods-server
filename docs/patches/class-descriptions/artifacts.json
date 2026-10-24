@@ -1,0 +1,87 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "17c042ef0a2680d363b21e52c10d0dc894f7267c67113268f2d7a0d02c34491f",
+    "sha256": "f086c38d5be1e6bb0c4f858af3bc0a1d39698b0153df4d602e7d6f83824272b2",
+    "changed": [
+      "assets/archers/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.archers.barrage.description",
+      "spell.archers.magic_arrow.description"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "5d61fa101fd445c7fe62902714c48537399a785d891cbc65188260ded138b110",
+    "sha256": "022c18785dc7847713890af26d82ce2be063b6a1b313be56d303fdeb437aba76",
+    "changed": [
+      "assets/wizards/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.wizards.arcane_barrage.description",
+      "spell.wizards.arcane_beam.description",
+      "spell.wizards.arcane_blast.description",
+      "spell.wizards.arcane_blink.description",
+      "spell.wizards.arcane_evocation.description",
+      "spell.wizards.arcane_explosion.description",
+      "spell.wizards.arcane_missile.description",
+      "spell.wizards.elemental_frost_shard.description",
+      "spell.wizards.fire_blast.description",
+      "spell.wizards.fire_breath.description",
+      "spell.wizards.fire_meteor.description",
+      "spell.wizards.fire_slash.description",
+      "spell.wizards.fire_wall.description",
+      "spell.wizards.fireball.description",
+      "spell.wizards.frost_blizzard.description",
+      "spell.wizards.frost_nova.description",
+      "spell.wizards.frost_shard.description",
+      "spell.wizards.frost_shield.description",
+      "spell.wizards.frost_spikes.description",
+      "spell.wizards.frostbolt.description"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "97dfb1d16b1184010025a85f1a35c6b651fe878115ca3c3d12d3f4bd8cd9a3fa",
+    "sha256": "885bbe0bee9536466510042b5672f7f2778374f4ae9ee9cb68cf0a394998423f",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "description_keys": [
+      "spell.skill_tree_rpgs.arcane_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.arcane_tier_2_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_2_spell_1_root.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.arcane_tier_3_spell_1_root.description",
+      "spell.skill_tree_rpgs.arcane_tier_4_spell_2_root.description",
+      "spell.skill_tree_rpgs.archer_tier_4_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.fire_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.fire_tier_2_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.fire_tier_2_spell_1_root.description",
+      "spell.skill_tree_rpgs.fire_tier_2_spell_2_root.description",
+      "spell.skill_tree_rpgs.fire_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.fire_tier_3_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.fire_tier_3_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.fire_tier_3_spell_1_root.description",
+      "spell.skill_tree_rpgs.fire_tier_3_spell_2_modifier_2.description",
+      "spell.skill_tree_rpgs.fire_tier_3_spell_2_root.description",
+      "spell.skill_tree_rpgs.fire_tier_4_spell_1_root.description",
+      "spell.skill_tree_rpgs.frost_tier_2_passive_2.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_1_root.description",
+      "spell.skill_tree_rpgs.frost_tier_2_spell_2_root.description",
+      "spell.skill_tree_rpgs.frost_tier_3_passive_2.description",
+      "spell.skill_tree_rpgs.frost_tier_3_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.frost_tier_3_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.frost_tier_3_spell_1_root.description",
+      "spell.skill_tree_rpgs.frost_tier_3_spell_2_modifier_1.description",
+      "spell.skill_tree_rpgs.frost_tier_3_spell_2_root.description",
+      "spell.skill_tree_rpgs.frost_tier_4_spell_1_modifier_1.description",
+      "spell.skill_tree_rpgs.frost_tier_4_spell_1_modifier_2.description",
+      "spell.skill_tree_rpgs.frost_tier_4_spell_1_root.description"
+    ]
+  }
+]

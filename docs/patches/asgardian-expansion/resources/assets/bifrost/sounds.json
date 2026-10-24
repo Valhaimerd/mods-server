@@ -1,0 +1,38 @@
+{
+  "transit_charge": {
+    "subtitle": "subtitles.bifrost.transit_charge",
+    "sounds": [
+      {
+        "name": "bifrost:transit_charge",
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "transit_descent": {
+    "subtitle": "subtitles.bifrost.transit_descent",
+    "sounds": [
+      {
+        "name": "bifrost:transit_descent",
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "transit_impact": {
+    "subtitle": "subtitles.bifrost.transit_impact",
+    "sounds": [
+      {
+        "name": "bifrost:transit_impact",
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "transit_closure": {
+    "subtitle": "subtitles.bifrost.transit_closure",
+    "sounds": [
+      {
+        "name": "bifrost:transit_closure",
+        "attenuation_distance": 96
+      }
+    ]
+  }
+}

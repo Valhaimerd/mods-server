@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-23<br>
+Last audited: 2026-10-24<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 309 synchronized JARs plus 24 client-store JARs
 
@@ -41,44 +41,44 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>19</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>25</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>27</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>29</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>30</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>34</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>37</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>40</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>45</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>49</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>55</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>57</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>61</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>62</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>65</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>67</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>67</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>18</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>20</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>26</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>28</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>30</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>31</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>33</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>36</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>38</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>41</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>47</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>51</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>53</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>56</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>57</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>59</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>63</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>64</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>67</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>69</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>69</td></tr>
   </tbody>
 </table>
 
@@ -99,7 +99,7 @@ Use this page to begin a new world. [Featured Mechanics](#part-i--featured-mecha
 
 ### First ten minutes
 
-1. Compare the seven Iourus racial traits and choose a lasting race. Its direct menu shortcut is unbound; assign Open Race Menu in Controls to reopen the selection screen and read each option.
+1. Compare the eight Iourus racial traits and choose a lasting race. Its direct menu shortcut is unbound; assign Open Race Menu in Controls to reopen the selection screen and read each option.
 2. Equip a class book with a matching weapon. Changing the loadout changes your role, so try a few combinations.
 3. Open the skill tree with `T` and read node requirements before spending points. Test your equipped spell or attack against an easy target.
 4. Open the world map with `M`, mark a route, and keep coordinates visible with `N`. Check the Cave Codex before hunting for Alex's Caves.
@@ -145,16 +145,16 @@ These systems change how you build a character, explore, survive, and manage you
 <section class="feature-detail">
 <h3 id="feature-iourus-races" class="feature-heading"><img src="assets/mod-icons/iourus-races.png" alt="">Iourus Races</h3>
 
-- **Identity:** The installed build offers Human, Elf, Dwarf, Orc, Goblin, Melfork, and Draconic races.
+- **Identity:** The installed build offers Human, Elf, Dwarf, Orc, Goblin, Melfork, Draconic, and the locally added Asgardian race.
 - **Mechanics:** Each race changes attributes, passive strengths, and drawbacks; the choice affects play beyond appearance.
 - **Progression:** Race is saved with the character, while class remains a separate equipment choice.
-- **Decision:** Read each race's in-game traits before confirming. An ordinary player cannot freely replace a selected race.
+- **Asgardian:** 22 HP; 5% larger and slower; +2% melee, ranged and magic damage, plus +2% mining speed. Lightning strikes cannot hurt them, but magic deals 10% more damage. Ragnarok shattered their ancestral wards.
 
 
 
 **Choosing a race**
 
-1. At the selection screen, compare every race's listed strengths, weaknesses, attributes, and passive traits. The installed build offers seven options.
+1. At the selection screen, compare every race's listed strengths, weaknesses, attributes, and passive traits. The installed build offers eight options.
 2. Choose for the playstyle you want to keep. The author describes elves as mobile, orcs as combat-focused, dwarves as resilient, and humans as versatile; inspect the game for the exact current traits.
 3. After confirming, build an equipment-based class around that foundation. A class can change with gear, but an ordinary player cannot freely replace a confirmed race.
 
@@ -588,8 +588,8 @@ Progress continues through enchantment use, exploration rewards, and specialized
 #### Iourus Races
 
 - **Type:** Character foundation
-- **Core mechanic:** Seven persistent identities alter strengths, weaknesses, attributes, and passive behavior.
-- **Player guidance:** Compare the seven race descriptions before confirming a lasting choice.
+- **Core mechanic:** Eight persistent identities alter strengths, weaknesses, attributes, and passive behavior.
+- **Player guidance:** Compare the eight race descriptions before confirming a lasting choice.
 
 A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class.
 
@@ -614,6 +614,15 @@ A race changes the traits you carry through the whole playthrough. It does not l
 - **Player guidance:** Equip a class book and a compatible weapon to form a loadout.
 
 Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues have haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 200% dual-wield Mutilate, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
+
+Warriors can Throw Weapon for up to 80% melee damage on a five-second base cooldown, trading two seconds of Weakness IV for a projectile that retains its original power. Improved reaches 90%; Strong Throw pierces two enemies and seeks the next target, while Head Throw reaches 100% and briefly stuns. Throw Net has a six-second base cooldown, deals up to 15% melee damage, roots eligible enemies and drags them toward two blocks in front of you. Improved reaches 30 blocks; Bigger Net affects a five-block impact radius; Multiple Nets lowers cooldown to four seconds with a shorter root. Killing Spree stacks damage and damage reduction on hits. Endured Vitality stacks armor and maximum hearts from direct hits, healing only newly added hearts. Each stack's armor includes 6% melee power rounded to the nearest half point; the normal armor cap remains.
+
+Wild Charge grants two seconds of movement speed and knockback resistance, three with Improved, on a 16-second base cooldown. Endurance grants full knockback resistance during the buff; Concussion Blow readies a two-second stun for the next melee hit. Wild Charge can be cast while controlled and removes/prevents movement impairments for two seconds. Demoralizing Shout also works during control, with three seconds of protection and a 16-second base cooldown. It weakens melee, ranged and offensive magic power by 8% and reveals enemies for six seconds in 12 blocks, or 16 with Improved. Battle Shout buffs party damage at the same radius; Challenging Shout adds damage, aggro and a brief stun. Warm Up guarantees scaled healing on every combat roll with no extra cooldown. Momentum readies five melee hits within six seconds of a roll; each stacks 2% attack speed and movement speed, up to 10% each, for three seconds refreshed by hits. Its base cooldown is twelve seconds. All Warrior casts and cooldowns scale with haste. Party allies and pets remain protected.
+
+Berserker replaces Mortal Strike: channel five pulses while stationary, gaining attack speed, basic-attack damage and knockback resistance while taking more damage. Reaching five pulses fully heals and grants Speed IV briefly; normal expiry also fully heals. A fatal hit ends the buff, fully heals, puts both early Warrior skill tiers on cooldown and causes Nausea and stun. Brutality adds critical chance; Lethality trades health over time for healing melee hits. Last Stand grants 0.6 seconds of damage immunity per pulse, Regeneration I and knockback immunity for fifteen seconds, twenty with Improved. Juggernaut adds size and 3% damage reduction per pulse; Sentinel stacks melee damage from direct hits during Last Stand. Both ultimates channel over 2.5 seconds and have 60-100 second base cooldowns by completed pulses. Enrage automatically grants more melee damage and size as health drops; Tenacity grants twelve-second absorption and stuns nearby enemies at 30% health or lower. Stuns interrupt these channels; roots do not.
+
+Activated shields reduce frontal damage by 80%, separately from armor and Resistance: 10 damage with 50% Resistance and a shield becomes 1. Axes cannot disable blocking, and sonic booms and piercing arrows cannot bypass this reduction. Rear hits and source-less environmental damage receive no shield reduction. Normal activation delay and durability remain.
+
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/archers">Official mod page</a></p>
 
@@ -693,7 +702,7 @@ Utilities provides stamina, fortune, experience and mobility. Each anvil node re
 - **Core mechanic:** Connects class books and compatible weapons to the ability bar, targeting, costs, and cooldowns.
 - **Player guidance:** Check the ability bar for a spell’s target, cost, and cooldown.
 
-Class damage hits non-party players and passive mobs; healing targets self and party allies. Party players and owned pets are protected. Roots slows movement/jumping by 60% within six blocks for six seconds: 12-second cooldown, or ten Improved. Nettle guarantees Poison; Nature's Grasp immobilizes for one second per pulse. Charged Shot splashes five blocks without falloff. Concussive guarantees a one-second stun on an eight-second cooldown. Rhythm grants 3% ranged attack speed per stack, capped at 15%, refreshed for four seconds. Mark grants 7% incoming damage per stack, capped at 21% or 28% upgraded. Power Shot prepares arrows for eight seconds (ten Improved); Mark lasts six seconds, refreshed; cooldown is 12 seconds. Barrage fires three accurate 60% arrows; Extensive adds one. Wolves have 20 HP plus 40% ranged damage (50% Improved), attack 3 plus 15%, and no innate knockback resistance; pet bonuses apply. Rain follows its target, firing 40 arrows across a six-block disk; Torrential fires faster, Endless increases the total to 60 with the same radius. Magic Arrows fires four wall-passing seekers lasting ten seconds: 80% ranged damage at full charge, 90% Improved or 100% with Magic Punch. Conjured launches a wide upward fan, begins medium homing after 0.5 seconds and reveals enemies for ten seconds on hit. Search radius is 32 blocks. Rain cooldown is 30 seconds; Magic Arrows remains 25 seconds. Archer casts/cooldowns scale with haste; debuffs affect living bosses.
+Class damage hits non-party players and passive mobs; healing targets self and party allies. Party players and owned pets are protected. Roots slows movement/jumping by 60% within six blocks for six seconds: 12-second cooldown, or ten Improved. Nettle guarantees Poison; Nature's Grasp immobilizes for one second per pulse. Charged Shot splashes five blocks without falloff. Concussive guarantees a one-second stun on an eight-second cooldown. Rhythm grants 3% ranged attack speed per stack, capped at 15%, refreshed for four seconds. Mark grants 7% incoming damage per stack, capped at 21% or 28% upgraded. Power Shot prepares arrows for eight seconds (ten Improved); Mark lasts six seconds, refreshed; cooldown is 12 seconds. Barrage fires three accurate 60% arrows; Extensive adds one. Wolves have 20 HP plus 40% ranged damage (50% Improved), attack 3 plus 15%, and no innate knockback resistance; pet bonuses apply. Rain follows its target: 40 arrows at 60% ranged damage across six blocks; Torrential fires faster, while Endless fires 60 arrows every 0.35 seconds. Magic Arrows fires four wall-passing seekers lasting ten seconds: 80% ranged damage at full charge, 90% Improved or 100% with Magic Punch. Conjured launches a wide upward fan, begins medium homing after 0.5 seconds and reveals enemies for ten seconds on hit. Search radius is 32 blocks. Rain cooldown is 30 seconds; Magic Arrows remains 25 seconds. Archer casts/cooldowns scale with haste; debuffs affect living bosses.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/spell-engine">Official mod page</a></p>
 
@@ -1309,13 +1318,31 @@ A discovered point only becomes useful after activation. Keep a known point near
 
 <div class="core-mod-entry">
 
-#### Bifrost Teleport
+#### Asgardian_Mod (Bifrost Teleport)
 
-- **Type:** Travel and navigation
-- **Core mechanic:** Adds named-marker teleportation using mythic weapons and cinematic Bifrost effects.
-- **Player guidance:** Name and confirm a marker before travelling to it.
+- **Type:** Asgardian weapons and group travel
+- **Core mechanic:** Hofund, Mjolnir and Stormbreaker combine finite weapon abilities with named-marker Bifrost travel.
+- **Player guidance:** Choose Asgardian in Iourus Races, craft the equipment, then assign **Asgardian Ability** in Controls to open its skill selector. This control starts unbound.
 
-Named markers support deliberate routes between known places. Check the destination and return path before using a mythic weapon to travel.
+**Getting started.** Hofund has 8 attack damage and 1.5 attack speed; Mjolnir has 9 and 1.2; Stormbreaker has 10 and 1.0. These are ordinary weapon attributes before your build's bonuses. The hammer and axe are unbreakable and bind to their crafter. An old unbound weapon needs `/asgard claim` while held or targeted on the ground. Taking another owner's weapon is blocked. Stormbreaker's recipe uses two obsidian down the left, crying obsidian at top-middle, and blaze rods at center and bottom-middle; JEI shows the grid.
+
+**Combat controls.** Ordinary attacks on an entity remain melee. With Mjolnir or Stormbreaker, left-click in air or Sneak + left-click an entity throws the weapon. Right-click charges Hofund's slash or channels Mjolnir's lightning beam; release to stop. Use the ability selector for the other moves and **Bifrost Travel**. Marker right-click also opens destinations. Weapon actions and RPG spell casts cannot overlap.
+
+The percentages below use your ordinary fully charged raw melee damage, before defenses. Armor, blocking, party protection and the pack's PvP reduction still apply. Cast times and combat cooldowns benefit from haste; Realm Shift and Berserk cannot recharge below 75% of their listed base cooldown. Multi-hit moves have per-target caps.
+
+| Weapon | Main moves and base cooldowns |
+|---|---|
+| Hofund | Slash: 8-block wave, 160% on the first target and 100% on others, up to six; 0.8s charge, 12s cooldown. Realm Shift: slows visible enemies within six blocks, shorter on bosses/players; 35s. Hilt Bash: 60%, or 110% after a recent block, with brief interruption; 10s. Berserk: below 40% health, a seven-block lunge and three strikes totaling at most 220%; 30s. |
+| Mjolnir | Throw: 20 blocks, 135%, 0.6s launch lockout. Beam: 16 blocks, up to 3s, 85% initial hit and 25% later pulses with a small consecutive-hit bonus; 250% cap, 10s cooldown. Shards: up to five targets within 12 blocks, twice at 45%; 22s. Shield Strike: offhand shield required, 170% first target and 90% others, up to four; 25s. Vortex: five-block radius, three 35% pulses, at most eight targets; 30s. |
+| Stormbreaker | Throw follows the hammer's default return rules. Ground Slam: six-block radius, 180% at center falling to 108% at edge, at most 12 targets; 35s. Ricochet: 24-block opening throw, up to three bounces within ten blocks of each hit; 125% first and 100% later hits, or 180% when the first hit has no bounce target; 16s. |
+
+**Limited recovery.** Mjolnir builds five lightning-hit charges against hostile targets; the next qualifying hit heals one heart, with a 12s cooldown. Charges expire after 20s out of combat. A hostile Stormbreaker Slam hit while below 40% health heals two hearts over four seconds, with a 60s cooldown. Both heals share a ten-second recovery lockout and cannot rescue a downed player. Allies, pets and training targets cannot supply healing.
+
+**Returning weapons and death.** A thrown hammer or axe returns after a hit, wall or range limit. A full inventory leaves it protected nearby until space opens. First downing retains it but disables its use. On final death it waits at a saved, protected death-site position instead of entering the grave; return there and crouch against it to retrieve it. Only its owner can recover it. Death during a throw uses the same rule. Restarting, changing race or respawning does not summon a waiting weapon. An administrator can recover a genuinely stranded weapon; ordinary gameplay cannot transfer ownership.
+
+**Group travel.** Name markers and select a destination in the same dimension. The charge takes three seconds, with a five-second travel cooldown afterward. When the descending source beam first reaches the ground, it captures eligible entities intersecting its six-block footprint and 72-block column. Mixed-race passengers, pets and vehicles with riders can accompany the Asgardian initiator; entering later misses that trip. Items, projectiles, dead/downed players and other transit visuals are excluded. Groups need separate safe landing spaces near the target; a group with no safe landing stays at source. Race loss, downing or another invalid initiating action cancels charging. The prismatic beam and four phase sounds leave no world blocks behind.
+
+Existing marker IDs and destinations remain valid. Matching updated Bifrost and Asgardian-enabled Iourus builds are required on client and server. These initial weapon values have isolated functional tests; their combined late-game balance still needs playtesting.
 
 <p class="core-mod-source"><a href="https://github.com/Valhaimerd/mods-server/blob/main/mods/bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar">Pack-distributed JAR</a></p>
 
@@ -3680,6 +3707,12 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Toggle Scarf of Invisibility |  |
 | Toggle Universal Attractor |  |
 
+#### Asgardian_Mod (Bifrost Teleport) controls
+
+| Action | Recommended key |
+|---|---|
+| Asgardian Ability |  |
+
 #### Better Combat
 
 | Action | Recommended key |
@@ -3928,6 +3961,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Armory](#armory)
 - [Arsenal](#arsenal)
 - [Artifacts](#artifacts-1)
+- [Asgardian_Mod (Bifrost Teleport)](#asgardian_mod-bifrost-teleport)
 - [Astral Dimension](#feature-astral-dimension)
 - [ATi Structures](#ati-structures)
 - [Auras](#auras)
@@ -3941,7 +3975,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Better Respawn](#better-respawn)
 - [Better Revive](#better-revive)
 - [Better Rotten Flesh](#better-rotten-flesh)
-- [Bifrost Teleport](#bifrost-teleport)
 - [Biomes O' Plenty](#biomes-o-plenty)
 - [Blood Moon](#blood-moon)
 - [Charm of Undying: Reborn](#charm-of-undying-reborn)
@@ -4096,6 +4129,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 #### Combat
 
+- [Asgardian_Mod (Bifrost Teleport)](#asgardian_mod-bifrost-teleport)
 - [Better Combat](#better-combat-1)
 - [Combat Roll](#combat-roll)
 - [Floating Damage Indicators](#floating-damage-indicators-1)
@@ -4128,6 +4162,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 #### Equipment
 
+- [Asgardian_Mod (Bifrost Teleport)](#asgardian_mod-bifrost-teleport)
 - [CrossArms](#crossarms)
 - [Expanded Crossbow Enchantings](#expanded-crossbow-enchantings)
 - [All Arrows Infinity Fix](#all-arrows-infinity-fix)
@@ -4286,7 +4321,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 #### Travel
 
-- [Bifrost Teleport](#bifrost-teleport)
+- [Asgardian_Mod (Bifrost Teleport)](#asgardian_mod-bifrost-teleport)
 - [Explorer's Compass](#explorers-compass)
 - [Mielon's The Sift](#feature-the-sift)
 - [Nature's Compass](#natures-compass)

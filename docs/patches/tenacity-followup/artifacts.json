@@ -1,0 +1,18 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "885bbe0bee9536466510042b5672f7f2778374f4ae9ee9cb68cf0a394998423f",
+    "sha256": "7fed47b12e28a15b9f3161f0a54319bd06495abdf216f82912d3a45721519443",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "45f5bf7996e465fc8926d0a892cc1f2a26689826cc6ca28d06a913688054983e",
+    "sha256": "9da1fd361cb9ce3b32df759f161497f7b8671c76d1a6ca5406c599b3450caf9c",
+    "changed": [
+      "net/spell_engine/entity/WarriorUltimates.class"
+    ]
+  }
+]

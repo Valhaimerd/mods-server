@@ -1,0 +1,146 @@
+Minecraft 26.2 / NeoForge 26.2.0.90 / Java 25 bytecode; isolated tests, 23 October 2026.
+
+Baseline: FAIL Non-Asgardian cannot rename legacy markers (native method accepted Human).
+PASS 133 Bifrost native server checks (includes actual restart persistence).
+PASS 129 Bifrost native server checks (both optional revival mods absent).
+PASS connected client: Hofund name and race tooltip; existing destination menu packet; native 60-tick teleport reaches marker; five-second cooldown; reset disables held focus
+PASS missing Iourus rejected by dependency loader.
+PASS upstream Iourus rejected with explicit Asgardian-enabled build requirement.
+PASS archive hash/CRC, unchanged marker codec, stable native IDs and resources, Java 25, production probe exclusion.
+PASS handbook: 76 pages; changed pages 3, 4 and 31 visually reviewed; other rendered pages identical; 461 internal links valid; 51 contents page numbers match.
+
+Limits: no new combat arsenal, owner binding, passenger transport or beam presentation. Native beam timing and code are retained except eligibility checks. No full-pack multiplayer latency/load test. FakePlayer has no normal teleport networking; real connected client verifies actual destination separately. Personal profile and desktop server untouched.
+
+PASS Non-Asgardian cannot rename legacy markers
+PASS Denied rename preserves original marker
+PASS Asgardian can rename
+PASS Rename retains legacy UUID
+PASS Rename retains position and dimension
+PASS Stored race gate NONE
+PASS Direct travel denied NONE
+PASS Command menu selection denied NONE
+PASS Rename command denied NONE
+PASS Marker list denied NONE
+PASS Marker lookup denied NONE
+PASS Focus use denied NONE bifrost:heimdalls_sword
+PASS Focus attack denied NONE
+PASS Focus marker interaction denied NONE
+PASS Focus use denied NONE bifrost:thors_hammer
+PASS Focus attack denied NONE
+PASS Focus marker interaction denied NONE
+PASS Marker placement denied NONE
+PASS Stored race gate HUMAN
+PASS Direct travel denied HUMAN
+PASS Command menu selection denied HUMAN
+PASS Rename command denied HUMAN
+PASS Marker list denied HUMAN
+PASS Marker lookup denied HUMAN
+PASS Focus use denied HUMAN bifrost:heimdalls_sword
+PASS Focus attack denied HUMAN
+PASS Focus marker interaction denied HUMAN
+PASS Focus use denied HUMAN bifrost:thors_hammer
+PASS Focus attack denied HUMAN
+PASS Focus marker interaction denied HUMAN
+PASS Marker placement denied HUMAN
+PASS Stored race gate ORC
+PASS Direct travel denied ORC
+PASS Command menu selection denied ORC
+PASS Rename command denied ORC
+PASS Marker list denied ORC
+PASS Marker lookup denied ORC
+PASS Focus use denied ORC bifrost:heimdalls_sword
+PASS Focus attack denied ORC
+PASS Focus marker interaction denied ORC
+PASS Focus use denied ORC bifrost:thors_hammer
+PASS Focus attack denied ORC
+PASS Focus marker interaction denied ORC
+PASS Marker placement denied ORC
+PASS Stored race gate GOBLIN
+PASS Direct travel denied GOBLIN
+PASS Command menu selection denied GOBLIN
+PASS Rename command denied GOBLIN
+PASS Marker list denied GOBLIN
+PASS Marker lookup denied GOBLIN
+PASS Focus use denied GOBLIN bifrost:heimdalls_sword
+PASS Focus attack denied GOBLIN
+PASS Focus marker interaction denied GOBLIN
+PASS Focus use denied GOBLIN bifrost:thors_hammer
+PASS Focus attack denied GOBLIN
+PASS Focus marker interaction denied GOBLIN
+PASS Marker placement denied GOBLIN
+PASS Stored race gate ELF
+PASS Direct travel denied ELF
+PASS Command menu selection denied ELF
+PASS Rename command denied ELF
+PASS Marker list denied ELF
+PASS Marker lookup denied ELF
+PASS Focus use denied ELF bifrost:heimdalls_sword
+PASS Focus attack denied ELF
+PASS Focus marker interaction denied ELF
+PASS Focus use denied ELF bifrost:thors_hammer
+PASS Focus attack denied ELF
+PASS Focus marker interaction denied ELF
+PASS Marker placement denied ELF
+PASS Stored race gate DWARF
+PASS Direct travel denied DWARF
+PASS Command menu selection denied DWARF
+PASS Rename command denied DWARF
+PASS Marker list denied DWARF
+PASS Marker lookup denied DWARF
+PASS Focus use denied DWARF bifrost:heimdalls_sword
+PASS Focus attack denied DWARF
+PASS Focus marker interaction denied DWARF
+PASS Focus use denied DWARF bifrost:thors_hammer
+PASS Focus attack denied DWARF
+PASS Focus marker interaction denied DWARF
+PASS Marker placement denied DWARF
+PASS Stored race gate MELFORK
+PASS Direct travel denied MELFORK
+PASS Command menu selection denied MELFORK
+PASS Rename command denied MELFORK
+PASS Marker list denied MELFORK
+PASS Marker lookup denied MELFORK
+PASS Focus use denied MELFORK bifrost:heimdalls_sword
+PASS Focus attack denied MELFORK
+PASS Focus marker interaction denied MELFORK
+PASS Focus use denied MELFORK bifrost:thors_hammer
+PASS Focus attack denied MELFORK
+PASS Focus marker interaction denied MELFORK
+PASS Marker placement denied MELFORK
+PASS Stored race gate DRACONIC
+PASS Direct travel denied DRACONIC
+PASS Command menu selection denied DRACONIC
+PASS Rename command denied DRACONIC
+PASS Marker list denied DRACONIC
+PASS Marker lookup denied DRACONIC
+PASS Focus use denied DRACONIC bifrost:heimdalls_sword
+PASS Focus attack denied DRACONIC
+PASS Focus marker interaction denied DRACONIC
+PASS Focus use denied DRACONIC bifrost:thors_hammer
+PASS Focus attack denied DRACONIC
+PASS Focus marker interaction denied DRACONIC
+PASS Marker placement denied DRACONIC
+PASS Stored race gate ASGARDIAN
+PASS Asgardian list retains old marker
+PASS Asgardian lookup retains old marker
+PASS Asgardian marker placement permitted
+PASS Asgardian focus attack permitted
+PASS Spectator Asgardian denied
+PASS Forged packet denied handleTravel
+PASS Forged packet denied handleRename
+PASS Forged packet denied handleRefresh
+PASS Cross-dimension travel remains rejected
+PASS Asgardian starts native charge
+PASS Duplicate charge rejected
+PASS Race reset cancels charge
+PASS Canceled charge does not teleport
+PASS Can restart after cancellation
+PASS Native charge completes once
+PASS Native cooldown remains five seconds
+PASS Native arrival animation remains active
+PASS Native completion records existing marker coordinates
+PASS Arrival visuals clean up
+PASS PlayerRevive downed Asgardian denied
+PASS Rescued Asgardian allowed
+PASS Better Revive downed Asgardian denied
+PASS Actual server restart retains saved marker UUID and name

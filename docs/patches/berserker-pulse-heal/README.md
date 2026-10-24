@@ -1,0 +1,9 @@
+# Berserker healing on every pulse
+
+Every successful Berserker pulse now restores the caster to their current maximum health. Speed IV for two seconds remains exclusive to the fifth pulse. Normal-expiry healing, fatal-hit rescue, offensive stacks, vulnerability, durations, cooldowns and death cleanup are unchanged. Last Stand still has no damage-immunity pulse, and Crimson Strikes still heals only once per successful Mutilate cast.
+
+The focused ASM patch moves the existing four-instruction health assignment outside the fifth-pulse condition in `WarriorUltimates.pulse`. It asserts the exact expected sequence and one edit. Only that class in Spell Engine and the Berserker description in Rogues & Warriors change. Current active input/output hashes and changed entries are pinned in `artifacts.json`.
+
+The isolated NeoForge 26.2.0.90 server passed **918 Warrior/shield/party checks**. Tests lower health before each pulse and confirm all five fully heal, while only pulse five grants Speed IV. Existing fatal rescue, natural expiry, interrupted channels, death/respawn cleanup, Crimson healing, Last Stand health and party/pet tests remain. The unmodified baseline fails on pulse one: 1 HP remains instead of restoring 20 HP. The fixture excludes the separate global attribute/PvP mod to preserve raw-power regression expectations; that mod is not changed.
+
+`build.py` writes candidates under ignored `tmp/berserker-pulse-heal/built` from pinned local snapshots in `before`. `run_probe.py --baseline` checks the old active build; `run_probe.py` checks candidates. Originals are retained under ignored `retired packs/berserker-pulse-heal-20261025`. Install matching same-name Rogues and Spell Engine archives on client/server and restart. No personal installations/worlds, commit or GitHub push are part of this task.

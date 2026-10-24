@@ -1,23 +1,41 @@
 # Bifrost Skills
 
-24 October 2026. **Planning reference for later balancing.** The tables below preserve the supplied screenshots; they are not approval to add or rebalance these custom abilities in this pass. Some abilities already exist in the prior expansion. Their current implementation is not being removed or rewritten by this document.
+25 October 2026. **Bifrost is the only enabled custom weapon skill.** Previous combat abilities and healing passives remain in the code as disabled future work. Their old selector, held-use channels and throw controls cannot activate them. The tables below preserve the proposed effects for later review; their historical input descriptions are superseded by the slot plan.
 
-## Work requested for this session
+## Current weapon identities
 
 | Weapon | RPG reference | Native weapon skill |
 | --- | --- | --- |
 | Stormbreaker | Netherite two-handed great hammer; 0.8 attack speed | Ground Slam |
 | Mjolnir | Netherite Mace | Smash |
-| Hofund / Heimdall's Sword | Diamond Sword | Swift Strikes |
+| Hofund / Heimdall's Sword | Diamond two-handed Claymore | Flurry |
 
-Stormbreaker's handle is lengthened and its held orientation reversed. Weapon attributes are matched to the installed references, before the player's race, skills and equipment bonuses. The custom skills below are separate from these native weapon skills.
+The normal RPG weapon skill remains separate from Bifrost. Stormbreaker's longer handle and corrected held orientation remain. Race, binding and death-recovery restrictions remain enforced.
 
-## Planned controls
+## Current Bifrost skill
 
-- Mjolnir should be throwable by default and return to its owner.
-- Right-click with Mjolnir, Hofund or Stormbreaker should open Bifrost travel again.
-- Resolve a new activation for Hofund's charged slash and Mjolnir's beam before replacing their current right-click actions.
-- These control changes are recorded for later, as requested; this pass does not reroute inputs or alter the existing throw/ownership system.
+- **Name:** Bifrost.
+- **Effect:** open the existing named-destination menu.
+- **Cast time / spell cooldown:** instant / 0 seconds. Closing or reopening the menu does not add a cooldown.
+- **Source:** holding any of the three Bifrost weapons in the main hand.
+- **Position:** appended after the normal weapon, class/book and active accessory skills. One shared Bifrost entry, with no duplicate on repeated updates.
+- **Input:** the normal Spell Engine skill-hotbar binding for that position. It follows the current loadout and user bindings instead of reserving a fixed numeric key.
+- **Example:** with the weapon skill on right-click, three class skills on 1-3 and an active trinket on 4, Bifrost occupies 5.
+- **Travel remains unchanged:** selecting a destination starts the existing three-second teleport charge and five-second travel cooldown. The zero-second cooldown applies to opening the menu.
+- **Icon:** the supplied Rainbow Rune Portal Gateway image.
+- **Unavailable for now:** default hammer/axe throwing, beam/slash channels, custom selector moves and both custom healing passives. Right-click no longer starts these custom actions or opens Bifrost in air; it remains available to the native RPG weapon skill. Marker interaction remains available.
+
+## Future appended-slot plan
+
+Let `N` be the next skill position after the player's existing class and accessory skills. Keep that existing order, then append this weapon's skills in the following order. These are ordering plans only; slots after Bifrost are not implemented now.
+
+| Weapon | N | N+1 | N+2 | N+3 | N+4 |
+| --- | --- | --- | --- | --- | --- |
+| Hofund | Bifrost | Charged Bifrost Slash | Realm Shift | Hilt Bash / Counter | Berserk Charging Slashes |
+| Mjolnir | Bifrost | Lightning Beam | Shattered Shard Swarm | Lightning-Charged Shield Strike | Propulsion Tornado Vortex |
+| Stormbreaker | Bifrost | Wakanda Ground Slam | Multi-Target Ricochet | ? | ? |
+
+For the example where `N=5`, Hofund would use 5 for Bifrost, 6 for Slash, 7 for Realm Shift, 8 for Bash and 9 for Berserk. Do not silently replace existing bindings if a future loadout has more active skills than the hotbar can bind. Future throw/return needs a separate decision on its activation; it is dormant now.
 
 ## Screenshot notation
 
@@ -32,7 +50,7 @@ Stormbreaker's handle is lengthened and its held orientation reversed. Weapon at
 | Hilt Bash / Counter | Bash within 3 blocks; counter if used within 0.6s after a blockable hit; briefly interrupt | 60% W bash or 110% W counter | 10s |
 | Berserk Charging Slashes | Below 40% health; lunge up to 7 blocks and strike three times | 65% + 65% + 90% W; 220% W total cap | 30s |
 
-**Pending input conflict:** charged right-click Slash in the screenshot conflicts with the planned right-click Bifrost control. Choose its replacement input later.
+**Future activation:** appended skill slot N+1; the screenshot?s held-right-click wording is historical.
 
 ## Mjolnir
 
@@ -46,7 +64,7 @@ Stormbreaker's handle is lengthened and its held orientation reversed. Weapon at
 
 **Healing passive:** five qualifying lightning hits trigger a 2 HP (one-heart) heal, with a 12s healing cooldown.
 
-**Pending input conflict:** the beam's held right-click input conflicts with planned Bifrost travel. Default throw and owner return remain a separate planned requirement; do not infer a new auto-recall, ownership or death-recovery rule from it.
+**Future activation:** Beam uses appended skill slot N+1. Throw and return are disabled for now; any later reactivation must preserve owner validation and protected death recovery.
 
 ## Stormbreaker
 
@@ -61,6 +79,6 @@ Stormbreaker's handle is lengthened and its held orientation reversed. Weapon at
 
 ## Questions reserved for the later balance pass
 
-- Assign inputs for the charged slash and lightning beam once right-click returns to Bifrost.
+- Rework charged/channel actions as native skill-hotbar casts using the appended order above.
 - Confirm the weapon-damage basis and whether the shown caps remain appropriate after the native weapon-stat changes.
 - Review existing shared healing lockouts, protected party members/pets, cooldown haste and ownership constraints before revising custom skills.

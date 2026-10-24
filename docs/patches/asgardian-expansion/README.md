@@ -10,6 +10,10 @@ The [claim and recipe discovery repair](claim-and-recipes.md) accepts close unob
 
 The [weapon alignment follow-up](../bifrost-weapon-alignment/README.md) supersedes the weapon attributes below: Hofund matches Diamond Sword, Mjolnir matches Netherite Mace, and Stormbreaker matches Netherite Great Hammer with 0.8 attack speed. Native Swift Strikes, Smash and Ground Slam are attached; custom ability inputs are unchanged in that pass.
 
+## Current follow-up - 25 October 2026
+
+The [native skill-hotbar integration](../bifrost-skill-hotbar/README.md) supersedes the historical combat/control details below. Only the appended Bifrost custom skill is enabled; old weapon combat actions, throwing, healing passives and selector inputs are dormant. Menu opening is instant with zero spell cooldown; native travel timing is retained. Hofund now matches a two-handed Diamond Claymore with Flurry. Future ability slots are documented in [Bifrost Skills](../bifrost-weapon-alignment/Bifrost%20Skills.md).
+
 ## Implemented behavior
 
 The [player handbook](../../MODLIST.md#asgardian_mod-bifrost-teleport) explains equipment, percentages, controls and travel. Full approved design: `mod fixing/ASGARDIAN.md` (local working reference).

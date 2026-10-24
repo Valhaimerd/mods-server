@@ -33,6 +33,7 @@ public final class AsgardNetwork {
     }
 
     static boolean handle(ServerPlayer player, int action, int skill) {
+        if(!BifrostSkills.customAbilitiesEnabled())return false;
         if (action < 0 || action > 3) return false;
         // A release must still cancel a channel after a swap, race loss, or downing.
         if (action == 2) {

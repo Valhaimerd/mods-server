@@ -1,0 +1,7 @@
+PASS 908 Warrior/shield/party checks
+Baseline: three-target Crimson heals 12 HP; expected 4 HP at 40 dual power.
+Candidate: zero targets -> zero healing; one/three targets -> 4 HP; invulnerable hit -> zero healing.
+Last Stand: five pulses grant health/healing, regeneration/knockback protection but no damage immunity.
+Minecraft 26.2 / NeoForge 26.2.0.90 / Java25 bytecode; -Xverify:all.
+Installed hash/archive/preserved-entry validation: 3512 checks.
+Handbook: 77 pages rendered; pages 17/30 reviewed; contents destinations correct and PDF copies match. Concurrent PvP documentation preserved.

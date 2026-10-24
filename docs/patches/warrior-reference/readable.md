@@ -105,13 +105,13 @@ Warm Up rounds only the 6% M portion to the nearest 0.5 HP; 1 HP remains the fix
 | --- | --- | --- |
 | Channel | Five pulses over 2.5s, stationary, Last Stand presentation | Five pulses over 2.5s, stationary |
 | Base cooldown | 60/70/80/90/100s after 1/2/3/4/5 pulses | Same |
-| Per pulse | +15% base attack speed, +10% basic melee attack damage only, +15 knockback-resistance points, +20% base incoming-damage modifier | +20% base maximum health and heal the health added; 0.6s damage immunity; refresh Regeneration I and full knockback resistance |
-| Five-pulse totals | +75% attack speed, +50% basic-attack damage, +75 knockback-resistance points, +100% damage taken | +100% base maximum health; Regeneration I remains level I; immunity refreshes at 0.6s |
+| Per pulse | Full heal; +15% base attack speed, +10% basic melee attack damage only, +15 knockback-resistance points, +20% base incoming-damage modifier | +20% base maximum health and heal the health added; refresh Regeneration I and full knockback resistance |
+| Five-pulse totals | +75% attack speed, +50% basic-attack damage, +75 knockback-resistance points, +100% damage taken | +100% base maximum health; Regeneration I remains level I; no damage immunity |
 | Buff duration | 12s, refreshed by pulses | 15s, refreshed by pulses |
-| Full-channel reward | Full heal and Speed IV for 2s | Five health pulses total +100% base maximum HP; no separate full-heal reward |
+| Full-channel reward | Speed IV for 2s; healing already applies on every pulse | Five health pulses total +100% base maximum HP; no separate full-heal reward |
 | Natural expiry | Full heal | Health bonus and buffs expire normally |
-| Fatal-hit outcome | Prevent death, end Berserker, full heal, current cooldowns on Throw Weapon/Throw Net/Wild Charge/Shout, Nausea 10s and stun 5s | No special fatal-hit rescue outside its pulse immunity |
-| Improved/root | Duration 15s | Duration 20s; pulse immunity stays 0.6s |
+| Fatal-hit outcome | Prevent death, end Berserker, full heal, current cooldowns on Throw Weapon/Throw Net/Wild Charge/Shout, Nausea 10s and stun 5s | No special fatal-hit rescue or damage immunity |
+| Improved/root | Duration 15s | Duration 20s; no damage immunity |
 | Branch A | **Brutality:** +4 physical critical-chance points per pulse, maximum 20; ends with Berserker | **Juggernaut:** +10% base size and -3% base incoming-damage modifier per pulse, up to +50%/-15%; matches 20s Improved duration |
 | Branch B | **Lethality:** successful melee impacts heal 2 HP; lose 1 HP every 0.5s directly through armor, Resistance, absorption and immunity | **Sentinel:** direct damage during Last Stand adds +1% base melee damage per stack, maximum ten. Damage buff and Regeneration I refresh for 5s; longer existing regeneration is preserved |
 
@@ -162,3 +162,7 @@ Previous revision: [Warrior follow-up](../warrior-followup/README.md): minimum c
 Previous revision: [Tenacity confirmation](../tenacity-followup/README.md), following [Warrior tier III](../warrior-tier-three/README.md).
 
 Verification and rebuild instructions: [Warrior/shield patch](../warrior-tier-one/README.md). The local patch includes isolated-server probes; personal installations and worlds remain untouched. No GitHub push is part of this revision.
+
+Latest follow-up: [Last Stand damage immunity removed](../crimson-laststand/README.md).
+
+Latest follow-up: [Berserker fully heals on every pulse](../berserker-pulse-heal/README.md), with Speed IV still exclusive to pulse five.

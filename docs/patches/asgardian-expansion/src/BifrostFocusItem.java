@@ -21,15 +21,11 @@ final class BifrostFocusItem extends Item {
         return use(context.getLevel(),p,context.getHand());
     }
     @Override public InteractionResult use(Level level,Player given,InteractionHand hand){
-        if(!AsgardianAccess.allow(given))return InteractionResult.FAIL;
-        if(!(given instanceof ServerPlayer player)) {if(!AsgardWeapons.kind(given.getItemInHand(hand)).equals("stormbreaker"))given.startUsingItem(hand);return InteractionResult.SUCCESS;}
-        var stack=player.getItemInHand(hand);
-        if(!AsgardWeapons.ready(player,stack))return InteractionResult.FAIL;
-        if(AsgardWeapons.kind(stack).equals("stormbreaker")){BifrostMenuService.open(player,null,displayName);return InteractionResult.SUCCESS_SERVER;}
-        if(hand!=InteractionHand.MAIN_HAND||!AsgardAbilities.beginPrimary(player))return InteractionResult.FAIL;
-        player.startUsingItem(hand);return InteractionResult.CONSUME;
+        // Weapon use is available to Spell Engine's native melee skill. Bifrost
+        // itself is an appended hotbar skill, never an item-use channel.
+        return InteractionResult.PASS;
     }
-    @Override public int getUseDuration(ItemStack stack,LivingEntity entity){return 72000;}
-    @Override public ItemUseAnimation getUseAnimation(ItemStack stack){return ItemUseAnimation.BOW;}
-    @Override public boolean releaseUsing(ItemStack stack,Level level,LivingEntity entity,int remaining){if(entity instanceof ServerPlayer p)AsgardAbilities.endPrimary(p);return true;}
+    @Override public int getUseDuration(ItemStack stack,LivingEntity entity){return 0;}
+    @Override public ItemUseAnimation getUseAnimation(ItemStack stack){return ItemUseAnimation.NONE;}
+    @Override public boolean releaseUsing(ItemStack stack,Level level,LivingEntity entity,int remaining){if(BifrostSkills.customAbilitiesEnabled()&&entity instanceof ServerPlayer p)AsgardAbilities.endPrimary(p);return true;}
 }

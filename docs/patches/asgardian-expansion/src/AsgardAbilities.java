@@ -62,6 +62,7 @@ public final class AsgardAbilities {
     }
     static String cooldownKey(ServerPlayer p,String action){return AsgardWeapons.kind(p.getMainHandItem())+"/"+action;}
     static boolean start(ServerPlayer p,String name){
+        if(!BifrostSkills.customAbilitiesEnabled())return false;
         if(!AsgardWeapons.ready(p,p.getMainHandItem()))return deny(p,"This weapon is unavailable. Check its owner and your race.");
         if(ACTIVE.containsKey(p.getUUID())||EntityActionsAllowed.isImpaired(p,EntityActionsAllowed.Player.CAST_SPELL)||((SpellCaster.Player)p).getSpellCastProcess()!=null)return deny(p,"Finish your current action first.");
         long remaining=AsgardState.get(p,cooldownKey(p,name))-AsgardState.now(p);
@@ -72,6 +73,7 @@ public final class AsgardAbilities {
     public static boolean active(ServerPlayer p){return ACTIVE.containsKey(p.getUUID());}
     public static boolean travelAllowed(ServerPlayer p){return !active(p)&&!EntityActionsAllowed.isImpaired(p,EntityActionsAllowed.Player.CAST_SPELL)&&((SpellCaster.Player)p).getSpellCastProcess()==null;}
     public static boolean activate(ServerPlayer p,int skill){
+        if(!BifrostSkills.customAbilitiesEnabled())return false;
         String weapon=AsgardWeapons.kind(p.getMainHandItem());
         if(skill==0){if(!AsgardWeapons.ready(p,p.getMainHandItem())||active(p))return deny(p,"This weapon cannot open the Bifrost now.");BifrostMenuService.open(p,null,p.getMainHandItem().getHoverName().getString());return true;}
         String name=switch(weapon){case "hofund"->switch(skill){case 1->"realm";case 2->"bash";case 3->"berserk";default->"";};case "mjolnir"->switch(skill){case 1->"shards";case 2->"shield";case 3->"vortex";default->"";};case "stormbreaker"->switch(skill){case 1->"slam";case 2->"ricochet";default->"";};default->"";};
@@ -178,6 +180,7 @@ public final class AsgardAbilities {
     }
     static boolean hostileForHealing(LivingEntity target){return (target instanceof Enemy||target instanceof Player)&&!target.getType().toString().contains("dummy");}
     public static void lightningHit(ServerPlayer p,LivingEntity target,String castToken){
+        if(!BifrostSkills.customAbilitiesEnabled())return;
         if(!AsgardianAccess.canUse(p)||!hostileForHealing(target))return;
         long now=AsgardState.now(p);if(now-Math.max(AsgardState.get(p,"thunder/last"),AsgardState.get(p,"combat/last"))>400){AsgardState.put(p,"thunder/charges",0);CHARGE_HITS.remove(p.getUUID());}
         var casts=CHARGE_HITS.computeIfAbsent(p.getUUID(),id->new HashMap<>());if(!casts.computeIfAbsent(castToken,id->new HashSet<>()).add(target.getUUID()))return;
@@ -187,10 +190,10 @@ public final class AsgardAbilities {
             p.heal(2);AsgardState.put(p,"thunder/charges",0);AsgardState.put(p,"thunder/heal",now+240);AsgardState.put(p,"healing/shared",now+200);
         }else AsgardState.put(p,"thunder/charges",Math.min(5,charges+1));
     }
-    static void stormRecovery(ServerPlayer p,ItemStack stack){long now=AsgardState.now(p);if(now<AsgardState.get(p,"storm/heal")||now<AsgardState.get(p,"healing/shared"))return;
+    static void stormRecovery(ServerPlayer p,ItemStack stack){if(!BifrostSkills.customAbilitiesEnabled())return;long now=AsgardState.now(p);if(now<AsgardState.get(p,"storm/heal")||now<AsgardState.get(p,"healing/shared"))return;
         AsgardState.put(p,"storm/heal",now+1200);AsgardState.put(p,"healing/shared",now+200);RECOVERY.put(p.getUUID(),new Recovery(stack,now+80,now+20,4));}
-    @SubscribeEvent public static void blocked(LivingShieldBlockEvent e){if(e.getEntity() instanceof ServerPlayer p&&e.getBlockedDamage()>0)BLOCKED.put(p.getUUID(),AsgardState.now(p));}
-    @SubscribeEvent public static void combat(net.neoforged.neoforge.event.entity.living.LivingDamageEvent.Post e){if(e.getInflictedDamage()>0){if(e.getEntity() instanceof ServerPlayer p)AsgardState.put(p,"combat/last",AsgardState.now(p));if(e.getSource().getEntity() instanceof ServerPlayer p)AsgardState.put(p,"combat/last",AsgardState.now(p));}}
-    @SubscribeEvent public static void falling(LivingFallEvent e){if(e.getEntity() instanceof ServerPlayer p){var a=ACTIVE.get(p.getUUID());if(a!=null&&a.name.equals("slam"))e.setDamageMultiplier(0);}}
+    @SubscribeEvent public static void blocked(LivingShieldBlockEvent e){if(!BifrostSkills.customAbilitiesEnabled())return;if(e.getEntity() instanceof ServerPlayer p&&e.getBlockedDamage()>0)BLOCKED.put(p.getUUID(),AsgardState.now(p));}
+    @SubscribeEvent public static void combat(net.neoforged.neoforge.event.entity.living.LivingDamageEvent.Post e){if(!BifrostSkills.customAbilitiesEnabled())return;if(e.getInflictedDamage()>0){if(e.getEntity() instanceof ServerPlayer p)AsgardState.put(p,"combat/last",AsgardState.now(p));if(e.getSource().getEntity() instanceof ServerPlayer p)AsgardState.put(p,"combat/last",AsgardState.now(p));}}
+    @SubscribeEvent public static void falling(LivingFallEvent e){if(!BifrostSkills.customAbilitiesEnabled())return;if(e.getEntity() instanceof ServerPlayer p){var a=ACTIVE.get(p.getUUID());if(a!=null&&a.name.equals("slam"))e.setDamageMultiplier(0);}}
     public static void reset(){ACTIVE.clear();BLOCKED.clear();SPEED_END.clear();RECOVERY.clear();CHARGE_HITS.clear();for(var target:SLOWS.keySet())target.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(VORTEX_SLOW);SLOWS.clear();}
 }

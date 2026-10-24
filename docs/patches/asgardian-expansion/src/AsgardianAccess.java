@@ -55,7 +55,7 @@ public final class AsgardianAccess {
         if (!allow(event.getEntity())) {event.setCanceled(true);return;}
         if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player) {
             if (!WeaponOwnership.canUse(player,player.getMainHandItem()) || AsgardAbilities.active(player)) {event.setCanceled(true);return;}
-            if (player.isShiftKeyDown() && !AsgardWeapons.kind(player.getMainHandItem()).equals("hofund")) {
+            if (BifrostSkills.customAbilitiesEnabled() && player.isShiftKeyDown() && !AsgardWeapons.kind(player.getMainHandItem()).equals("hofund")) {
                 WeaponOwnership.throwWeapon(player,player.getMainHandItem(),false);event.setCanceled(true);
             }
         }
@@ -65,8 +65,7 @@ public final class AsgardianAccess {
             event.getToolTip().add(Component.literal("Requires Asgardian race").withStyle(ChatFormatting.GOLD));
         String kind=AsgardWeapons.kind(event.getItemStack());
         if(!kind.isEmpty()) {
-            event.getToolTip().add(Component.literal(kind.equals("hofund") ? "Hold use: Bifrost Wave (8 blocks; 0.8s; 12s cooldown; 160% first hit)" : kind.equals("mjolnir") ? "Hold use: Lightning Beam (16 blocks; up to 3s; 10s cooldown)" : "Use: Bifrost destinations").withStyle(ChatFormatting.GRAY));
-            event.getToolTip().add(Component.literal("More skills: assign Asgardian Ability in Controls").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.literal("Bifrost: use the last skill slot to open destinations").withStyle(ChatFormatting.GRAY));
         }
     }
 }

@@ -102,7 +102,7 @@ Tracking disruption is an arrival-centered mob effect. It clears the native targ
 | Main effect | **7 s Stealth**, -50% base movement speed | **100% D per enemy**, one combined dual-wield hit |
 | Delivery | Self; normally breaks on attacks, other casts, item use and incoming attributed hits | Equipped melee reach, **160-degree sweep**; damage lands halfway through attack animation, not after a fixed 0.5 s |
 | Improved/root | **Improved Vanish:** reduces movement penalty to **-40%**, no added duration | **Improved Mutilate:** cooldown -2 s, **10 s** before haste |
-| Branch A | **Stealth Speed:** another 20 percentage points less movement penalty, leaving **-20%** with Improved | **Crimson Strikes:** heals **10% D per enemy struck**, independent of the attack multiplier |
+| Branch A | **Stealth Speed:** another 20 percentage points less movement penalty, leaving **-20%** with Improved | **Crimson Strikes:** heals **10% D once per successful Mutilate cast**, regardless of enemies struck |
 | Branch B | **Shadow Stealth:** actions and taking hits no longer cancel Stealth; still expires after **7 s** and can be explicitly dispelled | **Bloody Strikes:** applies the existing Rogue Bleed for **7.5 s**, replacing Poison |
 
 Mutilate uses the native full-strength player attack with no additional damage bonus, combining main-hand power and the calculated off-hand contribution. Crits, enchantments and defenses still apply. Bloody Strikes and Serrated Traps apply the same flat, single-level Bleed. Every 25 ticks / 1.25 seconds it deals 2 raw HP while stationary or 6 raw HP with horizontal movement, regardless of D or old amplifier values. Vertical movement alone does not triple it. Reapplication can refresh duration but cannot add levels. Serrated lasts 2.5 seconds; Bloody Strikes lasts 7.5 seconds. Native defenses still apply. Tick damage remains ownerless magic, so the player-attributed 30% PvP modifier does not apply. This is separate from Mutilate's initial strike. Vanish's native mob tracking reduction remains unchanged.
@@ -136,3 +136,5 @@ Mutilate uses the native full-strength player attack with no additional damage b
 Evasion's native base is 100; its chance conversion is (attribute - 100) / 100. Thus Smoke Screen's base-scaled +50 attribute gives +50 percentage points at the native base. Other sources, server angle restrictions, casting/item-use restrictions and damage eligibility can affect whether an attack is evaded.
 
 Verification scope: archive/resource extraction, hidden reward mapping, default schema fields and installed effect/engine bytecode inspection. The isolated Rogue fixtures additionally exercise implemented combat behavior; see docs/patches/rogue-tier-three/README.md for tier III results and limits.
+
+Latest follow-up: [Crimson Strikes heals once per successful cast](../crimson-laststand/README.md).

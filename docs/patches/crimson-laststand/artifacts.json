@@ -1,0 +1,33 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "3191ec77ceedfc47f6b694dfe557dd0757fd1b63aa06516a143019d335770d8b",
+    "sha256": "8d7b9ffe09515c858dec87b6b5c78bd6aeda01c97ad3f936eb6cb718b8a1196b",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/last_stand.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "30a377bd4a90c4f376e88e76d19a2fc4ae8dc450879bf86a998e8fad3680ae4e",
+    "sha256": "f850338e7d6e7615f628985731994ba0d3265289ce4d6e79a7833c73a8dccfa1",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_1.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "c8962f1334fb42b6ea8203c3fc38ef4fd1202e8ee0df32667cf81897a50f61d8",
+    "sha256": "c2b949c2dc3139ae83705e383c1d8fd17a674fd9229b239f9ec4ea4fee967841",
+    "changed": [
+      "spell_engine.mixins.json",
+      "crimson_heal.json",
+      "net/spell_engine/internals/CrimsonHealing$Frame.class",
+      "net/spell_engine/internals/CrimsonHealing.class",
+      "net/spell_engine/mixin/crimson/CrimsonCastMixin.class",
+      "net/spell_engine/mixin/crimson/CrimsonHitMixin.class"
+    ]
+  }
+]

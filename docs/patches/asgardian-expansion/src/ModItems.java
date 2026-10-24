@@ -25,7 +25,7 @@ final class ModItems {
     static Item.Properties weapon(double damage,double speed){return new Item.Properties().stacksTo(1).component(DataComponents.UNBREAKABLE,Unit.INSTANCE).attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE,new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID,damage-1,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND).add(Attributes.ATTACK_SPEED,new AttributeModifier(Item.BASE_ATTACK_SPEED_ID,speed-4,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND).build());}
     static void register(IEventBus bus){ITEMS.register(bus);bus.addListener(ModItems::weaponDefaults);}
     private static void weaponDefaults(ModifyDefaultComponentsEvent event){
-        match(event,HEIMDALLS_SWORD.get(),"minecraft:diamond_sword",Weapons.SWORD_CONTAINER);
+        match(event,HEIMDALLS_SWORD.get(),"paladins:diamond_claymore",Weapons.CLAYMORE_CONTAINER);
         match(event,THORS_HAMMER.get(),"paladins:netherite_mace",Weapons.MACE_CONTAINER);
         match(event,STORMBREAKER.get(),"paladins:netherite_great_hammer",Weapons.HAMMER_CONTAINER);
     }

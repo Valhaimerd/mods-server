@@ -1,0 +1,18 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "8d7b9ffe09515c858dec87b6b5c78bd6aeda01c97ad3f936eb6cb718b8a1196b",
+    "sha256": "ffa829a97402ae4129e16b525755fa3144e270313bd9a2a5c48adae0a445cd68",
+    "changed": [
+      "assets/rogues/lang/en_us.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "c2b949c2dc3139ae83705e383c1d8fd17a674fd9229b239f9ec4ea4fee967841",
+    "sha256": "f098c0d73361c109f469e87fd2447b9bbce5b95e3d5016712d74eb5ded5f4539",
+    "changed": [
+      "net/spell_engine/entity/WarriorUltimates.class"
+    ]
+  }
+]

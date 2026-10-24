@@ -241,3 +241,15 @@ Hidden -20% total modifiers now reduce player melee, ranged and offensive magic 
 ## Player and RPG summon retention replaces attribute penalties (2026-10-24)
 
 Players and player-owned Spirit Wolves, Arcane Barrage emitters, Fire Hydras and Frost Elementals retain 35% damage against players and 80% against other entities. Ordinary entity combat remains 100%. Former attribute penalties are removed, and owners are checked for party/team/pet protection before summon damage. Same-name active/fixed PvP JAR installed after 118 isolated checks. [Source and report](../docs/patches/pvp-flagging-26.2/README.md). Originals: `retired packs/player-summon-balance-20261024`. No push or external installation changes.
+
+## Crimson Strikes / Last Stand (2026-10-24)
+
+Crimson heals 10% dual power once per successful Mutilate cast. Last Stand's 0.6-second immunity pulses are removed; other buffs remain. Three same-name archives installed after 908 isolated combat checks; originals retained in `retired packs/crimson-laststand-20261024`. [Proof and source](../docs/patches/crimson-laststand/README.md). No push.
+
+## Berserker pulse healing
+
+Berserker now fully heals on every pulse; fifth-pulse Speed IV and ending effects remain. Two same-name archives installed after 918 combat/shield/party checks. [Source and proof](../docs/patches/berserker-pulse-heal/README.md). Previous builds retained in `retired packs/berserker-pulse-heal-20261025`; no push.
+
+## Bifrost native skill hotbar - 25 October 2026
+
+Only the appended native Bifrost custom skill is enabled. It opens destinations instantly with zero spell cooldown; the existing teleport charge/travel cooldown remains. It follows class/accessory skills (verified right-click, 1-4, then Bifrost 5) and uses the supplied portal icon. Hofund is now a two-handed Diamond Claymore with Flurry. Old custom combat, throws, healing passives and selector/packet activation are dormant; ownership/death recovery and recipes remain. The same-filename replacement passed 42 connected-client/integrated-server checks, and the icon/handbook page were visually checked. [Build, scope and future slots](../docs/patches/bifrost-skill-hotbar/README.md). Active/fixed copies match; predecessors archived. No personal installation changes or push.

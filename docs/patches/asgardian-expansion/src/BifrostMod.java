@@ -13,8 +13,9 @@ import net.neoforged.neoforge.event.tick.ServerTickEvent;
     public BifrostMod(IEventBus bus){
         AsgardianAccess.verifyIntegration();ModBlocks.register(bus);ModItems.register(bus);TransitSounds.register(bus);
         bus.addListener(BifrostNetworking::register);bus.addListener(AsgardNetwork::register);
+        bus.addListener(BifrostSkills::setup);
         NeoForge.EVENT_BUS.addListener(BifrostCommands::register);
-        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post e)->{WeaponOwnership.tick(e.getServer());AsgardAbilities.tick(e.getServer());BifrostTeleportManager.tick(e.getServer());});
+        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post e)->{WeaponOwnership.tick(e.getServer());if(BifrostSkills.customAbilitiesEnabled())AsgardAbilities.tick(e.getServer());BifrostTeleportManager.tick(e.getServer());});
         NeoForge.EVENT_BUS.addListener((ServerStartedEvent e)->{BifrostMenuService.reset();AsgardAbilities.reset();BifrostTeleportManager.start(e.getServer());});
         NeoForge.EVENT_BUS.addListener((ServerStoppingEvent e)->{BifrostMenuService.reset();AsgardAbilities.reset();BifrostTeleportManager.stop(e.getServer());});
         if(FMLEnvironment.getDist()==Dist.CLIENT){BifrostClient.register(bus);AsgardClient.register(bus);}

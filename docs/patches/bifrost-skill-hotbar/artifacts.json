@@ -1,0 +1,43 @@
+{
+  "jar": "bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar",
+  "before_sha256": "a92d59bccdd41199d60edd24963d6b2c2a188f1cb61d8bd682d72c046c0df855",
+  "sha256": "d08b4d2f786ba760475148a8eeb26b0eb3eab5dccb673962d058cf5af1992736",
+  "changed": [
+    "com/emandev/bifrost/BifrostFocusItem.class",
+    "com/emandev/bifrost/BifrostMod.class",
+    "com/emandev/bifrost/ModItems.class",
+    "assets/bifrost/lang/en_us.json",
+    "com/emandev/bifrost/AsgardianAccess.class",
+    "com/emandev/bifrost/AsgardAbilities.class",
+    "com/emandev/bifrost/AsgardClient.class",
+    "com/emandev/bifrost/AsgardNetwork$Intent.class",
+    "com/emandev/bifrost/AsgardNetwork.class",
+    "com/emandev/bifrost/WeaponOwnership.class",
+    "asgardian-expansion.mixins.json",
+    "data/bifrost/weapon_attributes/heimdalls_sword.json",
+    "data/minecraft/tags/item/swords.json",
+    "data/rpg_series/tags/item/weapon_type/sword.json"
+  ],
+  "added": [
+    "assets/bifrost/textures/spell/travel.png",
+    "com/emandev/bifrost/BifrostSkills.class",
+    "com/emandev/bifrost/mixin/BifrostHotbarMixin.class",
+    "com/emandev/bifrost/mixin/BifrostSkillSourceMixin.class",
+    "data/bifrost/spell/travel.json",
+    "data/paladins/tags/item/claymores.json",
+    "data/rpg_series/tags/item/weapon_type/claymore.json"
+  ],
+  "production_inputs": {
+    "docs/patches/asgardian-expansion/src/ModItems.java": "d7c436575ed1edb98053f45bc02849cbfcd01e982d894977078beabab7948cdd",
+    "docs/patches/asgardian-expansion/src/BifrostMod.java": "90d89239e3e8fe760ab50579515390b167d907317578858f4952239a18ef518d",
+    "docs/patches/asgardian-expansion/src/BifrostFocusItem.java": "494a345e2e580ed7dc6e45c60d525ce239dfe8511964e234fefa00f086b6420f",
+    "docs/patches/asgardian-expansion/src/AsgardClient.java": "6603d375db6ddff46332245b28b07732b527b444375d489946cbf66765048428",
+    "docs/patches/asgardian-expansion/src/AsgardNetwork.java": "4dd669f773ca0d7651f19c03edccb5eca5338ec34b019833d1a0fe568f126954",
+    "docs/patches/asgardian-expansion/src/AsgardianAccess.java": "9b2043bc69d9f6bb0c4d5090d6022dace049ce192c04eba222628e62d60e3294",
+    "docs/patches/asgardian-expansion/src/AsgardAbilities.java": "d6a9586de04c05c0944ca0d2acfda216c3beb9b9864f7a9d4585978bcb8db6dd",
+    "docs/patches/asgardian-expansion/src/WeaponOwnership.java": "02f8caa05f01f029ba6fba9a0b8775aa3d93c656a5fa823cbb55f4bbe1b08b97",
+    "docs/patches/asgardian-expansion/src/BifrostSkills.java": "efeeedd17945d171048e9edb4e38b3d21bda38cc01928eef641ce89e52994cd2",
+    "docs/patches/asgardian-expansion/src/BifrostSkillSourceMixin.java": "42a4d7ab4037305e4e5c372bdf856185063c973fb809ef60da20cc89c760cc76",
+    "docs/patches/asgardian-expansion/src/BifrostHotbarMixin.java": "415264f3abc83ead225164ebc531131f84dd4921834ac11771f335f0c52476eb"
+  }
+}

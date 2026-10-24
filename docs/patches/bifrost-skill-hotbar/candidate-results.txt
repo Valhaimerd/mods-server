@@ -1,0 +1,47 @@
+PASS Bifrost registered as native RPG active spell
+PASS Menu spell has zero cooldown
+PASS bifrost:heimdalls_sword appends Bifrost after native skill
+PASS bifrost:heimdalls_sword no duplicate travel
+PASS bifrost:heimdalls_sword native cast options end with travel
+PASS bifrost:thors_hammer appends Bifrost after native skill
+PASS bifrost:thors_hammer no duplicate travel
+PASS bifrost:thors_hammer native cast options end with travel
+PASS bifrost:stormbreaker appends Bifrost after native skill
+PASS bifrost:stormbreaker no duplicate travel
+PASS bifrost:stormbreaker native cast options end with travel
+ORDER [rpg_series:ground_slam, rogues:shock_powder, rogues:slice_and_dice, rogues:vanish, wizards:arcane_blink, bifrost:travel]
+PASS native weapon + three class + relic + Bifrost is sixth overall
+PASS book and relic relative order preserved
+PASS repeated container updates do not duplicate or reorder skills
+PASS travel disappears on ordinary weapon swap
+PASS travel restores at tail after re-equipping
+PASS Hofund exact Diamond Claymore attribute components
+PASS Hofund native two-handed claymore profile
+PASS supplied Bifrost icon packaged and available
+PASS non-Asgardian travel cast denied server-side
+PASS legacy ability packet 0 denied
+PASS legacy ability packet 1 denied
+PASS legacy ability packet 2 denied
+PASS legacy ability packet 3 denied
+PASS old held-use primary disabled
+PASS old selector combat disabled
+PASS bifrost:thors_hammer ownership claim still works
+PASS bifrost:thors_hammer owner remains eligible
+PASS bifrost:thors_hammer default throwing disabled even for owner
+PASS bifrost:thors_hammer direct use no longer opens travel or combat
+PASS bifrost:stormbreaker ownership claim still works
+PASS bifrost:stormbreaker owner remains eligible
+PASS bifrost:stormbreaker default throwing disabled even for owner
+PASS bifrost:stormbreaker direct use no longer opens travel or combat
+PASS Hofund right-click leaves native weapon skill free
+PASS server cast options also append Bifrost last
+PASS native zero-second spell opens Bifrost destination GUI
+SLOTS [Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / rpg_series:flurry]=net.spell_engine.api.spell.Spell@40781e5e}, mode=CHANNEL, targeting=Targeting[shape=NONE, maxEntities=0, entityRequired=false, locationAllowed=false], range=3.25, channelTicks=3], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@4718eb01, modifier=null], Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / rogues:shock_powder]=net.spell_engine.api.spell.Spell@3f549096}, mode=INSTANT, targeting=Targeting[shape=AROUND_CASTER, maxEntities=0, entityRequired=false, locationAllowed=false], range=4.0, channelTicks=0], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@470d481, modifier=null], Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / rogues:slice_and_dice]=net.spell_engine.api.spell.Spell@76c6b480}, mode=INSTANT, targeting=Targeting[shape=SELF, maxEntities=0, entityRequired=false, locationAllowed=false], range=0.0, channelTicks=0], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@7dd31f90, modifier=null], Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / rogues:vanish]=net.spell_engine.api.spell.Spell@3627bcc8}, mode=INSTANT, targeting=Targeting[shape=SELF, maxEntities=0, entityRequired=false, locationAllowed=false], range=0.0, channelTicks=0], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@1f98b6aa, modifier=null], Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / wizards:arcane_blink]=net.spell_engine.api.spell.Spell@2f271824}, mode=INSTANT, targeting=Targeting[shape=SELF, maxEntities=0, entityRequired=false, locationAllowed=false], range=0.0, channelTicks=0], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@1f5816bb, modifier=null], Slot[option=Option[spell=Reference{ResourceKey[minecraft:spell / bifrost:travel]=net.spell_engine.api.spell.Spell@7f6c44c}, mode=INSTANT, targeting=Targeting[shape=NONE, maxEntities=0, entityRequired=false, locationAllowed=false], range=0.0, channelTicks=0], itemStack=null, keybinding=net.spell_engine.client.input.WrappedKeybinding@1d0e0d0d, modifier=null]]
+CONFIG spellHotbarUseKey=true use=Right Button
+KEYS [Right Button, 1, 2, 3, 4, 5]
+PASS Bifrost is the final displayed hotbar slot
+BINDING 5
+PASS Bifrost uses a numeric skill binding rather than weapon use
+PASS native weapon uses right-click; four other skills put Bifrost on number 5
+PASS legacy selector key no longer registered
+PASS Bifrost can reopen without a menu-spell cooldown

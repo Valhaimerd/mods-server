@@ -1,0 +1,1 @@
+FAIL Bifrost registered as native RPG active spell

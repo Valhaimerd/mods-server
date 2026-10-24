@@ -141,6 +141,7 @@ public final class WeaponOwnership {
         Flight(ServerPlayer p,ItemStack s,boolean ricochet){id=UUID.fromString(WeaponOwnership.id(s));owner=p.getUUID();stack=s.copy();damage=AsgardCombat.normalDamage(p,s);this.ricochet=ricochet;position=p.getEyePosition();direction=p.getLookAngle();dimension=p.level().dimension().identifier().toString();}
     }
     public static boolean throwWeapon(ServerPlayer p,ItemStack s,boolean ricochet){
+        if(!BifrostSkills.customAbilitiesEnabled())return false;
         if(!AsgardianAccess.canUse(p)||AsgardAbilities.active(p)||!boundType(s)||!canUse(p,s)||!cooldownReady(p,s,"throw"))return false;
         Entry e=record(p.level().getServer(),s); Flight f=new Flight(p,s,ricochet);
         int slot=-1;for(int i=0;i<p.getInventory().getContainerSize();i++)if(p.getInventory().getItem(i)==s){slot=i;break;}

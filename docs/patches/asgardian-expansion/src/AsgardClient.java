@@ -21,6 +21,7 @@ public final class AsgardClient {
     private AsgardClient() {}
 
     public static void register(IEventBus bus) {
+        if(!BifrostSkills.customAbilitiesEnabled())return;
         bus.addListener(AsgardClient::keys);
         NeoForge.EVENT_BUS.addListener(AsgardClient::tick);
         NeoForge.EVENT_BUS.addListener(AsgardClient::interact);

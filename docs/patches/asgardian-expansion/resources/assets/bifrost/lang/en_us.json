@@ -12,5 +12,7 @@
   "subtitles.bifrost.transit_impact": "Bifrost strikes the ground",
   "subtitles.bifrost.transit_closure": "Bifrost rises and closes",
   "death.attack.bifrost.lightning": "%1$s was struck by Asgardian lightning",
-  "death.attack.bifrost.lightning.player": "%1$s was struck by %2$s\u2019s Asgardian lightning"
+  "death.attack.bifrost.lightning.player": "%1$s was struck by %2$s’s Asgardian lightning",
+  "spell.bifrost.travel.name": "Bifrost",
+  "spell.bifrost.travel.description": "Open your Bifrost destinations."
 }

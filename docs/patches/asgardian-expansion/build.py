@@ -32,8 +32,8 @@ for mod,version in [('spell_power','1.6.1'),('better_party','1.1.7'),('paladins'
     meta+=f'\n[[dependencies.bifrost]]\nmodId="{mod}"\ntype="required"\nversionRange="[{version},)"\nordering="AFTER"\nside="BOTH"\n'
 meta+='\n[[mixins]]\nconfig="asgardian-expansion.mixins.json"\n'
 files['META-INF/neoforge.mods.toml']=meta.encode()
-mixins=[p.stem for p in (HERE/'src').glob('*Mixin.java')]
-files['asgardian-expansion.mixins.json']=(json.dumps({'required':True,'minVersion':'0.8','package':'com.emandev.bifrost.mixin','compatibilityLevel':'JAVA_25','mixins':mixins,'injectors':{'defaultRequire':1}},indent=2)+'\n').encode()
+mixins=[p.stem for p in (HERE/'src').glob('*Mixin.java') if p.stem!='BifrostHotbarMixin']
+files['asgardian-expansion.mixins.json']=(json.dumps({'required':True,'minVersion':'0.8','package':'com.emandev.bifrost.mixin','compatibilityLevel':'JAVA_25','mixins':mixins,'client':['BifrostHotbarMixin'],'injectors':{'defaultRequire':1}},indent=2)+'\n').encode()
 with ZipFile(OUT/active.name,'w',ZIP_DEFLATED) as z:
     for n,data in files.items():z.writestr(n,data)
 record={'jar':active.name,'before_sha256':hashlib.sha256(before.read_bytes()).hexdigest(),'sha256':hashlib.sha256((OUT/active.name).read_bytes()).hexdigest(),'changed':sorted(n for n in original if original[n]!=files[n]),'added':sorted(set(files)-set(original)),'inputs':{p.relative_to(HERE).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for folder in ['src','resources'] for p in (HERE/folder).rglob('*') if p.is_file()}}

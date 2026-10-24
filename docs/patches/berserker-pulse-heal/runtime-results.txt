@@ -1,0 +1,7 @@
+PASS 918 Warrior/shield/party checks
+Each of five Berserker pulses heals 1 HP -> 20 HP; only fifth grants Speed IV.
+Baseline fails first-pulse healing: 1 HP instead of 20 HP.
+Previous Crimson, Last Stand, shield, party/pet, death cleanup and fatal-rescue tests pass.
+Minecraft 26.2 / NeoForge 26.2.0.90 / Java-25 bytecode / -Xverify:all.
+Installed archive/hash/preserved-entry validation: 2968 checks.
+Handbook: 77 pages rendered; changed page 17 visually reviewed, contents correct and PDF copies match.

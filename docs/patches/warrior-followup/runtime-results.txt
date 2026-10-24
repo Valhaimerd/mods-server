@@ -1,0 +1,7 @@
+PASS 895 Warrior/shield/party checks
+Baseline: zero-charge damage 0 HP; expected 16 HP at 40 melee power.
+Java 26; Java-25 bytecode; NeoForge 26.2.0.90; -Xverify:all.
+Saved effect copy on respawn: all five ultimate effects removed; maximum HP restored.
+Archive/icon/name verification: PASS 3509 checks.
+Handbook: 77 pages rendered; pages 17/18 visually reviewed; contents unchanged; both PDF copies match.
+Visual/audio behavior has not been observed in a running client.

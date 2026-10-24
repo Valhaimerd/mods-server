@@ -1,0 +1,15 @@
+FAIL bifrost:stormbreaker matches reference attribute components
+FAIL bifrost:stormbreaker matches native combat profile
+FAIL bifrost:stormbreaker grants rpg_series:ground_slam
+STATS bifrost:stormbreaker damage=10.0 speed=1.0 combat=null
+FAIL bifrost:thors_hammer matches reference attribute components
+FAIL bifrost:thors_hammer matches native combat profile
+FAIL bifrost:thors_hammer grants rpg_series:smash
+STATS bifrost:thors_hammer damage=9.0 speed=1.2000000000000002 combat=WeaponAttributes[attack_range=0.0, pose=null, isTwoHanded=false, attacks=[Lnet.bettercombat.api.WeaponAttributes$Attack;@5e5b49df]
+FAIL bifrost:heimdalls_sword matches reference attribute components
+FAIL bifrost:heimdalls_sword matches native combat profile
+PASS bifrost:heimdalls_sword grants rpg_series:swift_strikes
+STATS bifrost:heimdalls_sword damage=8.0 speed=1.5 combat=WeaponAttributes[attack_range=0.0, pose=null, isTwoHanded=false, attacks=[Lnet.bettercombat.api.WeaponAttributes$Attack;@55aa6fd0]
+FAIL Stormbreaker 0.8 attack speed
+FAIL Stormbreaker two-handed hammer
+PASS bound weapons remain unbreakable

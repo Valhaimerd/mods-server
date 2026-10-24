@@ -1,0 +1,7 @@
+PASS 909 Warrior/shield/party checks
+Baseline: second quick throw at 10 melee power dealt 0.8 HP instead of 8 HP.
+Candidate: first/second casts deal 8 HP at 2/8/18 blocks; actual flight collisions at 2/8 blocks deal 8 HP, including an already hurt target.
+Weakness still reduces ordinary attack damage. Strong Throw hits two enemies, third remains untouched.
+NeoForge 26.2.0.90; Minecraft 26.2; Java-25 bytecode on Java 26; -Xverify:all.
+Archive validation: 2706 checks passed.
+Handbook: 77 pages rendered; changed pages 17 and 18 visually reviewed, contents destinations unchanged, root/output PDFs match.

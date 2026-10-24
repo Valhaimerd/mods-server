@@ -3,6 +3,25 @@ from zipfile import ZipFile,ZIP_DEFLATED
 import shutil,subprocess,sys,uuid,hashlib
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;WORK=ROOT/'tmp/asgardian-expansion';CLIENT=WORK/'client';CLIENT.mkdir(parents=True,exist_ok=True);mods=CLIENT/'mods';mods.mkdir(exist_ok=True)
 source=ROOT/'tmp/archer-tier-one/client'
+for option,filename in [('--first-person','beam-first-person.flag'),('--visual-only','beam-visual-only.flag'),('--marker-only','marker-visual-only.flag'),('--claim-only','ground-claim-only.flag'),('--shield-only','shield-pose-only.flag'),('--recipes-only','recipe-guide-only.flag')]:
+    flag=CLIENT/filename
+    if option in sys.argv:flag.write_text(option+'\n',encoding='utf-8')
+    else:flag.unlink(missing_ok=True)
+for pattern in ['vectors-*.jar','sodium-*.jar','moreculling-*.jar']:
+    for p in (ROOT/'mod store').glob(pattern):
+        target=mods/p.name
+        if '--renderers' in sys.argv:shutil.copy2(p,target)
+        else:target.unlink(missing_ok=True)
+for pattern in ['punchy-*.jar','modded-swords-x-punchy-*.jar']:
+    for p in (ROOT/'mod store').glob(pattern):
+        target=mods/p.name
+        if '--shield-only' in sys.argv:shutil.copy2(p,target)
+        else:target.unlink(missing_ok=True)
+if '--shield-only' in sys.argv and (ROOT/'tmp/shield-pose/built/punchy-2.8f-neoforge-26.2.jar').exists() and '--baseline' not in sys.argv:
+    shutil.copy2(ROOT/'tmp/shield-pose/built/punchy-2.8f-neoforge-26.2.jar',mods/'punchy-2.8f-neoforge-26.2.jar')
+for p in (ROOT/'mods').glob('jei-*.jar'):
+    if '--recipes-only' in sys.argv:shutil.copy2(p,mods/p.name)
+    else:(mods/p.name).unlink(missing_ok=True)
 for p in (source/'mods').glob('*.jar'):
     if 'probe' not in p.name.lower() and (ROOT/'mods'/p.name).exists():shutil.copy2(ROOT/'mods'/p.name,mods/p.name)
 for p in (ROOT/'mods').glob('iourusraces-*.jar'):shutil.copy2(p,mods/p.name)

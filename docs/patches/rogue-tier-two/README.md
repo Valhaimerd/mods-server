@@ -1,5 +1,7 @@
 # Assassin / Rogue tier-II rework ? 22 October 2026
 
+Current tier I/II values are superseded by the [24 October follow-up](../rogue-rebalance/README.md). The behavior and evidence below describe this earlier layer.
+
 This extends the canonical Rogue builder in `../rogue-tier-one/`, retaining the
 three active filenames. Inputs are rebased over the latest installed Archer
 and first-tier Rogue changes, pinned by `../rogue-tier-one/revision-inputs.json`

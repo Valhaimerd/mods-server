@@ -1,0 +1,22 @@
+PASS Elf identity synced
+PASS Elf night vision absent
+PASS Elf solid leaf footing
+PASS Elf movement synced
+PASS Goblin identity synced
+PASS Goblin night vision active
+PASS Goblin scale synced
+PASS Human identity synced after Goblin
+PASS Goblin vision clears on Human
+PASS Goblin scale clears on Human
+PASS Melfork identity synced
+PASS Connected player immersed in water
+PASS Melfork water vision active
+PASS Server sees real water immersion
+PASS Melfork underwater air refills
+PASS Melfork water strength present
+PASS Human identity synced underwater
+PASS Melfork water vision clears on Human
+PASS Melfork water strength cleared
+PASS Melfork swim modifier cleared
+PASS Native lightmap hook preserves Human lighting
+PASS Client identity resets on logout event

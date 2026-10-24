@@ -19,7 +19,7 @@ final class TransitVisuals {
     private final ServerLevel level;private final Vec3 center;
     private final List<Panel> panels=new ArrayList<>();
     private double bottom=72,height=.01;
-    private record Panel(Display.TextDisplay entity,double dx,double dz,float yaw,float width) {}
+    private record Panel(Display.TextDisplay entity,double dx,double dz,float yaw,float width,boolean ground) {}
     TransitVisuals(ServerLevel level,Vec3 center) {
         this.level=level;this.center=center;
         int[] colors={0x24a2f5ff,0x249fa4ff,0x24c48bff,0x24ffbd90,0x24a5ffe6,0x24b1d7ff};
@@ -29,6 +29,12 @@ final class TransitVisuals {
         }
         // Crossing inner planes create a bright core while leaving silhouettes readable.
         for(int i=0;i<4;i++)add(0,0,i*(float)Math.PI/4,2.1f,0x44d9eeff);
+        // The rising column soon leaves a ground-level camera's view. An inward-facing,
+        // waist-to-head-height rim keeps the transit readable to its own passengers.
+        for(int i=0;i<12;i++) {
+            double angle=i*Math.PI/6;
+            add(Math.cos(angle)*5.5,Math.sin(angle)*5.5,(float)(-angle+Math.PI*1.5),3f,colors[i%6],true);
+        }
     }
     private static void call(Object target,String name,Class<?> type,Object value) {
         try {
@@ -39,6 +45,9 @@ final class TransitVisuals {
         }catch(ReflectiveOperationException e){throw new IllegalStateException("Bifrost display API missing: "+name,e);}
     }
     private void add(double dx,double dz,float yaw,float width,int color) {
+        add(dx,dz,yaw,width,color,false);
+    }
+    private void add(double dx,double dz,float yaw,float width,int color,boolean ground) {
         var e=new Display.TextDisplay(EntityTypes.TEXT_DISPLAY,level);
         call(e,"setText",Component.class,Component.literal(" "));
         call(e,"setBackgroundColor",int.class,color);
@@ -46,8 +55,10 @@ final class TransitVisuals {
         call(e,"setBrightnessOverride",net.minecraft.util.Brightness.class,net.minecraft.util.Brightness.FULL_BRIGHT);
         call(e,"setFlags",byte.class,(byte)0); // depth-tested, not visible through terrain
         call(e,"setViewRange",float.class,2f);call(e,"setShadowRadius",float.class,0f);call(e,"setShadowStrength",float.class,0f);
-        e.setNoGravity(true);e.setInvulnerable(true);e.addTag(TAG);e.setPos(center.x+dx,center.y+72,center.z+dz);
-        level.addFreshEntity(e);panels.add(new Panel(e,dx,dz,yaw,width));
+        e.setNoGravity(true);e.setInvulnerable(true);e.addTag(TAG);
+        if(ground)e.addTag("bifrost_ground_visual");
+        e.setPos(center.x+dx,center.y+(ground?0:72),center.z+dz);
+        level.addFreshEntity(e);panels.add(new Panel(e,dx,dz,yaw,width,ground));
         animate();
     }
     void descend(double progress) {
@@ -58,9 +69,11 @@ final class TransitVisuals {
     }
     private void animate() {
         for(var panel:panels) {
-            var e=panel.entity;e.setPos(center.x+panel.dx,center.y+bottom,center.z+panel.dz);
+            var e=panel.entity;
+            double localBottom=panel.ground?0:bottom,localHeight=panel.ground?3:height;
+            e.setPos(center.x+panel.dx,center.y+localBottom,center.z+panel.dz);
             // Native space background spans 5 x 10 pixels at 1/40 block; center its half-pixel offset.
-            var transformation=new Transformation(new Vector3f(-panel.width*.1f,0,0).rotateY(panel.yaw),new Quaternionf().rotateY(panel.yaw),new Vector3f(panel.width*8,(float)(height*4),1),new Quaternionf());
+            var transformation=new Transformation(new Vector3f(-panel.width*.1f,0,0).rotateY(panel.yaw),new Quaternionf().rotateY(panel.yaw),new Vector3f(panel.width*8,(float)(localHeight*4),1),new Quaternionf());
             call(e,"setTransformation",Transformation.class,transformation);
             call(e,"setTransformationInterpolationDuration",int.class,2);call(e,"setPosRotInterpolationDuration",int.class,2);
         }
@@ -70,10 +83,12 @@ final class TransitVisuals {
     void particles(int age,boolean retracting) {
         // 30 motes per four server ticks, per beam; ordinary client settings/distance apply.
         double y=center.y+bottom;
-        level.sendParticles(ParticleTypes.END_ROD,center.x,y,center.z,8,4,.3,4,.02);
+        // These packet origins must remain near the passenger. Native short-range
+        // particle delivery drops origins high up the 72-block column.
+        level.sendParticles(ParticleTypes.END_ROD,center.x,center.y+1.2,center.z,8,4,.8,4,.02);
         level.sendParticles(ParticleTypes.ELECTRIC_SPARK,center.x,y+height*.4,center.z,8,3,Math.min(height*.3,12),3,.03);
         level.sendParticles(ParticleTypes.GLOW,center.x,y+height*.6,center.z,8,2,Math.min(height*.3,12),2,.015);
-        level.sendParticles(ParticleTypes.PORTAL,center.x,y,center.z,6,4,.5,4,retracting?.08:.03);
+        level.sendParticles(ParticleTypes.PORTAL,center.x,center.y+1,center.z,6,4,.8,4,retracting?.08:.03);
     }
     static void impact(ServerLevel level,Vec3 center) {
         for(int i=0;i<32;i++){double a=i*Math.PI/16;level.sendParticles(ParticleTypes.ELECTRIC_SPARK,center.x+Math.cos(a)*6,center.y+.15,center.z+Math.sin(a)*6,1,.02,.03,.02,.08);}

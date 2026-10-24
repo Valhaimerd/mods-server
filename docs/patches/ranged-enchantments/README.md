@@ -141,3 +141,7 @@ rendering, contents numbers and internal-link results are recorded in
 `tmp/ranged-enchantments/pdf-report.json` and `pdf-review/`.
 
 Final PDF proof: 74 pages, 461 valid internal destinations, matching printed contents numbers and identical root/output copies. Only pages 23 and 26 differ from the preceding reviewed armor edition; both were visually checked without clipping.
+
+## Registry retirement follow-up (2026-10-24)
+
+The [enchantment retirement](../enchantment-retirement/README.md) supersedes the hidden modded enchantment and Life Steal policy recorded here. Its hashes identify the current active repacks; these original build checks remain historical. Vanilla Sweeping Edge stays hidden.

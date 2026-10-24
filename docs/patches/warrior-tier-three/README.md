@@ -1,5 +1,7 @@
 # Warrior ultimates and health passives
 
+Latest presentation fix: [tree names and concise tooltips](../skill-tooltip-polish/README.md). The original detailed descriptions below are historical; current tooltips reserve activation/cooldown details for the yellow section.
+
 Local same-version overlay, 24 October 2026. Builds on [tier II](../warrior-tier-two/README.md) and preserves the existing spell IDs, class-tree placement and earlier pack patches. Both client and server need all three matching JARs. No personal worlds or installations are changed.
 
 ## Installed behavior
@@ -35,3 +37,5 @@ The rebuilt 77-page handbook was rendered and reviewed, including the updated Wa
 The probe runs NeoForge 26.2.0.90 on Java 26 with Java-25 classes and `-Xverify:all`. It exercises native damage, attack and status paths; prior Warrior/Rogue/party/shield regressions run in the same fixture. Client animation appearance still requires an in-game playtest; compilation and server checks do not establish visual quality.
 
 Confirmed follow-up: [Tenacity now triggers at 30% HP or lower and grants twelve-second absorption](../tenacity-followup/README.md). Enrage size stacking and the 60/70/80/90/100-second cooldown sequence are confirmed. The provisional values above describe this original revision.
+
+Latest Warrior overlay: [minimum-charge throws, health pulses, death cleanup and icon fixes](../warrior-followup/README.md). The current hashes are recorded there; earlier build outputs remain historical.

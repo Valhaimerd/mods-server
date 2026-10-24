@@ -1,0 +1,189 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "f929d5eca756ec7df9e65acc07ad86c96755868e2f0a493854549f38e315a1aa",
+  "sha256": "88cc24cdb4a2f1403ba7eaed802c98dddf4c303c5a2a31284b1d9ee569e2bc4c",
+  "changed_entry": "assets/iourusraces/lang/en_us.json",
+  "changed_keys": {
+    "race.iourusraces.human.tooltip": {
+      "before": "Adaptable and versatile, humans are well-balanced and ready to face any challenge.",
+      "after": "Humans are adaptable adventurers with balanced strengths and no special weaknesses."
+    },
+    "race.iourusraces.orc.trait.1": {
+      "before": "+ Melee and ranged damage",
+      "after": "+ Stronger attacks"
+    },
+    "race.iourusraces.orc.trait.3": {
+      "before": "-10% attack and draw speed",
+      "after": "- Slower attacks and bow draw"
+    },
+    "race.iourusraces.orc.description": {
+      "before": "Savage warriors with immense strength.",
+      "after": "Powerful warriors who fight harder when hurt."
+    },
+    "race.iourusraces.orc.tooltip": {
+      "before": "Gain +2 melee and +1 ranged damage at full health. At 40/30/20% health, bonuses rise to +3/4/5 melee and +1.5/2/2.5 ranged damage. Attack speed and bow/crossbow draw speed are 10% slower.",
+      "after": "Orcs are strong warriors who hit harder as their health falls. They have more health, but attack and draw bows more slowly."
+    },
+    "race.iourusraces.goblin.trait.1": {
+      "before": "+ Fast movement",
+      "after": "+ Fast movement and higher jumps"
+    },
+    "race.iourusraces.goblin.trait.2": {
+      "before": "+ Small body (75% scale)",
+      "after": "+ Small body and night vision"
+    },
+    "race.iourusraces.goblin.description": {
+      "before": "Tiny agile inventors and explorers.",
+      "after": "Small, quick explorers who see in the dark."
+    },
+    "race.iourusraces.goblin.tooltip": {
+      "before": "Small and elusive, goblins rely on superior speed and agility to stay one step ahead.",
+      "after": "Goblins are small and quick. They jump higher and see in the dark, but have much less health."
+    },
+    "race.iourusraces.elf.trait.1": {
+      "before": "+8% movement speed",
+      "after": "+ Fast movement and higher jumps"
+    },
+    "race.iourusraces.elf.trait.2": {
+      "before": "+ Slow falling and solid leaf footing",
+      "after": "+ Gentle falls and leaf footing"
+    },
+    "race.iourusraces.elf.description": {
+      "before": "Agile archers with great mobility.",
+      "after": "Quick forest dwellers who land gently."
+    },
+    "race.iourusraces.elf.tooltip": {
+      "before": "Forest dwellers with +8% movement speed, enhanced jumps and slow falling. Elves walk on leaves and cannot pass through them. No racial night vision or projectile-damage bonus.",
+      "after": "Elves move quickly, jump higher and fall gently. They can stand on leaves, but have less health."
+    },
+    "race.iourusraces.dwarf.trait.1": {
+      "before": "+2 armor and extra health",
+      "after": "+ Tough skin and more health"
+    },
+    "race.iourusraces.dwarf.trait.2": {
+      "before": "+ Mining bonus",
+      "after": "+ Faster mining"
+    },
+    "race.iourusraces.dwarf.description": {
+      "before": "Resistant miners with endurance.",
+      "after": "Tough miners who work quickly underground."
+    },
+    "race.iourusraces.dwarf.tooltip": {
+      "before": "Sturdy miners with +2 armor, 22 HP and improved mining efficiency.",
+      "after": "Dwarves have tough skin, extra health and a talent for mining. Their short legs make them slower."
+    },
+    "race.iourusraces.melfork.trait.2": {
+      "before": "+ Underwater vision and breathing",
+      "after": "+ Underwater sight and breathing"
+    },
+    "race.iourusraces.melfork.trait.3": {
+      "before": "- Weakness outside water",
+      "after": "- Weaker attacks on land"
+    },
+    "race.iourusraces.melfork.description": {
+      "before": "Aquatic warriors at their strongest beneath the waves.",
+      "after": "Aquatic warriors who are strongest underwater."
+    },
+    "race.iourusraces.melfork.tooltip": {
+      "before": "Melforks are naturally adapted to aquatic life. They can breathe and see underwater and become stronger while submerged, but suffer from weakness on land.",
+      "after": "Melforks breathe and see underwater and move easily through water. They hit harder while submerged, but their attacks are weaker on land."
+    },
+    "race.iourusraces.draconic.trait.1": {
+      "before": "+ Exceptional durability",
+      "after": "+ More health and fire immunity"
+    },
+    "race.iourusraces.draconic.trait.2": {
+      "before": "+ Can swim in lava",
+      "after": "+ Easier lava travel"
+    },
+    "race.iourusraces.draconic.description": {
+      "before": "Extremely resilient warriors descended from dragons.",
+      "after": "Tough dragonkin who can endure fire and lava."
+    },
+    "race.iourusraces.draconic.tooltip": {
+      "before": "Draconics possess extraordinary resilience and can swim through lava, making them exceptional frontline tanks.",
+      "after": "Draconics have much more health and are immune to fire. They can travel through lava more easily, but move slowly."
+    },
+    "race.iourusraces.asgardian.trait.1": {
+      "before": "+2% damage",
+      "after": "+ Stronger attacks"
+    },
+    "race.iourusraces.asgardian.trait.3": {
+      "before": "+10% magic damage taken",
+      "after": "- Weak to magic"
+    }
+  },
+  "race_entries": {
+    "human": [
+      [
+        "+ Balanced stats"
+      ],
+      "Balanced adventurers.",
+      "Humans are adaptable adventurers with balanced strengths and no special weaknesses."
+    ],
+    "orc": [
+      [
+        "+ Stronger attacks",
+        "+ More health",
+        "- Slower attacks and bow draw"
+      ],
+      "Powerful warriors who fight harder when hurt.",
+      "Orcs are strong warriors who hit harder as their health falls. They have more health, but attack and draw bows more slowly."
+    ],
+    "goblin": [
+      [
+        "+ Fast movement and higher jumps",
+        "+ Small body and night vision",
+        "- Very low health"
+      ],
+      "Small, quick explorers who see in the dark.",
+      "Goblins are small and quick. They jump higher and see in the dark, but have much less health."
+    ],
+    "elf": [
+      [
+        "+ Fast movement and higher jumps",
+        "+ Gentle falls and leaf footing",
+        "- Less health"
+      ],
+      "Quick forest dwellers who land gently.",
+      "Elves move quickly, jump higher and fall gently. They can stand on leaves, but have less health."
+    ],
+    "dwarf": [
+      [
+        "+ Tough skin and more health",
+        "+ Faster mining",
+        "- Slower movement"
+      ],
+      "Tough miners who work quickly underground.",
+      "Dwarves have tough skin, extra health and a talent for mining. Their short legs make them slower."
+    ],
+    "melfork": [
+      [
+        "+ Stronger underwater",
+        "+ Underwater sight and breathing",
+        "- Weaker attacks on land"
+      ],
+      "Aquatic warriors who are strongest underwater.",
+      "Melforks breathe and see underwater and move easily through water. They hit harder while submerged, but their attacks are weaker on land."
+    ],
+    "draconic": [
+      [
+        "+ More health and fire immunity",
+        "+ Easier lava travel",
+        "- Slower movement"
+      ],
+      "Tough dragonkin who can endure fire and lava.",
+      "Draconics have much more health and are immune to fire. They can travel through lava more easily, but move slowly."
+    ],
+    "asgardian": [
+      [
+        "+ Stronger attacks",
+        "+ Lightning immunity",
+        "- Weak to magic"
+      ],
+      "Tough warriors from Asgard, weakened by Ragnarok.",
+      "Asgardians are tough warriors who hit a little harder but move more slowly. Lightning strikes cannot hurt them, but Ragnarok left them weak to magic."
+    ]
+  },
+  "verification": "Only English language JSON differs; all trait/description/tooltip strings contain no numbers or percentages; every other archive entry, attribute label, race ID and gameplay class is unchanged; active/fixed copies match"
+}

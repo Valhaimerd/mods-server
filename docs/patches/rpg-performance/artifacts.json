@@ -1,0 +1,16 @@
+{
+  "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "before_sha256": "24690ca5941a7b4c7e359e8f4e3df10b6a157fe0cde57d52d72f9ffb1242cb81",
+  "sha256": "430338aa4a125b554f32b79da051bbe2eb0a277777dc923b3aa00fc7e9acf496",
+  "changed": [
+    "spell_engine.mixins.json"
+  ],
+  "added": [
+    "net/spell_engine/mixin/performance/CloudLifecycleMixin.class",
+    "net/spell_engine/mixin/performance/TimedEntityAgeMixin.class"
+  ],
+  "sources": {
+    "TimedEntityAgeMixin.java": "a91fe4b010f7a794d442768db45859d26df4e2dfcaaf278df9eea917bb7bad8e",
+    "CloudLifecycleMixin.java": "0dece974ba59f75f1c711eeff0e582f151dbb372fa862199e32c5e7ea46b0aa6"
+  }
+}

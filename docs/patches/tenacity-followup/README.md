@@ -19,3 +19,5 @@ Inputs and candidate archives remain ignored under `tmp/tenacity-followup/`. `ar
 Isolated result: **946 Warrior/shield/party checks passed**.
 
 Handbook proof: all 77 pages rendered; page 17 is the only pixel change from the reviewed prior edition and was visually reviewed. All 51 contents destinations remain correct, and root/output PDF hashes match.
+
+Latest Warrior overlay: [minimum-charge throws, health pulses, death cleanup and icon fixes](../warrior-followup/README.md). The current hashes are recorded there; earlier build outputs remain historical.

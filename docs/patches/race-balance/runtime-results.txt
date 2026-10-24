@@ -1,0 +1,3 @@
+PASS 166 Asgardian native server measurements
+FAIL java.lang.AssertionError: Elf fell too quickly: landed tick=48 maxDown=1.506141419038689
+PASS connected Elf slow fall; landed tick=117 maxDown=0.44749789698341763 health=18.0

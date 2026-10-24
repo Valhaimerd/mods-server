@@ -1,0 +1,42 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "8d635f07597d0345eb5a956b4402519a0649116987199aa55ddcde328349ab59",
+    "sha256": "01c8d182b5d8c1cf5608b6c82fddc3507b40ae5cad740e3796f04a4e39f651c2",
+    "changed_entries": [
+      "assets/archers/lang/en_us.json"
+    ],
+    "reviewed_keys": 6,
+    "changed_keys": 6
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "abe3bc86a965cf3f27493d32d6fe6474c724d673601eac4e2f41b8ad1ab6d7b6",
+    "sha256": "30a760e0488299521d214057aa00367147591e077e994fb6eeb490c2dc629451",
+    "changed_entries": [
+      "assets/rogues/lang/en_us.json"
+    ],
+    "reviewed_keys": 12,
+    "changed_keys": 12
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "2cae125c2fbff04355c9dbf362a0a06311116a1f6e7b5fcdb7415b435576e0f4",
+    "sha256": "30a377bd4a90c4f376e88e76d19a2fc4ae8dc450879bf86a998e8fad3680ae4e",
+    "changed_entries": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ],
+    "reviewed_keys": 145,
+    "changed_keys": 126
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "20b4f233801a948ffe9810eacf84553763ba88fda72c4530f97e459d9288cfbb",
+    "sha256": "91fe7e9120ca8b5c5aa366b434226a35b2c7bb60e8784e232330600c991058ec",
+    "changed_entries": [
+      "assets/wizards/lang/en_us.json"
+    ],
+    "reviewed_keys": 33,
+    "changed_keys": 32
+  }
+]

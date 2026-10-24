@@ -1,0 +1,2 @@
+PASS 43 native client tooltip checks
+PASS 946 Warrior/shield/party checks

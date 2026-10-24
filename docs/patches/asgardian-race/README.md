@@ -1,5 +1,7 @@
 # Asgardian race for Iourus
 
+Current balance follow-up: [Iourus race balance](../race-balance/README.md) changes Asgardian size to 1.10x and removes its mining-speed bonus. Earlier values below record this original addition.
+
 Local same-filename replacement of `iourusraces-1.1.0.jar` for Minecraft 26.2, NeoForge 26.2.0.90 and Java 25. Embedded upstream metadata declares mod version 1.0.0; it is preserved. No new mod or runtime dependency is added.
 
 ## Implemented

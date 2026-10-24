@@ -1,0 +1,2 @@
+PASS 65 isolated Spread Spawnpoints runtime checks
+PASS actual client Spring first join at (-471.5, -60.0, 68.5) assigned=(-4.620E+2  6.500E+1); mod alone with bundled dependency

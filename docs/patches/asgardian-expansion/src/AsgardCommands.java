@@ -12,7 +12,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 public final class AsgardCommands {
     @SubscribeEvent public static void register(RegisterCommandsEvent event){
         event.getDispatcher().register(Commands.literal("asgard")
-            .then(Commands.literal("claim").executes(context->{var p=context.getSource().getPlayerOrException();boolean done=WeaponOwnership.claim(p);p.sendSystemMessage(Component.literal(done?"Weapon claimed. It is permanently bound to you.":"Hold an unclaimed hammer/axe, or look at an unclaimed one nearby. Only an Asgardian may claim it."));return done?1:0;}))
+            .then(Commands.literal("claim").executes(context->{var p=context.getSource().getPlayerOrException();boolean done=WeaponOwnership.claim(p);if(done)p.sendSystemMessage(Component.literal("Weapon claimed. It is permanently bound to you."));return done?1:0;}))
             .then(Commands.literal("recover").requires(s->s.permissions().hasPermission(Permissions.COMMANDS_ADMIN))
                 .then(Commands.argument("owner",EntityArgument.player()).then(Commands.argument("weapon_uuid",StringArgumentType.word()).executes(context->{var owner=EntityArgument.getPlayer(context,"owner");boolean done=WeaponOwnership.adminRecover(owner,StringArgumentType.getString(context,"weapon_uuid"));context.getSource().sendSuccess(()->Component.literal(done?"Bound weapon recovered to its existing owner; ownership unchanged.":"No matching bound weapon exists for that owner."),true);return done?1:0;}))))
             .then(Commands.literal("reassign").requires(s->s.permissions().hasPermission(Permissions.COMMANDS_ADMIN))

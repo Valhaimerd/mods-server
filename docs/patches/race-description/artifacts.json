@@ -1,0 +1,15 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "b50ec03a0435dc4c747cc8a7d3be89066be69e6c1001bc7f0b711d81b1196629",
+  "sha256": "f929d5eca756ec7df9e65acc07ad86c96755868e2f0a493854549f38e315a1aa",
+  "changed_entry": "assets/iourusraces/lang/en_us.json",
+  "changed_keys": [
+    "race.iourusraces.asgardian.description",
+    "race.iourusraces.asgardian.tooltip"
+  ],
+  "wording": {
+    "race.iourusraces.asgardian.description": "Tough warriors from Asgard, weakened by Ragnarok.",
+    "race.iourusraces.asgardian.tooltip": "Asgardians are tough warriors who hit a little harder but move more slowly. Lightning strikes cannot hurt them, but Ragnarok left them weak to magic."
+  },
+  "verification": "CRC/JSON valid; all other entries byte-identical, including race stats, saves, mixins and all other race descriptions; active/fixed copies match"
+}

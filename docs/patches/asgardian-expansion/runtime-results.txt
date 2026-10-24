@@ -1,34 +1,57 @@
-Asgardian expansion final verification - 2026-10-24
-Minecraft26.2 / NeoForge26.2.0.90 / Java25 bytecode
-Active/fixed/candidate SHA256: 6994aee55ed85475c10c238c40efcee86a9444975ce4c46cbe8ea57e5c5de99b
-Pinned prior travel layer SHA256: c7cc566fb59afc5cbccfeef4338dd6810171db0d9f88cc14d9ed540ed4e43813
+Bifrost ground claim and recipe discovery repair - 2026-10-24
+Current active/fixed/tested SHA256: bc8647266b1de9a73cd719374ef026ddc4a1164ff8f29b29ac04348e9cd780ca
+Previous marker-repaired SHA256: 21bb931550c9c8b0df6a033c1cd6c6be5cd47b91d311db23a49a0a4faaf6db7a
+With revive: PASS 133 expansion checks; nested ownership suite 108 assertions.
+Without revive: PASS 133 expansion checks; nested ownership suite 101 assertions.
+Connected client with Sodium/MoreCulling/Vectors: PASS 6 actual /asgard claim checks, including synchronized inventory, original entity consumption and authoritative owner.
+Connected JEI client: PASS 9 recipe-book ingredient-unlock and visible JEI crafting checks for all four recipes. Screenshot 2026-10-24_11.42.49.png visually reviewed (page one of two); recipe lookup verifies all four entries.
+Both dedicated variants and connected claim/recipe clients used this final production candidate hash.
+Production recipes retain existing grids and ingredients; four inventory-triggered unlock advancements added. Existing beam and marker repairs included.
+Repository mods and fixed copy match; predecessor archived locally. No personal installation or world changed. No commit/push.
+Existing handbook claim/JEI instructions and controls remain accurate; detailed grids and discovery rules are in claim-and-recipes.md. No PDF rebuild needed for these repairs.
 
-server: PASS 125 Asgardian expansion checks
-PASS 88 ownership native/codec/state assertions
-Tested SHA256: 6994aee55ed85475c10c238c40efcee86a9444975ce4c46cbe8ea57e5c5de99b
-server-no-revive: PASS 125 Asgardian expansion checks
-PASS 81 ownership native/codec/state assertions
-Tested SHA256: 6994aee55ed85475c10c238c40efcee86a9444975ce4c46cbe8ea57e5c5de99b
-Revive runner repeated on the same saved world: restart waiting/orbit authority assertion passed.
-Actual crafting menu result/cursor extraction and ingredient consumption passed.
-Native haste cooldown and windup scaling plus Realm/Berserk floor checks passed.
+Historical marker and beam evidence follows (hashes below refer to their earlier builds):
 
-PASS 51 connected Asgardian client checks; four cinematic phase screenshots; sound play-path events {transit_closure=2, transit_impact=2, transit_charge=1, transit_descent=2} (no audible-hearing claim)
-Client SHA256: 6994aee55ed85475c10c238c40efcee86a9444975ce4c46cbe8ea57e5c5de99b
+Bifrost marker occlusion repair - 2026-10-24
+Current active/fixed/candidate SHA256: 21bb931550c9c8b0df6a033c1cd6c6be5cd47b91d311db23a49a0a4faaf6db7a
+Preceding beam-repaired SHA256: 12a24c01d21d71df2581f526182cf5c2578076c6b52d7d61d27f018749852d95
+Production delta from preceding repair: ModBlocks.class only; no archive entry added/removed.
+Root cause: crying obsidian solid-cube occlusion copied onto an inset decorative model.
+Repair: noOcclusion(); collision/strength/IDs/saves/recipes/beam timing preserved.
+Old build failed the native canOcclude regression and client marker assertion.
+With revive: PASS 133 Asgardian expansion checks
+Without revive: PASS 133 Asgardian expansion checks
+PASS marker occlusion and six adjacent terrain faces; stacked pit screenshot captured with installed renderer set
+Client: Sodium0.9.2/MoreCulling1.8.1/Vectors1.5.0-alpha.4; marker-mode stacked stone pit.
+Native and client checks cover all six adjacent stone faces.
+Focused screenshot visually reviewed: tmp/asgardian-expansion/client/screenshots/2026-10-24_11.05.17.png
+Static final archive verification passed; server/client hashes match final candidate.
+Repository mods and fixed-pack bytes match; predecessor archived locally.
+No personal installation/world changed. No commit/push. Handbook controls/mechanics remain accurate; no PDF change.
 
-Archive verifier: SHA/CRC/source hashes/Java25/metadata/mixins/protocols/resources/no-test-leakage passed.
-Production and fixed-pack archives match tested candidate bytes. One active Bifrost archive.
-Prior marker SavedData codec/service/commands/blocks byte-identical to travel alignment.
+Earlier beam repair evidence (unchanged TransitVisuals bytecode follows):
 
-77 pages; 463 internal links; 51 matching TOC destinations; root/output bytes identical.
-Changed pages: [2, 4, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]
-All77 PDF pages rendered and visually reviewed by contact sheets; expanded guide page32 and adjacent layout checked at full resolution.
-174 mod-icon source and render checks passed.
+Bifrost first-person visibility repair - 2026-10-24
+Earlier visibility-repair active/fixed/candidate SHA256: 12a24c01d21d71df2581f526182cf5c2578076c6b52d7d61d27f018749852d95
+Preceding expansion SHA256: 6994aee55ed85475c10c238c40efcee86a9444975ce4c46cbe8ea57e5c5de99b
+Production delta: TransitVisuals.class and TransitVisuals$Panel.class only. All other archive entries unchanged.
+Baseline first-person images reproduced a nearly empty beam footprint; old native visual regression failed.
 
-Test corrections: long-range fake targets required forced-chunk warmup before native entity queries; no ricochet damage workaround was added.
-Protected orbit visuals retain direct entity references so dimension changes also remove non-ticking old visuals.
-One fixed-tick client attempt missed its Travel-screen timing assertion during concurrent load; isolated rerun of the same final production hash passed. No multiplayer latency guarantee is implied.
+With revive: PASS 126 Asgardian expansion checks
+Without revive: PASS 126 Asgardian expansion checks
+New native check: 12 caster-height panels survive upper-column retraction; original source/target cleanup timings still pass.
 
-Limits: isolated functional tests, not full late-game balance or full-pack multiplayer/low-FPS testing. Sound play-path events observed, not audible human listening.
-Normal native death/downing and death-during-flight paths checked; every revive give-up/bleed-out schedule and third-party storage implementation is not covered.
-No personal .minecraft or desktop server installation modified. No commit/push.
+First person + Sodium0.9.2/MoreCulling1.8.1/Vectors1.5.0-alpha.4:
+PASS 13 connected Asgardian client checks; four cinematic phase screenshots; sound play-path events {transit_closure=2, transit_impact=2, transit_charge=1, transit_descent=2} (no audible-hearing claim)
+Observer + same renderers:
+PASS 13 connected Asgardian client checks; four cinematic phase screenshots; sound play-path events {transit_closure=2, transit_impact=2, transit_charge=1, transit_descent=2} (no audible-hearing claim)
+First-person and observer candidate SHA256 match the final manifest.
+Four phase screenshots per view visually reviewed: repaired low prismatic rim/nearby particles visible to caster and on arrival; tall outer sweep still visible from observer.
+Native-menu fixture response deadline extended to200 client ticks for heavy renderer startup; no product cooldown change.
+
+Original full expansion checks are preserved in Git history; this follow-up reruns the dedicated combined suite and focused connected transit tests.
+Static archive verification: CRC/Java25/source hashes/protocols/dependencies/resources/marker schema/no-test-leakage pass.
+Handbook mechanics, controls and PDF stay accurate; no PDF revision for this visual-only fix.
+No personal .minecraft/server installation or world modified; personal-client installed JAR hash/log inspected read-only.
+No commit/push.
+Limits: no human audible-listening claim, all shader combinations, full-pack stress, or long-distance multiplayer latency guarantee.

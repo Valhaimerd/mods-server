@@ -7,7 +7,7 @@ Inspected **24 October 2026** from the currently installed pack. Includes all th
 - **M** = caster physical-melee spell power / attack damage before criticals, target defenses, vulnerabilities and pack PvP retention. **H** = health-school power, sourced from maximum health. Percent attack-damage attributes modify base attack damage unless stated otherwise.
 - **20 ticks = 1 second; 2 HP = 1 heart.** User tiers I/II/III correspond to internal active tiers 2/3/4. Each active has an improved/root node and two alternative branches. Passive pairs are separate choices, not additional active skills.
 - Verified omitted engine defaults: standard cast is instant, cast/cooldown haste scaling enabled, cooldown nonproportional; damage coefficient 100%, knockback 1; projectile launch velocity 1, steering 1 degree/tick, ricochet search radius 5; status duration 10s, SET, amplifier 0, refresh true. Default resource costs are 0.1 exhaustion and one durability unless overridden. Defaults matter only when the corresponding mechanic is present.
-- Charges use a linear curve and permit release after 20% completion by default. Let q be charge completion from 0 to 1. Throw Weapon and Throw Net output are q. Range bonuses scale with q. Status durations are not multiplied by this charge output in the installed status-impact path.
+- Charges use a linear curve and permit release after 20% completion by default. Let q be charge completion from 0 to 1. Throw Weapon and Throw Net damage interpolate from a fixed minimum at earliest release to their maximum at full charge; the native output multiplier is disabled for these two spells. Range bonuses scale with q. Status durations are not multiplied by this charge output in the installed status-impact path.
 - Cooldowns/cast times below are before native haste. All Warrior active casts and active/passive cooldowns explicitly enable haste scaling. Melee-school haste uses the native attack-speed/spell-haste sources; fixed buff durations do not automatically shrink with haste.
 - ADD effects with increment 1 start at one level; serialized cap 2 gives three levels. Successful applications refresh duration unless explicitly disabled. Missing chance means 100%.
 - Shared acquisition/final-impact guards protect the caster, party players and player-owned pets. Throw Weapon no longer applies Shatter. Net retains its maximum-HP gate, but type/boss immunity cannot reject a qualifying net. Head Throw uses the universal stun policy.
@@ -28,22 +28,22 @@ Inspected **24 October 2026** from the currently installed pack. Includes all th
 | --- | --- | --- |
 | Full charge | 0.5s | 0.5s |
 | Base cooldown | 5s | 6s |
-| Full / half-charge damage | 80% / 40% M | 15% / 7.5% M |
+| Minimum / full-charge damage | 40% / 80% M | 7.5% / 15% M |
 | Range | 12-24 blocks | 12-24 blocks; Improved reaches 30 |
 | Speed / homing | 1.0; 2 degrees per tick | 1.0; 2 degrees per tick |
 | Enemy effect | Slowness I for 1s | Root for 2s, maximum HP at most 100 + 2M |
 | Caster tradeoff | Weakness IV for 2s after launch; projectile retains pre-Weakness power | None |
 | Extra behavior | No block bounce or base ricochet | Pulls eligible enemies rapidly toward 2 blocks in front of the caster, stopping at solid obstructions |
 
-Charge output is linear: full damage times charge completion. Status duration is fixed. Net damage is independent of its root/pull HP gate. Party members and owned pets are protected from both damage and control. Net type immunity is bypassed after the HP gate passes. Haste reduces casts and cooldowns, including other Warrior tiers.
+Charge damage rises linearly between earliest release and full charge; releasing early never drops below the listed minimum. Status duration is fixed. Net damage is independent of its root/pull HP gate. Party members and owned pets are protected from both damage and control. Net type immunity is bypassed after the HP gate passes. Haste reduces casts and cooldowns, including other Warrior tiers.
 
 ### Tier-I secondary nodes, by pair
 
 | Position | Throw Weapon | Throw Net |
 | --- | --- | --- |
-| Improved/root | **Improved Throw Weapon:** 90% M at full charge | **Improved Throw Net:** +6 charged range; actual projectile flight reaches 30 blocks |
-| Branch A | **Strong Throw:** pierces twice for three enemy hits total, seeking the next unhit enemy within 24 blocks with 2-degree steering; no ricochet | **Bigger Net:** same damage, root and pull within 5 blocks of impact, with per-enemy HP checks and no damage falloff |
-| Branch B | **Head Throw:** 100% M at full charge and 0.25s universal stun | **Multiple Nets:** base cooldown 4s; root duration 1.5s |
+| Improved/root | **Improved Throw Weapon:** 50%-90% M from earliest release to full charge | **Improved Throw Net:** +6 charged range; actual projectile flight reaches 30 blocks |
+| Branch A | **Strong Throw:** pierces once for two enemy hits total, seeking the next unhit enemy within 24 blocks with 2-degree steering; no ricochet | **Bigger Net:** same damage, root and pull within 5 blocks of impact, with per-enemy HP checks and no damage falloff |
+| Branch B | **Head Throw:** 60%-100% M from earliest release to full charge and 0.25s universal stun | **Multiple Nets:** base cooldown 4s; root duration 1.5s |
 
 Damage upgrades use impact coefficients rather than increasing the source power, so they do not strengthen unrelated effects. Strong Throw does not reset its total travel budget between enemies. Improved Net fixes the old launcher omission of selected-node range bonuses.
 
@@ -105,11 +105,11 @@ Warm Up rounds only the 6% M portion to the nearest 0.5 HP; 1 HP remains the fix
 | --- | --- | --- |
 | Channel | Five pulses over 2.5s, stationary, Last Stand presentation | Five pulses over 2.5s, stationary |
 | Base cooldown | 60/70/80/90/100s after 1/2/3/4/5 pulses | Same |
-| Per pulse | +15% base attack speed, +10% basic melee attack damage only, +15 knockback-resistance points, +20% base incoming-damage modifier | 0.6s damage immunity; refresh Regeneration I and full knockback resistance |
-| Five-pulse totals | +75% attack speed, +50% basic-attack damage, +75 knockback-resistance points, +100% damage taken | Regeneration I remains level I; immunity does not accumulate beyond the refreshed 0.6s |
+| Per pulse | +15% base attack speed, +10% basic melee attack damage only, +15 knockback-resistance points, +20% base incoming-damage modifier | +20% base maximum health and heal the health added; 0.6s damage immunity; refresh Regeneration I and full knockback resistance |
+| Five-pulse totals | +75% attack speed, +50% basic-attack damage, +75 knockback-resistance points, +100% damage taken | +100% base maximum health; Regeneration I remains level I; immunity refreshes at 0.6s |
 | Buff duration | 12s, refreshed by pulses | 15s, refreshed by pulses |
-| Full-channel reward | Full heal and Speed IV for 2s | No extra maximum HP or full-heal reward |
-| Natural expiry | Full heal | Buffs expire normally |
+| Full-channel reward | Full heal and Speed IV for 2s | Five health pulses total +100% base maximum HP; no separate full-heal reward |
+| Natural expiry | Full heal | Health bonus and buffs expire normally |
 | Fatal-hit outcome | Prevent death, end Berserker, full heal, current cooldowns on Throw Weapon/Throw Net/Wild Charge/Shout, Nausea 10s and stun 5s | No special fatal-hit rescue outside its pulse immunity |
 | Improved/root | Duration 15s | Duration 20s; pulse immunity stays 0.6s |
 | Branch A | **Brutality:** +4 physical critical-chance points per pulse, maximum 20; ends with Berserker | **Juggernaut:** +10% base size and -3% base incoming-damage modifier per pulse, up to +50%/-15%; matches 20s Improved duration |
@@ -140,7 +140,7 @@ All operations here are **ADD_MULTIPLIED_BASE**, per effect level, unless a sepa
 | rogues:net_trap | movement_speed -2; jump_strength -2; knockback_resistance +100; ROOT action impairment plus explicit KnockbackImmunity |
 | rogues:charge | movement_speed +0.5 ADD_MULTIPLIED_BASE; knockback_resistance +0.25 ADD_VALUE |
 | rogues:demoralize | attack_damage, ranged_weapon:damage and registered offensive spell_power attributes -0.08 ADD_MULTIPLIED_BASE |
-| rogues:last_stand | knockback_resistance +1 ADD_VALUE; no maximum-health modifier |
+| rogues:last_stand | knockback_resistance +1 ADD_VALUE; max_health +0.2 ADD_MULTIPLIED_BASE per pulse, up to five |
 | skill_tree_rpgs:killing_spree | attack_damage +0.02; spell_engine:damage_taken -0.02 |
 | skill_tree_rpgs:vitality | armor +1 and max_health +2 ADD_VALUE; additional rounded 6% M armor per level, cleaned up on removal; heal only new maximum HP |
 | skill_tree_rpgs:battle_shout | melee, ranged and offensive magic power +0.08 ADD_MULTIPLIED_BASE |
@@ -155,6 +155,10 @@ All operations here are **ADD_MULTIPLIED_BASE**, per effect level, unless a sepa
 | skill_tree_rpgs:warrior_momentum | movement_speed +0.02; attack_speed +0.02 |
 | skill_tree_rpgs:tenacity_ward | max_absorption +1 ADD_VALUE per level; one HP absorption per level |
 
-Latest revision: [Tenacity confirmation](../tenacity-followup/README.md), following [Warrior tier III](../warrior-tier-three/README.md).
+Latest revision: [Throw Weapon hit fix](../throw-weapon-hit/README.md): Strong Throw hits at most two enemies; quick recasts ignore the skill's own Weakness when capturing projectile power.
+
+Previous revision: [Warrior follow-up](../warrior-followup/README.md): minimum charge damage, health pulses, death cleanup, effect icons and removal of Lethality's obsolete spike trigger. Berserker plays the spike impact sound on natural expiry or fatal rescue. Ultimate effects and tracked state do not survive death.
+
+Previous revision: [Tenacity confirmation](../tenacity-followup/README.md), following [Warrior tier III](../warrior-tier-three/README.md).
 
 Verification and rebuild instructions: [Warrior/shield patch](../warrior-tier-one/README.md). The local patch includes isolated-server probes; personal installations and worlds remain untouched. No GitHub push is part of this revision.

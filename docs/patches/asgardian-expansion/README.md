@@ -2,6 +2,14 @@
 
 Local same-version repack for Minecraft 26.2, NeoForge 26.2.0.90+, Java 25 bytecode, completed 24 October 2026. This extends [the travel-only alignment](../bifrost-alignment/README.md) and the [Iourus eighth race](../asgardian-race/README.md). The active filename remains `bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar`; the mod ID stays `bifrost` and display name is `Asgardian_Mod`. No push or commit is part of this pass.
 
+The [first-person visibility repair](visibility-fix.md) keeps the beam readable from inside its footprint, with a low inward-facing prismatic rim and particles near passengers. The tall sweep and all transit/capture timing remain unchanged. Its focused client checks include Sodium, More Culling and Vectors.
+
+The [marker occlusion repair](marker-occlusion-fix.md) also prevents the decorative marker from hiding adjacent terrain faces through its model gaps. It retains collision, registry IDs and travel behavior, and includes the beam repair.
+
+The [claim and recipe discovery repair](claim-and-recipes.md) accepts close unobstructed ground hammers without floor-level aiming, reports specific claim failures, and adds native recipe-book discovery for all four existing crafting recipes. The recipes are verified through JEI's visible crafting lookup. The separate [shield pose repair](../shield-pose/README.md) connects component-based kite shields to existing blocking poses.
+
+The [weapon alignment follow-up](../bifrost-weapon-alignment/README.md) supersedes the weapon attributes below: Hofund matches Diamond Sword, Mjolnir matches Netherite Mace, and Stormbreaker matches Netherite Great Hammer with 0.8 attack speed. Native Swift Strikes, Smash and Ground Slam are attached; custom ability inputs are unchanged in that pass.
+
 ## Implemented behavior
 
 The [player handbook](../../MODLIST.md#asgardian_mod-bifrost-teleport) explains equipment, percentages, controls and travel. Full approved design: `mod fixing/ASGARDIAN.md` (local working reference).

@@ -1,0 +1,10 @@
+[
+  {
+    "jar": "spreadspawnpoints-neoforge-1.2.0-26.2.jar",
+    "before_sha256": "2ca862f11b3eebb6c75dbd8a415e86782b5a1d84c2f55c1fc839fcd3efe9905a",
+    "sha256": "af74613fd03a195e49f98b6f0d002c13a7372d5561ce28efe7f6b5b022b15f26",
+    "changed": [
+      "xyz/verarr/spreadspawnpoints/spawnpoints/SpawnPointManager.class"
+    ]
+  }
+]

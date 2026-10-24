@@ -1,0 +1,931 @@
+PASS Actual server restart kept saved race actual=1.0 expected=1.0
+PASS Nine enum values incl NONE actual=9.0 expected=9.0
+PASS Original ordinal NONE actual=1.0 expected=1.0
+PASS Original ordinal HUMAN actual=1.0 expected=1.0
+PASS Original ordinal ORC actual=1.0 expected=1.0
+PASS Original ordinal GOBLIN actual=1.0 expected=1.0
+PASS Original ordinal ELF actual=1.0 expected=1.0
+PASS Original ordinal DWARF actual=1.0 expected=1.0
+PASS Original ordinal MELFORK actual=1.0 expected=1.0
+PASS Original ordinal DRACONIC actual=1.0 expected=1.0
+PASS Asgard appended actual=8.0 expected=8.0
+PASS 22 HP repeat=0 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=0 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=0 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=0 actual=1.0 expected=1.0
+PASS 22 HP repeat=1 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=1 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=1 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=1 actual=1.0 expected=1.0
+PASS 22 HP repeat=2 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=2 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=2 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=2 actual=1.0 expected=1.0
+PASS 22 HP repeat=3 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=3 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=3 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=3 actual=1.0 expected=1.0
+PASS Gear max HP retained actual=32.0 expected=32.0
+PASS Health native race=NONE actual=20.0 expected=20.0
+PASS Speed native race=NONE actual=0.10000000149011612 expected=0.10000000149011612
+PASS Scale native race=NONE actual=1.0 expected=1.0
+PASS Mining cleanup race=NONE actual=1.0 expected=1.0
+PASS Health native race=HUMAN actual=20.0 expected=20.0
+PASS Speed native race=HUMAN actual=0.10000000149011612 expected=0.10000000149011612
+PASS Scale native race=HUMAN actual=1.0 expected=1.0
+PASS Mining cleanup race=HUMAN actual=1.0 expected=1.0
+PASS Health native race=ORC actual=24.0 expected=24.0
+PASS Speed native race=ORC actual=0.0900000013411045 expected=0.09000000134110452
+PASS Scale native race=ORC actual=1.25 expected=1.25
+PASS Mining cleanup race=ORC actual=1.0 expected=1.0
+PASS Health native race=GOBLIN actual=16.0 expected=16.0
+PASS Speed native race=GOBLIN actual=0.11500000171363353 expected=0.11500000171363353
+PASS Scale native race=GOBLIN actual=0.75 expected=0.75
+PASS Mining cleanup race=GOBLIN actual=1.0 expected=1.0
+PASS Health native race=ELF actual=18.0 expected=18.0
+PASS Speed native race=ELF actual=0.10800000160932542 expected=0.10800000160932542
+PASS Scale native race=ELF actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=ELF actual=1.0 expected=1.0
+PASS Health native race=DWARF actual=22.0 expected=22.0
+PASS Speed native race=DWARF actual=0.09500000141561031 expected=0.09500000141561031
+PASS Scale native race=DWARF actual=0.800000011920929 expected=0.800000011920929
+PASS Mining cleanup race=DWARF actual=1.0 expected=1.0
+PASS Health native race=MELFORK actual=20.0 expected=20.0
+PASS Speed native race=MELFORK actual=0.11000000163912774 expected=0.11000000163912774
+PASS Scale native race=MELFORK actual=1.0 expected=1.0
+PASS Mining cleanup race=MELFORK actual=1.0 expected=1.0
+PASS Health native race=DRACONIC actual=28.0 expected=28.0
+PASS Speed native race=DRACONIC actual=0.0900000013411045 expected=0.09000000134110452
+PASS Scale native race=DRACONIC actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=DRACONIC actual=1.0 expected=1.0
+PASS Health native race=ASGARDIAN actual=22.0 expected=22.0
+PASS Speed native race=ASGARDIAN actual=0.09500000141561031 expected=0.09500000141561031
+PASS Scale native race=ASGARDIAN actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=ASGARDIAN actual=1.0 expected=1.0
+PASS Save uses stable name actual=1.0 expected=1.0
+PASS Codec save/load NONE actual=1.0 expected=1.0
+PASS Codec save/load HUMAN actual=1.0 expected=1.0
+PASS Codec save/load ORC actual=1.0 expected=1.0
+PASS Codec save/load GOBLIN actual=1.0 expected=1.0
+PASS Codec save/load ELF actual=1.0 expected=1.0
+PASS Codec save/load DWARF actual=1.0 expected=1.0
+PASS Codec save/load MELFORK actual=1.0 expected=1.0
+PASS Codec save/load DRACONIC actual=1.0 expected=1.0
+PASS Codec save/load ASGARDIAN actual=1.0 expected=1.0
+PASS Network codec name actual=1.0 expected=1.0
+PASS Server command selects Asgardian actual=1.0 expected=1.0
+PASS Ordinary reselection denied actual=1.0 expected=1.0
+PASS Clone copies race actual=1.0 expected=1.0
+PASS Respawn reapplies HP actual=22.0 expected=22.0
+PASS Reset clears saved race actual=1.0 expected=1.0
+PASS Reset removes mining actual=1.0 expected=1.0
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / minecraft:player_attack]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / minecraft:player_attack]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / minecraft:arrow]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / minecraft:arrow]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=10.20001220703125 expected=10.2
+PASS Magic weakness 10% actual=11.0 expected=11.0
+PASS Lightning direct immunity actual=0.0 expected=0.0
+PASS No general fire immunity actual=10.0 expected=10.0
+PASS No physical weakness actual=10.0 expected=10.0
+PASS Strike ignition prevented actual=1.0 expected=1.0
+PASS Other races can be struck actual=1.0 expected=1.0
+PASS Healing unchanged actual=14.0 expected=14.0
+PASS Orc attack speed 90% actual=3.6
+PASS Native attack delay slower actual=5.55555534362793
+PASS Better Combat cooldown slower actual=5.55555534362793
+PASS RPG melee haste follows racial speed actual=0.8999999761581421
+PASS Melee bonus at HP 1.0 actual=3.0
+PASS Ranged bonus at HP 1.0 actual=1.0
+PASS RPG melee power at HP 1.0 actual=3.0
+PASS RPG ranged power at HP 1.0 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.51 actual=3.0
+PASS Ranged bonus at HP 0.51 actual=1.0
+PASS RPG melee power at HP 0.51 actual=3.0
+PASS RPG ranged power at HP 0.51 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.5 actual=3.0
+PASS Ranged bonus at HP 0.5 actual=1.0
+PASS RPG melee power at HP 0.5 actual=3.0
+PASS RPG ranged power at HP 0.5 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.4 actual=4.0
+PASS Ranged bonus at HP 0.4 actual=1.5
+PASS RPG melee power at HP 0.4 actual=4.0
+PASS RPG ranged power at HP 0.4 actual=1.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.3 actual=5.0
+PASS Ranged bonus at HP 0.3 actual=2.0
+PASS RPG melee power at HP 0.3 actual=5.0
+PASS RPG ranged power at HP 0.3 actual=2.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.2 actual=6.0
+PASS Ranged bonus at HP 0.2 actual=2.5
+PASS RPG melee power at HP 0.2 actual=6.0
+PASS RPG ranged power at HP 0.2 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.1 actual=6.0
+PASS Ranged bonus at HP 0.1 actual=2.5
+PASS RPG melee power at HP 0.1 actual=6.0
+PASS RPG ranged power at HP 0.1 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.01 actual=6.0
+PASS Ranged bonus at HP 0.01 actual=2.5
+PASS RPG melee power at HP 0.01 actual=6.0
+PASS RPG ranged power at HP 0.01 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Healing restores starting melee bonus actual=3.0
+PASS Healing restores starting ranged bonus actual=1.0
+PASS Orc penalty multiplies gear speed actual=5.4
+PASS Race change restores speed with gear actual=6.0
+PASS Race change removes melee actual=1.0
+PASS Race change removes ranged actual=0.0
+PASS Migrated custom base preserved actual=7.0
+PASS Legacy Orc raw-base repair actual=1.0
+PASS Legacy base retained as backup actual=8.8
+PASS Clone retains completed migration actual=7.0
+PASS Clone retains legacy backup actual=8.8
+PASS Dwarf two armor actual=2.0
+PASS Dwarf repeat does not stack actual=2.0
+PASS Dwarf armor removed actual=0.0
+PASS Goblin 75% size actual=0.75
+PASS Asgardian 110% size actual=1.100000023841858
+PASS Asgardian no mining bonus actual=1.0
+PASS Elf movement +8% actual=0.10800000160932542
+PASS Elf no projectile amplification actual=10.0
+PASS Elf terminal speed actual=-0.2
+PASS Elf horizontal X retained actual=0.3
+PASS Elf horizontal Z retained actual=0.4
+PASS Elf fall distance cleared actual=0.0
+PASS Elf correction synchronized actual=1.0
+PASS Elf upward jump retained actual=0.4
+PASS Elf creative flight retained actual=-0.8
+PASS Orc draw attribute ninety percent actual=90.0
+PASS Native draw slowdown minecraft:bow actual=-2.000000238418579
+PASS Native draw slowdown minecraft:crossbow actual=-2.5
+PASS Draw penalty combines with gear actual=135.0
+PASS Draw penalty removed with race actual=150.0
+PASS Race setter immediately applies Elf movement actual=0.10800000160932542
+PASS Race setter immediately clears Elf jump actual=0.41999998688697815
+PASS Custom leaf is untagged fixture actual=0.0
+PASS NONE->NONE HP actual=20.0
+PASS NONE->NONE speed actual=0.10000000149011612
+PASS NONE->NONE scale actual=1.0
+PASS NONE->NONE jump actual=0.41999998688697815
+PASS NONE->NONE armor actual=0.0
+PASS NONE->NONE melee actual=1.0
+PASS NONE->NONE attack speed actual=4.0
+PASS NONE->NONE modded leaf collision actual=0.0
+PASS NONE->NONE vanilla leaf collision actual=0.0
+PASS NONE->HUMAN HP actual=20.0
+PASS NONE->HUMAN speed actual=0.10000000149011612
+PASS NONE->HUMAN scale actual=1.0
+PASS NONE->HUMAN jump actual=0.41999998688697815
+PASS NONE->HUMAN armor actual=0.0
+PASS NONE->HUMAN melee actual=1.0
+PASS NONE->HUMAN attack speed actual=4.0
+PASS NONE->HUMAN modded leaf collision actual=0.0
+PASS NONE->HUMAN vanilla leaf collision actual=0.0
+PASS NONE->ORC HP actual=24.0
+PASS NONE->ORC speed actual=0.0900000013411045
+PASS NONE->ORC scale actual=1.25
+PASS NONE->ORC jump actual=0.41999998688697815
+PASS NONE->ORC armor actual=0.0
+PASS NONE->ORC melee actual=3.0
+PASS NONE->ORC attack speed actual=3.6
+PASS NONE->ORC modded leaf collision actual=0.0
+PASS NONE->ORC vanilla leaf collision actual=0.0
+PASS NONE->GOBLIN HP actual=16.0
+PASS NONE->GOBLIN speed actual=0.11500000171363353
+PASS NONE->GOBLIN scale actual=0.75
+PASS NONE->GOBLIN jump actual=0.5699999868869782
+PASS NONE->GOBLIN armor actual=0.0
+PASS NONE->GOBLIN melee actual=1.0
+PASS NONE->GOBLIN attack speed actual=4.0
+PASS NONE->GOBLIN modded leaf collision actual=0.0
+PASS NONE->GOBLIN vanilla leaf collision actual=0.0
+PASS NONE->ELF HP actual=18.0
+PASS NONE->ELF speed actual=0.10800000160932542
+PASS NONE->ELF scale actual=1.100000023841858
+PASS NONE->ELF jump actual=0.5199999868869781
+PASS NONE->ELF armor actual=0.0
+PASS NONE->ELF melee actual=1.0
+PASS NONE->ELF attack speed actual=4.0
+PASS NONE->ELF modded leaf collision actual=1.0
+PASS NONE->ELF vanilla leaf collision actual=1.0
+PASS NONE->DWARF HP actual=22.0
+PASS NONE->DWARF speed actual=0.09500000141561031
+PASS NONE->DWARF scale actual=0.800000011920929
+PASS NONE->DWARF jump actual=0.41999998688697815
+PASS NONE->DWARF armor actual=2.0
+PASS NONE->DWARF melee actual=1.0
+PASS NONE->DWARF attack speed actual=4.0
+PASS NONE->DWARF modded leaf collision actual=0.0
+PASS NONE->DWARF vanilla leaf collision actual=0.0
+PASS NONE->MELFORK HP actual=20.0
+PASS NONE->MELFORK speed actual=0.11000000163912774
+PASS NONE->MELFORK scale actual=1.0
+PASS NONE->MELFORK jump actual=0.41999998688697815
+PASS NONE->MELFORK armor actual=0.0
+PASS NONE->MELFORK melee actual=0.0
+PASS NONE->MELFORK attack speed actual=4.0
+PASS NONE->MELFORK modded leaf collision actual=0.0
+PASS NONE->MELFORK vanilla leaf collision actual=0.0
+PASS NONE->DRACONIC HP actual=28.0
+PASS NONE->DRACONIC speed actual=0.0900000013411045
+PASS NONE->DRACONIC scale actual=1.100000023841858
+PASS NONE->DRACONIC jump actual=0.41999998688697815
+PASS NONE->DRACONIC armor actual=0.0
+PASS NONE->DRACONIC melee actual=1.0
+PASS NONE->DRACONIC attack speed actual=4.0
+PASS NONE->DRACONIC modded leaf collision actual=0.0
+PASS NONE->DRACONIC vanilla leaf collision actual=0.0
+PASS NONE->ASGARDIAN HP actual=22.0
+PASS NONE->ASGARDIAN speed actual=0.09500000141561031
+PASS NONE->ASGARDIAN scale actual=1.100000023841858
+PASS NONE->ASGARDIAN jump actual=0.41999998688697815
+PASS NONE->ASGARDIAN armor actual=0.0
+PASS NONE->ASGARDIAN melee actual=1.0
+PASS NONE->ASGARDIAN attack speed actual=4.0
+PASS NONE->ASGARDIAN modded leaf collision actual=0.0
+PASS NONE->ASGARDIAN vanilla leaf collision actual=0.0
+PASS HUMAN->NONE HP actual=20.0
+PASS HUMAN->NONE speed actual=0.10000000149011612
+PASS HUMAN->NONE scale actual=1.0
+PASS HUMAN->NONE jump actual=0.41999998688697815
+PASS HUMAN->NONE armor actual=0.0
+PASS HUMAN->NONE melee actual=1.0
+PASS HUMAN->NONE attack speed actual=4.0
+PASS HUMAN->NONE modded leaf collision actual=0.0
+PASS HUMAN->NONE vanilla leaf collision actual=0.0
+PASS HUMAN->HUMAN HP actual=20.0
+PASS HUMAN->HUMAN speed actual=0.10000000149011612
+PASS HUMAN->HUMAN scale actual=1.0
+PASS HUMAN->HUMAN jump actual=0.41999998688697815
+PASS HUMAN->HUMAN armor actual=0.0
+PASS HUMAN->HUMAN melee actual=1.0
+PASS HUMAN->HUMAN attack speed actual=4.0
+PASS HUMAN->HUMAN modded leaf collision actual=0.0
+PASS HUMAN->HUMAN vanilla leaf collision actual=0.0
+PASS HUMAN->ORC HP actual=24.0
+PASS HUMAN->ORC speed actual=0.0900000013411045
+PASS HUMAN->ORC scale actual=1.25
+PASS HUMAN->ORC jump actual=0.41999998688697815
+PASS HUMAN->ORC armor actual=0.0
+PASS HUMAN->ORC melee actual=3.0
+PASS HUMAN->ORC attack speed actual=3.6
+PASS HUMAN->ORC modded leaf collision actual=0.0
+PASS HUMAN->ORC vanilla leaf collision actual=0.0
+PASS HUMAN->GOBLIN HP actual=16.0
+PASS HUMAN->GOBLIN speed actual=0.11500000171363353
+PASS HUMAN->GOBLIN scale actual=0.75
+PASS HUMAN->GOBLIN jump actual=0.5699999868869782
+PASS HUMAN->GOBLIN armor actual=0.0
+PASS HUMAN->GOBLIN melee actual=1.0
+PASS HUMAN->GOBLIN attack speed actual=4.0
+PASS HUMAN->GOBLIN modded leaf collision actual=0.0
+PASS HUMAN->GOBLIN vanilla leaf collision actual=0.0
+PASS HUMAN->ELF HP actual=18.0
+PASS HUMAN->ELF speed actual=0.10800000160932542
+PASS HUMAN->ELF scale actual=1.100000023841858
+PASS HUMAN->ELF jump actual=0.5199999868869781
+PASS HUMAN->ELF armor actual=0.0
+PASS HUMAN->ELF melee actual=1.0
+PASS HUMAN->ELF attack speed actual=4.0
+PASS HUMAN->ELF modded leaf collision actual=1.0
+PASS HUMAN->ELF vanilla leaf collision actual=1.0
+PASS HUMAN->DWARF HP actual=22.0
+PASS HUMAN->DWARF speed actual=0.09500000141561031
+PASS HUMAN->DWARF scale actual=0.800000011920929
+PASS HUMAN->DWARF jump actual=0.41999998688697815
+PASS HUMAN->DWARF armor actual=2.0
+PASS HUMAN->DWARF melee actual=1.0
+PASS HUMAN->DWARF attack speed actual=4.0
+PASS HUMAN->DWARF modded leaf collision actual=0.0
+PASS HUMAN->DWARF vanilla leaf collision actual=0.0
+PASS HUMAN->MELFORK HP actual=20.0
+PASS HUMAN->MELFORK speed actual=0.11000000163912774
+PASS HUMAN->MELFORK scale actual=1.0
+PASS HUMAN->MELFORK jump actual=0.41999998688697815
+PASS HUMAN->MELFORK armor actual=0.0
+PASS HUMAN->MELFORK melee actual=0.0
+PASS HUMAN->MELFORK attack speed actual=4.0
+PASS HUMAN->MELFORK modded leaf collision actual=0.0
+PASS HUMAN->MELFORK vanilla leaf collision actual=0.0
+PASS HUMAN->DRACONIC HP actual=28.0
+PASS HUMAN->DRACONIC speed actual=0.0900000013411045
+PASS HUMAN->DRACONIC scale actual=1.100000023841858
+PASS HUMAN->DRACONIC jump actual=0.41999998688697815
+PASS HUMAN->DRACONIC armor actual=0.0
+PASS HUMAN->DRACONIC melee actual=1.0
+PASS HUMAN->DRACONIC attack speed actual=4.0
+PASS HUMAN->DRACONIC modded leaf collision actual=0.0
+PASS HUMAN->DRACONIC vanilla leaf collision actual=0.0
+PASS HUMAN->ASGARDIAN HP actual=22.0
+PASS HUMAN->ASGARDIAN speed actual=0.09500000141561031
+PASS HUMAN->ASGARDIAN scale actual=1.100000023841858
+PASS HUMAN->ASGARDIAN jump actual=0.41999998688697815
+PASS HUMAN->ASGARDIAN armor actual=0.0
+PASS HUMAN->ASGARDIAN melee actual=1.0
+PASS HUMAN->ASGARDIAN attack speed actual=4.0
+PASS HUMAN->ASGARDIAN modded leaf collision actual=0.0
+PASS HUMAN->ASGARDIAN vanilla leaf collision actual=0.0
+PASS ORC->NONE HP actual=20.0
+PASS ORC->NONE speed actual=0.10000000149011612
+PASS ORC->NONE scale actual=1.0
+PASS ORC->NONE jump actual=0.41999998688697815
+PASS ORC->NONE armor actual=0.0
+PASS ORC->NONE melee actual=1.0
+PASS ORC->NONE attack speed actual=4.0
+PASS ORC->NONE modded leaf collision actual=0.0
+PASS ORC->NONE vanilla leaf collision actual=0.0
+PASS ORC->HUMAN HP actual=20.0
+PASS ORC->HUMAN speed actual=0.10000000149011612
+PASS ORC->HUMAN scale actual=1.0
+PASS ORC->HUMAN jump actual=0.41999998688697815
+PASS ORC->HUMAN armor actual=0.0
+PASS ORC->HUMAN melee actual=1.0
+PASS ORC->HUMAN attack speed actual=4.0
+PASS ORC->HUMAN modded leaf collision actual=0.0
+PASS ORC->HUMAN vanilla leaf collision actual=0.0
+PASS ORC->ORC HP actual=24.0
+PASS ORC->ORC speed actual=0.0900000013411045
+PASS ORC->ORC scale actual=1.25
+PASS ORC->ORC jump actual=0.41999998688697815
+PASS ORC->ORC armor actual=0.0
+PASS ORC->ORC melee actual=3.0
+PASS ORC->ORC attack speed actual=3.6
+PASS ORC->ORC modded leaf collision actual=0.0
+PASS ORC->ORC vanilla leaf collision actual=0.0
+PASS ORC->GOBLIN HP actual=16.0
+PASS ORC->GOBLIN speed actual=0.11500000171363353
+PASS ORC->GOBLIN scale actual=0.75
+PASS ORC->GOBLIN jump actual=0.5699999868869782
+PASS ORC->GOBLIN armor actual=0.0
+PASS ORC->GOBLIN melee actual=1.0
+PASS ORC->GOBLIN attack speed actual=4.0
+PASS ORC->GOBLIN modded leaf collision actual=0.0
+PASS ORC->GOBLIN vanilla leaf collision actual=0.0
+PASS ORC->ELF HP actual=18.0
+PASS ORC->ELF speed actual=0.10800000160932542
+PASS ORC->ELF scale actual=1.100000023841858
+PASS ORC->ELF jump actual=0.5199999868869781
+PASS ORC->ELF armor actual=0.0
+PASS ORC->ELF melee actual=1.0
+PASS ORC->ELF attack speed actual=4.0
+PASS ORC->ELF modded leaf collision actual=1.0
+PASS ORC->ELF vanilla leaf collision actual=1.0
+PASS ORC->DWARF HP actual=22.0
+PASS ORC->DWARF speed actual=0.09500000141561031
+PASS ORC->DWARF scale actual=0.800000011920929
+PASS ORC->DWARF jump actual=0.41999998688697815
+PASS ORC->DWARF armor actual=2.0
+PASS ORC->DWARF melee actual=1.0
+PASS ORC->DWARF attack speed actual=4.0
+PASS ORC->DWARF modded leaf collision actual=0.0
+PASS ORC->DWARF vanilla leaf collision actual=0.0
+PASS ORC->MELFORK HP actual=20.0
+PASS ORC->MELFORK speed actual=0.11000000163912774
+PASS ORC->MELFORK scale actual=1.0
+PASS ORC->MELFORK jump actual=0.41999998688697815
+PASS ORC->MELFORK armor actual=0.0
+PASS ORC->MELFORK melee actual=0.0
+PASS ORC->MELFORK attack speed actual=4.0
+PASS ORC->MELFORK modded leaf collision actual=0.0
+PASS ORC->MELFORK vanilla leaf collision actual=0.0
+PASS ORC->DRACONIC HP actual=28.0
+PASS ORC->DRACONIC speed actual=0.0900000013411045
+PASS ORC->DRACONIC scale actual=1.100000023841858
+PASS ORC->DRACONIC jump actual=0.41999998688697815
+PASS ORC->DRACONIC armor actual=0.0
+PASS ORC->DRACONIC melee actual=1.0
+PASS ORC->DRACONIC attack speed actual=4.0
+PASS ORC->DRACONIC modded leaf collision actual=0.0
+PASS ORC->DRACONIC vanilla leaf collision actual=0.0
+PASS ORC->ASGARDIAN HP actual=22.0
+PASS ORC->ASGARDIAN speed actual=0.09500000141561031
+PASS ORC->ASGARDIAN scale actual=1.100000023841858
+PASS ORC->ASGARDIAN jump actual=0.41999998688697815
+PASS ORC->ASGARDIAN armor actual=0.0
+PASS ORC->ASGARDIAN melee actual=1.0
+PASS ORC->ASGARDIAN attack speed actual=4.0
+PASS ORC->ASGARDIAN modded leaf collision actual=0.0
+PASS ORC->ASGARDIAN vanilla leaf collision actual=0.0
+PASS GOBLIN->NONE HP actual=20.0
+PASS GOBLIN->NONE speed actual=0.10000000149011612
+PASS GOBLIN->NONE scale actual=1.0
+PASS GOBLIN->NONE jump actual=0.41999998688697815
+PASS GOBLIN->NONE armor actual=0.0
+PASS GOBLIN->NONE melee actual=1.0
+PASS GOBLIN->NONE attack speed actual=4.0
+PASS GOBLIN->NONE modded leaf collision actual=0.0
+PASS GOBLIN->NONE vanilla leaf collision actual=0.0
+PASS GOBLIN->HUMAN HP actual=20.0
+PASS GOBLIN->HUMAN speed actual=0.10000000149011612
+PASS GOBLIN->HUMAN scale actual=1.0
+PASS GOBLIN->HUMAN jump actual=0.41999998688697815
+PASS GOBLIN->HUMAN armor actual=0.0
+PASS GOBLIN->HUMAN melee actual=1.0
+PASS GOBLIN->HUMAN attack speed actual=4.0
+PASS GOBLIN->HUMAN modded leaf collision actual=0.0
+PASS GOBLIN->HUMAN vanilla leaf collision actual=0.0
+PASS GOBLIN->ORC HP actual=24.0
+PASS GOBLIN->ORC speed actual=0.0900000013411045
+PASS GOBLIN->ORC scale actual=1.25
+PASS GOBLIN->ORC jump actual=0.41999998688697815
+PASS GOBLIN->ORC armor actual=0.0
+PASS GOBLIN->ORC melee actual=3.0
+PASS GOBLIN->ORC attack speed actual=3.6
+PASS GOBLIN->ORC modded leaf collision actual=0.0
+PASS GOBLIN->ORC vanilla leaf collision actual=0.0
+PASS GOBLIN->GOBLIN HP actual=16.0
+PASS GOBLIN->GOBLIN speed actual=0.11500000171363353
+PASS GOBLIN->GOBLIN scale actual=0.75
+PASS GOBLIN->GOBLIN jump actual=0.5699999868869782
+PASS GOBLIN->GOBLIN armor actual=0.0
+PASS GOBLIN->GOBLIN melee actual=1.0
+PASS GOBLIN->GOBLIN attack speed actual=4.0
+PASS GOBLIN->GOBLIN modded leaf collision actual=0.0
+PASS GOBLIN->GOBLIN vanilla leaf collision actual=0.0
+PASS GOBLIN->ELF HP actual=18.0
+PASS GOBLIN->ELF speed actual=0.10800000160932542
+PASS GOBLIN->ELF scale actual=1.100000023841858
+PASS GOBLIN->ELF jump actual=0.5199999868869781
+PASS GOBLIN->ELF armor actual=0.0
+PASS GOBLIN->ELF melee actual=1.0
+PASS GOBLIN->ELF attack speed actual=4.0
+PASS GOBLIN->ELF modded leaf collision actual=1.0
+PASS GOBLIN->ELF vanilla leaf collision actual=1.0
+PASS GOBLIN->DWARF HP actual=22.0
+PASS GOBLIN->DWARF speed actual=0.09500000141561031
+PASS GOBLIN->DWARF scale actual=0.800000011920929
+PASS GOBLIN->DWARF jump actual=0.41999998688697815
+PASS GOBLIN->DWARF armor actual=2.0
+PASS GOBLIN->DWARF melee actual=1.0
+PASS GOBLIN->DWARF attack speed actual=4.0
+PASS GOBLIN->DWARF modded leaf collision actual=0.0
+PASS GOBLIN->DWARF vanilla leaf collision actual=0.0
+PASS GOBLIN->MELFORK HP actual=20.0
+PASS GOBLIN->MELFORK speed actual=0.11000000163912774
+PASS GOBLIN->MELFORK scale actual=1.0
+PASS GOBLIN->MELFORK jump actual=0.41999998688697815
+PASS GOBLIN->MELFORK armor actual=0.0
+PASS GOBLIN->MELFORK melee actual=0.0
+PASS GOBLIN->MELFORK attack speed actual=4.0
+PASS GOBLIN->MELFORK modded leaf collision actual=0.0
+PASS GOBLIN->MELFORK vanilla leaf collision actual=0.0
+PASS GOBLIN->DRACONIC HP actual=28.0
+PASS GOBLIN->DRACONIC speed actual=0.0900000013411045
+PASS GOBLIN->DRACONIC scale actual=1.100000023841858
+PASS GOBLIN->DRACONIC jump actual=0.41999998688697815
+PASS GOBLIN->DRACONIC armor actual=0.0
+PASS GOBLIN->DRACONIC melee actual=1.0
+PASS GOBLIN->DRACONIC attack speed actual=4.0
+PASS GOBLIN->DRACONIC modded leaf collision actual=0.0
+PASS GOBLIN->DRACONIC vanilla leaf collision actual=0.0
+PASS GOBLIN->ASGARDIAN HP actual=22.0
+PASS GOBLIN->ASGARDIAN speed actual=0.09500000141561031
+PASS GOBLIN->ASGARDIAN scale actual=1.100000023841858
+PASS GOBLIN->ASGARDIAN jump actual=0.41999998688697815
+PASS GOBLIN->ASGARDIAN armor actual=0.0
+PASS GOBLIN->ASGARDIAN melee actual=1.0
+PASS GOBLIN->ASGARDIAN attack speed actual=4.0
+PASS GOBLIN->ASGARDIAN modded leaf collision actual=0.0
+PASS GOBLIN->ASGARDIAN vanilla leaf collision actual=0.0
+PASS ELF->NONE HP actual=20.0
+PASS ELF->NONE speed actual=0.10000000149011612
+PASS ELF->NONE scale actual=1.0
+PASS ELF->NONE jump actual=0.41999998688697815
+PASS ELF->NONE armor actual=0.0
+PASS ELF->NONE melee actual=1.0
+PASS ELF->NONE attack speed actual=4.0
+PASS ELF->NONE modded leaf collision actual=0.0
+PASS ELF->NONE vanilla leaf collision actual=0.0
+PASS ELF->HUMAN HP actual=20.0
+PASS ELF->HUMAN speed actual=0.10000000149011612
+PASS ELF->HUMAN scale actual=1.0
+PASS ELF->HUMAN jump actual=0.41999998688697815
+PASS ELF->HUMAN armor actual=0.0
+PASS ELF->HUMAN melee actual=1.0
+PASS ELF->HUMAN attack speed actual=4.0
+PASS ELF->HUMAN modded leaf collision actual=0.0
+PASS ELF->HUMAN vanilla leaf collision actual=0.0
+PASS ELF->ORC HP actual=24.0
+PASS ELF->ORC speed actual=0.0900000013411045
+PASS ELF->ORC scale actual=1.25
+PASS ELF->ORC jump actual=0.41999998688697815
+PASS ELF->ORC armor actual=0.0
+PASS ELF->ORC melee actual=3.0
+PASS ELF->ORC attack speed actual=3.6
+PASS ELF->ORC modded leaf collision actual=0.0
+PASS ELF->ORC vanilla leaf collision actual=0.0
+PASS ELF->GOBLIN HP actual=16.0
+PASS ELF->GOBLIN speed actual=0.11500000171363353
+PASS ELF->GOBLIN scale actual=0.75
+PASS ELF->GOBLIN jump actual=0.5699999868869782
+PASS ELF->GOBLIN armor actual=0.0
+PASS ELF->GOBLIN melee actual=1.0
+PASS ELF->GOBLIN attack speed actual=4.0
+PASS ELF->GOBLIN modded leaf collision actual=0.0
+PASS ELF->GOBLIN vanilla leaf collision actual=0.0
+PASS ELF->ELF HP actual=18.0
+PASS ELF->ELF speed actual=0.10800000160932542
+PASS ELF->ELF scale actual=1.100000023841858
+PASS ELF->ELF jump actual=0.5199999868869781
+PASS ELF->ELF armor actual=0.0
+PASS ELF->ELF melee actual=1.0
+PASS ELF->ELF attack speed actual=4.0
+PASS ELF->ELF modded leaf collision actual=1.0
+PASS ELF->ELF vanilla leaf collision actual=1.0
+PASS ELF->DWARF HP actual=22.0
+PASS ELF->DWARF speed actual=0.09500000141561031
+PASS ELF->DWARF scale actual=0.800000011920929
+PASS ELF->DWARF jump actual=0.41999998688697815
+PASS ELF->DWARF armor actual=2.0
+PASS ELF->DWARF melee actual=1.0
+PASS ELF->DWARF attack speed actual=4.0
+PASS ELF->DWARF modded leaf collision actual=0.0
+PASS ELF->DWARF vanilla leaf collision actual=0.0
+PASS ELF->MELFORK HP actual=20.0
+PASS ELF->MELFORK speed actual=0.11000000163912774
+PASS ELF->MELFORK scale actual=1.0
+PASS ELF->MELFORK jump actual=0.41999998688697815
+PASS ELF->MELFORK armor actual=0.0
+PASS ELF->MELFORK melee actual=0.0
+PASS ELF->MELFORK attack speed actual=4.0
+PASS ELF->MELFORK modded leaf collision actual=0.0
+PASS ELF->MELFORK vanilla leaf collision actual=0.0
+PASS ELF->DRACONIC HP actual=28.0
+PASS ELF->DRACONIC speed actual=0.0900000013411045
+PASS ELF->DRACONIC scale actual=1.100000023841858
+PASS ELF->DRACONIC jump actual=0.41999998688697815
+PASS ELF->DRACONIC armor actual=0.0
+PASS ELF->DRACONIC melee actual=1.0
+PASS ELF->DRACONIC attack speed actual=4.0
+PASS ELF->DRACONIC modded leaf collision actual=0.0
+PASS ELF->DRACONIC vanilla leaf collision actual=0.0
+PASS ELF->ASGARDIAN HP actual=22.0
+PASS ELF->ASGARDIAN speed actual=0.09500000141561031
+PASS ELF->ASGARDIAN scale actual=1.100000023841858
+PASS ELF->ASGARDIAN jump actual=0.41999998688697815
+PASS ELF->ASGARDIAN armor actual=0.0
+PASS ELF->ASGARDIAN melee actual=1.0
+PASS ELF->ASGARDIAN attack speed actual=4.0
+PASS ELF->ASGARDIAN modded leaf collision actual=0.0
+PASS ELF->ASGARDIAN vanilla leaf collision actual=0.0
+PASS DWARF->NONE HP actual=20.0
+PASS DWARF->NONE speed actual=0.10000000149011612
+PASS DWARF->NONE scale actual=1.0
+PASS DWARF->NONE jump actual=0.41999998688697815
+PASS DWARF->NONE armor actual=0.0
+PASS DWARF->NONE melee actual=1.0
+PASS DWARF->NONE attack speed actual=4.0
+PASS DWARF->NONE modded leaf collision actual=0.0
+PASS DWARF->NONE vanilla leaf collision actual=0.0
+PASS DWARF->HUMAN HP actual=20.0
+PASS DWARF->HUMAN speed actual=0.10000000149011612
+PASS DWARF->HUMAN scale actual=1.0
+PASS DWARF->HUMAN jump actual=0.41999998688697815
+PASS DWARF->HUMAN armor actual=0.0
+PASS DWARF->HUMAN melee actual=1.0
+PASS DWARF->HUMAN attack speed actual=4.0
+PASS DWARF->HUMAN modded leaf collision actual=0.0
+PASS DWARF->HUMAN vanilla leaf collision actual=0.0
+PASS DWARF->ORC HP actual=24.0
+PASS DWARF->ORC speed actual=0.0900000013411045
+PASS DWARF->ORC scale actual=1.25
+PASS DWARF->ORC jump actual=0.41999998688697815
+PASS DWARF->ORC armor actual=0.0
+PASS DWARF->ORC melee actual=3.0
+PASS DWARF->ORC attack speed actual=3.6
+PASS DWARF->ORC modded leaf collision actual=0.0
+PASS DWARF->ORC vanilla leaf collision actual=0.0
+PASS DWARF->GOBLIN HP actual=16.0
+PASS DWARF->GOBLIN speed actual=0.11500000171363353
+PASS DWARF->GOBLIN scale actual=0.75
+PASS DWARF->GOBLIN jump actual=0.5699999868869782
+PASS DWARF->GOBLIN armor actual=0.0
+PASS DWARF->GOBLIN melee actual=1.0
+PASS DWARF->GOBLIN attack speed actual=4.0
+PASS DWARF->GOBLIN modded leaf collision actual=0.0
+PASS DWARF->GOBLIN vanilla leaf collision actual=0.0
+PASS DWARF->ELF HP actual=18.0
+PASS DWARF->ELF speed actual=0.10800000160932542
+PASS DWARF->ELF scale actual=1.100000023841858
+PASS DWARF->ELF jump actual=0.5199999868869781
+PASS DWARF->ELF armor actual=0.0
+PASS DWARF->ELF melee actual=1.0
+PASS DWARF->ELF attack speed actual=4.0
+PASS DWARF->ELF modded leaf collision actual=1.0
+PASS DWARF->ELF vanilla leaf collision actual=1.0
+PASS DWARF->DWARF HP actual=22.0
+PASS DWARF->DWARF speed actual=0.09500000141561031
+PASS DWARF->DWARF scale actual=0.800000011920929
+PASS DWARF->DWARF jump actual=0.41999998688697815
+PASS DWARF->DWARF armor actual=2.0
+PASS DWARF->DWARF melee actual=1.0
+PASS DWARF->DWARF attack speed actual=4.0
+PASS DWARF->DWARF modded leaf collision actual=0.0
+PASS DWARF->DWARF vanilla leaf collision actual=0.0
+PASS DWARF->MELFORK HP actual=20.0
+PASS DWARF->MELFORK speed actual=0.11000000163912774
+PASS DWARF->MELFORK scale actual=1.0
+PASS DWARF->MELFORK jump actual=0.41999998688697815
+PASS DWARF->MELFORK armor actual=0.0
+PASS DWARF->MELFORK melee actual=0.0
+PASS DWARF->MELFORK attack speed actual=4.0
+PASS DWARF->MELFORK modded leaf collision actual=0.0
+PASS DWARF->MELFORK vanilla leaf collision actual=0.0
+PASS DWARF->DRACONIC HP actual=28.0
+PASS DWARF->DRACONIC speed actual=0.0900000013411045
+PASS DWARF->DRACONIC scale actual=1.100000023841858
+PASS DWARF->DRACONIC jump actual=0.41999998688697815
+PASS DWARF->DRACONIC armor actual=0.0
+PASS DWARF->DRACONIC melee actual=1.0
+PASS DWARF->DRACONIC attack speed actual=4.0
+PASS DWARF->DRACONIC modded leaf collision actual=0.0
+PASS DWARF->DRACONIC vanilla leaf collision actual=0.0
+PASS DWARF->ASGARDIAN HP actual=22.0
+PASS DWARF->ASGARDIAN speed actual=0.09500000141561031
+PASS DWARF->ASGARDIAN scale actual=1.100000023841858
+PASS DWARF->ASGARDIAN jump actual=0.41999998688697815
+PASS DWARF->ASGARDIAN armor actual=0.0
+PASS DWARF->ASGARDIAN melee actual=1.0
+PASS DWARF->ASGARDIAN attack speed actual=4.0
+PASS DWARF->ASGARDIAN modded leaf collision actual=0.0
+PASS DWARF->ASGARDIAN vanilla leaf collision actual=0.0
+PASS MELFORK->NONE HP actual=20.0
+PASS MELFORK->NONE speed actual=0.10000000149011612
+PASS MELFORK->NONE scale actual=1.0
+PASS MELFORK->NONE jump actual=0.41999998688697815
+PASS MELFORK->NONE armor actual=0.0
+PASS MELFORK->NONE melee actual=1.0
+PASS MELFORK->NONE attack speed actual=4.0
+PASS MELFORK->NONE modded leaf collision actual=0.0
+PASS MELFORK->NONE vanilla leaf collision actual=0.0
+PASS MELFORK->HUMAN HP actual=20.0
+PASS MELFORK->HUMAN speed actual=0.10000000149011612
+PASS MELFORK->HUMAN scale actual=1.0
+PASS MELFORK->HUMAN jump actual=0.41999998688697815
+PASS MELFORK->HUMAN armor actual=0.0
+PASS MELFORK->HUMAN melee actual=1.0
+PASS MELFORK->HUMAN attack speed actual=4.0
+PASS MELFORK->HUMAN modded leaf collision actual=0.0
+PASS MELFORK->HUMAN vanilla leaf collision actual=0.0
+PASS MELFORK->ORC HP actual=24.0
+PASS MELFORK->ORC speed actual=0.0900000013411045
+PASS MELFORK->ORC scale actual=1.25
+PASS MELFORK->ORC jump actual=0.41999998688697815
+PASS MELFORK->ORC armor actual=0.0
+PASS MELFORK->ORC melee actual=3.0
+PASS MELFORK->ORC attack speed actual=3.6
+PASS MELFORK->ORC modded leaf collision actual=0.0
+PASS MELFORK->ORC vanilla leaf collision actual=0.0
+PASS MELFORK->GOBLIN HP actual=16.0
+PASS MELFORK->GOBLIN speed actual=0.11500000171363353
+PASS MELFORK->GOBLIN scale actual=0.75
+PASS MELFORK->GOBLIN jump actual=0.5699999868869782
+PASS MELFORK->GOBLIN armor actual=0.0
+PASS MELFORK->GOBLIN melee actual=1.0
+PASS MELFORK->GOBLIN attack speed actual=4.0
+PASS MELFORK->GOBLIN modded leaf collision actual=0.0
+PASS MELFORK->GOBLIN vanilla leaf collision actual=0.0
+PASS MELFORK->ELF HP actual=18.0
+PASS MELFORK->ELF speed actual=0.10800000160932542
+PASS MELFORK->ELF scale actual=1.100000023841858
+PASS MELFORK->ELF jump actual=0.5199999868869781
+PASS MELFORK->ELF armor actual=0.0
+PASS MELFORK->ELF melee actual=1.0
+PASS MELFORK->ELF attack speed actual=4.0
+PASS MELFORK->ELF modded leaf collision actual=1.0
+PASS MELFORK->ELF vanilla leaf collision actual=1.0
+PASS MELFORK->DWARF HP actual=22.0
+PASS MELFORK->DWARF speed actual=0.09500000141561031
+PASS MELFORK->DWARF scale actual=0.800000011920929
+PASS MELFORK->DWARF jump actual=0.41999998688697815
+PASS MELFORK->DWARF armor actual=2.0
+PASS MELFORK->DWARF melee actual=1.0
+PASS MELFORK->DWARF attack speed actual=4.0
+PASS MELFORK->DWARF modded leaf collision actual=0.0
+PASS MELFORK->DWARF vanilla leaf collision actual=0.0
+PASS MELFORK->MELFORK HP actual=20.0
+PASS MELFORK->MELFORK speed actual=0.11000000163912774
+PASS MELFORK->MELFORK scale actual=1.0
+PASS MELFORK->MELFORK jump actual=0.41999998688697815
+PASS MELFORK->MELFORK armor actual=0.0
+PASS MELFORK->MELFORK melee actual=0.0
+PASS MELFORK->MELFORK attack speed actual=4.0
+PASS MELFORK->MELFORK modded leaf collision actual=0.0
+PASS MELFORK->MELFORK vanilla leaf collision actual=0.0
+PASS MELFORK->DRACONIC HP actual=28.0
+PASS MELFORK->DRACONIC speed actual=0.0900000013411045
+PASS MELFORK->DRACONIC scale actual=1.100000023841858
+PASS MELFORK->DRACONIC jump actual=0.41999998688697815
+PASS MELFORK->DRACONIC armor actual=0.0
+PASS MELFORK->DRACONIC melee actual=1.0
+PASS MELFORK->DRACONIC attack speed actual=4.0
+PASS MELFORK->DRACONIC modded leaf collision actual=0.0
+PASS MELFORK->DRACONIC vanilla leaf collision actual=0.0
+PASS MELFORK->ASGARDIAN HP actual=22.0
+PASS MELFORK->ASGARDIAN speed actual=0.09500000141561031
+PASS MELFORK->ASGARDIAN scale actual=1.100000023841858
+PASS MELFORK->ASGARDIAN jump actual=0.41999998688697815
+PASS MELFORK->ASGARDIAN armor actual=0.0
+PASS MELFORK->ASGARDIAN melee actual=1.0
+PASS MELFORK->ASGARDIAN attack speed actual=4.0
+PASS MELFORK->ASGARDIAN modded leaf collision actual=0.0
+PASS MELFORK->ASGARDIAN vanilla leaf collision actual=0.0
+PASS DRACONIC->NONE HP actual=20.0
+PASS DRACONIC->NONE speed actual=0.10000000149011612
+PASS DRACONIC->NONE scale actual=1.0
+PASS DRACONIC->NONE jump actual=0.41999998688697815
+PASS DRACONIC->NONE armor actual=0.0
+PASS DRACONIC->NONE melee actual=1.0
+PASS DRACONIC->NONE attack speed actual=4.0
+PASS DRACONIC->NONE modded leaf collision actual=0.0
+PASS DRACONIC->NONE vanilla leaf collision actual=0.0
+PASS DRACONIC->HUMAN HP actual=20.0
+PASS DRACONIC->HUMAN speed actual=0.10000000149011612
+PASS DRACONIC->HUMAN scale actual=1.0
+PASS DRACONIC->HUMAN jump actual=0.41999998688697815
+PASS DRACONIC->HUMAN armor actual=0.0
+PASS DRACONIC->HUMAN melee actual=1.0
+PASS DRACONIC->HUMAN attack speed actual=4.0
+PASS DRACONIC->HUMAN modded leaf collision actual=0.0
+PASS DRACONIC->HUMAN vanilla leaf collision actual=0.0
+PASS DRACONIC->ORC HP actual=24.0
+PASS DRACONIC->ORC speed actual=0.0900000013411045
+PASS DRACONIC->ORC scale actual=1.25
+PASS DRACONIC->ORC jump actual=0.41999998688697815
+PASS DRACONIC->ORC armor actual=0.0
+PASS DRACONIC->ORC melee actual=3.0
+PASS DRACONIC->ORC attack speed actual=3.6
+PASS DRACONIC->ORC modded leaf collision actual=0.0
+PASS DRACONIC->ORC vanilla leaf collision actual=0.0
+PASS DRACONIC->GOBLIN HP actual=16.0
+PASS DRACONIC->GOBLIN speed actual=0.11500000171363353
+PASS DRACONIC->GOBLIN scale actual=0.75
+PASS DRACONIC->GOBLIN jump actual=0.5699999868869782
+PASS DRACONIC->GOBLIN armor actual=0.0
+PASS DRACONIC->GOBLIN melee actual=1.0
+PASS DRACONIC->GOBLIN attack speed actual=4.0
+PASS DRACONIC->GOBLIN modded leaf collision actual=0.0
+PASS DRACONIC->GOBLIN vanilla leaf collision actual=0.0
+PASS DRACONIC->ELF HP actual=18.0
+PASS DRACONIC->ELF speed actual=0.10800000160932542
+PASS DRACONIC->ELF scale actual=1.100000023841858
+PASS DRACONIC->ELF jump actual=0.5199999868869781
+PASS DRACONIC->ELF armor actual=0.0
+PASS DRACONIC->ELF melee actual=1.0
+PASS DRACONIC->ELF attack speed actual=4.0
+PASS DRACONIC->ELF modded leaf collision actual=1.0
+PASS DRACONIC->ELF vanilla leaf collision actual=1.0
+PASS DRACONIC->DWARF HP actual=22.0
+PASS DRACONIC->DWARF speed actual=0.09500000141561031
+PASS DRACONIC->DWARF scale actual=0.800000011920929
+PASS DRACONIC->DWARF jump actual=0.41999998688697815
+PASS DRACONIC->DWARF armor actual=2.0
+PASS DRACONIC->DWARF melee actual=1.0
+PASS DRACONIC->DWARF attack speed actual=4.0
+PASS DRACONIC->DWARF modded leaf collision actual=0.0
+PASS DRACONIC->DWARF vanilla leaf collision actual=0.0
+PASS DRACONIC->MELFORK HP actual=20.0
+PASS DRACONIC->MELFORK speed actual=0.11000000163912774
+PASS DRACONIC->MELFORK scale actual=1.0
+PASS DRACONIC->MELFORK jump actual=0.41999998688697815
+PASS DRACONIC->MELFORK armor actual=0.0
+PASS DRACONIC->MELFORK melee actual=0.0
+PASS DRACONIC->MELFORK attack speed actual=4.0
+PASS DRACONIC->MELFORK modded leaf collision actual=0.0
+PASS DRACONIC->MELFORK vanilla leaf collision actual=0.0
+PASS DRACONIC->DRACONIC HP actual=28.0
+PASS DRACONIC->DRACONIC speed actual=0.0900000013411045
+PASS DRACONIC->DRACONIC scale actual=1.100000023841858
+PASS DRACONIC->DRACONIC jump actual=0.41999998688697815
+PASS DRACONIC->DRACONIC armor actual=0.0
+PASS DRACONIC->DRACONIC melee actual=1.0
+PASS DRACONIC->DRACONIC attack speed actual=4.0
+PASS DRACONIC->DRACONIC modded leaf collision actual=0.0
+PASS DRACONIC->DRACONIC vanilla leaf collision actual=0.0
+PASS DRACONIC->ASGARDIAN HP actual=22.0
+PASS DRACONIC->ASGARDIAN speed actual=0.09500000141561031
+PASS DRACONIC->ASGARDIAN scale actual=1.100000023841858
+PASS DRACONIC->ASGARDIAN jump actual=0.41999998688697815
+PASS DRACONIC->ASGARDIAN armor actual=0.0
+PASS DRACONIC->ASGARDIAN melee actual=1.0
+PASS DRACONIC->ASGARDIAN attack speed actual=4.0
+PASS DRACONIC->ASGARDIAN modded leaf collision actual=0.0
+PASS DRACONIC->ASGARDIAN vanilla leaf collision actual=0.0
+PASS ASGARDIAN->NONE HP actual=20.0
+PASS ASGARDIAN->NONE speed actual=0.10000000149011612
+PASS ASGARDIAN->NONE scale actual=1.0
+PASS ASGARDIAN->NONE jump actual=0.41999998688697815
+PASS ASGARDIAN->NONE armor actual=0.0
+PASS ASGARDIAN->NONE melee actual=1.0
+PASS ASGARDIAN->NONE attack speed actual=4.0
+PASS ASGARDIAN->NONE modded leaf collision actual=0.0
+PASS ASGARDIAN->NONE vanilla leaf collision actual=0.0
+PASS ASGARDIAN->HUMAN HP actual=20.0
+PASS ASGARDIAN->HUMAN speed actual=0.10000000149011612
+PASS ASGARDIAN->HUMAN scale actual=1.0
+PASS ASGARDIAN->HUMAN jump actual=0.41999998688697815
+PASS ASGARDIAN->HUMAN armor actual=0.0
+PASS ASGARDIAN->HUMAN melee actual=1.0
+PASS ASGARDIAN->HUMAN attack speed actual=4.0
+PASS ASGARDIAN->HUMAN modded leaf collision actual=0.0
+PASS ASGARDIAN->HUMAN vanilla leaf collision actual=0.0
+PASS ASGARDIAN->ORC HP actual=24.0
+PASS ASGARDIAN->ORC speed actual=0.0900000013411045
+PASS ASGARDIAN->ORC scale actual=1.25
+PASS ASGARDIAN->ORC jump actual=0.41999998688697815
+PASS ASGARDIAN->ORC armor actual=0.0
+PASS ASGARDIAN->ORC melee actual=3.0
+PASS ASGARDIAN->ORC attack speed actual=3.6
+PASS ASGARDIAN->ORC modded leaf collision actual=0.0
+PASS ASGARDIAN->ORC vanilla leaf collision actual=0.0
+PASS ASGARDIAN->GOBLIN HP actual=16.0
+PASS ASGARDIAN->GOBLIN speed actual=0.11500000171363353
+PASS ASGARDIAN->GOBLIN scale actual=0.75
+PASS ASGARDIAN->GOBLIN jump actual=0.5699999868869782
+PASS ASGARDIAN->GOBLIN armor actual=0.0
+PASS ASGARDIAN->GOBLIN melee actual=1.0
+PASS ASGARDIAN->GOBLIN attack speed actual=4.0
+PASS ASGARDIAN->GOBLIN modded leaf collision actual=0.0
+PASS ASGARDIAN->GOBLIN vanilla leaf collision actual=0.0
+PASS ASGARDIAN->ELF HP actual=18.0
+PASS ASGARDIAN->ELF speed actual=0.10800000160932542
+PASS ASGARDIAN->ELF scale actual=1.100000023841858
+PASS ASGARDIAN->ELF jump actual=0.5199999868869781
+PASS ASGARDIAN->ELF armor actual=0.0
+PASS ASGARDIAN->ELF melee actual=1.0
+PASS ASGARDIAN->ELF attack speed actual=4.0
+PASS ASGARDIAN->ELF modded leaf collision actual=1.0
+PASS ASGARDIAN->ELF vanilla leaf collision actual=1.0
+PASS ASGARDIAN->DWARF HP actual=22.0
+PASS ASGARDIAN->DWARF speed actual=0.09500000141561031
+PASS ASGARDIAN->DWARF scale actual=0.800000011920929
+PASS ASGARDIAN->DWARF jump actual=0.41999998688697815
+PASS ASGARDIAN->DWARF armor actual=2.0
+PASS ASGARDIAN->DWARF melee actual=1.0
+PASS ASGARDIAN->DWARF attack speed actual=4.0
+PASS ASGARDIAN->DWARF modded leaf collision actual=0.0
+PASS ASGARDIAN->DWARF vanilla leaf collision actual=0.0
+PASS ASGARDIAN->MELFORK HP actual=20.0
+PASS ASGARDIAN->MELFORK speed actual=0.11000000163912774
+PASS ASGARDIAN->MELFORK scale actual=1.0
+PASS ASGARDIAN->MELFORK jump actual=0.41999998688697815
+PASS ASGARDIAN->MELFORK armor actual=0.0
+PASS ASGARDIAN->MELFORK melee actual=0.0
+PASS ASGARDIAN->MELFORK attack speed actual=4.0
+PASS ASGARDIAN->MELFORK modded leaf collision actual=0.0
+PASS ASGARDIAN->MELFORK vanilla leaf collision actual=0.0
+PASS ASGARDIAN->DRACONIC HP actual=28.0
+PASS ASGARDIAN->DRACONIC speed actual=0.0900000013411045
+PASS ASGARDIAN->DRACONIC scale actual=1.100000023841858
+PASS ASGARDIAN->DRACONIC jump actual=0.41999998688697815
+PASS ASGARDIAN->DRACONIC armor actual=0.0
+PASS ASGARDIAN->DRACONIC melee actual=1.0
+PASS ASGARDIAN->DRACONIC attack speed actual=4.0
+PASS ASGARDIAN->DRACONIC modded leaf collision actual=0.0
+PASS ASGARDIAN->DRACONIC vanilla leaf collision actual=0.0
+PASS ASGARDIAN->ASGARDIAN HP actual=22.0
+PASS ASGARDIAN->ASGARDIAN speed actual=0.09500000141561031
+PASS ASGARDIAN->ASGARDIAN scale actual=1.100000023841858
+PASS ASGARDIAN->ASGARDIAN jump actual=0.41999998688697815
+PASS ASGARDIAN->ASGARDIAN armor actual=0.0
+PASS ASGARDIAN->ASGARDIAN melee actual=1.0
+PASS ASGARDIAN->ASGARDIAN attack speed actual=4.0
+PASS ASGARDIAN->ASGARDIAN modded leaf collision actual=0.0
+PASS ASGARDIAN->ASGARDIAN vanilla leaf collision actual=0.0
+PASS Melfork land penalty installed immediately actual=0.0
+PASS Melfork penalty clears before next tick actual=1.0
+PASS Direct admin state edit reconciles scale actual=0.75
+PASS Direct admin state edit clears jump actual=0.41999998688697815
+PASS Water fixture detects immersion actual=1.0
+PASS Melfork water strength immediate actual=4.0
+PASS Melfork water breathing actual=300.0
+PASS Melfork water strength cleared immediately actual=1.0
+PASS Melfork swim modifier removed actual=0.0
+PASS Vision policy NONE wet=false actual=0.0
+PASS Vision policy NONE wet=true actual=0.0
+PASS Vision policy HUMAN wet=false actual=0.0
+PASS Vision policy HUMAN wet=true actual=0.0
+PASS Vision policy ORC wet=false actual=0.0
+PASS Vision policy ORC wet=true actual=0.0
+PASS Vision policy GOBLIN wet=false actual=1.0
+PASS Vision policy GOBLIN wet=true actual=1.0
+PASS Vision policy ELF wet=false actual=0.0
+PASS Vision policy ELF wet=true actual=0.0
+PASS Vision policy DWARF wet=false actual=0.0
+PASS Vision policy DWARF wet=true actual=0.0
+PASS Vision policy MELFORK wet=false actual=0.0
+PASS Vision policy MELFORK wet=true actual=1.0
+PASS Vision policy DRACONIC wet=false actual=0.0
+PASS Vision policy DRACONIC wet=true actual=0.0
+PASS Vision policy ASGARDIAN wet=false actual=0.0
+PASS Vision policy ASGARDIAN wet=true actual=0.0
+PASS Race cleanup preserves unrelated gear actual=3.0

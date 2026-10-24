@@ -1,0 +1,11 @@
+PASS normal held models present
+PASS Vanish hides right-hand render model
+PASS Vanish hides left-hand render model
+PASS Vanish clears held render snapshots
+PASS actual equipped items untouched
+PASS first-person cancellation injected
+PASS first-person both hands suppressed during Vanish
+PASS actual first-person entry exits before renderer submission
+PASS same render state restores both models after Vanish
+PASS normal first-person rendering unaffected
+PASS ordinary Invisibility retains native held models

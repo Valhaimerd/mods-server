@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "NNN",
+    "ISI",
+    " R "
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "I": "minecraft:iron_block",
+    "S": "minecraft:nether_star",
+    "R": "minecraft:lightning_rod"
+  },
+  "result": {
+    "id": "bifrost:thors_hammer",
+    "count": 1
+  }
+}

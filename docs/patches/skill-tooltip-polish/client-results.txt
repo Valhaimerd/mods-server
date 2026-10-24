@@ -1,0 +1,51 @@
+warrior_tier_3_passive_2 [Gain 6 HP plus 30% melee power as absorption for 12s. Stun enemies within 5 blocks for 2s., At 1-30% HP, Range: 5 blocks, Cooldown: 25 seconds]
+PASS warrior_tier_3_passive_2 readable formatted text
+PASS warrior_tier_3_passive_2 exactly one custom trigger
+PASS warrior_tier_3_passive_2 no generic duplicate trigger
+PASS warrior_tier_3_passive_2 at most one dynamic cooldown
+warrior_tier_1_passive_2 [Gain 1 armor plus 6% melee power and 1 maximum heart per stack, up to 10 stacks. Lasts 8s; hits refresh it. New hearts are healed; refreshing at maximum stacks does not heal., On direct damage taken, Cooldown: 0.2 seconds]
+PASS warrior_tier_1_passive_2 readable formatted text
+PASS warrior_tier_1_passive_2 exactly one custom trigger
+PASS warrior_tier_1_passive_2 no generic duplicate trigger
+PASS warrior_tier_1_passive_2 at most one dynamic cooldown
+warrior_tier_2_passive_2 [Ready 5 melee hits for 6s. Each grants +2% attack and movement speed, up to 10% each, for 3s. Hits refresh the buffs., On combat roll, Cooldown: 12 seconds]
+PASS warrior_tier_2_passive_2 readable formatted text
+PASS warrior_tier_2_passive_2 exactly one custom trigger
+PASS warrior_tier_2_passive_2 no generic duplicate trigger
+PASS warrior_tier_2_passive_2 at most one dynamic cooldown
+warrior_tier_3_passive_1 [Gain +4% melee damage and +8% size at each health threshold, up to +24% damage and +48% size. Bonuses adjust as your health changes., At 70/60/50/40/30/20% HP]
+PASS warrior_tier_3_passive_1 readable formatted text
+PASS warrior_tier_3_passive_1 exactly one custom trigger
+PASS warrior_tier_3_passive_1 no generic duplicate trigger
+PASS warrior_tier_3_passive_1 at most one dynamic cooldown
+rogue_tier_2_passive_2 [Your next melee hit is a guaranteed critical with +20% critical damage. Use within 5s., On combat roll, Cooldown: 6 seconds]
+PASS rogue_tier_2_passive_2 readable formatted text
+PASS rogue_tier_2_passive_2 exactly one custom trigger
+PASS rogue_tier_2_passive_2 no generic duplicate trigger
+PASS rogue_tier_2_passive_2 at most one dynamic cooldown
+archer_tier_3_passive_1 [Empower your next normal arrow to deal 125% damage. Lasts 5s; ranged haste is reduced by 25% until fired., On arrow hit, Cooldown: 8 seconds]
+PASS archer_tier_3_passive_1 readable formatted text
+PASS archer_tier_3_passive_1 exactly one custom trigger
+PASS archer_tier_3_passive_1 no generic duplicate trigger
+PASS archer_tier_3_passive_1 at most one dynamic cooldown
+fire_tier_1_passive_2 [Stun the target for 2s., On Fire hit: 20% chance, Cooldown: 8 seconds]
+PASS fire_tier_1_passive_2 readable formatted text
+PASS fire_tier_1_passive_2 exactly one custom trigger
+PASS fire_tier_1_passive_2 no generic duplicate trigger
+PASS fire_tier_1_passive_2 at most one dynamic cooldown
+arcane_tier_3_passive_1 [Ready your next Arcane spell for 5s. Its hits make enemies take 20% more Arcane damage for 6s., On Burst Blink or Evocation, Cooldown: 16 seconds]
+PASS arcane_tier_3_passive_1 readable formatted text
+PASS arcane_tier_3_passive_1 exactly one custom trigger
+PASS arcane_tier_3_passive_1 no generic duplicate trigger
+PASS arcane_tier_3_passive_1 at most one dynamic cooldown
+PASS Native tree title Tenacity
+PASS Native tree title Endured Vitality
+PASS Native tree title Warm Up
+PASS Native tree title Momentum
+PASS Native tree title Improved Berserker
+PASS Native tree title Sentinel
+PASS Native tree title Improved Magic Arrows
+PASS Native tree title Prepared Counter
+PASS Supercharge renders 125%
+PASS Native Supercharge multiplier 1.25
+PASS Tenacity native health trigger

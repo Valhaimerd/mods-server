@@ -12,7 +12,7 @@ for r in json.loads((HERE/'artifacts.json').read_text()):
  ultimate_file=ROOT/'docs/patches/warrior-tier-three/artifacts.json'
  ultimate=next((x for x in json.loads(ultimate_file.read_text()) if x['jar']==r['jar'] and x['before_sha256']==expected),None) if ultimate_file.exists() else None
  if ultimate:expected=ultimate['sha256']
- for suffix in ['class-descriptions','tenacity-followup']:
+ for suffix in ['class-descriptions','tenacity-followup','skill-tooltip-polish']:
   next_file=ROOT/'docs/patches'/suffix/'artifacts.json'
   layer=next((x for x in json.loads(next_file.read_text()) if x['jar']==r['jar'] and x['before_sha256']==expected),None) if next_file.exists() else None
   if layer:expected=layer['sha256']

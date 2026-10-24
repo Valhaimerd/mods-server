@@ -15,6 +15,11 @@ for r in json.loads((HERE/'artifacts.json').read_text()):
  if followup:
   if not overlay:audited=ROOT/'tmp/tenacity-followup/before'/r['jar']
   expected=followup['sha256']
+ next_file=ROOT/'docs/patches/skill-tooltip-polish/artifacts.json'
+ layer=next((x for x in json.loads(next_file.read_text()) if x['jar']==r['jar'] and x['before_sha256']==expected),None) if next_file.exists() else None
+ if layer:
+  if not overlay and not followup:audited=ROOT/'tmp/skill-tooltip-polish/before'/r['jar']
+  expected=layer['sha256']
  assert hashlib.sha256(audited.read_bytes()).hexdigest()==r['sha256']
  assert hashlib.sha256(active.read_bytes()).hexdigest()==expected
  assert active.read_bytes()==fixed.read_bytes()

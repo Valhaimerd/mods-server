@@ -13,6 +13,11 @@ for record in json.loads((HERE/'artifacts.json').read_text()):
  downstream=next((x for x in json.loads(downstream_file.read_text()) if x['jar']==record['jar'] and x['before_sha256']==record['sha256']),None) if downstream_file.exists() else None
  audited=ROOT/'tmp/tenacity-followup/before'/record['jar'] if downstream and folder.resolve()==(ROOT/'mods').resolve() else after
  expected=downstream['sha256'] if downstream and folder.resolve()==(ROOT/'mods').resolve() else record['sha256']
+ next_file=ROOT/'docs/patches/skill-tooltip-polish/artifacts.json'
+ layer=next((x for x in json.loads(next_file.read_text()) if x['jar']==record['jar'] and x['before_sha256']==expected),None) if next_file.exists() and folder.resolve()==(ROOT/'mods').resolve() else None
+ if layer:
+  if not downstream:audited=ROOT/'tmp/skill-tooltip-polish/before'/record['jar']
+  expected=layer['sha256']
  assert hashlib.sha256(audited.read_bytes()).hexdigest()==record['sha256']
  assert hashlib.sha256(after.read_bytes()).hexdigest()==expected
  if folder.resolve()==(ROOT/'mods').resolve():assert after.read_bytes()==(ROOT/'mod fixing/1 fixed packs'/record['jar']).read_bytes()

@@ -15,7 +15,7 @@ assert set(old)<=set(files),'Native entry removed'
 assert sorted(n for n in old if old[n]!=files[n])==record['changed']
 assert sorted(set(files)-set(old))==record['added']
 assert all('probe' not in n.lower() for n in files),'Test code leaked into production'
-for key in ['BifrostMarkerData','BifrostMarkerData$Marker','BifrostMarkerService','BifrostCommands','ModBlocks']:
+for key in ['BifrostMarkerData','BifrostMarkerData$Marker','BifrostMarkerService','BifrostCommands']:
     name='com/emandev/bifrost/'+key+'.class';assert old[name]==files[name],'Original marker/command schema changed: '+key
 for name,data in files.items():
     if name.endswith('.class'):assert struct.unpack('>H',data[6:8])[0]<=69,'Java newer than25: '+name
@@ -36,6 +36,10 @@ for phase in ['charge','descent','impact','closure']:
     name='transit_'+phase;assert name in sounds and sounds[name]['subtitle'] in lang
     audio=files['assets/bifrost/sounds/'+name+'.ogg'];assert audio.startswith(b'OggS') and b'vorbis' in audio[:256]
 recipe=json.loads(files['data/bifrost/recipe/stormbreaker.json']);assert recipe['pattern']==['OC ','OB ',' B ']
+for name in ['bifrost_marker','heimdalls_sword','thors_hammer','stormbreaker']:
+    recipe=json.loads(files['data/bifrost/recipe/'+name+'.json']);assert recipe['type']=='minecraft:crafting_shaped' and recipe['result']['id']=='bifrost:'+name
+    unlock=json.loads(files['data/bifrost/advancement/recipes/'+name+'.json']);assert unlock['rewards']['recipes']==['bifrost:'+name]
+    assert unlock['criteria']['has_ingredient']['trigger']=='minecraft:inventory_changed'
 assert len(list((ROOT/'mods').glob('bifrost-*.jar')))==1,'Duplicate active mod'
 print('PASS production archive: hash/CRC; unchanged native marker schema/IDs; Java25; no probe leakage; required dependencies; mixins; protocols; models/recipe/lang/sounds; source hashes')
 if '--runtime' in sys.argv:

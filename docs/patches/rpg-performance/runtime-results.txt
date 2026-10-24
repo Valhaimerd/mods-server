@@ -1,0 +1,12 @@
+RPG lifecycle repair - 2026-10-24
+Before SHA256: 24690ca5941a7b4c7e359e8f4e3df10b6a157fe0cde57d52d72f9ffb1242cb81
+Active/fixed/tested SHA256: 430338aa4a125b554f32b79da051bbe2eb0a277777dc923b3aa00fc7e9acf496
+Baseline native failures: invalid expired cloud stayed alive; Fire Hydra, Frost Elemental and Spirit Wolf age reset on native save/load. Recorded in tmp/rpg-performance/baseline-performance-measurements.txt.
+Final native lifecycle suite: PASS 17 checks, failures=0.
+Final broad dedicated suite: PASS 946 Warrior/shield/Rogue/party checks.
+Final connected client/integrated server: PASS 43 native client tooltip checks; exact candidate Spell Engine archive loaded.
+All result manifests identify the final candidate hash. No production probes included.
+Lifecycle additions only: two Java25 mixins and their registration. All original class and gameplay resource entries unchanged.
+All audit test Java processes exited; only the original user's launcher/game remained in the final process inventory.
+No live multiplayer MSPT/JFR profile collected. These results demonstrate corrected lifecycle behavior, not a measured reduction in the reported server lag.
+Same filename installed in repository mods and fixed packs; predecessor archived under retired packs/rpg-performance-2026-10-24. Personal profile, separate server and worlds untouched. No commit or push.

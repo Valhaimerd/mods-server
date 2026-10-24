@@ -1,0 +1,24 @@
+[
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "430338aa4a125b554f32b79da051bbe2eb0a277777dc923b3aa00fc7e9acf496",
+    "sha256": "04861aca718f75dc79818d4fec11ab13ec166386c8a3d7f38323781323337452",
+    "changed": [
+      "net/spell_engine/internals/RogueRules.class"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "993428cd907b94a5555ad8d9dbab42a85f1af97df59a4d3f1543baba9fc3c55d",
+    "sha256": "700bd2420d504d046d7170b6fe5e721e97fb0c7093196e42314ddb22ca5c69a4",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json"
+    ]
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "5ba7584317cb27515bdb8a4991b9d8909970cda8a05725ac458c223f200c9a26",
+    "sha256": "5ba7584317cb27515bdb8a4991b9d8909970cda8a05725ac458c223f200c9a26",
+    "changed": []
+  }
+]

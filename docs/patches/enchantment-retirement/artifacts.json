@@ -1,0 +1,160 @@
+{
+  "retired_enchantments": [
+    "air_jump_enchantment:air_jump",
+    "betterarcheology:penetrating_strike",
+    "crossarms:bombard",
+    "crossarms:deflector",
+    "crossarms:recycling",
+    "enderzoology:decay",
+    "enderzoology:soulbound",
+    "enderzoology:withering",
+    "life_steal_enchantment:life_steal",
+    "nova_structures:antidote",
+    "nova_structures:ghasted",
+    "nova_structures:spiteful",
+    "nova_structures:traveler",
+    "protection_grace_enchantment:protection_grace",
+    "tense_enchantment:tense"
+  ],
+  "removed_jars": [
+    {
+      "jar": "Barricades-26.2-NeoForge.jar",
+      "sha256": "2546d736138651e126245b587f2992ecb20cb92def1e8c11e66606ffdf0a4474"
+    },
+    {
+      "jar": "life-steal-enchantment-v1.1.0.jar",
+      "sha256": "26ddecfa0f912d3628473b8289d4de74178746a58165e321750e1ec8143d60f9"
+    },
+    {
+      "jar": "air-jump-enchantment-2.0.0-[26.2].jar",
+      "sha256": "ce26cfabbaaa96bdd3ec600be079c9eec4a040b0f2c830645b0bc493087f14c9"
+    },
+    {
+      "jar": "protection-grace-enchantment-1.0.0-26.2.jar",
+      "sha256": "9f8a58cc68b685a19d8d9d7534409d31c23a1d0e167683465911fcfb6c7d48db"
+    },
+    {
+      "jar": "tense-enchantment-1.0.0-26.2.jar",
+      "sha256": "1c1fde45d99c5a3c62ea8608794b1b97262b69b8a5c7642800d19d4cae10a4d3"
+    }
+  ],
+  "repacked": [
+    {
+      "jar": "betterarcheology-neoforge-26.2-1.3.9.jar",
+      "before_sha256": "eddb89de61b893d9552d1d09fdce74813097a6bb41442244728cfcea8421c8bf",
+      "sha256": "706740b4fe7ce1c1f0adca747d195731a10d921070dcb6fd47a8703c25048720",
+      "changed": [
+        "betterarcheology.mixins.json",
+        "data/minecraft/tags/enchantment/treasure.json",
+        "net/Pandarix/item/ModItemGroup.class"
+      ],
+      "removed": [
+        "data/betterarcheology/enchantment/penetrating_strike.json",
+        "data/betterarcheology/recipe/penetrating_strike_from_identifying.json"
+      ]
+    },
+    {
+      "jar": "crossarms-1.4.jar",
+      "before_sha256": "dc890b74a6191ffe6c0a8f92623eada02206802efadc1ced5ac044d58375c0f8",
+      "sha256": "ea4beb9e2267f7ddbe05a24cb6bce47a0de24153387699f87c445ae30b91d2aa",
+      "changed": [
+        "data/crossarms/enchantment/ricochet.json",
+        "data/crossarms/enchantment/zero_drop.json",
+        "data/crossarms/tags/enchantment/crossbow.json",
+        "data/crossarms/tags/enchantment/frenzy_conflicts.json"
+      ],
+      "removed": [
+        "data/crossarms/enchantment/bombard.json",
+        "data/crossarms/enchantment/deflector.json",
+        "data/crossarms/enchantment/recycling.json"
+      ]
+    },
+    {
+      "jar": "dungeons-and-taverns-5.3.2 [NeoForge].jar",
+      "before_sha256": "092e83b4e659d68e3ede11b6b9f7dd6af2211bcd24b4a7641c8420264028d5a9",
+      "sha256": "96956479290b79d8d3a70f1df24e990c7a004005e5fe2ba8632096d4ed88ff82",
+      "changed": [
+        "data/minecraft/tags/enchantment/exclusive_set/crossbow.json",
+        "data/minecraft/tags/enchantment/treasure.json",
+        "data/nova_structures/loot_table/chests/bunker_altar.json",
+        "data/nova_structures/loot_table/chests/firewatch_tower.json",
+        "data/nova_structures/loot_table/chests/sealing_halls/vault_boss.json",
+        "data/nova_structures/loot_table/chests/sealing_halls/vault_ominous.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_pot.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_treasure_1.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_treasure_2.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_treasure_3.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_treasure_4.json",
+        "data/nova_structures/loot_table/chests/shrine/combat_treasure_5.json",
+        "data/nova_structures/loot_table/chests/shrine/shrine_lesser_ominous.json",
+        "data/nova_structures/loot_table/chests/shrine/shrine_lesser_treasure.json",
+        "data/nova_structures/loot_table/chests/shrine/tier_6/normal_vault.json",
+        "data/nova_structures/loot_table/chests/shrine/tier_6/ominous_vault.json",
+        "data/nova_structures/loot_table/chests/shrine/tier_6/pots.json",
+        "data/nova_structures/loot_table/chests/shrine/vault_shrine_ominous.json",
+        "data/nova_structures/loot_table/chests/toxic_lair/brewing.json",
+        "data/nova_structures/loot_table/chests/toxic_lair/toxic_boss_vault.json",
+        "data/nova_structures/loot_table/pots/pot_basic.json",
+        "data/nova_structures/loot_table/pots/pot_generic_ruin.json",
+        "data/nova_structures/loot_table/pots/pot_wild_ruin.json",
+        "data/nova_structures/loot_table/pots/sealing_halls/sealing_pot.json",
+        "data/nova_structures/loot_table/spawners/sealing_halls/boss.json",
+        "data/nova_structures/tags/enchantment/all_dnt_enchants.json",
+        "data/nova_structures/tags/enchantment/antidote.json",
+        "data/nova_structures/tags/enchantment/exclusive_set/ghasted.json",
+        "data/nova_structures/tags/enchantment/exclusive_set/might.json",
+        "data/nova_structures/tags/enchantment/ghasted.json",
+        "data/nova_structures/tags/enchantment/librarian_secret_offer/pale.json",
+        "data/nova_structures/tags/enchantment/librarian_secret_offer/sealing.json",
+        "data/nova_structures/tags/enchantment/librarian_secret_offer/swamp.json",
+        "data/nova_structures/tags/enchantment/librarian_secret_offer/traveler.json",
+        "data/nova_structures/tags/enchantment/spiteful.json",
+        "data/nova_structures/tags/enchantment/structure/pale_residence.json",
+        "data/nova_structures/tags/enchantment/structure/sealing_halls_ghasted.json",
+        "data/nova_structures/tags/enchantment/structure/shrine.json",
+        "data/nova_structures/tags/enchantment/structure/shrine_ominous.json",
+        "data/nova_structures/tags/enchantment/structure/toxic_lair.json",
+        "data/nova_structures/tags/enchantment/traveler.json",
+        "data/nova_structures/villager_trade/librarian/1/secret_pale_spiteful.json",
+        "data/nova_structures/villager_trade/librarian/1/secret_sealing_ghasted.json",
+        "data/nova_structures/villager_trade/librarian/1/secret_swamp_antidote.json",
+        "data/nova_structures/villager_trade/librarian/1/secret_traveler_traveler.json"
+      ],
+      "removed": [
+        "data/nova_structures/enchantment/antidote.json",
+        "data/nova_structures/enchantment/ghasted.json",
+        "data/nova_structures/enchantment/spiteful.json",
+        "data/nova_structures/enchantment/traveler.json"
+      ]
+    },
+    {
+      "jar": "EnderZoology-v26.2.0-mc26.2.x-NeoForge.jar",
+      "before_sha256": "10a0c87b758661248c380337eedce2979b9f48fd5cfda7f0cb800cd6f710f68f",
+      "sha256": "1b6043e6b0bfeeeb8f05c15a12eda79aeb32df8fea9e31848badee788d5887d5",
+      "changed": [
+        "fuzs/enderzoology/common/attachment/SoulboundItems.class",
+        "data/minecraft/tags/enchantment/non_treasure.json"
+      ],
+      "removed": [
+        "data/enderzoology/enchantment/decay.json",
+        "data/enderzoology/enchantment/soulbound.json",
+        "data/enderzoology/enchantment/withering.json"
+      ]
+    },
+    {
+      "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+      "before_sha256": "57728737159bba59e0c9303da0d0672c2d8e64b34d35baea387c5717e162bf61",
+      "sha256": "f8d594f096832195c6b5139152b2ef1193e653b6841b93dee35c898a0eccc4f0",
+      "changed": [
+        "penchant.mixins.json",
+        "data/penchant/tags/enchantment/disabled.json",
+        "data/crossarms/tags/enchantment/inclusive_set/zero_drop.json",
+        "archives/tater/penchant/mixin/disable/RetiredEnchantmentsMixin$1.class",
+        "archives/tater/penchant/mixin/disable/RetiredEnchantmentsMixin.class",
+        "archives/tater/penchant/mixin/disable/RetiredProgressMixin$1.class",
+        "archives/tater/penchant/mixin/disable/RetiredProgressMixin.class"
+      ],
+      "removed": []
+    }
+  ]
+}

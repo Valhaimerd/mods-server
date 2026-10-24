@@ -1,6 +1,6 @@
 # Rogue skills - raw attributes, secondary nodes and passive pairs
 
-Inspected **22 October 2026** from the installed JARs. Current installed values after the first- and second-tier Rogue reworks. Tier III retains its extracted values apart from explicit haste flags.
+Updated **24 October 2026** from installed archives and the Rogue tier I/II follow-up. Includes the earlier tier III rework.
 
 ## Reading the values
 
@@ -10,7 +10,9 @@ Inspected **22 October 2026** from the installed JARs. Current installed values 
 - All listed Rogue cooldowns use the native default haste scaling; attack-speed multipliers and configured spell haste contribute to the melee school. Fixed status/cloud lifetimes do not automatically scale with haste.
 - ADD status effects start at one level when increment is 1. Serialized caps are zero-based; cap 9 means ten levels. Percent attribute modifiers use ADD_MULTIPLIED_BASE unless explicitly stated otherwise.
 - The pack protects party players and player-owned pets through shared target/final-impact relationship checks. **rogues:shock** now bypasses native boss/status-immunity restrictions and uses the custom duration rules below. **rogues:bear_trap** also bypasses maximum-health/boss/type-immunity restrictions and physically roots living enemies. Poison remains in the universal bypass list.
-- The first-tier rework forces its revised Slice, Fleet Footed, Smoke Screen and Fracture attribute registrations even with old generated effect configs. Other effect registrations remain native defaults and can be affected by generated configs.
+- Prepared Counter uses a separate beneficial readiness effect with no attack-damage attribute modifier. On the next permitted basic melee hit, add 25% of physical-melee power to its incoming damage before defenses and PvP retention. At 20 melee power, a 20-damage hit becomes 25. Crits and enchantments remain native; the bonus itself is a flat quarter of melee power.
+
+The first-tier rework forces its revised Slice, Fleet Footed, Smoke Screen and Fracture attribute registrations even with old generated effect configs. Other effect registrations remain native defaults and can be affected by generated configs.
 - Rogues & Warriors shares one JAR. This document includes **Rogue class skills only**, excluding Warrior skills and the separate weapon trees.
 
 ## Three active tiers
@@ -25,11 +27,11 @@ Inspected **22 October 2026** from the installed JARs. Current installed values 
 
 | Attribute | Shock Powder | Slice & Dice |
 | --- | --- | --- |
-| Cast / base cooldown | Instant / **12 s**, haste affected | Instant / **12 s**, haste affected |
+| Cast / base cooldown | Instant / **14 s**, haste affected | Instant / **16 s**, haste affected |
 | Main effect | Per-target stun, **1 s or 3 s** | Next **10 successful melee hits** add **15% M** damage each and gently pull their targets toward the caster |
 | Mob duration | Maximum HP **at most 50 + 2M: 3 s**; above that: **1 s**, including bosses | Hit charges; no stacking attack-damage attribute bonus |
 | Player duration | Current HP **below 24: 3 s**; **24 or more: 1 s** | Shared with the same native melee-hit trigger; misses and party-protected targets do not consume charges |
-| Area / activation window | **5-block radius**, vertical multiplier **0.5** | Retains a **10 s activation window**; charges expire if unused |
+| Area / activation window | **4-block radius**, vertical multiplier **0.5** | Retains a **10 s activation window**; charges expire if unused |
 | Evasion | No baseline evasion effect | Each empowered hit gives **5 percentage points**, cap **10 stacks / 50 points**, **4 s**, refreshed |
 | Pull | None | Horizontal impulse up to **0.2** toward caster; respects knockback resistance and stops short of crossing caster |
 | Exhaustion | **0.3** | **0.2** |
@@ -38,8 +40,8 @@ Inspected **22 October 2026** from the installed JARs. Current installed values 
 
 | Position | Shock Powder | Slice & Dice |
 | --- | --- | --- |
-| Improved/root | **Improved Shock Powder:** +1 s, giving **2 s or 4 s** | **Improved Slice and Dice:** **12 hits**, replaces the old cooldown reduction |
-| Branch A | **Explosive Powder:** **100%** chance per qualifying impact, **100% M**, **2.5-block splash**, no distance falloff. Its hidden companion no longer adds stun | **Blades of Fury:** +3 hits, giving **15 with Improved**; replaces the old damage-stack cap upgrade |
+| Improved/root | **Improved Shock Powder:** +1 s, giving **2 s or 4 s** | **Improved Slice and Dice:** cooldown **-2 s**, giving **14 s** before haste; retains **10 hits** |
+| Branch A | **Explosive Powder:** **100%** chance per qualifying impact, **50% M**, **4-block splash**, no distance falloff. Its hidden companion no longer adds stun | **Blades of Fury:** +4 hits, giving **14 total** |
 | Branch B | **Smoke Screen:** **5-block-radius cloud for 8 s**, pulses every **0.5 s**, refreshing a **1 s** buff granting **50 percentage points evasion** at the native base stat | **Fleet Footed:** empowered hits add **3% base movement speed**, up to **12 stacks / +36%**, lasting **4 s**, refreshed |
 
 Both stun durations bypass boss tags and ordinary effect rejection; the shorter boss stun is intentional. The maximum-health threshold is only used for mobs. The player's threshold uses current health, with exactly 24 HP on the short-stun side. Damage percentages are raw before defenses, criticals and pack PvP retention. Slice's 15% bonus remains constant across its charges.
@@ -68,15 +70,17 @@ Fracture snapshots the latest applying caster's melee power for the whole curren
 | Damage | No direct base damage | **40% D**, zero knockback |
 | Tracking | Nearby hostile mobs within **4 blocks of arrival** lose their targets and cannot reacquire for **1.5 s**; players, self, party allies and owned pets are excluded | No tracking effect |
 | Control | No baseline stun | **1 s unrestricted root** plus **Slowness I for 3 s** |
-| Lifetime / visibility | Native teleport; disruption expires after 30 ticks | Visible **1 s arming**; hidden while armed; visible on activation; retained **20 s active lifetime**, one detonation |
+| Lifetime / visibility | Native teleport; disruption expires after 30 ticks; one cooldown reset on an attributed enemy kill within **4 s** after a successful cast | Visible **1 s arming**; hidden while armed; visible on activation; retained **20 s active lifetime**, one detonation |
 | Activation radius | Required aimed enemy | **1 block**, or **1.5 blocks with Extensive Coverage** |
 | Hit radius | Single target for Ambush | **1.5 blocks**, or **2.25 with Extensive Coverage**; every eligible enemy in the hit volume is affected by the one activation |
 | Trigger geometry | Arrival-centered mob lookup | Cylinder **2.5 blocks tall**; entity bounding-box contact, including airborne/jumping enemies; checked every tick |
-| Improved/root | **Improved Shadow Step:** +4 range, **18 blocks** | **Improved Bear Trap:** **75% D** hit damage; no extra critical chance, and does not scale Bleed power |
-| Branch A | **Cloak of Shadows:** **1 s immunity to repeated incoming damage**, replacing one-hit protection | **Serrated Traps:** **5 s Bleed**, otherwise same power scaling |
-| Branch B | **Ambush:** immediately deals **50% M** damage and applies **Blindness I, Weakness I and Slowness I for 2 s**; replaces the next-hit damage buff | **Extensive Coverage:** expands only the trap's hit/activation radii to **2.25 / 1.5 blocks**; still one trap |
+| Improved/root | **Improved Shadow Step:** +4 range, **18 blocks** | **Improved Bear Trap:** **60% D** hit damage; no extra critical chance, and does not scale Bleed power |
+| Branch A | **Cloak of Shadows:** **0.5 s immunity to repeated incoming damage**, replacing one-hit protection | **Serrated Traps:** **2.5 s flat Bleed**, no power scaling |
+| Branch B | **Ambush:** immediately deals **40% M** damage and applies **Blindness I, Weakness I and Slowness I for 2 s**; replaces the next-hit damage buff | **Extensive Coverage:** expands only the trap's hit/activation radii to **2.25 / 1.5 blocks**; still one trap |
 
 Trap root bypasses health, boss tags and ordinary status rejection. Native party/friendly-pet protections apply before activation and final impacts. Protected allies cannot activate it. Arming, active lifetime, root and debuff durations stay fixed while cast time/cooldown scale with haste. Radius tests use entity bounding-box contact, so a large entity can touch the trigger while its center is farther away. The cloud remains noncolliding and cannot be attacked or intercepted by projectiles.
+
+Shadowstep retains a 12-second base cooldown; an attributed enemy kill within four seconds of a successful teleport grants one reset for that cast. Failed teleports, protected allies/pets, ownerless kills, and canceled/revived deaths do not grant a reset. The reset is deferred one tick so an immediate Ambush kill cannot be overwritten by the cast applying its cooldown.
 
 Tracking disruption is an arrival-centered mob effect. It clears the native target and suppresses LivingChangeTargetEvent acquisition while present; native targeting resumes after expiry. The old global caster tracking status is not applied.
 
@@ -85,7 +89,7 @@ Tracking disruption is an arrival-centered mob effect. It clears the native targ
 | Attribute | Sidestep | Opportunist |
 | --- | --- | --- |
 | Trigger / chance | Combat roll / **100%** | Combat roll / **100%** |
-| Effect | **20 percentage points evasion**, no stacking | Next melee hit has guaranteed critical chance and **+20 percentage points critical damage** |
+| Effect | **20 percentage points evasion**, no stacking | Next melee hit has guaranteed critical chance; **no added critical damage** |
 | Duration | **2 s**, refreshed by another roll | Retained **5 s** ready window |
 | Consumption | Does not disappear on damage | Consumed by the native next-melee-hit stash |
 | Base cooldown | **None**, roll recharge still applies | **6 s**, haste affected |
@@ -95,22 +99,22 @@ Tracking disruption is an arrival-centered mob effect. It clears the native targ
 | Attribute | Vanish | Mutilate |
 | --- | --- | --- |
 | Cast / cooldown | Instant / **8 s**, haste affected | Native attack animation / **12 s**, haste affected |
-| Main effect | **7 s Stealth**, -50% base movement speed | **200% D per enemy**, one combined dual-wield hit |
+| Main effect | **7 s Stealth**, -50% base movement speed | **100% D per enemy**, one combined dual-wield hit |
 | Delivery | Self; normally breaks on attacks, other casts, item use and incoming attributed hits | Equipped melee reach, **160-degree sweep**; damage lands halfway through attack animation, not after a fixed 0.5 s |
 | Improved/root | **Improved Vanish:** reduces movement penalty to **-40%**, no added duration | **Improved Mutilate:** cooldown -2 s, **10 s** before haste |
-| Branch A | **Stealth Speed:** another 20 percentage points less movement penalty, leaving **-20%** with Improved | **Crimson Strikes:** heals **10% D per enemy struck**, independent of the 200% attack multiplier |
+| Branch A | **Stealth Speed:** another 20 percentage points less movement penalty, leaving **-20%** with Improved | **Crimson Strikes:** heals **10% D per enemy struck**, independent of the attack multiplier |
 | Branch B | **Shadow Stealth:** actions and taking hits no longer cancel Stealth; still expires after **7 s** and can be explicitly dispelled | **Bloody Strikes:** applies the existing Rogue Bleed for **7.5 s**, replacing Poison |
 
-Mutilate uses the native full-strength player attack with a +100% damage bonus, combining main-hand power and the calculated off-hand contribution. Crits, enchantments and defenses still apply. Bloody Strikes uses the same Bleed scaling as Serrated Traps: its status amplifier is 1 plus one quarter of D, rounded down. Each Bleed tick (every 25 ticks / 1.25 s) deals one damage per status level, multiplied by 0.5 to 2 depending on horizontal movement speed. This is the existing Bleed mechanic, not an additional Mutilate strike. Vanish's native mob tracking reduction remains unchanged.
+Mutilate uses the native full-strength player attack with no additional damage bonus, combining main-hand power and the calculated off-hand contribution. Crits, enchantments and defenses still apply. Bloody Strikes and Serrated Traps apply the same flat, single-level Bleed. Every 25 ticks / 1.25 seconds it deals 2 raw HP while stationary or 6 raw HP with horizontal movement, regardless of D or old amplifier values. Vertical movement alone does not triple it. Reapplication can refresh duration but cannot add levels. Serrated lasts 2.5 seconds; Bloody Strikes lasts 7.5 seconds. Native defenses still apply. Tick damage remains ownerless magic, so the player-attributed 30% PvP modifier does not apply. This is separate from Mutilate's initial strike. Vanish's native mob tracking reduction remains unchanged.
 
 ## Third passive pair - Cheat Death OR Prepared Counter
 
 | Attribute | Cheat Death | Prepared Counter |
 | --- | --- | --- |
 | Trigger / chance | Qualifying fatal incoming hit / **100%** | Evade an enemy attack / **100%** |
-| Effect | **3 s damage immunity**, **Speed III for 3 s**, **Jump Boost III for 3 s**, **+30 evasion percentage points for 6 s** | Deal **25% D** to the attributed attacker; no cooldown reset |
-| Base cooldown | **60 s**, haste affected | **1 s**, haste affected |
-| Limits | Existing fatal-hit trigger requires an attributed attacker; no heal | Party allies and owned pets remain protected; attacker-less damage cannot be countered |
+| Effect | **3 s damage immunity**, **Speed III for 3 s**, **Jump Boost III for 3 s**, **+30 evasion percentage points for 6 s** | Ready one basic melee hit that adds **25% M**; no immediate retaliation or cooldown reset |
+| Base cooldown | **60 s**, haste affected | **2 s**, haste affected |
+| Limits | Existing fatal-hit trigger requires an attributed attacker; no heal | Charge stays until used or dispelled; no stacking. Melee skills/spells cannot consume it. Party allies and owned pets remain protected; attacker-less evasion cannot ready it |
 
 ### Status defaults checked in installed bytecode
 
@@ -123,8 +127,8 @@ Mutilate uses the native full-strength player attack with a +100% damage bonus, 
 | Smoke Screen | spell_engine:evasion_chance, +0.5 ADD_MULTIPLIED_BASE |
 | Fracture | minecraft:armor, -2 ADD_VALUE per level plus -0.1M per level from runtime snapshot |
 | Sidestep | spell_engine:evasion_chance, +0.2 ADD_MULTIPLIED_BASE; fixed single level |
-| Ambush | attack_damage, +0.5 ADD_MULTIPLIED_BASE; consumed on melee hit |
-| Opportunist | critical_strike:chance +1 and critical_strike:damage +0.2 ADD_MULTIPLIED_BASE; consumed by the stashed melee trigger |
+| Ambush | Legacy unused next-hit status retains +0.5 attack_damage; current Ambush instead performs the immediate 40% impact above |
+| Opportunist | critical_strike:chance +1 ADD_MULTIPLIED_BASE; no critical-damage modifier; consumed by the stashed melee trigger |
 | Cheat Death | spell_engine:damage_taken, -1 ADD_MULTIPLIED_TOTAL; custom CheatDeathStatusEffect also applies |
 | Stealth / Improved Stealth / Stealth Speed | movement_speed, -0.5 / +0.1 / +0.2 ADD_MULTIPLIED_BASE; seven seconds each |
 | Cheat Death Evasion | spell_engine:evasion_chance, +0.3 ADD_MULTIPLIED_BASE; six seconds |

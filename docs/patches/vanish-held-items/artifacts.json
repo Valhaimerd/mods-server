@@ -1,0 +1,12 @@
+{
+  "jar": "rogues-neoforge-3.1.2+26.2.jar",
+  "before_sha256": "30a760e0488299521d214057aa00367147591e077e994fb6eeb490c2dc629451",
+  "sha256": "3191ec77ceedfc47f6b694dfe557dd0757fd1b63aa06516a143019d335770d8b",
+  "changed": [
+    "rogues.mixins.json"
+  ],
+  "added": [
+    "net/rogues/mixin/client/StealthHandsMixin.class",
+    "net/rogues/mixin/client/StealthHeldStateMixin.class"
+  ]
+}

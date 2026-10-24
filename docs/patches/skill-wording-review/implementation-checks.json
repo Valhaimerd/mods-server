@@ -1,0 +1,21 @@
+{
+  "status": "installed and verified",
+  "descriptions": 196,
+  "rewritten": 176,
+  "retained": 20,
+  "changed_archives": 4,
+  "changed_entries": "one en_us.json per archive",
+  "gameplay_changes": false,
+  "excluded": [
+    "Priest",
+    "Paladin"
+  ],
+  "verification": [
+    "candidate ZIP and approved-text validation passed",
+    "installed ZIP and approved-text validation passed",
+    "all unrelated keys/resources unchanged",
+    "active and fixed copies identical",
+    "fresh independent review: no important issues"
+  ],
+  "runtime_scope": "No new client visual or gameplay run; language-only overlay"
+}

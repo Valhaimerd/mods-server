@@ -1,0 +1,170 @@
+PASS Nine enum values incl NONE actual=9.0 expected=9.0
+PASS Original ordinal NONE actual=1.0 expected=1.0
+PASS Original ordinal HUMAN actual=1.0 expected=1.0
+PASS Original ordinal ORC actual=1.0 expected=1.0
+PASS Original ordinal GOBLIN actual=1.0 expected=1.0
+PASS Original ordinal ELF actual=1.0 expected=1.0
+PASS Original ordinal DWARF actual=1.0 expected=1.0
+PASS Original ordinal MELFORK actual=1.0 expected=1.0
+PASS Original ordinal DRACONIC actual=1.0 expected=1.0
+PASS Asgard appended actual=8.0 expected=8.0
+PASS 22 HP repeat=0 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=0 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=0 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=0 actual=1.0 expected=1.0
+PASS 22 HP repeat=1 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=1 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=1 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=1 actual=1.0 expected=1.0
+PASS 22 HP repeat=2 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=2 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=2 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=2 actual=1.0 expected=1.0
+PASS 22 HP repeat=3 actual=22.0 expected=22.0
+PASS 0.95 speed repeat=3 actual=0.09500000141561031 expected=0.09500000141561031
+PASS 1.10 scale repeat=3 actual=1.100000023841858 expected=1.1
+PASS No mining bonus repeat=3 actual=1.0 expected=1.0
+PASS Gear max HP retained actual=32.0 expected=32.0
+PASS Health native race=NONE actual=20.0 expected=20.0
+PASS Speed native race=NONE actual=0.10000000149011612 expected=0.10000000149011612
+PASS Scale native race=NONE actual=1.0 expected=1.0
+PASS Mining cleanup race=NONE actual=1.0 expected=1.0
+PASS Health native race=HUMAN actual=20.0 expected=20.0
+PASS Speed native race=HUMAN actual=0.10000000149011612 expected=0.10000000149011612
+PASS Scale native race=HUMAN actual=1.0 expected=1.0
+PASS Mining cleanup race=HUMAN actual=1.0 expected=1.0
+PASS Health native race=ORC actual=24.0 expected=24.0
+PASS Speed native race=ORC actual=0.0900000013411045 expected=0.09000000134110452
+PASS Scale native race=ORC actual=1.25 expected=1.25
+PASS Mining cleanup race=ORC actual=1.0 expected=1.0
+PASS Health native race=GOBLIN actual=16.0 expected=16.0
+PASS Speed native race=GOBLIN actual=0.11500000171363353 expected=0.11500000171363353
+PASS Scale native race=GOBLIN actual=0.75 expected=0.75
+PASS Mining cleanup race=GOBLIN actual=1.0 expected=1.0
+PASS Health native race=ELF actual=18.0 expected=18.0
+PASS Speed native race=ELF actual=0.10800000160932542 expected=0.10800000160932542
+PASS Scale native race=ELF actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=ELF actual=1.0 expected=1.0
+PASS Health native race=DWARF actual=22.0 expected=22.0
+PASS Speed native race=DWARF actual=0.09500000141561031 expected=0.09500000141561031
+PASS Scale native race=DWARF actual=0.800000011920929 expected=0.800000011920929
+PASS Mining cleanup race=DWARF actual=1.0 expected=1.0
+PASS Health native race=MELFORK actual=20.0 expected=20.0
+PASS Speed native race=MELFORK actual=0.11000000163912774 expected=0.11000000163912774
+PASS Scale native race=MELFORK actual=1.0 expected=1.0
+PASS Mining cleanup race=MELFORK actual=1.0 expected=1.0
+PASS Health native race=DRACONIC actual=28.0 expected=28.0
+PASS Speed native race=DRACONIC actual=0.0900000013411045 expected=0.09000000134110452
+PASS Scale native race=DRACONIC actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=DRACONIC actual=1.0 expected=1.0
+PASS Health native race=ASGARDIAN actual=22.0 expected=22.0
+PASS Speed native race=ASGARDIAN actual=0.09500000141561031 expected=0.09500000141561031
+PASS Scale native race=ASGARDIAN actual=1.100000023841858 expected=1.100000023841858
+PASS Mining cleanup race=ASGARDIAN actual=1.0 expected=1.0
+PASS Save uses stable name actual=1.0 expected=1.0
+PASS Codec save/load NONE actual=1.0 expected=1.0
+PASS Codec save/load HUMAN actual=1.0 expected=1.0
+PASS Codec save/load ORC actual=1.0 expected=1.0
+PASS Codec save/load GOBLIN actual=1.0 expected=1.0
+PASS Codec save/load ELF actual=1.0 expected=1.0
+PASS Codec save/load DWARF actual=1.0 expected=1.0
+PASS Codec save/load MELFORK actual=1.0 expected=1.0
+PASS Codec save/load DRACONIC actual=1.0 expected=1.0
+PASS Codec save/load ASGARDIAN actual=1.0 expected=1.0
+PASS Network codec name actual=1.0 expected=1.0
+PASS Server command selects Asgardian actual=1.0 expected=1.0
+PASS Ordinary reselection denied actual=1.0 expected=1.0
+PASS Clone copies race actual=1.0 expected=1.0
+PASS Respawn reapplies HP actual=22.0 expected=22.0
+PASS Reset clears saved race actual=1.0 expected=1.0
+PASS Reset removes mining actual=1.0 expected=1.0
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / minecraft:player_attack]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / minecraft:player_attack]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / minecraft:arrow]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / minecraft:arrow]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=10.20001220703125 expected=10.2
+PASS Baseline NPC damage positive Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=1.0 expected=1.0
+PASS Outgoing 2% once Optional[ResourceKey[minecraft:damage_type / spell_power:arcane]] actual=10.20001220703125 expected=10.2
+PASS Magic weakness 10% actual=11.0 expected=11.0
+PASS Lightning direct immunity actual=0.0 expected=0.0
+PASS No general fire immunity actual=10.0 expected=10.0
+PASS No physical weakness actual=10.0 expected=10.0
+PASS Strike ignition prevented actual=1.0 expected=1.0
+PASS Other races can be struck actual=1.0 expected=1.0
+PASS Healing unchanged actual=14.0 expected=14.0
+PASS Orc attack speed 90% actual=3.6
+PASS Native attack delay slower actual=5.55555534362793
+PASS Better Combat cooldown slower actual=5.55555534362793
+PASS RPG melee haste follows racial speed actual=0.8999999761581421
+PASS Melee bonus at HP 1.0 actual=3.0
+PASS Ranged bonus at HP 1.0 actual=1.0
+PASS RPG melee power at HP 1.0 actual=3.0
+PASS RPG ranged power at HP 1.0 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.51 actual=3.0
+PASS Ranged bonus at HP 0.51 actual=1.0
+PASS RPG melee power at HP 0.51 actual=3.0
+PASS RPG ranged power at HP 0.51 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.5 actual=3.0
+PASS Ranged bonus at HP 0.5 actual=1.0
+PASS RPG melee power at HP 0.5 actual=3.0
+PASS RPG ranged power at HP 0.5 actual=1.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.4 actual=4.0
+PASS Ranged bonus at HP 0.4 actual=1.5
+PASS RPG melee power at HP 0.4 actual=4.0
+PASS RPG ranged power at HP 0.4 actual=1.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.3 actual=5.0
+PASS Ranged bonus at HP 0.3 actual=2.0
+PASS RPG melee power at HP 0.3 actual=5.0
+PASS RPG ranged power at HP 0.3 actual=2.0
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.2 actual=6.0
+PASS Ranged bonus at HP 0.2 actual=2.5
+PASS RPG melee power at HP 0.2 actual=6.0
+PASS RPG ranged power at HP 0.2 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.1 actual=6.0
+PASS Ranged bonus at HP 0.1 actual=2.5
+PASS RPG melee power at HP 0.1 actual=6.0
+PASS RPG ranged power at HP 0.1 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Melee bonus at HP 0.01 actual=6.0
+PASS Ranged bonus at HP 0.01 actual=2.5
+PASS RPG melee power at HP 0.01 actual=6.0
+PASS RPG ranged power at HP 0.01 actual=2.5
+PASS Orc never rewrites base actual=1.0
+PASS Healing restores starting melee bonus actual=3.0
+PASS Healing restores starting ranged bonus actual=1.0
+PASS Orc penalty multiplies gear speed actual=5.4
+PASS Race change restores speed with gear actual=6.0
+PASS Race change removes melee actual=1.0
+PASS Race change removes ranged actual=0.0
+PASS Migrated custom base preserved actual=7.0
+PASS Legacy Orc raw-base repair actual=1.0
+PASS Legacy base retained as backup actual=8.8
+PASS Clone retains completed migration actual=7.0
+PASS Clone retains legacy backup actual=8.8
+PASS Dwarf two armor actual=2.0
+PASS Dwarf repeat does not stack actual=2.0
+PASS Dwarf armor removed actual=0.0
+PASS Goblin 75% size actual=0.75
+PASS Asgardian 110% size actual=1.100000023841858
+PASS Asgardian no mining bonus actual=1.0
+PASS Elf movement +8% actual=0.10800000160932542
+PASS Elf no projectile amplification actual=10.0
+PASS Elf terminal speed actual=-0.2
+PASS Elf horizontal X retained actual=0.3
+PASS Elf horizontal Z retained actual=0.4
+PASS Elf fall distance cleared actual=0.0
+PASS Elf correction synchronized actual=1.0
+PASS Elf upward jump retained actual=0.4
+PASS Elf creative flight retained actual=-0.8
+PASS Orc draw attribute ninety percent actual=90.0
+PASS Native draw slowdown minecraft:bow actual=-2.000000238418579
+PASS Native draw slowdown minecraft:crossbow actual=-2.5
+PASS Draw penalty combines with gear actual=135.0
+PASS Draw penalty removed with race actual=150.0

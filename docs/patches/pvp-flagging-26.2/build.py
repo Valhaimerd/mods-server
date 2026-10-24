@@ -13,7 +13,7 @@ classes = WORK / 'retention-classes'
 classes.mkdir(exist_ok=True)
 sources = sorted((HERE / 'src').rglob('*.java'))
 assert len(sources) == 2
-cp = (ROOT / 'tmp/artifacts-balance/classpath.txt').read_text().strip()
+cp = (ROOT / 'tmp/artifacts-balance/classpath.txt').read_text().strip() + ';' + str(next((ROOT/'mods').glob('better-party-neoforge-*.jar')))
 args = ['--release', '25', '-encoding', 'UTF-8', '-cp', cp, '-d', str(classes), *map(str, sources)]
 argfile = WORK / 'retention-compile.args'
 argfile.write_text('\n'.join('"' + a.replace('\\', '/') + '"' for a in args))
@@ -26,7 +26,7 @@ with ZipFile(original) as archive:
 meta = files['META-INF/neoforge.mods.toml'].decode()
 meta = meta.replace('26.1.2-1.1.2', '26.2-1.1.2').replace('versionRange="[26.1.2]"', 'versionRange="[26.2,26.3)"').replace('versionRange="[26.1.2,)"', 'versionRange="[26.2.0.90,)"')
 meta = meta.replace('[[mixins]]\nconfig="mixins.pvp_flagging.json"', '')
-meta = meta.replace('Allows players to flag/unflag themselves for PVP and server operators to set up pvp zones', 'Pack replacement: retains 50% of player-to-player damage; party mods control friendly fire. No flagging, cooldowns, zones or indicators.')
+meta = meta.replace('Allows players to flag/unflag themselves for PVP and server operators to set up pvp zones', 'Pack replacement: players and their RPG summons retain 35% damage against players and 80% against other entities. Party mods control friendly fire. No flagging, cooldowns, zones or indicators.')
 files['META-INF/neoforge.mods.toml'] = meta.encode()
 replacements = {p.relative_to(classes).as_posix(): p.read_bytes() for p in classes.rglob('*.class')}
 assert len(replacements) == 2, replacements.keys()
@@ -37,6 +37,6 @@ with ZipFile(output, 'w', ZIP_DEFLATED) as archive:
         archive.writestr(name, data)
 report = {'upstream_sha256': hashlib.sha256(original.read_bytes()).hexdigest(),
           'output_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
-          'pvp_damage_multiplier': 0.5, 'mode': 'damage-only', 'production_classes': sorted(replacements)}
+          'player_attribute_multiplier': 1.0, 'outgoing_damage_multiplier': 0.8, 'pvp_damage_multiplier': 0.35, 'mode': 'player-and-rpg-summon-damage', 'production_classes': sorted(replacements)}
 (WORK / 'build-result.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report, indent=2))

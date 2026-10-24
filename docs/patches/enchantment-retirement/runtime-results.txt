@@ -1,0 +1,9 @@
+NeoForge 26.2.0.90; Minecraft 26.2; isolated server; -Xverify:all
+PASS 483 checks
+15 retired registry IDs absent; vanilla Sweeping Edge retained and hidden.
+Legacy armor, stored books and Penchant progress decode in JSON/NBT; Protection retained.
+Creative rebuild, Soulbound death hook, 460 affected loot samples passed.
+Unrelated missing Dungeons Arise entity-tag warning also occurs in baseline fixture.
+No required surviving mod dependencies on the five removed mod providers.
+Archive verification: PASS 2641 checks.
+Handbook: 77 pages rendered; nine changed pages visually reviewed; 182 index entries, 173 project icons; PDF copies match.

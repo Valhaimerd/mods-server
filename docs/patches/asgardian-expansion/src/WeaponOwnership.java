@@ -83,16 +83,24 @@ public final class WeaponOwnership {
     public static boolean isBusy(ServerPlayer p,ItemStack s){return boundType(s)&&!canUse(p,s);}
     public static boolean claim(ServerPlayer p){
         ItemStack s=p.getMainHandItem();
-        if(!AsgardianAccess.canUse(p))return false;
+        if(!AsgardianAccess.allow(p))return false;
         if(!boundType(s)||!id(s).isEmpty()||!owner(s).isEmpty()||s.getCount()!=1){
             ItemEntity candidate=p.level().getEntitiesOfClass(ItemEntity.class,p.getBoundingBox().inflate(4),i->boundType(i.getItem())&&id(i.getItem()).isEmpty()&&owner(i.getItem()).isEmpty()&&i.getItem().getCount()==1&&p.hasLineOfSight(i))
-                .stream().filter(i->p.getLookAngle().dot(i.position().subtract(p.getEyePosition()).normalize())>.9).min(Comparator.comparingDouble(i->i.distanceToSqr(p))).orElse(null);
-            int free=p.getInventory().getFreeSlot();if(candidate==null||free<0)return false;
+                // A nearby item's floor origin is below its visible model and outside
+                // the aim cone when the player stands close. Explicit claim is enough
+                // intent within pickup reach; line of sight is still required above.
+                .stream().filter(i->i.distanceToSqr(p)<=2.25||p.getLookAngle().dot(i.position().subtract(p.getEyePosition()).normalize())>.9).min(Comparator.comparingDouble(i->i.distanceToSqr(p))).orElse(null);
+            if(candidate==null){
+                if(boundType(s)&&(!id(s).isEmpty()||!owner(s).isEmpty()))return claimFailure(p,"That held weapon already has ownership data. Claiming cannot transfer it or reset its owner.");
+                return claimFailure(p,"No claimable ground weapon found. Hold an unclaimed hammer/axe, stand within 1.5 blocks of one, or aim toward one within 4 blocks with a clear view. Displayed items must be taken down first.");
+            }
+            int free=p.getInventory().getFreeSlot();if(free<0)return claimFailure(p,"Free one main-inventory slot before claiming this ground weapon.");
             s=candidate.getItem().copy();bind(p,s,INVENTORY);candidate.discard();
             internal=true;try{p.getInventory().setItem(free,s);}finally{internal=false;}return true;
         }
         bind(p,s,INVENTORY);return true;
     }
+    private static boolean claimFailure(ServerPlayer p,String message){p.sendSystemMessage(Component.literal(message));return false;}
     /** Called BEFORE the crafting result is transferred or shift-clicked. */
     public static boolean prepareCraft(ServerPlayer p,ItemStack s){
         if(!boundType(s))return true;
@@ -318,7 +326,8 @@ public final class WeaponOwnership {
     @SubscribeEvent public static void tooltip(ItemTooltipEvent event){
         if(!boundType(event.getItemStack()))return;
         String name=event.getItemStack().getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().getStringOr(NAME,"");
-        event.getToolTip().add(Component.literal(name.isEmpty()?"Unclaimed: use /asgard claim":"Bound to "+name));
+        String owner=owner(event.getItemStack()),id=id(event.getItemStack());
+        event.getToolTip().add(Component.literal(owner.isEmpty()&&id.isEmpty()?"Unclaimed: use /asgard claim":owner.isEmpty()||id.isEmpty()?"Incomplete ownership data: ask an operator to recover it":"Bound to "+(name.isEmpty()?owner:name)));
     }
     @SubscribeEvent public static void logout(PlayerEvent.PlayerLoggedOutEvent event){
         if(event.getEntity() instanceof ServerPlayer p)for(Entry e:new ArrayList<>(data(p.level().getServer()).entries.values()))if(e.owner.equals(p.getUUID().toString()))save(p.level().getServer(),snapshotLive(p,e));

@@ -1,0 +1,8 @@
+PASS 118 checks
+Minecraft 26.2; NeoForge 26.2.0.90; new isolated world; Normal difficulty.
+Player and four named player-owned RPG summons: 35% to players, 80% to other entities, once after defenses.
+Ordinary entities and unowned summons: 100%; healing unchanged.
+Legacy attribute modifiers removed; real Spell Engine impacts use full attributes then the damage multiplier.
+All four summons tested through melee, spell and arrow sources, with party players/pets protected.
+Vanilla team and Better Party friendly-fire rules preserved.
+Installed archive/hash policy checks passed. Handbook: 77 pages rendered, changed page 30 visually reviewed, contents correct, root/output copies match.

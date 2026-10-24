@@ -30,6 +30,12 @@ public final class OwnershipProbe {
    }
   }catch(java.io.IOException e){throw new RuntimeException(e);}
   owner.getInventory().clearContent();stranger.getInventory().clearContent();
+  for(String recipe:List.of("bifrost_marker","heimdalls_sword","thors_hammer","stormbreaker")){
+   var id=net.minecraft.resources.Identifier.fromNamespaceAndPath("bifrost",recipe);
+   var key=net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.RECIPE,id);
+   ok(server.getRecipeManager().byKey(key).isPresent(),"native crafting recipe loaded "+recipe);
+   ok(server.getAdvancements().get(net.minecraft.resources.Identifier.fromNamespaceAndPath("bifrost","recipes/"+recipe))!=null,"recipe-book ingredient unlock registered "+recipe);
+  }
   // Exercise the actual recipe -> result-slot -> cursor path, rather than the helper alone.
   var nativeMenu=new CraftingMenu(11,owner.getInventory(),ContainerLevelAccess.create(owner.level(),owner.blockPosition()));
   var previousMenu=owner.containerMenu;owner.containerMenu=nativeMenu;
@@ -43,6 +49,27 @@ public final class OwnershipProbe {
   ok(WeaponOwnership.id(nativeMenu.getCarried()).equals(craftedId)&&WeaponOwnership.record(server,nativeMenu.getCarried()).state().equals(WeaponOwnership.INVENTORY),"native result click commits the same bound UUID to cursor");
   ok(nativeMenu.getSlot(1).getItem().isEmpty()&&nativeMenu.getSlot(8).getItem().isEmpty(),"native crafting consumes recipe ingredients");
   nativeMenu.setCarried(ItemStack.EMPTY);owner.containerMenu=previousMenu;
+  owner.setPos(0,100,0);owner.setYRot(0);owner.setXRot(0);owner.getInventory().setSelectedSlot(0);
+  for(var old:owner.level().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,new net.minecraft.world.phys.AABB(-5,99,-5,5,103,5),e->WeaponOwnership.id(e.getItem()).isEmpty()&&WeaponOwnership.owner(e.getItem()).isEmpty()))old.discard();
+  var nearbyGround=new net.minecraft.world.entity.item.ItemEntity(owner.level(),0,100,1.2,new ItemStack(ModItems.THORS_HAMMER.get()));
+  nearbyGround.getItem().set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,net.minecraft.network.chat.Component.literal("Ground Claim Fixture"));owner.level().addFreshEntity(nearbyGround);
+  ok(AsgardianAccess.canUse(owner),"ground claim fixture has valid stored Asgardian identity");
+  ok(WeaponOwnership.claim(owner),"close ground hammer claims while looking at its upper model rather than floor origin");
+  ok(nearbyGround.isRemoved(),"ground claim consumes exactly the original entity");
+  ok(owner.getInventory().getItem(0).getHoverName().getString().equals("Ground Claim Fixture"),"ground claim retains item components");
+  ok(WeaponOwnership.canUse(owner,owner.getInventory().getItem(0)),"claimed ground hammer is authoritative and usable");
+  owner.getInventory().clearContent();
+  var blockedGround=new net.minecraft.world.entity.item.ItemEntity(owner.level(),0,100,1.2,new ItemStack(ModItems.THORS_HAMMER.get()));owner.level().addFreshEntity(blockedGround);
+  var barrier=new net.minecraft.core.BlockPos(0,101,0);var previousBarrier=owner.level().getBlockState(barrier);owner.level().setBlockAndUpdate(barrier,net.minecraft.world.level.block.Blocks.STONE.defaultBlockState());
+  ok(!WeaponOwnership.claim(owner),"close claim cannot reach through solid terrain");
+  ok(!blockedGround.isRemoved()&&WeaponOwnership.id(blockedGround.getItem()).isEmpty(),"blocked claim does not consume or bind ground weapon");owner.level().setBlockAndUpdate(barrier,previousBarrier);
+  PlayerRaceState.get(server).setRace(owner.getUUID(),Race.HUMAN);ok(!WeaponOwnership.claim(owner),"nearby Human still cannot claim ground weapon");PlayerRaceState.get(server).setRace(owner.getUUID(),Race.valueOf("ASGARDIAN"));
+  for(int i=0;i<owner.getInventory().getContainerSize();i++)owner.getInventory().setItem(i,new ItemStack(net.minecraft.world.item.Items.STONE));
+  ok(!WeaponOwnership.claim(owner)&&!blockedGround.isRemoved(),"full inventory leaves unclaimed ground weapon intact");owner.getInventory().clearContent();
+  ok(WeaponOwnership.claim(owner),"close ground claim succeeds after freeing inventory space");owner.getInventory().clearContent();
+  var farGround=new net.minecraft.world.entity.item.ItemEntity(owner.level(),0,100,3.5,new ItemStack(ModItems.THORS_HAMMER.get()));owner.level().addFreshEntity(farGround);
+  owner.setYRot(180);ok(!WeaponOwnership.claim(owner),"distant weapon behind player cannot be claimed without aiming");
+  owner.setYRot(0);owner.setXRot(25);ok(WeaponOwnership.claim(owner),"aimed ground claim keeps existing four-block behavior");owner.setXRot(0);owner.getInventory().clearContent();
   ItemStack hammer=new ItemStack(ModItems.THORS_HAMMER.get());
   ok(!WeaponOwnership.canUse(owner,hammer),"unclaimed use denied");
   owner.getInventory().setItem(0,hammer);owner.getInventory().setSelectedSlot(0);

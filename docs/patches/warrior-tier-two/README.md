@@ -37,3 +37,5 @@ The isolated dedicated server passed **762 measurements** with `-Xverify:all`. C
 The shared casting-exception helper is exercised on the server and its client bytecode hook is verified statically. This is not a full client input, HUD, animation or multiplayer playtest. Personal Minecraft profiles, personal worlds and the separate desktop server are untouched. Previous active/fixed artifacts are retained under ignored `mod fixing/retired packs/warrior-tier-two-2026-10-23/`.
 
 Latest installed overlay: [Warrior tier III](../warrior-tier-three/README.md) supersedes Momentum and the third-tier skills/passives. Historical values below describe this revision's own pinned inputs and output.
+
+Latest Warrior overlay: [minimum-charge throws, health pulses, death cleanup and icon fixes](../warrior-followup/README.md). The current hashes are recorded there; earlier build outputs remain historical.

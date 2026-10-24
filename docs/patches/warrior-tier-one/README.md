@@ -41,3 +41,5 @@ The isolated dedicated server passed **625 measurements**: charge damage before 
 These are scripted server-side checks, not a full-pack visual/mouse-input or live multiplayer playtest. Personal Minecraft profiles, worlds and the separate desktop server were not modified. Candidate archives replace the three matching active filenames and their `1 fixed packs` copies only after tests pass; previous active/fixed copies are retained under ignored `retired packs/warrior-tier-one-2026-10-23/`.
 
 Latest installed overlay: [Warrior tier III](../warrior-tier-three/README.md) supersedes Momentum and the third-tier skills/passives. Historical values below describe this revision's own pinned inputs and output.
+
+Latest Warrior overlay: [minimum-charge throws, health pulses, death cleanup and icon fixes](../warrior-followup/README.md). The current hashes are recorded there; earlier build outputs remain historical.

@@ -69,7 +69,9 @@ public final class TransitProbe {
             late.setPos(0,65,0);
             BifrostTeleportManager.tick(server);
             check(out,"source column rises immediately after impact",bottomField.getDouble(sourceBeam)>0);
-            for(int i=15;i<54;i++)BifrostTeleportManager.tick(server);
+            for(int i=15;i<32;i++)BifrostTeleportManager.tick(server);
+            check(out,"caster-height visual remains while upper column retracts",level.getEntitiesOfClass(Display.TextDisplay.class,new AABB(-7,64.5,-7,7,69,7),e->e.entityTags().contains("bifrost_ground_visual")).size()==12);
+            for(int i=32;i<54;i++)BifrostTeleportManager.tick(server);
             check(out,"source visual closes at tick 54",sourceBeam.ids().isEmpty());
             check(out,"source closure does not teleport passengers early",cow.getX()<10);
             for(int i=54;i<59;i++)BifrostTeleportManager.tick(server);

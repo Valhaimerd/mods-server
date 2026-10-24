@@ -112,3 +112,7 @@ and reviewed, including a full-size check of policy page 26. All 461 internal
 destinations and printed contents page numbers were validated; root/output
 PDF copies match. Evidence is under `tmp/armor-enchantments/pdf-review/` and
 `pdf-report.json`.
+
+## Registry retirement follow-up (2026-10-24)
+
+The [enchantment retirement](../enchantment-retirement/README.md) supersedes the hidden modded enchantment and Life Steal policy recorded here. Its hashes identify the current active repacks; these original build checks remain historical. Vanilla Sweeping Edge stays hidden.

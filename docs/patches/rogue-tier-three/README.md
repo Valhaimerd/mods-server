@@ -1,5 +1,7 @@
 # Rogue tier III rework
 
+Mutilate and Prepared Counter are superseded by the [24 October follow-up](../rogue-counter/README.md). Remaining behavior and historical evidence below describe this earlier layer.
+
 Minecraft 26.2 / NeoForge 26.2.0.90 / Java 25 production classes. Same active filenames for Rogues 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5. The pinned inputs contain the current Archer revision and Rogue tiers I/II; this layer preserves unrelated entries byte-for-byte.
 
 ## Player changes

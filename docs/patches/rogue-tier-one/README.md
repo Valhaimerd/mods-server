@@ -1,5 +1,7 @@
 # Rogue first- and second-tier rework ? 22 October 2026
 
+Current tier I/II values are superseded by the [24 October follow-up](../rogue-rebalance/README.md). The behavior and evidence below describe this earlier layer.
+
 Minecraft 26.2 / NeoForge 26.2.0.90, Java 25 production classes. Three active
 filenames are retained: Rogues 3.1.2, Skill Tree 1.6.1 and Spell Engine 1.10.5.
 No mod is added or removed. Tier III mechanics remain unchanged; every Rogue tier explicitly enables haste. See [the tier-II extension](../rogue-tier-two/README.md).

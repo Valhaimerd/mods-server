@@ -28,7 +28,7 @@ if key not in {p.relative_to(classes).as_posix() for p in classes.rglob('*.class
     files[key]=files[key].replace(needle,len(new).to_bytes(2,'big')+new)
 meta=files['META-INF/neoforge.mods.toml'].decode()
 meta+='\n[[dependencies.bifrost]]\nmodId="spell_engine"\ntype="required"\nversionRange="[1.10.5,)"\nordering="AFTER"\nside="BOTH"\n'
-for mod,version in [('spell_power','1.6.1'),('better_party','1.1.7')]:
+for mod,version in [('spell_power','1.6.1'),('better_party','1.1.7'),('paladins','3.1.2')]:
     meta+=f'\n[[dependencies.bifrost]]\nmodId="{mod}"\ntype="required"\nversionRange="[{version},)"\nordering="AFTER"\nside="BOTH"\n'
 meta+='\n[[mixins]]\nconfig="asgardian-expansion.mixins.json"\n'
 files['META-INF/neoforge.mods.toml']=meta.encode()

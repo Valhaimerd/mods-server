@@ -1,0 +1,40 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "00871e3a229374ed3610ba66f7a5a20413a10471abbfd0e9ca505e156322541b",
+    "sha256": "abe3bc86a965cf3f27493d32d6fe6474c724d673601eac4e2f41b8ad1ab6d7b6",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/last_stand.json",
+      "data/rogues/spell/throw.json",
+      "data/rogues/spell/throw_net.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "af812eaa2ff9da97b9013e973a86fbd55032fb905f12361440c32c98acf0c62a",
+    "sha256": "4a736325d4b8985157e9c231cd3df455e562f2f5a6746ef7eef6100cc3876a2e",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_modifier_2.json",
+      "assets/skill_tree_rpgs/textures/mob_effect/juggernaut.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/berserker.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/berserker_crit.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/sentinel.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/warrior_freedom.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/warrior_endurance.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/warrior_momentum.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/warrior_momentum_ready.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/tenacity_ward.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "85f5b0fa3218b093a83a4cd7d8e9118a9af05566d9fe25f7884605f960da58c9",
+    "sha256": "3811149e35b46130a90fc54e457ad3c4c5df774dbf29e0bd96fb0ebb66fa94a6",
+    "changed": [
+      "net/spell_engine/entity/WarriorRules.class",
+      "net/spell_engine/entity/WarriorUltimates.class"
+    ]
+  }
+]

@@ -32,18 +32,54 @@ public class PvpProbe {
  @SuppressWarnings("unchecked")
  void run(ServerStartedEvent e){var server=e.getServer();try{
   var l=server.overworld();
+  server.setDifficulty(net.minecraft.world.Difficulty.NORMAL,true);
   var a=player(server,l,"PvPAttacker","00000000-0000-0000-0000-000000001111");
   var b=player(server,l,"PvPVictim","00000000-0000-0000-0000-000000002222");
   a.setGameMode(GameType.SURVIVAL);b.setGameMode(GameType.SURVIVAL);a.getAbilities().invulnerable=false;b.getAbilities().invulnerable=false;
+  for(String id:List.of("minecraft:attack_damage","ranged_weapon:damage","spell_power:arcane","spell_power:fire","spell_power:frost")){
+   var attribute=a.getAttribute(net.minecraft.core.registries.BuiltInRegistries.ATTRIBUTE.get(net.minecraft.resources.Identifier.parse(id)).orElseThrow());attribute.setBaseValue(100);
+   attribute.addTransientModifier(new net.minecraft.world.entity.ai.attributes.AttributeModifier(io.redspace.pvp_flagging.events.ServerEventsForge.BALANCE,-.2,net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+   for(int i=0;i<100;i++)io.redspace.pvp_flagging.events.ServerEventsForge.clearPowerPenalty(a);
+   near(attribute.getValue(),100,"legacy attribute penalty removed "+id);
+  }
+  var clone=player(server,l,"Clone","00000000-0000-0000-0000-000000003333");clone.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(100);
+  clone.getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(new net.minecraft.world.entity.ai.attributes.AttributeModifier(io.redspace.pvp_flagging.events.ServerEventsForge.BALANCE,-.2,net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+  NeoForge.EVENT_BUS.post(new net.neoforged.neoforge.event.entity.player.PlayerEvent.Clone(clone,a,true));near(clone.getAttributeValue(Attributes.ATTACK_DAMAGE),100,"death clone cleans old penalty");
+  for(String spellId:List.of("wizards:arcane_missile","wizards:fire_breath","wizards:frost_nova")){
+   var spell=net.spell_engine.api.spell.registry.SpellRegistry.from(l).get(net.minecraft.resources.Identifier.parse(spellId)).orElseThrow();
+   var impacts=spell.value().impacts.stream().filter(i->i.action.type==net.spell_engine.api.spell.Spell.Impact.Action.Type.DAMAGE).toList();
+   var power=SpellPower.getSpellPower(spell.value().school,a);near(power.baseValue(),100,"full power restored "+spellId);
+   var context=new net.spell_engine.internals.SpellExecution.ImpactContext(1,1,null,new SpellPower.Result(power.school(),power.baseValue(),0,1.5),net.spell_engine.internals.target.SpellTarget.FocusMode.DIRECT,0);
+   var victim=EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND);victim.getAttribute(Attributes.MAX_HEALTH).setBaseValue(1000);victim.setHealth(1000);
+   net.spell_engine.internals.impact.SpellImpacts.performImpacts(l,a,victim,victim,spell,impacts,context,false,null);
+   near(1000-victim.getHealth(),80*impacts.getFirst().action.damage.spell_power_coefficient,"native spell reduced once at damage event "+spellId);
+  }
   check(a.canHarmPlayer(b),"strangers can fight without flags");
   var arrow=EntityTypes.ARROW.create(l,EntitySpawnReason.COMMAND);
-  var sources=List.of(l.damageSources().playerAttack(a),l.damageSources().arrow(arrow,a),SpellDamageSource.player(SpellSchools.ARCANE,a),SpellDamageSource.player(SpellSchools.FIRE,a),SpellDamageSource.player(SpellSchools.FROST,a));
+  var sources=new ArrayList<DamageSource>(List.of(l.damageSources().playerAttack(a),l.damageSources().arrow(arrow,a),SpellDamageSource.player(SpellSchools.ARCANE,a),SpellDamageSource.player(SpellSchools.FIRE,a),SpellDamageSource.player(SpellSchools.FROST,a)));
   for(var source:sources){
-   near(hit(l,b,source),10,"stranger PvP halved "+source.type().msgId());
+   near(hit(l,b,source),7,"raw damage PvP retains thirty-five percent "+source.type().msgId());
    var pig=EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND);
-   near(hit(l,pig,source),20,"PvE unchanged "+source.type().msgId());
+   near(hit(l,pig,source),16,"player PvE retains eighty percent "+source.type().msgId());
+  }
+  l.players().add(a);
+  for(String type:List.of("archers:spirit_wolf","wizards:arcane_emitter","wizards:fire_hydra","wizards:frost_elemental")){
+   var summon=(net.spell_engine.entity.SummonedEntity)net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getValue(net.minecraft.resources.Identifier.parse(type)).create(l,EntitySpawnReason.MOB_SUMMONED);summon.setOwnerUuid(a.getUUID());
+   check(io.redspace.pvp_flagging.events.ServerEventsForge.playerSource(summon)==a,"player summon resolved "+type);
+   var projectile=EntityTypes.ARROW.create(l,EntitySpawnReason.COMMAND);projectile.setOwner(summon);
+   for(var source:List.of(l.damageSources().mobAttack(summon),SpellDamageSource.create(SpellSchools.ARCANE,summon),l.damageSources().arrow(projectile,summon))){
+    near(hit(l,b,source),7,"summon versus player thirty-five percent "+type);
+    near(hit(l,EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND),source),16,"summon versus mob eighty percent "+type);sources.add(source);
+   }
+   summon.setOwnerUuid(null);near(hit(l,b,l.damageSources().mobAttack(summon)),20,"unowned summon remains ordinary entity "+type);summon.setOwnerUuid(a.getUUID());
   }
   near(hit(l,b,l.damageSources().generic()),20,"ownerless damage unchanged");
+  var zombie=EntityTypes.ZOMBIE.create(l,EntitySpawnReason.COMMAND);
+  near(hit(l,b,l.damageSources().mobAttack(zombie)),20,"mob attacks on players unchanged");
+  near(hit(l,EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND),l.damageSources().mobAttack(zombie)),20,"ordinary entity versus entity unchanged");
+  var wolf=EntityTypes.WOLF.create(l,EntitySpawnReason.COMMAND);wolf.setOwnerReference(EntityReference.of(a.getUUID()));
+  near(hit(l,EntityTypes.PIG.create(l,EntitySpawnReason.COMMAND),l.damageSources().mobAttack(wolf)),20,"pet attacks not double-scaled as player attacks");
+  a.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);a.setHealth(20);a.heal(20);near(a.getHealth(),40,"healing unchanged");
   check(server.getCommands().getDispatcher().getRoot().getChild("pvpFlag")==null,"flag command absent");
   check(server.getCommands().getDispatcher().getRoot().getChild("pvpZone")==null,"zone command absent");
   var manager=PartyManager.forServer(server);var party=new Party(UUID.randomUUID());
@@ -53,14 +89,17 @@ public class PvpProbe {
   var mf=PartyManager.class.getDeclaredField("playerParties");mf.setAccessible(true);var memberships=(Map<UUID,UUID>)mf.get(manager);memberships.put(a.getUUID(),party.id());memberships.put(b.getUUID(),party.id());
   check(manager.blocksFriendlyFire(a,b),"Better Party blocks friendly fire");
   for(var source:sources)near(hit(l,b,source),0,"protected party damage blocked "+source.type().msgId());
+  var partyPet=EntityTypes.WOLF.create(l,EntitySpawnReason.COMMAND);partyPet.setOwnerReference(EntityReference.of(b));
+  for(var source:sources)near(hit(l,partyPet,source),0,"party pet protected "+source.type().msgId());
   party.setFriendlyFire(true);check(!manager.blocksFriendlyFire(a,b),"Better Party permits chosen friendly fire");
-  for(var source:sources)near(hit(l,b,source),10,"enabled party damage halved "+source.type().msgId());
+  for(var source:sources)near(hit(l,b,source),7,"enabled party damage uses thirty-five percent "+source.type().msgId());
   party.setFriendlyFire(false);memberships.remove(b.getUUID());party.removeMember(b.getUUID());
-  near(hit(l,b,SpellDamageSource.player(SpellSchools.ARCANE,a)),10,"leaving party restores halved PvP");
+  near(hit(l,b,SpellDamageSource.player(SpellSchools.ARCANE,a)),7,"leaving party restores thirty-five percent PvP");
   memberships.remove(a.getUUID());parties.remove(party.id());
   var board=server.getScoreboard();var team=board.addPlayerTeam("retention-team");board.addPlayerToTeam(a.getScoreboardName(),team);board.addPlayerToTeam(b.getScoreboardName(),team);team.setAllowFriendlyFire(false);
   near(hit(l,b,l.damageSources().playerAttack(a)),0,"vanilla team protection respected");
-  team.setAllowFriendlyFire(true);near(hit(l,b,l.damageSources().playerAttack(a)),10,"vanilla team allowed damage halved");board.removePlayerTeam(team);
+  team.setAllowFriendlyFire(true);near(hit(l,b,l.damageSources().playerAttack(a)),7,"vanilla team allowed damage uses thirty-five percent");board.removePlayerTeam(team);
+  l.players().remove(a);
   Files.writeString(Path.of("result.txt"),"PASS "+checks+" checks\n");
  }catch(Throwable t){t.printStackTrace();try{Files.writeString(Path.of("result.txt"),"FAIL "+t);}catch(Exception ignored){}}
  finally{server.halt(false);}}

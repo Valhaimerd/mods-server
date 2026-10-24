@@ -1,0 +1,1602 @@
+{
+  "status": "approved and implemented; English description-only overlay",
+  "date": "2026-10-24",
+  "source_archives": {
+    "archers-neoforge-3.1.2+26.2.jar": "8d635f07597d0345eb5a956b4402519a0649116987199aa55ddcde328349ab59",
+    "rogues-neoforge-3.1.2+26.2.jar": "abe3bc86a965cf3f27493d32d6fe6474c724d673601eac4e2f41b8ad1ab6d7b6",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "2cae125c2fbff04355c9dbf362a0a06311116a1f6e7b5fcdb7415b435576e0f4",
+    "wizards-neoforge-3.1.2+26.2.jar": "20b4f233801a948ffe9810eacf84553763ba88fda72c4530f97e459d9288cfbb"
+  },
+  "scope": [
+    "Arcane",
+    "Fire",
+    "Frost",
+    "Archer",
+    "Rogue",
+    "Warrior"
+  ],
+  "excluded": [
+    "Priest",
+    "Paladin"
+  ],
+  "descriptions": {
+    "spell.wizards.arcane_missile.description": {
+      "id": "wizards:arcane_missile",
+      "name": "Arcane Missiles",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Channel 12 homing missiles, each dealing 26%% Arcane damage.",
+      "proposed": "Channel 12 homing missiles, each dealing 26% Arcane damage.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_1_root",
+      "name": "Improved Arcane Missiles",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Missiles gains 10%% more spell power.",
+      "proposed": "Arcane Missiles gains 10% more power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_1_modifier_1",
+      "name": "Conjured Missile",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Missiles fires 1 additional missile with every third channel hit, starting with the first. A full channel fires 4 extra missiles.",
+      "proposed": "Arcane Missiles fires 4 extra missiles during a full channel.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_1_modifier_2",
+      "name": "Crippling Missiles",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Missiles slows enemies by 10%% base movement speed per stack, up to 30%% at 3 stacks. Lasts 4s, refreshed by hits.",
+      "proposed": "Arcane Missiles slows enemies by 10% per stack, up to 30% for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_explosion.description": {
+      "id": "wizards:arcane_explosion",
+      "name": "Arcane Explosion",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Create an explosion centered on the targeted enemy, dealing 260%% Arcane damage within 7 blocks before upgrades. Echoing Blast lowers the damage and resets the cooldown on a hit.",
+      "proposed": "Explode around your target, dealing 260% Arcane damage within 7 blocks.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_2_root",
+      "name": "Improved Arcane Explosion",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Explosion radius increases from 7 to 9 blocks around the targeted enemy.",
+      "proposed": "Arcane Explosion reaches 2 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_2_modifier_1",
+      "name": "Echoing Blast",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Explosion deals 160%% Arcane damage. Hitting an enemy resets its cooldown.",
+      "proposed": "Arcane Explosion deals 160% damage, but hitting an enemy resets its cooldown.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_spell_2_modifier_2",
+      "name": "Chain Detonation",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Each Arcane Explosion hit causes another explosion after 0.5s, dealing 30%% Arcane damage.",
+      "proposed": "Arcane Explosion causes another blast after 0.5s, dealing 30% Arcane damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_1_passive_1",
+      "name": "Fissile Magic",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Explode for up to 40%% Arcane damage within 5 blocks, excluding the struck enemy. Damage decreases with distance.",
+      "proposed": "Explode for up to 40% Arcane damage near the target, without hitting it again.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_1_passive_2",
+      "name": "Arcane Radiance",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Restore health equal to 10%% Arcane power.",
+      "proposed": "Heal for 10% of your Arcane power.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_beam.description": {
+      "id": "wizards:arcane_beam",
+      "name": "Arcane Beam",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Channel 25 hits, each dealing 20%% Arcane damage. Consumes all Arcane Charges. Charged Beam changes the channel and damage.",
+      "proposed": "Channel a beam that deals 20% Arcane damage per hit. Consumes all Arcane Charges.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_1_root",
+      "name": "Improved Arcane Beam",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+5%% Arcane Beam critical chance.",
+      "proposed": "+5% Arcane Beam critical chance.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_1_modifier_1",
+      "name": "Beam Exposure",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Beam hits apply Arcane Exposure for 3s: +4%% Arcane damage taken per level, up to 25 levels.",
+      "proposed": "Beam hits make enemies take 4% more Arcane damage per stack, up to 100%, for 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_1_modifier_2",
+      "name": "Charged Beam",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Channel 50 hits. Damage grows from 10%% to 15%% Arcane power, gaining 0.15%% per hit. Beam width starts at 130%% and grows by 10%% per hit, up to 500%%.",
+      "proposed": "Channel twice as long. The beam grows wider, and its damage rises from 10% to 15% per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_barrage.description": {
+      "id": "wizards:arcane_barrage",
+      "name": "Arcane Barrage",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Summon 3 Arcane Emitters that fire at your target or where you aim. Each lasts 6s. Bolts deal 40%% of the emitter's own Arcane power; emitter power grows with your Arcane power.",
+      "proposed": "Summon 3 emitters for 6s. They fire bolts at your target or aim, dealing 40% of their own Arcane power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_2_root",
+      "name": "Improved Arcane Barrage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Barrage emitters gain 10%% increased critical strike chance.",
+      "proposed": "Arcane Emitters gain 10% critical chance.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_2_modifier_1",
+      "name": "Arcane Battery",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Conjures an additional Arcane Emitter.",
+      "proposed": "Summon one extra Arcane Emitter.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_spell_2_modifier_2",
+      "name": "Attuned Emitters",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Arcane Emitters fire faster, matching your spell haste.",
+      "proposed": "Arcane Emitters fire faster with spell haste.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_passive_1",
+      "name": "Arcane Trap",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Leave a trap for 5s. Deals 40%% Arcane damage and applies Weakness II for 6s within 1.5 blocks.",
+      "proposed": "Leave a trap that deals 40% Arcane damage and applies Weakness II for 6s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_2_passive_2",
+      "name": "Phase Shift",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Become immune to damage for 0.3s.",
+      "proposed": "Become immune to damage for 0.3s.",
+      "decision": "Keep"
+    },
+    "spell.wizards.arcane_blink.description": {
+      "id": "wizards:arcane_blink",
+      "name": "Burst Blink",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Blink forward up to 10 blocks before upgrades. Deal 50%% Arcane damage within 5 blocks at departure immediately and at arrival after 0.25s.",
+      "proposed": "Blink forward and explode at both ends, dealing 50% Arcane damage at each location.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_1_root",
+      "name": "Improved Blink",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Increases Burst Blink distance by 5 blocks, to 15 blocks.",
+      "proposed": "Burst Blink travels 5 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_1_modifier_1",
+      "name": "Slipstream",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduces Burst Blink cooldown by 3s.",
+      "proposed": "Reduce Burst Blink's cooldown by 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_1_modifier_2",
+      "name": "Purge",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Burst Blink grants Speed I (+20%% movement speed) for 4s.",
+      "proposed": "Burst Blink grants Speed I for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_evocation.description": {
+      "id": "wizards:arcane_evocation",
+      "name": "Evocation",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Channel up to 10 stacks lasting 10s. Each grants +5%% base spell critical chance, +3%% spell haste and +10%% damage taken.",
+      "proposed": "Gain up to 10 stacks for 10s: 5% spell critical chance, 3% haste and 10% more damage taken per stack.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_2_root",
+      "name": "Improved Evocation",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce Evocation's base cooldown by 5s, from 35 to 30s at full channel.",
+      "proposed": "Reduce Evocation's cooldown by 5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_2_modifier_1",
+      "name": "Rapid Evocation",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Evocation channels 12 times and can reach 12 stacks.",
+      "proposed": "Evocation can build 12 stacks instead of 10.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_4_spell_2_modifier_2",
+      "name": "Lasting Evocation",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Evocation lasts 15s.",
+      "proposed": "Evocation lasts 15s.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_passive_1",
+      "name": "Presence of Mind",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Ready your next Arcane spell for 5s. Its hits make enemies take 20%% more Arcane damage for 6s.",
+      "proposed": "Your next Arcane spell makes enemies take 20% more Arcane damage for 6s. Use within 5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.arcane_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:arcane_tier_3_passive_2",
+      "name": "Arcane Ward",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain an absorption shield for 8s: 1 heart plus 1 heart per 5 Arcane power.",
+      "proposed": "Gain a shield for 8s. Your Arcane power makes it stronger.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_breath.description": {
+      "id": "wizards:fire_breath",
+      "name": "Fire Breath",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Breathe fire in front of you for 13%% Fire damage per hit, with no distance falloff.",
+      "proposed": "Breathe flames in front of you, dealing 13% Fire damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_1_root",
+      "name": "Improved Fire Breath",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+5%% Fire Breath critical chance.",
+      "proposed": "+5% Fire Breath critical chance.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_1_modifier_1",
+      "name": "Explosive Breath",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Fire Breath hits have a 10%% chance to trigger an explosion, dealing up to 30%% Fire damage within 2.5 blocks. Damage decreases with distance.",
+      "proposed": "Fire Breath hits have a 10% chance to explode for up to 30% Fire damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_1_modifier_2",
+      "name": "Flame Throwing",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Increase Fire Breath range by 4 blocks, from 8 to 12 blocks.",
+      "proposed": "Fire Breath reaches 4 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_slash.description": {
+      "id": "wizards:fire_slash",
+      "name": "Flame Slash",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch a wide wave of flame after a 0.1-second cast, dealing 100%% Fire damage to enemies in its path.",
+      "proposed": "Send out a wide wave of flame that deals 100% Fire damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_2_root",
+      "name": "Improved Flame Slash",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Increase Flame Slash range by 5 blocks.",
+      "proposed": "Flame Slash travels 5 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_2_modifier_1",
+      "name": "Towering Slash",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Flame Slash is 45%% larger.",
+      "proposed": "Flame Slash is 45% larger.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_spell_2_modifier_2",
+      "name": "Wave after Wave",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Flame Slash hits reduce its own remaining cooldown by 1s.",
+      "proposed": "Flame Slash hits reduce its remaining cooldown by 1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_1_passive_1",
+      "name": "Scorching Flames",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Enemies take +4%% Fire damage per stack, up to 20%%. Lasts 2s; further applications refresh it.",
+      "proposed": "Enemies take 4% more Fire damage per stack, up to 20%, for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_1_passive_2",
+      "name": "Hot Impact",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Stun the target for 2s.",
+      "proposed": "Stun the target for 2s.",
+      "decision": "Keep"
+    },
+    "spell.wizards.fire_meteor.description": {
+      "id": "wizards:fire_meteor",
+      "name": "Meteor",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Drop 3 meteors on the target. Each deals 150%% Fire damage within 6 blocks, with no distance falloff.",
+      "proposed": "Drop 3 meteors on your target. Each deals 150% Fire damage in a 6-block blast.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_1_root",
+      "name": "Improved Meteor",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce Meteor's base cooldown by 2s, from 20 to 18s.",
+      "proposed": "Reduce Meteor's cooldown by 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_1_modifier_1",
+      "name": "Meteor Shower",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Meteor drops 1 additional meteor, for 4 total.",
+      "proposed": "Drop one extra meteor.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_1_modifier_2",
+      "name": "Meteor Splash",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Meteor impacts create a burning area after 0.25s. It lasts 6s within 5 blocks, reaches 2 blocks high and deals 10%% Fire damage per hit.",
+      "proposed": "Meteor impacts leave burning ground for 6s, dealing 10% Fire damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_storm.description": {
+      "id": "wizards:fire_storm",
+      "name": "Firestorm",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Channel flames around you, dealing 40%% Fire damage per hit within 15 blocks.",
+      "proposed": "Channel flames within 15 blocks, dealing 40% Fire damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_2_root",
+      "name": "Improved Firestorm",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Firestorm gains 10%% more spell power.",
+      "proposed": "Firestorm gains 10% more power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_2_modifier_1",
+      "name": "Flame Whirlpool",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Firestorm pulls enemies inward across its 15-block radius and applies Slowness II for 1s, refreshed on hit.",
+      "proposed": "Firestorm pulls enemies inward and slows them.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_spell_2_modifier_2",
+      "name": "Raging Firestorm",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Firestorm hits 2 additional times and gains 100%% extra base knockback, pushing enemies away.",
+      "proposed": "Firestorm hits 2 extra times and knocks enemies away.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_passive_1",
+      "name": "Flame Trap",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Leave a trap for 5s. Deals 30%% Fire damage and burns enemies for 4s within 1.5 blocks.",
+      "proposed": "Leave a trap that deals 30% Fire damage and burns enemies for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_2_passive_2",
+      "name": "Blazing Speed",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+50%% base movement speed for 2s.",
+      "proposed": "Move 50% faster for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_wall.description": {
+      "id": "wizards:fire_wall",
+      "name": "Wall of Flames",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Place up to 4 walls within 5s. Each lasts 8s, deals 20%% Fire damage per hit and reaches 2 blocks high. The fourth wall or placement timeout starts the cooldown.",
+      "proposed": "Place up to 4 flame walls within 5s. Each lasts 8s and deals 20% Fire damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_1_root",
+      "name": "Improved Wall of Flames",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Wall of Flames lasts 2s longer, for 10s total.",
+      "proposed": "Flame walls last 2s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_1_modifier_1",
+      "name": "Great Wall",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Adds 2 wall segments. Segments have 1.2-block radius and 3-block height, and block living entities while active. Projectiles pass through.",
+      "proposed": "Flame walls grow wider and taller and gain 2 segments. They block players and mobs, but not projectiles.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_1_modifier_2",
+      "name": "Healing Flames",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Wall of Flames heals you and party allies for 0.5%% of your Fire power each hit.",
+      "proposed": "Flame walls heal you and party allies for 0.5% of your Fire power per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_hydra.description": {
+      "id": "wizards:fire_hydra",
+      "name": "Fire Hydra",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Summon hydras for 20s (+5s with Improved Hydra)..",
+      "proposed": "Summon Fire Hydras for 20s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_2_root",
+      "name": "Improved Fire Hydra",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Fire Hydra lasts 5s longer.",
+      "proposed": "Fire Hydras last 5s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_2_modifier_1",
+      "name": "Hydra Brood",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Conjures an additional Fire Hydra head.",
+      "proposed": "Summon one extra Fire Hydra head.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_4_spell_2_modifier_2",
+      "name": "Ancient Hydra",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Summon one giant hydra.",
+      "proposed": "Summon one giant hydra.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_passive_1",
+      "name": "Eruption",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Explode for up to 30%% Fire damage within 5 blocks. Damage decreases with distance.",
+      "proposed": "Explode around you for up to 30% Fire damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.fire_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:fire_tier_3_passive_2",
+      "name": "Flame Ward",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain an absorption shield for 8s: 1 heart plus 1 heart per 10 Fire power. Attackers take 30%% Fire damage.",
+      "proposed": "Gain a shield for 8s that grows with your Fire power. Attackers take 30% Fire damage.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_nova.description": {
+      "id": "wizards:frost_nova",
+      "name": "Frost Nova",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deal 180%% Frost damage to enemies within 10 blocks and freeze them for 2s before upgrades. Frozen enemies cannot move and are vulnerable to Frost magic.",
+      "proposed": "Deal 180% Frost damage within 10 blocks and freeze enemies for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_1_root",
+      "name": "Improved Frost Nova",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Nova freezes enemies for 0.5s longer, for 2.5s total.",
+      "proposed": "Frost Nova freezes enemies for 0.5s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_1_modifier_1",
+      "name": "Frost Splinters",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Nova hits cause secondary explosions, dealing 20%% Frost damage within 3 blocks.",
+      "proposed": "Frost Nova causes extra blasts that deal 20% Frost damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_1_modifier_2",
+      "name": "Deep Freeze",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Nova applies 1 additional Frozen stack to each enemy.",
+      "proposed": "Frost Nova applies one extra Frozen stack.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_spikes.description": {
+      "id": "wizards:frost_spikes",
+      "name": "Frost Spikes",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Raise 8 frost spikes along an 8-block row before upgrades. Each hit deals 80%% Frost damage and freezes enemies for 2s. Frozen enemies cannot move and are vulnerable to Frost magic.",
+      "proposed": "Raise a row of 8 ice spikes. Each hit deals 80% Frost damage and freezes enemies for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_2_root",
+      "name": "Improved Frost Spikes",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Spikes gains 10%% more spell power.",
+      "proposed": "Frost Spikes gains 10% more power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_2_modifier_1",
+      "name": "Glacial Ridge",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Spikes raises 12 additional spikes, extending the row to 20 blocks.",
+      "proposed": "Frost Spikes raises 12 extra spikes, reaching 20 blocks.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_spell_2_modifier_2",
+      "name": "Frost Fan",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Spikes raises two additional rows at +/-10 degrees, dealing 25%% damage per hit with Improved Frost Spikes.",
+      "proposed": "Frost Spikes adds two weaker side rows, each dealing 25% Frost damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_1_passive_1",
+      "name": "Winter's Chill",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Enemies take +8%% Frost critical damage per stack, up to 40%%. Lasts 2s; further applications refresh it.",
+      "proposed": "Enemies take 8% more Frost critical damage per stack, up to 40%, for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_1_passive_2",
+      "name": "Frostbite",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Freeze the target for 3s.",
+      "proposed": "Freeze the target for 3s.",
+      "decision": "Keep"
+    },
+    "spell.wizards.frost_shield.description": {
+      "id": "wizards:frost_shield",
+      "name": "Frost Shield",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Block all incoming damage for 3s, with -100%% base movement speed. When the shield expires, freeze enemies within 5 blocks for 2s.",
+      "proposed": "Become immune to damage for 3s but move much slower. Freeze nearby enemies for 2s when the shield expires.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_1_root",
+      "name": "Improved Frost Shield",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce Frost Shield's base cooldown by 3s, from 12 to 9s.",
+      "proposed": "Reduce Frost Shield's cooldown by 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_1_modifier_1",
+      "name": "Nimble Shield",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain 50%% base movement speed for 3s while using Frost Shield, offsetting half of its base movement penalty.",
+      "proposed": "Move faster while using Frost Shield, reducing its movement penalty.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_1_modifier_2",
+      "name": "Durable Shield",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Shield lasts 1s longer, for 4s total.",
+      "proposed": "Frost Shield lasts 1s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_lance.description": {
+      "id": "wizards:frost_lance",
+      "name": "Ice Lance",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch an ice lance dealing 200%% Frost damage. Freezes hit enemies for 4s after a 0.5s delay.",
+      "proposed": "Launch an ice lance for 200% Frost damage. After a short delay, freeze enemies hit for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_2_root",
+      "name": "Improved Ice Lance",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce Ice Lance's base cooldown by 2s, from 12 to 10s.",
+      "proposed": "Reduce Ice Lance's cooldown by 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_2_modifier_1",
+      "name": "Colossal Lance",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Ice Lance is 50%% larger and gains +15%% critical chance.",
+      "proposed": "Ice Lance is 50% larger and gains 15% critical chance.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_spell_2_modifier_2",
+      "name": "Shattering Lance",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Ice Lance stops at its first enemy. The direct hit retains 200%% damage and 4s delayed Frozen; its 8-block splash deals 50%% damage and 1s delayed Frozen without damage falloff.",
+      "proposed": "Ice Lance keeps its direct hit but explodes on the first enemy, dealing 50% splash damage and freezing nearby enemies for 1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_passive_1",
+      "name": "Frost Trap",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Leave a trap for 5s. Freeze enemies within 1.5 blocks for 4s.",
+      "proposed": "Leave a trap that freezes nearby enemies for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_2_passive_2",
+      "name": "Arctic Reflex",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Your next Frost spell deals 20%% more damage. Use within 5s.",
+      "proposed": "Your next Frost spell deals 20% more damage. Use within 5s.",
+      "decision": "Keep"
+    },
+    "spell.wizards.frost_blizzard.description": {
+      "id": "wizards:frost_blizzard",
+      "name": "Blizzard",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Rain frost shards on the target and nearby enemies. Each deals about 26.7%% Frost damage within 3 blocks and slows enemies. No distance falloff.",
+      "proposed": "Rain ice shards that damage and slow enemies around your target.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_1_root",
+      "name": "Improved Blizzard",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Blizzard hits 3 additional times, for 15 channel hits total.",
+      "proposed": "Blizzard hits 3 extra times.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_1_modifier_1",
+      "name": "Hail Storm",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Blizzard gains 20%% more spell power.",
+      "proposed": "Blizzard gains 20% more power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_1_modifier_2",
+      "name": "Snow Storm",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Blizzard slows enemies by 20%% base movement speed per stack, up to 60%% at 3 stacks. Lasts 3s, refreshed by hits.",
+      "proposed": "Blizzard hits slow enemies by 20% per stack, up to 60%, for 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_elemental.description": {
+      "id": "wizards:frost_elemental",
+      "name": "Frost Elemental",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Summon a Frost Elemental for 20s. Its health, armor and melee damage grow with your Frost power. It has 20%% of your Frost power; its Frost Shard deals 100%% and Super Nova deals 180%% of its own power..",
+      "proposed": "Summon a Frost Elemental for 20s. Your Frost power strengthens its body and attacks.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_2_root",
+      "name": "Improved Frost Elemental",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Frost Elemental lasts 5s longer.",
+      "proposed": "Frost Elemental lasts 5s longer.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_2_modifier_1",
+      "name": "Elemental Legion",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Summon three normal-sized Frost Elementals, each with 80%% of the base attributes. Each Super Nova reaches 6 blocks and freezes for 0.5s.",
+      "proposed": "Summon 3 Elementals, each with 80% of normal stats. Their novas freeze nearby enemies for 0.5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_4_spell_2_modifier_2",
+      "name": "Elemental Colossus",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Summon one Frost Colossus at 1.7x size with double base attributes, inheriting your knockback resistance.",
+      "proposed": "Summon a larger Elemental with double stats and your knockback resistance.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_passive_1",
+      "name": "Cold Snap",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reset Frost spell cooldowns, except Blizzard and Frost Elemental.",
+      "proposed": "Reset Frost spell cooldowns, except Blizzard and Frost Elemental.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.frost_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:frost_tier_3_passive_2",
+      "name": "Frost Ward",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain an absorption shield for 8s: 1 heart plus 1 heart per 10 Frost power. Slows attackers.",
+      "proposed": "Gain a shield for 8s that grows with your Frost power. Slows attackers.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.power_shot.description": {
+      "id": "archers:power_shot",
+      "name": "Power Shot",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Prepares your next 3 arrows for 8s. Hits apply Hunter's Mark for 6s, refreshed, increasing damage taken by 7%% per stack, up to 21%%.",
+      "proposed": "Empower your next 3 arrows. Each hit marks enemies to take 7% more damage, stacking up to 21% for 6s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_1_root",
+      "name": "Improved Power Shot",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Power Shot prepares arrows for 10s instead of 8s. Hunter's Mark lasts 6s, refreshed by hits.",
+      "proposed": "Power Shot stays ready 2s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_1_modifier_1",
+      "name": "Improved Hunter's Mark",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Prepares 4 arrows instead of 3. Hunter's Mark stacks up to 4 times, increasing damage taken by 7%% per stack, up to 28%%.",
+      "proposed": "Power Shot prepares 4 arrows and lets Hunter's Mark reach 4 stacks.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_1_modifier_2",
+      "name": "Charged Shot",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Marked arrow hits deal 50%% of your Ranged Damage as splash to other enemies within 5 blocks, without distance falloff.",
+      "proposed": "Marked arrow hits splash other nearby enemies for 50% ranged damage.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.entangling_roots.description": {
+      "id": "archers:entangling_roots",
+      "name": "Entangling Roots",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Creates roots in a 6-block radius for 6s, reducing enemy movement speed and jump strength by 60%%. Party allies and owned pets are protected.",
+      "proposed": "Create a 6-block patch of roots for 6s, slowing enemy movement and jumps by 60%.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_2_root",
+      "name": "Improved Entangling Roots",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Entangling Roots cooldown is reduced by 2s, to 10s.",
+      "proposed": "Reduce Entangling Roots' cooldown by 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_2_modifier_1",
+      "name": "Nettle Sprouts",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Every root pulse adds stacking Poison for 5s. The maximum Poison level scales with 20%% of your melee power.",
+      "proposed": "Root pulses apply stacking Poison for 5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_spell_2_modifier_2",
+      "name": "Nature's Grasp",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Every root pulse immobilizes enemies for 1s.",
+      "proposed": "Root pulses hold enemies for 1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_1_passive_1",
+      "name": "Concussive Shot",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Stun the target for 1s.",
+      "proposed": "Stun the target for 1s.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.archer_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_1_passive_2",
+      "name": "Rhythm",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+3%% ranged attack speed per stack, up to 15%%. Lasts 4s; hits refresh it.",
+      "proposed": "Hits build 3% ranged attack speed per stack, up to 15%, for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.barrage.description": {
+      "id": "archers:barrage",
+      "name": "Barrage",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Fire 3 accurate arrows, spaced 0.15s apart. Each deals 60%% of normal shot damage.",
+      "proposed": "Fire 3 arrows that each deal 60% normal shot damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_1_root",
+      "name": "Improved Barrage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Barrage cooldown is reduced by 1s, to 7s.",
+      "proposed": "Reduce Barrage's cooldown by 1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_1_modifier_1",
+      "name": "Extensive Barrage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Barrage fires 1 additional arrow, for 4 total. Each deals 60%% normal shot damage.",
+      "proposed": "Barrage fires one extra arrow.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_1_modifier_2",
+      "name": "Blood Barrage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Barrage arrow hits heal you for 6%% of your Ranged Damage.",
+      "proposed": "Barrage hits heal you for 6% of your ranged power.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.spirit_wolf.description": {
+      "id": "archers:spirit_wolf",
+      "name": "Spirit Wolf Pack",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Summons 2 Spirit Wolves for 20s. Each has 20 HP plus 40%% of your Ranged Damage, and deals 3 damage plus 15%% of your Ranged Damage per melee hit. Pet bonuses apply.",
+      "proposed": "Summon 2 Spirit Wolves for 20s. Your ranged power and pet bonuses make them stronger.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_2_root",
+      "name": "Improved Spirit Wolf",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Spirit Wolf health is 20 HP plus 50%% of your Ranged Damage, instead of 40%%.",
+      "proposed": "Spirit Wolves gain extra health equal to 10% of your ranged power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_2_modifier_1",
+      "name": "Leader of the Pack",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Summons 1 additional Spirit Wolf, for 3 total.",
+      "proposed": "Summon one extra Spirit Wolf.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_spell_2_modifier_2",
+      "name": "Enduring Bond",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Spirit Wolves remain active 10s longer, for 30s total.",
+      "proposed": "Spirit Wolves last 10s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_passive_1",
+      "name": "Momentum",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain 2 Rhythm stacks for 4s.",
+      "proposed": "Gain 2 Rhythm stacks for 4s.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.archer_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_2_passive_2",
+      "name": "Tactical Maneuver",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+200%% base roll recharge rate for 4s.",
+      "proposed": "Combat roll recharges faster for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.rain_of_arrows.description": {
+      "id": "archers:rain_of_arrows",
+      "name": "Rain of Arrows",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Rains 40 arrows at 60%% of your Ranged Damage per impact. Arrows fall every 0.25s throughout a random 6-block radius that follows the target, with 2.5-block splash per impact.",
+      "proposed": "Rain 40 arrows around your target. Each deals 60% ranged damage with a small splash.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_1_root",
+      "name": "Improved Rain of Arrows",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+5%% Rain of Arrows critical chance.",
+      "proposed": "+5% Rain of Arrows critical chance.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_1_modifier_1",
+      "name": "Torrential Arrows",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Rains 40 arrows every 0.1s across a random 6-block radius. Each impact splashes within 2.5 blocks.",
+      "proposed": "Rain of Arrows drops an arrow every 0.1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_1_modifier_2",
+      "name": "Endless Volley",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Add 20 falling arrows, for 60 total, spaced 0.35s apart across a random 6-block radius. Each deals 60%% ranged damage with a 2.5-block splash.",
+      "proposed": "Rain of Arrows fires 20 extra arrows, spaced 0.35s apart.",
+      "decision": "Rewrite"
+    },
+    "spell.archers.magic_arrow.description": {
+      "id": "archers:magic_arrow",
+      "name": "Magic Arrows",
+      "source_jar": "archers-neoforge-3.1.2+26.2.jar",
+      "current": "Fire 4 seeking arrows, spaced 0.25s apart. Each deals up to 80%% ranged damage at full charge. Partial charges deal less damage. Arrows seek the nearest enemy within 32 blocks, pass through walls and last 10s. Upgrades improve damage or tracking.",
+      "proposed": "Fire 4 homing arrows that pass through walls. Each deals up to 80% ranged damage and lasts 10s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_2_root",
+      "name": "Improved Magic Arrows",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Magic Arrows deal 90%% of your Ranged Damage per arrow at full charge instead of 80%%.",
+      "proposed": "Magic Arrows deal 90% ranged damage at full charge.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_2_modifier_1",
+      "name": "Conjured Arrow",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Fires Magic Arrows upward in a wide spread above you. After 0.5s, they seek the nearest enemy within 32 blocks with medium homing. Hits reveal enemies for 10s.",
+      "proposed": "Magic Arrows launch above you, turn toward enemies and reveal them for 10s when hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_4_spell_2_modifier_2",
+      "name": "Magic Punch",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Magic Arrows deal 100%% of your Ranged Damage per arrow at full charge with Improved Magic Arrows, and gain 150%% extra base knockback.",
+      "proposed": "Magic Arrows deal 100% ranged damage at full charge and knock enemies back farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_passive_1",
+      "name": "Supercharge",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Empower your next normal arrow to deal 125%% damage. Lasts 5s; ranged haste is reduced by 25%% until fired.",
+      "proposed": "Your next normal arrow deals 25% more damage, but takes longer to draw. Use within 5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.archer_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:archer_tier_3_passive_2",
+      "name": "Deflection",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Block the next 3 eligible physical attacks within 10s.",
+      "proposed": "Block the next 3 physical attacks within 10s.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.shock_powder.description": {
+      "id": "rogues:shock_powder",
+      "name": "Shock Powder",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Stuns enemies within 5 blocks for 3s, or 1s for high-health mobs and players at 24 HP or more. Improved adds 1s. Mob threshold: 50 HP plus twice your melee power; players below 24 current HP receive the longer stun.",
+      "proposed": "Stun enemies within 4 blocks for 3s. Tougher targets are stunned for 1s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_1_root",
+      "name": "Improved Shock Powder",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shock Powder stuns last 1s longer: 2 or 4s.",
+      "proposed": "Shock Powder stuns last 1s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_1_modifier_1",
+      "name": "Explosive Powder",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shock Powder causes a guaranteed explosion dealing 50%% melee damage within 4 blocks, without distance falloff.",
+      "proposed": "Shock Powder explodes for 50% melee damage around each enemy hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_1_modifier_2",
+      "name": "Smoke Screen",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shock Powder leaves a smoke screen for 8s, granting allies inside 50%% evasion.",
+      "proposed": "Shock Powder leaves smoke for 8s, granting you and allies inside 50% evasion.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.slice_and_dice.description": {
+      "id": "rogues:slice_and_dice",
+      "name": "Slice & Dice",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "For 10s, your next 10 successful melee hits deal 15%% extra melee damage and gently pull enemies toward you. Each hit grants 5%% evasion for 4s, stacking up to 50%%.",
+      "proposed": "Your next 10 melee hits add 15% melee damage, pull enemies closer and build evasion for 4s, up to 50%.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_2_root",
+      "name": "Improved Slice and Dice",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Slice and Dice cooldown is reduced by 2 seconds.",
+      "proposed": "Reduce Slice & Dice's cooldown by 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_2_modifier_1",
+      "name": "Blades of Fury",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Slice and Dice empowers 4 additional successful hits, for 14 total.",
+      "proposed": "Slice & Dice empowers 4 extra hits.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_2_modifier_2",
+      "name": "Fleet Footed",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Empowered Slice & Dice hits grant 3%% base movement speed per stack, up to 12 stacks, for 4s. Further hits refresh the duration.",
+      "proposed": "Slice & Dice hits build 3% movement speed per stack, up to 36%, for 4s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_1_passive_1",
+      "name": "Coated Blades",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Apply stacking Poison for 8s.",
+      "proposed": "Apply stacking Poison for 8s.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_1_passive_2",
+      "name": "Fracture",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce armor by 2 plus 10%% melee power per stack, up to 3 stacks. Lasts 6s; further applications refresh it.",
+      "proposed": "Shred armor for 6s, stacking 3 times. Your melee power makes it stronger.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.shadow_step.description": {
+      "id": "rogues:shadow_step",
+      "name": "Shadowstep",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Teleport behind an enemy within 14 blocks. Disrupt nearby hostile mobs within 4 blocks for 1.5 seconds. Killing an enemy within 4 seconds of a successful Shadowstep resets its cooldown.",
+      "proposed": "Teleport behind an enemy and briefly disrupt nearby mobs. Kill an enemy within 4s to reset Shadowstep's cooldown.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_1_root",
+      "name": "Improved Shadow Step",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shadowstep reaches 18 blocks instead of 14.",
+      "proposed": "Shadowstep reaches 4 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_1_modifier_1",
+      "name": "Cloak of Shadows",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shadowstep grants immunity to incoming damage for 0.5 seconds.",
+      "proposed": "Shadowstep makes you immune to damage for 0.5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_1_modifier_2",
+      "name": "Ambush",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Shadowstep immediately deals 40%% melee damage and applies Blindness I, Weakness I and Slowness I for 2 seconds.",
+      "proposed": "Shadowstep deals 40% melee damage and blinds, weakens and slows the enemy for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.bear_trap.description": {
+      "id": "rogues:bear_trap",
+      "name": "Bear Trap",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Place one trap 3 blocks ahead. After arming for 1s it becomes hidden. An enemy within 1 block triggers 40%% dual-melee damage and 1s of root to enemies within 1.5 blocks, plus Slowness I for 3s. Jumping enemies can trigger it.",
+      "proposed": "Place a hidden trap ahead. It deals 40% dual-wield damage, roots enemies for 1s and slows them for 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_2_root",
+      "name": "Improved Bear Trap",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Bear Trap deals 60%% dual-melee damage instead of 40%%.",
+      "proposed": "Bear Trap deals 60% dual-wield damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_2_modifier_1",
+      "name": "Serrated Traps",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Apply Bleed for 2.5 seconds. Every 1.25 seconds it deals 2 HP while stationary or 6 HP while moving. Bleed does not scale or stack levels.",
+      "proposed": "Bear Trap causes Bleed for 2.5s. Bleed hurts more when the enemy moves.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_spell_2_modifier_2",
+      "name": "Extensive Coverage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Bear Trap affects a 2.25-block radius and activates when enemies enter within 1.5 blocks.",
+      "proposed": "Bear Trap triggers from farther away and catches enemies in a larger area.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_passive_1",
+      "name": "Sidestep",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+20%% evasion for 2s. Taking damage does not end the buff.",
+      "proposed": "Gain 20% evasion for 2s. Taking damage does not remove it.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_passive_2",
+      "name": "Opportunist",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "After rolling, your next melee hit is guaranteed to critically strike.",
+      "proposed": "After rolling, your next melee hit is guaranteed to critically strike.",
+      "decision": "Keep"
+    },
+    "spell.rogues.vanish.description": {
+      "id": "rogues:vanish",
+      "name": "Vanish",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Enter Stealth for 7s with 50%% less base movement speed. Attacking, casting, using items or being hit ends Stealth.",
+      "proposed": "Become hidden for 7s but move 50% slower. Attacking, casting, using items or taking a hit ends Stealth.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_1_root",
+      "name": "Improved Vanish",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Vanish reduces base movement speed by 40%% instead of 50%%. Stealth still lasts 7s.",
+      "proposed": "Vanish slows you by 40% instead of 50%.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_1_modifier_1",
+      "name": "Stealth Speed",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce the remaining Vanish movement penalty by another 20%%, leaving 20%% less base movement speed with Improved Vanish.",
+      "proposed": "Move faster during Vanish, reducing its remaining movement penalty.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_1_modifier_2",
+      "name": "Shadow Stealth",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Attacking, casting spells, using items and taking hits no longer end Vanish. Stealth still expires after 7s.",
+      "proposed": "Actions and incoming hits no longer end Vanish. Stealth still expires normally.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.mutilate.description": {
+      "id": "rogues:mutilate",
+      "name": "Mutilate",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Strike enemies in front of you for 100%% combined dual-wield damage.",
+      "proposed": "Strike enemies in front of you for 100% dual-wield damage.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_2_root",
+      "name": "Improved Mutilate",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Reduce Mutilate's cooldown by 2s.",
+      "proposed": "Reduce Mutilate's cooldown by 2s.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_2_modifier_1",
+      "name": "Crimson Strikes",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Mutilate heals you for 10%% of your melee damage per enemy struck.",
+      "proposed": "Mutilate heals you for 10% of your dual-wield power per enemy hit.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_4_spell_2_modifier_2",
+      "name": "Bloody Strikes",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Apply Bleed for 7.5 seconds. Every 1.25 seconds it deals 2 HP while stationary or 6 HP while moving. Bleed does not scale or stack levels.",
+      "proposed": "Mutilate causes Bleed for 7.5s. Bleed hurts more when the enemy moves.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_passive_1",
+      "name": "Cheat Death",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Survive a fatal hit with 3s damage immunity, Speed III and Jump Boost III. Gain +30%% evasion for 6s.",
+      "proposed": "Survive a fatal enemy hit with 3s immunity, Speed III and Jump Boost III. Gain 30% evasion for 6s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:rogue_tier_3_passive_2",
+      "name": "Prepared Counter",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "After evading an enemy attack, your next basic melee hit adds 25%% of melee power. One charge; melee skills cannot consume it.",
+      "proposed": "After evading an enemy attack, your next basic melee hit adds 25% of your melee power.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.throw.description": {
+      "id": "rogues:throw",
+      "name": "Throw Weapon",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Throw your weapon for 40%%-80%% melee damage, increasing with charge. Slows enemies for 1s and leaves you weakened for 2s.",
+      "proposed": "Throw your weapon for 40-80% melee damage, depending on charge. Briefly slow the target and weaken yourself.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_1_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_1_root",
+      "name": "Improved Throw Weapon",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Weapon deals 50%%-90%% melee damage, increasing with charge.",
+      "proposed": "Throw Weapon deals 50-90% melee damage, depending on charge.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_1_modifier_1",
+      "name": "Strong Throw",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Weapon pierces the first enemy and seeks one more with slight homing, hitting up to 2 enemies.",
+      "proposed": "Throw Weapon pierces one enemy and seeks a second target.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_1_modifier_2",
+      "name": "Head Throw",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Weapon deals 60%%-100%% melee damage, increasing with charge, and stuns for 0.25s.",
+      "proposed": "Throw Weapon deals 60-100% melee damage and briefly stuns the target.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.throw_net.description": {
+      "id": "rogues:throw_net",
+      "name": "Throw Net",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Throw a net for 7.5%%-15%% melee damage, increasing with charge. Roots eligible enemies for 2s and pulls them toward you.",
+      "proposed": "Throw a net that deals 7.5-15% melee damage, roots weaker enemies for 2s and pulls them closer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_2_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_2_root",
+      "name": "Improved Throw Net",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Net gains 6 blocks of charged range, reaching 30 blocks at full charge.",
+      "proposed": "Throw Net travels 6 blocks farther when charged.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_2_modifier_1",
+      "name": "Bigger Net",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Net also hits enemies within 5 blocks of impact. Each enemy's strength determines whether it can be rooted and pulled.",
+      "proposed": "Throw Net catches enemies around its impact.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_spell_2_modifier_2",
+      "name": "Multiple Nets",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Throw Net has a 4-second base cooldown instead of 6s. Its root lasts 1.5s instead of 2.",
+      "proposed": "Throw Net's cooldown is 2s shorter, but its root is 0.5s shorter.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_1_passive_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_1_passive_1",
+      "name": "Killing Spree",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+2%% melee damage and damage reduction per stack, up to 5 stacks. Lasts 8s; hits refresh it.",
+      "proposed": "Hits build 2% melee damage and damage reduction per stack, up to 10%, for 8s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_1_passive_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_1_passive_2",
+      "name": "Endured Vitality",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain 1 armor plus 6%% melee power and 1 maximum heart per stack, up to 10 stacks. Lasts 8s; hits refresh it. New hearts are healed; refreshing at maximum stacks does not heal.",
+      "proposed": "Hits grant armor and 1 extra heart per stack for 8s, up to 10 stacks. Your melee power strengthens the armor; only new hearts heal.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.charge.description": {
+      "id": "rogues:charge",
+      "name": "Wild Charge",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "+50%% base movement speed and +25%% knockback resistance for 2s. Break free of movement impairments and prevent new ones for 2s. Usable while controlled.",
+      "proposed": "Move 50% faster and resist knockback for 2s. Break free of movement control and resist it for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_1_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_1_root",
+      "name": "Improved Wild Charge",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Wild Charge lasts 1s longer: 3s total. Its control protection remains 2s.",
+      "proposed": "Wild Charge's speed and knockback resistance last 1s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_1_modifier_1",
+      "name": "Endurance",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Wild Charge grants full knockback immunity for its entire duration.",
+      "proposed": "Wild Charge makes you immune to knockback.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_1_modifier_2",
+      "name": "Concussion Blow",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Your next melee hit after Wild Charge stuns for 2s. Use within 4s.",
+      "proposed": "Your next melee hit after Wild Charge stuns for 2s. Use within 4s.",
+      "decision": "Keep"
+    },
+    "spell.rogues.shout.description": {
+      "id": "rogues:shout",
+      "name": "Demoralizing Shout",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Weaken enemy melee, ranged and magic power by 8%% and reveal them for 6s. Break free of movement impairments and prevent new ones for 3s. Usable while controlled.",
+      "proposed": "Weaken enemy attack and magic power by 8% and reveal them for 6s. Break free of movement control and resist it for 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_2_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_2_root",
+      "name": "Improved Shout",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Demoralizing Shout and Battle Shout reach 4 blocks farther: 16 blocks total.",
+      "proposed": "Shout reaches 4 blocks farther.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_2_modifier_1",
+      "name": "Battle Shout",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Casting Demoralizing Shout grants you and party allies 8%% base melee, ranged and offensive magic power for 6s. Uses the same 12-block radius, or 16 with Improved Shout.",
+      "proposed": "Demoralizing Shout grants you and party allies 8% more melee, ranged and magic power for 6s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_spell_2_modifier_2",
+      "name": "Challenging Shout",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Demoralizing Shout also deals 10%% melee damage, makes hostile mobs target you and stuns enemies for 0.2s, including bosses.",
+      "proposed": "Demoralizing Shout deals 10% melee damage, draws mobs to you and stuns enemies for 0.2s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_passive_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_passive_1",
+      "name": "Warm Up",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Restore 1 HP plus 6%% melee power.",
+      "proposed": "Restore 1 HP plus 6% melee power.",
+      "decision": "Keep"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_2_passive_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_2_passive_2",
+      "name": "Momentum",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Ready 5 melee hits for 6s. Each grants +2%% attack and movement speed, up to 10%% each, for 3s. Hits refresh the buffs.",
+      "proposed": "Your next 5 melee hits build attack and movement speed, up to 10% each for 3s.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.mortal_strike.description": {
+      "id": "rogues:mortal_strike",
+      "name": "Berserker",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Each of 5 pulses grants +15%% attack speed, +10%% basic-attack damage, +15%% knockback resistance and +20%% damage taken for 12s. The final pulse fully heals and grants Speed IV for 2s. Expiry fully heals. A fatal hit ends the buff and fully heals, but puts early skills on cooldown and causes Nausea for 10s and stun for 5s.",
+      "proposed": "Build attack speed, basic damage and knockback resistance for 12s, but take 20% more damage per stack. Full channel and expiry fully heal you. Full channel grants Speed IV. A fatal hit heals you but ends Berserker, locks early skills and causes stun and Nausea.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_1_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_1_root",
+      "name": "Improved Berserker",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Berserker lasts 15s instead of 12s.",
+      "proposed": "Berserker lasts 3s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_1_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_1_modifier_1",
+      "name": "Brutality",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+4%% critical chance per Berserker pulse, up to 20%%. Lasts until Berserker ends.",
+      "proposed": "Berserker grants 4% critical chance per pulse, up to 20%.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_1_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_1_modifier_2",
+      "name": "Lethality",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Melee hits restore 1 heart during Berserker. Lose 1 HP every 0.5s, ignoring defenses.",
+      "proposed": "Melee hits heal 1 heart during Berserker, but you lose 1 HP every 0.5s.",
+      "decision": "Rewrite"
+    },
+    "spell.rogues.last_stand.description": {
+      "id": "rogues:last_stand",
+      "name": "Last Stand",
+      "source_jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "current": "Each pulse adds 20%% maximum health and heals the added health, up to 100%%. Grants brief damage immunity, Regeneration I and knockback immunity.",
+      "proposed": "Channel up to 5 pulses, each adding 20% maximum health and healing the added health. Gain brief immunity, regeneration and knockback immunity.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_2_root.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_2_root",
+      "name": "Improved Last Stand",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Last Stand buffs last 20s instead of 15s. Pulse damage immunity stays at 0.6s.",
+      "proposed": "Last Stand lasts 5s longer.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_2_modifier_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_2_modifier_1",
+      "name": "Juggernaut",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Each Last Stand pulse adds 10%% size and 3%% damage reduction, up to 50%% size and 15%% reduction. Lasts 20s with Improved Last Stand; pulses refresh it.",
+      "proposed": "Last Stand builds size and damage reduction with each pulse, up to 50% size and 15% reduction.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_4_spell_2_modifier_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_4_spell_2_modifier_2",
+      "name": "Sentinel",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "+1%% melee damage per direct hit taken during Last Stand, up to 10%%. Refreshes the bonus and Regeneration I for 5s.",
+      "proposed": "Hits taken during Last Stand build melee damage up to 10% and refresh regeneration for 5s.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_passive_1.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_passive_1",
+      "name": "Enrage",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain +4%% melee damage and +8%% size at each health threshold, up to +24%% damage and +48%% size. Bonuses adjust as your health changes.",
+      "proposed": "Gain more melee damage and size as your health falls, up to 24% damage and 48% size.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.warrior_tier_3_passive_2.description": {
+      "id": "skill_tree_rpgs:warrior_tier_3_passive_2",
+      "name": "Tenacity",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Gain 6 HP plus 30%% melee power as absorption for 12s. Stun enemies within 5 blocks for 2s.",
+      "proposed": "Gain a shield for 12s that grows with your melee power. Stun nearby enemies for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_bolt.description": {
+      "id": "wizards:arcane_bolt",
+      "name": "Arcane Bolt",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Shoots a bolt of energy, causing 70%% Arcane damage.",
+      "proposed": "Fire an energy bolt that deals 70% Arcane damage.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_blast.description": {
+      "id": "wizards:arcane_blast",
+      "name": "Arcane Blast",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Blast the target for 80%% Arcane damage and gain an Arcane Charge, up to 3 stacks before upgrades.",
+      "proposed": "Deal 80% Arcane damage and gain an Arcane Charge, up to 3 charges.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fireball.description": {
+      "id": "wizards:fireball",
+      "name": "Fireball",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch a fireball, dealing 80%% Fire damage and setting the target on fire.",
+      "proposed": "Launch a fireball for 80% Fire damage and burn the target.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_scorch.description": {
+      "id": "wizards:fire_scorch",
+      "name": "Scorch",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Scorches the target, causing 60%% Fire damage and setting it on fire.",
+      "proposed": "Deal 60% Fire damage and set the target on fire.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.fire_blast.description": {
+      "id": "wizards:fire_blast",
+      "name": "Pyroblast",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch an explosive fireball, dealing up to 100%% Fire damage within 2.5 blocks. Splash damage decreases with distance.",
+      "proposed": "Fire an explosive fireball for up to 100% Fire damage. Splash damage weakens with distance.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frostbolt.description": {
+      "id": "wizards:frostbolt",
+      "name": "Frostbolt",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch a frost projectile that ricochets to 2 additional nearby targets before upgrades, dealing 80%% Frost damage and slowing enemies on impact.",
+      "proposed": "Fire an ice bolt that slows enemies and jumps to 2 more targets, dealing 80% Frost damage per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_shard.description": {
+      "id": "wizards:frost_shard",
+      "name": "Frost Shard",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Launch a frost shard that can bounce off walls, dealing 60%% Frost damage on impact.",
+      "proposed": "Fire an ice shard that bounces off walls and deals 60% Frost damage.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.frost_shield_burst.description": {
+      "id": "wizards:frost_shield_burst",
+      "name": "Frost Shield Expiry Burst",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Freezes enemies within 5 blocks for 2s when Frost Shield naturally expires. Deals no damage.",
+      "proposed": "Freeze nearby enemies for 2s when Frost Shield expires.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.arcane_barrage_bolt.description": {
+      "id": "wizards:arcane_barrage_bolt",
+      "name": "Arcane Emitter Bolt",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Emitter projectile dealing 40%% of emitter Arcane damage. Ordinary wand Arcane Bolt is unchanged.",
+      "proposed": "Deal 40% of the emitter's Arcane power as damage.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.burst_blink_explosion.description": {
+      "id": "wizards:burst_blink_explosion",
+      "name": "Burst Blink Explosion",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deals 50%% Arcane damage within 5 blocks at either Blink position.",
+      "proposed": "Deal 50% Arcane damage around a Blink location.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.elemental_frost_shard.description": {
+      "id": "wizards:elemental_frost_shard",
+      "name": "Elemental Frost Shard",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deal 100%% of the elemental's own Frost power as damage.",
+      "proposed": "Deal 100% of the elemental's Frost power as damage.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.elemental_frost_nova.description": {
+      "id": "wizards:elemental_frost_nova",
+      "name": "Elemental Super Nova",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deal 180%% of the elemental's own Frost power and freeze enemies for 2s.",
+      "proposed": "Deal 180% of the elemental's Frost power and freeze enemies for 2s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.legion_frost_nova.description": {
+      "id": "wizards:legion_frost_nova",
+      "name": "Legion Super Nova",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deal 180%% of this elemental's own Frost power within 6 blocks, freezing enemies for 0.5s.",
+      "proposed": "Deal 180% of the elemental's Frost power and freeze nearby enemies for 0.5s.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.ancient_hydra_breath.description": {
+      "id": "wizards:ancient_hydra_breath",
+      "name": "Ancient Hydra Fire Breath",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Continuously breathe fire in a 40-degree cone, dealing 24%% of own Fire power per hit. Targets the nearest visible enemy within 12 blocks.",
+      "proposed": "Breathe fire at nearby enemies, dealing 24% of the hydra's Fire power per hit.",
+      "decision": "Rewrite"
+    },
+    "spell.wizards.hydra_fireball.description": {
+      "id": "wizards:hydra_fireball",
+      "name": "Hydra Fireball",
+      "source_jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "current": "Deal 55%% of the hydra's own Fire power.",
+      "proposed": "Deal 55% of the hydra's Fire power.",
+      "decision": "Rewrite"
+    },
+    "spell.skill_tree_rpgs.rogue_tier_2_spell_1_modifier_1_bonus.description": {
+      "id": "skill_tree_rpgs:rogue_tier_2_spell_1_modifier_1_bonus",
+      "name": "Explosive Powder",
+      "source_jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "current": "Companion marker; adds no extra stun duration.",
+      "proposed": "No additional effect.",
+      "decision": "Rewrite"
+    }
+  },
+  "counts": {
+    "total": 196,
+    "class_entries": 180,
+    "weapon_attacks": 7,
+    "internal_helpers": 9,
+    "kept": 20,
+    "rewritten": 176,
+    "words_before": 3089,
+    "words_proposed": 2149
+  }
+}

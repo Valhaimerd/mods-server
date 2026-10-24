@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-24",
+  "dedicated": "PASS 1311 Warrior/shield/Rogue/party checks",
+  "client": "PASS 43 native client tooltip checks",
+  "mutilate_coefficient": 1,
+  "prepared_counter_bonus_M": 0.25,
+  "prepared_counter_cooldown_s": 2,
+  "example_basic_damage": [
+    20,
+    25,
+    20
+  ],
+  "readiness": "one nonstacking charge; persists until used or dispelled; spells and protected targets cannot consume it",
+  "pdf_pages": 77,
+  "pdf_pixel_changed_pages": [
+    17
+  ],
+  "pdf_sha256": "7129e78f61cec066d279e09dded380b50beeb6fbe89c304b00f0d2c67f69d368",
+  "archives": {
+    "rogues-neoforge-3.1.2+26.2.jar": "00871e3a229374ed3610ba66f7a5a20413a10471abbfd0e9ca505e156322541b",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "af812eaa2ff9da97b9013e973a86fbd55032fb905f12361440c32c98acf0c62a",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "85f5b0fa3218b093a83a4cd7d8e9118a9af05566d9fe25f7884605f960da58c9"
+  },
+  "distribution": "repository mods/fixed copies only; no personal installation or push"
+}

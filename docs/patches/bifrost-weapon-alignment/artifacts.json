@@ -1,0 +1,21 @@
+{
+  "jar": "bifrost-teleport-0.4.3-alpha-neoforge-mc26.2.jar",
+  "before_sha256": "bc8647266b1de9a73cd719374ef026ddc4a1164ff8f29b29ac04348e9cd780ca",
+  "sha256": "a92d59bccdd41199d60edd24963d6b2c2a188f1cb61d8bd682d72c046c0df855",
+  "changed": [
+    "com/emandev/bifrost/ModItems.class",
+    "META-INF/neoforge.mods.toml",
+    "assets/bifrost/models/item/stormbreaker.json"
+  ],
+  "added": [
+    "data/bifrost/weapon_attributes/heimdalls_sword.json",
+    "data/bifrost/weapon_attributes/stormbreaker.json",
+    "data/bifrost/weapon_attributes/thors_hammer.json",
+    "data/minecraft/tags/item/swords.json",
+    "data/paladins/tags/item/great_hammers.json",
+    "data/paladins/tags/item/maces.json",
+    "data/rpg_series/tags/item/weapon_type/hammer.json",
+    "data/rpg_series/tags/item/weapon_type/mace.json",
+    "data/rpg_series/tags/item/weapon_type/sword.json"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "jar": "iourusraces-1.1.0.jar",
+    "before_sha256": "494ff5e18722bca913369ecd771aebd9609b3825b610a2c8614227a55a70b4d4",
+    "sha256": "b50ec03a0435dc4c747cc8a7d3be89066be69e6c1001bc7f0b711d81b1196629",
+    "changed": [
+      "com/eiden/iourusraces/mixin/EntityCollisionContextMixin.class",
+      "com/eiden/iourusraces/mixin/LightmapMixin.class",
+      "com/eiden/iourusraces/race/PlayerRaceData.class",
+      "com/eiden/iourusraces/race/RaceAttributes.class",
+      "assets/iourusraces/lang/en_us.json",
+      "assets/iourusraces/lang/es_es.json"
+    ],
+    "added": [
+      "com/eiden/iourusraces/client/ClientRaceLifecycle.class",
+      "com/eiden/iourusraces/race/RaceLifecycleRules.class",
+      "com/eiden/iourusraces/race/RaceVisualRules.class"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "bacee6c902fd262185c849268d25f8e04ab18ed232f11b6460e2e92017e01838",
+    "sha256": "2cae125c2fbff04355c9dbf362a0a06311116a1f6e7b5fcdb7415b435576e0f4",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "97f2d61cc7e29fef34eac3f3761c951ce4d824319d2ceab9c37f92affcc7e691",
+    "sha256": "c8962f1334fb42b6ea8203c3fc38ef4fd1202e8ee0df32667cf81897a50f61d8",
+    "changed": [
+      "net/spell_engine/api/effect/BleedStatusEffect.class",
+      "spell_engine.mixins.json"
+    ],
+    "added": [
+      "net/spell_engine/mixin/flatbleed/SingleBleedMixin.class"
+    ]
+  }
+]

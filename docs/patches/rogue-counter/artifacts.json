@@ -1,0 +1,36 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "d2912d580b38b30dbb5346e3bf61bceace1664334e87a3a86274417157b3888e",
+    "sha256": "00871e3a229374ed3610ba66f7a5a20413a10471abbfd0e9ca505e156322541b",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/mutilate.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "0fe8226c87d9eddb66d4a8f8ad7ae3ff62dc705c772e3f16d8eac0f9da9b3fd2",
+    "sha256": "af812eaa2ff9da97b9013e973a86fbd55032fb905f12361440c32c98acf0c62a",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/prepared_counter_ready.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "99dca3f5e4793294e0766e2c396591ddeab381bf6f27775e17b91e294f3a1259",
+    "sha256": "85f5b0fa3218b093a83a4cd7d8e9118a9af05566d9fe25f7884605f960da58c9",
+    "changed": [
+      "spell_engine.mixins.json"
+    ],
+    "added": [
+      "net/spell_engine/internals/PreparedCounter.class",
+      "net/spell_engine/mixin/roguecounter/CounterMixin.class"
+    ]
+  }
+]

@@ -5,8 +5,12 @@ ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;WO
 for r in json.loads((HERE/'artifacts.json').read_text()):
  before=WORK/'before'/r['jar'];after=folder/r['jar']
  assert hashlib.sha256(before.read_bytes()).hexdigest()==r['before_sha256']
- assert hashlib.sha256(after.read_bytes()).hexdigest()==r['sha256']
- with ZipFile(before) as a,ZipFile(after) as b:
+ next_file=ROOT/'docs/patches/skill-tooltip-polish/artifacts.json'
+ layer=next((x for x in json.loads(next_file.read_text()) if x['jar']==r['jar'] and x['before_sha256']==r['sha256']),None) if next_file.exists() and folder.resolve()==(ROOT/'mods').resolve() else None
+ audited=ROOT/'tmp/skill-tooltip-polish/before'/r['jar'] if layer else after
+ assert hashlib.sha256(audited.read_bytes()).hexdigest()==r['sha256']
+ assert hashlib.sha256(after.read_bytes()).hexdigest()==(layer['sha256'] if layer else r['sha256'])
+ with ZipFile(before) as a,ZipFile(audited) as b:
   assert a.namelist()==b.namelist() and b.testzip() is None
   assert [n for n in a.namelist() if a.read(n)!=b.read(n)]==r['changed']
   if r['jar'].startswith('skill_tree'):

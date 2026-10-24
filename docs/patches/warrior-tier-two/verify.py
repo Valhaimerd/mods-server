@@ -11,7 +11,7 @@ for r in json.loads((HERE/'artifacts.json').read_text()):
  audited=ROOT/'tmp/warrior-tier-three/before'/r['jar'] if downstream else active
  assert hashlib.sha256(audited.read_bytes()).hexdigest()==r['sha256']
  expected=downstream['sha256'] if downstream else r['sha256']
- for suffix in ['class-descriptions','tenacity-followup']:
+ for suffix in ['class-descriptions','tenacity-followup','skill-tooltip-polish']:
   next_file=ROOT/'docs/patches'/suffix/'artifacts.json'
   layer=next((x for x in json.loads(next_file.read_text()) if x['jar']==r['jar'] and x['before_sha256']==expected),None) if next_file.exists() else None
   if layer:expected=layer['sha256']

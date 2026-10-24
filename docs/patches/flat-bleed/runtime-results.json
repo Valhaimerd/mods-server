@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-24",
+  "dedicated": "PASS 49 focused Bleed checks",
+  "client": "PASS 43 native client tooltip/loading checks",
+  "stationary_HP": 2,
+  "moving_horizontal_HP": 6,
+  "interval_ticks": 25,
+  "amplifier": 0,
+  "power_scaling": false,
+  "durations_seconds": {
+    "Serrated Traps": 2.5,
+    "Bloody Strikes": 7.5
+  },
+  "damage_source": "unchanged ownerless magic; normal defenses",
+  "rebase": "latest concurrent Warrior Throw changes preserved and final hashes retested",
+  "broad_fixture": "Outdated unrelated Throw expectation; no broad regression pass claimed",
+  "archives": {
+    "skill_tree-neoforge-1.6.1+26.2.jar": "2cae125c2fbff04355c9dbf362a0a06311116a1f6e7b5fcdb7415b435576e0f4",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "c8962f1334fb42b6ea8203c3fc38ef4fd1202e8ee0df32667cf81897a50f61d8"
+  },
+  "distribution": "repository mods and fixed copies only; no personal installation or push"
+}

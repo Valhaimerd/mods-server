@@ -1,0 +1,8 @@
+PASS normal held models present
+FAIL Vanish hides right-hand render model
+FAIL Vanish hides left-hand render model
+FAIL Vanish clears held render snapshots
+PASS actual equipped items untouched
+FAIL first-person cancellation injected
+PASS same render state restores both models after Vanish
+PASS ordinary Invisibility retains native held models

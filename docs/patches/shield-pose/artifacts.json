@@ -1,0 +1,24 @@
+{
+  "jar": "punchy-2.8f-neoforge-26.2.jar",
+  "before_sha256": "f4cf425fd48c1328d8026912305e66eea28e61e85aa23394d475db7e9c657f75",
+  "sha256": "5236aa6d2df03a82562bfce49f077c5a736e0f05b6fbe9b767194834bbe4ff67",
+  "checks": {
+    "punchy/client/render/ShieldImpactPhysics.class": 3,
+    "punchy/client/render/ToolKindResolver.class": 3,
+    "punchy/client/state/HandEquipStateMachine.class": 3,
+    "punchy/client/state/ShieldStateMachine.class": 2,
+    "punchy/client/state/UseItemStateMachine.class": 1,
+    "punchy/config/PunchyConfig.class": 1,
+    "punchy/mixin/client/IsUsingItemPropertyMixin.class": 1,
+    "punchy/mixin/client/UseDurationPropertyMixin.class": 1
+  },
+  "added": [
+    "punchy/compat/ShieldKinds.class",
+    "punchy/mixin/client/ComponentShieldPoseMixin.class"
+  ],
+  "inputs": {
+    "ShieldKinds.java": "e467c2bc8c91f30fe9b24ba9f5c51e0ecd9aebc7dce65ee8077fa24c9e62d33b",
+    "PatchShield.java": "078dd9c59894ab62e77f4a325a49647c0b6993fa9192a69432860e98e78a55b7",
+    "ComponentShieldPoseMixin.java": "b2d1b7a33c303657aab12aee63f2e7349e24af57123a681ebc625d4a4d909913"
+  }
+}

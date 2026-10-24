@@ -1,0 +1,65 @@
+PASS Spring generator persists across restart
+PASS Player assignment persists across restart
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #0
+PASS Same player keeps assignment #0
+PASS Native spawn helper uses assignment #0
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #1
+PASS Same player keeps assignment #1
+PASS Native spawn helper uses assignment #1
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #2
+PASS Same player keeps assignment #2
+PASS Native spawn helper uses assignment #2
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #3
+PASS Same player keeps assignment #3
+PASS Native spawn helper uses assignment #3
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #4
+PASS Same player keeps assignment #4
+PASS Native spawn helper uses assignment #4
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #5
+PASS Same player keeps assignment #5
+PASS Native spawn helper uses assignment #5
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #6
+PASS Same player keeps assignment #6
+PASS Native spawn helper uses assignment #6
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves player spacing
+PASS Spring reserves world spawn
+PASS Spring assignment stays in configured area #7
+PASS Same player keeps assignment #7
+PASS Native spawn helper uses assignment #7
+PASS Different players receive different random coordinates
+PASS Default respawn Mixin routes to assigned location
+PASS Default respawn uses expected dimension

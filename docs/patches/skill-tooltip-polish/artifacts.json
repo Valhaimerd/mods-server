@@ -1,0 +1,86 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "f086c38d5be1e6bb0c4f858af3bc0a1d39698b0153df4d602e7d6f83824272b2",
+    "sha256": "8d635f07597d0345eb5a956b4402519a0649116987199aa55ddcde328349ab59",
+    "changed": [
+      "assets/archers/lang/en_us.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "9a07d9d9ed5e35f410804bab9d5d1b12b8d45b2525ee2f1e2d11d585add9f851",
+    "sha256": "5ba7584317cb27515bdb8a4991b9d8909970cda8a05725ac458c223f200c9a26",
+    "changed": [
+      "assets/rogues/lang/en_us.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "7fed47b12e28a15b9f3161f0a54319bd06495abdf216f82912d3a45721519443",
+    "sha256": "993428cd907b94a5555ad8d9dbab42a85f1af97df59a4d3f1543baba9fc3c55d",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "9da1fd361cb9ce3b32df759f161497f7b8671c76d1a6ca5406c599b3450caf9c",
+    "sha256": "24690ca5941a7b4c7e359e8f4e3df10b6a157fe0cde57d52d72f9ffb1242cb81",
+    "changed": [
+      "assets/spell_engine/lang/en_us.json",
+      "spell_engine.mixins.json"
+    ],
+    "added": [
+      "net/spell_engine/mixin/client/SkillTooltipMixin.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "022c18785dc7847713890af26d82ce2be063b6a1b313be56d303fdeb437aba76",
+    "sha256": "20b4f233801a948ffe9810eacf84553763ba88fda72c4530f97e459d9288cfbb",
+    "changed": [
+      "assets/wizards/lang/en_us.json"
+    ],
+    "added": []
+  }
+]

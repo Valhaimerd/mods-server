@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " E ",
+    "GCG",
+    "OOO"
+  ],
+  "key": {
+    "E": "minecraft:end_rod",
+    "G": "minecraft:gold_ingot",
+    "C": "minecraft:crying_obsidian",
+    "O": "minecraft:obsidian"
+  },
+  "result": {
+    "id": "bifrost:bifrost_marker",
+    "count": 1
+  }
+}

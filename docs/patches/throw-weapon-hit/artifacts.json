@@ -1,0 +1,22 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "4a736325d4b8985157e9c231cd3df455e562f2f5a6746ef7eef6100cc3876a2e",
+    "sha256": "bacee6c902fd262185c849268d25f8e04ab18ed232f11b6460e2e92017e01838",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_2_spell_1_modifier_1.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "3811149e35b46130a90fc54e457ad3c4c5df774dbf29e0bd96fb0ebb66fa94a6",
+    "sha256": "97f2d61cc7e29fef34eac3f3761c951ce4d824319d2ceab9c37f92affcc7e691",
+    "changed": [
+      "spell_engine.mixins.json",
+      "net/spell_engine/entity/WarriorRules$Drag.class",
+      "net/spell_engine/entity/WarriorRules.class",
+      "net/spell_engine/mixin/warrior/ThrowContextAccess.class"
+    ]
+  }
+]

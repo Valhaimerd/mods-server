@@ -136,6 +136,10 @@ The current three Warrior repacks include six-second nets (four with Multiple Ne
 
 ## Full Asgardian expansion - 24 October 2026
 
+The [marker occlusion repair](../docs/patches/asgardian-expansion/marker-occlusion-fix.md) removes the solid-cube face-culling assumption from Bifrost's inset decorative marker. Adjacent terrain now renders through its model gaps instead of exposing the world below. Collision, marker saves, IDs and travel are retained, including the preceding beam repair. The same-filename replacement is local and not pushed; no personal installation is changed.
+
+The subsequent [Bifrost visibility repair](../docs/patches/asgardian-expansion/visibility-fix.md) restores a visible ground-level effect for the caster and arriving passengers. The previous tall display column rose above the first-person view, and most particle origins were high above the player. A bounded inward-facing rim and nearby particle origins now accompany the original sweep. This does not change transport/capture timing or controls; the handbook remains accurate. The same active filename is retained; the predecessor is archived locally. No personal installation is modified and this follow-up is not pushed.
+
 The full 2026-10-24 Asgardian/Bifrost expansion adds server-authoritative weapon skills, bound hammer/axe ownership and protected final-death recovery, mixed-race passenger transit, original models and four phase sounds. The same active filename is retained. See [the implementation and isolated test scope](../docs/patches/asgardian-expansion/README.md). This extends the earlier travel-only alignment; neither isolated runtime checks nor the initial coefficients establish final class balance.
 
 ## Warrior ultimates - 24 October 2026
@@ -147,3 +151,93 @@ Installed same-filename Rogues, Skill Tree and Spell Engine overlay: Berserker, 
 Audited 135 Archer/Arcane/Fire/Frost descriptions and simplified 55. Same-filename language-only Archers, Wizards and Skill Tree overlays preserve all gameplay resources and bytecode. Percentage descriptions, ranges and timings replace template tokens; Nimble Shield wording now matches its half-penalty offset. [Audit and rebuild record](../docs/patches/class-descriptions/README.md). Previous archives are retained in ignored retired packs; fixed copies match.
 
 Confirmed Warrior follow-up: Tenacity now triggers at 1-30% HP with twelve-second absorption. Enrage size stacking and the five ultimate cooldown steps are confirmed. [Rebuild and isolated proof](../docs/patches/tenacity-followup/README.md).
+
+## Skill names and tooltip presentation - 24 October 2026
+
+Synchronized nineteen tree-title translations with scroll/spell names across both tree categories. Supercharge text correctly says 125%; native multiplier remains 1.25. Shortened class descriptions and moved exact passive activation labels into the yellow statistics section, retaining native dynamic cooldowns. Five matching same-filename Archers/Wizards/Rogues/Skill Tree/Spell Engine replacements are installed. [Build, cause and checks](../docs/patches/skill-tooltip-polish/README.md): 43 native client tooltip checks and 946 dedicated Warrior/shield/party checks passed. Combat data is unchanged. Previous archives are in ignored retired packs.
+
+## Bifrost claim, recipe discovery and shield poses - 24 October 2026
+
+The [claim and recipe repair](../docs/patches/asgardian-expansion/claim-and-recipes.md) corrects close ground-weapon selection and adds native recipe-book unlocks for all four existing Bifrost recipes, verified in JEI. Prior beam and marker repairs remain included. The client-only [Punchy shield repair](../docs/patches/shield-pose/README.md) recognises Paladins component shields and connects the existing first- and third-person blocking poses. Same-filename active/fixed copies are installed after isolated checks; predecessors are retained locally. No personal installation or GitHub push.
+
+## Iourus race balance - 24 October 2026
+
+Installed same-filename Iourus update: Elf no longer gains projectile damage, has +8% movement and connected-client slow falling; Goblin scale 0.75; Asgardian scale 1.10 with mining bonus removed; Dwarf +2 armor. Orc uses a -10% total attack-speed modifier and removable melee/ranged bonuses at 50/40/30/20% HP. Old Orc raw-base inflation receives a one-time backed-up repair. [Implementation, migration details and tests](../docs/patches/race-balance/README.md). Native Better Combat/RPG integration and persistence passed 166 measurements; the real Elf drop now slows correctly with no health loss. Fixed copy matches; prior active/fixed archives are ignored under retired packs. The owner reference is `Iourus Races - attributes and benefits.md`.
+
+Orc follow-up: starting +2 melee/+1 ranged applies at full health, with higher tiers at 40/30/20% HP. Adds a 10% bow/crossbow draw-speed penalty through ranged haste. [Implementation and 170 native checks](../docs/patches/orc-followup/README.md). Same-filename Iourus/fixed copies updated; backups retained.
+
+## RPG entity lifecycle cleanup - 24 October 2026
+
+The same-filename Spell Engine repair removes invalid spell clouds that previously bypassed expiry and preserves summon/projectile elapsed age through native save/load. Projectile range and traveled distance also survive reloads. Original damage, targeting, cooldowns, party rules and configured lifetimes are unchanged. [Audit, limitations and rebuild](../docs/patches/rpg-performance/README.md): 17 lifecycle checks, 946 combat/shield/party regressions and 43 client loading/tooltip checks passed. Matching active/fixed copies are installed; predecessor retained locally. This does not establish the cause of all reported server delay. No personal installation or GitHub push.
+
+## PvP retention and Improved Bear Trap - 24 October 2026
+
+PvP now retains 30% of attributed player damage. Improved Bear Trap deals 60% dual-melee power; the base trap remains 40%, with its confirmed four-second haste-affected base cooldown. [Exact overlay and verification](../docs/patches/pvp-trap-followup/README.md): 29 PvP and 946 combat/shield/Rogue/party checks passed. Same-filename active/fixed replacements installed, previous archives retained locally. No personal installation or push.
+
+## Spread Spawnpoints Spring mode - 24 October 2026
+
+Owner clarified Spring rather than pool. Same-filename Spread Spawnpoints 1.2.0 repack sets Spring as the new-world default while preserving saved settings/assignments. [Isolated test and existing-world command](../docs/patches/spawn-audit/README.md): 65 server checks plus actual client first arrival passed with only the mod and bundled dependency. Separate desktop server/world untouched; existing worlds require the documented operator command to change their saved mode. Previous archives retained in ignored retired packs; fixed copy matches.
+
+## Iourus race-state cleanup - 24 October 2026
+
+Installed atomic race setter/attribute cleanup, direct admin state reconciliation and client logout reset. Melfork water/land attack modifiers clear immediately; its underwater vision/breathing/swim effects are retained. Elf night vision is removed; Goblin vision stays. Elf has solid leaf collision while other races pass through tagged leaves or LeavesBlock subclasses. [Build and evidence](../docs/patches/race-state/README.md): 931 server checks plus 22 connected identity/vision/water checks passed. Matching fixed copy installed; backups retained. Personal worlds and external server untouched.
+
+## Rogue tier I/II follow-up - 24 October 2026
+
+[Current balance and isolated proof](../docs/patches/rogue-rebalance/README.md): Shock 14s/4-block radius, Explosive 50%/4-block splash, Slice 16s (14 Improved), Blades +4 hits, four-second Shadowstep kill-reset window, 0.5s Cloak, 40% Ambush, 2.5s Serrated Bleed and no Opportunist critical-damage bonus. Fleet Footed remains 3% per stack as confirmed. 1261 dedicated combat/party/Rogue and 43 client checks passed. Three same-filename active/fixed replacements installed; predecessors archived locally. No personal installation or push.
+
+## Mutilate and Prepared Counter - 24 October 2026
+
+Mutilate now deals 100% combined dual-melee power. Prepared Counter no longer retaliates: evasion readies one basic melee hit for +25% melee power, with a two-second haste-affected cooldown. Native attack verification confirms 20 to 25 damage, followed by 20 on the next hit; spells and protected pets cannot consume the charge. [Build and proof](../docs/patches/rogue-counter/README.md): 1311 combat/party/Rogue checks and 43 client checks passed. Three active/fixed JARs and the reference/handbook/PDF are updated; predecessors archived locally. No personal installation or push.
+
+## Barricades and hidden enchantment retirement (2026-10-24)
+
+Barricades, Life Steal, Air Jump, Protection Grace and Tense are removed. Four shared providers and Penchant are repacked to remove 15 modded enchantment registry entries and acquisition references. Vanilla Sweeping Edge stays hidden. Saved equipped/stored enchantments and Penchant progress strip retired IDs while preserving valid enchantments. The isolated server passed 483 checks; originals are in `retired packs/enchantment-retirement-20261024`. See [the tracked retirement report](../docs/patches/enchantment-retirement/README.md). No external worlds were changed.
+
+## Warrior follow-up (2026-10-24)
+
+See [the tracked patch](../docs/patches/warrior-followup/README.md): minimum charge damage, Last Stand +20% maximum health/healing per pulse, ultimate death cleanup, icon reuse and removal of Lethality spike clouds. Three same-name active/fixed archives replaced after 895 isolated server checks. Previous archives remain in `retired packs/warrior-followup-20261024`. Both client and server need the update. No push requested.
+
+## Throw Weapon recast fix (2026-10-24)
+
+[Tracked patch](../docs/patches/throw-weapon-hit/README.md): quick recasts capture power without the skill's own Weakness penalty, while ordinary melee stays weakened. Strong Throw pierces once for two hits total. Installed matching Skill Tree/Spell Engine archives after 909 isolated checks; originals retained under `retired packs/throw-weapon-hit-20261024`.
+
+## Flat Bleed - 24 October 2026
+
+Bleed is now one level with no power/amplifier scaling: 2 raw HP stationary or 6 raw HP moving horizontally, every 1.25 seconds. Serrated remains 2.5s and Bloody Strikes 7.5s. [Build and scoped proof](../docs/patches/flat-bleed/README.md): 49 native Bleed and 43 client checks passed, including old high-level NBT normalization. Native defenses/ownerless magic attribution are unchanged. The overlay was rebased on newer Warrior Throw repairs before installation. Two active/fixed same-filename replacements installed; predecessors retained locally. No personal installation or push.
+
+## Asgardian tooltip wording - 24 October 2026
+
+Replaced the technical Asgardian English tooltip with short, plain prose matching the other race descriptions. [Exact wording and archive proof](../docs/patches/race-description/README.md). Only two language keys change; race mechanics and all other archive entries are unchanged. Matching active/fixed JARs installed; predecessor retained locally. No personal installation or push.
+
+## Plain-English race benefits - 24 October 2026
+
+All eight English Iourus trait lists and descriptions now use short, plain phrases without percentages or formulas. Separate numeric Height/Health/Speed fields and all mechanics remain unchanged. [Exact wording and byte-level validation](../docs/patches/race-plain-language/README.md). Active/fixed same-filename copies match; predecessor archived locally. No personal installation or push.
+
+## RPG Skills wording proposal - 24 October 2026
+
+Created [196 individual before/after descriptions](../docs/patches/skill-wording-review/RPG%20Skills%20-%20description%20rewrite.md) for Arcane, Fire, Frost, Archer, Rogue and Warrior, with a matching local `RPG Skills - description rewrite.md`. Priest/Paladin are excluded. All proposals are no longer than current text; 20 already-brief entries are retained. This is a reviewed wording draft, not an installed overlay. No JAR changes or push in this pass.
+
+## Approved RPG skill wording implementation - 24 October 2026
+
+Installed all 196 approved English descriptions across Arcane, Fire, Frost, Archer, Rogue and Warrior: 176 rewrites, 20 retained. Four same-filename Archers/Rogues/Wizards/Skill Tree overlays change only English language resources; all other keys and archive entries are preserved. Active and fixed copies match, with predecessors archived locally. Priest and Paladin are untouched. [Build, exact archive checks and scope](../docs/patches/skill-wording-review/README.md). No new client visual test, personal installation changes, commit or push. The earlier proposal is now implemented.
+
+## Vanish held-item rendering - 24 October 2026
+
+Rogue Vanish now hides both held items in first-person (including Punchy) and third-person render snapshots. Only client rendering hooks were added to the same-filename Rogues JAR; equipment, combat, armor and ordinary Invisibility are unchanged. The isolated client passed eleven checks, including restoration when Stealth ends. [Root cause, rebuild and runtime scope](../docs/patches/vanish-held-items/README.md). Active/fixed copies match, predecessors are archived locally; personal installations and external servers were untouched. No push requested.
+
+## Bifrost RPG weapon alignment - 24 October 2026
+
+Stormbreaker now matches the Netherite Great Hammer (0.8 attack speed, two-handed, native Ground Slam); Mjolnir matches Netherite Mace with Smash; Hofund matches Diamond Sword with Swift Strikes. Stormbreaker has a longer handle and corrected held yaw, with Punchy-compatible framing. Twelve isolated connected-client checks passed; active/fixed archives match. Existing custom abilities and inputs are unchanged in this pass. [Build, evidence and planned Bifrost Skills](../docs/patches/bifrost-weapon-alignment/README.md). Handbook weapon guidance/PDF are synchronized, predecessors archived locally. No personal installation changes or push.
+
+## Global player damage and restored PvP retention (2026-10-24)
+
+Player-attributed outgoing damage now retains 80% in PvE; PvP applies a further 50% multiplier (40% combined). The prior 30% PvP policy is superseded. Healing, mob/pet attacks and ownerless damage are unchanged; party/team protections remain. Skill coefficients and power attributes are unchanged to avoid duplicate scaling. The same-name PvP JAR passed 32 isolated checks. [Source and report](../docs/patches/pvp-flagging-26.2/README.md). Originals: `retired packs/player-damage-balance-20261024`. No push or personal installation changes.
+
+## Player attribute balance replaces outgoing multiplier (2026-10-24)
+
+Hidden -20% total modifiers now reduce player melee, ranged and offensive magic attributes. The previous outgoing 0.8 damage-event multiplier is removed. Only the separate 50% PvP event multiplier remains. Gear/skills and summon inheritance read reduced power; Healing Power is unchanged. Applied on join/death clone with idempotent periodic reconciliation. Same-name active/fixed PvP JAR installed after 54 isolated checks. [Source and proof](../docs/patches/pvp-flagging-26.2/README.md). Originals in `retired packs/player-attribute-balance-20261024`. No external world changes or push.
+
+## Player and RPG summon retention replaces attribute penalties (2026-10-24)
+
+Players and player-owned Spirit Wolves, Arcane Barrage emitters, Fire Hydras and Frost Elementals retain 35% damage against players and 80% against other entities. Ordinary entity combat remains 100%. Former attribute penalties are removed, and owners are checked for party/team/pet protection before summon damage. Same-name active/fixed PvP JAR installed after 118 isolated checks. [Source and report](../docs/patches/pvp-flagging-26.2/README.md). Originals: `retired packs/player-summon-balance-20261024`. No push or external installation changes.

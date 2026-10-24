@@ -1,0 +1,21 @@
+{
+  "status": "review proposal only; no JAR changes",
+  "coverage": {
+    "total": 196,
+    "class_entries": 180,
+    "weapon_attacks": 7,
+    "internal_helpers": 9,
+    "kept": 20,
+    "rewritten": 176,
+    "words_before": 3089,
+    "words_proposed": 2149
+  },
+  "scope_checks": "196 exact installed source keys; no Priest/Paladin keys; every proposal no longer than current; MD and JSON match; local copy matches",
+  "source_archives_unchanged": {
+    "archers-neoforge-3.1.2+26.2.jar": "8d635f07597d0345eb5a956b4402519a0649116987199aa55ddcde328349ab59",
+    "rogues-neoforge-3.1.2+26.2.jar": "abe3bc86a965cf3f27493d32d6fe6474c724d673601eac4e2f41b8ad1ab6d7b6",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "2cae125c2fbff04355c9dbf362a0a06311116a1f6e7b5fcdb7415b435576e0f4",
+    "wizards-neoforge-3.1.2+26.2.jar": "20b4f233801a948ffe9810eacf84553763ba88fda72c4530f97e459d9288cfbb"
+  },
+  "builder_check": "nothing important left; after restoring important upgrade amounts and penalties"
+}

@@ -1,10 +1,13 @@
 {
   "upstream_sha256": "dbc1313dd4328c0ebc39702f7d940ca2bb78b1d27f5f8219cfb3f7a1fc97b64e",
-  "output_sha256": "27c13929d4f1ff57f9299a7e8499fce2814606898f603c5d1b7123ee69c0a174",
-  "pvp_damage_multiplier": 0.5,
-  "mode": "damage-only",
+  "output_sha256": "e6aaacdf67b31dd74d3f4ff246dee02ed291b6b68e8f9ca0f409f7b99e7d3943",
+  "player_attribute_multiplier": 1.0,
+  "outgoing_damage_multiplier": 0.8,
+  "pvp_damage_multiplier": 0.35,
+  "mode": "player-and-rpg-summon-damage",
   "production_classes": [
     "io/redspace/pvp_flagging/PvpFlagging.class",
     "io/redspace/pvp_flagging/events/ServerEventsForge.class"
-  ]
+  ],
+  "before_sha256": "8bbf1c4c7e4f33bef1c0b896112fa175d2ecd92f4cffa2cf71e5007d58ab25db"
 }

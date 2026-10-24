@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-24",
+  "dedicated": "PASS 1261 Warrior/shield/Rogue/party checks",
+  "client": "PASS 43 native client tooltip checks",
+  "shadow_reset_checks": 11,
+  "fleet_footed": "3% per stack, cap12, refreshed4s; user confirmed",
+  "archives": {
+    "rogues-neoforge-3.1.2+26.2.jar": "d2912d580b38b30dbb5346e3bf61bceace1664334e87a3a86274417157b3888e",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "0fe8226c87d9eddb66d4a8f8ad7ae3ff62dc705c772e3f16d8eac0f9da9b3fd2",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "99dca3f5e4793294e0766e2c396591ddeab381bf6f27775e17b91e294f3a1259"
+  },
+  "scope": "Disposable native server and integrated client. No personal worlds or production server changed; no push."
+}

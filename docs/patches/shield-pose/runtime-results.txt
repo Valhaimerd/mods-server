@@ -1,0 +1,12 @@
+Shield pose repair - 2026-10-24
+Before SHA256: f4cf425fd48c1328d8026912305e66eea28e61e85aa23394d475db7e9c657f75
+Final active/fixed/tested SHA256: 5236aa6d2df03a82562bfce49f077c5a736e0f05b6fbe9b767194834bbe4ff67
+Baseline: vanilla native blocking selected use_shield; component kite shield blocked gameplay but selected interact.
+Final connected isolated client: PASS vanilla and component native blocking; native first-person blocking-hand handoff; third-person use_shield; release ends blocking.
+Visual review: 2026-10-24_11.55.10.png shows raised netherite kite shield in first person; 2026-10-24_11.55.10_3.png shows raised shield in third person.
+Minecraft26.2 / NeoForge26.2.0.90; Punchy2.8f plus existing RPG handoff and Modded Swords mappings.
+Archive verification: exact modified entries, source and test hashes, CRC, Java25, unchanged animation/model/texture assets and prior RPG helper.
+This focused test does not cover every shader, shield, or remote multiplayer camera combination. Server blocking rules are unchanged.
+Existing handbook describes animated hands and preserved spell motions accurately; no controls or catalog changes, so no handbook PDF rebuild required.
+Same filename installed in client-only mod store and fixed packs. Previous archive retained in ignored retired packs/shield-pose-2026-10-24.
+No personal profile/server/world changed; no commit or push.

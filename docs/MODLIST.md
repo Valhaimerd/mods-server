@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 309 synchronized JARs · 24 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 304 synchronized JARs · 24 client extras</p>
 
 Last audited: 2026-10-24<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 309 synchronized JARs plus 24 client-store JARs
+Current distribution: 304 synchronized JARs plus 24 client-store JARs
 
 ## About this handbook
 
@@ -148,7 +148,7 @@ These systems change how you build a character, explore, survive, and manage you
 - **Identity:** The installed build offers Human, Elf, Dwarf, Orc, Goblin, Melfork, Draconic, and the locally added Asgardian race.
 - **Mechanics:** Each race changes attributes, passive strengths, and drawbacks; the choice affects play beyond appearance.
 - **Progression:** Race is saved with the character, while class remains a separate equipment choice.
-- **Asgardian:** 22 HP; 5% larger and slower; +2% melee, ranged and magic damage, plus +2% mining speed. Lightning strikes cannot hurt them, but magic deals 10% more damage. Ragnarok shattered their ancestral wards.
+- **Asgardian:** 22 HP; 10% larger and 5% slower; +2% melee, ranged and magic damage. Lightning strikes cannot hurt them, but magic deals 10% more damage. Ragnarok shattered their ancestral wards.
 
 
 
@@ -591,7 +591,7 @@ Progress continues through enchantment use, exploration rewards, and specialized
 - **Core mechanic:** Eight persistent identities alter strengths, weaknesses, attributes, and passive behavior.
 - **Player guidance:** Compare the eight race descriptions before confirming a lasting choice.
 
-A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class.
+A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class. Elf now has 8% faster base movement and synchronized slow falling, with no racial projectile-damage bonus. Goblin size is 75% of normal; Asgardian size is 110%, with no mining-speed bonus. Dwarf gains 2 armor. Elf has no racial night vision; Goblin retains it and Melfork gains it only underwater. Elf stands on leaves; other races pass through recognized leaves, including modded LeavesBlock subclasses. Race changes clean up prior racial attributes and water bonuses before applying the new identity. Orc attacks and draws bows/crossbows 10% slower. It starts with +2 melee/+1 ranged damage at full health; at 40/30/20% health this rises to +3/4/5 melee and +1.5/2/2.5 ranged, capped below 20%. These bonuses feed weapon attributes and RPG power, return to their starting level as health recovers, and do not replace equipment stats.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/iourus-races">Official mod page</a></p>
 
@@ -613,13 +613,13 @@ A race changes the traits you carry through the whole playthrough. It does not l
 - **Core mechanic:** Four RPG Series modules supply Archer, Paladin, Priest, Rogue, Warrior, and Wizard loadouts through class books, weapons, and spells.
 - **Player guidance:** Equip a class book and a compatible weapon to form a loadout.
 
-Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues have haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 200% dual-wield Mutilate, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
+Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues have haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 100% dual-wield Mutilate, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
 
-Warriors can Throw Weapon for up to 80% melee damage on a five-second base cooldown, trading two seconds of Weakness IV for a projectile that retains its original power. Improved reaches 90%; Strong Throw pierces two enemies and seeks the next target, while Head Throw reaches 100% and briefly stuns. Throw Net has a six-second base cooldown, deals up to 15% melee damage, roots eligible enemies and drags them toward two blocks in front of you. Improved reaches 30 blocks; Bigger Net affects a five-block impact radius; Multiple Nets lowers cooldown to four seconds with a shorter root. Killing Spree stacks damage and damage reduction on hits. Endured Vitality stacks armor and maximum hearts from direct hits, healing only newly added hearts. Each stack's armor includes 6% melee power rounded to the nearest half point; the normal armor cap remains.
+Warriors can Throw Weapon for 40%-80% melee damage on a five-second base cooldown, trading two seconds of Weakness IV for a projectile that retains its original power; quick recasts ignore this skill's own Weakness when capturing damage. Improved deals 50%-90%; Strong Throw hits up to two enemies and seeks the second target, while Head Throw reaches 100% and briefly stuns. Throw Net has a six-second base cooldown, deals 7.5%-15% melee damage, roots eligible enemies and drags them toward two blocks in front of you. Improved reaches 30 blocks; Bigger Net affects a five-block impact radius; Multiple Nets lowers cooldown to four seconds with a shorter root. Killing Spree stacks damage and damage reduction on hits. Endured Vitality stacks armor and maximum hearts from direct hits, healing only newly added hearts. Each stack's armor includes 6% melee power rounded to the nearest half point; the normal armor cap remains.
 
 Wild Charge grants two seconds of movement speed and knockback resistance, three with Improved, on a 16-second base cooldown. Endurance grants full knockback resistance during the buff; Concussion Blow readies a two-second stun for the next melee hit. Wild Charge can be cast while controlled and removes/prevents movement impairments for two seconds. Demoralizing Shout also works during control, with three seconds of protection and a 16-second base cooldown. It weakens melee, ranged and offensive magic power by 8% and reveals enemies for six seconds in 12 blocks, or 16 with Improved. Battle Shout buffs party damage at the same radius; Challenging Shout adds damage, aggro and a brief stun. Warm Up guarantees scaled healing on every combat roll with no extra cooldown. Momentum readies five melee hits within six seconds of a roll; each stacks 2% attack speed and movement speed, up to 10% each, for three seconds refreshed by hits. Its base cooldown is twelve seconds. All Warrior casts and cooldowns scale with haste. Party allies and pets remain protected.
 
-Berserker replaces Mortal Strike: channel five pulses while stationary, gaining attack speed, basic-attack damage and knockback resistance while taking more damage. Reaching five pulses fully heals and grants Speed IV briefly; normal expiry also fully heals. A fatal hit ends the buff, fully heals, puts both early Warrior skill tiers on cooldown and causes Nausea and stun. Brutality adds critical chance; Lethality trades health over time for healing melee hits. Last Stand grants 0.6 seconds of damage immunity per pulse, Regeneration I and knockback immunity for fifteen seconds, twenty with Improved. Juggernaut adds size and 3% damage reduction per pulse; Sentinel stacks melee damage from direct hits during Last Stand. Both ultimates channel over 2.5 seconds and have 60-100 second base cooldowns by completed pulses. Enrage automatically grants more melee damage and size as health drops; Tenacity grants twelve-second absorption and stuns nearby enemies at 30% health or lower. Stuns interrupt these channels; roots do not.
+Berserker replaces Mortal Strike: channel five pulses while stationary, gaining attack speed, basic-attack damage and knockback resistance while taking more damage. Reaching five pulses fully heals and grants Speed IV briefly; normal expiry also fully heals. A fatal hit ends the buff, fully heals, puts both early Warrior skill tiers on cooldown and causes Nausea and stun. Brutality adds critical chance; Lethality trades health over time for healing melee hits. Last Stand adds 20% maximum health per pulse and heals the health added, up to 100%. It grants 0.6 seconds of damage immunity per pulse, Regeneration I and knockback immunity for fifteen seconds, twenty with Improved. Juggernaut adds size and 3% damage reduction per pulse; Sentinel stacks melee damage from direct hits during Last Stand. Both ultimates channel over 2.5 seconds and have 60-100 second base cooldowns by completed pulses. Enrage automatically grants more melee damage and size as health drops; Tenacity grants twelve-second absorption and stuns nearby enemies at 30% health or lower. Stuns interrupt these channels; roots do not. Ultimate effects clear on death; Berserker no longer creates ground spikes.
 
 Activated shields reduce frontal damage by 80%, separately from armor and Resistance: 10 damage with 50% Resistance and a shield becomes 1. Axes cannot disable blocking, and sonic booms and piercing arrows cannot bypass this reduction. Rear hits and source-less environmental damage receive no shield reduction. Normal activation delay and durability remain.
 
@@ -957,7 +957,7 @@ The separate slot preserves chest armor while travelling. Check the Elytra’s o
 - **Core mechanic:** Adds automatic fire, high-velocity shots and projectile-control options.
 - **Player guidance:** Choose a role before enchanting; several powerful effects exclude each other. Frenzy heat is now a tradeoff between damage and magic self-damage.
 
-CrossArms 1.4 offers Acceleration, Frenzy, Ricochet and Zero Drop. **Capacity is removed; Bombard, Deflector and Recycling are hidden.** Held legacy Might/Frenzy combinations lose Frenzy. Each Frenzy shot restarts its recoil animation. Frenzy auto-feeds normal arrows; Infinity preserves them but still requires one arrow and makes fired arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot applies Slowness II (-30% movement) for one second, refreshed while firing; first shots and taps use the same heat multiplier. It starts at 20% shot damage through the first two bars, reaches 30% at the third/red heat bar, 40% at the fourth/dark red bar and 50% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
+CrossArms 1.4 offers Acceleration, Frenzy, Ricochet and Zero Drop. **Capacity is removed; Bombard, Deflector and Recycling are removed.** Held legacy Might/Frenzy combinations lose Frenzy. Each Frenzy shot restarts its recoil animation. Frenzy auto-feeds normal arrows; Infinity preserves them but still requires one arrow and makes fired arrows uncollectible. Frenzy spreads more as heat rises: 115/125/140/160/185/220% of normal crossbow spread at zero through five bars. Every shot applies Slowness II (-30% movement) for one second, refreshed while firing; first shots and taps use the same heat multiplier. It starts at 20% shot damage through the first two bars, reaches 30% at the third/red heat bar, 40% at the fourth/dark red bar and 50% at the fifth/black bar. Heat deals magic damage every 20 ticks: 1 HP at the third bar, 2 HP at the fourth and 4 HP at the fifth. Fire Resistance does not stop it. Heat persists when swapping weapons and cools naturally.
 
 The 26th arrow fires, then the crossbow displays **Empty - Reload** for three seconds and stops auto-feeding. The notice disappearing does not reload it. Hold Use to complete a normal crossbow crank; an interrupted crank or waiting will not clear exhaustion. Three seconds without firing resets a partial counter only. Frenzy weapons share the player's counter across both hands, so swapping cannot skip the crank. Infinity prevents ammunition consumption but does not skip cranking.
 
@@ -1153,7 +1153,7 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Core mechanic:** Adds focused enchantment effects for movement, combat, armor, shields, and arrows.
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
-Toughness adds armor toughness. Hidden from acquisition and creative/recipe lists: Protection Grace, Antidote, Traveler, Soulbound, Air Jump, Tense, Withering, Deflector, Bombard, Recycling, Ghasted, Sweeping Edge, Penetrating Strike, Spiteful and Decay. Flame/Frost/Spectral are mutually exclusive; Tri-Shot excludes Power. Thorns excludes Fire Protection, Blast Protection and Fangs on one piece. Boots cannot combine Frost Walker with Soul Speed. Double Hit is excluded. Sharpness excludes Smite and the Arthropod/Aerial/Illager Banes; those four can combine with each other and Ensnaring. Ensnaring excludes Sharpness. Discharge excludes Fire Aspect/Frost Aspect. Life Steal I/II/III heals 3 HP per 20/16/12 HP dealt.
+Toughness adds armor toughness. Removed enchantments: Protection Grace, Antidote, Traveler, Soulbound, Air Jump, Tense, Withering, Deflector, Bombard, Recycling, Ghasted, Penetrating Strike, Spiteful and Decay. Vanilla Sweeping Edge remains hidden. Flame/Frost/Spectral are mutually exclusive; Tri-Shot excludes Power. Thorns excludes Fire Protection, Blast Protection and Fangs on one piece. Boots cannot combine Frost Walker with Soul Speed. Double Hit is excluded. Sharpness excludes Smite and the Arthropod/Aerial/Illager Banes; those four can combine with each other and Ensnaring. Ensnaring excludes Sharpness. Discharge excludes Fire Aspect/Frost Aspect. Life Steal is removed.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 
@@ -1217,7 +1217,7 @@ A death site may become the respawn area. Spawn points, dimensions, and End trav
 - **Core mechanic:** Assigns new players initial spawnpoints using the server's chosen pattern.
 - **Player guidance:** Your first arrival may be away from other players; coordinate a meeting point.
 
-Operators can choose vanilla, random, grid, or spring placement. The active pattern depends on the world's settings.
+New worlds default to Spring placement: players start at separated locations in a connected spread around world spawn. Operators can still choose vanilla, random, grid or spring. Existing worlds keep their saved mode; use `/spawnpoints generator set spreadspawnpoints:spring false` to switch without clearing assignments, then restart to register existing locations with Spring. Initial arrival and later default respawns were verified in isolation; beds, revive mods and Better Respawn have separate rules.
 
 <p class="core-mod-source"><a href="https://modrinth.com/mod/spreadspawnpoints">Official mod page</a></p>
 
@@ -1264,10 +1264,10 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 #### PVP Flagging
 
 - **Type:** Multiplayer combat
-- **Core mechanic:** Retains 50% of player-to-player damage without flagging.
+- **Core mechanic:** Players and their four RPG summons retain 35% damage against players and 80% against mobs.
 - **Player guidance:** Join a Better Party with Friendly Fire off to protect party members.
 
-Everyone can fight by default. Allowed player-to-player hits retain 50% damage, including standard player-cast spells. Better Party controls party friendly fire; vanilla combat permissions still apply. Tested PvE damage is unchanged. This local replacement has no flag commands, cooldowns, zones or indicators.
+Everyone can fight by default. Player attacks, Spirit Wolves, Arcane Barrage emitters, Hydras and Frost Elementals retain 35% damage against players and 80% against other entities. Ordinary mob attacks and mob-versus-mob combat remain at 100%. Better Party controls party friendly fire; vanilla combat permissions still apply. Attributes, healing and skill coefficients are unchanged. Each hit is scaled once after defenses. This local replacement has no flag commands, cooldowns, zones or indicators.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pvp-flagging">Official mod page</a></p>
 
@@ -1281,7 +1281,7 @@ Everyone can fight by default. Allowed player-to-player hits retain 50% damage, 
 - **Core mechanic:** Adds group roles, nearby XP sharing, private chat, friendly-fire rules, and a live HUD.
 - **Player guidance:** Open the party menu from its inventory button or use /p for private chat.
 
-Groups can share nearby experience and show a live roster. Turn party Friendly Fire off to protect members from melee, arrows and standard spells. Allowed PvP hits retain 50% damage. Roles, friendly-fire rules, and visibility depend on the party’s settings and server policy.
+Groups can share nearby experience and show a live roster. Turn party Friendly Fire off to protect members from melee, arrows and standard spells. Allowed PvP hits retain 35% damage after defenses, including attacks from the four player-owned RPG summons. Party and owned-pet protections also check the summon owner. Roles, friendly-fire rules, and visibility depend on the party’s settings and server policy.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/better-party">Official mod page</a></p>
 
@@ -1324,7 +1324,7 @@ A discovered point only becomes useful after activation. Keep a known point near
 - **Core mechanic:** Hofund, Mjolnir and Stormbreaker combine finite weapon abilities with named-marker Bifrost travel.
 - **Player guidance:** Choose Asgardian in Iourus Races, craft the equipment, then assign **Asgardian Ability** in Controls to open its skill selector. This control starts unbound.
 
-**Getting started.** Hofund has 8 attack damage and 1.5 attack speed; Mjolnir has 9 and 1.2; Stormbreaker has 10 and 1.0. These are ordinary weapon attributes before your build's bonuses. The hammer and axe are unbreakable and bind to their crafter. An old unbound weapon needs `/asgard claim` while held or targeted on the ground. Taking another owner's weapon is blocked. Stormbreaker's recipe uses two obsidian down the left, crying obsidian at top-middle, and blaze rods at center and bottom-middle; JEI shows the grid.
+**Getting started.** Hofund matches a Diamond Sword and grants Swift Strikes. Mjolnir matches the Netherite Mace and grants Smash. Stormbreaker matches the Netherite Great Hammer, with 0.8 attack speed, two-handed hammer combat and the standard Ground Slam weapon skill. These attributes are before your build's bonuses; the standard Ground Slam is separate from its custom selector ability. The hammer and axe are unbreakable and bind to their crafter. An old unbound weapon needs `/asgard claim` while held or targeted on the ground. Taking another owner's weapon is blocked. Stormbreaker's recipe uses two obsidian down the left, crying obsidian at top-middle, and blaze rods at center and bottom-middle; JEI shows the grid.
 
 **Combat controls.** Ordinary attacks on an entity remain melee. With Mjolnir or Stormbreaker, left-click in air or Sneak + left-click an entity throws the weapon. Right-click charges Hofund's slash or channels Mjolnir's lightning beam; release to stop. Use the ability selector for the other moves and **Bifrost Travel**. Marker right-click also opens destinations. Weapon actions and RPG spell casts cannot overlap.
 
@@ -2771,20 +2771,6 @@ Some area effects help farms or movement; others affect nearby entities. Test th
 
 </div>
 
-<div class="core-mod-entry">
-
-#### Barricades
-
-- **Type:** Building
-- **Core mechanic:** Adds defensive barricades, contact-damage obstacles, and resettable traps.
-- **Player guidance:** Try a trap's contact and reset behavior in a safe area.
-
-Defensive blocks can affect traffic as well as enemies. Leave a clear route for allies.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/barricades">Official mod page</a></p>
-
-</div>
-
 </div>
 <p class="core-category-description">This category ranges from small block families and furniture to large shape placement. Prototype a section before using Effortless Building: Sophisticated at scale; hold Alt for its radial menu and inspect the preview before confirming a placement near storage or redstone.</p>
 </section>
@@ -3966,7 +3952,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [ATi Structures](#ati-structures)
 - [Auras](#auras)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
-- [Barricades](#barricades)
 - [Better Archeology](#feature-better-archeology)
 - [Better Combat](#better-combat-1)
 - [Better End](#better-end)
@@ -4299,7 +4284,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 - [Arcane Lanterns](#arcane-lanterns)
 - [Armor Statues](#armor-statues)
-- [Barricades](#barricades)
 - [Display Delight](#display-delight)
 - [Effortless Building: Sophisticated](#effortless-building-sophisticated-1)
 - [Functional Sculptures](#functional-sculptures)

@@ -22,10 +22,10 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 /** Disposable connected client: actual registered input, selector, network and item use. */
 @Mod(value="asgard_expansion_client_probe",dist=Dist.CLIENT)
 public final class ClientExpansionProbe {
-    int ticks; boolean hidden,done; final List<String> checks=Collections.synchronizedList(new ArrayList<>());
+    int ticks,screenWait; boolean hidden,done; final List<String> checks=Collections.synchronizedList(new ArrayList<>());
     final AtomicReference<String> status=new AtomicReference<>();
     final java.util.concurrent.ConcurrentHashMap<String,Integer> sounds=new java.util.concurrent.ConcurrentHashMap<>();
-    volatile long transitStart=-1; volatile UUID passenger; volatile BifrostMarkerData.Marker visualMarker; int visualStage; boolean cameraReady,arrivalChecked;
+    volatile long transitStart=-1; volatile UUID passenger; volatile BifrostMarkerData.Marker visualMarker; int visualStage; boolean cameraReady,arrivalChecked,recipeShown;
     void sound(net.neoforged.neoforge.client.event.sound.PlaySoundEvent event){
         var value=event.getOriginalSound();if(value==null)return;var id=value.getIdentifier();
         if(id.getNamespace().equals("bifrost")&&id.getPath().startsWith("transit_"))sounds.merge(id.getPath(),1,Integer::sum);
@@ -44,6 +44,16 @@ public final class ClientExpansionProbe {
         var mc=Minecraft.getInstance();
         if(!hidden){org.lwjgl.glfw.GLFW.glfwHideWindow(mc.getWindow().handle());hidden=true;}
         if(done||mc.player==null||mc.level==null||mc.getSingleplayerServer()==null)return;
+        if(Files.exists(mc.gameDirectory.toPath().resolve("shield-pose-only.flag"))){shieldTick();return;}
+        if(Files.exists(mc.gameDirectory.toPath().resolve("recipe-guide-only.flag"))){recipeTick();return;}
+        if(Files.exists(mc.gameDirectory.toPath().resolve("ground-claim-only.flag"))){claimTick();return;}
+        if(Files.exists(mc.gameDirectory.toPath().resolve("marker-visual-only.flag"))){markerTick();return;}
+        if(ticks==0&&Files.exists(mc.gameDirectory.toPath().resolve("beam-visual-only.flag")))ticks=319;
+        // Renderer startup can delay a native menu packet beyond the old 15-tick fixture budget.
+        if((ticks==74||ticks==174||ticks==194)&&!(mc.gui.screen() instanceof BifrostDestinationScreen)){
+            if(++screenWait>200)result("FAIL native destination screen timeout at fixture tick "+ticks);return;
+        }
+        screenWait=0;
         ticks++;
         try {
             if(status.get()!=null&&status.get().startsWith("FAIL"))throw new AssertionError(status.get());
@@ -102,6 +112,7 @@ public final class ClientExpansionProbe {
             if(ticks==300)server(p->{check(AsgardWeapons.kind(p.getMainHandItem()).equals("mjolnir"),"Thrown hammer returns to owner through native client input");status.set("returned");});
             if(ticks==315){check("returned".equals(status.get()),"Client input throw completed");}
             if(ticks==320)server(p->{
+                PlayerRaceState.get(p.level().getServer()).setRace(p.getUUID(),Race.ASGARDIAN);RaceAttributes.applyRaceAttributes(p,Race.ASGARDIAN);RaceNetworkHandler.syncRace(p,Race.ASGARDIAN);
                 p.setGameMode(net.minecraft.world.level.GameType.CREATIVE);p.getAbilities().flying=true;p.onUpdateAbilities();
                 p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(ModItems.HEIMDALLS_SWORD.get()));
                 var level=p.level();
@@ -116,7 +127,7 @@ public final class ClientExpansionProbe {
             });
             if(ticks>=350&&!cameraReady){
                     mc.setScreenAndShow(null);var camera=new net.minecraft.world.entity.decoration.ArmorStand(mc.level,288.5,98.3,340.5);
-                    camera.setYRot(180);camera.yRotO=180;camera.setYHeadRot(180);camera.yHeadRotO=180;camera.setXRot(0);camera.xRotO=0;camera.setOldPosAndRot();camera.setNoGravity(true);mc.setCameraEntity(camera);cameraReady=true;
+                    camera.setYRot(180);camera.yRotO=180;camera.setYHeadRot(180);camera.yHeadRotO=180;camera.setXRot(0);camera.xRotO=0;camera.setOldPosAndRot();camera.setNoGravity(true);if(!Files.exists(mc.gameDirectory.toPath().resolve("beam-first-person.flag")))mc.setCameraEntity(camera);cameraReady=true;
                     for(String sound:List.of("charge","descent","impact","closure"))check(mc.getResourceManager().getResource(Identifier.fromNamespaceAndPath("bifrost","sounds/transit_"+sound+".ogg")).isPresent(),"Packaged original sound resource "+sound);
             }
             if(ticks==380)server(p->{check(BifrostTeleportManager.begin(p,visualMarker,"Hofund"),"Connected cinematic transit begins");transitStart=p.level().getGameTime();status.set("transit-start");});
@@ -143,6 +154,115 @@ public final class ClientExpansionProbe {
                 }
             }
             if(ticks>800)result("FAIL timeout");
+        }catch(Throwable t){t.printStackTrace();result("FAIL "+t);}
+    }
+    void shieldTick(){
+        var mc=Minecraft.getInstance();ticks++;
+        try{
+            if(ticks==20)server(p->{p.level().getServer().getCommands().performPrefixedCommand(p.level().getServer().createCommandSourceStack(),"time set day");p.setGameMode(net.minecraft.world.level.GameType.CREATIVE);p.getInventory().clearContent();p.setItemInHand(InteractionHand.OFF_HAND,new ItemStack(net.minecraft.world.item.Items.SHIELD));status.set("shield-ready");});
+            if(ticks==80){mc.setScreenAndShow(null);mc.options.keyUse.setDown(true);mc.gameMode.useItem(mc.player,InteractionHand.OFF_HAND);}
+            if(ticks==100){check(mc.player.isBlocking(),"vanilla shield native blocking active");Screenshot.grab(mc,false);checks.add("OBSERVED vanilla blocking clip "+shieldClip());}
+            if(ticks==110){mc.options.keyUse.setDown(false);mc.gameMode.releaseUsingItem(mc.player);}
+            if(ticks==130)server(p->{
+                var candidates=new ArrayList<String>();net.minecraft.world.item.Item chosen=null;
+                for(var item:net.minecraft.core.registries.BuiltInRegistries.ITEM)if(item.getDefaultInstance().has(net.minecraft.core.component.DataComponents.BLOCKS_ATTACKS)){
+                    candidates.add(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(item)+" class="+item.getClass().getName());if(!(item instanceof net.minecraft.world.item.ShieldItem))chosen=item;
+                }
+                checks.add("OBSERVED shield types "+candidates);
+                var stack=chosen==null?new ItemStack(net.minecraft.world.item.Items.STICK):new ItemStack(chosen);
+                if(chosen==null)stack.set(net.minecraft.core.component.DataComponents.BLOCKS_ATTACKS,new ItemStack(net.minecraft.world.item.Items.SHIELD).get(net.minecraft.core.component.DataComponents.BLOCKS_ATTACKS));
+                p.setItemInHand(InteractionHand.OFF_HAND,stack);status.set("mod-shield");
+            });
+            if(ticks==180){mc.options.keyUse.setDown(true);mc.gameMode.useItem(mc.player,InteractionHand.OFF_HAND);}
+            if(ticks==205){check(mc.player.isBlocking(),"component shield native blocking active");Screenshot.grab(mc,false);String clip=shieldClip();checks.add("OBSERVED component first-person clip "+clip);var config=Class.forName("punchy.config.PunchyConfig");check(Boolean.TRUE.equals(config.getMethod("isHandBlacklisted",net.minecraft.world.entity.player.Player.class,InteractionHand.class).invoke(null,mc.player,InteractionHand.OFF_HAND)),"blocking hand uses existing native first-person block pose");}
+            if(ticks==190||ticks==195)Screenshot.grab(mc,false);
+            if(ticks==206)mc.options.setCameraType(net.minecraft.client.CameraType.THIRD_PERSON_FRONT);
+            if(ticks==212){Screenshot.grab(mc,false);String clip=shieldClip();checks.add("OBSERVED component third-person clip "+clip);check(clip.toLowerCase().contains("shield"),"component shield plays existing Punchy shield clip in third person");}
+            if(ticks==215){mc.options.keyUse.setDown(false);mc.gameMode.releaseUsingItem(mc.player);}
+            if(ticks==240){check(!mc.player.isBlocking(),"release ends native blocking");mc.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);result("PASS shield visual clip activation and release; see measurements and screenshots");}
+        }catch(Throwable t){t.printStackTrace();result("FAIL "+t);}
+    }
+    String shieldClip()throws Exception{
+        Object handler=Class.forName("punchy.client.animation.PunchyAnimationManager").getField("POSE_HANDLER").get(null);
+        Object clip=handler.getClass().getMethod("getCurrentClip").invoke(handler);
+        if(clip==null)return "none";
+        for(var f:clip.getClass().getDeclaredFields())if(f.getName().equals("name")){f.setAccessible(true);return String.valueOf(f.get(clip));}
+        return clip.toString();
+    }
+    void recipeTick(){
+        var mc=Minecraft.getInstance();ticks++;
+        try{
+            if(ticks==20)server(p->{
+                PlayerRaceState.get(p.level().getServer()).setRace(p.getUUID(),Race.ASGARDIAN);RaceNetworkHandler.syncRace(p,Race.ASGARDIAN);p.getInventory().clearContent();
+                for(var item:List.of(net.minecraft.world.item.Items.OBSIDIAN,net.minecraft.world.item.Items.CRYING_OBSIDIAN,net.minecraft.world.item.Items.NETHERITE_INGOT)){
+                    var stack=new ItemStack(item);p.getInventory().add(stack.copy());net.minecraft.advancements.triggers.CriteriaTriggers.INVENTORY_CHANGED.trigger(p,p.getInventory(),stack);
+                }
+                for(String name:List.of("bifrost_marker","heimdalls_sword","thors_hammer","stormbreaker")){
+                    var key=net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.RECIPE,Identifier.fromNamespaceAndPath("bifrost",name));
+                    check(p.getRecipeBook().contains(key),"ingredient pickup unlocks recipe book "+name);
+                }status.set("recipes-ready");
+            });
+            if(ticks==120&&recipeShown)Screenshot.grab(mc,false);
+            if(ticks==130&&recipeShown){result("PASS "+checks.size()+" recipe book ingredient-unlock and visible JEI crafting checks for all four Bifrost recipes");return;}
+            if(ticks>=100&&!recipeShown){
+                Class<?> internal=Class.forName("mezz.jei.common.Internal");var optional=(Optional<?>)internal.getMethod("getOptionalJeiRuntime").invoke(null);
+                if(optional.isEmpty()){if(ticks>600)result("FAIL JEI startup timeout");return;}
+                check("recipes-ready".equals(status.get()),"native recipe unlock verification completed");
+                Object runtime=optional.get(),manager=Class.forName("mezz.jei.api.runtime.IJeiRuntime").getMethod("getRecipeManager").invoke(runtime);
+                Object type=Class.forName("mezz.jei.api.constants.RecipeTypes").getField("CRAFTING").get(null);
+                Class<?> managerApi=Class.forName("mezz.jei.api.recipe.IRecipeManager"),typeApi=Class.forName("mezz.jei.api.recipe.types.IRecipeType");
+                Object lookup=managerApi.getMethod("createRecipeLookup",typeApi).invoke(manager,type);
+                var stream=(java.util.stream.Stream<?>)Class.forName("mezz.jei.api.recipe.IRecipeLookup").getMethod("get").invoke(lookup);
+                var recipes=stream.filter(r->((net.minecraft.world.item.crafting.RecipeHolder<?>)r).id().identifier().getNamespace().equals("bifrost")).toList();
+                for(String name:List.of("bifrost_marker","heimdalls_sword","thors_hammer","stormbreaker"))check(recipes.stream().anyMatch(r->((net.minecraft.world.item.crafting.RecipeHolder<?>)r).id().identifier().getPath().equals(name)),"JEI visible crafting recipe "+name);
+                Object category=managerApi.getMethod("getRecipeCategory",typeApi).invoke(manager,type);
+                Object gui=Class.forName("mezz.jei.api.runtime.IJeiRuntime").getMethod("getRecipesGui").invoke(runtime);
+                Class.forName("mezz.jei.api.runtime.IRecipesGui").getMethod("showRecipes",Class.forName("mezz.jei.api.recipe.category.IRecipeCategory"),List.class,List.class).invoke(gui,category,recipes,List.of());
+                recipeShown=true;
+            }
+        }catch(Throwable t){t.printStackTrace();result("FAIL "+t);}
+    }
+    void claimTick(){
+        var mc=Minecraft.getInstance();
+        if(ticks==79&&!AsgardWeapons.kind(mc.player.getMainHandItem()).equals("mjolnir")){if(++screenWait>200)result("FAIL ground claim command/inventory response timeout");return;}
+        ticks++;
+        try{
+            if(ticks==20)server(p->{
+                PlayerRaceState.get(p.level().getServer()).setRace(p.getUUID(),Race.ASGARDIAN);RaceAttributes.applyRaceAttributes(p,Race.ASGARDIAN);RaceNetworkHandler.syncRace(p,Race.ASGARDIAN);
+                p.setGameMode(net.minecraft.world.level.GameType.CREATIVE);p.getInventory().clearContent();p.getInventory().setSelectedSlot(0);p.containerMenu.setCarried(ItemStack.EMPTY);
+                p.level().setBlockAndUpdate(new net.minecraft.core.BlockPos(256,64,256),net.minecraft.world.level.block.Blocks.STONE.defaultBlockState());p.teleportTo(256.5,65,256.5);p.setDeltaMovement(net.minecraft.world.phys.Vec3.ZERO);
+                var item=new net.minecraft.world.entity.item.ItemEntity(p.level(),256.5,65,257.7,new ItemStack(ModItems.THORS_HAMMER.get()));p.level().addFreshEntity(item);passenger=item.getUUID();status.set("claim-ready");
+            });
+            if(ticks==60){check("claim-ready".equals(status.get()),"ground claim fixture ready");mc.setScreenAndShow(null);mc.player.setXRot(0);mc.player.setYRot(0);check(ClientRaceData.getRace()==Race.ASGARDIAN,"claiming client's Asgardian race synchronized");}
+            if(ticks==70)mc.player.connection.sendCommand("asgard claim");
+            if(ticks==80){check(AsgardWeapons.kind(mc.player.getMainHandItem()).equals("mjolnir"),"native claim command delivers hammer to client inventory");server(p->{check(WeaponOwnership.canUse(p,p.getMainHandItem()),"native command creates authoritative owned weapon");check(p.level().getEntity(passenger)==null,"native command consumes original ground item");status.set("claim-complete");});}
+            if(ticks==90)Screenshot.grab(mc,false);
+            if(ticks==100){check("claim-complete".equals(status.get()),"server ground claim verification completed");result("PASS "+checks.size()+" connected ground-claim checks through the actual /asgard claim command");}
+        }catch(Throwable t){t.printStackTrace();result("FAIL "+t);}
+    }
+    void markerTick(){
+        var mc=Minecraft.getInstance();ticks++;
+        try{
+            if(ticks==20)server(p->{
+                p.setGameMode(net.minecraft.world.level.GameType.CREATIVE);p.getAbilities().flying=true;p.onUpdateAbilities();
+                var level=p.level();
+                for(int x=252;x<=260;x++)for(int z=252;z<=260;z++)for(int y=60;y<=64;y++)level.setBlockAndUpdate(new net.minecraft.core.BlockPos(x,y,z),net.minecraft.world.level.block.Blocks.STONE.defaultBlockState());
+                for(int y=62;y<=65;y++)level.setBlockAndUpdate(new net.minecraft.core.BlockPos(256,y,256),net.minecraft.world.level.block.Blocks.AIR.defaultBlockState());
+                for(int y:new int[]{62,63})level.setBlockAndUpdate(new net.minecraft.core.BlockPos(256,y,256),ModBlocks.BIFROST_MARKER.get().defaultBlockState());
+                p.teleportTo(256.5,65,258.5);p.setDeltaMovement(net.minecraft.world.phys.Vec3.ZERO);status.set("marker-ready");
+            });
+            if(ticks==80){
+                check("marker-ready".equals(status.get()),"marker pit fixture ready");mc.setScreenAndShow(null);
+                var camera=new net.minecraft.world.entity.decoration.ArmorStand(mc.level,256.5,64.3,257.1);
+                camera.setYRot(180);camera.yRotO=180;camera.setYHeadRot(180);camera.yHeadRotO=180;camera.setXRot(62);camera.xRotO=62;camera.setOldPosAndRot();mc.setCameraEntity(camera);
+            }
+            if(ticks==100)Screenshot.grab(mc,false);
+            if(ticks==110){
+                var marker=ModBlocks.BIFROST_MARKER.get().defaultBlockState();
+                check(!marker.canOcclude(),"marker cannot hide adjacent terrain");
+                for(var direction:net.minecraft.core.Direction.values())check(net.minecraft.world.level.block.Block.shouldRenderFace(net.minecraft.world.level.block.Blocks.STONE.defaultBlockState(),marker,direction),"adjacent stone face rendered "+direction);
+                mc.setCameraEntity(mc.player);result("PASS marker occlusion and six adjacent terrain faces; stacked pit screenshot captured with installed renderer set");
+            }
         }catch(Throwable t){t.printStackTrace();result("FAIL "+t);}
     }
 }

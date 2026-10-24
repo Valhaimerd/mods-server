@@ -130,3 +130,7 @@ evidence is under `tmp/melee-enchantments/pdf-review/` and `pdf-report.json`.
 The final handbook has 75 pages and 461 valid internal links. All page contact
 sheets and the enchantment policy page were visually reviewed; table-of-contents
 page numbers match their destinations.
+
+## Registry retirement follow-up (2026-10-24)
+
+The [enchantment retirement](../enchantment-retirement/README.md) supersedes the hidden modded enchantment and Life Steal policy recorded here. Its hashes identify the current active repacks; these original build checks remain historical. Vanilla Sweeping Edge stays hidden.

@@ -1,0 +1,15 @@
+{
+  "pvp": "PASS 29 actual damage/party/team/PvE checks",
+  "trap": "PASS 946 Warrior/shield/Rogue/party checks",
+  "pvp_multiplier": 0.3,
+  "improved_trap_coefficient": 0.6,
+  "ordinary_trap_coefficient": 0.4,
+  "trap_base_cooldown_seconds": 4,
+  "haste_affected": true,
+  "pdf_pages": 77,
+  "pdf_pixel_changed_pages": [
+    30
+  ],
+  "pdf_review": "All pages rendered and contact sheets reviewed; page30 reviewed at full size; remaining pages pixel-identical to preceding handbook",
+  "pdf_sha256": "de010d3327457bbb7b6e38562d4e34d05b2120007d29db9e757dd75463139880"
+}

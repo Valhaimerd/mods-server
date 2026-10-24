@@ -11,5 +11,17 @@ public final class PvpFlagging {
 
     public PvpFlagging() {
         NeoForge.EVENT_BUS.addListener(ServerEventsForge::retainPvpDamage);
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event) -> {
+            if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player)
+                ServerEventsForge.clearPowerPenalty(player);
+        });
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.player.PlayerEvent.Clone event) -> {
+            if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player)
+                ServerEventsForge.clearPowerPenalty(player);
+        });
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.EntityTickEvent.Pre event) -> {
+            if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player && player.tickCount % 20 == 0)
+                ServerEventsForge.clearPowerPenalty(player);
+        });
     }
 }

@@ -1,5 +1,7 @@
 # Archer and Wizard description audit
 
+Superseded presentation wording: [skill names and concise tooltips](../skill-tooltip-polish/README.md) also synchronizes tree titles and supplies accurate yellow activation labels. Values below document this earlier revision.
+
 24 October 2026. English spell, secondary-node and passive descriptions for Archer, Arcane, Fire and Frost were checked against the installed spell JSON, runtime helper sources and registered effect defaults.
 
 All **135 descriptions** are covered by the scan. Archer already had concrete descriptions; its Barrage/Magic Arrows/Endless Volley wording is clearer. Wizard trees retained modifier/range/duration template tokens, awkward school-power phrasing and excessive Blizzard precision. The final overlay replaces those tokens with readable percentages, distances, durations and upgrade benefits.

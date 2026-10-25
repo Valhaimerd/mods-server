@@ -1,0 +1,38 @@
+[
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "a8fba08f17cff1ba9b160feaf9f8861bfd03caaf9c910bd71cfbb5b97aa70a3e",
+    "sha256": "bb4a5dcecd647975483ec49cd204bceca9223d0bd5a63439908e4ec930374334",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/mortal_strike.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "7ad31c83be1b5d3e104ab5d7289e409a9201530379d5d6d3ad472ca6db7080bb",
+    "sha256": "a415f56c96affa6e018a202f21eb665015f3bee9ec3058539be2c5e3724d5d92",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_4_spell_2_modifier_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "4683c0535aaf3cfd2a386b33e6c358f78f691ff710cba872c450f6bb398735b3",
+    "sha256": "5b938b8bb39d98ab791e811c26f6a4d9ff371a3475ab11f48c92d24d0ef61723",
+    "changed": [
+      "net/spell_engine/entity/WarriorRules.class",
+      "net/spell_engine/entity/WarriorTierTwo.class",
+      "net/spell_engine/entity/WarriorUltimates.class"
+    ],
+    "added": [
+      "net/spell_engine/entity/WarriorBalance.class"
+    ]
+  }
+]

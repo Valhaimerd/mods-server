@@ -1,0 +1,1 @@
+PASS 1010 Warrior/shield/party checks

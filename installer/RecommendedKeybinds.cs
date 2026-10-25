@@ -7,14 +7,15 @@ internal sealed record KeybindApplyResult(bool Changed, string? BackupPath);
 
 internal static class RecommendedKeybinds
 {
-    private const string ResourceName = "ModsServerInstaller.RecommendedKeybinds";
+    private const string ProfileUrl = "https://raw.githubusercontent.com/Valhaimerd/mods-server/main/installer/recommended-keybinds.txt";
 
-    public static async Task<KeybindApplyResult> ApplyAsync(string modsFolder)
+    public static async Task<KeybindApplyResult> ApplyAsync(string modsFolder, HttpClient http)
     {
         var gameFolder = Directory.GetParent(modsFolder)?.FullName
             ?? throw new InvalidOperationException("The mods folder has no parent directory.");
         var optionsPath = Path.Combine(gameFolder, "options.txt");
-        var profile = LoadProfile();
+        using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(30));
+        var profile = LoadProfile(await http.GetStringAsync(ProfileUrl, timeout.Token));
         var existing = File.Exists(optionsPath)
             ? await File.ReadAllTextAsync(optionsPath)
             : string.Empty;
@@ -94,44 +95,82 @@ internal static class RecommendedKeybinds
         var root = Path.Combine(Path.GetTempPath(), $"controls-installer-{Guid.NewGuid():N}");
         var options = Path.Combine(root, "options.txt");
         Directory.CreateDirectory(root);
-        const string original = "music:0.3\nkey_key.emotecraft.fastchoose:key.keyboard.b\nkey_custom.mod:key.keyboard.p\n";
+        const string original = "music:0.3\nlastServer:private.example\nkey_patpat.keybinding.pat:key.keyboard.left.shift\nkey_custom.mod:key.keyboard.p\n";
+        using var handler = new ProfileHandler();
+        using var http = new HttpClient(handler);
         try
         {
             await File.WriteAllTextAsync(options, original);
-            var result = await ApplyAsync(Path.Combine(root, "mods"));
+            handler.Text = "key_patpat.keybinding.pat:key.mouse.right\nkey_key.penchant.show_progress:key.keyboard.left.shift\nkey_test:key.keyboard.r:SHIFT\n";
+            var result = await ApplyAsync(root + "/mods", http);
             var saved = await File.ReadAllTextAsync(options);
-            var profile = LoadProfile();
             if (!result.Changed || result.BackupPath is null ||
                 await File.ReadAllTextAsync(result.BackupPath) != original ||
-                !saved.Contains("music:0.3\n") || !saved.Contains("key_custom.mod:key.keyboard.p\n") ||
-                profile.Values.Any(line => !saved.Split('\n').Contains(line)) ||
-                profile["key_key.emotecraft.fastchoose"] != "key_key.emotecraft.fastchoose:key.keyboard.g" ||
-                profile["key_key.punchy.inspect"] != "key_key.punchy.inspect:key.keyboard.i" ||
-                profile["key_key.armorhider.open_menu"] != "key_key.armorhider.open_menu:key.keyboard.k" ||
-                profile["key_key.special_ability"] != "key_key.special_ability:key.keyboard.unknown")
-                throw new InvalidOperationException("Self-test failed: current controls merge/backup.");
-            if ((await ApplyAsync(Path.Combine(root, "mods"))).Changed || await File.ReadAllTextAsync(options) != saved)
+                !saved.Contains("music:0.3\nlastServer:private.example\n") ||
+                !saved.Contains("key_custom.mod:key.keyboard.p\n") ||
+                handler.Text.Split('\n', StringSplitOptions.RemoveEmptyEntries).Any(line => !saved.Split('\n').Contains(line)) || handler.Requests != 1)
+                throw new InvalidOperationException("Self-test failed: downloaded controls merge/backup/privacy.");
+            if ((await ApplyAsync(root + "/mods", http)).Changed)
                 throw new InvalidOperationException("Self-test failed: controls merge must be idempotent.");
+            handler.Text = "key_patpat.keybinding.pat:key.keyboard.g\n";
+            if (!(await ApplyAsync(root + "/mods", http)).Changed ||
+                !(await File.ReadAllTextAsync(options)).Contains(handler.Text))
+                throw new InvalidOperationException("Self-test failed: controls must refresh from the next download.");
+            saved = await File.ReadAllTextAsync(options);
+            foreach (var invalid in new[] { "", "lastServer:leaked.example\n", "key_test:bad\n", "key_test:key.keyboard.g\nkey_test:key.keyboard.p\n", new string('x', 65537) })
+            {
+                handler.Text = invalid;
+                try { await ApplyAsync(root + "/mods", http); throw new Exception("Invalid controls accepted."); }
+                catch (InvalidDataException) { }
+                if (await File.ReadAllTextAsync(options) != saved)
+                    throw new InvalidOperationException("Self-test failed: invalid download modified controls.");
+            }
+            handler.Fail = true;
+            try { await ApplyAsync(root + "/mods", http); throw new Exception("Download failure ignored."); }
+            catch (HttpRequestException) { }
+            if (await File.ReadAllTextAsync(options) != saved)
+                throw new InvalidOperationException("Self-test failed: download failure modified controls.");
+            var missing = Path.Combine(root, "new-instance");
+            try { await ApplyAsync(missing + "/mods", http); throw new Exception("Download failure ignored."); }
+            catch (HttpRequestException) { }
+            if (Directory.Exists(missing)) throw new Exception("Failed download created instance files.");
         }
         finally { Directory.Delete(root, recursive: true); }
     }
 
-    private static Dictionary<string, string> LoadProfile()
+    private sealed class ProfileHandler : HttpMessageHandler
     {
-        using var stream = typeof(RecommendedKeybinds).Assembly.GetManifestResourceStream(ResourceName)
-            ?? throw new InvalidOperationException("The recommended keybind profile is missing from the installer.");
-        using var reader = new StreamReader(stream, Encoding.UTF8);
+        internal string Text = "";
+        internal bool Fail;
+        internal int Requests;
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            if (request.Method != HttpMethod.Get || request.RequestUri?.AbsoluteUri !=
+                "https://raw.githubusercontent.com/Valhaimerd/mods-server/main/installer/recommended-keybinds.txt" || request.Content is not null)
+                throw new Exception("Controls must only GET the public keybind profile.");
+            Requests++;
+            return Task.FromResult(new HttpResponseMessage(Fail ? System.Net.HttpStatusCode.ServiceUnavailable : System.Net.HttpStatusCode.OK)
+            { Content = new StringContent(Text) });
+        }
+    }
+
+    private static Dictionary<string, string> LoadProfile(string text)
+    {
+        if (text.Length is 0 or > 65536)
+            throw new InvalidDataException("Downloaded controls profile is empty or too large; controls were not changed.");
+        using var reader = new StringReader(text.TrimStart('\uFEFF'));
         var profile = new Dictionary<string, string>(StringComparer.Ordinal);
         while (reader.ReadLine() is { } line)
         {
             var separator = line.IndexOf(':');
-            if (separator < 0 || !line.StartsWith("key_", StringComparison.Ordinal) ||
+            if (separator < 0 || !Regex.IsMatch(line, @"\Akey_[^:\s]+:key\.(keyboard|mouse)\.[a-z0-9._]+(?::(SHIFT|CONTROL|ALT))?\z") ||
                 !profile.TryAdd(line[..separator], line))
             {
-                throw new InvalidDataException("The embedded keybind profile contains an invalid or duplicate entry.");
+                throw new InvalidDataException("Downloaded controls profile contains an invalid or duplicate entry; controls were not changed.");
             }
         }
 
+        if (profile.Count == 0) throw new InvalidDataException("Downloaded controls profile has no bindings.");
         return profile;
     }
 }

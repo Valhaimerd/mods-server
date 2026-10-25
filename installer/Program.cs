@@ -124,7 +124,7 @@ internal static class Program
 
             if (request.ApplyRecommendedKeybinds)
             {
-                var result = await RecommendedKeybinds.ApplyAsync(target);
+                var result = await RecommendedKeybinds.ApplyAsync(target, http);
                 Console.WriteLine(result.Changed
                     ? "Recommended keybinds applied."
                     : "Recommended keybinds are already current.");

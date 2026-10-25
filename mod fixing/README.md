@@ -269,3 +269,9 @@ Added exact reference Punchy aliases for Stormbreaker, Mjolnir and Hofund; the c
 ## Rogue dual-power and attack-speed balance (2026-10-25)
 
 [Source and tests](../docs/patches/rogue-dual-balance/README.md): all Rogue physical-melee spell schools now use combined dual-wield power. Explosive Powder 40% D; Slice bonus 8% D; Fracture 2 armor + 5% D/stack; Ambush 30% D; Crimson 15% D once/cast; Bloody Strikes 10s; Counter +15% D. Flat Bleed is 1/4 HP stationary/moving per 25 ticks. Adventurer ordinary attack speed is 2%, RPG Rogue ordinary attack speed 1%. Four same-name active/fixed JARs replaced after 971 native regression checks. Originals retired locally. No push or external installation changes.
+
+## Warrior balance ? 25 October 2026
+
+Installed matching same-name Rogues, Skill Tree and Spell Engine replacements: Killing Spree kill healing replaces reduction; Shout weakens power by 12%; Improved Wild Charge protects for 3s; Concussion stuns for 1s. Berserker grants Speed I-V per pulse and lasts 14/17s; Frozen now explicitly interrupts both ultimates. Enrage grants 3% damage/6% size per threshold; Tenacity lasts 14s. The concise description guide is preserved. See [build and 999 isolated checks](../docs/patches/warrior-balance/README.md); originals remain ignored under retired packs. No push requested.
+
+Warrior proc follow-up: Sentinel has a 0.25s base stacking interval; Lethality has a 0.2s base hit-healing interval. Both retain native haste scaling and share the limit across targets. 1,010 isolated checks passed; same-name active/fixed replacements installed and prior copies preserved in `retired packs/warrior-proc-intervals-20261025/`.

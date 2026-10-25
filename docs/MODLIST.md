@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 304 synchronized JARs · 24 client extras</p>
 
-Last audited: 2026-10-24<br>
+Last audited: 2026-10-25<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 304 synchronized JARs plus 24 client-store JARs
 
@@ -99,7 +99,7 @@ Use this page to begin a new world. [Featured Mechanics](#part-i--featured-mecha
 
 ### First ten minutes
 
-1. Compare the eight Iourus racial traits and choose a lasting race. Its direct menu shortcut is unbound; assign Open Race Menu in Controls to reopen the selection screen and read each option.
+1. Compare the eight Iourus racial traits and choose a lasting race. Press `P` to reopen the race menu and read each option.
 2. Equip a class book with a matching weapon. Changing the loadout changes your role, so try a few combinations.
 3. Open the skill tree with `T` and read node requirements before spending points. Test your equipped spell or attack against an easy target.
 4. Open the world map with `M`, mark a route, and keep coordinates visible with `N`. Check the Cave Codex before hunting for Alex's Caves.
@@ -107,7 +107,7 @@ Use this page to begin a new world. [Featured Mechanics](#part-i--featured-mecha
 
 ### Controls when you need them
 
-The copied profile uses `T` for skills, `M` for the world map, `N` for coordinates, `G` for the emote wheel, `V` for the equipped backpack, and `E` for a combat roll. Better Party opens from its inventory button. In JEI, left-click shows recipes and right-click shows uses. Curios opens from the inventory button. If a binding conflicts, use the complete [controls reference](#essential-keybinds-and-conflict-resolution) at the end; press **Esc** while editing a binding to leave it unbound.
+The recommended profile uses `T` for skills, `M` for the world map, `N` for coordinates, `G` for the emote wheel, `V` for the equipped backpack, and `E` for a combat roll. Better Party opens from its inventory button. In JEI, left-click shows recipes and right-click shows uses. Curios opens from the inventory button. If a binding conflicts, use the complete [controls reference](#essential-keybinds-and-conflict-resolution) at the end; press **Esc** while editing a binding to leave it unbound.
 
 ### Screen layout
 
@@ -296,12 +296,12 @@ Bring spare brushes and mark promising sites on the world map so you can return 
 
 1. Enchant a tool, weapon, or armor piece. Eligible enchantments begin at level one.
 2. Use it in ways that normally cost durability: mine, attack, or take armor damage. Each enchantment fills its own bar.
-3. Hover the gear and hold `Left Ctrl` to inspect progress. A full bar raises one enchantment level and resets until the maximum is reached.
+3. Hover the gear and hold `Left Shift` to inspect progress. A full bar raises one enchantment level and resets until the maximum is reached.
 4. Check the world's Data Packs screen before relying on any optional table, bookshelf, durability, anvil, or loot changes.
 
 **The pack's new-world modules.** Table Rework offers selectable enchantments with XP and bookshelf requirements and a one-lapis application cost. Bookshelf Placement counts shelves in a wider area and can use enchanted books stored nearby to reveal more choices. Durability Rework changes Mending and Unbreaking; No Anvil Books prevents books from being applied to gear in an anvil. Loot Rework and Guaranteed Drops alter where enchanted equipment appears. Existing worlds keep their saved module selection, and items without durability may not gain progress.
 
-<p class="feature-tip"><strong>Quick tip</strong> Hover enchanted gear and hold `Left Ctrl` to see its individual progress bars.</p>
+<p class="feature-tip"><strong>Quick tip</strong> Hover enchanted gear and hold `Left Shift` to see its individual progress bars.</p>
 
 <p class="feature-source">Mechanics source: <a href="https://modrinth.com/mod/penchant">official mod page</a>.</p>
 </section>
@@ -615,11 +615,11 @@ A race changes the traits you carry through the whole playthrough. It does not l
 
 Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues use combined dual-wield power for their scaling, with haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 100% dual-wield Mutilate, Crimson Strikes healing 15% dual power once per successful cast, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
 
-Warriors can Throw Weapon for 40%-80% melee damage on a five-second base cooldown, trading two seconds of Weakness IV for a projectile that retains its original power; quick recasts ignore this skill's own Weakness when capturing damage. Improved deals 50%-90%; Strong Throw hits up to two enemies and seeks the second target, while Head Throw reaches 100% and briefly stuns. Throw Net has a six-second base cooldown, deals 7.5%-15% melee damage, roots eligible enemies and drags them toward two blocks in front of you. Improved reaches 30 blocks; Bigger Net affects a five-block impact radius; Multiple Nets lowers cooldown to four seconds with a shorter root. Killing Spree stacks damage and damage reduction on hits. Endured Vitality stacks armor and maximum hearts from direct hits, healing only newly added hearts. Each stack's armor includes 6% melee power rounded to the nearest half point; the normal armor cap remains.
+Warriors can Throw Weapon for 40%-80% melee damage on a five-second base cooldown, trading two seconds of Weakness IV for a projectile that retains its original power; quick recasts ignore this skill's own Weakness when capturing damage. Improved deals 50%-90%; Strong Throw hits up to two enemies and seeks the second target, while Head Throw reaches 100% and briefly stuns. Throw Net has a six-second base cooldown, deals 7.5%-15% melee damage, roots eligible enemies and drags them toward two blocks in front of you. Improved reaches 30 blocks; Bigger Net affects a five-block impact radius; Multiple Nets lowers cooldown to four seconds with a shorter root. Killing Spree stacks melee damage on hits and heals 4% maximum health on kills. Endured Vitality stacks armor and maximum hearts from direct hits, healing only newly added hearts. Each stack's armor includes 6% melee power rounded to the nearest half point; the normal armor cap remains.
 
-Wild Charge grants two seconds of movement speed and knockback resistance, three with Improved, on a 16-second base cooldown. Endurance grants full knockback resistance during the buff; Concussion Blow readies a two-second stun for the next melee hit. Wild Charge can be cast while controlled and removes/prevents movement impairments for two seconds. Demoralizing Shout also works during control, with three seconds of protection and a 16-second base cooldown. It weakens melee, ranged and offensive magic power by 8% and reveals enemies for six seconds in 12 blocks, or 16 with Improved. Battle Shout buffs party damage at the same radius; Challenging Shout adds damage, aggro and a brief stun. Warm Up guarantees scaled healing on every combat roll with no extra cooldown. Momentum readies five melee hits within six seconds of a roll; each stacks 2% attack speed and movement speed, up to 10% each, for three seconds refreshed by hits. Its base cooldown is twelve seconds. All Warrior casts and cooldowns scale with haste. Party allies and pets remain protected.
+Wild Charge grants two seconds of movement speed and knockback resistance, three with Improved, on a 16-second base cooldown. Endurance grants full knockback resistance during the buff; Concussion Blow readies a one-second stun for the next melee hit. Wild Charge can be cast while controlled and removes/prevents movement impairments for two seconds, three with Improved. Demoralizing Shout also works during control, with three seconds of protection and a 16-second base cooldown. It weakens melee, ranged and offensive magic power by 12% and reveals enemies for six seconds in 12 blocks, or 16 with Improved. Battle Shout buffs party damage at the same radius; Challenging Shout adds damage, aggro and a brief stun. Warm Up guarantees scaled healing on every combat roll with no extra cooldown. Momentum readies five melee hits within six seconds of a roll; each stacks 2% attack speed and movement speed, up to 10% each, for three seconds refreshed by hits. Its base cooldown is twelve seconds. All Warrior casts and cooldowns scale with haste. Party allies and pets remain protected.
 
-Berserker replaces Mortal Strike: channel five pulses while stationary, gaining attack speed, basic-attack damage and knockback resistance while taking more damage. Every pulse fully heals. Reaching five pulses also grants Speed IV briefly; normal expiry fully heals again. A fatal hit ends the buff, fully heals, puts both early Warrior skill tiers on cooldown and causes Nausea and stun. Brutality adds critical chance; Lethality trades health over time for healing melee hits. Last Stand adds 20% maximum health per pulse and heals the health added, up to 100%. It grants Regeneration I and knockback immunity for fifteen seconds, twenty with Improved. Juggernaut adds size and 3% damage reduction per pulse; Sentinel stacks melee damage from direct hits during Last Stand. Both ultimates channel over 2.5 seconds and have 60-100 second base cooldowns by completed pulses. Enrage automatically grants more melee damage and size as health drops; Tenacity grants twelve-second absorption and stuns nearby enemies at 30% health or lower. Stuns interrupt these channels; roots do not. Ultimate effects clear on death; Berserker no longer creates ground spikes.
+Berserker replaces Mortal Strike: channel five pulses while stationary, gaining attack speed, basic-attack damage and knockback resistance while taking more damage. Every pulse fully heals. Each pulse grants rising Speed I-V for two seconds; the buff lasts fourteen seconds, seventeen with Improved; normal expiry fully heals again. A fatal hit ends the buff, fully heals, puts both early Warrior skill tiers on cooldown and causes Nausea and stun. Brutality adds critical chance; Lethality trades health over time for healing melee hits, limited by a 0.2-second base interval. Last Stand adds 20% maximum health per pulse and heals the health added, up to 100%. It grants Regeneration I and knockback immunity for fifteen seconds, twenty with Improved. Juggernaut adds size and 3% damage reduction per pulse; Sentinel stacks melee damage from direct hits during Last Stand, limited by a 0.25-second base interval. Both ultimates channel over 2.5 seconds and have 60-100 second base cooldowns by completed pulses. Enrage grants up to 18% melee damage and 36% size as health drops; Tenacity grants fourteen-second absorption and stuns nearby enemies at 30% health or lower. Stuns and freezing interrupt these channels; roots do not. Ultimate effects clear on death; Berserker no longer creates ground spikes.
 
 Activated shields reduce frontal damage by 80%, separately from armor and Resistance: 10 damage with 50% Resistance and a shield becomes 1. Axes cannot disable blocking, and sonic booms and piercing arrows cannot bypass this reduction. Rear hits and source-less environmental damage receive no shield reduction. Normal activation delay and durability remain.
 
@@ -1053,7 +1053,7 @@ Keep separate combat, travel, and utility sets when useful. The swap replaces th
 
 - **Type:** Equipment improvement
 - **Core mechanic:** Levels eligible enchantments through use and can change enchanting through world modules.
-- **Player guidance:** Hold Left Ctrl over enchanted gear to view progress.
+- **Player guidance:** Hold Left Shift over enchanted gear to view progress.
 
 Eligible enchantments grow as their item is used, with progression targets reduced to 40% in this pack. Its optional world modules also alter table, durability, loot, and anvil behavior as detailed in Part I.
 
@@ -3331,7 +3331,7 @@ Appearance changes no longer require a launcher round trip. Preview the result b
 
 - **Type:** Cosmetic
 - **Core mechanic:** Adds a friendly player-to-player and player-to-creature pat interaction.
-- **Player guidance:** Use the recommended `Grave Accent` binding while looking at a supported player or creature.
+- **Player guidance:** Right-click a supported player or creature to pat them.
 
 The interaction is social and cosmetic. It leaves the usual use action available outside that context.
 
@@ -3453,11 +3453,11 @@ The renderer can improve frame rate and reduce stutter. Pair settings with the d
 
 ## Part VI — Keybinds and Configuration
 
-These tables reflect the copied `options.txt` profile. `C` is assigned to both Sneak and OneKeyMiner's hold action, while `B` opens Advancements and the Better Party shortcut is unbound. Resolve any overlap you dislike in **Options → Controls → Key Binds**. To clear a binding, click it and press **Esc**; Minecraft will show **Unbound**.
+These tables reflect the recommended controls profile. `C` is assigned to both Sneak and OneKeyMiner's hold action, while `B` opens Advancements and the Better Party shortcut is unbound. Resolve any overlap you dislike in **Options → Controls → Key Binds**. To clear a binding, click it and press **Esc**; Minecraft will show **Unbound**.
 
 ### Essential keybinds and conflict resolution
 
-Follow the categories from top to bottom. A blank **Recommended key** means **Unbound**. The copied profile uses `T` for skills, `M` for the world map, `N` for coordinates, and `G` for the emote wheel. Better Party and Curios open from inventory buttons.
+Follow the categories from top to bottom. A blank **Recommended key** means **Unbound**. The recommended profile uses `T` for skills, `M` for the world map, `N` for coordinates, and `G` for the emote wheel. Better Party and Curios open from inventory buttons.
 
 #### LibTooltips
 
@@ -3591,7 +3591,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 
 | Action | Recommended key |
 |---|---|
-| Pat Entity | `Grave Accent` |
+| Pat Entity | `Right Mouse Button` |
 
 #### Jade
 
@@ -3719,7 +3719,7 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 
 | Action | Recommended key |
 |---|---|
-| Open Race Menu |  |
+| Open Race Menu | `P` |
 
 #### Item Interactions
 
@@ -3807,7 +3807,7 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 
 | Action | Recommended key |
 |---|---|
-| Show Enchantment Progress | `Left Ctrl` |
+| Show Enchantment Progress | `Left Shift` |
 
 #### Pet Vault keybinds
 

@@ -1,0 +1,10 @@
+PASS real server packet starts client combat countdown
+PASS breaking countdown delivered
+PASS placement countdown delivered
+PASS square size matches native 22-pixel skill panel height
+CAPTURE scale3-active
+CAPTURE scale2-active
+PASS hide-GUI state respected
+CAPTURE hidden-gui
+PASS client countdown expires on deadline
+CAPTURE expired

@@ -1,0 +1,47 @@
+[
+  {
+    "jar": "pvp_flagging-26.2-1.1.2.jar",
+    "before_sha256": "e6aaacdf67b31dd74d3f4ff246dee02ed291b6b68e8f9ca0f409f7b99e7d3943",
+    "sha256": "69d6dd0fe5161250817f69341b12d0e883720fce98c0cea7910cb207429541d8",
+    "changed": [
+      "META-INF/neoforge.mods.toml",
+      "io/redspace/pvp_flagging/PvpFlagging.class"
+    ],
+    "added": [
+      "assets/pvp_flagging/textures/gui/breaking.png",
+      "assets/pvp_flagging/textures/gui/combat.png",
+      "assets/pvp_flagging/textures/gui/placing.png",
+      "io/redspace/pvp_flagging/CombatEvents.class",
+      "io/redspace/pvp_flagging/CombatRules.class",
+      "io/redspace/pvp_flagging/CombatState.class",
+      "io/redspace/pvp_flagging/CombatStatus.class",
+      "io/redspace/pvp_flagging/client/CombatHud.class",
+      "io/redspace/pvp_flagging/mixin/BreakSuccessMixin.class",
+      "io/redspace/pvp_flagging/mixin/PlaceSuccessMixin.class",
+      "pvp_flagging.mixins.json"
+    ]
+  },
+  {
+    "jar": "sophisticatedbuilding-neoforge-26.2-5.1.0.jar",
+    "before_sha256": "d89bdde9f8088f5b46a7046ff1ff7febe34a300929462f1ed0aa7cf2eedad9d1",
+    "sha256": "e250930d24d255df1c267497850a3b09d5bed3ed18488d0e5781cace39de09d2",
+    "changed": [
+      "sophisticated/building/systems/ServerBlockPlacer.class",
+      "sophisticated/building/systems/UndoRedo.class"
+    ],
+    "added": [
+      "sophisticated/building/pack/BuildingGuard.class"
+    ]
+  },
+  {
+    "jar": "onekeyminer-neoforge-1.6.9-26.2.jar",
+    "before_sha256": "284e73f1727b5f2411fbe9ccc676e2d627b9fab4be98f8ff1c65e441f4085ce3",
+    "sha256": "0540868771ae86ecc5c5e9e00ec5b0401afdf1c8d0b48feba97324734a87410e",
+    "changed": [
+      "org/xiyu/onekeyminer/chain/ChainActionLogic.class"
+    ],
+    "added": [
+      "org/xiyu/onekeyminer/pack/MiningGuard.class"
+    ]
+  }
+]

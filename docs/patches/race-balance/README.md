@@ -46,3 +46,5 @@ Final proof: **166 native server measurements passed**, including an actual rest
 Handbook verification: all 77 pages rendered; only pages 7 and 16 changed against the prior reviewed edition, and both were visually checked. All 51 contents destinations remain correct; root/output PDF copies match. The local owner reference is generated with `python docs/patches/race-balance/export_reference.py`.
 
 Latest Orc clarification: [starting bonuses at full health and a 10% bow/crossbow draw-speed penalty](../orc-followup/README.md). Earlier above-50% values in this document are historical.
+
+Latest Elf follow-up: [delayed slow falling](../elf-slowfall-delay/README.md) leaves the first 2.5 blocks of descent unchanged, so ordinary bunny hopping no longer floats. It preserves this patch and subsequent race changes.

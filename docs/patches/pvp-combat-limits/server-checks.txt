@@ -1,0 +1,85 @@
+PASS confirmed native player hit flags both
+PASS combat lasts 40 seconds
+PASS refresh preserves budget/window
+PASS environment damage does not flag
+PASS zero damage does not flag
+PASS protected damage does not flag
+PASS flag alone starts neither block window
+PASS first break attempt starts only break window
+PASS modded block refuses destruction
+PASS refused native removal consumes no break allowance
+PASS native break budget boundary 0
+PASS native break budget boundary 1
+PASS native break budget boundary 2
+PASS native break budget boundary 3
+PASS native break budget boundary 4
+PASS native break budget boundary 5
+PASS native break budget boundary 6
+PASS native break budget boundary 7
+PASS native break budget boundary 8
+PASS native break budget boundary 9
+PASS native break budget boundary 10
+PASS native break budget boundary 11
+PASS native break budget boundary 12
+PASS native break budget boundary 13
+PASS native break budget boundary 14
+PASS native break budget boundary 15
+PASS native break budget boundary 16
+PASS native break budget boundary 17
+PASS native break budget boundary 18
+PASS native break budget boundary 19
+PASS native break budget boundary 20
+PASS native break budget boundary 21
+PASS native break budget boundary 22
+PASS native break budget boundary 23
+PASS native break budget boundary 24
+PASS native break budget boundary 25
+PASS native break budget boundary 26
+PASS native break budget boundary 27
+PASS native break budget boundary 28
+PASS native break budget boundary 29
+PASS native break budget boundary 30
+PASS successful breaks charged exactly once
+PASS 31st block remains intact
+PASS denied attempt does not extend break deadline
+PASS native placement boundary 0
+PASS native placement boundary 1
+PASS native placement boundary 2
+PASS native placement boundary 3
+PASS native placement boundary 4
+PASS native placement boundary 5
+PASS native placement boundary 6
+PASS native placement boundary 7
+PASS native placement boundary 8
+PASS native placement boundary 9
+PASS native placement boundary 10
+PASS native placement boundary 11
+PASS native placement boundary 12
+PASS native placement boundary 13
+PASS native placement boundary 14
+PASS native placement boundary 15
+PASS native placement boundary 16
+PASS native placement boundary 17
+PASS native placement boundary 18
+PASS native placement boundary 19
+PASS native placement boundary 20
+PASS ordinary placements charged exactly once
+PASS denied placement consumes no material
+PASS over-budget predicted placement rolled back
+PASS placement window refreshes independently
+PASS placement refresh does not refund breaks
+PASS multi-place rejected if whole action exceeds remainder
+PASS rejected multi-place consumes no allowance
+PASS expiry clears both windows and persisted state
+PASS expiry lifts limits even before block window ends
+PASS advanced request queued before combat
+PASS combat discards pending building immediately on queue tick
+PASS discarded work consumes no material
+PASS advanced request refused while flagged
+PASS direct advanced apply blocked
+PASS direct undo blocked
+PASS undo and redo entry points blocked
+PASS OneKeyMiner shared chain operation blocked
+PASS respawn clone preserves entire timer/budget state
+PASS saved player data restores combat
+PASS ordinary advanced behavior resumes after combat expiry

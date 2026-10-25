@@ -1,0 +1,125 @@
+PASS saved race sync received
+PASS selected race has no selection panel
+PASS no premature panel during delayed sync tick 76
+PASS no premature panel during delayed sync tick 77
+PASS no premature panel during delayed sync tick 78
+PASS no premature panel during delayed sync tick 79
+PASS no premature panel during delayed sync tick 80
+PASS no premature panel during delayed sync tick 81
+PASS no premature panel during delayed sync tick 82
+PASS no premature panel during delayed sync tick 83
+PASS no premature panel during delayed sync tick 84
+PASS no premature panel during delayed sync tick 85
+PASS no premature panel during delayed sync tick 86
+PASS no premature panel during delayed sync tick 87
+PASS no premature panel during delayed sync tick 88
+PASS no premature panel during delayed sync tick 89
+PASS no premature panel during delayed sync tick 90
+PASS no premature panel during delayed sync tick 91
+PASS no premature panel during delayed sync tick 92
+PASS no premature panel during delayed sync tick 93
+PASS no premature panel during delayed sync tick 94
+PASS no premature panel during delayed sync tick 95
+PASS no premature panel during delayed sync tick 96
+PASS no premature panel during delayed sync tick 97
+PASS no premature panel during delayed sync tick 98
+PASS no premature panel during delayed sync tick 99
+PASS no premature panel during delayed sync tick 100
+PASS no premature panel during delayed sync tick 101
+PASS no premature panel during delayed sync tick 102
+PASS no premature panel during delayed sync tick 103
+PASS no premature panel during delayed sync tick 104
+PASS no premature panel during delayed sync tick 105
+PASS no premature panel during delayed sync tick 106
+PASS no premature panel during delayed sync tick 107
+PASS no premature panel during delayed sync tick 108
+PASS no premature panel during delayed sync tick 109
+PASS no premature panel during delayed sync tick 110
+PASS no premature panel during delayed sync tick 111
+PASS no premature panel during delayed sync tick 112
+PASS no premature panel during delayed sync tick 113
+PASS no premature panel during delayed sync tick 114
+PASS no premature panel during delayed sync tick 115
+PASS no premature panel during delayed sync tick 116
+PASS no premature panel during delayed sync tick 117
+PASS no premature panel during delayed sync tick 118
+PASS no premature panel during delayed sync tick 119
+PASS no premature panel during delayed sync tick 120
+PASS no premature panel during delayed sync tick 121
+PASS no premature panel during delayed sync tick 122
+PASS no premature panel during delayed sync tick 123
+PASS no premature panel during delayed sync tick 124
+PASS no premature panel during delayed sync tick 125
+PASS no premature panel during delayed sync tick 126
+PASS no premature panel during delayed sync tick 127
+PASS no premature panel during delayed sync tick 128
+PASS no premature panel during delayed sync tick 129
+PASS no premature panel during delayed sync tick 130
+PASS no premature panel during delayed sync tick 131
+PASS no premature panel during delayed sync tick 132
+PASS no premature panel during delayed sync tick 133
+PASS no premature panel during delayed sync tick 134
+PASS no premature panel during delayed sync tick 135
+PASS no premature panel during delayed sync tick 136
+PASS no premature panel during delayed sync tick 137
+PASS no premature panel during delayed sync tick 138
+PASS no premature panel during delayed sync tick 139
+PASS no premature panel during delayed sync tick 140
+PASS no premature panel during delayed sync tick 141
+PASS no premature panel during delayed sync tick 142
+PASS no premature panel during delayed sync tick 143
+PASS no premature panel during delayed sync tick 144
+PASS no premature panel during delayed sync tick 145
+PASS no premature panel during delayed sync tick 146
+PASS no premature panel during delayed sync tick 147
+PASS no premature panel during delayed sync tick 148
+PASS no premature panel during delayed sync tick 149
+PASS no premature panel during delayed sync tick 150
+PASS no premature panel during delayed sync tick 151
+PASS no premature panel during delayed sync tick 152
+PASS no premature panel during delayed sync tick 153
+PASS no premature panel during delayed sync tick 154
+PASS no premature panel during delayed sync tick 155
+PASS no premature panel during delayed sync tick 156
+PASS no premature panel during delayed sync tick 157
+PASS no premature panel during delayed sync tick 158
+PASS no premature panel during delayed sync tick 159
+PASS no premature panel during delayed sync tick 160
+PASS no premature panel during delayed sync tick 161
+PASS no premature panel during delayed sync tick 162
+PASS no premature panel during delayed sync tick 163
+PASS no premature panel during delayed sync tick 164
+PASS no premature panel during delayed sync tick 165
+PASS no premature panel during delayed sync tick 166
+PASS no premature panel during delayed sync tick 167
+PASS no premature panel during delayed sync tick 168
+PASS no premature panel during delayed sync tick 169
+PASS no premature panel during delayed sync tick 170
+PASS no premature panel during delayed sync tick 171
+PASS no premature panel during delayed sync tick 172
+PASS no premature panel during delayed sync tick 173
+PASS no premature panel during delayed sync tick 174
+PASS unsynchronized client carries NONE without prompting
+PASS late saved-race packet restored identity
+PASS late known race closes stale selection panel
+PASS actual Orb item registered
+PASS race-only native Orb use succeeds with zero spent skills
+PASS Orb removes server race
+PASS successful race reset consumes normal Orb use
+PASS other player's race unchanged
+PASS old Elf movement modifier removed immediately
+PASS Orb sync confirms raceless identity
+PASS Orb automatically opens race selection
+PASS native race selection command works after Orb reset
+PASS new race synchronized
+PASS confirmed selection closes panel
+PASS spent Adventurer skill fixture unlocked
+PASS combined native skill/race reset succeeds
+PASS Orb still resets Adventurer skills
+PASS combined reset also clears race
+PASS second Orb reset prompts again in same session
+PASS dismissing confirmed raceless panel does not reopen every tick
+PASS no race and no spent skills preserve failed Orb behavior
+PASS failed reset does not spend Orb
+PASS post-reset saved race synchronized
+PASS logout clears readiness for next connection

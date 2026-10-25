@@ -1,0 +1,2 @@
+PASS saved race sync received
+PASS selected race has no selection panel

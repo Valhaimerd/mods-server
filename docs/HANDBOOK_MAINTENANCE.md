@@ -1,6 +1,6 @@
 # Player Handbook Maintenance
 
-Last verified: 2026-10-20<br>
+Last verified: 2026-10-25<br>
 Environment: Windows PowerShell, Minecraft 26.2, NeoForge 26.2.0.90
 
 ## Purpose
@@ -60,9 +60,9 @@ Keep narrow equipment add-ons, small structure packs, cosmetic variants, and sec
 Current verified baseline:
 
 - 304 main-pack JARs;
-- 24 client-store JARs;
-- 182 alphabetical gameplay entries;
-- 173 entries with verified project icons from CurseForge or Modrinth, including nine group entries with representative member artwork, plus eight author icons from installed JARs and user-provided Bifrost artwork;
+- 23 client-store JARs;
+- 181 alphabetical gameplay entries;
+- 172 entries with verified project icons from CurseForge or Modrinth, including nine group entries with representative member artwork, plus eight author icons from installed JARs and user-provided Bifrost artwork;
 - 48 keybind tables;
 - 6 handbook parts;
 - zero broken internal links.
@@ -212,3 +212,7 @@ Before distribution, render and inspect every PDF page. Confirm that:
 - **Recommended key is undecided:** leave the cell blank until the control is intentionally assigned or confirmed unbound.
 - **Screenshot is unavailable:** retain the invisible capture marker and `Needed` queue status; do not create a broken image link or use unrelated promotional art.
 - **Index link is broken:** verify the target heading text and its GitHub-style lowercase hyphenated anchor, then update every index or cross-reference pointing to it.
+
+## 25 October 2026 furniture and controls audit
+
+Added the installed MrCrayfish Furniture Refurbished 1.0.25 to Building, its alphabetical/Building/Storage indexes, sources and icon manifest. Framework 0.13.26 satisfies its declared requirement. PatPat (right mouse), RPG Tooltip Spell Details (Left Ctrl) and Penchant progress (Left Shift) already matched the personal profile and installer recommendations; player guidance now explicitly explains holding both tooltip keys. Profile/options and installer were read-only. [Audit evidence](handbook-audits/2026-10-25-new-mods-and-keybinds.json) records the counts, three verified bindings, metadata hash and PDF checks. This is documentation/metadata verification, not a furniture runtime test.

@@ -25,3 +25,7 @@ The hidden -20% attribute penalties are removed. Entity join, death clone and pe
 `build.py` compiles two production classes using Java-25 bytecode and preserves upstream identity/notices/icon. It writes a candidate and does not install automatically. The Better Party archive is a compile input for the guarded integration. `artifacts.json` pins the final hashes; `runtime-results.txt` records the isolated test result. Previous active/fixed copies are retained locally under ignored retired packs.
 
 `run_probe.py --candidate` creates a new isolated test world on every run, avoiding stale party/team fixtures after failures. It checks full attributes after legacy modifier removal, real Spell Engine spell impacts, direct player damage, all four summons' melee/spell/arrow sources, unowned summons, ordinary entity combat, healing, party members/pets and team friendly fire. Personal worlds and the separate server are untouched. Sync/restart both sides for the same-name replacement; no GitHub push requested.
+
+## Later combat-limits overlay
+
+The [PvP combat-limits patch](../pvp-combat-limits/README.md) extends this artifact without changing its preceding balance rules. Use that patch?s final artifact verification for the currently installed JAR; this page records the earlier baseline.

@@ -1,0 +1,92 @@
+PASS PvP value survives server restart actual=67.5
+PASS PvE value survives server restart actual=92.5
+PASS query PvP without value
+PASS query PvE without value
+PASS invalid percentage rejected pvpdamage -1
+PASS invalid percentage rejected pvpdamage 101
+PASS invalid percentage rejected pvedamage -0.1
+PASS invalid percentage rejected pvedamage 100.1
+PASS invalid percentage rejected pvpdamage NaN
+PASS invalid percentage rejected pvedamage Infinity
+PASS non-operator cannot configure PvP
+PASS non-operator cannot configure PvE
+PASS native PvP command damage 0.0 actual=0.0
+PASS PvP command leaves PvE unchanged actual=16.0
+PASS native PvE command damage 0.0 actual=0.0
+PASS summon PvP follows command archers:spirit_wolf 0.0 actual=0.0
+PASS summon PvE follows command archers:spirit_wolf 0.0 actual=0.0
+PASS summon PvP follows command archers:spirit_wolf 0.0 actual=0.0
+PASS summon PvE follows command archers:spirit_wolf 0.0 actual=0.0
+PASS summon PvP follows command wizards:arcane_emitter 0.0 actual=0.0
+PASS summon PvE follows command wizards:arcane_emitter 0.0 actual=0.0
+PASS summon PvP follows command wizards:arcane_emitter 0.0 actual=0.0
+PASS summon PvE follows command wizards:arcane_emitter 0.0 actual=0.0
+PASS summon PvP follows command wizards:fire_hydra 0.0 actual=0.0
+PASS summon PvE follows command wizards:fire_hydra 0.0 actual=0.0
+PASS summon PvP follows command wizards:fire_hydra 0.0 actual=0.0
+PASS summon PvE follows command wizards:fire_hydra 0.0 actual=0.0
+PASS summon PvP follows command wizards:frost_elemental 0.0 actual=0.0
+PASS summon PvE follows command wizards:frost_elemental 0.0 actual=0.0
+PASS summon PvP follows command wizards:frost_elemental 0.0 actual=0.0
+PASS summon PvE follows command wizards:frost_elemental 0.0 actual=0.0
+PASS native PvP command damage 35.0 actual=7.0
+PASS PvP command leaves PvE unchanged actual=16.0
+PASS native PvE command damage 35.0 actual=7.0
+PASS summon PvP follows command archers:spirit_wolf 35.0 actual=7.0
+PASS summon PvE follows command archers:spirit_wolf 35.0 actual=7.0
+PASS summon PvP follows command archers:spirit_wolf 35.0 actual=7.0
+PASS summon PvE follows command archers:spirit_wolf 35.0 actual=7.0
+PASS summon PvP follows command wizards:arcane_emitter 35.0 actual=7.0
+PASS summon PvE follows command wizards:arcane_emitter 35.0 actual=7.0
+PASS summon PvP follows command wizards:arcane_emitter 35.0 actual=7.0
+PASS summon PvE follows command wizards:arcane_emitter 35.0 actual=7.0
+PASS summon PvP follows command wizards:fire_hydra 35.0 actual=7.0
+PASS summon PvE follows command wizards:fire_hydra 35.0 actual=7.0
+PASS summon PvP follows command wizards:fire_hydra 35.0 actual=7.0
+PASS summon PvE follows command wizards:fire_hydra 35.0 actual=7.0
+PASS summon PvP follows command wizards:frost_elemental 35.0 actual=7.0
+PASS summon PvE follows command wizards:frost_elemental 35.0 actual=7.0
+PASS summon PvP follows command wizards:frost_elemental 35.0 actual=7.0
+PASS summon PvE follows command wizards:frost_elemental 35.0 actual=7.0
+PASS native PvP command damage 67.5 actual=13.5
+PASS PvP command leaves PvE unchanged actual=16.0
+PASS native PvE command damage 67.5 actual=13.5
+PASS summon PvP follows command archers:spirit_wolf 67.5 actual=13.5
+PASS summon PvE follows command archers:spirit_wolf 67.5 actual=13.5
+PASS summon PvP follows command archers:spirit_wolf 67.5 actual=13.5
+PASS summon PvE follows command archers:spirit_wolf 67.5 actual=13.5
+PASS summon PvP follows command wizards:arcane_emitter 67.5 actual=13.5
+PASS summon PvE follows command wizards:arcane_emitter 67.5 actual=13.5
+PASS summon PvP follows command wizards:arcane_emitter 67.5 actual=13.5
+PASS summon PvE follows command wizards:arcane_emitter 67.5 actual=13.5
+PASS summon PvP follows command wizards:fire_hydra 67.5 actual=13.5
+PASS summon PvE follows command wizards:fire_hydra 67.5 actual=13.5
+PASS summon PvP follows command wizards:fire_hydra 67.5 actual=13.5
+PASS summon PvE follows command wizards:fire_hydra 67.5 actual=13.5
+PASS summon PvP follows command wizards:frost_elemental 67.5 actual=13.5
+PASS summon PvE follows command wizards:frost_elemental 67.5 actual=13.5
+PASS summon PvP follows command wizards:frost_elemental 67.5 actual=13.5
+PASS summon PvE follows command wizards:frost_elemental 67.5 actual=13.5
+PASS native PvP command damage 100.0 actual=20.0
+PASS PvP command leaves PvE unchanged actual=16.0
+PASS native PvE command damage 100.0 actual=20.0
+PASS summon PvP follows command archers:spirit_wolf 100.0 actual=20.0
+PASS summon PvE follows command archers:spirit_wolf 100.0 actual=20.0
+PASS summon PvP follows command archers:spirit_wolf 100.0 actual=20.0
+PASS summon PvE follows command archers:spirit_wolf 100.0 actual=20.0
+PASS summon PvP follows command wizards:arcane_emitter 100.0 actual=20.0
+PASS summon PvE follows command wizards:arcane_emitter 100.0 actual=20.0
+PASS summon PvP follows command wizards:arcane_emitter 100.0 actual=20.0
+PASS summon PvE follows command wizards:arcane_emitter 100.0 actual=20.0
+PASS summon PvP follows command wizards:fire_hydra 100.0 actual=20.0
+PASS summon PvE follows command wizards:fire_hydra 100.0 actual=20.0
+PASS summon PvP follows command wizards:fire_hydra 100.0 actual=20.0
+PASS summon PvE follows command wizards:fire_hydra 100.0 actual=20.0
+PASS summon PvP follows command wizards:frost_elemental 100.0 actual=20.0
+PASS summon PvE follows command wizards:frost_elemental 100.0 actual=20.0
+PASS summon PvP follows command wizards:frost_elemental 100.0 actual=20.0
+PASS summon PvE follows command wizards:frost_elemental 100.0 actual=20.0
+PASS zero PvP blocks damage actual=0.0
+PASS zero-damage command does not combat flag
+PASS 100 percent still respects friendly protection actual=0.0
+PASS ordinary mob damage unchanged actual=20.0

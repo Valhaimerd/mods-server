@@ -1,0 +1,17 @@
+{
+  "jar": "pvp_flagging-26.2-1.1.2.jar",
+  "before_sha256": "69d6dd0fe5161250817f69341b12d0e883720fce98c0cea7910cb207429541d8",
+  "sha256": "6c2bb90af3c39a928d8381df14f28d8922fe24b9aec4b3c1542562b34bc3126b",
+  "changed": [
+    "io/redspace/pvp_flagging/PvpFlagging.class",
+    "io/redspace/pvp_flagging/events/ServerEventsForge.class"
+  ],
+  "added": [
+    "io/redspace/pvp_flagging/DamageCommands.class"
+  ],
+  "sources": {
+    "DamageCommands.java": "ce898ec9e7da4892f5292ec817b43663ced00c6ec8cee20576da7f6b96bd4a91",
+    "PvpFlagging.java": "6690116520fc82c0772751b658ca30c9efbda9eab8f2c4c8e45de889130a10f6",
+    "ServerEventsForge.java": "891fe89bfe520bec7609cb717116ac978ad46168bad02ce93dba1e5b964f6794"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-25",
+  "main_jars": 304,
+  "client_extra_jars": 23,
+  "new_entry": "MrCrayfish's Furniture Mod: Refurbished",
+  "jar_sha256": "2d7399644deeb6109208c34eb753ad58ef21cd7322e5f6c5d9682d54acd4b2b3",
+  "framework_version": "0.13.26",
+  "required_framework_minimum": "0.13.26",
+  "verified_keybinds": {
+    "key_key.penchant.show_progress": "key.keyboard.left.shift",
+    "key_keybindings.spell_engine.tooltip_details": "key.keyboard.left.control",
+    "key_patpat.keybinding.pat": "key.mouse.right"
+  },
+  "installer_keybinds_match": true,
+  "profile_modified": false,
+  "new_mod_runtime_tested": false,
+  "pages": 77,
+  "toc_checked": 51,
+  "bad": [],
+  "alphabetical_entries": 181,
+  "icon_manifest_entries": 181,
+  "icon_counts": {
+    "downloaded": 172,
+    "embedded_author": 8,
+    "user_supplied": 1
+  },
+  "rendered_pages": 77,
+  "visually_reviewed_changed_pages": [
+    1,
+    3,
+    4,
+    18,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    66
+  ],
+  "new_entry_page": 54,
+  "official_source": "https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture",
+  "icon_source": "refurbished_furniture_icon.png in installed JAR",
+  "installer_modified": false
+}

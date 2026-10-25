@@ -1,0 +1,9 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "88cc24cdb4a2f1403ba7eaed802c98dddf4c303c5a2a31284b1d9ee569e2bc4c",
+  "sha256": "e4fa37cd1fd5b3930b88e5c03b0899af6ce5b4ae6bf59af7f11e4ee8a53369b7",
+  "source_sha256": "7ec62d8c3811b08f4b6a927cea953b227ebcb14e258363d01a5199bc11a55337",
+  "changed": [
+    "com/eiden/iourusraces/race/RaceBalanceRules.class"
+  ]
+}

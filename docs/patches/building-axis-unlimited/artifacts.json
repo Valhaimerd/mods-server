@@ -1,0 +1,19 @@
+{
+  "jar": "sophisticatedbuilding-neoforge-26.2-5.1.0.jar",
+  "before_sha256": "c0dfc2931bc066800832b6a767621285cda45e679ea221381e4b857946fae847",
+  "sha256": "d89bdde9f8088f5b46a7046ff1ff7febe34a300929462f1ed0aa7cf2eedad9d1",
+  "sources": {
+    "AxisPolicy.java": "f2a99a3944b5e9ea838f8821d8ebb7e04bc8d9ec5b5465b6e6bad4901645e7f3",
+    "PatchAxis.java": "bd1a05bbadda8c18bb64cd73c4212536114f8f7c5f9f2a52f186b6f54b9d3927"
+  },
+  "changed": [
+    "sophisticated/building/attachment/AttachmentHandler.class",
+    "sophisticated/building/attachment/PowerLevel.class",
+    "sophisticated/building/gui/buildmode/RadialMenu.class",
+    "sophisticated/building/gui/buildmodifier/ArrayEntry.class",
+    "sophisticated/building/utilities/BuildLimits.class"
+  ],
+  "added": [
+    "sophisticated/building/pack/AxisPolicy.class"
+  ]
+}

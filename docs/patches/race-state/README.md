@@ -32,3 +32,5 @@ python docs/patches/race-state/verify.py tmp/race-state/built
 Build uses the prior race attribute source plus focused replacements; `artifacts.json` pins the installed input and exact archive differences. Previous active/fixed archives are retained under ignored `mod fixing/retired packs/race-state-2026-10-24/`. Both sides need the same replacement. Personal worlds and the separate desktop server remain untouched. No commit or push requested.
 
 Handbook review: all 77 pages rendered; changed pages 16, 28, 29 and 30 were visually reviewed against the prior edition. All 51 contents destinations remain correct and both PDF copies match. Concurrent unrelated handbook edits were preserved.
+
+Latest leaf policy: [solid leaves and Elf/Goblin climbing](../race-leaf-climbing/README.md) supersedes the historical non-Elf pass-through rule. Race cleanup and vision fixes remain.

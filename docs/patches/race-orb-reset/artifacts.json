@@ -1,0 +1,18 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "630ea19f065a47564e978b6d31fd6b3b399f9da23f0ec07b2e8198860c04c933",
+  "sha256": "a4d145cd99f6c0427175e4cd2c289c58b875ccb2d6f8cf841394119d6cbc1487",
+  "changed": [
+    "com/eiden/iourusraces/client/ClientInputHandler.class",
+    "com/eiden/iourusraces/race/ClientRaceData.class",
+    "iourusraces.mixins.json"
+  ],
+  "added": [
+    "com/eiden/iourusraces/mixin/OrbRaceResetMixin.class"
+  ],
+  "sources": {
+    "ClientInputHandler.java": "2f3865637260c08572a821b34a0bbffa71006c3e35c09d36cba487002456af06",
+    "ClientRaceData.java": "574bbb03a0e9d8cd9d405e8d4c6757664310d3a490a705f31a38cc99d7b3f3fc",
+    "OrbRaceResetMixin.java": "6fdfa182a074f67582d623c69acda2eb7849ba562ba895cea6ab23a5d06ed11a"
+  }
+}

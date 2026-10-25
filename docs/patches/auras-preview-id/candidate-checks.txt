@@ -1,0 +1,48 @@
+PASS book preview cow stays outside the world
+PASS unspawned cow preview renders safely without Auras
+PASS preview uses an isolated negative ID
+PASS preview is not registered or ticking in the world
+PASS separate book previews receive distinct IDs
+PASS preview identity stays stable across repeated frames
+PASS world cow fixture is registered
+PASS real world entity still renders with its assigned ID
+PASS world render state can be reused for an unspawned preview
+PASS normal player rendering preserved
+PASS minecraft:pig preview remains detached with a negative ID
+PASS minecraft:pig preview renders safely
+PASS minecraft:sheep preview remains detached with a negative ID
+PASS minecraft:sheep preview renders safely
+PASS minecraft:wolf preview remains detached with a negative ID
+PASS minecraft:wolf preview renders safely
+PASS minecraft:bee preview remains detached with a negative ID
+PASS minecraft:bee preview renders safely
+PASS minecraft:tropical_fish preview remains detached with a negative ID
+PASS minecraft:tropical_fish preview renders safely
+PASS minecraft:turtle preview remains detached with a negative ID
+PASS minecraft:turtle preview renders safely
+PASS minecraft:goat preview remains detached with a negative ID
+PASS minecraft:goat preview renders safely
+PASS minecraft:chicken preview remains detached with a negative ID
+PASS minecraft:chicken preview renders safely
+PASS minecraft:horse preview remains detached with a negative ID
+PASS minecraft:horse preview renders safely
+PASS minecraft:axolotl preview remains detached with a negative ID
+PASS minecraft:axolotl preview renders safely
+PASS minecraft:armor_stand preview remains detached with a negative ID
+PASS minecraft:armor_stand preview renders safely
+PASS actual Animal Pen guidebook entry rendered animals/animal_cow
+PASS correct guidebook remains open animals/animal_cow
+PASS actual Animal Pen guidebook entry rendered animals/animal_pig
+PASS correct guidebook remains open animals/animal_pig
+PASS actual Animal Pen guidebook entry rendered animals/animal_sheep
+PASS correct guidebook remains open animals/animal_sheep
+PASS actual Animal Pen guidebook entry rendered animals/animal_wolf
+PASS correct guidebook remains open animals/animal_wolf
+PASS actual Animal Pen guidebook entry rendered flying_animals/animal_bee
+PASS correct guidebook remains open flying_animals/animal_bee
+PASS actual Animal Pen guidebook entry rendered water_animals/fish_tropical_fish
+PASS correct guidebook remains open water_animals/fish_tropical_fish
+PASS actual Animal Pen guidebook entry rendered water_animals/animal_turtle
+PASS correct guidebook remains open water_animals/animal_turtle
+PASS actual Animal Pen guidebook entry rendered animals/animal_goat
+PASS correct guidebook remains open animals/animal_goat

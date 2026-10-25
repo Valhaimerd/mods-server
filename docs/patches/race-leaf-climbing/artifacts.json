@@ -1,0 +1,18 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "e4fa37cd1fd5b3930b88e5c03b0899af6ce5b4ae6bf59af7f11e4ee8a53369b7",
+  "sha256": "630ea19f065a47564e978b6d31fd6b3b399f9da23f0ec07b2e8198860c04c933",
+  "sources": {
+    "LivingEntityClimbingMixin.java": "0ccedd64f296957a397f338a8f4aab1b6ee6e45d99e957bd80711efa37c85738",
+    "RaceVisualRules.java": "0e7edab084c2d3f352d3a3c7c2300c4598589ce9b44236dd797d3f55a9edbce3"
+  },
+  "changed": [
+    "iourusraces.mixins.json",
+    "assets/iourusraces/lang/en_us.json",
+    "assets/iourusraces/lang/es_es.json",
+    "com/eiden/iourusraces/race/RaceVisualRules.class"
+  ],
+  "added": [
+    "com/eiden/iourusraces/mixin/LivingEntityClimbingMixin.class"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "jar": "patchouli-neoforge-26.2-95.jar",
+  "before_sha256": "bcf112df110536aaf2f936fe1949cf867b1fc932fe1af40f90fa97ac8fba10da",
+  "sha256": "961d5709dcfe8eb278f394b645f5290de59af86a87e070f3a0cc4421eacc1c25",
+  "sources": {
+    "PreviewEntityIds.java": "c39a6adb92187678749911af77b1d89f765415cc03de810f0bf0dbaaa83d2cb4",
+    "PatchPreview.java": "6ded147e2c1152e3866e033979a99e75c835f10079cb6c8c4f8f919dd3a29c14"
+  },
+  "changed": [
+    "vazkii/patchouli/common/util/EntityUtil.class"
+  ],
+  "added": [
+    "vazkii/patchouli/common/util/PreviewEntityIds.class"
+  ]
+}

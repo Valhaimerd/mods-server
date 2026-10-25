@@ -275,3 +275,46 @@ Added exact reference Punchy aliases for Stormbreaker, Mjolnir and Hofund; the c
 Installed matching same-name Rogues, Skill Tree and Spell Engine replacements: Killing Spree kill healing replaces reduction; Shout weakens power by 12%; Improved Wild Charge protects for 3s; Concussion stuns for 1s. Berserker grants Speed I-V per pulse and lasts 14/17s; Frozen now explicitly interrupts both ultimates. Enrage grants 3% damage/6% size per threshold; Tenacity lasts 14s. The concise description guide is preserved. See [build and 999 isolated checks](../docs/patches/warrior-balance/README.md); originals remain ignored under retired packs. No push requested.
 
 Warrior proc follow-up: Sentinel has a 0.25s base stacking interval; Lethality has a 0.2s base hit-healing interval. Both retain native haste scaling and share the limit across targets. 1,010 isolated checks passed; same-name active/fixed replacements installed and prior copies preserved in `retired packs/warrior-proc-intervals-20261025/`.
+
+## Elf slow-falling delay - 25 October 2026
+
+[One-class follow-up](../docs/patches/elf-slowfall-delay/README.md): slow falling begins after 2.5 blocks of descent rather than on every downward jump. No new timer/state or tick handler. The baseline reproduced immediate activation; the replacement passed four actual client bunny hops, threshold/reset checks and a protected 20-block drop at full health. Same-name active/fixed copies installed; prior builds retired locally. Other race patches preserved. Handbook and race reference updated. No push requested.
+
+## Solid leaves and Elf/Goblin climbing - 25 October 2026
+
+[Leaf follow-up](../docs/patches/race-leaf-climbing/README.md): every race now collides with leaves; Elf/Goblin climb leaf walls, including tagged and subclass-based modded foliage. Other walls retain the Spider Legs accessory requirement; normal ladders/vines remain. A connected client/integrated server passed 76 collision, racial eligibility, equipped-item and movement checks. Same-name active/fixed Iourus copies installed, predecessors retired locally; delayed Elf slow falling and unrelated classes preserved. Race references and handbook updated. No push requested.
+
+## Sophisticated Building axis cap removal - 25 October 2026
+
+[Axis-only patch](../docs/patches/building-axis-unlimited/README.md) removes the separate axis cap, retaining native batch limits, start reach and material requirements. Unlimited labels and overflow-safe distance handling cover client/server paths. The baseline preview stopped at eight; 31 connected-client/integrated-server checks passed, including actual 32-block Survival placement/material consumption and 200-to-128 server batch truncation. Same-name active/fixed archives installed; predecessors retired locally. Handbook updated; no push requested.
+
+## Animal Pen guidebook crash and Auras removal - 25 October 2026
+
+[Investigation and repair](../docs/patches/auras-preview-id/README.md): removed Auras from the client pack as requested, retaining its original archive locally. Without Auras, vanilla ItemModelResolver still crashed on unassigned preview IDs. The same-name Patchouli repair assigns distinct negative IDs when its preview factory creates a detached entity, without spawning/registering it. A minimal connected client with Animal Pen and Patchouli passed 48 checks and eight real book pages; the cow page was visually checked. Animal Pen and live world entity behavior remain unchanged. Active/fixed Patchouli copies match; predecessors archived. Client-store count is now 23; catalog/index/icons/PDF synchronized. No push requested.
+
+## Kaleidoscope Cookery removal - 25 October 2026
+
+Removed `kaleidoscope_cookery_26.2_1.6.0.jar` at the owner's request. Installed NeoForge metadata declares no dependent requiring it. The original archive and retired handbook icon are kept in ignored `retired packs/kaleidoscope-removal-2026-10-25/`. Removed its catalog entry, both indexes, source link and icon mapping; updated distribution/icon counts and rebuilt the player handbook. Remaining cooking mods and personal installations/worlds are untouched. No push requested.
+
+
+## PvP combat limits and HUD ? 25 October 2026
+
+Same-filename replacements for PvP Flagging, Sophisticated Building and OneKeyMiner add the approved 40-second flag to both players after confirmed PvP damage. While flagged, advanced tool actions and queued builds stop; ordinary building has separate 20-placement and 30-break allowances per 30-second window. The three flush bottom-left square icons show countdowns. Reconnect/respawn uses the existing persisted player data; damage retention and party rules are preserved.
+
+The tested final JARs are in `mods` and `1 fixed packs`; predecessors are in `retired packs/pvp-combat-limits-2026-10-25`. Source, build, verification and exact hashes are in [the combat-limits patch](../docs/patches/pvp-combat-limits/README.md). Final fixtures passed 45 timer/budget checks, 118 previous damage/party/summon checks, 85 native combat/block/tool checks and the connected HUD test at two GUI scales, including silent refresh and hide/expiry captures. A review-discovered refused-removal case failed before the success-hook correction and passed afterward. Native placement rollback preserved the denied block/inventory. Tests used disposable repository worlds; full-pack mouse play and multiplayer reconnect stress are not claimed. Personal installations and the separate server are untouched. No commit or push requested.
+
+## Adventurer Healing Power ? 25 October 2026
+
+Same-name Adventurer Skills repack adds Healing Power to ordinary Healing nodes, Colossus, shared caster nodes and Magistrate. Existing received-healing and offensive-school rewards remain; shared caster/Magistrate wording now reads Magic Damage. Only four definitions change. See [patch and verification](../docs/patches/adventurer-healing/README.md). Original active/fixed archives remain ignored in `retired packs/adventurer-healing-20261025/`.
+
+
+## Live damage commands ? 25 October 2026
+
+The same-name PvP Flagging replacement adds administrator-only `/pvpdamage <percent>` and `/pvedamage <percent>` (0?100; omit the value to query), including the existing four player-owned RPG summons and their projectiles. Default retention remains 35% against players and 80% against other entities; ordinary mob damage and party protection remain unchanged. Values apply immediately and persist in native world-saved data, verified across a real isolated server restart. Each of the initial/restart fixtures passed 92 checks. The combat/HUD/tool rules remain byte-identical. See [sources, commands and verification](../docs/patches/damage-commands/README.md). Final active/fixed-pack copies retain the filename and the prior JAR is archived under `retired packs/damage-commands-2026-10-25`. No personal installations or external server were modified, and no commit/push was requested.
+
+
+## Orb race reset and delayed race synchronization ? 25 October 2026
+
+The same-name Iourus replacement now waits for an authoritative race-sync response before offering selection; pending client NONE is no longer treated as a new player. A late known-race packet closes a stale selection screen. The controlled baseline reproduced the premature chooser, and the final connected fixture passes 125 delayed-sync/native-Orb/UI checks plus 5 client-state checks. The Orb of Oblivion resets the user's race through the existing setter and reopens selection, including when no skill points are spent. The original skill refund, item cost, particle and failed no-op behavior remain; other players are untouched. A race-only dedicated server loads successfully without the optional RPG target classes.
+
+Only client state/menu classes and the mixin manifest change, with one optional Orb Mixin added; all prior balance/leaf/slowfall/server persistence and network entries remain byte-identical. Final production/fixed copies and ignored predecessors follow the standard workflow. Sources, exact hashes, results and limits are in [the race Orb patch](../docs/patches/race-orb-reset/README.md). The handbook source/PDF are synchronized; personal installations and the separate server are untouched. No commit or push requested.

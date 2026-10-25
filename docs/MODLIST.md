@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 304 synchronized JARs · 24 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 304 synchronized JARs · 23 client extras</p>
 
 Last audited: 2026-10-25<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 304 synchronized JARs plus 24 client-store JARs
+Current distribution: 304 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -76,7 +76,7 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>62</td></tr>
     <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>63</td></tr>
     <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>64</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>67</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>66</td></tr>
     <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>69</td></tr>
     <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>69</td></tr>
   </tbody>
@@ -591,7 +591,7 @@ Progress continues through enchantment use, exploration rewards, and specialized
 - **Core mechanic:** Eight persistent identities alter strengths, weaknesses, attributes, and passive behavior.
 - **Player guidance:** Compare the eight race descriptions before confirming a lasting choice.
 
-A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class. Elf now has 8% faster base movement and synchronized slow falling, with no racial projectile-damage bonus. Goblin size is 75% of normal; Asgardian size is 110%, with no mining-speed bonus. Dwarf gains 2 armor. Elf has no racial night vision; Goblin retains it and Melfork gains it only underwater. Elf stands on leaves; other races pass through recognized leaves, including modded LeavesBlock subclasses. Race changes clean up prior racial attributes and water bonuses before applying the new identity. Orc attacks and draws bows/crossbows 10% slower. It starts with +2 melee/+1 ranged damage at full health; at 40/30/20% health this rises to +3/4/5 melee and +1.5/2/2.5 ranged, capped below 20%. These bonuses feed weapon attributes and RPG power, return to their starting level as health recovers, and do not replace equipment stats.
+A race changes the traits you carry through the whole playthrough. It does not lock you into a particular RPG class. Elf now has 8% faster base movement and slow falling after a 2.5-block descent, leaving ordinary jumps unaffected. It has no racial projectile-damage bonus. Goblin size is 75% of normal; Asgardian size is 110%, with no mining-speed bonus. Dwarf gains 2 armor. Elf has no racial night vision; Goblin retains it and Melfork gains it only underwater. Leaves are solid for every race. Elf and Goblin can climb leaf walls, including recognized modded leaves. Other walls require Spider Legs from Nameless Trinkets; ladders and vines still work normally. Race changes clean up prior racial attributes and water bonuses before applying the new identity. The Orb of Oblivion resets your race and opens selection again, even without spent skill points. On joining, selection waits for your saved race to arrive from the server. Orc attacks and draws bows/crossbows 10% slower. It starts with +2 melee/+1 ranged damage at full health; at 40/30/20% health this rises to +3/4/5 melee and +1.5/2/2.5 ranged, capped below 20%. These bonuses feed weapon attributes and RPG power, return to their starting level as health recovers, and do not replace equipment stats.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/iourus-races">Official mod page</a></p>
 
@@ -644,7 +644,7 @@ Activated shields reduce frontal damage by 80%, separately from armor and Resist
 - **Core mechanic:** Specializes class and weapon abilities by spending earned skill points.
 - **Player guidance:** Open the skill screen with T and inspect class and weapon prerequisites.
 
-The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +1%. Ordinary melee/ranged damage rewards grant +2%/+2%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips both show 2%. RPG Archer damage nodes receive no extra draw speed. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane Ward grants one absorption heart plus one heart per five Arcane power. Flame and Frost Wards grant one heart plus one per ten matching power. All three last eight seconds. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected.
+Hover a spellbook or weapon and hold `Left Ctrl` to expand its spell details. Hold `Left Shift` for Penchant enchantment progress; hold both to show both sections. The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +1%. Ordinary melee/ranged damage rewards grant +2%/+2%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips both show 2%. RPG Archer damage nodes receive no extra draw speed. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane Ward grants one absorption heart plus one heart per five Arcane power. Flame and Frost Wards grant one heart plus one per ten matching power. All three last eight seconds. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
 
@@ -674,9 +674,9 @@ This mod supplies the common skill screen and progression framework. The other s
 
 Offensive, Defensive and Companion alternatives lock at their first path nodes. You can develop different branches together. Utilities has no exclusions or specialties. Completion nodes grant stats without item gifts. Adventurer skill XP gains are 1.35 times their original rate.
 
-Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +2% melee or +2% ranged damage and attack speed +2%. Caster nodes grant +3% Arcane/Fire/Frost power, +3% spell haste or +2.5 critical points. Magistrate ends with +10% school power, +5% spell haste and +5% magic resistance. Martial Prowess grants +6% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +6% ranged damage/+5% movement/+5% draw speed, plus +25% bow/crossbow projectile speed, with armor penetration removed. Its former ordinary penetration node gives +3% movement speed; Martial ordinary nodes give damage or attack speed. Magistrate excludes healing. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The earlier ordinary projectile-speed node grants +25% for bows and crossbows. Bow icons mark ranged damage; Crossbows mark draw speed.
+Offensive offers melee, ranged and **Magistrate** casting. Ordinary physical damage nodes grant +2% melee or +2% ranged damage and attack speed +2%. Caster nodes grant +3% Magic Damage (Arcane, Fire, Frost and Healing Power), +3% spell haste or +2.5 critical points. Magistrate ends with +10% Magic Damage including Healing Power, +5% spell haste and +5% magic resistance. Martial Prowess grants +6% melee damage/+5% attack speed/+10% physical critical chance/+10% critical damage, without armor penetration; Hunter grants +6% ranged damage/+5% movement/+5% draw speed, plus +25% bow/crossbow projectile speed, with armor penetration removed. Its former ordinary penetration node gives +3% movement speed; Martial ordinary nodes give damage or attack speed. Separate ordinary draw-speed nodes grant +5% for bows and crossbows; Hunter no longer grants Luck or Jump Strength. The earlier ordinary projectile-speed node grants +25% for bows and crossbows. Bow icons mark ranged damage; Crossbows mark draw speed.
 
-Defensive offers **Aegis** (+15% magic/+10% ranged resistance/+6% movement speed), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses.
+Defensive offers **Aegis** (+15% magic/+10% ranged resistance/+6% movement speed), **Colossus** (+6 hearts/+6% healing) and **Bulwark** (+2% resistance/+4% ranged resistance/+2 armor/+20% knockback resistance). These are their final-node bonuses. Ordinary +3% Healing nodes and Colossus's +6% Healing improve both healing received and outgoing Healing Power.
 
 **Companion** improves owned pets. Apple, Rabbit Foot, Leather Chestplate and Iron Horse Armor icons mark pet health, speed, resistance and knockback resistance respectively; the blue Pack Leader specialty uses steak. **Pack Leader** favors damage, speed and attack knockback; its final node grants +20% pet damage, +15% pet speed and +10% pet resistance. **Guardian Stead**, shown with Diamond Horse Armor, favors survival, ending with +10 pet hearts, +25% pet resistance and +30% knockback resistance. Ordinary pet resistance gives flat reduction; specialty resistance is a percentage. Added hearts need healing to fill.
 
@@ -687,7 +687,7 @@ Utilities provides stamina, fortune, experience and mobility. Each anvil node re
 </div>
 
 </div>
-<p class="core-category-description">The RPG Series trees specialize your current class and weapon, while Adventurer Skills supplies general combat, utility and pet progression. Both use Pufferfish's skill interface; press T to compare paths and prerequisites. The Orb of Oblivion refunds spent points in the RPG and Adventurer categories while preserving earned category experience. It also works when only Adventurer points have been spent.</p>
+<p class="core-category-description">The RPG Series trees specialize your current class and weapon, while Adventurer Skills supplies general combat, utility and pet progression. Both use Pufferfish's skill interface; press T to compare paths and prerequisites. The Orb of Oblivion refunds spent points in the RPG and Adventurer categories while preserving earned category experience. It also resets your Iourus race and opens race selection, including when no skill points have been spent.</p>
 </section>
 
 <section class="core-category">
@@ -1267,7 +1267,7 @@ Natural recovery no longer follows the usual vanilla pace. Server settings contr
 - **Core mechanic:** Players and their four RPG summons retain 35% damage against players and 80% against mobs.
 - **Player guidance:** Join a Better Party with Friendly Fire off to protect party members.
 
-Everyone can fight by default. Player attacks, Spirit Wolves, Arcane Barrage emitters, Hydras and Frost Elementals retain 35% damage against players and 80% against other entities. Ordinary mob attacks and mob-versus-mob combat remain at 100%. Better Party controls party friendly fire; vanilla combat permissions still apply. Attributes, healing and skill coefficients are unchanged. Each hit is scaled once after defenses. This local replacement has no flag commands, cooldowns, zones or indicators.
+Everyone can fight by default. Player attacks, Spirit Wolves, Arcane Barrage emitters, Hydras and Frost Elementals retain 35% damage against players and 80% against other entities. Ordinary mob attacks and mob-versus-mob combat remain at 100%. Better Party controls party friendly fire; vanilla combat permissions still apply. Attributes, healing and skill coefficients are unchanged. Each hit is scaled once after defenses. Operators can use `/pvpdamage <percent>` and `/pvedamage <percent>` to change retained damage from 0 to 100, including these summons; omit the value to check it. Settings save per world and apply immediately. A confirmed PvP hit flags both players for 40 seconds; further hits refresh it silently. During combat, Sophisticated Building tools and OneKeyMiner chains are disabled. Ordinary building allows 20 placements and 30 breaks in separate 30-second windows, each starting with its first attempt. Limits end when the combat flag expires. Three bottom-left icons show combat, breaking and placement timers; 0 means that block window is ready. Private warnings explain blocked actions. Reconnecting does not reset the limits.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/pvp-flagging">Official mod page</a></p>
 
@@ -1624,7 +1624,7 @@ Tameable wildlife gives exploration a companion goal. Bring safe transport and s
 - **Core mechanic:** Stores groups of farm animals in a single block to simplify husbandry and reduce entity load.
 - **Player guidance:** Use the pen for a compact group of farm animals.
 
-One block can simplify husbandry and reduce loose entities around a base. Confirm the animals and output before changing an established farm.
+One block can simplify husbandry and reduce loose entities around a base. Open its guidebook to review supported animals and interactions before changing an established farm.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/animalpen">Official mod page</a></p>
 
@@ -2467,7 +2467,7 @@ Recipes and workstations matter more here than memorizing long item lists. Use J
 - **Core mechanic:** Adds vein mining, crop harvesting, and automatic replanting.
 - **Player guidance:** Hold C for a short trial and watch tool durability.
 
-A chain still consumes the relevant tool’s durability and follows server limits. Stop before the tool reaches a risky threshold.
+A chain still consumes the relevant tool’s durability and follows server limits. Stop before the tool reaches a risky threshold. Chains are disabled while [PvP combat flagged](#pvp-flagging).
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/onekeyminer">Official mod page</a></p>
 
@@ -2506,20 +2506,6 @@ Preparation, heating, and serving may be separate steps. Follow the station show
 The addition broadens Farmer's Delight's kitchen loop. Check the exact station instead of treating every new ingredient as a crafting-grid recipe.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/expanded-delight">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
-#### Kaleidoscope Cookery
-
-- **Type:** Food and farming
-- **Core mechanic:** Adds more ingredients and recipes around the cooking loop.
-- **Player guidance:** Look up chopping, milling, cooking, and steaming recipes separately.
-
-Its stations add another preparation path alongside Farmer's Delight. Similar dishes can require different tools.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/kaleidoscope-cookery">Official mod page</a></p>
 
 </div>
 
@@ -2653,6 +2639,22 @@ The modules coordinate doors, bridges, furniture, roofs, windows, and more. Choo
 
 <div class="core-mod-entry">
 
+#### MrCrayfish's Furniture Mod: Refurbished
+
+- **Type:** Furniture and home utilities
+- **Core mechanic:** Adds decorative furniture, powered appliances, working mailboxes and computers.
+- **Player guidance:** Start with its Workbench and use JEI to check furniture recipes and appliance requirements.
+
+Build a furnished home with storage, seating, kitchen fittings and lights. The Workbench lists furniture recipes and can draw materials from your inventory, its storage and neighboring containers. Choose a recipe there before gathering a large batch of materials.
+
+Appliances and electronics use the mod's electricity system. Set up an Electricity Generator and use the Wrench to connect compatible devices; check the device and JEI before expanding your setup. Mailboxes let players exchange items, while computers provide apps. Furniture can be decorative or functional, so inspect each block's interface rather than expecting every piece to behave alike.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture">Official mod page</a> ? <a href="https://mrcrayfish.github.io/MrCrayfishFurnitureMod-Refurbished/">Official wiki</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Display Delight
 
 - **Type:** Building
@@ -2715,7 +2717,7 @@ The added shapes make a coherent palette easier to build. Check stonecutter or c
 - **Core mechanic:** Replaces Effortless Building with shape placement, mirrors, arrays, survival material tracking and backpack building upgrades.
 - **Player guidance:** Hold Alt for the radial menu and inspect the shape preview. The other six building controls are unbound in the recommended profile.
 
-Hold a block, choose a shape, mark its points and inspect the live material preview before placing. Survival builds spend matching blocks. Reach Upgrades raise building limits; Building Upgrades let the installed Sophisticated Backpacks supply materials. Choose Disable in the radial menu to return to ordinary placement and mining. Server rules still control reach, size and replacement near storage or redstone.
+Hold a block, choose a shape, mark its points and inspect the live material preview before placing. Survival builds spend matching blocks. There is no separate axis-length cap. Survival batches allow 128 blocks per click initially, rising to 256, 512 and 2,048 with upgrades; Creative retains 10,000. Reach and material costs still apply. Building Upgrades let the installed Sophisticated Backpacks supply materials. Choose Disable in the radial menu to return to ordinary placement and mining. Advanced building, breaking and undo/redo are disabled while [PvP combat flagged](#pvp-flagging); queued builds stop. Server rules still control reach, size and replacement near storage or redstone.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/effortlessbuilding-sophisticated">Official mod page</a></p>
 
@@ -3257,20 +3259,6 @@ Helmets start hidden for all players in this mod's default settings. Choose Off 
 
 <div class="core-mod-entry">
 
-#### Auras
-
-- **Type:** Client-side cosmetic equipment customization
-- **Core mechanic:** Collect Norse-inspired runes and apply their colored auras to tools, weapons, or armor in place of the enchantment glint.
-- **Player guidance:** Explore loot chests for rune colors. Hold a discharged rune while collecting XP to recharge it.
-
-A second rune of the same type and a different color creates a two-color fade; a different type replaces the current aura. Looted emblems adjust the aura's look or speed. This JAR is distributed from `mod store` for clients because it crashes the server when installed there.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/auras">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### SimpleHats Lite
 
 - **Type:** Cosmetic
@@ -3333,7 +3321,7 @@ Appearance changes no longer require a launcher round trip. Preview the result b
 - **Core mechanic:** Adds a friendly player-to-player and player-to-creature pat interaction.
 - **Player guidance:** Right-click a supported player or creature to pat them.
 
-The interaction is social and cosmetic. It leaves the usual use action available outside that context.
+Pat uses `Right Mouse Button` in the recommended controls. The interaction is social and cosmetic; ordinary use still works outside supported pat targets.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/patpat">Official mod page</a></p>
 
@@ -3354,7 +3342,7 @@ The visual variants make tamed cats easier to recognize. Care and interaction ru
 </div>
 
 </div>
-<p class="core-category-description">Cosmetic mods change how characters and items look and how players interact socially. Auras customizes the enchantment glint on equipment, SimpleHats Lite can use vanity Curios slots, and Punchy adds first-person animation on the client. Skin, potion, cat, and pat effects have their own visual roles.</p>
+<p class="core-category-description">Cosmetic mods change how characters and items look and how players interact socially. SimpleHats Lite can use vanity Curios slots, and Punchy adds first-person animation on the client. Skin, potion, cat, and pat effects have their own visual roles.</p>
 </section>
 
 <section class="core-category">
@@ -3431,7 +3419,7 @@ Shaders change rendering rather than world mechanics. Disable a pack first when 
 
 </div>
 
-<div class="core-mod-entry">
+<div class="core-mod-entry" style="break-before: page; page-break-before: always;">
 
 #### Sodium
 
@@ -3672,7 +3660,7 @@ Follow the categories from top to bottom. A blank **Recommended key** means **Un
 | Spell Hotbar Slot 7 |  |
 | Spell Hotbar Slot 8 |  |
 | Spell Hotbar Slot 9 |  |
-| Tooltip Spell Details | Left Ctrl |
+| Tooltip Spell Details | `Left Ctrl` |
 
 #### Artifacts
 
@@ -3940,7 +3928,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Asgardian_Mod (Bifrost Teleport)](#asgardian_mod-bifrost-teleport)
 - [Astral Dimension](#feature-astral-dimension)
 - [ATi Structures](#ati-structures)
-- [Auras](#auras)
 - [Awesome Dungeon collection](#awesome-dungeon-collection)
 - [Better Archeology](#feature-better-archeology)
 - [Better Combat](#better-combat-1)
@@ -4013,7 +4000,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Jewelry](#jewelry)
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
-- [Kaleidoscope Cookery](#kaleidoscope-cookery)
 - [Kingdom Cats Replacer](#kingdom-cats-replacer)
 - [Linked Chests](#linked-chests)
 - [Lullaby's Mobs](#lullabys-mobs)
@@ -4024,6 +4010,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Moog's structure collection](#moogs-structure-collection)
 - [More Axolotl Variants Mod](#more-axolotl-variants-mod)
 - [Mounts and Monsters](#mounts-and-monsters)
+- [MrCrayfish's Furniture Mod: Refurbished](#mrcrayfishs-furniture-mod-refurbished)
 - [Much More Dungeons](#much-more-dungeons)
 - [Mutants and Zombies](#mutants-and-zombies)
 - [Name Tag Upgrade](#name-tag-upgrade)
@@ -4141,7 +4128,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [CrossArms](#crossarms)
 - [Expanded Crossbow Enchantings](#expanded-crossbow-enchantings)
 - [All Arrows Infinity Fix](#all-arrows-infinity-fix)
-- [Auras](#auras)
 - [Armor Quick Swap](#armor-quick-swap)
 - [Armor Trim Item Fix](#armor-trim-item-fix)
 - [Armory](#armory)
@@ -4265,7 +4251,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Better Rotten Flesh](#better-rotten-flesh)
 - [Expanded Delight](#expanded-delight)
 - [Farmer's Delight](#farmers-delight)
-- [Kaleidoscope Cookery](#kaleidoscope-cookery)
 - [No Crop Destruction](#no-crop-destruction)
 - [Universal Bone Meal](#universal-bone-meal)
 - [Starcatcher](#starcatcher)
@@ -4278,6 +4263,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Effortless Building: Sophisticated](#effortless-building-sophisticated-1)
 - [Functional Sculptures](#functional-sculptures)
 - [Macaw's building collection](#macaws-building-collection)
+- [MrCrayfish's Furniture Mod: Refurbished](#mrcrayfishs-furniture-mod-refurbished)
 - [Pro Placer](#pro-placer-1)
 - [Stonecutting Upgrade](#stonecutting-upgrade)
 - [Stoneworks](#stoneworks)
@@ -4288,6 +4274,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Golden Hopper](#golden-hopper)
 - [Hopper Gadgetry](#hopper-gadgetry)
 - [Linked Chests](#linked-chests)
+- [MrCrayfish's Furniture Mod: Refurbished](#mrcrayfishs-furniture-mod-refurbished)
 - [Sophisticated Backpacks](#sophisticated-backpacks-1)
 - [Sophisticated Inventory Interactions](#sophisticated-inventory-interactions)
 - [Sophisticated Item Actions](#sophisticated-item-actions-1)

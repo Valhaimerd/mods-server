@@ -1,0 +1,18 @@
+{
+  "BreakSuccessMixin.java": "e9f0fd0e4cabce790b41d1478a64be79dfe2be67bb395906d0c4db01e78ef278",
+  "build.py": "c31b2fe2dc61a5d0c33e5622e183b5eec5a9d8e65a2201e8a6c870480eb863f2",
+  "BuildingGuard.java": "c2e0639a6a8898eaa72a4d54b02cbbf663cbb5b7ee7e518ac0c83e73c1a418e9",
+  "CombatEvents.java": "06278469eef94891321130994e112a3093f8409a3c224cb88f5f61cd19563235",
+  "CombatHud.java": "1caf74cec42e09e9d079d2fe4ee52381c28bc6cf25c695d4d6a513083be776cb",
+  "CombatRules.java": "7034c140d8ede2638f2628a61e31c485e3e715277c0da0d4b6ff01175dea360a",
+  "CombatState.java": "029ed5aa5093ff868e13f0c436c0e5ef1fbb7d2007e48b19104378bc3a1c2456",
+  "CombatStatus.java": "d0a60153786f3b75859e336ecf5c5c3a999b4c380a0a3e60836a7c6d354d0ddf",
+  "MiningGuard.java": "c619c52723594ddd2d65c19dc317de7b0dde5239e87f009d30819418cf8329a8",
+  "PatchTools.java": "d89c9d59eb7efa476a0724886172e0e150b3a683a50be4d4e382cd6e96c82a90",
+  "PlaceSuccessMixin.java": "e5019a8d5af01aadcb5d641c914660cfba877c47433ba6d68b9634c2606fa316",
+  "PvpFlagging.java": "79decda0a3cc5b25582eea325ff57487b4219deb1b357e4f7d774f47cd0b38a7",
+  "run_client.py": "2bd450233bc8fa8c758dd5b2d1234924d01a4df32a40a03eb738e8761ae63c92",
+  "run_server.py": "e85d2204e7ce7eba44708c6b0b75649474be669757153468507f6e8a94c81c7e",
+  "ServerEventsForge.java": "8fedfe134a9995f970950ab86684681950ac9b76f7dc18e7352bc32378057966",
+  "verify.py": "ef554297559311af63eec897a598af88e610bd96b4654513743ec812ddd424f9"
+}

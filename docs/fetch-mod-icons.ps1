@@ -66,6 +66,7 @@ $approvedCurseForgeProjects = @{
     'Rogues & Warriors' = '1048409'
     "Lullaby's Mobs" = '1290652'
     'Market Board' = '1467970'
+    "MrCrayfish's Furniture Mod: Refurbished" = '897116'
     'More Axolotl Variants Mod' = '498797'
     'Mounts and Monsters' = '1401501'
     "Nature's Compass" = '252848'

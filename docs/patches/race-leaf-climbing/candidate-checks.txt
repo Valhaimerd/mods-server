@@ -1,0 +1,76 @@
+PASS synthetic mod leaf is untagged
+PASS NONE solid Block{minecraft:oak_leaves}
+PASS NONE leaf-only native climb Block{minecraft:oak_leaves}
+PASS NONE solid Block{leaf_climb_probe:untagged_leaves}
+PASS NONE leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS NONE cannot naturally climb stone
+PASS NONE equipped Spider Legs still climbs stone
+PASS HUMAN solid Block{minecraft:oak_leaves}
+PASS HUMAN leaf-only native climb Block{minecraft:oak_leaves}
+PASS HUMAN solid Block{leaf_climb_probe:untagged_leaves}
+PASS HUMAN leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS HUMAN cannot naturally climb stone
+PASS HUMAN equipped Spider Legs still climbs stone
+PASS ORC solid Block{minecraft:oak_leaves}
+PASS ORC leaf-only native climb Block{minecraft:oak_leaves}
+PASS ORC solid Block{leaf_climb_probe:untagged_leaves}
+PASS ORC leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS ORC cannot naturally climb stone
+PASS ORC equipped Spider Legs still climbs stone
+PASS GOBLIN solid Block{minecraft:oak_leaves}
+PASS GOBLIN leaf-only native climb Block{minecraft:oak_leaves}
+PASS GOBLIN solid Block{leaf_climb_probe:untagged_leaves}
+PASS GOBLIN leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS GOBLIN cannot naturally climb stone
+PASS GOBLIN equipped Spider Legs still climbs stone
+PASS ELF solid Block{minecraft:oak_leaves}
+PASS ELF leaf-only native climb Block{minecraft:oak_leaves}
+PASS ELF solid Block{leaf_climb_probe:untagged_leaves}
+PASS ELF leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS ELF cannot naturally climb stone
+PASS ELF equipped Spider Legs still climbs stone
+PASS DWARF solid Block{minecraft:oak_leaves}
+PASS DWARF leaf-only native climb Block{minecraft:oak_leaves}
+PASS DWARF solid Block{leaf_climb_probe:untagged_leaves}
+PASS DWARF leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS DWARF cannot naturally climb stone
+PASS DWARF equipped Spider Legs still climbs stone
+PASS MELFORK solid Block{minecraft:oak_leaves}
+PASS MELFORK leaf-only native climb Block{minecraft:oak_leaves}
+PASS MELFORK solid Block{leaf_climb_probe:untagged_leaves}
+PASS MELFORK leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS MELFORK cannot naturally climb stone
+PASS MELFORK equipped Spider Legs still climbs stone
+PASS DRACONIC solid Block{minecraft:oak_leaves}
+PASS DRACONIC leaf-only native climb Block{minecraft:oak_leaves}
+PASS DRACONIC solid Block{leaf_climb_probe:untagged_leaves}
+PASS DRACONIC leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS DRACONIC cannot naturally climb stone
+PASS DRACONIC equipped Spider Legs still climbs stone
+PASS ASGARDIAN solid Block{minecraft:oak_leaves}
+PASS ASGARDIAN leaf-only native climb Block{minecraft:oak_leaves}
+PASS ASGARDIAN solid Block{leaf_climb_probe:untagged_leaves}
+PASS ASGARDIAN leaf-only native climb Block{leaf_climb_probe:untagged_leaves}
+PASS ASGARDIAN cannot naturally climb stone
+PASS ASGARDIAN equipped Spider Legs still climbs stone
+PASS leaf floor does not enable stone climbing
+PASS leaf ceiling does not enable stone climbing
+PASS leaf climbing requires wall contact
+PASS race switch immediately removes leaf climbing
+PASS race switch immediately grants Goblin leaf climbing
+PASS ordinary ladder behavior retained at BlockPos{x=0, y=81, z=0} state=Block{minecraft:ladder}[facing=north,waterlogged=false]
+PASS client race synchronized phase 0
+PASS connected movement phase 0 ELF rise=3.880800075531212
+PASS connected wall cannot be bypassed phase 0
+PASS client race synchronized phase 1
+PASS connected movement phase 1 GOBLIN rise=3.880800075531212
+PASS connected wall cannot be bypassed phase 1
+PASS client race synchronized phase 2
+PASS connected movement phase 2 ELF rise=0.0
+PASS connected wall cannot be bypassed phase 2
+PASS client race synchronized phase 3
+PASS connected movement phase 3 HUMAN rise=0.0
+PASS connected wall cannot be bypassed phase 3
+PASS client race synchronized phase 4
+PASS connected movement phase 4 GOBLIN rise=3.880800075531212
+PASS connected wall cannot be bypassed phase 4

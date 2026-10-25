@@ -1,0 +1,31 @@
+PASS native client preview 32 blocks axis=0 sign=-1 actual=32
+PASS native client preview 32 blocks axis=0 sign=1 actual=32
+PASS native client preview 32 blocks axis=1 sign=-1 actual=32
+PASS native client preview 32 blocks axis=1 sign=1 actual=32
+PASS native client preview 32 blocks axis=2 sign=-1 actual=32
+PASS native client preview 32 blocks axis=2 sign=1 actual=32
+PASS 200-block preview retains 128-block batch cap
+PASS client axis restriction removed
+PASS full world coordinate span accepted without an axis cap
+PASS server distance arithmetic does not overflow
+PASS start reach unchanged
+PASS sparse array offset not limited by old axis cap
+PASS radial axis label is Unlimited
+PASS native array reach label renders Unlimited
+PASS server unlimited axis tier 0
+PASS server original batch tier 0
+PASS server unlimited axis tier 1
+PASS server original batch tier 1
+PASS server unlimited axis tier 2
+PASS server original batch tier 2
+PASS server unlimited axis tier 3
+PASS server original batch tier 3
+PASS creative unlimited axis
+PASS creative batch unchanged
+PASS server accepts selection beyond 8 blocks
+PASS server truncates oversized request to existing 128-block batch
+PASS server rejects out-of-reach starting point
+PASS actual Survival placement across 32-block axis actual=32 queued=1 loaded=true interact=true queueAfter=0
+PASS actual 32-block placement consumes 32 materials actual remaining=224
+PASS placement queue cleaned after build
+PASS server fixture completed

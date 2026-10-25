@@ -1,0 +1,18 @@
+PASS native key change updates active custom combination
+PASS recommended options overrides legacy right-click-only PatPat config
+PASS new/reset default is Left Ctrl + Right Click
+PASS plain right-click does not activate pat combination
+PASS modifier alone does not activate pat
+PASS Ctrl + right-click activates pat combination
+PASS native rebinding changes serialized key
+PASS old right-click stops matching after rebind
+PASS display follows native rebind
+PASS unbinding works
+PASS unbound pat cannot capture right-click
+PASS Reset restores Ctrl + right-click
+PASS direct key change is accepted
+PASS Controls Reset button restores modifier and key
+PASS Controls accepts modifier as first part
+PASS Controls accepts mouse as second part
+PASS custom Controls capture synchronizes native binding
+PASS Ctrl + right-click round-trips options save/load

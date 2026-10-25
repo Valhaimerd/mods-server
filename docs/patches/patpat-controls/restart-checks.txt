@@ -1,0 +1,3 @@
+PASS rebound G survives client restart
+PASS rebound modifier survives restart
+PASS restart display matches active key

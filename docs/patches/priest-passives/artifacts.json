@@ -1,0 +1,33 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "da182bfbd28a05c8625251b25f745bfcdbe03559f49f4f125e3c868263dde713",
+    "sha256": "23128930f5c4731516adece7372b92f81c8ca77745bb5ebdeb9b26d4fdd9ba35",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/priest_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_2.json"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/priest_fade.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "4156b4225327427b1ec76af18d634ea3562ba716687b4df51c54b8e23f9da357",
+    "sha256": "8a3c30dd0d9fc92d5fd8fcd84f1f3ce08fea81a433d027e230f03b592858b656",
+    "changed": [
+      "spell_engine.mixins.json",
+      "net/spell_engine/internals/PriestRules.class"
+    ],
+    "added": [
+      "net/spell_engine/client/render/priest/FadeRender.class",
+      "net/spell_engine/internals/PriestPassives.class",
+      "net/spell_engine/mixin/client/render/priest/FadeEntityMixin.class",
+      "net/spell_engine/mixin/client/render/priest/FadeHandsMixin.class",
+      "net/spell_engine/mixin/priest/ReceivedAbsorptionMixin.class"
+    ]
+  }
+]

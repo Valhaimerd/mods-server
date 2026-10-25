@@ -135,3 +135,15 @@ Kaleidoscope Cookery has been removed from the pack. Farmer's Delight and the re
 Adventurer Skills Healing nodes and Colossus now improve Healing Power as well as healing received. Shared caster nodes read ?Magic Damage? and include Healing Power; Magistrate includes it too. See [the four-node overlay](docs/patches/adventurer-healing/README.md).
 
 MrCrayfish's Furniture Mod: Refurbished 1.0.25 is included for furniture, powered home appliances, mailboxes and computers; its required Framework 0.13.26 is already installed. The handbook now contains 181 gameplay entries across 304 main-pack JARs and 23 client extras. The 25 October controls audit confirms PatPat on right-click, RPG Tooltip Spell Details on Left Ctrl, and Penchant progress on Left Shift in both the owner's profile and installer recommendations.
+
+Pet Vault's Keeper's Locket also fits the Nameless Trinkets **Trinket** slots, retaining its original Necklace slot and R menu. See [the additive slot patch](docs/patches/pet-vault-trinket/README.md). Sync the same-name Pet Vault JAR on clients and server.
+
+PatPat now uses **Left Ctrl + right-click** by default and in the recommended keybind profile. Its active combination follows Controls and `options.txt`, fixing rebinding that appeared stuck on right-click. Apply Recommended Keybinds to replace an existing saved binding; see [the patch and isolated checks](docs/patches/patpat-controls/README.md).
+
+Penchant Unbreaking now progresses to **X** with ordinary durability protection, including when its Durability Rework module is enabled. Level X gear can still wear out and break; the in-game guide is corrected. The existing progression speed and other enchantment policies remain. See [the data patch and native durability checks](docs/patches/penchant-unbreaking/README.md).
+
+Priest tiers I/II are reworked: Holy Light / Penance are the offensive-support pair, and Circle of Healing / Ascension are the support pair. Smooth completion-based cooldowns, mixed Penance explosions, incremental absorption, Ascension pulses and refreshed skill descriptions are installed. Custom absorption stacks no longer refill consumed HP on refresh. See [the Priest patch and checks](docs/patches/priest-rework/README.md).
+
+Priest passive update: Healing Focus adds healing/absorption received, Cadence guarantees smaller haste stacks, Fade conceals equipped gear, and Divine Favor readies a stun counter instead of a critical spell. See [the passive changes and checks](docs/patches/priest-passives/README.md).
+
+Priest tier III now has a hovering, caster-following Lightwell and a ten-block Barrier. Lightwell prioritizes injured allies; its mote upgrades cleanse or add temporary maximum hearts. Barrier protects against ordinary combat/DoT damage in its current volume, with once-per-projectile retaliation from Deflective Shield. All Priest cast/cooldown haste flags are enabled. See [the implementation and checks](docs/patches/priest-tier-three/README.md).

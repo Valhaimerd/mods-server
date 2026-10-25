@@ -1,0 +1,1 @@
+PASS 481 Priest/party checks

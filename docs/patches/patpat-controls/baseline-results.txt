@@ -1,0 +1,1 @@
+FAIL java.lang.AssertionError: native key change updates active custom combination

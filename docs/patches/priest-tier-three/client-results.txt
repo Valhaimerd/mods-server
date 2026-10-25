@@ -1,0 +1,16 @@
+PASS native Lightwell summon synchronized
+PASS well hovers over caster x
+PASS well visible above caster head
+PASS native summon controller targets injured caster
+PASS connected summon has exact five percent inheritance
+PASS well follows caster movement across network
+TRACE well target=ServerPlayer['Berserker45e0e1'/4, l='ServerLevel[Punchy Flat]', x=206.50, y=-60.00, z=200.50] active=true cast=null cooldown=[paladins:lightwell_orb]
+TRACE owner health=88.0
+PASS native well AI actually fires healing motes
+PASS native Barrier synchronized
+PASS Barrier displays twenty-block diameter
+PASS Barrier height follows ten-block radius
+PASS connected owner receives live-volume protection
+PASS connected owner loses protection outside radius
+PASS well expires after sixteen active seconds plus animation phases
+PASS expired Barrier leaves no immunity

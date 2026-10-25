@@ -1,0 +1,14 @@
+PASS original necklace eligibility retained
+PASS Keeper Locket included in Nameless trinket tag
+PASS additive tag preserves Nameless items
+PASS installed trinket slot exists
+PASS native Curios accepts locket in trinket
+PASS empty slots do not activate Pet Vault
+PASS Pet Vault native equipped check works in trinket
+PASS removed locket absent from live inventory in trinket
+PASS installed necklace slot exists
+PASS native Curios accepts locket in necklace
+PASS empty slots do not activate Pet Vault
+PASS Pet Vault native equipped check works in necklace
+PASS removed locket absent from live inventory in necklace
+PASS arbitrary items remain invalid in trinket slots

@@ -1,0 +1,57 @@
+PASS synchronized model tint ffff8080
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=false
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=false
+PASS purple enchantment glint suppressed only during Last Stand=false
+PASS synchronized model tint fffff3b3
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=true
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=true
+PASS purple enchantment glint suppressed only during Last Stand=true
+PASS Last Stand does not use Berserker sparkles
+PASS gold glint works without enchanting equipped armor
+PASS synchronized model tint ffffffff
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=false
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=false
+PASS purple enchantment glint suppressed only during Last Stand=false
+PASS synchronized model tint ffffffff
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=false
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=false
+PASS purple enchantment glint suppressed only during Last Stand=false
+PASS synchronized model tint fffff3b3
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=true
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=true
+PASS purple enchantment glint suppressed only during Last Stand=true
+PASS synchronized model tint ffffffff
+PASS white armor layer receives model tint
+PASS dyed armor composes with tint
+PASS equipment tint cannot leak to next entity
+PASS glint state active=false
+PASS unrelated render state has no glint
+PASS native armor model is still submitted
+PASS native armor submission appends gold glint=false
+PASS purple enchantment glint suppressed only during Last Stand=false
+PASS gold tint is fixed 30 percent

@@ -1,0 +1,9 @@
+{
+  "jar": "pet_vault-mc26.2-v1.5.0-neoforge.jar",
+  "before_sha256": "07a323baa15fec8e746a979ad8b256084b4b596b5b87ff9367c4aff6d4a70616",
+  "sha256": "adb919afd8a3812984af0ccfb7ce34c65c317bd2843d57dff9480ac2e6143b5d",
+  "changed": [],
+  "added": [
+    "data/curios/tags/item/trinket.json"
+  ]
+}

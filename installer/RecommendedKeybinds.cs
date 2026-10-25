@@ -101,7 +101,7 @@ internal static class RecommendedKeybinds
         try
         {
             await File.WriteAllTextAsync(options, original);
-            handler.Text = "key_patpat.keybinding.pat:key.mouse.right\nkey_key.penchant.show_progress:key.keyboard.left.shift\nkey_test:key.keyboard.r:SHIFT\n";
+            handler.Text = "key_patpat.keybinding.pat:key.mouse.right:CONTROL\nkey_key.penchant.show_progress:key.keyboard.left.shift\nkey_test:key.keyboard.r:SHIFT\n";
             var result = await ApplyAsync(root + "/mods", http);
             var saved = await File.ReadAllTextAsync(options);
             if (!result.Changed || result.BackupPath is null ||

@@ -1,0 +1,8 @@
+{
+  "jar": "PatPat-1.3.2+26.2+neoforge.jar",
+  "before_sha256": "1e5a539e0cfd929b06733ee531e72dddc6d568075520e9ee469e03cc2cc35691",
+  "sha256": "b82764f3c6988a7414fadcea87153e635048684ddbe8abb95d671e23c561a6ce",
+  "changed": [
+    "net/lopymine/patpat/client/keybinding/PatPatKeybinding.class"
+  ]
+}

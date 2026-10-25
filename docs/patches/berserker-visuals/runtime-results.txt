@@ -1,0 +1,41 @@
+PASS firework sparkle lifetime is four ticks
+PASS white sparkle channel rCol
+PASS white sparkle channel gCol
+PASS white sparkle channel bCol
+PASS actual firework sparks emitted on connected client
+PASS Berserker custom spark spawner registered
+PASS connected client receives fixed 50% red tint
+PASS Berserker visual state synchronized
+PASS three staggered sparks with five-tick pause age=0
+PASS three staggered sparks with five-tick pause age=1
+PASS three staggered sparks with five-tick pause age=2
+PASS three staggered sparks with five-tick pause age=3
+PASS three staggered sparks with five-tick pause age=4
+PASS three staggered sparks with five-tick pause age=5
+PASS three staggered sparks with five-tick pause age=6
+PASS three staggered sparks with five-tick pause age=7
+PASS three staggered sparks with five-tick pause age=8
+PASS three staggered sparks with five-tick pause age=9
+PASS three staggered sparks with five-tick pause age=10
+PASS three staggered sparks with five-tick pause age=11
+PASS three staggered sparks with five-tick pause age=12
+PASS three staggered sparks with five-tick pause age=13
+PASS three staggered sparks with five-tick pause age=14
+PASS three staggered sparks with five-tick pause age=15
+PASS three staggered sparks with five-tick pause age=16
+PASS three staggered sparks with five-tick pause age=17
+PASS three staggered sparks with five-tick pause age=18
+PASS three staggered sparks with five-tick pause age=19
+PASS three staggered sparks with five-tick pause age=20
+PASS three staggered sparks with five-tick pause age=21
+PASS three staggered sparks with five-tick pause age=22
+PASS three staggered sparks with five-tick pause age=23
+PASS three staggered sparks with five-tick pause age=24
+PASS three staggered sparks with five-tick pause age=25
+PASS fatal rescue removes tint on connected client
+PASS fatal rescue removes synchronized particle state
+PASS fatal rescue removes all tracked sparks
+PASS natural expiry clears tint
+PASS natural expiry clears spark state
+PASS tint reapplies at one stack without stacking strength
+PASS death cleanup clears tint

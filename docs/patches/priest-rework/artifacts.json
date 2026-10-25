@@ -1,0 +1,71 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "c96121749b367ee23801ba5a1e5fa2cce131f139aab65949338d5b0f345c9352",
+    "sha256": "cf364515b6fda733dd159c4148450d5f99eeec4693682d95d0167c7a43d924a0",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/circle_of_healing.json",
+      "data/paladins/spell/holy_beam.json",
+      "data/paladins/spell/levitate.json",
+      "data/paladins/spell/penance.json",
+      "net/paladins/effect/PriestAbsorptionStatusEffect.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "0cd23d59ff3fea10c9ce17fb8bacd1b00d87eeebb70493eb0301de8a9105824d",
+    "sha256": "da182bfbd28a05c8625251b25f745bfcdbe03559f49f4f125e3c868263dde713",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_spell_2_root.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class",
+      "net/skill_tree_rpgs/effect/WizardAbsorbEffect.class"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/ascension_power.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/priest_penance_shield.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/priest_serenity_shield.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "f5b5107b5108c2a6b92ee1645d3941094c2d7c1ddf6b879af13949eae19b9a6e",
+    "sha256": "4156b4225327427b1ec76af18d634ea3562ba716687b4df51c54b8e23f9da357",
+    "changed": [
+      "net/spell_engine/entity/SpellProjectile.class",
+      "net/spell_engine/internals/SpellExecution.class",
+      "net/spell_engine/internals/casting/SpellCast$Process.class",
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/impact/SpellImpacts.class",
+      "net/spell_engine/entity/TenacityAbsorbEffect.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/PriestRules$Shield.class",
+      "net/spell_engine/internals/PriestRules.class"
+    ]
+  },
+  {
+    "jar": "arsenal-neoforge-1.5.1+26.2.jar",
+    "before_sha256": "27be31d26a4d8f720fd117136e1c1b77bb6af427592158d4e4512898a81d5d20",
+    "sha256": "06da2560661a51f6df12b874646fbb630f220368e19ee0a4d51b317466c583ca",
+    "changed": [
+      "net/arsenal/spell/AbsorptionStatusEffect.class"
+    ],
+    "added": []
+  }
+]

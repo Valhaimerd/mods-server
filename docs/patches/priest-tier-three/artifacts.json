@@ -1,0 +1,52 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "cf364515b6fda733dd159c4148450d5f99eeec4693682d95d0167c7a43d924a0",
+    "sha256": "6078e68cc5d6f5676a5e7271f12152c467bc0d89574d04a5d3e06a3d22433ff9",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/barrier.json",
+      "data/paladins/spell/circle_of_healing.json",
+      "data/paladins/spell/heal.json",
+      "data/paladins/spell/holy_beam.json",
+      "data/paladins/spell/holy_shock.json",
+      "data/paladins/spell/levitate.json",
+      "data/paladins/spell/lightwell.json",
+      "data/paladins/spell/lightwell_orb.json",
+      "data/paladins/spell/penance.json",
+      "net/paladins/entity/BarrierEntity.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "23128930f5c4731516adece7372b92f81c8ca77745bb5ebdeb9b26d4fdd9ba35",
+    "sha256": "289f16efee8c43ef98741a02eb3e42015ddd78f724b2522bb26b25cf1ef5bed5",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/lightwell_cleanse.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_4_spell_2_root.json"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/lightwell_vitality.png",
+      "data/skill_tree_rpgs/spell/barrier_retaliation.json"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "8a3c30dd0d9fc92d5fd8fcd84f1f3ce08fea81a433d027e230f03b592858b656",
+    "sha256": "83322e639b645cbeba1d3d2ed56e520a892156ca9ed4b0cb9b04628f5c4c4a75",
+    "changed": [
+      "net/spell_engine/entity/SummonedEntity.class",
+      "net/spell_engine/internals/delivery/ProjectileLauncher.class",
+      "net/spell_engine/internals/PriestRules.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/PriestUltimates.class"
+    ]
+  }
+]

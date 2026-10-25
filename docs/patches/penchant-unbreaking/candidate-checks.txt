@@ -1,0 +1,18 @@
+PASS requested module state actually loaded: true
+PASS Penchant progression cap is X
+PASS registered maximum is X
+PASS Unbreaking has no permanent-unbreakability effect
+PASS Unbreaking X is not Penchant-unbreakable: minecraft:netherite_pickaxe
+PASS no permanent item component added: minecraft:netherite_pickaxe
+PASS native X effect reduces damage without eliminating it: minecraft:netherite_pickaxe -> 939.0
+PASS native X item actually loses reduced durability: minecraft:netherite_pickaxe
+PASS Unbreaking X item can break: minecraft:netherite_pickaxe
+PASS Unbreaking X is not Penchant-unbreakable: minecraft:netherite_chestplate
+PASS no permanent item component added: minecraft:netherite_chestplate
+PASS native X effect reduces damage without eliminating it: minecraft:netherite_chestplate -> 7001.0
+PASS native X item actually loses reduced durability: minecraft:netherite_chestplate
+PASS Unbreaking X item can break: minecraft:netherite_chestplate
+PASS IX has a finite next-level progress target
+PASS native progression advances IX to X
+PASS native progression stops at X
+PASS explicitly unbreakable item component remains respected

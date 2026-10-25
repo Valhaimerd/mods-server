@@ -1,75 +1,126 @@
 # Priest skills - raw attributes and nodes
 
-Extracted from the installed pack on **25 October 2026**. This is an inspection, not a balance change. Priest is supplied by Paladins & Priests; it is separate from that mod's Paladin class.
+Inspected and updated **26 October 2026**, including the [Priest rework](../priest-rework/README.md). Priest is supplied by Paladins & Priests, separately from Paladin.
 
 ## Reading the values
 
-- **P = caster Healing Power.** Both Priest healing and its holy damage use the Healing school unless a raw impact specifies another source. Percentages below are spell coefficients, before criticals, recipient modifiers, defenses and current pack damage scaling.
-- **20 ticks = 1s; 2 HP = 1 heart.** User tiers I/II/III correspond to active resource tiers 2/3/4. Tier-0/1 weapon/book spells are listed separately.
-- Cast time and cooldown haste scaling default to enabled. An omitted cooldown duration is **0s**; an omitted trigger chance is **100%**. Lightwell explicitly disables cooldown haste scaling.
-- Proportional cooldowns scale with channel completion; the listed resource cooldown is the full-completion value before haste, not a fixed tap cooldown.
-- ADD status effects start at level one and cap at serialized amplifier cap + 1. Further successful applications refresh duration by default. Healing Focus's cap 4 means five stacks; Incanters' Cadence's cap 2 means three.
-- Healing targeting follows the pack's shared caster/party eligibility rules. Harmful impacts protect party players and protected pets. Raw data describes potential impacts, not permission to bypass these checks.
-- Registered effect defaults are inspected from active Java classes. A separate server's generated effect configuration may override defaults; this report does not read or alter personal installations.
+- **P = Healing Power.** Priest holy damage also scales from Healing Power. Coefficients precede criticals, defenses, recipient modifiers and pack damage scaling.
+- **20 ticks = 1s; 2 HP = 1 heart.** Resource tiers 2/3/4 correspond to user tiers I/II/III.
+- Native haste affects casts and cooldowns unless explicitly disabled. Holy Light smoothly scales 12-24s and Penance 8-14s by completion. Ascension has a fixed 16s base cooldown. Lightwell now has an 80s haste-affected base cooldown; its 0.8s firing interval also uses inherited haste. Fixed buff durations remain unchanged.
+- Better Party eligibility protects caster, party players and protected pets. Each explosion recipient is classified separately for damage or support.
+- Raw JSON alone cannot express all behavior. PriestRules implements coefficient overrides, mixed explosions, shields, pulse timing and rounded regeneration; source archive hashes appear below.
+- Spell IDs remain stable. Penance upgrades retain their original tier_3 IDs but occupy tier I. Ascension upgrades retain tier_2 IDs but occupy tier II. Complete branches move in both tree categories.
 
-## Skill pairs by tier
+## Skill pairs
 
-| Tier | Holy choice | Discipline choice | Passive pair |
+| Tier | Holy | Discipline | Passive pair |
 |---|---|---|---|
-| I | Holy Light | Levitate | Healing Focus / Incanters' Cadence |
-| II | Circle of Healing | Penance | Fade / Divine Favor |
+| I | Holy Light | Penance | Healing Focus / Incanters' Cadence |
+| II | Circle of Healing | Ascension | Fade / Divine Favor |
 | III | Lightwell | Barrier | Pain Suppression / Celestial Orbs |
 
-## Tier I - Holy Light / Levitate
+## Tier I - Holy Light / Penance
 
-| Attribute | Holy Light | Levitate |
+| Attribute | Holy Light | Penance |
 |---|---|---|
-| Cast | Channel 5s, 25 deliveries | Channel 1.5s, 4 deliveries; movement disabled during channel |
-| Cooldown | 10s at full completion, proportional | 24s at full completion, proportional |
-| Range | 32-block beam | Self; Uplift adds a 2-block secondary area |
-| Each delivery | Heal eligible allies for 40% P; damage eligible enemies for 80% P, knockback 0.5 | Reset velocity and push upward by 0.15; apply Levitate for 5s |
-| Full-channel coefficient total | 1,000% P healing or 2,000% P damage if every delivery lands | No damage or direct healing |
-| Levitate effect | Not applicable | -99% gravity; grants Slow Falling for 3s on natural expiry |
-| Resource | Healing Stone item cost; 0.2 exhaustion | Healing Stone item cost; default exhaustion |
+| Cast | Channel 5s, 25 deliveries | Channel 2.5s, 10 bolts, one every 0.25s |
+| Cooldown | Smooth 12-24s by completion | Smooth 8-14s by completion |
+| Range | 32-block beam | 26-block projectile flight; 5-block explosion radius |
+| Healing | 15% P per delivery | No direct healing |
+| Damage | 30% P per delivery | 25% P per explosion; 250% total if ten hit |
+| Knockback | 1.0 | 0.5 |
+| Support | Healing allies | Adds 1 current absorption HP per ally per blast; ten stacks / 10 HP cap; lasts 3s, refreshed |
 
-The raw Levitate push has `frame: LOOK`; it is not documented here as a guaranteed fixed world-space lift distance. Repeated applications refresh the effect rather than adding five seconds per pulse.
+Penance explodes once on ally, enemy or block contact. No additional direct-hit damage or distance falloff. Each ally inside receives its own stack. Absorption adds only newly earned HP: 6 HP minus 4 damage plus two bolts equals 4 HP. Capped applications refresh time without refilling.
 
-| Node | Holy Light | Levitate |
+| Node | Holy Light | Penance |
 |---|---|---|
-| Improved | **Improved Holy Light:** cooldown reduced by 2s, to 8s full completion | **Improved Levitate:** applied effects last 2s longer; Levitate becomes 7s |
-| Branch A | **Graceful Channeling:** 2 additional deliveries, 27 total | **Uplift:** applies Levitate impacts to eligible allies within a 2-block impact area |
-| Branch B | **Searing Light:** +10% spell power for this spell; appends ignition (default 2s plus the engine's 10-tick fire offset) | **Serenity:** each delivery adds 20% incoming-damage reduction, up to 4 stacks / 80%, for 6s, refreshed |
+| Improved | Healing 20% P; damage 35% P; no cooldown reduction | Damage 30% P; absorption lasts 4s |
+| Branch A | Graceful Light: healing 30% P, knockback 2.0; no extra deliveries | Hysteria: +1% attack speed, ranged haste and spell haste per stack; ten stacks / 10%; 4s refreshed |
+| Branch B | Searing Light: damage 50% P and ignites enemies | Chastise: enemies take +1% damage per stack; ten stacks / 10%; 4s refreshed |
 
-Searing Light changes source power for the spell, so the modifier also affects its healing coefficient, despite the upstream description mentioning damage only. Improved Levitate's general effect-duration modifier also adds 2s to Serenity when combined, making 8s. Serenity uses the Spell Engine damage-taken attribute, not the vanilla Resistance potion. The coefficients shown for full channels are arithmetic totals, not a runtime DPS claim.
-
-### Tier-I passive pair
+### First passive pair
 
 | Attribute | Healing Focus | Incanters' Cadence |
 |---|---|---|
-| Trigger | An active spell's healing impact | An active spell's damage impact |
-| Chance | 100% | 50% per qualifying impact |
-| Recipient | The healed target, not automatically the caster | Caster |
-| Per stack | +5% healing received through Spell Engine | +5% spell haste |
-| Maximum | 5 stacks / +25% | 3 stacks / +15% |
-| Duration | 5s, refreshed | 8s, refreshed |
-| Cooldown | No configured cooldown | No configured cooldown |
+| Trigger | Active-spell healing impact | Active-spell damage impact |
+| Chance | 100% | 100% |
+| Recipient | Healed target | Caster |
+| Bonus | +4% healing and absorption received per stack; five stacks / 20% | +2% spell haste per stack; five stacks / 10% |
+| Duration | 6s refreshed | 6s refreshed |
+| Stack interval | 0.25s base, haste affected | 0.25s base, haste affected |
 
-Healing Focus does not add outgoing Healing Power. Its attribute is `spell_engine:healing_taken`. Incanters' Cadence modifies `spell_power:haste`. Neither passive's trigger filter requires a particular school; both require an ACTIVE spell and their stated impact type.
+## Tier II - Circle of Healing / Ascension
 
-## Registered effect defaults
+| Attribute | Circle of Healing | Ascension |
+|---|---|---|
+| Cast | 0.5s | Stationary 2s channel; pulses at 0.5/1/1.5/2s before haste |
+| Cooldown | 16s | 16s, no completion-based extension |
+| Range | 8-block healing radius | 8-block support and knockback radius |
+| Healing | 50% P to eligible allies, including caster | None |
+| Damage | None | None |
+| Support | Healing | Levitate 6s; each pulse grants +2% melee, ranged and offensive magic power; four stacks / 8%; 6s refreshed |
+| Hostile knockback | None | 2.0 on pulses one-three; 5.0 on pulse four |
 
-| Effect | Exact default |
-|---|---|
-| Healing Focus | `spell_engine:healing_taken` +0.05 per level, ADD_MULTIPLIED_BASE |
-| Incanters' Cadence | Spell haste +0.05 per level, ADD_MULTIPLIED_BASE |
-| Serenity | `spell_engine:damage_taken` -0.20 per level, ADD_MULTIPLIED_BASE |
-| Divine Favor | Spell critical chance +1.0, ADD_MULTIPLIED_BASE; upstream describes a guaranteed critical |
-| Pain Suppression | `spell_engine:damage_taken` -0.50, ADD_MULTIPLIED_BASE |
-| Hysteria | Attack speed, ranged haste and spell haste +0.08 per level, ADD_MULTIPLIED_BASE |
-| Chastise | `spell_engine:damage_taken` +0.10 per level, ADD_MULTIPLIED_BASE |
-| Levitate | Gravity -0.99, ADD_MULTIPLIED_TOTAL; natural expiry applies 60 ticks Slow Falling |
-| Priest Absorption | Maximum absorption +2 HP per effect level, ADD_VALUE; raw spell data below defines levels/scaling |
+| Node | Circle of Healing | Ascension |
+|---|---|---|
+| Improved | Healing becomes 60% P; does not boost source power for other effects | Levitation and associated buffs last 8s |
+| Branch A | Mass Dispel: removes up to two harmful effects, preserving Trial Omen | Uplift: lifts eligible allies within 3 blocks |
+| Branch B | Sanctuary: Regeneration for 5s, level 1 plus rounded 6% P; P27 gives Regeneration III | Serenity: absorption per pulse equals 1 plus rounded 10% P; four stacks; 6s/8s refreshed; replaces damage reduction |
+
+Serenity adds only newly earned shield HP, never refilling from total stack capacity. Levitation reduces gravity by 99%, followed by 3s Slow Falling on natural expiry. Ascension's power-buff icon reuses Levitate artwork; absorption buffs reuse existing shield artwork.
+
+### Second passive pair
+
+| Attribute | Fade | Divine Favor |
+|---|---|---|
+| Trigger | Combat roll | Combat roll |
+| Chance | 100% | 100% |
+| Effect | Clears aggression within 15 blocks; full invisibility including armor and held items for 2s | Readies a counter: the next qualifying damaging attack stuns its attacker and eligible enemies within 2 blocks of the Priest for 1s |
+| Duration | Concealment 2s | Readiness 15s |
+| Cooldown | 6s before haste | 15s before haste |
+
+## Tier III - Lightwell / Barrier
+
+| Attribute | Lightwell | Barrier |
+|---|---|---|
+| Cast | Instant | 1s |
+| Cooldown | 80s before haste | 60s before haste |
+| Range | 16 blocks from the well | 10-block radius, native 10-block vertical extent |
+| Lifetime | 16s active plus 1s spawn/despawn phases | 10s |
+| Main behavior | Unattackable, unpushable, no-collision well follows above caster head | Stationary barrier repeatedly pushes enemies outward and protects current allies inside |
+| Power/healing | Exactly 5% caster Healing Power inherited; each mote heals 100% own power | No direct healing without Sacred Refuge |
+| Motes | Speed 0.6, 0.8s base firing interval with inherited haste | No motes |
+| Targeting | Injured party allies/pets first, greatest missing-health percentage; useful full-health upgrade targets only when no injured target | Caster/party allies/protected pets only |
+| Protection | Not applicable | Ordinary combat/DoT damage events, including poison/Bleed/fire; excludes void, admin kill and direct skill health costs |
+
+| Node | Lightwell | Barrier |
+|---|---|---|
+| Improved | +4s active lifetime, total 20s | +2s duration, total 12s; no cooldown reduction |
+| Branch A | Cleansing Light: one harmful effect removed per allied mote hit, no separate cleanse cooldown; Trial Omen excluded | Sacred Refuge unchanged: separate 4-block/10s cloud, 10% P healing and cleanse every 2s |
+| Branch B | Empowered Well: +1 maximum heart per mote hit, 2-stack cap per recipient across wells, 6s refreshed; unfilled, normal mote healing fills capacity | Deflective Shield: intercepted hostile projectiles retaliate once against the attacker for 25% P native holy damage |
+
+Empowered Well applies capacity before healing. Cap refreshes do not directly heal or add HP. Expiry/removal clears only its own maximum-health modifier and clamps excess current HP. Motes do not bounce. Orphan wells disappear. Barrier uses current volume checks instead of a lingering immunity lease; friendly projectiles and square-corner paths are not intercepted.
+
+### Tier-III passive pair (unchanged)
+
+| Attribute | Pain Suppression | Celestial Orbs |
+|---|---|---|
+| Trigger | Active healing impact, target at approximately 1-30% HP before healing | Critical active spell impact |
+| Chance | 100% when eligible | 100% when eligible |
+| Effect | 50% incoming-damage reduction on healed recipient | Three retaliatory orbs on caster |
+| Duration | 10s | 15s readiness |
+| Cooldown | 30s before haste | None configured |
+| Retaliation | None | 50% P damage per orb, knockback 0.1, triggered by damage taken |
+
+Healing Focus remains a received-healing/absorption attribute, not outgoing Healing Power. See [tier III implementation and proof](../priest-tier-three/README.md).
+
+## Absorption follow-up
+
+The Priest, Wizard, Arsenal and Tenacity shield-start handlers add only positive level differences. Existing-effect refreshes do not refill consumed HP. Removal/expiry clears tracking so genuinely new shields can grant normally. New Priest shields implement explicit current-HP increments and caps. The raw reference is supported by the patch's isolated runtime checks and original [audit](absorption-audit.md).
 
 ## Extraction scope
 
-The following sections contain all six class actives, eighteen upgrades, six passives, Priest base/weapon spells and helper spells (including Holy Mote and Lightwell Cleanse), both class/weapon tree definitions, placements, relevant connections and source hashes. Presentation assets are omitted from JSON; every mechanical field is retained. Tables for later tiers are generated as raw paired data to avoid hiding cooldown, summon, area or status details.
+Six class actives, eighteen upgrades, six passives, eight base/weapon/helper resources, both tree definitions, placements/connections and source hashes. Presentation fields alone are omitted; all serialized mechanical fields remain below.
+
+Latest revision: [Priest passive tiers I/II](../priest-passives/README.md). Healing Focus applies to newly granted absorption from native and custom shield effects. It never increases previously consumed shield HP. Existing shields are not retroactively refilled. Divine Favor no longer increases critical chance or consumes on spell casts. The targeted attacker is stunned even outside the two-block secondary radius; party/pet protection remains.

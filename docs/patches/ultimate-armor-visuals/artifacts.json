@@ -1,0 +1,17 @@
+{
+  "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "before_sha256": "e504ee4ed1263b9191ff7c984b4087b268b1e0dc42965a6cd04d7a68e643d37e",
+  "sha256": "f5b5107b5108c2a6b92ee1645d3941094c2d7c1ddf6b879af13949eae19b9a6e",
+  "changed": [
+    "spell_engine.mixins.json",
+    "net/spell_engine/entity/BerserkerAppearance.class"
+  ],
+  "added": [
+    "assets/spell_engine/textures/misc/last_stand_glint.png",
+    "net/spell_engine/client/render/tint/LastStandGlint.class",
+    "net/spell_engine/entity/LastStandAppearance.class",
+    "net/spell_engine/mixin/client/render/tint/UltimateGlintMixin.class",
+    "net/spell_engine/mixin/client/render/tint/UltimateRenderStateMixin.class"
+  ],
+  "vanilla_glint_sha256": "591205347810d37b6d6070a502468bbb1f2686fc0ab38b826b06cbba6349b23c"
+}

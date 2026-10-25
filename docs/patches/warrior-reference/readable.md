@@ -170,3 +170,7 @@ Latest follow-up: [Berserker fully heals on every pulse](../berserker-pulse-heal
 Latest revision: [Warrior balance](../warrior-balance/README.md): kill healing, stronger Demoralize, matched Improved Wild Charge protection, shorter Concussion stun, per-pulse Speed I-V, 14/17s Berserker, smaller Enrage and 14s Tenacity.
 
 Follow-up: Sentinel stacking uses a 0.25s base interval; Lethality hit healing uses a 0.2s base interval. Both use native haste scaling and share their interval across targets.
+
+Visual follow-up (26 October 2026): active Berserker has a fixed 50% red model tint and three staggered white firework sparkles per cycle. Both follow actual buff lifetime, including fatal rescue and death cleanup. See [Berserker appearance](../berserker-visuals/README.md).
+
+Armor visual follow-up (26 October 2026): Berserker's 50% red tint also colors equipped armor. Last Stand uses a fixed 30% gold character/armor tint and a yellow scrolling enchantment-style glint, with its old custom particles disabled. All visuals follow actual buff lifetime. See [ultimate armor presentation](../ultimate-armor-visuals/README.md).

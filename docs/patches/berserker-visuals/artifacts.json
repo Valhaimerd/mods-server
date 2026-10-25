@@ -1,0 +1,24 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "a415f56c96affa6e018a202f21eb665015f3bee9ec3058539be2c5e3724d5d92",
+    "sha256": "0cd23d59ff3fea10c9ce17fb8bacd1b00d87eeebb70493eb0301de8a9105824d",
+    "changed": [
+      "net/skill_tree_rpgs/client/SkillTreeClientMod.class"
+    ],
+    "added": [
+      "net/skill_tree_rpgs/client/effect/BerserkerSparkles.class"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "5b938b8bb39d98ab791e811c26f6a4d9ff371a3475ab11f48c92d24d0ef61723",
+    "sha256": "e504ee4ed1263b9191ff7c984b4087b268b1e0dc42965a6cd04d7a68e643d37e",
+    "changed": [
+      "net/spell_engine/entity/WarriorUltimates.class"
+    ],
+    "added": [
+      "net/spell_engine/entity/BerserkerAppearance.class"
+    ]
+  }
+]

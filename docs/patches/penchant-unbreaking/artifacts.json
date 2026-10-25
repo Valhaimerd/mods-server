@@ -1,0 +1,12 @@
+{
+  "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "before_sha256": "f8d594f096832195c6b5139152b2ef1193e653b6841b93dee35c898a0eccc4f0",
+  "sha256": "02faff1631c1ae7d976fc6a6e21b942eb55b6e99f7f5c35dc896e57cec6b2805",
+  "changed": [
+    "assets/penchant/patchouli_books/tome_of_penchant/en_us/entries/modules/durability_rework.json",
+    "resourcepacks/durability_rework/data/minecraft/enchantment/unbreaking.json"
+  ],
+  "added": [
+    "data/minecraft/enchantment/unbreaking.json"
+  ]
+}

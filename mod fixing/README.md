@@ -318,3 +318,36 @@ The same-name PvP Flagging replacement adds administrator-only `/pvpdamage <perc
 The same-name Iourus replacement now waits for an authoritative race-sync response before offering selection; pending client NONE is no longer treated as a new player. A late known-race packet closes a stale selection screen. The controlled baseline reproduced the premature chooser, and the final connected fixture passes 125 delayed-sync/native-Orb/UI checks plus 5 client-state checks. The Orb of Oblivion resets the user's race through the existing setter and reopens selection, including when no skill points are spent. The original skill refund, item cost, particle and failed no-op behavior remain; other players are untouched. A race-only dedicated server loads successfully without the optional RPG target classes.
 
 Only client state/menu classes and the mixin manifest change, with one optional Orb Mixin added; all prior balance/leaf/slowfall/server persistence and network entries remain byte-identical. Final production/fixed copies and ignored predecessors follow the standard workflow. Sources, exact hashes, results and limits are in [the race Orb patch](../docs/patches/race-orb-reset/README.md). The handbook source/PDF are synchronized; personal installations and the separate server are untouched. No commit or push requested.
+
+
+## Pet Vault Trinket slot ? 25 October 2026
+
+The same-filename Pet Vault 1.5.0 overlay adds only an additive Curios Trinket item tag for Keeper's Locket. Original Necklace eligibility, all classes, recipes and pet/network data remain byte-identical; Nameless Trinkets is unchanged. Native slot validation and Pet Vault equipped checks cover both slots in a disposable dedicated-server fixture. The final active/fixed copy and ignored retired predecessor follow the normal workflow. See [source and verification](../docs/patches/pet-vault-trinket/README.md). Handbook/PDF are synchronized. No personal/server installation, commit or push was requested.
+
+## PatPat Ctrl + right-click and rebinding (25 October 2026)
+
+The same-filename PatPat 1.3.2 repack defaults to Left Ctrl + right-click and synchronizes its separate combination with native Controls/options changes. Rebinding, Unbound, Reset and restart persistence are covered by the isolated client tests with Controlling installed. Existing choices remain until reset or replaced by Recommended Keybinds. See [the cause, patch and verification](../docs/patches/patpat-controls/README.md). The recommended profile and handbook/PDF now use Ctrl + right-click; installer v1.4.6 already supports that modifier format.
+
+## Penchant Unbreaking X (25 October 2026)
+
+The same-filename Penchant repack now caps Unbreaking at X without permanent unbreakability. Native tool/armor durability effects replace Durability Rework's max-level unbreakable effect, and the English in-game guide is corrected. Two isolated dedicated-server runs with the optional module enabled and disabled pass 36 native cap/progression/durability checks. Existing Java, progression speed and other enchantment policies are unchanged. See [the data patch and exact results](../docs/patches/penchant-unbreaking/README.md).
+
+## Berserker appearance ? 26 October 2026
+
+The matching same-name Skill Tree and Spell Engine overlay adds a fixed 50% red character tint and staggered white firework sparkles during Berserker. Both follow the synchronized active buff and clear on fatal rescue/expiry/death; no combat stats change. See [build and connected-client checks](../docs/patches/berserker-visuals/README.md).
+
+## Ultimate armor presentation ? 26 October 2026
+
+Berserker's existing 50% red tint covers equipment model layers. Last Stand now has a 30% gold character/armor tint and yellow scrolling enchantment-style glint; its old custom particle emitter is disabled. Native item/enchantment data and combat values remain unchanged. See [client checks and rebuild](../docs/patches/ultimate-armor-visuals/README.md).
+
+## Priest tiers I/II - 26 October 2026
+
+Installed same-name Paladins, Skill Tree, Spell Engine and Arsenal replacements for the Priest rework. Penance moves to tier I, Ascension (Levitate) to tier II with complete branches; spell IDs remain. See [mechanics, build and isolated checks](../docs/patches/priest-rework/README.md). Custom absorption refreshes preserve consumed shield HP. Ignored predecessors are in `retired packs/priest-rework-20261026/`. No push requested.
+
+## Priest passive tiers I/II - 26 October 2026
+
+Installed same-name Skill Tree and Spell Engine replacements for Healing Focus, Cadence, Fade and Divine Favor. Received absorption scales newly granted HP only; Fade hides equipment; Divine Favor retaliates with party-safe stun. See [packaging and verification](../docs/patches/priest-passives/README.md). Predecessors remain ignored in `retired packs/priest-passives-20261026/`. No push requested.
+
+## Priest tier III ? 26 October 2026
+
+Matching same-name Paladins, Skill Tree and Spell Engine overlay: mobile Lightwell (16/20s, exact 5% Healing Power inheritance, 0.6-speed motes, injured-ally targeting, per-hit cleanse or temporary hearts), ten-block Barrier (10/12s), current-volume ordinary-damage protection and once-per-projectile Deflective Shield retaliation. Existing tier-I/II and passive/absorption fixes remain. See [source, tests and scope](../docs/patches/priest-tier-three/README.md). No push requested.

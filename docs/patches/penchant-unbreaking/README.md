@@ -27,3 +27,7 @@ python docs/patches/penchant-unbreaking/verify.py --installed
 An isolated Minecraft 26.2 / NeoForge 26.2.0.90 dedicated server uses the active patched Patchouli 26.2-95 dependency. Two fresh-world runs explicitly verify the Durability Rework module is enabled/disabled as intended. Each passes 18 native checks: registered and Penchant maximum, absence of the unbreakable effect, actual reduced durability damage and eventual breakage for a netherite pickaxe and chestplate at X, IX -> X progression, stopping at X and preserving explicit Unbreakable components. The original build fails the cap-X check. Exact dependency hashes and results are adjacent. This is a focused native server test, not a full-pack multiplayer playthrough.
 
 The final same-filename JAR is installed in repository `mods` and ignored fixed packs. The previous JAR is retained under `mod fixing/retired packs/penchant-unbreaking-2026-10-25`. The handbook/PDF is updated. Unrelated pending Pet Vault and PatPat changes remain intact; nothing was pushed.
+
+## Follow-up: 26 October 2026
+
+The later [wolf armor compatibility overlay](../wolf-armor-balance/README.md) preserves these Unbreaking curves/cap and extends supported items plus native wear progression to owned wolf armor. Its narrow Java hook is layered over this original data-only patch.

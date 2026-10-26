@@ -351,3 +351,15 @@ Installed same-name Skill Tree and Spell Engine replacements for Healing Focus, 
 ## Priest tier III ? 26 October 2026
 
 Matching same-name Paladins, Skill Tree and Spell Engine overlay: mobile Lightwell (16/20s, exact 5% Healing Power inheritance, 0.6-speed motes, injured-ally targeting, per-hit cleanse or temporary hearts), ten-block Barrier (10/12s), current-volume ordinary-damage protection and once-per-projectile Deflective Shield retaliation. Existing tier-I/II and passive/absorption fixes remain. See [source, tests and scope](../docs/patches/priest-tier-three/README.md). No push requested.
+
+## Wolf armor and Companion resistance ? 26 October 2026
+
+The approved balance replaces full absorption with tiered 10?45% reduction, removes the armor item?s armor/toughness double counting, converts four flat pet-resistance nodes to 3% each, lowers Pack Leader/Guardian Stead resistance to 5%/10%, and caps Companion reduction at 25%. Vanilla armor is covered. Penchant gains scoped Unbreaking support and progression for armor worn by owned wolves. Current files, tests and install evidence: [wolf-armor-balance](../docs/patches/wolf-armor-balance/README.md). No personal instance changes.
+
+## Priest tuning - 26 October 2026
+
+Installed same-name Paladins, Skill Tree and Spell Engine replacements for Holy Staff damage-only specialization, lower/longer Holy Light and Penance, remote Penance caster support and two-mote lowest-raw-HP Lightwell targeting. See [current values and 619 isolated checks](../docs/patches/priest-tuning/README.md). Ignored predecessors are in `retired packs/priest-tuning-20261026/`. No push requested.
+
+## 26 October 2026 - Priest tier-III passives
+
+Installed same-name Skill Tree and Spell Engine replacements for health-based Pain Suppression and five-charge, nearby-ally Celestial Orbs. Backups: `retired packs/priest-low-health-20261026/`; matching fixed copies retained. See [implementation and isolated checks](../docs/patches/priest-low-health/README.md).

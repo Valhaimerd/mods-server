@@ -1,0 +1,49 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "216dd6b4656187bef5b7f49af15c2f045ee9b0e8a6763df95b8afa6896667209",
+    "sha256": "5fff06fe5e58afcd0791bd7e2ddcd0f1e887ab94d5527e7335a9ff06c45abe0d",
+    "changed": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "IronWolfArmor-neoforge-MC26.2-26.2.0.1.jar",
+    "before_sha256": "c9636f1ee4c808fc8aab32e70082130b2fcdd755297f7f8bf404242ac5190c45",
+    "sha256": "3e66feb2ce55f8d37937e0fad5f24b656be225fbe45342b36a5a8bb55a2175b6",
+    "changed": [
+      "net/darkhax/ironwolfarmor/common/mixin/MixinWolf.class",
+      "net/darkhax/ironwolfarmor/neoforge/IronWolfArmorNeoforge.class",
+      "assets/ironwolfarmor/lang/en_us.json"
+    ],
+    "added": [
+      "net/darkhax/ironwolfarmor/common/WolfArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+    "before_sha256": "1b872aaa5f412e9df3920eb11c8c1f4d8d96b859933c2c658a2ba962805a7ac6",
+    "sha256": "0d03d94b03a68924d89f459baedc543ad41ada2a31fb313ef43a958c20342c82",
+    "changed": [
+      "net/valhaimerd/orboblivioncompat/SkillOverhaul.class",
+      "skill-overhaul-pets.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "before_sha256": "02faff1631c1ae7d976fc6a6e21b942eb55b6e99f7f5c35dc896e57cec6b2805",
+    "sha256": "5eeabfe042cce79d1afbfe5c8379ec589b68f8d84a7cf37be178444bcd8affe2",
+    "changed": [
+      "archives/tater/penchant/mixin/leveling/ItemStackMixin.class",
+      "resourcepacks/durability_rework/data/minecraft/enchantment/unbreaking.json",
+      "data/minecraft/enchantment/unbreaking.json"
+    ],
+    "added": [
+      "archives/tater/penchant/util/WolfArmorProgress.class",
+      "data/penchant/tags/item/unbreaking_armor.json",
+      "data/penchant/tags/item/unbreaking_items.json"
+    ]
+  }
+]

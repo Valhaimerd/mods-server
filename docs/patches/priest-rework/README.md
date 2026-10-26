@@ -39,3 +39,5 @@ Pinned local snapshots: ignored `tmp/priest-rework/before/`; candidates: `built/
 Descriptions follow the existing brief-effect guide: percentages, useful effect timing, no unresolved tokens/formulas or repeated base cooldown/haste prose. The complete owner reference and handbook/PDF are synchronized. No commit or GitHub push is requested.
 
 Latest overlay: [Priest passive tiers I/II](../priest-passives/README.md). Its current hashes supersede this revision for Skill Tree and Spell Engine; do not install this historical builder output over the newer passives.
+
+Latest installed follow-up: [Holy Staff and Priest tuning](../priest-tuning/README.md). Historical source/output hashes above are superseded for Paladins, Skill Tree and Spell Engine; do not reinstall earlier builder outputs over the current overlay.

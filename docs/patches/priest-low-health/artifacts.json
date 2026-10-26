@@ -1,0 +1,24 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "677621a2f1ab6982fbe13bac5220f6302c0f73cb31dbff5111b9df917227702c",
+    "sha256": "0b03f98bcef386f16936b49fcb8c1147cdbf27503bf7a8f2a159a6c153a9bf45",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "92f6f6ddd3a7551fe391577c137aea3ac36203690d4835c6cc4f254105bdfc6d",
+    "sha256": "b170a51d35549b2e36dd7e5558a1cde463b926ff32723defb33ee74ab78b5ae7",
+    "changed": [
+      "net/spell_engine/internals/PriestPassives.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/PriestDefenses.class"
+    ]
+  }
+]

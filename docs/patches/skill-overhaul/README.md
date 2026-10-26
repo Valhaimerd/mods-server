@@ -102,3 +102,7 @@ Ordinary ranged damage is **3%** in Adventurer Skills and both RPG categories; o
 Run `python docs/patches/skill-overhaul/physical-rebalance.py` against the current installed pack to produce candidates under `tmp/physical-rebalance`. This changes only the three skill definition resources and CrossArms? Frenzy projectile multiplier function, preserving all later magic and passive patches. The original-data builder also carries the new physical values; apply subsequent magic patches when rebuilding from original archives. See `physical-rebalance-artifacts.json` for hashes.
 
 Verification: **79 isolated dedicated-server skill checks** passed with the current patched Spell Engine and compatibility bridge. Structural checks confirm both RPG categories, conditional weapon tooltips and Adventurer titles/rewards. CrossArms passed **1,341 isolated Frenzy checks** at the new 15/20/30/40% damage tiers. The current magic third-tier archive verification still passes all 128 checks. The handbook was rebuilt at 74 pages; all pages were visually reviewed, with detail review of changed pages 17, 18 and 23 and no pagination changes. No new interactive client playtest was performed. Logs remain under `tmp/skill-overhaul/server/physical-rebalance.log` and `tmp/crossarms-firing/server/physical-rebalance.log`.
+
+## Follow-up: 26 October 2026
+
+Current Companion resistance is superseded by the [wolf armor balance](../wolf-armor-balance/README.md): ordinary nodes grant 3%, Pack Leader 5%, Guardian Stead 10%, capped at 25%; the old flat subtraction is retired.

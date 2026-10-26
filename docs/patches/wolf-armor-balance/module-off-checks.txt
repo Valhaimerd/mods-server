@@ -1,0 +1,85 @@
+PASS requested Durability Rework module state is loaded
+PASS Netherite allows 55% of real Warden melee damage through actual=11.0 expected=11.0
+PASS tier tooltip exposes replacement percentage leather
+PASS no doubled armor points leather actual=0.0 expected=0.0
+PASS no doubled toughness leather actual=0.0 expected=0.0
+PASS tier reduction leather actual=18.0 expected=18.0
+PASS native equipped durability wear leather
+PASS small hits remain nonzero leather actual=0.9000244140625 expected=0.9
+PASS tier tooltip exposes replacement percentage copper
+PASS no doubled armor points copper actual=0.0 expected=0.0
+PASS no doubled toughness copper actual=0.0 expected=0.0
+PASS tier reduction copper actual=17.0 expected=17.0
+PASS native equipped durability wear copper
+PASS small hits remain nonzero copper actual=0.8499755859375 expected=0.85
+PASS tier tooltip exposes replacement percentage gold
+PASS no doubled armor points gold actual=0.0 expected=0.0
+PASS no doubled toughness gold actual=0.0 expected=0.0
+PASS tier reduction gold actual=17.0 expected=17.0
+PASS native equipped durability wear gold
+PASS small hits remain nonzero gold actual=0.8499755859375 expected=0.85
+PASS tier tooltip exposes replacement percentage chainmail
+PASS no doubled armor points chainmail actual=0.0 expected=0.0
+PASS no doubled toughness chainmail actual=0.0 expected=0.0
+PASS tier reduction chainmail actual=16.0 expected=16.0
+PASS native equipped durability wear chainmail
+PASS small hits remain nonzero chainmail actual=0.79998779296875 expected=0.8
+PASS tier tooltip exposes replacement percentage iron
+PASS no doubled armor points iron actual=0.0 expected=0.0
+PASS no doubled toughness iron actual=0.0 expected=0.0
+PASS tier reduction iron actual=15.0 expected=15.0
+PASS native equipped durability wear iron
+PASS small hits remain nonzero iron actual=0.75 expected=0.75
+PASS tier tooltip exposes replacement percentage diamond
+PASS no doubled armor points diamond actual=0.0 expected=0.0
+PASS no doubled toughness diamond actual=0.0 expected=0.0
+PASS tier reduction diamond actual=13.0 expected=13.0
+PASS native equipped durability wear diamond
+PASS small hits remain nonzero diamond actual=0.6500244140625 expected=0.65
+PASS tier tooltip exposes replacement percentage netherite
+PASS no doubled armor points netherite actual=0.0 expected=0.0
+PASS no doubled toughness netherite actual=0.0 expected=0.0
+PASS tier reduction netherite actual=11.0 expected=11.0
+PASS native equipped durability wear netherite
+PASS small hits remain nonzero netherite actual=0.54998779296875 expected=0.55
+PASS vanilla armor points removed actual=0.0 expected=0.0
+PASS vanilla scute armor is 20% reduction actual=16.0 expected=16.0
+PASS existing owner/pet friendly-fire protection remains actual=0.0 expected=0.0
+PASS unarmored wolf remains normal actual=20.0 expected=20.0
+PASS void bypass preserved actual=20.0 expected=20.0
+INFO sonic wolf-armor bypass=false
+PASS sonic boom retains native wolf-armor eligibility actual=11.0 expected=11.0
+PASS ordinary resistance is 3%, never flat subtraction actual=0.9700000286102295 expected=0.97
+PASS all allocated node resistance totals 27% before cap actual=0.27 expected=0.27
+PASS Companion resistance caps at 25% actual=15.0 expected=15.0
+PASS Netherite and capped pet skills multiply actual=8.25 expected=8.25
+PASS Guardian retains ten hearts actual=20.0 expected=20.0
+PASS Pack Leader retains damage actual=0.2 expected=0.2
+PASS reset removes pet resistance without stale bonus actual=1.0 expected=1.0
+PASS Unbreaking cap remains X
+PASS all modded tiers accept Unbreaking leather
+PASS all modded tiers accept Unbreaking copper
+PASS all modded tiers accept Unbreaking gold
+PASS all modded tiers accept Unbreaking chainmail
+PASS all modded tiers accept Unbreaking iron
+PASS all modded tiers accept Unbreaking diamond
+PASS all modded tiers accept Unbreaking netherite
+PASS native Unbreaking supports minecraft:wolf_armor
+PASS armor durability curve selected minecraft:wolf_armor
+PASS Unbreaking compatibility does not also enable Protection minecraft:wolf_armor
+PASS armor X curve saves roughly 36% wear minecraft:wolf_armor remaining=7041.0
+PASS native Unbreaking supports ironwolfarmor:leather_wolf_armor
+PASS armor durability curve selected ironwolfarmor:leather_wolf_armor
+PASS Unbreaking compatibility does not also enable Protection ironwolfarmor:leather_wolf_armor
+PASS armor X curve saves roughly 36% wear ironwolfarmor:leather_wolf_armor remaining=6960.0
+PASS native Unbreaking supports ironwolfarmor:netherite_wolf_armor
+PASS armor durability curve selected ironwolfarmor:netherite_wolf_armor
+PASS Unbreaking compatibility does not also enable Protection ironwolfarmor:netherite_wolf_armor
+PASS armor X curve saves roughly 36% wear ironwolfarmor:netherite_wolf_armor remaining=7035.0
+PASS Unbreaking does not improve HP protection actual=11.0 expected=11.0
+PASS native equipped wolf armor wear advances Penchant progression
+PASS enchanted wolf armor can still break
+PASS broken armor leaves no protection actual=20.0 expected=20.0
+PASS armor-breaking hit still receives tier reduction actual=11.0 expected=11.0
+PASS native wear breaks armor on final hit
+PASS existing player equipment progression still advances

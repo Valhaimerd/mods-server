@@ -1,0 +1,37 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "6078e68cc5d6f5676a5e7271f12152c467bc0d89574d04a5d3e06a3d22433ff9",
+    "sha256": "c81b70f237225fda906683c460a6bd7c66581fd7f9a41540efc7abb69be8ed7a",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/holy_beam.json",
+      "data/paladins/spell/penance.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "289f16efee8c43ef98741a02eb3e42015ddd78f724b2522bb26b25cf1ef5bed5",
+    "sha256": "677621a2f1ab6982fbe13bac5220f6302c0f73cb31dbff5111b9df917227702c",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/weapon_holy_root.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "83322e639b645cbeba1d3d2ed56e520a892156ca9ed4b0cb9b04628f5c4c4a75",
+    "sha256": "92f6f6ddd3a7551fe391577c137aea3ac36203690d4835c6cc4f254105bdfc6d",
+    "changed": [
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/delivery/SpellDelivery.class",
+      "net/spell_engine/internals/PriestRules.class",
+      "net/spell_engine/internals/PriestUltimates.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/PriestTuning.class"
+    ]
+  }
+]

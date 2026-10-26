@@ -44,3 +44,7 @@ Baseline resource verification fails on Lightwell's original 45s cooldown. Early
 English descriptions follow the approved concise rewrite: percentages and meaningful upgrade benefits, no formulas or duplicated cooldown prose. Deflective Shield's scroll name and tree title agree. The Priest reference/exporter, handbook and PDF are synchronized. Originals are preserved in ignored `mod fixing/retired packs/priest-tier-three-20261026/`; active/fixed copies match. No commit or push requested.
 
 Handbook verification: 77 pages; only pages 17?18 changed from the pre-tier-III PDF. All pages rendered for visual review; updated pages checked at readable resolution. Table-of-contents destinations/page numbers, matching PDF copies and all 172 downloaded icon renderings passed.
+
+Latest installed follow-up: [Holy Staff and Priest tuning](../priest-tuning/README.md). Historical source/output hashes above are superseded for Paladins, Skill Tree and Spell Engine; do not reinstall earlier builder outputs over the current overlay.
+
+Current tier-III passives are superseded by [health-based Pain Suppression and five-charge Celestial Orbs](../priest-low-health/README.md). Rebuilding this historical patch alone does not include that overlay.

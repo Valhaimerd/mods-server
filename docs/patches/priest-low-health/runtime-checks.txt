@@ -1,0 +1,679 @@
+PASS Lowest raw HP outranks lower percentage 1.0
+PASS Three injuries pick second lowest raw HP 1.0
+PASS Native selection uses raw HP 1.0
+PASS Native well cycle emits exactly two motes 2.0
+PASS First two injured receive distinct motes 2.0
+PASS Raw HP priority applied to launched motes 1.0
+PASS Exactly two injured split motes 1.0
+PASS Only injured gets both slots 1.0
+PASS Single injured still gets two projectiles 2.0
+PASS Both motes follow sole injured 1.0
+PASS No injury or upgrades idles 0.0
+PASS Full-health cleanse fallback 1.0
+PASS Injury outranks full-health cleanse 1.0
+PASS Remote enemy contact gives caster shield 1.0
+PASS Remote enemy contact gives caster Hysteria 1.0
+PASS Penance four-block radius excludes 4.8 away 1000.0
+PASS Remote terrain hit gives no caster buff 1.0
+PASS Caster inside blast gets only one stack 2.0
+PASS Caster Hysteria no duplicate 2.0
+PASS Remote ally contact grants caster shield 1.0
+PASS Remote ally contact grants ally shield 1.0
+PASS Killing impact still grants remote caster support 1.0
+PASS Holy Staff leaves healing unchanged 16.0
+PASS Holy Staff no cooldown reduction 3.0
+PASS Holy Staff five percent damage 33.5999755859375
+PASS No protection update before fifth tick 0.0
+PASS Native five-tick event applies protection 0.0
+PASS Health threshold 51.0 0.0
+PASS Native incoming-damage attribute 51.0 100.0
+PASS Health threshold 50.0 0.0
+PASS Native incoming-damage attribute 50.0 100.0
+PASS Health threshold 49.0 1.0
+PASS Native incoming-damage attribute 49.0 94.00000013411045
+PASS Health threshold 40.0 1.0
+PASS Native incoming-damage attribute 40.0 94.00000013411045
+PASS Health threshold 39.0 2.0
+PASS Native incoming-damage attribute 39.0 88.0000002682209
+PASS Health threshold 30.0 2.0
+PASS Native incoming-damage attribute 30.0 88.0000002682209
+PASS Health threshold 29.0 3.0
+PASS Native incoming-damage attribute 29.0 82.00000040233135
+PASS Health threshold 20.0 3.0
+PASS Native incoming-damage attribute 20.0 82.00000040233135
+PASS Health threshold 19.0 4.0
+PASS Native incoming-damage attribute 19.0 76.0000005364418
+PASS Health threshold 39.0 2.0
+PASS Native incoming-damage attribute 39.0 88.0000002682209
+PASS Health threshold 49.0 1.0
+PASS Native incoming-damage attribute 49.0 94.00000013411045
+PASS Health threshold 80.0 0.0
+PASS Native incoming-damage attribute 80.0 100.0
+PASS Current maximum HP controls thresholds 2.0
+PASS Actual hit reduced by twenty-four percent 7.600000381469727
+PASS Removing passive clears protection 0.0
+PASS Healing no longer applies Pain to recipient 0.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Ally hit spends exactly one orb 0 4.0
+PASS Ally hit spends exactly one orb 1 3.0
+PASS Ally hit spends exactly one orb 2 2.0
+PASS Ally hit spends exactly one orb 3 1.0
+PASS Ally hit spends exactly one orb 4 0.0
+PASS Five orbs deal thirty percent P each 60.0
+PASS Exhausted orbs deal no extra damage 60.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Unrelated nearby entity is not protected 5.0
+PASS Ally beyond eight blocks cannot spend orb 5.0
+PASS Ally at eight blocks is protected 4.0
+PASS Friendly attacker cannot spend orb 4.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Own hit uses one native charge without duplicate 4.0
+PASS Native own-hit retaliation coefficient 12.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Actual ally damage event spends one charge 4.0
+PASS Actual ally event deals orb damage 12.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Absorbed ally hit leaves real health intact 7.0
+PASS Absorbed ally hit still retaliates 4.0
+PASS Critical active spell readies five orbs 5.0
+PASS Orb readiness remains fifteen seconds 300.0
+PASS Expired readiness cannot retaliate 0.0
+PASS Lightwell requested cooldown 80.0
+PASS Mote range 16.0
+PASS Mote velocity 0.6000000238418579
+PASS Mote own power coefficient 1.0
+PASS Mote interval 0.800000011920929
+PASS Well inherited power 2.0
+PASS Well cannot be pushed 0.0
+PASS Well cannot be attacked 0.0
+PASS Well tracks owner x 3.0
+PASS Well tracks head y 82.24999995231629
+PASS Well prioritizes injured owned pet 1.0
+Well caster target diagnostic target=FakePlayer['[Minecraft]'/1, l='ServerLevel[PriestTuning-3a633bf5b1]', x=3.00, y=80.00, z=2.00] hp=98.0 max=100.0 allies=true sight=true directSelection=FakePlayer['[Minecraft]'/1, l='ServerLevel[PriestTuning-3a633bf5b1]', x=3.00, y=80.00, z=2.00]
+PASS Well retargets injured caster 1.0
+PASS Native mote heals 100 percent own power 100.0
+PASS Full-health debuffed caster eligible 1.0
+PASS First mote removes one debuff 1.0
+PASS Second mote cleanses without hidden cooldown 0.0
+PASS Capacity grant unfilled 90.0
+PASS One new heart 102.0
+PASS Second heart capacity 104.0
+PASS Mote alone heals new capacity 92.0
+PASS Capped refresh does not heal 90.0
+PASS Capped hearts 104.0
+PASS Hearts refresh six seconds 120.0
+PASS Pet independent heart stack 1.0
+PASS Owner stacks unaffected by pet 2.0
+PASS Heart removal restores max 100.0
+PASS Natural six-second heart expiry removes levels 0.0
+PASS Heart expiry preserves other health modifier 14.0
+PASS Heart expiry clamps health without damage 1.0
+PASS Well idles with no useful ally 1.0
+PASS Orphan well discarded 1.0
+PASS Barrier cast one second 1.0
+PASS Barrier cooldown 60.0
+PASS Barrier radius 10.0
+PASS Barrier base lifetime 200.0
+PASS Barrier protects current ally 1.0
+PASS Barrier protects owner pet 1.0
+PASS Barrier ordinary damage blocked Optional[ResourceKey[minecraft:damage_type / minecraft:magic]] 8.0
+PASS Barrier ordinary damage blocked Optional[ResourceKey[minecraft:damage_type / minecraft:on_fire]] 8.0
+PASS Barrier ordinary damage blocked Optional[ResourceKey[minecraft:damage_type / minecraft:wither]] 8.0
+PASS Barrier ordinary damage blocked Optional[ResourceKey[minecraft:damage_type / minecraft:freeze]] 8.0
+PASS Barrier ordinary damage blocked Optional[ResourceKey[minecraft:damage_type / minecraft:fall]] 8.0
+PASS Actual poison tick blocked 8.0
+PASS Actual Bleed tick blocked 8.0
+PASS No lingering native immunity lease 0.0
+PASS Outside barrier damage restored 3.0
+PASS Void damage is not protected 3.0
+PASS Intentional health cost not canceled 89.0
+PASS Barrier does not protect enemy 0.0
+PASS Barrier repeatedly pushes hostile entity 1.0
+PASS Projectile square corner not intercepted 1.0
+PASS Hostile projectile intercepted 1.0
+PASS Retaliation native 25 percent power 10.0
+PASS Repeated projectile contact no extra retaliation 10.0
+PASS Distinct projectiles each retaliate 20.0
+PASS Friendly projectile unaffected 0.0
+PASS Native square projectile collider disabled 0.0
+PASS Actual arrow native collision excludes friendly 0.0
+PASS Actual arrow crosses AABB face true 1.0
+PASS Actual arrow native collision excludes square corner 0.0
+PASS Actual arrow crosses AABB face false 1.0
+PASS Removed barrier stops protection 0.0
+PASS Improved barrier lasts twelve seconds 240.0
+PASS Improved barrier no cooldown deduction 60.0
+PASS Lightwell cooldown responds to haste 40.0
+PASS Barrier haste cast 0.5
+PASS Haste does not shorten well active lifetime 16.0
+PASS Focus stack 1 1.0
+PASS Focus duration 1 120.0
+PASS Focus prevents same-tick stack 1 1.0
+PASS Focus stack 2 2.0
+PASS Focus duration 2 120.0
+PASS Focus prevents same-tick stack 2 2.0
+PASS Focus stack 3 3.0
+PASS Focus duration 3 120.0
+PASS Focus prevents same-tick stack 3 3.0
+PASS Focus stack 4 4.0
+PASS Focus duration 4 120.0
+PASS Focus prevents same-tick stack 4 4.0
+PASS Focus stack 5 5.0
+PASS Focus duration 5 120.0
+PASS Focus prevents same-tick stack 5 5.0
+PASS Focus 20 percent received healing 4.800000190734863
+PASS Focus boosts newly received shield 1.2000000476837158
+PASS Focus preserves consumed shield 1.4000000953674316
+PASS Focus boosted shield maximum 10.999999046325684
+PASS Focus capped shield no refill 10.999999046325684
+PASS Focus shield extra capacity cleans up 0.0
+PASS Cadence guaranteed stack 1 1.0
+PASS Cadence rate limit 1 1.0
+PASS Cadence guaranteed stack 2 2.0
+PASS Cadence rate limit 2 2.0
+PASS Cadence guaranteed stack 3 3.0
+PASS Cadence rate limit 3 3.0
+PASS Cadence guaranteed stack 4 4.0
+PASS Cadence rate limit 4 4.0
+PASS Cadence guaranteed stack 5 5.0
+PASS Cadence rate limit 5 5.0
+PASS Cadence maximum haste 109.99999977648258
+PASS Cadence duration 120.0
+PASS Fade works without nearby enemies 1.0
+PASS Fade invisibility duration 40.0
+PASS Fade base cooldown 6.0
+PASS Divine guaranteed readiness 300.0
+PASS Divine removes old critical bonus 105.0000000745058
+PASS Divine distant attacker stunned 20.0
+PASS Divine nearby enemy stunned 20.0
+PASS Divine outside radius safe 0.0
+PASS Divine caster safe 0.0
+PASS Divine readiness consumed 0.0
+PASS Native damage event consumes Divine 0.0
+PASS Native damage event stuns attacker 20.0
+PASS paladins:holy_beam per-delivery normalization 1.0
+PASS paladins:holy_beam smooth cooldown 0 12.0
+PASS paladins:holy_beam smooth cooldown 1 12.59999942779541
+PASS paladins:holy_beam smooth cooldown 2 13.200000762939453
+PASS paladins:holy_beam smooth cooldown 3 13.799999237060547
+PASS paladins:holy_beam smooth cooldown 4 14.40000057220459
+PASS paladins:holy_beam smooth cooldown 5 15.0
+PASS paladins:holy_beam smooth cooldown 6 15.59999942779541
+PASS paladins:holy_beam smooth cooldown 7 16.200000762939453
+PASS paladins:holy_beam smooth cooldown 8 16.799999237060547
+PASS paladins:holy_beam smooth cooldown 9 17.400001525878906
+PASS paladins:holy_beam smooth cooldown 10 18.0
+PASS paladins:holy_beam smooth cooldown 11 18.599998474121094
+PASS paladins:holy_beam smooth cooldown 12 19.200000762939453
+PASS paladins:holy_beam smooth cooldown 13 19.799999237060547
+PASS paladins:holy_beam smooth cooldown 14 20.400001525878906
+PASS paladins:holy_beam smooth cooldown 15 21.0
+PASS paladins:holy_beam smooth cooldown 16 21.599998474121094
+PASS paladins:holy_beam smooth cooldown 17 22.200000762939453
+PASS paladins:holy_beam smooth cooldown 18 22.799999237060547
+PASS paladins:holy_beam smooth cooldown 19 23.400001525878906
+PASS paladins:holy_beam smooth cooldown 20 24.0
+PASS paladins:penance per-delivery normalization 1.0
+PASS paladins:penance smooth cooldown 0 8.0
+PASS paladins:penance smooth cooldown 1 8.199999809265137
+PASS paladins:penance smooth cooldown 2 8.40000057220459
+PASS paladins:penance smooth cooldown 3 8.600000381469727
+PASS paladins:penance smooth cooldown 4 8.800000190734863
+PASS paladins:penance smooth cooldown 5 9.0
+PASS paladins:penance smooth cooldown 6 9.200000762939453
+PASS paladins:penance smooth cooldown 7 9.40000057220459
+PASS paladins:penance smooth cooldown 8 9.600000381469727
+PASS paladins:penance smooth cooldown 9 9.800000190734863
+PASS paladins:penance smooth cooldown 10 10.0
+PASS paladins:penance smooth cooldown 11 10.200000762939453
+PASS paladins:penance smooth cooldown 12 10.399999618530273
+PASS paladins:penance smooth cooldown 13 10.600000381469727
+PASS paladins:penance smooth cooldown 14 10.800000190734863
+PASS paladins:penance smooth cooldown 15 11.0
+PASS paladins:penance smooth cooldown 16 11.200000762939453
+PASS paladins:penance smooth cooldown 17 11.40000057220459
+PASS paladins:penance smooth cooldown 18 11.600000381469727
+PASS paladins:penance smooth cooldown 19 11.800000190734863
+PASS paladins:penance smooth cooldown 20 12.0
+PASS Other channels preserve native scaling 0.5
+PASS paladins:levitate first/end interval 10 0.0
+PASS paladins:levitate first/end interval 20 0.0
+PASS paladins:levitate first/end interval 30 0.0
+PASS paladins:levitate first/end interval 40 0.0
+PASS paladins:penance first/end interval 10 0.0
+PASS paladins:penance first/end interval 20 0.0
+PASS paladins:penance first/end interval 30 0.0
+PASS paladins:penance first/end interval 40 0.0
+PASS paladins:penance first/end interval 50 0.0
+PASS paladins:penance first/end interval 60 0.0
+PASS paladins:penance first/end interval 70 0.0
+PASS paladins:penance first/end interval 80 0.0
+PASS paladins:penance first/end interval 90 0.0
+PASS paladins:penance first/end interval 100 0.0
+PASS Holy healing branch 0 4.0
+PASS Holy damage coefficient 0 0.20000000298023224
+PASS Holy knockback 0 1.0
+PASS Holy damage native 0 8.0
+PASS Holy healing branch 1 6.0
+PASS Holy damage coefficient 1 0.25
+PASS Holy knockback 1 1.0
+PASS Holy damage native 1 10.0
+PASS Holy healing branch 2 8.0
+PASS Holy damage coefficient 2 0.25
+PASS Holy knockback 2 2.0
+PASS Holy damage native 2 10.0
+PASS Holy healing branch 3 6.0
+PASS Holy damage coefficient 3 0.3499999940395355
+PASS Holy knockback 3 1.0
+PASS Holy damage native 3 14.0
+PASS Penance single explosion damage 6.0
+PASS Penance outer radius 1000.0
+PASS Penance protects own pet 8.0
+PASS Penance buffs nearby owner 1.0
+PASS Penance buffs pet 1.0
+PASS Penance projectile discarded 1.0
+PASS Six bolt shield 6.0
+PASS Spent shield remains spent: 6-4+2 4.0
+PASS Ten stack shield retains spent HP 6.0
+PASS Cap refresh cannot restore shield 6.0
+PASS Improved node selected 1.0
+PASS Improved Penance damage 8.0
+PASS Improved shield duration 80.0
+PASS Hysteria ten stacks 10.0
+PASS Chastise ten stacks 10.0
+PASS Hysteria refreshed 4s 80.0
+PASS Serenity adds only per pulse 0 5.0
+PASS Serenity adds only per pulse 1 10.0
+PASS Serenity adds only per pulse 2 15.0
+PASS Final pulse stronger push 1.0
+PASS Serenity adds only per pulse 3 20.0
+PASS Ascension four damage stacks 4.0
+PASS Ascension improved duration 160.0
+PASS Serenity improved duration 160.0
+PASS Serenity cap refresh no refill 2.0
+PASS paladins:priest_absorption first shield 6.0
+PASS paladins:priest_absorption stack only adds new HP 4.0
+PASS paladins:priest_absorption refresh no refill 4.0
+PASS paladins:priest_absorption fresh after removal 6.0
+PASS skill_tree_rpgs:arcane_ward first shield 6.0
+PASS skill_tree_rpgs:arcane_ward stack only adds new HP 4.0
+PASS skill_tree_rpgs:arcane_ward refresh no refill 4.0
+PASS skill_tree_rpgs:arcane_ward fresh after removal 6.0
+PASS skill_tree_rpgs:fire_ward first shield 6.0
+PASS skill_tree_rpgs:fire_ward stack only adds new HP 4.0
+PASS skill_tree_rpgs:fire_ward refresh no refill 4.0
+PASS skill_tree_rpgs:fire_ward fresh after removal 6.0
+PASS skill_tree_rpgs:frost_ward first shield 6.0
+PASS skill_tree_rpgs:frost_ward stack only adds new HP 4.0
+PASS skill_tree_rpgs:frost_ward refresh no refill 4.0
+PASS skill_tree_rpgs:frost_ward fresh after removal 6.0
+PASS arsenal:absorption first shield 6.0
+PASS arsenal:absorption stack only adds new HP 4.0
+PASS arsenal:absorption refresh no refill 4.0
+PASS arsenal:absorption fresh after removal 6.0
+PASS skill_tree_rpgs:tenacity_ward first shield 3.0
+PASS skill_tree_rpgs:tenacity_ward stack only adds new HP 2.0
+PASS skill_tree_rpgs:tenacity_ward refresh no refill 2.0
+PASS skill_tree_rpgs:tenacity_ward fresh after removal 3.0
+PASS Circle base healing 20.0
+PASS Circle improved healing 24.0
+PASS Sanctuary P40 regeneration III 2.0
+PASS Sanctuary duration 100.0
+PASS Sanctuary P27 rounds to regeneration III 2.0
+PASS Mass Dispel removes exactly two 1.0
+PASS Native Holy delivery applies 20 percent per hit 8.0
+PASS Native Penance delivery spawns one bolt 1.0
+PASS Native Penance bolt applies 15 percent per blast 6.0
+Party: real Better Party API fixture: PASS
+Party: native player fixture damage before=1000.0 after=998.0 accepted=true
+Party: player fixture accepts native attributed PvP damage: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: Judgement 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: Holy Light 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: Judgement f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: Holy Light f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=false: PASS
+Party: Judgement f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=false: PASS
+Party: Holy Light f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=false relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=false: PASS
+Party: Penance mixed impact party/pet safety f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: Judgement 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: Holy Light 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: Judgement f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: Holy Light f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=false: PASS
+Party: Judgement f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=false relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=false: PASS
+Party: Holy Light f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=false relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=false: PASS
+Party: Penance mixed impact party/pet safety f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=false: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: Judgement 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: Holy Light 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: Judgement f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: Holy Light f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 DIRECT FF=true: PASS
+Party: Judgement f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=true: PASS
+Party: Holy Light f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=true relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=true: PASS
+Party: Penance mixed impact party/pet safety f5b495c0-2364-4ce2-b336-5dfd29d487b6 DIRECT FF=true: PASS
+Party: Judgement 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Holy Light 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: Judgement 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Holy Light 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: Judgement 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: Holy Light 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: Judgement f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true relation=ALLY before=500.0 after=500.0
+Party: loaded Falling Judgement protects ally f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: Holy Light f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true relation=ALLY before=500.0 after=504.0
+Party: loaded Holy Light mixed pipeline heals ally f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: Judgement f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Holy Light f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety f1bb5cf8-c1a5-3799-8a6a-b5218e9eb351 AREA FF=true: PASS
+Party: Judgement f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=true relation=HOSTILE before=500.0 after=464.0
+Party: loaded Falling Judgement damages enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=true: PASS
+Party: Holy Light f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=true relation=HOSTILE before=500.0 after=492.0
+Party: loaded Holy Light mixed pipeline damages without healing enemy f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=true: PASS
+Party: Penance mixed impact party/pet safety f5b495c0-2364-4ce2-b336-5dfd29d487b6 AREA FF=true: PASS
+Party: actual Ender Dragon move fixture moves before freeze: PASS
+Party: actual Ender Dragon receives Frozen: PASS
+Party: actual Frozen Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves again after Frozen removed: PASS
+Party: actual Ender Dragon receives Stun: PASS
+Party: actual stunned Ender Dragon move clamped: PASS
+Party: actual Ender Dragon moves after Stun removed: PASS
+Party: actual Ender Dragon receives Nature's Grasp: PASS
+Party: actual Nature's Grasp clamps boss movement: PASS
+Party: actual boss moves after Nature's Grasp removed: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: party stun safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=false: PASS
+Party: protect harmful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: allow helpful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: party stun safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=false: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 DIRECT FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: party stun safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 DIRECT FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.player DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.player DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.wolf DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.wolf DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.wolf DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.villager DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.villager DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.villager DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.cow DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.cow DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.cow DIRECT: PASS
+Party: allow offensive acquisition entity.minecraft.creeper DIRECT: PASS
+Party: deny healing acquisition entity.minecraft.creeper DIRECT: PASS
+Party: final enemy healing safety entity.minecraft.creeper DIRECT: PASS
+Party: protect harmful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 8296d901-86e8-3061-b139-39dc1061a338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.player 9190b586-a84d-3009-8446-46e93fc69338 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf 05f74621-ed39-4a20-9c19-098ccb6d9556 AREA FF=true: PASS
+Party: protect harmful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: allow helpful acquisition entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: party stun safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: party Archer debuff safety archers:entangling_roots entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: party Archer debuff safety skill_tree_rpgs:natures_grasp entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: party Archer debuff safety minecraft:poison entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: final damage/fire/freeze safety entity.minecraft.wolf f542a1e4-817c-4965-8c6f-f0d35d360147 AREA FF=true: PASS
+Party: allow offensive acquisition entity.minecraft.player AREA: PASS
+Party: deny healing acquisition entity.minecraft.player AREA: PASS
+Party: final enemy healing safety entity.minecraft.player AREA: PASS
+Party: allow offensive acquisition entity.minecraft.wolf AREA: PASS
+Party: deny healing acquisition entity.minecraft.wolf AREA: PASS
+Party: final enemy healing safety entity.minecraft.wolf AREA: PASS
+Party: allow offensive acquisition entity.minecraft.villager AREA: PASS
+Party: deny healing acquisition entity.minecraft.villager AREA: PASS
+Party: final enemy healing safety entity.minecraft.villager AREA: PASS
+Party: allow offensive acquisition entity.minecraft.iron_golem AREA: PASS
+Party: deny healing acquisition entity.minecraft.iron_golem AREA: PASS
+Party: final enemy healing safety entity.minecraft.iron_golem AREA: PASS
+Party: allow offensive acquisition entity.minecraft.cow AREA: PASS
+Party: deny healing acquisition entity.minecraft.cow AREA: PASS
+Party: final enemy healing safety entity.minecraft.cow AREA: PASS
+Party: allow offensive acquisition entity.minecraft.creeper AREA: PASS
+Party: deny healing acquisition entity.minecraft.creeper AREA: PASS
+Party: final enemy healing safety entity.minecraft.creeper AREA: PASS
+Party: actual area damage entity.minecraft.villager: PASS
+Party: actual burn eligibility entity.minecraft.villager: PASS
+Party: actual area damage entity.minecraft.iron_golem: PASS
+Party: actual burn eligibility entity.minecraft.iron_golem: PASS
+Party: actual area damage entity.minecraft.cow: PASS
+Party: actual burn eligibility entity.minecraft.cow: PASS
+Party: actual area damage entity.minecraft.creeper: PASS
+Party: actual burn eligibility entity.minecraft.creeper: PASS
+Party: actual area damage entity.minecraft.wolf: PASS
+Party: actual burn eligibility entity.minecraft.wolf: PASS
+Party: owned spell caster protects party player: PASS
+Party: owned spell caster protects sibling pet: PASS
+Party: actual party pet healing: PASS
+Party: self damage apply_to_caster blocked: PASS
+Party: self immunity retained: PASS
+Party: fixture rejects ordinary effect minecraft:slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:slowness: PASS
+Party: fixture rejects ordinary effect wizards:frozen: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frozen: PASS
+Party: fixture rejects ordinary effect wizards:frost_slowness: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates wizards:frost_slowness: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:blizzard_slow: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:blizzard_slow: PASS
+Party: fixture rejects ordinary effect spell_engine:stun: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates spell_engine:stun: PASS
+Party: fixture rejects ordinary effect archers:entangling_roots: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates archers:entangling_roots: PASS
+Party: fixture rejects ordinary effect skill_tree_rpgs:natures_grasp: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates skill_tree_rpgs:natures_grasp: PASS
+Party: fixture rejects ordinary effect minecraft:poison: PASS
+Party: actual frost bypass type/boss/1000.0 HP gates minecraft:poison: PASS

@@ -153,3 +153,11 @@ Wolf armor now reduces qualifying damage by tier (10?45%) instead of fully absor
 Latest [Priest tuning](docs/patches/priest-tuning/README.md): Holy Staff Specialisation gives Holy Shock +5% damage without shortening cooldown. Holy Light channels 25 deliveries over 10s at lower coefficients. Penance fires ten bolts over 5s with four-block blasts and an 8-12s smooth cooldown; living-target hits grant caster support outside the blast. Lightwell fires two motes each cycle, prioritizing injured allies by lowest raw HP and retaining useful full-health support fallback.
 
 [Priest tier-III passives](docs/patches/priest-low-health/README.md): Pain Suppression now follows the Priest's current health for up to 24% damage reduction. Celestial readies five 30% Healing Power orbs and also retaliates when allies within eight blocks are hit.
+
+[Support and visual tuning](docs/patches/support-visual-tuning/README.md) strengthens Last Stand's gold tint to 50% and makes Sacred Refuge follow Barrier's 10s/12s duration. Barrier remains a ten-block radius. Both Lightwell motes focus the sole injured ally even with full-health allies nearby.
+
+[Lightwell mote spacing](docs/patches/lightwell-mote-spacing/README.md) delays the second mote by 0.3s when both target the same ally, making the two projectiles visible separately. Different-target motes still launch together; firing cadence and healing are preserved.
+
+[Penchant pending Unbreaking progression](docs/patches/unbreaking-progression/README.md) now reconciles earned full bars on carried/worn gear once per second. Existing V progress can advance to VI and continue to X without waiting for another durability event; partial progress grants no free levels. Matching client/server JARs and a restart are required.
+
+[Healing armor balance](docs/patches/healing-armor-balance/README.md) sets Paladin, Crusader, Netherite Crusader, Armory Justicar and Armory Lightbringer to +0.25 flat Healing Power per piece (+1 per full set), including existing equipment configs. Other attributes and legendary set bonuses remain.

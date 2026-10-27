@@ -1,0 +1,1 @@
+FAIL java.lang.AssertionError: flat healing is 0.25: armory_rpgs:justicar_armor_chest actual=1.5

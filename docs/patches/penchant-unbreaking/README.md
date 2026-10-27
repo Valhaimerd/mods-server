@@ -31,3 +31,5 @@ The final same-filename JAR is installed in repository `mods` and ignored fixed 
 ## Follow-up: 26 October 2026
 
 The later [wolf armor compatibility overlay](../wolf-armor-balance/README.md) preserves these Unbreaking curves/cap and extends supported items plus native wear progression to owned wolf armor. Its narrow Java hook is layered over this original data-only patch.
+
+The later [pending Unbreaking repair](../unbreaking-progression/README.md) reconciles existing earned full bars on carried/worn gear without another wear event. It preserves the existing X cap, durability curves and wolf integration. Retain that overlay when rebuilding the active pack.

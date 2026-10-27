@@ -27,3 +27,5 @@ The original installed resources failed the new healing-trigger removal check. C
 The Priest reference and handbook/PDF are synchronized. Full runtime records are alongside this file.
 
 PDF review retained 77 pages with all 51 contents destinations correct. Both output copies match. All pages were rendered for overview review; changed pages 17-18 were inspected at reading size without new clipping or broken section flow.
+
+The subsequent [support/visual overlay](../support-visual-tuning/README.md) preserves these passive hooks; retain it when rebuilding the current active pack.

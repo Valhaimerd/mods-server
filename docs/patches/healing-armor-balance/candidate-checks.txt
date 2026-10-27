@@ -1,0 +1,29 @@
+PASS all twenty plate pieces registered
+PASS flat healing is 0.25: armory_rpgs:justicar_armor_chest actual=0.25
+PASS flat healing is 0.25: armory_rpgs:justicar_armor_feet actual=0.25
+PASS flat healing is 0.25: armory_rpgs:justicar_armor_head actual=0.25
+PASS flat healing is 0.25: armory_rpgs:justicar_armor_legs actual=0.25
+PASS flat healing is 0.25: armory_rpgs:lightbringer_armor_chest actual=0.25
+PASS flat healing is 0.25: armory_rpgs:lightbringer_armor_feet actual=0.25
+PASS flat healing is 0.25: armory_rpgs:lightbringer_armor_head actual=0.25
+PASS flat healing is 0.25: armory_rpgs:lightbringer_armor_legs actual=0.25
+PASS flat healing is 0.25: paladins:crusader_armor_chest actual=0.25
+PASS flat healing is 0.25: paladins:crusader_armor_feet actual=0.25
+PASS flat healing is 0.25: paladins:crusader_armor_head actual=0.25
+PASS flat healing is 0.25: paladins:crusader_armor_legs actual=0.25
+PASS flat healing is 0.25: paladins:netherite_crusader_armor_chest actual=0.25
+PASS flat healing is 0.25: paladins:netherite_crusader_armor_feet actual=0.25
+PASS flat healing is 0.25: paladins:netherite_crusader_armor_head actual=0.25
+PASS flat healing is 0.25: paladins:netherite_crusader_armor_legs actual=0.25
+PASS flat healing is 0.25: paladins:paladin_armor_chest actual=0.25
+PASS flat healing is 0.25: paladins:paladin_armor_feet actual=0.25
+PASS flat healing is 0.25: paladins:paladin_armor_head actual=0.25
+PASS flat healing is 0.25: paladins:paladin_armor_legs actual=0.25
+PASS full set grants one flat Healing Power: paladins:paladin_armor
+PASS full set grants one flat Healing Power: paladins:crusader_armor
+PASS full set grants one flat Healing Power: paladins:netherite_crusader_armor
+PASS full set grants one flat Healing Power: armory_rpgs:justicar_armor
+PASS full set grants one flat Healing Power: armory_rpgs:lightbringer_armor
+PASS all other native item attribute modifiers remain identical
+PASS Avatar percentage Healing Power retained
+PASS Absolution percentage Healing Power retained

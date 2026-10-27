@@ -363,3 +363,19 @@ Installed same-name Paladins, Skill Tree and Spell Engine replacements for Holy 
 ## 26 October 2026 - Priest tier-III passives
 
 Installed same-name Skill Tree and Spell Engine replacements for health-based Pain Suppression and five-charge, nearby-ally Celestial Orbs. Backups: `retired packs/priest-low-health-20261026/`; matching fixed copies retained. See [implementation and isolated checks](../docs/patches/priest-low-health/README.md).
+
+## 26 October 2026 - Support and visual tuning
+
+Installed same-name Skill Tree and Spell Engine replacements for 50% Last Stand gold tint and Sacred Refuge duration inheritance (10s/12s). Confirmed existing ten-block Barrier radius and two-mote focus on a sole injured ally. See [implementation and isolated checks](../docs/patches/support-visual-tuning/README.md). Backups: `retired packs/support-visual-tuning-20261026/`.
+
+## 27 October 2026 - Lightwell mote spacing
+
+Installed same-name Spell Engine overlay for a fixed 0.3s delay between same-target Lightwell motes. Different-target shots remain simultaneous; only PriestTuning.class changes. See [implementation and isolated checks](../docs/patches/lightwell-mote-spacing/README.md). Backups: `retired packs/lightwell-mote-spacing-20261027/`.
+
+## 27 October 2026 - Pending Unbreaking progression
+
+Installed same-name Penchant replacement adding server-side reconciliation of earned full Unbreaking bars on carried/worn gear. Both module states pass 40 native checks, including V to VI and onward to X. All existing classes/resources, 2.5x targets and wolf integration remain. Backups: `retired packs/unbreaking-progression-20261027/`. See [proof and reproduction](../docs/patches/unbreaking-progression/README.md).
+
+## 27 October 2026 - Healing armor balance
+
+Installed same-name Paladins & Priests and Armory overlays: all twenty Paladin/Crusader/Netherite Crusader/Justicar/Lightbringer pieces grant +0.25 flat Healing Power. Fresh and legacy-config runs each pass 29 native checks. See [details and preservation proof](../docs/patches/healing-armor-balance/README.md). Backups: `retired packs/healing-armor-balance-20261027/`.

@@ -48,3 +48,5 @@ Handbook verification: 77 pages; only pages 17?18 changed from the pre-tier-III 
 Latest installed follow-up: [Holy Staff and Priest tuning](../priest-tuning/README.md). Historical source/output hashes above are superseded for Paladins, Skill Tree and Spell Engine; do not reinstall earlier builder outputs over the current overlay.
 
 Current tier-III passives are superseded by [health-based Pain Suppression and five-charge Celestial Orbs](../priest-low-health/README.md). Rebuilding this historical patch alone does not include that overlay.
+
+Current [support tuning](../support-visual-tuning/README.md) makes Sacred Refuge last 10s/12s with Barrier and explicitly verifies both motes follow a sole injured ally.

@@ -1,0 +1,1 @@
+PASS 708 Priest/party checks

@@ -11,6 +11,10 @@ Inspected and updated **26 October 2026**, including the [Priest rework](../prie
 - Raw JSON alone cannot express all behavior. PriestRules implements coefficient overrides, mixed explosions, shields, pulse timing and rounded regeneration; source archive hashes appear below.
 - Spell IDs remain stable. Penance upgrades retain their original tier_3 IDs but occupy tier I. Ascension upgrades retain tier_2 IDs but occupy tier II. Complete branches move in both tree categories.
 
+## Healing armor balance
+
+Paladin, Crusader, Netherite Crusader, Armory Justicar and Armory Lightbringer each grant **+0.25 flat Healing Power per piece**, **+1 per full set**. Priest/Prior and Avatar/Absolution percentage healing bonuses are unchanged, as are defenses, haste, damage and legendary set bonuses. Both fresh and existing equipment configs receive the balance. See [native item checks and full values](../healing-armor-balance/README.md).
+
 ## Skill pairs
 
 | Tier | Holy | Discipline | Passive pair |
@@ -90,14 +94,14 @@ Serenity adds only newly earned shield HP, never refilling from total stack capa
 | Lifetime | 16s active plus 1s spawn/despawn phases | 10s |
 | Main behavior | Unattackable, unpushable, no-collision well follows above caster head | Stationary barrier repeatedly pushes enemies outward and protects current allies inside |
 | Power/healing | Exactly 5% caster Healing Power inherited; each mote heals 100% own power | No direct healing without Sacred Refuge |
-| Motes | Two per cycle; speed 0.6, 0.8s base firing interval with inherited haste | No motes |
-| Targeting | Injured party allies/pets first, lowest raw HP; two different injured recipients if available, otherwise both motes to the sole injured ally; useful full-health upgrade targets only when no injured target | Caster/party allies/protected pets only |
+| Motes | Two per cycle; speed 0.6, 0.8s base firing interval with inherited haste; same-target second mote launches 0.3s later, distinct targets launch together | No motes |
+| Targeting | Injured party allies/pets first, lowest raw HP; two different injured recipients if available, otherwise both motes to the sole injured ally even with full-health allies nearby; useful full-health upgrade targets only when no injured target | Caster/party allies/protected pets only |
 | Protection | Not applicable | Ordinary combat/DoT damage events, including poison/Bleed/fire; excludes void, admin kill and direct skill health costs |
 
 | Node | Lightwell | Barrier |
 |---|---|---|
 | Improved | +4s active lifetime, total 20s | +2s duration, total 12s; no cooldown reduction |
-| Branch A | Cleansing Light: one harmful effect removed per allied mote hit, no separate cleanse cooldown; Trial Omen excluded | Sacred Refuge unchanged: separate 4-block/10s cloud, 10% P healing and cleanse every 2s |
+| Branch A | Cleansing Light: one harmful effect removed per allied mote hit, no separate cleanse cooldown; Trial Omen excluded | Sacred Refuge: separate 4-block cloud lasting as long as Barrier (10s, or 12s with Improved), 10% P healing and cleanse every 2s |
 | Branch B | Empowered Well: +1 maximum heart per mote hit, 2-stack cap per recipient across wells, 6s refreshed; unfilled, normal mote healing fills capacity | Deflective Shield: intercepted hostile projectiles retaliate once against the attacker for 25% P native holy damage |
 
 Empowered Well applies capacity before healing. Cap refreshes do not directly heal or add HP. Expiry/removal clears only its own maximum-health modifier and clamps excess current HP. Motes do not bounce. Orphan wells disappear. Barrier uses current volume checks instead of a lingering immunity lease; friendly projectiles and square-corner paths are not intercepted.

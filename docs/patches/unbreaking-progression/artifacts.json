@@ -1,0 +1,11 @@
+{
+  "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "before_sha256": "5eeabfe042cce79d1afbfe5c8379ec589b68f8d84a7cf37be178444bcd8affe2",
+  "sha256": "23c4c6787673ef0770b18d37d057ac29561b7dc6cef940918e05ba5f1b96ca38",
+  "changed": [
+    "penchant.mixins.json"
+  ],
+  "added": [
+    "archives/tater/penchant/mixin/leveling/PendingUnbreakingMixin.class"
+  ]
+}

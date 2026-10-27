@@ -38,3 +38,5 @@ Exact snapshots are in ignored `tmp/priest-tuning/before/`; candidates and an is
 Handbook verification: 77 pages retained, all 51 contents destinations match their printed page numbers, both distributed copies match, and all pages were rendered for layout review with pages 17-18 inspected at full reading size. No new clipping, blank pages or broken section flow was observed.
 
 Subsequent [tier-III passive tuning](../priest-low-health/README.md) overlays the Skill Tree and Spell Engine outputs here. Preserve that overlay when rebuilding the active pack.
+
+The later [Lightwell mote-spacing overlay](../lightwell-mote-spacing/README.md) adds a fixed 0.3s delay to the second same-target projectile. Preserve it when rebuilding the current pack.

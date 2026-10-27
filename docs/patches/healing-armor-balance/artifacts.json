@@ -1,0 +1,24 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "c81b70f237225fda906683c460a6bd7c66581fd7f9a41540efc7abb69be8ed7a",
+    "sha256": "bb495009ec2f64f3b67f195f999725ef11fca9ef7896d58810e79a351fd2a335",
+    "changed": [
+      "net/paladins/item/armor/Armors.class"
+    ],
+    "added": [
+      "net/paladins/item/armor/HealingArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "before_sha256": "bbd29ab2fbc85c277377a703250a21070a46b89ef013897ce607536988df6482",
+    "sha256": "3668305283587c4f443213992bd09afde48345a289b259581dc8ef4ecb339e55",
+    "changed": [
+      "net/armory_rpgs/item/ArmorSets.class"
+    ],
+    "added": [
+      "net/armory_rpgs/item/HealingArmorBalance.class"
+    ]
+  }
+]

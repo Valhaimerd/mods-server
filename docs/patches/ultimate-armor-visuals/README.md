@@ -26,3 +26,5 @@ python docs/patches/ultimate-armor-visuals/verify.py --installed --runtime
 **57 connected-client checks and 2,156 archive preservation checks passed.** The disposable connected client uses iron armor to verify Berserker's red armor tint, Last Stand's fixed gold tint, dye composition, native armor submission/glint routing, suppression of purple glint, cleanup on removal/expiry/death and no glint leakage to another render state. Screenshots compare active red armor, active gold armor and normal armor. Archive verification checks unrelated entries byte-for-byte and validates gold texture channels. Exact results and tested hashes are alongside this file. Personal installations and worlds are untouched.
 
 The matching same-name active/fixed archive replaces the current Spell Engine contents; predecessors are retained in ignored `mod fixing/retired packs/ultimate-armor-visuals-20261026/`. The handbook and Warrior reference are synchronized. No commit or push was requested.
+
+Current [support/visual tuning](../support-visual-tuning/README.md) raises the fixed Last Stand gold tint from 30% to 50%; the scrolling sheen and client rendering hooks remain unchanged.

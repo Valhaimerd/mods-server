@@ -1,0 +1,57 @@
+PASS real connected player actual Paladin root unlocked
+PASS client synchronized Paladin root adds flat 0.25 Healing Power actual=10.25
+PASS client initial staff present once
+PASS real hotbar selection packet automatically unequips staff
+PASS hotbar rejection preserves exactly one staff
+PASS client Healing Power excludes forbidden staff actual=10.25
+PASS native action bar warning localized: Your Paladin oath forbids healing staves and wands.
+PASS oath warning stays short
+SCREENSHOT 01 native localized Paladin oath warning
+PASS unchanged forbidden inventory does not refresh/spam warning timer 39 -> 14
+SCREENSHOT 02 staff returned to native inventory
+PASS real player server tick automatically unequips offhand wand
+PASS offhand rejection preserves exactly one wand
+PASS offhand removal leaves correct client Healing Power actual=10.25
+PASS ordinary Paladin reward server adds flat 0.25 actual=0.25
+PASS client receives ordinary node flat 0.25 actual=10.5
+PASS real client full inventory safely swaps both forbidden hands
+PASS full inventory swap preserves staff wand and all 2240 stone
+SCREENSHOT 03 full inventory both hands safely swapped
+PASS respec to actual Priest root releases restriction
+PASS client Priest after respec retains staff and wand
+PASS Priest receives actual native healing weapon power client=15.449999989941716
+SCREENSHOT 04 Priest holds native healing weapons after respec
+PASS client one Paladin plate piece adds flat 0.75 actual=10.75
+PASS Paladin helmet synchronized and equipped
+PASS client full Paladin plate set adds flat 3.0 actual=13.0
+SCREENSHOT 05 native Paladin plate equipment
+PASS native Skill Tree screen opens on connected client
+PASS native synchronized paladin_root tooltip flat value +0.25 Healing Power
+Healing staves and wands are forbidden.
+PASS native synchronized paladin_boost tooltip flat value +0.25 Healing Power
+SCREENSHOT 06 actual Paladin class skill screen
+SCREENSHOT 07 native Paladin root tooltip
+PASS armor native registry paladins:crusader_armor_head
+PASS armor native registry paladins:crusader_armor_chest
+PASS armor native registry paladins:crusader_armor_legs
+PASS armor native registry paladins:crusader_armor_feet
+PASS client equipped flat item modifiers paladins:crusader_armor actual=4.0
+PASS client total Healing Power paladins:crusader_armor actual=14.0
+PASS armor native registry paladins:netherite_crusader_armor_head
+PASS armor native registry paladins:netherite_crusader_armor_chest
+PASS armor native registry paladins:netherite_crusader_armor_legs
+PASS armor native registry paladins:netherite_crusader_armor_feet
+PASS client equipped flat item modifiers paladins:netherite_crusader_armor actual=4.599999904632568
+PASS client total Healing Power paladins:netherite_crusader_armor actual=14.599999904632568
+PASS armor native registry armory_rpgs:justicar_armor_head
+PASS armor native registry armory_rpgs:justicar_armor_chest
+PASS armor native registry armory_rpgs:justicar_armor_legs
+PASS armor native registry armory_rpgs:justicar_armor_feet
+PASS client equipped flat item modifiers armory_rpgs:justicar_armor actual=5.0
+PASS client total Healing Power armory_rpgs:justicar_armor including unchanged +2 Justicar set bonus actual=17.0
+PASS armor native registry armory_rpgs:lightbringer_armor_head
+PASS armor native registry armory_rpgs:lightbringer_armor_chest
+PASS armor native registry armory_rpgs:lightbringer_armor_legs
+PASS armor native registry armory_rpgs:lightbringer_armor_feet
+PASS client equipped flat item modifiers armory_rpgs:lightbringer_armor actual=5.0
+PASS client total Healing Power armory_rpgs:lightbringer_armor actual=15.0

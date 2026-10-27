@@ -1,0 +1,141 @@
+PASS integrated server fixture ready
+PASS native creative search tab hides unavailable displays
+PASS native creative search tab no bnc placeholders
+PASS native Display Delight tab hides unavailable displays
+PASS native Display Delight tab populated count=106
+PASS JEI ingredients hide every unavailable display
+PASS JEI no Brewin compatibility placeholders
+PASS JEI information recipes hide every unavailable display
+PASS registered base representative displaydelight:food_plate
+PASS JEI base representative visible displaydelight:food_plate
+PASS registered base representative displaydelight:small_food_plate
+PASS JEI base representative visible displaydelight:small_food_plate
+PASS registered base representative displaydelight:plated_cookie
+PASS JEI base representative visible displaydelight:plated_cookie
+PASS registered base representative displaydelight:beef_stew
+PASS JEI base representative visible displaydelight:beef_stew
+PASS registered base representative displaydelight:ed_asparagus_soup
+PASS JEI base representative visible displaydelight:ed_asparagus_soup
+PASS addon presence large_meals foods=0
+PASS addon presence oceansdelight foods=0
+PASS addon presence ends_delight foods=0
+PASS native item render model displaydelight:food_plate
+PASS native item render model displaydelight:small_food_plate
+PASS native item render model displaydelight:mushroom_stew
+PASS native item render model displaydelight:rabbit_stew
+PASS native item render model displaydelight:beetroot_soup
+PASS native item render model displaydelight:plated_cookie
+PASS native item render model displaydelight:plated_pumpkin_pie
+PASS native item render model displaydelight:glow_berry_custard
+PASS native item render model displaydelight:apple_cider
+PASS native item render model displaydelight:melon_juice
+PASS native item render model displaydelight:hot_cocoa
+PASS native item render model displaydelight:cooked_rice
+PASS native item render model displaydelight:beef_stew
+PASS native item render model displaydelight:chicken_soup
+PASS native item render model displaydelight:vegetable_soup
+PASS native item render model displaydelight:fish_stew
+PASS native item render model displaydelight:fried_rice
+PASS native item render model displaydelight:pumpkin_soup
+PASS native item render model displaydelight:baked_cod_stew
+PASS native item render model displaydelight:noodle_soup
+PASS native item render model displaydelight:bone_broth
+PASS native item render model displaydelight:onion_soup
+PASS native item render model displaydelight:fruit_salad
+PASS native item render model displaydelight:mixed_salad
+PASS native item render model displaydelight:nether_salad
+PASS native item render model displaydelight:roast_chicken
+PASS native item render model displaydelight:stuffed_pumpkin
+PASS native item render model displaydelight:honey_glazed_ham
+PASS native item render model displaydelight:shepherds_pie
+PASS native item render model displaydelight:gleaming_salad
+PASS native item render model displaydelight:bacon_and_eggs
+PASS native item render model displaydelight:pasta_with_meatballs
+PASS native item render model displaydelight:pasta_with_mutton_chop
+PASS native item render model displaydelight:roasted_mutton_chops
+PASS native item render model displaydelight:steak_and_potatoes
+PASS native item render model displaydelight:vegetable_noodles
+PASS native item render model displaydelight:ratatouille
+PASS native item render model displaydelight:squid_ink_pasta
+PASS native item render model displaydelight:grilled_salmon
+PASS native item render model displaydelight:mushroom_rice
+PASS native item render model displaydelight:plated_hamburger
+PASS native item render model displaydelight:plated_kelp_roll_slice
+PASS native item render model displaydelight:plated_dumplings
+PASS native item render model displaydelight:plated_barbecue_stick
+PASS native item render model displaydelight:plated_chicken_sandwich
+PASS native item render model displaydelight:plated_cod_roll
+PASS native item render model displaydelight:plated_egg_sandwich
+PASS native item render model displaydelight:plated_kelp_roll
+PASS native item render model displaydelight:plated_salmon_roll
+PASS native item render model displaydelight:plated_melon_popsicle
+PASS native item render model displaydelight:plated_stuffed_potato
+PASS native item render model displaydelight:plated_cabbage_rolls
+PASS native item render model displaydelight:plated_bacon_sandwich
+PASS native item render model displaydelight:plated_mutton_wrap
+PASS native item render model displaydelight:plated_sweet_berry_cookie
+PASS native item render model displaydelight:plated_honey_cookie
+PASS native item render model displaydelight:small_plated_cake_slice
+PASS native item render model displaydelight:small_plated_apple_pie_slice
+PASS native item render model displaydelight:small_plated_chocolate_pie_slice
+PASS native item render model displaydelight:small_plated_sweet_berry_cheesecake_slice
+PASS native item render model displaydelight:small_plated_stuffed_potato
+PASS native item render model displaydelight:small_plated_cod_roll
+PASS native item render model displaydelight:small_plated_salmon_roll
+PASS native item render model displaydelight:small_plated_kelp_roll_slice
+PASS native item render model displaydelight:small_plated_cabbage_rolls
+PASS native item render model displaydelight:small_plated_pumpkin_pie_slice
+PASS native item render model displaydelight:ed_apple_juice
+PASS native item render model displaydelight:ed_sweet_berry_juice
+PASS native item render model displaydelight:ed_glow_berry_juice
+PASS native item render model displaydelight:ed_cranberry_juice
+PASS native item render model displaydelight:ed_asparagus_soup
+PASS native item render model displaydelight:ed_asparagus_soup_creamy
+PASS native item render model displaydelight:ed_peanut_honey_soup
+PASS native item render model displaydelight:ed_mac_and_cheese
+PASS native item render model displaydelight:ed_peanut_salad
+PASS native item render model displaydelight:ed_sweet_potato_salad
+PASS native item render model displaydelight:ed_goat_cheese_beetroot_salad
+PASS native item render model displaydelight:ed_cinnamon_rice
+PASS native item render model displaydelight:ed_cinnamon_apples
+PASS native item render model displaydelight:ed_asparagus_and_bacon_cheesy
+PASS native item render model displaydelight:ed_peperonata
+PASS native item render model displaydelight:ed_cranberry_chicken
+PASS native item render model displaydelight:ed_asparagus_mushroom_pasta
+PASS native item render model displaydelight:ed_sweet_potato_casserole
+PASS native item render model displaydelight:ed_asparagus_frittata
+PASS native item render model displaydelight:ed_chili_pepper_salmon
+PASS native item render model displaydelight:ed_plated_peanut_butter_sandwich
+PASS native item render model displaydelight:ed_plated_peanut_butter_honey_sandwich
+PASS native item render model displaydelight:ed_plated_glow_berry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_sweet_berry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_cranberry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_cheese_sandwich
+PASS native item render model displaydelight:ed_plated_grilled_cheese
+PASS native item render model displaydelight:ed_plated_cranberry_goat_cheese_toast
+PASS native item render model displaydelight:ed_plated_chocolate_cookie
+PASS native item render model displaydelight:ed_plated_sugar_cookie
+PASS native item render model displaydelight:ed_plated_snickerdoodle
+PASS native item render model displaydelight:ed_plated_sweet_roll
+PASS native item render model displaydelight:ed_plated_berry_sweet_roll
+PASS native item render model displaydelight:ed_plated_glow_berry_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_cranberry_cobbler_slice
+PASS native item render model displaydelight:ed_small_plated_honeyed_goat_cheese_tart_slice
+PASS native item render model displaydelight:ed_small_plated_cheese_slice
+PASS native item render model displaydelight:ed_small_plated_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_berry_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_glow_berry_sweet_roll
+PASS native GUI item model sample populated count=106
+PASS client category maps contain resolved original foods entries=56
+PASS client category maps contain resolved original foods entries=32
+PASS client category maps contain resolved original foods entries=16
+SCREENSHOT 01 Display Delight creative and JEI populated
+PASS actual native creative text search Brewin no bnc
+SCREENSHOT 02 native creative missing addon search
+SCREENSHOT 03 JEI Farmers Delight
+SCREENSHOT 04 JEI Expanded Delight
+PASS representative display info page exists
+SCREENSHOT 05 JEI display information
+SCREENSHOT 07 world feasts displays and stove
+PASS real client empty-hand bowl retrieval through network returns FD beef stew
+PASS real client plate take-one through network retains original empty plate

@@ -1,0 +1,2 @@
+# Unified-diff context lines contain meaningful trailing spaces; preserve patches verbatim.
+docs/patches/delight-batch/**/*.patch text eol=lf -whitespace

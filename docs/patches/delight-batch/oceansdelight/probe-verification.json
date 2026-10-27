@@ -1,0 +1,15 @@
+{
+  "native_checks": 455,
+  "pass_lines": 455,
+  "recipe_count": 31,
+  "food_count": 23,
+  "status_effect_entries": 7,
+  "knife_cutting_recipes": 4,
+  "pot_recipes": 5,
+  "loot_outcomes": 80,
+  "candidate_changed": true,
+  "production_probe_embedded": false,
+  "patch_reverse_check": true,
+  "subsequent_change": "Asset-only FD tray texture reference rename; gameplay classes/data unchanged",
+  "final_candidate_sha256": "606cc757cd6e525c9b7f605c6fafad6556deaaa13d21c7894be49c7475b827c3"
+}

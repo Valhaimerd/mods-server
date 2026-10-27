@@ -1,0 +1,26 @@
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/omurice_block_stage0:
+    farmersdelight:block/tray_top
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/mushroom_pot_pie_block_stage0:
+    farmersdelight:block/tray_top
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/roasted_mutton_rack_block_stage1:
+    farmersdelight:block/honey_glazed_ham_bone
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model oceansdelight:block/guardian_soup_leftover:
+    farmersdelight:block/tray_pie_leftover
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/roasted_mutton_rack_block_stage2:
+    farmersdelight:block/honey_glazed_ham_bone
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/roasted_mutton_rack_block_stage3:
+    farmersdelight:block/honey_glazed_ham_bone
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model large_meals:block/roasted_mutton_rack_block_stage0:
+    farmersdelight:block/honey_glazed_ham_bone
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model oceansdelight:block/guardian_soup_stage3:
+    farmersdelight:block/tray_pie_leftover
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model oceansdelight:block/guardian_soup_stage2:
+    farmersdelight:block/tray_pie_leftover
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model ends_delight:item/liquid_dragon_egg_in_shell:
+    ends_delight:item/liquid_dragon_egg_in_shell
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model oceansdelight:block/guardian_soup_stage1:
+    farmersdelight:block/tray_pie_leftover
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing textures in model oceansdelight:block/guardian_soup_stage0:
+    farmersdelight:block/tray_pie_leftover
+[20:28:25] [Worker-Main-11/WARN] [minecraft/MaterialBaker]: Missing texture references in model large_meals:block/mushroom_pot_pie_block_stage1:
+    #missing

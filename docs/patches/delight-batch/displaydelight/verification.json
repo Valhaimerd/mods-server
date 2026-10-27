@@ -1,0 +1,122 @@
+[
+  {
+    "case": "baseline-visibility-2",
+    "checks": 15,
+    "failures": [
+      "missing_addons_hidden_creative",
+      "missing_addons_hidden_search",
+      "ends_delight_visibility",
+      "large_meals_visibility",
+      "oceansdelight_visibility",
+      "missing_addons_hidden_trade_pools",
+      "initialization_idempotent",
+      "empty_category_omits_offer",
+      "saved_invalid_offer_removed"
+    ],
+    "complete": [
+      "DELIGHT_FAILED=9"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE ends_delight=24",
+      "DELIGHT_VISIBLE large_meals=13",
+      "DELIGHT_VISIBLE oceansdelight=11"
+    ]
+  },
+  {
+    "case": "final-base-2",
+    "checks": 15,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE large_meals=0",
+      "DELIGHT_VISIBLE ends_delight=0",
+      "DELIGHT_VISIBLE oceansdelight=0"
+    ]
+  },
+  {
+    "case": "matrix-oceansdelight-1",
+    "checks": 394,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE large_meals=0",
+      "DELIGHT_VISIBLE ends_delight=0",
+      "DELIGHT_VISIBLE oceansdelight=11",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=0"
+    ]
+  },
+  {
+    "case": "matrix-large_meals-1",
+    "checks": 394,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE oceansdelight=0",
+      "DELIGHT_VISIBLE ends_delight=0",
+      "DELIGHT_VISIBLE large_meals=13",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=0"
+    ]
+  },
+  {
+    "case": "matrix-ends_delight-1",
+    "checks": 394,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE oceansdelight=0",
+      "DELIGHT_VISIBLE ends_delight=24",
+      "DELIGHT_VISIBLE large_meals=0",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=0"
+    ]
+  },
+  {
+    "case": "matrix-all-1",
+    "checks": 394,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE oceansdelight=11",
+      "DELIGHT_VISIBLE ends_delight=24",
+      "DELIGHT_VISIBLE large_meals=13",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=0"
+    ]
+  },
+  {
+    "case": "final-base-fixture",
+    "checks": 397,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE large_meals=0",
+      "DELIGHT_VISIBLE ends_delight=0",
+      "DELIGHT_VISIBLE oceansdelight=0",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=1"
+    ]
+  },
+  {
+    "case": "final-all-fixture",
+    "checks": 397,
+    "failures": [],
+    "complete": [
+      "DELIGHT_FAILED=0"
+    ],
+    "visible": [
+      "DELIGHT_VISIBLE oceansdelight=11",
+      "DELIGHT_VISIBLE ends_delight=24",
+      "DELIGHT_VISIBLE large_meals=13",
+      "DELIGHT_LOADED_MOD_MISSING_FOOD=1"
+    ]
+  }
+]

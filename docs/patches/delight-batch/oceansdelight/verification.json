@@ -1,0 +1,13 @@
+{
+  "candidate": "C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\tmp\\delight-batch\\oceansdelight\\oceansdelight-26.2-1.0.4-port1.jar",
+  "sha256": "606cc757cd6e525c9b7f605c6fafad6556deaaa13d21c7894be49c7475b827c3",
+  "original_sha256": "30fec2263f77bcd4002995d9fc127a911c964317dbd0e3c54e348954d1722d38",
+  "recipes_preserved": 31,
+  "item_models_preserved": 25,
+  "textures_preserved": 30,
+  "loot_modifiers_preserved": 4,
+  "adapted_block_models": 7,
+  "texture_refs_resolved": 27,
+  "java_class_major": 69,
+  "embedded_fd": false
+}

@@ -1,0 +1,66 @@
+package local.paladinclient;
+
+import java.nio.file.*;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.Screenshot;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.puffish.skillsmod.api.*;
+import net.skill_tree_rpgs.compat.PaladinDoctrine;
+import net.spell_power.api.SpellSchools;
+
+@Mod(value="paladin_client_probe",dist=Dist.CLIENT)
+public class PaladinClientProbe {
+ final List<String> results=Collections.synchronizedList(new ArrayList<>());
+ final AtomicReference<String> pending=new AtomicReference<>();
+ int ticks,phase,phaseAt,warningAt; boolean hidden,done; int warningTime; int armorIndex;
+ final String[] armorSets={"paladins:crusader_armor","paladins:netherite_crusader_armor","armory_rpgs:justicar_armor","armory_rpgs:lightbringer_armor"};
+ final double[] armorBonus={4,4.6,5,5};
+ interface Work {void run(ServerPlayer p)throws Exception;}
+ Item item(String id){return BuiltInRegistries.ITEM.getValue(Identifier.parse(id));}
+ void check(boolean value,String text){String s=(value?"PASS ":"FAIL ")+text;results.add(s);System.out.println("PALADIN_CLIENT "+s);}
+ void near(double value,double expected,String text){check(Math.abs(value-expected)<.00001,text+" actual="+value);}
+ Category category(){return SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:class_skills")).orElseThrow();}
+ void server(Work work){pending.set("waiting");var mc=Minecraft.getInstance();mc.getSingleplayerServer().execute(()->{try{work.run(mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID()));pending.set("ready");}catch(Throwable e){e.printStackTrace();check(false,"server fixture "+e);pending.set("failed");}});}
+ void next(){phase++;phaseAt=ticks;}
+ void shot(String name){Screenshot.grab(Minecraft.getInstance(),false);results.add("SCREENSHOT "+name);}
+ Object hudField(String name)throws Exception{var hud=Minecraft.getInstance().gui.hud;var f=hud.getClass().getDeclaredField(name);f.setAccessible(true);return f.get(hud);}
+ int count(Item target){var inv=Minecraft.getInstance().player.getInventory();int count=0;for(int i=0;i<inv.getContainerSize();i++)if(inv.getItem(i).is(target))count+=inv.getItem(i).getCount();return count;}
+ double healing(){return Minecraft.getInstance().player.getAttributeValue(SpellSchools.HEALING.attributeEntry);}
+ public PaladinClientProbe(){NeoForge.EVENT_BUS.addListener(this::tick);}
+ void tick(ClientTickEvent.Post event){var mc=Minecraft.getInstance();if(!hidden){org.lwjgl.glfw.GLFW.glfwHideWindow(mc.getWindow().handle());mc.options.pauseOnLostFocus=false;hidden=true;}if(done||mc.player==null||mc.level==null)return;mc.mouseHandler.releaseMouse();ticks++;
+ try{
+  if(ticks>1800)throw new AssertionError("client timeout phase="+phase+" pending="+pending.get());
+  if(phase==0&&ticks==30){server(p->{p.setGameMode(net.minecraft.world.level.GameType.SURVIVAL);p.getInventory().clearContent();for(var slot:EquipmentSlot.VALUES)if(slot.isArmor())p.setItemSlot(slot,ItemStack.EMPTY);var c=category();c.unlock(p);c.resetSkills(p);c.setExtraPoints(p,1000);p.getAttribute(SpellSchools.HEALING.attributeEntry).setBaseValue(10);c.getSkill("tdimeso8ajcwiygp").orElseThrow().unlock(p);check(PaladinDoctrine.isPaladin(p),"real connected player actual Paladin root unlocked");p.getInventory().setSelectedSlot(0);p.getInventory().setItem(0,new ItemStack(Items.IRON_SWORD));p.getInventory().setItem(1,new ItemStack(item("paladins:holy_staff")));p.inventoryMenu.broadcastChanges();p.setHealth(p.getMaxHealth());mc.getSingleplayerServer().getCommands().performPrefixedCommand(p.createCommandSourceStack(),"tp @s 0.5 102 -4.5 0 10");});next();return;}
+  if(phase==0)return;if("waiting".equals(pending.get())||ticks-phaseAt<25)return;if("failed".equals(pending.get())){finish();return;}
+  switch(phase){
+   case 1->{near(healing(),10.25,"client synchronized Paladin root adds flat 0.25 Healing Power");check(count(item("paladins:holy_staff"))==1,"client initial staff present once");mc.setScreenAndShow(null);mc.player.getInventory().setSelectedSlot(1);mc.getConnection().send(new ServerboundSetCarriedItemPacket(1));next();}
+   case 2->{check(!PaladinDoctrine.prohibited(mc.player.getMainHandItem()),"real hotbar selection packet automatically unequips staff");check(count(item("paladins:holy_staff"))==1,"hotbar rejection preserves exactly one staff");near(healing(),10.25,"client Healing Power excludes forbidden staff");Component warning=(Component)hudField("overlayMessageString");warningTime=(Integer)hudField("overlayMessageTime");check(warning!=null&&warning.getString().contains("oath")&&!warning.getString().contains("skill_tree_rpgs."),"native action bar warning localized: "+(warning==null?null:warning.getString()));check(warning!=null&&warning.getString().length()<150,"oath warning stays short");warningAt=ticks;shot("01 native localized Paladin oath warning");next();}
+   case 3->{int remaining=(Integer)hudField("overlayMessageTime");check(remaining<warningTime,"unchanged forbidden inventory does not refresh/spam warning timer "+warningTime+" -> "+remaining);mc.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));shot("02 staff returned to native inventory");server(p->{p.setItemInHand(InteractionHand.OFF_HAND,new ItemStack(item("paladins:holy_wand")));});next();}
+   case 4->{check(!PaladinDoctrine.prohibited(mc.player.getOffhandItem()),"real player server tick automatically unequips offhand wand");check(count(item("paladins:holy_wand"))==1,"offhand rejection preserves exactly one wand");near(healing(),10.25,"offhand removal leaves correct client Healing Power");server(p->{var c=category();double old=p.getAttributeValue(SpellSchools.HEALING.attributeEntry);c.getSkill("x9it8aavrrwsojhg").orElseThrow().unlock(p);near(p.getAttributeValue(SpellSchools.HEALING.attributeEntry)-old,.25,"ordinary Paladin reward server adds flat 0.25");});next();}
+   case 5->{near(healing(),10.5,"client receives ordinary node flat 0.25");mc.setScreenAndShow(null);server(p->{p.getInventory().clearContent();for(int i=0;i<36;i++)p.getInventory().setItem(i,new ItemStack(Items.STONE,64));p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(item("paladins:holy_staff")));p.setItemInHand(InteractionHand.OFF_HAND,new ItemStack(item("paladins:holy_wand")));});next();}
+   case 6->{check(mc.player.getMainHandItem().is(Items.STONE)&&mc.player.getOffhandItem().is(Items.STONE),"real client full inventory safely swaps both forbidden hands");check(count(item("paladins:holy_staff"))==1&&count(item("paladins:holy_wand"))==1&&count(Items.STONE)==35*64,"full inventory swap preserves staff wand and all 2240 stone");mc.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));shot("03 full inventory both hands safely swapped");server(p->{var c=category();c.resetSkills(p);c.setExtraPoints(p,1000);c.getSkill("ov6ag9tjdhsmldil").orElseThrow().unlock(p);check(!PaladinDoctrine.isPaladin(p),"respec to actual Priest root releases restriction");p.getInventory().clearContent();p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(item("paladins:holy_staff")));p.setItemInHand(InteractionHand.OFF_HAND,new ItemStack(item("paladins:holy_wand")));});next();}
+   case 7->{check(mc.player.getMainHandItem().is(item("paladins:holy_staff"))&&mc.player.getOffhandItem().is(item("paladins:holy_wand")),"client Priest after respec retains staff and wand");check(healing()>10.25,"Priest receives actual native healing weapon power client="+healing());shot("04 Priest holds native healing weapons after respec");server(p->{p.setItemInHand(InteractionHand.MAIN_HAND,ItemStack.EMPTY);p.setItemInHand(InteractionHand.OFF_HAND,ItemStack.EMPTY);category().resetSkills(p);p.setItemSlot(EquipmentSlot.HEAD,new ItemStack(item("paladins:paladin_armor_head")));});next();}
+   case 8->{near(healing(),10.75,"client one Paladin plate piece adds flat 0.75");check(mc.player.getItemBySlot(EquipmentSlot.HEAD).is(item("paladins:paladin_armor_head")),"Paladin helmet synchronized and equipped");server(p->{p.setItemSlot(EquipmentSlot.CHEST,new ItemStack(item("paladins:paladin_armor_chest")));p.setItemSlot(EquipmentSlot.LEGS,new ItemStack(item("paladins:paladin_armor_legs")));p.setItemSlot(EquipmentSlot.FEET,new ItemStack(item("paladins:paladin_armor_feet")));});next();}
+   case 9->{near(healing(),13,"client full Paladin plate set adds flat 3.0");shot("05 native Paladin plate equipment");server(p->{category().setExtraPoints(p,1000);category().getSkill("tdimeso8ajcwiygp").orElseThrow().unlock(p);category().openScreen(p);});next();}
+   case 10->{check(mc.gui.screen() instanceof net.puffish.skillsmod.client.gui.SkillsScreen,"native Skill Tree screen opens on connected client");if(mc.gui.screen() instanceof net.puffish.skillsmod.client.gui.SkillsScreen s){var f=s.getClass().getDeclaredField("optActiveCategoryData");f.setAccessible(true);var data=(net.puffish.skillsmod.client.data.ClientCategoryData)((Optional<?>)f.get(s)).orElseThrow();for(String key:List.of("paladin_root","paladin_boost")){var def=data.getConfig().definitions().get(key);check(def!=null&&def.description().getString().contains("0.25"),"native synchronized "+key+" tooltip flat value "+(def==null?null:def.description().getString()));}}shot("06 actual Paladin class skill screen");for(String field:List.of("xpos","ypos")){var mouse=mc.mouseHandler;var f=mouse.getClass().getDeclaredField(field);f.setAccessible(true);f.setDouble(mouse,field.equals("xpos")?840:600);}next();}
+   case 11->{if(armorIndex==0)shot("07 native Paladin root tooltip");mc.setScreenAndShow(null);server(p->{category().resetSkills(p);String set=armorSets[armorIndex];String[] suffix={"head","chest","legs","feet"};EquipmentSlot[] slots={EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET};for(int i=0;i<4;i++){Item target=item(set+"_"+suffix[i]);check(target!=Items.AIR,"armor native registry "+set+"_"+suffix[i]);p.setItemSlot(slots[i],new ItemStack(target));}});next();}
+   case 12->{double flat=0;for(var slot:List.of(EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET))for(var entry:mc.player.getItemBySlot(slot).get(net.minecraft.core.component.DataComponents.ATTRIBUTE_MODIFIERS).modifiers())if(entry.attribute().is(Identifier.parse("spell_power:healing"))&&entry.modifier().operation()==net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_VALUE)flat+=entry.modifier().amount();near(flat,armorBonus[armorIndex],"client equipped flat item modifiers "+armorSets[armorIndex]);near(healing(),10+armorBonus[armorIndex]+(armorIndex==2?2:0),"client total Healing Power "+armorSets[armorIndex]+(armorIndex==2?" including unchanged +2 Justicar set bonus":""));if(++armorIndex<armorSets.length){phase=11;phaseAt=ticks;}else finish();}
+  }
+ }catch(Throwable error){error.printStackTrace();check(false,"client exception "+error);finish();}}
+ void finish(){done=true;var mc=Minecraft.getInstance();try{Files.write(mc.gameDirectory.toPath().resolve("client-checks.txt"),results);Files.writeString(mc.gameDirectory.toPath().resolve("client-result.txt"),(results.stream().anyMatch(s->s.startsWith("FAIL"))?"FAIL":"PASS")+" "+results.stream().filter(s->s.startsWith("PASS")).count()+" checks\n");}catch(Exception e){throw new RuntimeException(e);}mc.stop();}
+}

@@ -1,0 +1,343 @@
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -14,7 +14,7 @@
+ # as they do not follow standard versioning conventions.
+ minecraft_version_range=[26.2]
+ # The Neo version must agree with the Minecraft version to get a valid artifact
+-neo_version=26.2.0.67
++neo_version=26.2.0.90
+ 
+ mc_version=26.2
+ jei_version=30.39.0.233
+--- a/src/main/java/com/jkvin114/displaydelight/DisplayDelight.java
++++ b/src/main/java/com/jkvin114/displaydelight/DisplayDelight.java
+@@ -83,7 +83,7 @@
+ 
+                 Iterable<Item> items = DisplayItems.GetAll();
+                 for(Item item:items){
+-                    output.accept(item);
++                    if (BlockAssociations.isAvailable(item)) output.accept(item);
+                 }
+             })
+             .build()
+--- a/src/main/java/com/jkvin114/displaydelight/events/DisplayEvents.java
++++ b/src/main/java/com/jkvin114/displaydelight/events/DisplayEvents.java
+@@ -92,4 +92,8 @@
+         }
+     }
+ 
++    @SubscribeEvent
++    public static void onTagsUpdated(net.neoforged.neoforge.event.TagsUpdatedEvent event) {
++        if (event.shouldUpdateStaticData()) BlockAssociations.initialize(DisplayItems.GetAll());
++    }
+ }
+--- a/src/main/java/com/jkvin114/displaydelight/events/DisplayVillagerEvents.java
++++ b/src/main/java/com/jkvin114/displaydelight/events/DisplayVillagerEvents.java
+@@ -2,6 +2,9 @@
+ 
+ import com.jkvin114.displaydelight.DisplayDelight;
+ import com.jkvin114.displaydelight.init.DisplayConfig;
++import com.jkvin114.displaydelight.init.BlockAssociations;
++import com.jkvin114.displaydelight.item.FoodBlockItem;
++import net.minecraft.world.item.trading.MerchantOffer;
+ import com.jkvin114.displaydelight.trades.DisplayItemListing;
+ import net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader;
+ import net.minecraft.world.item.trading.MerchantOffers;
+@@ -16,23 +19,27 @@
+ 
+     @SubscribeEvent
+     public static void onWanderingTraderJoin(EntityJoinLevelEvent event) {
+-        if (event.getLevel().isClientSide() || event.loadedFromDisk()
+-                || !DisplayConfig.WANDERING_TRADER_FOOD_BLOCK_ITEMS.get()
+-                || !(event.getEntity() instanceof WanderingTrader trader)) {
++        if (event.getLevel().isClientSide() || !(event.getEntity() instanceof WanderingTrader trader)) {
+             return;
+         }
+ 
+         MerchantOffers offers = trader.getOffers();
++        offers.removeIf(offer -> offer.getResult().getItem() instanceof FoodBlockItem
++                && !BlockAssociations.isAvailable(offer.getResult().getItem()));
++        if (event.loadedFromDisk() || !DisplayConfig.WANDERING_TRADER_FOOD_BLOCK_ITEMS.get()) return;
+         var random = trader.getRandom();
+-        offers.add(DisplayItemListing.food(random));
+-        offers.add(DisplayItemListing.food(random));
+-        offers.add(DisplayItemListing.drink(random));
+-        offers.add(DisplayItemListing.platedFood(random));
+-        offers.add(DisplayItemListing.platedFood(random));
+-        offers.add(DisplayItemListing.smallPlatedFood(random));
+-        offers.add(DisplayItemListing.food(random));
+-        offers.add(DisplayItemListing.food(random));
+-        offers.add(DisplayItemListing.platedFood(random));
+-        offers.add(DisplayItemListing.platedFood(random));
++        addIfAvailable(offers, DisplayItemListing.food(random));
++        addIfAvailable(offers, DisplayItemListing.food(random));
++        addIfAvailable(offers, DisplayItemListing.drink(random));
++        addIfAvailable(offers, DisplayItemListing.platedFood(random));
++        addIfAvailable(offers, DisplayItemListing.platedFood(random));
++        addIfAvailable(offers, DisplayItemListing.smallPlatedFood(random));
++        addIfAvailable(offers, DisplayItemListing.food(random));
++        addIfAvailable(offers, DisplayItemListing.food(random));
++        addIfAvailable(offers, DisplayItemListing.platedFood(random));
++        addIfAvailable(offers, DisplayItemListing.platedFood(random));
++    }
++    private static void addIfAvailable(MerchantOffers offers, MerchantOffer offer) {
++        if (offer != null) offers.add(offer);
+     }
+ }
+--- a/src/main/java/com/jkvin114/displaydelight/init/BlockAssociations.java
++++ b/src/main/java/com/jkvin114/displaydelight/init/BlockAssociations.java
+@@ -98,13 +98,6 @@
+     public static final List<Item> TRADEABLE_PLATES = new ArrayList<>();
+     public static final List<Item> TRADEABLE_SMALL_PLATES = new ArrayList<>();
+ 
+-    private static Item[] ALL_ITEMS = new Item[]{};
+-
+-    public static Item getRandomItem(RandomSource random){
+-        return ALL_ITEMS[random.nextInt(ALL_ITEMS.length)];
+-    }
+-
+-
+     public static Block getBlockFor(Item i) {
+         return blockMap.getOrDefault(i, Blocks.AIR);
+     }
+@@ -172,129 +165,57 @@
+         return  s;
+     }
+     public static boolean isItemInTag(Item item, TagKey<Item> tag) {
+-        ItemStack s = new ItemStack(item);
+-        return s.is(tag);
+-    }
+-
+-    public static void initialize(Iterable<Item> allItems){
+-        ArrayList<String> allPrefixes = new ArrayList<>();
+-        for(String cp:COMPAT_NAMESPACES.keySet()){
+-            for (String tp : TypePrefixes){
+-                allPrefixes.add(cp+tp);
+-            }
+-        }
+-
+-        for (Item item: allItems){
+-            if(!(item instanceof FoodBlockItem)) continue;;
+-            if(item.equals(DisplayItems.PLATE.get() )|| item.equals(DisplayItems.SMALL_PLATE.get() )) continue;
+-
+-
+-            try{
+-                String itemId = BuiltInRegistries.ITEM.getKey(item).getPath();
+-
+-                String foodName = removeFirstPrefix(itemId,allPrefixes);
+-                String foodNameWithPlate = removeFirstPrefix(itemId, COMPAT_NAMESPACES.keySet());
+-                String fullNamespace = getNamespace(itemId);
+-                boolean isVanila = false;
+-
+-                if(fullNamespace.isEmpty()){
+-                    if(VanilaFoods.contains(foodName)){
+-                        fullNamespace = MINECRAFT;
+-                        isVanila = true;
+-                    }
+-                    else {
+-                        fullNamespace = FARMERSDELIGHT;
+-                    }
+-                }
+-
+-                if(!isVanila && !ModList.get().isLoaded(fullNamespace)){
+-                    String name = FULL_MODNAMES.getOrDefault(fullNamespace,"");
+-                    ((FoodBlockItem) item).setRequiredModName(name);
+-                    boolean soldByTrader  =true;
+-
+-                    //exclude nethersdelight foods from wandering trader trades
+-                    if(NO_WANDERING_TRADER.contains(fullNamespace)){
+-                        soldByTrader  =false;
+-                    }
+-
+-                    if(soldByTrader){
+-                        if(((FoodBlockItem) item).isDrink){
+-                            TRADEABLE_DRINKS.add(item);
+-                        }
+-                        else if(foodNameWithPlate.startsWith("plated_")){
+-                            TRADEABLE_PLATES.add(item);
+-                        }else if(foodNameWithPlate.startsWith("small_plated_")){
+-                            TRADEABLE_SMALL_PLATES.add(item);
+-                        }
+-                        else{
+-                            TRADEABLE_FOODS.add(item);
+-                        }
+-                    }
+-                }
+-
+-
+-                //adjust for id mismatch
+-                if(foodName.equals("festive_chicken") && fullNamespace.equals("festive_delight")){
+-                    foodName = "festive_chiken";
+-                }
+-
+-                Item registeredFoodItem = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(fullNamespace,foodName));
+-                if(registeredFoodItem == Items.AIR) {
+-                    //LOGGER.warn("{}:{} is not found from registry", fullNamespace, foodName);
+-                    continue;
+-                }
+-
+-                if(foodNameWithPlate.startsWith("plated_")){
+-                    if(isItemInTag(registeredFoodItem,DisplayTags.PLATE_DISPLAYABLE)){
+-                        BlockAssociations.addToMap(registeredFoodItem, ((BlockItem) item).getBlock(), true);
+-                    }
+-                }
+-                else if(foodNameWithPlate.startsWith("small_plated_")){
+-                    if(isItemInTag(registeredFoodItem,DisplayTags.SMALL_PLATE_DISPLAYABLE)){
+-                        BlockAssociations.addSmallPlateToMap(registeredFoodItem, ((BlockItem) item).getBlock());
+-                    }
+-                }
+-                else{
+-                    if(isItemInTag(registeredFoodItem,DisplayTags.DISPLAYABLE)){
+-                        if(DisplayConfig.DISABLE_VANILLA_FOODS.get() && isVanila) continue;
+-                        BlockAssociations.addToMap(registeredFoodItem, ((BlockItem) item).getBlock(), false);
+-                    }
+-                }
+-            }
+-            catch (Exception e){
+-                LOGGER.error("Failed to set block association for {}", BuiltInRegistries.ITEM.getKey(item).getPath(), e);
+-            }
+-        }
+-
+-        List<Item> combined = new ArrayList<>();
+-        combined.addAll(blockMap.keySet());
+-        combined.addAll(plateBlockMap.keySet());
+-        combined.addAll(smallplateBlockMap.keySet());
+-        ALL_ITEMS = combined.toArray(Item[]::new);
+-//
+-//
+-//        Block[] array = DisplayBlocks.getAll();
+-//        for (Block target : array) {
+-//            List<ItemStack> drops = Block.getDrops(target.defaultBlockState(), lvl, BlockPos.containing(0, 256, 0), null);
+-//            if (!drops.isEmpty() && drops.getFirst().is(DisplayTags.DISPLAYABLE)) {
+-//
+-//                if(DisplayConfig.DISABLE_VANILLA_FOODS.get() && isVanilaFood(drops.getFirst())) continue;
+-//
+-//                BlockAssociations.addToMap(drops.getFirst().getItem(), target, false);
+-//            }
+-//        }
+-//
+-//        for(Block target: PlatedBlocks.getAll()){
+-//            List<ItemStack> drops = Block.getDrops(target.defaultBlockState(), lvl, BlockPos.containing(0, 256, 0), null);
+-//            if (!drops.isEmpty() && drops.getFirst().is(DisplayTags.PLATE_DISPLAYABLE)) {
+-//                BlockAssociations.addToMap(drops.getFirst().getItem(), target, true);
+-//            }
+-//        }
+-//        for(Block target: SmallPlatedBlocks.getAll()){
+-//            List<ItemStack> drops = Block.getDrops(target.defaultBlockState(), lvl, BlockPos.containing(0, 256, 0), null);
+-//            if (!drops.isEmpty() && drops.getFirst().is(DisplayTags.SMALL_PLATE_DISPLAYABLE)) {
+-//                BlockAssociations.addSmallPlateToMap(drops.getFirst().getItem(), target);
+-//            }
+-//        }
++        return item.builtInRegistryHolder().is(tag);
++    }
++
++    /** Resolve a display directly from registries, including before server maps exist. */
++    public static Item sourceFood(Item display) {
++        if (!(display instanceof FoodBlockItem)) return Items.AIR;
++        String path = BuiltInRegistries.ITEM.getKey(display).getPath();
++        String namespace = getNamespace(path);
++        String food = removeFirstPrefix(path, COMPAT_NAMESPACES.keySet());
++        food = removeFirstPrefix(food, Arrays.asList(TypePrefixes));
++        if (namespace.isEmpty()) namespace = VanilaFoods.contains(food) ? MINECRAFT : FARMERSDELIGHT;
++        if (!namespace.equals(MINECRAFT) && !ModList.get().isLoaded(namespace)) return Items.AIR;
++        // Preserve the upstream Festive Delight spelling alias.
++        if (namespace.equals("festive_delight") && food.equals("festive_chicken")) food = "festive_chiken";
++        return BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath(namespace, food));
++    }
++
++    private static TagKey<Item> category(Item display) {
++        String path = removeFirstPrefix(BuiltInRegistries.ITEM.getKey(display).getPath(), COMPAT_NAMESPACES.keySet());
++        if (path.startsWith("small_plated_")) return DisplayTags.SMALL_PLATE_DISPLAYABLE;
++        if (path.startsWith("plated_")) return DisplayTags.PLATE_DISPLAYABLE;
++        return DisplayTags.DISPLAYABLE;
++    }
++
++    public static boolean isAvailable(Item display) {
++        if (!(display instanceof FoodBlockItem)) return true; // Empty plates have no source meal.
++        Item food = sourceFood(display);
++        if (food == Items.AIR || !isItemInTag(food, category(display))) return false;
++        return !(DisplayConfig.DISABLE_VANILLA_FOODS.get()
++                && BuiltInRegistries.ITEM.getKey(food).getNamespace().equals(MINECRAFT)
++                && category(display).equals(DisplayTags.DISPLAYABLE));
++    }
++
++    public static void initialize(Iterable<Item> allItems) {
++        blockMap.clear(); itemMap.clear();
++        plateBlockMap.clear(); plateItemMap.clear();
++        smallplateBlockMap.clear(); smallplateItemMap.clear();
++        TRADEABLE_FOODS.clear(); TRADEABLE_DRINKS.clear();
++        TRADEABLE_PLATES.clear(); TRADEABLE_SMALL_PLATES.clear();
++        for (Item display : allItems) {
++            if (!(display instanceof FoodBlockItem blockItem)) continue;
++            if (!isAvailable(display)) continue;
++            Item food = sourceFood(display);
++            var type = category(display);
++            if (type.equals(DisplayTags.SMALL_PLATE_DISPLAYABLE)) addSmallPlateToMap(food, blockItem.getBlock());
++            else addToMap(food, blockItem.getBlock(), type.equals(DisplayTags.PLATE_DISPLAYABLE));
++            if (NO_WANDERING_TRADER.contains(BuiltInRegistries.ITEM.getKey(food).getNamespace())) continue;
++            if (blockItem.isDrink) TRADEABLE_DRINKS.add(display);
++            else if (type.equals(DisplayTags.SMALL_PLATE_DISPLAYABLE)) TRADEABLE_SMALL_PLATES.add(display);
++            else if (type.equals(DisplayTags.PLATE_DISPLAYABLE)) TRADEABLE_PLATES.add(display);
++            else TRADEABLE_FOODS.add(display);
++        }
+     }
+ }
+--- a/src/main/java/com/jkvin114/displaydelight/init/DisplayItems.java
++++ b/src/main/java/com/jkvin114/displaydelight/init/DisplayItems.java
+@@ -583,6 +583,10 @@
+         return  item;
+ 
+     }
++    public static List<Item> getRegisteredItems() {
++        return REGISTRY.getEntries().stream().<Item>map(DeferredHolder::get).toList();
++    }
++
+     public static Iterable<Item> GetAll(){
+         return items.stream().map(DeferredHolder::get).toList();
+     }
+--- a/src/main/java/com/jkvin114/displaydelight/integration/jei/JEIPlugin.java
++++ b/src/main/java/com/jkvin114/displaydelight/integration/jei/JEIPlugin.java
+@@ -2,6 +2,8 @@
+ 
+ import com.jkvin114.displaydelight.DisplayDelight;
+ import com.jkvin114.displaydelight.init.DisplayItems;
++import com.jkvin114.displaydelight.init.BlockAssociations;
++import mezz.jei.api.runtime.IJeiRuntime;
+ import com.jkvin114.displaydelight.item.FoodBlockItem;
+ import mezz.jei.api.IModPlugin;
+ import mezz.jei.api.JeiPlugin;
+@@ -34,11 +36,18 @@
+ 
+         List<ItemStack> stacks = new ArrayList<>();
+         for (Item item : DisplayItems.GetAll()) {
+-            if(item instanceof FoodBlockItem)
++            if(item instanceof FoodBlockItem && BlockAssociations.isAvailable(item))
+                 stacks.add(new ItemStack(item));
+         }
+         registration.addIngredientInfo(stacks, VanillaTypes.ITEM_STACK, Component.translatable(DisplayDelight.MODID + ".jei.info.foodblockitems"));
+         registration.addIngredientInfo(new ItemStack(DisplayItems.PLATE), VanillaTypes.ITEM_STACK, Component.translatable(DisplayDelight.MODID + ".jei.info.food_plate"));
+         registration.addIngredientInfo(new ItemStack(DisplayItems.SMALL_PLATE), VanillaTypes.ITEM_STACK, Component.translatable(DisplayDelight.MODID + ".jei.info.small_food_plate"));
+     }
++    @Override
++    public void onRuntimeAvailable(IJeiRuntime runtime) {
++        var hidden = DisplayItems.getRegisteredItems().stream()
++                .filter(item -> !BlockAssociations.isAvailable(item))
++                .map(ItemStack::new).toList();
++        runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
++    }
+ }
+--- a/src/main/java/com/jkvin114/displaydelight/trades/DisplayItemListing.java
++++ b/src/main/java/com/jkvin114/displaydelight/trades/DisplayItemListing.java
+@@ -31,10 +31,11 @@
+     }
+ 
+     private static Item pick(List<Item> items, RandomSource random) {
+-        return items.isEmpty() ? BlockAssociations.getRandomItem(random) : items.get(random.nextInt(items.size()));
++        return items.isEmpty() ? null : items.get(random.nextInt(items.size()));
+     }
+ 
+     private static MerchantOffer offer(Item item, int price, int maxTrades, int xp) {
++        if (item == null) return null;
+         return new MerchantOffer(new ItemCost(Items.EMERALD, price), new ItemStack(item), maxTrades, xp, 0.05F);
+     }
+ }

@@ -251,8 +251,9 @@ $browserArgs = @(
     $htmlUri
 )
 
-& $browserPath @browserArgs
-$browserExitCode = $LASTEXITCODE
+$quotedBrowserArgs = $browserArgs | ForEach-Object { '"' + $_.Replace('"', '\"') + '"' }
+$browserProcess = Start-Process -FilePath $browserPath -ArgumentList $quotedBrowserArgs -WindowStyle Hidden -Wait -PassThru
+$browserExitCode = $browserProcess.ExitCode
 for ($attempt = 0; $attempt -lt 40 -and -not (Test-Path -LiteralPath $outputPath); $attempt++) {
     Start-Sleep -Milliseconds 250
 }

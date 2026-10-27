@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 304 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 23 client extras</p>
 
-Last audited: 2026-10-25<br>
+Last audited: 2026-10-28<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 304 synchronized JARs plus 23 client-store JARs
+Current distribution: 307 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -41,44 +41,44 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-part"><td><a href="#part-ii--character-and-core-systems">Part II — Character and Core Systems</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#races-and-racial-traits">Races and racial traits</a></td><td>16</td></tr>
     <tr class="toc-subsection"><td><a href="#classes-and-playstyles">Classes and playstyles</a></td><td>17</td></tr>
-    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>18</td></tr>
-    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>20</td></tr>
-    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>21</td></tr>
-    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>26</td></tr>
-    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>28</td></tr>
-    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>30</td></tr>
-    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>31</td></tr>
-    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>33</td></tr>
-    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>36</td></tr>
-    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>38</td></tr>
-    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>39</td></tr>
-    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>40</td></tr>
-    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>41</td></tr>
-    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>42</td></tr>
-    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>47</td></tr>
-    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>51</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>53</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>56</td></tr>
-    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>57</td></tr>
-    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>58</td></tr>
-    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>59</td></tr>
-    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>60</td></tr>
-    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>62</td></tr>
-    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>63</td></tr>
-    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>64</td></tr>
-    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>66</td></tr>
-    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>69</td></tr>
-    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>69</td></tr>
+    <tr class="toc-subsection"><td><a href="#skill-trees-and-character-progression">Skill trees and character progression</a></td><td>19</td></tr>
+    <tr class="toc-subsection"><td><a href="#abilities-spells-runes-and-resources">Abilities, spells, runes, and resources</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#combat-controls-and-dodge-rolling">Combat controls and dodge rolling</a></td><td>21</td></tr>
+    <tr class="toc-subsection"><td><a href="#weapons-armor-jewelry-and-relics">Weapons, armor, jewelry, and relics</a></td><td>22</td></tr>
+    <tr class="toc-subsection"><td><a href="#enchanting-and-equipment-improvement">Enchanting and equipment improvement</a></td><td>27</td></tr>
+    <tr class="toc-subsection"><td><a href="#death-revival-graves-and-respawning">Death, revival, graves, and respawning</a></td><td>29</td></tr>
+    <tr class="toc-subsection"><td><a href="#parties-and-multiplayer-cooperation">Parties and multiplayer cooperation</a></td><td>31</td></tr>
+    <tr class="toc-part"><td><a href="#part-iii--adventure-and-challenge">Part III — Adventure and Challenge</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#travel-maps-compasses-and-teleportation">Travel, maps, compasses, and teleportation</a></td><td>32</td></tr>
+    <tr class="toc-subsection"><td><a href="#xaeros-world-map">Xaero's World Map</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#integrated-world-and-dimension-expansions">Integrated world and dimension expansions</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#alexs-caves">Alex's Caves</a></td><td>34</td></tr>
+    <tr class="toc-subsection"><td><a href="#fishing-and-collection-systems">Fishing and collection systems</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#starcatcher">Starcatcher</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#companions-pets-villagers-and-settlements">Companions, pets, villagers, and settlements</a></td><td>37</td></tr>
+    <tr class="toc-subsection"><td><a href="#pet-vault">Pet Vault</a></td><td>39</td></tr>
+    <tr class="toc-subsection"><td><a href="#bosses-and-major-encounters">Bosses and major encounters</a></td><td>40</td></tr>
+    <tr class="toc-subsection"><td><a href="#invasions-and-wave-events">Invasions and wave events</a></td><td>41</td></tr>
+    <tr class="toc-subsection"><td><a href="#dangerous-nights-and-environmental-threats">Dangerous nights and environmental threats</a></td><td>42</td></tr>
+    <tr class="toc-subsection"><td><a href="#structures-and-dungeons">Structures and dungeons</a></td><td>43</td></tr>
+    <tr class="toc-subsection"><td><a href="#creatures-and-hostile-mobs">Creatures and hostile mobs</a></td><td>48</td></tr>
+    <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>52</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>54</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>58</td></tr>
+    <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>59</td></tr>
+    <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>60</td></tr>
+    <tr class="toc-subsection"><td><a href="#trading-and-multiplayer-economy">Trading and multiplayer economy</a></td><td>61</td></tr>
+    <tr class="toc-part"><td><a href="#part-v--interface-and-reference">Part V — Interface and Reference</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#information-overlays-and-tooltips">Information overlays and tooltips</a></td><td>62</td></tr>
+    <tr class="toc-subsection"><td><a href="#recipe-and-loot-information">Recipe and loot information</a></td><td>64</td></tr>
+    <tr class="toc-subsection"><td><a href="#hud-changes-and-customization">HUD changes and customization</a></td><td>65</td></tr>
+    <tr class="toc-subsection"><td><a href="#cosmetic-and-animation-changes">Cosmetic and animation changes</a></td><td>66</td></tr>
+    <tr class="toc-subsection"><td><a href="#optional-client-features">Optional client features</a></td><td>68</td></tr>
+    <tr class="toc-part"><td><a href="#part-vi--keybinds-and-configuration">Part VI — Keybinds and Configuration</a></td><td>71</td></tr>
+    <tr class="toc-subsection"><td><a href="#essential-keybinds-and-conflict-resolution">Essential keybinds and conflict resolution</a></td><td>71</td></tr>
   </tbody>
 </table>
 
@@ -615,7 +615,7 @@ A race changes the traits you carry through the whole playthrough. It does not l
 
 Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues use combined dual-wield power for their scaling, with haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 100% dual-wield Mutilate, Crimson Strikes healing 15% dual power once per successful cast, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
 
-Paladin, Crusader and Netherite Crusader armor grant +0.25 flat Healing Power per piece (+1 per set). Priests choose Holy Light or Penance at tier I, then Circle of Healing or Ascension at tier II. Holy Light channels 25 deliveries over ten seconds with a smooth 12-24s cooldown. Penance fires ten bolts over five seconds: four-block blasts deal 15% Healing Power and build absorption for allies, with an 8-12s cooldown. Living-target hits also grant caster support outside the blast, once per bolt. Holy Staff Specialisation grants Holy Shock 5% more damage instead of shortening its cooldown. Circle heals, cleanses or grants Regeneration; Ascension lifts allies and repels enemies. Shield refreshes never refill consumed HP. Healing Focus builds up to 20% healing/absorption received; Cadence builds up to 10% haste. Both refresh for six seconds with a 0.25s base stack interval. Fade conceals equipment for two seconds; Divine Favor readies a retaliatory stun. Party players and protected pets remain safe.
+Path of the Paladin and its ordinary nodes grant +0.25 Healing Power each. Paladins cannot wield healing staves or wands in either hand; rejected weapons return to inventory with an oath warning. Plate Healing Power per piece is +0.75 Paladin, +1 Crusader, +1.15 Netherite Crusader and +1.25 Justicar/Lightbringer; full sets give +3/+4/+4.6/+5 respectively. Priest robes and other armor bonuses remain. Priests choose Holy Light or Penance at tier I, then Circle of Healing or Ascension at tier II. Holy Light channels 25 deliveries over ten seconds with a smooth 12-24s cooldown. Penance fires ten bolts over five seconds: four-block blasts deal 15% Healing Power and build absorption for allies, with an 8-12s cooldown. Living-target hits also grant caster support outside the blast, once per bolt. Holy Staff Specialisation grants Holy Shock 5% more damage instead of shortening its cooldown. Circle heals, cleanses or grants Regeneration; Ascension lifts allies and repels enemies. Shield refreshes never refill consumed HP. Healing Focus builds up to 20% healing/absorption received; Cadence builds up to 10% haste. Both refresh for six seconds with a 0.25s base stack interval. Fade conceals equipment for two seconds; Divine Favor readies a retaliatory stun. Party players and protected pets remain safe.
 
 Priest tier III offers Lightwell or Barrier. Lightwell follows its caster for 16s (20s Improved), inheriting 5% Healing Power. Every 0.8s before haste, two motes target the injured allies with lowest raw HP within 16 blocks, or both target a sole injured ally, launching 0.3s apart. Useful cleansing or heart-stack targets remain eligible without injuries. Cleansing Light dispels per hit; Empowered Well adds up to two temporary maximum hearts, filled by ordinary healing. Barrier protects a ten-block radius from combat and damage over time for 10s (12s Improved). Sacred Refuge heals and cleanses for the same 10s (12s Improved); Deflective Shield retaliates against hostile shots. Base cooldowns are 80s and 60s. Pain Suppression reduces damage taken by up to 24% at low health; five Celestial Orbs retaliate for the caster and nearby allies. Priest casts and cooldowns scale with haste.
 
@@ -849,7 +849,7 @@ These rare weapons carry built-in passive spells. Compare their effect and comba
 - **Core mechanic:** Adds class-oriented armor sets with distinct effects and set bonuses.
 - **Player guidance:** Inspect class set bonuses before replacing an armor piece.
 
-A full set can be stronger for a role than a mix of higher armor values. Justicar and Lightbringer grant +0.25 flat Healing Power per piece (+1 per set); their other stats and set bonuses remain. Upgrade materials come from later exploration and combat.
+A full set can be stronger for a role than a mix of higher armor values. Justicar and Lightbringer grant +1.25 flat Healing Power per piece (+5 from the four pieces); their other stats and set bonuses remain. Justicar also retains its separate +2 Healing Power set bonus. Upgrade materials come from later exploration and combat.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armory-rpg-series">Official mod page</a></p>
 
@@ -2517,6 +2517,48 @@ The addition broadens Farmer's Delight's kitchen loop. Check the exact station i
 
 <div class="core-mod-entry">
 
+#### Ocean's Delight
+
+- **Type:** Seafood cooking
+- **Core mechanic:** Adds squid, guardian and pufferfish ingredients, seafood dishes and a shareable Guardian Soup.
+- **Player guidance:** Use a knife for eligible seafood drops, then follow JEI through cutting, cooking-pot and ordinary cooking recipes.
+
+This pack includes a local Minecraft 26.2 port, compatible with Farmer's Delight and its supported Display Delight dishes.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/oceans-delight">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### Large Meals
+
+- **Type:** Meals and feasts
+- **Core mechanic:** Adds substantial meals and three four-serving feasts, including a roasted mutton rack.
+- **Player guidance:** Place a feast to serve portions; check JEI for its ingredients, preparation station and bowl requirements.
+
+This pack includes a local Minecraft 26.2 port, compatible with Farmer's Delight and its supported Display Delight dishes.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/large-meals">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
+#### End's Delight
+
+- **Type:** End cooking
+- **Core mechanic:** Turns End ingredients into meals, drinks and shareable feasts, with an End Stove for six-slot cooking.
+- **Player guidance:** Gather End ingredients and check JEI for cutting and cooking steps. Some foods have unusual effects, so inspect them before eating.
+
+This pack includes a local Minecraft 26.2 port, compatible with Farmer's Delight and its supported Display Delight dishes.
+
+<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ends-delight">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Better Rotten Flesh
 
 - **Type:** Food and farming
@@ -2667,7 +2709,7 @@ Appliances and electronics use the mod's electricity system. Set up an Electrici
 - **Core mechanic:** Displays supported meals in 3D, with food recoverable for eating.
 - **Player guidance:** Hold an original edible bowl or bottled meal and press C + right-click to display it. With an empty main hand, right-click to retrieve one food; C + right-click takes all food from a plate. C is the pack's Sneak key.
 
-The pack's repaired port returns the original edible meal from a bowl display and leaves an empty plate after its last food is taken. Display Delight's creative-list food items are display blocks and place with ordinary right-click; displays for missing add-ons remain decorative.
+The pack's repaired port returns the original edible meal from a bowl display and leaves an empty plate after its last food is taken. Display Delight's creative-list food items are display blocks and place with ordinary right-click. Only foods supported by an installed add-on appear in JEI, creative/search lists or wandering-trader offers. Existing displays keep their saved IDs when an add-on is absent.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/display-delight">Official mod page</a></p>
 
@@ -3972,6 +4014,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Enchantment Insights](#enchantment-insights)
 - [Enchantments collection](#enchantments-collection)
 - [Ender Zoology](#ender-zoology)
+- [End's Delight](#ends-delight)
 - [Epic Structures collection](#epic-structures-collection)
 - [Expanded Crossbow Enchantings](#expanded-crossbow-enchantings)
 - [Expanded Delight](#expanded-delight)
@@ -4007,6 +4050,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
 - [Kingdom Cats Replacer](#kingdom-cats-replacer)
+- [Large Meals](#large-meals)
 - [Linked Chests](#linked-chests)
 - [Lullaby's Mobs](#lullabys-mobs)
 - [Macaw's building collection](#macaws-building-collection)
@@ -4026,6 +4070,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [No Crop Destruction](#no-crop-destruction)
 - [Nullscape](#nullscape)
 - [Ocean Lily Pad Village](#ocean-lily-pad-village)
+- [Ocean's Delight](#oceans-delight)
 - [OneKeyMiner](#onekeyminer)
 - [Overflowing Bars](#overflowing-bars)
 - [Paper Doll](#paper-doll)
@@ -4260,6 +4305,9 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [No Crop Destruction](#no-crop-destruction)
 - [Universal Bone Meal](#universal-bone-meal)
 - [Starcatcher](#starcatcher)
+- [Ocean's Delight](#oceans-delight)
+- [Large Meals](#large-meals)
+- [End's Delight](#ends-delight)
 
 #### Building
 

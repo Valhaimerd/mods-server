@@ -1,0 +1,330 @@
+PASS End Stove native placeFood slot 0
+PASS End Stove native placeFood slot 1
+PASS End Stove native placeFood slot 2
+PASS End Stove native placeFood slot 3
+PASS End Stove native placeFood slot 4
+PASS End Stove native placeFood slot 5
+PASS End Stove server fixture six filled slots
+PASS End Stove server fixture six slots
+PASS world display fixture present large_meals
+PASS world display fixture present oceansdelight
+PASS world display fixture present ends_delight
+PASS integrated server fixture ready
+PASS native creative search tab hides unavailable displays
+PASS native creative search tab no bnc placeholders
+PASS native Display Delight tab hides unavailable displays
+PASS native Display Delight tab populated count=154
+PASS JEI ingredients hide every unavailable display
+PASS JEI no Brewin compatibility placeholders
+PASS JEI information recipes hide every unavailable display
+PASS registered base representative displaydelight:food_plate
+PASS JEI base representative visible displaydelight:food_plate
+PASS registered base representative displaydelight:small_food_plate
+PASS JEI base representative visible displaydelight:small_food_plate
+PASS registered base representative displaydelight:plated_cookie
+PASS JEI base representative visible displaydelight:plated_cookie
+PASS registered base representative displaydelight:beef_stew
+PASS JEI base representative visible displaydelight:beef_stew
+PASS registered base representative displaydelight:ed_asparagus_soup
+PASS JEI base representative visible displaydelight:ed_asparagus_soup
+PASS addon presence large_meals foods=15
+PASS JEI all edible addon ingredients visible large_meals
+PASS JEI native recipe category populated large_meals
+PASS addon display aliases/categories resolve large_meals displays=13
+PASS JEI addon displays visible large_meals
+PASS JEI addon display info populated large_meals
+PASS addon presence oceansdelight foods=23
+PASS JEI all edible addon ingredients visible oceansdelight
+PASS JEI native recipe category populated oceansdelight
+PASS addon display aliases/categories resolve oceansdelight displays=11
+PASS JEI addon displays visible oceansdelight
+PASS JEI addon display info populated oceansdelight
+PASS addon presence ends_delight foods=47
+PASS JEI all edible addon ingredients visible ends_delight
+PASS JEI native recipe category populated ends_delight
+PASS addon display aliases/categories resolve ends_delight displays=24
+PASS JEI addon displays visible ends_delight
+PASS JEI addon display info populated ends_delight
+PASS native item render model displaydelight:food_plate
+PASS native item render model displaydelight:small_food_plate
+PASS native item render model displaydelight:mushroom_stew
+PASS native item render model displaydelight:rabbit_stew
+PASS native item render model displaydelight:beetroot_soup
+PASS native item render model displaydelight:plated_cookie
+PASS native item render model displaydelight:plated_pumpkin_pie
+PASS native item render model displaydelight:glow_berry_custard
+PASS native item render model displaydelight:apple_cider
+PASS native item render model displaydelight:melon_juice
+PASS native item render model displaydelight:hot_cocoa
+PASS native item render model displaydelight:cooked_rice
+PASS native item render model displaydelight:beef_stew
+PASS native item render model displaydelight:chicken_soup
+PASS native item render model displaydelight:vegetable_soup
+PASS native item render model displaydelight:fish_stew
+PASS native item render model displaydelight:fried_rice
+PASS native item render model displaydelight:pumpkin_soup
+PASS native item render model displaydelight:baked_cod_stew
+PASS native item render model displaydelight:noodle_soup
+PASS native item render model displaydelight:bone_broth
+PASS native item render model displaydelight:onion_soup
+PASS native item render model displaydelight:fruit_salad
+PASS native item render model displaydelight:mixed_salad
+PASS native item render model displaydelight:nether_salad
+PASS native item render model displaydelight:roast_chicken
+PASS native item render model displaydelight:stuffed_pumpkin
+PASS native item render model displaydelight:honey_glazed_ham
+PASS native item render model displaydelight:shepherds_pie
+PASS native item render model displaydelight:gleaming_salad
+PASS native item render model displaydelight:bacon_and_eggs
+PASS native item render model displaydelight:pasta_with_meatballs
+PASS native item render model displaydelight:pasta_with_mutton_chop
+PASS native item render model displaydelight:roasted_mutton_chops
+PASS native item render model displaydelight:steak_and_potatoes
+PASS native item render model displaydelight:vegetable_noodles
+PASS native item render model displaydelight:ratatouille
+PASS native item render model displaydelight:squid_ink_pasta
+PASS native item render model displaydelight:grilled_salmon
+PASS native item render model displaydelight:mushroom_rice
+PASS native item render model displaydelight:plated_hamburger
+PASS native item render model displaydelight:plated_kelp_roll_slice
+PASS native item render model displaydelight:plated_dumplings
+PASS native item render model displaydelight:plated_barbecue_stick
+PASS native item render model displaydelight:plated_chicken_sandwich
+PASS native item render model displaydelight:plated_cod_roll
+PASS native item render model displaydelight:plated_egg_sandwich
+PASS native item render model displaydelight:plated_kelp_roll
+PASS native item render model displaydelight:plated_salmon_roll
+PASS native item render model displaydelight:plated_melon_popsicle
+PASS native item render model displaydelight:plated_stuffed_potato
+PASS native item render model displaydelight:plated_cabbage_rolls
+PASS native item render model displaydelight:plated_bacon_sandwich
+PASS native item render model displaydelight:plated_mutton_wrap
+PASS native item render model displaydelight:plated_sweet_berry_cookie
+PASS native item render model displaydelight:plated_honey_cookie
+PASS native item render model displaydelight:small_plated_cake_slice
+PASS native item render model displaydelight:small_plated_apple_pie_slice
+PASS native item render model displaydelight:small_plated_chocolate_pie_slice
+PASS native item render model displaydelight:small_plated_sweet_berry_cheesecake_slice
+PASS native item render model displaydelight:small_plated_stuffed_potato
+PASS native item render model displaydelight:small_plated_cod_roll
+PASS native item render model displaydelight:small_plated_salmon_roll
+PASS native item render model displaydelight:small_plated_kelp_roll_slice
+PASS native item render model displaydelight:small_plated_cabbage_rolls
+PASS native item render model displaydelight:small_plated_pumpkin_pie_slice
+PASS native item render model displaydelight:ed_apple_juice
+PASS native item render model displaydelight:ed_sweet_berry_juice
+PASS native item render model displaydelight:ed_glow_berry_juice
+PASS native item render model displaydelight:ed_cranberry_juice
+PASS native item render model displaydelight:ed_asparagus_soup
+PASS native item render model displaydelight:ed_asparagus_soup_creamy
+PASS native item render model displaydelight:ed_peanut_honey_soup
+PASS native item render model displaydelight:ed_mac_and_cheese
+PASS native item render model displaydelight:ed_peanut_salad
+PASS native item render model displaydelight:ed_sweet_potato_salad
+PASS native item render model displaydelight:ed_goat_cheese_beetroot_salad
+PASS native item render model displaydelight:ed_cinnamon_rice
+PASS native item render model displaydelight:ed_cinnamon_apples
+PASS native item render model displaydelight:ed_asparagus_and_bacon_cheesy
+PASS native item render model displaydelight:ed_peperonata
+PASS native item render model displaydelight:ed_cranberry_chicken
+PASS native item render model displaydelight:ed_asparagus_mushroom_pasta
+PASS native item render model displaydelight:ed_sweet_potato_casserole
+PASS native item render model displaydelight:ed_asparagus_frittata
+PASS native item render model displaydelight:ed_chili_pepper_salmon
+PASS native item render model displaydelight:ed_plated_peanut_butter_sandwich
+PASS native item render model displaydelight:ed_plated_peanut_butter_honey_sandwich
+PASS native item render model displaydelight:ed_plated_glow_berry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_sweet_berry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_cranberry_jelly_sandwich
+PASS native item render model displaydelight:ed_plated_cheese_sandwich
+PASS native item render model displaydelight:ed_plated_grilled_cheese
+PASS native item render model displaydelight:ed_plated_cranberry_goat_cheese_toast
+PASS native item render model displaydelight:ed_plated_chocolate_cookie
+PASS native item render model displaydelight:ed_plated_sugar_cookie
+PASS native item render model displaydelight:ed_plated_snickerdoodle
+PASS native item render model displaydelight:ed_plated_sweet_roll
+PASS native item render model displaydelight:ed_plated_berry_sweet_roll
+PASS native item render model displaydelight:ed_plated_glow_berry_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_cranberry_cobbler_slice
+PASS native item render model displaydelight:ed_small_plated_honeyed_goat_cheese_tart_slice
+PASS native item render model displaydelight:ed_small_plated_cheese_slice
+PASS native item render model displaydelight:ed_small_plated_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_berry_sweet_roll
+PASS native item render model displaydelight:ed_small_plated_glow_berry_sweet_roll
+PASS native item render model displaydelight:od_braised_sea_pickle
+PASS native item render model displaydelight:od_seagrass_salad
+PASS native item render model displaydelight:od_squid_rings
+PASS native item render model displaydelight:od_bowl_of_guardian_soup
+PASS native item render model displaydelight:od_plated_baked_tentacle_on_a_stick
+PASS native item render model displaydelight:od_plated_elder_guardian_roll
+PASS native item render model displaydelight:od_plated_fugu_roll
+PASS native item render model displaydelight:od_plated_honey_fried_kelp
+PASS native item render model displaydelight:od_plated_cooked_stuffed_cod
+PASS native item render model displaydelight:od_small_plated_elder_guardian_roll
+PASS native item render model displaydelight:od_small_plated_fugu_roll
+PASS native item render model displaydelight:lm_sweet_berry_custard
+PASS native item render model displaydelight:lm_pufferfish_broth
+PASS native item render model displaydelight:lm_rice_pudding
+PASS native item render model displaydelight:lm_potato_soup
+PASS native item render model displaydelight:lm_red_soup
+PASS native item render model displaydelight:lm_tomato_egg_soup
+PASS native item render model displaydelight:lm_cod_deluxe
+PASS native item render model displaydelight:lm_hearty_lunch
+PASS native item render model displaydelight:lm_chicken_curry
+PASS native item render model displaydelight:lm_pasta_with_mushroom_sauce
+PASS native item render model displaydelight:lm_omurice
+PASS native item render model displaydelight:lm_mushroom_pot_pie
+PASS native item render model displaydelight:lm_roasted_mutton_rack
+PASS native item render model displaydelight:edd_chorus_fruit_milk_tea
+PASS native item render model displaydelight:edd_chorus_fruit_wine
+PASS native item render model displaydelight:edd_bubble_tea
+PASS native item render model displaydelight:edd_dragon_breath_soda
+PASS native item render model displaydelight:edd_chorus_flower_tea
+PASS native item render model displaydelight:edd_dragon_breath_and_chorus_soup
+PASS native item render model displaydelight:edd_shulker_soup
+PASS native item render model displaydelight:edd_ender_noodle
+PASS native item render model displaydelight:edd_enderman_gristle_stew
+PASS native item render model displaydelight:edd_ender_congee
+PASS native item render model displaydelight:edd_end_mixed_salad
+PASS native item render model displaydelight:edd_assorted_salad
+PASS native item render model displaydelight:edd_stir_fried_shulker_meat
+PASS native item render model displaydelight:edd_roasted_dragon_steak
+PASS native item render model displaydelight:edd_grilled_shulker
+PASS native item render model displaydelight:edd_dragon_meat_stew
+PASS native item render model displaydelight:edd_steamed_dragon_egg
+PASS native item render model displaydelight:edd_dragon_leg_with_sauce
+PASS native item render model displaydelight:edd_plated_stuffed_rice_cake
+PASS native item render model displaydelight:edd_plated_chorus_flower_pie
+PASS native item render model displaydelight:edd_plated_ender_bamboo_rice
+PASS native item render model displaydelight:edd_plated_chorus_fruit_popsicle
+PASS native item render model displaydelight:edd_plated_end_barbecue_stick
+PASS native item render model displaydelight:edd_small_plated_chorus_fruit_pie_slice
+PASS native item render model ends_delight:end_stove
+PASS native item render model ends_delight:chorus_fruit_crate
+PASS native item render model ends_delight:end_stone_knife
+PASS native item render model ends_delight:purpur_knife
+PASS native item render model ends_delight:dragon_egg_shell_knife
+PASS native item render model ends_delight:dragon_tooth_knife
+PASS native item render model ends_delight:ender_pearl_grain
+PASS native item render model ends_delight:chorus_fruit_grain
+PASS native item render model ends_delight:chorus_succulent
+PASS native item render model ends_delight:dried_chorus_flower
+PASS native item render model ends_delight:dragon_tooth
+PASS native item render model ends_delight:non_hatchable_dragon_egg
+PASS native item render model ends_delight:half_dragon_egg_shell
+PASS native item render model ends_delight:liquid_dragon_egg
+PASS native item render model ends_delight:fried_dragon_egg
+PASS native item render model ends_delight:shulker_meat
+PASS native item render model ends_delight:shulker_meat_slice
+PASS native item render model ends_delight:roasted_shulker_meat
+PASS native item render model ends_delight:roasted_shulker_meat_slice
+PASS native item render model ends_delight:dragon_leg
+PASS native item render model ends_delight:smoked_dragon_leg
+PASS native item render model ends_delight:raw_dragon_meat
+PASS native item render model ends_delight:roasted_dragon_meat
+PASS native item render model ends_delight:raw_dragon_meat_cuts
+PASS native item render model ends_delight:roasted_dragon_meat_cuts
+PASS native item render model ends_delight:raw_ender_mite_meat
+PASS native item render model ends_delight:dried_endermite_meat
+PASS native item render model ends_delight:enderman_gristle
+PASS native item render model ends_delight:chorus_sauce
+PASS native item render model ends_delight:shulker_omelette_mixture
+PASS native item render model ends_delight:shulker_omelette
+PASS native item render model ends_delight:raw_ender_sausage
+PASS native item render model ends_delight:ender_sausage
+PASS native item render model ends_delight:ender_bamboo_rice
+PASS native item render model ends_delight:stuffed_rice_cake
+PASS native item render model ends_delight:chorus_flower_pie
+PASS native item render model ends_delight:chorus_cookie
+PASS native item render model ends_delight:chorus_fruit_popsicle
+PASS native item render model ends_delight:chorus_fruit_milk_tea
+PASS native item render model ends_delight:bubble_tea
+PASS native item render model ends_delight:chorus_fruit_wine
+PASS native item render model ends_delight:dragon_breath_soda
+PASS native item render model ends_delight:chorus_flower_tea
+PASS native item render model ends_delight:chorus_fruit_pie
+PASS native item render model ends_delight:chorus_fruit_pie_slice
+PASS native item render model ends_delight:ender_congee
+PASS native item render model ends_delight:dragon_breath_and_chorus_soup
+PASS native item render model ends_delight:shulker_soup
+PASS native item render model ends_delight:ender_noodle
+PASS native item render model ends_delight:enderman_gristle_stew
+PASS native item render model ends_delight:stir_fried_shulker_meat
+PASS native item render model ends_delight:roasted_dragon_steak
+PASS native item render model ends_delight:end_mixed_salad
+PASS native item render model ends_delight:assorted_salad
+PASS native item render model ends_delight:end_barbecue_stick
+PASS native item render model ends_delight:dragon_leg_with_sauce_block
+PASS native item render model ends_delight:dragon_leg_with_sauce
+PASS native item render model ends_delight:steamed_dragon_egg_block
+PASS native item render model ends_delight:steamed_dragon_egg
+PASS native item render model ends_delight:dragon_meat_stew_block
+PASS native item render model ends_delight:dragon_meat_stew
+PASS native item render model ends_delight:grilled_shulker_block
+PASS native item render model ends_delight:grilled_shulker
+PASS native item render model large_meals:raw_mutton_rack
+PASS native item render model large_meals:cooked_mutton_rack
+PASS native item render model large_meals:pufferfish_broth
+PASS native item render model large_meals:potato_soup
+PASS native item render model large_meals:red_soup
+PASS native item render model large_meals:tomato_egg_soup
+PASS native item render model large_meals:cod_deluxe
+PASS native item render model large_meals:hearty_lunch
+PASS native item render model large_meals:chicken_curry
+PASS native item render model large_meals:pasta_with_mushroom_sauce
+PASS native item render model large_meals:omurice_block
+PASS native item render model large_meals:omurice
+PASS native item render model large_meals:mushroom_pot_pie_block
+PASS native item render model large_meals:mushroom_pot_pie
+PASS native item render model large_meals:roasted_mutton_rack_block
+PASS native item render model large_meals:roasted_mutton_rack
+PASS native item render model large_meals:sweet_berry_custard
+PASS native item render model large_meals:rice_pudding
+PASS native item render model oceansdelight:tentacles
+PASS native item render model oceansdelight:cut_tentacles
+PASS native item render model oceansdelight:squid_rings
+PASS native item render model oceansdelight:tentacle_on_a_stick
+PASS native item render model oceansdelight:baked_tentacle_on_a_stick
+PASS native item render model oceansdelight:stuffed_squid
+PASS native item render model oceansdelight:cooked_stuffed_squid
+PASS native item render model oceansdelight:guardian
+PASS native item render model oceansdelight:guardian_soup
+PASS native item render model oceansdelight:guardian_tail
+PASS native item render model oceansdelight:cooked_guardian_tail
+PASS native item render model oceansdelight:bowl_of_guardian_soup
+PASS native item render model oceansdelight:elder_guardian_slab
+PASS native item render model oceansdelight:elder_guardian_slice
+PASS native item render model oceansdelight:cooked_elder_guardian_slice
+PASS native item render model oceansdelight:elder_guardian_roll
+PASS native item render model oceansdelight:cabbage_wrapped_elder_guardian
+PASS native item render model oceansdelight:fugu_slice
+PASS native item render model oceansdelight:fugu_roll
+PASS native item render model oceansdelight:braised_sea_pickle
+PASS native item render model oceansdelight:stuffed_cod
+PASS native item render model oceansdelight:cooked_stuffed_cod
+PASS native item render model oceansdelight:kelp_encrusted_cod
+PASS native item render model oceansdelight:honey_fried_kelp
+PASS native item render model oceansdelight:seagrass_salad
+PASS native GUI item model sample populated count=260
+PASS client category maps contain resolved original foods entries=91
+PASS client category maps contain resolved original foods entries=42
+PASS client category maps contain resolved original foods entries=19
+SCREENSHOT 01 Display Delight creative and JEI populated
+PASS actual native creative text search Brewin no bnc
+SCREENSHOT 02 native creative missing addon search
+SCREENSHOT 03 JEI Large Meals
+SCREENSHOT 04 JEI Oceans Delight
+SCREENSHOT 05 JEI Ends Delight
+PASS representative display info page exists
+SCREENSHOT 06 JEI addon display information
+SCREENSHOT 07 world feasts displays and stove
+PASS End Stove client block entity synchronized
+PASS End Stove client six filled slots actual=6
+PASS End Stove native renderer registered cn.foggyhillside.ends_delight.client.renderer.EndStoveRenderer
+PASS End Stove native renderer extracts state
+PASS End Stove extracts all six food item render states actual=6
+PASS End Stove extracts six original food offsets actual=6
+PASS End Stove all six food models nonempty
+PASS real client empty-hand bowl retrieval through network returns FD beef stew
+PASS real client plate take-one through network retains original empty plate
+SCREENSHOT 08 overhead native stove six food items feasts and addon displays

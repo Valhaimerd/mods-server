@@ -1,0 +1,1 @@
+FAIL 29 native armor checks; failures=25

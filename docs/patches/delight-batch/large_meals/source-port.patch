@@ -1,0 +1,4415 @@
+diff --git a/.vscode/launch.json b/.vscode/launch.json
+new file mode 100644
+index 0000000..00ecb6d
+--- /dev/null
++++ b/.vscode/launch.json
+@@ -0,0 +1,93 @@
++{
++  "version": "0.2.0",
++  "configurations": [
++    {
++      "type": "java",
++      "request": "launch",
++      "name": "Client",
++      "presentation": {
++        "group": "Mod Development - large_meals",
++        "order": 0
++      },
++      "projectName": "large_meals",
++      "mainClass": "net.neoforged.devlaunch.Main",
++      "args": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\clientRunProgramArgs.txt"
++      ],
++      "vmArgs": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\clientRunVmArgs.txt",
++        "-Dfml.modFolders\u003dlarge_meals%%C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\bin\\main"
++      ],
++      "cwd": "${workspaceFolder}\\run",
++      "env": {},
++      "console": "internalConsole",
++      "shortenCommandLine": "none"
++    },
++    {
++      "type": "java",
++      "request": "launch",
++      "name": "Data",
++      "presentation": {
++        "group": "Mod Development - large_meals",
++        "order": 1
++      },
++      "projectName": "large_meals",
++      "mainClass": "net.neoforged.devlaunch.Main",
++      "args": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\dataRunProgramArgs.txt"
++      ],
++      "vmArgs": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\dataRunVmArgs.txt",
++        "-Dfml.modFolders\u003dlarge_meals%%C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\bin\\main"
++      ],
++      "cwd": "${workspaceFolder}\\run",
++      "env": {},
++      "console": "internalConsole",
++      "shortenCommandLine": "none"
++    },
++    {
++      "type": "java",
++      "request": "launch",
++      "name": "GameTestServer",
++      "presentation": {
++        "group": "Mod Development - large_meals",
++        "order": 2
++      },
++      "projectName": "large_meals",
++      "mainClass": "net.neoforged.devlaunch.Main",
++      "args": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\gameTestServerRunProgramArgs.txt"
++      ],
++      "vmArgs": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\gameTestServerRunVmArgs.txt",
++        "-Dfml.modFolders\u003dlarge_meals%%C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\bin\\main"
++      ],
++      "cwd": "${workspaceFolder}\\run",
++      "env": {},
++      "console": "internalConsole",
++      "shortenCommandLine": "none"
++    },
++    {
++      "type": "java",
++      "request": "launch",
++      "name": "Server",
++      "presentation": {
++        "group": "Mod Development - large_meals",
++        "order": 3
++      },
++      "projectName": "large_meals",
++      "mainClass": "net.neoforged.devlaunch.Main",
++      "args": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\serverRunProgramArgs.txt"
++      ],
++      "vmArgs": [
++        "@C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\build\\moddev\\serverRunVmArgs.txt",
++        "-Dfml.modFolders\u003dlarge_meals%%C:\\Users\\Valhaimerd\\Desktop\\Mods + Server\\mod fixing\\source\\delight-batch-20261027\\upstream\\large_meals\\bin\\main"
++      ],
++      "cwd": "${workspaceFolder}\\run",
++      "env": {},
++      "console": "internalConsole",
++      "shortenCommandLine": "none"
++    }
++  ]
++}
+\ No newline at end of file
+diff --git a/build.gradle b/build.gradle
+index 01e7fe3..1e466fc 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -1,7 +1,7 @@
+ plugins {
+     id "java-library"
+     id "maven-publish"
+-    id "net.neoforged.moddev" version "2.0.140"
++    id "net.neoforged.moddev" version "2.0.148"
+     id "idea"
+ }
+ 
+@@ -27,16 +27,11 @@ base {
+     archivesName = mod_id
+ }
+ 
+-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
++java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+ 
+ neoForge {
+     version = project.neo_version
+ 
+-    parchment {
+-        mappingsVersion = project.parchment_mappings_version
+-        minecraftVersion = project.parchment_minecraft_version
+-    }
+-
+     runs {
+         client {
+             client()
+@@ -56,7 +51,7 @@ neoForge {
+         }
+ 
+         data {
+-            data()
++            clientData()
+ 
+             programArguments.addAll "--mod", project.mod_id, "--all", "--output", file("src/generated/resources/").getAbsolutePath(), "--existing", file("src/main/resources/").getAbsolutePath()
+         }
+@@ -64,7 +59,7 @@ neoForge {
+         configureEach {
+             systemProperty "forge.logging.markers", "REGISTRIES"
+ 
+-            logLevel = org.slf4j.event.Level.DEBUG
++            logLevel = org.slf4j.event.Level.INFO
+         }
+     }
+ 
+@@ -82,9 +77,9 @@ configurations {
+ }
+ 
+ dependencies {
+-    implementation "maven.modrinth:farmers-delight:$farmer_delight_version"
++    implementation files("../../../../../mods/FarmersDelight-26.2-1.3.3-fix5.jar")
++
+ 
+-    runtimeOnly "maven.modrinth:jei:$jei_version"
+ }
+ 
+ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+@@ -133,3 +128,9 @@ idea {
+         downloadJavadoc = true
+     }
+ }
++
++sourceSets.main.java.exclude "cz/krelox/large_meals/data/**"
++sourceSets.main.java.exclude "**/package-info.java"
++sourceSets.main.resources.exclude "pack.mcmeta"
++
++if (project.hasProperty('probe')) { sourceSets.main.java.srcDir 'regression' }
+diff --git a/gradle.properties b/gradle.properties
+index 5f307e8..034d2fd 100644
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -4,20 +4,20 @@ org.gradle.parallel=true
+ org.gradle.caching=true
+ org.gradle.configuration-cache=true
+ 
+-parchment_minecraft_version=1.21.1
++parchment_minecraft_version=26.2
+ parchment_mappings_version=2024.11.17
+ 
+ # Environment Properties
+-minecraft_version=1.21.1
+-minecraft_version_range=[1.21.1]
+-neo_version=21.1.219
++minecraft_version=26.2
++minecraft_version_range=[26.2]
++neo_version=26.2.0.90
+ loader_version_range=[1,)
+ 
+ ## Mod Properties
+ mod_id=large_meals
+ mod_name=Large Meals
+ mod_license=MIT License
+-mod_version=1.21.1-1.0.1
++mod_version=26.2-1.0.1-port1
+ mod_group_id=cz.krelox.large_meals
+ mod_github=https://github.com/KreloX/Large-Meals
+ mod_credits=LostWiz08 (Original author)
+diff --git a/regression/cz/krelox/large_meals/probe/LargeMealsProbe.java b/regression/cz/krelox/large_meals/probe/LargeMealsProbe.java
+new file mode 100644
+index 0000000..74ad0ec
+--- /dev/null
++++ b/regression/cz/krelox/large_meals/probe/LargeMealsProbe.java
+@@ -0,0 +1,85 @@
++package cz.krelox.large_meals.probe;
++import cz.krelox.large_meals.item.LMItems;
++import net.minecraft.core.BlockPos;
++import net.minecraft.core.Direction;
++import net.minecraft.core.component.DataComponents;
++import net.minecraft.core.registries.BuiltInRegistries;
++import net.minecraft.resources.Identifier;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.item.ItemStack;
++import net.minecraft.world.item.Items;
++import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
++import net.minecraft.world.level.GameType;
++import net.minecraft.world.level.block.Blocks;
++import net.minecraft.world.phys.BlockHitResult;
++import net.minecraft.world.phys.Vec3;
++import net.neoforged.bus.api.SubscribeEvent;
++import net.neoforged.fml.common.EventBusSubscriber;
++import net.neoforged.neoforge.common.util.FakePlayerFactory;
++import net.neoforged.neoforge.event.server.ServerStartedEvent;
++import vectorwing.farmersdelight.common.block.FeastBlock;
++@EventBusSubscriber(modid="large_meals")
++public class LargeMealsProbe {
++ static void check(String name, boolean ok) { if(!ok) throw new AssertionError(name); System.out.println("LM_PROBE PASS "+name); }
++ @SubscribeEvent public static void start(ServerStartedEvent event) {
++  var server=event.getServer();
++  try {
++   var recipes=server.getRecipeManager().getRecipes().stream().filter(r->r.id().identifier().getNamespace().equals("large_meals")).toList();
++   check("all_18_recipes_decode",recipes.size()==18);
++   for(var r: recipes) { check("ingredients_"+r.id().identifier(),r.value().placementInfo().ingredients().stream().noneMatch(i->i.isEmpty())); }
++   check("all_18_items",LMItems.ITEMS.getEntries().size()==18);
++   var world=server.overworld(); var player=FakePlayerFactory.getMinecraft(world);player.setGameMode(GameType.SURVIVAL);
++   var pos=new BlockPos(0,100,0); world.setBlock(pos.below(),Blocks.STONE.defaultBlockState(),3);
++   for(String id:new String[]{"omurice","mushroom_pot_pie","roasted_mutton_rack"}) {
++    var block=(FeastBlock)BuiltInRegistries.BLOCK.getValue(Identifier.parse("large_meals:"+id+"_block"));
++    world.setBlock(pos,block.defaultBlockState(),3); check(id+"_four_servings",block.getMaxServings()==4);
++    for(int n=4;n>0;n--) {
++     player.getInventory().clearContent();player.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(Items.BOWL));
++     var result=block.useItemOn(player.getMainHandItem(),world.getBlockState(pos),world,pos,player,InteractionHand.MAIN_HAND,new BlockHitResult(Vec3.atCenterOf(pos),Direction.UP,pos,false));
++     check(id+"_serve_"+n,result.consumesAction()&&player.getMainHandItem().is(BuiltInRegistries.ITEM.getValue(Identifier.parse("large_meals:"+id)))&&world.getBlockState(pos).getValue(FeastBlock.SERVINGS)==n-1);
++    }
++    check(id+"_leftover",world.getBlockState(pos).is(block));
++   }
++   for(var entry:LMItems.ITEMS.getEntries()) {
++    var stack=new ItemStack(entry.get()); var food=stack.get(DataComponents.FOOD);if(food==null)continue;
++    var consumable=stack.get(DataComponents.CONSUMABLE);check(entry.getId()+"_consumable",consumable!=null);
++    if(food.nutrition()!=5&&food.nutrition()!=10||!entry.getId().getPath().contains("mutton_rack")) {
++     check(entry.getId()+"_effects",consumable.onConsumeEffects().stream().anyMatch(e->e instanceof ApplyStatusEffectsConsumeEffect));
++    }
++    player.getInventory().clearContent();player.removeAllEffects();player.getFoodData().setFoodLevel(1);
++    var result=stack.finishUsingItem(world,player);
++    check(entry.getId()+"_feeds",player.getFoodData().getFoodLevel()==1+food.nutrition());
++    for(var effect:consumable.onConsumeEffects()) if(effect instanceof ApplyStatusEffectsConsumeEffect effects) {
++     for(var expected:effects.effects()) {
++      var actual=player.getEffect(expected.getEffect());
++      check(entry.getId()+"_effect_applied_"+expected.getEffect().unwrapKey().orElseThrow().identifier(),actual!=null&&actual.getDuration()==expected.getDuration()&&actual.getAmplifier()==expected.getAmplifier());
++     }
++    }
++    if(entry.getId().getPath().equals("sweet_berry_custard"))check("custard_bottle",result.is(Items.GLASS_BOTTLE));
++    else if(!entry.getId().getPath().equals("raw_mutton_rack")&&!entry.getId().getPath().equals("cooked_mutton_rack"))check(entry.getId()+"_bowl",result.is(Items.BOWL));
++   }
++   var manager=server.getServerResources().managers().getListener(net.neoforged.neoforge.resource.NeoForgeReloadListeners.LOOT_MODIFIERS_KEY);
++   var sheep=net.minecraft.world.entity.EntityTypes.SHEEP.create(world,net.minecraft.world.entity.EntitySpawnReason.COMMAND);
++   for(boolean burning:new boolean[]{false,true}) {
++    if(burning)sheep.igniteForSeconds(30);else sheep.clearFire();
++    for(boolean knife:new boolean[]{false,true}) {
++     player.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(knife?vectorwing.farmersdelight.common.registry.ModItems.IRON_KNIFE.get():Items.STICK));
++     var params=new net.minecraft.world.level.storage.loot.LootParams.Builder(world)
++       .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.THIS_ENTITY,sheep)
++       .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.DIRECT_ATTACKING_ENTITY,player)
++       .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.ORIGIN,sheep.position())
++       .withParameter(net.minecraft.world.level.storage.loot.parameters.LootContextParams.DAMAGE_SOURCE,world.damageSources().playerAttack(player))
++       .create(net.minecraft.world.level.storage.loot.parameters.LootContextParamSets.ENTITY);
++     var ctx=new net.minecraft.world.level.storage.loot.LootContext.Builder(params).create(java.util.Optional.empty());
++     for(String kind:new String[]{"raw","cooked"}) {
++      var mod=manager.getModifier(Identifier.parse("large_meals:scavenging_"+kind+"_mutton_rack_from_sheep"));
++      check("loot_modifier_loaded_"+kind,mod!=null);
++      var loot=mod.apply(new it.unimi.dsi.fastutil.objects.ObjectArrayList<ItemStack>(),ctx);
++      check("sheep_loot_"+kind+"_burning_"+burning+"_knife_"+knife,loot.size()==(knife&&(burning==kind.equals("cooked"))?1:0));
++     }
++    }
++   }
++   System.out.println("LM_PROBE COMPLETE");
++  } catch(Throwable ex) {System.out.println("LM_PROBE FAIL");ex.printStackTrace();} finally { server.halt(false); }
++ }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/chicken_curry.json b/src/generated/resources/assets/large_meals/items/chicken_curry.json
+new file mode 100644
+index 0000000..a0588c9
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/chicken_curry.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/chicken_curry"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/cod_deluxe.json b/src/generated/resources/assets/large_meals/items/cod_deluxe.json
+new file mode 100644
+index 0000000..460c06e
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/cod_deluxe.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/cod_deluxe"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/cooked_mutton_rack.json b/src/generated/resources/assets/large_meals/items/cooked_mutton_rack.json
+new file mode 100644
+index 0000000..2827178
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/cooked_mutton_rack.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/cooked_mutton_rack"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/hearty_lunch.json b/src/generated/resources/assets/large_meals/items/hearty_lunch.json
+new file mode 100644
+index 0000000..c524c77
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/hearty_lunch.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/hearty_lunch"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/mushroom_pot_pie.json b/src/generated/resources/assets/large_meals/items/mushroom_pot_pie.json
+new file mode 100644
+index 0000000..8ba9694
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/mushroom_pot_pie.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/mushroom_pot_pie"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/mushroom_pot_pie_block.json b/src/generated/resources/assets/large_meals/items/mushroom_pot_pie_block.json
+new file mode 100644
+index 0000000..eba57f0
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/mushroom_pot_pie_block.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/mushroom_pot_pie_block"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/omurice.json b/src/generated/resources/assets/large_meals/items/omurice.json
+new file mode 100644
+index 0000000..c59e9d3
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/omurice.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/omurice"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/omurice_block.json b/src/generated/resources/assets/large_meals/items/omurice_block.json
+new file mode 100644
+index 0000000..73da545
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/omurice_block.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/omurice_block"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/pasta_with_mushroom_sauce.json b/src/generated/resources/assets/large_meals/items/pasta_with_mushroom_sauce.json
+new file mode 100644
+index 0000000..cb37359
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/pasta_with_mushroom_sauce.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/pasta_with_mushroom_sauce"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/potato_soup.json b/src/generated/resources/assets/large_meals/items/potato_soup.json
+new file mode 100644
+index 0000000..04ade44
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/potato_soup.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/potato_soup"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/pufferfish_broth.json b/src/generated/resources/assets/large_meals/items/pufferfish_broth.json
+new file mode 100644
+index 0000000..7e64c5b
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/pufferfish_broth.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/pufferfish_broth"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/raw_mutton_rack.json b/src/generated/resources/assets/large_meals/items/raw_mutton_rack.json
+new file mode 100644
+index 0000000..ff56d4a
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/raw_mutton_rack.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/raw_mutton_rack"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/red_soup.json b/src/generated/resources/assets/large_meals/items/red_soup.json
+new file mode 100644
+index 0000000..401b434
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/red_soup.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/red_soup"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/rice_pudding.json b/src/generated/resources/assets/large_meals/items/rice_pudding.json
+new file mode 100644
+index 0000000..8403324
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/rice_pudding.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/rice_pudding"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/roasted_mutton_rack.json b/src/generated/resources/assets/large_meals/items/roasted_mutton_rack.json
+new file mode 100644
+index 0000000..a28fe06
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/roasted_mutton_rack.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/roasted_mutton_rack"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/roasted_mutton_rack_block.json b/src/generated/resources/assets/large_meals/items/roasted_mutton_rack_block.json
+new file mode 100644
+index 0000000..2aad5e6
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/roasted_mutton_rack_block.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/roasted_mutton_rack_block"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/sweet_berry_custard.json b/src/generated/resources/assets/large_meals/items/sweet_berry_custard.json
+new file mode 100644
+index 0000000..5fe9e65
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/sweet_berry_custard.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/sweet_berry_custard"
++  }
++}
+diff --git a/src/generated/resources/assets/large_meals/items/tomato_egg_soup.json b/src/generated/resources/assets/large_meals/items/tomato_egg_soup.json
+new file mode 100644
+index 0000000..9c29930
+--- /dev/null
++++ b/src/generated/resources/assets/large_meals/items/tomato_egg_soup.json
+@@ -0,0 +1,6 @@
++{
++  "model": {
++    "type": "minecraft:model",
++    "model": "large_meals:item/tomato_egg_soup"
++  }
++}
+diff --git a/src/generated/resources/data/c/tags/item/foods/edible_when_placed.json b/src/generated/resources/data/c/tags/item/foods/edible_when_placed.json
+index 21e51d2..148ca3f 100644
+--- a/src/generated/resources/data/c/tags/item/foods/edible_when_placed.json
++++ b/src/generated/resources/data/c/tags/item/foods/edible_when_placed.json
+@@ -4,4 +4,4 @@
+     "large_meals:mushroom_pot_pie_block",
+     "large_meals:roasted_mutton_rack_block"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/c/tags/item/foods/pie.json b/src/generated/resources/data/c/tags/item/foods/pie.json
+index 8565f73..417238b 100644
+--- a/src/generated/resources/data/c/tags/item/foods/pie.json
++++ b/src/generated/resources/data/c/tags/item/foods/pie.json
+@@ -2,4 +2,4 @@
+   "values": [
+     "large_meals:mushroom_pot_pie"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/c/tags/item/foods/soup.json b/src/generated/resources/data/c/tags/item/foods/soup.json
+index 329a442..a75035b 100644
+--- a/src/generated/resources/data/c/tags/item/foods/soup.json
++++ b/src/generated/resources/data/c/tags/item/foods/soup.json
+@@ -5,4 +5,4 @@
+     "large_meals:red_soup",
+     "large_meals:tomato_egg_soup"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/farmersdelight/tags/item/feasts.json b/src/generated/resources/data/farmersdelight/tags/item/feasts.json
+index 21e51d2..148ca3f 100644
+--- a/src/generated/resources/data/farmersdelight/tags/item/feasts.json
++++ b/src/generated/resources/data/farmersdelight/tags/item/feasts.json
+@@ -4,4 +4,4 @@
+     "large_meals:mushroom_pot_pie_block",
+     "large_meals:roasted_mutton_rack_block"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/farmersdelight/tags/item/meals.json b/src/generated/resources/data/farmersdelight/tags/item/meals.json
+index 4a2c97f..7c2eae7 100644
+--- a/src/generated/resources/data/farmersdelight/tags/item/meals.json
++++ b/src/generated/resources/data/farmersdelight/tags/item/meals.json
+@@ -5,4 +5,4 @@
+     "large_meals:chicken_curry",
+     "large_meals:pasta_with_mushroom_sauce"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/farmersdelight/tags/item/sweets.json b/src/generated/resources/data/farmersdelight/tags/item/sweets.json
+index 4d828e0..c5073d4 100644
+--- a/src/generated/resources/data/farmersdelight/tags/item/sweets.json
++++ b/src/generated/resources/data/farmersdelight/tags/item/sweets.json
+@@ -3,4 +3,4 @@
+     "large_meals:sweet_berry_custard",
+     "large_meals:rice_pudding"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/chicken_curry.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/chicken_curry.json
+index cbe3fea..9a65097 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/chicken_curry.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/chicken_curry.json
+@@ -36,4 +36,4 @@
+       "large_meals:cooking/chicken_curry"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/cod_deluxe.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/cod_deluxe.json
+index 4488d74..d7db585 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/cod_deluxe.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/cod_deluxe.json
+@@ -34,4 +34,4 @@
+       "large_meals:cooking/cod_deluxe"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/hearty_lunch.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/hearty_lunch.json
+index ef6178e..5e2e269 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/hearty_lunch.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/hearty_lunch.json
+@@ -36,4 +36,4 @@
+       "large_meals:cooking/hearty_lunch"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/mushroom_pot_pie_block.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/mushroom_pot_pie_block.json
+index 93ee2bc..a326c7d 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/mushroom_pot_pie_block.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/mushroom_pot_pie_block.json
+@@ -39,4 +39,4 @@
+       "large_meals:cooking/mushroom_pot_pie_block"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/omurice_block.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/omurice_block.json
+index c07c824..29ec061 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/omurice_block.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/omurice_block.json
+@@ -39,4 +39,4 @@
+       "large_meals:cooking/omurice_block"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/pasta_with_mushroom_sauce.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/pasta_with_mushroom_sauce.json
+index 9cd5b2f..bd0ed58 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/pasta_with_mushroom_sauce.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/pasta_with_mushroom_sauce.json
+@@ -35,4 +35,4 @@
+       "large_meals:cooking/pasta_with_mushroom_sauce"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/potato_soup.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/potato_soup.json
+index 5a5f3b3..d600121 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/potato_soup.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/potato_soup.json
+@@ -34,4 +34,4 @@
+       "large_meals:cooking/potato_soup"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/pufferfish_broth.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/pufferfish_broth.json
+index c2bd925..81cee2f 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/pufferfish_broth.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/pufferfish_broth.json
+@@ -36,4 +36,4 @@
+       "large_meals:cooking/pufferfish_broth"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/red_soup.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/red_soup.json
+index a33a620..04a23fb 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/red_soup.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/red_soup.json
+@@ -33,4 +33,4 @@
+       "large_meals:cooking/red_soup"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/rice_pudding.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/rice_pudding.json
+index a8cac7f..da3dc85 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/rice_pudding.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/rice_pudding.json
+@@ -33,4 +33,4 @@
+       "large_meals:cooking/rice_pudding"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/sweet_berry_custard.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/sweet_berry_custard.json
+index 6f7aa32..f14ef9f 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/sweet_berry_custard.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/sweet_berry_custard.json
+@@ -33,4 +33,4 @@
+       "large_meals:cooking/sweet_berry_custard"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/cooking/tomato_egg_soup.json b/src/generated/resources/data/large_meals/advancement/recipes/cooking/tomato_egg_soup.json
+index 3e3eea8..1bc2d23 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/cooking/tomato_egg_soup.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/cooking/tomato_egg_soup.json
+@@ -33,4 +33,4 @@
+       "large_meals:cooking/tomato_egg_soup"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack.json b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack.json
+index 61f92bd..42aa012 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack.json
+@@ -29,4 +29,4 @@
+       "large_meals:cooked_mutton_rack"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_campfire_cooking.json b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_campfire_cooking.json
+index 826bb01..21dd7fc 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_campfire_cooking.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_campfire_cooking.json
+@@ -29,4 +29,4 @@
+       "large_meals:cooked_mutton_rack_from_campfire_cooking"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_smoking.json b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_smoking.json
+index 189a22b..05cb156 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_smoking.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/food/cooked_mutton_rack_from_smoking.json
+@@ -29,4 +29,4 @@
+       "large_meals:cooked_mutton_rack_from_smoking"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/advancement/recipes/food/roasted_mutton_rack_block.json b/src/generated/resources/data/large_meals/advancement/recipes/food/roasted_mutton_rack_block.json
+index 5fe5671..f24baed 100644
+--- a/src/generated/resources/data/large_meals/advancement/recipes/food/roasted_mutton_rack_block.json
++++ b/src/generated/resources/data/large_meals/advancement/recipes/food/roasted_mutton_rack_block.json
+@@ -34,4 +34,4 @@
+       "large_meals:roasted_mutton_rack_block"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/loot_modifiers/scavenging_cooked_mutton_rack_from_sheep.json b/src/generated/resources/data/large_meals/loot_modifiers/scavenging_cooked_mutton_rack_from_sheep.json
+index a037bd0..b13ef0d 100644
+--- a/src/generated/resources/data/large_meals/loot_modifiers/scavenging_cooked_mutton_rack_from_sheep.json
++++ b/src/generated/resources/data/large_meals/loot_modifiers/scavenging_cooked_mutton_rack_from_sheep.json
+@@ -25,9 +25,9 @@
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+-        "type": "minecraft:sheep"
++        "minecraft:entity_type": "minecraft:sheep"
+       }
+     }
+   ],
+   "item": "large_meals:cooked_mutton_rack"
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/loot_modifiers/scavenging_raw_mutton_rack_from_sheep.json b/src/generated/resources/data/large_meals/loot_modifiers/scavenging_raw_mutton_rack_from_sheep.json
+index c3fbf61..e671269 100644
+--- a/src/generated/resources/data/large_meals/loot_modifiers/scavenging_raw_mutton_rack_from_sheep.json
++++ b/src/generated/resources/data/large_meals/loot_modifiers/scavenging_raw_mutton_rack_from_sheep.json
+@@ -25,9 +25,9 @@
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+-        "type": "minecraft:sheep"
++        "minecraft:entity_type": "minecraft:sheep"
+       }
+     }
+   ],
+   "item": "large_meals:raw_mutton_rack"
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/loot_table/blocks/mushroom_pot_pie_block.json b/src/generated/resources/data/large_meals/loot_table/blocks/mushroom_pot_pie_block.json
+index 83f460d..025cab6 100644
+--- a/src/generated/resources/data/large_meals/loot_table/blocks/mushroom_pot_pie_block.json
++++ b/src/generated/resources/data/large_meals/loot_table/blocks/mushroom_pot_pie_block.json
+@@ -46,4 +46,4 @@
+     }
+   ],
+   "random_sequence": "large_meals:blocks/mushroom_pot_pie_block"
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/loot_table/blocks/omurice_block.json b/src/generated/resources/data/large_meals/loot_table/blocks/omurice_block.json
+index b305be4..c23bed5 100644
+--- a/src/generated/resources/data/large_meals/loot_table/blocks/omurice_block.json
++++ b/src/generated/resources/data/large_meals/loot_table/blocks/omurice_block.json
+@@ -46,4 +46,4 @@
+     }
+   ],
+   "random_sequence": "large_meals:blocks/omurice_block"
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/loot_table/blocks/roasted_mutton_rack_block.json b/src/generated/resources/data/large_meals/loot_table/blocks/roasted_mutton_rack_block.json
+index 6c7d22c..cb8a57e 100644
+--- a/src/generated/resources/data/large_meals/loot_table/blocks/roasted_mutton_rack_block.json
++++ b/src/generated/resources/data/large_meals/loot_table/blocks/roasted_mutton_rack_block.json
+@@ -46,4 +46,4 @@
+     }
+   ],
+   "random_sequence": "large_meals:blocks/roasted_mutton_rack_block"
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack.json b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack.json
+index f4deca6..7a39973 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack.json
++++ b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack.json
+@@ -3,11 +3,9 @@
+   "category": "food",
+   "cookingtime": 200,
+   "experience": 0.35,
+-  "ingredient": {
+-    "item": "large_meals:raw_mutton_rack"
+-  },
++  "ingredient": "large_meals:raw_mutton_rack",
+   "result": {
+     "count": 1,
+     "id": "large_meals:cooked_mutton_rack"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_campfire_cooking.json b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_campfire_cooking.json
+index af21609..a19d911 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_campfire_cooking.json
++++ b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_campfire_cooking.json
+@@ -3,11 +3,9 @@
+   "category": "food",
+   "cookingtime": 600,
+   "experience": 0.35,
+-  "ingredient": {
+-    "item": "large_meals:raw_mutton_rack"
+-  },
++  "ingredient": "large_meals:raw_mutton_rack",
+   "result": {
+     "count": 1,
+     "id": "large_meals:cooked_mutton_rack"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_smoking.json b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_smoking.json
+index ed625c8..7b70964 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_smoking.json
++++ b/src/generated/resources/data/large_meals/recipe/cooked_mutton_rack_from_smoking.json
+@@ -3,11 +3,9 @@
+   "category": "food",
+   "cookingtime": 100,
+   "experience": 0.35,
+-  "ingredient": {
+-    "item": "large_meals:raw_mutton_rack"
+-  },
++  "ingredient": "large_meals:raw_mutton_rack",
+   "result": {
+     "count": 1,
+     "id": "large_meals:cooked_mutton_rack"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/chicken_curry.json b/src/generated/resources/data/large_meals/recipe/cooking/chicken_curry.json
+index feb9811..3ac1571 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/chicken_curry.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/chicken_curry.json
+@@ -2,22 +2,14 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:foods/raw_chicken"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "item": "farmersdelight:tomato_sauce"
+-    }
++    "#c:foods/raw_chicken",
++    "#c:foods/onion",
++    "#c:drinks/milk",
++    "farmersdelight:tomato_sauce"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:chicken_curry"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/cod_deluxe.json b/src/generated/resources/data/large_meals/recipe/cooking/cod_deluxe.json
+index 46f6675..e8feb92 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/cod_deluxe.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/cod_deluxe.json
+@@ -2,22 +2,14 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:foods/raw_cod"
+-    },
+-    {
+-      "item": "minecraft:beetroot"
+-    },
+-    {
+-      "tag": "c:crops/rice"
+-    },
+-    {
+-      "tag": "c:foods/tomato"
+-    }
++    "#c:foods/raw_cod",
++    "minecraft:beetroot",
++    "#c:crops/rice",
++    "#c:foods/tomato"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:cod_deluxe"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/hearty_lunch.json b/src/generated/resources/data/large_meals/recipe/cooking/hearty_lunch.json
+index 0d3896b..5be6ffc 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/hearty_lunch.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/hearty_lunch.json
+@@ -2,28 +2,16 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:foods/raw_bacon"
+-    },
+-    {
+-      "tag": "c:foods/raw_bacon"
+-    },
+-    {
+-      "tag": "c:crops/rice"
+-    },
+-    {
+-      "tag": "c:foods/cabbage"
+-    },
+-    {
+-      "item": "minecraft:carrot"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    }
++    "#c:foods/raw_bacon",
++    "#c:foods/raw_bacon",
++    "#c:crops/rice",
++    "#c:foods/cabbage",
++    "minecraft:carrot",
++    "#c:foods/onion"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:hearty_lunch"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/mushroom_pot_pie_block.json b/src/generated/resources/data/large_meals/recipe/cooking/mushroom_pot_pie_block.json
+index 59f615e..e4d5866 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/mushroom_pot_pie_block.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/mushroom_pot_pie_block.json
+@@ -3,28 +3,16 @@
+   "cookingtime": 250,
+   "experience": 1.5,
+   "ingredients": [
+-    {
+-      "item": "farmersdelight:brown_mushroom_colony"
+-    },
+-    {
+-      "tag": "c:foods/raw_chicken"
+-    },
+-    {
+-      "item": "minecraft:carrot"
+-    },
+-    {
+-      "tag": "c:foods/cabbage"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "item": "farmersdelight:pie_crust"
+-    }
++    "farmersdelight:brown_mushroom_colony",
++    "#c:foods/raw_chicken",
++    "minecraft:carrot",
++    "#c:foods/cabbage",
++    "#c:drinks/milk",
++    "farmersdelight:pie_crust"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:mushroom_pot_pie_block"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/omurice_block.json b/src/generated/resources/data/large_meals/recipe/cooking/omurice_block.json
+index c517b46..0679a7b 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/omurice_block.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/omurice_block.json
+@@ -3,28 +3,16 @@
+   "cookingtime": 250,
+   "experience": 1.5,
+   "ingredients": [
+-    {
+-      "tag": "c:crops/rice"
+-    },
+-    {
+-      "tag": "c:foods/raw_chicken"
+-    },
+-    {
+-      "tag": "c:eggs"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "item": "minecraft:carrot"
+-    },
+-    {
+-      "tag": "c:foods/cabbage"
+-    }
++    "#c:crops/rice",
++    "#c:foods/raw_chicken",
++    "#c:eggs",
++    "#c:drinks/milk",
++    "minecraft:carrot",
++    "#c:foods/cabbage"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:omurice_block"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/pasta_with_mushroom_sauce.json b/src/generated/resources/data/large_meals/recipe/cooking/pasta_with_mushroom_sauce.json
+index 159331d..7f1579a 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/pasta_with_mushroom_sauce.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/pasta_with_mushroom_sauce.json
+@@ -2,25 +2,15 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "item": "minecraft:brown_mushroom"
+-    },
+-    {
+-      "item": "minecraft:brown_mushroom"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    },
+-    {
+-      "tag": "c:foods/pasta"
+-    }
++    "minecraft:brown_mushroom",
++    "minecraft:brown_mushroom",
++    "#c:drinks/milk",
++    "#c:foods/onion",
++    "#c:foods/pasta"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:pasta_with_mushroom_sauce"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/potato_soup.json b/src/generated/resources/data/large_meals/recipe/cooking/potato_soup.json
+index 3f44e90..f7718c7 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/potato_soup.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/potato_soup.json
+@@ -2,22 +2,14 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "item": "minecraft:potato"
+-    },
+-    {
+-      "item": "minecraft:potato"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    }
++    "minecraft:potato",
++    "minecraft:potato",
++    "#c:foods/onion",
++    "#c:drinks/milk"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:potato_soup"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/pufferfish_broth.json b/src/generated/resources/data/large_meals/recipe/cooking/pufferfish_broth.json
+index 26854f1..1882f27 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/pufferfish_broth.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/pufferfish_broth.json
+@@ -2,25 +2,15 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "item": "minecraft:pufferfish"
+-    },
+-    {
+-      "item": "minecraft:potato"
+-    },
+-    {
+-      "item": "minecraft:beetroot"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    }
++    "minecraft:pufferfish",
++    "minecraft:potato",
++    "minecraft:beetroot",
++    "#c:foods/onion",
++    "#c:drinks/milk"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:pufferfish_broth"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/red_soup.json b/src/generated/resources/data/large_meals/recipe/cooking/red_soup.json
+index f685f1d..b64623d 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/red_soup.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/red_soup.json
+@@ -2,19 +2,13 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:foods/tomato"
+-    },
+-    {
+-      "item": "minecraft:beetroot"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    }
++    "#c:foods/tomato",
++    "minecraft:beetroot",
++    "#c:foods/onion"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:red_soup"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/rice_pudding.json b/src/generated/resources/data/large_meals/recipe/cooking/rice_pudding.json
+index 651afb0..a8b713c 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/rice_pudding.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/rice_pudding.json
+@@ -2,19 +2,13 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:crops/rice"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "item": "minecraft:sugar"
+-    }
++    "#c:crops/rice",
++    "#c:drinks/milk",
++    "minecraft:sugar"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:rice_pudding"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/sweet_berry_custard.json b/src/generated/resources/data/large_meals/recipe/cooking/sweet_berry_custard.json
+index b825f93..65a65a6 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/sweet_berry_custard.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/sweet_berry_custard.json
+@@ -2,22 +2,14 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "item": "minecraft:sweet_berries"
+-    },
+-    {
+-      "tag": "c:drinks/milk"
+-    },
+-    {
+-      "tag": "c:eggs"
+-    },
+-    {
+-      "item": "minecraft:sugar"
+-    }
++    "minecraft:sweet_berries",
++    "#c:drinks/milk",
++    "#c:eggs",
++    "minecraft:sugar"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:sweet_berry_custard"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cooking/tomato_egg_soup.json b/src/generated/resources/data/large_meals/recipe/cooking/tomato_egg_soup.json
+index 6a154e1..1f13d2f 100644
+--- a/src/generated/resources/data/large_meals/recipe/cooking/tomato_egg_soup.json
++++ b/src/generated/resources/data/large_meals/recipe/cooking/tomato_egg_soup.json
+@@ -2,19 +2,13 @@
+   "type": "farmersdelight:cooking",
+   "experience": 1.0,
+   "ingredients": [
+-    {
+-      "tag": "c:foods/tomato"
+-    },
+-    {
+-      "tag": "c:eggs"
+-    },
+-    {
+-      "tag": "c:foods/onion"
+-    }
++    "#c:foods/tomato",
++    "#c:eggs",
++    "#c:foods/onion"
+   ],
+   "recipe_book_tab": "meals",
+   "result": {
+     "count": 1,
+     "id": "large_meals:tomato_egg_soup"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cutting/cooked_mutton_rack.json b/src/generated/resources/data/large_meals/recipe/cutting/cooked_mutton_rack.json
+index d818ad9..7cafda8 100644
+--- a/src/generated/resources/data/large_meals/recipe/cutting/cooked_mutton_rack.json
++++ b/src/generated/resources/data/large_meals/recipe/cutting/cooked_mutton_rack.json
+@@ -1,9 +1,7 @@
+ {
+   "type": "farmersdelight:cutting",
+   "ingredients": [
+-    {
+-      "item": "large_meals:cooked_mutton_rack"
+-    }
++    "large_meals:cooked_mutton_rack"
+   ],
+   "result": [
+     {
+@@ -13,7 +11,5 @@
+       }
+     }
+   ],
+-  "tool": {
+-    "tag": "c:tools/knife"
+-  }
+-}
+\ No newline at end of file
++  "tool": "#c:tools/knife"
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/cutting/raw_mutton_rack.json b/src/generated/resources/data/large_meals/recipe/cutting/raw_mutton_rack.json
+index 55e0eba..7aebcf9 100644
+--- a/src/generated/resources/data/large_meals/recipe/cutting/raw_mutton_rack.json
++++ b/src/generated/resources/data/large_meals/recipe/cutting/raw_mutton_rack.json
+@@ -1,9 +1,7 @@
+ {
+   "type": "farmersdelight:cutting",
+   "ingredients": [
+-    {
+-      "item": "large_meals:raw_mutton_rack"
+-    }
++    "large_meals:raw_mutton_rack"
+   ],
+   "result": [
+     {
+@@ -13,7 +11,5 @@
+       }
+     }
+   ],
+-  "tool": {
+-    "tag": "c:tools/knife"
+-  }
+-}
+\ No newline at end of file
++  "tool": "#c:tools/knife"
++}
+diff --git a/src/generated/resources/data/large_meals/recipe/roasted_mutton_rack_block.json b/src/generated/resources/data/large_meals/recipe/roasted_mutton_rack_block.json
+index 67dc8d7..105cb1d 100644
+--- a/src/generated/resources/data/large_meals/recipe/roasted_mutton_rack_block.json
++++ b/src/generated/resources/data/large_meals/recipe/roasted_mutton_rack_block.json
+@@ -2,36 +2,18 @@
+   "type": "minecraft:crafting_shapeless",
+   "category": "misc",
+   "ingredients": [
+-    {
+-      "item": "farmersdelight:cooked_rice"
+-    },
+-    {
+-      "item": "farmersdelight:cooked_rice"
+-    },
+-    {
+-      "item": "farmersdelight:cooked_rice"
+-    },
+-    {
+-      "item": "minecraft:carrot"
+-    },
+-    {
+-      "item": "minecraft:carrot"
+-    },
+-    {
+-      "item": "large_meals:cooked_mutton_rack"
+-    },
+-    {
+-      "item": "minecraft:baked_potato"
+-    },
+-    {
+-      "item": "minecraft:baked_potato"
+-    },
+-    {
+-      "item": "minecraft:bowl"
+-    }
++    "farmersdelight:cooked_rice",
++    "farmersdelight:cooked_rice",
++    "farmersdelight:cooked_rice",
++    "minecraft:carrot",
++    "minecraft:carrot",
++    "large_meals:cooked_mutton_rack",
++    "minecraft:baked_potato",
++    "minecraft:baked_potato",
++    "minecraft:bowl"
+   ],
+   "result": {
+     "count": 1,
+     "id": "large_meals:roasted_mutton_rack_block"
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/src/generated/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json b/src/generated/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json
+deleted file mode 100644
+index eaeac5d..0000000
+--- a/src/generated/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json
++++ /dev/null
+@@ -1,7 +0,0 @@
+-{
+-  "entries": [
+-    "large_meals:scavenging_cooked_mutton_rack_from_sheep",
+-    "large_meals:scavenging_raw_mutton_rack_from_sheep"
+-  ],
+-  "replace": false
+-}
+\ No newline at end of file
+diff --git a/src/main/java/cz/krelox/large_meals/LargeMeals.java b/src/main/java/cz/krelox/large_meals/LargeMeals.java
+index 7dd7398..ace2a9b 100644
+--- a/src/main/java/cz/krelox/large_meals/LargeMeals.java
++++ b/src/main/java/cz/krelox/large_meals/LargeMeals.java
+@@ -1,66 +1,16 @@
+ package cz.krelox.large_meals;
+ 
+ import cz.krelox.large_meals.block.LMBlocks;
+-import cz.krelox.large_meals.data.*;
+-import cz.krelox.large_meals.data.loot.LMBlockLoot;
+ import cz.krelox.large_meals.item.LMItems;
+-import net.minecraft.DetectedVersion;
+-import net.minecraft.data.DataProvider;
+-import net.minecraft.data.loot.LootTableProvider;
+-import net.minecraft.data.metadata.PackMetadataGenerator;
+-import net.minecraft.network.chat.Component;
+-import net.minecraft.server.packs.PackType;
+-import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
+-import net.minecraft.util.InclusiveRange;
+-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+ import net.neoforged.bus.api.IEventBus;
+ import net.neoforged.fml.common.Mod;
+-import net.neoforged.neoforge.data.event.GatherDataEvent;
+-
+-import java.util.List;
+-import java.util.Optional;
+-import java.util.Set;
+-import java.util.function.Consumer;
+ 
+ @Mod(LargeMeals.MOD_ID)
+ public class LargeMeals {
+     public static final String MOD_ID = "large_meals";
+ 
+     public LargeMeals(IEventBus modEventBus) {
+-        modEventBus.addListener(this::dataSetup);
+-
+         LMItems.ITEMS.register(modEventBus);
+         LMBlocks.BLOCKS.register(modEventBus);
+     }
+-
+-    public void dataSetup(GatherDataEvent event) {
+-        var generator = event.getGenerator();
+-        var fileHelper = event.getExistingFileHelper();
+-        var lookupProvider = event.getLookupProvider();
+-        var packOutput = generator.getPackOutput();
+-
+-        Consumer<DataProvider> client = provider -> generator.addProvider(event.includeClient(), provider);
+-        Consumer<DataProvider> server = provider -> generator.addProvider(event.includeServer(), provider);
+-
+-        // Client Data
+-        client.accept(new LMBlockStateProvider(packOutput, fileHelper));
+-        client.accept(new LMItemModelProvider(packOutput, fileHelper));
+-        client.accept(new LMLanguageProvider(packOutput));
+-
+-        // Server Data
+-        server.accept(new LMRecipeProvider(packOutput, lookupProvider));
+-        server.accept(new LootTableProvider(packOutput, Set.of(), List.of(
+-                new LootTableProvider.SubProviderEntry(LMBlockLoot::new, LootContextParamSets.BLOCK)
+-        ), lookupProvider));
+-        server.accept(new LMLootModifierProvider(packOutput, lookupProvider));
+-        var blockTags = new LMBlockTagsProvider(packOutput, lookupProvider, fileHelper);
+-        server.accept(blockTags);
+-        server.accept(new LMItemTagsProvider(packOutput, lookupProvider, blockTags.contentsGetter(), fileHelper));
+-
+-        // pack.mcmeta
+-        generator.addProvider(true, new PackMetadataGenerator(packOutput).add(PackMetadataSection.TYPE, new PackMetadataSection(
+-                Component.translatable("pack.large_meals.mod.description"),
+-                DetectedVersion.BUILT_IN.getPackVersion(PackType.SERVER_DATA),
+-                Optional.of(new InclusiveRange<>(0, Integer.MAX_VALUE)))));
+-    }
+ }
+diff --git a/src/main/java/cz/krelox/large_meals/block/LMBlocks.java b/src/main/java/cz/krelox/large_meals/block/LMBlocks.java
+index 4bb6802..b29334d 100644
+--- a/src/main/java/cz/krelox/large_meals/block/LMBlocks.java
++++ b/src/main/java/cz/krelox/large_meals/block/LMBlocks.java
+@@ -11,12 +11,12 @@ public class LMBlocks {
+     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(LargeMeals.MOD_ID);
+ 
+     // Feasts
+-    public static final DeferredBlock<OmuriceBlock> OMURICE_BLOCK = BLOCKS.register("omurice_block",
+-            () -> new OmuriceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), LMItems.OMURICE::get, true));
+-    public static final DeferredBlock<MushroomPotPieBlock> MUSHROOM_POT_PIE_BLOCK = BLOCKS.register("mushroom_pot_pie_block",
+-            () -> new MushroomPotPieBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), LMItems.MUSHROOM_POT_PIE::get, true));
+-    public static final DeferredBlock<RoastedMuttonRackBlock> ROASTED_MUTTON_RACK_BLOCK = BLOCKS.register("roasted_mutton_rack_block",
+-            () -> new RoastedMuttonRackBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), LMItems.ROASTED_MUTTON_RACK::get, true));
++    public static final DeferredBlock<OmuriceBlock> OMURICE_BLOCK = BLOCKS.registerBlock("omurice_block",
++            props -> new OmuriceBlock(props, LMItems.OMURICE::get, true), () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE));
++    public static final DeferredBlock<MushroomPotPieBlock> MUSHROOM_POT_PIE_BLOCK = BLOCKS.registerBlock("mushroom_pot_pie_block",
++            props -> new MushroomPotPieBlock(props, LMItems.MUSHROOM_POT_PIE::get, true), () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE));
++    public static final DeferredBlock<RoastedMuttonRackBlock> ROASTED_MUTTON_RACK_BLOCK = BLOCKS.registerBlock("roasted_mutton_rack_block",
++            props -> new RoastedMuttonRackBlock(props, LMItems.ROASTED_MUTTON_RACK::get, true), () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE));
+ 
+     private LMBlocks() {
+     }
+diff --git a/src/main/java/cz/krelox/large_meals/item/LMItems.java b/src/main/java/cz/krelox/large_meals/item/LMItems.java
+index ada6115..40acce4 100644
+--- a/src/main/java/cz/krelox/large_meals/item/LMItems.java
++++ b/src/main/java/cz/krelox/large_meals/item/LMItems.java
+@@ -13,7 +13,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
+ import vectorwing.farmersdelight.common.item.ConsumableItem;
+ import vectorwing.farmersdelight.common.registry.ModEffects;
+ 
+-import java.util.function.Supplier;
++import java.util.function.Function;
++import net.minecraft.world.item.component.Consumable;
++import net.minecraft.world.item.component.Consumables;
++import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
+ 
+ import static vectorwing.farmersdelight.common.FoodValues.*;
+ import static vectorwing.farmersdelight.common.registry.ModItems.*;
+@@ -21,57 +24,57 @@ import static vectorwing.farmersdelight.common.registry.ModItems.*;
+ public class LMItems {
+     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LargeMeals.MOD_ID);
+ 
+-    public static <I extends Item> DeferredItem<I> registerWithTab(String name, Supplier<I> supplier) {
+-        var item = ITEMS.register(name, supplier);
++    public static <I extends Item> DeferredItem<I> registerWithTab(String name, Function<Item.Properties, I> factory) {
++        var item = ITEMS.registerItem(name, factory);
+         CREATIVE_TAB_ITEMS.add(item::get);
+         return item;
+     }
+ 
+     // Foodstuffs
+     public static final DeferredItem<Item> RAW_MUTTON_RACK = registerWithTab("raw_mutton_rack",
+-            () -> new Item(foodItem(FoodValues.RAW_MUTTON_RACK)));
++            props -> new Item(props.food(FoodValues.RAW_MUTTON_RACK, FoodValues.consumableFor(FoodValues.RAW_MUTTON_RACK))));
+     public static final DeferredItem<Item> COOKED_MUTTON_RACK = registerWithTab("cooked_mutton_rack",
+-            () -> new Item(foodItem(FoodValues.COOKED_MUTTON_RACK)));
++            props -> new Item(props.food(FoodValues.COOKED_MUTTON_RACK, FoodValues.consumableFor(FoodValues.COOKED_MUTTON_RACK))));
+ 
+     // Soups and Stews
+     public static final DeferredItem<ConsumableItem> PUFFERFISH_BROTH = registerWithTab("pufferfish_broth",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.PUFFERFISH_BROTH), true));
++            props -> new ConsumableItem(props.food(FoodValues.PUFFERFISH_BROTH, FoodValues.consumableFor(FoodValues.PUFFERFISH_BROTH)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> POTATO_SOUP = registerWithTab("potato_soup",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.POTATO_SOUP), true));
++            props -> new ConsumableItem(props.food(FoodValues.POTATO_SOUP, FoodValues.consumableFor(FoodValues.POTATO_SOUP)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> RED_SOUP = registerWithTab("red_soup",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.RED_SOUP), true));
++            props -> new ConsumableItem(props.food(FoodValues.RED_SOUP, FoodValues.consumableFor(FoodValues.RED_SOUP)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> TOMATO_EGG_SOUP = registerWithTab("tomato_egg_soup",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.TOMATO_EGG_SOUP), true));
++            props -> new ConsumableItem(props.food(FoodValues.TOMATO_EGG_SOUP, FoodValues.consumableFor(FoodValues.TOMATO_EGG_SOUP)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+ 
+     // Plated Meals
+     public static final DeferredItem<ConsumableItem> COD_DELUXE = registerWithTab("cod_deluxe",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.COD_DELUXE), true));
++            props -> new ConsumableItem(props.food(FoodValues.COD_DELUXE, FoodValues.consumableFor(FoodValues.COD_DELUXE)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> HEARTY_LUNCH = registerWithTab("hearty_lunch",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.HEARTY_LUNCH), true));
++            props -> new ConsumableItem(props.food(FoodValues.HEARTY_LUNCH, FoodValues.consumableFor(FoodValues.HEARTY_LUNCH)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> CHICKEN_CURRY = registerWithTab("chicken_curry",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.CHICKEN_CURRY), true));
++            props -> new ConsumableItem(props.food(FoodValues.CHICKEN_CURRY, FoodValues.consumableFor(FoodValues.CHICKEN_CURRY)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<ConsumableItem> PASTA_WITH_MUSHROOM_SAUCE = registerWithTab("pasta_with_mushroom_sauce",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.PASTA_WITH_MUSHROOM_SAUCE), true));
++            props -> new ConsumableItem(props.food(FoodValues.PASTA_WITH_MUSHROOM_SAUCE, FoodValues.consumableFor(FoodValues.PASTA_WITH_MUSHROOM_SAUCE)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+ 
+     // Feasts
+     public static final DeferredItem<BlockItem> OMURICE_BLOCK = registerWithTab("omurice_block",
+-            () -> new BlockItem(LMBlocks.OMURICE_BLOCK.get(), basicItem().stacksTo(1)));
++            props -> new BlockItem(LMBlocks.OMURICE_BLOCK.get(), props.stacksTo(1)));
+     public static final DeferredItem<ConsumableItem> OMURICE = registerWithTab("omurice",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.OMURICE), true));
++            props -> new ConsumableItem(props.food(FoodValues.OMURICE, FoodValues.consumableFor(FoodValues.OMURICE)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<BlockItem> MUSHROOM_POT_PIE_BLOCK = registerWithTab("mushroom_pot_pie_block",
+-            () -> new BlockItem(LMBlocks.MUSHROOM_POT_PIE_BLOCK.get(), basicItem().stacksTo(1)));
++            props -> new BlockItem(LMBlocks.MUSHROOM_POT_PIE_BLOCK.get(), props.stacksTo(1)));
+     public static final DeferredItem<ConsumableItem> MUSHROOM_POT_PIE = registerWithTab("mushroom_pot_pie",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.MUSHROOM_POT_PIE), true));
++            props -> new ConsumableItem(props.food(FoodValues.MUSHROOM_POT_PIE, FoodValues.consumableFor(FoodValues.MUSHROOM_POT_PIE)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+     public static final DeferredItem<BlockItem> ROASTED_MUTTON_RACK_BLOCK = registerWithTab("roasted_mutton_rack_block",
+-            () -> new BlockItem(LMBlocks.ROASTED_MUTTON_RACK_BLOCK.getDelegate().value(), basicItem().stacksTo(1)));
++            props -> new BlockItem(LMBlocks.ROASTED_MUTTON_RACK_BLOCK.get(), props.stacksTo(1)));
+     public static final DeferredItem<ConsumableItem> ROASTED_MUTTON_RACK = registerWithTab("roasted_mutton_rack",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.ROASTED_MUTTON_RACK), true));
++            props -> new ConsumableItem(props.food(FoodValues.ROASTED_MUTTON_RACK, FoodValues.consumableFor(FoodValues.ROASTED_MUTTON_RACK)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+ 
+     // Sweets
+     public static final DeferredItem<ConsumableItem> SWEET_BERRY_CUSTARD = registerWithTab("sweet_berry_custard",
+-            () -> new ConsumableItem(foodItem(FoodValues.SWEET_BERRY_CUSTARD).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
++            props -> new ConsumableItem(props.food(FoodValues.SWEET_BERRY_CUSTARD, FoodValues.consumableFor(FoodValues.SWEET_BERRY_CUSTARD)).craftRemainder(Items.GLASS_BOTTLE).usingConvertsTo(Items.GLASS_BOTTLE).stacksTo(16)));
+     public static final DeferredItem<ConsumableItem> RICE_PUDDING = registerWithTab("rice_pudding",
+-            () -> new ConsumableItem(bowlFoodItem(FoodValues.RICE_PUDDING), true));
++            props -> new ConsumableItem(props.food(FoodValues.RICE_PUDDING, FoodValues.consumableFor(FoodValues.RICE_PUDDING)).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(16), true));
+ 
+     public static class FoodValues {
+         // Basic Foods
+@@ -82,51 +85,82 @@ public class LMItems {
+ 
+         // Bowl Foods
+         public static final FoodProperties PUFFERFISH_BROTH = new FoodProperties.Builder()
+-                .nutrition(8).saturationModifier(0.7f)
+-                .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
++                .nutrition(8).saturationModifier(0.7f).build();
+         public static final FoodProperties POTATO_SOUP = new FoodProperties.Builder()
+-                .nutrition(10).saturationModifier(0.6f)
+-                .effect(() -> new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(10).saturationModifier(0.6f).build();
+         public static final FoodProperties RED_SOUP = new FoodProperties.Builder()
+-                .nutrition(10).saturationModifier(0.6f)
+-                .effect(() -> new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(10).saturationModifier(0.6f).build();
+         public static final FoodProperties TOMATO_EGG_SOUP = new FoodProperties.Builder()
+-                .nutrition(10).saturationModifier(0.6f)
+-                .effect(() -> new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(10).saturationModifier(0.6f).build();
+ 
+         // Plated Foods
+         public static final FoodProperties COD_DELUXE = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+         public static final FoodProperties HEARTY_LUNCH = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+         public static final FoodProperties CHICKEN_CURRY = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+         public static final FoodProperties PASTA_WITH_MUSHROOM_SAUCE = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+ 
+         // Feasts
+         public static final FoodProperties OMURICE = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, LONG_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+         public static final FoodProperties MUSHROOM_POT_PIE = new FoodProperties.Builder()
+-                .nutrition(12).saturationModifier(0.8f)
+-                .effect(() -> new MobEffectInstance(ModEffects.COMFORT, LONG_DURATION, 0), 1.0F).build();
++                .nutrition(12).saturationModifier(0.8f).build();
+         public static final FoodProperties ROASTED_MUTTON_RACK = new FoodProperties.Builder()
+-                .nutrition(14).saturationModifier(0.75f)
+-                .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, LONG_DURATION, 0), 1.0F).build();
++                .nutrition(14).saturationModifier(0.75f).build();
+ 
+         // Sweets
+         public static final FoodProperties SWEET_BERRY_CUSTARD = new FoodProperties.Builder()
+-                .nutrition(7).saturationModifier(0.6f).alwaysEdible()
+-                .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F).build();
++                .nutrition(7).saturationModifier(0.6f).alwaysEdible().build();
+         public static final FoodProperties RICE_PUDDING = new FoodProperties.Builder()
+-                .nutrition(7).saturationModifier(0.6f)
+-                .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F).build();
++                .nutrition(7).saturationModifier(0.6f).build();
++
++        public static Consumable consumableFor(FoodProperties food) {
++            var builder = Consumables.defaultFood();
++            if (food == PUFFERFISH_BROTH) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0)));
++            }
++            if (food == POTATO_SOUP) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0)));
++            }
++            if (food == RED_SOUP) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0)));
++            }
++            if (food == TOMATO_EGG_SOUP) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0)));
++            }
++            if (food == COD_DELUXE) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0)));
++            }
++            if (food == HEARTY_LUNCH) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0)));
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0)));
++            }
++            if (food == CHICKEN_CURRY) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0)));
++            }
++            if (food == PASTA_WITH_MUSHROOM_SAUCE) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0)));
++            }
++            if (food == OMURICE) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, LONG_DURATION, 0)));
++            }
++            if (food == MUSHROOM_POT_PIE) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.COMFORT, LONG_DURATION, 0)));
++            }
++            if (food == ROASTED_MUTTON_RACK) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.NOURISHMENT, LONG_DURATION, 0)));
++            }
++            if (food == SWEET_BERRY_CUSTARD) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0)));
++            }
++            if (food == RICE_PUDDING) {
++                builder.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0)));
++            }
++            return builder.build();
++        }
+ 
+         private FoodValues() {
+         }
+diff --git a/src/main/resources/assets/large_meals/lang/vi_vn.json b/src/main/resources/assets/large_meals/lang/vi_vn.json
+index 1a64496710cd162b3285fc2435c3293612980e6f..742a2e48bda326c6842a53fce957db0490138c98 100644
+GIT binary patch
+literal 1370
+zcmb7Ev5wO~5bg67qtuWOpu{IpKq5{_zuK%f_A2qNwcaH}h>9AKlV~WA&YZ3|!HJWu
+zK#B_rNBNKa6K3t?&L%Mum8F&E&71e;&AT2zf4Wd?K3Gs4aguPl$OehcVy#p{Qe{Xg
+zIH`W=KZE}BGM6!o%S{R+x4BOGPfjDK#A?ABg%j<H8yP`hUGYUiu**AZwW68fAxW$;
+zN)k=k{E@(Tcjt<)2;hqE7S1hQ)f9x`Noxic3pVGHFst>-QxD3^r&_>^^0KQ!g(Tz)
+z`<B<g=P<D=xA|>gOp&>t;G>K>i`Bf%*@Lv%261^SJL+RjwONscl`O7=cEwMMJ$H8$
+z&ID?H<_FI^`~Pj3$Jnm7Hxy1=cBI$dv8s2On`+#Xh8<O=Xcr|*VPdpwzc?AStden9
+z{s333QNOV(E=+T4j)9b+Mv+X}v=Yy6*~?f_0h97um(Qu4&A6V4EGAQ}OeJ1GQLv!Q
+zVN~9;4#72DHaDzl*xD`6w^MG7UblE|*RJ@~)ygL!wP7d_?;%95>xV`Zjs!W81YckK
+z+TN{yBq3XJZpf5l4loVql@1?S9CCSX-R260)r!L?!msI=#;C-*#G~jzflBWK66Oqo
+z*wVVZc~)rnhDyd0F3li9N{xVfLgi=N5*EA7FSCy~dXG<$D6jqtY!LE{c|^4E7D88C
+zBT9mI#{g3jLaJbU;ffEiz!SEDgOCPKO5M2bmg3=Qos>j{6|@$q5lZ?Ful&`7p}(4-
+OIc|hzJnQ$~_x=D=Hx;k|
+
+literal 2560
+zcmcJRPiqrV6vc10f>6J}Fk~laK7h+k!G*Rc>Ap;pGzrZlA(>c%_+docyL0KnwW!dI
+z3&AQbM2ib|F4W(7FRy9-nLi*yGB0l?_uO;dz306@zaQCEyJ9g{(GIO;9jn-}l^CVg
+zv%1ynz%ss5X8O!$HsIdiS%)j*X_tHM?oIdhI7-oOxwzYQW^MixTiJf`er$X8EXqK<
+zu_n3@2VghJQkl(S?ep|&)F$)T65f5!SfeL}P4L7rg>Md8)hRJxoHN_zSC3~>YhE5@
+zdtUf3!u}Qw$l*TOq&A#l-E^_De<)r-Iq^Lv2ccG+0zDVW>zmj|yXjPk?Ka~{T~|Tq
+zICfPKT10=yJ*-{A+Qqid?9g6DIpZ=cyuQ-<wbObN#ExUMSk;ihtda?eoRh=4s110j
+zs&lv;IHqmXY+P{NwjWXI*!EaGjdoDpSMCloXB%-{)-i$SR^htCT&-J{uj*v41QbQr
+zDz4rq%aOXMsvb#E^#sLoG?i;iJ4K&21}HwRu3h_1E^nQ#s;qae!sfZdDp|;fQa&Bf
+z`+N`Zn!r0a&mD48PdA+gpEl^nE^&{zYE;q@apZ<_0C|O&2gC#vUpu~s_UtFz*R5H3
+z%*ja2S?38@vppg$)urp>d8b>X-&WyGw0_Ls*V3-arLIzL)BD4{iRbfudwC_S=Gp;0
+z^xdq6n>u!%6{~S+S3GoeBDeO=?fayM1_6KE@0WX0*iWO_c1I4YJ+sa@UwcK>57|Xu
+z)QD0im+AE#SL@|05_S`<LW6A5Dda^bgcNQMT<xpVb#`c@L<v-{h<ssjC7-&=h@CIL
+zaBh&8-#>lds%~OFP5b;`^C`iihDz#KU!`R`XFaO+W#m>FXA3!L1$}kKsKU9!{aWD_
+z@3lDL4EZ&#svI8DQfwwWNdCF()TJGIoRdyKT~us3?2zGI;`lS0>L#4oV&=p|e%J#?
+K<DxrvJ+{B4XwF3d
+
+diff --git a/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage0.json b/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage0.json
+index 7257cde..af6ef9d 100644
+--- a/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage0.json
++++ b/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage0.json
+@@ -1,38 +1,143 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"2": "large_meals:block/pot_pie_side",
+-		"3": "large_meals:block/mushroom_pot_pie_top",
+-		"tray_top": "farmersdelight:block/tray_top",
+-		"tray_side": "farmersdelight:block/tray_bottom",
+-		"particle": "large_meals:block/mushroom_pot_pie_top"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#tray_top"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "pie",
+-			"from": [2, 2, 2],
+-			"to": [14, 6, 14],
+-			"faces": {
+-				"north": {"uv": [2, 12, 14, 16], "texture": "#2"},
+-				"east": {"uv": [2, 12, 14, 16], "texture": "#2"},
+-				"south": {"uv": [2, 12, 14, 16], "texture": "#2"},
+-				"west": {"uv": [2, 12, 14, 16], "texture": "#2"},
+-				"up": {"uv": [2, 2, 14, 14], "texture": "#3"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "2": "large_meals:block/pot_pie_side",
++    "3": "large_meals:block/mushroom_pot_pie_top",
++    "tray_top": "farmersdelight:block/tray",
++    "tray_side": "farmersdelight:block/tray_bottom",
++    "particle": "large_meals:block/mushroom_pot_pie_top"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_top"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "pie",
++      "from": [
++        2,
++        2,
++        2
++      ],
++      "to": [
++        14,
++        6,
++        14
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "east": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "south": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "west": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "up": {
++          "uv": [
++            2,
++            2,
++            14,
++            14
++          ],
++          "texture": "#3"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage1.json b/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage1.json
+index c768133..ac84583 100644
+--- a/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage1.json
++++ b/src/main/resources/assets/large_meals/models/block/mushroom_pot_pie_block_stage1.json
+@@ -1,51 +1,204 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"1": "large_meals:block/mushroom_pot_pie_inner",
+-		"2": "large_meals:block/pot_pie_side",
+-		"3": "large_meals:block/mushroom_pot_pie_top",
+-		"4": "large_meals:block/tray_mushroom_pot_pie_leftover",
+-		"tray_side": "farmersdelight:block/tray_bottom",
+-		"particle": "large_meals:block/mushroom_pot_pie_top"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#4"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "pie",
+-			"from": [8, 2, 2],
+-			"to": [14, 6, 8],
+-			"faces": {
+-				"north": {"uv": [2, 12, 8, 16], "texture": "#2"},
+-				"east": {"uv": [8, 12, 14, 16], "texture": "#2"},
+-				"south": {"uv": [2, 10, 14, 16], "texture": "#missing"},
+-				"west": {"uv": [2, 12, 8, 16], "texture": "#1"},
+-				"up": {"uv": [8, 2, 14, 8], "texture": "#3"}
+-			}
+-		},
+-		{
+-			"name": "pie",
+-			"from": [2, 2, 8],
+-			"to": [14, 6, 14],
+-			"faces": {
+-				"north": {"uv": [2, 12, 14, 16], "texture": "#1"},
+-				"east": {"uv": [2, 12, 8, 16], "texture": "#2"},
+-				"south": {"uv": [2, 12, 14, 16], "texture": "#2"},
+-				"west": {"uv": [8, 12, 14, 16], "texture": "#2"},
+-				"up": {"uv": [2, 8, 14, 14], "texture": "#3"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "1": "large_meals:block/mushroom_pot_pie_inner",
++    "2": "large_meals:block/pot_pie_side",
++    "3": "large_meals:block/mushroom_pot_pie_top",
++    "4": "large_meals:block/tray_mushroom_pot_pie_leftover",
++    "tray_side": "farmersdelight:block/tray_bottom",
++    "particle": "large_meals:block/mushroom_pot_pie_top"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#4"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "pie",
++      "from": [
++        8,
++        2,
++        2
++      ],
++      "to": [
++        14,
++        6,
++        8
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            2,
++            12,
++            8,
++            16
++          ],
++          "texture": "#2"
++        },
++        "east": {
++          "uv": [
++            8,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "south": {
++          "uv": [
++            2,
++            12,
++            8,
++            16
++          ],
++          "texture": "#1"
++        },
++        "west": {
++          "uv": [
++            2,
++            12,
++            8,
++            16
++          ],
++          "texture": "#1"
++        },
++        "up": {
++          "uv": [
++            8,
++            2,
++            14,
++            8
++          ],
++          "texture": "#3"
++        }
++      }
++    },
++    {
++      "name": "pie",
++      "from": [
++        2,
++        2,
++        8
++      ],
++      "to": [
++        14,
++        6,
++        14
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#1"
++        },
++        "east": {
++          "uv": [
++            2,
++            12,
++            8,
++            16
++          ],
++          "texture": "#2"
++        },
++        "south": {
++          "uv": [
++            2,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "west": {
++          "uv": [
++            8,
++            12,
++            14,
++            16
++          ],
++          "texture": "#2"
++        },
++        "up": {
++          "uv": [
++            2,
++            8,
++            14,
++            14
++          ],
++          "texture": "#3"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/omurice_block_stage0.json b/src/main/resources/assets/large_meals/models/block/omurice_block_stage0.json
+index 990d5c7..a6252e9 100644
+--- a/src/main/resources/assets/large_meals/models/block/omurice_block_stage0.json
++++ b/src/main/resources/assets/large_meals/models/block/omurice_block_stage0.json
+@@ -1,98 +1,353 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"textures": {
+-		"particle": "large_meals:block/omurice",
+-		"omurice": "large_meals:block/omurice",
+-		"tray_bottom": "farmersdelight:block/tray_bottom",
+-		"tray_top": "farmersdelight:block/tray_top"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_bottom"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_bottom"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_bottom"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_bottom"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#tray_top"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_bottom", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "main",
+-			"from": [4, 2, 4],
+-			"to": [12, 10, 12],
+-			"faces": {
+-				"north": {"uv": [0, 0, 8, 8], "texture": "#omurice"},
+-				"east": {"uv": [0, 0, 8, 8], "texture": "#omurice"},
+-				"south": {"uv": [0, 0, 8, 8], "texture": "#omurice"},
+-				"west": {"uv": [0, 0, 8, 8], "texture": "#omurice"},
+-				"up": {"uv": [0, 0, 8, 8], "texture": "#omurice"}
+-			}
+-		},
+-		{
+-			"name": "side0",
+-			"from": [3, 2, 12],
+-			"to": [12, 3, 13],
+-			"faces": {
+-				"south": {"uv": [0, 8, 9, 9], "texture": "#omurice"},
+-				"west": {"uv": [0, 8, 1, 9], "texture": "#omurice"},
+-				"up": {"uv": [0, 8, 9, 9], "texture": "#omurice"}
+-			}
+-		},
+-		{
+-			"name": "side1",
+-			"from": [3, 2, 3],
+-			"to": [4, 3, 12],
+-			"faces": {
+-				"north": {"uv": [0, 8, 1, 9], "texture": "#omurice"},
+-				"west": {"uv": [0, 8, 9, 9], "texture": "#omurice"},
+-				"up": {"uv": [0, 8, 9, 9], "rotation": 90, "texture": "#omurice"}
+-			}
+-		},
+-		{
+-			"name": "side2",
+-			"from": [12, 2, 4],
+-			"to": [13, 3, 13],
+-			"faces": {
+-				"east": {"uv": [0, 8, 9, 9], "texture": "#omurice"},
+-				"south": {"uv": [0, 8, 1, 9], "texture": "#omurice"},
+-				"up": {"uv": [0, 8, 9, 9], "rotation": 270, "texture": "#omurice"}
+-			}
+-		},
+-		{
+-			"name": "side3",
+-			"from": [4, 2, 3],
+-			"to": [13, 3, 4],
+-			"faces": {
+-				"north": {"uv": [0, 8, 9, 9], "texture": "#omurice"},
+-				"east": {"uv": [0, 8, 1, 9], "texture": "#omurice"},
+-				"up": {"uv": [0, 8, 9, 9], "rotation": 180, "texture": "#omurice"}
+-			}
+-		}
+-	],
+-	"groups": [
+-		{
+-			"name": "plate",
+-			"origin": [8, 8, 8],
+-			"color": 0,
+-			"children": [0]
+-		},
+-		{
+-			"name": "omurice",
+-			"origin": [8, 8, 8],
+-			"color": 0,
+-			"children": [
+-				1,
+-				{
+-					"name": "side",
+-					"origin": [0, 0, 0],
+-					"color": 0,
+-					"children": [2, 3, 4, 5]
+-				}
+-			]
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "textures": {
++    "particle": "large_meals:block/omurice",
++    "omurice": "large_meals:block/omurice",
++    "tray_bottom": "farmersdelight:block/tray_bottom",
++    "tray_top": "farmersdelight:block/tray"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_bottom"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_bottom"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_bottom"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_bottom"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_top"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_bottom",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "main",
++      "from": [
++        4,
++        2,
++        4
++      ],
++      "to": [
++        12,
++        10,
++        12
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#omurice"
++        },
++        "east": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#omurice"
++        },
++        "south": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#omurice"
++        },
++        "west": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#omurice"
++        },
++        "up": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#omurice"
++        }
++      }
++    },
++    {
++      "name": "side0",
++      "from": [
++        3,
++        2,
++        12
++      ],
++      "to": [
++        12,
++        3,
++        13
++      ],
++      "faces": {
++        "south": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "west": {
++          "uv": [
++            0,
++            8,
++            1,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "up": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "texture": "#omurice"
++        }
++      }
++    },
++    {
++      "name": "side1",
++      "from": [
++        3,
++        2,
++        3
++      ],
++      "to": [
++        4,
++        3,
++        12
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            0,
++            8,
++            1,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "west": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "up": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "rotation": 90,
++          "texture": "#omurice"
++        }
++      }
++    },
++    {
++      "name": "side2",
++      "from": [
++        12,
++        2,
++        4
++      ],
++      "to": [
++        13,
++        3,
++        13
++      ],
++      "faces": {
++        "east": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "south": {
++          "uv": [
++            0,
++            8,
++            1,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "up": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "rotation": 270,
++          "texture": "#omurice"
++        }
++      }
++    },
++    {
++      "name": "side3",
++      "from": [
++        4,
++        2,
++        3
++      ],
++      "to": [
++        13,
++        3,
++        4
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "east": {
++          "uv": [
++            0,
++            8,
++            1,
++            9
++          ],
++          "texture": "#omurice"
++        },
++        "up": {
++          "uv": [
++            0,
++            8,
++            9,
++            9
++          ],
++          "rotation": 180,
++          "texture": "#omurice"
++        }
++      }
++    }
++  ],
++  "groups": [
++    {
++      "name": "plate",
++      "origin": [
++        8,
++        8,
++        8
++      ],
++      "color": 0,
++      "children": [
++        0
++      ]
++    },
++    {
++      "name": "omurice",
++      "origin": [
++        8,
++        8,
++        8
++      ],
++      "color": 0,
++      "children": [
++        1,
++        {
++          "name": "side",
++          "origin": [
++            0,
++            0,
++            0
++          ],
++          "color": 0,
++          "children": [
++            2,
++            3,
++            4,
++            5
++          ]
++        }
++      ]
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage0.json b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage0.json
+index 4dc0ec7..8f2e3d4 100644
+--- a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage0.json
++++ b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage0.json
+@@ -1,90 +1,432 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"4": "large_meals:block/roasted_mutton_rack_block",
+-		"5": "large_meals:block/tray_roasted_mutton_rack",
+-		"particle": "large_meals:block/roasted_mutton_rack_block",
+-		"bone": "farmersdelight:block/honey_glazed_ham_bone",
+-		"tray_side": "farmersdelight:block/tray_bottom"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#5"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "mutton",
+-			"from": [4, 2, 2],
+-			"to": [12, 10, 14],
+-			"faces": {
+-				"north": {"uv": [8, 0, 16, 8], "texture": "#4"},
+-				"east": {"uv": [12, 16, 0, 8], "texture": "#4"},
+-				"south": {"uv": [8, 0, 16, 8], "texture": "#4"},
+-				"west": {"uv": [0, 8, 12, 16], "texture": "#4"},
+-				"up": {"uv": [12, 16, 0, 8], "rotation": 270, "texture": "#4"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 11.5],
+-			"to": [9, 14, 13.5],
+-			"rotation": {"angle": 0, "axis": "x", "origin": [0, -2, 18.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 8.5],
+-			"to": [9, 14, 10.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 15.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 5.5],
+-			"to": [9, 14, 7.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 12.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 2.5],
+-			"to": [9, 14, 4.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 9.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "4": "large_meals:block/roasted_mutton_rack_block",
++    "5": "large_meals:block/tray_roasted_mutton_rack",
++    "particle": "large_meals:block/roasted_mutton_rack_block",
++    "bone": "farmersdelight:block/honey_glazed_ham_details",
++    "tray_side": "farmersdelight:block/tray_bottom"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#5"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "mutton",
++      "from": [
++        4,
++        2,
++        2
++      ],
++      "to": [
++        12,
++        10,
++        14
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            8,
++            0,
++            16,
++            8
++          ],
++          "texture": "#4"
++        },
++        "east": {
++          "uv": [
++            12,
++            16,
++            0,
++            8
++          ],
++          "texture": "#4"
++        },
++        "south": {
++          "uv": [
++            8,
++            0,
++            16,
++            8
++          ],
++          "texture": "#4"
++        },
++        "west": {
++          "uv": [
++            0,
++            8,
++            12,
++            16
++          ],
++          "texture": "#4"
++        },
++        "up": {
++          "uv": [
++            12,
++            16,
++            0,
++            8
++          ],
++          "rotation": 270,
++          "texture": "#4"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        11.5
++      ],
++      "to": [
++        9,
++        14,
++        13.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "x",
++        "origin": [
++          0,
++          -2,
++          18.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        8.5
++      ],
++      "to": [
++        9,
++        14,
++        10.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          15.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        5.5
++      ],
++      "to": [
++        9,
++        14,
++        7.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          12.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        2.5
++      ],
++      "to": [
++        9,
++        14,
++        4.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          9.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage1.json b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage1.json
+index 5da69d0..4754fd3 100644
+--- a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage1.json
++++ b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage1.json
+@@ -1,77 +1,360 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"4": "large_meals:block/roasted_mutton_rack_block",
+-		"5": "large_meals:block/tray_roasted_mutton_rack",
+-		"particle": "large_meals:block/roasted_mutton_rack_block",
+-		"bone": "farmersdelight:block/honey_glazed_ham_bone",
+-		"tray_side": "farmersdelight:block/tray_bottom"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#5"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "mutton",
+-			"from": [4, 2, 5],
+-			"to": [12, 10, 14],
+-			"faces": {
+-				"north": {"uv": [0, 0, 8, 8], "texture": "#4"},
+-				"east": {"uv": [12, 16, 3, 8], "texture": "#4"},
+-				"south": {"uv": [8, 0, 16, 8], "texture": "#4"},
+-				"west": {"uv": [3, 8, 12, 16], "texture": "#4"},
+-				"up": {"uv": [12, 16, 3, 8], "rotation": 270, "texture": "#4"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 11.5],
+-			"to": [9, 14, 13.5],
+-			"rotation": {"angle": 0, "axis": "x", "origin": [0, -2, 18.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 8.5],
+-			"to": [9, 14, 10.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 15.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 5.5],
+-			"to": [9, 14, 7.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 12.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "4": "large_meals:block/roasted_mutton_rack_block",
++    "5": "large_meals:block/tray_roasted_mutton_rack",
++    "particle": "large_meals:block/roasted_mutton_rack_block",
++    "bone": "farmersdelight:block/honey_glazed_ham_details",
++    "tray_side": "farmersdelight:block/tray_bottom"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#5"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "mutton",
++      "from": [
++        4,
++        2,
++        5
++      ],
++      "to": [
++        12,
++        10,
++        14
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#4"
++        },
++        "east": {
++          "uv": [
++            12,
++            16,
++            3,
++            8
++          ],
++          "texture": "#4"
++        },
++        "south": {
++          "uv": [
++            8,
++            0,
++            16,
++            8
++          ],
++          "texture": "#4"
++        },
++        "west": {
++          "uv": [
++            3,
++            8,
++            12,
++            16
++          ],
++          "texture": "#4"
++        },
++        "up": {
++          "uv": [
++            12,
++            16,
++            3,
++            8
++          ],
++          "rotation": 270,
++          "texture": "#4"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        11.5
++      ],
++      "to": [
++        9,
++        14,
++        13.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "x",
++        "origin": [
++          0,
++          -2,
++          18.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        8.5
++      ],
++      "to": [
++        9,
++        14,
++        10.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          15.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        5.5
++      ],
++      "to": [
++        9,
++        14,
++        7.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          12.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage2.json b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage2.json
+index cd5e127..4cfdfc6 100644
+--- a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage2.json
++++ b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage2.json
+@@ -1,64 +1,288 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"4": "large_meals:block/roasted_mutton_rack_block",
+-		"5": "large_meals:block/tray_roasted_mutton_rack",
+-		"particle": "large_meals:block/roasted_mutton_rack_block",
+-		"bone": "farmersdelight:block/honey_glazed_ham_bone",
+-		"tray_side": "farmersdelight:block/tray_bottom"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#5"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "mutton",
+-			"from": [4, 2, 8],
+-			"to": [12, 10, 14],
+-			"faces": {
+-				"north": {"uv": [0, 0, 8, 8], "texture": "#4"},
+-				"east": {"uv": [12, 16, 6, 8], "texture": "#4"},
+-				"south": {"uv": [8, 0, 16, 8], "texture": "#4"},
+-				"west": {"uv": [6, 8, 12, 16], "texture": "#4"},
+-				"up": {"uv": [12, 16, 6, 8], "rotation": 270, "texture": "#4"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 11.5],
+-			"to": [9, 14, 13.5],
+-			"rotation": {"angle": 0, "axis": "x", "origin": [0, -2, 18.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 10, 8.5],
+-			"to": [9, 14, 10.5],
+-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 15.5]},
+-			"faces": {
+-				"north": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 90, "texture": "#bone"},
+-				"south": {"uv": [0, 6, 2, 2], "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 270, "texture": "#bone"},
+-				"up": {"uv": [0, 0, 2, 2], "texture": "#bone"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "4": "large_meals:block/roasted_mutton_rack_block",
++    "5": "large_meals:block/tray_roasted_mutton_rack",
++    "particle": "large_meals:block/roasted_mutton_rack_block",
++    "bone": "farmersdelight:block/honey_glazed_ham_details",
++    "tray_side": "farmersdelight:block/tray_bottom"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#5"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "mutton",
++      "from": [
++        4,
++        2,
++        8
++      ],
++      "to": [
++        12,
++        10,
++        14
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            0,
++            0,
++            8,
++            8
++          ],
++          "texture": "#4"
++        },
++        "east": {
++          "uv": [
++            12,
++            16,
++            6,
++            8
++          ],
++          "texture": "#4"
++        },
++        "south": {
++          "uv": [
++            8,
++            0,
++            16,
++            8
++          ],
++          "texture": "#4"
++        },
++        "west": {
++          "uv": [
++            6,
++            8,
++            12,
++            16
++          ],
++          "texture": "#4"
++        },
++        "up": {
++          "uv": [
++            12,
++            16,
++            6,
++            8
++          ],
++          "rotation": 270,
++          "texture": "#4"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        11.5
++      ],
++      "to": [
++        9,
++        14,
++        13.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "x",
++        "origin": [
++          0,
++          -2,
++          18.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        10,
++        8.5
++      ],
++      "to": [
++        9,
++        14,
++        10.5
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "y",
++        "origin": [
++          0,
++          -2,
++          15.5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 90,
++          "texture": "#bone"
++        },
++        "south": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 270,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage3.json b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage3.json
+index fb70224..20d583c 100644
+--- a/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage3.json
++++ b/src/main/resources/assets/large_meals/models/block/roasted_mutton_rack_block_stage3.json
+@@ -1,51 +1,219 @@
+ {
+-	"credit": "Made with Blockbench",
+-	"parent": "block/block",
+-	"textures": {
+-		"4": "large_meals:block/roasted_mutton_rack_block",
+-		"5": "large_meals:block/tray_roasted_mutton_rack",
+-		"particle": "large_meals:block/roasted_mutton_rack_block",
+-		"bone": "farmersdelight:block/honey_glazed_ham_bone",
+-		"tray_side": "farmersdelight:block/tray_bottom"
+-	},
+-	"elements": [
+-		{
+-			"name": "plate",
+-			"from": [1, 0, 1],
+-			"to": [15, 2, 15],
+-			"faces": {
+-				"north": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"east": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"south": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"west": {"uv": [1, 11, 15, 13], "texture": "#tray_side"},
+-				"up": {"uv": [1, 1, 15, 15], "texture": "#5"},
+-				"down": {"uv": [1, 1, 15, 15], "texture": "#tray_side", "cullface": "down"}
+-			}
+-		},
+-		{
+-			"name": "mutton",
+-			"from": [4, 2, 6],
+-			"to": [12, 5, 14],
+-			"rotation": {"angle": 0, "axis": "x", "origin": [0, 12, -5]},
+-			"faces": {
+-				"north": {"uv": [12, 16, 9, 8], "rotation": 90, "texture": "#4"},
+-				"east": {"uv": [12, 16, 9, 8], "rotation": 90, "texture": "#4"},
+-				"south": {"uv": [9, 8, 12, 16], "rotation": 270, "texture": "#4"},
+-				"west": {"uv": [9, 8, 12, 16], "rotation": 270, "texture": "#4"},
+-				"up": {"uv": [8, 0, 16, 8], "texture": "#4"}
+-			}
+-		},
+-		{
+-			"name": "bone",
+-			"from": [7, 2, 2],
+-			"to": [9, 4, 6],
+-			"rotation": {"angle": 0, "axis": "x", "origin": [0, 12, -4]},
+-			"faces": {
+-				"north": {"uv": [0, 0, 2, 2], "rotation": 180, "texture": "#bone"},
+-				"east": {"uv": [6, 0, 2, 2], "rotation": 180, "texture": "#bone"},
+-				"west": {"uv": [2, 0, 6, 2], "rotation": 180, "texture": "#bone"},
+-				"up": {"uv": [0, 6, 2, 2], "texture": "#bone"}
+-			}
+-		}
+-	]
+-}
+\ No newline at end of file
++  "credit": "Made with Blockbench",
++  "parent": "block/block",
++  "textures": {
++    "4": "large_meals:block/roasted_mutton_rack_block",
++    "5": "large_meals:block/tray_roasted_mutton_rack",
++    "particle": "large_meals:block/roasted_mutton_rack_block",
++    "bone": "farmersdelight:block/honey_glazed_ham_details",
++    "tray_side": "farmersdelight:block/tray_bottom"
++  },
++  "elements": [
++    {
++      "name": "plate",
++      "from": [
++        1,
++        0,
++        1
++      ],
++      "to": [
++        15,
++        2,
++        15
++      ],
++      "faces": {
++        "north": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "east": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "south": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "west": {
++          "uv": [
++            1,
++            11,
++            15,
++            13
++          ],
++          "texture": "#tray_side"
++        },
++        "up": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#5"
++        },
++        "down": {
++          "uv": [
++            1,
++            1,
++            15,
++            15
++          ],
++          "texture": "#tray_side",
++          "cullface": "down"
++        }
++      }
++    },
++    {
++      "name": "mutton",
++      "from": [
++        4,
++        2,
++        6
++      ],
++      "to": [
++        12,
++        5,
++        14
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "x",
++        "origin": [
++          0,
++          12,
++          -5
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            12,
++            16,
++            9,
++            8
++          ],
++          "rotation": 90,
++          "texture": "#4"
++        },
++        "east": {
++          "uv": [
++            12,
++            16,
++            9,
++            8
++          ],
++          "rotation": 90,
++          "texture": "#4"
++        },
++        "south": {
++          "uv": [
++            9,
++            8,
++            12,
++            16
++          ],
++          "rotation": 270,
++          "texture": "#4"
++        },
++        "west": {
++          "uv": [
++            9,
++            8,
++            12,
++            16
++          ],
++          "rotation": 270,
++          "texture": "#4"
++        },
++        "up": {
++          "uv": [
++            8,
++            0,
++            16,
++            8
++          ],
++          "texture": "#4"
++        }
++      }
++    },
++    {
++      "name": "bone",
++      "from": [
++        7,
++        2,
++        2
++      ],
++      "to": [
++        9,
++        4,
++        6
++      ],
++      "rotation": {
++        "angle": 0,
++        "axis": "x",
++        "origin": [
++          0,
++          12,
++          -4
++        ]
++      },
++      "faces": {
++        "north": {
++          "uv": [
++            7,
++            2,
++            9,
++            5
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "east": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "west": {
++          "uv": [
++            9,
++            0,
++            12,
++            2
++          ],
++          "rotation": 180,
++          "texture": "#bone"
++        },
++        "up": {
++          "uv": [
++            7,
++            0,
++            9,
++            2
++          ],
++          "texture": "#bone"
++        }
++      }
++    }
++  ]
++}
+diff --git a/src/main/resources/data/diet/tags/items/fruits.json b/src/main/resources/data/diet/tags/item/fruits.json
+similarity index 96%
+rename from src/main/resources/data/diet/tags/items/fruits.json
+rename to src/main/resources/data/diet/tags/item/fruits.json
+index 3dae57a..028c7a8 100644
+--- a/src/main/resources/data/diet/tags/items/fruits.json
++++ b/src/main/resources/data/diet/tags/item/fruits.json
+@@ -2,4 +2,4 @@
+   "values": [
+     "large_meals:sweet_berry_custard"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/resources/data/diet/tags/items/grains.json b/src/main/resources/data/diet/tags/item/grains.json
+similarity index 99%
+rename from src/main/resources/data/diet/tags/items/grains.json
+rename to src/main/resources/data/diet/tags/item/grains.json
+index 82be68e..f5ab489 100644
+--- a/src/main/resources/data/diet/tags/items/grains.json
++++ b/src/main/resources/data/diet/tags/item/grains.json
+@@ -9,4 +9,4 @@
+     "large_meals:pasta_with_mushroom_sauce",
+     "large_meals:rice_pudding"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/resources/data/diet/tags/items/proteins.json b/src/main/resources/data/diet/tags/item/proteins.json
+similarity index 99%
+rename from src/main/resources/data/diet/tags/items/proteins.json
+rename to src/main/resources/data/diet/tags/item/proteins.json
+index 7032ea4..465f306 100644
+--- a/src/main/resources/data/diet/tags/items/proteins.json
++++ b/src/main/resources/data/diet/tags/item/proteins.json
+@@ -12,4 +12,4 @@
+     "large_meals:tomato_egg_soup",
+     "large_meals:sweet_berry_custard"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/resources/data/diet/tags/items/sugars.json b/src/main/resources/data/diet/tags/item/sugars.json
+similarity index 97%
+rename from src/main/resources/data/diet/tags/items/sugars.json
+rename to src/main/resources/data/diet/tags/item/sugars.json
+index 8ddb48e..c5505b6 100644
+--- a/src/main/resources/data/diet/tags/items/sugars.json
++++ b/src/main/resources/data/diet/tags/item/sugars.json
+@@ -3,4 +3,4 @@
+     "large_meals:rice_pudding",
+     "large_meals:sweet_berry_custard"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/resources/data/diet/tags/items/vegetables.json b/src/main/resources/data/diet/tags/item/vegetables.json
+similarity index 99%
+rename from src/main/resources/data/diet/tags/items/vegetables.json
+rename to src/main/resources/data/diet/tags/item/vegetables.json
+index 6190463..828647b 100644
+--- a/src/main/resources/data/diet/tags/items/vegetables.json
++++ b/src/main/resources/data/diet/tags/item/vegetables.json
+@@ -12,4 +12,4 @@
+     "large_meals:red_soup",
+     "large_meals:tomato_egg_soup"
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/resources/data/large_meals/advancements/main/get_mutton_rack.json b/src/main/resources/data/large_meals/advancement/main/get_mutton_rack.json
+similarity index 95%
+rename from src/main/resources/data/large_meals/advancements/main/get_mutton_rack.json
+rename to src/main/resources/data/large_meals/advancement/main/get_mutton_rack.json
+index eab9d3d..54c42f4 100644
+--- a/src/main/resources/data/large_meals/advancements/main/get_mutton_rack.json
++++ b/src/main/resources/data/large_meals/advancement/main/get_mutton_rack.json
+@@ -34,7 +34,7 @@
+     "frame": "task",
+     "hidden": false,
+     "icon": {
+-      "item": "large_meals:raw_mutton_rack"
++      "id": "large_meals:raw_mutton_rack"
+     },
+     "show_toast": true,
+     "title": {
+@@ -48,4 +48,4 @@
+     ]
+   ],
+   "sends_telemetry_event": true
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/templates/META-INF/neoforge.mods.toml b/src/main/templates/META-INF/neoforge.mods.toml
+index ed30a47..3b95930 100644
+--- a/src/main/templates/META-INF/neoforge.mods.toml
++++ b/src/main/templates/META-INF/neoforge.mods.toml
+@@ -9,7 +9,7 @@ version="$mod_version"
+ displayName="$mod_name"
+ #updateJSONURL="$mod_github/raw/$minecraft_version/update.json"
+ displayURL="$mod_github"
+-logoFile="${mod_id}.png"
++iconFile="${mod_id}.png"
+ credits="$mod_credits"
+ authors="$mod_authors"
+ description='''
+diff --git a/verify_resources.py b/verify_resources.py
+new file mode 100644
+index 0000000..aa3a9d0
+--- /dev/null
++++ b/verify_resources.py
+@@ -0,0 +1,60 @@
++from pathlib import Path
++import json, subprocess, zipfile
++p=Path(__file__).parent
++roots=[p/'src/main/resources',p/'src/generated/resources']
++fail=[]
++recipes=[]
++for root in roots:
++ for f in root.rglob('*.json'):
++  raw=f.read_bytes(); d=json.loads(raw.decode('utf-16' if raw.startswith(b'\xff\xfe') else 'utf-8-sig'))
++  rel=f.relative_to(root).as_posix()
++  if rel.startswith('data/'):
++   if any(x in rel for x in ['/advancements/','/loot_tables/','/tags/items/','/tags/blocks/']): fail.append(rel+': legacy resource directory')
++   if '/recipe/' in rel:
++    recipes.append(rel)
++    def check(x):
++     if isinstance(x,dict):
++      if set(x) in ({'item'},{'tag'}): fail.append(rel+': legacy ingredient '+str(x))
++      for k,v in x.items():
++       if k not in ['result','container']: check(v)
++     elif isinstance(x,list):
++      for v in x: check(v)
++    check(d)
++assert len(recipes)==18, len(recipes)
++models=list((p/'src/generated/resources/assets/large_meals/models/item').glob('*.json'))
++for f in models:
++ assert (p/'src/generated/resources/assets/large_meals/items'/f.name).exists(),f'No item definition: {f.name}'
++assert not fail,'\n'.join(fail)
++print(f'PASS: {len(recipes)} modern recipes, {len(models)} item definitions, modern data directories')
++
++# Compare each recipe with the pinned source after only the native ingredient migration.
++def native(x):
++ if isinstance(x,list): return [native(v) for v in x]
++ if isinstance(x,dict):
++  if set(x)=={'tag'}: return '#'+x['tag']
++  if set(x)=={'item'} and isinstance(x['item'],str): return x['item']
++  return {k:v if k in ['result','container'] else native(v) for k,v in x.items()}
++ return x
++for f in (p/'src/generated/resources/data/large_meals/recipe').rglob('*.json'):
++ rel=f.relative_to(p).as_posix()
++ original=json.loads(subprocess.check_output(['git','-C',str(p),'show','HEAD:'+rel]))
++ assert json.loads(f.read_text())==native(original), rel+': gameplay recipe changed'
++assert not (p/'src/generated/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json').exists()
++for f in (p/'src/generated/resources/data/large_meals/loot_modifiers').glob('*.json'):
++ d=json.loads(f.read_text())
++ assert any(c.get('predicate',{}).get('minecraft:entity_type')=='minecraft:sheep' for c in d['conditions'])
++print('PASS: all18 recipe payloads preserve pinned upstream ingredients/counts/results/times/containers; native sheep loot predicates')
++
++# Fail on unbound face references or absent dependency textures before launching.
++fd=zipfile.ZipFile(p/'../../../../../mods/FarmersDelight-26.2-1.3.3-fix5.jar')
++for root in roots:
++ for f in root.glob('assets/large_meals/models/**/*.json'):
++  d=json.loads(f.read_text());textures=d.get('textures',{})
++  for texture in textures.values():
++   if texture.startswith('farmersdelight:'):
++    assert 'assets/farmersdelight/textures/'+texture.split(':',1)[1]+'.png' in fd.namelist(),(f,texture)
++  for element in d.get('elements',[]):
++   for face in element.get('faces',{}).values():
++    texture=face.get('texture','')
++    assert not texture.startswith('#') or texture[1:] in textures,(f,texture)
++print('PASS: model face references bound; all Farmer Delight dependency textures exist')

@@ -1,0 +1,50 @@
+[
+  {
+    "label": "01 Display Delight creative and JEI populated",
+    "image": "screenshots/all/01-01-display-delight-creative-and-jei-populated.png",
+    "source": "2026-10-27_20.35.39.png",
+    "sha256": "72c918ad89c6bd93b1d12421320e5842c6cc12f0d349e898d4faf36ee65c30fc"
+  },
+  {
+    "label": "02 native creative missing addon search",
+    "image": "screenshots/all/02-02-native-creative-missing-addon-search.png",
+    "source": "2026-10-27_20.35.41.png",
+    "sha256": "d4723aa659829941ce518a592a37595d088566adda0d3d0595f31b4a823ce8a0"
+  },
+  {
+    "label": "03 JEI Large Meals",
+    "image": "screenshots/all/03-03-jei-large-meals.png",
+    "source": "2026-10-27_20.35.42.png",
+    "sha256": "126fd9b2494c8c22f127dd3dd1330236a7b07559a4f7e712a58df09fdaf9330e"
+  },
+  {
+    "label": "04 JEI Oceans Delight",
+    "image": "screenshots/all/04-04-jei-oceans-delight.png",
+    "source": "2026-10-27_20.35.43.png",
+    "sha256": "799fa6e215c31ee7784604cbe7a0ead00e42b85821cb55f13e32a717226951f5"
+  },
+  {
+    "label": "05 JEI Ends Delight",
+    "image": "screenshots/all/05-05-jei-ends-delight.png",
+    "source": "2026-10-27_20.35.44.png",
+    "sha256": "946a1de8fc02b856aaf21bb9d26a8eadf5daf8d2632dd66fb175b48682bec7a1"
+  },
+  {
+    "label": "06 JEI addon display information",
+    "image": "screenshots/all/06-06-jei-addon-display-information.png",
+    "source": "2026-10-27_20.35.46.png",
+    "sha256": "b1286aadab174e3cebdcba0a8c3fb11f78b439d91222e7d9ddb856c72bc86d74"
+  },
+  {
+    "label": "07 world feasts displays and stove",
+    "image": "screenshots/all/07-07-world-feasts-displays-and-stove.png",
+    "source": "2026-10-27_20.35.47.png",
+    "sha256": "c21f232bc3c749110dedfa244e987816baa07e9c162adb786ba75ab6cec102c6"
+  },
+  {
+    "label": "08 overhead native stove six food items feasts and addon displays",
+    "image": "screenshots/all/08-08-overhead-native-stove-six-food-items-feasts-and-addon-displays.png",
+    "source": "2026-10-27_20.35.53.png",
+    "sha256": "4d7c1bad9e369f0ef4f27d5c45bb6b9e8e6e20b1512bb7f4f6d0bc0b906c011a"
+  }
+]

@@ -379,3 +379,11 @@ Installed same-name Penchant replacement adding server-side reconciliation of ea
 ## 27 October 2026 - Healing armor balance
 
 Installed same-name Paladins & Priests and Armory overlays: all twenty Paladin/Crusader/Netherite Crusader/Justicar/Lightbringer pieces grant +0.25 flat Healing Power. Fresh and legacy-config runs each pass 29 native checks. See [details and preservation proof](../docs/patches/healing-armor-balance/README.md). Backups: `retired packs/healing-armor-balance-20261027/`.
+
+## 27 October 2026 - Three Delight additions and display availability
+
+Installed local Minecraft26.2 ports of Ocean's Delight1.0.4, Large Meals1.0.1 and End's Delight2.6.1, plus a same-filename Display Delight fix2 repack. Source-food availability now filters JEI/creative/search/trader entries without removing saved display IDs. End Stove syncs its six cooking items to clients. All production artifacts also have matching fixed copies; old DD is backed up under `retired packs/delight-batch-20261027/`. See [source patches, isolated native/client checks and installation hashes](../docs/patches/delight-batch/README.md). Personal installations untouched; no push requested.
+
+## 28 October 2026 - Paladin doctrine and plate progression
+
+Installed same-filename Skill Tree, Paladins and Armory replacements. Actual Paladin class allocations reject healing staves/wands in either hand, with safe inventory return and a short oath warning; Priest use remains. Root/ordinary nodes grant +0.25 Healing Power. Plate per piece: Paladin0.75,Crusader1,NetheriteCrusader1.15,Justicar/Lightbringer1.25. Justicar retains its separate +2 set bonus. Native84checks, fresh/legacy armor29each and actual client49checks pass. [Source, exact hashes and evidence](../docs/patches/paladin-doctrine/README.md). Ignored originals: `retired packs/paladin-doctrine-20261028/`. No personal instance changes or push.

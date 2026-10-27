@@ -1,0 +1,38 @@
+[
+  {
+    "label": "01 Display Delight creative and JEI populated",
+    "image": "screenshots/base/01-01-display-delight-creative-and-jei-populated.png",
+    "source": "2026-10-27_20.20.47.png",
+    "sha256": "fe7479a8244c0cede653db701983d90caf6b47ceaaf06a3b310976890217dcf9"
+  },
+  {
+    "label": "02 native creative missing addon search",
+    "image": "screenshots/base/02-02-native-creative-missing-addon-search.png",
+    "source": "2026-10-27_20.20.48.png",
+    "sha256": "ce5f380a63a9ac10acfdc549aa4a4f2edc013750f45f670a9f1446afe64d3871"
+  },
+  {
+    "label": "03 JEI Farmers Delight",
+    "image": "screenshots/base/03-03-jei-farmers-delight.png",
+    "source": "2026-10-27_20.20.49.png",
+    "sha256": "b17fcb1d1f4ecc0a2eed0bd4171a4e5eaa75a85af97f6d93b9d658e46cbb0213"
+  },
+  {
+    "label": "04 JEI Expanded Delight",
+    "image": "screenshots/base/04-04-jei-expanded-delight.png",
+    "source": "2026-10-27_20.20.51.png",
+    "sha256": "05188ee858f592c30915d74c62565120f424f05ae15819cb3b0b2a9d0a1f8992"
+  },
+  {
+    "label": "05 JEI display information",
+    "image": "screenshots/base/05-05-jei-display-information.png",
+    "source": "2026-10-27_20.20.52.png",
+    "sha256": "688fb23107ac332e42145c3745fa21c63453b370dbbe6ec3f23d6a0e6097a286"
+  },
+  {
+    "label": "07 world feasts displays and stove",
+    "image": "screenshots/base/06-07-world-feasts-displays-and-stove.png",
+    "source": "2026-10-27_20.20.54.png",
+    "sha256": "053007870468a447572239abac1edc3492e00fa617d4caa8df8a7bf11d93cd19"
+  }
+]

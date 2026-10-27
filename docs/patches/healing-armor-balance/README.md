@@ -1,5 +1,7 @@
 # Paladin and legendary plate Healing Power balance
 
+Historical27October2026 balance. Superseded by the [28October Paladin doctrine and per-set values](../paladin-doctrine/README.md); the evidence below describes the earlier +0.25-per-piece revision.
+
 27 October 2026. Same-filename Paladins & Priests 3.1.2 and Armory 1.5.2 overlays. Use matching updated client/server JARs and restart. No push requested.
 
 | Set | Previous flat Healing Power per piece | Current per piece | Full set |

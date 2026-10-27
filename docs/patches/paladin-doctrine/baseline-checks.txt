@@ -1,0 +1,7 @@
+FAIL actual Paladin root reward actual=0.20000000298023224
+FAIL actual ordinary Paladin reward x9it8aavrrwsojhg actual=0.20000000298023224
+FAIL actual ordinary Paladin reward uornste0y3mpodex actual=0.20000000298023224
+FAIL actual ordinary Paladin reward j3m3zpdi0ryjmgxt actual=0.20000000298023224
+FAIL runtime root default actual=0.2
+FAIL runtime ordinary default actual=0.2
+FAIL doctrine exists

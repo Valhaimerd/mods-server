@@ -1,0 +1,41 @@
+{
+  "minecraft": "26.2",
+  "neoforge": "26.2.0.90",
+  "java": 25,
+  "mainJarCount": 307,
+  "clientStoreJarCount": 23,
+  "files": [
+    {
+      "filename": "displaydelight-26.2-1.7.0-fix2.jar",
+      "modIds": [
+        "displaydelight"
+      ],
+      "sha256": "17116edaf2c587c886cba8c5edec45d4533002cb957d2ee995f5c064c55618e1",
+      "bytes": 1284063
+    },
+    {
+      "filename": "oceansdelight-26.2-1.0.4-port1.jar",
+      "modIds": [
+        "oceansdelight"
+      ],
+      "sha256": "606cc757cd6e525c9b7f605c6fafad6556deaaa13d21c7894be49c7475b827c3",
+      "bytes": 107415
+    },
+    {
+      "filename": "large_meals-26.2-1.0.1-port1.jar",
+      "modIds": [
+        "large_meals"
+      ],
+      "sha256": "8b10f13baa91ace05e1a5f63bf0106b919bfd96a7d2f3358c4378b1ae02ad6f4",
+      "bytes": 80416
+    },
+    {
+      "filename": "ends_delight-2.6.1+neoforge.26.2-port1.jar",
+      "modIds": [
+        "ends_delight"
+      ],
+      "sha256": "800a650a1e203dbaf998d3a867d643dec23e7c13721eedde986e97e148cc56bf",
+      "bytes": 271182
+    }
+  ]
+}

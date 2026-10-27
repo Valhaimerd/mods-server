@@ -1,0 +1,84 @@
+PASS actual Paladin root reward actual=0.25
+PASS actual ordinary Paladin reward x9it8aavrrwsojhg actual=0.25
+PASS actual ordinary Paladin reward uornste0y3mpodex actual=0.25
+PASS actual ordinary Paladin reward j3m3zpdi0ryjmgxt actual=0.25
+PASS runtime root default actual=0.25
+PASS runtime ordinary default actual=0.25
+PASS actual class root identifies Paladin
+PASS native healing weapon tag paladins:acolyte_wand
+PASS forbidden hand cleared MAIN_HAND paladins:acolyte_wand
+PASS exact item returned to inventory MAIN_HAND paladins:acolyte_wand
+PASS native healing weapon tag paladins:acolyte_wand
+PASS forbidden hand cleared OFF_HAND paladins:acolyte_wand
+PASS exact item returned to inventory OFF_HAND paladins:acolyte_wand
+PASS native healing weapon tag paladins:holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:holy_wand
+PASS native healing weapon tag paladins:holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:holy_wand
+PASS native healing weapon tag paladins:diamond_holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:diamond_holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:diamond_holy_wand
+PASS native healing weapon tag paladins:diamond_holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:diamond_holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:diamond_holy_wand
+PASS native healing weapon tag paladins:netherite_holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:netherite_holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:netherite_holy_wand
+PASS native healing weapon tag paladins:netherite_holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:netherite_holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:netherite_holy_wand
+PASS native healing weapon tag paladins:holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:holy_staff
+PASS native healing weapon tag paladins:holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:holy_staff
+PASS native healing weapon tag paladins:diamond_holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:diamond_holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:diamond_holy_staff
+PASS native healing weapon tag paladins:diamond_holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:diamond_holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:diamond_holy_staff
+PASS native healing weapon tag paladins:netherite_holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:netherite_holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:netherite_holy_staff
+PASS native healing weapon tag paladins:netherite_holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:netherite_holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:netherite_holy_staff
+PASS only optional material weapons may be absent paladins:ruby_holy_staff
+PASS only optional material weapons may be absent paladins:ruby_holy_staff
+PASS only optional material weapons may be absent paladins:aether_holy_staff
+PASS only optional material weapons may be absent paladins:aether_holy_staff
+PASS full inventory safely swaps both hands
+PASS all-forbidden full inventory still has empty hands
+PASS two displaced items persist safely
+PASS serialized reserve is idempotent
+PASS free slot recovers one reserved item
+PASS respec removes restriction
+PASS respec recovers remaining item into free hand slot
+PASS Priest retains healing staff MAIN_HAND
+PASS Priest retains healing staff OFF_HAND
+PASS Priest retains actual staff attribute
+PASS Paladin staff attributes removed immediately actual=10.25
+PASS native equipment scan rejects direct insertion
+PASS scan never applies forbidden staff bonus actual=10.25
+PASS direct healing-staff cast attempt rejected
+PASS cast guard clears forbidden hand
+PASS ordinary melee weapon retained
+PASS offhand violation rejects initiating action
+PASS offhand action guard clears healing weapon
+PASS stale queued staff source is rejected after relocation
+PASS native attack event rejects healing weapon
+PASS fast-switch fixture has applied Priest staff bonus
+PASS fast class/slot switch removes stale weapon bonus actual=10.25
+PASS death fixture has two displaced items
+PASS normal death drops both displaced items
+PASS normal death clears reserve before clone
+PASS native player save/load retains displaced equipment
+PASS keepInventory retains displaced items without drops
+PASS native respawn clone retains displaced equipment
+PASS respawned player recovers reserved equipment
+PASS respawn restores exactly two items without duplication
+PASS clone writes do not mutate original shared persisted tag

@@ -1,0 +1,1 @@
+PASS: final three resource candidates loaded; zero missing textures, missing model references, or UI atlas-limit warnings.

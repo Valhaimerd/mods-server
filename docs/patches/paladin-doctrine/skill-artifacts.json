@@ -1,0 +1,19 @@
+{
+  "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+  "before_sha256": "be5624b10171e6e5ed2935c76f18b65e793eee8c1543d4d246188214e7888c82",
+  "sha256": "9e435262b25641895be0ecbd0b59718c4fd53ad18fb96febe3ab5497000117ff",
+  "changed": [
+    "assets/skill_tree_rpgs/lang/en_us.json",
+    "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+    "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+    "net/skill_tree_rpgs/skills/NodeTypes.class",
+    "skill_tree_rpgs.mixins.json"
+  ],
+  "added": [
+    "net/skill_tree_rpgs/compat/PaladinDoctrine.class",
+    "net/skill_tree_rpgs/mixin/PaladinCastingMixin.class",
+    "net/skill_tree_rpgs/mixin/PaladinEquipmentAccess.class",
+    "net/skill_tree_rpgs/mixin/PaladinEquipmentMixin.class",
+    "net/skill_tree_rpgs/mixin/PaladinPlayerMixin.class"
+  ]
+}

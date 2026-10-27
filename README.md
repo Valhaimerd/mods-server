@@ -130,11 +130,11 @@ Warrior balance: Killing Spree heals 4% maximum health on kills without damage r
 
 Auras has been removed from the client pack after its entity-ID rendering hook crashed Animal Pen guidebook previews. A same-filename Patchouli repair also gives detached book previews stable IDs, fixing the underlying vanilla renderer failure that remained without Auras. Animal Pen remains unchanged; see [the crash investigation and verification](docs/patches/auras-preview-id/README.md).
 
-Kaleidoscope Cookery has been removed from the pack. Farmer's Delight and the remaining cooking mods stay installed; the handbook and catalog now reflect 304 main-pack JARs and 23 client extras.
+Kaleidoscope Cookery has been removed from the pack. Farmer's Delight and the remaining cooking mods stay installed; the handbook and catalog now reflect 307 main-pack JARs and 23 client extras.
 
 Adventurer Skills Healing nodes and Colossus now improve Healing Power as well as healing received. Shared caster nodes read ?Magic Damage? and include Healing Power; Magistrate includes it too. See [the four-node overlay](docs/patches/adventurer-healing/README.md).
 
-MrCrayfish's Furniture Mod: Refurbished 1.0.25 is included for furniture, powered home appliances, mailboxes and computers; its required Framework 0.13.26 is already installed. The handbook now contains 181 gameplay entries across 304 main-pack JARs and 23 client extras. The 25 October controls audit confirms PatPat on right-click, RPG Tooltip Spell Details on Left Ctrl, and Penchant progress on Left Shift in both the owner's profile and installer recommendations.
+MrCrayfish's Furniture Mod: Refurbished 1.0.25 is included for furniture, powered home appliances, mailboxes and computers; its required Framework 0.13.26 is already installed. The handbook now contains 184 gameplay entries across 307 main-pack JARs and 23 client extras. The 25 October controls audit confirms PatPat on right-click, RPG Tooltip Spell Details on Left Ctrl, and Penchant progress on Left Shift in both the owner's profile and installer recommendations.
 
 Pet Vault's Keeper's Locket also fits the Nameless Trinkets **Trinket** slots, retaining its original Necklace slot and R menu. See [the additive slot patch](docs/patches/pet-vault-trinket/README.md). Sync the same-name Pet Vault JAR on clients and server.
 
@@ -160,4 +160,6 @@ Latest [Priest tuning](docs/patches/priest-tuning/README.md): Holy Staff Special
 
 [Penchant pending Unbreaking progression](docs/patches/unbreaking-progression/README.md) now reconciles earned full bars on carried/worn gear once per second. Existing V progress can advance to VI and continue to X without waiting for another durability event; partial progress grants no free levels. Matching client/server JARs and a restart are required.
 
-[Healing armor balance](docs/patches/healing-armor-balance/README.md) sets Paladin, Crusader, Netherite Crusader, Armory Justicar and Armory Lightbringer to +0.25 flat Healing Power per piece (+1 per full set), including existing equipment configs. Other attributes and legendary set bonuses remain.
+[Paladin doctrine and balance](docs/patches/paladin-doctrine/README.md) prevents players with Path of the Paladin from wielding healing staves/wands in either hand, returning them to storage with a short oath warning. Root and ordinary Paladin nodes grant +0.25 Healing Power. Plate grants +0.75 Paladin, +1 Crusader, +1.15 Netherite Crusader and +1.25 Justicar/Lightbringer per piece, including existing equipment configs. Priest robes and other attributes/set bonuses remain.
+
+Ocean's Delight, Large Meals and End's Delight are now included as local 26.2 ports alongside Farmer's Delight and Expanded Delight. Display Delight hides dishes whose source food is unavailable from JEI, creative/search lists and wandering-trader offers, while retaining existing display IDs. See [the ports and compatibility checks](docs/patches/delight-batch/README.md). Both client and server need the updated pack.

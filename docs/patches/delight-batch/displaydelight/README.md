@@ -1,0 +1,9 @@
+# Display Delight availability repair
+
+Same installed filename: `displaydelight-26.2-1.7.0-fix2.jar`; rebuilt on Java 25/NeoForge26.2.0.90. Source baseline is the pack's existing fix2 source checkout, with pre-edit source/JAR snapshots retained under ignored `tmp/delight-batch/`.
+
+`availability.patch` applies to that baseline. It preserves all registered IDs, resources, existing placement/food-return fixes and original aliases. A direct registry/tag resolver checks the loaded source mod, exact food ID and correct display category, without server-only map initialization. Empty plates remain available. JEI information recipes and runtime ingredients, creative/search output and trader pools use this rule. Loaded traders lose only unavailable Display Delight results; valid and ordinary trades remain. Empty pools omit offers. Initialization clears/rebuilds derived maps on load and tag reload; registry-holder tag checks avoid constructing ItemStacks before components are bound.
+
+Native regression: baseline has nine failures. Final base/individual/all-three matrices pass; final base/all-three also register a test-only display for a nonexistent food under an installed mod, proving item-level hiding rather than namespace-only checks. Both final fixture runs pass397 assertions. IDs remain registered; saved valid/ordinary offers survive, invalid offers are removed, repeated loads do not add offers, empty categories omit offers, and maps initialize idempotently. Client JEI checks are recorded separately in ../client/.
+
+Rebuild inside `mod fixing/displaydelight-26.2-port` with the cached Java25 JDK and `./gradlew.bat build --offline`. Production excludes test probes. Root `VisibilityProbe.java` and `run_probe.py` reproduce native tests using the documented isolated NeoForge cache. The script is a pack-workspace regression harness, not a standalone server installer.

@@ -1,0 +1,17 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "sha256": "9e435262b25641895be0ecbd0b59718c4fd53ad18fb96febe3ab5497000117ff",
+    "bytes": 2991182
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "sha256": "de5fdf74c0faae30e9f2c461b9df4f8c1dc3999d0972f3ae20a062793b179944",
+    "bytes": 643548
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "sha256": "b24221ea3be187b82e62befa35f38484f262c5c099507a68404080a3fcdfa596",
+    "bytes": 3096576
+  }
+]

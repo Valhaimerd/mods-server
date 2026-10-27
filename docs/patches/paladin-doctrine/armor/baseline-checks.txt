@@ -1,0 +1,28 @@
+PASS all twenty plate pieces registered
+FAIL per-set flat healing: armory_rpgs:justicar_armor_chest actual=0.25
+FAIL per-set flat healing: armory_rpgs:justicar_armor_feet actual=0.25
+FAIL per-set flat healing: armory_rpgs:justicar_armor_head actual=0.25
+FAIL per-set flat healing: armory_rpgs:justicar_armor_legs actual=0.25
+FAIL per-set flat healing: armory_rpgs:lightbringer_armor_chest actual=0.25
+FAIL per-set flat healing: armory_rpgs:lightbringer_armor_feet actual=0.25
+FAIL per-set flat healing: armory_rpgs:lightbringer_armor_head actual=0.25
+FAIL per-set flat healing: armory_rpgs:lightbringer_armor_legs actual=0.25
+FAIL per-set flat healing: paladins:crusader_armor_chest actual=0.25
+FAIL per-set flat healing: paladins:crusader_armor_feet actual=0.25
+FAIL per-set flat healing: paladins:crusader_armor_head actual=0.25
+FAIL per-set flat healing: paladins:crusader_armor_legs actual=0.25
+FAIL per-set flat healing: paladins:netherite_crusader_armor_chest actual=0.25
+FAIL per-set flat healing: paladins:netherite_crusader_armor_feet actual=0.25
+FAIL per-set flat healing: paladins:netherite_crusader_armor_head actual=0.25
+FAIL per-set flat healing: paladins:netherite_crusader_armor_legs actual=0.25
+FAIL per-set flat healing: paladins:paladin_armor_chest actual=0.25
+FAIL per-set flat healing: paladins:paladin_armor_feet actual=0.25
+FAIL per-set flat healing: paladins:paladin_armor_head actual=0.25
+FAIL per-set flat healing: paladins:paladin_armor_legs actual=0.25
+FAIL per-set full Healing Power total: paladins:paladin_armor
+FAIL per-set full Healing Power total: paladins:crusader_armor
+FAIL per-set full Healing Power total: paladins:netherite_crusader_armor
+FAIL per-set full Healing Power total: armory_rpgs:justicar_armor
+FAIL per-set full Healing Power total: armory_rpgs:lightbringer_armor
+PASS Avatar percentage Healing Power retained
+PASS Absolution percentage Healing Power retained

@@ -1,0 +1,82 @@
+PASS real connected player actual Paladin root unlocked
+PASS client synchronized Paladin root adds flat 0.25 Healing Power actual=10.25
+PASS client initial staff present once
+PASS real hotbar selection packet automatically unequips staff
+PASS hotbar rejection preserves exactly one staff
+PASS client Healing Power excludes forbidden staff actual=10.25
+PASS native action bar warning localized: Your Paladin oath forbids healing staves and wands.
+PASS oath warning stays short
+SCREENSHOT 01 native localized Paladin oath warning
+PASS unchanged forbidden inventory does not refresh/spam warning timer 35 -> 10
+SCREENSHOT 02 staff returned to native inventory
+PASS real player server tick automatically unequips offhand wand
+PASS offhand rejection preserves exactly one wand
+PASS offhand removal leaves correct client Healing Power actual=10.25
+PASS ordinary Paladin reward server adds flat 0.25 actual=0.25
+PASS client receives ordinary node flat 0.25 actual=10.5
+PASS real client full inventory safely swaps both forbidden hands
+PASS full inventory swap preserves staff wand and all 2240 stone
+SCREENSHOT 03 full inventory both hands safely swapped
+PASS respec to actual Priest root releases restriction
+PASS client Priest after respec retains staff and wand
+PASS Priest receives actual native healing weapon power client=15.449999989941716
+SCREENSHOT 04 Priest holds native healing weapons after respec
+PASS client one Paladin plate piece adds flat 1.0 actual=11.0
+PASS Paladin helmet synchronized and equipped
+PASS client full Paladin plate set adds flat 4.0 actual=14.0
+SCREENSHOT 05 native Paladin plate equipment
+PASS native Skill Tree screen opens on connected client
+PASS native synchronized paladin_root tooltip flat value +0.25 Healing Power
+Healing staves and wands are forbidden.
+PASS native synchronized paladin_boost tooltip flat value +0.25 Healing Power
+SCREENSHOT 06 actual Paladin class skill screen
+SCREENSHOT 07 native Paladin root tooltip
+PASS armor native registry paladins:crusader_armor_head
+PASS armor native registry paladins:crusader_armor_chest
+PASS armor native registry paladins:crusader_armor_legs
+PASS armor native registry paladins:crusader_armor_feet
+PASS client equipped flat item modifiers paladins:crusader_armor actual=5.0
+PASS client total Healing Power paladins:crusader_armor actual=15.0
+PASS armor native registry paladins:netherite_crusader_armor_head
+PASS armor native registry paladins:netherite_crusader_armor_chest
+PASS armor native registry paladins:netherite_crusader_armor_legs
+PASS armor native registry paladins:netherite_crusader_armor_feet
+PASS client equipped flat item modifiers paladins:netherite_crusader_armor actual=6.0
+PASS client total Healing Power paladins:netherite_crusader_armor actual=16.0
+PASS armor native registry armory_rpgs:justicar_armor_head
+PASS armor native registry armory_rpgs:justicar_armor_chest
+PASS armor native registry armory_rpgs:justicar_armor_legs
+PASS armor native registry armory_rpgs:justicar_armor_feet
+PASS client equipped flat item modifiers armory_rpgs:justicar_armor actual=7.0
+PASS client total Healing Power armory_rpgs:justicar_armor including unchanged +2 Justicar set bonus actual=19.0
+PASS armor native registry armory_rpgs:lightbringer_armor_head
+PASS armor native registry armory_rpgs:lightbringer_armor_chest
+PASS armor native registry armory_rpgs:lightbringer_armor_legs
+PASS armor native registry armory_rpgs:lightbringer_armor_feet
+PASS client equipped flat item modifiers armory_rpgs:lightbringer_armor actual=7.0
+PASS client total Healing Power armory_rpgs:lightbringer_armor actual=17.0
+PASS Priest client armor slot automatically cleared HEAD
+PASS Priest client armor slot automatically cleared CHEST
+PASS Priest client armor slot automatically cleared LEGS
+PASS Priest client armor slot automatically cleared FEET
+PASS Priest no longer receives rejected plate power or set bonus actual=10.299999993294477
+PASS localized Priest armor doctrine warning translation{key='skill_tree_rpgs.priest_oath', args=[]}
+SCREENSHOT 08 Priest doctrine warning
+PASS Priest may carry plate in hand
+PASS native right-click cannot equip Paladin chestplate on Priest
+PASS denied right-click preserves held plate
+PASS full client inventory still prevents all four armor slots
+PASS all2304stones preserved in full client inventory
+PASS server safely retains four displaced armor pieces
+PASS freed client slot recovers rejected armor 1
+PASS freed client slot recovers rejected armor 2
+PASS freed client slot recovers rejected armor 3
+PASS freed client slot recovers rejected armor 4
+PASS recovery clears reserve exactly once
+PASS Priest native robe remains equipped
+PASS Priest staff and wand remain usable with robe
+SCREENSHOT 09 Priest robe and healing weapons
+PASS Priest native skill screen opens
+PASS Priest native root preserves reward and explains restriction +3% Healing Power
+Paladin plate armor is forbidden.
+SCREENSHOT 10 Priest root doctrine tooltip

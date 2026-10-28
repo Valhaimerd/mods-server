@@ -1,0 +1,121 @@
+{
+  "same_name_archives": [
+    {
+      "jar": "combat_roll-neoforge-3.0.1+26.2.jar",
+      "before_sha256": "ba8da511dfe6568fc91580eacdb2e39a224aa57619f41edfd76aca8f06536d7c",
+      "sha256": "38cfe0826a9c0e42330cf27ce3af926c4f8918da222d2bca9b73fa80e7ac875a",
+      "changed": [
+        "net/combat_roll/internals/RollManager.class",
+        "net/combat_roll/mixin/MinecraftClientMixin.class",
+        "net/combat_roll/network/ServerNetwork.class"
+      ],
+      "added": []
+    },
+    {
+      "jar": "EffectInsights-v26.2.2-mc26.2.x-NeoForge.jar",
+      "before_sha256": "787b9263a6a62194bdb9c206c463c5f914545d3f5a8707da83dbfe02cb94c20d",
+      "sha256": "af9e03cae8f51562655c9e06061511cf4edb5fcb116bcc3b4fe7f86597376199",
+      "changed": [
+        "fuzs/effectinsights/common/client/gui/tooltip/MobEffectTooltipLines$2.class",
+        "fuzs/effectinsights/common/client/gui/tooltip/PotionContentsLines.class"
+      ],
+      "added": []
+    },
+    {
+      "jar": "paladins-neoforge-3.1.2+26.2.jar",
+      "before_sha256": "ac8926a2ebdf9150fac3217afd57ade43788cc2075d419e05a1b41d33269f82c",
+      "sha256": "4268e2e3076333001aa0445d026078c9acfc5e090c26d05909dbe64922656274",
+      "changed": [
+        "assets/paladins/lang/en_us.json",
+        "data/paladins/spell/divine_protection.json",
+        "data/paladins/spell/immolation.json",
+        "data/paladins/spell/judgement.json",
+        "assets/paladins/textures/mob_effect/judgement.png",
+        "net/paladins/effect/PaladinEffects.class",
+        "data/paladins/spell/blessed_wave.json",
+        "data/paladins/spell/blessed_wave_wrath.json"
+      ],
+      "added": [
+        "data/paladins/spell/oath_extra.json",
+        "data/paladins/spell/oath_hammer.json",
+        "data/paladins/spell/oath_landing.json",
+        "data/paladins/spell/oath_landing_judgement.json"
+      ]
+    },
+    {
+      "jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "before_sha256": "7719aa0328b8884ca7edd94bfc9a2ba65aab3404e0257004595665d810320d7d",
+      "sha256": "097a0597f131e21bc56ebb84a0f8c603a992da568a985f3f31be9d58217b040b",
+      "changed": [
+        "assets/rogues/textures/mob_effect/net_trap.png",
+        "assets/rogues/textures/mob_effect/shock.png"
+      ],
+      "added": [
+        "assets/rogues/textures/mob_effect/bear_trap.png"
+      ]
+    },
+    {
+      "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "before_sha256": "4462277060dc221c516a680d06f2b71c4ebc7dbb1172759764f1e50b74a963bb",
+      "sha256": "79a93d7c7ce632017170a943c759954717791528a86265d2b40e927379dd59ef",
+      "changed": [
+        "assets/skill_tree_rpgs/lang/en_us.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_1_passive_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_1_passive_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_2_passive_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_2_passive_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_modifier_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_modifier_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_root.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_modifier_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_modifier_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_root.json",
+        "assets/skill_tree_rpgs/textures/mob_effect/natures_grasp.png",
+        "net/skill_tree_rpgs/compat/PaladinPassives.class"
+      ],
+      "added": [
+        "assets/skill_tree_rpgs/textures/mob_effect/divine_oath.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/faith_knockback.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/merciful_recovery.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/paladin_control_guard.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/protection_power.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/sinful_mark.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/sinful_retaliation_ready.png"
+      ]
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before_sha256": "97ff8fa593e26a26bdedf89c36cf336cf1888d2046c424772ce414292fef4e22",
+      "sha256": "dafb2b475b6197300ecce47b2c763a9d957c1b87dcc9696f8e345fe2f4ee2bab",
+      "changed": [
+        "net/spell_engine/neoforge/NeoForgeMod.class",
+        "assets/spell_engine/textures/mob_effect/stun.png",
+        "net/spell_engine/client/casting/ClientCastController.class",
+        "net/spell_engine/entity/SpellProjectile.class",
+        "net/spell_engine/internals/SpellTriggers.class",
+        "net/spell_engine/internals/delivery/ProjectileLauncher.class",
+        "net/spell_engine/internals/impact/SpellImpacts.class",
+        "net/spell_engine/entity/WarriorTierTwo.class",
+        "net/spell_engine/internals/PaladinTierOne.class"
+      ],
+      "added": [
+        "net/spell_engine/client/gui/EffectClientDetails.class",
+        "net/spell_engine/internals/EffectDetails.class",
+        "net/spell_engine/internals/PaladinRevamp$OathLaunch.class",
+        "net/spell_engine/internals/PaladinRevamp.class"
+      ]
+    },
+    {
+      "jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "before_sha256": "4a5ce2b28f847e0289a180724515c59010d04d6997affe74da148ad6a19969de",
+      "sha256": "ebd7e3b5ffb1a112c053241ec9162fa3ba318167131d46adc497b35e04eb902e",
+      "changed": [
+        "assets/wizards/textures/mob_effect/frozen.png"
+      ],
+      "added": []
+    }
+  ],
+  "backup": "mod fixing\\retired packs\\paladin-revamp-before-2026-10-28",
+  "personal_installations_changed": false,
+  "pushed": false
+}

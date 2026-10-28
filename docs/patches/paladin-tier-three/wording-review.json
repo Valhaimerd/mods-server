@@ -1,0 +1,102 @@
+[
+  {
+    "key": "spell.paladins.battle_banner.description",
+    "before": "Increases attack speed and knockback resistance for you and allies nearby, within {cloud_radius} blocks, for {cloud_duration} seconds.",
+    "after": "Carry a banner that builds nearby allies’ combat buffs and heals them. Each ally can receive one brief rescue from low health or a fatal hit."
+  },
+  {
+    "key": "spell.paladins.immolation.name",
+    "before": "Immolation",
+    "after": "Purgatory"
+  },
+  {
+    "key": "spell.paladins.immolation.description",
+    "before": "Erupts in holy fire, dealing 120%% of your Healing power as damage to nearby enemies and setting them ablaze, while healing you and nearby allies by 50%% of your Healing power. The longer the cast is held, the harder it hits and the wider it spreads.",
+    "after": "Channel holy fire, burning and drawing enemies inward. Pulses grow from 10%% to 20%% and 30%% holy hybrid damage after 10s and 20s, costing 2 and 3 HP in those later stages. Allies gain regeneration; the final phase protects you and builds a powerful finishing explosion. Stun or Frozen interrupts the channel."
+  },
+  {
+    "key": "effect.paladins.battle_banner.description",
+    "before": "Increases attack speed and knockback resistance",
+    "after": "Combat bonuses build while you remain near the banner."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_root.name",
+    "before": "Improved Battle Banner",
+    "after": "Improved Battle Banner"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_root.description",
+    "before": "Reduces the cooldown of Battle Banner by {cooldown_duration_deduct} sec.",
+    "after": "Battle Banner reaches 2 blocks farther."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_modifier_1.name",
+    "before": "Persistent Banner",
+    "after": "Persistent Banner"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_modifier_1.description",
+    "before": "Increases the duration of Battle Banner by {spawn_duration_add} sec.",
+    "after": "Battle Banner lasts 5s longer."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_modifier_2.name",
+    "before": "Protective Banner",
+    "after": "Intense Banner"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_1_modifier_2.description",
+    "before": "Battle Banner also reduces damage taken by {effect|skill_tree_rpgs:banner_protection|0||abs}.",
+    "after": "Raises each Banner buff’s maximum by 5%%. Healing is unchanged."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_root.name",
+    "before": "Improved Immolation",
+    "after": "Improved Purgatory"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_root.description",
+    "before": "Radius of Immolation increased by {range_add} blocks.",
+    "after": "Purgatory’s flames reach 1 block farther; its pull and finishing effects reach 2 blocks farther."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_modifier_1.name",
+    "before": "Condemn",
+    "after": "Damnation"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_modifier_1.description",
+    "before": "Immolation drags struck enemies towards you.",
+    "after": "Purgatory pulses deal 15%%, 25%% and 35%% holy hybrid damage. Its finishing explosion can reach 900%% Melee Damage."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_modifier_2.name",
+    "before": "Consecration",
+    "after": "Final Resolute"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_4_spell_2_modifier_2.description",
+    "before": "Immolation consecrates the ground beneath you, dealing 20%% of your Healing power as damage to enemies, for {cloud_duration} sec.",
+    "after": "During Purgatory’s final phase, critical health or a fatal hit ends the channel with its earned explosion, shields allies and protects you for 3s."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_3_passive_1.name",
+    "before": "Ardent Defender",
+    "after": "Ardent Defender"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_3_passive_1.description",
+    "before": "Upon taking damage below 30%% health, your max health is increased by {effect|skill_tree_rpgs:ardent_defender|0||abs}, for {effect_duration} sec.",
+    "after": "An endangered nearby party player gains Resistance I, 10 armor and 5%% damage reduction, and heals for 40%% maximum HP. A fatal hit can still kill them."
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_3_passive_2.name",
+    "before": "Divine Hammer",
+    "after": "Reinforced"
+  },
+  {
+    "key": "spell.skill_tree_rpgs.paladin_tier_3_passive_2.description",
+    "before": "Melee attacks throw a hammer at the target, dealing 50%% melee damage, ricocheting {ricochet} to nearby enemies.",
+    "after": "Gain 5%% Healing Power and base armor at each low-health threshold, up to 20%% below 40%% HP."
+  }
+]

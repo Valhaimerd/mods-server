@@ -1,0 +1,34 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "9e435262b25641895be0ecbd0b59718c4fd53ad18fb96febe3ab5497000117ff",
+    "sha256": "b88ecf758ede65c4d73c9e45d496b8a3095895ddc0cce7ccc82534f1d5a1209f",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+      "net/skill_tree_rpgs/compat/PaladinDoctrine.class"
+    ],
+    "added": [
+      "data/skill_tree_rpgs/tags/item/paladin_plate.json"
+    ]
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "b24221ea3be187b82e62befa35f38484f262c5c099507a68404080a3fcdfa596",
+    "sha256": "60bf6555106d5f819c89b3f6027c8de3b8b5647efeb20e67812b39561e1b6bfb",
+    "changed": [
+      "net/paladins/item/armor/HealingArmorBalance.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "before_sha256": "de5fdf74c0faae30e9f2c461b9df4f8c1dc3999d0972f3ae20a062793b179944",
+    "sha256": "78c638e15dc55ad2bf98de5c3419d38daf81731e802a5826351c1a075de031f2",
+    "changed": [
+      "net/armory_rpgs/item/HealingArmorBalance.class"
+    ],
+    "added": []
+  }
+]

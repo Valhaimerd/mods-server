@@ -1,0 +1,1551 @@
+{
+  "paladins:monk_workbench": {
+    "attributes": [],
+    "durability": 0
+  },
+  "archers:archers_workbench": {
+    "attributes": [],
+    "durability": 0
+  },
+  "rogues:arms_workbench": {
+    "attributes": [],
+    "durability": 0
+  },
+  "rogues:flint_dagger": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.5999999046325684|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-1.600000023841858|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "rogues:iron_dagger": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|3.299999952316284|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-1.600000023841858|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "rogues:golden_dagger": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|1.7999999523162842|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-1.600000023841858|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "rogues:diamond_dagger": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-1.600000023841858|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "rogues:netherite_dagger": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.699999809265137|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-1.600000023841858|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "rogues:iron_sickle": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.099999904632568|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "rogues:golden_sickle": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.4000000953674316|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "rogues:diamond_sickle": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "rogues:netherite_sickle": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.900000095367432|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "rogues:stone_double_axe": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.599999904632568|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "rogues:iron_double_axe": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|7.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "rogues:golden_double_axe": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "rogues:diamond_double_axe": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|8.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "rogues:netherite_double_axe": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|9.600000381469727|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "rogues:iron_glaive": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.800000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "rogues:golden_glaive": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|3.5|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "rogues:diamond_glaive": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|7.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "rogues:netherite_glaive": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|8.100000381469727|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "rogues:rogue_armor_head": {
+    "attributes": [
+      "minecraft:attack_speed|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_engine:evasion_chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:rogue_armor_chest": {
+    "attributes": [
+      "minecraft:attack_speed|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_engine:evasion_chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:rogue_armor_legs": {
+    "attributes": [
+      "minecraft:attack_speed|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_engine:evasion_chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:rogue_armor_feet": {
+    "attributes": [
+      "minecraft:attack_speed|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET",
+      "spell_engine:evasion_chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "rogues:assassin_armor_head": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.helmet|0.019999999552965164|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_speed|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_engine:evasion_chance|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:assassin_armor_chest": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.chestplate|0.019999999552965164|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_speed|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_engine:evasion_chance|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:assassin_armor_legs": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.leggings|0.019999999552965164|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_speed|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_engine:evasion_chance|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:assassin_armor_feet": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.boots|0.019999999552965164|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_speed|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_engine:evasion_chance|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "rogues:netherite_assassin_armor_head": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.helmet|0.02500000037252903|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_speed|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_engine:evasion_chance|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:netherite_assassin_armor_chest": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.chestplate|0.02500000037252903|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_speed|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_engine:evasion_chance|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:netherite_assassin_armor_legs": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.leggings|0.02500000037252903|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_speed|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_engine:evasion_chance|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:netherite_assassin_armor_feet": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.boots|0.02500000037252903|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_speed|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_engine:evasion_chance|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "rogues:warrior_armor_head": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:warrior_armor_chest": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:warrior_armor_legs": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:warrior_armor_feet": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "rogues:berserker_armor_head": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:berserker_armor_chest": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:berserker_armor_legs": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:berserker_armor_feet": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "rogues:netherite_berserker_armor_head": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "rogues:netherite_berserker_armor_chest": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "rogues:netherite_berserker_armor_legs": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "rogues:netherite_berserker_armor_feet": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "paladins:stone_claymore": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|6.800000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "paladins:iron_claymore": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|8.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "paladins:golden_claymore": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.199999809265137|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "paladins:diamond_claymore": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|9.899999618530273|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "paladins:netherite_claymore": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|11.5|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "paladins:wooden_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|6.599999904632568|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 59
+  },
+  "paladins:stone_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|8.5|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "paladins:iron_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|10.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "paladins:golden_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|6.599999904632568|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "paladins:diamond_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|12.199999809265137|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "paladins:netherite_great_hammer": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|14.100000381469727|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.200000047683716|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "paladins:iron_mace": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|7.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "paladins:golden_mace": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "paladins:diamond_mace": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|8.300000190734863|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "paladins:netherite_mace": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|9.600000381469727|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.799999952316284|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "paladins:acolyte_wand": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "paladins:holy_wand": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|4.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "paladins:diamond_holy_wand": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "paladins:netherite_holy_wand": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|5.5|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "paladins:holy_staff": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "paladins:diamond_holy_staff": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|6.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "paladins:netherite_holy_staff": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:healing|minecraft:equipment_bonus|7.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "paladins:iron_kite_shield": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:equipment_bonus|1.0|ADD_VALUE|HAND",
+      "minecraft:max_health|minecraft:equipment_bonus|2.0|ADD_VALUE|HAND"
+    ],
+    "durability": 336
+  },
+  "paladins:golden_kite_shield": {
+    "attributes": [],
+    "durability": 168
+  },
+  "paladins:diamond_kite_shield": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:equipment_bonus|1.0|ADD_VALUE|HAND",
+      "minecraft:max_health|minecraft:equipment_bonus|2.0|ADD_VALUE|HAND"
+    ],
+    "durability": 672
+  },
+  "paladins:netherite_kite_shield": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:equipment_bonus|1.0|ADD_VALUE|HAND",
+      "minecraft:max_health|minecraft:equipment_bonus|4.0|ADD_VALUE|HAND"
+    ],
+    "durability": 1344
+  },
+  "paladins:paladin_armor_head": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.helmet|2.0|ADD_VALUE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|1.0|ADD_VALUE|HEAD"
+    ],
+    "durability": 165
+  },
+  "paladins:paladin_armor_chest": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.chestplate|6.0|ADD_VALUE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|1.0|ADD_VALUE|CHEST"
+    ],
+    "durability": 240
+  },
+  "paladins:paladin_armor_legs": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.leggings|5.0|ADD_VALUE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|1.0|ADD_VALUE|LEGS"
+    ],
+    "durability": 225
+  },
+  "paladins:paladin_armor_feet": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.boots|2.0|ADD_VALUE|FEET",
+      "spell_power:healing|minecraft:armor.boots|1.0|ADD_VALUE|FEET"
+    ],
+    "durability": 195
+  },
+  "paladins:crusader_armor_head": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.helmet|3.0|ADD_VALUE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|1.25|ADD_VALUE|HEAD"
+    ],
+    "durability": 275
+  },
+  "paladins:crusader_armor_chest": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.chestplate|8.0|ADD_VALUE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|1.25|ADD_VALUE|CHEST"
+    ],
+    "durability": 400
+  },
+  "paladins:crusader_armor_legs": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.leggings|6.0|ADD_VALUE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|1.25|ADD_VALUE|LEGS"
+    ],
+    "durability": 375
+  },
+  "paladins:crusader_armor_feet": {
+    "attributes": [
+      "minecraft:armor|minecraft:armor.boots|3.0|ADD_VALUE|FEET",
+      "spell_power:healing|minecraft:armor.boots|1.25|ADD_VALUE|FEET"
+    ],
+    "durability": 325
+  },
+  "paladins:netherite_crusader_armor_head": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.helmet|1.0|ADD_VALUE|HEAD",
+      "minecraft:armor|minecraft:armor.helmet|3.0|ADD_VALUE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|1.5|ADD_VALUE|HEAD"
+    ],
+    "durability": 407
+  },
+  "paladins:netherite_crusader_armor_chest": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.chestplate|1.0|ADD_VALUE|CHEST",
+      "minecraft:armor|minecraft:armor.chestplate|8.0|ADD_VALUE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|1.5|ADD_VALUE|CHEST"
+    ],
+    "durability": 592
+  },
+  "paladins:netherite_crusader_armor_legs": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.leggings|1.0|ADD_VALUE|LEGS",
+      "minecraft:armor|minecraft:armor.leggings|6.0|ADD_VALUE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|1.5|ADD_VALUE|LEGS"
+    ],
+    "durability": 555
+  },
+  "paladins:netherite_crusader_armor_feet": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.boots|1.0|ADD_VALUE|FEET",
+      "minecraft:armor|minecraft:armor.boots|3.0|ADD_VALUE|FEET",
+      "spell_power:healing|minecraft:armor.boots|1.5|ADD_VALUE|FEET"
+    ],
+    "durability": 481
+  },
+  "paladins:priest_robe_head": {
+    "attributes": [
+      "spell_power:healing|minecraft:armor.helmet|0.20000000298023224|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "paladins:priest_robe_chest": {
+    "attributes": [
+      "spell_power:healing|minecraft:armor.chestplate|0.20000000298023224|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "paladins:priest_robe_legs": {
+    "attributes": [
+      "spell_power:healing|minecraft:armor.leggings|0.20000000298023224|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "paladins:priest_robe_feet": {
+    "attributes": [
+      "spell_power:healing|minecraft:armor.boots|0.20000000298023224|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "paladins:prior_robe_head": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|0.25|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "paladins:prior_robe_chest": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|0.25|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "paladins:prior_robe_legs": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|0.25|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "paladins:prior_robe_feet": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:healing|minecraft:armor.boots|0.25|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "paladins:netherite_prior_robe_head": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|0.30000001192092896|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "paladins:netherite_prior_robe_chest": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|0.30000001192092896|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "paladins:netherite_prior_robe_legs": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|0.30000001192092896|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "paladins:netherite_prior_robe_feet": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:healing|minecraft:armor.boots|0.30000001192092896|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "archers:auto_fire_hook": {
+    "attributes": [],
+    "durability": 0
+  },
+  "archers:small_quiver": {
+    "attributes": [],
+    "durability": 0
+  },
+  "archers:medium_quiver": {
+    "attributes": [],
+    "durability": 0
+  },
+  "archers:large_quiver": {
+    "attributes": [],
+    "durability": 0
+  },
+  "archers:flint_spear": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "archers:iron_spear": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|5.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "archers:golden_spear": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|3.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 32
+  },
+  "archers:diamond_spear": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|6.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "archers:netherite_spear": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|7.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.5999999046325684|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "archers:composite_longbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|8.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.5|ADD_VALUE|HAND",
+      "ranged_weapon:velocity|ranged_weapon:base_velocity|0.75|ADD_VALUE|HAND"
+    ],
+    "durability": 465
+  },
+  "archers:mechanic_shortbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|8.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|-0.19999998807907104|ADD_VALUE|HAND"
+    ],
+    "durability": 1561
+  },
+  "archers:royal_longbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|10.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.5|ADD_VALUE|HAND",
+      "ranged_weapon:velocity|ranged_weapon:base_velocity|0.75|ADD_VALUE|HAND"
+    ],
+    "durability": 1561
+  },
+  "archers:netherite_shortbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|9.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|-0.19999998807907104|ADD_VALUE|HAND"
+    ],
+    "durability": 2031
+  },
+  "archers:netherite_longbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|12.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.5|ADD_VALUE|HAND",
+      "ranged_weapon:velocity|ranged_weapon:base_velocity|0.75|ADD_VALUE|HAND"
+    ],
+    "durability": 2031
+  },
+  "archers:rapid_crossbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|8.5|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.0|ADD_VALUE|HAND"
+    ],
+    "durability": 1561
+  },
+  "archers:heavy_crossbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|13.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.75|ADD_VALUE|HAND",
+      "ranged_weapon:velocity|ranged_weapon:base_velocity|0.5|ADD_VALUE|HAND"
+    ],
+    "durability": 1561
+  },
+  "archers:netherite_rapid_crossbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|9.5|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.0|ADD_VALUE|HAND"
+    ],
+    "durability": 2031
+  },
+  "archers:netherite_heavy_crossbow": {
+    "attributes": [
+      "ranged_weapon:damage|ranged_weapon:base_damage|15.0|ADD_VALUE|HAND",
+      "ranged_weapon:pull_time|ranged_weapon:base_pull_time|0.75|ADD_VALUE|HAND",
+      "ranged_weapon:velocity|ranged_weapon:base_velocity|0.5|ADD_VALUE|HAND"
+    ],
+    "durability": 2031
+  },
+  "archers:archer_armor_head": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "archers:archer_armor_chest": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "archers:archer_armor_legs": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "archers:archer_armor_feet": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "archers:ranger_armor_head": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.helmet|0.07999999821186066|ADD_MULTIPLIED_BASE|HEAD",
+      "ranged_weapon:haste|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "archers:ranger_armor_chest": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.chestplate|0.07999999821186066|ADD_MULTIPLIED_BASE|CHEST",
+      "ranged_weapon:haste|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "archers:ranger_armor_legs": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.leggings|0.07999999821186066|ADD_MULTIPLIED_BASE|LEGS",
+      "ranged_weapon:haste|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "archers:ranger_armor_feet": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.boots|0.07999999821186066|ADD_MULTIPLIED_BASE|FEET",
+      "ranged_weapon:haste|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "archers:netherite_ranger_armor_head": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.helmet|0.09000000357627869|ADD_MULTIPLIED_BASE|HEAD",
+      "ranged_weapon:haste|minecraft:armor.helmet|0.03999999910593033|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "archers:netherite_ranger_armor_chest": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.chestplate|0.09000000357627869|ADD_MULTIPLIED_BASE|CHEST",
+      "ranged_weapon:haste|minecraft:armor.chestplate|0.03999999910593033|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "archers:netherite_ranger_armor_legs": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.leggings|0.09000000357627869|ADD_MULTIPLIED_BASE|LEGS",
+      "ranged_weapon:haste|minecraft:armor.leggings|0.03999999910593033|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "archers:netherite_ranger_armor_feet": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.boots|0.09000000357627869|ADD_MULTIPLIED_BASE|FEET",
+      "ranged_weapon:haste|minecraft:armor.boots|0.03999999910593033|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:epic_armor_upgrade": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:conqueror_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:vanquisher_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:redeemer_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:champion_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:conqueror_forgotten_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:vanquisher_forgotten_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:redeemer_forgotten_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:champion_forgotten_upgrade_crystal": {
+    "attributes": [],
+    "durability": 0
+  },
+  "armory_rpgs:astral_robe_head": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:haste|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:astral_robe_chest": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:haste|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:astral_robe_legs": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:haste|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:astral_robe_feet": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:haste|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:scarlet_robe_head": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:fire|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:scarlet_robe_chest": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:fire|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:scarlet_robe_legs": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:fire|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:scarlet_robe_feet": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:fire|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:glacier_robe_head": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.helmet|0.07999999821186066|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:frost|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:glacier_robe_chest": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.chestplate|0.07999999821186066|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:frost|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:glacier_robe_legs": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.leggings|0.07999999821186066|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:frost|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:glacier_robe_feet": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.boots|0.07999999821186066|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:frost|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:avatar_robe_head": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:avatar_robe_chest": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:avatar_robe_legs": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:avatar_robe_feet": {
+    "attributes": [
+      "spell_power:haste|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:healing|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:justicar_armor_head": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.helmet|1.0|ADD_VALUE|HEAD",
+      "minecraft:armor|minecraft:armor.helmet|3.0|ADD_VALUE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|1.75|ADD_VALUE|HEAD"
+    ],
+    "durability": 440
+  },
+  "armory_rpgs:justicar_armor_chest": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.chestplate|1.0|ADD_VALUE|CHEST",
+      "minecraft:armor|minecraft:armor.chestplate|8.0|ADD_VALUE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|1.75|ADD_VALUE|CHEST"
+    ],
+    "durability": 640
+  },
+  "armory_rpgs:justicar_armor_legs": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.leggings|1.0|ADD_VALUE|LEGS",
+      "minecraft:armor|minecraft:armor.leggings|6.0|ADD_VALUE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|1.75|ADD_VALUE|LEGS"
+    ],
+    "durability": 600
+  },
+  "armory_rpgs:justicar_armor_feet": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.boots|1.0|ADD_VALUE|FEET",
+      "minecraft:armor|minecraft:armor.boots|3.0|ADD_VALUE|FEET",
+      "spell_power:healing|minecraft:armor.boots|1.75|ADD_VALUE|FEET"
+    ],
+    "durability": 520
+  },
+  "armory_rpgs:destroyer_armor_head": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.helmet|0.05999999865889549|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_damage|minecraft:armor.helmet|0.05999999865889549|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:destroyer_armor_chest": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.chestplate|0.05999999865889549|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.05999999865889549|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:destroyer_armor_legs": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.leggings|0.05999999865889549|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_damage|minecraft:armor.leggings|0.05999999865889549|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:destroyer_armor_feet": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.boots|0.05999999865889549|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_damage|minecraft:armor.boots|0.05999999865889549|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:deathmantle_armor_head": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_speed|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_engine:evasion_chance|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:deathmantle_armor_chest": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_speed|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_engine:evasion_chance|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:deathmantle_armor_legs": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_speed|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_engine:evasion_chance|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:deathmantle_armor_feet": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_speed|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_engine:evasion_chance|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:strider_armor_head": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.helmet|0.10000000149011612|ADD_MULTIPLIED_BASE|HEAD",
+      "ranged_weapon:haste|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:strider_armor_chest": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.chestplate|0.10000000149011612|ADD_MULTIPLIED_BASE|CHEST",
+      "ranged_weapon:haste|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:strider_armor_legs": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.leggings|0.10000000149011612|ADD_MULTIPLIED_BASE|LEGS",
+      "ranged_weapon:haste|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:strider_armor_feet": {
+    "attributes": [
+      "ranged_weapon:damage|minecraft:armor.boots|0.10000000149011612|ADD_MULTIPLIED_BASE|FEET",
+      "ranged_weapon:haste|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:tempest_robe_head": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:critical_damage|minecraft:armor.helmet|0.07999999821186066|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:tempest_robe_chest": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:critical_damage|minecraft:armor.chestplate|0.07999999821186066|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:tempest_robe_legs": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:critical_damage|minecraft:armor.leggings|0.07999999821186066|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:tempest_robe_feet": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:critical_damage|minecraft:armor.boots|0.07999999821186066|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:smouldering_robe_head": {
+    "attributes": [
+      "spell_power:fire|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:haste|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:smouldering_robe_chest": {
+    "attributes": [
+      "spell_power:fire|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:haste|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:smouldering_robe_legs": {
+    "attributes": [
+      "spell_power:fire|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:haste|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:smouldering_robe_feet": {
+    "attributes": [
+      "spell_power:fire|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:haste|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:rimeweave_robe_head": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:frost|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:rimeweave_robe_chest": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:frost|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:rimeweave_robe_legs": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:frost|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:rimeweave_robe_feet": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:frost|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:absolution_robe_head": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|0.3499999940395355|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:absolution_robe_chest": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|0.3499999940395355|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:absolution_robe_legs": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|0.3499999940395355|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:absolution_robe_feet": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:healing|minecraft:armor.boots|0.3499999940395355|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:lightbringer_armor_head": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.helmet|1.0|ADD_VALUE|HEAD",
+      "minecraft:armor|minecraft:armor.helmet|3.0|ADD_VALUE|HEAD",
+      "minecraft:attack_damage|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:healing|minecraft:armor.helmet|1.75|ADD_VALUE|HEAD"
+    ],
+    "durability": 440
+  },
+  "armory_rpgs:lightbringer_armor_chest": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.chestplate|1.0|ADD_VALUE|CHEST",
+      "minecraft:armor|minecraft:armor.chestplate|8.0|ADD_VALUE|CHEST",
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:healing|minecraft:armor.chestplate|1.75|ADD_VALUE|CHEST"
+    ],
+    "durability": 640
+  },
+  "armory_rpgs:lightbringer_armor_legs": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.leggings|1.0|ADD_VALUE|LEGS",
+      "minecraft:armor|minecraft:armor.leggings|6.0|ADD_VALUE|LEGS",
+      "minecraft:attack_damage|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:healing|minecraft:armor.leggings|1.75|ADD_VALUE|LEGS"
+    ],
+    "durability": 600
+  },
+  "armory_rpgs:lightbringer_armor_feet": {
+    "attributes": [
+      "minecraft:armor_toughness|minecraft:armor.boots|1.0|ADD_VALUE|FEET",
+      "minecraft:armor|minecraft:armor.boots|3.0|ADD_VALUE|FEET",
+      "minecraft:attack_damage|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:healing|minecraft:armor.boots|1.75|ADD_VALUE|FEET"
+    ],
+    "durability": 520
+  },
+  "armory_rpgs:onslaught_armor_head": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_damage|minecraft:armor.helmet|0.05999999865889549|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:onslaught_armor_chest": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_damage|minecraft:armor.chestplate|0.05999999865889549|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:onslaught_armor_legs": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_damage|minecraft:armor.leggings|0.05999999865889549|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:onslaught_armor_feet": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_damage|minecraft:armor.boots|0.05999999865889549|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:slayer_armor_head": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "minecraft:attack_speed|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_engine:evasion_chance|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:slayer_armor_chest": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "minecraft:attack_speed|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_engine:evasion_chance|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:slayer_armor_legs": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "minecraft:attack_speed|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_engine:evasion_chance|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:slayer_armor_feet": {
+    "attributes": [
+      "critical_strike:damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "minecraft:attack_speed|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_engine:evasion_chance|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "armory_rpgs:riftstalker_armor_head": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "ranged_weapon:damage|minecraft:armor.helmet|0.10000000149011612|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "armory_rpgs:riftstalker_armor_chest": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "ranged_weapon:damage|minecraft:armor.chestplate|0.10000000149011612|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "armory_rpgs:riftstalker_armor_legs": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "ranged_weapon:damage|minecraft:armor.leggings|0.10000000149011612|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "armory_rpgs:riftstalker_armor_feet": {
+    "attributes": [
+      "critical_strike:chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "ranged_weapon:damage|minecraft:armor.boots|0.10000000149011612|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:wand_novice": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|3.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 131
+  },
+  "wizards:wand_arcane": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:arcane|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:wand_fire": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:wand_frost": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:frost|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:wand_netherite_arcane": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:arcane|minecraft:equipment_bonus|5.5|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:wand_netherite_fire": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|5.5|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:wand_netherite_frost": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|2.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-2.4000000953674316|ADD_VALUE|MAINHAND",
+      "spell_power:frost|minecraft:equipment_bonus|5.5|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:staff_wizard": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:arcane|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND",
+      "spell_power:frost|minecraft:equipment_bonus|5.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 250
+  },
+  "wizards:staff_arcane": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:arcane|minecraft:equipment_bonus|6.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:staff_fire": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|6.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:staff_frost": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:frost|minecraft:equipment_bonus|6.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 1561
+  },
+  "wizards:staff_netherite_arcane": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:arcane|minecraft:equipment_bonus|7.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:staff_netherite_fire": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:fire|minecraft:equipment_bonus|7.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:staff_netherite_frost": {
+    "attributes": [
+      "minecraft:attack_damage|minecraft:base_attack_damage|4.0|ADD_VALUE|MAINHAND",
+      "minecraft:attack_speed|minecraft:base_attack_speed|-3.0|ADD_VALUE|MAINHAND",
+      "spell_power:frost|minecraft:equipment_bonus|7.0|ADD_VALUE|MAINHAND"
+    ],
+    "durability": 2031
+  },
+  "wizards:wizard_robe_head": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.helmet|0.20000000298023224|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:fire|minecraft:armor.helmet|0.20000000298023224|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:frost|minecraft:armor.helmet|0.20000000298023224|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:wizard_robe_chest": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.chestplate|0.20000000298023224|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:fire|minecraft:armor.chestplate|0.20000000298023224|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:frost|minecraft:armor.chestplate|0.20000000298023224|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:wizard_robe_legs": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.leggings|0.20000000298023224|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:fire|minecraft:armor.leggings|0.20000000298023224|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:frost|minecraft:armor.leggings|0.20000000298023224|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:wizard_robe_feet": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.boots|0.20000000298023224|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:fire|minecraft:armor.boots|0.20000000298023224|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:frost|minecraft:armor.boots|0.20000000298023224|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:arcane_robe_head": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.helmet|0.25|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:haste|minecraft:armor.helmet|0.019999999552965164|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:arcane_robe_chest": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.chestplate|0.25|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:haste|minecraft:armor.chestplate|0.019999999552965164|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:arcane_robe_legs": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.leggings|0.25|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:haste|minecraft:armor.leggings|0.019999999552965164|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:arcane_robe_feet": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.boots|0.25|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:haste|minecraft:armor.boots|0.019999999552965164|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:fire_robe_head": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.helmet|0.019999999552965164|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:fire|minecraft:armor.helmet|0.25|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:fire_robe_chest": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.chestplate|0.019999999552965164|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:fire|minecraft:armor.chestplate|0.25|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:fire_robe_legs": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.leggings|0.019999999552965164|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:fire|minecraft:armor.leggings|0.25|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:fire_robe_feet": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.boots|0.019999999552965164|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:fire|minecraft:armor.boots|0.25|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:frost_robe_head": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.helmet|0.05000000074505806|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:frost|minecraft:armor.helmet|0.25|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:frost_robe_chest": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.chestplate|0.05000000074505806|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:frost|minecraft:armor.chestplate|0.25|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:frost_robe_legs": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.leggings|0.05000000074505806|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:frost|minecraft:armor.leggings|0.25|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:frost_robe_feet": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.boots|0.05000000074505806|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:frost|minecraft:armor.boots|0.25|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:netherite_arcane_robe_head": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.helmet|0.30000001192092896|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:haste|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:netherite_arcane_robe_chest": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.chestplate|0.30000001192092896|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:haste|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:netherite_arcane_robe_legs": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.leggings|0.30000001192092896|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:haste|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:netherite_arcane_robe_feet": {
+    "attributes": [
+      "spell_power:arcane|minecraft:armor.boots|0.30000001192092896|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:haste|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:netherite_fire_robe_head": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.helmet|0.029999999329447746|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:fire|minecraft:armor.helmet|0.30000001192092896|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:netherite_fire_robe_chest": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.chestplate|0.029999999329447746|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:fire|minecraft:armor.chestplate|0.30000001192092896|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:netherite_fire_robe_legs": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.leggings|0.029999999329447746|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:fire|minecraft:armor.leggings|0.30000001192092896|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:netherite_fire_robe_feet": {
+    "attributes": [
+      "spell_power:critical_chance|minecraft:armor.boots|0.029999999329447746|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:fire|minecraft:armor.boots|0.30000001192092896|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  },
+  "wizards:netherite_frost_robe_head": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.helmet|0.05999999865889549|ADD_MULTIPLIED_BASE|HEAD",
+      "spell_power:frost|minecraft:armor.helmet|0.30000001192092896|ADD_MULTIPLIED_BASE|HEAD"
+    ]
+  },
+  "wizards:netherite_frost_robe_chest": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.chestplate|0.05999999865889549|ADD_MULTIPLIED_BASE|CHEST",
+      "spell_power:frost|minecraft:armor.chestplate|0.30000001192092896|ADD_MULTIPLIED_BASE|CHEST"
+    ]
+  },
+  "wizards:netherite_frost_robe_legs": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.leggings|0.05999999865889549|ADD_MULTIPLIED_BASE|LEGS",
+      "spell_power:frost|minecraft:armor.leggings|0.30000001192092896|ADD_MULTIPLIED_BASE|LEGS"
+    ]
+  },
+  "wizards:netherite_frost_robe_feet": {
+    "attributes": [
+      "spell_power:critical_damage|minecraft:armor.boots|0.05999999865889549|ADD_MULTIPLIED_BASE|FEET",
+      "spell_power:frost|minecraft:armor.boots|0.30000001192092896|ADD_MULTIPLIED_BASE|FEET"
+    ]
+  }
+}

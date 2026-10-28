@@ -1,0 +1,18 @@
+PASS real Vanguard allocation and vanilla shield give5% armor actual=21.0 expected=21.0
+PASS native passive name Vanguard
+PASS actual allocated Vanguard is in native passive sources
+PASS unequipping shield removes basic armor on client actual=20.0 expected=20.0
+PASS modded Paladin shield activates Vanguard
+SCREENSHOT Vanguard with modded shield
+PASS real Guardian allocation grants5% Healing Power with empty offhand actual=21.2625 expected=21.2625
+PASS native passive name Guardian
+PASS actual allocated Guardian is in native passive sources
+PASS Guardian four stacks plus basic synchronize25% Healing Power actual=25.312500060349702 expected=25.3125
+PASS Guardian stack icon synchronizes
+PASS stack effect is also renamed Guardian
+SCREENSHOT Guardian four-stack effect
+PASS occupied offhand removes basic bonus but keeps earned stacks actual=24.300000060349703 expected=24.3
+PASS respec removes all Guardian bonuses actual=20.0 expected=20.0
+PASS respec leaves no stale Vanguard armor actual=20.0 expected=20.0
+PASS native tree opens with reworked passives
+SCREENSHOT reworked Paladin passive tree

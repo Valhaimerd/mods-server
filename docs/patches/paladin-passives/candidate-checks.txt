@@ -1,0 +1,35 @@
+PASS no shield gives no basic armor actual=20.0 expected=20.0
+PASS vanilla shield gives5% base armor actual=21.0 expected=21.0
+PASS main-hand shield also qualifies actual=21.0 expected=21.0
+PASS native-capability modded shield paladins:iron_kite_shield
+PASS native-capability modded shield paladins:golden_kite_shield
+PASS native-capability modded shield paladins:diamond_kite_shield
+PASS native-capability modded shield paladins:netherite_kite_shield
+PASS native-capability modded shield arsenal:unique_shield_1
+PASS native-capability modded shield arsenal:unique_shield_2
+PASS native-capability modded shield arsenal:unique_shield_sw
+PASS installed modded shield coverage
+PASS first block adds one stack actual=0.0 expected=0.0
+PASS basic plus first block armor actual=22.00000001490116 expected=22.0
+PASS one-second cooldown prevents immediate stack actual=0.0 expected=0.0
+PASS Vanguard caps at4 stacks actual=3.0 expected=3.0
+PASS Vanguard total25% armor actual=25.000000059604645 expected=25.0
+PASS block refreshes duration5s actual=100.0 expected=100.0
+PASS removing shield removes basic only actual=24.000000059604645 expected=24.0
+PASS removing passive clears conditional and stacked armor actual=20.0 expected=20.0
+PASS empty offhand gives5% Healing Power actual=21.0 expected=21.0
+PASS occupied offhand removes basic healing power actual=20.0 expected=20.0
+PASS ordinary noncritical hit grants Guardian stack actual=0.0 expected=0.0
+PASS first hit gives5% Healing Power even with occupied offhand actual=21.00000001490116 expected=21.0
+PASS Guardian no longer increases attack damage actual=40.0 expected=40.0
+PASS Guardian no cooldown and4-stack cap actual=3.0 expected=3.0
+PASS four Guardian stacks20% Healing Power actual=24.000000059604645 expected=24.0
+PASS Guardian refreshes5s even at maximum stacks actual=100.0 expected=100.0
+PASS Guardian basic plus stacks25% Healing Power actual=25.000000059604645 expected=25.0
+PASS noncritical passive wave damage qualifies
+PASS noncritical Purge Heal damage qualifies
+PASS respec clears Guardian condition and stacks actual=20.0 expected=20.0
+PASS Vanguard base cooldown1s actual=1.0 expected=1.0
+PASS Vanguard spell haste halves cooldown actual=0.5 expected=0.5
+PASS Guardian stays cooldown-free actual=0.0 expected=0.0
+PASS death removes conditional bonus actual=20.0 expected=20.0

@@ -1,0 +1,1 @@
+Arsenal1.5.1 native ArsenalWeapons.unique_hammer_1: translatedName("Hammer of Destiny").withAdditionalSpell(ArsenalSpells.shockwave_melee.id().toString()). The passive references arsenal:spell_projectile/shockwave_large, width3.5/modelscale4. Our separate model preserves its elements and remaps the texture to Minecraft gold block. Original Arsenal bytes unchanged.

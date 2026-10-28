@@ -1,0 +1,33 @@
+package local.paladinclient;
+import java.nio.file.*;import java.util.*;import java.util.concurrent.atomic.AtomicReference;
+import net.minecraft.client.Minecraft;import net.minecraft.client.Screenshot;
+import net.minecraft.resources.Identifier;import net.minecraft.world.entity.*;import net.minecraft.world.entity.ai.attributes.Attributes;import net.minecraft.world.item.*;import net.minecraft.server.level.ServerPlayer;
+import net.neoforged.api.distmarker.Dist;import net.neoforged.fml.common.Mod;import net.neoforged.neoforge.common.NeoForge;import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.puffish.skillsmod.api.*;import net.skill_tree_rpgs.compat.PaladinPassives;import net.spell_engine.internals.*;import net.spell_power.api.SpellSchools;
+@Mod(value="paladin_client_probe",dist=Dist.CLIENT)
+public class PaladinClientProbe{
+ final List<String> results=Collections.synchronizedList(new ArrayList<>());final AtomicReference<String> pending=new AtomicReference<>();int ticks,phase,at;boolean hidden,done;
+ interface Work{void run(ServerPlayer p)throws Exception;}
+ void check(boolean b,String s){results.add((b?"PASS ":"FAIL ")+s);}void near(double a,double b,String s){check(Math.abs(a-b)<.001,s+" actual="+a+" expected="+b);}
+ Category category(){return SkillsAPI.getCategory(Identifier.parse("skill_tree_rpgs:class_skills")).orElseThrow();}
+ void server(Work work){var mc=Minecraft.getInstance();pending.set("waiting");mc.getSingleplayerServer().execute(()->{try{work.run(mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID()));pending.set("ready");}catch(Throwable e){e.printStackTrace();check(false,"server exception "+e);pending.set("failed");}});}
+ void next(){phase++;at=ticks;}void shot(String s){Screenshot.grab(Minecraft.getInstance(),false);results.add("SCREENSHOT "+s);}
+ public PaladinClientProbe(){NeoForge.EVENT_BUS.addListener(this::tick);}
+ void tick(ClientTickEvent.Post event){var mc=Minecraft.getInstance();if(!hidden){org.lwjgl.glfw.GLFW.glfwHideWindow(mc.getWindow().handle());mc.options.pauseOnLostFocus=false;hidden=true;}if(done||mc.player==null||mc.level==null)return;mc.mouseHandler.releaseMouse();ticks++;
+ try{
+  if(ticks>900)throw new AssertionError("timeout phase="+phase);
+  if(phase==0&&ticks==30){server(p->{p.getInventory().clearContent();for(var slot:EquipmentSlot.VALUES)if(slot.isArmor())p.setItemSlot(slot,ItemStack.EMPTY);p.removeAllEffects();p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new ItemStack(Items.SHIELD));p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new ItemStack(Items.IRON_SWORD));p.getAttribute(Attributes.ARMOR).setBaseValue(20);p.getAttribute(SpellSchools.HEALING.attributeEntry).setBaseValue(20);var c=category();c.unlock(p);c.resetSkills(p);c.setExtraPoints(p,1000);c.getSkill("tdimeso8ajcwiygp").orElseThrow().unlock(p);c.getSkill("fw4wbj92ebrow8f1").orElseThrow().unlock(p);p.inventoryMenu.broadcastFullState();});next();return;}
+  if(phase==0||ticks-at<25||"waiting".equals(pending.get()))return;if("failed".equals(pending.get())){finish();return;}
+  switch(phase){
+   case 1->{near(mc.player.getAttributeValue(Attributes.ARMOR),21,"real Vanguard allocation and vanilla shield give5% armor");check(net.minecraft.client.resources.language.I18n.get("spell.skill_tree_rpgs.paladin_tier_1_passive_1.name").equals("Vanguard"),"native passive name Vanguard");server(p->{check(PaladinPassives.owns(p,PaladinPassives.VANGUARD),"actual allocated Vanguard is in native passive sources");p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,ItemStack.EMPTY);});next();}
+   case 2->{near(mc.player.getAttributeValue(Attributes.ARMOR),20,"unequipping shield removes basic armor on client");server(p->{p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.getValue(Identifier.parse("paladins:iron_kite_shield"))));});next();}
+   case 3->{check(mc.player.getAttribute(Attributes.ARMOR).getModifier(PaladinPassives.ARMOR)!=null,"modded Paladin shield activates Vanguard");shot("Vanguard with modded shield");server(p->{p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,ItemStack.EMPTY);var c=category();c.resetSkills(p);c.getSkill("tdimeso8ajcwiygp").orElseThrow().unlock(p);c.getSkill("llo4ejjziqmgcios").orElseThrow().unlock(p);});next();}
+   case 4->{near(mc.player.getAttributeValue(SpellSchools.HEALING.attributeEntry),21.2625,"real Guardian allocation grants5% Healing Power with empty offhand");check(net.minecraft.client.resources.language.I18n.get("spell.skill_tree_rpgs.paladin_tier_1_passive_2.name").equals("Guardian"),"native passive name Guardian");server(p->{check(PaladinPassives.owns(p,PaladinPassives.GUARDIAN),"actual allocated Guardian is in native passive sources");var target=EntityTypes.HUSK.create(p.level(),EntitySpawnReason.COMMAND);target.setPos(p.getX(),p.getY(),p.getZ()+2);p.level().addFreshEntity(target);for(int i=0;i<4;i++)SpellTriggers.onMeleeImpact(p,target);});next();}
+   case 5->{near(mc.player.getAttributeValue(SpellSchools.HEALING.attributeEntry),25.3125,"Guardian four stacks plus basic synchronize25% Healing Power");check(mc.player.hasEffect(PriestRules.effect("skill_tree_rpgs:vengeance")),"Guardian stack icon synchronizes");check(net.minecraft.client.resources.language.I18n.get("effect.skill_tree_rpgs.vengeance").equals("Guardian"),"stack effect is also renamed Guardian");shot("Guardian four-stack effect");server(p->p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new ItemStack(Items.STONE)));next();}
+   case 6->{near(mc.player.getAttributeValue(SpellSchools.HEALING.attributeEntry),24.3,"occupied offhand removes basic bonus but keeps earned stacks");server(p->category().resetSkills(p));next();}
+   case 7->{near(mc.player.getAttributeValue(SpellSchools.HEALING.attributeEntry),20,"respec removes all Guardian bonuses");near(mc.player.getAttributeValue(Attributes.ARMOR),20,"respec leaves no stale Vanguard armor");server(p->category().openScreen(p));next();}
+   case 8->{check(mc.gui.screen() instanceof net.puffish.skillsmod.client.gui.SkillsScreen,"native tree opens with reworked passives");shot("reworked Paladin passive tree");finish();}
+  }
+ }catch(Throwable e){e.printStackTrace();check(false,"client exception "+e);finish();}}
+ void finish(){done=true;var mc=Minecraft.getInstance();try{Files.write(mc.gameDirectory.toPath().resolve("client-checks.txt"),results);Files.writeString(mc.gameDirectory.toPath().resolve("client-result.txt"),(results.stream().anyMatch(s->s.startsWith("FAIL"))?"FAIL":"PASS")+" "+results.stream().filter(s->s.startsWith("PASS")).count()+" checks\n");}catch(Exception e){throw new RuntimeException(e);}mc.stop();}
+}

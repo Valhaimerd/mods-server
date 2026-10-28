@@ -1,0 +1,20 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "preserved_changed": [
+      "net/paladins/item/armor/Armors.class"
+    ],
+    "preserved_added": [
+      "net/paladins/item/armor/ClassArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "preserved_changed": [
+      "net/armory_rpgs/item/ArmorSets.class"
+    ],
+    "preserved_added": [
+      "net/armory_rpgs/item/ClassArmorBalance.class"
+    ]
+  }
+]

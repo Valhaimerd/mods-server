@@ -1,0 +1,3 @@
+package net.spell_engine.client.gui;
+import java.util.*;import net.minecraft.core.Holder;import net.minecraft.network.chat.Component;import net.minecraft.ChatFormatting;import net.spell_engine.api.spell.Spell;
+public final class PaladinTierThreeTooltip { public static void add(Holder<Spell> h,ArrayList<Component> lines){String text=h.is(net.minecraft.resources.Identifier.parse("skill_tree_rpgs:paladin_tier_3_passive_1"))?"Triggered by low-health damage or a fatal hit":h.is(net.minecraft.resources.Identifier.parse("skill_tree_rpgs:paladin_tier_3_passive_2"))?"Active below 70/60/50/40% health":null;if(text!=null)lines.add(Component.literal(text).withStyle(ChatFormatting.GOLD));}}

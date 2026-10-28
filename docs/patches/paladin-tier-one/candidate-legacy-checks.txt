@@ -1,0 +1,75 @@
+PASS base damage receives80% PvE exactly once actual=16.0 expected=16.0
+PASS base healing uses P without damage multiplier actual=5.0625 expected=5.0625
+PASS improved damage receives80% PvE exactly once actual=19.20001220703125 expected=19.200000000000003
+PASS improved healing uses P without damage multiplier actual=6.075000762939453 expected=6.075
+PASS strength damage receives80% PvE exactly once actual=19.20001220703125 expected=19.200000000000003
+PASS strength healing uses P without damage multiplier actual=8.100000381469727 expected=8.1
+PASS absolution damage receives80% PvE exactly once actual=25.5999755859375 expected=25.6
+PASS absolution healing uses P without damage multiplier actual=6.075000762939453 expected=6.075
+PASS missing enemy rejected
+PASS no target gives no healing actual=10.0 expected=10.0
+PASS invulnerable enemy gives no healing actual=10.0 expected=10.0
+PASS explosion primary damaged once actual=25.5999755859375 expected=25.6
+PASS explosion second victim damaged actual=25.5999755859375 expected=25.6
+PASS multiple blast victims heal caster once actual=6.075000762939453 expected=6.075
+PASS owned pet uses shared ally protection
+PASS Divine Strength heals nearby eligible ally same amount actual=8.100000381469727 expected=8.1
+PASS Light does not heal allies on first four pulses actual=10.0 expected=10.0
+PASS Light fifth pulse heals ally10% P actual=2.0249996185302734 expected=2.025
+PASS one charge per pulse light=false pulse=0 actual=1.0 expected=1.0
+PASS one charge per pulse light=false pulse=1 actual=2.0 expected=2.0
+PASS one charge per pulse light=false pulse=2 actual=3.0 expected=3.0
+PASS one charge per pulse light=false pulse=3 actual=4.0 expected=4.0
+PASS one charge per pulse light=false pulse=4 actual=5.0 expected=5.0
+PASS five full healing pulses light=false actual=5.062499046325684 expected=5.0625
+PASS charge duration remains15s actual=300.0 expected=300.0
+PASS five-charge ceiling actual=5.0 expected=5.0
+PASS one charge per pulse light=true pulse=0 actual=1.0 expected=1.0
+PASS one charge per pulse light=true pulse=1 actual=2.0 expected=2.0
+PASS one charge per pulse light=true pulse=2 actual=3.0 expected=3.0
+PASS one charge per pulse light=true pulse=3 actual=4.0 expected=4.0
+PASS one charge per pulse light=true pulse=4 actual=5.0 expected=5.0
+PASS five full healing pulses light=true actual=10.124998092651367 expected=10.125
+PASS charge duration remains15s actual=300.0 expected=300.0
+PASS five-charge ceiling actual=5.0 expected=5.0
+PASS native Better Combat iron-sword swing resolved
+PASS actual swing into empty air releases wave
+PASS exactly one charge consumed actual=4.0 expected=4.0
+PASS duplicate same-tick swing rejected
+PASS duplicate cannot burn charge actual=4.0 expected=4.0
+PASS one native projectile launched
+PASS wave speed1.4 actual=1.3999999761581423 expected=1.4
+PASS wave aims upward for flying enemies
+PASS wave range20 actual=20.0 expected=20.0
+PASS native hitbox width1.2x original actual=4.199999809265137 expected=4.2
+PASS native wave damage wrath=false actual=9.5999755859375 expected=9.600000000000001
+PASS base wave stops at first enemy
+PASS base wave cannot pierce second enemy actual=1000.0 expected=1000.0
+PASS native wave damage wrath=true actual=12.79998779296875 expected=12.8
+PASS Wrath survives first hit
+PASS pierced target cannot be hit twice actual=987.2000122070312 expected=987.2000122070312
+PASS Wrath damages second enemy actual=12.79998779296875 expected=12.8
+PASS Wrath stops after two total enemies
+PASS base Blessed cooldown14 actual=14.0 expected=14.0
+PASS improved Blessed cooldown12 actual=12.0 expected=12.0
+PASS Healing-school haste shortens Blessed cooldown
+PASS haste shortens channel
+PASS haste scales cloud pulse interval paladins:battle_banner actual=5.0 expected=5.0
+PASS decorative cloud stays inert actual=10000.0 expected=10000.0
+PASS haste scales cloud pulse interval skill_tree_rpgs:paladin_tier_4_spell_2_modifier_2 actual=5.0 expected=5.0
+PASS decorative cloud stays inert actual=10000.0 expected=10000.0
+PASS native haste flag paladins:flash_heal
+PASS native haste flag paladins:blessed_strikes
+PASS native haste flag paladins:divine_protection
+PASS native haste flag paladins:judgement
+PASS native haste flag paladins:battle_banner
+PASS native haste flag paladins:immolation
+PASS native haste flag skill_tree_rpgs:paladin_tier_1_passive_1
+PASS native haste flag skill_tree_rpgs:paladin_tier_2_passive_2
+PASS native haste flag skill_tree_rpgs:paladin_tier_3_passive_1
+PASS native haste flag skill_tree_rpgs:paladin_tier_3_passive_2
+PASS old six-charge saves normalize to five actual=4.0 expected=4.0
+PASS death clears prepared effect and glint actual=0.0 expected=0.0
+PASS respec clears prepared effect and glint actual=0.0 expected=0.0
+PASS item-only Healing Power justicar_armor actual=6.0 expected=6.0
+PASS item-only Healing Power lightbringer_armor actual=7.0 expected=7.0

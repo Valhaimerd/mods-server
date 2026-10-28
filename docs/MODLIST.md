@@ -6,7 +6,7 @@
 
 <p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 23 client extras</p>
 
-Last audited: 2026-10-28<br>
+Last audited: 2026-10-29<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
 Current distribution: 307 synchronized JARs plus 23 client-store JARs
 
@@ -615,7 +615,9 @@ A race changes the traits you carry through the whole playthrough. It does not l
 
 Archers, Paladins & Priests, Rogues & Warriors, and Wizards supply six equipment-based playstyles. Rogues use combined dual-wield power for their scaling, with haste-affected skills, health-based stuns, empowered melee hits and hidden jump-sensitive traps. Tier III adds seven-second Vanish, persistent Shadow Stealth, 100% dual-wield Mutilate, Crimson Strikes healing 15% dual power once per successful cast, Bloody Strikes and Prepared Counter. Wizard changes include target-centered Arcane Explosion, Charged Beam growing from 1.3x to 5x width (+0.10x per delivery), and Frost Shield damage immunity followed by a freeze burst. Arcane Barrage bolts deal 40% of emitter damage. Frost freezes ignore health and boss-status restrictions. Burst Blink blasts both departure and arrival. Wall of Flames allows four separate key presses within five seconds of the first; the fourth cast or window expiry starts its normal cooldown. Great Wall physically blocks living entities while active. Ancient Hydra continuously breathes fire at 24% of its own Fire power per delivery in a 40-degree cone. Ancient Hydra keeps facing close enemies while aiming its breath separately. Hydras choose the nearest visible enemy within 12 blocks; ordinary Hydra Fireballs deal 55% of their own power. Frost Elementals inherit 20% of caster Frost power. Legion summons three normal-sized elementals at 80% attributes; their six-block Super Novas freeze for 0.5 seconds. Colossus doubles attributes at 1.7 times normal size. Super Nova deals 180% of each elemental's own Frost power.
 
-Path of the Paladin and its ordinary nodes grant +0.25 Healing Power each. Paladins cannot wield healing staves or wands in either hand; rejected weapons return to inventory with an oath warning. Plate Healing Power per piece is +0.75 Paladin, +1 Crusader, +1.15 Netherite Crusader and +1.25 Justicar/Lightbringer; full sets give +3/+4/+4.6/+5 respectively. Priest robes and other armor bonuses remain. Priests choose Holy Light or Penance at tier I, then Circle of Healing or Ascension at tier II. Holy Light channels 25 deliveries over ten seconds with a smooth 12-24s cooldown. Penance fires ten bolts over five seconds: four-block blasts deal 15% Healing Power and build absorption for allies, with an 8-12s cooldown. Living-target hits also grant caster support outside the blast, once per bolt. Holy Staff Specialisation grants Holy Shock 5% more damage instead of shortening its cooldown. Circle heals, cleanses or grants Regeneration; Ascension lifts allies and repels enemies. Shield refreshes never refill consumed HP. Healing Focus builds up to 20% healing/absorption received; Cadence builds up to 10% haste. Both refresh for six seconds with a 0.25s base stack interval. Fade conceals equipment for two seconds; Divine Favor readies a retaliatory stun. Party players and protected pets remain safe.
+Class armor has small defensive differences by role. Full entry/advanced/netherite sets give Wizard and Priest 11/15/16 armor, Rogue and Archer 12/16/17, and Warrior 13/17/18. Toughness totals 0/0/4, with iron/diamond/netherite durability respectively. Armory legendary sets use the final tier. Class bonuses remain, while Paladin plate keeps its stronger defense.
+
+Path of the Paladin and its ordinary nodes grant +0.25 Healing Power each. Paladins cannot wield healing staves or wands in either hand; rejected weapons return to inventory with an oath warning. Plate Healing Power per piece is +1 Paladin, +1.25 Crusader, +1.5 Netherite Crusader, +1.5 Justicar and +1.75 Lightbringer. Priests cannot equip these five plate sets; their node and a doctrine warning explain the restriction. Priest robes and other armor bonuses remain. Paladins choose Purge Heal, an enemy strike that heals on a successful hit, or Blessed Strikes, which heals during five preparation pulses and stores five holy waves for 15s. Actual melee swings release the waves, including held attacks, reaching airborne enemies up to 20 blocks away. Seal of Wrath hits two enemies per wave; Seal of Light strengthens pulse healing and heals nearby allies on the final pulse. Purge Heal briefly stuns enemies; Blessed waves slow them for eight seconds. Vanguard grants 5% Healing Power with a shield and four further 5% stacks from hits; Guardian grants 5% base armor with an empty offhand and four further 5% stacks from incoming combat damage. Stacks refresh for 5s, with haste-affected intervals of 1s and 0.25s respectively. At tier II, Divine Protection reduces nearby allies' incoming damage (up to 50%) and mitigates additional damage before absorption. Its branches add knockback resistance (up to 80%) or recovery after the first hit. Divine Oath drops a following hammer onto an ally, damaging and stunning nearby enemies, then grants bonus damage, armor and absorption for 7s. Shield refreshes preserve spent HP. Sinful Retaliation readies a mark and burn after rolling; Break Restriction cleanses movement control and allows escape rolls only while ready. Paladin and Priest damaging skills deal 25% more damage to undead mobs. Paladin casts and cooldowns respond to haste; Battle Banner and Purgatory keep fixed 0.5s pulses. Battle Banner follows the caster for 20s, building nearby allies? combat bonuses and healing them; each ally can receive one 2s rescue per cast. Purgatory is a stationary channel lasting up to 30s: its fire, pull and ally support strengthen after 10s and 20s, but later pulses cost 2 and 3 HP. Releasing during the final phase creates an earned finishing blast; completion or death adds a stun and shields allies. Final Resolute trades the full finish for a lifesaving early exit. Ardent Defender heals one endangered nearby party player without cancelling fatal hits; Reinforced increases armor and Healing Power as health falls. Priests choose Holy Light or Penance at tier I, then Circle of Healing or Ascension at tier II. Holy Light channels 25 deliveries over ten seconds with a smooth 12-24s cooldown. Penance fires ten bolts over five seconds: four-block blasts deal 15% Healing Power and build absorption for allies, with an 8-12s cooldown. Living-target hits also grant caster support outside the blast, once per bolt. Holy Staff Specialisation grants Holy Shock 5% more damage instead of shortening its cooldown. Circle heals, cleanses or grants Regeneration; Ascension lifts allies and repels enemies. Shield refreshes never refill consumed HP. Healing Focus builds up to 20% healing/absorption received; Cadence builds up to 10% haste. Both refresh for six seconds with a 0.25s base stack interval. Fade conceals equipment for two seconds; Divine Favor readies a retaliatory stun. Party players and protected pets remain safe.
 
 Priest tier III offers Lightwell or Barrier. Lightwell follows its caster for 16s (20s Improved), inheriting 5% Healing Power. Every 0.8s before haste, two motes target the injured allies with lowest raw HP within 16 blocks, or both target a sole injured ally, launching 0.3s apart. Useful cleansing or heart-stack targets remain eligible without injuries. Cleansing Light dispels per hit; Empowered Well adds up to two temporary maximum hearts, filled by ordinary healing. Barrier protects a ten-block radius from combat and damage over time for 10s (12s Improved). Sacred Refuge heals and cleanses for the same 10s (12s Improved); Deflective Shield retaliates against hostile shots. Base cooldowns are 80s and 60s. Pain Suppression reduces damage taken by up to 24% at low health; five Celestial Orbs retaliate for the caster and nearby allies. Priest casts and cooldowns scale with haste.
 
@@ -648,7 +650,7 @@ Activated shields reduce frontal damage by 80%, separately from armor and Resist
 - **Core mechanic:** Specializes class and weapon abilities by spending earned skill points.
 - **Player guidance:** Open the skill screen with T and inspect class and weapon prerequisites.
 
-Hover a spellbook or weapon and hold `Left Ctrl` to expand its spell details. Hold `Left Shift` for Penchant enchantment progress; hold both to show both sections. The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +1%. Ordinary melee/ranged damage rewards grant +2%/+2%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips both show 2%. RPG Archer damage nodes receive no extra draw speed. Paladin nodes retain their original bonuses. Class and weapon skill XP gains are 1.35 times their original rate. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane Ward grants one absorption heart plus one heart per five Arcane power. Flame and Frost Wards grant one heart plus one per ten matching power. All three last eight seconds. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected.
+Hover a spellbook or weapon and hold `Left Ctrl` to expand its spell details. Hold `Left Shift` for Penchant enchantment progress; hold both to show both sections. The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +1%. Ordinary melee/ranged damage rewards grant +2%/+2%, including conditional weapon rewards. Warrior and Archer root/empowerment tooltips both show 2%. RPG Archer damage nodes receive no extra draw speed. Paladin class nodes grant +0.25 Healing Power. Class and weapon skill XP gains are 1.35 times their original rate. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane Ward grants one absorption heart plus one heart per five Arcane power. Flame and Frost Wards grant one heart plus one per ten matching power. All three last eight seconds. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected. Effect tooltips display received custom values and native stack-aware percentages, including debuffs. Stun, Root and Frozen have distinct official icons and plain control descriptions.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
 
@@ -849,7 +851,7 @@ These rare weapons carry built-in passive spells. Compare their effect and comba
 - **Core mechanic:** Adds class-oriented armor sets with distinct effects and set bonuses.
 - **Player guidance:** Inspect class set bonuses before replacing an armor piece.
 
-A full set can be stronger for a role than a mix of higher armor values. Justicar and Lightbringer grant +1.25 flat Healing Power per piece (+5 from the four pieces); their other stats and set bonuses remain. Justicar also retains its separate +2 Healing Power set bonus. Upgrade materials come from later exploration and combat.
+Legendary full sets grant 16 armor for robes, 17 for Rogue/Archer and 18 for Warrior, each with 4 toughness and netherite durability. Their class and set bonuses remain. Justicar grants +1.5 flat Healing Power per piece, totaling +8 with its separate +2 set bonus. Lightbringer grants +1.75 per piece (+7 from four pieces). Other stats and set bonuses remain. Upgrade materials come from later exploration and combat.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/armory-rpg-series">Official mod page</a></p>
 
@@ -3377,15 +3379,15 @@ Pat uses `Left Ctrl + Right Mouse Button` in the recommended controls. Plain rig
 
 <div class="core-mod-entry">
 
-#### Kingdom Cats Replacer
+#### Enhanced Cats
 
-- **Type:** Cosmetic
-- **Core mechanic:** Replaces vanilla cat visuals with seven animated models while preserving vanilla cat behavior.
-- **Player guidance:** Expect new cat models while keeping vanilla cat behavior.
+- **Type:** Creatures / cosmetic
+- **Core mechanic:** Adds animated cat models and expands cat behavior.
+- **Player guidance:** Tame and care for cats as usual; the replacement adds new animations and interactions.
 
-The visual variants make tamed cats easier to recognize. Care and interaction rules remain familiar.
+Enhanced Cats replaces the former Cute Cats / Kingdom Cats Replacer. Both client and server use the supplied 26.2 build.
 
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/cute-cats">Official mod page</a></p>
+<p class="core-mod-source"><a href="https://modrinth.com/mod/enhanced-cats">Official mod page</a></p>
 
 </div>
 
@@ -3916,12 +3918,6 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 | Borrow Emote |  |
 | Reverse Sound | `Left Ctrl` |
 
-#### Vectors
-
-| Action | Recommended key |
-|---|---|
-| Open Vectors |  |
-
 #### Punchy!
 
 | Action | Recommended key |
@@ -3944,7 +3940,6 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 |---|---|
 | Enable/Disable the Visualizer |  |
 
-Client installs and repairs apply Vectors' **Maximum Performance** preset, including its rendering distances, particle/weather limits, and expensive-effect reduction. Adaptive quality and automatic render-distance adjustment remain off for this preset. Existing config files are backed up and unrelated interface settings are preserved. Open Vectors is unbound; reach its settings through the in-game mod menu or assign a shortcut. Server installs and `--check` do not change this client setting.
 
 <div class="page-break" aria-hidden="true"></div>
 
@@ -4013,8 +4008,9 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Emotecraft](#emotecraft)
 - [Enchantment Insights](#enchantment-insights)
 - [Enchantments collection](#enchantments-collection)
-- [Ender Zoology](#ender-zoology)
 - [End's Delight](#ends-delight)
+- [Ender Zoology](#ender-zoology)
+- [Enhanced Cats](#enhanced-cats)
 - [Epic Structures collection](#epic-structures-collection)
 - [Expanded Crossbow Enchantings](#expanded-crossbow-enchantings)
 - [Expanded Delight](#expanded-delight)
@@ -4049,7 +4045,6 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 - [Jewelry](#jewelry)
 - [Just Enough Filters](#just-enough-filters)
 - [Just Enough Items](#just-enough-items)
-- [Kingdom Cats Replacer](#kingdom-cats-replacer)
 - [Large Meals](#large-meals)
 - [Linked Chests](#linked-chests)
 - [Lullaby's Mobs](#lullabys-mobs)
@@ -4152,7 +4147,7 @@ Client installs and repairs apply Vectors' **Maximum Performance** preset, inclu
 
 - [Distinct Potions](#distinct-potions)
 - [Iourus Races](#iourus-races-1)
-- [Kingdom Cats Replacer](#kingdom-cats-replacer)
+- [Enhanced Cats](#enhanced-cats)
 - [PatPat](#patpat-1)
 - [Quick Skin](#quick-skin)
 - [RPG classes](#rpg-classes)

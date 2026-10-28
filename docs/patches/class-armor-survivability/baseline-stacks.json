@@ -1,0 +1,2642 @@
+{
+  "wizards:wizard_robe_head": {
+    "id": "wizards:wizard_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_chest": {
+    "id": "wizards:wizard_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_legs": {
+    "id": "wizards:wizard_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_feet": {
+    "id": "wizards:wizard_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_head": {
+    "id": "wizards:arcane_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_chest": {
+    "id": "wizards:arcane_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_legs": {
+    "id": "wizards:arcane_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_feet": {
+    "id": "wizards:arcane_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_head": {
+    "id": "wizards:fire_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_chest": {
+    "id": "wizards:fire_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_legs": {
+    "id": "wizards:fire_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_feet": {
+    "id": "wizards:fire_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_head": {
+    "id": "wizards:frost_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_chest": {
+    "id": "wizards:frost_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_legs": {
+    "id": "wizards:frost_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_feet": {
+    "id": "wizards:frost_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_head": {
+    "id": "wizards:netherite_arcane_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_chest": {
+    "id": "wizards:netherite_arcane_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_legs": {
+    "id": "wizards:netherite_arcane_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_feet": {
+    "id": "wizards:netherite_arcane_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_head": {
+    "id": "wizards:netherite_fire_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_chest": {
+    "id": "wizards:netherite_fire_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_legs": {
+    "id": "wizards:netherite_fire_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_feet": {
+    "id": "wizards:netherite_fire_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_head": {
+    "id": "wizards:netherite_frost_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_chest": {
+    "id": "wizards:netherite_frost_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_legs": {
+    "id": "wizards:netherite_frost_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_feet": {
+    "id": "wizards:netherite_frost_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_head": {
+    "id": "paladins:priest_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_chest": {
+    "id": "paladins:priest_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_legs": {
+    "id": "paladins:priest_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_feet": {
+    "id": "paladins:priest_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_head": {
+    "id": "paladins:prior_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_chest": {
+    "id": "paladins:prior_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_legs": {
+    "id": "paladins:prior_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_feet": {
+    "id": "paladins:prior_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_head": {
+    "id": "paladins:netherite_prior_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_chest": {
+    "id": "paladins:netherite_prior_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_legs": {
+    "id": "paladins:netherite_prior_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_feet": {
+    "id": "paladins:netherite_prior_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_head": {
+    "id": "rogues:rogue_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_chest": {
+    "id": "rogues:rogue_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_legs": {
+    "id": "rogues:rogue_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_feet": {
+    "id": "rogues:rogue_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_head": {
+    "id": "rogues:assassin_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_chest": {
+    "id": "rogues:assassin_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_legs": {
+    "id": "rogues:assassin_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_feet": {
+    "id": "rogues:assassin_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_head": {
+    "id": "rogues:netherite_assassin_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_chest": {
+    "id": "rogues:netherite_assassin_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_legs": {
+    "id": "rogues:netherite_assassin_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_feet": {
+    "id": "rogues:netherite_assassin_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_head": {
+    "id": "rogues:warrior_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_chest": {
+    "id": "rogues:warrior_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_legs": {
+    "id": "rogues:warrior_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_feet": {
+    "id": "rogues:warrior_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_head": {
+    "id": "rogues:berserker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_chest": {
+    "id": "rogues:berserker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_legs": {
+    "id": "rogues:berserker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_feet": {
+    "id": "rogues:berserker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_head": {
+    "id": "rogues:netherite_berserker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_chest": {
+    "id": "rogues:netherite_berserker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_legs": {
+    "id": "rogues:netherite_berserker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_feet": {
+    "id": "rogues:netherite_berserker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_head": {
+    "id": "archers:archer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_chest": {
+    "id": "archers:archer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_legs": {
+    "id": "archers:archer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_feet": {
+    "id": "archers:archer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_head": {
+    "id": "archers:ranger_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_chest": {
+    "id": "archers:ranger_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_legs": {
+    "id": "archers:ranger_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_feet": {
+    "id": "archers:ranger_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_head": {
+    "id": "archers:netherite_ranger_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_chest": {
+    "id": "archers:netherite_ranger_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_legs": {
+    "id": "archers:netherite_ranger_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_feet": {
+    "id": "archers:netherite_ranger_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_head": {
+    "id": "armory_rpgs:astral_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_chest": {
+    "id": "armory_rpgs:astral_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_legs": {
+    "id": "armory_rpgs:astral_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_feet": {
+    "id": "armory_rpgs:astral_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_head": {
+    "id": "armory_rpgs:scarlet_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_chest": {
+    "id": "armory_rpgs:scarlet_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_legs": {
+    "id": "armory_rpgs:scarlet_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_feet": {
+    "id": "armory_rpgs:scarlet_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_head": {
+    "id": "armory_rpgs:glacier_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_chest": {
+    "id": "armory_rpgs:glacier_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_legs": {
+    "id": "armory_rpgs:glacier_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_feet": {
+    "id": "armory_rpgs:glacier_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_head": {
+    "id": "armory_rpgs:tempest_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_chest": {
+    "id": "armory_rpgs:tempest_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_legs": {
+    "id": "armory_rpgs:tempest_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_feet": {
+    "id": "armory_rpgs:tempest_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_head": {
+    "id": "armory_rpgs:smouldering_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_chest": {
+    "id": "armory_rpgs:smouldering_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_legs": {
+    "id": "armory_rpgs:smouldering_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_feet": {
+    "id": "armory_rpgs:smouldering_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_head": {
+    "id": "armory_rpgs:rimeweave_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_chest": {
+    "id": "armory_rpgs:rimeweave_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_legs": {
+    "id": "armory_rpgs:rimeweave_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_feet": {
+    "id": "armory_rpgs:rimeweave_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_head": {
+    "id": "armory_rpgs:avatar_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_chest": {
+    "id": "armory_rpgs:avatar_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_legs": {
+    "id": "armory_rpgs:avatar_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_feet": {
+    "id": "armory_rpgs:avatar_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_head": {
+    "id": "armory_rpgs:absolution_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_chest": {
+    "id": "armory_rpgs:absolution_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_legs": {
+    "id": "armory_rpgs:absolution_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_feet": {
+    "id": "armory_rpgs:absolution_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_head": {
+    "id": "armory_rpgs:deathmantle_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_chest": {
+    "id": "armory_rpgs:deathmantle_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_legs": {
+    "id": "armory_rpgs:deathmantle_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_feet": {
+    "id": "armory_rpgs:deathmantle_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_head": {
+    "id": "armory_rpgs:slayer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_chest": {
+    "id": "armory_rpgs:slayer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_legs": {
+    "id": "armory_rpgs:slayer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_feet": {
+    "id": "armory_rpgs:slayer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_head": {
+    "id": "armory_rpgs:strider_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_chest": {
+    "id": "armory_rpgs:strider_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_legs": {
+    "id": "armory_rpgs:strider_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_feet": {
+    "id": "armory_rpgs:strider_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_head": {
+    "id": "armory_rpgs:riftstalker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_chest": {
+    "id": "armory_rpgs:riftstalker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_legs": {
+    "id": "armory_rpgs:riftstalker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_feet": {
+    "id": "armory_rpgs:riftstalker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_head": {
+    "id": "armory_rpgs:destroyer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_chest": {
+    "id": "armory_rpgs:destroyer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_legs": {
+    "id": "armory_rpgs:destroyer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_feet": {
+    "id": "armory_rpgs:destroyer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_head": {
+    "id": "armory_rpgs:onslaught_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_chest": {
+    "id": "armory_rpgs:onslaught_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_legs": {
+    "id": "armory_rpgs:onslaught_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_feet": {
+    "id": "armory_rpgs:onslaught_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 50,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_head#nearbroken": {
+    "id": "wizards:wizard_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 109,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_chest#nearbroken": {
+    "id": "wizards:wizard_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 159,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_legs#nearbroken": {
+    "id": "wizards:wizard_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 149,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:wizard_robe_feet#nearbroken": {
+    "id": "wizards:wizard_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 129,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_head#nearbroken": {
+    "id": "wizards:arcane_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 219,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_chest#nearbroken": {
+    "id": "wizards:arcane_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 319,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_legs#nearbroken": {
+    "id": "wizards:arcane_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 299,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:arcane_robe_feet#nearbroken": {
+    "id": "wizards:arcane_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 259,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_head#nearbroken": {
+    "id": "wizards:fire_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 219,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_chest#nearbroken": {
+    "id": "wizards:fire_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 319,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_legs#nearbroken": {
+    "id": "wizards:fire_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 299,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:fire_robe_feet#nearbroken": {
+    "id": "wizards:fire_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 259,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_head#nearbroken": {
+    "id": "wizards:frost_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 219,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_chest#nearbroken": {
+    "id": "wizards:frost_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 319,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_legs#nearbroken": {
+    "id": "wizards:frost_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 299,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:frost_robe_feet#nearbroken": {
+    "id": "wizards:frost_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 259,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_head#nearbroken": {
+    "id": "wizards:netherite_arcane_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 329,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_chest#nearbroken": {
+    "id": "wizards:netherite_arcane_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 479,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_legs#nearbroken": {
+    "id": "wizards:netherite_arcane_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 449,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_arcane_robe_feet#nearbroken": {
+    "id": "wizards:netherite_arcane_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 389,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_head#nearbroken": {
+    "id": "wizards:netherite_fire_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 329,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_chest#nearbroken": {
+    "id": "wizards:netherite_fire_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 479,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_legs#nearbroken": {
+    "id": "wizards:netherite_fire_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 449,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_fire_robe_feet#nearbroken": {
+    "id": "wizards:netherite_fire_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 389,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_head#nearbroken": {
+    "id": "wizards:netherite_frost_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 329,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_chest#nearbroken": {
+    "id": "wizards:netherite_frost_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 479,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_legs#nearbroken": {
+    "id": "wizards:netherite_frost_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 449,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "wizards:netherite_frost_robe_feet#nearbroken": {
+    "id": "wizards:netherite_frost_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 389,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_head#nearbroken": {
+    "id": "paladins:priest_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 109,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_chest#nearbroken": {
+    "id": "paladins:priest_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 159,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_legs#nearbroken": {
+    "id": "paladins:priest_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 149,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:priest_robe_feet#nearbroken": {
+    "id": "paladins:priest_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 129,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_head#nearbroken": {
+    "id": "paladins:prior_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 219,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_chest#nearbroken": {
+    "id": "paladins:prior_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 319,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_legs#nearbroken": {
+    "id": "paladins:prior_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 299,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:prior_robe_feet#nearbroken": {
+    "id": "paladins:prior_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 259,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_head#nearbroken": {
+    "id": "paladins:netherite_prior_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 329,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_chest#nearbroken": {
+    "id": "paladins:netherite_prior_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 479,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_legs#nearbroken": {
+    "id": "paladins:netherite_prior_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 449,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "paladins:netherite_prior_robe_feet#nearbroken": {
+    "id": "paladins:netherite_prior_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 389,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_head#nearbroken": {
+    "id": "rogues:rogue_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 164,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_chest#nearbroken": {
+    "id": "rogues:rogue_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 239,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_legs#nearbroken": {
+    "id": "rogues:rogue_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 224,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:rogue_armor_feet#nearbroken": {
+    "id": "rogues:rogue_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 194,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_head#nearbroken": {
+    "id": "rogues:assassin_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 274,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_chest#nearbroken": {
+    "id": "rogues:assassin_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 399,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_legs#nearbroken": {
+    "id": "rogues:assassin_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 374,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:assassin_armor_feet#nearbroken": {
+    "id": "rogues:assassin_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 324,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_head#nearbroken": {
+    "id": "rogues:netherite_assassin_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 406,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_chest#nearbroken": {
+    "id": "rogues:netherite_assassin_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 591,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_legs#nearbroken": {
+    "id": "rogues:netherite_assassin_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 554,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_assassin_armor_feet#nearbroken": {
+    "id": "rogues:netherite_assassin_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 480,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_head#nearbroken": {
+    "id": "rogues:warrior_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 164,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_chest#nearbroken": {
+    "id": "rogues:warrior_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 239,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_legs#nearbroken": {
+    "id": "rogues:warrior_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 224,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:warrior_armor_feet#nearbroken": {
+    "id": "rogues:warrior_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 194,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_head#nearbroken": {
+    "id": "rogues:berserker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 274,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_chest#nearbroken": {
+    "id": "rogues:berserker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 399,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_legs#nearbroken": {
+    "id": "rogues:berserker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 374,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:berserker_armor_feet#nearbroken": {
+    "id": "rogues:berserker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 324,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_head#nearbroken": {
+    "id": "rogues:netherite_berserker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 406,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_chest#nearbroken": {
+    "id": "rogues:netherite_berserker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 591,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_legs#nearbroken": {
+    "id": "rogues:netherite_berserker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 554,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "rogues:netherite_berserker_armor_feet#nearbroken": {
+    "id": "rogues:netherite_berserker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 480,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_head#nearbroken": {
+    "id": "archers:archer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 164,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_chest#nearbroken": {
+    "id": "archers:archer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 239,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_legs#nearbroken": {
+    "id": "archers:archer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 224,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:archer_armor_feet#nearbroken": {
+    "id": "archers:archer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 194,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_head#nearbroken": {
+    "id": "archers:ranger_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 274,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_chest#nearbroken": {
+    "id": "archers:ranger_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 399,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_legs#nearbroken": {
+    "id": "archers:ranger_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 374,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:ranger_armor_feet#nearbroken": {
+    "id": "archers:ranger_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 324,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_head#nearbroken": {
+    "id": "archers:netherite_ranger_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 384,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_chest#nearbroken": {
+    "id": "archers:netherite_ranger_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 559,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_legs#nearbroken": {
+    "id": "archers:netherite_ranger_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 524,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "archers:netherite_ranger_armor_feet#nearbroken": {
+    "id": "archers:netherite_ranger_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 454,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_head#nearbroken": {
+    "id": "armory_rpgs:astral_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_chest#nearbroken": {
+    "id": "armory_rpgs:astral_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_legs#nearbroken": {
+    "id": "armory_rpgs:astral_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:astral_robe_feet#nearbroken": {
+    "id": "armory_rpgs:astral_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_head#nearbroken": {
+    "id": "armory_rpgs:scarlet_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_chest#nearbroken": {
+    "id": "armory_rpgs:scarlet_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_legs#nearbroken": {
+    "id": "armory_rpgs:scarlet_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:scarlet_robe_feet#nearbroken": {
+    "id": "armory_rpgs:scarlet_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_head#nearbroken": {
+    "id": "armory_rpgs:glacier_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_chest#nearbroken": {
+    "id": "armory_rpgs:glacier_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_legs#nearbroken": {
+    "id": "armory_rpgs:glacier_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:glacier_robe_feet#nearbroken": {
+    "id": "armory_rpgs:glacier_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_head#nearbroken": {
+    "id": "armory_rpgs:tempest_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_chest#nearbroken": {
+    "id": "armory_rpgs:tempest_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_legs#nearbroken": {
+    "id": "armory_rpgs:tempest_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:tempest_robe_feet#nearbroken": {
+    "id": "armory_rpgs:tempest_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_head#nearbroken": {
+    "id": "armory_rpgs:smouldering_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_chest#nearbroken": {
+    "id": "armory_rpgs:smouldering_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_legs#nearbroken": {
+    "id": "armory_rpgs:smouldering_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:smouldering_robe_feet#nearbroken": {
+    "id": "armory_rpgs:smouldering_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_head#nearbroken": {
+    "id": "armory_rpgs:rimeweave_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_chest#nearbroken": {
+    "id": "armory_rpgs:rimeweave_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_legs#nearbroken": {
+    "id": "armory_rpgs:rimeweave_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:rimeweave_robe_feet#nearbroken": {
+    "id": "armory_rpgs:rimeweave_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_head#nearbroken": {
+    "id": "armory_rpgs:avatar_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_chest#nearbroken": {
+    "id": "armory_rpgs:avatar_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_legs#nearbroken": {
+    "id": "armory_rpgs:avatar_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:avatar_robe_feet#nearbroken": {
+    "id": "armory_rpgs:avatar_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_head#nearbroken": {
+    "id": "armory_rpgs:absolution_robe_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_chest#nearbroken": {
+    "id": "armory_rpgs:absolution_robe_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_legs#nearbroken": {
+    "id": "armory_rpgs:absolution_robe_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:absolution_robe_feet#nearbroken": {
+    "id": "armory_rpgs:absolution_robe_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_head#nearbroken": {
+    "id": "armory_rpgs:deathmantle_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_chest#nearbroken": {
+    "id": "armory_rpgs:deathmantle_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_legs#nearbroken": {
+    "id": "armory_rpgs:deathmantle_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:deathmantle_armor_feet#nearbroken": {
+    "id": "armory_rpgs:deathmantle_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_head#nearbroken": {
+    "id": "armory_rpgs:slayer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_chest#nearbroken": {
+    "id": "armory_rpgs:slayer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_legs#nearbroken": {
+    "id": "armory_rpgs:slayer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:slayer_armor_feet#nearbroken": {
+    "id": "armory_rpgs:slayer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_head#nearbroken": {
+    "id": "armory_rpgs:strider_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_chest#nearbroken": {
+    "id": "armory_rpgs:strider_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_legs#nearbroken": {
+    "id": "armory_rpgs:strider_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:strider_armor_feet#nearbroken": {
+    "id": "armory_rpgs:strider_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_head#nearbroken": {
+    "id": "armory_rpgs:riftstalker_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_chest#nearbroken": {
+    "id": "armory_rpgs:riftstalker_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_legs#nearbroken": {
+    "id": "armory_rpgs:riftstalker_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:riftstalker_armor_feet#nearbroken": {
+    "id": "armory_rpgs:riftstalker_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_head#nearbroken": {
+    "id": "armory_rpgs:destroyer_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_chest#nearbroken": {
+    "id": "armory_rpgs:destroyer_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_legs#nearbroken": {
+    "id": "armory_rpgs:destroyer_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:destroyer_armor_feet#nearbroken": {
+    "id": "armory_rpgs:destroyer_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_head#nearbroken": {
+    "id": "armory_rpgs:onslaught_armor_head",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 439,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_chest#nearbroken": {
+    "id": "armory_rpgs:onslaught_armor_chest",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 639,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_legs#nearbroken": {
+    "id": "armory_rpgs:onslaught_armor_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 599,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  },
+  "armory_rpgs:onslaught_armor_feet#nearbroken": {
+    "id": "armory_rpgs:onslaught_armor_feet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 519,
+      "minecraft:enchantments": {
+        "minecraft:unbreaking": 3
+      }
+    }
+  }
+}

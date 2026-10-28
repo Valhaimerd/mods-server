@@ -1,0 +1,57 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "91fe7e9120ca8b5c5aa366b434226a35b2c7bb60e8784e232330600c991058ec",
+    "sha256": "4a5ce2b28f847e0289a180724515c59010d04d6997affe74da148ad6a19969de",
+    "changed": [
+      "net/wizards/item/WizardArmors.class"
+    ],
+    "added": [
+      "net/wizards/item/ClassArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "bb4a5dcecd647975483ec49cd204bceca9223d0bd5a63439908e4ec930374334",
+    "sha256": "7719aa0328b8884ca7edd94bfc9a2ba65aab3404e0257004595665d810320d7d",
+    "changed": [
+      "net/rogues/item/armor/RogueArmors.class"
+    ],
+    "added": [
+      "net/rogues/item/armor/ClassArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "01c8d182b5d8c1cf5608b6c82fddc3507b40ae5cad740e3796f04a4e39f651c2",
+    "sha256": "e1ef7f46408f4cc8c7cbe7ba2c2c9decd38e36afddba650c01ae856fe4b092b5",
+    "changed": [
+      "net/archers/item/ArcherArmors.class"
+    ],
+    "added": [
+      "net/archers/item/ClassArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "60bf6555106d5f819c89b3f6027c8de3b8b5647efeb20e67812b39561e1b6bfb",
+    "sha256": "0bf47a56d7ad1742e65fd155722bf7b9924c2b0ce28919b213d3fa677a0e55f4",
+    "changed": [
+      "net/paladins/item/armor/Armors.class"
+    ],
+    "added": [
+      "net/paladins/item/armor/ClassArmorBalance.class"
+    ]
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "before_sha256": "78c638e15dc55ad2bf98de5c3419d38daf81731e802a5826351c1a075de031f2",
+    "sha256": "51f16e3cd4acd518499d9ae145d13bc55bffca40819893ce7f6cf18f5083bbec",
+    "changed": [
+      "net/armory_rpgs/item/ArmorSets.class"
+    ],
+    "added": [
+      "net/armory_rpgs/item/ClassArmorBalance.class"
+    ]
+  }
+]

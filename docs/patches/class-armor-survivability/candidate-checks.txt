@@ -1,0 +1,1626 @@
+PASS preserved other modifiers/item durability paladins:monk_workbench
+PASS preserved other modifiers/item durability archers:archers_workbench
+PASS preserved other modifiers/item durability rogues:arms_workbench
+PASS preserved other modifiers/item durability rogues:flint_dagger
+PASS preserved other modifiers/item durability rogues:iron_dagger
+PASS preserved other modifiers/item durability rogues:golden_dagger
+PASS preserved other modifiers/item durability rogues:diamond_dagger
+PASS preserved other modifiers/item durability rogues:netherite_dagger
+PASS preserved other modifiers/item durability rogues:iron_sickle
+PASS preserved other modifiers/item durability rogues:golden_sickle
+PASS preserved other modifiers/item durability rogues:diamond_sickle
+PASS preserved other modifiers/item durability rogues:netherite_sickle
+PASS preserved other modifiers/item durability rogues:stone_double_axe
+PASS preserved other modifiers/item durability rogues:iron_double_axe
+PASS preserved other modifiers/item durability rogues:golden_double_axe
+PASS preserved other modifiers/item durability rogues:diamond_double_axe
+PASS preserved other modifiers/item durability rogues:netherite_double_axe
+PASS preserved other modifiers/item durability rogues:iron_glaive
+PASS preserved other modifiers/item durability rogues:golden_glaive
+PASS preserved other modifiers/item durability rogues:diamond_glaive
+PASS preserved other modifiers/item durability rogues:netherite_glaive
+PASS preserved other modifiers/item durability rogues:rogue_armor_head
+PASS preserved other modifiers/item durability rogues:rogue_armor_chest
+PASS preserved other modifiers/item durability rogues:rogue_armor_legs
+PASS preserved other modifiers/item durability rogues:rogue_armor_feet
+PASS preserved other modifiers/item durability rogues:assassin_armor_head
+PASS preserved other modifiers/item durability rogues:assassin_armor_chest
+PASS preserved other modifiers/item durability rogues:assassin_armor_legs
+PASS preserved other modifiers/item durability rogues:assassin_armor_feet
+PASS preserved other modifiers/item durability rogues:netherite_assassin_armor_head
+PASS preserved other modifiers/item durability rogues:netherite_assassin_armor_chest
+PASS preserved other modifiers/item durability rogues:netherite_assassin_armor_legs
+PASS preserved other modifiers/item durability rogues:netherite_assassin_armor_feet
+PASS preserved other modifiers/item durability rogues:warrior_armor_head
+PASS preserved other modifiers/item durability rogues:warrior_armor_chest
+PASS preserved other modifiers/item durability rogues:warrior_armor_legs
+PASS preserved other modifiers/item durability rogues:warrior_armor_feet
+PASS preserved other modifiers/item durability rogues:berserker_armor_head
+PASS preserved other modifiers/item durability rogues:berserker_armor_chest
+PASS preserved other modifiers/item durability rogues:berserker_armor_legs
+PASS preserved other modifiers/item durability rogues:berserker_armor_feet
+PASS preserved other modifiers/item durability rogues:netherite_berserker_armor_head
+PASS preserved other modifiers/item durability rogues:netherite_berserker_armor_chest
+PASS preserved other modifiers/item durability rogues:netherite_berserker_armor_legs
+PASS preserved other modifiers/item durability rogues:netherite_berserker_armor_feet
+PASS preserved other modifiers/item durability paladins:stone_claymore
+PASS preserved other modifiers/item durability paladins:iron_claymore
+PASS preserved other modifiers/item durability paladins:golden_claymore
+PASS preserved other modifiers/item durability paladins:diamond_claymore
+PASS preserved other modifiers/item durability paladins:netherite_claymore
+PASS preserved other modifiers/item durability paladins:wooden_great_hammer
+PASS preserved other modifiers/item durability paladins:stone_great_hammer
+PASS preserved other modifiers/item durability paladins:iron_great_hammer
+PASS preserved other modifiers/item durability paladins:golden_great_hammer
+PASS preserved other modifiers/item durability paladins:diamond_great_hammer
+PASS preserved other modifiers/item durability paladins:netherite_great_hammer
+PASS preserved other modifiers/item durability paladins:iron_mace
+PASS preserved other modifiers/item durability paladins:golden_mace
+PASS preserved other modifiers/item durability paladins:diamond_mace
+PASS preserved other modifiers/item durability paladins:netherite_mace
+PASS preserved other modifiers/item durability paladins:acolyte_wand
+PASS preserved other modifiers/item durability paladins:holy_wand
+PASS preserved other modifiers/item durability paladins:diamond_holy_wand
+PASS preserved other modifiers/item durability paladins:netherite_holy_wand
+PASS preserved other modifiers/item durability paladins:holy_staff
+PASS preserved other modifiers/item durability paladins:diamond_holy_staff
+PASS preserved other modifiers/item durability paladins:netherite_holy_staff
+PASS preserved other modifiers/item durability paladins:iron_kite_shield
+PASS preserved other modifiers/item durability paladins:golden_kite_shield
+PASS preserved other modifiers/item durability paladins:diamond_kite_shield
+PASS preserved other modifiers/item durability paladins:netherite_kite_shield
+PASS preserved other modifiers/item durability paladins:paladin_armor_head
+PASS preserved other modifiers/item durability paladins:paladin_armor_chest
+PASS preserved other modifiers/item durability paladins:paladin_armor_legs
+PASS preserved other modifiers/item durability paladins:paladin_armor_feet
+PASS preserved other modifiers/item durability paladins:crusader_armor_head
+PASS preserved other modifiers/item durability paladins:crusader_armor_chest
+PASS preserved other modifiers/item durability paladins:crusader_armor_legs
+PASS preserved other modifiers/item durability paladins:crusader_armor_feet
+PASS preserved other modifiers/item durability paladins:netherite_crusader_armor_head
+PASS preserved other modifiers/item durability paladins:netherite_crusader_armor_chest
+PASS preserved other modifiers/item durability paladins:netherite_crusader_armor_legs
+PASS preserved other modifiers/item durability paladins:netherite_crusader_armor_feet
+PASS preserved other modifiers/item durability paladins:priest_robe_head
+PASS preserved other modifiers/item durability paladins:priest_robe_chest
+PASS preserved other modifiers/item durability paladins:priest_robe_legs
+PASS preserved other modifiers/item durability paladins:priest_robe_feet
+PASS preserved other modifiers/item durability paladins:prior_robe_head
+PASS preserved other modifiers/item durability paladins:prior_robe_chest
+PASS preserved other modifiers/item durability paladins:prior_robe_legs
+PASS preserved other modifiers/item durability paladins:prior_robe_feet
+PASS preserved other modifiers/item durability paladins:netherite_prior_robe_head
+PASS preserved other modifiers/item durability paladins:netherite_prior_robe_chest
+PASS preserved other modifiers/item durability paladins:netherite_prior_robe_legs
+PASS preserved other modifiers/item durability paladins:netherite_prior_robe_feet
+PASS preserved other modifiers/item durability archers:auto_fire_hook
+PASS preserved other modifiers/item durability archers:small_quiver
+PASS preserved other modifiers/item durability archers:medium_quiver
+PASS preserved other modifiers/item durability archers:large_quiver
+PASS preserved other modifiers/item durability archers:flint_spear
+PASS preserved other modifiers/item durability archers:iron_spear
+PASS preserved other modifiers/item durability archers:golden_spear
+PASS preserved other modifiers/item durability archers:diamond_spear
+PASS preserved other modifiers/item durability archers:netherite_spear
+PASS preserved other modifiers/item durability archers:composite_longbow
+PASS preserved other modifiers/item durability archers:mechanic_shortbow
+PASS preserved other modifiers/item durability archers:royal_longbow
+PASS preserved other modifiers/item durability archers:netherite_shortbow
+PASS preserved other modifiers/item durability archers:netherite_longbow
+PASS preserved other modifiers/item durability archers:rapid_crossbow
+PASS preserved other modifiers/item durability archers:heavy_crossbow
+PASS preserved other modifiers/item durability archers:netherite_rapid_crossbow
+PASS preserved other modifiers/item durability archers:netherite_heavy_crossbow
+PASS preserved other modifiers/item durability archers:archer_armor_head
+PASS preserved other modifiers/item durability archers:archer_armor_chest
+PASS preserved other modifiers/item durability archers:archer_armor_legs
+PASS preserved other modifiers/item durability archers:archer_armor_feet
+PASS preserved other modifiers/item durability archers:ranger_armor_head
+PASS preserved other modifiers/item durability archers:ranger_armor_chest
+PASS preserved other modifiers/item durability archers:ranger_armor_legs
+PASS preserved other modifiers/item durability archers:ranger_armor_feet
+PASS preserved other modifiers/item durability archers:netherite_ranger_armor_head
+PASS preserved other modifiers/item durability archers:netherite_ranger_armor_chest
+PASS preserved other modifiers/item durability archers:netherite_ranger_armor_legs
+PASS preserved other modifiers/item durability archers:netherite_ranger_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:epic_armor_upgrade
+PASS preserved other modifiers/item durability armory_rpgs:conqueror_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:vanquisher_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:redeemer_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:champion_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:conqueror_forgotten_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:vanquisher_forgotten_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:redeemer_forgotten_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:champion_forgotten_upgrade_crystal
+PASS preserved other modifiers/item durability armory_rpgs:astral_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:astral_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:astral_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:astral_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:scarlet_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:scarlet_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:scarlet_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:scarlet_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:glacier_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:glacier_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:glacier_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:glacier_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:avatar_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:avatar_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:avatar_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:avatar_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:justicar_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:justicar_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:justicar_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:justicar_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:destroyer_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:destroyer_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:destroyer_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:destroyer_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:deathmantle_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:deathmantle_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:deathmantle_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:deathmantle_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:strider_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:strider_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:strider_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:strider_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:tempest_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:tempest_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:tempest_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:tempest_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:smouldering_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:smouldering_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:smouldering_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:smouldering_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:rimeweave_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:rimeweave_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:rimeweave_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:rimeweave_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:absolution_robe_head
+PASS preserved other modifiers/item durability armory_rpgs:absolution_robe_chest
+PASS preserved other modifiers/item durability armory_rpgs:absolution_robe_legs
+PASS preserved other modifiers/item durability armory_rpgs:absolution_robe_feet
+PASS preserved other modifiers/item durability armory_rpgs:lightbringer_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:lightbringer_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:lightbringer_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:lightbringer_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:onslaught_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:onslaught_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:onslaught_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:onslaught_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:slayer_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:slayer_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:slayer_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:slayer_armor_feet
+PASS preserved other modifiers/item durability armory_rpgs:riftstalker_armor_head
+PASS preserved other modifiers/item durability armory_rpgs:riftstalker_armor_chest
+PASS preserved other modifiers/item durability armory_rpgs:riftstalker_armor_legs
+PASS preserved other modifiers/item durability armory_rpgs:riftstalker_armor_feet
+PASS preserved other modifiers/item durability wizards:wand_novice
+PASS preserved other modifiers/item durability wizards:wand_arcane
+PASS preserved other modifiers/item durability wizards:wand_fire
+PASS preserved other modifiers/item durability wizards:wand_frost
+PASS preserved other modifiers/item durability wizards:wand_netherite_arcane
+PASS preserved other modifiers/item durability wizards:wand_netherite_fire
+PASS preserved other modifiers/item durability wizards:wand_netherite_frost
+PASS preserved other modifiers/item durability wizards:staff_wizard
+PASS preserved other modifiers/item durability wizards:staff_arcane
+PASS preserved other modifiers/item durability wizards:staff_fire
+PASS preserved other modifiers/item durability wizards:staff_frost
+PASS preserved other modifiers/item durability wizards:staff_netherite_arcane
+PASS preserved other modifiers/item durability wizards:staff_netherite_fire
+PASS preserved other modifiers/item durability wizards:staff_netherite_frost
+PASS preserved other modifiers/item durability wizards:wizard_robe_head
+PASS preserved other modifiers/item durability wizards:wizard_robe_chest
+PASS preserved other modifiers/item durability wizards:wizard_robe_legs
+PASS preserved other modifiers/item durability wizards:wizard_robe_feet
+PASS preserved other modifiers/item durability wizards:arcane_robe_head
+PASS preserved other modifiers/item durability wizards:arcane_robe_chest
+PASS preserved other modifiers/item durability wizards:arcane_robe_legs
+PASS preserved other modifiers/item durability wizards:arcane_robe_feet
+PASS preserved other modifiers/item durability wizards:fire_robe_head
+PASS preserved other modifiers/item durability wizards:fire_robe_chest
+PASS preserved other modifiers/item durability wizards:fire_robe_legs
+PASS preserved other modifiers/item durability wizards:fire_robe_feet
+PASS preserved other modifiers/item durability wizards:frost_robe_head
+PASS preserved other modifiers/item durability wizards:frost_robe_chest
+PASS preserved other modifiers/item durability wizards:frost_robe_legs
+PASS preserved other modifiers/item durability wizards:frost_robe_feet
+PASS preserved other modifiers/item durability wizards:netherite_arcane_robe_head
+PASS preserved other modifiers/item durability wizards:netherite_arcane_robe_chest
+PASS preserved other modifiers/item durability wizards:netherite_arcane_robe_legs
+PASS preserved other modifiers/item durability wizards:netherite_arcane_robe_feet
+PASS preserved other modifiers/item durability wizards:netherite_fire_robe_head
+PASS preserved other modifiers/item durability wizards:netherite_fire_robe_chest
+PASS preserved other modifiers/item durability wizards:netherite_fire_robe_legs
+PASS preserved other modifiers/item durability wizards:netherite_fire_robe_feet
+PASS preserved other modifiers/item durability wizards:netherite_frost_robe_head
+PASS preserved other modifiers/item durability wizards:netherite_frost_robe_chest
+PASS preserved other modifiers/item durability wizards:netherite_frost_robe_legs
+PASS preserved other modifiers/item durability wizards:netherite_frost_robe_feet
+PASS real target item wizards:wizard_robe_head
+PASS native armor wizards:wizard_robe_head actual=2.0 expected=2.0
+PASS native toughness wizards:wizard_robe_head actual=0.0 expected=0.0
+PASS native durability wizards:wizard_robe_head actual=165 expected=165
+PASS no duplicate toughness wizards:wizard_robe_head
+PASS old worn stack keeps damage wizards:wizard_robe_head
+PASS old worn stack keeps enchantment wizards:wizard_robe_head
+PASS old stack receives valid new durability wizards:wizard_robe_head
+PASS near-broken old stack survives loading wizards:wizard_robe_head
+PASS near-broken old stack retains wear component wizards:wizard_robe_head
+PASS real target item wizards:wizard_robe_chest
+PASS native armor wizards:wizard_robe_chest actual=4.0 expected=4.0
+PASS native toughness wizards:wizard_robe_chest actual=0.0 expected=0.0
+PASS native durability wizards:wizard_robe_chest actual=240 expected=240
+PASS no duplicate toughness wizards:wizard_robe_chest
+PASS old worn stack keeps damage wizards:wizard_robe_chest
+PASS old worn stack keeps enchantment wizards:wizard_robe_chest
+PASS old stack receives valid new durability wizards:wizard_robe_chest
+PASS near-broken old stack survives loading wizards:wizard_robe_chest
+PASS near-broken old stack retains wear component wizards:wizard_robe_chest
+PASS real target item wizards:wizard_robe_legs
+PASS native armor wizards:wizard_robe_legs actual=3.0 expected=3.0
+PASS native toughness wizards:wizard_robe_legs actual=0.0 expected=0.0
+PASS native durability wizards:wizard_robe_legs actual=225 expected=225
+PASS no duplicate toughness wizards:wizard_robe_legs
+PASS old worn stack keeps damage wizards:wizard_robe_legs
+PASS old worn stack keeps enchantment wizards:wizard_robe_legs
+PASS old stack receives valid new durability wizards:wizard_robe_legs
+PASS near-broken old stack survives loading wizards:wizard_robe_legs
+PASS near-broken old stack retains wear component wizards:wizard_robe_legs
+PASS real target item wizards:wizard_robe_feet
+PASS native armor wizards:wizard_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:wizard_robe_feet actual=0.0 expected=0.0
+PASS native durability wizards:wizard_robe_feet actual=195 expected=195
+PASS no duplicate toughness wizards:wizard_robe_feet
+PASS old worn stack keeps damage wizards:wizard_robe_feet
+PASS old worn stack keeps enchantment wizards:wizard_robe_feet
+PASS old stack receives valid new durability wizards:wizard_robe_feet
+PASS near-broken old stack survives loading wizards:wizard_robe_feet
+PASS near-broken old stack retains wear component wizards:wizard_robe_feet
+PASS equipped total armor wizards:wizard_robe actual=11.0 expected=11.0
+PASS equipped total toughness wizards:wizard_robe actual=0.0 expected=0.0
+PASS real target item wizards:arcane_robe_head
+PASS native armor wizards:arcane_robe_head actual=2.0 expected=2.0
+PASS native toughness wizards:arcane_robe_head actual=0.0 expected=0.0
+PASS native durability wizards:arcane_robe_head actual=363 expected=363
+PASS no duplicate toughness wizards:arcane_robe_head
+PASS old worn stack keeps damage wizards:arcane_robe_head
+PASS old worn stack keeps enchantment wizards:arcane_robe_head
+PASS old stack receives valid new durability wizards:arcane_robe_head
+PASS near-broken old stack survives loading wizards:arcane_robe_head
+PASS near-broken old stack retains wear component wizards:arcane_robe_head
+PASS real target item wizards:arcane_robe_chest
+PASS native armor wizards:arcane_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:arcane_robe_chest actual=0.0 expected=0.0
+PASS native durability wizards:arcane_robe_chest actual=528 expected=528
+PASS no duplicate toughness wizards:arcane_robe_chest
+PASS old worn stack keeps damage wizards:arcane_robe_chest
+PASS old worn stack keeps enchantment wizards:arcane_robe_chest
+PASS old stack receives valid new durability wizards:arcane_robe_chest
+PASS near-broken old stack survives loading wizards:arcane_robe_chest
+PASS near-broken old stack retains wear component wizards:arcane_robe_chest
+PASS real target item wizards:arcane_robe_legs
+PASS native armor wizards:arcane_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:arcane_robe_legs actual=0.0 expected=0.0
+PASS native durability wizards:arcane_robe_legs actual=495 expected=495
+PASS no duplicate toughness wizards:arcane_robe_legs
+PASS old worn stack keeps damage wizards:arcane_robe_legs
+PASS old worn stack keeps enchantment wizards:arcane_robe_legs
+PASS old stack receives valid new durability wizards:arcane_robe_legs
+PASS near-broken old stack survives loading wizards:arcane_robe_legs
+PASS near-broken old stack retains wear component wizards:arcane_robe_legs
+PASS real target item wizards:arcane_robe_feet
+PASS native armor wizards:arcane_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:arcane_robe_feet actual=0.0 expected=0.0
+PASS native durability wizards:arcane_robe_feet actual=429 expected=429
+PASS no duplicate toughness wizards:arcane_robe_feet
+PASS old worn stack keeps damage wizards:arcane_robe_feet
+PASS old worn stack keeps enchantment wizards:arcane_robe_feet
+PASS old stack receives valid new durability wizards:arcane_robe_feet
+PASS near-broken old stack survives loading wizards:arcane_robe_feet
+PASS near-broken old stack retains wear component wizards:arcane_robe_feet
+PASS equipped total armor wizards:arcane_robe actual=15.0 expected=15.0
+PASS equipped total toughness wizards:arcane_robe actual=0.0 expected=0.0
+PASS real target item wizards:fire_robe_head
+PASS native armor wizards:fire_robe_head actual=2.0 expected=2.0
+PASS native toughness wizards:fire_robe_head actual=0.0 expected=0.0
+PASS native durability wizards:fire_robe_head actual=363 expected=363
+PASS no duplicate toughness wizards:fire_robe_head
+PASS old worn stack keeps damage wizards:fire_robe_head
+PASS old worn stack keeps enchantment wizards:fire_robe_head
+PASS old stack receives valid new durability wizards:fire_robe_head
+PASS near-broken old stack survives loading wizards:fire_robe_head
+PASS near-broken old stack retains wear component wizards:fire_robe_head
+PASS real target item wizards:fire_robe_chest
+PASS native armor wizards:fire_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:fire_robe_chest actual=0.0 expected=0.0
+PASS native durability wizards:fire_robe_chest actual=528 expected=528
+PASS no duplicate toughness wizards:fire_robe_chest
+PASS old worn stack keeps damage wizards:fire_robe_chest
+PASS old worn stack keeps enchantment wizards:fire_robe_chest
+PASS old stack receives valid new durability wizards:fire_robe_chest
+PASS near-broken old stack survives loading wizards:fire_robe_chest
+PASS near-broken old stack retains wear component wizards:fire_robe_chest
+PASS real target item wizards:fire_robe_legs
+PASS native armor wizards:fire_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:fire_robe_legs actual=0.0 expected=0.0
+PASS native durability wizards:fire_robe_legs actual=495 expected=495
+PASS no duplicate toughness wizards:fire_robe_legs
+PASS old worn stack keeps damage wizards:fire_robe_legs
+PASS old worn stack keeps enchantment wizards:fire_robe_legs
+PASS old stack receives valid new durability wizards:fire_robe_legs
+PASS near-broken old stack survives loading wizards:fire_robe_legs
+PASS near-broken old stack retains wear component wizards:fire_robe_legs
+PASS real target item wizards:fire_robe_feet
+PASS native armor wizards:fire_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:fire_robe_feet actual=0.0 expected=0.0
+PASS native durability wizards:fire_robe_feet actual=429 expected=429
+PASS no duplicate toughness wizards:fire_robe_feet
+PASS old worn stack keeps damage wizards:fire_robe_feet
+PASS old worn stack keeps enchantment wizards:fire_robe_feet
+PASS old stack receives valid new durability wizards:fire_robe_feet
+PASS near-broken old stack survives loading wizards:fire_robe_feet
+PASS near-broken old stack retains wear component wizards:fire_robe_feet
+PASS equipped total armor wizards:fire_robe actual=15.0 expected=15.0
+PASS equipped total toughness wizards:fire_robe actual=0.0 expected=0.0
+PASS real target item wizards:frost_robe_head
+PASS native armor wizards:frost_robe_head actual=2.0 expected=2.0
+PASS native toughness wizards:frost_robe_head actual=0.0 expected=0.0
+PASS native durability wizards:frost_robe_head actual=363 expected=363
+PASS no duplicate toughness wizards:frost_robe_head
+PASS old worn stack keeps damage wizards:frost_robe_head
+PASS old worn stack keeps enchantment wizards:frost_robe_head
+PASS old stack receives valid new durability wizards:frost_robe_head
+PASS near-broken old stack survives loading wizards:frost_robe_head
+PASS near-broken old stack retains wear component wizards:frost_robe_head
+PASS real target item wizards:frost_robe_chest
+PASS native armor wizards:frost_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:frost_robe_chest actual=0.0 expected=0.0
+PASS native durability wizards:frost_robe_chest actual=528 expected=528
+PASS no duplicate toughness wizards:frost_robe_chest
+PASS old worn stack keeps damage wizards:frost_robe_chest
+PASS old worn stack keeps enchantment wizards:frost_robe_chest
+PASS old stack receives valid new durability wizards:frost_robe_chest
+PASS near-broken old stack survives loading wizards:frost_robe_chest
+PASS near-broken old stack retains wear component wizards:frost_robe_chest
+PASS real target item wizards:frost_robe_legs
+PASS native armor wizards:frost_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:frost_robe_legs actual=0.0 expected=0.0
+PASS native durability wizards:frost_robe_legs actual=495 expected=495
+PASS no duplicate toughness wizards:frost_robe_legs
+PASS old worn stack keeps damage wizards:frost_robe_legs
+PASS old worn stack keeps enchantment wizards:frost_robe_legs
+PASS old stack receives valid new durability wizards:frost_robe_legs
+PASS near-broken old stack survives loading wizards:frost_robe_legs
+PASS near-broken old stack retains wear component wizards:frost_robe_legs
+PASS real target item wizards:frost_robe_feet
+PASS native armor wizards:frost_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:frost_robe_feet actual=0.0 expected=0.0
+PASS native durability wizards:frost_robe_feet actual=429 expected=429
+PASS no duplicate toughness wizards:frost_robe_feet
+PASS old worn stack keeps damage wizards:frost_robe_feet
+PASS old worn stack keeps enchantment wizards:frost_robe_feet
+PASS old stack receives valid new durability wizards:frost_robe_feet
+PASS near-broken old stack survives loading wizards:frost_robe_feet
+PASS near-broken old stack retains wear component wizards:frost_robe_feet
+PASS equipped total armor wizards:frost_robe actual=15.0 expected=15.0
+PASS equipped total toughness wizards:frost_robe actual=0.0 expected=0.0
+PASS real target item wizards:netherite_arcane_robe_head
+PASS native armor wizards:netherite_arcane_robe_head actual=3.0 expected=3.0
+PASS native toughness wizards:netherite_arcane_robe_head actual=1.0 expected=1.0
+PASS native durability wizards:netherite_arcane_robe_head actual=407 expected=407
+PASS no duplicate toughness wizards:netherite_arcane_robe_head
+PASS old worn stack keeps damage wizards:netherite_arcane_robe_head
+PASS old worn stack keeps enchantment wizards:netherite_arcane_robe_head
+PASS old stack receives valid new durability wizards:netherite_arcane_robe_head
+PASS near-broken old stack survives loading wizards:netherite_arcane_robe_head
+PASS near-broken old stack retains wear component wizards:netherite_arcane_robe_head
+PASS real target item wizards:netherite_arcane_robe_chest
+PASS native armor wizards:netherite_arcane_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:netherite_arcane_robe_chest actual=1.0 expected=1.0
+PASS native durability wizards:netherite_arcane_robe_chest actual=592 expected=592
+PASS no duplicate toughness wizards:netherite_arcane_robe_chest
+PASS old worn stack keeps damage wizards:netherite_arcane_robe_chest
+PASS old worn stack keeps enchantment wizards:netherite_arcane_robe_chest
+PASS old stack receives valid new durability wizards:netherite_arcane_robe_chest
+PASS near-broken old stack survives loading wizards:netherite_arcane_robe_chest
+PASS near-broken old stack retains wear component wizards:netherite_arcane_robe_chest
+PASS real target item wizards:netherite_arcane_robe_legs
+PASS native armor wizards:netherite_arcane_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:netherite_arcane_robe_legs actual=1.0 expected=1.0
+PASS native durability wizards:netherite_arcane_robe_legs actual=555 expected=555
+PASS no duplicate toughness wizards:netherite_arcane_robe_legs
+PASS old worn stack keeps damage wizards:netherite_arcane_robe_legs
+PASS old worn stack keeps enchantment wizards:netherite_arcane_robe_legs
+PASS old stack receives valid new durability wizards:netherite_arcane_robe_legs
+PASS near-broken old stack survives loading wizards:netherite_arcane_robe_legs
+PASS near-broken old stack retains wear component wizards:netherite_arcane_robe_legs
+PASS real target item wizards:netherite_arcane_robe_feet
+PASS native armor wizards:netherite_arcane_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:netherite_arcane_robe_feet actual=1.0 expected=1.0
+PASS native durability wizards:netherite_arcane_robe_feet actual=481 expected=481
+PASS no duplicate toughness wizards:netherite_arcane_robe_feet
+PASS old worn stack keeps damage wizards:netherite_arcane_robe_feet
+PASS old worn stack keeps enchantment wizards:netherite_arcane_robe_feet
+PASS old stack receives valid new durability wizards:netherite_arcane_robe_feet
+PASS near-broken old stack survives loading wizards:netherite_arcane_robe_feet
+PASS near-broken old stack retains wear component wizards:netherite_arcane_robe_feet
+PASS equipped total armor wizards:netherite_arcane_robe actual=16.0 expected=16.0
+PASS equipped total toughness wizards:netherite_arcane_robe actual=4.0 expected=4.0
+PASS real target item wizards:netherite_fire_robe_head
+PASS native armor wizards:netherite_fire_robe_head actual=3.0 expected=3.0
+PASS native toughness wizards:netherite_fire_robe_head actual=1.0 expected=1.0
+PASS native durability wizards:netherite_fire_robe_head actual=407 expected=407
+PASS no duplicate toughness wizards:netherite_fire_robe_head
+PASS old worn stack keeps damage wizards:netherite_fire_robe_head
+PASS old worn stack keeps enchantment wizards:netherite_fire_robe_head
+PASS old stack receives valid new durability wizards:netherite_fire_robe_head
+PASS near-broken old stack survives loading wizards:netherite_fire_robe_head
+PASS near-broken old stack retains wear component wizards:netherite_fire_robe_head
+PASS real target item wizards:netherite_fire_robe_chest
+PASS native armor wizards:netherite_fire_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:netherite_fire_robe_chest actual=1.0 expected=1.0
+PASS native durability wizards:netherite_fire_robe_chest actual=592 expected=592
+PASS no duplicate toughness wizards:netherite_fire_robe_chest
+PASS old worn stack keeps damage wizards:netherite_fire_robe_chest
+PASS old worn stack keeps enchantment wizards:netherite_fire_robe_chest
+PASS old stack receives valid new durability wizards:netherite_fire_robe_chest
+PASS near-broken old stack survives loading wizards:netherite_fire_robe_chest
+PASS near-broken old stack retains wear component wizards:netherite_fire_robe_chest
+PASS real target item wizards:netherite_fire_robe_legs
+PASS native armor wizards:netherite_fire_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:netherite_fire_robe_legs actual=1.0 expected=1.0
+PASS native durability wizards:netherite_fire_robe_legs actual=555 expected=555
+PASS no duplicate toughness wizards:netherite_fire_robe_legs
+PASS old worn stack keeps damage wizards:netherite_fire_robe_legs
+PASS old worn stack keeps enchantment wizards:netherite_fire_robe_legs
+PASS old stack receives valid new durability wizards:netherite_fire_robe_legs
+PASS near-broken old stack survives loading wizards:netherite_fire_robe_legs
+PASS near-broken old stack retains wear component wizards:netherite_fire_robe_legs
+PASS real target item wizards:netherite_fire_robe_feet
+PASS native armor wizards:netherite_fire_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:netherite_fire_robe_feet actual=1.0 expected=1.0
+PASS native durability wizards:netherite_fire_robe_feet actual=481 expected=481
+PASS no duplicate toughness wizards:netherite_fire_robe_feet
+PASS old worn stack keeps damage wizards:netherite_fire_robe_feet
+PASS old worn stack keeps enchantment wizards:netherite_fire_robe_feet
+PASS old stack receives valid new durability wizards:netherite_fire_robe_feet
+PASS near-broken old stack survives loading wizards:netherite_fire_robe_feet
+PASS near-broken old stack retains wear component wizards:netherite_fire_robe_feet
+PASS equipped total armor wizards:netherite_fire_robe actual=16.0 expected=16.0
+PASS equipped total toughness wizards:netherite_fire_robe actual=4.0 expected=4.0
+PASS real target item wizards:netherite_frost_robe_head
+PASS native armor wizards:netherite_frost_robe_head actual=3.0 expected=3.0
+PASS native toughness wizards:netherite_frost_robe_head actual=1.0 expected=1.0
+PASS native durability wizards:netherite_frost_robe_head actual=407 expected=407
+PASS no duplicate toughness wizards:netherite_frost_robe_head
+PASS old worn stack keeps damage wizards:netherite_frost_robe_head
+PASS old worn stack keeps enchantment wizards:netherite_frost_robe_head
+PASS old stack receives valid new durability wizards:netherite_frost_robe_head
+PASS near-broken old stack survives loading wizards:netherite_frost_robe_head
+PASS near-broken old stack retains wear component wizards:netherite_frost_robe_head
+PASS real target item wizards:netherite_frost_robe_chest
+PASS native armor wizards:netherite_frost_robe_chest actual=6.0 expected=6.0
+PASS native toughness wizards:netherite_frost_robe_chest actual=1.0 expected=1.0
+PASS native durability wizards:netherite_frost_robe_chest actual=592 expected=592
+PASS no duplicate toughness wizards:netherite_frost_robe_chest
+PASS old worn stack keeps damage wizards:netherite_frost_robe_chest
+PASS old worn stack keeps enchantment wizards:netherite_frost_robe_chest
+PASS old stack receives valid new durability wizards:netherite_frost_robe_chest
+PASS near-broken old stack survives loading wizards:netherite_frost_robe_chest
+PASS near-broken old stack retains wear component wizards:netherite_frost_robe_chest
+PASS real target item wizards:netherite_frost_robe_legs
+PASS native armor wizards:netherite_frost_robe_legs actual=5.0 expected=5.0
+PASS native toughness wizards:netherite_frost_robe_legs actual=1.0 expected=1.0
+PASS native durability wizards:netherite_frost_robe_legs actual=555 expected=555
+PASS no duplicate toughness wizards:netherite_frost_robe_legs
+PASS old worn stack keeps damage wizards:netherite_frost_robe_legs
+PASS old worn stack keeps enchantment wizards:netherite_frost_robe_legs
+PASS old stack receives valid new durability wizards:netherite_frost_robe_legs
+PASS near-broken old stack survives loading wizards:netherite_frost_robe_legs
+PASS near-broken old stack retains wear component wizards:netherite_frost_robe_legs
+PASS real target item wizards:netherite_frost_robe_feet
+PASS native armor wizards:netherite_frost_robe_feet actual=2.0 expected=2.0
+PASS native toughness wizards:netherite_frost_robe_feet actual=1.0 expected=1.0
+PASS native durability wizards:netherite_frost_robe_feet actual=481 expected=481
+PASS no duplicate toughness wizards:netherite_frost_robe_feet
+PASS old worn stack keeps damage wizards:netherite_frost_robe_feet
+PASS old worn stack keeps enchantment wizards:netherite_frost_robe_feet
+PASS old stack receives valid new durability wizards:netherite_frost_robe_feet
+PASS near-broken old stack survives loading wizards:netherite_frost_robe_feet
+PASS near-broken old stack retains wear component wizards:netherite_frost_robe_feet
+PASS equipped total armor wizards:netherite_frost_robe actual=16.0 expected=16.0
+PASS equipped total toughness wizards:netherite_frost_robe actual=4.0 expected=4.0
+PASS real target item paladins:priest_robe_head
+PASS native armor paladins:priest_robe_head actual=2.0 expected=2.0
+PASS native toughness paladins:priest_robe_head actual=0.0 expected=0.0
+PASS native durability paladins:priest_robe_head actual=165 expected=165
+PASS no duplicate toughness paladins:priest_robe_head
+PASS old worn stack keeps damage paladins:priest_robe_head
+PASS old worn stack keeps enchantment paladins:priest_robe_head
+PASS old stack receives valid new durability paladins:priest_robe_head
+PASS near-broken old stack survives loading paladins:priest_robe_head
+PASS near-broken old stack retains wear component paladins:priest_robe_head
+PASS real target item paladins:priest_robe_chest
+PASS native armor paladins:priest_robe_chest actual=4.0 expected=4.0
+PASS native toughness paladins:priest_robe_chest actual=0.0 expected=0.0
+PASS native durability paladins:priest_robe_chest actual=240 expected=240
+PASS no duplicate toughness paladins:priest_robe_chest
+PASS old worn stack keeps damage paladins:priest_robe_chest
+PASS old worn stack keeps enchantment paladins:priest_robe_chest
+PASS old stack receives valid new durability paladins:priest_robe_chest
+PASS near-broken old stack survives loading paladins:priest_robe_chest
+PASS near-broken old stack retains wear component paladins:priest_robe_chest
+PASS real target item paladins:priest_robe_legs
+PASS native armor paladins:priest_robe_legs actual=3.0 expected=3.0
+PASS native toughness paladins:priest_robe_legs actual=0.0 expected=0.0
+PASS native durability paladins:priest_robe_legs actual=225 expected=225
+PASS no duplicate toughness paladins:priest_robe_legs
+PASS old worn stack keeps damage paladins:priest_robe_legs
+PASS old worn stack keeps enchantment paladins:priest_robe_legs
+PASS old stack receives valid new durability paladins:priest_robe_legs
+PASS near-broken old stack survives loading paladins:priest_robe_legs
+PASS near-broken old stack retains wear component paladins:priest_robe_legs
+PASS real target item paladins:priest_robe_feet
+PASS native armor paladins:priest_robe_feet actual=2.0 expected=2.0
+PASS native toughness paladins:priest_robe_feet actual=0.0 expected=0.0
+PASS native durability paladins:priest_robe_feet actual=195 expected=195
+PASS no duplicate toughness paladins:priest_robe_feet
+PASS old worn stack keeps damage paladins:priest_robe_feet
+PASS old worn stack keeps enchantment paladins:priest_robe_feet
+PASS old stack receives valid new durability paladins:priest_robe_feet
+PASS near-broken old stack survives loading paladins:priest_robe_feet
+PASS near-broken old stack retains wear component paladins:priest_robe_feet
+PASS equipped total armor paladins:priest_robe actual=11.0 expected=11.0
+PASS equipped total toughness paladins:priest_robe actual=0.0 expected=0.0
+PASS real target item paladins:prior_robe_head
+PASS native armor paladins:prior_robe_head actual=2.0 expected=2.0
+PASS native toughness paladins:prior_robe_head actual=0.0 expected=0.0
+PASS native durability paladins:prior_robe_head actual=363 expected=363
+PASS no duplicate toughness paladins:prior_robe_head
+PASS old worn stack keeps damage paladins:prior_robe_head
+PASS old worn stack keeps enchantment paladins:prior_robe_head
+PASS old stack receives valid new durability paladins:prior_robe_head
+PASS near-broken old stack survives loading paladins:prior_robe_head
+PASS near-broken old stack retains wear component paladins:prior_robe_head
+PASS real target item paladins:prior_robe_chest
+PASS native armor paladins:prior_robe_chest actual=6.0 expected=6.0
+PASS native toughness paladins:prior_robe_chest actual=0.0 expected=0.0
+PASS native durability paladins:prior_robe_chest actual=528 expected=528
+PASS no duplicate toughness paladins:prior_robe_chest
+PASS old worn stack keeps damage paladins:prior_robe_chest
+PASS old worn stack keeps enchantment paladins:prior_robe_chest
+PASS old stack receives valid new durability paladins:prior_robe_chest
+PASS near-broken old stack survives loading paladins:prior_robe_chest
+PASS near-broken old stack retains wear component paladins:prior_robe_chest
+PASS real target item paladins:prior_robe_legs
+PASS native armor paladins:prior_robe_legs actual=5.0 expected=5.0
+PASS native toughness paladins:prior_robe_legs actual=0.0 expected=0.0
+PASS native durability paladins:prior_robe_legs actual=495 expected=495
+PASS no duplicate toughness paladins:prior_robe_legs
+PASS old worn stack keeps damage paladins:prior_robe_legs
+PASS old worn stack keeps enchantment paladins:prior_robe_legs
+PASS old stack receives valid new durability paladins:prior_robe_legs
+PASS near-broken old stack survives loading paladins:prior_robe_legs
+PASS near-broken old stack retains wear component paladins:prior_robe_legs
+PASS real target item paladins:prior_robe_feet
+PASS native armor paladins:prior_robe_feet actual=2.0 expected=2.0
+PASS native toughness paladins:prior_robe_feet actual=0.0 expected=0.0
+PASS native durability paladins:prior_robe_feet actual=429 expected=429
+PASS no duplicate toughness paladins:prior_robe_feet
+PASS old worn stack keeps damage paladins:prior_robe_feet
+PASS old worn stack keeps enchantment paladins:prior_robe_feet
+PASS old stack receives valid new durability paladins:prior_robe_feet
+PASS near-broken old stack survives loading paladins:prior_robe_feet
+PASS near-broken old stack retains wear component paladins:prior_robe_feet
+PASS equipped total armor paladins:prior_robe actual=15.0 expected=15.0
+PASS equipped total toughness paladins:prior_robe actual=0.0 expected=0.0
+PASS real target item paladins:netherite_prior_robe_head
+PASS native armor paladins:netherite_prior_robe_head actual=3.0 expected=3.0
+PASS native toughness paladins:netherite_prior_robe_head actual=1.0 expected=1.0
+PASS native durability paladins:netherite_prior_robe_head actual=407 expected=407
+PASS no duplicate toughness paladins:netherite_prior_robe_head
+PASS old worn stack keeps damage paladins:netherite_prior_robe_head
+PASS old worn stack keeps enchantment paladins:netherite_prior_robe_head
+PASS old stack receives valid new durability paladins:netherite_prior_robe_head
+PASS near-broken old stack survives loading paladins:netherite_prior_robe_head
+PASS near-broken old stack retains wear component paladins:netherite_prior_robe_head
+PASS real target item paladins:netherite_prior_robe_chest
+PASS native armor paladins:netherite_prior_robe_chest actual=6.0 expected=6.0
+PASS native toughness paladins:netherite_prior_robe_chest actual=1.0 expected=1.0
+PASS native durability paladins:netherite_prior_robe_chest actual=592 expected=592
+PASS no duplicate toughness paladins:netherite_prior_robe_chest
+PASS old worn stack keeps damage paladins:netherite_prior_robe_chest
+PASS old worn stack keeps enchantment paladins:netherite_prior_robe_chest
+PASS old stack receives valid new durability paladins:netherite_prior_robe_chest
+PASS near-broken old stack survives loading paladins:netherite_prior_robe_chest
+PASS near-broken old stack retains wear component paladins:netherite_prior_robe_chest
+PASS real target item paladins:netherite_prior_robe_legs
+PASS native armor paladins:netherite_prior_robe_legs actual=5.0 expected=5.0
+PASS native toughness paladins:netherite_prior_robe_legs actual=1.0 expected=1.0
+PASS native durability paladins:netherite_prior_robe_legs actual=555 expected=555
+PASS no duplicate toughness paladins:netherite_prior_robe_legs
+PASS old worn stack keeps damage paladins:netherite_prior_robe_legs
+PASS old worn stack keeps enchantment paladins:netherite_prior_robe_legs
+PASS old stack receives valid new durability paladins:netherite_prior_robe_legs
+PASS near-broken old stack survives loading paladins:netherite_prior_robe_legs
+PASS near-broken old stack retains wear component paladins:netherite_prior_robe_legs
+PASS real target item paladins:netherite_prior_robe_feet
+PASS native armor paladins:netherite_prior_robe_feet actual=2.0 expected=2.0
+PASS native toughness paladins:netherite_prior_robe_feet actual=1.0 expected=1.0
+PASS native durability paladins:netherite_prior_robe_feet actual=481 expected=481
+PASS no duplicate toughness paladins:netherite_prior_robe_feet
+PASS old worn stack keeps damage paladins:netherite_prior_robe_feet
+PASS old worn stack keeps enchantment paladins:netherite_prior_robe_feet
+PASS old stack receives valid new durability paladins:netherite_prior_robe_feet
+PASS near-broken old stack survives loading paladins:netherite_prior_robe_feet
+PASS near-broken old stack retains wear component paladins:netherite_prior_robe_feet
+PASS equipped total armor paladins:netherite_prior_robe actual=16.0 expected=16.0
+PASS equipped total toughness paladins:netherite_prior_robe actual=4.0 expected=4.0
+PASS real target item rogues:rogue_armor_head
+PASS native armor rogues:rogue_armor_head actual=2.0 expected=2.0
+PASS native toughness rogues:rogue_armor_head actual=0.0 expected=0.0
+PASS native durability rogues:rogue_armor_head actual=165 expected=165
+PASS no duplicate toughness rogues:rogue_armor_head
+PASS old worn stack keeps damage rogues:rogue_armor_head
+PASS old worn stack keeps enchantment rogues:rogue_armor_head
+PASS old stack receives valid new durability rogues:rogue_armor_head
+PASS near-broken old stack survives loading rogues:rogue_armor_head
+PASS near-broken old stack retains wear component rogues:rogue_armor_head
+PASS real target item rogues:rogue_armor_chest
+PASS native armor rogues:rogue_armor_chest actual=5.0 expected=5.0
+PASS native toughness rogues:rogue_armor_chest actual=0.0 expected=0.0
+PASS native durability rogues:rogue_armor_chest actual=240 expected=240
+PASS no duplicate toughness rogues:rogue_armor_chest
+PASS old worn stack keeps damage rogues:rogue_armor_chest
+PASS old worn stack keeps enchantment rogues:rogue_armor_chest
+PASS old stack receives valid new durability rogues:rogue_armor_chest
+PASS near-broken old stack survives loading rogues:rogue_armor_chest
+PASS near-broken old stack retains wear component rogues:rogue_armor_chest
+PASS real target item rogues:rogue_armor_legs
+PASS native armor rogues:rogue_armor_legs actual=3.0 expected=3.0
+PASS native toughness rogues:rogue_armor_legs actual=0.0 expected=0.0
+PASS native durability rogues:rogue_armor_legs actual=225 expected=225
+PASS no duplicate toughness rogues:rogue_armor_legs
+PASS old worn stack keeps damage rogues:rogue_armor_legs
+PASS old worn stack keeps enchantment rogues:rogue_armor_legs
+PASS old stack receives valid new durability rogues:rogue_armor_legs
+PASS near-broken old stack survives loading rogues:rogue_armor_legs
+PASS near-broken old stack retains wear component rogues:rogue_armor_legs
+PASS real target item rogues:rogue_armor_feet
+PASS native armor rogues:rogue_armor_feet actual=2.0 expected=2.0
+PASS native toughness rogues:rogue_armor_feet actual=0.0 expected=0.0
+PASS native durability rogues:rogue_armor_feet actual=195 expected=195
+PASS no duplicate toughness rogues:rogue_armor_feet
+PASS old worn stack keeps damage rogues:rogue_armor_feet
+PASS old worn stack keeps enchantment rogues:rogue_armor_feet
+PASS old stack receives valid new durability rogues:rogue_armor_feet
+PASS near-broken old stack survives loading rogues:rogue_armor_feet
+PASS near-broken old stack retains wear component rogues:rogue_armor_feet
+PASS equipped total armor rogues:rogue_armor actual=12.0 expected=12.0
+PASS equipped total toughness rogues:rogue_armor actual=0.0 expected=0.0
+PASS real target item rogues:assassin_armor_head
+PASS native armor rogues:assassin_armor_head actual=3.0 expected=3.0
+PASS native toughness rogues:assassin_armor_head actual=0.0 expected=0.0
+PASS native durability rogues:assassin_armor_head actual=363 expected=363
+PASS no duplicate toughness rogues:assassin_armor_head
+PASS old worn stack keeps damage rogues:assassin_armor_head
+PASS old worn stack keeps enchantment rogues:assassin_armor_head
+PASS old stack receives valid new durability rogues:assassin_armor_head
+PASS near-broken old stack survives loading rogues:assassin_armor_head
+PASS near-broken old stack retains wear component rogues:assassin_armor_head
+PASS real target item rogues:assassin_armor_chest
+PASS native armor rogues:assassin_armor_chest actual=6.0 expected=6.0
+PASS native toughness rogues:assassin_armor_chest actual=0.0 expected=0.0
+PASS native durability rogues:assassin_armor_chest actual=528 expected=528
+PASS no duplicate toughness rogues:assassin_armor_chest
+PASS old worn stack keeps damage rogues:assassin_armor_chest
+PASS old worn stack keeps enchantment rogues:assassin_armor_chest
+PASS old stack receives valid new durability rogues:assassin_armor_chest
+PASS near-broken old stack survives loading rogues:assassin_armor_chest
+PASS near-broken old stack retains wear component rogues:assassin_armor_chest
+PASS real target item rogues:assassin_armor_legs
+PASS native armor rogues:assassin_armor_legs actual=5.0 expected=5.0
+PASS native toughness rogues:assassin_armor_legs actual=0.0 expected=0.0
+PASS native durability rogues:assassin_armor_legs actual=495 expected=495
+PASS no duplicate toughness rogues:assassin_armor_legs
+PASS old worn stack keeps damage rogues:assassin_armor_legs
+PASS old worn stack keeps enchantment rogues:assassin_armor_legs
+PASS old stack receives valid new durability rogues:assassin_armor_legs
+PASS near-broken old stack survives loading rogues:assassin_armor_legs
+PASS near-broken old stack retains wear component rogues:assassin_armor_legs
+PASS real target item rogues:assassin_armor_feet
+PASS native armor rogues:assassin_armor_feet actual=2.0 expected=2.0
+PASS native toughness rogues:assassin_armor_feet actual=0.0 expected=0.0
+PASS native durability rogues:assassin_armor_feet actual=429 expected=429
+PASS no duplicate toughness rogues:assassin_armor_feet
+PASS old worn stack keeps damage rogues:assassin_armor_feet
+PASS old worn stack keeps enchantment rogues:assassin_armor_feet
+PASS old stack receives valid new durability rogues:assassin_armor_feet
+PASS near-broken old stack survives loading rogues:assassin_armor_feet
+PASS near-broken old stack retains wear component rogues:assassin_armor_feet
+PASS equipped total armor rogues:assassin_armor actual=16.0 expected=16.0
+PASS equipped total toughness rogues:assassin_armor actual=0.0 expected=0.0
+PASS real target item rogues:netherite_assassin_armor_head
+PASS native armor rogues:netherite_assassin_armor_head actual=3.0 expected=3.0
+PASS native toughness rogues:netherite_assassin_armor_head actual=1.0 expected=1.0
+PASS native durability rogues:netherite_assassin_armor_head actual=407 expected=407
+PASS no duplicate toughness rogues:netherite_assassin_armor_head
+PASS old worn stack keeps damage rogues:netherite_assassin_armor_head
+PASS old worn stack keeps enchantment rogues:netherite_assassin_armor_head
+PASS old stack receives valid new durability rogues:netherite_assassin_armor_head
+PASS near-broken old stack survives loading rogues:netherite_assassin_armor_head
+PASS near-broken old stack retains wear component rogues:netherite_assassin_armor_head
+PASS real target item rogues:netherite_assassin_armor_chest
+PASS native armor rogues:netherite_assassin_armor_chest actual=6.0 expected=6.0
+PASS native toughness rogues:netherite_assassin_armor_chest actual=1.0 expected=1.0
+PASS native durability rogues:netherite_assassin_armor_chest actual=592 expected=592
+PASS no duplicate toughness rogues:netherite_assassin_armor_chest
+PASS old worn stack keeps damage rogues:netherite_assassin_armor_chest
+PASS old worn stack keeps enchantment rogues:netherite_assassin_armor_chest
+PASS old stack receives valid new durability rogues:netherite_assassin_armor_chest
+PASS near-broken old stack survives loading rogues:netherite_assassin_armor_chest
+PASS near-broken old stack retains wear component rogues:netherite_assassin_armor_chest
+PASS real target item rogues:netherite_assassin_armor_legs
+PASS native armor rogues:netherite_assassin_armor_legs actual=5.0 expected=5.0
+PASS native toughness rogues:netherite_assassin_armor_legs actual=1.0 expected=1.0
+PASS native durability rogues:netherite_assassin_armor_legs actual=555 expected=555
+PASS no duplicate toughness rogues:netherite_assassin_armor_legs
+PASS old worn stack keeps damage rogues:netherite_assassin_armor_legs
+PASS old worn stack keeps enchantment rogues:netherite_assassin_armor_legs
+PASS old stack receives valid new durability rogues:netherite_assassin_armor_legs
+PASS near-broken old stack survives loading rogues:netherite_assassin_armor_legs
+PASS near-broken old stack retains wear component rogues:netherite_assassin_armor_legs
+PASS real target item rogues:netherite_assassin_armor_feet
+PASS native armor rogues:netherite_assassin_armor_feet actual=3.0 expected=3.0
+PASS native toughness rogues:netherite_assassin_armor_feet actual=1.0 expected=1.0
+PASS native durability rogues:netherite_assassin_armor_feet actual=481 expected=481
+PASS no duplicate toughness rogues:netherite_assassin_armor_feet
+PASS old worn stack keeps damage rogues:netherite_assassin_armor_feet
+PASS old worn stack keeps enchantment rogues:netherite_assassin_armor_feet
+PASS old stack receives valid new durability rogues:netherite_assassin_armor_feet
+PASS near-broken old stack survives loading rogues:netherite_assassin_armor_feet
+PASS near-broken old stack retains wear component rogues:netherite_assassin_armor_feet
+PASS equipped total armor rogues:netherite_assassin_armor actual=17.0 expected=17.0
+PASS equipped total toughness rogues:netherite_assassin_armor actual=4.0 expected=4.0
+PASS real target item rogues:warrior_armor_head
+PASS native armor rogues:warrior_armor_head actual=2.0 expected=2.0
+PASS native toughness rogues:warrior_armor_head actual=0.0 expected=0.0
+PASS native durability rogues:warrior_armor_head actual=165 expected=165
+PASS no duplicate toughness rogues:warrior_armor_head
+PASS old worn stack keeps damage rogues:warrior_armor_head
+PASS old worn stack keeps enchantment rogues:warrior_armor_head
+PASS old stack receives valid new durability rogues:warrior_armor_head
+PASS near-broken old stack survives loading rogues:warrior_armor_head
+PASS near-broken old stack retains wear component rogues:warrior_armor_head
+PASS real target item rogues:warrior_armor_chest
+PASS native armor rogues:warrior_armor_chest actual=5.0 expected=5.0
+PASS native toughness rogues:warrior_armor_chest actual=0.0 expected=0.0
+PASS native durability rogues:warrior_armor_chest actual=240 expected=240
+PASS no duplicate toughness rogues:warrior_armor_chest
+PASS old worn stack keeps damage rogues:warrior_armor_chest
+PASS old worn stack keeps enchantment rogues:warrior_armor_chest
+PASS old stack receives valid new durability rogues:warrior_armor_chest
+PASS near-broken old stack survives loading rogues:warrior_armor_chest
+PASS near-broken old stack retains wear component rogues:warrior_armor_chest
+PASS real target item rogues:warrior_armor_legs
+PASS native armor rogues:warrior_armor_legs actual=4.0 expected=4.0
+PASS native toughness rogues:warrior_armor_legs actual=0.0 expected=0.0
+PASS native durability rogues:warrior_armor_legs actual=225 expected=225
+PASS no duplicate toughness rogues:warrior_armor_legs
+PASS old worn stack keeps damage rogues:warrior_armor_legs
+PASS old worn stack keeps enchantment rogues:warrior_armor_legs
+PASS old stack receives valid new durability rogues:warrior_armor_legs
+PASS near-broken old stack survives loading rogues:warrior_armor_legs
+PASS near-broken old stack retains wear component rogues:warrior_armor_legs
+PASS real target item rogues:warrior_armor_feet
+PASS native armor rogues:warrior_armor_feet actual=2.0 expected=2.0
+PASS native toughness rogues:warrior_armor_feet actual=0.0 expected=0.0
+PASS native durability rogues:warrior_armor_feet actual=195 expected=195
+PASS no duplicate toughness rogues:warrior_armor_feet
+PASS old worn stack keeps damage rogues:warrior_armor_feet
+PASS old worn stack keeps enchantment rogues:warrior_armor_feet
+PASS old stack receives valid new durability rogues:warrior_armor_feet
+PASS near-broken old stack survives loading rogues:warrior_armor_feet
+PASS near-broken old stack retains wear component rogues:warrior_armor_feet
+PASS equipped total armor rogues:warrior_armor actual=13.0 expected=13.0
+PASS equipped total toughness rogues:warrior_armor actual=0.0 expected=0.0
+PASS real target item rogues:berserker_armor_head
+PASS native armor rogues:berserker_armor_head actual=3.0 expected=3.0
+PASS native toughness rogues:berserker_armor_head actual=0.0 expected=0.0
+PASS native durability rogues:berserker_armor_head actual=363 expected=363
+PASS no duplicate toughness rogues:berserker_armor_head
+PASS old worn stack keeps damage rogues:berserker_armor_head
+PASS old worn stack keeps enchantment rogues:berserker_armor_head
+PASS old stack receives valid new durability rogues:berserker_armor_head
+PASS near-broken old stack survives loading rogues:berserker_armor_head
+PASS near-broken old stack retains wear component rogues:berserker_armor_head
+PASS real target item rogues:berserker_armor_chest
+PASS native armor rogues:berserker_armor_chest actual=6.0 expected=6.0
+PASS native toughness rogues:berserker_armor_chest actual=0.0 expected=0.0
+PASS native durability rogues:berserker_armor_chest actual=528 expected=528
+PASS no duplicate toughness rogues:berserker_armor_chest
+PASS old worn stack keeps damage rogues:berserker_armor_chest
+PASS old worn stack keeps enchantment rogues:berserker_armor_chest
+PASS old stack receives valid new durability rogues:berserker_armor_chest
+PASS near-broken old stack survives loading rogues:berserker_armor_chest
+PASS near-broken old stack retains wear component rogues:berserker_armor_chest
+PASS real target item rogues:berserker_armor_legs
+PASS native armor rogues:berserker_armor_legs actual=5.0 expected=5.0
+PASS native toughness rogues:berserker_armor_legs actual=0.0 expected=0.0
+PASS native durability rogues:berserker_armor_legs actual=495 expected=495
+PASS no duplicate toughness rogues:berserker_armor_legs
+PASS old worn stack keeps damage rogues:berserker_armor_legs
+PASS old worn stack keeps enchantment rogues:berserker_armor_legs
+PASS old stack receives valid new durability rogues:berserker_armor_legs
+PASS near-broken old stack survives loading rogues:berserker_armor_legs
+PASS near-broken old stack retains wear component rogues:berserker_armor_legs
+PASS real target item rogues:berserker_armor_feet
+PASS native armor rogues:berserker_armor_feet actual=3.0 expected=3.0
+PASS native toughness rogues:berserker_armor_feet actual=0.0 expected=0.0
+PASS native durability rogues:berserker_armor_feet actual=429 expected=429
+PASS no duplicate toughness rogues:berserker_armor_feet
+PASS old worn stack keeps damage rogues:berserker_armor_feet
+PASS old worn stack keeps enchantment rogues:berserker_armor_feet
+PASS old stack receives valid new durability rogues:berserker_armor_feet
+PASS near-broken old stack survives loading rogues:berserker_armor_feet
+PASS near-broken old stack retains wear component rogues:berserker_armor_feet
+PASS equipped total armor rogues:berserker_armor actual=17.0 expected=17.0
+PASS equipped total toughness rogues:berserker_armor actual=0.0 expected=0.0
+PASS real target item rogues:netherite_berserker_armor_head
+PASS native armor rogues:netherite_berserker_armor_head actual=3.0 expected=3.0
+PASS native toughness rogues:netherite_berserker_armor_head actual=1.0 expected=1.0
+PASS native durability rogues:netherite_berserker_armor_head actual=407 expected=407
+PASS no duplicate toughness rogues:netherite_berserker_armor_head
+PASS old worn stack keeps damage rogues:netherite_berserker_armor_head
+PASS old worn stack keeps enchantment rogues:netherite_berserker_armor_head
+PASS old stack receives valid new durability rogues:netherite_berserker_armor_head
+PASS near-broken old stack survives loading rogues:netherite_berserker_armor_head
+PASS near-broken old stack retains wear component rogues:netherite_berserker_armor_head
+PASS real target item rogues:netherite_berserker_armor_chest
+PASS native armor rogues:netherite_berserker_armor_chest actual=7.0 expected=7.0
+PASS native toughness rogues:netherite_berserker_armor_chest actual=1.0 expected=1.0
+PASS native durability rogues:netherite_berserker_armor_chest actual=592 expected=592
+PASS no duplicate toughness rogues:netherite_berserker_armor_chest
+PASS old worn stack keeps damage rogues:netherite_berserker_armor_chest
+PASS old worn stack keeps enchantment rogues:netherite_berserker_armor_chest
+PASS old stack receives valid new durability rogues:netherite_berserker_armor_chest
+PASS near-broken old stack survives loading rogues:netherite_berserker_armor_chest
+PASS near-broken old stack retains wear component rogues:netherite_berserker_armor_chest
+PASS real target item rogues:netherite_berserker_armor_legs
+PASS native armor rogues:netherite_berserker_armor_legs actual=5.0 expected=5.0
+PASS native toughness rogues:netherite_berserker_armor_legs actual=1.0 expected=1.0
+PASS native durability rogues:netherite_berserker_armor_legs actual=555 expected=555
+PASS no duplicate toughness rogues:netherite_berserker_armor_legs
+PASS old worn stack keeps damage rogues:netherite_berserker_armor_legs
+PASS old worn stack keeps enchantment rogues:netherite_berserker_armor_legs
+PASS old stack receives valid new durability rogues:netherite_berserker_armor_legs
+PASS near-broken old stack survives loading rogues:netherite_berserker_armor_legs
+PASS near-broken old stack retains wear component rogues:netherite_berserker_armor_legs
+PASS real target item rogues:netherite_berserker_armor_feet
+PASS native armor rogues:netherite_berserker_armor_feet actual=3.0 expected=3.0
+PASS native toughness rogues:netherite_berserker_armor_feet actual=1.0 expected=1.0
+PASS native durability rogues:netherite_berserker_armor_feet actual=481 expected=481
+PASS no duplicate toughness rogues:netherite_berserker_armor_feet
+PASS old worn stack keeps damage rogues:netherite_berserker_armor_feet
+PASS old worn stack keeps enchantment rogues:netherite_berserker_armor_feet
+PASS old stack receives valid new durability rogues:netherite_berserker_armor_feet
+PASS near-broken old stack survives loading rogues:netherite_berserker_armor_feet
+PASS near-broken old stack retains wear component rogues:netherite_berserker_armor_feet
+PASS equipped total armor rogues:netherite_berserker_armor actual=18.0 expected=18.0
+PASS equipped total toughness rogues:netherite_berserker_armor actual=4.0 expected=4.0
+PASS real target item archers:archer_armor_head
+PASS native armor archers:archer_armor_head actual=2.0 expected=2.0
+PASS native toughness archers:archer_armor_head actual=0.0 expected=0.0
+PASS native durability archers:archer_armor_head actual=165 expected=165
+PASS no duplicate toughness archers:archer_armor_head
+PASS old worn stack keeps damage archers:archer_armor_head
+PASS old worn stack keeps enchantment archers:archer_armor_head
+PASS old stack receives valid new durability archers:archer_armor_head
+PASS near-broken old stack survives loading archers:archer_armor_head
+PASS near-broken old stack retains wear component archers:archer_armor_head
+PASS real target item archers:archer_armor_chest
+PASS native armor archers:archer_armor_chest actual=5.0 expected=5.0
+PASS native toughness archers:archer_armor_chest actual=0.0 expected=0.0
+PASS native durability archers:archer_armor_chest actual=240 expected=240
+PASS no duplicate toughness archers:archer_armor_chest
+PASS old worn stack keeps damage archers:archer_armor_chest
+PASS old worn stack keeps enchantment archers:archer_armor_chest
+PASS old stack receives valid new durability archers:archer_armor_chest
+PASS near-broken old stack survives loading archers:archer_armor_chest
+PASS near-broken old stack retains wear component archers:archer_armor_chest
+PASS real target item archers:archer_armor_legs
+PASS native armor archers:archer_armor_legs actual=3.0 expected=3.0
+PASS native toughness archers:archer_armor_legs actual=0.0 expected=0.0
+PASS native durability archers:archer_armor_legs actual=225 expected=225
+PASS no duplicate toughness archers:archer_armor_legs
+PASS old worn stack keeps damage archers:archer_armor_legs
+PASS old worn stack keeps enchantment archers:archer_armor_legs
+PASS old stack receives valid new durability archers:archer_armor_legs
+PASS near-broken old stack survives loading archers:archer_armor_legs
+PASS near-broken old stack retains wear component archers:archer_armor_legs
+PASS real target item archers:archer_armor_feet
+PASS native armor archers:archer_armor_feet actual=2.0 expected=2.0
+PASS native toughness archers:archer_armor_feet actual=0.0 expected=0.0
+PASS native durability archers:archer_armor_feet actual=195 expected=195
+PASS no duplicate toughness archers:archer_armor_feet
+PASS old worn stack keeps damage archers:archer_armor_feet
+PASS old worn stack keeps enchantment archers:archer_armor_feet
+PASS old stack receives valid new durability archers:archer_armor_feet
+PASS near-broken old stack survives loading archers:archer_armor_feet
+PASS near-broken old stack retains wear component archers:archer_armor_feet
+PASS equipped total armor archers:archer_armor actual=12.0 expected=12.0
+PASS equipped total toughness archers:archer_armor actual=0.0 expected=0.0
+PASS real target item archers:ranger_armor_head
+PASS native armor archers:ranger_armor_head actual=3.0 expected=3.0
+PASS native toughness archers:ranger_armor_head actual=0.0 expected=0.0
+PASS native durability archers:ranger_armor_head actual=363 expected=363
+PASS no duplicate toughness archers:ranger_armor_head
+PASS old worn stack keeps damage archers:ranger_armor_head
+PASS old worn stack keeps enchantment archers:ranger_armor_head
+PASS old stack receives valid new durability archers:ranger_armor_head
+PASS near-broken old stack survives loading archers:ranger_armor_head
+PASS near-broken old stack retains wear component archers:ranger_armor_head
+PASS real target item archers:ranger_armor_chest
+PASS native armor archers:ranger_armor_chest actual=6.0 expected=6.0
+PASS native toughness archers:ranger_armor_chest actual=0.0 expected=0.0
+PASS native durability archers:ranger_armor_chest actual=528 expected=528
+PASS no duplicate toughness archers:ranger_armor_chest
+PASS old worn stack keeps damage archers:ranger_armor_chest
+PASS old worn stack keeps enchantment archers:ranger_armor_chest
+PASS old stack receives valid new durability archers:ranger_armor_chest
+PASS near-broken old stack survives loading archers:ranger_armor_chest
+PASS near-broken old stack retains wear component archers:ranger_armor_chest
+PASS real target item archers:ranger_armor_legs
+PASS native armor archers:ranger_armor_legs actual=5.0 expected=5.0
+PASS native toughness archers:ranger_armor_legs actual=0.0 expected=0.0
+PASS native durability archers:ranger_armor_legs actual=495 expected=495
+PASS no duplicate toughness archers:ranger_armor_legs
+PASS old worn stack keeps damage archers:ranger_armor_legs
+PASS old worn stack keeps enchantment archers:ranger_armor_legs
+PASS old stack receives valid new durability archers:ranger_armor_legs
+PASS near-broken old stack survives loading archers:ranger_armor_legs
+PASS near-broken old stack retains wear component archers:ranger_armor_legs
+PASS real target item archers:ranger_armor_feet
+PASS native armor archers:ranger_armor_feet actual=2.0 expected=2.0
+PASS native toughness archers:ranger_armor_feet actual=0.0 expected=0.0
+PASS native durability archers:ranger_armor_feet actual=429 expected=429
+PASS no duplicate toughness archers:ranger_armor_feet
+PASS old worn stack keeps damage archers:ranger_armor_feet
+PASS old worn stack keeps enchantment archers:ranger_armor_feet
+PASS old stack receives valid new durability archers:ranger_armor_feet
+PASS near-broken old stack survives loading archers:ranger_armor_feet
+PASS near-broken old stack retains wear component archers:ranger_armor_feet
+PASS equipped total armor archers:ranger_armor actual=16.0 expected=16.0
+PASS equipped total toughness archers:ranger_armor actual=0.0 expected=0.0
+PASS real target item archers:netherite_ranger_armor_head
+PASS native armor archers:netherite_ranger_armor_head actual=3.0 expected=3.0
+PASS native toughness archers:netherite_ranger_armor_head actual=1.0 expected=1.0
+PASS native durability archers:netherite_ranger_armor_head actual=407 expected=407
+PASS no duplicate toughness archers:netherite_ranger_armor_head
+PASS old worn stack keeps damage archers:netherite_ranger_armor_head
+PASS old worn stack keeps enchantment archers:netherite_ranger_armor_head
+PASS old stack receives valid new durability archers:netherite_ranger_armor_head
+PASS near-broken old stack survives loading archers:netherite_ranger_armor_head
+PASS near-broken old stack retains wear component archers:netherite_ranger_armor_head
+PASS real target item archers:netherite_ranger_armor_chest
+PASS native armor archers:netherite_ranger_armor_chest actual=6.0 expected=6.0
+PASS native toughness archers:netherite_ranger_armor_chest actual=1.0 expected=1.0
+PASS native durability archers:netherite_ranger_armor_chest actual=592 expected=592
+PASS no duplicate toughness archers:netherite_ranger_armor_chest
+PASS old worn stack keeps damage archers:netherite_ranger_armor_chest
+PASS old worn stack keeps enchantment archers:netherite_ranger_armor_chest
+PASS old stack receives valid new durability archers:netherite_ranger_armor_chest
+PASS near-broken old stack survives loading archers:netherite_ranger_armor_chest
+PASS near-broken old stack retains wear component archers:netherite_ranger_armor_chest
+PASS real target item archers:netherite_ranger_armor_legs
+PASS native armor archers:netherite_ranger_armor_legs actual=5.0 expected=5.0
+PASS native toughness archers:netherite_ranger_armor_legs actual=1.0 expected=1.0
+PASS native durability archers:netherite_ranger_armor_legs actual=555 expected=555
+PASS no duplicate toughness archers:netherite_ranger_armor_legs
+PASS old worn stack keeps damage archers:netherite_ranger_armor_legs
+PASS old worn stack keeps enchantment archers:netherite_ranger_armor_legs
+PASS old stack receives valid new durability archers:netherite_ranger_armor_legs
+PASS near-broken old stack survives loading archers:netherite_ranger_armor_legs
+PASS near-broken old stack retains wear component archers:netherite_ranger_armor_legs
+PASS real target item archers:netherite_ranger_armor_feet
+PASS native armor archers:netherite_ranger_armor_feet actual=3.0 expected=3.0
+PASS native toughness archers:netherite_ranger_armor_feet actual=1.0 expected=1.0
+PASS native durability archers:netherite_ranger_armor_feet actual=481 expected=481
+PASS no duplicate toughness archers:netherite_ranger_armor_feet
+PASS old worn stack keeps damage archers:netherite_ranger_armor_feet
+PASS old worn stack keeps enchantment archers:netherite_ranger_armor_feet
+PASS old stack receives valid new durability archers:netherite_ranger_armor_feet
+PASS near-broken old stack survives loading archers:netherite_ranger_armor_feet
+PASS near-broken old stack retains wear component archers:netherite_ranger_armor_feet
+PASS equipped total armor archers:netherite_ranger_armor actual=17.0 expected=17.0
+PASS equipped total toughness archers:netherite_ranger_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:astral_robe_head
+PASS native armor armory_rpgs:astral_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:astral_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:astral_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:astral_robe_head
+PASS old worn stack keeps damage armory_rpgs:astral_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:astral_robe_head
+PASS old stack receives valid new durability armory_rpgs:astral_robe_head
+PASS near-broken old stack survives loading armory_rpgs:astral_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:astral_robe_head
+PASS real target item armory_rpgs:astral_robe_chest
+PASS native armor armory_rpgs:astral_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:astral_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:astral_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:astral_robe_chest
+PASS old worn stack keeps damage armory_rpgs:astral_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:astral_robe_chest
+PASS old stack receives valid new durability armory_rpgs:astral_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:astral_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:astral_robe_chest
+PASS real target item armory_rpgs:astral_robe_legs
+PASS native armor armory_rpgs:astral_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:astral_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:astral_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:astral_robe_legs
+PASS old worn stack keeps damage armory_rpgs:astral_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:astral_robe_legs
+PASS old stack receives valid new durability armory_rpgs:astral_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:astral_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:astral_robe_legs
+PASS real target item armory_rpgs:astral_robe_feet
+PASS native armor armory_rpgs:astral_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:astral_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:astral_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:astral_robe_feet
+PASS old worn stack keeps damage armory_rpgs:astral_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:astral_robe_feet
+PASS old stack receives valid new durability armory_rpgs:astral_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:astral_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:astral_robe_feet
+PASS equipped total armor armory_rpgs:astral_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:astral_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:scarlet_robe_head
+PASS native armor armory_rpgs:scarlet_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:scarlet_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:scarlet_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:scarlet_robe_head
+PASS old worn stack keeps damage armory_rpgs:scarlet_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:scarlet_robe_head
+PASS old stack receives valid new durability armory_rpgs:scarlet_robe_head
+PASS near-broken old stack survives loading armory_rpgs:scarlet_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:scarlet_robe_head
+PASS real target item armory_rpgs:scarlet_robe_chest
+PASS native armor armory_rpgs:scarlet_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:scarlet_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:scarlet_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:scarlet_robe_chest
+PASS old worn stack keeps damage armory_rpgs:scarlet_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:scarlet_robe_chest
+PASS old stack receives valid new durability armory_rpgs:scarlet_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:scarlet_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:scarlet_robe_chest
+PASS real target item armory_rpgs:scarlet_robe_legs
+PASS native armor armory_rpgs:scarlet_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:scarlet_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:scarlet_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:scarlet_robe_legs
+PASS old worn stack keeps damage armory_rpgs:scarlet_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:scarlet_robe_legs
+PASS old stack receives valid new durability armory_rpgs:scarlet_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:scarlet_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:scarlet_robe_legs
+PASS real target item armory_rpgs:scarlet_robe_feet
+PASS native armor armory_rpgs:scarlet_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:scarlet_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:scarlet_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:scarlet_robe_feet
+PASS old worn stack keeps damage armory_rpgs:scarlet_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:scarlet_robe_feet
+PASS old stack receives valid new durability armory_rpgs:scarlet_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:scarlet_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:scarlet_robe_feet
+PASS equipped total armor armory_rpgs:scarlet_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:scarlet_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:glacier_robe_head
+PASS native armor armory_rpgs:glacier_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:glacier_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:glacier_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:glacier_robe_head
+PASS old worn stack keeps damage armory_rpgs:glacier_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:glacier_robe_head
+PASS old stack receives valid new durability armory_rpgs:glacier_robe_head
+PASS near-broken old stack survives loading armory_rpgs:glacier_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:glacier_robe_head
+PASS real target item armory_rpgs:glacier_robe_chest
+PASS native armor armory_rpgs:glacier_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:glacier_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:glacier_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:glacier_robe_chest
+PASS old worn stack keeps damage armory_rpgs:glacier_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:glacier_robe_chest
+PASS old stack receives valid new durability armory_rpgs:glacier_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:glacier_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:glacier_robe_chest
+PASS real target item armory_rpgs:glacier_robe_legs
+PASS native armor armory_rpgs:glacier_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:glacier_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:glacier_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:glacier_robe_legs
+PASS old worn stack keeps damage armory_rpgs:glacier_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:glacier_robe_legs
+PASS old stack receives valid new durability armory_rpgs:glacier_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:glacier_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:glacier_robe_legs
+PASS real target item armory_rpgs:glacier_robe_feet
+PASS native armor armory_rpgs:glacier_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:glacier_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:glacier_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:glacier_robe_feet
+PASS old worn stack keeps damage armory_rpgs:glacier_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:glacier_robe_feet
+PASS old stack receives valid new durability armory_rpgs:glacier_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:glacier_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:glacier_robe_feet
+PASS equipped total armor armory_rpgs:glacier_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:glacier_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:tempest_robe_head
+PASS native armor armory_rpgs:tempest_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:tempest_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:tempest_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:tempest_robe_head
+PASS old worn stack keeps damage armory_rpgs:tempest_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:tempest_robe_head
+PASS old stack receives valid new durability armory_rpgs:tempest_robe_head
+PASS near-broken old stack survives loading armory_rpgs:tempest_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:tempest_robe_head
+PASS real target item armory_rpgs:tempest_robe_chest
+PASS native armor armory_rpgs:tempest_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:tempest_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:tempest_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:tempest_robe_chest
+PASS old worn stack keeps damage armory_rpgs:tempest_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:tempest_robe_chest
+PASS old stack receives valid new durability armory_rpgs:tempest_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:tempest_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:tempest_robe_chest
+PASS real target item armory_rpgs:tempest_robe_legs
+PASS native armor armory_rpgs:tempest_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:tempest_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:tempest_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:tempest_robe_legs
+PASS old worn stack keeps damage armory_rpgs:tempest_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:tempest_robe_legs
+PASS old stack receives valid new durability armory_rpgs:tempest_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:tempest_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:tempest_robe_legs
+PASS real target item armory_rpgs:tempest_robe_feet
+PASS native armor armory_rpgs:tempest_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:tempest_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:tempest_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:tempest_robe_feet
+PASS old worn stack keeps damage armory_rpgs:tempest_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:tempest_robe_feet
+PASS old stack receives valid new durability armory_rpgs:tempest_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:tempest_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:tempest_robe_feet
+PASS equipped total armor armory_rpgs:tempest_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:tempest_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:smouldering_robe_head
+PASS native armor armory_rpgs:smouldering_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:smouldering_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:smouldering_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:smouldering_robe_head
+PASS old worn stack keeps damage armory_rpgs:smouldering_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:smouldering_robe_head
+PASS old stack receives valid new durability armory_rpgs:smouldering_robe_head
+PASS near-broken old stack survives loading armory_rpgs:smouldering_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:smouldering_robe_head
+PASS real target item armory_rpgs:smouldering_robe_chest
+PASS native armor armory_rpgs:smouldering_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:smouldering_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:smouldering_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:smouldering_robe_chest
+PASS old worn stack keeps damage armory_rpgs:smouldering_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:smouldering_robe_chest
+PASS old stack receives valid new durability armory_rpgs:smouldering_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:smouldering_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:smouldering_robe_chest
+PASS real target item armory_rpgs:smouldering_robe_legs
+PASS native armor armory_rpgs:smouldering_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:smouldering_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:smouldering_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:smouldering_robe_legs
+PASS old worn stack keeps damage armory_rpgs:smouldering_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:smouldering_robe_legs
+PASS old stack receives valid new durability armory_rpgs:smouldering_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:smouldering_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:smouldering_robe_legs
+PASS real target item armory_rpgs:smouldering_robe_feet
+PASS native armor armory_rpgs:smouldering_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:smouldering_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:smouldering_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:smouldering_robe_feet
+PASS old worn stack keeps damage armory_rpgs:smouldering_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:smouldering_robe_feet
+PASS old stack receives valid new durability armory_rpgs:smouldering_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:smouldering_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:smouldering_robe_feet
+PASS equipped total armor armory_rpgs:smouldering_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:smouldering_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:rimeweave_robe_head
+PASS native armor armory_rpgs:rimeweave_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:rimeweave_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:rimeweave_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:rimeweave_robe_head
+PASS old worn stack keeps damage armory_rpgs:rimeweave_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:rimeweave_robe_head
+PASS old stack receives valid new durability armory_rpgs:rimeweave_robe_head
+PASS near-broken old stack survives loading armory_rpgs:rimeweave_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:rimeweave_robe_head
+PASS real target item armory_rpgs:rimeweave_robe_chest
+PASS native armor armory_rpgs:rimeweave_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:rimeweave_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:rimeweave_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:rimeweave_robe_chest
+PASS old worn stack keeps damage armory_rpgs:rimeweave_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:rimeweave_robe_chest
+PASS old stack receives valid new durability armory_rpgs:rimeweave_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:rimeweave_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:rimeweave_robe_chest
+PASS real target item armory_rpgs:rimeweave_robe_legs
+PASS native armor armory_rpgs:rimeweave_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:rimeweave_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:rimeweave_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:rimeweave_robe_legs
+PASS old worn stack keeps damage armory_rpgs:rimeweave_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:rimeweave_robe_legs
+PASS old stack receives valid new durability armory_rpgs:rimeweave_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:rimeweave_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:rimeweave_robe_legs
+PASS real target item armory_rpgs:rimeweave_robe_feet
+PASS native armor armory_rpgs:rimeweave_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:rimeweave_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:rimeweave_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:rimeweave_robe_feet
+PASS old worn stack keeps damage armory_rpgs:rimeweave_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:rimeweave_robe_feet
+PASS old stack receives valid new durability armory_rpgs:rimeweave_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:rimeweave_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:rimeweave_robe_feet
+PASS equipped total armor armory_rpgs:rimeweave_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:rimeweave_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:avatar_robe_head
+PASS native armor armory_rpgs:avatar_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:avatar_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:avatar_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:avatar_robe_head
+PASS old worn stack keeps damage armory_rpgs:avatar_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:avatar_robe_head
+PASS old stack receives valid new durability armory_rpgs:avatar_robe_head
+PASS near-broken old stack survives loading armory_rpgs:avatar_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:avatar_robe_head
+PASS real target item armory_rpgs:avatar_robe_chest
+PASS native armor armory_rpgs:avatar_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:avatar_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:avatar_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:avatar_robe_chest
+PASS old worn stack keeps damage armory_rpgs:avatar_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:avatar_robe_chest
+PASS old stack receives valid new durability armory_rpgs:avatar_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:avatar_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:avatar_robe_chest
+PASS real target item armory_rpgs:avatar_robe_legs
+PASS native armor armory_rpgs:avatar_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:avatar_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:avatar_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:avatar_robe_legs
+PASS old worn stack keeps damage armory_rpgs:avatar_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:avatar_robe_legs
+PASS old stack receives valid new durability armory_rpgs:avatar_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:avatar_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:avatar_robe_legs
+PASS real target item armory_rpgs:avatar_robe_feet
+PASS native armor armory_rpgs:avatar_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:avatar_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:avatar_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:avatar_robe_feet
+PASS old worn stack keeps damage armory_rpgs:avatar_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:avatar_robe_feet
+PASS old stack receives valid new durability armory_rpgs:avatar_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:avatar_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:avatar_robe_feet
+PASS equipped total armor armory_rpgs:avatar_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:avatar_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:absolution_robe_head
+PASS native armor armory_rpgs:absolution_robe_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:absolution_robe_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:absolution_robe_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:absolution_robe_head
+PASS old worn stack keeps damage armory_rpgs:absolution_robe_head
+PASS old worn stack keeps enchantment armory_rpgs:absolution_robe_head
+PASS old stack receives valid new durability armory_rpgs:absolution_robe_head
+PASS near-broken old stack survives loading armory_rpgs:absolution_robe_head
+PASS near-broken old stack retains wear component armory_rpgs:absolution_robe_head
+PASS real target item armory_rpgs:absolution_robe_chest
+PASS native armor armory_rpgs:absolution_robe_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:absolution_robe_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:absolution_robe_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:absolution_robe_chest
+PASS old worn stack keeps damage armory_rpgs:absolution_robe_chest
+PASS old worn stack keeps enchantment armory_rpgs:absolution_robe_chest
+PASS old stack receives valid new durability armory_rpgs:absolution_robe_chest
+PASS near-broken old stack survives loading armory_rpgs:absolution_robe_chest
+PASS near-broken old stack retains wear component armory_rpgs:absolution_robe_chest
+PASS real target item armory_rpgs:absolution_robe_legs
+PASS native armor armory_rpgs:absolution_robe_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:absolution_robe_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:absolution_robe_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:absolution_robe_legs
+PASS old worn stack keeps damage armory_rpgs:absolution_robe_legs
+PASS old worn stack keeps enchantment armory_rpgs:absolution_robe_legs
+PASS old stack receives valid new durability armory_rpgs:absolution_robe_legs
+PASS near-broken old stack survives loading armory_rpgs:absolution_robe_legs
+PASS near-broken old stack retains wear component armory_rpgs:absolution_robe_legs
+PASS real target item armory_rpgs:absolution_robe_feet
+PASS native armor armory_rpgs:absolution_robe_feet actual=2.0 expected=2.0
+PASS native toughness armory_rpgs:absolution_robe_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:absolution_robe_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:absolution_robe_feet
+PASS old worn stack keeps damage armory_rpgs:absolution_robe_feet
+PASS old worn stack keeps enchantment armory_rpgs:absolution_robe_feet
+PASS old stack receives valid new durability armory_rpgs:absolution_robe_feet
+PASS near-broken old stack survives loading armory_rpgs:absolution_robe_feet
+PASS near-broken old stack retains wear component armory_rpgs:absolution_robe_feet
+PASS equipped total armor armory_rpgs:absolution_robe actual=16.0 expected=16.0
+PASS equipped total toughness armory_rpgs:absolution_robe actual=4.0 expected=4.0
+PASS real target item armory_rpgs:deathmantle_armor_head
+PASS native armor armory_rpgs:deathmantle_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:deathmantle_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:deathmantle_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:deathmantle_armor_head
+PASS old worn stack keeps damage armory_rpgs:deathmantle_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:deathmantle_armor_head
+PASS old stack receives valid new durability armory_rpgs:deathmantle_armor_head
+PASS near-broken old stack survives loading armory_rpgs:deathmantle_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:deathmantle_armor_head
+PASS real target item armory_rpgs:deathmantle_armor_chest
+PASS native armor armory_rpgs:deathmantle_armor_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:deathmantle_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:deathmantle_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:deathmantle_armor_chest
+PASS old worn stack keeps damage armory_rpgs:deathmantle_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:deathmantle_armor_chest
+PASS old stack receives valid new durability armory_rpgs:deathmantle_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:deathmantle_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:deathmantle_armor_chest
+PASS real target item armory_rpgs:deathmantle_armor_legs
+PASS native armor armory_rpgs:deathmantle_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:deathmantle_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:deathmantle_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:deathmantle_armor_legs
+PASS old worn stack keeps damage armory_rpgs:deathmantle_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:deathmantle_armor_legs
+PASS old stack receives valid new durability armory_rpgs:deathmantle_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:deathmantle_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:deathmantle_armor_legs
+PASS real target item armory_rpgs:deathmantle_armor_feet
+PASS native armor armory_rpgs:deathmantle_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:deathmantle_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:deathmantle_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:deathmantle_armor_feet
+PASS old worn stack keeps damage armory_rpgs:deathmantle_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:deathmantle_armor_feet
+PASS old stack receives valid new durability armory_rpgs:deathmantle_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:deathmantle_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:deathmantle_armor_feet
+PASS equipped total armor armory_rpgs:deathmantle_armor actual=17.0 expected=17.0
+PASS equipped total toughness armory_rpgs:deathmantle_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:slayer_armor_head
+PASS native armor armory_rpgs:slayer_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:slayer_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:slayer_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:slayer_armor_head
+PASS old worn stack keeps damage armory_rpgs:slayer_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:slayer_armor_head
+PASS old stack receives valid new durability armory_rpgs:slayer_armor_head
+PASS near-broken old stack survives loading armory_rpgs:slayer_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:slayer_armor_head
+PASS real target item armory_rpgs:slayer_armor_chest
+PASS native armor armory_rpgs:slayer_armor_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:slayer_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:slayer_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:slayer_armor_chest
+PASS old worn stack keeps damage armory_rpgs:slayer_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:slayer_armor_chest
+PASS old stack receives valid new durability armory_rpgs:slayer_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:slayer_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:slayer_armor_chest
+PASS real target item armory_rpgs:slayer_armor_legs
+PASS native armor armory_rpgs:slayer_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:slayer_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:slayer_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:slayer_armor_legs
+PASS old worn stack keeps damage armory_rpgs:slayer_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:slayer_armor_legs
+PASS old stack receives valid new durability armory_rpgs:slayer_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:slayer_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:slayer_armor_legs
+PASS real target item armory_rpgs:slayer_armor_feet
+PASS native armor armory_rpgs:slayer_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:slayer_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:slayer_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:slayer_armor_feet
+PASS old worn stack keeps damage armory_rpgs:slayer_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:slayer_armor_feet
+PASS old stack receives valid new durability armory_rpgs:slayer_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:slayer_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:slayer_armor_feet
+PASS equipped total armor armory_rpgs:slayer_armor actual=17.0 expected=17.0
+PASS equipped total toughness armory_rpgs:slayer_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:strider_armor_head
+PASS native armor armory_rpgs:strider_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:strider_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:strider_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:strider_armor_head
+PASS old worn stack keeps damage armory_rpgs:strider_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:strider_armor_head
+PASS old stack receives valid new durability armory_rpgs:strider_armor_head
+PASS near-broken old stack survives loading armory_rpgs:strider_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:strider_armor_head
+PASS real target item armory_rpgs:strider_armor_chest
+PASS native armor armory_rpgs:strider_armor_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:strider_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:strider_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:strider_armor_chest
+PASS old worn stack keeps damage armory_rpgs:strider_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:strider_armor_chest
+PASS old stack receives valid new durability armory_rpgs:strider_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:strider_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:strider_armor_chest
+PASS real target item armory_rpgs:strider_armor_legs
+PASS native armor armory_rpgs:strider_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:strider_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:strider_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:strider_armor_legs
+PASS old worn stack keeps damage armory_rpgs:strider_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:strider_armor_legs
+PASS old stack receives valid new durability armory_rpgs:strider_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:strider_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:strider_armor_legs
+PASS real target item armory_rpgs:strider_armor_feet
+PASS native armor armory_rpgs:strider_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:strider_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:strider_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:strider_armor_feet
+PASS old worn stack keeps damage armory_rpgs:strider_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:strider_armor_feet
+PASS old stack receives valid new durability armory_rpgs:strider_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:strider_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:strider_armor_feet
+PASS equipped total armor armory_rpgs:strider_armor actual=17.0 expected=17.0
+PASS equipped total toughness armory_rpgs:strider_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:riftstalker_armor_head
+PASS native armor armory_rpgs:riftstalker_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:riftstalker_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:riftstalker_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:riftstalker_armor_head
+PASS old worn stack keeps damage armory_rpgs:riftstalker_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:riftstalker_armor_head
+PASS old stack receives valid new durability armory_rpgs:riftstalker_armor_head
+PASS near-broken old stack survives loading armory_rpgs:riftstalker_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:riftstalker_armor_head
+PASS real target item armory_rpgs:riftstalker_armor_chest
+PASS native armor armory_rpgs:riftstalker_armor_chest actual=6.0 expected=6.0
+PASS native toughness armory_rpgs:riftstalker_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:riftstalker_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:riftstalker_armor_chest
+PASS old worn stack keeps damage armory_rpgs:riftstalker_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:riftstalker_armor_chest
+PASS old stack receives valid new durability armory_rpgs:riftstalker_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:riftstalker_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:riftstalker_armor_chest
+PASS real target item armory_rpgs:riftstalker_armor_legs
+PASS native armor armory_rpgs:riftstalker_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:riftstalker_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:riftstalker_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:riftstalker_armor_legs
+PASS old worn stack keeps damage armory_rpgs:riftstalker_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:riftstalker_armor_legs
+PASS old stack receives valid new durability armory_rpgs:riftstalker_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:riftstalker_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:riftstalker_armor_legs
+PASS real target item armory_rpgs:riftstalker_armor_feet
+PASS native armor armory_rpgs:riftstalker_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:riftstalker_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:riftstalker_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:riftstalker_armor_feet
+PASS old worn stack keeps damage armory_rpgs:riftstalker_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:riftstalker_armor_feet
+PASS old stack receives valid new durability armory_rpgs:riftstalker_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:riftstalker_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:riftstalker_armor_feet
+PASS equipped total armor armory_rpgs:riftstalker_armor actual=17.0 expected=17.0
+PASS equipped total toughness armory_rpgs:riftstalker_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:destroyer_armor_head
+PASS native armor armory_rpgs:destroyer_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:destroyer_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:destroyer_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:destroyer_armor_head
+PASS old worn stack keeps damage armory_rpgs:destroyer_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:destroyer_armor_head
+PASS old stack receives valid new durability armory_rpgs:destroyer_armor_head
+PASS near-broken old stack survives loading armory_rpgs:destroyer_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:destroyer_armor_head
+PASS real target item armory_rpgs:destroyer_armor_chest
+PASS native armor armory_rpgs:destroyer_armor_chest actual=7.0 expected=7.0
+PASS native toughness armory_rpgs:destroyer_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:destroyer_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:destroyer_armor_chest
+PASS old worn stack keeps damage armory_rpgs:destroyer_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:destroyer_armor_chest
+PASS old stack receives valid new durability armory_rpgs:destroyer_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:destroyer_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:destroyer_armor_chest
+PASS real target item armory_rpgs:destroyer_armor_legs
+PASS native armor armory_rpgs:destroyer_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:destroyer_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:destroyer_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:destroyer_armor_legs
+PASS old worn stack keeps damage armory_rpgs:destroyer_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:destroyer_armor_legs
+PASS old stack receives valid new durability armory_rpgs:destroyer_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:destroyer_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:destroyer_armor_legs
+PASS real target item armory_rpgs:destroyer_armor_feet
+PASS native armor armory_rpgs:destroyer_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:destroyer_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:destroyer_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:destroyer_armor_feet
+PASS old worn stack keeps damage armory_rpgs:destroyer_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:destroyer_armor_feet
+PASS old stack receives valid new durability armory_rpgs:destroyer_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:destroyer_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:destroyer_armor_feet
+PASS equipped total armor armory_rpgs:destroyer_armor actual=18.0 expected=18.0
+PASS equipped total toughness armory_rpgs:destroyer_armor actual=4.0 expected=4.0
+PASS real target item armory_rpgs:onslaught_armor_head
+PASS native armor armory_rpgs:onslaught_armor_head actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:onslaught_armor_head actual=1.0 expected=1.0
+PASS native durability armory_rpgs:onslaught_armor_head actual=407 expected=407
+PASS no duplicate toughness armory_rpgs:onslaught_armor_head
+PASS old worn stack keeps damage armory_rpgs:onslaught_armor_head
+PASS old worn stack keeps enchantment armory_rpgs:onslaught_armor_head
+PASS old stack receives valid new durability armory_rpgs:onslaught_armor_head
+PASS near-broken old stack survives loading armory_rpgs:onslaught_armor_head
+PASS near-broken old stack retains wear component armory_rpgs:onslaught_armor_head
+PASS real target item armory_rpgs:onslaught_armor_chest
+PASS native armor armory_rpgs:onslaught_armor_chest actual=7.0 expected=7.0
+PASS native toughness armory_rpgs:onslaught_armor_chest actual=1.0 expected=1.0
+PASS native durability armory_rpgs:onslaught_armor_chest actual=592 expected=592
+PASS no duplicate toughness armory_rpgs:onslaught_armor_chest
+PASS old worn stack keeps damage armory_rpgs:onslaught_armor_chest
+PASS old worn stack keeps enchantment armory_rpgs:onslaught_armor_chest
+PASS old stack receives valid new durability armory_rpgs:onslaught_armor_chest
+PASS near-broken old stack survives loading armory_rpgs:onslaught_armor_chest
+PASS near-broken old stack retains wear component armory_rpgs:onslaught_armor_chest
+PASS real target item armory_rpgs:onslaught_armor_legs
+PASS native armor armory_rpgs:onslaught_armor_legs actual=5.0 expected=5.0
+PASS native toughness armory_rpgs:onslaught_armor_legs actual=1.0 expected=1.0
+PASS native durability armory_rpgs:onslaught_armor_legs actual=555 expected=555
+PASS no duplicate toughness armory_rpgs:onslaught_armor_legs
+PASS old worn stack keeps damage armory_rpgs:onslaught_armor_legs
+PASS old worn stack keeps enchantment armory_rpgs:onslaught_armor_legs
+PASS old stack receives valid new durability armory_rpgs:onslaught_armor_legs
+PASS near-broken old stack survives loading armory_rpgs:onslaught_armor_legs
+PASS near-broken old stack retains wear component armory_rpgs:onslaught_armor_legs
+PASS real target item armory_rpgs:onslaught_armor_feet
+PASS native armor armory_rpgs:onslaught_armor_feet actual=3.0 expected=3.0
+PASS native toughness armory_rpgs:onslaught_armor_feet actual=1.0 expected=1.0
+PASS native durability armory_rpgs:onslaught_armor_feet actual=481 expected=481
+PASS no duplicate toughness armory_rpgs:onslaught_armor_feet
+PASS old worn stack keeps damage armory_rpgs:onslaught_armor_feet
+PASS old worn stack keeps enchantment armory_rpgs:onslaught_armor_feet
+PASS old stack receives valid new durability armory_rpgs:onslaught_armor_feet
+PASS near-broken old stack survives loading armory_rpgs:onslaught_armor_feet
+PASS near-broken old stack retains wear component armory_rpgs:onslaught_armor_feet
+PASS equipped total armor armory_rpgs:onslaught_armor actual=18.0 expected=18.0
+PASS equipped total toughness armory_rpgs:onslaught_armor actual=4.0 expected=4.0

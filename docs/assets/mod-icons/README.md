@@ -19,3 +19,5 @@ To refresh the current catalog after changing mod entries, run from the reposito
 CurseForge project metadata is resolved through CFWidget, while image files are fetched from CurseForge's `media.forgecdn.net` host. Verified Modrinth icons are retained from the manifest when refreshed. The local folder is only an asset staging area; it is not a complete mod inventory or a dependency list.
 
 MrCrayfish's Furniture Mod: Refurbished uses `refurbished_furniture_icon.png` extracted unchanged from the installed 1.0.25 JAR, saved here as `mrcrayfish-s-furniture-mod-refurbished.png`. Its official project is [Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture). The public project-metadata request timed out, so the verified embedded author icon is retained instead.
+
+Enhanced Cats uses the author?s `icon.png` from the exact supplied `EnhancedCats-NeoForge-26.2-1.2.1.jar`, extracted unchanged to `enhanced-cats.png`. Its [official project](https://modrinth.com/mod/enhanced-cats) replaces the old Cute Cats catalog source; provenance is retained in the manifest.

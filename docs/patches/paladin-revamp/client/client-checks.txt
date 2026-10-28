@@ -1,0 +1,33 @@
+PASS active client effect paladins:divine_protection
+PASS Effect Insights renders received50% damage reduction [Damage reduction: 50%, Blocks 11 additional damage per hit.]
+PASS active client effect skill_tree_rpgs:faith_knockback
+PASS Effect Insights renders received80%KR
+PASS server-authoritativeKR80% actual=0.8 expected=0.8
+SCREENSHOT received Protection effect tooltip
+PASS active client effect skill_tree_rpgs:divine_oath
+PASS other caster M20 resolves+3 not recipientM100 Bonus damage: +3 per hit (0.5s interval). Armor: +8 Absorption granted: 3.2 HP Total absorption remaining: 3.2 HP
+PASS other caster armor30 resolves+8
+PASS other caster P8 resolves3.2absorption
+SCREENSHOT caster-resolved Oath tooltip
+PASS client absorption refresh preserves spent HP actual=1.0 expected=1.0
+PASS active client effect skill_tree_rpgs:divine_oath
+PASS tooltip reports currentremaining1HP
+PASS native client roll manager blocks stun without node
+PASS active client effect spell_engine:stun
+PASS official stun details resolved
+SCREENSHOT official stun icon and details
+PASS native client roll manager allows selected ready Break Restriction
+PASS active client effect wizards:frozen
+PASS official frozen details resolved
+SCREENSHOT official frozen icon and details
+ROLL INPUT ground=false food=20 screen=null available=true
+PASS actual roll key event cleanses frozen on server andclient
+PASS cooling Break Restriction cannot escape root
+PASS active client effect rogues:bear_trap
+PASS official root details resolved
+SCREENSHOT official root icon and details
+PASS native falling hammer completes and blesses real player
+PASS skill and scroll name Divine Oath
+PASS active client effect skill_tree_rpgs:berserker
+PASS Warrior custom basicattack bonus resolves50%
+SCREENSHOT cross-class buff and debuff details

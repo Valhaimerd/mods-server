@@ -1,0 +1,398 @@
+{
+  "wizards:wizard_robe": {
+    "group": "robe",
+    "tier": 0,
+    "armor": [
+      2,
+      4,
+      3,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "iron"
+  },
+  "wizards:arcane_robe": {
+    "group": "robe",
+    "tier": 1,
+    "armor": [
+      2,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "wizards:fire_robe": {
+    "group": "robe",
+    "tier": 1,
+    "armor": [
+      2,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "wizards:frost_robe": {
+    "group": "robe",
+    "tier": 1,
+    "armor": [
+      2,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "wizards:netherite_arcane_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "wizards:netherite_fire_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "wizards:netherite_frost_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "paladins:priest_robe": {
+    "group": "robe",
+    "tier": 0,
+    "armor": [
+      2,
+      4,
+      3,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "iron"
+  },
+  "paladins:prior_robe": {
+    "group": "robe",
+    "tier": 1,
+    "armor": [
+      2,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "paladins:netherite_prior_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "rogues:rogue_armor": {
+    "group": "light",
+    "tier": 0,
+    "armor": [
+      2,
+      5,
+      3,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "iron"
+  },
+  "rogues:assassin_armor": {
+    "group": "light",
+    "tier": 1,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "rogues:netherite_assassin_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "rogues:warrior_armor": {
+    "group": "heavy",
+    "tier": 0,
+    "armor": [
+      2,
+      5,
+      4,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "iron"
+  },
+  "rogues:berserker_armor": {
+    "group": "heavy",
+    "tier": 1,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "rogues:netherite_berserker_armor": {
+    "group": "heavy",
+    "tier": 2,
+    "armor": [
+      3,
+      7,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "archers:archer_armor": {
+    "group": "light",
+    "tier": 0,
+    "armor": [
+      2,
+      5,
+      3,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "iron"
+  },
+  "archers:ranger_armor": {
+    "group": "light",
+    "tier": 1,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 0,
+    "durability": "diamond"
+  },
+  "archers:netherite_ranger_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:astral_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:scarlet_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:glacier_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:tempest_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:smouldering_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:rimeweave_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:avatar_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:absolution_robe": {
+    "group": "robe",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      2
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:deathmantle_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:slayer_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:strider_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:riftstalker_armor": {
+    "group": "light",
+    "tier": 2,
+    "armor": [
+      3,
+      6,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:destroyer_armor": {
+    "group": "heavy",
+    "tier": 2,
+    "armor": [
+      3,
+      7,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  },
+  "armory_rpgs:onslaught_armor": {
+    "group": "heavy",
+    "tier": 2,
+    "armor": [
+      3,
+      7,
+      5,
+      3
+    ],
+    "toughness_per_piece": 1,
+    "durability": "netherite"
+  }
+}

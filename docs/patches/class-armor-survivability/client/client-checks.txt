@@ -1,0 +1,467 @@
+PASS synchronized equipped item wizards:wizard_robe_head
+PASS client native durability wizards:wizard_robe_head
+PASS native armor tooltip wizards:wizard_robe_head [Wizard Hat, , When on Head:, +2 Armor [+2], +20% Arcane Spell Power [+0.2x], +20% Fire Spell Power [+0.2x], +20% Frost Spell Power [+0.2x], wizards:wizard_robe_head, 17 component(s)]
+PASS synchronized equipped item wizards:wizard_robe_chest
+PASS client native durability wizards:wizard_robe_chest
+PASS native armor tooltip wizards:wizard_robe_chest [Wizard Robe Top, , When on Chest:, +4 Armor [+4], +20% Arcane Spell Power [+0.2x], +20% Fire Spell Power [+0.2x], +20% Frost Spell Power [+0.2x], wizards:wizard_robe_chest, 17 component(s)]
+PASS synchronized equipped item wizards:wizard_robe_legs
+PASS client native durability wizards:wizard_robe_legs
+PASS native armor tooltip wizards:wizard_robe_legs [Wizard Robe Bottom, , When on Legs:, +3 Armor [+3], +20% Arcane Spell Power [+0.2x], +20% Fire Spell Power [+0.2x], +20% Frost Spell Power [+0.2x], wizards:wizard_robe_legs, 17 component(s)]
+PASS synchronized equipped item wizards:wizard_robe_feet
+PASS client native durability wizards:wizard_robe_feet
+PASS native armor tooltip wizards:wizard_robe_feet [Wizard Boots, , When on Feet:, +2 Armor [+2], +20% Arcane Spell Power [+0.2x], +20% Fire Spell Power [+0.2x], +20% Frost Spell Power [+0.2x], wizards:wizard_robe_feet, 17 component(s)]
+PASS client equipped armor wizards:wizard_robe actual=11.0 expected=11.0
+PASS client equipped toughness wizards:wizard_robe actual=0.0 expected=0.0
+PASS synchronized equipped item wizards:arcane_robe_head
+PASS client native durability wizards:arcane_robe_head
+PASS native armor tooltip wizards:arcane_robe_head [Arcane Hat, , When on Head:, +2 Armor [+2], +25% Arcane Spell Power [+0.25x], +2% Spell Haste [+0.02x], wizards:arcane_robe_head, 17 component(s)]
+PASS synchronized equipped item wizards:arcane_robe_chest
+PASS client native durability wizards:arcane_robe_chest
+PASS native armor tooltip wizards:arcane_robe_chest [Arcane Robe Top, , When on Chest:, +6 Armor [+6], +25% Arcane Spell Power [+0.25x], +2% Spell Haste [+0.02x], wizards:arcane_robe_chest, 17 component(s)]
+PASS synchronized equipped item wizards:arcane_robe_legs
+PASS client native durability wizards:arcane_robe_legs
+PASS native armor tooltip wizards:arcane_robe_legs [Arcane Robe Bottom, , When on Legs:, +5 Armor [+5], +25% Arcane Spell Power [+0.25x], +2% Spell Haste [+0.02x], wizards:arcane_robe_legs, 17 component(s)]
+PASS synchronized equipped item wizards:arcane_robe_feet
+PASS client native durability wizards:arcane_robe_feet
+PASS native armor tooltip wizards:arcane_robe_feet [Arcane Boots, , When on Feet:, +2 Armor [+2], +25% Arcane Spell Power [+0.25x], +2% Spell Haste [+0.02x], wizards:arcane_robe_feet, 17 component(s)]
+PASS client equipped armor wizards:arcane_robe actual=15.0 expected=15.0
+PASS client equipped toughness wizards:arcane_robe actual=0.0 expected=0.0
+PASS synchronized equipped item wizards:fire_robe_head
+PASS client native durability wizards:fire_robe_head
+PASS native armor tooltip wizards:fire_robe_head [Fire Hat, , When on Head:, +2 Armor [+2], +25% Fire Spell Power [+0.25x], +2% Spell Critical Chance [+0.02x], wizards:fire_robe_head, 17 component(s)]
+PASS synchronized equipped item wizards:fire_robe_chest
+PASS client native durability wizards:fire_robe_chest
+PASS native armor tooltip wizards:fire_robe_chest [Fire Robe Top, , When on Chest:, +6 Armor [+6], +25% Fire Spell Power [+0.25x], +2% Spell Critical Chance [+0.02x], wizards:fire_robe_chest, 17 component(s)]
+PASS synchronized equipped item wizards:fire_robe_legs
+PASS client native durability wizards:fire_robe_legs
+PASS native armor tooltip wizards:fire_robe_legs [Fire Robe Bottom, , When on Legs:, +5 Armor [+5], +25% Fire Spell Power [+0.25x], +2% Spell Critical Chance [+0.02x], wizards:fire_robe_legs, 17 component(s)]
+PASS synchronized equipped item wizards:fire_robe_feet
+PASS client native durability wizards:fire_robe_feet
+PASS native armor tooltip wizards:fire_robe_feet [Fire Boots, , When on Feet:, +2 Armor [+2], +25% Fire Spell Power [+0.25x], +2% Spell Critical Chance [+0.02x], wizards:fire_robe_feet, 17 component(s)]
+PASS client equipped armor wizards:fire_robe actual=15.0 expected=15.0
+PASS client equipped toughness wizards:fire_robe actual=0.0 expected=0.0
+PASS synchronized equipped item wizards:frost_robe_head
+PASS client native durability wizards:frost_robe_head
+PASS native armor tooltip wizards:frost_robe_head [Frost Hat, , When on Head:, +2 Armor [+2], +25% Frost Spell Power [+0.25x], +5% Spell Critical Damage [+0.05x], wizards:frost_robe_head, 17 component(s)]
+PASS synchronized equipped item wizards:frost_robe_chest
+PASS client native durability wizards:frost_robe_chest
+PASS native armor tooltip wizards:frost_robe_chest [Frost Robe Top, , When on Chest:, +6 Armor [+6], +25% Frost Spell Power [+0.25x], +5% Spell Critical Damage [+0.05x], wizards:frost_robe_chest, 17 component(s)]
+PASS synchronized equipped item wizards:frost_robe_legs
+PASS client native durability wizards:frost_robe_legs
+PASS native armor tooltip wizards:frost_robe_legs [Frost Robe Bottom, , When on Legs:, +5 Armor [+5], +25% Frost Spell Power [+0.25x], +5% Spell Critical Damage [+0.05x], wizards:frost_robe_legs, 17 component(s)]
+PASS synchronized equipped item wizards:frost_robe_feet
+PASS client native durability wizards:frost_robe_feet
+PASS native armor tooltip wizards:frost_robe_feet [Frost Boots, , When on Feet:, +2 Armor [+2], +25% Frost Spell Power [+0.25x], +5% Spell Critical Damage [+0.05x], wizards:frost_robe_feet, 17 component(s)]
+PASS client equipped armor wizards:frost_robe actual=15.0 expected=15.0
+PASS client equipped toughness wizards:frost_robe actual=0.0 expected=0.0
+PASS synchronized equipped item wizards:netherite_arcane_robe_head
+PASS client native durability wizards:netherite_arcane_robe_head
+PASS native armor tooltip wizards:netherite_arcane_robe_head [Netherite Arcane Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +30% Arcane Spell Power [+0.3x], +3% Spell Haste [+0.03x], wizards:netherite_arcane_robe_head, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_arcane_robe_chest
+PASS client native durability wizards:netherite_arcane_robe_chest
+PASS native armor tooltip wizards:netherite_arcane_robe_chest [Netherite Arcane Robe Top, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +30% Arcane Spell Power [+0.3x], +3% Spell Haste [+0.03x], wizards:netherite_arcane_robe_chest, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_arcane_robe_legs
+PASS client native durability wizards:netherite_arcane_robe_legs
+PASS native armor tooltip wizards:netherite_arcane_robe_legs [Netherite Arcane Robe Bottom, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +30% Arcane Spell Power [+0.3x], +3% Spell Haste [+0.03x], wizards:netherite_arcane_robe_legs, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_arcane_robe_feet
+PASS client native durability wizards:netherite_arcane_robe_feet
+PASS native armor tooltip wizards:netherite_arcane_robe_feet [Netherite Arcane Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +30% Arcane Spell Power [+0.3x], +3% Spell Haste [+0.03x], wizards:netherite_arcane_robe_feet, 18 component(s)]
+PASS client equipped armor wizards:netherite_arcane_robe actual=16.0 expected=16.0
+PASS client equipped toughness wizards:netherite_arcane_robe actual=4.0 expected=4.0
+SCREENSHOT wizards:netherite_arcane_robe
+PASS synchronized equipped item wizards:netherite_fire_robe_head
+PASS client native durability wizards:netherite_fire_robe_head
+PASS native armor tooltip wizards:netherite_fire_robe_head [Netherite Fire Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +30% Fire Spell Power [+0.3x], +3% Spell Critical Chance [+0.03x], wizards:netherite_fire_robe_head, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_fire_robe_chest
+PASS client native durability wizards:netherite_fire_robe_chest
+PASS native armor tooltip wizards:netherite_fire_robe_chest [Netherite Fire Robe Top, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +30% Fire Spell Power [+0.3x], +3% Spell Critical Chance [+0.03x], wizards:netherite_fire_robe_chest, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_fire_robe_legs
+PASS client native durability wizards:netherite_fire_robe_legs
+PASS native armor tooltip wizards:netherite_fire_robe_legs [Netherite Fire Robe Bottom, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +30% Fire Spell Power [+0.3x], +3% Spell Critical Chance [+0.03x], wizards:netherite_fire_robe_legs, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_fire_robe_feet
+PASS client native durability wizards:netherite_fire_robe_feet
+PASS native armor tooltip wizards:netherite_fire_robe_feet [Netherite Fire Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +30% Fire Spell Power [+0.3x], +3% Spell Critical Chance [+0.03x], wizards:netherite_fire_robe_feet, 18 component(s)]
+PASS client equipped armor wizards:netherite_fire_robe actual=16.0 expected=16.0
+PASS client equipped toughness wizards:netherite_fire_robe actual=4.0 expected=4.0
+PASS synchronized equipped item wizards:netherite_frost_robe_head
+PASS client native durability wizards:netherite_frost_robe_head
+PASS native armor tooltip wizards:netherite_frost_robe_head [Netherite Frost Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +30% Frost Spell Power [+0.3x], +6% Spell Critical Damage [+0.06x], wizards:netherite_frost_robe_head, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_frost_robe_chest
+PASS client native durability wizards:netherite_frost_robe_chest
+PASS native armor tooltip wizards:netherite_frost_robe_chest [Netherite Frost Robe Top, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +30% Frost Spell Power [+0.3x], +6% Spell Critical Damage [+0.06x], wizards:netherite_frost_robe_chest, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_frost_robe_legs
+PASS client native durability wizards:netherite_frost_robe_legs
+PASS native armor tooltip wizards:netherite_frost_robe_legs [Netherite Frost Robe Bottom, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +30% Frost Spell Power [+0.3x], +6% Spell Critical Damage [+0.06x], wizards:netherite_frost_robe_legs, 18 component(s)]
+PASS synchronized equipped item wizards:netherite_frost_robe_feet
+PASS client native durability wizards:netherite_frost_robe_feet
+PASS native armor tooltip wizards:netherite_frost_robe_feet [Netherite Frost Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +30% Frost Spell Power [+0.3x], +6% Spell Critical Damage [+0.06x], wizards:netherite_frost_robe_feet, 18 component(s)]
+PASS client equipped armor wizards:netherite_frost_robe actual=16.0 expected=16.0
+PASS client equipped toughness wizards:netherite_frost_robe actual=4.0 expected=4.0
+PASS synchronized equipped item paladins:priest_robe_head
+PASS client native durability paladins:priest_robe_head
+PASS native armor tooltip paladins:priest_robe_head [Priest Collar, , When on Head:, +2 Armor [+2], +20% Healing Power [+0.2x], paladins:priest_robe_head, 17 component(s)]
+PASS synchronized equipped item paladins:priest_robe_chest
+PASS client native durability paladins:priest_robe_chest
+PASS native armor tooltip paladins:priest_robe_chest [Priest Vestment, , When on Chest:, +4 Armor [+4], +20% Healing Power [+0.2x], paladins:priest_robe_chest, 17 component(s)]
+PASS synchronized equipped item paladins:priest_robe_legs
+PASS client native durability paladins:priest_robe_legs
+PASS native armor tooltip paladins:priest_robe_legs [Priest Trousers, , When on Legs:, +3 Armor [+3], +20% Healing Power [+0.2x], paladins:priest_robe_legs, 17 component(s)]
+PASS synchronized equipped item paladins:priest_robe_feet
+PASS client native durability paladins:priest_robe_feet
+PASS native armor tooltip paladins:priest_robe_feet [Priest Boots, , When on Feet:, +2 Armor [+2], +20% Healing Power [+0.2x], paladins:priest_robe_feet, 17 component(s)]
+PASS client equipped armor paladins:priest_robe actual=11.0 expected=11.0
+PASS client equipped toughness paladins:priest_robe actual=0.0 expected=0.0
+PASS synchronized equipped item paladins:prior_robe_head
+PASS client native durability paladins:prior_robe_head
+PASS native armor tooltip paladins:prior_robe_head [Prior Collar, , When on Head:, +2 Armor [+2], +25% Healing Power [+0.25x], +3% Spell Haste [+0.03x], paladins:prior_robe_head, 17 component(s)]
+PASS synchronized equipped item paladins:prior_robe_chest
+PASS client native durability paladins:prior_robe_chest
+PASS native armor tooltip paladins:prior_robe_chest [Prior Vestment, , When on Chest:, +6 Armor [+6], +25% Healing Power [+0.25x], +3% Spell Haste [+0.03x], paladins:prior_robe_chest, 17 component(s)]
+PASS synchronized equipped item paladins:prior_robe_legs
+PASS client native durability paladins:prior_robe_legs
+PASS native armor tooltip paladins:prior_robe_legs [Prior Trousers, , When on Legs:, +5 Armor [+5], +25% Healing Power [+0.25x], +3% Spell Haste [+0.03x], paladins:prior_robe_legs, 17 component(s)]
+PASS synchronized equipped item paladins:prior_robe_feet
+PASS client native durability paladins:prior_robe_feet
+PASS native armor tooltip paladins:prior_robe_feet [Prior Boots, , When on Feet:, +2 Armor [+2], +25% Healing Power [+0.25x], +3% Spell Haste [+0.03x], paladins:prior_robe_feet, 17 component(s)]
+PASS client equipped armor paladins:prior_robe actual=15.0 expected=15.0
+PASS client equipped toughness paladins:prior_robe actual=0.0 expected=0.0
+PASS synchronized equipped item paladins:netherite_prior_robe_head
+PASS client native durability paladins:netherite_prior_robe_head
+PASS native armor tooltip paladins:netherite_prior_robe_head [Netherite Prior Collar, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +30% Healing Power [+0.3x], +4% Spell Haste [+0.04x], paladins:netherite_prior_robe_head, 18 component(s)]
+PASS synchronized equipped item paladins:netherite_prior_robe_chest
+PASS client native durability paladins:netherite_prior_robe_chest
+PASS native armor tooltip paladins:netherite_prior_robe_chest [Netherite Prior Vestment, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +30% Healing Power [+0.3x], +4% Spell Haste [+0.04x], paladins:netherite_prior_robe_chest, 18 component(s)]
+PASS synchronized equipped item paladins:netherite_prior_robe_legs
+PASS client native durability paladins:netherite_prior_robe_legs
+PASS native armor tooltip paladins:netherite_prior_robe_legs [Netherite Prior Trousers, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +30% Healing Power [+0.3x], +4% Spell Haste [+0.04x], paladins:netherite_prior_robe_legs, 18 component(s)]
+PASS synchronized equipped item paladins:netherite_prior_robe_feet
+PASS client native durability paladins:netherite_prior_robe_feet
+PASS native armor tooltip paladins:netherite_prior_robe_feet [Netherite Prior Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +30% Healing Power [+0.3x], +4% Spell Haste [+0.04x], paladins:netherite_prior_robe_feet, 18 component(s)]
+PASS client equipped armor paladins:netherite_prior_robe actual=16.0 expected=16.0
+PASS client equipped toughness paladins:netherite_prior_robe actual=4.0 expected=4.0
+SCREENSHOT paladins:netherite_prior_robe
+PASS synchronized equipped item rogues:rogue_armor_head
+PASS client native durability rogues:rogue_armor_head
+PASS native armor tooltip rogues:rogue_armor_head [Rogue Mask, , When on Head:, +2 Armor [+2], +3% Evasion Chance [+0.03x], +4% Attack Speed [+0.04x], rogues:rogue_armor_head, 17 component(s)]
+PASS synchronized equipped item rogues:rogue_armor_chest
+PASS client native durability rogues:rogue_armor_chest
+PASS native armor tooltip rogues:rogue_armor_chest [Rogue Tunic, , When on Chest:, +5 Armor [+5], +3% Evasion Chance [+0.03x], +4% Attack Speed [+0.04x], rogues:rogue_armor_chest, 17 component(s)]
+PASS synchronized equipped item rogues:rogue_armor_legs
+PASS client native durability rogues:rogue_armor_legs
+PASS native armor tooltip rogues:rogue_armor_legs [Rogue Pants, , When on Legs:, +3 Armor [+3], +3% Evasion Chance [+0.03x], +4% Attack Speed [+0.04x], rogues:rogue_armor_legs, 17 component(s)]
+PASS synchronized equipped item rogues:rogue_armor_feet
+PASS client native durability rogues:rogue_armor_feet
+PASS native armor tooltip rogues:rogue_armor_feet [Rogue Boots, , When on Feet:, +2 Armor [+2], +3% Evasion Chance [+0.03x], +4% Attack Speed [+0.04x], rogues:rogue_armor_feet, 17 component(s)]
+PASS client equipped armor rogues:rogue_armor actual=12.0 expected=12.0
+PASS client equipped toughness rogues:rogue_armor actual=0.0 expected=0.0
+PASS synchronized equipped item rogues:assassin_armor_head
+PASS client native durability rogues:assassin_armor_head
+PASS native armor tooltip rogues:assassin_armor_head [Assassin Mask, , When on Head:, +3 Armor [+3], +4% Evasion Chance [+0.04x], +5% Attack Speed [+0.05x], +2% Critical Hit Chance [+0.02x], rogues:assassin_armor_head, 17 component(s)]
+PASS synchronized equipped item rogues:assassin_armor_chest
+PASS client native durability rogues:assassin_armor_chest
+PASS native armor tooltip rogues:assassin_armor_chest [Assassin Tunic, , When on Chest:, +6 Armor [+6], +4% Evasion Chance [+0.04x], +5% Attack Speed [+0.05x], +2% Critical Hit Chance [+0.02x], rogues:assassin_armor_chest, 17 component(s)]
+PASS synchronized equipped item rogues:assassin_armor_legs
+PASS client native durability rogues:assassin_armor_legs
+PASS native armor tooltip rogues:assassin_armor_legs [Assassin Pants, , When on Legs:, +5 Armor [+5], +4% Evasion Chance [+0.04x], +5% Attack Speed [+0.05x], +2% Critical Hit Chance [+0.02x], rogues:assassin_armor_legs, 17 component(s)]
+PASS synchronized equipped item rogues:assassin_armor_feet
+PASS client native durability rogues:assassin_armor_feet
+PASS native armor tooltip rogues:assassin_armor_feet [Assassin Boots, , When on Feet:, +2 Armor [+2], +4% Evasion Chance [+0.04x], +5% Attack Speed [+0.05x], +2% Critical Hit Chance [+0.02x], rogues:assassin_armor_feet, 17 component(s)]
+PASS client equipped armor rogues:assassin_armor actual=16.0 expected=16.0
+PASS client equipped toughness rogues:assassin_armor actual=0.0 expected=0.0
+PASS synchronized equipped item rogues:netherite_assassin_armor_head
+PASS client native durability rogues:netherite_assassin_armor_head
+PASS native armor tooltip rogues:netherite_assassin_armor_head [Netherite Assassin Mask, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +2.5% Critical Hit Chance [+0.03x], rogues:netherite_assassin_armor_head, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_assassin_armor_chest
+PASS client native durability rogues:netherite_assassin_armor_chest
+PASS native armor tooltip rogues:netherite_assassin_armor_chest [Netherite Assassin Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +2.5% Critical Hit Chance [+0.03x], rogues:netherite_assassin_armor_chest, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_assassin_armor_legs
+PASS client native durability rogues:netherite_assassin_armor_legs
+PASS native armor tooltip rogues:netherite_assassin_armor_legs [Netherite Assassin Pants, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +2.5% Critical Hit Chance [+0.03x], rogues:netherite_assassin_armor_legs, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_assassin_armor_feet
+PASS client native durability rogues:netherite_assassin_armor_feet
+PASS native armor tooltip rogues:netherite_assassin_armor_feet [Netherite Assassin Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +2.5% Critical Hit Chance [+0.03x], rogues:netherite_assassin_armor_feet, 18 component(s)]
+PASS client equipped armor rogues:netherite_assassin_armor actual=17.0 expected=17.0
+PASS client equipped toughness rogues:netherite_assassin_armor actual=4.0 expected=4.0
+PASS synchronized equipped item rogues:warrior_armor_head
+PASS client native durability rogues:warrior_armor_head
+PASS native armor tooltip rogues:warrior_armor_head [Warrior Helmet, , When on Head:, +2 Armor [+2], +4% Attack Damage [+0.04x], rogues:warrior_armor_head, 17 component(s)]
+PASS synchronized equipped item rogues:warrior_armor_chest
+PASS client native durability rogues:warrior_armor_chest
+PASS native armor tooltip rogues:warrior_armor_chest [Warrior Chestplate, , When on Chest:, +5 Armor [+5], +4% Attack Damage [+0.04x], rogues:warrior_armor_chest, 17 component(s)]
+PASS synchronized equipped item rogues:warrior_armor_legs
+PASS client native durability rogues:warrior_armor_legs
+PASS native armor tooltip rogues:warrior_armor_legs [Warrior Leggings, , When on Legs:, +4 Armor [+4], +4% Attack Damage [+0.04x], rogues:warrior_armor_legs, 17 component(s)]
+PASS synchronized equipped item rogues:warrior_armor_feet
+PASS client native durability rogues:warrior_armor_feet
+PASS native armor tooltip rogues:warrior_armor_feet [Warrior Boots, , When on Feet:, +2 Armor [+2], +4% Attack Damage [+0.04x], rogues:warrior_armor_feet, 17 component(s)]
+PASS client equipped armor rogues:warrior_armor actual=13.0 expected=13.0
+PASS client equipped toughness rogues:warrior_armor actual=0.0 expected=0.0
+PASS synchronized equipped item rogues:berserker_armor_head
+PASS client native durability rogues:berserker_armor_head
+PASS native armor tooltip rogues:berserker_armor_head [Berserker Helmet, , When on Head:, +3 Armor [+3], +5% Attack Damage [+0.05x], +4% Critical Hit Damage [+0.04x], rogues:berserker_armor_head, 17 component(s)]
+PASS synchronized equipped item rogues:berserker_armor_chest
+PASS client native durability rogues:berserker_armor_chest
+PASS native armor tooltip rogues:berserker_armor_chest [Berserker Chestplate, , When on Chest:, +6 Armor [+6], +5% Attack Damage [+0.05x], +4% Critical Hit Damage [+0.04x], rogues:berserker_armor_chest, 17 component(s)]
+PASS synchronized equipped item rogues:berserker_armor_legs
+PASS client native durability rogues:berserker_armor_legs
+PASS native armor tooltip rogues:berserker_armor_legs [Berserker Leggings, , When on Legs:, +5 Armor [+5], +5% Attack Damage [+0.05x], +4% Critical Hit Damage [+0.04x], rogues:berserker_armor_legs, 17 component(s)]
+PASS synchronized equipped item rogues:berserker_armor_feet
+PASS client native durability rogues:berserker_armor_feet
+PASS native armor tooltip rogues:berserker_armor_feet [Berserker Boots, , When on Feet:, +3 Armor [+3], +5% Attack Damage [+0.05x], +4% Critical Hit Damage [+0.04x], rogues:berserker_armor_feet, 17 component(s)]
+PASS client equipped armor rogues:berserker_armor actual=17.0 expected=17.0
+PASS client equipped toughness rogues:berserker_armor actual=0.0 expected=0.0
+PASS synchronized equipped item rogues:netherite_berserker_armor_head
+PASS client native durability rogues:netherite_berserker_armor_head
+PASS native armor tooltip rogues:netherite_berserker_armor_head [Netherite Berserker Helmet, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Attack Damage [+0.05x], +5% Critical Hit Damage [+0.05x], rogues:netherite_berserker_armor_head, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_berserker_armor_chest
+PASS client native durability rogues:netherite_berserker_armor_chest
+PASS native armor tooltip rogues:netherite_berserker_armor_chest [Netherite Berserker Chestplate, , When on Chest:, +1 Armor Toughness [+1], +7 Armor [+7], +5% Attack Damage [+0.05x], +5% Critical Hit Damage [+0.05x], rogues:netherite_berserker_armor_chest, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_berserker_armor_legs
+PASS client native durability rogues:netherite_berserker_armor_legs
+PASS native armor tooltip rogues:netherite_berserker_armor_legs [Netherite Berserker Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +5% Attack Damage [+0.05x], +5% Critical Hit Damage [+0.05x], rogues:netherite_berserker_armor_legs, 18 component(s)]
+PASS synchronized equipped item rogues:netherite_berserker_armor_feet
+PASS client native durability rogues:netherite_berserker_armor_feet
+PASS native armor tooltip rogues:netherite_berserker_armor_feet [Netherite Berserker Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Attack Damage [+0.05x], +5% Critical Hit Damage [+0.05x], rogues:netherite_berserker_armor_feet, 18 component(s)]
+PASS client equipped armor rogues:netherite_berserker_armor actual=18.0 expected=18.0
+PASS client equipped toughness rogues:netherite_berserker_armor actual=4.0 expected=4.0
+PASS synchronized equipped item archers:archer_armor_head
+PASS client native durability archers:archer_armor_head
+PASS native armor tooltip archers:archer_armor_head [Archer Hood, , When on Head:, +2 Armor [+2], +5% Ranged Damage [+0.05x], archers:archer_armor_head, 17 component(s)]
+PASS synchronized equipped item archers:archer_armor_chest
+PASS client native durability archers:archer_armor_chest
+PASS native armor tooltip archers:archer_armor_chest [Archer Tunic, , When on Chest:, +5 Armor [+5], +5% Ranged Damage [+0.05x], archers:archer_armor_chest, 17 component(s)]
+PASS synchronized equipped item archers:archer_armor_legs
+PASS client native durability archers:archer_armor_legs
+PASS native armor tooltip archers:archer_armor_legs [Archer Leggings, , When on Legs:, +3 Armor [+3], +5% Ranged Damage [+0.05x], archers:archer_armor_legs, 17 component(s)]
+PASS synchronized equipped item archers:archer_armor_feet
+PASS client native durability archers:archer_armor_feet
+PASS native armor tooltip archers:archer_armor_feet [Archer Boots, , When on Feet:, +2 Armor [+2], +5% Ranged Damage [+0.05x], archers:archer_armor_feet, 17 component(s)]
+PASS client equipped armor archers:archer_armor actual=12.0 expected=12.0
+PASS client equipped toughness archers:archer_armor actual=0.0 expected=0.0
+PASS synchronized equipped item archers:ranger_armor_head
+PASS client native durability archers:ranger_armor_head
+PASS native armor tooltip archers:ranger_armor_head [Ranger Hood, , When on Head:, +3 Armor [+3], +8% Ranged Damage [+0.08x], +3% Draw Speed [+0.03x], archers:ranger_armor_head, 17 component(s)]
+PASS synchronized equipped item archers:ranger_armor_chest
+PASS client native durability archers:ranger_armor_chest
+PASS native armor tooltip archers:ranger_armor_chest [Ranger Tunic, , When on Chest:, +6 Armor [+6], +8% Ranged Damage [+0.08x], +3% Draw Speed [+0.03x], archers:ranger_armor_chest, 17 component(s)]
+PASS synchronized equipped item archers:ranger_armor_legs
+PASS client native durability archers:ranger_armor_legs
+PASS native armor tooltip archers:ranger_armor_legs [Ranger Leggings, , When on Legs:, +5 Armor [+5], +8% Ranged Damage [+0.08x], +3% Draw Speed [+0.03x], archers:ranger_armor_legs, 17 component(s)]
+PASS synchronized equipped item archers:ranger_armor_feet
+PASS client native durability archers:ranger_armor_feet
+PASS native armor tooltip archers:ranger_armor_feet [Ranger Boots, , When on Feet:, +2 Armor [+2], +8% Ranged Damage [+0.08x], +3% Draw Speed [+0.03x], archers:ranger_armor_feet, 17 component(s)]
+PASS client equipped armor archers:ranger_armor actual=16.0 expected=16.0
+PASS client equipped toughness archers:ranger_armor actual=0.0 expected=0.0
+PASS synchronized equipped item archers:netherite_ranger_armor_head
+PASS client native durability archers:netherite_ranger_armor_head
+PASS native armor tooltip archers:netherite_ranger_armor_head [Netherite Ranger Hood, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +9% Ranged Damage [+0.09x], +4% Draw Speed [+0.04x], archers:netherite_ranger_armor_head, 18 component(s)]
+PASS synchronized equipped item archers:netherite_ranger_armor_chest
+PASS client native durability archers:netherite_ranger_armor_chest
+PASS native armor tooltip archers:netherite_ranger_armor_chest [Netherite Ranger Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +9% Ranged Damage [+0.09x], +4% Draw Speed [+0.04x], archers:netherite_ranger_armor_chest, 18 component(s)]
+PASS synchronized equipped item archers:netherite_ranger_armor_legs
+PASS client native durability archers:netherite_ranger_armor_legs
+PASS native armor tooltip archers:netherite_ranger_armor_legs [Netherite Ranger Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +9% Ranged Damage [+0.09x], +4% Draw Speed [+0.04x], archers:netherite_ranger_armor_legs, 18 component(s)]
+PASS synchronized equipped item archers:netherite_ranger_armor_feet
+PASS client native durability archers:netherite_ranger_armor_feet
+PASS native armor tooltip archers:netherite_ranger_armor_feet [Netherite Ranger Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +9% Ranged Damage [+0.09x], +4% Draw Speed [+0.04x], archers:netherite_ranger_armor_feet, 18 component(s)]
+PASS client equipped armor archers:netherite_ranger_armor actual=17.0 expected=17.0
+PASS client equipped toughness archers:netherite_ranger_armor actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:astral_robe_head
+PASS client native durability armory_rpgs:astral_robe_head
+PASS native armor tooltip armory_rpgs:astral_robe_head [Astral Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Arcane Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:astral_robe_head, 19 component(s),  , Astral Regalia (4/4),  Astral Hat,  Astral Robe,  Astral Breeches,  Astral Boots, (2) Set: +10% Arcane Spell Power, (4) Set: Arcane Beam releases 2 additional times]
+PASS synchronized equipped item armory_rpgs:astral_robe_chest
+PASS client native durability armory_rpgs:astral_robe_chest
+PASS native armor tooltip armory_rpgs:astral_robe_chest [Astral Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Arcane Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:astral_robe_chest, 19 component(s),  , Astral Regalia (4/4),  Astral Hat,  Astral Robe,  Astral Breeches,  Astral Boots, (2) Set: +10% Arcane Spell Power, (4) Set: Arcane Beam releases 2 additional times]
+PASS synchronized equipped item armory_rpgs:astral_robe_legs
+PASS client native durability armory_rpgs:astral_robe_legs
+PASS native armor tooltip armory_rpgs:astral_robe_legs [Astral Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Arcane Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:astral_robe_legs, 19 component(s),  , Astral Regalia (4/4),  Astral Hat,  Astral Robe,  Astral Breeches,  Astral Boots, (2) Set: +10% Arcane Spell Power, (4) Set: Arcane Beam releases 2 additional times]
+PASS synchronized equipped item armory_rpgs:astral_robe_feet
+PASS client native durability armory_rpgs:astral_robe_feet
+PASS native armor tooltip armory_rpgs:astral_robe_feet [Astral Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Arcane Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:astral_robe_feet, 19 component(s),  , Astral Regalia (4/4),  Astral Hat,  Astral Robe,  Astral Breeches,  Astral Boots, (2) Set: +10% Arcane Spell Power, (4) Set: Arcane Beam releases 2 additional times]
+PASS client equipped armor armory_rpgs:astral_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:astral_robe actual=4.0 expected=4.0
+SCREENSHOT armory_rpgs:astral_robe
+PASS synchronized equipped item armory_rpgs:scarlet_robe_head
+PASS client native durability armory_rpgs:scarlet_robe_head
+PASS native armor tooltip armory_rpgs:scarlet_robe_head [Scarlet Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Fire Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:scarlet_robe_head, 19 component(s),  , Scarlet Raiment (4/4),  Scarlet Hat,  Scarlet Robe,  Scarlet Breeches,  Scarlet Boots, (2) Set: +10% Fire Spell Power, (4) Set: Increases critical chance of Meteor by 5%]
+PASS synchronized equipped item armory_rpgs:scarlet_robe_chest
+PASS client native durability armory_rpgs:scarlet_robe_chest
+PASS native armor tooltip armory_rpgs:scarlet_robe_chest [Scarlet Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Fire Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:scarlet_robe_chest, 19 component(s),  , Scarlet Raiment (4/4),  Scarlet Hat,  Scarlet Robe,  Scarlet Breeches,  Scarlet Boots, (2) Set: +10% Fire Spell Power, (4) Set: Increases critical chance of Meteor by 5%]
+PASS synchronized equipped item armory_rpgs:scarlet_robe_legs
+PASS client native durability armory_rpgs:scarlet_robe_legs
+PASS native armor tooltip armory_rpgs:scarlet_robe_legs [Scarlet Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Fire Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:scarlet_robe_legs, 19 component(s),  , Scarlet Raiment (4/4),  Scarlet Hat,  Scarlet Robe,  Scarlet Breeches,  Scarlet Boots, (2) Set: +10% Fire Spell Power, (4) Set: Increases critical chance of Meteor by 5%]
+PASS synchronized equipped item armory_rpgs:scarlet_robe_feet
+PASS client native durability armory_rpgs:scarlet_robe_feet
+PASS native armor tooltip armory_rpgs:scarlet_robe_feet [Scarlet Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Fire Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:scarlet_robe_feet, 19 component(s),  , Scarlet Raiment (4/4),  Scarlet Hat,  Scarlet Robe,  Scarlet Breeches,  Scarlet Boots, (2) Set: +10% Fire Spell Power, (4) Set: Increases critical chance of Meteor by 5%]
+PASS client equipped armor armory_rpgs:scarlet_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:scarlet_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:glacier_robe_head
+PASS client native durability armory_rpgs:glacier_robe_head
+PASS native armor tooltip armory_rpgs:glacier_robe_head [Glacier Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Frost Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:glacier_robe_head, 19 component(s),  , Glacier Mantle (4/4),  Glacier Hat,  Glacier Robe,  Glacier Breeches,  Glacier Boots, (2) Set: +10% Frost Spell Power, (4) Set: Frost Shield also dispels a harmful effect from you]
+PASS synchronized equipped item armory_rpgs:glacier_robe_chest
+PASS client native durability armory_rpgs:glacier_robe_chest
+PASS native armor tooltip armory_rpgs:glacier_robe_chest [Glacier Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Frost Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:glacier_robe_chest, 19 component(s),  , Glacier Mantle (4/4),  Glacier Hat,  Glacier Robe,  Glacier Breeches,  Glacier Boots, (2) Set: +10% Frost Spell Power, (4) Set: Frost Shield also dispels a harmful effect from you]
+PASS synchronized equipped item armory_rpgs:glacier_robe_legs
+PASS client native durability armory_rpgs:glacier_robe_legs
+PASS native armor tooltip armory_rpgs:glacier_robe_legs [Glacier Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Frost Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:glacier_robe_legs, 19 component(s),  , Glacier Mantle (4/4),  Glacier Hat,  Glacier Robe,  Glacier Breeches,  Glacier Boots, (2) Set: +10% Frost Spell Power, (4) Set: Frost Shield also dispels a harmful effect from you]
+PASS synchronized equipped item armory_rpgs:glacier_robe_feet
+PASS client native durability armory_rpgs:glacier_robe_feet
+PASS native armor tooltip armory_rpgs:glacier_robe_feet [Glacier Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Frost Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:glacier_robe_feet, 19 component(s),  , Glacier Mantle (4/4),  Glacier Hat,  Glacier Robe,  Glacier Breeches,  Glacier Boots, (2) Set: +10% Frost Spell Power, (4) Set: Frost Shield also dispels a harmful effect from you]
+PASS client equipped armor armory_rpgs:glacier_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:glacier_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:tempest_robe_head
+PASS client native durability armory_rpgs:tempest_robe_head
+PASS native armor tooltip armory_rpgs:tempest_robe_head [Tempest Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Arcane Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:tempest_robe_head, 19 component(s),  , Tempest Regalia (4/4),  Tempest Hat,  Tempest Robe,  Tempest Breeches,  Tempest Boots, (2) Set: +5% Spell Haste, (4) Set: Arcane Barrage emitters last 5 sec longer]
+PASS synchronized equipped item armory_rpgs:tempest_robe_chest
+PASS client native durability armory_rpgs:tempest_robe_chest
+PASS native armor tooltip armory_rpgs:tempest_robe_chest [Tempest Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Arcane Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:tempest_robe_chest, 19 component(s),  , Tempest Regalia (4/4),  Tempest Hat,  Tempest Robe,  Tempest Breeches,  Tempest Boots, (2) Set: +5% Spell Haste, (4) Set: Arcane Barrage emitters last 5 sec longer]
+PASS synchronized equipped item armory_rpgs:tempest_robe_legs
+PASS client native durability armory_rpgs:tempest_robe_legs
+PASS native armor tooltip armory_rpgs:tempest_robe_legs [Tempest Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Arcane Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:tempest_robe_legs, 19 component(s),  , Tempest Regalia (4/4),  Tempest Hat,  Tempest Robe,  Tempest Breeches,  Tempest Boots, (2) Set: +5% Spell Haste, (4) Set: Arcane Barrage emitters last 5 sec longer]
+PASS synchronized equipped item armory_rpgs:tempest_robe_feet
+PASS client native durability armory_rpgs:tempest_robe_feet
+PASS native armor tooltip armory_rpgs:tempest_robe_feet [Tempest Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Arcane Spell Power [+0.35x], +8% Spell Critical Damage [+0.08x], armory_rpgs:tempest_robe_feet, 19 component(s),  , Tempest Regalia (4/4),  Tempest Hat,  Tempest Robe,  Tempest Breeches,  Tempest Boots, (2) Set: +5% Spell Haste, (4) Set: Arcane Barrage emitters last 5 sec longer]
+PASS client equipped armor armory_rpgs:tempest_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:tempest_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:smouldering_robe_head
+PASS client native durability armory_rpgs:smouldering_robe_head
+PASS native armor tooltip armory_rpgs:smouldering_robe_head [Smouldering Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Fire Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:smouldering_robe_head, 19 component(s),  , Smouldering Raiment (4/4),  Smouldering Hat,  Smouldering Robe,  Smouldering Breeches,  Smouldering Boots, (2) Set: +5% Spell Critical Chance, (4) Set: Increases radius of Firestorm by 1 blocks]
+PASS synchronized equipped item armory_rpgs:smouldering_robe_chest
+PASS client native durability armory_rpgs:smouldering_robe_chest
+PASS native armor tooltip armory_rpgs:smouldering_robe_chest [Smouldering Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Fire Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:smouldering_robe_chest, 19 component(s),  , Smouldering Raiment (4/4),  Smouldering Hat,  Smouldering Robe,  Smouldering Breeches,  Smouldering Boots, (2) Set: +5% Spell Critical Chance, (4) Set: Increases radius of Firestorm by 1 blocks]
+PASS synchronized equipped item armory_rpgs:smouldering_robe_legs
+PASS client native durability armory_rpgs:smouldering_robe_legs
+PASS native armor tooltip armory_rpgs:smouldering_robe_legs [Smouldering Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Fire Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:smouldering_robe_legs, 19 component(s),  , Smouldering Raiment (4/4),  Smouldering Hat,  Smouldering Robe,  Smouldering Breeches,  Smouldering Boots, (2) Set: +5% Spell Critical Chance, (4) Set: Increases radius of Firestorm by 1 blocks]
+PASS synchronized equipped item armory_rpgs:smouldering_robe_feet
+PASS client native durability armory_rpgs:smouldering_robe_feet
+PASS native armor tooltip armory_rpgs:smouldering_robe_feet [Smouldering Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Fire Spell Power [+0.35x], +3% Spell Haste [+0.03x], armory_rpgs:smouldering_robe_feet, 19 component(s),  , Smouldering Raiment (4/4),  Smouldering Hat,  Smouldering Robe,  Smouldering Breeches,  Smouldering Boots, (2) Set: +5% Spell Critical Chance, (4) Set: Increases radius of Firestorm by 1 blocks]
+PASS client equipped armor armory_rpgs:smouldering_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:smouldering_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:rimeweave_robe_head
+PASS client native durability armory_rpgs:rimeweave_robe_head
+PASS native armor tooltip armory_rpgs:rimeweave_robe_head [Rimeweave Hat, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Frost Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:rimeweave_robe_head, 19 component(s),  , Rimeweave Mantle (4/4),  Rimeweave Hat,  Rimeweave Robe,  Rimeweave Breeches,  Rimeweave Boots, (2) Set: +10% Spell Critical Damage, (4) Set: Increases critical damage of Ice Lance by 25%]
+PASS synchronized equipped item armory_rpgs:rimeweave_robe_chest
+PASS client native durability armory_rpgs:rimeweave_robe_chest
+PASS native armor tooltip armory_rpgs:rimeweave_robe_chest [Rimeweave Robe, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Frost Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:rimeweave_robe_chest, 19 component(s),  , Rimeweave Mantle (4/4),  Rimeweave Hat,  Rimeweave Robe,  Rimeweave Breeches,  Rimeweave Boots, (2) Set: +10% Spell Critical Damage, (4) Set: Increases critical damage of Ice Lance by 25%]
+PASS synchronized equipped item armory_rpgs:rimeweave_robe_legs
+PASS client native durability armory_rpgs:rimeweave_robe_legs
+PASS native armor tooltip armory_rpgs:rimeweave_robe_legs [Rimeweave Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Frost Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:rimeweave_robe_legs, 19 component(s),  , Rimeweave Mantle (4/4),  Rimeweave Hat,  Rimeweave Robe,  Rimeweave Breeches,  Rimeweave Boots, (2) Set: +10% Spell Critical Damage, (4) Set: Increases critical damage of Ice Lance by 25%]
+PASS synchronized equipped item armory_rpgs:rimeweave_robe_feet
+PASS client native durability armory_rpgs:rimeweave_robe_feet
+PASS native armor tooltip armory_rpgs:rimeweave_robe_feet [Rimeweave Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Frost Spell Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:rimeweave_robe_feet, 19 component(s),  , Rimeweave Mantle (4/4),  Rimeweave Hat,  Rimeweave Robe,  Rimeweave Breeches,  Rimeweave Boots, (2) Set: +10% Spell Critical Damage, (4) Set: Increases critical damage of Ice Lance by 25%]
+PASS client equipped armor armory_rpgs:rimeweave_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:rimeweave_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:avatar_robe_head
+PASS client native durability armory_rpgs:avatar_robe_head
+PASS native armor tooltip armory_rpgs:avatar_robe_head [Avatar Cowl, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Healing Power [+0.35x], +5% Spell Haste [+0.05x], armory_rpgs:avatar_robe_head, 19 component(s),  , Avatar Raiment (4/4),  Avatar Cowl,  Avatar Vestment,  Avatar Breeches,  Avatar Boots, (2) Set: +10% Healing Power, (4) Set: Increases power of Circle of Healing by 10%]
+PASS synchronized equipped item armory_rpgs:avatar_robe_chest
+PASS client native durability armory_rpgs:avatar_robe_chest
+PASS native armor tooltip armory_rpgs:avatar_robe_chest [Avatar Vestment, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Healing Power [+0.35x], +5% Spell Haste [+0.05x], armory_rpgs:avatar_robe_chest, 19 component(s),  , Avatar Raiment (4/4),  Avatar Cowl,  Avatar Vestment,  Avatar Breeches,  Avatar Boots, (2) Set: +10% Healing Power, (4) Set: Increases power of Circle of Healing by 10%]
+PASS synchronized equipped item armory_rpgs:avatar_robe_legs
+PASS client native durability armory_rpgs:avatar_robe_legs
+PASS native armor tooltip armory_rpgs:avatar_robe_legs [Avatar Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Healing Power [+0.35x], +5% Spell Haste [+0.05x], armory_rpgs:avatar_robe_legs, 19 component(s),  , Avatar Raiment (4/4),  Avatar Cowl,  Avatar Vestment,  Avatar Breeches,  Avatar Boots, (2) Set: +10% Healing Power, (4) Set: Increases power of Circle of Healing by 10%]
+PASS synchronized equipped item armory_rpgs:avatar_robe_feet
+PASS client native durability armory_rpgs:avatar_robe_feet
+PASS native armor tooltip armory_rpgs:avatar_robe_feet [Avatar Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Healing Power [+0.35x], +5% Spell Haste [+0.05x], armory_rpgs:avatar_robe_feet, 19 component(s),  , Avatar Raiment (4/4),  Avatar Cowl,  Avatar Vestment,  Avatar Breeches,  Avatar Boots, (2) Set: +10% Healing Power, (4) Set: Increases power of Circle of Healing by 10%]
+PASS client equipped armor armory_rpgs:avatar_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:avatar_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:absolution_robe_head
+PASS client native durability armory_rpgs:absolution_robe_head
+PASS native armor tooltip armory_rpgs:absolution_robe_head [Absolution Cowl, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +35% Healing Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:absolution_robe_head, 19 component(s),  , Absolution Raiment (4/4),  Absolution Cowl,  Absolution Vestment,  Absolution Breeches,  Absolution Boots, (2) Set: +5% Spell Haste, (4) Set: Increases critical chance of Penance by 5%]
+PASS synchronized equipped item armory_rpgs:absolution_robe_chest
+PASS client native durability armory_rpgs:absolution_robe_chest
+PASS native armor tooltip armory_rpgs:absolution_robe_chest [Absolution Vestment, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +35% Healing Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:absolution_robe_chest, 19 component(s),  , Absolution Raiment (4/4),  Absolution Cowl,  Absolution Vestment,  Absolution Breeches,  Absolution Boots, (2) Set: +5% Spell Haste, (4) Set: Increases critical chance of Penance by 5%]
+PASS synchronized equipped item armory_rpgs:absolution_robe_legs
+PASS client native durability armory_rpgs:absolution_robe_legs
+PASS native armor tooltip armory_rpgs:absolution_robe_legs [Absolution Breeches, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +35% Healing Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:absolution_robe_legs, 19 component(s),  , Absolution Raiment (4/4),  Absolution Cowl,  Absolution Vestment,  Absolution Breeches,  Absolution Boots, (2) Set: +5% Spell Haste, (4) Set: Increases critical chance of Penance by 5%]
+PASS synchronized equipped item armory_rpgs:absolution_robe_feet
+PASS client native durability armory_rpgs:absolution_robe_feet
+PASS native armor tooltip armory_rpgs:absolution_robe_feet [Absolution Boots, , When on Feet:, +1 Armor Toughness [+1], +2 Armor [+2], +35% Healing Power [+0.35x], +3% Spell Critical Chance [+0.03x], armory_rpgs:absolution_robe_feet, 19 component(s),  , Absolution Raiment (4/4),  Absolution Cowl,  Absolution Vestment,  Absolution Breeches,  Absolution Boots, (2) Set: +5% Spell Haste, (4) Set: Increases critical chance of Penance by 5%]
+PASS client equipped armor armory_rpgs:absolution_robe actual=16.0 expected=16.0
+PASS client equipped toughness armory_rpgs:absolution_robe actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:deathmantle_armor_head
+PASS client native durability armory_rpgs:deathmantle_armor_head
+PASS native armor tooltip armory_rpgs:deathmantle_armor_head [Deathmantle Hood, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +3% Critical Hit Chance [+0.03x], armory_rpgs:deathmantle_armor_head, 19 component(s),  , Deathmantle (4/4),  Deathmantle Hood,  Deathmantle Tunic,  Deathmantle Leggings,  Deathmantle Boots, (2) Set: +5% Speed, (4) Set: Reduces cooldown of Shadowstep by 3 sec]
+PASS synchronized equipped item armory_rpgs:deathmantle_armor_chest
+PASS client native durability armory_rpgs:deathmantle_armor_chest
+PASS native armor tooltip armory_rpgs:deathmantle_armor_chest [Deathmantle Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +3% Critical Hit Chance [+0.03x], armory_rpgs:deathmantle_armor_chest, 19 component(s),  , Deathmantle (4/4),  Deathmantle Hood,  Deathmantle Tunic,  Deathmantle Leggings,  Deathmantle Boots, (2) Set: +5% Speed, (4) Set: Reduces cooldown of Shadowstep by 3 sec]
+PASS synchronized equipped item armory_rpgs:deathmantle_armor_legs
+PASS client native durability armory_rpgs:deathmantle_armor_legs
+PASS native armor tooltip armory_rpgs:deathmantle_armor_legs [Deathmantle Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +3% Critical Hit Chance [+0.03x], armory_rpgs:deathmantle_armor_legs, 19 component(s),  , Deathmantle (4/4),  Deathmantle Hood,  Deathmantle Tunic,  Deathmantle Leggings,  Deathmantle Boots, (2) Set: +5% Speed, (4) Set: Reduces cooldown of Shadowstep by 3 sec]
+PASS synchronized equipped item armory_rpgs:deathmantle_armor_feet
+PASS client native durability armory_rpgs:deathmantle_armor_feet
+PASS native armor tooltip armory_rpgs:deathmantle_armor_feet [Deathmantle Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +3% Critical Hit Chance [+0.03x], armory_rpgs:deathmantle_armor_feet, 19 component(s),  , Deathmantle (4/4),  Deathmantle Hood,  Deathmantle Tunic,  Deathmantle Leggings,  Deathmantle Boots, (2) Set: +5% Speed, (4) Set: Reduces cooldown of Shadowstep by 3 sec]
+PASS client equipped armor armory_rpgs:deathmantle_armor actual=17.0 expected=17.0
+PASS client equipped toughness armory_rpgs:deathmantle_armor actual=4.0 expected=4.0
+SCREENSHOT armory_rpgs:deathmantle_armor
+PASS synchronized equipped item armory_rpgs:slayer_armor_head
+PASS client native durability armory_rpgs:slayer_armor_head
+PASS native armor tooltip armory_rpgs:slayer_armor_head [Slayer Hood, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +5% Critical Hit Damage [+0.05x], armory_rpgs:slayer_armor_head, 19 component(s),  , Slayer Armor (4/4),  Slayer Hood,  Slayer Tunic,  Slayer Leggings,  Slayer Boots, (2) Set: +5% Attack Damage, (4) Set: Increases power of Bear Trap by 10%]
+PASS synchronized equipped item armory_rpgs:slayer_armor_chest
+PASS client native durability armory_rpgs:slayer_armor_chest
+PASS native armor tooltip armory_rpgs:slayer_armor_chest [Slayer Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +5% Critical Hit Damage [+0.05x], armory_rpgs:slayer_armor_chest, 19 component(s),  , Slayer Armor (4/4),  Slayer Hood,  Slayer Tunic,  Slayer Leggings,  Slayer Boots, (2) Set: +5% Attack Damage, (4) Set: Increases power of Bear Trap by 10%]
+PASS synchronized equipped item armory_rpgs:slayer_armor_legs
+PASS client native durability armory_rpgs:slayer_armor_legs
+PASS native armor tooltip armory_rpgs:slayer_armor_legs [Slayer Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +5% Critical Hit Damage [+0.05x], armory_rpgs:slayer_armor_legs, 19 component(s),  , Slayer Armor (4/4),  Slayer Hood,  Slayer Tunic,  Slayer Leggings,  Slayer Boots, (2) Set: +5% Attack Damage, (4) Set: Increases power of Bear Trap by 10%]
+PASS synchronized equipped item armory_rpgs:slayer_armor_feet
+PASS client native durability armory_rpgs:slayer_armor_feet
+PASS native armor tooltip armory_rpgs:slayer_armor_feet [Slayer Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +5% Evasion Chance [+0.05x], +5% Attack Speed [+0.05x], +5% Critical Hit Damage [+0.05x], armory_rpgs:slayer_armor_feet, 19 component(s),  , Slayer Armor (4/4),  Slayer Hood,  Slayer Tunic,  Slayer Leggings,  Slayer Boots, (2) Set: +5% Attack Damage, (4) Set: Increases power of Bear Trap by 10%]
+PASS client equipped armor armory_rpgs:slayer_armor actual=17.0 expected=17.0
+PASS client equipped toughness armory_rpgs:slayer_armor actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:strider_armor_head
+PASS client native durability armory_rpgs:strider_armor_head
+PASS native armor tooltip armory_rpgs:strider_armor_head [Strider Hood, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +10% Ranged Damage [+0.1x], +5% Draw Speed [+0.05x], armory_rpgs:strider_armor_head, 19 component(s),  , Strider Armor (4/4),  Strider Hood,  Strider Tunic,  Strider Leggings,  Strider Boots, (2) Set: +5% Ranged Damage, (4) Set: Barrage arrows pierce 1 additional enemy]
+PASS synchronized equipped item armory_rpgs:strider_armor_chest
+PASS client native durability armory_rpgs:strider_armor_chest
+PASS native armor tooltip armory_rpgs:strider_armor_chest [Strider Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +10% Ranged Damage [+0.1x], +5% Draw Speed [+0.05x], armory_rpgs:strider_armor_chest, 19 component(s),  , Strider Armor (4/4),  Strider Hood,  Strider Tunic,  Strider Leggings,  Strider Boots, (2) Set: +5% Ranged Damage, (4) Set: Barrage arrows pierce 1 additional enemy]
+PASS synchronized equipped item armory_rpgs:strider_armor_legs
+PASS client native durability armory_rpgs:strider_armor_legs
+PASS native armor tooltip armory_rpgs:strider_armor_legs [Strider Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +10% Ranged Damage [+0.1x], +5% Draw Speed [+0.05x], armory_rpgs:strider_armor_legs, 19 component(s),  , Strider Armor (4/4),  Strider Hood,  Strider Tunic,  Strider Leggings,  Strider Boots, (2) Set: +5% Ranged Damage, (4) Set: Barrage arrows pierce 1 additional enemy]
+PASS synchronized equipped item armory_rpgs:strider_armor_feet
+PASS client native durability armory_rpgs:strider_armor_feet
+PASS native armor tooltip armory_rpgs:strider_armor_feet [Strider Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +10% Ranged Damage [+0.1x], +5% Draw Speed [+0.05x], armory_rpgs:strider_armor_feet, 19 component(s),  , Strider Armor (4/4),  Strider Hood,  Strider Tunic,  Strider Leggings,  Strider Boots, (2) Set: +5% Ranged Damage, (4) Set: Barrage arrows pierce 1 additional enemy]
+PASS client equipped armor armory_rpgs:strider_armor actual=17.0 expected=17.0
+PASS client equipped toughness armory_rpgs:strider_armor actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:riftstalker_armor_head
+PASS client native durability armory_rpgs:riftstalker_armor_head
+PASS native armor tooltip armory_rpgs:riftstalker_armor_head [Riftstalker Hood, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +10% Ranged Damage [+0.1x], +3% Critical Hit Chance [+0.03x], armory_rpgs:riftstalker_armor_head, 19 component(s),  , Riftstalker Armor (4/4),  Riftstalker Hood,  Riftstalker Tunic,  Riftstalker Leggings,  Riftstalker Boots, (2) Set: +5% Draw Speed, (4) Set: Reduces cooldown of Spirit Wolf by 5 sec]
+PASS synchronized equipped item armory_rpgs:riftstalker_armor_chest
+PASS client native durability armory_rpgs:riftstalker_armor_chest
+PASS native armor tooltip armory_rpgs:riftstalker_armor_chest [Riftstalker Tunic, , When on Chest:, +1 Armor Toughness [+1], +6 Armor [+6], +10% Ranged Damage [+0.1x], +3% Critical Hit Chance [+0.03x], armory_rpgs:riftstalker_armor_chest, 19 component(s),  , Riftstalker Armor (4/4),  Riftstalker Hood,  Riftstalker Tunic,  Riftstalker Leggings,  Riftstalker Boots, (2) Set: +5% Draw Speed, (4) Set: Reduces cooldown of Spirit Wolf by 5 sec]
+PASS synchronized equipped item armory_rpgs:riftstalker_armor_legs
+PASS client native durability armory_rpgs:riftstalker_armor_legs
+PASS native armor tooltip armory_rpgs:riftstalker_armor_legs [Riftstalker Leggings, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +10% Ranged Damage [+0.1x], +3% Critical Hit Chance [+0.03x], armory_rpgs:riftstalker_armor_legs, 19 component(s),  , Riftstalker Armor (4/4),  Riftstalker Hood,  Riftstalker Tunic,  Riftstalker Leggings,  Riftstalker Boots, (2) Set: +5% Draw Speed, (4) Set: Reduces cooldown of Spirit Wolf by 5 sec]
+PASS synchronized equipped item armory_rpgs:riftstalker_armor_feet
+PASS client native durability armory_rpgs:riftstalker_armor_feet
+PASS native armor tooltip armory_rpgs:riftstalker_armor_feet [Riftstalker Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +10% Ranged Damage [+0.1x], +3% Critical Hit Chance [+0.03x], armory_rpgs:riftstalker_armor_feet, 19 component(s),  , Riftstalker Armor (4/4),  Riftstalker Hood,  Riftstalker Tunic,  Riftstalker Leggings,  Riftstalker Boots, (2) Set: +5% Draw Speed, (4) Set: Reduces cooldown of Spirit Wolf by 5 sec]
+PASS client equipped armor armory_rpgs:riftstalker_armor actual=17.0 expected=17.0
+PASS client equipped toughness armory_rpgs:riftstalker_armor actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:destroyer_armor_head
+PASS client native durability armory_rpgs:destroyer_armor_head
+PASS native armor tooltip armory_rpgs:destroyer_armor_head [Destroyer Greathelm, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +6% Attack Damage [+0.06x], +6% Critical Hit Damage [+0.06x], armory_rpgs:destroyer_armor_head, 19 component(s),  , Destroyer Armor (4/4),  Destroyer Greathelm,  Destroyer Chestplate,  Destroyer Greaves,  Destroyer Boots, (2) Set: +5% Attack Damage, (4) Set: Reduces cooldown of Charge by 2 sec]
+PASS synchronized equipped item armory_rpgs:destroyer_armor_chest
+PASS client native durability armory_rpgs:destroyer_armor_chest
+PASS native armor tooltip armory_rpgs:destroyer_armor_chest [Destroyer Chestplate, , When on Chest:, +1 Armor Toughness [+1], +7 Armor [+7], +6% Attack Damage [+0.06x], +6% Critical Hit Damage [+0.06x], armory_rpgs:destroyer_armor_chest, 19 component(s),  , Destroyer Armor (4/4),  Destroyer Greathelm,  Destroyer Chestplate,  Destroyer Greaves,  Destroyer Boots, (2) Set: +5% Attack Damage, (4) Set: Reduces cooldown of Charge by 2 sec]
+PASS synchronized equipped item armory_rpgs:destroyer_armor_legs
+PASS client native durability armory_rpgs:destroyer_armor_legs
+PASS native armor tooltip armory_rpgs:destroyer_armor_legs [Destroyer Greaves, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +6% Attack Damage [+0.06x], +6% Critical Hit Damage [+0.06x], armory_rpgs:destroyer_armor_legs, 19 component(s),  , Destroyer Armor (4/4),  Destroyer Greathelm,  Destroyer Chestplate,  Destroyer Greaves,  Destroyer Boots, (2) Set: +5% Attack Damage, (4) Set: Reduces cooldown of Charge by 2 sec]
+PASS synchronized equipped item armory_rpgs:destroyer_armor_feet
+PASS client native durability armory_rpgs:destroyer_armor_feet
+PASS native armor tooltip armory_rpgs:destroyer_armor_feet [Destroyer Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +6% Attack Damage [+0.06x], +6% Critical Hit Damage [+0.06x], armory_rpgs:destroyer_armor_feet, 19 component(s),  , Destroyer Armor (4/4),  Destroyer Greathelm,  Destroyer Chestplate,  Destroyer Greaves,  Destroyer Boots, (2) Set: +5% Attack Damage, (4) Set: Reduces cooldown of Charge by 2 sec]
+PASS client equipped armor armory_rpgs:destroyer_armor actual=18.0 expected=18.0
+PASS client equipped toughness armory_rpgs:destroyer_armor actual=4.0 expected=4.0
+PASS synchronized equipped item armory_rpgs:onslaught_armor_head
+PASS client native durability armory_rpgs:onslaught_armor_head
+PASS native armor tooltip armory_rpgs:onslaught_armor_head [Onslaught Greathelm, , When on Head:, +1 Armor Toughness [+1], +3 Armor [+3], +6% Attack Damage [+0.06x], +3% Critical Hit Chance [+0.03x], armory_rpgs:onslaught_armor_head, 19 component(s),  , Onslaught Armor (4/4),  Onslaught Greathelm,  Onslaught Chestplate,  Onslaught Greaves,  Onslaught Boots, (2) Set: +5% Attack Speed, (4) Set: Shout deals substantially increased damage]
+PASS synchronized equipped item armory_rpgs:onslaught_armor_chest
+PASS client native durability armory_rpgs:onslaught_armor_chest
+PASS native armor tooltip armory_rpgs:onslaught_armor_chest [Onslaught Chestplate, , When on Chest:, +1 Armor Toughness [+1], +7 Armor [+7], +6% Attack Damage [+0.06x], +3% Critical Hit Chance [+0.03x], armory_rpgs:onslaught_armor_chest, 19 component(s),  , Onslaught Armor (4/4),  Onslaught Greathelm,  Onslaught Chestplate,  Onslaught Greaves,  Onslaught Boots, (2) Set: +5% Attack Speed, (4) Set: Shout deals substantially increased damage]
+PASS synchronized equipped item armory_rpgs:onslaught_armor_legs
+PASS client native durability armory_rpgs:onslaught_armor_legs
+PASS native armor tooltip armory_rpgs:onslaught_armor_legs [Onslaught Greaves, , When on Legs:, +1 Armor Toughness [+1], +5 Armor [+5], +6% Attack Damage [+0.06x], +3% Critical Hit Chance [+0.03x], armory_rpgs:onslaught_armor_legs, 19 component(s),  , Onslaught Armor (4/4),  Onslaught Greathelm,  Onslaught Chestplate,  Onslaught Greaves,  Onslaught Boots, (2) Set: +5% Attack Speed, (4) Set: Shout deals substantially increased damage]
+PASS synchronized equipped item armory_rpgs:onslaught_armor_feet
+PASS client native durability armory_rpgs:onslaught_armor_feet
+PASS native armor tooltip armory_rpgs:onslaught_armor_feet [Onslaught Boots, , When on Feet:, +1 Armor Toughness [+1], +3 Armor [+3], +6% Attack Damage [+0.06x], +3% Critical Hit Chance [+0.03x], armory_rpgs:onslaught_armor_feet, 19 component(s),  , Onslaught Armor (4/4),  Onslaught Greathelm,  Onslaught Chestplate,  Onslaught Greaves,  Onslaught Boots, (2) Set: +5% Attack Speed, (4) Set: Shout deals substantially increased damage]
+PASS client equipped armor armory_rpgs:onslaught_armor actual=18.0 expected=18.0
+PASS client equipped toughness armory_rpgs:onslaught_armor actual=4.0 expected=4.0
+SCREENSHOT armory_rpgs:onslaught_armor

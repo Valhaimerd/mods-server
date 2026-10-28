@@ -1,0 +1,12 @@
+{
+  "pages": 79,
+  "toc_links_checked": 51,
+  "toc_numbers_match": true,
+  "all_pages_rendered_and_reviewed": true,
+  "changed_pages_reviewed": [
+    17,
+    23
+  ],
+  "pdf_sha256": "7b0bb23ae945b7c9279ccfc7b2b526735152ee913a41fb19793a9d71ab9ddcda",
+  "notes": "Legacy tmp/pdfs/verify_pdf.py has obsolete16-image assertion; current PDF contains219 image placements matching219 HTML images,469 internal links,212 external links and zero missing HTML targets."
+}

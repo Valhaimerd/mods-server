@@ -1,5 +1,7 @@
 # Paladin doctrine and Healing Power balance
 
+The Paladin hand restriction below remains. Its earlier plate values and helper revision are superseded by the [Priest plate restriction and further armor progression](../priest-plate-doctrine/README.md). This record retains its original tested artifacts.
+
 Installed28October2026 for Minecraft26.2 / NeoForge26.2.0.90 / Java25. Same-filename replacements: Skill Tree1.6.1, Paladins & Priests3.1.2 and Armory1.5.2. Use matching client/server files and restart. No push requested; personal installations/worlds remain untouched.
 
 ## Player behavior

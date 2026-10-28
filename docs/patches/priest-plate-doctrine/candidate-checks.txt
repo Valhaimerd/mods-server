@@ -1,0 +1,207 @@
+PASS all twenty plate defaults registered
+PASS new per-piece default armory_rpgs:justicar_armor_chest actual=1.75
+PASS new per-piece default armory_rpgs:justicar_armor_feet actual=1.75
+PASS new per-piece default armory_rpgs:justicar_armor_head actual=1.75
+PASS new per-piece default armory_rpgs:justicar_armor_legs actual=1.75
+PASS new per-piece default armory_rpgs:lightbringer_armor_chest actual=1.75
+PASS new per-piece default armory_rpgs:lightbringer_armor_feet actual=1.75
+PASS new per-piece default armory_rpgs:lightbringer_armor_head actual=1.75
+PASS new per-piece default armory_rpgs:lightbringer_armor_legs actual=1.75
+PASS new per-piece default paladins:crusader_armor_chest actual=1.25
+PASS new per-piece default paladins:crusader_armor_feet actual=1.25
+PASS new per-piece default paladins:crusader_armor_head actual=1.25
+PASS new per-piece default paladins:crusader_armor_legs actual=1.25
+PASS new per-piece default paladins:netherite_crusader_armor_chest actual=1.5
+PASS new per-piece default paladins:netherite_crusader_armor_feet actual=1.5
+PASS new per-piece default paladins:netherite_crusader_armor_head actual=1.5
+PASS new per-piece default paladins:netherite_crusader_armor_legs actual=1.5
+PASS new per-piece default paladins:paladin_armor_chest actual=1.0
+PASS new per-piece default paladins:paladin_armor_feet actual=1.0
+PASS new per-piece default paladins:paladin_armor_head actual=1.0
+PASS new per-piece default paladins:paladin_armor_legs actual=1.0
+PASS new full-set flat item total paladins:paladin_armor actual=4.0
+PASS new full-set flat item total paladins:crusader_armor actual=5.0
+PASS new full-set flat item total paladins:netherite_crusader_armor actual=6.0
+PASS new full-set flat item total armory_rpgs:justicar_armor actual=7.0
+PASS new full-set flat item total armory_rpgs:lightbringer_armor actual=7.0
+PASS all other native armor modifiers unchanged
+PASS actual Paladin root reward actual=0.25
+PASS actual ordinary Paladin reward x9it8aavrrwsojhg actual=0.25
+PASS actual ordinary Paladin reward uornste0y3mpodex actual=0.25
+PASS actual ordinary Paladin reward j3m3zpdi0ryjmgxt actual=0.25
+PASS runtime root default actual=0.25
+PASS runtime ordinary default actual=0.25
+PASS actual class root identifies Paladin
+PASS native healing weapon tag paladins:acolyte_wand
+PASS forbidden hand cleared MAIN_HAND paladins:acolyte_wand
+PASS exact item returned to inventory MAIN_HAND paladins:acolyte_wand
+PASS native healing weapon tag paladins:acolyte_wand
+PASS forbidden hand cleared OFF_HAND paladins:acolyte_wand
+PASS exact item returned to inventory OFF_HAND paladins:acolyte_wand
+PASS native healing weapon tag paladins:holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:holy_wand
+PASS native healing weapon tag paladins:holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:holy_wand
+PASS native healing weapon tag paladins:diamond_holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:diamond_holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:diamond_holy_wand
+PASS native healing weapon tag paladins:diamond_holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:diamond_holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:diamond_holy_wand
+PASS native healing weapon tag paladins:netherite_holy_wand
+PASS forbidden hand cleared MAIN_HAND paladins:netherite_holy_wand
+PASS exact item returned to inventory MAIN_HAND paladins:netherite_holy_wand
+PASS native healing weapon tag paladins:netherite_holy_wand
+PASS forbidden hand cleared OFF_HAND paladins:netherite_holy_wand
+PASS exact item returned to inventory OFF_HAND paladins:netherite_holy_wand
+PASS native healing weapon tag paladins:holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:holy_staff
+PASS native healing weapon tag paladins:holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:holy_staff
+PASS native healing weapon tag paladins:diamond_holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:diamond_holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:diamond_holy_staff
+PASS native healing weapon tag paladins:diamond_holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:diamond_holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:diamond_holy_staff
+PASS native healing weapon tag paladins:netherite_holy_staff
+PASS forbidden hand cleared MAIN_HAND paladins:netherite_holy_staff
+PASS exact item returned to inventory MAIN_HAND paladins:netherite_holy_staff
+PASS native healing weapon tag paladins:netherite_holy_staff
+PASS forbidden hand cleared OFF_HAND paladins:netherite_holy_staff
+PASS exact item returned to inventory OFF_HAND paladins:netherite_holy_staff
+PASS only optional material weapons may be absent paladins:ruby_holy_staff
+PASS only optional material weapons may be absent paladins:ruby_holy_staff
+PASS only optional material weapons may be absent paladins:aether_holy_staff
+PASS only optional material weapons may be absent paladins:aether_holy_staff
+PASS full inventory safely swaps both hands
+PASS all-forbidden full inventory still has empty hands
+PASS two displaced items persist safely
+PASS serialized reserve is idempotent
+PASS free slot recovers one reserved item
+PASS respec removes restriction
+PASS respec recovers remaining item into free hand slot
+PASS Priest retains healing staff MAIN_HAND
+PASS Priest retains healing staff OFF_HAND
+PASS Priest retains actual staff attribute
+PASS Paladin staff attributes removed immediately actual=10.25
+PASS native equipment scan rejects direct insertion
+PASS scan never applies forbidden staff bonus actual=10.25
+PASS direct healing-staff cast attempt rejected
+PASS cast guard clears forbidden hand
+PASS ordinary melee weapon retained
+PASS offhand violation rejects initiating action
+PASS offhand action guard clears healing weapon
+PASS stale queued staff source is rejected after relocation
+PASS native attack event rejects healing weapon
+PASS fast-switch fixture has applied Priest staff bonus
+PASS fast class/slot switch removes stale weapon bonus actual=10.25
+PASS death fixture has two displaced items
+PASS normal death drops both displaced items
+PASS normal death clears reserve before clone
+PASS native player save/load retains displaced equipment
+PASS keepInventory retains displaced items without drops
+PASS native respawn clone retains displaced equipment
+PASS respawned player recovers reserved equipment
+PASS respawn restores exactly two items without duplication
+PASS clone writes do not mutate original shared persisted tag
+PASS actual Priest root identifies Priest
+PASS tag covers real plate piece paladins:paladin_armor_head
+PASS Priest armor slot rejected paladins:paladin_armor_head
+PASS rejected plate preserved once paladins:paladin_armor_head
+PASS rejected plate grants no Healing Power paladins:paladin_armor_head actual=10.299999993294477
+PASS tag covers real plate piece paladins:paladin_armor_chest
+PASS Priest armor slot rejected paladins:paladin_armor_chest
+PASS rejected plate preserved once paladins:paladin_armor_chest
+PASS rejected plate grants no Healing Power paladins:paladin_armor_chest actual=10.299999993294477
+PASS tag covers real plate piece paladins:paladin_armor_legs
+PASS Priest armor slot rejected paladins:paladin_armor_legs
+PASS rejected plate preserved once paladins:paladin_armor_legs
+PASS rejected plate grants no Healing Power paladins:paladin_armor_legs actual=10.299999993294477
+PASS tag covers real plate piece paladins:paladin_armor_feet
+PASS Priest armor slot rejected paladins:paladin_armor_feet
+PASS rejected plate preserved once paladins:paladin_armor_feet
+PASS rejected plate grants no Healing Power paladins:paladin_armor_feet actual=10.299999993294477
+PASS tag covers real plate piece paladins:crusader_armor_head
+PASS Priest armor slot rejected paladins:crusader_armor_head
+PASS rejected plate preserved once paladins:crusader_armor_head
+PASS rejected plate grants no Healing Power paladins:crusader_armor_head actual=10.299999993294477
+PASS tag covers real plate piece paladins:crusader_armor_chest
+PASS Priest armor slot rejected paladins:crusader_armor_chest
+PASS rejected plate preserved once paladins:crusader_armor_chest
+PASS rejected plate grants no Healing Power paladins:crusader_armor_chest actual=10.299999993294477
+PASS tag covers real plate piece paladins:crusader_armor_legs
+PASS Priest armor slot rejected paladins:crusader_armor_legs
+PASS rejected plate preserved once paladins:crusader_armor_legs
+PASS rejected plate grants no Healing Power paladins:crusader_armor_legs actual=10.299999993294477
+PASS tag covers real plate piece paladins:crusader_armor_feet
+PASS Priest armor slot rejected paladins:crusader_armor_feet
+PASS rejected plate preserved once paladins:crusader_armor_feet
+PASS rejected plate grants no Healing Power paladins:crusader_armor_feet actual=10.299999993294477
+PASS tag covers real plate piece paladins:netherite_crusader_armor_head
+PASS Priest armor slot rejected paladins:netherite_crusader_armor_head
+PASS rejected plate preserved once paladins:netherite_crusader_armor_head
+PASS rejected plate grants no Healing Power paladins:netherite_crusader_armor_head actual=10.299999993294477
+PASS tag covers real plate piece paladins:netherite_crusader_armor_chest
+PASS Priest armor slot rejected paladins:netherite_crusader_armor_chest
+PASS rejected plate preserved once paladins:netherite_crusader_armor_chest
+PASS rejected plate grants no Healing Power paladins:netherite_crusader_armor_chest actual=10.299999993294477
+PASS tag covers real plate piece paladins:netherite_crusader_armor_legs
+PASS Priest armor slot rejected paladins:netherite_crusader_armor_legs
+PASS rejected plate preserved once paladins:netherite_crusader_armor_legs
+PASS rejected plate grants no Healing Power paladins:netherite_crusader_armor_legs actual=10.299999993294477
+PASS tag covers real plate piece paladins:netherite_crusader_armor_feet
+PASS Priest armor slot rejected paladins:netherite_crusader_armor_feet
+PASS rejected plate preserved once paladins:netherite_crusader_armor_feet
+PASS rejected plate grants no Healing Power paladins:netherite_crusader_armor_feet actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:justicar_armor_head
+PASS Priest armor slot rejected armory_rpgs:justicar_armor_head
+PASS rejected plate preserved once armory_rpgs:justicar_armor_head
+PASS rejected plate grants no Healing Power armory_rpgs:justicar_armor_head actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:justicar_armor_chest
+PASS Priest armor slot rejected armory_rpgs:justicar_armor_chest
+PASS rejected plate preserved once armory_rpgs:justicar_armor_chest
+PASS rejected plate grants no Healing Power armory_rpgs:justicar_armor_chest actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:justicar_armor_legs
+PASS Priest armor slot rejected armory_rpgs:justicar_armor_legs
+PASS rejected plate preserved once armory_rpgs:justicar_armor_legs
+PASS rejected plate grants no Healing Power armory_rpgs:justicar_armor_legs actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:justicar_armor_feet
+PASS Priest armor slot rejected armory_rpgs:justicar_armor_feet
+PASS rejected plate preserved once armory_rpgs:justicar_armor_feet
+PASS rejected plate grants no Healing Power armory_rpgs:justicar_armor_feet actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:lightbringer_armor_head
+PASS Priest armor slot rejected armory_rpgs:lightbringer_armor_head
+PASS rejected plate preserved once armory_rpgs:lightbringer_armor_head
+PASS rejected plate grants no Healing Power armory_rpgs:lightbringer_armor_head actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:lightbringer_armor_chest
+PASS Priest armor slot rejected armory_rpgs:lightbringer_armor_chest
+PASS rejected plate preserved once armory_rpgs:lightbringer_armor_chest
+PASS rejected plate grants no Healing Power armory_rpgs:lightbringer_armor_chest actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:lightbringer_armor_legs
+PASS Priest armor slot rejected armory_rpgs:lightbringer_armor_legs
+PASS rejected plate preserved once armory_rpgs:lightbringer_armor_legs
+PASS rejected plate grants no Healing Power armory_rpgs:lightbringer_armor_legs actual=10.299999993294477
+PASS tag covers real plate piece armory_rpgs:lightbringer_armor_feet
+PASS Priest armor slot rejected armory_rpgs:lightbringer_armor_feet
+PASS rejected plate preserved once armory_rpgs:lightbringer_armor_feet
+PASS rejected plate grants no Healing Power armory_rpgs:lightbringer_armor_feet actual=10.299999993294477
+PASS right-click equip rejected with failure response
+PASS denied equip preserves server held armor
+PASS Priest retains ordinary diamond armor
+PASS Priest robe fixture exists
+PASS Priest retains native robe
+PASS native equipment scan rejects plate insertion
+PASS full inventory still rejects all four plate slots
+PASS four displaced armor pieces stored without loss
+PASS full inventory preserves every stone stack
+PASS free slot recovers one displaced armor piece
+PASS all displaced plate recovered without dropping
+PASS action guard rejects worn forbidden plate
+PASS action guard clears plate before cast or attack
+PASS Paladin still equips its plate
+PASS fast class and armor switch clears stale plate power actual=10.299999993294477

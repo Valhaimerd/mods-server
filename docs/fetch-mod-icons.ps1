@@ -50,7 +50,6 @@ $approvedCurseForgeProjects = @{
     'Iron Wolf Armor' = '963404'
     'JEI Trades' = '1561282'
     'Just Enough Items' = '238222'
-    'Kingdom Cats Replacer' = '1629615'
     'Awesome Dungeon' = '530465'
     'Awesome Dungeon End Edition' = '537531'
     'Awesome Dungeon Ocean Edition' = '556490'
@@ -117,7 +116,6 @@ $approvedCurseForgeSlugs = @{
     'Better Nether' = 'betternether-neoforge'
     'Dungeons and Taverns' = 'dungeon-and-taverns'
     'Functional Sculptures' = 'functional-statues'
-    'Kingdom Cats Replacer' = 'cute-cats'
     'Mounts and Monsters' = 'mounts-monsters'
     'Shroomcraft' = 'new-shroomcraft'
     'The Graveyard' = 'the-graveyard-unofficial-port'
@@ -139,7 +137,6 @@ $approvedTitleExceptions = @{
     'Moog''s Temples Reimagined' = 'mtrmoogstemplesreimagined'
     'Moog''s Voyager Structures' = 'mvsmoogsvoyagerstructures'
     'Functional Sculptures' = 'functionalstatues'
-    'Kingdom Cats Replacer' = 'cutecats'
     'Mounts and Monsters' = 'mountsmonsters'
     'JEI Trades' = 'jeireitrades'
     'Market Board' = 'themarketboard'
@@ -214,6 +211,13 @@ foreach ($name in $names) {
         $row.LocalFile = $sourceRow.LocalFile
         $row.Status = 'Downloaded'
         $manifestRows.Add([pscustomobject]$row)
+        continue
+    }
+
+    if ($name -eq 'Enhanced Cats') {
+        $embedded = $previousRows[$name]
+        if (-not $embedded -or -not (Test-Path -LiteralPath (Join-Path $AssetDirectory $embedded.LocalFile))) { throw 'Restore the verified Enhanced Cats embedded icon and manifest row.' }
+        $manifestRows.Add($embedded)
         continue
     }
 

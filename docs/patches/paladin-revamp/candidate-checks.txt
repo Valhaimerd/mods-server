@@ -1,0 +1,77 @@
+PASS Protection cooldown28 actual=28.0 expected=28.0
+PASS Oath cooldown20 actual=20.0 expected=20.0
+PASS Improved Oath17 actual=17.0 expected=17.0
+PASS P20 native protection45% actual=0.45 expected=0.45
+PASS M40 mitigation5 actual=5.0 expected=5.0
+PASS native damage_taken modifier45% actual=55.0 expected=55.0
+PASS caster gains10%P actual=22.0 expected=22.0
+PASS recast excludes own P bonus actual=0.45 expected=0.45
+DEBUG hurt=true invul=false health=14.0 alive=true difficulty=NORMAL invulnerableTo=false loaded=true protections=[ResourceKey[minecraft:mob_effect / skill_tree_rpgs:cloak_of_shadows], ResourceKey[minecraft:mob_effect / skill_tree_rpgs:deflection]]
+PASS 20 incoming ->11 percentage ->6 flat mitigation actual=6.0 expected=6.0
+PASS Improved cleanses stun
+PASS reduction capped50% actual=0.5 expected=0.5
+PASS KR capped80% actual=0.8 expected=0.8
+PASS Improved10s actual=200.0 expected=200.0
+PASS control guard active
+PASS resolved tooltip80% cap
+PASS Merciful consumed on actual hit
+PASS recovery snapshots5%P actual=1.0 expected=1.0
+PASS refresh does not rearm recovery
+PASS Oath initial5absorption actual=5.0 expected=5.0
+PASS Oath armor7 actual=27.0 expected=27.0
+PASS refresh does not refill spent absorption actual=1.0 expected=1.0
+PASS stronger capacity grants only1newHP actual=2.0 expected=2.0
+PASS Decree M40 adds8damage actual=8.0 expected=8.0
+PASS dispel removes runtimearmor actual=20.0 expected=20.0
+PASS dispel caps remaining absorption actual=0.0 expected=0.0
+PASS shield Vanguard5%P actual=21.0 expected=21.0
+PASS Vanguard hit adds5%P actual=22.00000001490116 expected=22.0
+PASS Vanguard no oldarmor actual=20.0 expected=20.0
+PASS empty Guardian5%armor actual=21.0 expected=21.0
+PASS Guardian interval.25 actual=0.25 expected=0.25
+PASS unselected cannot escape stun
+PASS Break Restriction allows control escape
+PASS no roll charge staysblocked
+PASS cooling passive cannot escape
+PASS native roll trigger cleanses stun
+PASS undead1.25 coefficient actual=0.375 expected=0.375
+PASS undead leaves sharedresource unchanged actual=0.30000001192092896 expected=0.3
+PASS death removes protectionmodifier actual=100.0 expected=100.0
+PASS death clearscasterpower actual=20.0 expected=20.0
+PASS approved KR scaling M=0.0 actual=0.1 expected=0.1
+PASS approved KR scaling M=10.0 actual=0.2 expected=0.2
+PASS approved KR scaling M=70.0 actual=0.8 expected=0.8
+PASS approved KR scaling M=100.0 actual=0.8 expected=0.8
+PASS ordinary slowness does not forbid native rolling
+PASS controlled player detects solid support despite cleared grounded flag
+PASS truly airborne control escape preserves airborne restriction
+PASS Purge undead actualdamage upgrade=0 actual=20.0 expected=20.0
+PASS Purge stun duration upgrade=0 actual=5.0 expected=5.0
+PASS Purge undead actualdamage upgrade=1 actual=24.0 expected=24.0
+PASS Purge stun duration upgrade=1 actual=5.0 expected=5.0
+PASS Purge undead actualdamage upgrade=2 actual=32.0 expected=32.0
+PASS Purge stun duration upgrade=2 actual=10.0 expected=10.0
+PASS control guard blocks forced native stun
+PASS flat mitigation precedes absorption HP unchanged actual=20.0 expected=20.0
+PASS absorption spends6 after percent then flat actual=4.0 expected=4.0
+PASS Banner30 plus Protection45 retains strongest45 actual=55.0 expected=55.0
+PASS Banner removal recalculates overlap actual=55.0 expected=55.0
+PASS recovery waits one second actual=1.0 expected=1.0
+PASS recovery supplies exactlyfive1HP pulses actual=6.0 expected=6.0
+PASS recovery cannot exceed fivepulses actual=6.0 expected=6.0
+PASS native Sinful roll arms readiness
+PASS attacker hit consumes Sinful readiness
+PASS attacker receives15%mark
+PASS retaliation burns attacker
+PASS same-tick Oath extra blocked at hard0.5s interval actual=8.0 expected=8.0
+PASS first offensive hit includes Oath extra damage
+PASS native hammer launch accepts self fallback
+PASS one falling hammer spawned
+PASS falling hammer follows recipient
+PASS per-projectile snapshot stored
+PASS delayed hammer uses original P20 snapshot actual=5.0 expected=5.0
+PASS duplicate landing ignored actual=5.0 expected=5.0
+PASS resolved control details spell_engine:stun
+PASS resolved control details wizards:frozen
+PASS resolved control details rogues:bear_trap
+PASS five fire-vulnerability stacks resolve20%

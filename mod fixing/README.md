@@ -387,3 +387,27 @@ Installed local Minecraft26.2 ports of Ocean's Delight1.0.4, Large Meals1.0.1 an
 ## 28 October 2026 - Paladin doctrine and plate progression
 
 Installed same-filename Skill Tree, Paladins and Armory replacements. Actual Paladin class allocations reject healing staves/wands in either hand, with safe inventory return and a short oath warning; Priest use remains. Root/ordinary nodes grant +0.25 Healing Power. Plate per piece: Paladin0.75,Crusader1,NetheriteCrusader1.15,Justicar/Lightbringer1.25. Justicar retains its separate +2 set bonus. Native84checks, fresh/legacy armor29each and actual client49checks pass. [Source, exact hashes and evidence](../docs/patches/paladin-doctrine/README.md). Ignored originals: `retired packs/paladin-doctrine-20261028/`. No personal instance changes or push.
+
+## Priest plate doctrine and Paladin armor progression (2026-10-28)
+
+Priests cannot equip the20 Paladin, Crusader, Netherite Crusader, Justicar or Lightbringer plate pieces. A short doctrine warning explains rejected equipment; full inventories retain displaced items safely. The Priest root retains +3% Healing Power and states the restriction. Per-piece Healing Power is now1/1.25/1.5/1.75/1.75 respectively; Justicar keeps its separate +2 set bonus. Existing Paladin hand restrictions remain. Same-name final Skill Tree, Paladins and Armory JARs are installed in mods and fixed packs, with previous bytes in retired packs. Fresh and legacy-config server passes each passed207 checks; isolated client passed70. See [sources and evidence](../docs/patches/priest-plate-doctrine/README.md).
+
+## Class armor survivability (28 October2026)
+
+Applied the approved class differences to 33 sets/132 pieces, including 14 Armory sets. Full entry/advanced/netherite-or-legendary armor is11/15/16 for robes,12/16/17 for Rogue/Archer and13/17/18 for Warrior, with toughness0/0/4 and iron/diamond/netherite durability. Paladin plate and non-defense bonuses remain. Five same-name active/fixed JARs were installed, with prior bytes retained under retired packs/class-armor-survivability-20261028. Fresh/old-config server runs each passed 1626 checks; isolated client passed 462. See [sources, exact scope and limits](../docs/patches/class-armor-survivability/README.md).
+
+## Paladin tier-I ranged rework ?28 October2026
+
+Purge Heal and Blessed Strikes now follow the approved [design and implementation record](../docs/patches/paladin-tier-one/README.md). Native melee swings, including held attacks, release20-block golden waves. Justicar is1.5 Healing Power per piece plus its retained2 set bonus, totaling8. Paladin timers use haste; Banner/Consecration pulses scale without shortening duration. Existing IDs, doctrines and concurrent class-armor changes are preserved. Final same-name archives belong in active/fixed packs, with old inputs retained in ignored backups.
+
+## Vanguard and Guardian ?28 October2026
+
+The Paladin tier-I passive rework updates only the same-name Skill Tree JAR: capability-based shield equipment and empty-offhand bonuses, plus new4-stack effects. Existing passive IDs and tier-II mechanics remain. Old effect configs are overridden for the two replaced attribute lists. Native fresh/legacy passes each35 checks; client15 checks. See [source and evidence](../docs/patches/paladin-passives/README.md).
+
+## Paladin tier-II support and effect details ? 28 October 2026
+
+See [the current rework, exact values and rebuild/test evidence](../docs/patches/paladin-revamp/README.md). Divine Protection / Divine Oath replace the old tier-II mechanics; Vanguard/Guardian effects are flipped, control-breaking rolls are node/cooldown gated, and Priest/Paladin direct skill damage gains25% against undead. Same-name Spell Engine, Skill Tree, Paladins, Combat Roll, Effect Insights, Rogues and Wizards repacks must be kept together. Received custom effects synchronize their caster snapshots; native numeric stack rows remain. Official supplied Root/Stun/Frozen artwork replaces control status icons. Existing independent changes remain preserved.
+
+## Paladin tier III and carried visuals ?29 October2026
+
+The current same-name Paladins, Skill Tree and Spell Engine repacks implement carried Battle Banner, staged Purgatory, player-only Ardent Defender and low-health Reinforced, with Paladin visual/description retouches. The three active/fixed archives match isolated native/server/client test hashes. Cute Cats / Kingdom Cats Replacer is retired in favor of the supplied Enhanced Cats26.2 JAR. See [gameplay, build and exact evidence](../docs/patches/paladin-tier-three/README.md), [cat replacement](../docs/patches/cat-replacement/README.md), and `Paladin skills - raw attributes and nodes.md`. Other class visual passes remain deferred; personal Minecraft and the desktop server were untouched.

@@ -1,0 +1,33 @@
+PASS real client equipped melee weapon 1 minecraft:iron_sword
+PASS five prepared charges synchronized
+PASS client aiming toward distant flying target
+SCREENSHOT five prepared charges and glint
+PASS native server swing wave inherits upward pitch
+SCREENSHOT traveling golden wave 1
+PASS native server swing wave inherits upward pitch
+SCREENSHOT traveling golden wave 2
+PASS native server swing wave inherits upward pitch
+SCREENSHOT traveling golden wave 3
+PASS native server swing wave inherits upward pitch
+SCREENSHOT traveling golden wave 4
+PASS native server swing wave inherits upward pitch
+SCREENSHOT traveling golden wave 5
+PASS held left-click released exactly five server waves [86195, 86219, 86232, 86245, 86258]
+PASS all five waves synchronized to client 5
+PASS waves follow melee intervals, delta=24
+PASS waves follow melee intervals, delta=13
+PASS waves follow melee intervals, delta=13
+PASS waves follow melee intervals, delta=13
+PASS holding cannot retain consumed charges actual=0.0 expected=0.0
+PASS actual distant flying enemy damaged by aimed waves, hp=946.00006
+PASS spent charge effect/glint removed on client
+PASS native spell renamed Purge Heal
+PASS native node renamed Absolution
+PASS description renders normal percent signs
+PASS native skill tree opens with new nodes
+SCREENSHOT Paladin revised skill tree
+PASS Justicar grants exactly8 total including native set bonus actual=28.25 expected=28.25
+SCREENSHOT Justicar eight Healing Power set
+PASS Priest doctrine still rejects all equipped Justicar pieces
+PASS Priest excludes displaced plate and set bonuses actual=20.599999986588955 expected=20.6
+SCREENSHOT Priest doctrine retained

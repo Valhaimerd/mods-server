@@ -1,0 +1,71 @@
+{
+  "same_name_archives": [
+    {
+      "jar": "paladins-neoforge-3.1.2+26.2.jar",
+      "before_sha256": "4268e2e3076333001aa0445d026078c9acfc5e090c26d05909dbe64922656274",
+      "sha256": "414c443b3cd0269719d9e687416a665a5d396afa537601737cc8d931ed0098c0",
+      "changed": [
+        "assets/paladins/lang/en_us.json",
+        "data/paladins/spell/battle_banner.json",
+        "data/paladins/spell/immolation.json",
+        "net/paladins/effect/PaladinEffects.class"
+      ],
+      "added": [
+        "data/paladins/spell/banner_visual.json",
+        "data/paladins/spell/purgatory_burst.json",
+        "data/paladins/spell/purgatory_pulse.json"
+      ]
+    },
+    {
+      "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "before_sha256": "79a93d7c7ce632017170a943c759954717791528a86265d2b40e927379dd59ef",
+      "sha256": "8b32409474b35107d16f7257543f41ecba43cdf94e75b05fa7a65b3fd7c04d39",
+      "changed": [
+        "assets/skill_tree_rpgs/lang/en_us.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_passive_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_3_passive_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_modifier_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_modifier_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_root.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_root.json"
+      ],
+      "added": [
+        "assets/skill_tree_rpgs/textures/mob_effect/paladin_sanctity.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/purgatory.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/purgatory_ward.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/reinforced.png"
+      ]
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before_sha256": "dafb2b475b6197300ecce47b2c763a9d957c1b87dcc9696f8e345fe2f4ee2bab",
+      "sha256": "c2762f2a0bb478d5abceb347d6e6577fd407ae250d0f100ae9900aade03b5ecb",
+      "changed": [
+        "net/spell_engine/client/gui/SpellTooltip.class",
+        "net/spell_engine/mixin/warrior/WarriorChannelMixin.class",
+        "net/spell_engine/internals/PriestRules.class",
+        "net/spell_engine/internals/EffectDetails.class",
+        "net/spell_engine/internals/PaladinRevamp.class"
+      ],
+      "added": [
+        "net/spell_engine/client/gui/PaladinTierThreeTooltip.class",
+        "net/spell_engine/internals/PaladinTierThreeDetails.class",
+        "net/spell_engine/internals/PaladinUltimates$Banner.class",
+        "net/spell_engine/internals/PaladinUltimates$Channel.class",
+        "net/spell_engine/internals/PaladinUltimates$End.class",
+        "net/spell_engine/internals/PaladinUltimates.class",
+        "net/spell_engine/internals/PaladinVisuals.class"
+      ]
+    }
+  ],
+  "retired": {
+    "jar": "cutecats-neoforge-26.2-1.0.jar",
+    "sha256": "b18b31a1f6d06dba251c540f5f181b7e3532b5fa2419ef52dea02182daea1adb",
+    "local_backup": "mod fixing\\retired packs\\paladin-tier-three-2026-10-29\\cutecats-neoforge-26.2-1.0.jar"
+  },
+  "enhanced_cats_sha256": "9d14cf4397733fcce03f524f66d74ffeb1a0c3bbd0cea3095a2e59fd38ef125f",
+  "main_count": 307,
+  "client_count": 23
+}

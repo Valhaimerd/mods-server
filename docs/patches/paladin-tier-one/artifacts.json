@@ -1,0 +1,85 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "0bf47a56d7ad1742e65fd155722bf7b9924c2b0ce28919b213d3fa677a0e55f4",
+    "sha256": "ac8926a2ebdf9150fac3217afd57ade43788cc2075d419e05a1b41d33269f82c",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/battle_banner.json",
+      "data/paladins/spell/blessed_strikes.json",
+      "data/paladins/spell/divine_protection.json",
+      "data/paladins/spell/flash_heal.json",
+      "data/paladins/spell/immolation.json",
+      "data/paladins/spell/judgement.json"
+    ],
+    "added": [
+      "assets/paladins/models/spell_projectile/blessed_wave.json",
+      "data/paladins/spell/blessed_wave.json",
+      "data/paladins/spell/blessed_wave_wrath.json",
+      "data/paladins/spell/paladin_restore.json"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "b88ecf758ede65c4d73c9e45d496b8a3095895ddc0cce7ccc82534f1d5a1209f",
+    "sha256": "6d73a9e9d21bb197d2e638b936060127e31578b805a79707d76d1c9cc6f3ee04",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_2_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_1_root.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_root.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "bda715ed93379e350f2ec689f569b16f763650dd145e4ce9f79e0aee55d57a3c",
+    "sha256": "97ff8fa593e26a26bdedf89c36cf336cf1888d2046c424772ce414292fef4e22",
+    "changed": [
+      "net/spell_engine/entity/SpellCloud.class",
+      "net/spell_engine/internals/PriestRules.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/PaladinTierOne.class"
+    ]
+  },
+  {
+    "jar": "armory-neoforge-1.5.2+26.2.jar",
+    "before_sha256": "51f16e3cd4acd518499d9ae145d13bc55bffca40819893ce7f6cf18f5083bbec",
+    "sha256": "db9473f93d19cb36f89425892751c5df6999fdffa96c4e0cf21a54c934d2e32f",
+    "changed": [
+      "net/armory_rpgs/item/HealingArmorBalance.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "bettercombat-neoforge-3.2.2+26.2.jar",
+    "before_sha256": "a8870c12e50c33735421e1c88df7b3a74e60fae9a8b9be477c11591e9fec3315",
+    "sha256": "4ea76cc1969f03a9427f8af8cb8a06e897c8481ae4f4c1dae2f5560ac975e497",
+    "changed": [
+      "net/bettercombat/network/ServerNetwork.class"
+    ],
+    "added": []
+  }
+]

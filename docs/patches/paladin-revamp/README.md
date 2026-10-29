@@ -1,3 +1,5 @@
+Current Paladin follow-up values and archive identities supersede the affected earlier records: [Purgatory, Oath and worn Banner](../paladin-followup/README.md). Earlier tests/hashes below describe their original build.
+
 # Paladin support rework and received-effect details
 
 Current tier-III behavior and fixed Banner/Purgatory timing are documented in [the later Paladin tier-III update](../paladin-tier-three/README.md). Earlier build/test hashes below remain historical evidence.

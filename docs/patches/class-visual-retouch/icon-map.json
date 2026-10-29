@@ -1,0 +1,17 @@
+[
+  {
+    "effect": "rogues:improved_stealth",
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "source": "assets/rogues/textures/spell/vanish.png"
+  },
+  {
+    "effect": "rogues:tracking_disruption",
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "source": "assets/rogues/textures/spell/shadow_step.png"
+  },
+  {
+    "effect": "skill_tree_rpgs:cheat_death_evasion",
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "source": "assets/skill_tree_rpgs/textures/mob_effect/cheat_death.png"
+  }
+]

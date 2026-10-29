@@ -411,3 +411,11 @@ See [the current rework, exact values and rebuild/test evidence](../docs/patches
 ## Paladin tier III and carried visuals ?29 October2026
 
 The current same-name Paladins, Skill Tree and Spell Engine repacks implement carried Battle Banner, staged Purgatory, player-only Ardent Defender and low-health Reinforced, with Paladin visual/description retouches. The three active/fixed archives match isolated native/server/client test hashes. Cute Cats / Kingdom Cats Replacer is retired in favor of the supplied Enhanced Cats26.2 JAR. See [gameplay, build and exact evidence](../docs/patches/paladin-tier-three/README.md), [cat replacement](../docs/patches/cat-replacement/README.md), and `Paladin skills - raw attributes and nodes.md`. Other class visual passes remain deferred; personal Minecraft and the desktop server were untouched.
+
+## Remaining class visuals and icons
+
+Six same-name RPG repacks are installed in `mods/` and `1 fixed packs/`; rollback copies are in `retired packs/class-visual-retouch-2026-10-29`. Three status sprites are repaired,95 presentation resources retouched, and existing native models/timings retained. See `docs/patches/class-visual-retouch/README.md` for hashes, native229-check fresh/stale fixtures,50-cast client coverage and remaining multiplayer/lifecycle limitations.
+
+## Paladin follow-up
+
+Current Paladin/Skill Tree/Spell Engine same-name repacks incorporate large body-attached Banner rendering, 6/8 range rows, 1s Banner healing, 70%/100% M Oath landing, and Purgatory control protection after10s with shield-first true damage. Sources/evidence: `docs/patches/paladin-followup/`. Rollback copies: `retired packs/paladin-followup-2026-10-29`. Early-release hotbar lock remains unconfirmed by reproduction; no speculative global input reset was shipped.

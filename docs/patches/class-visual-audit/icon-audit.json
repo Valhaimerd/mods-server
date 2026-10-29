@@ -1,0 +1,2161 @@
+{
+  "date": "2026-10-29",
+  "scope": "Registered RPG class/control effects, including Paladin cross-class regression baseline; conventional sprite resolution and active archive assets. No client rendering claim.",
+  "registered_effects": 109,
+  "missing_count": 3,
+  "blank_count": 0,
+  "missing_names": [],
+  "atlas_overrides": [],
+  "effects": [
+    {
+      "id": "rogues:slice_and_dice",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/slice_and_dice.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "132b096e8111319f8ef806f81719c2f6f805dc40d4c2b22e6d45bdccf7ef11d4"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "rogues:shock",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/shock.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "516c5b4c09db70d4fb145ea7695bc52d049bd490ec71bb5668302dbdaf2fe1f2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "rogues:shadow_step",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/shadow_step.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "2c5e0ca5372088386eb96a254a3c62fbbdc05523467d663501278e76fd428481"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "rogues:stealth",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/stealth.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "5e6e84af9bd70f8430df647907c6b9b4b7c0e5ea9cfe6c94dfd9fd04fb19670b"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "rogues:stealth_speed",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/stealth_speed.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "5e6e84af9bd70f8430df647907c6b9b4b7c0e5ea9cfe6c94dfd9fd04fb19670b"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "rogues:shatter",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/shatter.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "3d7bedda29afd4cd42911df91f5e50c8014ddfb25d6ba289da985c0d946f7be8"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "rogues:demoralize",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/demoralize.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "59ebee6fb8debe42be297a6470a8f24b53a16eac6ddab5f36e9fafca1c326e32"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 7
+    },
+    {
+      "id": "rogues:bear_trap",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/bear_trap.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "2c77db49603e60352ade1f9779ddb8998a1ffd87fc4470afa5124bd7d072e407"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "rogues:net_trap",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/net_trap.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "2c77db49603e60352ade1f9779ddb8998a1ffd87fc4470afa5124bd7d072e407"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 3
+    },
+    {
+      "id": "rogues:charge",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/charge.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "7e1ac1a00894fcf478abb7e59c3aed82f64b241af94bc3019e7259d2961df3f9"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "rogues:last_stand",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/last_stand.png",
+      "providers": [
+        {
+          "jar": "rogues-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "8223ebfc62dfe001decb22a1b39737046bb024f00a2d0d57fe592ffc44a9fd28"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "rogues:improved_stealth",
+      "category": "BENEFICIAL",
+      "sprite": "assets/rogues/textures/mob_effect/improved_stealth.png",
+      "providers": [],
+      "missing_file": true,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "rogues:tracking_disruption",
+      "category": "HARMFUL",
+      "sprite": "assets/rogues/textures/mob_effect/tracking_disruption.png",
+      "providers": [],
+      "missing_file": true,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "paladins:divine_protection",
+      "category": "BENEFICIAL",
+      "sprite": "assets/paladins/textures/mob_effect/divine_protection.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "1246c3b09e0f175e92327cf58120701a4411ea4ab414d31be43ebc78c410f39f"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "paladins:battle_banner",
+      "category": "BENEFICIAL",
+      "sprite": "assets/paladins/textures/mob_effect/battle_banner.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "b1b5540bf0e9ff8c7189ef1c5345ae2c2de676427d7f1d4eb84e719058f3ac2a"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "paladins:judgement",
+      "category": "HARMFUL",
+      "sprite": "assets/paladins/textures/mob_effect/judgement.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "516c5b4c09db70d4fb145ea7695bc52d049bd490ec71bb5668302dbdaf2fe1f2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "paladins:blessed_strikes",
+      "category": "BENEFICIAL",
+      "sprite": "assets/paladins/textures/mob_effect/blessed_strikes.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "dec741c780feeafb73f69bc9d46bde77424436dc39e2eca630fd72d778c43cdb"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "paladins:levitate",
+      "category": "BENEFICIAL",
+      "sprite": "assets/paladins/textures/mob_effect/levitate.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "9e3a52d38622fbb09c81cbb52f8803c6987eb4e23a05e177f4048c8ae6257f26"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "paladins:priest_absorption",
+      "category": "BENEFICIAL",
+      "sprite": "assets/paladins/textures/mob_effect/priest_absorption.png",
+      "providers": [
+        {
+          "jar": "paladins-neoforge-3.1.2+26.2.jar",
+          "size": [
+            18,
+            18
+          ],
+          "nonempty": true,
+          "sha256": "6d4f0cf0e3028cff76a209f47039495a301ae442d92ec75190e50f2629dd2115"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:divine_strength",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/divine_strength.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "554cf582547bfcd846ee58dbf483d2cdb82b4c50bd923a2e169d74ae203ef73b"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:recklessness",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/recklessness.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "2081a0b8b72cc61c1202f4cdf59175631fc1c97f43b6d7588006578f02cb7707"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:fleet_footed",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/fleet_footed.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "79006fe7ca9b61ad5dc64629a01d0d463b4df2278d9b914c7f48685fbc9470ea"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:arcane_slowness",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arcane_slowness.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "7a8e9a21a0d55fe920f99e2348adffbcc14c069c2a3004520db9bf028dc02e79"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:fire_vulnerability",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/fire_vulnerability.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e5f0d1464f83d6b0c0abe3eff67b1ccba0ab6647fa0d5443293a56e8ce48e4b2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:frost_vulnerability",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/frost_vulnerability.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "af10bb86850b4c4edc28d92bf67aff50185c921c7e7174ba657ffce7d1642c09"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:healing_focus",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/healing_focus.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:incanter_cadence",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/incanter_cadence.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "d022835329566951708e58cb6b9ee265e0eb34f0a0b960a5f41183b0857e2c76"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:redoubt",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/redoubt.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f8a06ff9543f10153a3ef98eb5e2bd3a536fc1b060456dcbd0c17801811ef302"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:killing_spree",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/killing_spree.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "6d54ffe67b89384fdc22c0b42e0e057f74472b5514038179ef6d0a5fba01089c"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:fracture",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/fracture.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e32fde4e7fdefb4f092e0e04a9bec2342a9b1dcd73a7a496e04071932022f839"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:rhythm",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/rhythm.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "ba5f004785855d5570b4f3a645a201d94ae28fed9522b00b644be29bbf7d79d9"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:pursuit_of_justice",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/pursuit_of_justice.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "4d82ad41a435f83a417c1935b9abf1768a9fb76242bc126e277aa8a4346401af"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:battle_shout",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/battle_shout.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "3f80348e5d307f3cdd71510dede39c4a9de29971fcaa89d5b0f9da4432acdf41"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 7
+    },
+    {
+      "id": "skill_tree_rpgs:natures_grasp",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/natures_grasp.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "2c77db49603e60352ade1f9779ddb8998a1ffd87fc4470afa5124bd7d072e407"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:arcane_exposure",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arcane_exposure.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "b466fde2dc43dc6b5833d5ec407e562a8481e09e7c078f1c99d441d75df8b447"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:arcane_speed",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arcane_speed.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "19c3213753cb2b776aa226fb781b67dbc3c8c72420576086e5ca219ccfedb5f7"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:frost_shield_speed",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/frost_shield_speed.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "6430125ab73c9fa77ac10132dbae95945260f0398ed5774615cc55528cff387f"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:concussion_blow",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/concussion_blow.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "259db9b0c47ce8587ab3336a3b3baffb0ef5bdb0024d474e2f2a78efad69ef55"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:cloak_of_shadows",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/cloak_of_shadows.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e2da984869d867faa9a67ef41be2017becd4ce0645984206f76b43d4bfe81b9e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:ambush",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/ambush.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "d51848e40c6777e8bcec5999ba19bf20b592f6b223fced40f2618c74f41d130a"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:presence_of_mind",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/presence_of_mind.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "27ad5a051f42fe4a90788b73e88257ee5c6351aa2fd6b57f48d9058118990e36"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:blizzard_slow",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/blizzard_slow.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "d81a3487e30e535355f21b95d862a2a11aef158270b8d9438ce13186b8e61586"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:banner_protection",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/banner_protection.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "dd5bb965e0ea707a3f9a8c53efc14a2d74ac160ede0edd7c4aeee294eda9e8f2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:phase_shift",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/phase_shift.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "9c43ebc935f70eadfd79b0bd6b83bd8241594c111dcd616f3ddcc3d75da0932a"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:blazing_speed",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/blazing_speed.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "0de0b0166025c0d2e0a073aa20535c3cba78bdefd76176387aef6bcd6feafb04"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:arctic_reflex",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arctic_reflex.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "1759d60b31824e2fe81edfe54ae1add0f101741b5c1dacb9bd5d69927804d56b"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:arcane_ward",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arcane_ward.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "fd7a912f71435fdd70817051a7c1861d238bd7f8040fc3422ced997d7dd11414"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:fire_ward",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/fire_ward.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "a82a5a14968163e254ae78a41825079b33140b34e9af917da97769ffac1ffb62"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:frost_ward",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/frost_ward.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "84a54bea1e2645026ef46611c3b43d68fe00a64fd0674223f7895d204599a8b4"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:divine_favor",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/divine_favor.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "503ea908493822c9664640e772bf0c940058fe44e8b758eef21d293a62b5f8ba"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:pain_suppression",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/pain_suppression.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "34a55365137588d5066fce7c450352be4f476bcb396d97ffb7d7d12eca2b8aa7"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:serenity",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/serenity.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:hysteria",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/hysteria.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "d022835329566951708e58cb6b9ee265e0eb34f0a0b960a5f41183b0857e2c76"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 3
+    },
+    {
+      "id": "skill_tree_rpgs:chastise",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/chastise.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f0fb6730fa0d5cdc1ff43292b256c892c44a3654b00736e963f7f8f26e7bd774"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:celestial_orb",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/celestial_orb.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "60c7b7cbf627a1e9a4dd901f41ee42e7041fa0af28a45750deb9952c01618de4"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:vengeance",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/vengeance.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e54a10c0bdd27f2cc056f9600aa2cea9700dddf77cdaa490aa6d76b15e7ba83e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:ardent_defender",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/ardent_defender.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "57609e52ea268edfd3dd202e5d9c0afb1050ca514fa48fd3c6c7bae3570d41c1"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:vitality",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/vitality.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "675ee0e6b88c9dd01431453076b07fe3ad2272497af88609149b4712802c769d"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:enrage",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/enrage.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "d818096e22c8768fd68867a5f9207c8df1f34cec55a641736014a8b4e2c1b1d2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:opportunist",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/opportunist.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "7009dcb221d8a9d10f17322e23a7ed31e611e41f752a745adc74ddfcfdb40384"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:smoke_screen",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/smoke_screen.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "0a17e87d240075291822c77cecc0749263750cb6a5dd6d97f47ad1094addbfcc"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:side_step",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/side_step.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "0a17e87d240075291822c77cecc0749263750cb6a5dd6d97f47ad1094addbfcc"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:cheat_death",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/cheat_death.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "bd1e780d1fbd9459f04440f336a361edba25e956b219672b0e1143843c9e0573"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:tactical_maneuver",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/tactical_maneuver.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "4188b6ed488d999fdbe1e47881f3aad8ae062a27d86c6016a9a182a1c6fb93e9"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:supercharge",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/supercharge.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f177e344aa706c5f1c9abd2ce88a7cdb1bab8d5116f528cdbd3e41eb07c7f5fc"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:juggernaut",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/juggernaut.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "8223ebfc62dfe001decb22a1b39737046bb024f00a2d0d57fe592ffc44a9fd28"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:revenge",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/revenge.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            18,
+            18
+          ],
+          "nonempty": true,
+          "sha256": "75cd87fa37c204fdbcea40aae10f2206a0ccc93abc1cece1e0a063640fca14ea"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:deflection",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/deflection.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c78dbc106cf084ec456cad91f6581907b35c57d95d9121a4e14d1dce02033b37"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:flurry_trance",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/flurry_trance.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e873f387c5d4aa1ff97e6a20cec6f907786cd0dfeb0ab6346573d05217e40156"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:shatter",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/shatter.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "75fdcb6e2015ab6ca8a9615f9c393ea5547f5e3e7b1422fcbce7cc76591c1e01"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:punishment",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/punishment.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "680c5ab0aab873b5b488b059ad92cd340ae22b694d8d2f5a0b171d62b7e6ad25"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:purgatory",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/purgatory.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "57609e52ea268edfd3dd202e5d9c0afb1050ca514fa48fd3c6c7bae3570d41c1"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:paladin_sanctity",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/paladin_sanctity.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e2da984869d867faa9a67ef41be2017becd4ce0645984206f76b43d4bfe81b9e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:purgatory_ward",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/purgatory_ward.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "fd7a912f71435fdd70817051a7c1861d238bd7f8040fc3422ced997d7dd11414"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:reinforced",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/reinforced.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f8a06ff9543f10153a3ef98eb5e2bd3a536fc1b060456dcbd0c17801811ef302"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:divine_oath",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/divine_oath.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e54a10c0bdd27f2cc056f9600aa2cea9700dddf77cdaa490aa6d76b15e7ba83e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:merciful_recovery",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/merciful_recovery.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:faith_knockback",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/faith_knockback.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f8a06ff9543f10153a3ef98eb5e2bd3a536fc1b060456dcbd0c17801811ef302"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:protection_power",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/protection_power.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:paladin_control_guard",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/paladin_control_guard.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "f8a06ff9543f10153a3ef98eb5e2bd3a536fc1b060456dcbd0c17801811ef302"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:sinful_retaliation_ready",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/sinful_retaliation_ready.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e54a10c0bdd27f2cc056f9600aa2cea9700dddf77cdaa490aa6d76b15e7ba83e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:sinful_mark",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/sinful_mark.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e54a10c0bdd27f2cc056f9600aa2cea9700dddf77cdaa490aa6d76b15e7ba83e"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:lightwell_vitality",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/lightwell_vitality.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:priest_fade",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/priest_fade.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "816f09fb1a497db0590a4d088e4763248568283412f38aacf5264bac2fc2846a"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:priest_penance_shield",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/priest_penance_shield.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            18,
+            18
+          ],
+          "nonempty": true,
+          "sha256": "6d4f0cf0e3028cff76a209f47039495a301ae442d92ec75190e50f2629dd2115"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:priest_serenity_shield",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/priest_serenity_shield.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c8125c35e2b4ed81f1e950e2f6cd5c124a575b18cba72716bb41f60ae03e5307"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:ascension_power",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/ascension_power.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "9e3a52d38622fbb09c81cbb52f8803c6987eb4e23a05e177f4048c8ae6257f26"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 7
+    },
+    {
+      "id": "skill_tree_rpgs:warrior_freedom",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/warrior_freedom.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "7e1ac1a00894fcf478abb7e59c3aed82f64b241af94bc3019e7259d2961df3f9"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:warrior_endurance",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/warrior_endurance.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "7e1ac1a00894fcf478abb7e59c3aed82f64b241af94bc3019e7259d2961df3f9"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:warrior_momentum_ready",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/warrior_momentum_ready.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e04dc8f055a1db2ce14b8c4ca27c2867ac082ec38e1af4bf6c6c96e4d442b665"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:warrior_momentum",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/warrior_momentum.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e04dc8f055a1db2ce14b8c4ca27c2867ac082ec38e1af4bf6c6c96e4d442b665"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "skill_tree_rpgs:berserker",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/berserker.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "2081a0b8b72cc61c1202f4cdf59175631fc1c97f43b6d7588006578f02cb7707"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 3
+    },
+    {
+      "id": "skill_tree_rpgs:berserker_crit",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/berserker_crit.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "2081a0b8b72cc61c1202f4cdf59175631fc1c97f43b6d7588006578f02cb7707"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:sentinel",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/sentinel.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "8223ebfc62dfe001decb22a1b39737046bb024f00a2d0d57fe592ffc44a9fd28"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:tenacity_ward",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/tenacity_ward.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c9e1f4f184a157950ea4736c9d9404350f90c5d823c53dd304b0f0966d2155e3"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:cheat_death_evasion",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/cheat_death_evasion.png",
+      "providers": [],
+      "missing_file": true,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:slice_evasion",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/slice_evasion.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "132b096e8111319f8ef806f81719c2f6f805dc40d4c2b22e6d45bdccf7ef11d4"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "skill_tree_rpgs:prepared_counter_ready",
+      "category": "BENEFICIAL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/prepared_counter_ready.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "c837f8701bcd556ea09031df7b9b10c95f661d097e4cfbe8058404eae202849b"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "skill_tree_rpgs:arcane_vulnerability",
+      "category": "HARMFUL",
+      "sprite": "assets/skill_tree_rpgs/textures/mob_effect/arcane_vulnerability.png",
+      "providers": [
+        {
+          "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "b466fde2dc43dc6b5833d5ec407e562a8481e09e7c078f1c99d441d75df8b447"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "archers:hunters_mark_stash",
+      "category": "BENEFICIAL",
+      "sprite": "assets/archers/textures/mob_effect/hunters_mark_stash.png",
+      "providers": [
+        {
+          "jar": "archers-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "9f0329f1de9c787caae37c8c1f82c60afb34200be1f3f9fce86426eee6f07e42"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    },
+    {
+      "id": "archers:hunters_mark",
+      "category": "HARMFUL",
+      "sprite": "assets/archers/textures/mob_effect/hunters_mark.png",
+      "providers": [
+        {
+          "jar": "archers-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "a5e991b1df3d39479e3ac97b4ba902c3eb4ca76385184a300f78612ae7fd5645"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "archers:entangling_roots",
+      "category": "HARMFUL",
+      "sprite": "assets/archers/textures/mob_effect/entangling_roots.png",
+      "providers": [
+        {
+          "jar": "archers-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "288ddd4e52c4c87e63da76e074e6c8bae2e2b056ebf994bdf004c766177565ff"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "wizards:frozen",
+      "category": "HARMFUL",
+      "sprite": "assets/wizards/textures/mob_effect/frozen.png",
+      "providers": [
+        {
+          "jar": "wizards-neoforge-3.1.2+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "2c51640d14d8d8e02305d69b8fa3c4c6c42772f0f2999ecfa7576ab5d4869761"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 2
+    },
+    {
+      "id": "wizards:frost_shield",
+      "category": "BENEFICIAL",
+      "sprite": "assets/wizards/textures/mob_effect/frost_shield.png",
+      "providers": [
+        {
+          "jar": "wizards-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "5bf13c32c005d880ad6d82433b652b178ec0c2e69e57a1bc2bdec71bfb9b01d6"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "wizards:frost_slowness",
+      "category": "HARMFUL",
+      "sprite": "assets/wizards/textures/mob_effect/frost_slowness.png",
+      "providers": [
+        {
+          "jar": "wizards-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "e40c9f7c387dc5f844ad46f1a29be00c5cce7d76ed81119edbd2d779c6c88c69"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "wizards:arcane_evocation",
+      "category": "BENEFICIAL",
+      "sprite": "assets/wizards/textures/mob_effect/arcane_evocation.png",
+      "providers": [
+        {
+          "jar": "wizards-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "42107a06886efa9588ff274f472436f6b18d5538bbd8ac5ebedb276c8422f271"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 3
+    },
+    {
+      "id": "wizards:arcane_charge",
+      "category": "BENEFICIAL",
+      "sprite": "assets/wizards/textures/mob_effect/arcane_charge.png",
+      "providers": [
+        {
+          "jar": "wizards-neoforge-3.1.2+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "5a5f0bd205272efa356ab3f92c5aa8151573c3330d3eada2be149aeb8800b5a8"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "spell_engine:stun",
+      "category": "HARMFUL",
+      "sprite": "assets/spell_engine/textures/mob_effect/stun.png",
+      "providers": [
+        {
+          "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+          "size": [
+            64,
+            64
+          ],
+          "nonempty": true,
+          "sha256": "516c5b4c09db70d4fb145ea7695bc52d049bd490ec71bb5668302dbdaf2fe1f2"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 1
+    },
+    {
+      "id": "spell_engine:bleed",
+      "category": "HARMFUL",
+      "sprite": "assets/spell_engine/textures/mob_effect/bleed.png",
+      "providers": [
+        {
+          "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+          "size": [
+            16,
+            16
+          ],
+          "nonempty": true,
+          "sha256": "327d1faf09374bcfdd342333a40022317cb191aa99d6e8e6df87497a96b0475d"
+        }
+      ],
+      "missing_file": false,
+      "blank_file": false,
+      "has_name": true,
+      "native_attribute_rows": 0
+    }
+  ]
+}

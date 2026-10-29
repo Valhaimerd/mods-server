@@ -1,0 +1,237 @@
+PASS Enhanced Cats dedicatedserver loaded
+PASS Cute Cats absent dedicatedserver
+PASS Protection cooldown28 actual=28.0 expected=28.0
+PASS Oath cooldown20 actual=20.0 expected=20.0
+PASS Improved Oath17 actual=17.0 expected=17.0
+PASS P20 native protection45% actual=0.45 expected=0.45
+PASS M40 mitigation5 actual=5.0 expected=5.0
+PASS native damage_taken modifier45% actual=55.0 expected=55.0
+PASS caster gains10%P actual=22.0 expected=22.0
+PASS recast excludes own P bonus actual=0.45 expected=0.45
+DEBUG hurt=true invul=false health=14.0 alive=true difficulty=NORMAL invulnerableTo=false loaded=true protections=[ResourceKey[minecraft:mob_effect / skill_tree_rpgs:deflection], ResourceKey[minecraft:mob_effect / skill_tree_rpgs:cloak_of_shadows]]
+PASS 20 incoming ->11 percentage ->6 flat mitigation actual=6.0 expected=6.0
+PASS Improved cleanses stun
+PASS reduction capped50% actual=0.5 expected=0.5
+PASS KR capped80% actual=0.8 expected=0.8
+PASS Improved10s actual=200.0 expected=200.0
+PASS control guard active
+PASS resolved tooltip80% cap
+PASS Merciful consumed on actual hit
+PASS recovery snapshots5%P actual=1.0 expected=1.0
+PASS refresh does not rearm recovery
+PASS Oath initial5absorption actual=5.0 expected=5.0
+PASS Oath armor7 actual=27.0 expected=27.0
+PASS refresh does not refill spent absorption actual=1.0 expected=1.0
+PASS stronger capacity grants only1newHP actual=2.0 expected=2.0
+PASS Decree M40 adds8damage actual=8.0 expected=8.0
+PASS dispel removes runtimearmor actual=20.0 expected=20.0
+PASS dispel caps remaining absorption actual=0.0 expected=0.0
+PASS shield Vanguard5%P actual=21.0 expected=21.0
+PASS Vanguard hit adds5%P actual=22.00000001490116 expected=22.0
+PASS Vanguard no oldarmor actual=20.0 expected=20.0
+PASS empty Guardian5%armor actual=21.0 expected=21.0
+PASS Guardian interval.25 actual=0.25 expected=0.25
+PASS unselected cannot escape stun
+PASS Break Restriction allows control escape
+PASS no roll charge staysblocked
+PASS cooling passive cannot escape
+PASS native roll trigger cleanses stun
+PASS undead1.25 coefficient actual=0.375 expected=0.375
+PASS undead leaves sharedresource unchanged actual=0.30000001192092896 expected=0.3
+PASS death removes protectionmodifier actual=100.0 expected=100.0
+PASS death clearscasterpower actual=20.0 expected=20.0
+PASS approved KR scaling M=0.0 actual=0.1 expected=0.1
+PASS approved KR scaling M=10.0 actual=0.2 expected=0.2
+PASS approved KR scaling M=70.0 actual=0.8 expected=0.8
+PASS approved KR scaling M=100.0 actual=0.8 expected=0.8
+PASS ordinary slowness does not forbid native rolling
+PASS controlled player detects solid support despite cleared grounded flag
+PASS truly airborne control escape preserves airborne restriction
+PASS Purge undead actualdamage upgrade=0 actual=20.0 expected=20.0
+PASS Purge stun duration upgrade=0 actual=5.0 expected=5.0
+PASS Purge undead actualdamage upgrade=1 actual=24.0 expected=24.0
+PASS Purge stun duration upgrade=1 actual=5.0 expected=5.0
+PASS Purge undead actualdamage upgrade=2 actual=32.0 expected=32.0
+PASS Purge stun duration upgrade=2 actual=10.0 expected=10.0
+PASS control guard blocks forced native stun
+PASS flat mitigation precedes absorption HP unchanged actual=20.0 expected=20.0
+PASS absorption spends6 after percent then flat actual=4.0 expected=4.0
+PASS Banner30 plus Protection45 retains strongest45 actual=55.0 expected=55.0
+PASS Banner removal recalculates overlap actual=55.0 expected=55.0
+PASS recovery waits one second actual=1.0 expected=1.0
+PASS recovery supplies exactlyfive1HP pulses actual=6.0 expected=6.0
+PASS recovery cannot exceed fivepulses actual=6.0 expected=6.0
+PASS native Sinful roll arms readiness
+PASS attacker hit consumes Sinful readiness
+PASS attacker receives15%mark
+PASS retaliation burns attacker
+PASS same-tick Oath extra blocked at hard0.5s interval actual=8.0 expected=8.0
+PASS first offensive hit includes Oath extra damage
+PASS native hammer launch accepts self fallback
+PASS one falling hammer spawned
+PASS falling hammer follows recipient
+PASS per-projectile snapshot stored
+PASS delayed hammer uses original P20 snapshot actual=5.0 expected=5.0
+PASS duplicate landing ignored actual=5.0 expected=5.0
+PASS resolved control details spell_engine:stun
+PASS resolved control details wizards:frozen
+PASS resolved control details rogues:bear_trap
+PASS five fire-vulnerability stacks resolve20%
+PASS Banner base100s actual=100.0 expected=100.0
+PASS Purgatory cooldown2s actual=2.0 expected=2.0
+PASS native channel no0s delivery
+PASS native no delivery before.5s
+PASS native firstdelivery.5s
+PASS native60delivery schedule.5s actual=10.0 expected=10.0
+PASS Banner radius6 actual=6.0 expected=6.0
+PASS Banner duration20s actual=400.0 expected=400.0
+FAIL Banner has no chasing world entity
+FAIL Banner carrier marker synchronized
+PASS P20 Banner heals3HP pulse actual=503.0 expected=503.0
+PASS M40 per-pulse attack.9% actual=0.009000000000000001 expected=0.009
+PASS native Banner attribute noold40% bonus actual=1.009 expected=1.009
+PASS M40 draw1.4% actual=0.014 expected=0.014
+PASS P20 haste.65% actual=0.006500000000000001 expected=0.0065
+PASS Armor20 reduction.65% actual=0.006500000000000001 expected=0.0065
+PASS M40 KR3% actual=0.03 expected=0.03
+PASS Banner attackcap20% actual=0.2 expected=0.2
+PASS Banner drawcap20% actual=0.2 expected=0.2
+PASS Banner hastecap10% actual=0.1 expected=0.1
+PASS Banner KRcap30% actual=0.3 expected=0.3
+PASS Banner status3s actual=60.0 expected=60.0
+PASS Banner generalreduction10% actual=90.0 expected=90.0
+PASS Banner magicgeneral multiply.81 actual=81.0 expected=81.0
+PASS Banner recognized magic layers wither actual=81.0 expected=81.0
+PASS Banner recognized magic layers dragonBreath actual=81.0 expected=81.0
+PASS Banner recognized magic layers fallingBlock actual=81.0 expected=81.0
+PASS Banner unique rescueavailable
+PASS Banner rescueonce perUUID
+PASS Banner rescueimmune ordinaryhit actual=250.0 expected=250.0
+PASS Improved radius8 actual=8.0 expected=8.0
+PASS Persistent25s actual=500.0 expected=500.0
+PASS Intense attack25% actual=0.25 expected=0.25
+PASS Intense haste15% actual=0.15000000000000002 expected=0.15
+PASS IntenseKR35% actual=0.35 expected=0.35
+PASS expired Banner source removesstrongcap actual=0.0 expected=0.0
+PASS Purgatory stagecoefficient pulse1 actual=0.1 expected=0.1
+PASS Damnation coefficient pulse1 actual=0.15000000000000002 expected=0.15
+PASS Purgatory stagecoefficient pulse19 actual=0.1 expected=0.1
+PASS Damnation coefficient pulse19 actual=0.15000000000000002 expected=0.15
+PASS Purgatory stagecoefficient pulse20 actual=0.2 expected=0.2
+PASS Damnation coefficient pulse20 actual=0.25 expected=0.25
+PASS Purgatory stagecoefficient pulse39 actual=0.2 expected=0.2
+PASS Damnation coefficient pulse39 actual=0.25 expected=0.25
+PASS Purgatory stagecoefficient pulse40 actual=0.30000000000000004 expected=0.3
+PASS Damnation coefficient pulse40 actual=0.35000000000000003 expected=0.35
+PASS Purgatory stagecoefficient pulse60 actual=0.30000000000000004 expected=0.3
+PASS Damnation coefficient pulse60 actual=0.35000000000000003 expected=0.35
+PASS release20s200% actual=2.0 expected=2.0
+PASS release25s450% actual=4.5 expected=4.5
+PASS release30s700% actual=7.0 expected=7.0
+PASS Damnation900% actual=9.0 expected=9.0
+PASS invulnerabilitycap.7s actual=14.0 expected=14.0
+PASS fullchannel60pulses actual=60.0 expected=60.0
+PASS fullchannel selfcost103HP despiteimmunity actual=897.0 expected=897.0
+PASS completionclearschannel
+PASS completionclearsglint
+PASS hybrid P20M40=25 times10% undead routes once actual=2.5 expected=2.5
+PASS Purgatory burns4s
+PASS middlephase2HP actual=498.0 expected=498.0
+PASS finalphase3HP throughactiveimmunity actual=495.0 expected=495.0
+PASS Final Resolute preventsfatalcost withoutheal
+PASS Final Resolute ends channel
+PASS Final Resolute3sprotection actual=60.0 expected=60.0
+PASS Improved outerradius14 actual=14.0 expected=14.0
+PASS Improved pulseradius7 actual=7.0 expected=7.0
+PASS Purgatory ward20HP actual=20.0 expected=20.0
+PASS wardrefreshnofill actual=3.0 expected=3.0
+PASS warddispelremovescapacity actual=0.0 expected=0.0
+PASS Reinforced armorband0 actual=20.0 expected=20.0
+PASS ReinforcedPband0 actual=20.0 expected=20.0
+PASS Reinforced armorband1 actual=21.0 expected=21.0
+PASS ReinforcedPband1 actual=21.0 expected=21.0
+PASS Reinforced armorband2 actual=22.0 expected=22.0
+PASS ReinforcedPband2 actual=22.0 expected=22.0
+PASS Reinforced armorband3 actual=23.0 expected=23.0
+PASS ReinforcedPband3 actual=23.0 expected=23.0
+PASS Reinforced armorband4 actual=24.0 expected=24.0
+PASS ReinforcedPband4 actual=24.0 expected=24.0
+PASS Reinforcedhealingdowngrade actual=20.0 expected=20.0
+PASS Ardentqualifyingplayer
+PASS Ardent40%maxHP actual=600.0 expected=600.0
+PASS Ardentplus10armornooldmaxHP actual=30.0 expected=30.0
+PASS Ardentnohealthboost actual=1000.0 expected=1000.0
+PASS ArdentResistanceI
+PASS Ardentsharedcooldown
+PASS Ardent90s actual=90.0 expected=90.0
+PASS Purgatory blocks roll evenwith nativeavailability
+PASS Purgatory stance prevents movement
+PASS Purgatory stance prevents attacks
+PASS native BetterParty eligibility
+PASS P20 completion shieldcaps20 onpartyally actual=20.0 expected=20.0
+PASS completion shield excludes caster actual=0.0 expected=0.0
+PASS Ardent observes nearby partyplayer
+PASS Ardent heals onlytriggeringally40%max actual=600.0 expected=600.0
+PASS Ardent does not buffcaster instead
+PASS Ardent sharedcooldownacrossrecipients
+PASS 20s release200%M nativeundeadPVE actual=80.0 expected=80.0
+PASS partialrelease no completionstun
+PASS terminalstate ignore secondexplosion actual=920.0 expected=920.0
+PASS before20s noexplosion actual=1000.0 expected=1000.0
+PASS deathfinalphase full700%Mburst actual=280.0 expected=280.0
+PASS deathcompletion stuns1s
+PASS Ardent benefits donotcancel overwhelmingfatalhit
+PASS weakerBanner cannot add orreplace strongcap actual=0.25 expected=0.25
+PASS weaksource cannotretain expiredIntensecap
+FAIL hardCC cannot prevent final delivery after10s spell_engine:stun
+FAIL final HP cost still paid under control spell_engine:stun actual=1000.0 expected=997.0
+PASS hardCC ends native lifecycle spell_engine:stun
+FAIL hardCC cannot prevent final delivery after10s wizards:frozen
+FAIL final HP cost still paid under control wizards:frozen actual=1000.0 expected=997.0
+PASS hardCC ends native lifecycle wizards:frozen
+PASS stance dispel stops gameplay
+PASS stance dispel prevents further cost actual=1000.0 expected=1000.0
+PASS root preserves channel
+PASS native Vanish applied
+PASS Vanish clears existing mark minecraft:glowing
+PASS Vanish clears existing mark archers:hunters_mark
+PASS Vanish clears existing mark skill_tree_rpgs:sinful_mark
+PASS Vanish preserves unrelated Bleed
+PASS Vanish does not grant future mark immunity
+PASS actual new stack gains one cue
+PASS same-level refresh gains no cue
+PASS hidden player gains no observer-visible cue
+PASS spent shield gives no shield-gain cue
+PASS shield timer refresh gives no refill cue
+PASS newly added absorption gives one cue
+PASS expiry generates no phantom proc
+PASS Paladin presentation remains separate
+PASS area cue radius ignores caster width 0.6 actual=2.5 expected=2.5
+PASS area cue radius ignores caster width 3.5 actual=2.5 expected=2.5
+PASS full health healing has no new recovery cue
+PASS full health healing preserves HP actual=1000.0 expected=1000.0
+PASS real healing permits recovery cue
+PASS recovery wrapper preserves native heal amount actual=995.0 expected=995.0
+PASS nullable-school tooltip wizards:frost_slowness
+PASS generic vulnerability displays actual stacked40%
+PASS generic critical vulnerability displays20%
+PASS generic critical damage displays60%
+PASS specific school keeps its label
+PASS native readiness glow registered supercharge
+PASS native readiness glow registered prepared_counter_ready
+PASS native readiness glow registered concussion_blow
+PASS native readiness glow registered divine_favor
+PASS native readiness glow registered presence_of_mind
+PASS native readiness glow registered arctic_reflex
+PASS Deflection retains native actual-block fleck
+PASS Deflection final block retains native fleck
+FAIL true cost preserves HP behind shield actual=97.0 expected=100.0
+FAIL true cost consumes absorption first actual=4.0 expected=1.0
+FAIL true cost spills only remaining damage to HP actual=94.0 expected=98.0
+FAIL true cost exhausts absorption actual=4.0 expected=0.0
+PASS control interruption boundary at 9s
+FAIL control interruption boundary at 10s
+FAIL control interruption boundary at 20s
+FAIL Oath uses M and coefficient false actual=6.0 expected=28.0
+FAIL Oath uses M and coefficient true actual=14.0 expected=40.0
+PASS cleanupallactivecasts

@@ -1,0 +1,16 @@
+{
+  "full_client_checks": 166,
+  "full_casts": 50,
+  "captures_reviewed": 100,
+  "reduced_display_checks": 136,
+  "native_status_screens": [
+    "repaired-status-hud.png",
+    "repaired-status-inventory.png"
+  ],
+  "observer": "RemotePlayer native render fixture; not second network client",
+  "limits": [
+    "front-camera Warrior captures obstructed",
+    "not every short-lived effect caught in still images",
+    "networked crowded party and exhaustive lifecycle matrix not run"
+  ]
+}

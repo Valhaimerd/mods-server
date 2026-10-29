@@ -1,0 +1,166 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "e1ef7f46408f4cc8c7cbe7ba2c2c9decd38e36afddba650c01ae856fe4b092b5",
+    "sha256": "aaeb16d094c7a68a0f414afc9bfa3758a98fd48459ccd23e284096081573e071",
+    "changed": [
+      "data/archers/spell/magic_arrow.json",
+      "data/archers/spell/power_shot.json",
+      "data/archers/spell/rain_of_arrows.json",
+      "data/archers/spell/spirit_wolf.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "414c443b3cd0269719d9e687416a665a5d396afa537601737cc8d931ed0098c0",
+    "sha256": "1628c1a374a718b8058a35a82b8411ea0ba1d3addfd2c1e4e002613d77ff641e",
+    "changed": [
+      "data/paladins/spell/barrier.json",
+      "data/paladins/spell/circle_of_healing.json",
+      "data/paladins/spell/heal.json",
+      "data/paladins/spell/holy_beam.json",
+      "data/paladins/spell/holy_shock.json",
+      "data/paladins/spell/levitate.json",
+      "data/paladins/spell/lightwell.json",
+      "data/paladins/spell/lightwell_orb.json",
+      "data/paladins/spell/penance.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "097a0597f131e21bc56ebb84a0f8c603a992da568a985f3f31be9d58217b040b",
+    "sha256": "3a714d40867a92231fe321b9d20cfa96f97aa596399679743074b66695e95d4b",
+    "changed": [
+      "assets/rogues/lang/en_us.json",
+      "data/rogues/spell/bear_trap.json",
+      "data/rogues/spell/charge.json",
+      "data/rogues/spell/last_stand.json",
+      "data/rogues/spell/mortal_strike.json",
+      "data/rogues/spell/shadow_step.json",
+      "data/rogues/spell/shock_powder.json",
+      "data/rogues/spell/shout.json",
+      "data/rogues/spell/slice_and_dice.json",
+      "data/rogues/spell/vanish.json"
+    ],
+    "added": [
+      "assets/rogues/textures/mob_effect/improved_stealth.png",
+      "assets/rogues/textures/mob_effect/tracking_disruption.png"
+    ]
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "8b32409474b35107d16f7257543f41ecba43cdf94e75b05fa7a65b3fd7c04d39",
+    "sha256": "bfcc7ff7144b16c9c5a534e1d7ca26fe61e246c151ce980aaf77e432828ca076",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_root.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_4_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/warrior_tier_3_passive_2.json"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/cheat_death_evasion.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "c2762f2a0bb478d5abceb347d6e6577fd407ae250d0f100ae9900aade03b5ecb",
+    "sha256": "2377c7d2000b0be5ee85521ca67dccc24a6d2e84cbb67ee502d31bdd83eccf2e",
+    "changed": [
+      "net/spell_engine/internals/impact/SpellImpacts.class",
+      "net/spell_engine/internals/RogueRules.class",
+      "net/spell_engine/internals/RogueTierThree.class",
+      "net/spell_engine/internals/PreparedCounter.class",
+      "net/spell_engine/internals/PriestTuning.class",
+      "net/spell_engine/internals/EffectDetails.class",
+      "net/spell_engine/internals/PaladinRevamp.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/ClassAreaVisuals.class",
+      "net/spell_engine/internals/ClassEffectLabels.class",
+      "net/spell_engine/internals/ClassHealingVisuals.class",
+      "net/spell_engine/internals/ClassStatusVisuals$Cue.class",
+      "net/spell_engine/internals/ClassStatusVisuals.class",
+      "net/spell_engine/internals/RogueVisuals.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "ebd7e3b5ffb1a112c053241ec9162fa3ba318167131d46adc497b35e04eb902e",
+    "sha256": "f9acb50fc28b731a7f5f475c6146b53cc1eea3cc1f71a4ef2b63c06a78a522bd",
+    "changed": [
+      "data/wizards/spell/arcane_barrage.json",
+      "data/wizards/spell/arcane_beam.json",
+      "data/wizards/spell/arcane_blast.json",
+      "data/wizards/spell/arcane_blink.json",
+      "data/wizards/spell/arcane_bolt.json",
+      "data/wizards/spell/arcane_evocation.json",
+      "data/wizards/spell/arcane_explosion.json",
+      "data/wizards/spell/arcane_missile.json",
+      "data/wizards/spell/fire_blast.json",
+      "data/wizards/spell/fire_breath.json",
+      "data/wizards/spell/fire_meteor.json",
+      "data/wizards/spell/fire_scorch.json",
+      "data/wizards/spell/fire_slash.json",
+      "data/wizards/spell/fire_storm.json",
+      "data/wizards/spell/fire_wall.json",
+      "data/wizards/spell/fireball.json",
+      "data/wizards/spell/frost_blizzard.json",
+      "data/wizards/spell/frost_elemental.json",
+      "data/wizards/spell/frost_lance.json",
+      "data/wizards/spell/frost_nova.json",
+      "data/wizards/spell/frost_shard.json",
+      "data/wizards/spell/frost_shield.json",
+      "data/wizards/spell/frost_spikes.json",
+      "data/wizards/spell/frostbolt.json",
+      "data/wizards/spell/frost_shield_burst.json",
+      "data/wizards/spell/arcane_barrage_bolt.json",
+      "data/wizards/spell/ancient_hydra_breath.json",
+      "data/wizards/spell/burst_blink_explosion.json",
+      "data/wizards/spell/elemental_frost_nova.json",
+      "data/wizards/spell/elemental_frost_shard.json",
+      "data/wizards/spell/hydra_fireball.json",
+      "data/wizards/spell/legion_frost_nova.json"
+    ],
+    "added": []
+  }
+]

@@ -2,7 +2,23 @@
 
 28 October 2026. Proposed presentation pass, following the user's approval of the Paladin visual direction. These are design recommendations, not installed changes or new balance values. The Paladin tier-III gameplay design remains separately reviewable in [its draft](2026-10-28-paladin-tier-three-design.md).
 
-**Current scheduling:** the user gave the Paladin go signal29 October2026; its gameplay and visual pass is installed, with [verification](../../patches/paladin-tier-three/README.md). All other class retouches in this document are deferred. See the [current execution plan](../plans/2026-10-28-paladin-tier-three-and-visual-retouch.md); do not interpret praise for these proposals as authorization to implement every class now.
+**Current scheduling:** Paladin is installed with its separate verification. The approved remaining-class presentation pass is now installed: three repaired sprites,95 retouched native resources, earned-gain/readiness/area/recovery cues and the requested Vanish mark cleanse. [Implementation and precise coverage](../../patches/class-visual-retouch/README.md) distinguish shipped changes from the broader design rows below. Native models/animations/counters were retained. The crowded networked-party and exhaustive lifecycle acceptance matrix remains unverified.
+
+## 29 October2026 audit and selected approach
+
+Use existing RPG Series artwork, models, animation and sound resources, repairing missing status assets before adding cosmetic cues. This follows the previously accepted Paladin direction and the user's preference for reusing the skill icon when a status icon is absent. A bespoke icon set or a new visual framework adds cost without fixing the diagnosed asset paths; neither is planned.
+
+A native registry export with current matching archive hashes contains109 class/control effects. The initial pinned-input asset scan found **three missing conventional effect PNGs**, **zero empty existing PNGs** and **zero missing English effect names**. No active JAR contains an effect-atlas override. [Audit and reproduction](../../patches/class-visual-audit/README.md) distinguish these confirmed asset gaps from future client-rendering checks.
+
+| Missing effect | Existing artwork to reuse | Meaning to preserve |
+|---|---|---|
+| Improved Stealth |Vanish skill |Vanish upgrade; never an enemy-visible stealth trail |
+| Tracking Disruption |Shadowstep skill |Temporary AI target loss; not a root or stun |
+| Cheat Death Evasion |Cheat Death effect |Evasion after the initial protection; not continued invulnerability |
+
+Do not treat deliberately hidden internal effects as missing icons. Inspect effect application flags, atlas resolution, localization, resource overrides and native inventory/HUD rendering. The109-effect scan includes Paladin as a shared-code regression baseline; its installed visual pass is not being redesigned.
+
+Execution order: icon repair, Rogue, Archer, Warrior, Priest, Arcane, Fire and Frost. Follow [the new implementation plan](../plans/2026-10-29-other-class-visuals-and-effect-icons.md), inline without implementation workers. Class timing/damage/eligibility remains unchanged. The previously requested Vanish mark cleanse is a separately named gameplay item; decorative work must not implement it accidentally.
 
 ## Shared presentation rules
 
@@ -22,7 +38,7 @@
 
 | Tier | Active pair | Presentation retouches |
 |---|---|---|
-| I | Power Shot / Entangling Roots | Prepared arrows gain restrained amber string/arrow-tip accents; remaining prepared charges are readable. Hunter's Mark gains distinct stack changes. Roots has a low vine boundary matching its real cloud; only Nature's Grasp's actual immobilization uses the full Root treatment. Nettle poison uses sparse green hit flecks. Charged Shot's blast appears on impact at its actual splash radius. |
+| I | Power Shot / Entangling Roots | Prepared arrows gain restrained amber string/arrow-tip accents; remaining prepared charges are readable. Hunter's Mark gets an application/refresh cue matching its actual state, without inventing stacks. Roots has a low vine boundary matching its real cloud; only Nature's Grasp's actual immobilization uses the full Root treatment. Nettle poison uses sparse green hit flecks. Charged Shot's blast appears on impact at its actual splash radius. |
 | II | Barrage / Spirit Wolf Pack | Every real arrow release gets a separate string snap/recoil cue without replacing native bow/crossbow poses. Blood Barrage shows a small recovery return only when healing occurs. Wolves assemble from green-white wisps, have a subtle owner/party identification cue and visibly dissolve at expiry; Leader's extra wolf remains individually readable. |
 | III | Rain of Arrows / Magic Arrows | Rain has a restrained overhead source and moving ground boundary tied to its real current center; every actual scattered impact has its own small splash. Torrential communicates denser cadence; Endless communicates a longer remaining volley without inventing arrows. Magic Arrows have four separate trails; Conjured's upward fan has a clear free-flight interval before homing begins. Reveal appears on a successful hit, not acquisition. Magic Punch uses a heavier impact. |
 

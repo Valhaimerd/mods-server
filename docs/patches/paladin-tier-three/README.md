@@ -1,3 +1,5 @@
+Current Paladin follow-up values and archive identities supersede the affected earlier records: [Purgatory, Oath and worn Banner](../paladin-followup/README.md). Earlier tests/hashes below describe their original build.
+
 # Paladin tier III and visual retouch
 
 Minecraft26.2 ? NeoForge26.2.0.90 ? Java25 ?29 October2026.

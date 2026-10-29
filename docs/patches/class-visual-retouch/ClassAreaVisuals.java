@@ -1,0 +1,9 @@
+package net.spell_engine.internals;
+import java.util.*;import net.minecraft.core.Holder;import net.minecraft.world.entity.*;import net.minecraft.world.phys.Vec3;import net.spell_engine.api.spell.Spell;import net.spell_engine.api.spell.fx.*;import net.spell_engine.fx.*;
+/** Rings take the exact area center/radius already resolved by the native damage path. */
+public final class ClassAreaVisuals{
+ public static void ring(LivingEntity caster,Vec3 point,float radius,long color){if(caster==null||caster.level().isClientSide()||point==null||radius<=0)return;var group=ringGroup(radius,color);ParticleHelper.sendBatches(point,caster,List.of(group));}
+ public static ParticleGroup ringGroup(float radius,long color){return ParticleGroupBuilder.magic(SpellEngineParticles.magic_spark,ParticleGroup.Motion.FLOAT).color(color).scale(.24f).batch(b->b.shape(ParticleGroup.Shape.CIRCLE).anchor(ParticleGroup.Anchor.GROUND).extent(radius).widthFactor(0).count(Math.clamp(Math.round(radius*3),12,24)).speed(.005f,.015f));}
+ public static void area(Holder<Spell> spell,LivingEntity caster,Vec3 point,float radius){String id=spell.unwrapKey().map(k->k.identifier().toString()).orElse("");long color=switch(id){case "archers:rain_of_arrows","archers:power_shot"->0xDEB760FFL;case "wizards:arcane_explosion","wizards:arcane_blink"->0xB4A3E5FFL;case "wizards:fire_meteor","wizards:fire_storm"->0xE8A162FFL;case "wizards:frost_nova","wizards:elemental_frost_nova","wizards:legion_frost_nova"->0xB2DFF0FFL;case "rogues:shock_powder"->0xBFA0D6FFL;default->0;};if(color!=0)ring(caster,point,radius,color);}
+ public static boolean penance(boolean success,LivingEntity caster,Entity projectile,Entity hit,Holder<Spell> spell,SpellExecution.ImpactContext context){if(success&&spell.unwrapKey().map(k->k.identifier().toString()).orElse("").equals("paladins:penance"))ring(caster,context.position()!=null?context.position():projectile.position(),4,0xEEE3B2FFL);return success;}
+}

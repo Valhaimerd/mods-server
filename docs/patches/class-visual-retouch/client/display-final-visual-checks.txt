@@ -1,0 +1,131 @@
+PASS native GUI effect atlas
+PASS native icon rogues:slice_and_dice
+PASS native icon rogues:shock
+PASS native icon rogues:shadow_step
+PASS native icon rogues:stealth
+PASS native icon rogues:stealth_speed
+PASS native icon rogues:shatter
+PASS native icon rogues:demoralize
+PASS native icon rogues:bear_trap
+PASS native icon rogues:net_trap
+PASS native icon rogues:charge
+PASS native icon rogues:last_stand
+PASS native icon rogues:improved_stealth
+PASS native icon rogues:tracking_disruption
+PASS native icon paladins:divine_protection
+PASS native icon paladins:battle_banner
+PASS native icon paladins:judgement
+PASS native icon paladins:blessed_strikes
+PASS native icon paladins:levitate
+PASS native icon paladins:priest_absorption
+PASS native icon skill_tree_rpgs:divine_strength
+PASS native icon skill_tree_rpgs:recklessness
+PASS native icon skill_tree_rpgs:fleet_footed
+PASS native icon skill_tree_rpgs:arcane_slowness
+PASS native icon skill_tree_rpgs:fire_vulnerability
+PASS native icon skill_tree_rpgs:frost_vulnerability
+PASS native icon skill_tree_rpgs:healing_focus
+PASS native icon skill_tree_rpgs:incanter_cadence
+PASS native icon skill_tree_rpgs:redoubt
+PASS native icon skill_tree_rpgs:killing_spree
+PASS native icon skill_tree_rpgs:fracture
+PASS native icon skill_tree_rpgs:rhythm
+PASS native icon skill_tree_rpgs:pursuit_of_justice
+PASS native icon skill_tree_rpgs:battle_shout
+PASS native icon skill_tree_rpgs:natures_grasp
+PASS native icon skill_tree_rpgs:arcane_exposure
+PASS native icon skill_tree_rpgs:arcane_speed
+PASS native icon skill_tree_rpgs:frost_shield_speed
+PASS native icon skill_tree_rpgs:concussion_blow
+PASS native icon skill_tree_rpgs:cloak_of_shadows
+PASS native icon skill_tree_rpgs:ambush
+PASS native icon skill_tree_rpgs:presence_of_mind
+PASS native icon skill_tree_rpgs:blizzard_slow
+PASS native icon skill_tree_rpgs:banner_protection
+PASS native icon skill_tree_rpgs:phase_shift
+PASS native icon skill_tree_rpgs:blazing_speed
+PASS native icon skill_tree_rpgs:arctic_reflex
+PASS native icon skill_tree_rpgs:arcane_ward
+PASS native icon skill_tree_rpgs:fire_ward
+PASS native icon skill_tree_rpgs:frost_ward
+PASS native icon skill_tree_rpgs:divine_favor
+PASS native icon skill_tree_rpgs:pain_suppression
+PASS native icon skill_tree_rpgs:serenity
+PASS native icon skill_tree_rpgs:hysteria
+PASS native icon skill_tree_rpgs:chastise
+PASS native icon skill_tree_rpgs:celestial_orb
+PASS native icon skill_tree_rpgs:vengeance
+PASS native icon skill_tree_rpgs:ardent_defender
+PASS native icon skill_tree_rpgs:vitality
+PASS native icon skill_tree_rpgs:enrage
+PASS native icon skill_tree_rpgs:opportunist
+PASS native icon skill_tree_rpgs:smoke_screen
+PASS native icon skill_tree_rpgs:side_step
+PASS native icon skill_tree_rpgs:cheat_death
+PASS native icon skill_tree_rpgs:tactical_maneuver
+PASS native icon skill_tree_rpgs:supercharge
+PASS native icon skill_tree_rpgs:juggernaut
+PASS native icon skill_tree_rpgs:revenge
+PASS native icon skill_tree_rpgs:deflection
+PASS native icon skill_tree_rpgs:flurry_trance
+PASS native icon skill_tree_rpgs:shatter
+PASS native icon skill_tree_rpgs:punishment
+PASS native icon skill_tree_rpgs:purgatory
+PASS native icon skill_tree_rpgs:paladin_sanctity
+PASS native icon skill_tree_rpgs:purgatory_ward
+PASS native icon skill_tree_rpgs:reinforced
+PASS native icon skill_tree_rpgs:divine_oath
+PASS native icon skill_tree_rpgs:merciful_recovery
+PASS native icon skill_tree_rpgs:faith_knockback
+PASS native icon skill_tree_rpgs:protection_power
+PASS native icon skill_tree_rpgs:paladin_control_guard
+PASS native icon skill_tree_rpgs:sinful_retaliation_ready
+PASS native icon skill_tree_rpgs:sinful_mark
+PASS native icon skill_tree_rpgs:lightwell_vitality
+PASS native icon skill_tree_rpgs:priest_fade
+PASS native icon skill_tree_rpgs:priest_penance_shield
+PASS native icon skill_tree_rpgs:priest_serenity_shield
+PASS native icon skill_tree_rpgs:ascension_power
+PASS native icon skill_tree_rpgs:warrior_freedom
+PASS native icon skill_tree_rpgs:warrior_endurance
+PASS native icon skill_tree_rpgs:warrior_momentum_ready
+PASS native icon skill_tree_rpgs:warrior_momentum
+PASS native icon skill_tree_rpgs:berserker
+PASS native icon skill_tree_rpgs:berserker_crit
+PASS native icon skill_tree_rpgs:sentinel
+PASS native icon skill_tree_rpgs:tenacity_ward
+PASS native icon skill_tree_rpgs:cheat_death_evasion
+PASS native icon skill_tree_rpgs:slice_evasion
+PASS native icon skill_tree_rpgs:prepared_counter_ready
+PASS native icon skill_tree_rpgs:arcane_vulnerability
+PASS native icon archers:hunters_mark_stash
+PASS native icon archers:hunters_mark
+PASS native icon archers:entangling_roots
+PASS native icon wizards:frozen
+PASS native icon wizards:frost_shield
+PASS native icon wizards:frost_slowness
+PASS native icon wizards:arcane_evocation
+PASS native icon wizards:arcane_charge
+PASS native icon spell_engine:stun
+PASS native icon spell_engine:bleed
+PASS native synchronized HUD status rogues:improved_stealth
+PASS localized status rogues:improved_stealth
+PASS native synchronized HUD status rogues:tracking_disruption
+PASS localized status rogues:tracking_disruption
+PASS native synchronized HUD status skill_tree_rpgs:cheat_death_evasion
+PASS localized status skill_tree_rpgs:cheat_death_evasion
+SCREENSHOT repaired-status-HUD
+SCREENSHOT repaired-status-inventory
+PASS observed remote model initially visible rogues:stealth
+PASS observed remote state concealed rogues:stealth
+PASS observed remote readied equipment submission hidden rogues:stealth
+PASS observed Vanish body/armor invisible
+PASS remote equipment restores after effect removal rogues:stealth
+PASS remote render concealment cleared rogues:stealth
+PASS observed remote model initially visible skill_tree_rpgs:priest_fade
+PASS observed remote state concealed skill_tree_rpgs:priest_fade
+PASS observed remote readied equipment submission hidden skill_tree_rpgs:priest_fade
+PASS observed Fade cancels complete armor/body submission
+PASS actual observed Fade renderer exits before equipment/glint submission
+PASS remote equipment restores after effect removal skill_tree_rpgs:priest_fade
+PASS remote render concealment cleared skill_tree_rpgs:priest_fade

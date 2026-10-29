@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "source": "Native registry export from final Paladin tier-III isolated fresh server; all six current RPG archive hashes matched before copying.",
+  "sha256": {
+    "archers-neoforge-3.1.2+26.2.jar": "e1ef7f46408f4cc8c7cbe7ba2c2c9decd38e36afddba650c01ae856fe4b092b5",
+    "rogues-neoforge-3.1.2+26.2.jar": "097a0597f131e21bc56ebb84a0f8c603a992da568a985f3f31be9d58217b040b",
+    "wizards-neoforge-3.1.2+26.2.jar": "ebd7e3b5ffb1a112c053241ec9162fa3ba318167131d46adc497b35e04eb902e",
+    "paladins-neoforge-3.1.2+26.2.jar": "414c443b3cd0269719d9e687416a665a5d396afa537601737cc8d931ed0098c0",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "8b32409474b35107d16f7257543f41ecba43cdf94e75b05fa7a65b3fd7c04d39",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "c2762f2a0bb478d5abceb347d6e6577fd407ae250d0f100ae9900aade03b5ecb"
+  }
+}

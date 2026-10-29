@@ -1,0 +1,18 @@
+{
+  "pages": 79,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 184,
+  "main_jars": 307,
+  "client_jars": 23,
+  "pdf_sha256": "f42a26e1ef739f9796ba27d3a64f5e6990e656611e0199e94ebc710cf8af6695",
+  "all_pages_rendered": true,
+  "visual_review_pending": false,
+  "changed_pages": [
+    17,
+    18
+  ],
+  "visual_review": "Pages17/18 inspected at reading resolution; other77 rendered pages byte-identical to preceding visually reviewed handbook."
+}

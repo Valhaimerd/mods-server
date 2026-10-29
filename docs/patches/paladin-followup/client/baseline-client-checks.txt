@@ -1,0 +1,49 @@
+PASS Enhanced Cats loaded on actual client
+PASS Cute Cats absent from isolatedclient
+PASS native Banner castoption
+PASS native Banner cast applies followingaura
+PASS client effect paladins:battle_banner
+PASS Banner resolved receiveddetails
+PASS native Improved Bannerradius8
+SCREENSHOT moving shoulder Banner and party pulse
+PASS client Banner follows movedcaster
+PASS client Banner has visible renderbounds
+CLIENT BANNER (4.05, 101.65, 2.3) scale=1.0 spell=Reference{ResourceKey[minecraft:spell / paladins:banner_visual]=net.spell_engine.api.spell.Spell@3d27cce7} active=true
+PASS Banner model remains alive after firstsecond
+PASS Banner model follows movedplayer
+SCREENSHOT Banner received buff percentages
+CLIENT CAST Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+PASS native Purgatory cast startschannel
+PASS native cast lifecycle registerschannel
+PASS firststage noHPcost actual=1000.0 expected=1000.0
+PASS channel serverrejectsroll
+SCREENSHOT Purgatory firststage stance orangeglint
+PASS native10s enters middlestage
+PASS native middlephase startsHPcost
+SCREENSHOT Purgatory middlestage fire sparks and ring
+PASS native20s entersfinalphase
+PASS finalphase pulseprotection configured
+FINAL PHASE pulses=42 P=30.25 protection=true
+SCREENSHOT Purgatory finalstage redfire
+PASS client effect skill_tree_rpgs:purgatory
+PASS received finalphase selfcostdetails
+PASS native30s channelends
+PASS native endclearsstanceglint
+PASS native fullchannel pays103HP actual=897.0 expected=897.0
+INPUT STATE process=null predicted=null allowed=EntityActionsAllowed[canJump=true, canMove=true, players=PlayersAllowed[canAttack=true, canUseItem=true, canCastSpell=true], mobs=MobsAllowed[canUseAI=true], reason=NONE] lock=false
+PASS actual mouse scroll switches hotbar after Purgatory without inventory
+SCREENSHOT Purgatory completion and restoredpose
+PASS client effect skill_tree_rpgs:reinforced
+PASS Reinforced realallocation lowHP20%
+SCREENSHOT Reinforced actual20% bonuses
+PASS Enhanced Cats cat spawnedandsynchronized
+PASS Enhanced Cats renderer active com.mcdonaldswifi.enhancedcats.GeoData.CatGeoRender
+SCREENSHOT Enhanced Cats replacement rendering
+PASSIVE PANEL skill_tree_rpgs:paladin_tier_3_passive_1 [An endangered nearby party player gains Resistance I, 10 armor and 5% damage reduction, and heals for 40% maximum HP. A fatal hit can still kill them., Range: 6 blocks, Cooldown: 90 seconds, Triggered by low-health damage or a fatal hit]
+PASS native customtriggerrow skill_tree_rpgs:paladin_tier_3_passive_1
+PASS clean displayedpercentagecopy skill_tree_rpgs:paladin_tier_3_passive_1
+PASSIVE PANEL skill_tree_rpgs:paladin_tier_3_passive_2 [Gain 5% Healing Power and base armor at each low-health threshold, up to 20% below 40% HP., Active below 70/60/50/40% health]
+PASS native customtriggerrow skill_tree_rpgs:paladin_tier_3_passive_2
+PASS clean displayedpercentagecopy skill_tree_rpgs:paladin_tier_3_passive_2
+PASS Purgatory localizedname
+PASS Final Resolute localizednode

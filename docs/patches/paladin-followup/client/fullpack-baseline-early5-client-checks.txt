@@ -1,0 +1,12 @@
+SCREENSHOT Banner worn - turned and crouched
+CLIENT CAST Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+PASS native Purgatory cast startschannel
+PASS native cast lifecycle registerschannel
+PASS firststage noHPcost actual=1000.0 expected=1000.0
+PASS channel serverrejectsroll
+INPUT STATE process=null predicted=null allowed=EntityActionsAllowed[canJump=true, canMove=true, players=PlayersAllowed[canAttack=true, canUseItem=true, canCastSpell=true], mobs=MobsAllowed[canUseAI=true], reason=NONE] lock=false
+PASS early release clears server channel
+PASS early release clears stance
+PASS actual mouse scroll switches hotbar after Purgatory without inventory
+PASS native number9 selects item slot after release without inventory
+SCREENSHOT early release restored hotbar

@@ -1,0 +1,477 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "resource": "data/archers/spell/magic_arrow.json",
+    "class": "archer"
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "resource": "data/archers/spell/power_shot.json",
+    "class": "archer"
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "resource": "data/archers/spell/rain_of_arrows.json",
+    "class": "archer"
+  },
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "resource": "data/archers/spell/spirit_wolf.json",
+    "class": "archer"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/barrier.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/circle_of_healing.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/heal.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/holy_beam.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/holy_shock.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/levitate.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/lightwell.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/lightwell_orb.json",
+    "class": "priest"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "resource": "data/paladins/spell/penance.json",
+    "class": "priest"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/bear_trap.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/charge.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/last_stand.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/mortal_strike.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/shadow_step.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/shock_powder.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/shout.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/slice_and_dice.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "resource": "data/rogues/spell/vanish.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_1_passive_2.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_2_passive_1.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_2.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_root.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/arcane_tier_3_passive_1.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_1_passive_2.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_2_passive_1.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_2_passive_2.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_2_spell_1_modifier_2.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_2_spell_2_modifier_1.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_3_passive_1.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/archer_tier_3_spell_1_modifier_2.json",
+    "class": "archer"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/fire_tier_2_passive_1.json",
+    "class": "fire"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/fire_tier_2_passive_2.json",
+    "class": "fire"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/fire_tier_3_passive_1.json",
+    "class": "fire"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+    "class": "fire"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+    "class": "fire"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_1_passive_1.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_1_passive_2.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_2_passive_1.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_2_passive_2.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_3_passive_1.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_2.json",
+    "class": "frost"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/priest_tier_1_passive_2.json",
+    "class": "priest"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/priest_tier_2_passive_2.json",
+    "class": "priest"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/priest_tier_3_passive_1.json",
+    "class": "priest"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/priest_tier_3_passive_2.json",
+    "class": "priest"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/priest_tier_4_spell_2_modifier_1.json",
+    "class": "priest"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/rogue_tier_2_passive_2.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/rogue_tier_3_passive_2.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_1.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json",
+    "class": "rogue"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/warrior_tier_1_passive_1.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/warrior_tier_1_passive_2.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/warrior_tier_3_passive_1.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "resource": "data/skill_tree_rpgs/spell/warrior_tier_3_passive_2.json",
+    "class": "warrior"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_barrage.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_beam.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_blast.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_blink.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_bolt.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_evocation.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_explosion.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_missile.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_blast.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_breath.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_meteor.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_scorch.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_slash.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_storm.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fire_wall.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/fireball.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_blizzard.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_elemental.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_lance.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_nova.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_shard.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_shield.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_spikes.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frostbolt.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/frost_shield_burst.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/arcane_barrage_bolt.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/ancient_hydra_breath.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/burst_blink_explosion.json",
+    "class": "arcane"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/elemental_frost_nova.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/elemental_frost_shard.json",
+    "class": "frost"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/hydra_fireball.json",
+    "class": "fire"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "resource": "data/wizards/spell/legion_frost_nova.json",
+    "class": "frost"
+  }
+]

@@ -1,0 +1,316 @@
+PASS native GUI effect atlas
+PASS native icon rogues:slice_and_dice
+PASS native icon rogues:shock
+PASS native icon rogues:shadow_step
+PASS native icon rogues:stealth
+PASS native icon rogues:stealth_speed
+PASS native icon rogues:shatter
+PASS native icon rogues:demoralize
+PASS native icon rogues:bear_trap
+PASS native icon rogues:net_trap
+PASS native icon rogues:charge
+PASS native icon rogues:last_stand
+PASS native icon rogues:improved_stealth
+PASS native icon rogues:tracking_disruption
+PASS native icon paladins:divine_protection
+PASS native icon paladins:battle_banner
+PASS native icon paladins:judgement
+PASS native icon paladins:blessed_strikes
+PASS native icon paladins:levitate
+PASS native icon paladins:priest_absorption
+PASS native icon skill_tree_rpgs:divine_strength
+PASS native icon skill_tree_rpgs:recklessness
+PASS native icon skill_tree_rpgs:fleet_footed
+PASS native icon skill_tree_rpgs:arcane_slowness
+PASS native icon skill_tree_rpgs:fire_vulnerability
+PASS native icon skill_tree_rpgs:frost_vulnerability
+PASS native icon skill_tree_rpgs:healing_focus
+PASS native icon skill_tree_rpgs:incanter_cadence
+PASS native icon skill_tree_rpgs:redoubt
+PASS native icon skill_tree_rpgs:killing_spree
+PASS native icon skill_tree_rpgs:fracture
+PASS native icon skill_tree_rpgs:rhythm
+PASS native icon skill_tree_rpgs:pursuit_of_justice
+PASS native icon skill_tree_rpgs:battle_shout
+PASS native icon skill_tree_rpgs:natures_grasp
+PASS native icon skill_tree_rpgs:arcane_exposure
+PASS native icon skill_tree_rpgs:arcane_speed
+PASS native icon skill_tree_rpgs:frost_shield_speed
+PASS native icon skill_tree_rpgs:concussion_blow
+PASS native icon skill_tree_rpgs:cloak_of_shadows
+PASS native icon skill_tree_rpgs:ambush
+PASS native icon skill_tree_rpgs:presence_of_mind
+PASS native icon skill_tree_rpgs:blizzard_slow
+PASS native icon skill_tree_rpgs:banner_protection
+PASS native icon skill_tree_rpgs:phase_shift
+PASS native icon skill_tree_rpgs:blazing_speed
+PASS native icon skill_tree_rpgs:arctic_reflex
+PASS native icon skill_tree_rpgs:arcane_ward
+PASS native icon skill_tree_rpgs:fire_ward
+PASS native icon skill_tree_rpgs:frost_ward
+PASS native icon skill_tree_rpgs:divine_favor
+PASS native icon skill_tree_rpgs:pain_suppression
+PASS native icon skill_tree_rpgs:serenity
+PASS native icon skill_tree_rpgs:hysteria
+PASS native icon skill_tree_rpgs:chastise
+PASS native icon skill_tree_rpgs:celestial_orb
+PASS native icon skill_tree_rpgs:vengeance
+PASS native icon skill_tree_rpgs:ardent_defender
+PASS native icon skill_tree_rpgs:vitality
+PASS native icon skill_tree_rpgs:enrage
+PASS native icon skill_tree_rpgs:opportunist
+PASS native icon skill_tree_rpgs:smoke_screen
+PASS native icon skill_tree_rpgs:side_step
+PASS native icon skill_tree_rpgs:cheat_death
+PASS native icon skill_tree_rpgs:tactical_maneuver
+PASS native icon skill_tree_rpgs:supercharge
+PASS native icon skill_tree_rpgs:juggernaut
+PASS native icon skill_tree_rpgs:revenge
+PASS native icon skill_tree_rpgs:deflection
+PASS native icon skill_tree_rpgs:flurry_trance
+PASS native icon skill_tree_rpgs:shatter
+PASS native icon skill_tree_rpgs:punishment
+PASS native icon skill_tree_rpgs:purgatory
+PASS native icon skill_tree_rpgs:paladin_sanctity
+PASS native icon skill_tree_rpgs:purgatory_ward
+PASS native icon skill_tree_rpgs:reinforced
+PASS native icon skill_tree_rpgs:divine_oath
+PASS native icon skill_tree_rpgs:merciful_recovery
+PASS native icon skill_tree_rpgs:faith_knockback
+PASS native icon skill_tree_rpgs:protection_power
+PASS native icon skill_tree_rpgs:paladin_control_guard
+PASS native icon skill_tree_rpgs:sinful_retaliation_ready
+PASS native icon skill_tree_rpgs:sinful_mark
+PASS native icon skill_tree_rpgs:lightwell_vitality
+PASS native icon skill_tree_rpgs:priest_fade
+PASS native icon skill_tree_rpgs:priest_penance_shield
+PASS native icon skill_tree_rpgs:priest_serenity_shield
+PASS native icon skill_tree_rpgs:ascension_power
+PASS native icon skill_tree_rpgs:warrior_freedom
+PASS native icon skill_tree_rpgs:warrior_endurance
+PASS native icon skill_tree_rpgs:warrior_momentum_ready
+PASS native icon skill_tree_rpgs:warrior_momentum
+PASS native icon skill_tree_rpgs:berserker
+PASS native icon skill_tree_rpgs:berserker_crit
+PASS native icon skill_tree_rpgs:sentinel
+PASS native icon skill_tree_rpgs:tenacity_ward
+PASS native icon skill_tree_rpgs:cheat_death_evasion
+PASS native icon skill_tree_rpgs:slice_evasion
+PASS native icon skill_tree_rpgs:prepared_counter_ready
+PASS native icon skill_tree_rpgs:arcane_vulnerability
+PASS native icon archers:hunters_mark_stash
+PASS native icon archers:hunters_mark
+PASS native icon archers:entangling_roots
+PASS native icon wizards:frozen
+PASS native icon wizards:frost_shield
+PASS native icon wizards:frost_slowness
+PASS native icon wizards:arcane_evocation
+PASS native icon wizards:arcane_charge
+PASS native icon spell_engine:stun
+PASS native icon spell_engine:bleed
+PASS native cast 0 rogues:shock_powder Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 0 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:shock_powder","nodes":[],"variant":"base"}
+SCREENSHOT start 0 rogues:shock_powder
+SCREENSHOT active 0 rogues:shock_powder
+PASS native cast 1 rogues:slice_and_dice Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 1 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:slice_and_dice","nodes":[],"variant":"base"}
+SCREENSHOT start 1 rogues:slice_and_dice
+SCREENSHOT active 1 rogues:slice_and_dice
+PASS native cast 2 rogues:shadow_step Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 2 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:shadow_step","nodes":[],"variant":"base"}
+SCREENSHOT start 2 rogues:shadow_step
+SCREENSHOT active 2 rogues:shadow_step
+PASS native cast 3 rogues:bear_trap Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 3 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:bear_trap","nodes":[],"variant":"base"}
+SCREENSHOT start 3 rogues:bear_trap
+SCREENSHOT active 3 rogues:bear_trap
+PASS native cast 4 rogues:vanish Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 4 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:vanish","nodes":[],"variant":"base"}
+SCREENSHOT start 4 rogues:vanish
+PASS Vanish still active at visual check
+PASS Vanish hides held models in actual renderer
+PASS Vanish removes reveal in actual client
+SCREENSHOT active 4 rogues:vanish
+PASS native cast 5 rogues:mutilate Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 5 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:mutilate","nodes":[],"variant":"base"}
+SCREENSHOT start 5 rogues:mutilate
+SCREENSHOT active 5 rogues:mutilate
+PASS native cast 6 archers:power_shot Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 6 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:power_shot","nodes":[],"variant":"base"}
+SCREENSHOT start 6 archers:power_shot
+SCREENSHOT active 6 archers:power_shot
+PASS native cast 7 archers:entangling_roots Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 7 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:entangling_roots","nodes":[],"variant":"base"}
+SCREENSHOT start 7 archers:entangling_roots
+SCREENSHOT active 7 archers:entangling_roots
+PASS native cast 8 archers:barrage Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 8 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:barrage","nodes":[],"variant":"base"}
+SCREENSHOT start 8 archers:barrage
+SCREENSHOT active 8 archers:barrage
+PASS native cast 9 archers:spirit_wolf Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 9 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:spirit_wolf","nodes":[],"variant":"base"}
+SCREENSHOT start 9 archers:spirit_wolf
+SCREENSHOT active 9 archers:spirit_wolf
+PASS native cast 10 archers:rain_of_arrows Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 10 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:rain_of_arrows","nodes":[],"variant":"base"}
+SCREENSHOT start 10 archers:rain_of_arrows
+SCREENSHOT active 10 archers:rain_of_arrows
+PASS native cast 11 archers:magic_arrow Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 11 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:magic_arrow","nodes":[],"variant":"base"}
+SCREENSHOT start 11 archers:magic_arrow
+SCREENSHOT active 11 archers:magic_arrow
+PASS native cast 12 rogues:throw Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 12 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:throw","nodes":[],"variant":"base"}
+SCREENSHOT start 12 rogues:throw
+SCREENSHOT active 12 rogues:throw
+PASS native cast 13 rogues:throw_net Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 13 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:throw_net","nodes":[],"variant":"base"}
+SCREENSHOT start 13 rogues:throw_net
+SCREENSHOT active 13 rogues:throw_net
+PASS native cast 14 rogues:charge Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 14 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:charge","nodes":[],"variant":"base"}
+SCREENSHOT start 14 rogues:charge
+SCREENSHOT active 14 rogues:charge
+PASS native cast 15 rogues:shout Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 15 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:shout","nodes":[],"variant":"base"}
+SCREENSHOT start 15 rogues:shout
+SCREENSHOT active 15 rogues:shout
+PASS native cast 16 rogues:mortal_strike Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 16 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:mortal_strike","nodes":[],"variant":"base"}
+SCREENSHOT start 16 rogues:mortal_strike
+SCREENSHOT active 16 rogues:mortal_strike
+PASS native cast 17 rogues:last_stand Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 17 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:last_stand","nodes":[],"variant":"base"}
+SCREENSHOT start 17 rogues:last_stand
+SCREENSHOT active 17 rogues:last_stand
+PASS native cast 18 paladins:holy_beam Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 18 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:holy_beam","nodes":[],"variant":"base"}
+SCREENSHOT start 18 paladins:holy_beam
+SCREENSHOT active 18 paladins:holy_beam
+PASS native cast 19 paladins:penance Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 19 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:penance","nodes":[],"variant":"base"}
+SCREENSHOT start 19 paladins:penance
+SCREENSHOT active 19 paladins:penance
+PASS native cast 20 paladins:circle_of_healing Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 20 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:circle_of_healing","nodes":[],"variant":"base"}
+SCREENSHOT start 20 paladins:circle_of_healing
+SCREENSHOT active 20 paladins:circle_of_healing
+PASS native cast 21 paladins:levitate Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 21 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:levitate","nodes":[],"variant":"base"}
+SCREENSHOT start 21 paladins:levitate
+SCREENSHOT active 21 paladins:levitate
+PASS native cast 22 paladins:lightwell Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 22 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:lightwell","nodes":[],"variant":"base"}
+SCREENSHOT start 22 paladins:lightwell
+SCREENSHOT active 22 paladins:lightwell
+PASS native cast 23 paladins:barrier Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 23 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:barrier","nodes":[],"variant":"base"}
+SCREENSHOT start 23 paladins:barrier
+SCREENSHOT active 23 paladins:barrier
+PASS native cast 24 wizards:arcane_missile Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 24 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_missile","nodes":[],"variant":"base"}
+SCREENSHOT start 24 wizards:arcane_missile
+SCREENSHOT active 24 wizards:arcane_missile
+PASS native cast 25 wizards:arcane_explosion Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 25 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_explosion","nodes":[],"variant":"base"}
+SCREENSHOT start 25 wizards:arcane_explosion
+SCREENSHOT active 25 wizards:arcane_explosion
+PASS native cast 26 wizards:arcane_beam Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 26 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_beam","nodes":[],"variant":"base"}
+SCREENSHOT start 26 wizards:arcane_beam
+SCREENSHOT active 26 wizards:arcane_beam
+PASS native cast 27 wizards:arcane_barrage Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 27 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_barrage","nodes":[],"variant":"base"}
+SCREENSHOT start 27 wizards:arcane_barrage
+SCREENSHOT active 27 wizards:arcane_barrage
+PASS native cast 28 wizards:arcane_blink Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 28 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_blink","nodes":[],"variant":"base"}
+SCREENSHOT start 28 wizards:arcane_blink
+SCREENSHOT active 28 wizards:arcane_blink
+PASS native cast 29 wizards:arcane_evocation Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 29 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_evocation","nodes":[],"variant":"base"}
+SCREENSHOT start 29 wizards:arcane_evocation
+SCREENSHOT active 29 wizards:arcane_evocation
+PASS native cast 30 wizards:fire_breath Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 30 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_breath","nodes":[],"variant":"base"}
+SCREENSHOT start 30 wizards:fire_breath
+SCREENSHOT active 30 wizards:fire_breath
+PASS native cast 31 wizards:fire_slash Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 31 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_slash","nodes":[],"variant":"base"}
+SCREENSHOT start 31 wizards:fire_slash
+SCREENSHOT active 31 wizards:fire_slash
+PASS native cast 32 wizards:fire_meteor Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 32 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_meteor","nodes":[],"variant":"base"}
+SCREENSHOT start 32 wizards:fire_meteor
+SCREENSHOT active 32 wizards:fire_meteor
+PASS native cast 33 wizards:fire_storm Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 33 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_storm","nodes":[],"variant":"base"}
+SCREENSHOT start 33 wizards:fire_storm
+SCREENSHOT active 33 wizards:fire_storm
+PASS native cast 34 wizards:fire_wall Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 34 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_wall","nodes":[],"variant":"base"}
+SCREENSHOT start 34 wizards:fire_wall
+SCREENSHOT active 34 wizards:fire_wall
+PASS native cast 35 wizards:fire_hydra Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 35 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_hydra","nodes":[],"variant":"base"}
+SCREENSHOT start 35 wizards:fire_hydra
+SCREENSHOT active 35 wizards:fire_hydra
+PASS native cast 36 wizards:frost_nova Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 36 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_nova","nodes":[],"variant":"base"}
+SCREENSHOT start 36 wizards:frost_nova
+SCREENSHOT active 36 wizards:frost_nova
+PASS native cast 37 wizards:frost_spikes Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 37 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_spikes","nodes":[],"variant":"base"}
+SCREENSHOT start 37 wizards:frost_spikes
+SCREENSHOT active 37 wizards:frost_spikes
+PASS native cast 38 wizards:frost_shield Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 38 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_shield","nodes":[],"variant":"base"}
+SCREENSHOT start 38 wizards:frost_shield
+SCREENSHOT active 38 wizards:frost_shield
+PASS native cast 39 wizards:frost_lance Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 39 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_lance","nodes":[],"variant":"base"}
+SCREENSHOT start 39 wizards:frost_lance
+SCREENSHOT active 39 wizards:frost_lance
+PASS native cast 40 wizards:frost_blizzard Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 40 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_blizzard","nodes":[],"variant":"base"}
+SCREENSHOT start 40 wizards:frost_blizzard
+SCREENSHOT active 40 wizards:frost_blizzard
+PASS native cast 41 wizards:frost_elemental Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 41 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_elemental","nodes":[],"variant":"base"}
+SCREENSHOT start 41 wizards:frost_elemental
+SCREENSHOT active 41 wizards:frost_elemental
+PASS native cast 42 rogues:vanish Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 42 {"class":"rogue","root":"63gwys64onqg00ry","spell":"rogues:vanish","nodes":["x3n92mbljrncs8zs","k4rbiamjkymxtb7f"],"variant":"rogue_tier_4_spell_1_modifier_2"}
+SCREENSHOT start 42 rogues:vanish
+PASS Vanish still active at visual check
+PASS Vanish hides held models in actual renderer
+PASS Vanish removes reveal in actual client
+SCREENSHOT active 42 rogues:vanish
+PASS native cast 43 archers:magic_arrow Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 43 {"class":"archer","root":"418rsvnd17egwkse","spell":"archers:magic_arrow","nodes":["d42ph71z9w39yvfe","xbx25koztd8yb4ai"],"variant":"archer_tier_4_spell_2_modifier_1"}
+SCREENSHOT start 43 archers:magic_arrow
+SCREENSHOT active 43 archers:magic_arrow
+PASS native cast 44 rogues:last_stand Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 44 {"class":"warrior","root":"e5ljj7jx6pmdjatf","spell":"rogues:last_stand","nodes":["1n5uedeewpooh3fu","gvfngt3qr4kn3flb"],"variant":"warrior_tier_4_spell_2_modifier_2"}
+SCREENSHOT start 44 rogues:last_stand
+SCREENSHOT active 44 rogues:last_stand
+PASS native cast 45 paladins:penance Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 45 {"class":"priest","root":"ov6ag9tjdhsmldil","spell":"paladins:penance","nodes":["jrp4nqgtcbvyot3s","w92f6zohy81zxobi"],"variant":"priest_tier_3_spell_2_modifier_1"}
+SCREENSHOT start 45 paladins:penance
+SCREENSHOT active 45 paladins:penance
+PASS native cast 46 wizards:arcane_beam Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 46 {"class":"arcane","root":"qr4fdarqqqm5ifoa","spell":"wizards:arcane_beam","nodes":["j0s748bxsykvp5uc","p6k6oj0rwy5waw7k"],"variant":"arcane_tier_3_spell_1_modifier_2"}
+SCREENSHOT start 46 wizards:arcane_beam
+SCREENSHOT active 46 wizards:arcane_beam
+PASS native cast 47 wizards:fire_wall Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 47 {"class":"fire","root":"m1pc5vz73nx4b28c","spell":"wizards:fire_wall","nodes":["8a2c8jxv7k4vhlui","54ttqmoe4vdh8krj"],"variant":"fire_tier_4_spell_1_modifier_2"}
+SCREENSHOT start 47 wizards:fire_wall
+SCREENSHOT active 47 wizards:fire_wall
+PASS native cast 48 wizards:frost_elemental Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 48 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_elemental","nodes":["ur6lrbrjx4u52zdp","vdvrw73xcm2k0lry"],"variant":"frost_tier_4_spell_2_modifier_1"}
+SCREENSHOT start 48 wizards:frost_elemental
+SCREENSHOT active 48 wizards:frost_elemental
+PASS native cast 49 wizards:frost_elemental Attempt[result=SUCCESS, missingItem=null, onCooldown=null]
+CASE 49 {"class":"frost","root":"akyr8k2dv9xsy70c","spell":"wizards:frost_elemental","nodes":["ur6lrbrjx4u52zdp","6573dwuvyl7khs0w"],"variant":"frost_tier_4_spell_2_modifier_2"}
+SCREENSHOT start 49 wizards:frost_elemental
+SCREENSHOT active 49 wizards:frost_elemental

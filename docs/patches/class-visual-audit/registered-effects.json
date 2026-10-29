@@ -1,0 +1,735 @@
+[
+  {
+    "id": "rogues:slice_and_dice",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "rogues:shock",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-1.0:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-1.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:shadow_step",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "rogues:stealth",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:-0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:stealth_speed",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:shatter",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:armor:-0.30000001192092896:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:demoralize",
+    "category": "HARMFUL",
+    "attributes": [
+      "spell_power:lightning:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "spell_power:arcane:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "spell_power:frost:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "minecraft:attack_damage:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "spell_power:soul:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "spell_power:fire:-0.11999999731779099:ADD_MULTIPLIED_BASE",
+      "ranged_weapon:damage:-0.11999999731779099:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:bear_trap",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-2.0:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-2.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:net_trap",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:knockback_resistance:100.0:ADD_MULTIPLIED_BASE",
+      "minecraft:movement_speed:-2.0:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-2.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:charge",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:knockback_resistance:0.25:ADD_VALUE",
+      "minecraft:movement_speed:0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:last_stand",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:knockback_resistance:1.0:ADD_VALUE",
+      "minecraft:max_health:0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:improved_stealth",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "rogues:tracking_disruption",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "paladins:divine_protection",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "paladins:battle_banner",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "paladins:judgement",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:jump_strength:0.0:ADD_MULTIPLIED_TOTAL"
+    ]
+  },
+  {
+    "id": "paladins:blessed_strikes",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "paladins:levitate",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:gravity:-0.9900000095367432:ADD_MULTIPLIED_TOTAL"
+    ]
+  },
+  {
+    "id": "paladins:priest_absorption",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:divine_strength",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:recklessness",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:1.0:ADD_MULTIPLIED_BASE",
+      "critical_strike:chance:1.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:fleet_footed",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.029999999329447746:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:arcane_slowness",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:fire_vulnerability",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:frost_vulnerability",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:healing_focus",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:healing_taken:0.03999999910593033:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:incanter_cadence",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:haste:0.019999999552965164:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:redoubt",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:healing:0.05000000074505806:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:killing_spree",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.019999999552965164:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:fracture",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:armor:-2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:rhythm",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "ranged_weapon:haste:0.029999999329447746:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:pursuit_of_justice",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.30000001192092896:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:battle_shout",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:lightning:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "spell_power:arcane:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "spell_power:frost:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "minecraft:attack_damage:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "spell_power:soul:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "spell_power:fire:0.07999999821186066:ADD_MULTIPLIED_BASE",
+      "ranged_weapon:damage:0.07999999821186066:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:natures_grasp",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-10.0:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-10.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:arcane_exposure",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:arcane_speed",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.10000000149011612:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:frost_shield_speed",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:concussion_blow",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:cloak_of_shadows",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:ambush",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:presence_of_mind",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:blizzard_slow",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:banner_protection",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:phase_shift",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:-1.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:blazing_speed",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:arctic_reflex",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:arcane_ward",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:fire_ward",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:frost_ward",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:divine_favor",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:pain_suppression",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:-0.05999999865889549:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:serenity",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:-0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:hysteria",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:haste:0.009999999776482582:ADD_MULTIPLIED_BASE",
+      "ranged_weapon:haste:0.009999999776482582:ADD_MULTIPLIED_BASE",
+      "minecraft:attack_speed:0.009999999776482582:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:chastise",
+    "category": "HARMFUL",
+    "attributes": [
+      "spell_engine:damage_taken:0.009999999776482582:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:celestial_orb",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:vengeance",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:armor:0.05000000074505806:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:ardent_defender",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:armor:10.0:ADD_VALUE",
+      "spell_engine:damage_taken:-0.05000000074505806:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:vitality",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:armor:1.0:ADD_VALUE",
+      "minecraft:max_health:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:enrage",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.029999999329447746:ADD_MULTIPLIED_BASE",
+      "minecraft:scale:0.05999999865889549:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:opportunist",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "critical_strike:chance:1.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:smoke_screen",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:evasion_chance:0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:side_step",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:evasion_chance:0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:cheat_death",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:-1.0:ADD_MULTIPLIED_TOTAL"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:tactical_maneuver",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:supercharge",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "ranged_weapon:haste:-0.25:ADD_MULTIPLIED_TOTAL"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:juggernaut",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:-0.029999999329447746:ADD_MULTIPLIED_BASE",
+      "minecraft:scale:0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:revenge",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_speed:0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:deflection",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:flurry_trance",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.10000000149011612:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:shatter",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:armor:-0.20000000298023224:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:punishment",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "critical_strike:chance:1.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:purgatory",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:paladin_sanctity",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:purgatory_ward",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:reinforced",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:divine_oath",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:merciful_recovery",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:faith_knockback",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:protection_power",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:paladin_control_guard",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:sinful_retaliation_ready",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:sinful_mark",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:0.15000000596046448:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:lightwell_vitality",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_health:2.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:priest_fade",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:priest_penance_shield",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:1.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:priest_serenity_shield",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:1.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:ascension_power",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:lightning:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "spell_power:arcane:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "spell_power:frost:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "minecraft:attack_damage:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "spell_power:soul:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "spell_power:fire:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "ranged_weapon:damage:0.019999999552965164:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:warrior_freedom",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:warrior_endurance",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:knockback_resistance:1.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:warrior_momentum_ready",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:warrior_momentum",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:0.019999999552965164:ADD_MULTIPLIED_BASE",
+      "minecraft:attack_speed:0.019999999552965164:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:berserker",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:0.20000000298023224:ADD_MULTIPLIED_BASE",
+      "minecraft:knockback_resistance:0.15000000596046448:ADD_VALUE",
+      "minecraft:attack_speed:0.15000000596046448:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:berserker_crit",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "critical_strike:chance:0.03999999910593033:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:sentinel",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:attack_damage:0.009999999776482582:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:tenacity_ward",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:max_absorption:1.0:ADD_VALUE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:cheat_death_evasion",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:evasion_chance:0.30000001192092896:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:slice_evasion",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:evasion_chance:0.05000000074505806:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "skill_tree_rpgs:prepared_counter_ready",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "skill_tree_rpgs:arcane_vulnerability",
+    "category": "HARMFUL",
+    "attributes": []
+  },
+  {
+    "id": "archers:hunters_mark_stash",
+    "category": "BENEFICIAL",
+    "attributes": []
+  },
+  {
+    "id": "archers:hunters_mark",
+    "category": "HARMFUL",
+    "attributes": [
+      "spell_engine:damage_taken:0.07000000029802322:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "archers:entangling_roots",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-0.6000000238418579:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-0.6000000238418579:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "wizards:frozen",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-10.0:ADD_MULTIPLIED_BASE",
+      "minecraft:jump_strength:-10.0:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "wizards:frost_shield",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "minecraft:movement_speed:-0.5:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "wizards:frost_slowness",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:movement_speed:-0.15000000596046448:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "wizards:arcane_evocation",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_engine:damage_taken:0.10000000149011612:ADD_MULTIPLIED_BASE",
+      "spell_power:haste:0.029999999329447746:ADD_MULTIPLIED_BASE",
+      "spell_power:critical_chance:0.05000000074505806:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "wizards:arcane_charge",
+    "category": "BENEFICIAL",
+    "attributes": [
+      "spell_power:arcane:0.15000000596046448:ADD_MULTIPLIED_BASE"
+    ]
+  },
+  {
+    "id": "spell_engine:stun",
+    "category": "HARMFUL",
+    "attributes": [
+      "minecraft:jump_strength:0.0:ADD_MULTIPLIED_TOTAL"
+    ]
+  },
+  {
+    "id": "spell_engine:bleed",
+    "category": "HARMFUL",
+    "attributes": []
+  }
+]

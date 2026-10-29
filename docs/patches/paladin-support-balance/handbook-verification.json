@@ -1,0 +1,19 @@
+{
+  "pages": 79,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 184,
+  "main_jars": 307,
+  "client_jars": 23,
+  "pdf_sha256": "07fdedf1ab1e14121e4d058f8829566ca03da39f0b57f5e75a44286163c3da48",
+  "all_pages_rendered": true,
+  "visual_review_pending": false,
+  "changed_pages": [
+    17,
+    18,
+    19
+  ],
+  "visual_review": "All79 pages reviewed in five contact sheets; classes section pages17-19 checked for content flow."
+}

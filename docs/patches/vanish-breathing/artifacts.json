@@ -1,0 +1,30 @@
+{
+  "input": "mods\\rogues-neoforge-3.1.2+26.2.jar",
+  "input_sha256": "3a714d40867a92231fe321b9d20cfa96f97aa596399679743074b66695e95d4b",
+  "candidate": "tmp\\vanish-breathing\\built\\rogues-neoforge-3.1.2+26.2.jar",
+  "candidate_sha256": "624f2eb51ecd54f80398fc0b5f6cfe4f96d70f9406a2ef8fb227d9d04765f3ce",
+  "changed": [
+    "rogues.mixins.json",
+    "net/rogues/mixin/client/StealthHandsMixin.class"
+  ],
+  "added": [
+    "net/rogues/client/VanishState.class",
+    "net/rogues/client/VanishVisuals$FadedVertices.class",
+    "net/rogues/client/VanishVisuals.class",
+    "net/rogues/mixin/client/VanishLivingRendererMixin.class",
+    "net/rogues/mixin/client/VanishRenderSetupAccess.class",
+    "net/rogues/mixin/client/VanishRenderStateMixin.class",
+    "net/rogues/mixin/client/VanishRenderTypeAccess.class",
+    "net/rogues/mixin/client/VanishTextureAccess.class"
+  ],
+  "runtime_result": "PASS 74 checks",
+  "runtime_versions": {
+    "Minecraft": "26.2",
+    "NeoForge": "26.2.0.90",
+    "Java": "26.0.2 (class release 25)",
+    "Punchy": "2.8f",
+    "Player Animation Library": "1.2.8",
+    "CrossArms": "1.4"
+  },
+  "runtime_engine_sha256": "1caab2915beaf66bf034c1dd6e62156afec35c7962b1ee122e4e0e063ad61906"
+}

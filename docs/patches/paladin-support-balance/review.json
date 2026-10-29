@@ -1,0 +1,20 @@
+{
+  "review": "Focused independent worker review plus primary review",
+  "findings": [
+    {
+      "issue": "Merciful Recovery detail omitted Puffish healing-received modifiers",
+      "resolution": "Uses shared receivedHealing helper; native tooltip assertion passes"
+    },
+    {
+      "issue": "Shared Banner healing guard excluded final20s/25s endpoint",
+      "resolution": "Inclusive heal deadline; both endpoint assertions pass"
+    }
+  ],
+  "final_runtime": {
+    "fresh": 225,
+    "stale": 225,
+    "vanish_client": 74
+  },
+  "personal_installations_modified": false,
+  "pushed": false
+}

@@ -370,3 +370,8 @@ These support parent skills or summons. They are not new selectable nodes; visib
 The user approved this wording and all 196 entries now match the installed English descriptions: 176 rewrites and 20 retained entries. The before/after tables remain the audit record. Only `assets/*/lang/en_us.json` changed in Archers, Rogues, Wizards and Skill Tree; all other translations and archive entries are unchanged. Priest and Paladin remain excluded.
 
 Rebuild and verification instructions are in [the implementation record](README.md). Previous active and fixed-pack copies are archived locally. No personal installation, combat data or code changed; no commit or push was requested. Verification covers exact packaged text and archive preservation, not a new in-game visual test.
+
+
+### 29 October2026 Paladin support continuation
+
+The approved [support balance plan](../../superpowers/plans/2026-10-29-paladin-support-and-vanish.md) is now implemented. Purge healing reads20%/25%/35%; Vanguard describes its periodic melee bonus/stun, and Guardian its2% baseline plus2%/3% shield stacks. Protection uses finite attack blocks and30%/40% reduction ceilings. Keep the full scaling formulas in the linked plan, native gold rows for cooldowns/triggers, and resolved effect details for received benefits. See [implementation and verification](../paladin-support-balance/README.md).

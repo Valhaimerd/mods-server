@@ -1,5 +1,20 @@
 # Other Class Visuals and Effect Icons Implementation Plan
 
+**29 October continuation installed:** [Paladin support and Vanish plan](2026-10-29-paladin-support-and-vanish.md). This supersedes the original Vanish full-hide/no-glint rows only: body, armor and held equipment now share the approved0-10% violet breathing shimmer, while later reveal effects remain effective. Paladin scaling/passive changes and225 fresh/stale checks are recorded in `docs/patches/paladin-support-balance/`; Rogue rendering passes74 client checks.
+
+## Follow-up: Divine Protection attack blocks (2026-10-29)
+
+**Installed:** same-name Paladins/Spell Engine repair; 27 fresh-config and 27 stale-config native checks pass. Descriptions, local class reference and reviewed 79-page handbook are synchronized. Evidence: `docs/patches/protection-hit-charges/`.
+
+The owner clarified that mitigation means a finite number of qualifying attacks, not flat HP removed from each hit. Implement this correction first, independently of the pending Vanish and Paladin passive redesigns.
+
+- Preserve the existing cast snapshot: one attack block plus one per complete 10 Melee Power. At 17 M, block two attacks.
+- Block hostile living-attacker damage, including attributable projectiles and magic, before absorption is consumed. Environmental damage, self-costs, party damage and invulnerability-bypassing damage must not spend charges.
+- Keep percentage damage reduction active after charges are spent; apply the approved 40% cap. Preserve duration, party eligibility, knockback resistance, caster power and Merciful Recovery.
+- Show remaining attack blocks in status details and remove flat-HP wording from node descriptions and player documentation.
+- Reproduce the defect using native dedicated-server damage calls; verify count scaling, melee/magic blocks, absorption preservation, exhausted charges, environmental hits, recast and dispel.
+- Repack current JARs under their existing filenames, archive local rollbacks, synchronize the reference and handbook, rebuild/review the PDF. No GitHub push is requested in this follow-up.
+
 > **Execution:** Primary agent inline using `superpowers:executing-plans`, class by class, preserving the user's preference to minimize workers. Implementation is installed; see the evidence below. No GitHub synchronization is included without a new request.
 
 **Goal:** Repair missing buff/debuff icons and make remaining class effects readable, accurate and consistent with the completed Paladin pass.

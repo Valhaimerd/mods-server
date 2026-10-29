@@ -1,0 +1,29 @@
+FAIL normal Protection capped30 actual=0.4 expected=0.3
+FAIL attack-block budget capped3 actual=5.0 expected=3.0
+PASS Bulwark capped40 actual=0.4 expected=0.4
+FAIL KR reaches80 at ordinary endgame M actual=0.5 expected=0.8
+FAIL Guardian baseline2 armor actual=21.0 expected=20.4
+FAIL Guardian baseline2 healing actual=20.0 expected=20.4
+FAIL Guardian first earned2 armor actual=22.00000001490116 expected=20.8
+FAIL Guardian first earned2 healing actual=20.0 expected=20.8
+PASS shield changes earned stack to3 actual=21.00000001490116 expected=21.0
+FAIL shield Guardian max14 armor actual=24.000000059604645 expected=22.8
+FAIL shield Guardian max14 healing actual=20.0 expected=22.8
+FAIL Vanguard cooldown4 actual=1.0 expected=4.0
+FAIL Vanguard melee stuns
+FAIL shield Vanguard stuns
+FAIL Purge heal coefficient 0 actual=5.0 expected=4.0
+FAIL Purge heal coefficient 1 actual=6.0 expected=5.0
+FAIL Purge heal coefficient 2 actual=12.0 expected=7.0
+FAIL Oath damage cap3 actual=6.0 expected=3.0
+FAIL Oath armor cap6 actual=7.0 expected=6.0
+FAIL Oath absorption cap8 actual=5.0 expected=8.0
+PASS Oath refresh preserves spent shield actual=1.0 expected=1.0
+FAIL Decree damage cap4 actual=8.0 expected=4.0
+PASS Decree armor cap8 actual=8.0 expected=8.0
+FAIL Decree only adds2 new shield capacity actual=2.0 expected=3.0
+FAIL Banner attack caps at10s actual=0.14 expected=0.2
+PASS Banner draw caps at10s actual=0.2 expected=0.2
+PASS Banner haste caps at10s actual=0.1 expected=0.1
+PASS Banner armor cap at10s actual=0.1 expected=0.1
+PASS Banner KR caps at10s actual=0.3 expected=0.3

@@ -1,0 +1,27 @@
+PASS M17 grants two attack blocks actual=2.0 expected=2.0
+PASS first melee hit blocked actual=200.0 expected=200.0
+PASS blocked melee preserves absorption actual=5.0 expected=5.0
+PASS one charge consumed actual=1.0 expected=1.0
+PASS second magic hit blocked actual=200.0 expected=200.0
+PASS blocked magic preserves absorption actual=5.0 expected=5.0
+PASS magic consumes final charge actual=0.0 expected=0.0
+PASS percentage mitigation persists after charges spent actual=192.5 expected=192.5
+PASS spent charges remain zero actual=0.0 expected=0.0
+PASS zero M grants one block actual=1.0 expected=1.0
+PASS single block expires after one attack actual=190.5 expected=190.5
+PASS M40 grants five attack blocks actual=5.0 expected=5.0
+PASS reduction cap is 40 percent actual=0.4 expected=0.4
+PASS environmental damage consumes no attack block actual=2.0 expected=2.0
+PASS environmental hit uses percentage reduction only actual=192.5 expected=192.5
+PASS new cast replenishes attack budget actual=2.0 expected=2.0
+PASS dispelled protection cannot block attacks
+PASS attributed projectile blocked actual=200.0 expected=200.0
+PASS projectile spends one charge actual=1.0 expected=1.0
+PASS status shows remaining attack count
+PASS flat HP wording removed from details
+PASS self damage does not consume charge actual=2.0 expected=2.0
+PASS existing saved flat value migrates to finite charges actual=1.0 expected=1.0
+PASS migrated first charge blocks attack actual=200.0 expected=200.0
+PASS expired state spends no charges before cleanup tick actual=2.0 expected=2.0
+PASS expired state grants no attack immunity
+PASS cleanup removes attack immunity

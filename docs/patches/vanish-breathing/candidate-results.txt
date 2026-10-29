@@ -1,0 +1,80 @@
+PASS shared phase 0 = 0.1
+PASS gameplay invisible retained 0
+PASS render body and armor available 0
+PASS both held snapshots preserved 0
+PASS native body and four armor submissions 0 count=12
+PASS native held item/shield geometry emitted 0 quads=83
+PASS all materials use blending 0
+PASS all native body/armor/item alpha capped 0 samples=[26]
+PASS native animated glint on body armor and held items 0
+PASS additive glint RGB intensity follows same cycle 0 samples=[437852441]
+PASS shared phase 20 = 0.05
+PASS gameplay invisible retained 20
+PASS render body and armor available 20
+PASS both held snapshots preserved 20
+PASS native body and four armor submissions 20 count=12
+PASS native held item/shield geometry emitted 20 quads=83
+PASS all materials use blending 20
+PASS all native body/armor/item alpha capped 20 samples=[13]
+PASS native animated glint on body armor and held items 20
+PASS additive glint RGB intensity follows same cycle 20 samples=[218893324]
+PASS shared phase 40 = 0.0
+PASS gameplay invisible retained 40
+PASS render body and armor available 40
+PASS both held snapshots preserved 40
+PASS zero phase submits no body armor or weapons 40
+PASS shared phase 60 = 0.05
+PASS gameplay invisible retained 60
+PASS render body and armor available 60
+PASS both held snapshots preserved 60
+PASS native body and four armor submissions 60 count=12
+PASS native held item/shield geometry emitted 60 quads=83
+PASS all materials use blending 60
+PASS all native body/armor/item alpha capped 60 samples=[13]
+PASS native animated glint on body armor and held items 60
+PASS additive glint RGB intensity follows same cycle 60 samples=[218893324]
+PASS shared phase 80 = 0.1
+PASS gameplay invisible retained 80
+PASS render body and armor available 80
+PASS both held snapshots preserved 80
+PASS native body and four armor submissions 80 count=12
+PASS native held item/shield geometry emitted 80 quads=83
+PASS all materials use blending 80
+PASS all native body/armor/item alpha capped 80 samples=[26]
+PASS native animated glint on body armor and held items 80
+PASS additive glint RGB intensity follows same cycle 80 samples=[437852441]
+PASS shared phase 100 = 0.05
+PASS gameplay invisible retained 100
+PASS render body and armor available 100
+PASS both held snapshots preserved 100
+PASS native body and four armor submissions 100 count=12
+PASS native held item/shield geometry emitted 100 quads=83
+PASS all materials use blending 100
+PASS all native body/armor/item alpha capped 100 samples=[13]
+PASS native animated glint on body armor and held items 100
+PASS additive glint RGB intensity follows same cycle 100 samples=[218893324]
+PASS shared phase 120 = 0.0
+PASS gameplay invisible retained 120
+PASS render body and armor available 120
+PASS both held snapshots preserved 120
+PASS zero phase submits no body armor or weapons 120
+PASS later Glowing keeps native outline during Stealth
+PASS later reveal bypasses breathing and violet glint suppression
+PASS synced glowing flag alone preserves native reveal
+PASS removing later reveal resumes original breathing phase
+PASS resumed zero phase hides body equipment and glint
+PASS effect removal restores normal renderer
+PASS ordinary invisibility unaffected
+PASS Punchy/native first-person retained at peak 0 models=4 quads=234
+PASS Punchy/native first-person actual alpha 0 values=[26]
+PASS Punchy animated glint retained with capped additive intensity 0
+PASS Punchy/native first person at zero fully transparent
+PASS Punchy/native first-person retained at peak 80 models=4 quads=234
+PASS Punchy/native first-person actual alpha 80 values=[26]
+PASS Punchy animated glint retained with capped additive intensity 80
+SCREENSHOT phase 0 third-person 10percent
+SCREENSHOT phase 1 third-person zero
+SCREENSHOT phase 2 third-person normal
+SCREENSHOT phase 3 first-person 10percent
+SCREENSHOT phase 4 first-person zero
+SCREENSHOT phase 5 first-person normal

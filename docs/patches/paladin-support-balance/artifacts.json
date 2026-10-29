@@ -1,0 +1,39 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "b21eff895ea00f89c366e5325ddc1997b81b33a5b93e5537aaca16d1a7443c49",
+    "sha256": "4a030375c6306506947831d94200e1fda304dfb1ae6659a833c284793672ab47",
+    "changed": [
+      "assets/paladins/lang/en_us.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "4154232642f77740145249e9bd71647cc88a13032cefbdb3d403c0d0fff44f9c",
+    "sha256": "7293e804a6c1b1cc4414282ddecf1cad21214d533766bf6d9b0c85e501ce51fd",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_1_passive_1.json",
+      "net/skill_tree_rpgs/compat/PaladinPassives.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "1caab2915beaf66bf034c1dd6e62156afec35c7962b1ee122e4e0e063ad61906",
+    "sha256": "eb6d30a60bd875ce3a284c308785dcf88de7d32bab77505aa79f962e926b6a60",
+    "changed": [
+      "net/spell_engine/internals/PaladinTierOne.class",
+      "net/spell_engine/internals/PaladinRevamp$OathLaunch.class",
+      "net/spell_engine/internals/PaladinRevamp.class",
+      "net/spell_engine/internals/PaladinUltimates$Banner.class",
+      "net/spell_engine/internals/PaladinUltimates.class",
+      "net/spell_engine/internals/ProtectionHits.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/SupportScaling.class",
+      "net/spell_engine/internals/Vanguard.class"
+    ]
+  }
+]

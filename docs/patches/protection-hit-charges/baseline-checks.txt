@@ -1,0 +1,17 @@
+FAIL M17 grants two attack blocks actual=-1.0 expected=2.0
+FAIL first melee hit blocked actual=199.5 expected=200.0
+FAIL blocked melee preserves absorption actual=0.0 expected=5.0
+FAIL one charge consumed actual=-1.0 expected=1.0
+FAIL second magic hit blocked actual=194.0 expected=200.0
+FAIL blocked magic preserves absorption actual=0.0 expected=5.0
+FAIL magic consumes final charge actual=-1.0 expected=0.0
+FAIL percentage mitigation persists after charges spent actual=188.5 expected=192.5
+FAIL spent charges remain zero actual=-1.0 expected=0.0
+FAIL zero M grants one block actual=-1.0 expected=1.0
+FAIL single block expires after one attack actual=183.0 expected=190.5
+FAIL M40 grants five attack blocks actual=-1.0 expected=5.0
+FAIL reduction cap is 40 percent actual=0.45 expected=0.4
+FAIL environmental damage consumes no attack block actual=-1.0 expected=2.0
+FAIL environmental hit uses percentage reduction only actual=194.5 expected=192.5
+FAIL new cast replenishes attack budget actual=-1.0 expected=2.0
+PASS dispelled protection cannot block attacks

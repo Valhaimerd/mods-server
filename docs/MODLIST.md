@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 308 synchronized JARs · 23 client extras</p>
 
-Last audited: 2026-10-29<br>
+Last audited: 2026-10-30<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 307 synchronized JARs plus 23 client-store JARs
+Current distribution: 308 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -65,8 +65,8 @@ Each part opens with the role its systems play in a new world. Distinct category
     <tr class="toc-part"><td><a href="#part-iv--survival-and-creation">Part IV — Survival and Creation</a></td><td>52</td></tr>
     <tr class="toc-subsection"><td><a href="#resource-gathering-and-repetitive-actions">Resource gathering and repetitive actions</a></td><td>52</td></tr>
     <tr class="toc-subsection"><td><a href="#farming-food-and-cooking">Farming, food, and cooking</a></td><td>52</td></tr>
-    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>54</td></tr>
-    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#potions-and-alchemy">Potions and alchemy</a></td><td>55</td></tr>
+    <tr class="toc-subsection"><td><a href="#building-and-decoration">Building and decoration</a></td><td>56</td></tr>
     <tr class="toc-subsection"><td><a href="#storage-and-inventory-management">Storage and inventory management</a></td><td>58</td></tr>
     <tr class="toc-subsection"><td><a href="#item-transport-and-logistics">Item transport and logistics</a></td><td>59</td></tr>
     <tr class="toc-subsection"><td><a href="#vehicles-and-travel-equipment">Vehicles and travel equipment</a></td><td>60</td></tr>
@@ -2493,6 +2493,20 @@ A chain still consumes the relevant tool’s durability and follows server limit
 
 <div class="core-mod-entry">
 
+#### Agritech
+
+- **Type:** Farming automation
+- **Core mechanic:** Planters grow crops and trees and store their harvests; raised beds provide a manual alternative, and crates collect nearby drops.
+- **Player guidance:** Insert soil and a supported seed, then use a hoe to till compatible soil. Check Agritech's JEI categories for accepted combinations; cloches and fertilizer improve planters.
+
+The installed version supports Farmer's Delight cabbage, tomato, onion and rice on Farmland or Rich Soil Farmland. Rice yields rice panicles. Expanded Delight's asparagus, chili pepper, peanut and sweet potato need additional Agritech recipes and are not currently supported in these growers.
+
+<p class="core-mod-source"><a href="https://modrinth.com/mod/agritech">Official mod page</a></p>
+
+</div>
+
+<div class="core-mod-entry">
+
 #### Farmer's Delight
 
 - **Type:** Food and farming
@@ -3952,6 +3966,7 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 - [Advanced Worldgen Info](#advanced-worldgen-info)
 - [Advancements Reloaded](#advancements-reloaded)
 - [Adventurer Skills](#adventurer-skills)
+- [Agritech](#agritech)
 - [Alchemia](#alchemia)
 - [Alex's Caves](#alexs-caves)
 - [Alex's Mobs](#alexs-mobs)
@@ -4296,6 +4311,7 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 
 #### Farming & Food
 
+- [Agritech](#agritech)
 - [Better Rotten Flesh](#better-rotten-flesh)
 - [Expanded Delight](#expanded-delight)
 - [Farmer's Delight](#farmers-delight)
@@ -4321,6 +4337,7 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 
 #### Storage
 
+- [Agritech](#agritech)
 - [Easy Shulker Boxes](#easy-shulker-boxes)
 - [Golden Hopper](#golden-hopper)
 - [Hopper Gadgetry](#hopper-gadgetry)

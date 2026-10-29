@@ -132,11 +132,11 @@ Warrior balance: Killing Spree heals 4% maximum health on kills without damage r
 
 Auras has been removed from the client pack after its entity-ID rendering hook crashed Animal Pen guidebook previews. A same-filename Patchouli repair also gives detached book previews stable IDs, fixing the underlying vanilla renderer failure that remained without Auras. Animal Pen remains unchanged; see [the crash investigation and verification](docs/patches/auras-preview-id/README.md).
 
-Kaleidoscope Cookery has been removed from the pack. Farmer's Delight and the remaining cooking mods stay installed; the handbook and catalog now reflect 307 main-pack JARs and 23 client extras.
+Kaleidoscope Cookery has been removed from the pack. Farmer's Delight and the remaining cooking mods stay installed; the handbook and catalog now reflect 308 main-pack JARs and 23 client extras.
 
 Adventurer Skills Healing nodes and Colossus now improve Healing Power as well as healing received. Shared caster nodes read ?Magic Damage? and include Healing Power; Magistrate includes it too. See [the four-node overlay](docs/patches/adventurer-healing/README.md).
 
-MrCrayfish's Furniture Mod: Refurbished 1.0.25 is included for furniture, powered home appliances, mailboxes and computers; its required Framework 0.13.26 is already installed. The handbook now contains 184 gameplay entries across 307 main-pack JARs and 23 client extras. The 25 October controls audit confirms PatPat on right-click, RPG Tooltip Spell Details on Left Ctrl, and Penchant progress on Left Shift in both the owner's profile and installer recommendations.
+MrCrayfish's Furniture Mod: Refurbished 1.0.25 is included for furniture, powered home appliances, mailboxes and computers; its required Framework 0.13.26 is already installed. The handbook now contains 185 gameplay entries across 308 main-pack JARs and 23 client extras. The 25 October controls audit confirms PatPat on right-click, RPG Tooltip Spell Details on Left Ctrl, and Penchant progress on Left Shift in both the owner's profile and installer recommendations.
 
 Pet Vault's Keeper's Locket also fits the Nameless Trinkets **Trinket** slots, retaining its original Necklace slot and R menu. See [the additive slot patch](docs/patches/pet-vault-trinket/README.md). Sync the same-name Pet Vault JAR on clients and server.
 
@@ -175,3 +175,5 @@ Paladin [tier III and visual retouch](docs/patches/paladin-tier-three/README.md)
 Class visual retouches repair three missing status icons, distinguish earned gains from refreshes, and add native readiness accents. Vanish clears existing marks. See [the changes and isolated checks](docs/patches/class-visual-retouch/README.md).
 
 Paladin follow-up makes Battle Banner a large worn back standard with 6/8-block aura and once-per-second healing. Oath impacts deal 70%/100% Melee Damage; Purgatory resists control from 10s and consumes absorption before health. [Changes and checks](docs/patches/paladin-followup/README.md). The reported early-release hotbar lock remains unconfirmed after isolated input tests.
+
+Agritech 3.0.0.5 adds planters, raised beds and collecting crates. Its Farmer's Delight crop integration passed isolated client/server checks; Expanded Delight crops still need separate Agritech recipes. See [compatibility verification](docs/patches/agritech/README.md). Both client and server need the added JAR.

@@ -1,0 +1,23 @@
+{
+  "pages": 79,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 185,
+  "main_jars": 308,
+  "client_jars": 23,
+  "pdf_sha256": "7152d81312e943fe1211be82db686e4b85310cf23e6d8250707aae8fdae2ce06",
+  "all_pages_rendered": true,
+  "visual_review_pending": false,
+  "changed_pages": [
+    1,
+    3,
+    4,
+    53,
+    54,
+    55,
+    56
+  ],
+  "visual_review": "All 79 rendered pages reviewed in five contact sheets; cover, contents, indexes, Agritech entry and controls layout checked."
+}

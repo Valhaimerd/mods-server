@@ -1,0 +1,16 @@
+   // Both native Alex's Caves branches must survive with and without Utilities.
+   reset();p.getFoodData().setFoodLevel(10);p.getFoodData().setSaturation(0);
+   p.setItemSlot(EquipmentSlot.HEAD,new ItemStack(com.github.alexmodguy.alexscaves.server.item.ACItemRegistry.PRIMORDIAL_HELMET.get()));
+   var beef=new ItemStack(Items.BEEF);
+   check(beef.is(com.github.alexmodguy.alexscaves.server.misc.ACTagRegistry.RAW_MEATS),"beef uses actual Alex's Caves raw-meat tag");
+   beef.finishUsingItem(p.level(),p);
+   near(p.getFoodData().getFoodLevel(),14,"Primordial armor adds nutrition without Utilities");
+   near(p.getFoodData().getSaturationLevel(),3.4,"Primordial armor saturation preserved without Utilities");
+   path(0);p.getFoodData().setFoodLevel(10);p.getFoodData().setSaturation(0);p.getPersistentData().remove(Utilities.PREFIX+"food_fraction");
+   new ItemStack(Items.BEEF).finishUsingItem(p.level(),p);
+   near(p.getFoodData().getFoodLevel(),14,"Primordial nutrition retained alongside fractional Utilities bonus");
+   near(p.getFoodData().getSaturationLevel(),3.4+1.8*.14,"Utilities saturation adds once to Primordial native result");
+   p.setItemSlot(EquipmentSlot.HEAD,ItemStack.EMPTY);
+   p.getFoodData().setFoodLevel(20);p.getFoodData().setSaturation(20);
+   var food=new FoodProperties(5,6,true);food.onConsume(p.level(),p,new ItemStack(Items.BREAD),net.minecraft.world.item.component.Consumable.builder().build());
+   near(p.getFoodData().getFoodLevel(),20,"food stays capped at20");near(p.getFoodData().getSaturationLevel(),20,"saturation stays capped at20");

@@ -1,0 +1,1 @@
+REPRODUCED: Alex's Caves ac_eat Redirect conflict prevents bootstrap.

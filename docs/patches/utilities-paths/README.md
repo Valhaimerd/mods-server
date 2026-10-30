@@ -24,6 +24,8 @@ On first login, **only Utilities allocations are refunded**. Category XP, total 
 
 Native synchronized attributes own the summed utility stats. Scoped hooks handle food payloads, air, ladder movement, environmental freezing, actual orb XP awards, anvil payments, enchanting debits and tool wear. Duration extension occurs only at native food/potion payload delivery to the consuming entity; unrelated callbacks during consumption are excluded. The existing Companion bridge and previous compatibility behavior remain.
 
+The [31 October food compatibility repair](../utilities-food-compat/README.md) replaces the food redirect with a post-consumption bonus. This preserves Alex's Caves' own food hook and prevents the full-pack bootstrap crash; the benefits above are unchanged.
+
 ```powershell
 python docs/patches/utilities-paths/build.py
 python docs/patches/utilities-paths/verify.py tmp/utilities/built/adventurerskills-EN-1.3-26.2-neoforge-fixed.jar

@@ -1,0 +1,9 @@
+{
+  "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+  "before_sha256": "483db2b57e6145b1a6c3be20f17c7025e9501752944d0a172b45c4b1ac162b77",
+  "sha256": "24ca0af4e1921be7c5f6d8e9906e3c7da42bc7e62a31dcbb3bbe54f165ba04c6",
+  "changed": [
+    "net/valhaimerd/orboblivioncompat/mixin/FoodMixin.class"
+  ],
+  "preserved_entries": 31
+}

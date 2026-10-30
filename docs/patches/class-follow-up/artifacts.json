@@ -1,0 +1,108 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "aaeb16d094c7a68a0f414afc9bfa3758a98fd48459ccd23e284096081573e071",
+    "sha256": "aaeb16d094c7a68a0f414afc9bfa3758a98fd48459ccd23e284096081573e071",
+    "changed": [],
+    "added": []
+  },
+  {
+    "jar": "bettercombat-neoforge-3.2.2+26.2.jar",
+    "before_sha256": "4ea76cc1969f03a9427f8af8cb8a06e897c8481ae4f4c1dae2f5560ac975e497",
+    "sha256": "4ea76cc1969f03a9427f8af8cb8a06e897c8481ae4f4c1dae2f5560ac975e497",
+    "changed": [],
+    "added": []
+  },
+  {
+    "jar": "critical_strike-neoforge-1.0.5+26.2.jar",
+    "before_sha256": "6824728fa993d0734cde001f035f54078d6bfd4a6b127f60340ce4774b9e97f6",
+    "sha256": "99bd914b22d4e53544269b652e24370e35e2c0c3dd369765702d268c08fda143",
+    "changed": [
+      "net/critical_strike/internal/CritLogic.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "4a030375c6306506947831d94200e1fda304dfb1ae6659a833c284793672ab47",
+    "sha256": "4a030375c6306506947831d94200e1fda304dfb1ae6659a833c284793672ab47",
+    "changed": [],
+    "added": []
+  },
+  {
+    "jar": "PaperDoll-v26.2.3-mc26.2.x-NeoForge.jar",
+    "before_sha256": "9682405e750f6ce09cd5a7f091c171362d97a329edd13e30c182e73f1a0dfec5",
+    "sha256": "365ebfc637e84140c9868278724953c9ad0ea2882904683cfe27f0cb2b748a27",
+    "changed": [],
+    "added": []
+  },
+  {
+    "jar": "PlayerAnimationLibMerged-1.2.8+mc.26.2.jar",
+    "before_sha256": "644aa199c5e905f098ead8b3d857e39a04712201871367129b36b144b12d13c8",
+    "sha256": "83dff67b619c45d2daf263ef61c6037eb19e3607cef0f468e4f17527119d9993",
+    "changed": [
+      "com/zigythebird/playeranim/animation/AvatarAnimManager.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "624f2eb51ecd54f80398fc0b5f6cfe4f96d70f9406a2ef8fb227d9d04765f3ce",
+    "sha256": "c49c9659c5cb9c57da9eac3187ffa01fa5bcaa1fa9656ba50049929de12eab70",
+    "changed": [
+      "assets/rogues/lang/en_us.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "7293e804a6c1b1cc4414282ddecf1cad21214d533766bf6d9b0c85e501ce51fd",
+    "sha256": "73030968c2c61a4cf292c13acedc13d6ddd006957c6073dead070b16e547f1d7",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/rogue_tier_2_passive_2.json"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/opportunist_ready.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/opportunist_window.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before_sha256": "eb6d30a60bd875ce3a284c308785dcf88de7d32bab77505aa79f962e926b6a60",
+    "sha256": "111d1910f1c592be0836187f37d916698e769c48814b497699bc8c75eb9ac1f3",
+    "changed": [
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "spell_engine.mixins.json",
+      "net/spell_engine/internals/ArcherRules.class",
+      "net/spell_engine/entity/WarriorTierTwo.class",
+      "net/spell_engine/internals/RogueAdjustments.class",
+      "net/spell_engine/internals/CrimsonHealing.class",
+      "net/spell_engine/internals/PriestPassives.class",
+      "net/spell_engine/internals/EffectDetails.class",
+      "net/spell_engine/internals/PaladinUltimates.class",
+      "net/spell_engine/internals/PaladinVisuals.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/ArrowAssist.class",
+      "net/spell_engine/internals/FollowUpRules.class",
+      "net/spell_engine/mixin/classfollowup/CrossbowCarryMixin.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before_sha256": "f9acb50fc28b731a7f5f475c6146b53cc1eea3cc1f71a4ef2b63c06a78a522bd",
+    "sha256": "f9acb50fc28b731a7f5f475c6146b53cc1eea3cc1f71a4ef2b63c06a78a522bd",
+    "changed": [],
+    "added": []
+  }
+]

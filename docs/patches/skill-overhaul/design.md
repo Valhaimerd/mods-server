@@ -1,3 +1,5 @@
+> Utilities supersession, 30 October 2026: the [approved exclusive-path plan](../../superpowers/plans/2026-10-30-utilities-exclusive-paths.md) and [implementation](../utilities-paths/README.md) replace this historical document's Utilities requirements. Other branches retain their later overlays.
+
 # Skill tree changes — planning draft
 
 Latest ranged follow-up (18 October): **Hunter grants 10% ranged damage**. RPG Class/Weapon ordinary bow damage remains **2%**; its conditional bow description now explicitly shows 2% and retains the equipment condition. These values supersede older Hunter amounts below.

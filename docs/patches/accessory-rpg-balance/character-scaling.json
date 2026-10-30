@@ -1,0 +1,44 @@
+{
+  "healthBaseline": "exclude all three accessory HP modifiers and Health Boost; preserve other modifiers",
+  "meleeBaseline": "exclude Power Glove and Woundbearer",
+  "titan": {
+    "ratio": 0.15,
+    "cap": 10
+  },
+  "crystal_heart": {
+    "ratio": 0.1,
+    "cap": 8
+  },
+  "ghast_eye": {
+    "ratio": 0.075,
+    "cap": 6
+  },
+  "power_glove": {
+    "ratio": 0.05,
+    "cap": 2
+  },
+  "woundbearer": {
+    "ratio": 0.1,
+    "cap": 4
+  },
+  "chorus_totem": {
+    "ratio": 0.25,
+    "cap": 16
+  },
+  "thorn_pendant": {
+    "base": 1,
+    "armorRatio": 0.1,
+    "cap": 4
+  },
+  "tick": {
+    "base": 1,
+    "offensiveRatio": 0.1,
+    "cap": 6,
+    "radius": 8,
+    "intervalTicks": 20,
+    "players": false,
+    "wearerMaxHpCost": 0.05,
+    "hungerExhaustionRatio": 0.1,
+    "costOncePerPulse": true
+  }
+}

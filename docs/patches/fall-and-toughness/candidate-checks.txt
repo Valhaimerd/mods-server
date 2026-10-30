@@ -1,0 +1,21 @@
+PASS native fall protection points level 1 actual=1.5 expected=1.5
+PASS fall damage reduction level 1 actual=94.0 expected=94.0
+PASS no general damage reduction level 1 actual=0.0 expected=0.0
+PASS native fall protection points level 2 actual=3.0 expected=3.0
+PASS fall damage reduction level 2 actual=88.0 expected=88.0
+PASS no general damage reduction level 2 actual=0.0 expected=0.0
+PASS native fall protection points level 3 actual=4.5 expected=4.5
+PASS fall damage reduction level 3 actual=82.0 expected=82.0
+PASS no general damage reduction level 3 actual=0.0 expected=0.0
+PASS native fall protection points level 4 actual=6.0 expected=6.0
+PASS fall damage reduction level 4 actual=76.0 expected=76.0
+PASS no general damage reduction level 4 actual=0.0 expected=0.0
+PASS Toughness absent from registry
+PASS Toughness addon absent
+PASS legacy gear loses only Toughness
+PASS legacy Feather Falling level retained actual=4.0 expected=4.0
+PASS legacy NBT item and progress survives
+PASS legacy book loses only Toughness
+PASS legacy Feather Falling level retained actual=4.0 expected=4.0
+PASS legacy NBT item and progress survives
+PASS no Toughness books in creative lists actual=0.0 expected=0.0

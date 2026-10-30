@@ -1,0 +1,611 @@
+[
+  {
+    "mod": "nameless_trinkets",
+    "id": "amphibious_hands",
+    "name": "Amphibious Hands",
+    "changed": false,
+    "details": "Underwater mining x1.25 (+25%). Does not provide underwater breathing."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "blaze_nucleus",
+    "name": "Blaze Nucleus",
+    "changed": true,
+    "details": "Reduces fire damage by 50%; qualifying enemy hits ignite for 4s and extinguish the wearer."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "blindfold",
+    "name": "Blindfold",
+    "changed": false,
+    "details": "Enabled; no configurable numeric strength in its Stats class. Not a guarantee that every hostile mob loses its target or stops attacking."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "broken_ankh",
+    "name": "Broken Ankh",
+    "changed": false,
+    "details": "36,000-tick cooldown = 30 min. Has a configurable recharge cooldown; it is not continuously available."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "callus",
+    "name": "Callus",
+    "changed": false,
+    "details": "10% fall-damage reduction; 5% other damage reduction; listed hazard damage is zeroed. These are separate branches, not a combined 15% fall reduction. Damage reductions are configurable; this is not general invulnerability."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "creeper_sense",
+    "name": "Creeper Sense",
+    "changed": true,
+    "details": "Sneaking triggers a power-3 explosion on a 12s cooldown. No block destruction; the wearer can still be hurt. Party allies and their pets are protected."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "dark_nelumbo",
+    "name": "Dark Nelumbo",
+    "changed": false,
+    "details": "Lava-damage cancellation enabled by default. Its configuration includes a lava-damage cancellation option; do not assume this protects against every fire source."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "dragons_eye",
+    "name": "Dragon's Eye",
+    "changed": false,
+    "details": "20-block search range; blindness enabled. The configuration also enables blindness by default. This can explain an unexpected darkened view."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "eclipse_ashes",
+    "name": "Eclipse Ashes",
+    "changed": true,
+    "details": "Taking an enemy hit summons phantom wolves for 5s, spaced 1s apart. Each deals 1 damage plus 5% of your strongest offensive power, capped at 3. New sessions have a 12s interval; hits do not extend the session."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "experience_battery",
+    "name": "Experience Battery",
+    "changed": false,
+    "details": "+50% qualifying kill XP, approximately x1.5 total before rounding. Does not promise a bonus to every XP source, such as mining or furnaces."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "experience_magnet",
+    "name": "Experience Magnet",
+    "changed": false,
+    "details": "25-block configured attraction range. Does not attract dropped items by itself."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "explosion_proof_jacket",
+    "name": "Explosion-proof Jacket",
+    "changed": true,
+    "details": "Reduces explosion damage by 20%; awards at most 1 TNT every 20s from qualifying explosion events."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "fate_emerald",
+    "name": "Fate Emerald",
+    "changed": true,
+    "details": "Trade discount boost 25 (raw value, not a guaranteed 25% discount). Retains 60s removal lock and 0.1 exhaustion per second."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "fertilizer",
+    "name": "Fertilizer",
+    "changed": false,
+    "details": "Growth interval 100 ticks = 5 s. Uses a configurable interval; it is not instantaneous growth for every plant."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "four_leaf_clover",
+    "name": "Four Leaf Clover",
+    "changed": true,
+    "details": "Eligible non-player kills have a 25% chance of one extra loot-table roll. Not guaranteed duplication of original drops."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "fractured_nullstone",
+    "name": "Fractured Nullstone",
+    "changed": true,
+    "details": "Reduces recognized magic damage by 15%, leaving 85% before other defenses."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "fragile_cloud",
+    "name": "Fragile Cloud",
+    "changed": false,
+    "details": "Gravity modifier -0.07 while qualifying descent is active; resets fall distance. No configurable numeric Stats fields. Its handler yields when Moon Stone is equipped; elytra flight, grounded movement and water have separate handling."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "ghast_eye",
+    "name": "Ghast Eye",
+    "changed": true,
+    "details": "Adds 7.5% of maximum HP before the three scaling health accessories and Health Boost, capped at +6 HP. Kills refresh Regeneration I for 5s without adding duration; stronger unrelated regeneration remains."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "gills",
+    "name": "Gills",
+    "changed": false,
+    "details": "Air decreases by 7 per tick outside suitable water; choking hit 2 HP (1 heart); choking blindness enabled; underwater air resets to 300. Air drains outside water and can cause choking and blindness. Normal removal requires the wearer's eyes to be underwater."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "ice_cube",
+    "name": "Ice Cube",
+    "changed": false,
+    "details": "Slowness I for 100 ticks (5 s); Frost Walker setting 1; unchanged freezing-immunity option enabled. Slowness strength/duration and freezing behavior are configurable; the source also includes a freezing-immunity setting."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "light_gloves",
+    "name": "Light Gloves",
+    "changed": false,
+    "details": "Mining x1.5 (+50%) while unable to see the sky. A roof can satisfy this check; the condition is not simply being below a fixed Y level."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "lucky_rock",
+    "name": "Lucky Rock",
+    "changed": false,
+    "details": "5% configured reward chance; eligible blocks and rewards are configured lists. Both eligible blocks and reward items are configured lists; not every mined block qualifies."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "miners_soul",
+    "name": "Miner's Soul",
+    "changed": false,
+    "details": "+1 Fortune level for eligible block loot; skips Silk Touch. The handler skips Silk Touch and block-entity blocks; it is not an extra Looting level for mob kills."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "missing_page",
+    "name": "Missing Page",
+    "changed": true,
+    "details": "Taking sourced enemy damage releases a 5-block burst for 1 damage plus 10% of your strongest offensive power, capped at 6 per target. 4s interval; no boss-HP scaling."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "moon_stone",
+    "name": "Moon Stone",
+    "changed": true,
+    "details": "Gently lowers gravity and prevents fall damage. Gravity reduction is 3/8 of the old effect (-0.02625; ordinary gravity becomes 0.05375)."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "nelumbo",
+    "name": "Nelumbo",
+    "changed": false,
+    "details": "Water-walking enabled; no configurable numeric strength in Stats. Does not supply breathing or faster underwater mining."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "puffer_fish_liver",
+    "name": "Puffer Fish Liver",
+    "changed": false,
+    "details": "100% poison application on eligible targets; Poison I for 60 ticks (3 s). Poison-immune creatures remain immune. Poison chance, strength and duration are configurable; poison immunity is not immunity to all negative effects."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "rage_mind",
+    "name": "Rage Mind",
+    "changed": true,
+    "details": "Deal +10% damage against the marked creature type; existing marking and range conditions remain."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "resonant_heart",
+    "name": "Resonant Heart",
+    "changed": true,
+    "details": "Enemy hits have exactly a 10% chance to trigger a sonic retaliation for 2 damage plus 15% of your strongest offensive power, capped at 8. 6s interval."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "reverse_card",
+    "name": "Reverse Card",
+    "changed": true,
+    "details": "Enemy hits have exactly a 25% chance to reflect 25% of incoming damage. Reflected damage is capped at 2 plus 10% of your strongest offensive power, never above 6. 4s interval; does not cancel the incoming hit."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "scarab_amulet",
+    "name": "Scarab Amulet",
+    "changed": true,
+    "details": "Movement on sand +30% (1.3x); husk targeting protection retained."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "shrinking_veil",
+    "name": "Shrinking Veil",
+    "changed": false,
+    "details": "Movement x1.25 (+25%); scale x0.75 (-25%); Weakness II refreshed to 1,200 ticks (60 s). Weakness can remain for up to 60 seconds after unequipping. It does not provide invisibility."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "sigil_of_baphomet",
+    "name": "Sigil Of Baphomet",
+    "changed": true,
+    "details": "Kills add 0.5s of damage immunity, banked up to 2s. Stored legacy counts are clamped to the current cap."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "sleeping_pills",
+    "name": "Sleeping Pills",
+    "changed": false,
+    "details": "Phantom range 2 blocks; night-vision and weakness durations 1,200 ticks (60 s), refreshed by equipped behavior; bed sleeping disabled. Also applies Weakness and, by default, prevents sleeping in beds."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "spider_legs",
+    "name": "Spider Legs",
+    "changed": false,
+    "details": "Climb-speed setting 0.1 (raw movement value, not 10% speed). Climb speed is configurable; this is not free flight."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "tear_of_the_sea",
+    "name": "Tear Of The Sea",
+    "changed": false,
+    "details": "+0.5 water-movement-efficiency attribute (configured as 50%); not a guaranteed +50% final swim speed. Does not supply underwater breathing by itself."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "tick",
+    "name": "Tick",
+    "changed": true,
+    "details": "Once per second, drains eligible non-player enemies within an 8-block sphere for 1 damage plus 10% strongest offensive power, capped at 6 per target. Targets must have over 50 maximum HP and be above half HP. Each successful pulse costs the wearer 5% maximum HP, or exhaustion equal to 10% current food when below 5 HP. Own and party pets are protected. Normal removal still requires being on fire; creative bypass retained."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "titans_mark",
+    "name": "Titan's Mark",
+    "changed": true,
+    "details": "Size +25%, attack damage +5%. Adds 15% of maximum HP before the three scaling health accessories and Health Boost, capped at +10 HP. Refreshes Resistance I for 5s and Slowness I for 60s; no healing on equip or refresh."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "true_heart_of_the_sea",
+    "name": "True Heart Of The Sea",
+    "changed": false,
+    "details": "Underwater mining x1.25 (+25%); other water and land-breathing effects unchanged: +1 water-movement efficiency, 1.5-HP choking damage, air drain 5/tick. The wearer loses air on land and can choke and receive blindness. Treat it as a water-specialist item with a land-breathing drawback."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "vampire_blood",
+    "name": "Vampire Blood",
+    "changed": true,
+    "details": "Attack damage +10%; movement speed +10%. Enemy kills heal 2 HP plus 5% of wearer maximum HP, capped at 4 HP, once per 2s. Sunlight damage remains 2 HP. Removal stays locked for 48,000 equipped ticks (two full Minecraft days); offline time and sleep skips do not advance it."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "wooden_stick",
+    "name": "Wooden Stick",
+    "changed": false,
+    "details": "Recharge 200 ticks = 10 s. Recharge cooldown prevents it from blocking every incoming hit."
+  },
+  {
+    "mod": "nameless_trinkets",
+    "id": "woundbearer",
+    "name": "Woundbearer",
+    "changed": true,
+    "details": "Stores 1% of damage taken as extra attack damage. Storage limit is 10% of melee power before Power Glove and Woundbearer, capped at +4 effective attack damage. Decay starts after 3s with base decay 0.01 per tick; legacy storage is clamped."
+  },
+  {
+    "mod": "artifacts",
+    "id": "plastic_drinking_hat",
+    "name": "Plastic Drinking Hat",
+    "changed": false,
+    "details": "**+150% drinking speed** and **+50% eating speed**. These are speed increases, not equivalent reductions in consumption time."
+  },
+  {
+    "mod": "artifacts",
+    "id": "novelty_drinking_hat",
+    "name": "Novelty Drinking Hat",
+    "changed": false,
+    "details": "**+150% drinking speed** and **+50% eating speed**. Same default bonuses as Plastic Drinking Hat; extra flavor text is not another combat bonus."
+  },
+  {
+    "mod": "artifacts",
+    "id": "snorkel",
+    "name": "Snorkel",
+    "changed": false,
+    "details": "**Water Breathing I for 30 seconds**, replenished while recovering air. **Infinite underwater breathing is disabled** by default."
+  },
+  {
+    "mod": "artifacts",
+    "id": "night_vision_goggles",
+    "name": "Night Vision Goggles",
+    "changed": false,
+    "details": "Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This is visual strength, not activation chance."
+  },
+  {
+    "mod": "artifacts",
+    "id": "villager_hat",
+    "name": "Villager Hat",
+    "changed": false,
+    "details": "**+75 villager reputation points**, affecting reputation-based trading. This is **not a guaranteed 75% discount**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "superstitious_hat",
+    "name": "Superstitious Hat",
+    "changed": false,
+    "details": "**+1 Looting level** for applicable drops, not generic Luck."
+  },
+  {
+    "mod": "artifacts",
+    "id": "cowboy_hat",
+    "name": "Cowboy Hat",
+    "changed": false,
+    "details": "**+40% base mount movement speed** while riding."
+  },
+  {
+    "mod": "artifacts",
+    "id": "anglers_hat",
+    "name": "Angler's Hat",
+    "changed": false,
+    "details": "**+1 Luck of the Sea** and **+1 Lure level** for fishing."
+  },
+  {
+    "mod": "artifacts",
+    "id": "lucky_scarf",
+    "name": "Lucky Scarf",
+    "changed": false,
+    "details": "**+1 Fortune level** for applicable block drops, not generic Luck."
+  },
+  {
+    "mod": "artifacts",
+    "id": "scarf_of_invisibility",
+    "name": "Scarf of Invisibility",
+    "changed": false,
+    "details": "Toggleable **INVISIBILITY**. Defaults do not hide its own model when invisible or hide effect particles."
+  },
+  {
+    "mod": "artifacts",
+    "id": "cross_necklace",
+    "name": "Cross Necklace",
+    "changed": true,
+    "details": "Adds 10 invulnerability ticks (0.5s) after taking damage; native cooldown 5s."
+  },
+  {
+    "mod": "artifacts",
+    "id": "panic_necklace",
+    "name": "Panic Necklace",
+    "changed": false,
+    "details": "After being hurt, grants **Speed I for5s**; **7s cooldown**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "shock_pendant",
+    "name": "Shock Pendant",
+    "changed": true,
+    "details": "25% chance to retaliate against an eligible attacker under open sky. Visual lightning accompanies 2 damage plus 10% of strongest offensive power, capped at 6. 6s cooldown. Retains lightning immunity; no collateral lightning damage or fire."
+  },
+  {
+    "mod": "artifacts",
+    "id": "flame_pendant",
+    "name": "Flame Pendant",
+    "changed": true,
+    "details": "40% chance to ignite an eligible attacker for 4s, granting the wearer Fire Resistance I for 4s. 4s cooldown; allies and accessory retaliation are excluded."
+  },
+  {
+    "mod": "artifacts",
+    "id": "thorn_pendant",
+    "name": "Thorn Pendant",
+    "changed": true,
+    "details": "50% chance to retaliate for 1 damage plus 10% wearer armor, capped at 4 damage. Fixed 4s interval; excludes allies and cannot trigger retaliation chains."
+  },
+  {
+    "mod": "artifacts",
+    "id": "charm_of_sinking",
+    "name": "Charm of Sinking",
+    "changed": false,
+    "details": "Toggleable **SINKING** in water, **+1.5 oxygen bonus attribute**, and prevention of underwater fall damage. Oxygen is a raw attribute bonus, not a verified direct breath-duration multiplier."
+  },
+  {
+    "mod": "artifacts",
+    "id": "charm_of_shrinking",
+    "name": "Charm of Shrinking",
+    "changed": false,
+    "details": "Toggleable **75% original size**, **1.2x movement speed** and refreshing **Weakness II for60s** while active. Native Artifacts effect padding adds19ticks to the refreshed duration; unequipping uses native cleanup."
+  },
+  {
+    "mod": "artifacts",
+    "id": "cloud_in_a_bottle",
+    "name": "Cloud in a Bottle",
+    "changed": false,
+    "details": "**DOUBLE JUMP**, **+3 blocks safe fall distance**. Double jump resets accumulated fall distance; default multiplier **0.0** avoids damage for the fall accumulated before that jump. The subsequent fall still matters. Sprint double jump: **+25% vertical launch velocity**, **+0.25 horizontal velocity**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "obsidian_skull",
+    "name": "Obsidian Skull",
+    "changed": false,
+    "details": "After fire damage, grants **Fire Resistance II for30s** with a **60s cooldown**. Vanilla levelII gives no stronger fire protection than levelI; it does not retroactively cancel the triggering hit."
+  },
+  {
+    "mod": "artifacts",
+    "id": "antidote_vessel",
+    "name": "Antidote Vessel",
+    "changed": false,
+    "details": "Caps supported finite harmful-effect duration at **5 seconds**: **POISON**, **WITHER**, **WEAKNESS**, **SLOWNESS**, **BLINDNESS**, **NAUSEA**, **MINING FATIGUE**, **HUNGER**, **LEVITATION**. Internal cooldown **2 seconds**. Infinite effects are excluded. Cap **0** removes applicable finite effects."
+  },
+  {
+    "mod": "artifacts",
+    "id": "universal_attractor",
+    "name": "Universal Attractor",
+    "changed": false,
+    "details": "Toggleable **Magnetism V** pulls dropped items. Search box extends **5 blocks in each axis**, capped at **10** at higher levels; not a spherical radius. Excludes pickup-delayed items and items marked as thrown by wearer."
+  },
+  {
+    "mod": "artifacts",
+    "id": "crystal_heart",
+    "name": "Crystal Heart",
+    "changed": true,
+    "details": "Adds 10% of maximum HP before the three scaling health accessories and Health Boost, capped at +8 effective HP. No healing on equip or refresh; cannot amplify the other scaling health curios."
+  },
+  {
+    "mod": "artifacts",
+    "id": "helium_flamingo",
+    "name": "Helium Flamingo",
+    "changed": false,
+    "details": "**SWIM THROUGH AIR for 8 seconds**, **15-second recharge duration**, **3-second cooldown**. Limited flight."
+  },
+  {
+    "mod": "artifacts",
+    "id": "chorus_totem",
+    "name": "Chorus Totem",
+    "changed": true,
+    "details": "Consumed death protection: clears effects, attempts a teleport within 32 blocks and restores 25% of current maximum HP, capped at 16 HP. Native rescue consumption and other effects remain."
+  },
+  {
+    "mod": "artifacts",
+    "id": "warp_drive",
+    "name": "Warp Drive",
+    "changed": false,
+    "details": "Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the pearl when enough food is available; otherwise normal pearl consumption applies. **Pearl teleport damage canceled** by default; extra artifact cooldown **0 seconds**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "digging_claws",
+    "name": "Digging Claws",
+    "changed": false,
+    "details": "**+30% base block-breaking speed**, with a **stone-tier tool upgrade** for applicable mining. Does not grant diamond/netherite harvesting capability."
+  },
+  {
+    "mod": "artifacts",
+    "id": "feral_claws",
+    "name": "Feral Claws",
+    "changed": true,
+    "details": "+10% base attack speed."
+  },
+  {
+    "mod": "artifacts",
+    "id": "power_glove",
+    "name": "Power Glove",
+    "changed": true,
+    "details": "Adds 5% of melee power before Power Glove and Woundbearer, capped at +2 effective attack damage. Recalculates as outside equipment and buffs change."
+  },
+  {
+    "mod": "artifacts",
+    "id": "fire_gauntlet",
+    "name": "Fire Gauntlet",
+    "changed": true,
+    "details": "+4 seconds attack-burning duration."
+  },
+  {
+    "mod": "artifacts",
+    "id": "pocket_piston",
+    "name": "Pocket Piston",
+    "changed": false,
+    "details": "**+0.3 attack knockback**; this is a raw attribute amount, not30% damage."
+  },
+  {
+    "mod": "artifacts",
+    "id": "vampiric_glove",
+    "name": "Vampiric Glove",
+    "changed": true,
+    "details": "Basic melee hits heal 5% of actual health damage, capped at 2 HP, once per 1s. Overkill and absorption do not increase healing; allies and accessory retaliation cannot trigger it. Healing-received modifiers remain native."
+  },
+  {
+    "mod": "artifacts",
+    "id": "golden_hook",
+    "name": "Golden Hook",
+    "changed": false,
+    "details": "**+50% entity experience** from applicable kills, not every XP source."
+  },
+  {
+    "mod": "artifacts",
+    "id": "onion_ring",
+    "name": "Onion Ring",
+    "changed": false,
+    "details": "After eating: **Haste II**, **6 seconds per hunger point actually restored**. Hunger that could not be restored does not count."
+  },
+  {
+    "mod": "artifacts",
+    "id": "pickaxe_heater",
+    "name": "Pickaxe Heater",
+    "changed": false,
+    "details": "**AUTO-SMELTS** applicable mined ore drops with matching recipes. Not an automatic furnace for every block."
+  },
+  {
+    "mod": "artifacts",
+    "id": "withered_bracelet",
+    "name": "Withered Bracelet",
+    "changed": true,
+    "details": "Melee hits have a 30% chance to apply Wither I for 4s. 4s cooldown shared by the wearer; excludes allies and accessory retaliation."
+  },
+  {
+    "mod": "artifacts",
+    "id": "aqua_dashers",
+    "name": "Aqua-Dashers",
+    "changed": false,
+    "details": "Allows **SPRINTING ON WATER**, not lava."
+  },
+  {
+    "mod": "artifacts",
+    "id": "bunny_hoppers",
+    "name": "Bunny Hoppers",
+    "changed": false,
+    "details": "**+40% base jump strength**, **+10 blocks safe fall distance**, rabbit hurt sounds. Here `fallDamageMultiplier = 0.0` is an additive base modifier: **no extra multiplier change**, not complete fall immunity."
+  },
+  {
+    "mod": "artifacts",
+    "id": "kitty_slippers",
+    "name": "Kitty Slippers",
+    "changed": false,
+    "details": "**REPELS CREEPERS** and **PHANTOMS**, plus cat hurt sounds. Does not repel every hostile mob."
+  },
+  {
+    "mod": "artifacts",
+    "id": "running_shoes",
+    "name": "Running Shoes",
+    "changed": true,
+    "details": "+15% base movement speed while sprinting; retains +0.5 block step height."
+  },
+  {
+    "mod": "artifacts",
+    "id": "snowshoes",
+    "name": "Snowshoes",
+    "changed": false,
+    "details": "**+30% base movement speed on snow**, **WALK ON POWDER SNOW**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "steadfast_spikes",
+    "name": "Steadfast Spikes",
+    "changed": true,
+    "details": "+30% knockback resistance and +1 slip resistance. Fits the restored Feet slot, separate from Nameless Shoes."
+  },
+  {
+    "mod": "artifacts",
+    "id": "flippers",
+    "name": "Flippers",
+    "changed": false,
+    "details": "**+70% base swim speed**."
+  },
+  {
+    "mod": "artifacts",
+    "id": "rooted_boots",
+    "name": "Rooted Boots",
+    "changed": false,
+    "details": "While grounded on supported grass and hungry: **1 hunger point per 10-second interval**, with saturation. Eating while grounded on supported grass can **GROW PLANTS** using bone-meal behavior."
+  },
+  {
+    "mod": "artifacts",
+    "id": "strider_shoes",
+    "name": "Strider Shoes",
+    "changed": false,
+    "details": "**WALK ON LAVA while sneaking**; prevents hot-floor damage such as magma blocks. Not blanket immunity to every fire/lava damage source."
+  },
+  {
+    "mod": "artifacts",
+    "id": "whoopee_cushion",
+    "name": "Whoopee Cushion",
+    "changed": false,
+    "details": "**+0.12 (12 percentage points) FLATULENCE chance** at fart-trigger checks. Cosmetic sound behavior; no configured poison cloud, reflection, or stun."
+  }
+]

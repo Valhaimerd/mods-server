@@ -1,0 +1,11 @@
+package local.paladinprobe;
+import java.nio.file.*;import java.util.*;import net.minecraft.resources.Identifier;import net.minecraft.core.registries.BuiltInRegistries;import net.neoforged.fml.common.Mod;import net.neoforged.neoforge.common.NeoForge;import net.neoforged.neoforge.event.server.ServerStartedEvent;import net.neoforged.neoforge.common.util.FakePlayerFactory;import net.puffish.skillsmod.api.SkillsAPI;
+@Mod("paladin_doctrine_probe")public class NodeProbe{
+ List<String>checks=new ArrayList<>();int fail;void near(double a,double b,String label){boolean ok=Math.abs(a-b)<.0001;checks.add((ok?"PASS ":"FAIL ")+label+" actual="+a+" expected="+b);if(!ok)fail++;}
+ public NodeProbe(){NeoForge.EVENT_BUS.addListener(this::run);}
+ void run(ServerStartedEvent e){var server=e.getServer();try{var p=FakePlayerFactory.getMinecraft(server.overworld());var category=SkillsAPI.getCategory(Identifier.parse("adventurer_skills:adventurer_skills")).orElseThrow();category.unlock(p);category.resetSkills(p);category.setExtraPoints(p,1000);
+ var pen=BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("puffish_attributes:armor_shred")).orElseThrow();var crit=p.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("critical_strike:chance")).orElseThrow());var damage=p.getAttribute(BuiltInRegistries.ATTRIBUTE.get(Identifier.parse("critical_strike:damage")).orElseThrow());double penBefore=net.puffish.attributesmod.api.DynamicModification.create().withPositive(pen,p).applyTo(100),critBefore=crit.getValue(),damageBefore=damage.getValue();category.getSkill("r7mv8vq583ntlk4y").orElseThrow().unlock(p);
+ near(net.puffish.attributesmod.api.DynamicModification.create().withPositive(pen,p).applyTo(100),penBefore*1.1,"native armor penetration10percent");near(crit.getValue(),critBefore,"no critical chance bonus");near(damage.getValue(),damageBefore,"no critical damage bonus");category.resetSkills(p);near(net.puffish.attributesmod.api.DynamicModification.create().withPositive(pen,p).applyTo(100),penBefore,"refund removes penetration");
+
+ }catch(Throwable t){fail++;checks.add("ERROR "+t);t.printStackTrace();}finally{try{Files.write(Path.of("paladin-checks.txt"),checks);Files.writeString(Path.of("paladin-result.txt"),(fail==0?"PASS ":"FAIL ")+checks.size()+" checks; failures="+fail);}catch(Exception x){throw new RuntimeException(x);}server.halt(false);}}
+}

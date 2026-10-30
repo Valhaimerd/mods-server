@@ -1,0 +1,38 @@
+{
+  "nameless": {
+    "moon_stone": "Gently lowers gravity and prevents fall damage. Gravity reduction is 3/8 of the old effect (-0.02625; ordinary gravity becomes 0.05375).",
+    "missing_page": "Taking sourced enemy damage releases a 5-block burst for 1 damage plus 10% of your strongest offensive power, capped at 6 per target. 4s interval; no boss-HP scaling.",
+    "eclipse_ashes": "Taking an enemy hit summons phantom wolves for 5s, spaced 1s apart. Each deals 1 damage plus 5% of your strongest offensive power, capped at 3. New sessions have a 12s interval; hits do not extend the session.",
+    "resonant_heart": "Enemy hits have exactly a 10% chance to trigger a sonic retaliation for 2 damage plus 15% of your strongest offensive power, capped at 8. 6s interval.",
+    "reverse_card": "Enemy hits have exactly a 25% chance to reflect 25% of incoming damage. Reflected damage is capped at 2 plus 10% of your strongest offensive power, never above 6. 4s interval; does not cancel the incoming hit.",
+    "vampire_blood": "Attack damage +10%; movement speed +10%. Enemy kills heal 2 HP plus 5% of wearer maximum HP, capped at 4 HP, once per 2s. Sunlight damage remains 2 HP. Removal stays locked for 48,000 equipped ticks (two full Minecraft days); offline time and sleep skips do not advance it.",
+    "ghast_eye": "Adds 7.5% of maximum HP before the three scaling health accessories and Health Boost, capped at +6 HP. Kills refresh Regeneration I for 5s without adding duration; stronger unrelated regeneration remains.",
+    "woundbearer": "Stores 1% of damage taken as extra attack damage. Storage limit is 10% of melee power before Power Glove and Woundbearer, capped at +4 effective attack damage. Decay starts after 3s with base decay 0.01 per tick; legacy storage is clamped.",
+    "rage_mind": "Deal +10% damage against the marked creature type; existing marking and range conditions remain.",
+    "fractured_nullstone": "Reduces recognized magic damage by 15%, leaving 85% before other defenses.",
+    "blaze_nucleus": "Reduces fire damage by 50%; qualifying enemy hits ignite for 4s and extinguish the wearer.",
+    "explosion_proof_jacket": "Reduces explosion damage by 20%; awards at most 1 TNT every 20s from qualifying explosion events.",
+    "creeper_sense": "Sneaking triggers a power-3 explosion on a 12s cooldown. No block destruction; the wearer can still be hurt. Party allies and their pets are protected.",
+    "four_leaf_clover": "Eligible non-player kills have a 25% chance of one extra loot-table roll. Not guaranteed duplication of original drops.",
+    "fate_emerald": "Trade discount boost 25 (raw value, not a guaranteed 25% discount). Retains 60s removal lock and 0.1 exhaustion per second.",
+    "sigil_of_baphomet": "Kills add 0.5s of damage immunity, banked up to 2s. Stored legacy counts are clamped to the current cap.",
+    "scarab_amulet": "Movement on sand +30% (1.3x); husk targeting protection retained.",
+    "titans_mark": "Size +25%, attack damage +5%. Adds 15% of maximum HP before the three scaling health accessories and Health Boost, capped at +10 HP. Refreshes Resistance I for 5s and Slowness I for 60s; no healing on equip or refresh.",
+    "tick": "Once per second, drains eligible non-player enemies within an 8-block sphere for 1 damage plus 10% strongest offensive power, capped at 6 per target. Targets must have over 50 maximum HP and be above half HP. Each successful pulse costs the wearer 5% maximum HP, or exhaustion equal to 10% current food when below 5 HP. Own and party pets are protected. Normal removal still requires being on fire; creative bypass retained."
+  },
+  "artifacts": {
+    "vampiric_glove": "Basic melee hits heal 5% of actual health damage, capped at 2 HP, once per 1s. Overkill and absorption do not increase healing; allies and accessory retaliation cannot trigger it. Healing-received modifiers remain native.",
+    "feral_claws": "+10% base attack speed.",
+    "power_glove": "Adds 5% of melee power before Power Glove and Woundbearer, capped at +2 effective attack damage. Recalculates as outside equipment and buffs change.",
+    "crystal_heart": "Adds 10% of maximum HP before the three scaling health accessories and Health Boost, capped at +8 effective HP. No healing on equip or refresh; cannot amplify the other scaling health curios.",
+    "cross_necklace": "Adds 10 invulnerability ticks (0.5s) after taking damage; native cooldown 5s.",
+    "running_shoes": "+15% base movement speed while sprinting; retains +0.5 block step height.",
+    "steadfast_spikes": "+30% knockback resistance and +1 slip resistance. Fits the restored Feet slot, separate from Nameless Shoes.",
+    "fire_gauntlet": "+4 seconds attack-burning duration.",
+    "flame_pendant": "40% chance to ignite an eligible attacker for 4s, granting the wearer Fire Resistance I for 4s. 4s cooldown; allies and accessory retaliation are excluded.",
+    "shock_pendant": "25% chance to retaliate against an eligible attacker under open sky. Visual lightning accompanies 2 damage plus 10% of strongest offensive power, capped at 6. 6s cooldown. Retains lightning immunity; no collateral lightning damage or fire.",
+    "withered_bracelet": "Melee hits have a 30% chance to apply Wither I for 4s. 4s cooldown shared by the wearer; excludes allies and accessory retaliation.",
+    "thorn_pendant": "50% chance to retaliate for 1 damage plus 10% wearer armor, capped at 4 damage. Fixed 4s interval; excludes allies and cannot trigger retaliation chains.",
+    "chorus_totem": "Consumed death protection: clears effects, attempts a teleport within 32 blocks and restores 25% of current maximum HP, capped at 16 HP. Native rescue consumption and other effects remain."
+  }
+}

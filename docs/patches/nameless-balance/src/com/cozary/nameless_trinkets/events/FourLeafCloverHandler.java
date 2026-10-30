@@ -1,0 +1,51 @@
+package com.cozary.nameless_trinkets.events;
+
+import com.cozary.nameless_trinkets.items.trinkets.FourLeafCloverBase;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
+
+public class FourLeafCloverHandler {
+
+    public static void entityKilled(Player player, Entity entity) {
+        FourLeafCloverBase.Stats config = FourLeafCloverBase.INSTANCE.getTrinketConfig();
+        if (!config.isEnable || entity instanceof Player || player.getRandom().nextFloat()>=.25f)
+            return;
+
+        if (!player.level().isClientSide()) {
+
+
+            Level level = player.level();
+
+            LootTable loot = level.getServer().reloadableRegistries().getLootTable((entity.getType().getDefaultLootTable().get()));
+            LootParams context = new LootParams.Builder((ServerLevel) level)
+                    .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(entity.blockPosition()))
+                    .withParameter(LootContextParams.THIS_ENTITY, entity)
+                    .withParameter(LootContextParams.DAMAGE_SOURCE, player.damageSources().playerAttack(player))
+                    .withParameter(LootContextParams.LAST_DAMAGE_PLAYER, player)
+                    .create(LootContextParamSets.ENTITY);
+
+            for (int i = 1; i < 2; i++) {
+                List<ItemStack> drops = loot.getRandomItems(context);
+
+                for (ItemStack drop : drops) {
+                    ItemEntity itementity = new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), drop.copy());
+                    itementity.setDefaultPickUpDelay();
+                    itementity.setDeltaMovement(itementity.getDeltaMovement().add((level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.1F, level.getRandom().nextFloat() * 0.05F, (level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.1F));
+                    level.addFreshEntity(itementity);
+                }
+            }
+
+        }
+    }
+}

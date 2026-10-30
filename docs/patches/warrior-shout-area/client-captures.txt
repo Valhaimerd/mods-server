@@ -1,0 +1,5 @@
+shout-radius12
+improved-shout-radius16
+battle-shout-radius16
+challenging-shout-radius16
+expired-shout-footprint

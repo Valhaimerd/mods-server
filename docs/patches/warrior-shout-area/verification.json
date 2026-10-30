@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "jar": "rogues-neoforge-3.1.2+26.2.jar",
+  "sha256": "b0859e26ec1799a7530d2db72d797f98ea4ba2c3b62971bcba623c5944c80308",
+  "changed_entry": [
+    "data/rogues/spell/shout.json"
+  ],
+  "gameplay_fields_preserved": true,
+  "other_entries_preserved": 823,
+  "native_result": "PASS 51 checks; failures=0",
+  "client_result": "PASS native red Shout releases at12/16blocks, both branches and expiry; inspect captures",
+  "pdf_sha256": "e380d10781eef28cc0cec6dea69d29fdedd3d1a41830b9245e0cc40657fcba9c",
+  "pdf_pages": 80,
+  "contents_links": 51,
+  "visual_review": "All80PDF pages rendered and inspected; native client12/16block and expiry captures reviewed.",
+  "git": "Not committed/pushed."
+}

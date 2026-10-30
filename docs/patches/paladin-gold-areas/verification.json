@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-30",
+  "installed_jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "sha256": "ec37404ab6d0d11a7e45af72ed91dd9043b4d73ef377e8a8810506b48739728a",
+  "changed_entries": [
+    "net/spell_engine/internals/PaladinTierOne.class",
+    "net/spell_engine/internals/PaladinVisuals.class"
+  ],
+  "unchanged_entries": 2198,
+  "gameplay_json_unchanged": true,
+  "server_result": "PASS 48 checks; failures=0",
+  "client_result": "PASS native Paladin gold events and cleanup; inspect captures",
+  "handbook_sha256": "02d1aac7462ebf7a83ce872a9f3d717e65d863f3ef08493525636150dd8b1dca",
+  "pdf_pages": 80,
+  "contents_links": 51,
+  "pdf_review": "All80pages rendered and reviewed at tmp/paladin-gold/pdf-review. No new clipping or blank pages.",
+  "git": "No commit or push."
+}

@@ -1,0 +1,13 @@
+{
+  "artifacts.tooltip.ability.damage_absorption.constant": "Melee hits restore 5% of health damage, up to 2 HP. 1s interval.",
+  "artifacts.tooltip.ability.damage_absorption.chance": "Melee hits have a %s%% chance to restore 5% of health damage, up to 2 HP. 1s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.lightning.chance": "%s%% chance to strike an attacker: 2 damage +10% offensive power, up to 6. 6s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.lightning.constant": "Strikes attackers for 2 damage +10% offensive power, up to 6. 6s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.thorns.chance": "%s%% chance to retaliate for 1 damage +10% armor, up to 4. 4s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.thorns.constant": "Retaliates for 1 damage +10% armor, up to 4. 4s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.fire.chance": "%s%% chance to burn attackers for 4s. 4s interval.",
+  "artifacts.tooltip.ability.retaliation_effects.fire.constant": "Burns attackers for 4s. 4s interval.",
+  "artifacts.tooltip.ability.attribute_modifiers.scaled_health": "+10% maximum HP, up to +8 HP. Does not heal on equip.",
+  "artifacts.tooltip.ability.attribute_modifiers.scaled_attack": "+5% melee damage, up to +2 damage.",
+  "artifacts.tooltip.ability.equipable_totem.scaled_heal": "Restores 25% maximum HP, up to 16 HP."
+}

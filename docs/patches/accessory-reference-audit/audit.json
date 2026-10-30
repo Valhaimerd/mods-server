@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-30",
+  "scope": "Reference coverage updated after accessory character-scaling follow-up",
+  "archives": [
+    {
+      "jar": "artifacts-neoforge-15.1.3+26.2.1.jar",
+      "sha256": "4288b5b14ce810e38e89fc5016cf4b792c8be376c2e33cce22028944f6227f62",
+      "matches_previous_runtime_tested_build": false
+    },
+    {
+      "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
+      "sha256": "294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31",
+      "matches_previous_runtime_tested_build": false
+    }
+  ],
+  "previous_runtime_checks": {
+    "nameless": 228,
+    "artifacts": 67
+  },
+  "new_runtime_test": true,
+  "counts": {
+    "nameless_retained": 42,
+    "nameless_removed": 12,
+    "nameless_support": 6,
+    "artifacts_wearable": 45,
+    "artifacts_handheld_food": 3,
+    "artifacts_spawn_eggs": 1
+  }
+}

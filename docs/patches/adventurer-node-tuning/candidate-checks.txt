@@ -1,0 +1,6 @@
+PASS native reward zfneydbdzicoc783 actual=105.0 expected=105.0
+PASS refund cleans modifier zfneydbdzicoc783 actual=100.0 expected=100.0
+PASS native reward r7mv8vq583ntlk4y actual=150.0 expected=150.0
+PASS refund cleans modifier r7mv8vq583ntlk4y actual=150.0 expected=150.0
+PASS native reward 5es0kwe84yl9t3yb actual=0.10000000149011612 expected=0.10000000149011612
+PASS refund cleans modifier 5es0kwe84yl9t3yb actual=0.10000000149011612 expected=0.10000000149011612

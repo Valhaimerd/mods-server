@@ -1,0 +1,10 @@
+{
+  "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "before_sha256": "8b43817427e8004c655ddbbd8f373dc11b32ba0810a24de6058a7e818b89361b",
+  "sha256": "20a0274f92f20a3777b1a370d3df0943ce0908daea854b423bf0f6c0c3e34015",
+  "changed": [
+    "resourcepacks/durability_rework/data/minecraft/enchantment/unbreaking.json",
+    "data/minecraft/enchantment/unbreaking.json"
+  ],
+  "added": []
+}

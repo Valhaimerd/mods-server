@@ -1,0 +1,20 @@
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy
+PASS remote player has third-person animation manager
+REMOTE pose=bettercombat:pose_two_handed_heavy

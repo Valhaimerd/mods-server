@@ -1,0 +1,17 @@
+PASS max level X actual=10.0 expected=10.0
+FAIL armor level 1 native durability loss probability actual=0.80144 expected=0.92
+FAIL armor level 2 native durability loss probability actual=0.7351 expected=0.84
+FAIL armor level 3 native durability loss probability actual=0.70019 expected=0.76
+PASS armor level 4 native durability loss probability actual=0.679405 expected=0.6799999999999999
+FAIL armor level 5 native durability loss probability actual=0.667405 expected=0.6
+FAIL armor level 6 native durability loss probability actual=0.657975 expected=0.52
+FAIL armor level 7 native durability loss probability actual=0.64905 expected=0.43999999999999995
+FAIL armor level 8 native durability loss probability actual=0.642405 expected=0.36
+FAIL armor level 9 native durability loss probability actual=0.639055 expected=0.28
+FAIL armor level 10 native durability loss probability actual=0.63547 expected=0.19999999999999996
+PASS tool probability unchanged level 1 actual=0.50103 expected=0.5
+PASS tool probability unchanged level 3 actual=0.25124 expected=0.25
+PASS tool probability unchanged level 10 actual=0.08956 expected=0.09090909090909091
+FAIL other armor piece level X minecraft:diamond_helmet actual=0.635875 expected=0.2
+FAIL other armor piece level X minecraft:diamond_leggings actual=0.635405 expected=0.2
+FAIL other armor piece level X minecraft:diamond_boots actual=0.63461 expected=0.2

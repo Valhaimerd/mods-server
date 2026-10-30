@@ -1,0 +1,21 @@
+PASS actual radius 12.0 branch
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS actual radius 12.0 branch skill_tree_rpgs:warrior_tier_3_spell_2_modifier_1
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS actual radius 12.0 branch skill_tree_rpgs:warrior_tier_3_spell_2_modifier_2
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS actual radius 16.0 branch
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS actual radius 16.0 branch skill_tree_rpgs:warrior_tier_3_spell_2_modifier_1
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS actual radius 16.0 branch skill_tree_rpgs:warrior_tier_3_spell_2_modifier_2
+FAIL one red perimeter on native release, no targets required
+FAIL soft red ground illumination follows range
+PASS base range/cooldown preserved
+PASS native shout sound preserved
+PASS native debuff/control impacts preserved

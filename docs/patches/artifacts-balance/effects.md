@@ -1,8 +1,8 @@
 # Artifacts — individual effects and adjustment reference
 
-Inspected **2026-10-18**. Installed **Artifacts 15.1.3+26.2.1**, NeoForge / Minecraft 26.2. **45 wearables + 3 handheld/food items**, plus the separate Mimic Spawn Egg.
+Inspected **2026-10-30**. Installed **Artifacts 15.1.3+26.2.1**, NeoForge / Minecraft 26.2. **45 wearables + 3 handheld/food items**, plus the separate Mimic Spawn Egg.
 
-**Implemented 2026-10-18:** the approved values below are installed in the pack JAR. The **Default** column preserves upstream values; **Planned value** now records the implemented pack value for approved entries. Editing this document alone does not change the game. See `docs/patches/artifacts-balance/README.md` for the implementation and verification.
+**Current pack reference:** the leading effect descriptions and **Current pack value** column describe the installed pack. The **Upstream default** column is retained for comparison. Unchanged settings remain configurable; pack-enforced overrides win over stale item configuration. The 30 October capped-balance revision is installed in the same-filename archive; see [the combined record](../accessory-rpg-balance/README.md).
 
 ## Reading the settings
 
@@ -33,7 +33,7 @@ Inspected **2026-10-18**. Installed **Artifacts 15.1.3+26.2.1**, NeoForge / Mine
 
 Held **GLIDER**, **SHIELD**, and melee weapon. Gliding and shielding can be disabled separately.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `isGlider` | **true** | — |
 | `isShield` | **true** | — |
@@ -46,7 +46,7 @@ Held **GLIDER**, **SHIELD**, and melee weapon. Gliding and shielding can be disa
 
 Reusable **RAW BEEF**, not consumed while enabled. **15-second cooldown**; qualifying cow/mooshroom player-kill drop chance **0.2% (1 in 500)**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cooldown` | **15** | — |
 | `dropRate` | **0.002** | — |
@@ -60,7 +60,7 @@ Reusable **RAW BEEF**, not consumed while enabled. **15-second cooldown**; quali
 
 Reusable **COOKED BEEF**, not consumed while enabled. **15-second cooldown**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cooldown` | **15** | — |
 | `enabled` | **true** | — |
@@ -75,7 +75,7 @@ Reusable **COOKED BEEF**, not consumed while enabled. **15-second cooldown**.
 
 **+150% drinking speed** and **+50% eating speed**. These are speed increases, not equivalent reductions in consumption time.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `drinkingSpeedBonus` | **1.5** | — |
 | `eatingSpeedBonus` | **0.5** | — |
@@ -88,7 +88,7 @@ Reusable **COOKED BEEF**, not consumed while enabled. **15-second cooldown**.
 
 **+150% drinking speed** and **+50% eating speed**. Same default bonuses as Plastic Drinking Hat; extra flavor text is not another combat bonus.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `drinkingSpeedBonus` | **1.5** | — |
 | `eatingSpeedBonus` | **0.5** | — |
@@ -101,7 +101,7 @@ Reusable **COOKED BEEF**, not consumed while enabled. **15-second cooldown**.
 
 **Water Breathing I for 30 seconds**, replenished while recovering air. **Infinite underwater breathing is disabled** by default.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `isInfinite` | **false** | — |
 | `waterBreathingDuration` | **30** | — |
@@ -114,7 +114,7 @@ Reusable **COOKED BEEF**, not consumed while enabled. **15-second cooldown**.
 
 Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This is visual strength, not activation chance.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `strength` | **0.15** | — |
 
@@ -126,7 +126,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 **+75 villager reputation points**, affecting reputation-based trading. This is **not a guaranteed 75% discount**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `reputationBonus` | **75.0** | — |
 
@@ -138,7 +138,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 **+1 Looting level** for applicable drops, not generic Luck.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `lootingLevelBonus` | **1** | — |
 
@@ -150,7 +150,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 **+40% base mount movement speed** while riding.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `mountSpeedBonus` | **0.4** | — |
 
@@ -162,7 +162,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 **+1 Luck of the Sea** and **+1 Lure level** for fishing.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `luckOfTheSeaLevelBonus` | **1** | — |
 | `lureLevelBonus` | **1** | — |
@@ -177,7 +177,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 **+1 Fortune level** for applicable block drops, not generic Luck.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `fortuneLevelBonus` | **1** | — |
 
@@ -189,7 +189,7 @@ Toggleable **NIGHT VISION**, reduced to brightness strength **0.15 (15%)**. This
 
 Toggleable **INVISIBILITY**. Defaults do not hide its own model when invisible or hide effect particles.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 | `hideWhenInvisible` | **false** | — |
@@ -201,14 +201,12 @@ Toggleable **INVISIBILITY**. Defaults do not hide its own model when invisible o
 
 **Item:** `artifacts:cross_necklace` · **Section:** `[cross_necklace]`
 
-After being hurt: **+20 invulnerability ticks (1 second)**; **2-second cooldown**. Temporary protection after damage.
+Adds 10 invulnerability ticks (0.5s) after taking damage; native cooldown 5s.
 
-**Planned:** keep the extra **20 invulnerability ticks**; increase cooldown to **5 seconds**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `bonusInvincibilityTicks` | **20.0** | — |
-| `cooldown` | **2** | **5 seconds** |
+| `bonusInvincibilityTicks` | **20.0** | **10.0** |
+| `cooldown` | **2** | **5** |
 
 **Optional durability (disabled)** — section `[cross_necklace.durability]`: `damagePerActivation` **1**; `maxDamage` **500**.
 
@@ -216,15 +214,13 @@ After being hurt: **+20 invulnerability ticks (1 second)**; **2-second cooldown*
 
 **Item:** `artifacts:panic_necklace` · **Section:** `[panic_necklace]`
 
-After being hurt: **Speed I for 8 seconds**; **2-second cooldown**.
+After being hurt, grants **Speed I for5s**; **7s cooldown**.
 
-**Planned:** **Speed I for 5 seconds**, with a **7-second cooldown**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `cooldown` | **2** | **7 seconds** |
-| `speedDuration` | **8** | **5 seconds** |
-| `speedLevel` | **1** | **1 (Speed I)** |
+| `cooldown` | **2** | **7** |
+| `speedDuration` | **8** | **5** |
+| `speedLevel` | **1** | **1** |
 
 **Optional durability (disabled)** — section `[panic_necklace.durability]`: `damagePerActivation` **1**; `maxDamage` **500**.
 
@@ -232,14 +228,12 @@ After being hurt: **Speed I for 8 seconds**; **2-second cooldown**.
 
 **Item:** `artifacts:shock_pendant` · **Section:** `[shock_pendant]`
 
-When attacked: **25% chance** of **LIGHTNING RETALIATION**, **2-second cooldown**. Attacker must have sky access. Wearer receives lightning-damage immunity by default. No separate **STUN** setting.
+25% chance to retaliate against an eligible attacker under open sky. Visual lightning accompanies 2 damage plus 10% of strongest offensive power, capped at 6. 6s cooldown. Retains lightning immunity; no collateral lightning damage or fire.
 
-**Planned:** **3-second cooldown**; existing strike chance and lightning immunity retained.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cancelLightningDamage` | **true** | — |
-| `cooldown` | **2** | **3 seconds** |
+| `cooldown` | **2** | **6** |
 | `strikeChance` | **0.25** | — |
 
 **Optional durability (disabled)** — section `[shock_pendant.durability]`: `damagePerActivation` **1**; `maxDamage` **50**.
@@ -248,12 +242,12 @@ When attacked: **25% chance** of **LIGHTNING RETALIATION**, **2-second cooldown*
 
 **Item:** `artifacts:flame_pendant` · **Section:** `[flame_pendant]`
 
-When attacked: **40% chance** to **IGNITE** attacker for **10 seconds**, **2-second cooldown**. Successful applicable ignition also gives wearer **Fire Resistance I for 10 seconds**.
+40% chance to ignite an eligible attacker for 4s, granting the wearer Fire Resistance I for 4s. 4s cooldown; allies and accessory retaliation are excluded.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `cooldown` | **2** | — |
-| `fireDuration` | **10** | — |
+| `cooldown` | **2** | **4** |
+| `fireDuration` | **10** | **4** |
 | `grantFireResistance` | **true** | — |
 | `strikeChance` | **0.4** | — |
 
@@ -263,15 +257,13 @@ When attacked: **40% chance** to **IGNITE** attacker for **10 seconds**, **2-sec
 
 **Item:** `artifacts:thorn_pendant` · **Section:** `[thorn_pendant]`
 
-When attacked: **50% chance** to deal **2–6 damage (1–3 hearts)** to attacker, **2-second cooldown**. Fixed random **THORNS / RETALIATION**, not percentage **REFLECTION** of the incoming damage.
+50% chance to retaliate for 1 damage plus 10% wearer armor, capped at 4 damage. Fixed 4s interval; excludes allies and cannot trigger retaliation chains.
 
-**Planned:** **3-second cooldown**; existing retaliation damage and chance retained.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `cooldown` | **2** | **3 seconds** |
-| `maxDamage` | **6** | — |
-| `minDamage` | **2** | — |
+| `cooldown` | **2** | **4** |
+| `maxDamage` | **6** | **3** |
+| `minDamage` | **2** | **1** |
 | `strikeChance` | **0.5** | — |
 
 **Optional durability (disabled)** — section `[thorn_pendant.durability]`: `damagePerActivation` **1**; `maxDamage` **150**.
@@ -282,7 +274,7 @@ When attacked: **50% chance** to deal **2–6 damage (1–3 hearts)** to attacke
 
 Toggleable **SINKING** in water, **+1.5 oxygen bonus attribute**, and prevention of underwater fall damage. Oxygen is a raw attribute bonus, not a verified direct breath-duration multiplier.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 | `oxygenBonus` | **1.5** | — |
@@ -294,13 +286,11 @@ Toggleable **SINKING** in water, **+1.5 oxygen bonus attribute**, and prevention
 
 **Item:** `artifacts:charm_of_shrinking` · **Section:** `[charm_of_shrinking]`
 
-Toggleable **SIZE REDUCTION −50%**, a **×0.5 total scale multiplier**.
+Toggleable **75% original size**, **1.2x movement speed** and refreshing **Weakness II for60s** while active. Native Artifacts effect padding adds19ticks to the refreshed duration; unequipping uses native cleanup.
 
-**Planned:** retain **75% original size**; add **×1.2 movement speed (+20%)** and **Weakness II for 60 seconds**, refreshed while the shrinking ability is active. Stop refreshing when inactive; use native Artifacts unequip cleanup. Effects include the native **19-tick refresh padding**. Implemented through item data components: the installed item config exposes only scale, not speed or Weakness.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `scaleModifier` | **-0.5** | **-0.25 (75% original size)** |
+| `scaleModifier` | **-0.5** | **-0.25** |
 | Added movement multiplier (new behavior; no existing key) | None | **×1.2** |
 | Added Weakness (new behavior; no existing key) | None | **II, 60 seconds, refreshed while active** |
 
@@ -314,7 +304,7 @@ Toggleable **SIZE REDUCTION −50%**, a **×0.5 total scale multiplier**.
 
 **DOUBLE JUMP**, **+3 blocks safe fall distance**. Double jump resets accumulated fall distance; default multiplier **0.0** avoids damage for the fall accumulated before that jump. The subsequent fall still matters. Sprint double jump: **+25% vertical launch velocity**, **+0.25 horizontal velocity**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 | `fallDamageMultiplier` | **0.0** | — |
@@ -328,14 +318,12 @@ Toggleable **SIZE REDUCTION −50%**, a **×0.5 total scale multiplier**.
 
 **Item:** `artifacts:obsidian_skull` · **Section:** `[obsidian_skull]`
 
-After fire damage: **Fire Resistance I for 30 seconds**, **60-second cooldown**. Reactive protection, not permanent immunity to the triggering hit.
+After fire damage, grants **Fire Resistance II for30s** with a **60s cooldown**. Vanilla levelII gives no stronger fire protection than levelI; it does not retroactively cancel the triggering hit.
 
-**Planned:** **Fire Resistance II**, keeping **30-second duration** and **60-second cooldown**. Interpreted as effect level II, not a 2-second duration. The level is fixed in the item definition, so it was changed in the item definition; there is no effect-level key in this config. Higher Fire Resistance levels do not provide stronger vanilla fire protection.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `cooldown` | **60** | — |
-| `fireResistanceDuration` | **30** | **30 (retain)** |
+| `cooldown` | **60** | **60** |
+| `fireResistanceDuration` | **30** | **30** |
 | Effect level (item definition; no existing key) | **I** | **II** |
 
 **Optional durability (disabled)** — section `[obsidian_skull.durability]`: `damagePerActivation` **1**; `maxDamage` **60**.
@@ -346,7 +334,7 @@ After fire damage: **Fire Resistance I for 30 seconds**, **60-second cooldown**.
 
 Caps supported finite harmful-effect duration at **5 seconds**: **POISON**, **WITHER**, **WEAKNESS**, **SLOWNESS**, **BLINDNESS**, **NAUSEA**, **MINING FATIGUE**, **HUNGER**, **LEVITATION**. Internal cooldown **2 seconds**. Infinite effects are excluded. Cap **0** removes applicable finite effects.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 | `maxEffectDuration` | **5** | — |
@@ -359,7 +347,7 @@ Caps supported finite harmful-effect duration at **5 seconds**: **POISON**, **WI
 
 Toggleable **Magnetism V** pulls dropped items. Search box extends **5 blocks in each axis**, capped at **10** at higher levels; not a spherical radius. Excludes pickup-delayed items and items marked as thrown by wearer.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `magnetismLevel` | **5** | — |
 
@@ -369,13 +357,11 @@ Toggleable **Magnetism V** pulls dropped items. Search box extends **5 blocks in
 
 **Item:** `artifacts:crystal_heart` · **Section:** `[crystal_heart]`
 
-**+10 maximum health = +5 hearts**. Increases capacity, not an instant heal.
+Adds 10% of maximum HP before the three scaling health accessories and Health Boost, capped at +8 effective HP. No healing on equip or refresh; cannot amplify the other scaling health curios.
 
-**Planned:** **+8 maximum health = +4 hearts**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `healthBonus` | **10.0** | **8.0 (+4 hearts)** |
+| `healthBonus` | **10.0** | **Character scaling above replaces this legacy flat amount** |
 
 **Optional durability (disabled)** — section `[crystal_heart.durability]`: `damageWhenHurt` **1**; `maxDamage` **600**.
 
@@ -385,7 +371,7 @@ Toggleable **Magnetism V** pulls dropped items. Search box extends **5 blocks in
 
 **SWIM THROUGH AIR for 8 seconds**, **15-second recharge duration**, **3-second cooldown**. Limited flight.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cooldown` | **3** | — |
 | `flightDuration` | **8** | — |
@@ -397,12 +383,12 @@ Toggleable **Magnetism V** pulls dropped items. Search box extends **5 blocks in
 
 **Item:** `artifacts:chorus_totem` · **Section:** `[chorus_totem]`
 
-Equipped **DEATH PROTECTION**: clears status effects, attempts random **TELEPORT within a 32-block range**, and applies **9 health points (4.5 hearts) of healing**. Uses the death-protection item mechanism, not timed regeneration.
+Consumed death protection: clears effects, attempts a teleport within 32 blocks and restores 25% of current maximum HP, capped at 16 HP. Native rescue consumption and other effects remain.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
-| `healthRestored` | **9** | — |
+| `healthRestored` | **9** | **Character scaling above replaces this legacy flat amount** |
 
 ### Warp Drive
 
@@ -410,7 +396,7 @@ Equipped **DEATH PROTECTION**: clears status effects, attempts random **TELEPORT
 
 Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the pearl when enough food is available; otherwise normal pearl consumption applies. **Pearl teleport damage canceled** by default; extra artifact cooldown **0 seconds**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cooldown` | **0** | — |
 | `enabled` | **true** | — |
@@ -427,7 +413,7 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **+30% base block-breaking speed**, with a **stone-tier tool upgrade** for applicable mining. Does not grant diamond/netherite harvesting capability.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `blockBreakSpeedBonus` | **0.3** | — |
 | `toolTier` | **"stone"** | — |
@@ -438,13 +424,11 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **Item:** `artifacts:feral_claws` · **Section:** `[feral_claws]`
 
-**+30% base attack speed**.
++10% base attack speed.
 
-**Planned:** **+15% base attack speed**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `attackSpeedBonus` | **0.3** | **0.15 (+15% base)** |
+| `attackSpeedBonus` | **0.3** | **0.1** |
 
 **Optional durability (disabled)** — section `[feral_claws.durability]`: `damagePerAttack` **1**; `maxDamage` **1500**.
 
@@ -452,13 +436,11 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **Item:** `artifacts:power_glove` · **Section:** `[power_glove]`
 
-**+4 flat attack damage**, **2 hearts nominal damage before mitigation**.
+Adds 5% of melee power before Power Glove and Woundbearer, capped at +2 effective attack damage. Recalculates as outside equipment and buffs change.
 
-**Planned:** **+2 flat attack damage**, equivalent to **1 heart of nominal damage before mitigation**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `attackDamageBonus` | **4.0** | **2.0 (+2 damage)** |
+| `attackDamageBonus` | **4.0** | **Character scaling above replaces this legacy flat amount** |
 
 **Optional durability (disabled)** — section `[power_glove.durability]`: `damagePerAttack` **1**; `maxDamage` **1500**.
 
@@ -466,11 +448,11 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **Item:** `artifacts:fire_gauntlet` · **Section:** `[fire_gauntlet]`
 
-**+8 seconds BURNING duration** through the attack-burning-duration attribute.
++4 seconds attack-burning duration.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `fireDuration` | **8.0** | — |
+| `fireDuration` | **8.0** | **4.0** |
 
 **Optional durability (disabled)** — section `[fire_gauntlet.durability]`: `damagePerAttack` **1**; `maxDamage` **1500**.
 
@@ -478,11 +460,9 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **Item:** `artifacts:pocket_piston` · **Section:** `[pocket_piston]`
 
-**+0.75 raw attack knockback**, not a damage percentage.
+**+0.3 attack knockback**; this is a raw attribute amount, not30% damage.
 
-**Planned:** **+0.3 raw attack knockback**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `attackKnockbackBonus` | **0.75** | **0.3** |
 
@@ -492,15 +472,13 @@ Ender-pearl use costs **2 hunger points (1 drumstick)** instead of consuming the
 
 **Item:** `artifacts:vampiric_glove` · **Section:** `[vampiric_glove]`
 
-Melee **LIFE STEAL**: **100% chance**, heals **20% of damage dealt**, maximum **6 health points (3 hearts) per hit**. Calculation caps damage at victim’s remaining health. Restores normal health, not yellow absorption hearts.
+Basic melee hits heal 5% of actual health damage, capped at 2 HP, once per 1s. Overkill and absorption do not increase healing; allies and accessory retaliation cannot trigger it. Healing-received modifiers remain native.
 
-**Planned:** **10% life steal**, healing at most **4 health points (2 hearts) per melee hit**. Retain **100% activation chance**. No additional healing cooldown is approved.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `absorptionChance` | **1.0** | — |
-| `absorptionRatio` | **0.2** | **0.1 (10%)** |
-| `maxHealingPerHit` | **6** | **4 (2 hearts)** |
+| `absorptionRatio` | **0.2** | **0.05** |
+| `maxHealingPerHit` | **6** | **2** |
 
 **Optional durability (disabled)** — section `[vampiric_glove.durability]`: `damagePerActivation` **1**; `maxDamage` **120**.
 
@@ -510,7 +488,7 @@ Melee **LIFE STEAL**: **100% chance**, heals **20% of damage dealt**, maximum **
 
 **+50% entity experience** from applicable kills, not every XP source.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `entityExperienceBonus` | **0.5** | — |
 
@@ -522,7 +500,7 @@ Melee **LIFE STEAL**: **100% chance**, heals **20% of damage dealt**, maximum **
 
 After eating: **Haste II**, **6 seconds per hunger point actually restored**. Hunger that could not be restored does not count.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `hasteDurationPerFoodPoint` | **6** | — |
 | `hasteLevel` | **2** | — |
@@ -535,7 +513,7 @@ After eating: **Haste II**, **6 seconds per hunger point actually restored**. Hu
 
 **AUTO-SMELTS** applicable mined ore drops with matching recipes. Not an automatic furnace for every block.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 
@@ -545,14 +523,14 @@ After eating: **Haste II**, **6 seconds per hunger point actually restored**. Hu
 
 **Item:** `artifacts:withered_bracelet` · **Section:** `[withered_bracelet]`
 
-Attacks: **30% chance** of **Wither II for 8 seconds**, **2-second cooldown**. **WITHER**, not poison.
+Melee hits have a 30% chance to apply Wither I for 4s. 4s cooldown shared by the wearer; excludes allies and accessory retaliation.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `cooldown` | **2** | — |
+| `cooldown` | **2** | **4** |
 | `witherChance` | **0.3** | — |
-| `witherDuration` | **8** | — |
-| `witherLevel` | **2** | — |
+| `witherDuration` | **8** | **4** |
+| `witherLevel` | **2** | **1** |
 
 **Optional durability (disabled)** — section `[withered_bracelet.durability]`: `damagePerActivation` **1**; `maxDamage` **450**.
 
@@ -564,7 +542,7 @@ Attacks: **30% chance** of **Wither II for 8 seconds**, **2-second cooldown**. *
 
 Allows **SPRINTING ON WATER**, not lava.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 
@@ -576,7 +554,7 @@ Allows **SPRINTING ON WATER**, not lava.
 
 **+40% base jump strength**, **+10 blocks safe fall distance**, rabbit hurt sounds. Here `fallDamageMultiplier = 0.0` is an additive base modifier: **no extra multiplier change**, not complete fall immunity.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `fallDamageMultiplier` | **0.0** | — |
 | `jumpStrengthBonus` | **0.4** | — |
@@ -591,7 +569,7 @@ Allows **SPRINTING ON WATER**, not lava.
 
 **REPELS CREEPERS** and **PHANTOMS**, plus cat hurt sounds. Does not repel every hostile mob.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `modifyHurtSounds` | **true** | — |
 | `repelCreepers` | **true** | — |
@@ -603,13 +581,11 @@ Allows **SPRINTING ON WATER**, not lava.
 
 **Item:** `artifacts:running_shoes` · **Section:** `[running_shoes]`
 
-While sprinting: **+40% base movement speed**, **+0.5 block step height**.
++15% base movement speed while sprinting; retains +0.5 block step height.
 
-**Planned:** **+20% base movement speed while sprinting**; retain **+0.5 block step height**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `sprintingSpeedBonus` | **0.4** | **0.2 (+20% base)** |
+| `sprintingSpeedBonus` | **0.4** | **0.15** |
 | `sprintingStepHeightBonus` | **0.5** | — |
 
 **Optional durability (disabled)** — section `[running_shoes.durability]`: `damagePerSecondActive` **0.1**; `maxDamage` **900**.
@@ -620,7 +596,7 @@ While sprinting: **+40% base movement speed**, **+0.5 block step height**.
 
 **+30% base movement speed on snow**, **WALK ON POWDER SNOW**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `allowWalkingOnPowderedSnow` | **true** | — |
 | `movementSpeedOnSnowBonus` | **0.3** | — |
@@ -631,14 +607,12 @@ While sprinting: **+40% base movement speed**, **+0.5 block step height**.
 
 **Item:** `artifacts:steadfast_spikes` · **Section:** `[steadfast_spikes]`
 
-**+1.0 knockback resistance**, **+1.0 slip resistance**. Normal knockback-resistance scale **0–1**: **1.0 = full resistance**. Default slip resistance removes extra ice slipperiness, not incoming damage.
++30% knockback resistance and +1 slip resistance. Fits the restored Feet slot, separate from Nameless Shoes.
 
-**Planned:** **+0.5 knockback resistance (50%)**; retain **+1.0 slip resistance**.
-
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
-| `knockbackResistance` | **1.0** | **0.5 (50%)** |
-| `slipperinessReduction` | **1.0** | — |
+| `knockbackResistance` | **1.0** | **0.3** |
+| `slipperinessReduction` | **1.0** | **1.0** |
 
 **Optional durability (disabled)** — section `[steadfast_spikes.durability]`: `damageWhenAttacked` **1**; `maxDamage` **800**.
 
@@ -648,7 +622,7 @@ While sprinting: **+40% base movement speed**, **+0.5 block step height**.
 
 **+70% base swim speed**.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `swimSpeedBonus` | **0.7** | — |
 
@@ -660,7 +634,7 @@ While sprinting: **+40% base movement speed**, **+0.5 block step height**.
 
 While grounded on supported grass and hungry: **1 hunger point per 10-second interval**, with saturation. Eating while grounded on supported grass can **GROW PLANTS** using bone-meal behavior.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `enabled` | **true** | — |
 | `growPlantsAfterEating` | **true** | — |
@@ -674,7 +648,7 @@ While grounded on supported grass and hungry: **1 hunger point per 10-second int
 
 **WALK ON LAVA while sneaking**; prevents hot-floor damage such as magma blocks. Not blanket immunity to every fire/lava damage source.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `cancelHotFloorDamage` | **true** | — |
 | `enabled` | **true** | — |
@@ -689,7 +663,7 @@ While grounded on supported grass and hungry: **1 hunger point per 10-second int
 
 **+0.12 (12 percentage points) FLATULENCE chance** at fart-trigger checks. Cosmetic sound behavior; no configured poison cloud, reflection, or stun.
 
-| Setting | Default | Planned value |
+| Setting | Upstream default | Current pack value |
 | --- | --- | --- |
 | `fartChance` | **0.12** | — |
 
@@ -713,34 +687,21 @@ While grounded on supported grass and hungry: **1 hunger point per 10-second int
 | **FIRE / FIRE RESISTANCE** | Fire Gauntlet, Flame Pendant, Obsidian Skull, Strider Shoes |
 | **FORTUNE / LOOTING / FISHING / EXPERIENCE** | Lucky Scarf, Superstitious Hat, Angler’s Hat, Golden Hook |
 
-## Balance direction and approved recommendations
+## Current capped balance
 
-**Goal:** reduce excessive melee/ranged advantages so magic builds have more room. Confirmed changes are marked **Planned** in individual entries; upstream defaults remain in the Default column. These approved changes are now implemented in the replacement JAR.
+Accessories complement class skills. Life steal has a wearer-level 1s interval and a 2-HP base-heal cap. Retaliation uses bounded damage, protects party allies/pets, and cannot activate other retaliation or life steal. Native defensive item cooldowns remain; the wearer-level retaliation timer also prevents stack-swapping bypasses. Ordinary attribute modifiers retain their native operations; there is no extra blanket accessory multiplier.
 
-The following **four recommendations are approved** and recorded in the individual planned-value tables. They are implemented; comparative combat-balance outcomes have not been measured in game.
-
-| Artifact | Approved adjustment | Reason |
-| --- | --- | --- |
-| Power Glove | **+4 → +2 flat attack damage** | Reduces a direct melee damage advantage that also increases life-steal healing. |
-| Vampiric Glove | **20% → 10% life steal**, retaining your **2-heart cap** | Reduces damage-scaled healing below the cap as well as on stronger hits. |
-| Pocket Piston | **+0.75 → +0.3 attack knockback** | Keeps spacing utility while reducing repeated displacement. |
-| Steadfast Spikes | **1.0 → 0.5 knockback resistance**, retain slip resistance | Retains a strong defensive bonus while allowing some counterplay. This affects all builds wearing it. |
-
-**Conditional follow-ups, not approved:** an additional **1-second Vampiric Glove healing cooldown**, reducing Cross Necklace's extra invulnerability to **10 ticks**, and duplicate-artifact restrictions. Keep Cross Necklace at **20 extra ticks / 5-second cooldown** for the initial balance pass. Investigate duplicate stacking before deciding whether Artifacts needs its own restriction; the Nameless Trinkets rule does not automatically establish Artifacts behavior.
-
-**Caster considerations:** these Artifacts changes mainly reduce melee power and shared survivability/mobility; they do not directly nerf bow damage or improve spell scaling. Avoid adding blanket magic bonuses until testing with the already planned **5% ordinary spell-power nodes** and **20% Magistrate school power**. Test representative melee, bow, and caster loadouts with comparable gear and skill investment.
-
-**Obsidian Skull:** Fire Resistance II is recorded as requested, but vanilla level I already provides fire immunity. A higher level is not a meaningful protection upgrade; a duration/cooldown change would be the useful balance lever.
+Shock Pendant uses visual lightning and one attributed, bounded hit, avoiding collateral lightning damage and ignition. Withered Bracelet keeps its native melee trigger with a wearer-level 4s interval. Shrinking retains 75% size, movement and Weakness II. Slots, other utility items and optional durability remain intact. See [all 87 retained wearable decisions](../accessory-rpg-balance/inventory.md).
 
 ## Sources
 
-- Implemented pack archive SHA-256: `567f61e66baa401c6d340a0183220276023404baa1f1e3d612935aeb03dfecb1`.
+- Implemented pack archive SHA-256: `4288b5b14ce810e38e89fc5016cf4b792c8be376c2e33cce22028944f6227f62`.
 
 - Installed archive: `mods/artifacts-neoforge-15.1.3+26.2.1.jar`; inspected metadata, English names, tags, and compiled configuration definitions.
 - Upstream SHA-256: `3be92116769cbba850acfc0e03bd0f3688c459e2b17144d97da36679fe35c104`.
 - [Official project](https://www.curseforge.com/minecraft/mc-mods/artifacts). Matching upstream **26.2 / 15.1.3** snapshot: [803fd1aea1cece1362d40ba626c64cc1c3cdabb7](https://github.com/ochotonida/artifacts/tree/803fd1aea1cece1362d40ba626c64cc1c3cdabb7).
 - [Configuration definitions](https://github.com/ochotonida/artifacts/blob/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/config/ItemConfigs.java), [item definitions](https://github.com/ochotonida/artifacts/blob/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/registry/ModItems.java), [ability implementations](https://github.com/ochotonida/artifacts/tree/803fd1aea1cece1362d40ba626c64cc1c3cdabb7/common/src/main/java/artifacts/component/ability).
 
-Upstream reference established by static inspection. The implemented balance passed 64 checks on an isolated NeoForge dedicated server; no full client or comparative combat playtest was performed.
+The 30 October capped-balance archives passed 171 minimal and 181 RPG/Better Party isolated-server checks. These include shared regression checks; they are not 352 unique tests. No new client visual or comparative class playtest was performed. See the combined verification record.
 
 21 October slot repair: the missing Artifacts Feet assignment is restored. Steadfast Spikes fits Feet (not Nameless Shoes). Existing Charm remains; adding Feet brings the current pack to 21 functional slots.

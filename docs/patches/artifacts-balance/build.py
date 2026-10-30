@@ -27,18 +27,24 @@ argfile=WORK/'compile.args'
 argfile.write_text('\n'.join('"'+a.replace('\\','/')+'"' for a in command))
 subprocess.run([str(Path(args.java_bin)/'javac.exe'),'@'+str(argfile)],check=True)
 replacements={f.relative_to(classes).as_posix():f.read_bytes() for f in classes.rglob('*.class')}
-assert set(replacements)=={'artifacts/config/value/ConfigValue.class','artifacts/registry/ModItems.class'},set(replacements)
+assert {'artifacts/config/value/ConfigValue.class','artifacts/registry/ModItems.class','artifacts/pack/AccessoryCombat.class','artifacts/event/ArtifactHooks.class'} <= set(replacements),set(replacements)
 output=WORK/NAME
 changed=[]
 with ZipFile(upstream) as src,ZipFile(output,'w') as dst:
  for info in src.infolist():
   old=src.read(info.filename);new=replacements.get(info.filename,old)
+  if info.filename=='assets/artifacts/lang/en_us.json':
+   lang=json.loads(old);lang.update(json.loads((HERE/'tooltip-overrides.json').read_text()))
+   new=(json.dumps(lang,indent=2,ensure_ascii=False)+'\n').encode('utf-8')
   if new!=old:changed.append(info.filename)
   dst.writestr(info,new)
+ for name,data in replacements.items():
+  if name not in src.namelist():dst.writestr(name,data)
  for resource in sorted((HERE/'resources').rglob('*.json')):
   dst.writestr(resource.relative_to(HERE/'resources').as_posix(),resource.read_bytes())
+ dst.writestr('accessory-character-scaling.json',(HERE/'../accessory-rpg-balance/character-scaling.json').read_bytes())
  dst.writestr('artifacts-pack-balance.json',(HERE/'balance.json').read_bytes())
-assert len(changed)==2,changed
+assert len(changed)>=5,changed
 report={'upstream_sha256':UPSTREAM_SHA,'output_sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'replaced':changed,'added_resources':[f.relative_to(HERE/'resources').as_posix() for f in sorted((HERE/'resources').rglob('*.json'))]}
 (WORK/'build-result.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

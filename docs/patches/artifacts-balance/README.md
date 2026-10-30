@@ -5,46 +5,34 @@ Upstream: [Artifacts](https://github.com/ochotonida/artifacts), MIT, commit
 `803fd1aea1cece1362d40ba626c64cc1c3cdabb7` (26.2 / 15.1.3).
 The upstream license is preserved in `LICENSE.upstream` and in the archive.
 
+## Character-scaling follow-up - 30 October 2026
+
+[Character scaling](../accessory-rpg-balance/character-scaling.json) now supersedes earlier flat HP/attack values for Titan, Ghast Eye, Crystal Heart, Power Glove and Woundbearer. Chorus Totem healing, Thorn retaliation and Tick use the revised capped behavior in the [complete inventory](../accessory-rpg-balance/inventory.md). Legacy flat config fields remain for component/save compatibility; native item callbacks/tickers compute the effective scaled values. No extra dependencies are added.
+
 ## Effective pack values
 
-| Artifact | Effective change |
-| --- | --- |
-| Cross Necklace | Extra invulnerability remains 20 ticks; cooldown **5 seconds**. |
-| Panic Necklace | **Speed I, 5 seconds**, cooldown **7 seconds**. |
-| Shock Pendant | Cooldown **3 seconds**; chance/immunity retained. |
-| Thorn Pendant | Cooldown **3 seconds**; damage/chance retained. |
-| Charm of Shrinking | 75% of original size; **×1.2 movement speed** and refreshing **Weakness II, 60 seconds** while active. |
-| Obsidian Skull | **Fire Resistance II**; 30-second duration and 60-second cooldown retained. Level II has no extra vanilla fire-protection benefit over level I. |
-| Crystal Heart | **+8 maximum health / +4 hearts**. |
-| Feral Claws | **+15% base attack speed**. |
-| Vampiric Glove | **10% melee life steal**, maximum **4 health / 2 hearts per hit**; 100% chance retained. |
-| Running Shoes | **+20% base movement speed while sprinting**; step height retained. |
-| Power Glove | **+2 flat attack damage**. |
-| Pocket Piston | **+0.3 attack knockback**. |
-| Steadfast Spikes | **+0.5 knockback resistance**; slip resistance retained. |
+The 30 October capped RPG revision replaces the earlier values below. [All 45 wearable decisions](../accessory-rpg-balance/inventory.md) and [the combined verification record](../accessory-rpg-balance/README.md) cover the complete pass. Pack-enforced numeric values remain in `balance.json`; stale config reads cannot override them.
 
-No extra life-steal cooldown, reduced Cross Necklace invulnerability, or new
-duplicate-artifact restriction is included. Other item settings remain configurable.
+| Artifact | Current effect |
+| --- | --- |
+| Vampiric Glove | Basic melee hits heal 5% of actual health damage, capped at 2 HP, once per 1s. Overkill and absorption do not increase healing; allies and accessory retaliation cannot trigger it. Healing-received modifiers remain native. |
+| Feral Claws | +10% base attack speed. |
+| Power Glove | Adds 5% of melee power before Power Glove and Woundbearer, capped at +2 effective attack damage. Recalculates as outside equipment and buffs change. |
+| Crystal Heart | Adds 10% of maximum HP before the three scaling health accessories and Health Boost, capped at +8 effective HP. No healing on equip or refresh; cannot amplify the other scaling health curios. |
+| Cross Necklace | Adds 10 invulnerability ticks (0.5s) after taking damage; native cooldown 5s. |
+| Running Shoes | +15% base movement speed while sprinting; retains +0.5 block step height. |
+| Steadfast Spikes | +30% knockback resistance and +1 slip resistance. Fits the restored Feet slot, separate from Nameless Shoes. |
+| Fire Gauntlet | +4 seconds attack-burning duration. |
+| Flame Pendant | 40% chance to ignite an eligible attacker for 4s, granting the wearer Fire Resistance I for 4s. 4s cooldown; allies and accessory retaliation are excluded. |
+| Shock Pendant | 25% chance to retaliate against an eligible attacker under open sky. Visual lightning accompanies 2 damage plus 10% of strongest offensive power, capped at 6. 6s cooldown. Retains lightning immunity; no collateral lightning damage or fire. |
+| Withered Bracelet | Melee hits have a 30% chance to apply Wither I for 4s. 4s cooldown shared by the wearer; excludes allies and accessory retaliation. |
+| Thorn Pendant | 50% chance to retaliate for 1 damage plus 10% wearer armor, capped at 4 damage. Fixed 4s interval; excludes allies and cannot trigger retaliation chains. |
+
+The 75% shrinking charm, refreshing Weakness II, native toggle handling, restored Feet slot and other utility items remain. Proc damage uses player-attributed nonrecursive damage sources; friendly players and pets are protected. Native per-stack cooldowns are supplemented by wearer timers for retaliation and life steal. No extra dependency is introduced.
 
 ## Implementation and distribution
 
-`ConfigValue` enforces the 18 approved/explicitly retained `items` config keys in `balance.json`,
-both as defaults and on reads. Existing configuration values and network updates
-cannot restore stronger values for those keys. Unrelated config keys are untouched.
-The physical TOML may still contain an older value; the effective value is the pack
-policy. Restart clients and servers after replacing the archive.
-
-`ModItems` adds the movement modifier and Weakness equipment component to the
-shrinking charm, and changes the skull's effect level. Shrinking uses Artifacts'
-native toggle, attribute, effect ticker and removal handling. Equipment effects
-include the native **19-tick refresh padding**: 60 seconds produces 1,219 ticks,
-and 30 seconds produces 619 ticks. Native effect cleanup runs on unequip; no
-separate Nameless Trinkets-style lingering-debuff handler is added.
-
-The installer already compares Git content hashes and delivers this changed JAR
-without a filename/version change. No installer rebuild or config installation is
-needed. Both client and server receive the same replacement. Personal Minecraft
-folders and the separate desktop server were not changed.
+`ConfigValue` enforces the numeric policy on defaults and reads. Existing item definitions and effects use native data components. Replacements for retaliation, the attack-effect gate and `ArtifactHooks.absorbDamage` bound the new procs; unrelated hooks retain upstream behavior. `AccessoryCombat` accesses optional RPG attributes through registry lookup and Better Party through its server API when installed. Both mods contribute to a shared accessory-damage tag to prevent cross-mod recursion while remaining independently loadable.
 
 ## Rebuild
 
@@ -59,8 +47,7 @@ folders and the separate desktop server were not changed.
 4. Verify the output under `tmp/artifacts-balance/`, then replace the active JAR
    under its existing filename. Do not ship test probes or intermediate classes.
 
-The build verifies the upstream hash, replaces exactly two classes, preserves all
-other archive entries, and adds the numeric policy as `artifacts-pack-balance.json`.
+The build verifies the upstream hash, replaces the compiled source classes and English tooltip entries, preserves other archive entries, and adds the numeric policy and damage/slot resources. Include the embedded ExpandAbility JAR and JetBrains annotations in the compilation classpath when compiling the native ArtifactHooks class.
 Source edits must stay aligned with `balance.json`; the runtime probe checks each
 effective/default value and each override after writing a stale value.
 

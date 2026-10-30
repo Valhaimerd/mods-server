@@ -1,0 +1,11 @@
+package local.paladinprobe;
+import java.nio.file.*;import java.util.*;import net.neoforged.fml.common.Mod;import net.neoforged.neoforge.common.NeoForge;import net.neoforged.neoforge.event.server.ServerStartedEvent;import net.minecraft.core.registries.Registries;import net.minecraft.resources.Identifier;import net.minecraft.world.item.*;import net.minecraft.world.item.enchantment.*;
+@Mod("paladin_doctrine_probe") public class NodeProbe{
+ List<String> checks=new ArrayList<>();int fail;void near(double a,double b,double tol,String l){boolean ok=Math.abs(a-b)<tol;checks.add((ok?"PASS ":"FAIL ")+l+" actual="+a+" expected="+b);if(!ok)fail++;}
+ public NodeProbe(){NeoForge.EVENT_BUS.addListener(this::run);}
+ void run(ServerStartedEvent e){var s=e.getServer();try{var w=s.overworld();var r=w.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);var h=r.get(Identifier.parse("minecraft:unbreaking")).orElseThrow();near(h.value().getMaxLevel(),10,.001,"max level X");near(h.value().getMaxCost(1),Files.exists(Path.of("module.flag"))?35:55,.001,"intended base/module definition loaded");
+ for(int l=1;l<=10;l++){var armor=new ItemStack(Items.DIAMOND_CHESTPLATE);armor.enchant(h,l);int lost=EnchantmentHelper.processDurabilityChange(w,armor,200000);near((double)lost/200000,1-.08*l,.008,"armor level "+l+" native durability loss probability");}
+ for(int l:new int[]{1,3,10}){var tool=new ItemStack(Items.DIAMOND_PICKAXE);tool.enchant(h,l);near((double)EnchantmentHelper.processDurabilityChange(w,tool,200000)/200000,1.0/(l+1),.008,"tool probability unchanged level "+l);}
+ for(var item:new net.minecraft.world.item.Item[]{Items.DIAMOND_HELMET,Items.DIAMOND_LEGGINGS,Items.DIAMOND_BOOTS}){var armor=new ItemStack(item);armor.enchant(h,10);near((double)EnchantmentHelper.processDurabilityChange(w,armor,200000)/200000,.2,.008,"other armor piece level X "+item);}
+ }catch(Throwable t){fail++;checks.add("ERROR "+t);t.printStackTrace();}finally{try{Files.write(Path.of("paladin-checks.txt"),checks);Files.writeString(Path.of("paladin-result.txt"),(fail==0?"PASS ":"FAIL ")+checks.size()+" checks; failures="+fail);}catch(Exception x){throw new RuntimeException(x);}s.halt(false);}}
+}

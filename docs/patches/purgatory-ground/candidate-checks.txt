@@ -1,0 +1,8 @@
+PASS Purgatory burning-ground resource registered
+PASS burning ground radius6 actual=6.0 expected=6.0
+PASS one pulse lifetime actual=0.5 expected=0.5
+PASS visual cloud has no damage impacts
+PASS uses Meteor ground flame
+PASS one native cloud per pulse
+PASS native cloud diameter12 actual=12.0 expected=12.0
+PASS cloud expires after pulse

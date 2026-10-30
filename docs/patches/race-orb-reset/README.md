@@ -4,7 +4,7 @@
 
 ## Player behavior
 
-Using the **Orb of Oblivion** now resets the user's Iourus race as well as its existing RPG/Adventurer skill allocations, then opens the race selection panel. It also works when the player has a race but no spent skill points. The native Orb durability/use cost, particles, stat and Creative behavior remain unchanged. If there is neither a race nor any skill allocation to reset, the Orb still fails without spending a use. Other players' races are unchanged.
+Using the **Orb of Oblivion** now resets the user's Iourus race as well as its existing RPG/Adventurer skill allocations, then opens the race selection panel. It also works when the player has a race but no spent skill points. The native Orb durability, particles, stat and Creative behavior remain. The later [acquisition overlay](../orb-acquisition/README.md) requires 30 levels for a successful Survival reset and replaces the crafting recipe. If there is neither a race nor any skill allocation to reset, the Orb still fails without spending a use. Other players' races are unchanged.
 
 Existing-race players no longer receive a selection prompt while their join packet is pending. The client waits for server confirmation, with no arbitrary loading delay. A late packet confirming a selected race also closes a stale race-selection panel. Only confirmed `NONE` can open the chooser automatically or with the race-menu key. The panel waits for another open screen to close, and dismissing it does not reopen it every tick. Later Orb/admin resets can prompt again within the same connection.
 

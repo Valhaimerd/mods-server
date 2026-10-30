@@ -1,0 +1,46 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before_sha256": "87a3b8f0d41c5c5842cc8dd81f77b1776bb8afe91ee44e8852c3e1690364cb05",
+    "sha256": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca",
+    "changed": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/connections.json",
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json",
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/skills.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+    "before_sha256": "0d03d94b03a68924d89f459baedc543ad41ada2a31fb313ef43a958c20342c82",
+    "sha256": "483db2b57e6145b1a6c3be20f17c7025e9501752944d0a172b45c4b1ac162b77",
+    "changed": [
+      "net/valhaimerd/orboblivioncompat/OrbOblivionPuffishCompat.class",
+      "META-INF/neoforge.mods.toml"
+    ],
+    "added": [
+      "assets/orb_of_oblivion_puffish_compat/lang/en_us.json",
+      "assets/orb_of_oblivion_puffish_compat/textures/mob_effect/sure_footing.png",
+      "net/valhaimerd/orboblivioncompat/Utilities$1.class",
+      "net/valhaimerd/orboblivioncompat/Utilities.class",
+      "net/valhaimerd/orboblivioncompat/mixin/AnvilMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/AnvilPlayerAccess.class",
+      "net/valhaimerd/orboblivioncompat/mixin/CategoryGateMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/ConsumptionMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/DrinkEffectMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/EnchantMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/EnchantScreenMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/FoodEffectMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/FoodMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/FrozenMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/LivingMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/OrbXpMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/PlayerDataAccess.class",
+      "net/valhaimerd/orboblivioncompat/mixin/SkillsDataAccess.class",
+      "net/valhaimerd/orboblivioncompat/mixin/SnowMixin.class",
+      "net/valhaimerd/orboblivioncompat/mixin/ToolMixin.class",
+      "utilities-nodes.json",
+      "utilities.mixins.json"
+    ]
+  }
+]

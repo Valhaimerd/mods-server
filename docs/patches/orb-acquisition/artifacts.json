@@ -1,0 +1,15 @@
+{
+  "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+  "before_sha256": "73030968c2c61a4cf292c13acedc13d6ddd006957c6073dead070b16e547f1d7",
+  "sha256": "e5baf4cdc96540da193e03ec387577445a572b79116b4d333043c8ae3a97febc",
+  "changed": [
+    "assets/skill_tree_rpgs/lang/en_us.json",
+    "data/skill_tree_rpgs/advancement/recipes/combat/orb_of_oblivion.json",
+    "data/skill_tree_rpgs/recipe/orb_of_oblivion.json",
+    "skill_tree_rpgs.mixins.json"
+  ],
+  "added": [
+    "net/skill_tree_rpgs/mixin/OrbLevelCostMixin.class"
+  ],
+  "preserved_entries": 570
+}

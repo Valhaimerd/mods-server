@@ -1,0 +1,8 @@
+PASS Elf native safe fall +5 actual=8.0 expected=8.0
+PASS repeated application does not stack actual=8.0 expected=8.0
+PASS normal falling speed actual=-0.8 expected=-0.8
+PASS fall distance not erased actual=12.0 expected=12.0
+PASS 8 block fall is safe actual=18.0 expected=18.0
+PASS 12 block fall still deals 4 HP actual=4.0 expected=4.0
+PASS switch to Human removes bonus actual=3.0 expected=3.0
+PASS explicit race cleanup removes bonus actual=3.0 expected=3.0

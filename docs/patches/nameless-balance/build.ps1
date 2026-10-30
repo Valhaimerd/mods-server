@@ -9,7 +9,10 @@ $classes = Join-Path $work 'classes'
 New-Item -ItemType Directory -Force -Path $classes | Out-Null
 $sources = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'src') -Recurse -Filter '*.java' |
     Select-Object -ExpandProperty FullName)
-& (Join-Path $JavaDirectory 'javac.exe') --release 25 -cp $ClassPath -d $classes @sources
+$compileArguments = @('--release','25','-encoding','UTF-8','-cp',$ClassPath.Trim(),'-d',$classes) + $sources
+$argumentFile = Join-Path $work 'compile.args'
+[IO.File]::WriteAllLines($argumentFile, @($compileArguments | ForEach-Object { '"' + $_.Replace('\','/') + '"' }), [Text.UTF8Encoding]::new($false))
+& (Join-Path $JavaDirectory 'javac.exe') "@$argumentFile"
 if ($LASTEXITCODE -ne 0) { throw 'Nameless balance compilation failed.' }
 $guardTools = Join-Path $work 'guard-tools'
 New-Item -ItemType Directory -Force -Path $guardTools | Out-Null

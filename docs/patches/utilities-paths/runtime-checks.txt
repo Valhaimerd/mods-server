@@ -1,0 +1,68 @@
+PASS migration refunds Utilities only
+PASS migration preserves points and earned XP
+PASS removed historical leaf cleared
+PASS second migration does not refund again
+PASS mastery cannot skip ordinary leaves
+PASS second path blocked on server
+PASS partial entrance refund cannot bypass exclusion
+PASS Fitness mastery complete
+PASS food/saturation exact14% actual=0.14 expected=0.14
+PASS breathing exact24% actual=0.24 expected=0.24
+PASS fractional food does not round every meal up actual=5.0 expected=5.0
+PASS native saturation clamp preserved actual=5.0 expected=5.0
+PASS food remainder carried to next meal actual=11.0 expected=11.0
+PASS saturation bonus applied once to original payload actual=6.840000152587891 expected=6.84
+PASS rations restore exactly4drumsticks actual=14.0 expected=14.0
+PASS rations grant no saturation actual=0.0 expected=0.0
+PASS rations cooldown blocks reactivation actual=6.0 expected=6.0
+PASS rations cooldown survives reset
+PASS 24% longer air uses fractional consumption actual=1000.0 expected=1000.0
+PASS jump+10% actual=0.4619999862015247 expected=0.461999985575676
+PASS sneak+24%, no walk modifier actual=0.3719999983906746 expected=0.372
+PASS safe fall+4blocks actual=7.0 expected=7.0
+PASS climb+24% actual=0.24 expected=0.24
+PASS freezing buildup25%slower, not immunity actual=75.0 expected=75.0
+PASS SureFooting halves positive final fall damage actual=4.0 expected=4.0
+PASS snow guard has synchronized icon effect
+PASS snow guard prevents sinking
+PASS snow guard prevents environmental freezing damage
+PASS SureFooting20s cooldown actual=8.0 expected=8.0
+PASS cost discounts sum33% actual=0.33 expected=0.33
+PASS XPbonus sums16% actual=0.16 expected=0.16
+PASS durability preservation sums16% actual=0.16 expected=0.16
+PASS Ingenuity+1Luck actual=1.0 expected=1.0
+PASS native XP orbs award16%once with carry actual=8.0 expected=8.0
+PASS single16%durability roll distribution
+PASS scripted durability outside tool use unchanged actual=1.0 expected=1.0
+PASS armor durability excluded actual=1.0 expected=1.0
+PASS shield durability excluded actual=1.0 expected=1.0
+PASS elytra durability excluded actual=1.0 expected=1.0
+PASS tool category preserved minecraft:diamond_pickaxe
+PASS tool category preserved minecraft:diamond_axe
+PASS tool category preserved minecraft:diamond_shovel
+PASS tool category preserved minecraft:diamond_hoe
+PASS tool category preserved minecraft:shears
+PASS native mining enters scoped preservation
+PASS native tool scope released after use
+PASS seven1XP awards yield8XP actual=8.0 expected=8.0
+PASS XP fraction carries independently actual=0.1200000000000001 expected=0.12
+PASS negativeXP not amplified actual=-100.0 expected=-100.0
+PASS additive anvil tier1 actual=89.0 expected=89.0
+PASS positive anvil minimum tier1 actual=1.0 expected=1.0
+PASS zero anvil stayszero tier1 actual=0.0 expected=0.0
+PASS additive anvil tier2 actual=78.0 expected=78.0
+PASS positive anvil minimum tier2 actual=1.0 expected=1.0
+PASS zero anvil stayszero tier2 actual=0.0 expected=0.0
+PASS additive anvil tier3 actual=67.0 expected=67.0
+PASS positive anvil minimum tier3 actual=1.0 expected=1.0
+PASS zero anvil stayszero tier3 actual=0.0 expected=0.0
+PASS native rename displays payable discounted cost
+PASS native enchanting XPdebit progress0.0 actual=205.0 expected=205.0
+PASS native enchanting XPdebit progress0.25 actual=207.0 expected=207.0
+PASS native enchanting XPdebit progress0.99 actual=214.0 expected=214.0
+PASS class/equipment callbacks during consumption are excluded
+PASS positive food effect lasts35%longer
+PASS drinking potion extends original duration once
+PASS repeated potion does not compound active duration
+PASS nonconsumption effects not extended
+PASS harmful drink duration unchanged

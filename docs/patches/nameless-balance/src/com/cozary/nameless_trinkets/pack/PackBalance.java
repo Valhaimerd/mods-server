@@ -8,6 +8,7 @@ public final class PackBalance {
   String name=config.getClass().getName();name=name.substring(name.lastIndexOf('.')+1).replace("Base$Stats", "");
   try {
    switch(name) {
+    case "Tick" -> { number(config,"rangeToActivate",8.0); }
     case "AmphibiousHands" -> {
      number(config,"miningUnderwaterSpeedPercentage",125.0);
     }
@@ -19,12 +20,12 @@ public final class PackBalance {
      number(config,"extraExperiencePercentage",50.0);
     }
     case "FracturedNullstone" -> {
-     number(config,"magicDamageReductionPercentage",25.0);
+     number(config,"magicDamageReductionPercentage",15.0);
     }
     case "GhastEye" -> {
-     number(config,"extraHearts",6.0);
+     number(config,"extraHearts",4.0);
      number(config,"regenerationTime",100);
-     number(config,"regenerationExtraTime",50);
+     number(config,"regenerationExtraTime",0);
     }
     case "IceCube" -> {
      number(config,"slownessLevel",0);
@@ -45,28 +46,53 @@ public final class PackBalance {
      number(config,"poisonTime",60);
     }
     case "RageMind" -> {
-     number(config,"damageMultiplierPercentage",115.0);
+     number(config,"damageMultiplierPercentage",110.0);
     }
     case "ReverseCard" -> {
      number(config,"chanceToActivate",25.0);
     }
     case "ScarabAmulet" -> {
-     number(config,"speedMultiplierPercentage",50.0);
+     number(config,"speedMultiplierPercentage",30.0);
     }
     case "ShrinkingVeil" -> {
-     number(config,"shrinkScalePercentage",25.0);
      number(config,"speedPercentage",25.0);
+     number(config,"shrinkScalePercentage",25.0);
     }
     case "TitansMark" -> {
-     number(config,"attackDamagePercentage",10.0);
+     number(config,"attackDamagePercentage",5.0);
      number(config,"extraScalePercentage",25.0);
     }
     case "TrueHeartOfTheSea" -> {
      number(config,"miningUnderwaterSpeedPercentage",125.0);
     }
     case "VampireBlood" -> {
-     number(config,"damageMultiplierPercentage",20.0);
+     number(config,"damageMultiplierPercentage",10.0);
      number(config,"movementSpeedPercentage",10.0);
+    }
+    case "MoonStone" -> {
+     number(config,"gravityValue",-0.02625);
+    }
+    case "BlazeNucleus" -> {
+     number(config,"fireDamageReductionPercentage",50.0);
+     number(config,"setEnemyInFireTicks",80);
+    }
+    case "Woundbearer" -> {
+     number(config,"maxDamageLimit",2.0);
+     number(config,"baseDecayAmount",0.01);
+    }
+    case "ExplosionProofJacket" -> {
+     number(config,"blastDamagePercentageReduction",20.0);
+    }
+    case "CreeperSense" -> {
+     number(config,"explosionLevel",3.0);
+     number(config,"cooldownInTicks",240);
+    }
+    case "FateEmerald" -> {
+     number(config,"discountBoost",25);
+    }
+    case "SigilOfBaphomet" -> {
+     number(config,"invulnerabilityAddTimeInTicks",10);
+     number(config,"invulnerabilityMaxTimeInTicks",40);
     }
     case "BrokenMagnet","CrackedCrown","DyingStar","ElectricPaddle","EtherealWings","GodsCrown","LunarCrest","PocketLightningRod","Reforger","SpeedForce","SuperMagnet","WhatMagnet" -> config.getClass().getField("isEnable").setBoolean(config,false);
    }

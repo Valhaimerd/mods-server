@@ -1,0 +1,28 @@
+PASS skill fixture unlocked
+PASS 29 levels block reset
+PASS insufficient reset costs zero
+PASS insufficient reset preserves skills
+PASS insufficient reset preserves race
+PASS insufficient reset preserves orb
+PASS combined reset succeeds
+PASS combined reset debits exactly30levels
+PASS combined reset clears skills
+PASS combined reset clears race
+PASS no-op reset fails
+PASS no-op spends zero levels or durability
+PASS race-only reset succeeds
+PASS race-only reset clears race and costs30levels
+PASS skill-only reset succeeds
+PASS skill-only reset costs30levels
+PASS Creative bypass succeeds at0levels
+PASS Creative preserves levels and orb durability
+PASS native recipe manager exposes shaped Orb
+PASS native recipe dimensions3x3
+PASS native recipe matches4apples4totems1netherite
+PASS native recipe crafts Orb
+PASS native recipe lookup discovers new craft
+PASS old diamondXP recipe rejected
+PASS old recipe absent from native manager
+PASS native recipe display available to recipe UI integrations
+PASS native recipe advancement registered
+PASS netherite inventory trigger unlocks native recipe book

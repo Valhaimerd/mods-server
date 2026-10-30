@@ -1,0 +1,26 @@
+FAIL paladin_tier_1_passive_1 base cooldown actual=4.0 expected=5.0
+PASS paladin_tier_1_passive_1 haste enabled
+FAIL paladin_tier_3_passive_1 base cooldown actual=90.0 expected=80.0
+PASS paladin_tier_3_passive_1 haste enabled
+FAIL archer_tier_1_passive_1 base cooldown actual=8.0 expected=6.0
+PASS archer_tier_1_passive_1 haste enabled
+FAIL priest_tier_2_passive_2 base cooldown actual=15.0 expected=12.0
+PASS priest_tier_2_passive_2 haste enabled
+FAIL fire_tier_2_passive_2 base cooldown actual=4.0 expected=5.0
+PASS fire_tier_2_passive_2 haste enabled
+FAIL Supercharge35 bonus actual=1.25 expected=1.35
+FAIL Supercharge no draw penalty actual=75.0 expected=100.0
+FAIL Onslaught no movement actual=0.11000000141561031 expected=0.10000000149011612
+PASS Onslaught10 attack at5 actual=1.0999999977648258 expected=1.1
+FAIL Cadence stack1 actual=1.0199999995529652 expected=1.03
+FAIL Cadence stack2 actual=1.0399999991059303 expected=1.06
+FAIL Cadence stack3 actual=1.0599999986588955 expected=1.09
+FAIL Cadence stack4 actual=1.0799999982118607 expected=1.12
+FAIL Cadence stack5 actual=1.0999999977648258 expected=1.15
+PASS WarmUp D=27.979999542236328 actual=2.0 expected=2.0
+FAIL WarmUp D=28.0 actual=2.0 expected=3.0
+FAIL WarmUp D=55.97999954223633 actual=2.5 expected=4.0
+FAIL WarmUp D=56.0 actual=2.5 expected=5.0
+FAIL WarmUp D=84.0 actual=3.5 expected=7.0
+PASS Ardent triggers
+FAIL Ardent heals20 percent actual=500.0 expected=300.0

@@ -1,0 +1,49 @@
+FAIL minecraft:protection protection points at 1 actual=1.0 expected=0.25
+FAIL minecraft:protection actual layer damage at 1 actual=96.0 expected=99.0
+FAIL minecraft:protection protection points at 2 actual=2.0 expected=0.5
+FAIL minecraft:protection actual layer damage at 2 actual=92.0 expected=98.0
+FAIL minecraft:protection protection points at 3 actual=3.0 expected=0.75
+FAIL minecraft:protection actual layer damage at 3 actual=88.0 expected=97.0
+FAIL minecraft:protection protection points at 4 actual=4.0 expected=1.0
+FAIL minecraft:protection actual layer damage at 4 actual=84.0 expected=96.0
+FAIL minecraft:projectile_protection protection points at 1 actual=2.0 expected=0.25
+FAIL minecraft:projectile_protection actual layer damage at 1 actual=92.0 expected=99.0
+FAIL minecraft:projectile_protection protection points at 2 actual=4.0 expected=0.5
+FAIL minecraft:projectile_protection actual layer damage at 2 actual=84.0 expected=98.0
+FAIL minecraft:projectile_protection protection points at 3 actual=6.0 expected=0.75
+FAIL minecraft:projectile_protection actual layer damage at 3 actual=76.0 expected=97.0
+FAIL minecraft:projectile_protection protection points at 4 actual=8.0 expected=1.0
+FAIL minecraft:projectile_protection actual layer damage at 4 actual=68.0 expected=96.0
+FAIL minecraft:fire_protection protection points at 1 actual=2.0 expected=0.25
+FAIL minecraft:fire_protection actual layer damage at 1 actual=92.0 expected=99.0
+FAIL minecraft:fire_protection protection points at 2 actual=4.0 expected=0.5
+FAIL minecraft:fire_protection actual layer damage at 2 actual=84.0 expected=98.0
+FAIL minecraft:fire_protection protection points at 3 actual=6.0 expected=0.75
+FAIL minecraft:fire_protection actual layer damage at 3 actual=76.0 expected=97.0
+FAIL minecraft:fire_protection protection points at 4 actual=8.0 expected=1.0
+FAIL minecraft:fire_protection actual layer damage at 4 actual=68.0 expected=96.0
+FAIL minecraft:blast_protection protection points at 1 actual=2.0 expected=0.25
+FAIL minecraft:blast_protection actual layer damage at 1 actual=92.0 expected=99.0
+FAIL minecraft:blast_protection protection points at 2 actual=4.0 expected=0.5
+FAIL minecraft:blast_protection actual layer damage at 2 actual=84.0 expected=98.0
+FAIL minecraft:blast_protection protection points at 3 actual=6.0 expected=0.75
+FAIL minecraft:blast_protection actual layer damage at 3 actual=76.0 expected=97.0
+FAIL minecraft:blast_protection protection points at 4 actual=8.0 expected=1.0
+FAIL minecraft:blast_protection actual layer damage at 4 actual=68.0 expected=96.0
+FAIL spell_power:magic_protection protection points at 1 actual=2.0 expected=0.25
+FAIL spell_power:magic_protection actual layer damage at 1 actual=92.0 expected=99.0
+FAIL spell_power:magic_protection protection points at 2 actual=4.0 expected=0.5
+FAIL spell_power:magic_protection actual layer damage at 2 actual=84.0 expected=98.0
+FAIL spell_power:magic_protection protection points at 3 actual=6.0 expected=0.75
+FAIL spell_power:magic_protection actual layer damage at 3 actual=76.0 expected=97.0
+FAIL spell_power:magic_protection protection points at 4 actual=8.0 expected=1.0
+FAIL spell_power:magic_protection actual layer damage at 4 actual=68.0 expected=96.0
+PASS all five retained on HEAD actual=5.0 expected=5.0
+PASS all five retained on CHEST actual=5.0 expected=5.0
+PASS all five retained on LEGS actual=5.0 expected=5.0
+PASS all five retained on FEET actual=5.0 expected=5.0
+FAIL full combined set generic damage16percent reduction actual=36.0 expected=84.0
+FAIL full combined set matching damage32percent minecraft:projectile_protection actual=19.999998092651367 expected=68.0
+FAIL full combined set matching damage32percent minecraft:fire_protection actual=19.999998092651367 expected=68.0
+FAIL full combined set matching damage32percent minecraft:blast_protection actual=19.999998092651367 expected=68.0
+FAIL full combined set matching damage32percent spell_power:magic_protection actual=19.999998092651367 expected=68.0

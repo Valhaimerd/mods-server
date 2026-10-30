@@ -1,0 +1,10 @@
+divine-protection-radius8
+battle-banner-radius6
+battle-banner-moved
+improved-banner-radius8
+divine-strength-radius4
+seal-of-light-final-radius4
+divine-oath-falling-hammer
+divine-oath-impact
+judgement-impact-radius6
+expired-areas

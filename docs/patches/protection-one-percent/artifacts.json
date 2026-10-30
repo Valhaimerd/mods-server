@@ -1,0 +1,23 @@
+[
+  {
+    "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "before_sha256": "23c4c6787673ef0770b18d37d057ac29561b7dc6cef940918e05ba5f1b96ca38",
+    "sha256": "987c3bfb5b78d9a77210e6bc0946072f644a1476839ec83be2ba275198f1b4b3",
+    "changed": [],
+    "added": [
+      "data/minecraft/enchantment/blast_protection.json",
+      "data/minecraft/enchantment/fire_protection.json",
+      "data/minecraft/enchantment/projectile_protection.json",
+      "data/minecraft/enchantment/protection.json"
+    ]
+  },
+  {
+    "jar": "spell_power-neoforge-1.6.1+26.2.jar",
+    "before_sha256": "d8e7a60c5bb8c0f27bf6db339baf84c3c31b617b0594156646ea7e99d98bfd5a",
+    "sha256": "6033fa98d18f1424db890845a3431da0b68b43de1e8b27962b0fad0051cc2f72",
+    "changed": [
+      "data/spell_power/enchantment/magic_protection.json"
+    ],
+    "added": []
+  }
+]

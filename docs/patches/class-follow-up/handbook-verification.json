@@ -1,0 +1,16 @@
+{
+  "pages": 79,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 185,
+  "main_jars": 308,
+  "client_jars": 23,
+  "pdf_sha256": "0b627e0c06e368ccae47ed942ef9bafa9e4d18b8448967e877d7190efef2ad56",
+  "all_pages_rendered": true,
+  "visual_review_pending": true,
+  "changed_pages": [
+    17
+  ]
+}

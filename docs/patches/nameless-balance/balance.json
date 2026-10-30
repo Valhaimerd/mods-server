@@ -25,12 +25,12 @@
       "extraExperiencePercentage": 50.0
     },
     "FracturedNullstone": {
-      "magicDamageReductionPercentage": 25.0
+      "magicDamageReductionPercentage": 15.0
     },
     "GhastEye": {
-      "extraHearts": 6.0,
+      "extraHearts": 4.0,
       "regenerationTime": 100,
-      "regenerationExtraTime": 50
+      "regenerationExtraTime": 0
     },
     "IceCube": {
       "slownessLevel": 0,
@@ -51,38 +51,62 @@
       "poisonTime": 60
     },
     "RageMind": {
-      "damageMultiplierPercentage": 115.0
+      "damageMultiplierPercentage": 110.0
     },
     "ReverseCard": {
       "chanceToActivate": 25.0
     },
     "ScarabAmulet": {
-      "speedMultiplierPercentage": 50.0
+      "speedMultiplierPercentage": 30.0
     },
     "ShrinkingVeil": {
       "speedPercentage": 25.0,
       "shrinkScalePercentage": 25.0
     },
     "TitansMark": {
-      "attackDamagePercentage": 10.0,
+      "attackDamagePercentage": 5.0,
       "extraScalePercentage": 25.0
     },
     "TrueHeartOfTheSea": {
       "miningUnderwaterSpeedPercentage": 125.0
     },
     "VampireBlood": {
-      "damageMultiplierPercentage": 20.0,
+      "damageMultiplierPercentage": 10.0,
       "movementSpeedPercentage": 10.0
+    },
+    "MoonStone": {
+      "gravityValue": -0.02625
+    },
+    "BlazeNucleus": {
+      "fireDamageReductionPercentage": 50.0,
+      "setEnemyInFireTicks": 80
+    },
+    "Woundbearer": {
+      "maxDamageLimit": 2.0,
+      "baseDecayAmount": 0.01
+    },
+    "ExplosionProofJacket": {
+      "blastDamagePercentageReduction": 20.0
+    },
+    "CreeperSense": {
+      "explosionLevel": 3.0,
+      "cooldownInTicks": 240
+    },
+    "FateEmerald": {
+      "discountBoost": 25
+    },
+    "SigilOfBaphomet": {
+      "invulnerabilityAddTimeInTicks": 10,
+      "invulnerabilityMaxTimeInTicks": 40
+    },
+    "Tick": {
+      "rangeToActivate": 8.0
     }
   },
   "titanEffects": {
     "slowness": {
       "duration": 1200,
       "amplifier": 0
-    },
-    "health_boost": {
-      "duration": 100,
-      "amplifier": 4
     },
     "resistance": {
       "duration": 100,
@@ -94,5 +118,40 @@
     "duration": 1200,
     "amplifier": 1
   },
-  "maxActiveCopiesPerTrinket": 1
+  "maxActiveCopiesPerTrinket": 1,
+  "rpgProcs": {
+    "power": "max(melee,ranged,arcane,fire,frost,lightning)",
+    "missing_page": {
+      "base": 1,
+      "ratio": 0.1,
+      "cap": 6,
+      "cooldownTicks": 80
+    },
+    "eclipse_ashes": {
+      "base": 1,
+      "ratio": 0.05,
+      "cap": 3,
+      "cooldownTicks": 240
+    },
+    "resonant_heart": {
+      "base": 2,
+      "ratio": 0.15,
+      "cap": 8,
+      "cooldownTicks": 120,
+      "chance": 0.1
+    },
+    "reverse_card": {
+      "reflectedRatio": 0.25,
+      "baseCap": 2,
+      "powerRatio": 0.1,
+      "cap": 6,
+      "cooldownTicks": 80
+    },
+    "vampire_heal": {
+      "base": 2,
+      "wearerMaxHpRatio": 0.05,
+      "cap": 4,
+      "cooldownTicks": 40
+    }
+  }
 }

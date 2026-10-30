@@ -1,0 +1,16 @@
+PASS loaded RPG crossbow uses natural idle carrying arms
+PASS first-person animation pass recorded
+PASS same-frame third-person pass reevaluated
+PASS world first-person pass restored after doll
+PASS doll shares live third-person animation source
+SCREENSHOT phase 1
+STATE phase 1 arms=ITEM,EMPTY BC=Pose[base=bettercombat:pose_two_handed_crossbow, offHand=]
+SCREENSHOT phase 2
+STATE phase 2 arms=ITEM,EMPTY BC=Pose[base=bettercombat:pose_two_handed_crossbow, offHand=]
+SCREENSHOT phase 3
+STATE phase 3 arms=ITEM,EMPTY BC=Pose[base=bettercombat:pose_two_handed_heavy, offHand=]
+SCREENSHOT phase 4
+STATE phase 4 arms=ITEM,EMPTY BC=Pose[base=bettercombat:pose_two_handed_heavy, offHand=]
+SCREENSHOT Meteor Purgatory 402
+SCREENSHOT Meteor Purgatory 407
+SCREENSHOT Meteor Purgatory 412

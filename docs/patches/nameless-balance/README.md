@@ -2,7 +2,18 @@
 
 This same-version repair targets `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar` (Curios variant, Java 25 bytecode). `balance.json` records the requested settings, 12 removed relics and Titan's effect durations/amplifiers. It retains all other upstream classes and resources except the explicitly changed classes, affected item tags, 36 removed recipes/advancements and the English tooltip updates.
 
-## Resulting pack behavior
+## Character-scaling follow-up - 30 October 2026
+
+[Character scaling](../accessory-rpg-balance/character-scaling.json) now supersedes earlier flat HP/attack values for Titan, Ghast Eye, Crystal Heart, Power Glove and Woundbearer. Chorus Totem healing, Thorn retaliation and Tick use the revised capped behavior in the [complete inventory](../accessory-rpg-balance/inventory.md). Legacy flat config fields remain for component/save compatibility; native item callbacks/tickers compute the effective scaled values. No extra dependencies are added.
+
+## Current capped RPG revision - 30 October 2026
+
+The [complete inventory](../accessory-rpg-balance/inventory.md) supersedes older numeric descriptions in the historical sections below. Moon Stone uses -0.02625 gravity (3/8 of the previous reduction). Offensive procs scale modestly from the strongest offensive attribute with fixed damage caps and wearer cooldowns. Missing Page and Vampire Blood no longer scale from victim maximum HP. Existing modifiers refresh to current values; legacy Woundbearer and Sigil storage are clamped. Fractured Nullstone recognizes the common magic damage tag, including RPG school damage.
+
+All 42 retained trinkets and 12 disabled relics remain registered with their existing acquisition/equip guards. The Vampire lock remains 48,000 equipped ticks; size drawbacks stay. [New verification and current hashes](../accessory-rpg-balance/README.md) are separate from historical results below. Current effective values are in `effects.md` and `balance.json`. The build additionally includes `resources/`, `tooltip-overrides.json` and `nameless-pack-balance.json`; no personal config file is rewritten.
+
+## Historical resulting pack behavior (superseded where listed above)
+
 
 - 42 trinkets remain available. Broken Magnet, Cracked Crown, Dying Star, Electric Paddle, Ethereal Wings, God's Crown, Lunar Crest, Pocket Lightning Rod, Reforger, Speed Force, Super Magnet and What...? Magnet are disabled. Registry IDs remain for existing saves; old stacks are inert and removable, refuse equipping, and are excluded from crafting, random rewards, loot injection, the creative tab and JEI.
 - `PackBalance` applies at `TrinketItem.setTrinketConfig`, both during construction and when old disk/network configuration is assigned. The changed fields cannot silently revert through stale generated JSON. Unlisted configuration fields retain their original behavior. Constructor defaults also match the policy. The existing JSON files themselves are not rewritten by this patch.

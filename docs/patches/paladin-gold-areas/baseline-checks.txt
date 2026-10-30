@@ -1,0 +1,2 @@
+FAIL Protection cast emits one gold ground area
+ERROR java.util.NoSuchElementException: No value present

@@ -1,0 +1,1 @@
+PASS native Paladin gold events and cleanup; inspect captures

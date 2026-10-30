@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-30",
+  "scope": "Capped RPG accessory balance with character-scaling follow-up",
+  "archives": [
+    {
+      "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
+      "namespace": "nameless_trinkets",
+      "policy_folder": "nameless-balance",
+      "sha256": "294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31",
+      "previous_sha256": "a32ae66b5d31d4d2ad2aa27bd148166b7428123c1ea7b620dd7d1a137808ddb0",
+      "embedded_policy": "nameless-pack-balance.json"
+    },
+    {
+      "jar": "artifacts-neoforge-15.1.3+26.2.1.jar",
+      "namespace": "artifacts",
+      "policy_folder": "artifacts-balance",
+      "sha256": "4288b5b14ce810e38e89fc5016cf4b792c8be376c2e33cce22028944f6227f62",
+      "previous_sha256": "5e948381190c1eeca2d63e21f30bff33fdeed1f62ce971cb1ad03a23b82c86fb",
+      "embedded_policy": "artifacts-pack-balance.json"
+    }
+  ],
+  "isolated_server": {
+    "environment": "Minecraft 26.2 / NeoForge 26.2.0.90 / Curios 16.0.0+26.2 / Java 26, bytecode release25",
+    "minimal": {
+      "checks": 171,
+      "mods": "Nameless Trinkets, Artifacts, Curios, test-only probe"
+    },
+    "integrated": {
+      "checks": 181,
+      "additional_mods": [
+        "better-party-neoforge-26.2-1.1.7.jar",
+        "spell_power-neoforge-1.6.1+26.2.jar",
+        "ranged_weapon_api-neoforge-4.0.0+26.2.jar"
+      ]
+    },
+    "baseline": "Original installed Moon Stone failed the new -0.02625 gravity assertion",
+    "regressions": "Old equipped gravity, legacy Woundbearer storage, buffed phantom cap reproduced failures before fixes"
+  },
+  "counts": {
+    "nameless_available": 42,
+    "nameless_removed": 12,
+    "nameless_support": 6,
+    "artifacts_wearable": 45,
+    "artifacts_handheld_food": 3,
+    "artifacts_spawn_eggs": 1,
+    "adjusted_wearables": 32
+  },
+  "client_runtime_test": false,
+  "comparative_class_playtest": false,
+  "personal_instances_modified": false,
+  "review": "One focused read-only review; wolf lifecycle/cap and persistent Creeper cooldown findings addressed; expanded server suite passed.",
+  "handbook": {
+    "pages": 79,
+    "contents_links": 51,
+    "contents_destinations_match": true,
+    "all_pages_visually_reviewed": true,
+    "changed_pages_reviewed_at_detail": [
+      24,
+      25
+    ],
+    "sha256": "aed6e259865e0858f73aa8aa812d409fa1c48ed2c0d075f49b5d7d6c32d9ed1f"
+  },
+  "previous_isolated_checks": {
+    "minimal": 145,
+    "integrated": 155
+  },
+  "character_scaling": {
+    "baseline": "Titan fixed Health Boost produced28HP instead of target23HP at20baseHP; failed before fix",
+    "tests": "shared baseline, effective caps under base and total outside multipliers, no refresh healing, unequip/disable cleanup, Glove/Wound caps, capped Chorus healing, armor-scaled Thorn, Tick wearer scaling/interval/cost/attribution/pet safety",
+    "review": "One focused review; disable-cleanup gap fixed and tested. No fresh client playtest."
+  }
+}

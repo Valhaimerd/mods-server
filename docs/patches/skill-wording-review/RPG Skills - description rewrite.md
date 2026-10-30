@@ -375,3 +375,8 @@ Rebuild and verification instructions are in [the implementation record](README.
 ### 29 October2026 Paladin support continuation
 
 The approved [support balance plan](../../superpowers/plans/2026-10-29-paladin-support-and-vanish.md) is now implemented. Purge healing reads20%/25%/35%; Vanguard describes its periodic melee bonus/stun, and Guardian its2% baseline plus2%/3% shield stacks. Protection uses finite attack blocks and30%/40% reduction ceilings. Keep the full scaling formulas in the linked plan, native gold rows for cooldowns/triggers, and resolved effect details for received benefits. See [implementation and verification](../paladin-support-balance/README.md).
+
+
+## 30 October 2026 class follow-up
+
+Current descriptions and native gold rows are updated by [the class follow-up](../class-follow-up/README.md). Onslaught replaces Momentum and removes movement speed; Supercharge grants 35% bonus damage with no draw penalty. Warm Up uses whole increments of Dual Wield power. Opportunist separates five-second readiness from its one-second critical window. Shadow Stealth breaks on outgoing damage; Fade hides equipment for one second. Cadence grants 3% spell haste per stack, up to 15%. Keep cooldown/range explanations in their native rows; Fade has no finite aggro-clearing range.

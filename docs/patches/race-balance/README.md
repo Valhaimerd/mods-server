@@ -1,5 +1,7 @@
 # Iourus race balance and Elf falling synchronization
 
+**Superseded Elf falling behavior:** the [native safe-fall revision](../elf-safe-fall/README.md) replaces the slow-falling mechanics described below.
+
 24 October 2026. Same-filename overlay on the installed `iourusraces-1.1.0.jar`, retaining all eight race IDs and the Asgardian/Bifrost integration. Embedded metadata remains upstream 1.0.0. Both client and server need the matching replacement.
 
 ## Race changes

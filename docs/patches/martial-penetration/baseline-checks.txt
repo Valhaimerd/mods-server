@@ -1,0 +1,4 @@
+FAIL native armor penetration10percent actual=100.0 expected=110.00000000000001
+FAIL no critical chance bonus actual=115.00000022351742 expected=105.0000000745058
+PASS no critical damage bonus actual=150.0 expected=150.0
+PASS refund removes penetration actual=100.0 expected=100.0

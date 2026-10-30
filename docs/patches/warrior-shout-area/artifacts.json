@@ -1,0 +1,9 @@
+{
+  "jar": "rogues-neoforge-3.1.2+26.2.jar",
+  "before_sha256": "c49c9659c5cb9c57da9eac3187ffa01fa5bcaa1fa9656ba50049929de12eab70",
+  "sha256": "b0859e26ec1799a7530d2db72d797f98ea4ba2c3b62971bcba623c5944c80308",
+  "changed": [
+    "data/rogues/spell/shout.json"
+  ],
+  "preserved_entries": 823
+}

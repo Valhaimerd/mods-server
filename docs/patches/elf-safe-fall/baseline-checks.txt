@@ -1,0 +1,8 @@
+FAIL Elf native safe fall +5 actual=3.0 expected=8.0
+FAIL repeated application does not stack actual=3.0 expected=8.0
+FAIL normal falling speed actual=-0.2 expected=-0.8
+FAIL fall distance not erased actual=2.5 expected=12.0
+FAIL 8 block fall is safe actual=13.0 expected=18.0
+FAIL 12 block fall still deals 4 HP actual=9.0 expected=4.0
+PASS switch to Human removes bonus actual=3.0 expected=3.0
+PASS explicit race cleanup removes bonus actual=3.0 expected=3.0

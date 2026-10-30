@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "installed": {
+    "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca",
+    "orb_of_oblivion_puffish_compat-1.0.2.jar": "483db2b57e6145b1a6c3be20f17c7025e9501752944d0a172b45c4b1ac162b77",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "e5baf4cdc96540da193e03ec387577445a572b79116b4d333043c8ae3a97febc"
+  },
+  "server_checks": "PASS 68 Utilities runtime checks",
+  "orb_checks": "PASS 28 native Orb acquisition/use checks",
+  "connected_client": "PASS native client layout, synchronized rewards, XP cost preview and combined Orb reset",
+  "handbook_sha256": "27fe53244e26252e61f5681a520af48b9a8cf326773e21533adc0db478c94efe",
+  "handbook_pages": 80,
+  "contents_links_checked": 51,
+  "visual_review": "All PDF pages rendered in tmp/utilities/pdf-review; changed pages20/21 inspected at1400px. Native Utilities tree screenshot reviewed.",
+  "limitations": "Isolated scripted client/server verification; no full-pack multiplayer soak or manual third-party recipe-viewer screen inspection.",
+  "distribution": "Installed mods and ignored fixed packs with previous JARs in ignored retired packs; not committed/pushed."
+}

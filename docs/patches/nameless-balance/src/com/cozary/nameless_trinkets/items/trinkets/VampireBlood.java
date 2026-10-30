@@ -56,7 +56,11 @@ public class VampireBlood extends VampireBloodBase implements ICurioItem {
 
         if(!livingEntity.level().isClientSide() && remaining(stack)>0)setRemaining(stack,remaining(stack)-1);
 
-        if(!livingEntity.level().isClientSide())applySpeed(livingEntity,config);
+        if(!livingEntity.level().isClientSide()){
+            applySpeed(livingEntity,config);
+            CommonUtils.applyAttributeModifier(livingEntity.getAttribute(Attributes.ATTACK_DAMAGE),new AttributeModifier(
+                Identifier.parse("nameless_trinkets:vampire_blood_attack_damage"),config.damageMultiplierPercentage/100D,AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        }
 
         if (!livingEntity.isSpectator()) {
 

@@ -1,0 +1,14 @@
+{
+  "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+  "before_sha256": "987c3bfb5b78d9a77210e6bc0946072f644a1476839ec83be2ba275198f1b4b3",
+  "sha256": "8b43817427e8004c655ddbbd8f373dc11b32ba0810a24de6058a7e818b89361b",
+  "changed": [
+    "archives/tater/penchant/mixin/disable/RetiredEnchantmentsMixin.class",
+    "archives/tater/penchant/mixin/disable/RetiredProgressMixin.class"
+  ],
+  "added": [
+    "data/minecraft/enchantment/feather_falling.json"
+  ],
+  "removed_jar": "toughness-enchantment-v1.0.2.jar",
+  "removed_sha256": "50015ae444366b9a60590216ab4880ba6215f2408e283bac96fc54134b6714d3"
+}

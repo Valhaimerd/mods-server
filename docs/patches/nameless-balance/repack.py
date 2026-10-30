@@ -65,6 +65,7 @@ with ZipFile(upstream) as source, ZipFile(output, "w") as target:
                 "tooltip.nameless_trinkets.vampire_blood_3": "Sunlight hurts. Removal unlocks after 2 full Minecraft days worn (48,000 ticks).",
                 "tooltip.nameless_trinkets.true_heart_of_the_sea_4": "Underwater mining speed: 1.25x.",
             })
+            lang.update(json.loads((HERE/"tooltip-overrides.json").read_text(encoding="utf-8")))
             data = (json.dumps(lang, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
         if data != source.read(name):
             changed.append(name)
@@ -74,6 +75,12 @@ with ZipFile(upstream) as source, ZipFile(output, "w") as target:
         if name not in originals:
             target.write(path, name)
             changed.append(name)
+# Added resources and the exact effective policy travel with the same-name archive.
+with ZipFile(output,"a") as target:
+    for path in (HERE/"resources").rglob("*.json"):
+        target.write(path,path.relative_to(HERE/"resources").as_posix())
+    target.writestr("accessory-character-scaling.json",(HERE/"../accessory-rpg-balance/character-scaling.json").read_bytes())
+    target.writestr("nameless-pack-balance.json",(HERE/"balance.json").read_bytes())
 with ZipFile(output) as archive:
     assert archive.testzip() is None
 report = {"upstream_sha256": hashlib.sha256(upstream.read_bytes()).hexdigest(),

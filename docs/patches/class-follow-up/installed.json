@@ -1,0 +1,22 @@
+[
+  {
+    "path": "mods/critical_strike-neoforge-1.0.5+26.2.jar",
+    "sha256": "99bd914b22d4e53544269b652e24370e35e2c0c3dd369765702d268c08fda143"
+  },
+  {
+    "path": "mods/PlayerAnimationLibMerged-1.2.8+mc.26.2.jar",
+    "sha256": "83dff67b619c45d2daf263ef61c6037eb19e3607cef0f468e4f17527119d9993"
+  },
+  {
+    "path": "mods/rogues-neoforge-3.1.2+26.2.jar",
+    "sha256": "c49c9659c5cb9c57da9eac3187ffa01fa5bcaa1fa9656ba50049929de12eab70"
+  },
+  {
+    "path": "mods/skill_tree-neoforge-1.6.1+26.2.jar",
+    "sha256": "73030968c2c61a4cf292c13acedc13d6ddd006957c6073dead070b16e547f1d7"
+  },
+  {
+    "path": "mods/spell_engine-neoforge-1.10.5+26.2.jar",
+    "sha256": "111d1910f1c592be0836187f37d916698e769c48814b497699bc8c75eb9ac1f3"
+  }
+]

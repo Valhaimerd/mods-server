@@ -1,0 +1,18 @@
+{
+  "jar": "iourusraces-1.1.0.jar",
+  "before_sha256": "a4d145cd99f6c0427175e4cd2c289c58b875ccb2d6f8cf841394119d6cbc1487",
+  "sha256": "c098a7406562be973b81868c2fb7452b05d0b4cf9f3d7311ffc6b178db3edad0",
+  "sources": {
+    "ElfAbilityHandler.java": "e85e755806018bb81e571fc7ee65aa486bff8013319cb3b951cb3026865af657",
+    "RaceAbilityHandler.java": "9c5df716042caa345f52119f299b7240ab72e8c52ee11a507bbe221400dee637",
+    "RaceBalanceRules.java": "2b063265e6a975602f49ea899c574652e41a1cf4b0c3ea1228fcb83a731fecc8"
+  },
+  "changed": [
+    "com/eiden/iourusraces/event/ElfAbilityHandler.class",
+    "com/eiden/iourusraces/event/RaceAbilityHandler.class",
+    "assets/iourusraces/lang/en_us.json",
+    "assets/iourusraces/lang/es_es.json",
+    "com/eiden/iourusraces/race/RaceBalanceRules.class"
+  ],
+  "added": []
+}

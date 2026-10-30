@@ -158,3 +158,11 @@ Current archive responsibilities:
 - There is no stat rebalancing, bespoke asset pipeline, new generic visual framework or implementation-worker dependency.
 - The saved native registry snapshot is reusable only while its source hashes match. It is evidence for109 registered effects, not a claim that every status has already been visually inspected in game.
 - This document is ready for review. Implementation remains the next step after the user's go signal; no installed JARs were changed during planning.
+
+## Paladin area follow-up ? 30 October 2026
+
+The owner requested readable gold ground areas for Divine Protection8blocks, Banner6/8blocks, Divine Strength4blocks and Seal of Light?s final4-block heal, plus a central holy impact for Divine Oath4/6blocks. The [focused patch](../../patches/paladin-gold-areas/README.md) preserves existing Purgatory ground fire, carried model and every gameplay coefficient; the indicators use actual cast, successful-hit, final-pulse and impact events.
+
+## Warrior Shout area ? 30 October 2026
+
+The requested reddish Shout ground indicator uses native range-scaled release particles:12blocks or16with Improved Shout, including Battle and Challenging branches. Only the Rogues Shout release-particle resource changes; no new helper or combat hook. See [implementation and native checks](../../patches/warrior-shout-area/README.md).

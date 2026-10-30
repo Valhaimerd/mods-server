@@ -1,0 +1,48 @@
+PASS Protection cast emits one gold ground area
+PASS ground radius8.0 actual=8.0 expected=8.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS Protection still applies its buff
+PASS Banner starts with gold footprint
+PASS ground radius6.0 actual=6.0 expected=6.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS Banner pulses keep gold area visible
+PASS ground radius6.0 actual=6.0 expected=6.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS ground radius8.0 actual=8.0 expected=8.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS successful Divine Strength heal emits area
+PASS ground radius4.0 actual=4.0 expected=4.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS failed Purge emits no healing area
+PASS Purge without Divine Strength emits no party-heal area
+PASS Seal of Light pulse0 area timing
+PASS Seal of Light pulse1 area timing
+PASS Seal of Light pulse2 area timing
+PASS Seal of Light pulse3 area timing
+PASS Seal of Light pulse4 area timing
+PASS ground radius4.0 actual=4.0 expected=4.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS no Light area without its node
+PASS Oath landing emits ground light without enemy targets
+PASS ground radius4.0 actual=4.0 expected=4.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS Oath landing has central holy burst
+PASS ground radius6.0 actual=6.0 expected=6.0
+PASS ground is emissive
+PASS zone centered without random scatter
+PASS correct follow behavior
+PASS Purgatory burning-ground resource preserved

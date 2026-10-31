@@ -23,3 +23,5 @@ Five existing classes receive narrow ASM edits; one stateless helper is added. O
 ## Later combat-limits overlay
 
 The [PvP combat-limits patch](../pvp-combat-limits/README.md) extends this artifact without changing its preceding balance rules. Use that patch?s final artifact verification for the currently installed JAR; this page records the earlier baseline.
+
+The [31 October reach follow-up](../building-reach/README.md) additionally sets placement reach to 1,000 blocks at every tier. It supersedes this page's historical statement that starting reach is unchanged, while preserving the unlimited axis policy, batches and later combat guards.

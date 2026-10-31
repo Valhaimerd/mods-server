@@ -1,0 +1,17 @@
+{
+  "pages": 80,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 185,
+  "main_jars": 307,
+  "client_jars": 23,
+  "pdf_sha256": "be9302c65d47bed60825adb386c8a9356d6a134581c40208791bb17c770232a9",
+  "all_pages_rendered": true,
+  "visual_review_pending": false,
+  "changed_pages": [
+    58
+  ],
+  "visual_review": "All80 pages inspected in contact sheets; changed page58 reviewed at reading size."
+}

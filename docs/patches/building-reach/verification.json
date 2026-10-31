@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-31",
+  "jar_sha256": "5c0020c56ced996f603ac0338c96dabbe51fd23e4cee5938686a7d47c8f2e7c8",
+  "placement_reach_all_tiers": 1000,
+  "shape_selection_reach": 1006,
+  "native_result": "PASS 41 axis/preview/server/batch/material checks",
+  "baseline_result": "FAIL java.lang.AssertionError: client reach ignores old power-tier config",
+  "archive_entries_preserved": 535,
+  "old_tier_config_superseded": true,
+  "personal_installations_modified": false,
+  "handbook": {
+    "pages": 80,
+    "toc_links": 51,
+    "toc_numbers_match": true,
+    "zero_blank_pages": true,
+    "zero_missing_html_targets": true,
+    "alphabetical_entries": 185,
+    "main_jars": 307,
+    "client_jars": 23,
+    "pdf_sha256": "be9302c65d47bed60825adb386c8a9356d6a134581c40208791bb17c770232a9",
+    "all_pages_rendered": true,
+    "visual_review_pending": false,
+    "changed_pages": [
+      58
+    ],
+    "visual_review": "All80 pages inspected in contact sheets; changed page58 reviewed at reading size."
+  }
+}

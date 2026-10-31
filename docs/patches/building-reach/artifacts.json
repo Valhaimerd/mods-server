@@ -1,0 +1,10 @@
+{
+  "jar": "sophisticatedbuilding-neoforge-26.2-5.1.0.jar",
+  "before_sha256": "e250930d24d255df1c267497850a3b09d5bed3ed18488d0e5781cace39de09d2",
+  "sha256": "5c0020c56ced996f603ac0338c96dabbe51fd23e4cee5938686a7d47c8f2e7c8",
+  "changed": [
+    "sophisticated/building/attachment/AttachmentHandler.class",
+    "sophisticated/building/attachment/PowerLevel.class"
+  ],
+  "preserved_entries": 535
+}

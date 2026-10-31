@@ -1,0 +1,9 @@
+{
+  "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "before_sha256": "ec37404ab6d0d11a7e45af72ed91dd9043b4d73ef377e8a8810506b48739728a",
+  "sha256": "7f50f703f6ef1df83a1fd94f9350f24d6029635304c5cdce4f939802c870db2c",
+  "added": [
+    "net/spell_engine/rpg_series/item/NetheriteRepairs.class"
+  ],
+  "preserved_entries": 2200
+}

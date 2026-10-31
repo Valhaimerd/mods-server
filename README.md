@@ -28,6 +28,8 @@ Melee enchantment policy hides Sweeping Edge and removes Penetrating Strike, Spi
 
 Class armor now follows a shared defense progression with small class differences: full entry/advanced/netherite-or-legendary sets give Wizard/Priest 11/15/16 armor, Rogue/Archer 12/16/17 and Warrior 13/17/18. Toughness is 0/0/4; durability matches iron/diamond/netherite. This includes 14 Armory sets; Paladin plate and class/set bonuses retain their current values. See [the armor balance and native/client checks](docs/patches/class-armor-survivability/README.md).
 
+All 53 netherite RPG Series armor/weapon/shield items now repair with Netherite Scrap; legendary repair materials and crafting recipes remain unchanged. [The repair and progression audit](docs/patches/rpg-netherite-repairs/README.md) also verifies worn Unbreaking VIII progresses through IX to X with matching current client/server builds. Multiplayer progression is server-authoritative; a client update alone does not update an older server's Penchant behavior.
+
 The [accessory RPG balance](docs/patches/accessory-rpg-balance/README.md) keeps 42 Nameless Trinkets and 45 wearable Artifacts, with bounded combat procs, fixed intervals and party/pet protection. Moon Stone has 3/8 of its former gravity reduction. Existing removed relics, shrinking drawbacks and Vampire Blood's equipped-time lock remain. Stat-focused health and melee curios now scale with character attributes under effective caps; Tick uses bounded wearer-power damage instead of boss health. The full item inventory records changed and retained effects.
 
 ## Installer

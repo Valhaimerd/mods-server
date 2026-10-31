@@ -1,0 +1,18 @@
+{
+  "pages": 80,
+  "toc_links": 51,
+  "toc_numbers_match": true,
+  "zero_blank_pages": true,
+  "zero_missing_html_targets": true,
+  "alphabetical_entries": 185,
+  "main_jars": 307,
+  "client_jars": 23,
+  "pdf_sha256": "005fa74be5ea24659d844f31dac7b370f9d8e1ffe513ba03dcffec7d7fbd8df1",
+  "all_pages_rendered": true,
+  "visual_review_pending": false,
+  "changed_pages": [
+    1,
+    17
+  ],
+  "visual_review": "All 80 pages reviewed in contact sheets; final cover and updated RPG repair paragraph inspected at reading size."
+}

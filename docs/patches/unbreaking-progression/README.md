@@ -22,4 +22,6 @@ The baseline fails `existing full V progress reconciles to VI`. Candidates pass 
 
 **446 pre-existing archive entries remain unchanged.** `artifacts.json` pins exact inputs/outputs; tested dependency hashes and runtime records are adjacent. Ignored inputs/candidates/worlds are under `tmp/unbreaking-progression/`; predecessor active/fixed copies are under `mod fixing/retired packs/unbreaking-progression-20261027/`. Active and fixed copies match. Handbook/PDF and pack notes are synchronized.
 
+The [31 October VIII-to-X audit](../rpg-netherite-repairs/README.md) confirms this hook advances complete VIII and IX bars on worn RPG armor through native equipment ticks, including a connected real-player/client tooltip check. The personal client already contains this repair; a separately inspected older desktop-server archive does not. Keep the current Penchant build on both sides and restart the server. The remote server behind the reported multiplayer connection has not been identified, so the specific live stall remains unconfirmed.
+
 PDF review retained 77 pages and all 51 correct contents destinations. Both output copies match. All pages were rendered for overview review; changed page 10 was inspected at reading size without new clipping or altered pagination.

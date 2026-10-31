@@ -1,0 +1,412 @@
+PASS requested Durability Rework module state false
+PASS server-authoritative progression maximum is X
+PASS non-netherite/legendary repair unchanged paladins:monk_workbench
+PASS non-netherite/legendary repair unchanged archers:archers_workbench
+PASS non-netherite/legendary repair unchanged rogues:arms_workbench
+PASS non-netherite/legendary repair unchanged rogues:flint_dagger
+PASS non-netherite/legendary repair unchanged rogues:iron_dagger
+PASS non-netherite/legendary repair unchanged rogues:golden_dagger
+PASS non-netherite/legendary repair unchanged rogues:diamond_dagger
+PASS scraps replace ingots rogues:netherite_dagger
+PASS saved gear retains wear and picks up new default rogues:netherite_dagger
+PASS native anvil repairs with scraps rogues:netherite_dagger
+PASS native anvil rejects ingots rogues:netherite_dagger
+PASS non-netherite/legendary repair unchanged rogues:iron_sickle
+PASS non-netherite/legendary repair unchanged rogues:golden_sickle
+PASS non-netherite/legendary repair unchanged rogues:diamond_sickle
+PASS scraps replace ingots rogues:netherite_sickle
+PASS saved gear retains wear and picks up new default rogues:netherite_sickle
+PASS native anvil repairs with scraps rogues:netherite_sickle
+PASS native anvil rejects ingots rogues:netherite_sickle
+PASS non-netherite/legendary repair unchanged rogues:stone_double_axe
+PASS non-netherite/legendary repair unchanged rogues:iron_double_axe
+PASS non-netherite/legendary repair unchanged rogues:golden_double_axe
+PASS non-netherite/legendary repair unchanged rogues:diamond_double_axe
+PASS scraps replace ingots rogues:netherite_double_axe
+PASS saved gear retains wear and picks up new default rogues:netherite_double_axe
+PASS native anvil repairs with scraps rogues:netherite_double_axe
+PASS native anvil rejects ingots rogues:netherite_double_axe
+PASS non-netherite/legendary repair unchanged rogues:iron_glaive
+PASS non-netherite/legendary repair unchanged rogues:golden_glaive
+PASS non-netherite/legendary repair unchanged rogues:diamond_glaive
+PASS scraps replace ingots rogues:netherite_glaive
+PASS saved gear retains wear and picks up new default rogues:netherite_glaive
+PASS native anvil repairs with scraps rogues:netherite_glaive
+PASS native anvil rejects ingots rogues:netherite_glaive
+PASS non-netherite/legendary repair unchanged rogues:rogue_armor_head
+PASS non-netherite/legendary repair unchanged rogues:rogue_armor_chest
+PASS non-netherite/legendary repair unchanged rogues:rogue_armor_legs
+PASS non-netherite/legendary repair unchanged rogues:rogue_armor_feet
+PASS non-netherite/legendary repair unchanged rogues:assassin_armor_head
+PASS non-netherite/legendary repair unchanged rogues:assassin_armor_chest
+PASS non-netherite/legendary repair unchanged rogues:assassin_armor_legs
+PASS non-netherite/legendary repair unchanged rogues:assassin_armor_feet
+PASS scraps replace ingots rogues:netherite_assassin_armor_head
+PASS saved gear retains wear and picks up new default rogues:netherite_assassin_armor_head
+PASS native anvil repairs with scraps rogues:netherite_assassin_armor_head
+PASS native anvil rejects ingots rogues:netherite_assassin_armor_head
+PASS scraps replace ingots rogues:netherite_assassin_armor_chest
+PASS saved gear retains wear and picks up new default rogues:netherite_assassin_armor_chest
+PASS native anvil repairs with scraps rogues:netherite_assassin_armor_chest
+PASS native anvil rejects ingots rogues:netherite_assassin_armor_chest
+PASS scraps replace ingots rogues:netherite_assassin_armor_legs
+PASS saved gear retains wear and picks up new default rogues:netherite_assassin_armor_legs
+PASS native anvil repairs with scraps rogues:netherite_assassin_armor_legs
+PASS native anvil rejects ingots rogues:netherite_assassin_armor_legs
+PASS scraps replace ingots rogues:netherite_assassin_armor_feet
+PASS saved gear retains wear and picks up new default rogues:netherite_assassin_armor_feet
+PASS native anvil repairs with scraps rogues:netherite_assassin_armor_feet
+PASS native anvil rejects ingots rogues:netherite_assassin_armor_feet
+PASS non-netherite/legendary repair unchanged rogues:warrior_armor_head
+PASS non-netherite/legendary repair unchanged rogues:warrior_armor_chest
+PASS non-netherite/legendary repair unchanged rogues:warrior_armor_legs
+PASS non-netherite/legendary repair unchanged rogues:warrior_armor_feet
+PASS non-netherite/legendary repair unchanged rogues:berserker_armor_head
+PASS non-netherite/legendary repair unchanged rogues:berserker_armor_chest
+PASS non-netherite/legendary repair unchanged rogues:berserker_armor_legs
+PASS non-netherite/legendary repair unchanged rogues:berserker_armor_feet
+PASS scraps replace ingots rogues:netherite_berserker_armor_head
+PASS saved gear retains wear and picks up new default rogues:netherite_berserker_armor_head
+PASS native anvil repairs with scraps rogues:netherite_berserker_armor_head
+PASS native anvil rejects ingots rogues:netherite_berserker_armor_head
+PASS scraps replace ingots rogues:netherite_berserker_armor_chest
+PASS saved gear retains wear and picks up new default rogues:netherite_berserker_armor_chest
+PASS native anvil repairs with scraps rogues:netherite_berserker_armor_chest
+PASS native anvil rejects ingots rogues:netherite_berserker_armor_chest
+PASS scraps replace ingots rogues:netherite_berserker_armor_legs
+PASS saved gear retains wear and picks up new default rogues:netherite_berserker_armor_legs
+PASS native anvil repairs with scraps rogues:netherite_berserker_armor_legs
+PASS native anvil rejects ingots rogues:netherite_berserker_armor_legs
+PASS scraps replace ingots rogues:netherite_berserker_armor_feet
+PASS saved gear retains wear and picks up new default rogues:netherite_berserker_armor_feet
+PASS native anvil repairs with scraps rogues:netherite_berserker_armor_feet
+PASS native anvil rejects ingots rogues:netherite_berserker_armor_feet
+PASS non-netherite/legendary repair unchanged paladins:stone_claymore
+PASS non-netherite/legendary repair unchanged paladins:iron_claymore
+PASS non-netherite/legendary repair unchanged paladins:golden_claymore
+PASS non-netherite/legendary repair unchanged paladins:diamond_claymore
+PASS scraps replace ingots paladins:netherite_claymore
+PASS saved gear retains wear and picks up new default paladins:netherite_claymore
+PASS native anvil repairs with scraps paladins:netherite_claymore
+PASS native anvil rejects ingots paladins:netherite_claymore
+PASS non-netherite/legendary repair unchanged paladins:wooden_great_hammer
+PASS non-netherite/legendary repair unchanged paladins:stone_great_hammer
+PASS non-netherite/legendary repair unchanged paladins:iron_great_hammer
+PASS non-netherite/legendary repair unchanged paladins:golden_great_hammer
+PASS non-netherite/legendary repair unchanged paladins:diamond_great_hammer
+PASS scraps replace ingots paladins:netherite_great_hammer
+PASS saved gear retains wear and picks up new default paladins:netherite_great_hammer
+PASS native anvil repairs with scraps paladins:netherite_great_hammer
+PASS native anvil rejects ingots paladins:netherite_great_hammer
+PASS non-netherite/legendary repair unchanged paladins:iron_mace
+PASS non-netherite/legendary repair unchanged paladins:golden_mace
+PASS non-netherite/legendary repair unchanged paladins:diamond_mace
+PASS scraps replace ingots paladins:netherite_mace
+PASS saved gear retains wear and picks up new default paladins:netherite_mace
+PASS native anvil repairs with scraps paladins:netherite_mace
+PASS native anvil rejects ingots paladins:netherite_mace
+PASS non-netherite/legendary repair unchanged paladins:acolyte_wand
+PASS non-netherite/legendary repair unchanged paladins:holy_wand
+PASS non-netherite/legendary repair unchanged paladins:diamond_holy_wand
+PASS scraps replace ingots paladins:netherite_holy_wand
+PASS saved gear retains wear and picks up new default paladins:netherite_holy_wand
+PASS native anvil repairs with scraps paladins:netherite_holy_wand
+PASS native anvil rejects ingots paladins:netherite_holy_wand
+PASS non-netherite/legendary repair unchanged paladins:holy_staff
+PASS non-netherite/legendary repair unchanged paladins:diamond_holy_staff
+PASS scraps replace ingots paladins:netherite_holy_staff
+PASS saved gear retains wear and picks up new default paladins:netherite_holy_staff
+PASS native anvil repairs with scraps paladins:netherite_holy_staff
+PASS native anvil rejects ingots paladins:netherite_holy_staff
+PASS non-netherite/legendary repair unchanged paladins:iron_kite_shield
+PASS non-netherite/legendary repair unchanged paladins:golden_kite_shield
+PASS non-netherite/legendary repair unchanged paladins:diamond_kite_shield
+PASS scraps replace ingots paladins:netherite_kite_shield
+PASS saved gear retains wear and picks up new default paladins:netherite_kite_shield
+PASS native anvil repairs with scraps paladins:netherite_kite_shield
+PASS native anvil rejects ingots paladins:netherite_kite_shield
+PASS non-netherite/legendary repair unchanged paladins:paladin_armor_head
+PASS non-netherite/legendary repair unchanged paladins:paladin_armor_chest
+PASS non-netherite/legendary repair unchanged paladins:paladin_armor_legs
+PASS non-netherite/legendary repair unchanged paladins:paladin_armor_feet
+PASS non-netherite/legendary repair unchanged paladins:crusader_armor_head
+PASS non-netherite/legendary repair unchanged paladins:crusader_armor_chest
+PASS non-netherite/legendary repair unchanged paladins:crusader_armor_legs
+PASS non-netherite/legendary repair unchanged paladins:crusader_armor_feet
+PASS scraps replace ingots paladins:netherite_crusader_armor_head
+PASS saved gear retains wear and picks up new default paladins:netherite_crusader_armor_head
+PASS native anvil repairs with scraps paladins:netherite_crusader_armor_head
+PASS native anvil rejects ingots paladins:netherite_crusader_armor_head
+PASS scraps replace ingots paladins:netherite_crusader_armor_chest
+PASS saved gear retains wear and picks up new default paladins:netherite_crusader_armor_chest
+PASS native anvil repairs with scraps paladins:netherite_crusader_armor_chest
+PASS native anvil rejects ingots paladins:netherite_crusader_armor_chest
+PASS scraps replace ingots paladins:netherite_crusader_armor_legs
+PASS saved gear retains wear and picks up new default paladins:netherite_crusader_armor_legs
+PASS native anvil repairs with scraps paladins:netherite_crusader_armor_legs
+PASS native anvil rejects ingots paladins:netherite_crusader_armor_legs
+PASS scraps replace ingots paladins:netherite_crusader_armor_feet
+PASS saved gear retains wear and picks up new default paladins:netherite_crusader_armor_feet
+PASS native anvil repairs with scraps paladins:netherite_crusader_armor_feet
+PASS native anvil rejects ingots paladins:netherite_crusader_armor_feet
+PASS non-netherite/legendary repair unchanged paladins:priest_robe_head
+PASS non-netherite/legendary repair unchanged paladins:priest_robe_chest
+PASS non-netherite/legendary repair unchanged paladins:priest_robe_legs
+PASS non-netherite/legendary repair unchanged paladins:priest_robe_feet
+PASS non-netherite/legendary repair unchanged paladins:prior_robe_head
+PASS non-netherite/legendary repair unchanged paladins:prior_robe_chest
+PASS non-netherite/legendary repair unchanged paladins:prior_robe_legs
+PASS non-netherite/legendary repair unchanged paladins:prior_robe_feet
+PASS scraps replace ingots paladins:netherite_prior_robe_head
+PASS saved gear retains wear and picks up new default paladins:netherite_prior_robe_head
+PASS native anvil repairs with scraps paladins:netherite_prior_robe_head
+PASS native anvil rejects ingots paladins:netherite_prior_robe_head
+PASS scraps replace ingots paladins:netherite_prior_robe_chest
+PASS saved gear retains wear and picks up new default paladins:netherite_prior_robe_chest
+PASS native anvil repairs with scraps paladins:netherite_prior_robe_chest
+PASS native anvil rejects ingots paladins:netherite_prior_robe_chest
+PASS scraps replace ingots paladins:netherite_prior_robe_legs
+PASS saved gear retains wear and picks up new default paladins:netherite_prior_robe_legs
+PASS native anvil repairs with scraps paladins:netherite_prior_robe_legs
+PASS native anvil rejects ingots paladins:netherite_prior_robe_legs
+PASS scraps replace ingots paladins:netherite_prior_robe_feet
+PASS saved gear retains wear and picks up new default paladins:netherite_prior_robe_feet
+PASS native anvil repairs with scraps paladins:netherite_prior_robe_feet
+PASS native anvil rejects ingots paladins:netherite_prior_robe_feet
+PASS non-netherite/legendary repair unchanged archers:auto_fire_hook
+PASS non-netherite/legendary repair unchanged archers:small_quiver
+PASS non-netherite/legendary repair unchanged archers:medium_quiver
+PASS non-netherite/legendary repair unchanged archers:large_quiver
+PASS non-netherite/legendary repair unchanged archers:flint_spear
+PASS non-netherite/legendary repair unchanged archers:iron_spear
+PASS non-netherite/legendary repair unchanged archers:golden_spear
+PASS non-netherite/legendary repair unchanged archers:diamond_spear
+PASS scraps replace ingots archers:netherite_spear
+PASS saved gear retains wear and picks up new default archers:netherite_spear
+PASS native anvil repairs with scraps archers:netherite_spear
+PASS native anvil rejects ingots archers:netherite_spear
+PASS non-netherite/legendary repair unchanged archers:composite_longbow
+PASS non-netherite/legendary repair unchanged archers:mechanic_shortbow
+PASS non-netherite/legendary repair unchanged archers:royal_longbow
+PASS scraps replace ingots archers:netherite_shortbow
+PASS saved gear retains wear and picks up new default archers:netherite_shortbow
+PASS native anvil repairs with scraps archers:netherite_shortbow
+PASS native anvil rejects ingots archers:netherite_shortbow
+PASS scraps replace ingots archers:netherite_longbow
+PASS saved gear retains wear and picks up new default archers:netherite_longbow
+PASS native anvil repairs with scraps archers:netherite_longbow
+PASS native anvil rejects ingots archers:netherite_longbow
+PASS non-netherite/legendary repair unchanged archers:rapid_crossbow
+PASS non-netherite/legendary repair unchanged archers:heavy_crossbow
+PASS scraps replace ingots archers:netherite_rapid_crossbow
+PASS saved gear retains wear and picks up new default archers:netherite_rapid_crossbow
+PASS native anvil repairs with scraps archers:netherite_rapid_crossbow
+PASS native anvil rejects ingots archers:netherite_rapid_crossbow
+PASS scraps replace ingots archers:netherite_heavy_crossbow
+PASS saved gear retains wear and picks up new default archers:netherite_heavy_crossbow
+PASS native anvil repairs with scraps archers:netherite_heavy_crossbow
+PASS native anvil rejects ingots archers:netherite_heavy_crossbow
+PASS non-netherite/legendary repair unchanged archers:archer_armor_head
+PASS non-netherite/legendary repair unchanged archers:archer_armor_chest
+PASS non-netherite/legendary repair unchanged archers:archer_armor_legs
+PASS non-netherite/legendary repair unchanged archers:archer_armor_feet
+PASS non-netherite/legendary repair unchanged archers:ranger_armor_head
+PASS non-netherite/legendary repair unchanged archers:ranger_armor_chest
+PASS non-netherite/legendary repair unchanged archers:ranger_armor_legs
+PASS non-netherite/legendary repair unchanged archers:ranger_armor_feet
+PASS scraps replace ingots archers:netherite_ranger_armor_head
+PASS saved gear retains wear and picks up new default archers:netherite_ranger_armor_head
+PASS native anvil repairs with scraps archers:netherite_ranger_armor_head
+PASS native anvil rejects ingots archers:netherite_ranger_armor_head
+PASS scraps replace ingots archers:netherite_ranger_armor_chest
+PASS saved gear retains wear and picks up new default archers:netherite_ranger_armor_chest
+PASS native anvil repairs with scraps archers:netherite_ranger_armor_chest
+PASS native anvil rejects ingots archers:netherite_ranger_armor_chest
+PASS scraps replace ingots archers:netherite_ranger_armor_legs
+PASS saved gear retains wear and picks up new default archers:netherite_ranger_armor_legs
+PASS native anvil repairs with scraps archers:netherite_ranger_armor_legs
+PASS native anvil rejects ingots archers:netherite_ranger_armor_legs
+PASS scraps replace ingots archers:netherite_ranger_armor_feet
+PASS saved gear retains wear and picks up new default archers:netherite_ranger_armor_feet
+PASS native anvil repairs with scraps archers:netherite_ranger_armor_feet
+PASS native anvil rejects ingots archers:netherite_ranger_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:epic_armor_upgrade
+PASS non-netherite/legendary repair unchanged armory_rpgs:conqueror_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:vanquisher_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:redeemer_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:champion_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:conqueror_forgotten_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:vanquisher_forgotten_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:redeemer_forgotten_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:champion_forgotten_upgrade_crystal
+PASS non-netherite/legendary repair unchanged armory_rpgs:astral_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:astral_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:astral_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:astral_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:scarlet_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:scarlet_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:scarlet_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:scarlet_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:glacier_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:glacier_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:glacier_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:glacier_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:avatar_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:avatar_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:avatar_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:avatar_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:justicar_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:justicar_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:justicar_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:justicar_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:destroyer_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:destroyer_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:destroyer_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:destroyer_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:deathmantle_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:deathmantle_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:deathmantle_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:deathmantle_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:strider_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:strider_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:strider_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:strider_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:tempest_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:tempest_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:tempest_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:tempest_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:smouldering_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:smouldering_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:smouldering_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:smouldering_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:rimeweave_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:rimeweave_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:rimeweave_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:rimeweave_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:absolution_robe_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:absolution_robe_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:absolution_robe_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:absolution_robe_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:lightbringer_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:lightbringer_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:lightbringer_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:lightbringer_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:onslaught_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:onslaught_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:onslaught_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:onslaught_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:slayer_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:slayer_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:slayer_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:slayer_armor_feet
+PASS non-netherite/legendary repair unchanged armory_rpgs:riftstalker_armor_head
+PASS non-netherite/legendary repair unchanged armory_rpgs:riftstalker_armor_chest
+PASS non-netherite/legendary repair unchanged armory_rpgs:riftstalker_armor_legs
+PASS non-netherite/legendary repair unchanged armory_rpgs:riftstalker_armor_feet
+PASS non-netherite/legendary repair unchanged wizards:wand_novice
+PASS non-netherite/legendary repair unchanged wizards:wand_arcane
+PASS non-netherite/legendary repair unchanged wizards:wand_fire
+PASS non-netherite/legendary repair unchanged wizards:wand_frost
+PASS scraps replace ingots wizards:wand_netherite_arcane
+PASS saved gear retains wear and picks up new default wizards:wand_netherite_arcane
+PASS native anvil repairs with scraps wizards:wand_netherite_arcane
+PASS native anvil rejects ingots wizards:wand_netherite_arcane
+PASS scraps replace ingots wizards:wand_netherite_fire
+PASS saved gear retains wear and picks up new default wizards:wand_netherite_fire
+PASS native anvil repairs with scraps wizards:wand_netherite_fire
+PASS native anvil rejects ingots wizards:wand_netherite_fire
+PASS scraps replace ingots wizards:wand_netherite_frost
+PASS saved gear retains wear and picks up new default wizards:wand_netherite_frost
+PASS native anvil repairs with scraps wizards:wand_netherite_frost
+PASS native anvil rejects ingots wizards:wand_netherite_frost
+PASS non-netherite/legendary repair unchanged wizards:staff_wizard
+PASS non-netherite/legendary repair unchanged wizards:staff_arcane
+PASS non-netherite/legendary repair unchanged wizards:staff_fire
+PASS non-netherite/legendary repair unchanged wizards:staff_frost
+PASS scraps replace ingots wizards:staff_netherite_arcane
+PASS saved gear retains wear and picks up new default wizards:staff_netherite_arcane
+PASS native anvil repairs with scraps wizards:staff_netherite_arcane
+PASS native anvil rejects ingots wizards:staff_netherite_arcane
+PASS scraps replace ingots wizards:staff_netherite_fire
+PASS saved gear retains wear and picks up new default wizards:staff_netherite_fire
+PASS native anvil repairs with scraps wizards:staff_netherite_fire
+PASS native anvil rejects ingots wizards:staff_netherite_fire
+PASS scraps replace ingots wizards:staff_netherite_frost
+PASS saved gear retains wear and picks up new default wizards:staff_netherite_frost
+PASS native anvil repairs with scraps wizards:staff_netherite_frost
+PASS native anvil rejects ingots wizards:staff_netherite_frost
+PASS non-netherite/legendary repair unchanged wizards:wizard_robe_head
+PASS non-netherite/legendary repair unchanged wizards:wizard_robe_chest
+PASS non-netherite/legendary repair unchanged wizards:wizard_robe_legs
+PASS non-netherite/legendary repair unchanged wizards:wizard_robe_feet
+PASS non-netherite/legendary repair unchanged wizards:arcane_robe_head
+PASS non-netherite/legendary repair unchanged wizards:arcane_robe_chest
+PASS non-netherite/legendary repair unchanged wizards:arcane_robe_legs
+PASS non-netherite/legendary repair unchanged wizards:arcane_robe_feet
+PASS non-netherite/legendary repair unchanged wizards:fire_robe_head
+PASS non-netherite/legendary repair unchanged wizards:fire_robe_chest
+PASS non-netherite/legendary repair unchanged wizards:fire_robe_legs
+PASS non-netherite/legendary repair unchanged wizards:fire_robe_feet
+PASS non-netherite/legendary repair unchanged wizards:frost_robe_head
+PASS non-netherite/legendary repair unchanged wizards:frost_robe_chest
+PASS non-netherite/legendary repair unchanged wizards:frost_robe_legs
+PASS non-netherite/legendary repair unchanged wizards:frost_robe_feet
+PASS scraps replace ingots wizards:netherite_arcane_robe_head
+PASS saved gear retains wear and picks up new default wizards:netherite_arcane_robe_head
+PASS native anvil repairs with scraps wizards:netherite_arcane_robe_head
+PASS native anvil rejects ingots wizards:netherite_arcane_robe_head
+PASS scraps replace ingots wizards:netherite_arcane_robe_chest
+PASS saved gear retains wear and picks up new default wizards:netherite_arcane_robe_chest
+PASS native anvil repairs with scraps wizards:netherite_arcane_robe_chest
+PASS native anvil rejects ingots wizards:netherite_arcane_robe_chest
+PASS scraps replace ingots wizards:netherite_arcane_robe_legs
+PASS saved gear retains wear and picks up new default wizards:netherite_arcane_robe_legs
+PASS native anvil repairs with scraps wizards:netherite_arcane_robe_legs
+PASS native anvil rejects ingots wizards:netherite_arcane_robe_legs
+PASS scraps replace ingots wizards:netherite_arcane_robe_feet
+PASS saved gear retains wear and picks up new default wizards:netherite_arcane_robe_feet
+PASS native anvil repairs with scraps wizards:netherite_arcane_robe_feet
+PASS native anvil rejects ingots wizards:netherite_arcane_robe_feet
+PASS scraps replace ingots wizards:netherite_fire_robe_head
+PASS saved gear retains wear and picks up new default wizards:netherite_fire_robe_head
+PASS native anvil repairs with scraps wizards:netherite_fire_robe_head
+PASS native anvil rejects ingots wizards:netherite_fire_robe_head
+PASS scraps replace ingots wizards:netherite_fire_robe_chest
+PASS saved gear retains wear and picks up new default wizards:netherite_fire_robe_chest
+PASS native anvil repairs with scraps wizards:netherite_fire_robe_chest
+PASS native anvil rejects ingots wizards:netherite_fire_robe_chest
+PASS scraps replace ingots wizards:netherite_fire_robe_legs
+PASS saved gear retains wear and picks up new default wizards:netherite_fire_robe_legs
+PASS native anvil repairs with scraps wizards:netherite_fire_robe_legs
+PASS native anvil rejects ingots wizards:netherite_fire_robe_legs
+PASS scraps replace ingots wizards:netherite_fire_robe_feet
+PASS saved gear retains wear and picks up new default wizards:netherite_fire_robe_feet
+PASS native anvil repairs with scraps wizards:netherite_fire_robe_feet
+PASS native anvil rejects ingots wizards:netherite_fire_robe_feet
+PASS scraps replace ingots wizards:netherite_frost_robe_head
+PASS saved gear retains wear and picks up new default wizards:netherite_frost_robe_head
+PASS native anvil repairs with scraps wizards:netherite_frost_robe_head
+PASS native anvil rejects ingots wizards:netherite_frost_robe_head
+PASS scraps replace ingots wizards:netherite_frost_robe_chest
+PASS saved gear retains wear and picks up new default wizards:netherite_frost_robe_chest
+PASS native anvil repairs with scraps wizards:netherite_frost_robe_chest
+PASS native anvil rejects ingots wizards:netherite_frost_robe_chest
+PASS scraps replace ingots wizards:netherite_frost_robe_legs
+PASS saved gear retains wear and picks up new default wizards:netherite_frost_robe_legs
+PASS native anvil repairs with scraps wizards:netherite_frost_robe_legs
+PASS native anvil rejects ingots wizards:netherite_frost_robe_legs
+PASS scraps replace ingots wizards:netherite_frost_robe_feet
+PASS saved gear retains wear and picks up new default wizards:netherite_frost_robe_feet
+PASS native anvil repairs with scraps wizards:netherite_frost_robe_feet
+PASS native anvil rejects ingots wizards:netherite_frost_robe_feet
+PASS actual worn full bar 8 advances to 9 paladins:netherite_prior_robe_legs
+PASS actual worn full bar 9 advances to 10 paladins:netherite_prior_robe_legs
+PASS actual worn full bar 8 advances to 9 paladins:prior_robe_legs
+PASS actual worn full bar 9 advances to 10 paladins:prior_robe_legs
+PASS actual worn full bar 8 advances to 9 wizards:netherite_arcane_robe_chest
+PASS actual worn full bar 9 advances to 10 wizards:netherite_arcane_robe_chest
+PASS actual worn full bar 8 advances to 9 rogues:netherite_berserker_armor_chest
+PASS actual worn full bar 9 advances to 10 rogues:netherite_berserker_armor_chest
+PASS actual worn full bar 8 advances to 9 archers:netherite_ranger_armor_chest
+PASS actual worn full bar 9 advances to 10 archers:netherite_ranger_armor_chest
+PASS all 53 netherite RPG items inventoried

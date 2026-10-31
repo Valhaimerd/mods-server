@@ -1,0 +1,5 @@
+PASS connected client receives cap X
+PASS real player worn full VIII progresses to IX and syncs
+PASS client gear repair component accepts scraps
+PASS real player worn full IX progresses to X and syncs
+PASS native Penchant tooltip reports MAX only at X

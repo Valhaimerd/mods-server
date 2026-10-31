@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-31",
+  "repair_jar_sha256": "7f50f703f6ef1df83a1fd94f9350f24d6029635304c5cdce4f939802c870db2c",
+  "preserved_entries": 2200,
+  "native_module_on": "PASS 412 native repair/progression checks",
+  "native_module_off": "PASS 412 native repair/progression checks",
+  "client": "PASS 5 connected client checks",
+  "target_count": 53,
+  "unaffected_rpg_items": 187,
+  "penchant_unchanged": true,
+  "live_viii_stall": "Not reproduced with matching current builds; actual remote server version unconfirmed. Read-only desktop server archive is obsolete.",
+  "handbook": {
+    "pages": 80,
+    "toc_links": 51,
+    "toc_numbers_match": true,
+    "zero_blank_pages": true,
+    "zero_missing_html_targets": true,
+    "alphabetical_entries": 185,
+    "main_jars": 307,
+    "client_jars": 23,
+    "pdf_sha256": "005fa74be5ea24659d844f31dac7b370f9d8e1ffe513ba03dcffec7d7fbd8df1",
+    "all_pages_rendered": true,
+    "visual_review_pending": false,
+    "changed_pages": [
+      1,
+      17
+    ],
+    "visual_review": "All 80 pages reviewed in contact sheets; final cover and updated RPG repair paragraph inspected at reading size."
+  },
+  "personal_installations_modified": false,
+  "pushed": false
+}

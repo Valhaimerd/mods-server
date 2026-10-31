@@ -1,0 +1,12 @@
+PASS server-authoritative progression maximum is X
+PASS actual worn full bar 8 advances to 9 paladins:netherite_prior_robe_legs
+PASS actual worn full bar 9 advances to 10 paladins:netherite_prior_robe_legs
+PASS actual worn full bar 8 advances to 9 paladins:prior_robe_legs
+PASS actual worn full bar 9 advances to 10 paladins:prior_robe_legs
+PASS actual worn full bar 8 advances to 9 wizards:netherite_arcane_robe_chest
+PASS actual worn full bar 9 advances to 10 wizards:netherite_arcane_robe_chest
+PASS actual worn full bar 8 advances to 9 rogues:netherite_berserker_armor_chest
+PASS actual worn full bar 9 advances to 10 rogues:netherite_berserker_armor_chest
+PASS actual worn full bar 8 advances to 9 archers:netherite_ranger_armor_chest
+PASS actual worn full bar 9 advances to 10 archers:netherite_ranger_armor_chest
+PASS all 53 netherite RPG items inventoried

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-02",
+  "status": "complete",
+  "artifacts": [
+    {
+      "jar": "paladins-neoforge-3.1.2+26.2.jar",
+      "before": "6f77562772a1deb50801296fb82ea3873c9d44995d6de9f6604167e170dfa705",
+      "after": "f4d7be9799d41b6ef74ef37bd2e01aa7b3b3bc254d09e8a265665d0d66a041ec",
+      "changed": [
+        "assets/paladins/lang/en_us.json",
+        "net/paladins/client/entity/BoundaryRender.class"
+      ],
+      "added": []
+    },
+    {
+      "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "before": "06c10ec8eb4c34e64b4685966de92b620dd4ee574dae2c49836cfe70f880cc4a",
+      "after": "8a5f1fc0990fb582f117b74c115a578510c31faaaed90f3629b23992f5f31035",
+      "changed": [
+        "assets/skill_tree_rpgs/lang/en_us.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_1.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_modifier_2.json",
+        "data/skill_tree_rpgs/spell/paladin_tier_4_spell_2_root.json"
+      ],
+      "added": []
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before": "b50f7dd4855a1c9a1af9b6c48ef9806f40513599b214de0dc54d21918bbafa6d",
+      "after": "9a4517935fe40c77f7c8d9d29f7aeccc728a3b456924646e4eed848519ea9866",
+      "changed": [
+        "net/spell_engine/internals/PaladinUltimates.class",
+        "net/spell_engine/internals/PurgatoryBoundary.class"
+      ],
+      "added": [
+        "net/spell_engine/internals/PurgatoryPull$State.class",
+        "net/spell_engine/internals/PurgatoryPull.class"
+      ]
+    }
+  ],
+  "installed": [
+    "mods/",
+    "mod fixing/1 fixed packs/"
+  ],
+  "backup": "mod backup/purgatory-continuous-pull-2026-11-02",
+  "validation": {
+    "movement_collision_checks": 18,
+    "archive_data_checks": 16,
+    "native_client_checks": 4,
+    "client_classes_equal_final_classes": true,
+    "ardent_change": "Guarded single healing constant 0.2 -> 0.3; not a separate gameplay healing test.",
+    "handbook": {
+      "pages": 80,
+      "internal_links": 471,
+      "toc_rows": 51,
+      "toc_corrections": [],
+      "changed_pages": [
+        18,
+        20
+      ]
+    }
+  },
+  "preserved": "Pending Mage Ward tuning remains byte-identical in the Skill Tree spell entries.",
+  "pdf_sha256": "18900d3e2beee3cf2bf97432fffafb87a136ba64c44408c51d3f25eab0ac663a",
+  "github_pushed": false,
+  "personal_installations_changed": false
+}

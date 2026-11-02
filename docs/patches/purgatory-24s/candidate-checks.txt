@@ -1,0 +1,50 @@
+Native cast duration = 24.0
+Native channel deliveries = 48.0
+Base cooldown preserved = 12.0
+Damage stage 1 = 0.0
+Base pulse 1 = 0.1
+Damnation pulse 1 = 0.15000000000000002
+Damage stage 15 = 0.0
+Base pulse 15 = 0.1
+Damnation pulse 15 = 0.15000000000000002
+Damage stage 16 = 1.0
+Base pulse 16 = 0.2
+Damnation pulse 16 = 0.25
+Damage stage 31 = 1.0
+Base pulse 31 = 0.2
+Damnation pulse 31 = 0.25
+Damage stage 32 = 2.0
+Base pulse 32 = 0.30000000000000004
+Damnation pulse 32 = 0.35000000000000003
+Damage stage 47 = 2.0
+Base pulse 47 = 0.30000000000000004
+Damnation pulse 47 = 0.35000000000000003
+Damage stage 48 = 2.0
+Base pulse 48 = 0.30000000000000004
+Damnation pulse 48 = 0.35000000000000003
+Explosion 16.0 damnation=false = 2.0
+Explosion 16.0 damnation=true = 2.0
+Explosion 18.0 damnation=false = 3.25
+Explosion 18.0 damnation=true = 3.75
+Explosion 20.0 damnation=false = 4.5
+Explosion 20.0 damnation=true = 5.5
+Explosion 22.0 damnation=false = 5.75
+Explosion 22.0 damnation=true = 7.25
+Explosion 24.0 damnation=false = 7.0
+Explosion 24.0 damnation=true = 9.0
+Explosion 30.0 damnation=false = 7.0
+Explosion 30.0 damnation=true = 9.0
+Continuous pull stage 159 = 0.0
+Continuous pull stage 160 = 1.0
+Continuous pull stage 319 = 1.0
+Continuous pull stage 320 = 2.0
+Continuous pull stage 479 = 2.0
+Continuous pull stage 480 = 2.0
+Control protection at 159 = 1.0
+Native stun boundary 159 = 1.0
+Control protection at 160 = 1.0
+Native stun boundary 160 = 1.0
+Final delivery number = 48.0
+Completes at24s = 1.0
+Final true HP cost unchanged = 997.0
+Completion removes enclosure = 1.0

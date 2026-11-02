@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-02",
+  "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+  "before": "9f673596c819a4e4cc110c05602a0cc9e36d89f8ae84067e9024b7c4580d73eb",
+  "after": "06c10ec8eb4c34e64b4685966de92b620dd4ee574dae2c49836cfe70f880cc4a",
+  "changed_entries": [
+    "assets/skill_tree_rpgs/lang/en_us.json",
+    "data/skill_tree_rpgs/spell/arcane_tier_3_passive_2.json",
+    "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+    "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json"
+  ],
+  "wards": [
+    {
+      "school": "arcane",
+      "duration": 6,
+      "base_cooldown": 15,
+      "absorption_hp_per_complete_6_power": 2
+    },
+    {
+      "school": "fire",
+      "duration": 6,
+      "base_cooldown": 15,
+      "absorption_hp_per_complete_6_power": 2
+    },
+    {
+      "school": "frost",
+      "duration": 6,
+      "base_cooldown": 15,
+      "absorption_hp_per_complete_6_power": 2
+    }
+  ],
+  "verification": "ZIP CRC, exact four-entry change boundary, unchanged class bytes, JSON and float threshold checks. No long runtime test requested."
+}

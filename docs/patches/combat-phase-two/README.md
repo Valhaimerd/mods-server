@@ -26,3 +26,5 @@ Both server and clients need matching replacement JARs and a restart. No configu
 ## Completed validation
 
 Installed five matching replacements in repository `mods/` and ignored fixed packs. **78 spatial server checks**, **196 Phase 1 regressions**, **9 integrated-client checks** and **59 archive/resource checks** passed. The [orange enclosure capture](purgatory-boundary.png) and the handbook's changed page were visually reviewed. The 80-page PDF retains 51 correct printed contents destinations and 471 valid internal links. [Completion record](completion.json).
+
+The [2 November continuous-pull follow-up](../purgatory-continuous-pull/README.md) supersedes this build's half-second stage pulls and upper-only boundary: it adds continuous escalating pull, five-block underground depth, corrected upgrade range UI and 30% Ardent healing.

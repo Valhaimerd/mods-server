@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-02",
+  "status": "complete",
+  "artifacts": [
+    {
+      "jar": "paladins-neoforge-3.1.2+26.2.jar",
+      "before": "f4d7be9799d41b6ef74ef37bd2e01aa7b3b3bc254d09e8a265665d0d66a041ec",
+      "after": "0a6f28257e9b5e5b2eb253ae9659033dfe2e036b124bb01e21322e0bf3967fa8",
+      "changed": [
+        "assets/paladins/lang/en_us.json",
+        "data/paladins/spell/immolation.json"
+      ]
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before": "9a4517935fe40c77f7c8d9d29f7aeccc728a3b456924646e4eed848519ea9866",
+      "after": "1fa10a73b3096d324182ebe6e04842289be4f346decfd5ee304c39eb51d32ef1",
+      "changed": [
+        "net/spell_engine/internals/PaladinUltimates.class",
+        "net/spell_engine/internals/PaladinFollowup.class",
+        "net/spell_engine/internals/PurgatoryBoundary.class",
+        "net/spell_engine/internals/PurgatoryPull.class"
+      ]
+    }
+  ],
+  "native_checks": 50,
+  "handbook": {
+    "pages": 80,
+    "internal_links": 471,
+    "toc_rows": 51,
+    "toc_corrections": [],
+    "changed_pages": [
+      18,
+      20
+    ]
+  },
+  "pdf_sha256": "1db879cf059b6fca18f273f90e5f2f1fc5a22598b9f1f46fd4bf203803808326",
+  "preserved": [
+    "All three revised six-second Wards",
+    "30% Ardent healing",
+    "Purgatory upgrade range correction",
+    "Continuous pull strengths and five-block buried enclosure"
+  ],
+  "personal_installations_changed": false
+}

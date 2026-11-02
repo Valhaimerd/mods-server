@@ -1,0 +1,7 @@
+STAGE 0 outward displacement 4.44749331396231 sprint=true speed=0.1300000011920929
+PASS Native sprint contest stage 0
+STAGE 1 outward displacement -5.490392517509524 sprint=true speed=0.1300000011920929
+PASS Native sprint contest stage 1
+STAGE 2 outward displacement -4.88434844655648 sprint=true speed=0.1300000011920929
+PASS Native sprint contest stage 2
+PASS Boundary removed after native channel end

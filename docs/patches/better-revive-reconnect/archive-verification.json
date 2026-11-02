@@ -1,0 +1,12 @@
+{
+  "file": "mods/Better Revive - 2.2.0 - NeoForge - 26.2-MultiGraveFix-Java25.jar",
+  "before_sha256": "ccf67e296c9a178c38e1de7fc6350834e69355dde584a4ad586de9e9db32f723",
+  "after_sha256": "7968a97c78278f983c3e17c1287ba5aef66656b2899fe05234489968f78b8f01",
+  "changed_entries": [
+    "de/mrstilu2k6/better_revive/util/KeepGear$CurioSlot.class",
+    "de/mrstilu2k6/better_revive/util/KeepGear$Saved.class",
+    "de/mrstilu2k6/better_revive/util/KeepGear.class"
+  ],
+  "java_class_version": 69,
+  "runtime_checks_passed": 9
+}

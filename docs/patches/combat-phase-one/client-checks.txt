@@ -1,0 +1,14 @@
+PASS Selected passive synchronized to client
+PASS Client bank2/2
+SCREENSHOT Echoing2of2
+PASS Native client/server cast starts
+PASS Native first cast consumes one synchronized charge
+PASS Remaining charge usable during recharge
+SCREENSHOT Echoing1of2-recharging
+PASS Native client/server cast starts
+PASS Native second cast consumes final charge
+PASS Native third cast rejected while empty
+SCREENSHOT Echoing0of2
+PASS Actual death and respawn does not refill bank
+PASS Serial recharge returns full bank after respawn
+SCREENSHOT Echoing-restored2of2

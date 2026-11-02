@@ -1,0 +1,4 @@
+PASS retained gear separate from ordinary grave items
+PASS reconnecting player is still dead before respawn
+FAIL dead login preserves retained-gear record for respawn
+ERROR java.lang.AssertionError: dead login preserves retained-gear record for respawn

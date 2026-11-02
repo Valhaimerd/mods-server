@@ -1,0 +1,78 @@
+{
+  "minecraft": "26.2",
+  "neoforge": "26.2.0.90",
+  "mods": [
+    {
+      "filename": "Better Revive - 2.2.0 - NeoForge - 26.2-MultiGraveFix-Java25.jar",
+      "mods": [
+        {
+          "id": "better_revive",
+          "version": "2.2.0"
+        }
+      ]
+    },
+    {
+      "filename": "Better Revive X Curios - 1.0.0 - NeoForge - 26.2-KeepGearFix.jar",
+      "mods": [
+        {
+          "id": "better_revive_curios",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "filename": "Better Revive X PlayerRevive - 1.0.1 - NeoForge - 26.2.jar",
+      "mods": [
+        {
+          "id": "better_revive_playerrevive",
+          "version": "1.0.1"
+        }
+      ]
+    },
+    {
+      "filename": "CreativeCore_NEOFORGE_v2.14.16_mc26.2.jar",
+      "mods": [
+        {
+          "id": "creativecore",
+          "version": "2.14.16"
+        }
+      ]
+    },
+    {
+      "filename": "curios-neoforge-16.0.0+26.2.jar",
+      "mods": [
+        {
+          "id": "curios",
+          "version": "16.0.0+26.2"
+        }
+      ]
+    },
+    {
+      "filename": "PlayerRevive_NEOFORGE_v2.1.2_mc26.2.jar",
+      "mods": [
+        {
+          "id": "playerrevive",
+          "version": "2.1.2"
+        }
+      ]
+    },
+    {
+      "filename": "sophisticatedbackpacks-26.2-3.26.2.2154.jar",
+      "mods": [
+        {
+          "id": "sophisticatedbackpacks",
+          "version": "3.26.2"
+        }
+      ]
+    },
+    {
+      "filename": "sophisticatedcore-26.2-1.5.0.2337.jar",
+      "mods": [
+        {
+          "id": "sophisticatedcore",
+          "version": "1.5.0"
+        }
+      ]
+    }
+  ]
+}

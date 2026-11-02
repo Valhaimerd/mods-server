@@ -4,6 +4,8 @@ This same-version repair targets `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.
 
 ## Character-scaling follow-up - 30 October 2026
 
+The [1 November tick-overhead repair](../accessory-rpg-balance/performance.md) keeps these values but shares duplicate-owner lookup work across server worn callbacks, avoids stable Woundbearer attribute updates, and skips Tick's entity query while its existing proc cooldown is active. See its deterministic operation counts, mutation tests, current archive record and live profiling limits.
+
 [Character scaling](../accessory-rpg-balance/character-scaling.json) now supersedes earlier flat HP/attack values for Titan, Ghast Eye, Crystal Heart, Power Glove and Woundbearer. Chorus Totem healing, Thorn retaliation and Tick use the revised capped behavior in the [complete inventory](../accessory-rpg-balance/inventory.md). Legacy flat config fields remain for component/save compatibility; native item callbacks/tickers compute the effective scaled values. No extra dependencies are added.
 
 ## Current capped RPG revision - 30 October 2026

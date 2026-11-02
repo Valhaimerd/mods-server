@@ -1,0 +1,1 @@
+FAIL java.lang.AssertionError: Native and BetterCombat range agree scale=0.5: 3.0 expected 1.5

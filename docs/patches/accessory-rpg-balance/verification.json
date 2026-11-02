@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-01",
   "scope": "Capped RPG accessory balance with character-scaling follow-up",
   "archives": [
     {
       "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
       "namespace": "nameless_trinkets",
       "policy_folder": "nameless-balance",
-      "sha256": "294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31",
-      "previous_sha256": "a32ae66b5d31d4d2ad2aa27bd148166b7428123c1ea7b620dd7d1a137808ddb0",
+      "sha256": "99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3",
+      "previous_sha256": "294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31",
       "embedded_policy": "nameless-pack-balance.json"
     },
     {
@@ -68,5 +68,22 @@
     "baseline": "Titan fixed Health Boost produced28HP instead of target23HP at20baseHP; failed before fix",
     "tests": "shared baseline, effective caps under base and total outside multipliers, no refresh healing, unequip/disable cleanup, Glove/Wound caps, capped Chorus healing, armor-scaled Thorn, Tick wearer scaling/interval/cost/attribution/pet safety",
     "review": "One focused review; disable-cleanup gap fixed and tested. No fresh client playtest."
+  },
+  "performance": {
+    "checks": 654,
+    "fixture": "24 simulated wearers, 21 unique slots each; operation counts, not TPS",
+    "before": {
+      "stable_woundbearer_dirty_updates_per_200_calls": 200,
+      "cooling_tick_queries_per_200_calls": 200,
+      "unique_slot_reads": 5544
+    },
+    "after": {
+      "stable_woundbearer_dirty_updates_per_200_calls": 0,
+      "cooling_tick_queries_per_200_calls": 0,
+      "unique_slot_reads": 984
+    },
+    "minimal_balance_checks": 171,
+    "integrated_balance_checks": 181,
+    "live_server_profile": false
   }
 }

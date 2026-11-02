@@ -1,0 +1,228 @@
+[
+  {
+    "project": "lithium",
+    "file": "lithium-neoforge-0.25.3+mc26.2.jar",
+    "sha512": "56f5299bc84084f2112abf61ea58bad101a7495cc8a1db3df0963494bce096e474c0bde0975831c30ec15c5c977451a31f82de90a09b769c94df91dbcb9b9286",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "*",
+      "license": "LGPL-3.0-only",
+      "mods": [
+        {
+          "modId": "lithium",
+          "version": "0.25.3",
+          "displayName": "Lithium",
+          "logoFile": "assets/lithium/lithium-icon.png",
+          "authors": "2No2Name, JellySquid",
+          "credits": "",
+          "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.\n"
+        }
+      ],
+      "modproperties": {
+        "lithium": {}
+      },
+      "dependencies": {
+        "lithium": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[26.2, 26.3)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "lithium.mixins.json"
+        },
+        {
+          "config": "lithium-neoforge.mixins.json"
+        }
+      ]
+    },
+    "api_dependencies": []
+  },
+  {
+    "project": "spark",
+    "file": "spark-1.10.187-neoforge.jar",
+    "sha512": "130c6f529346cd275460070491a47d76c0e61b30f1d02530e97aae7fce3eccba2b82b4e3bef5abe5febff62daf53066a235d843a94e81fed2ecf1def5946349a",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "authors": "Luck",
+      "license": "GPLv3",
+      "mods": [
+        {
+          "modId": "spark",
+          "displayName": "spark",
+          "version": "1.10.187",
+          "description": "spark is a performance profiling plugin/mod for Minecraft clients, servers and proxies."
+        }
+      ],
+      "accessTransformers": [
+        {
+          "file": "META-INF/accesstransformer.cfg"
+        }
+      ],
+      "dependencies": {
+        "spark": [
+          {
+            "modId": "neoforge",
+            "mandatory": true,
+            "versionRange": "[20,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    },
+    "api_dependencies": []
+  },
+  {
+    "project": "entityculling",
+    "file": "entityculling-neoforge-1.11.3-mc26.2.jar",
+    "sha512": "0faed7e2b8807de48feeeb657db9f45cca975c0e9019c37bce76066d378d46d2e031ae1c3cd6baa9653911ce231517651f4e928275c5f05fca2b0cd6fe7a7e00",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/tr7zw/EntityCulling/issues",
+      "license": "tr7zw Protective License",
+      "mods": [
+        {
+          "modId": "entityculling",
+          "version": "1.11.3",
+          "displayName": "EntityCulling",
+          "displayURL": "https://modrinth.com/mod/entityculling",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "bannerFile": "icon.png",
+          "authors": "tr7zw",
+          "description": "This mod uses async path-tracing to hide Tiles/Entities that are not visible.\n",
+          "displayTest": "IGNORE_ALL_VERSION"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "entityculling.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "entityculling": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "~26.2",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[26.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    },
+    "api_dependencies": []
+  },
+  {
+    "project": "dynamic-fps",
+    "file": "dynamic-fps-3.11.9+minecraft-26.2.0-neoforge.jar",
+    "sha512": "b0c51a7cb1bf39676c04f7189bab1b8fa050e7d8793319617f0239a96731089416dfd4e3aab9333eed1803e53a0e9fbd7e9c4e28b6addd8f10af61ca0824ad9e",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "MIT",
+      "issueTrackerURL": "https://github.com/juliand665/Dynamic-FPS/issues",
+      "mods": [
+        {
+          "modId": "dynamic_fps",
+          "namespace": "net.lostluma",
+          "version": "3.11.9",
+          "displayName": "Dynamic FPS",
+          "authors": "juliand665 & LostLuma",
+          "description": "Reduce resource usage while Minecraft is in the background or idle.",
+          "logoFile": "dynamic_fps.png",
+          "displayTest": "IGNORE_ALL_VERSION",
+          "credits": "Thanks to:\n  Authors:\n    juliand665\n    LostLuma\n\n  Contributors:\n    altrisi\n    DenaryDev\n    dima-dencep\n    EuropaYou\n    N4TH4NOT\n    parly\n    Pixaurora\n    Setadokalo\n    Siphalor\n    sisby-folk\n    triphora\n\n  Illustrators:\n    Pixaurora\n\n  Translators:\n    AC19970\n    Alexander317\n    AlphaKR93\n    Altegar\n    atroniax\n    BurrConnie\n    DecafDawren\n    egeesin\n    Energobro\n    EuropaYou\n    Felix14-v2\n    FITFC\n    godkyo98\n    GuNanOvO\n    Hubry\n    ImVietnam\n    ishi-sama\n    kau19an\n    kyrtion\n    Lucanoria\n    LotuxPunk\n    Madis0\n    mpustovoi\n    N4TH4NOT\n    notlin4\n    pilahito\n    Pixaurora\n    Q2297045667\n    raspberrygitq\n    Rhbarber\n    RinixGG\n    Samekichi\n    Shihyeon\n    StarmanMine142\n    stijnvdkolk\n    Taarek\n    TheBossMagnus\n    TheLegendofSaram\n    wicivo\n    XfedeX\n    yichifauzi\n",
+          "modUrl": "https://dapprgames.com/mods",
+          "displayURL": "https://dapprgames.com/mods",
+          "updateJSONURL": "https://api.lostluma.net/updates/dynamic-fps?platform=neoforge"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "dynamic_fps.neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "dynamic_fps": [
+          {
+            "modId": "minecraft",
+            "mandatory": true,
+            "versionRange": "[26.2.0,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    },
+    "api_dependencies": [
+      {
+        "version_id": null,
+        "project_id": "9s6osm5g",
+        "file_name": null,
+        "dependency_type": "optional"
+      }
+    ]
+  },
+  {
+    "project": "immediatelyfast",
+    "file": "ImmediatelyFast-NeoForge-1.16.5+26.2.jar",
+    "sha512": "435e40e555c87fced7f61b8bd6f5d44c7ba9c872b99bd57389dcead454b734ac12fc1912a22f534c8c3fbf533812cc208cd73e984cbc9488b98358ca15800c0e",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "LGPL-3.0-or-later",
+      "issueTrackerURL": "https://github.com/RaphiMC/ImmediatelyFast/issues",
+      "mods": [
+        {
+          "modId": "immediatelyfast",
+          "version": "1.16.5+26.2",
+          "displayName": "ImmediatelyFast",
+          "description": "Speed up and optimize immediate mode rendering in Minecraft",
+          "authors": "RK_01",
+          "iconFile": "assets/immediatelyfast/icon.png",
+          "logoFile": "assets/immediatelyfast/icon.png",
+          "displayURL": "https://github.com/RaphiMC/ImmediatelyFast"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "immediatelyfast-common.mixins.json"
+        },
+        {
+          "config": "immediatelyfast-neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "immediatelyfast": [
+          {
+            "modId": "minecraft",
+            "versionRange": "[26.2.0]",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "neoforge",
+            "versionRange": "[26.2.0.0,26.3.0.0)",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    },
+    "api_dependencies": []
+  }
+]

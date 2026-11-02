@@ -4,6 +4,8 @@ Same-filename replacements for Nameless Trinkets 1.2.4+26.2.1 and Artifacts 15.1
 
 ## Player changes
 
+**1 November performance follow-up:** the [tick-overhead repair](performance.md) removes repeated duplicate-slot scans, unchanged Woundbearer modifier updates and Tick searches during cooldown. The final replacement passed 654 focused operation/behavior checks plus the existing 171/181-check balance suites. Item values are unchanged. No live-server TPS claim is made; exact before/after counters and remaining Adventurer/combat profiling candidates are documented separately.
+
 [All 87 wearable decisions](inventory.md) cover 42 available Nameless Trinkets and 45 wearable Artifacts; 32 have balance adjustments. The 12 removed relics remain inert and unobtainable. Six Nameless supporting items, three Artifacts handheld/food items and the Mimic egg retain their roles.
 
 Moon Stone's gravity reduction is now **-0.02625**, exactly **3/8 of the previous -0.07**. Ordinary gravity becomes **0.05375** instead of 0.01. It retains fall protection, and already-equipped legacy modifiers migrate without requiring removal. Fragile Cloud remains a descent-only utility.
@@ -61,5 +63,5 @@ No new client visual or comparative class playtest is claimed. Tests exercise th
 
 ## Installed hashes
 
-- `Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar`: `294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31`.
+- `Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar`: `99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3`.
 - `artifacts-neoforge-15.1.3+26.2.1.jar`: `4288b5b14ce810e38e89fc5016cf4b792c8be376c2e33cce22028944f6227f62`.

@@ -1,0 +1,6 @@
+# Shared-PC baseline for ServerCore 1.5.19+26.2.
+reduce-sync-loads: true
+cache-ticking-chunks: true
+optimize-command-blocks: false
+fast-biome-lookups: false
+cancel-duplicate-fluid-ticks: false

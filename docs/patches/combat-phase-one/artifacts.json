@@ -1,0 +1,126 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "before": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca",
+    "after": "679a4939ad62e2d3130bcfb17928669a8f8e43459347f5fc561ca9f85705c7eb",
+    "changed": [
+      "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "crossarms-1.4.jar",
+    "before": "ea4beb9e2267f7ddbe05a24cb6bce47a0de24153387699f87c445ae30b91d2aa",
+    "after": "9a4d15a3e047a8e09a83fc7aac73a001d5693742ec49a5895aa0e1ba81edcdc4",
+    "changed": [
+      "crossarms-pack.mixins.json"
+    ],
+    "added": [
+      "local/crossarms/mixin/FrenzyIframesMixin.class"
+    ]
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before": "4a030375c6306506947831d94200e1fda304dfb1ae6659a833c284793672ab47",
+    "after": "1a0cf43aafc1e9d67e594e1454ffe5c239fc691ff09f4198f4f808a008f16aa2",
+    "changed": [
+      "data/paladins/spell/blessed_strikes.json",
+      "data/paladins/spell/flash_heal.json",
+      "data/paladins/spell/immolation.json",
+      "data/paladins/spell/judgement.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "before": "b0859e26ec1799a7530d2db72d797f98ea4ba2c3b62971bcba623c5944c80308",
+    "after": "4ad8482a9f9e283a0aca6726c33433dbf5cdf4e6c3be8046dee93fda0ba166ba",
+    "changed": [
+      "data/rogues/spell/throw.json",
+      "data/rogues/spell/throw_net.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "e5baf4cdc96540da193e03ec387577445a572b79116b4d333043c8ae3a97febc",
+    "after": "9f673596c819a4e4cc110c05602a0cc9e36d89f8ae84067e9024b7c4580d73eb",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/class_skills/definitions.json",
+      "data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/definitions.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class",
+      "net/skill_tree_rpgs/effect/WizardAbsorbEffect.class"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/sinful_suffering.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "7f50f703f6ef1df83a1fd94f9350f24d6029635304c5cdce4f939802c870db2c",
+    "after": "ab9f7aa4960682038c8c31cbb1caf755f94e439f09b23066f002a07616391ee3",
+    "changed": [
+      "net/spell_engine/client/gui/HudRenderHelper$SpellHotBarWidget.class",
+      "net/spell_engine/internals/cost/SpellCooldownManager.class",
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "net/spell_engine/internals/RevisionRules.class",
+      "net/spell_engine/internals/SummonRules.class",
+      "net/spell_engine/internals/PaladinRevamp.class"
+    ],
+    "added": [
+      "net/spell_engine/client/gui/EchoHud.class",
+      "net/spell_engine/internals/SinfulDamage$DeathProtection.class",
+      "net/spell_engine/internals/SinfulDamage$Policy.class",
+      "net/spell_engine/internals/SinfulDamage.class",
+      "net/spell_engine/internals/cost/EchoCharges.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before": "f9acb50fc28b731a7f5f475c6146b53cc1eea3cc1f71a4ef2b63c06a78a522bd",
+    "after": "24fa67c3b563716d31c40d70038c976561a015b1a326b35e5530c4a6c4868a18",
+    "changed": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_beam.json",
+      "data/wizards/spell/arcane_blast.json",
+      "data/wizards/spell/arcane_bolt.json",
+      "data/wizards/spell/arcane_explosion.json",
+      "data/wizards/spell/arcane_missile.json",
+      "data/wizards/spell/fire_blast.json",
+      "data/wizards/spell/fire_breath.json",
+      "data/wizards/spell/fire_meteor.json",
+      "data/wizards/spell/fire_scorch.json",
+      "data/wizards/spell/fire_slash.json",
+      "data/wizards/spell/fire_storm.json",
+      "data/wizards/spell/fire_wall.json",
+      "data/wizards/spell/fireball.json",
+      "data/wizards/spell/frost_blizzard.json",
+      "data/wizards/spell/frost_lance.json",
+      "data/wizards/spell/frost_nova.json",
+      "data/wizards/spell/frost_shard.json",
+      "data/wizards/spell/frost_spikes.json",
+      "data/wizards/spell/frostbolt.json",
+      "data/wizards/spell/arcane_barrage_bolt.json",
+      "data/wizards/spell/ancient_hydra_breath.json",
+      "data/wizards/spell/burst_blink_explosion.json",
+      "data/wizards/spell/elemental_frost_nova.json",
+      "data/wizards/spell/elemental_frost_shard.json",
+      "data/wizards/spell/hydra_fireball.json",
+      "data/wizards/spell/legion_frost_nova.json"
+    ],
+    "added": []
+  }
+]

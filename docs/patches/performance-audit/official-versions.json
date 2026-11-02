@@ -1,0 +1,601 @@
+[
+  {
+    "project": "lithium",
+    "matching_versions": 4,
+    "version": {
+      "id": "J9CowDXK",
+      "project_id": "gvQqBUqZ",
+      "name": "Lithium 0.25.3 for Neoforge",
+      "version_number": "mc26.2-0.25.3-neoforge",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-07-29T12:19:55.371250Z",
+      "dependencies": []
+    },
+    "files": [
+      {
+        "filename": "lithium-neoforge-0.25.3+mc26.2.jar",
+        "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/J9CowDXK/lithium-neoforge-0.25.3%2Bmc26.2.jar",
+        "hashes": {
+          "sha512": "56f5299bc84084f2112abf61ea58bad101a7495cc8a1db3df0963494bce096e474c0bde0975831c30ec15c5c977451a31f82de90a09b769c94df91dbcb9b9286",
+          "sha1": "e834dc970751b97605e2d06565b8998e22dd543a"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "spark",
+    "matching_versions": 3,
+    "version": {
+      "id": "HwHxykP9",
+      "project_id": "l6YH9Als",
+      "name": "1.10.187 (NeoForge 26.x)",
+      "version_number": "1.10.187-neoforge",
+      "game_versions": [
+        "26.1",
+        "26.1.1",
+        "26.1.2",
+        "26.2",
+        "26.3"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-09-19T07:44:39.577210Z",
+      "dependencies": []
+    },
+    "files": [
+      {
+        "filename": "spark-1.10.187-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/HwHxykP9/spark-1.10.187-neoforge.jar",
+        "hashes": {
+          "sha1": "be5c8cf137b1bcaa5627a85c7cfe83da846e9e36",
+          "sha512": "130c6f529346cd275460070491a47d76c0e61b30f1d02530e97aae7fce3eccba2b82b4e3bef5abe5febff62daf53066a235d843a94e81fed2ecf1def5946349a"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "entityculling",
+    "matching_versions": 4,
+    "version": {
+      "id": "ZQ9bW7LG",
+      "project_id": "NNAgCjsB",
+      "name": "1.11.3-26.2 - NeoForge",
+      "version_number": "1.11.3",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-10-08T16:52:20.213538Z",
+      "dependencies": []
+    },
+    "files": [
+      {
+        "filename": "entityculling-neoforge-1.11.3-mc26.2.jar",
+        "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/ZQ9bW7LG/entityculling-neoforge-1.11.3-mc26.2.jar",
+        "hashes": {
+          "sha1": "fe72427bca06c5b489881d01ad52ff23d72ec602",
+          "sha512": "0faed7e2b8807de48feeeb657db9f45cca975c0e9019c37bce76066d378d46d2e031ae1c3cd6baa9653911ce231517651f4e928275c5f05fca2b0cd6fe7a7e00"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "dynamic-fps",
+    "matching_versions": 1,
+    "version": {
+      "id": "NIDCSqrK",
+      "project_id": "LQ3K71Q1",
+      "name": "v3.11.9",
+      "version_number": "3.11.9",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-06-16T16:29:13.127003Z",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    "files": [
+      {
+        "filename": "dynamic-fps-3.11.9+minecraft-26.2.0-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/NIDCSqrK/dynamic-fps-3.11.9%2Bminecraft-26.2.0-neoforge.jar",
+        "hashes": {
+          "sha1": "32dfe949d65c30b963c52595a2eef69ab22a2fa5",
+          "sha512": "b0c51a7cb1bf39676c04f7189bab1b8fa050e7d8793319617f0239a96731089416dfd4e3aab9333eed1803e53a0e9fbd7e9c4e28b6addd8f10af61ca0824ad9e"
+        },
+        "primary": true
+      },
+      {
+        "filename": "dynamic-fps-3.11.9+minecraft-26.2.0-neoforge-sources.jar",
+        "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/NIDCSqrK/dynamic-fps-3.11.9%2Bminecraft-26.2.0-neoforge-sources.jar",
+        "hashes": {
+          "sha1": "1d7e99fb902a12fc3dd540ad812ab39e708bb1db",
+          "sha512": "8b32150c7d70b3d13b4d73ded0d6200dd3cdf0735faeb2eae16856aae9af0113e7edc6bf2e378fe66245a7257fff3c189af191634a4837715ef21c61744a8eab"
+        },
+        "primary": false
+      }
+    ]
+  },
+  {
+    "project": "immediatelyfast",
+    "matching_versions": 6,
+    "version": {
+      "id": "4C8Vb9ab",
+      "project_id": "5ZwdcRci",
+      "name": "ImmediatelyFast 1.16.5",
+      "version_number": "1.16.5+26.2-neoforge",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-09-16T20:16:45.739138Z",
+      "dependencies": []
+    },
+    "files": [
+      {
+        "filename": "ImmediatelyFast-NeoForge-1.16.5+26.2.jar",
+        "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/4C8Vb9ab/ImmediatelyFast-NeoForge-1.16.5%2B26.2.jar",
+        "hashes": {
+          "sha1": "60c34a439f8ac6153b0820a23fa1004d8820025b",
+          "sha512": "435e40e555c87fced7f61b8bd6f5d44c7ba9c872b99bd57389dcead454b734ac12fc1912a22f534c8c3fbf533812cc208cd73e984cbc9488b98358ca15800c0e"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "modernfix",
+    "matching_versions": 0,
+    "version": null,
+    "files": []
+  },
+  {
+    "project": "simply-neoforged",
+    "matching_versions": 5,
+    "version": {
+      "id": "KYvZkgJD",
+      "project_id": "zIcRSgLz",
+      "name": "Simply NeoForged 26.2-1.0.4",
+      "version_number": "26.2-1.0.4",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-08-09T11:43:54.023070Z",
+      "dependencies": [
+        {
+          "version_id": "k9fqrSE6",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "bL1UyVT2",
+          "project_id": "OnlVIpq5",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J3ILsuJi",
+          "project_id": "dspVZXKP",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "IDYkXahy",
+          "project_id": "g96Z4WVZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zErG1kOw",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dKLDGs8Q",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "E76T0Qen",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J9CowDXK",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "sj4ujwsT",
+          "project_id": "Ps1zyz6x",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "tkK6uyoU",
+          "project_id": "COlSi5iR",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "LtVvw4uS",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Db4rYqXN",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "CYYwNHcs",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "files": [
+      {
+        "filename": "Simply NeoForged 26.2-1.0.4.mrpack",
+        "url": "https://cdn.modrinth.com/data/zIcRSgLz/versions/KYvZkgJD/Simply%20NeoForged%2026.2-1.0.4.mrpack",
+        "hashes": {
+          "sha512": "58fb529fbd0a421a8303cd2406583aa66a9af45bcc25e2f81ec124c2326de5ee11c79250d947062ca873aaa36dbe1262b2bfa8bcd8e9db14e96346940a11af53",
+          "sha1": "1b466db61c011056754be5116c25ea6a9ce2d4dc"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "optimized-fps",
+    "matching_versions": 3,
+    "version": {
+      "id": "kdmJOWvh",
+      "project_id": "aOOJ2mte",
+      "name": "Optimized fps 26.2 4.3.0",
+      "version_number": "4.3.0",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-10-05T14:28:19.999989Z",
+      "dependencies": [
+        {
+          "version_id": "DVwuMj1w",
+          "project_id": "ZP7xHXtw",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dyZhmjnd",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "jeKkuhSg",
+          "project_id": "PtjYWJkn",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "HXD8kS5O",
+          "project_id": "qANg5Jrr",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "6Odun2uz",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dKLDGs8Q",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "LtVvw4uS",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zErG1kOw",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "6NVPSTgp",
+          "project_id": "4I1XuqiY",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "4C8Vb9ab",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zk293xl0",
+          "project_id": "Bh37bMuy",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "k55HdONq",
+          "project_id": "YL57xq9U",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "XVsaQXSm",
+          "project_id": "yBW8D80W",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Vp6sjE3T",
+          "project_id": "BVzZfTc1",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J9CowDXK",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "DmnNKsfS",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "fPHmG5Wc",
+          "project_id": "aXf2OSFU",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "nFnob0DH",
+          "project_id": "HaaH232J",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "files": [
+      {
+        "filename": "Optimized fps 26.2 4.3.0.mrpack",
+        "url": "https://cdn.modrinth.com/data/aOOJ2mte/versions/kdmJOWvh/Optimized%20fps%2026.2%204.3.0.mrpack",
+        "hashes": {
+          "sha1": "32c968b5fab5cdf645408276427460171d3ca8d6",
+          "sha512": "878e48c934e7857538de939bc63cc5f4e21cc30c6bba1ed12eba19f77422e5a42f090762ee982eba4d0364ebabad56a80d5826043d97c7620edb09c7a5b7b057"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "IpYIvkPB",
+    "matching_versions": 8,
+    "version": {
+      "id": "Xz4MpZOj",
+      "project_id": "IpYIvkPB",
+      "name": "SOPC 2.1+26.2",
+      "version_number": "2.1+26.2",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "version_type": "release",
+      "date_published": "2026-08-16T20:30:28.709762Z",
+      "dependencies": [
+        {
+          "version_id": "uiY9tUaj",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "d5ddUdiB",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "9TGMeiu2",
+          "project_id": "OnlVIpq5",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "rxHcwxdQ",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "bA8ri0IU",
+          "project_id": "7MoE34WK",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "a9YZH3ip",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Nv3xnWXd",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Sr2VjbpG",
+          "project_id": "ONZm0H7Y",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "TUWH6NZu",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "vmQp7ixA",
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "D5oVCouK",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "f7vZ0VWU",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "jSMMstCy",
+          "project_id": "VSNURh3q",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "W4C08wBC",
+          "project_id": "jlNms3Jp",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "EKLUURiy",
+          "project_id": "Ps1zyz6x",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "edrtnY9v",
+          "project_id": "4WWQxlQP",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "d6FfpWFI",
+          "project_id": "wnEe9KBa",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "iiF6U3Ne",
+          "project_id": "NNAgCjsB",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "9MSHd6Gs",
+          "project_id": "p8RJPJIC",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "files": [
+      {
+        "filename": "Simply-Optimized-Continued-v2.1+26.2.mrpack",
+        "url": "https://cdn.modrinth.com/data/IpYIvkPB/versions/Xz4MpZOj/Simply-Optimized-Continued-v2.1%2B26.2.mrpack",
+        "hashes": {
+          "sha1": "b7d00fba3f7bbe4f63598e45a114986026cb7a75",
+          "sha512": "17d48c30cd01514c3ccbb9f5b197b3098ea546087c086f397244fcd0b76d4ec9889f89356d43236d0dc4d3e1e832062117a5f74c66ac612c00f1439471b03fd6"
+        },
+        "primary": true
+      }
+    ]
+  },
+  {
+    "project": "modernfix-mvus",
+    "matching_versions": 4,
+    "version": {
+      "id": "dyZhmjnd",
+      "project_id": "TjSm1wrD",
+      "name": "ModernFix-mVUS 5.27.21 for mc26.2",
+      "version_number": "5.27.21+mc26.2",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-09-16T16:35:59.495509Z",
+      "dependencies": []
+    },
+    "files": [
+      {
+        "filename": "modernfix-neoforge-5.27.21+mc26.2.jar",
+        "url": "https://cdn.modrinth.com/data/TjSm1wrD/versions/dyZhmjnd/modernfix-neoforge-5.27.21%2Bmc26.2.jar",
+        "hashes": {
+          "sha512": "e6548dcba1ea0d54d58127966d2407d46a4b9cd09cb9cc34b8dbaa0fd05f49b1de60b6dc5b04ac3aacbc4ec5b6b19183ce17303e5994c03a7e7f0923031bd010",
+          "sha1": "6f4ac871338ecf0c51103f30d1327846854eca90"
+        },
+        "primary": true
+      }
+    ]
+  }
+]

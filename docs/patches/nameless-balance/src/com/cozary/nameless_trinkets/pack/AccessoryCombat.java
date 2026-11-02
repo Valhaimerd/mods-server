@@ -42,6 +42,9 @@ public final class AccessoryCombat {
   return target instanceof LivingEntity living && living.isAlive() && !living.isSpectator() && !living.isInvulnerable() && !friendly(wearer,target);
  }
  public static boolean proc(DamageSource source){return source.is(PROC);}
+ public static boolean available(LivingEntity wearer,String effect){
+  return wearer.getPersistentData().getLongOr("nameless_trinkets:proc_"+effect,Long.MIN_VALUE)<=wearer.level().getGameTime();
+ }
  public static boolean ready(LivingEntity wearer,String effect,int ticks){
   long now=wearer.level().getGameTime();String key="nameless_trinkets:proc_"+effect;
   if(wearer.getPersistentData().getLongOr(key,Long.MIN_VALUE)>now)return false;

@@ -14,7 +14,7 @@ public final class GuardDuplicates {
                     @Override public MethodVisitor visitMethod(int access,String name,String desc,String signature,String[] exceptions) {
                         var visitor=super.visitMethod(access,name,desc,signature,exceptions);
                         if(!desc.startsWith("(Ltop/theillusivec4/curios/api/SlotContext;Lnet/minecraft/world/item/ItemStack;"))return visitor;
-                        String guard=switch(name){case "curioTick","onEquip"->"active";case "onUnequip"->"unequip";case "canUnequip"->"inactive";default->null;};
+                        String guard=switch(name){case "curioTick"->"activeTick";case "onEquip"->"active";case "onUnequip"->"unequip";case "canUnequip"->"inactive";default->null;};
                         if(guard==null || (name.equals("onUnequip") && reader.getClassName().endsWith("/VampireBlood")))return visitor;
                         int stackSlot=name.equals("onEquip")||name.equals("onUnequip") ? 3:2;count[0]++;
                         return new MethodVisitor(Opcodes.ASM9,visitor) {

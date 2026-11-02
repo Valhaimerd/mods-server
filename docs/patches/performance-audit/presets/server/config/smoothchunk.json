@@ -1,0 +1,14 @@
+{
+  "chunkSaveDelay": {
+    "chunkSaveDelay": 300
+  },
+  "chunkUnloadLimit": {
+    "chunkUnloadLimit": 20
+  },
+  "disableProtoSave": {
+    "disableProtoSave": true
+  },
+  "debugLogging": {
+    "debugLogging": false
+  }
+}

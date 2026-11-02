@@ -1,0 +1,533 @@
+[
+  {
+    "file": "mods\\Chunky-NeoForge-1.5.4.jar",
+    "mods": [
+      {
+        "modId": "chunky",
+        "version": "1.5.4",
+        "displayName": "Chunky",
+        "description": "Pre-generates chunks, quickly, efficiently, and safely",
+        "displayURL": "https://github.com/pop4959/Chunky"
+      }
+    ],
+    "dependencies": {
+      "chunky": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.1.0.0-beta,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.1,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "chunky.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\Clumps-neoforge-26.2-26.2.1.jar",
+    "mods": [
+      {
+        "modId": "clumps",
+        "version": "26.2.1",
+        "displayName": "Clumps",
+        "description": "Clumps xp orbs together.",
+        "displayURL": "https://www.curseforge.com/minecraft/mc-mods/clumps"
+      }
+    ],
+    "dependencies": {
+      "clumps": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[4,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2]",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "clumps.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\fastasyncworldsave-26.2-2.6.jar",
+    "mods": [
+      {
+        "modId": "fastasyncworldsave",
+        "version": "2.6",
+        "displayName": "fastasyncworldsave mod",
+        "description": "fastasyncworldsave mod\n",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "fastasyncworldsave": [
+        {
+          "modId": "minecraft",
+          "mandatory": true,
+          "versionRange": "[26,27)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "cupboard",
+          "mandatory": true,
+          "versionRange": "[3.5,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "fastasyncworldsave.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\ferritecore-9.0.0-neoforge.jar",
+    "mods": [
+      {
+        "modId": "ferritecore",
+        "version": "9.0.0",
+        "displayName": "Ferrite Core",
+        "description": "Reduces memory usage.\n",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "ferritecore": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.1.0.1-beta,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.1,27)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "ferritecore.fastmap.mixin.json"
+      },
+      {
+        "config": "ferritecore.blockstatecache.mixin.json"
+      },
+      {
+        "config": "ferritecore.threaddetec.mixin.json"
+      },
+      {
+        "config": "ferritecore.accessors.mixin.json"
+      },
+      {
+        "config": "ferritecore.datacomponents.mixin.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\leaky-26.2-3.4.jar",
+    "mods": [
+      {
+        "modId": "leaky",
+        "version": "3.4",
+        "displayName": "leaky mod",
+        "description": "Improve item performance and detects, reports and removes too many stacked items.\n",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "leaky": [
+        {
+          "modId": "minecraft",
+          "mandatory": true,
+          "versionRange": "[26,27)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "cupboard",
+          "mandatory": true,
+          "versionRange": "[3.5,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "leaky.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\PacketFixer-neoforge-3.3.6.jar",
+    "mods": [
+      {
+        "modId": "packetfixer",
+        "version": "3.3.6",
+        "displayName": "PacketFixer",
+        "description": "A simple mod to solve various problems with packets.\n",
+        "displayURL": "https://github.com/TonimatasDEV/PacketFixer"
+      }
+    ],
+    "dependencies": {
+      "packetfixer": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[0,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2,26.3)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "packetfixer.mixins.json"
+      },
+      {
+        "config": "packetfixer.neoforge.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\ScalableLux-0.2.1+neoforge.729d9d3-all.jar",
+    "mods": [
+      {
+        "modId": "scalablelux",
+        "version": "0.2.1+neoforge.729d9d3",
+        "displayName": "ScalableLux",
+        "description": "Rewrites the light engine to fix lighting performance and lighting errors",
+        "displayURL": "https://github.com/RelativityMC/ScalableLux"
+      }
+    ],
+    "dependencies": {
+      "scalablelux": [
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2-rc-2,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "scalablelux.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\servercore-neoforge-1.5.19+26.2.jar",
+    "mods": [
+      {
+        "modId": "servercore",
+        "version": "1.5.19+26.2",
+        "displayName": "ServerCore",
+        "description": "A NeoForge mod that aims to optimize the minecraft server.\n",
+        "displayURL": "https://github.com/Wesley1808/ServerCore"
+      }
+    ],
+    "dependencies": {
+      "servercore": [
+        {
+          "modId": "minecraft",
+          "required": true,
+          "versionRange": "[26.2,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "neoforge",
+          "required": true,
+          "versionRange": "[26.2.0.0-beta,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "servercore.common.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\smoothchunk-26.1-4.2.jar",
+    "mods": [
+      {
+        "modId": "smoothchunk",
+        "version": "4.2",
+        "displayName": "Smoothchunk mod",
+        "description": "Spreads chunk saves over time smoothly\n",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "smoothchunk": [
+        {
+          "modId": "minecraft",
+          "mandatory": true,
+          "versionRange": "[26,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "cupboard",
+          "mandatory": true,
+          "versionRange": "[3.2,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "smoothchunk.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mods\\structure_layout_optimizer-1.1.4+26.1-neoforge.jar",
+    "mods": [
+      {
+        "modId": "structure_layout_optimizer",
+        "version": "1.1.4+26.1-neoforge",
+        "displayName": "Structure Layout Optimizer",
+        "description": "An attempt at optimizing jigsaw generation",
+        "displayURL": "https://www.curseforge.com/projects/1087831"
+      }
+    ],
+    "dependencies": {
+      "structure_layout_optimizer": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "*",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.1,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "resourcefulconfig",
+          "type": "required",
+          "versionRange": "*",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "structure_layout_optimizer.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mod store\\jeioptimizer-26.2-1.1.2-30.30.jar",
+    "mods": [
+      {
+        "modId": "jeioptimizer",
+        "version": "1.1.2-30.30",
+        "displayName": "JEIOptimizer",
+        "description": "Builds JEIs ingredient filter index in parallel - cuts server join time by up to 17 seconds on large modpacks.",
+        "displayURL": "https://www.curseforge.com/minecraft/mc-mods/jeioptimizer"
+      }
+    ],
+    "dependencies": {
+      "jeioptimizer": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.2,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2]",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "jei",
+          "type": "required",
+          "versionRange": "[30.30.0,)",
+          "ordering": "AFTER",
+          "side": "CLIENT"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "jeioptimizer.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mod store\\moreculling-neoforge-26.2-1.8.1.jar",
+    "mods": [
+      {
+        "modId": "moreculling",
+        "version": "1.8.1",
+        "displayName": "More Culling",
+        "description": "Processes main resources.",
+        "displayURL": "https://modrinth.com/mod/moreculling"
+      }
+    ],
+    "dependencies": {
+      "moreculling": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.2.0.0-beta,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "sodium",
+          "type": "incompatible",
+          "versionRange": "[, 0.6.7)",
+          "ordering": "AFTER",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "moreculling.mixins.json"
+      },
+      {
+        "config": "moreculling.neoforge.mixins.json"
+      }
+    ]
+  },
+  {
+    "file": "mod store\\sodium-neoforge-0.9.2+mc26.2.jar",
+    "mods": [
+      {
+        "modId": "sodium",
+        "version": "0.9.2+mc26.2",
+        "displayName": "Sodium",
+        "description": "Sodium is a powerful rendering engine for Minecraft which improves frame rates and reduces lag spikes.\n",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "sodium": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.1.2.10-beta,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "sodium-common.mixins.json"
+      },
+      {
+        "config": "sodium-neoforge.mixins.json"
+      },
+      {
+        "config": "sodium-frapi.mixins.json",
+        "requiredMods": [
+          "fabric_renderer_api_v1"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "mod store\\vectors-neoforge-26.2-1.5.0-alpha.4.jar",
+    "mods": [
+      {
+        "modId": "vectors",
+        "version": "1.5.0-alpha.4",
+        "displayName": "Vectors",
+        "description": "A Minecraft performance mod built to reduce rendering overhead. Full NeoForge alpha port.",
+        "displayURL": null
+      }
+    ],
+    "dependencies": {
+      "vectors": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[26.2.0.90,)",
+          "ordering": "NONE",
+          "side": "CLIENT"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[26.2]",
+          "ordering": "NONE",
+          "side": "CLIENT"
+        },
+        {
+          "modId": "vector",
+          "type": "incompatible",
+          "versionRange": "[0,)",
+          "ordering": "NONE",
+          "side": "CLIENT"
+        }
+      ]
+    },
+    "mixins": [
+      {
+        "config": "vectors.mixins.json"
+      }
+    ]
+  }
+]

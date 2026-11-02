@@ -1,0 +1,83 @@
+Native and BetterCombat range agree scale=0.5: 1.5
+Close target remains reachable size=0.5: 1.0
+Native and BetterCombat range agree scale=0.75: 2.25
+Close target remains reachable size=0.75: 1.0
+Native and BetterCombat range agree scale=1.0: 3.0
+Close target remains reachable size=1.0: 1.0
+Native and BetterCombat range agree scale=1.36: 4.080000042915344
+Close target remains reachable size=1.36: 1.0
+Native and BetterCombat range agree scale=1.5: 4.5
+Close target remains reachable size=1.5: 1.0
+Native and BetterCombat range agree scale=2.5: 7.5
+Close target remains reachable size=2.5: 1.0
+Native and BetterCombat range agree scale=4.0: 12.0
+Close target remains reachable size=4.0: 1.0
+Growth modifier increases reach: 4.5
+Removing growth leaves no stale reach: 3.0
+Server cached target initially eligible: 1.0
+Vanish cannot acquire: 1.0
+Vanish exclusion even without relation filter: 1.0
+Stale native targeted release rejected: 1000.0
+Area fixture entities=[FakePlayer['PhaseTwo'/1, l='ServerLevel[isolated-8fba36ae54994b6398890040cb0c2391]', x=0.00, y=80.00, z=0.00], Creeper['Creeper'/9, l='ServerLevel[isolated-8fba36ae54994b6398890040cb0c2391]', x=0.00, y=80.00, z=3.00]] casterbox=AABB[-0.30000001192092896, 80.0, -0.30000001192092896] -> [0.30000001192092896, 81.79999995231628, 0.30000001192092896] area=AREA allowed=true
+Native untargeted area still acquires vanished hostile: 1.0
+Untargeted impacts still damage Vanish: 1.0
+Homing cannot lock Vanish: 1.0
+Homing resumes after Vanish expiry: 1.0
+Existing homing lock cleared: 1.0
+Friendly self targeting preserved: 1.0
+Free aim Slash acquires nearby enemy: 1.0
+Slash turn bounded at two degrees: 1.0
+Slash retains positive forward speed: 1.0
+Slash drops vanished enemy: 1.0
+Slash detection stays within8: 1.0
+Native channel creates one boundary: 1.0
+Base boundary radius: 12.0
+Boundary excludes Priest protection: 1.0
+Purgatory does not intercept projectiles: -1.0
+No collision in boundary band above/below wall: 1.0
+No collision in boundary band above/below wall: 1.0
+No collision in boundary band above/below wall: 1.0
+No collision in boundary band above/below wall: 1.0
+Actual move cannot exit boundary: 1.0
+Actual move cannot enter boundary: 1.0
+Boundary has no roof above5 blocks: 16.0
+First pulse strong bounded pull: 1.0
+Swept width=0.3 side=-1: 1.0
+Swept width=0.3 side=1: 1.0
+Swept width=0.6 side=-1: 1.0
+Swept width=0.6 side=1: 1.0
+Swept width=2.0 side=-1: 1.0
+Swept width=2.0 side=1: 1.0
+Swept width=4.0 side=-1: 1.0
+Swept width=4.0 side=1: 1.0
+Caster may cross own wall: 1.0
+Release discards visual immediately: 1.0
+Release clears collision immediately: 14.5
+Cleanup visual end=RELEASE: 1.0
+Cleanup visual end=COMPLETE: 1.0
+Cleanup visual end=DEATH: 1.0
+Cleanup visual end=RESOLUTE: 1.0
+Cleanup visual end=CLEANUP: 1.0
+Improved boundary radius14: 14.0
+Actual Archer path enables assist: 1.0
+Extensive Barrage launches four arrows: 4.0
+Every volley arrow visited shared assist: 1.0
+Volley arrow owner remains caster: 1.0
+Archer path active during controlled assist: 1.0
+ASSIST {assist_budget:0.01745329251992124d,assist_start:1,assist_target:"6dbe2e66-e3cc-4de3-b53b-a75f2d494742",class_pack_arrow_assist:0} target=(0.2, 80.0, 12.0) alive=true near=AABB[-0.4000000238418579, 80.0, 11.399999976158142] -> [0.8000000238418579, 83.40000009536743, 12.600000023841858]
+Volley arrow acquires through ordinary assist handler: 1.0
+Every volley arrow visited shared assist: 1.0
+Volley arrow owner remains caster: 1.0
+Archer path active during controlled assist: 1.0
+ASSIST {assist_budget:0.01745329251992124d,assist_start:1,assist_target:"6dbe2e66-e3cc-4de3-b53b-a75f2d494742",class_pack_arrow_assist:0} target=(0.2, 80.0, 12.0) alive=true near=AABB[-0.4000000238418579, 80.0, 11.399999976158142] -> [0.8000000238418579, 83.40000009536743, 12.600000023841858]
+Volley arrow acquires through ordinary assist handler: 1.0
+Every volley arrow visited shared assist: 1.0
+Volley arrow owner remains caster: 1.0
+Archer path active during controlled assist: 1.0
+ASSIST {assist_budget:0.01745329251992124d,assist_start:1,assist_target:"6dbe2e66-e3cc-4de3-b53b-a75f2d494742",class_pack_arrow_assist:0} target=(0.2, 80.0, 12.0) alive=true near=AABB[-0.4000000238418579, 80.0, 11.399999976158142] -> [0.8000000238418579, 83.40000009536743, 12.600000023841858]
+Volley arrow acquires through ordinary assist handler: 1.0
+Every volley arrow visited shared assist: 1.0
+Volley arrow owner remains caster: 1.0
+Archer path active during controlled assist: 1.0
+ASSIST {assist_budget:0.01745329251992124d,assist_start:1,assist_target:"6dbe2e66-e3cc-4de3-b53b-a75f2d494742",class_pack_arrow_assist:0} target=(0.2, 80.0, 12.0) alive=true near=AABB[-0.4000000238418579, 80.0, 11.399999976158142] -> [0.8000000238418579, 83.40000009536743, 12.600000023841858]
+Volley arrow acquires through ordinary assist handler: 1.0

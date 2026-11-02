@@ -44,8 +44,8 @@ public class Woundbearer extends WoundbearerBase implements ICurioItem {
             return;
 
         float storageCap=(float)com.cozary.nameless_trinkets.pack.CharacterScaling.woundCap(livingEntity);
-        float currentDamage = Math.max(0,Math.min(storageCap,stack.getOrDefault(ModDataComponents.WOUNDBEARER_DAMAGE.get(), 0.0f)));
-        stack.set(ModDataComponents.WOUNDBEARER_DAMAGE.get(),currentDamage);
+        float storedDamage = stack.getOrDefault(ModDataComponents.WOUNDBEARER_DAMAGE.get(), 0.0f);
+        float currentDamage = Math.max(0,Math.min(storageCap,storedDamage));
         float newDamage = currentDamage;
 
         int lastDamageTick = WoundbearerHandler.LAST_DAMAGE_TICKS.getOrDefault(livingEntity.getUUID(), 0);
@@ -56,20 +56,19 @@ public class Woundbearer extends WoundbearerBase implements ICurioItem {
             float decay = config.baseDecayAmount * (1.0f + 3.0f * ratio * ratio);
             newDamage = Math.max(0.0f, currentDamage - decay);
 
-            stack.set(ModDataComponents.WOUNDBEARER_DAMAGE.get(), newDamage);
         }
+        if(Float.compare(storedDamage,newDamage)!=0)stack.set(ModDataComponents.WOUNDBEARER_DAMAGE.get(),newDamage);
 
         AttributeInstance attributeDamage = livingEntity.getAttribute(Attributes.ATTACK_DAMAGE);
         if (attributeDamage != null) {
             AttributeModifier dummyModifier = new AttributeModifier(Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID, "woundbearer_attack_damage"),
                     0.0f, AttributeModifier.Operation.ADD_VALUE);
-            CommonUtils.removeAttributeModifier(attributeDamage, dummyModifier);
-
             if (newDamage > 0) {
+                double factor=com.cozary.nameless_trinkets.pack.CharacterScaling.factor(livingEntity,Attributes.ATTACK_DAMAGE);
                 AttributeModifier damageModifier = new AttributeModifier(Identifier.fromNamespaceAndPath(NamelessTrinkets.MOD_ID, "woundbearer_attack_damage"),
-                        (com.cozary.nameless_trinkets.pack.CharacterScaling.factor(livingEntity,Attributes.ATTACK_DAMAGE)>0 ? newDamage/com.cozary.nameless_trinkets.pack.CharacterScaling.factor(livingEntity,Attributes.ATTACK_DAMAGE) : 0), AttributeModifier.Operation.ADD_VALUE);
+                        (factor>0 ? newDamage/factor : 0), AttributeModifier.Operation.ADD_VALUE);
                 CommonUtils.applyAttributeModifier(attributeDamage, damageModifier);
-            }
+            } else CommonUtils.removeAttributeModifier(attributeDamage, dummyModifier);
         }
 
     }

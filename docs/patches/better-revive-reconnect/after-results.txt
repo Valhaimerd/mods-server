@@ -1,0 +1,9 @@
+PASS retained gear separate from ordinary grave items
+PASS reconnecting player is still dead before respawn
+PASS dead login preserves retained-gear record for respawn
+PASS dead login does not restore gear into discarded inventory
+PASS death clone preserves persisted recovery record
+PASS death clone and respawn restore every retained slot
+PASS successful respawn consumes recovery record
+PASS repeated restore does not duplicate gear
+PASS living login still recovers a stranded saved record

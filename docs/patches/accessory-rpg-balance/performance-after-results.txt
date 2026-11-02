@@ -1,0 +1,657 @@
+METRIC stable_woundbearer_dirty_updates=0 / 200 calls
+PASS unchanged Woundbearer does not dirty attack attributes
+PASS Woundbearer amount preserved
+PASS changed Woundbearer updates immediately
+PASS empty Woundbearer removes bonus
+METRIC cooling_tick_entity_queries=0 / 200 calls
+PASS Tick cooldown checked before querying world entities
+PASS unique slot active 0:0
+PASS unique slot active 0:1
+PASS unique slot active 0:2
+PASS unique slot active 0:3
+PASS unique slot active 0:4
+PASS unique slot active 0:5
+PASS unique slot active 0:6
+PASS unique slot active 0:7
+PASS unique slot active 0:8
+PASS unique slot active 0:9
+PASS unique slot active 0:10
+PASS unique slot active 0:11
+PASS unique slot active 0:12
+PASS unique slot active 0:13
+PASS unique slot active 0:14
+PASS unique slot active 0:15
+PASS unique slot active 0:16
+PASS unique slot active 0:17
+PASS unique slot active 0:18
+PASS unique slot active 0:19
+PASS unique slot active 0:20
+PASS same-tick insertion excludes duplicate 0
+PASS same-tick primary removal promotes next copy 0
+PASS cosmetic duplicate remains inactive 0
+PASS item event invalidates an earlier inserted duplicate 0
+PASS earlier inserted duplicate becomes primary 0
+PASS next entity tick rebuilds the slot index 0
+PASS unique slot active 1:0
+PASS unique slot active 1:1
+PASS unique slot active 1:2
+PASS unique slot active 1:3
+PASS unique slot active 1:4
+PASS unique slot active 1:5
+PASS unique slot active 1:6
+PASS unique slot active 1:7
+PASS unique slot active 1:8
+PASS unique slot active 1:9
+PASS unique slot active 1:10
+PASS unique slot active 1:11
+PASS unique slot active 1:12
+PASS unique slot active 1:13
+PASS unique slot active 1:14
+PASS unique slot active 1:15
+PASS unique slot active 1:16
+PASS unique slot active 1:17
+PASS unique slot active 1:18
+PASS unique slot active 1:19
+PASS unique slot active 1:20
+PASS same-tick insertion excludes duplicate 1
+PASS same-tick primary removal promotes next copy 1
+PASS cosmetic duplicate remains inactive 1
+PASS item event invalidates an earlier inserted duplicate 1
+PASS earlier inserted duplicate becomes primary 1
+PASS next entity tick rebuilds the slot index 1
+PASS unique slot active 2:0
+PASS unique slot active 2:1
+PASS unique slot active 2:2
+PASS unique slot active 2:3
+PASS unique slot active 2:4
+PASS unique slot active 2:5
+PASS unique slot active 2:6
+PASS unique slot active 2:7
+PASS unique slot active 2:8
+PASS unique slot active 2:9
+PASS unique slot active 2:10
+PASS unique slot active 2:11
+PASS unique slot active 2:12
+PASS unique slot active 2:13
+PASS unique slot active 2:14
+PASS unique slot active 2:15
+PASS unique slot active 2:16
+PASS unique slot active 2:17
+PASS unique slot active 2:18
+PASS unique slot active 2:19
+PASS unique slot active 2:20
+PASS same-tick insertion excludes duplicate 2
+PASS same-tick primary removal promotes next copy 2
+PASS cosmetic duplicate remains inactive 2
+PASS item event invalidates an earlier inserted duplicate 2
+PASS earlier inserted duplicate becomes primary 2
+PASS next entity tick rebuilds the slot index 2
+PASS unique slot active 3:0
+PASS unique slot active 3:1
+PASS unique slot active 3:2
+PASS unique slot active 3:3
+PASS unique slot active 3:4
+PASS unique slot active 3:5
+PASS unique slot active 3:6
+PASS unique slot active 3:7
+PASS unique slot active 3:8
+PASS unique slot active 3:9
+PASS unique slot active 3:10
+PASS unique slot active 3:11
+PASS unique slot active 3:12
+PASS unique slot active 3:13
+PASS unique slot active 3:14
+PASS unique slot active 3:15
+PASS unique slot active 3:16
+PASS unique slot active 3:17
+PASS unique slot active 3:18
+PASS unique slot active 3:19
+PASS unique slot active 3:20
+PASS same-tick insertion excludes duplicate 3
+PASS same-tick primary removal promotes next copy 3
+PASS cosmetic duplicate remains inactive 3
+PASS item event invalidates an earlier inserted duplicate 3
+PASS earlier inserted duplicate becomes primary 3
+PASS next entity tick rebuilds the slot index 3
+PASS unique slot active 4:0
+PASS unique slot active 4:1
+PASS unique slot active 4:2
+PASS unique slot active 4:3
+PASS unique slot active 4:4
+PASS unique slot active 4:5
+PASS unique slot active 4:6
+PASS unique slot active 4:7
+PASS unique slot active 4:8
+PASS unique slot active 4:9
+PASS unique slot active 4:10
+PASS unique slot active 4:11
+PASS unique slot active 4:12
+PASS unique slot active 4:13
+PASS unique slot active 4:14
+PASS unique slot active 4:15
+PASS unique slot active 4:16
+PASS unique slot active 4:17
+PASS unique slot active 4:18
+PASS unique slot active 4:19
+PASS unique slot active 4:20
+PASS same-tick insertion excludes duplicate 4
+PASS same-tick primary removal promotes next copy 4
+PASS cosmetic duplicate remains inactive 4
+PASS item event invalidates an earlier inserted duplicate 4
+PASS earlier inserted duplicate becomes primary 4
+PASS next entity tick rebuilds the slot index 4
+PASS unique slot active 5:0
+PASS unique slot active 5:1
+PASS unique slot active 5:2
+PASS unique slot active 5:3
+PASS unique slot active 5:4
+PASS unique slot active 5:5
+PASS unique slot active 5:6
+PASS unique slot active 5:7
+PASS unique slot active 5:8
+PASS unique slot active 5:9
+PASS unique slot active 5:10
+PASS unique slot active 5:11
+PASS unique slot active 5:12
+PASS unique slot active 5:13
+PASS unique slot active 5:14
+PASS unique slot active 5:15
+PASS unique slot active 5:16
+PASS unique slot active 5:17
+PASS unique slot active 5:18
+PASS unique slot active 5:19
+PASS unique slot active 5:20
+PASS same-tick insertion excludes duplicate 5
+PASS same-tick primary removal promotes next copy 5
+PASS cosmetic duplicate remains inactive 5
+PASS item event invalidates an earlier inserted duplicate 5
+PASS earlier inserted duplicate becomes primary 5
+PASS next entity tick rebuilds the slot index 5
+PASS unique slot active 6:0
+PASS unique slot active 6:1
+PASS unique slot active 6:2
+PASS unique slot active 6:3
+PASS unique slot active 6:4
+PASS unique slot active 6:5
+PASS unique slot active 6:6
+PASS unique slot active 6:7
+PASS unique slot active 6:8
+PASS unique slot active 6:9
+PASS unique slot active 6:10
+PASS unique slot active 6:11
+PASS unique slot active 6:12
+PASS unique slot active 6:13
+PASS unique slot active 6:14
+PASS unique slot active 6:15
+PASS unique slot active 6:16
+PASS unique slot active 6:17
+PASS unique slot active 6:18
+PASS unique slot active 6:19
+PASS unique slot active 6:20
+PASS same-tick insertion excludes duplicate 6
+PASS same-tick primary removal promotes next copy 6
+PASS cosmetic duplicate remains inactive 6
+PASS item event invalidates an earlier inserted duplicate 6
+PASS earlier inserted duplicate becomes primary 6
+PASS next entity tick rebuilds the slot index 6
+PASS unique slot active 7:0
+PASS unique slot active 7:1
+PASS unique slot active 7:2
+PASS unique slot active 7:3
+PASS unique slot active 7:4
+PASS unique slot active 7:5
+PASS unique slot active 7:6
+PASS unique slot active 7:7
+PASS unique slot active 7:8
+PASS unique slot active 7:9
+PASS unique slot active 7:10
+PASS unique slot active 7:11
+PASS unique slot active 7:12
+PASS unique slot active 7:13
+PASS unique slot active 7:14
+PASS unique slot active 7:15
+PASS unique slot active 7:16
+PASS unique slot active 7:17
+PASS unique slot active 7:18
+PASS unique slot active 7:19
+PASS unique slot active 7:20
+PASS same-tick insertion excludes duplicate 7
+PASS same-tick primary removal promotes next copy 7
+PASS cosmetic duplicate remains inactive 7
+PASS item event invalidates an earlier inserted duplicate 7
+PASS earlier inserted duplicate becomes primary 7
+PASS next entity tick rebuilds the slot index 7
+PASS unique slot active 8:0
+PASS unique slot active 8:1
+PASS unique slot active 8:2
+PASS unique slot active 8:3
+PASS unique slot active 8:4
+PASS unique slot active 8:5
+PASS unique slot active 8:6
+PASS unique slot active 8:7
+PASS unique slot active 8:8
+PASS unique slot active 8:9
+PASS unique slot active 8:10
+PASS unique slot active 8:11
+PASS unique slot active 8:12
+PASS unique slot active 8:13
+PASS unique slot active 8:14
+PASS unique slot active 8:15
+PASS unique slot active 8:16
+PASS unique slot active 8:17
+PASS unique slot active 8:18
+PASS unique slot active 8:19
+PASS unique slot active 8:20
+PASS same-tick insertion excludes duplicate 8
+PASS same-tick primary removal promotes next copy 8
+PASS cosmetic duplicate remains inactive 8
+PASS item event invalidates an earlier inserted duplicate 8
+PASS earlier inserted duplicate becomes primary 8
+PASS next entity tick rebuilds the slot index 8
+PASS unique slot active 9:0
+PASS unique slot active 9:1
+PASS unique slot active 9:2
+PASS unique slot active 9:3
+PASS unique slot active 9:4
+PASS unique slot active 9:5
+PASS unique slot active 9:6
+PASS unique slot active 9:7
+PASS unique slot active 9:8
+PASS unique slot active 9:9
+PASS unique slot active 9:10
+PASS unique slot active 9:11
+PASS unique slot active 9:12
+PASS unique slot active 9:13
+PASS unique slot active 9:14
+PASS unique slot active 9:15
+PASS unique slot active 9:16
+PASS unique slot active 9:17
+PASS unique slot active 9:18
+PASS unique slot active 9:19
+PASS unique slot active 9:20
+PASS same-tick insertion excludes duplicate 9
+PASS same-tick primary removal promotes next copy 9
+PASS cosmetic duplicate remains inactive 9
+PASS item event invalidates an earlier inserted duplicate 9
+PASS earlier inserted duplicate becomes primary 9
+PASS next entity tick rebuilds the slot index 9
+PASS unique slot active 10:0
+PASS unique slot active 10:1
+PASS unique slot active 10:2
+PASS unique slot active 10:3
+PASS unique slot active 10:4
+PASS unique slot active 10:5
+PASS unique slot active 10:6
+PASS unique slot active 10:7
+PASS unique slot active 10:8
+PASS unique slot active 10:9
+PASS unique slot active 10:10
+PASS unique slot active 10:11
+PASS unique slot active 10:12
+PASS unique slot active 10:13
+PASS unique slot active 10:14
+PASS unique slot active 10:15
+PASS unique slot active 10:16
+PASS unique slot active 10:17
+PASS unique slot active 10:18
+PASS unique slot active 10:19
+PASS unique slot active 10:20
+PASS same-tick insertion excludes duplicate 10
+PASS same-tick primary removal promotes next copy 10
+PASS cosmetic duplicate remains inactive 10
+PASS item event invalidates an earlier inserted duplicate 10
+PASS earlier inserted duplicate becomes primary 10
+PASS next entity tick rebuilds the slot index 10
+PASS unique slot active 11:0
+PASS unique slot active 11:1
+PASS unique slot active 11:2
+PASS unique slot active 11:3
+PASS unique slot active 11:4
+PASS unique slot active 11:5
+PASS unique slot active 11:6
+PASS unique slot active 11:7
+PASS unique slot active 11:8
+PASS unique slot active 11:9
+PASS unique slot active 11:10
+PASS unique slot active 11:11
+PASS unique slot active 11:12
+PASS unique slot active 11:13
+PASS unique slot active 11:14
+PASS unique slot active 11:15
+PASS unique slot active 11:16
+PASS unique slot active 11:17
+PASS unique slot active 11:18
+PASS unique slot active 11:19
+PASS unique slot active 11:20
+PASS same-tick insertion excludes duplicate 11
+PASS same-tick primary removal promotes next copy 11
+PASS cosmetic duplicate remains inactive 11
+PASS item event invalidates an earlier inserted duplicate 11
+PASS earlier inserted duplicate becomes primary 11
+PASS next entity tick rebuilds the slot index 11
+PASS unique slot active 12:0
+PASS unique slot active 12:1
+PASS unique slot active 12:2
+PASS unique slot active 12:3
+PASS unique slot active 12:4
+PASS unique slot active 12:5
+PASS unique slot active 12:6
+PASS unique slot active 12:7
+PASS unique slot active 12:8
+PASS unique slot active 12:9
+PASS unique slot active 12:10
+PASS unique slot active 12:11
+PASS unique slot active 12:12
+PASS unique slot active 12:13
+PASS unique slot active 12:14
+PASS unique slot active 12:15
+PASS unique slot active 12:16
+PASS unique slot active 12:17
+PASS unique slot active 12:18
+PASS unique slot active 12:19
+PASS unique slot active 12:20
+PASS same-tick insertion excludes duplicate 12
+PASS same-tick primary removal promotes next copy 12
+PASS cosmetic duplicate remains inactive 12
+PASS item event invalidates an earlier inserted duplicate 12
+PASS earlier inserted duplicate becomes primary 12
+PASS next entity tick rebuilds the slot index 12
+PASS unique slot active 13:0
+PASS unique slot active 13:1
+PASS unique slot active 13:2
+PASS unique slot active 13:3
+PASS unique slot active 13:4
+PASS unique slot active 13:5
+PASS unique slot active 13:6
+PASS unique slot active 13:7
+PASS unique slot active 13:8
+PASS unique slot active 13:9
+PASS unique slot active 13:10
+PASS unique slot active 13:11
+PASS unique slot active 13:12
+PASS unique slot active 13:13
+PASS unique slot active 13:14
+PASS unique slot active 13:15
+PASS unique slot active 13:16
+PASS unique slot active 13:17
+PASS unique slot active 13:18
+PASS unique slot active 13:19
+PASS unique slot active 13:20
+PASS same-tick insertion excludes duplicate 13
+PASS same-tick primary removal promotes next copy 13
+PASS cosmetic duplicate remains inactive 13
+PASS item event invalidates an earlier inserted duplicate 13
+PASS earlier inserted duplicate becomes primary 13
+PASS next entity tick rebuilds the slot index 13
+PASS unique slot active 14:0
+PASS unique slot active 14:1
+PASS unique slot active 14:2
+PASS unique slot active 14:3
+PASS unique slot active 14:4
+PASS unique slot active 14:5
+PASS unique slot active 14:6
+PASS unique slot active 14:7
+PASS unique slot active 14:8
+PASS unique slot active 14:9
+PASS unique slot active 14:10
+PASS unique slot active 14:11
+PASS unique slot active 14:12
+PASS unique slot active 14:13
+PASS unique slot active 14:14
+PASS unique slot active 14:15
+PASS unique slot active 14:16
+PASS unique slot active 14:17
+PASS unique slot active 14:18
+PASS unique slot active 14:19
+PASS unique slot active 14:20
+PASS same-tick insertion excludes duplicate 14
+PASS same-tick primary removal promotes next copy 14
+PASS cosmetic duplicate remains inactive 14
+PASS item event invalidates an earlier inserted duplicate 14
+PASS earlier inserted duplicate becomes primary 14
+PASS next entity tick rebuilds the slot index 14
+PASS unique slot active 15:0
+PASS unique slot active 15:1
+PASS unique slot active 15:2
+PASS unique slot active 15:3
+PASS unique slot active 15:4
+PASS unique slot active 15:5
+PASS unique slot active 15:6
+PASS unique slot active 15:7
+PASS unique slot active 15:8
+PASS unique slot active 15:9
+PASS unique slot active 15:10
+PASS unique slot active 15:11
+PASS unique slot active 15:12
+PASS unique slot active 15:13
+PASS unique slot active 15:14
+PASS unique slot active 15:15
+PASS unique slot active 15:16
+PASS unique slot active 15:17
+PASS unique slot active 15:18
+PASS unique slot active 15:19
+PASS unique slot active 15:20
+PASS same-tick insertion excludes duplicate 15
+PASS same-tick primary removal promotes next copy 15
+PASS cosmetic duplicate remains inactive 15
+PASS item event invalidates an earlier inserted duplicate 15
+PASS earlier inserted duplicate becomes primary 15
+PASS next entity tick rebuilds the slot index 15
+PASS unique slot active 16:0
+PASS unique slot active 16:1
+PASS unique slot active 16:2
+PASS unique slot active 16:3
+PASS unique slot active 16:4
+PASS unique slot active 16:5
+PASS unique slot active 16:6
+PASS unique slot active 16:7
+PASS unique slot active 16:8
+PASS unique slot active 16:9
+PASS unique slot active 16:10
+PASS unique slot active 16:11
+PASS unique slot active 16:12
+PASS unique slot active 16:13
+PASS unique slot active 16:14
+PASS unique slot active 16:15
+PASS unique slot active 16:16
+PASS unique slot active 16:17
+PASS unique slot active 16:18
+PASS unique slot active 16:19
+PASS unique slot active 16:20
+PASS same-tick insertion excludes duplicate 16
+PASS same-tick primary removal promotes next copy 16
+PASS cosmetic duplicate remains inactive 16
+PASS item event invalidates an earlier inserted duplicate 16
+PASS earlier inserted duplicate becomes primary 16
+PASS next entity tick rebuilds the slot index 16
+PASS unique slot active 17:0
+PASS unique slot active 17:1
+PASS unique slot active 17:2
+PASS unique slot active 17:3
+PASS unique slot active 17:4
+PASS unique slot active 17:5
+PASS unique slot active 17:6
+PASS unique slot active 17:7
+PASS unique slot active 17:8
+PASS unique slot active 17:9
+PASS unique slot active 17:10
+PASS unique slot active 17:11
+PASS unique slot active 17:12
+PASS unique slot active 17:13
+PASS unique slot active 17:14
+PASS unique slot active 17:15
+PASS unique slot active 17:16
+PASS unique slot active 17:17
+PASS unique slot active 17:18
+PASS unique slot active 17:19
+PASS unique slot active 17:20
+PASS same-tick insertion excludes duplicate 17
+PASS same-tick primary removal promotes next copy 17
+PASS cosmetic duplicate remains inactive 17
+PASS item event invalidates an earlier inserted duplicate 17
+PASS earlier inserted duplicate becomes primary 17
+PASS next entity tick rebuilds the slot index 17
+PASS unique slot active 18:0
+PASS unique slot active 18:1
+PASS unique slot active 18:2
+PASS unique slot active 18:3
+PASS unique slot active 18:4
+PASS unique slot active 18:5
+PASS unique slot active 18:6
+PASS unique slot active 18:7
+PASS unique slot active 18:8
+PASS unique slot active 18:9
+PASS unique slot active 18:10
+PASS unique slot active 18:11
+PASS unique slot active 18:12
+PASS unique slot active 18:13
+PASS unique slot active 18:14
+PASS unique slot active 18:15
+PASS unique slot active 18:16
+PASS unique slot active 18:17
+PASS unique slot active 18:18
+PASS unique slot active 18:19
+PASS unique slot active 18:20
+PASS same-tick insertion excludes duplicate 18
+PASS same-tick primary removal promotes next copy 18
+PASS cosmetic duplicate remains inactive 18
+PASS item event invalidates an earlier inserted duplicate 18
+PASS earlier inserted duplicate becomes primary 18
+PASS next entity tick rebuilds the slot index 18
+PASS unique slot active 19:0
+PASS unique slot active 19:1
+PASS unique slot active 19:2
+PASS unique slot active 19:3
+PASS unique slot active 19:4
+PASS unique slot active 19:5
+PASS unique slot active 19:6
+PASS unique slot active 19:7
+PASS unique slot active 19:8
+PASS unique slot active 19:9
+PASS unique slot active 19:10
+PASS unique slot active 19:11
+PASS unique slot active 19:12
+PASS unique slot active 19:13
+PASS unique slot active 19:14
+PASS unique slot active 19:15
+PASS unique slot active 19:16
+PASS unique slot active 19:17
+PASS unique slot active 19:18
+PASS unique slot active 19:19
+PASS unique slot active 19:20
+PASS same-tick insertion excludes duplicate 19
+PASS same-tick primary removal promotes next copy 19
+PASS cosmetic duplicate remains inactive 19
+PASS item event invalidates an earlier inserted duplicate 19
+PASS earlier inserted duplicate becomes primary 19
+PASS next entity tick rebuilds the slot index 19
+PASS unique slot active 20:0
+PASS unique slot active 20:1
+PASS unique slot active 20:2
+PASS unique slot active 20:3
+PASS unique slot active 20:4
+PASS unique slot active 20:5
+PASS unique slot active 20:6
+PASS unique slot active 20:7
+PASS unique slot active 20:8
+PASS unique slot active 20:9
+PASS unique slot active 20:10
+PASS unique slot active 20:11
+PASS unique slot active 20:12
+PASS unique slot active 20:13
+PASS unique slot active 20:14
+PASS unique slot active 20:15
+PASS unique slot active 20:16
+PASS unique slot active 20:17
+PASS unique slot active 20:18
+PASS unique slot active 20:19
+PASS unique slot active 20:20
+PASS same-tick insertion excludes duplicate 20
+PASS same-tick primary removal promotes next copy 20
+PASS cosmetic duplicate remains inactive 20
+PASS item event invalidates an earlier inserted duplicate 20
+PASS earlier inserted duplicate becomes primary 20
+PASS next entity tick rebuilds the slot index 20
+PASS unique slot active 21:0
+PASS unique slot active 21:1
+PASS unique slot active 21:2
+PASS unique slot active 21:3
+PASS unique slot active 21:4
+PASS unique slot active 21:5
+PASS unique slot active 21:6
+PASS unique slot active 21:7
+PASS unique slot active 21:8
+PASS unique slot active 21:9
+PASS unique slot active 21:10
+PASS unique slot active 21:11
+PASS unique slot active 21:12
+PASS unique slot active 21:13
+PASS unique slot active 21:14
+PASS unique slot active 21:15
+PASS unique slot active 21:16
+PASS unique slot active 21:17
+PASS unique slot active 21:18
+PASS unique slot active 21:19
+PASS unique slot active 21:20
+PASS same-tick insertion excludes duplicate 21
+PASS same-tick primary removal promotes next copy 21
+PASS cosmetic duplicate remains inactive 21
+PASS item event invalidates an earlier inserted duplicate 21
+PASS earlier inserted duplicate becomes primary 21
+PASS next entity tick rebuilds the slot index 21
+PASS unique slot active 22:0
+PASS unique slot active 22:1
+PASS unique slot active 22:2
+PASS unique slot active 22:3
+PASS unique slot active 22:4
+PASS unique slot active 22:5
+PASS unique slot active 22:6
+PASS unique slot active 22:7
+PASS unique slot active 22:8
+PASS unique slot active 22:9
+PASS unique slot active 22:10
+PASS unique slot active 22:11
+PASS unique slot active 22:12
+PASS unique slot active 22:13
+PASS unique slot active 22:14
+PASS unique slot active 22:15
+PASS unique slot active 22:16
+PASS unique slot active 22:17
+PASS unique slot active 22:18
+PASS unique slot active 22:19
+PASS unique slot active 22:20
+PASS same-tick insertion excludes duplicate 22
+PASS same-tick primary removal promotes next copy 22
+PASS cosmetic duplicate remains inactive 22
+PASS item event invalidates an earlier inserted duplicate 22
+PASS earlier inserted duplicate becomes primary 22
+PASS next entity tick rebuilds the slot index 22
+PASS unique slot active 23:0
+PASS unique slot active 23:1
+PASS unique slot active 23:2
+PASS unique slot active 23:3
+PASS unique slot active 23:4
+PASS unique slot active 23:5
+PASS unique slot active 23:6
+PASS unique slot active 23:7
+PASS unique slot active 23:8
+PASS unique slot active 23:9
+PASS unique slot active 23:10
+PASS unique slot active 23:11
+PASS unique slot active 23:12
+PASS unique slot active 23:13
+PASS unique slot active 23:14
+PASS unique slot active 23:15
+PASS unique slot active 23:16
+PASS unique slot active 23:17
+PASS unique slot active 23:18
+PASS unique slot active 23:19
+PASS unique slot active 23:20
+PASS same-tick insertion excludes duplicate 23
+PASS same-tick primary removal promotes next copy 23
+PASS cosmetic duplicate remains inactive 23
+PASS item event invalidates an earlier inserted duplicate 23
+PASS earlier inserted duplicate becomes primary 23
+PASS next entity tick rebuilds the slot index 23
+METRIC unique_loadout_slot_reads=984 / 24 wearers x 21 items
+PASS duplicate prevention has linear slot reads per wearer per tick

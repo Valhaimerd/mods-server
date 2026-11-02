@@ -1,0 +1,10 @@
+PASS Client native reach matches BetterCombat at large size
+PASS Client can initially highlight enemy
+CLIENT remote effects=[] invisible=true
+PASS Client excludes vanished enemy before highlight
+PASS Boundary entity and spell synchronized to client
+PASS Client boundary radius12
+PASS Native square collision disabled for cylinder
+PASS Orange boundary submitted to actual renderer
+PASS Early release removes client boundary
+PASS Client reach restores after size removal

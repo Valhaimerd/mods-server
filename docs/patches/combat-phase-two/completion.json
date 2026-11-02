@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-02",
+  "phase": 2,
+  "status": "complete",
+  "installed_locations": [
+    "mods/",
+    "mod fixing/1 fixed packs/"
+  ],
+  "backup": "mod backup/combat-phase-two-2026-11-02",
+  "artifacts": [
+    {
+      "jar": "bettercombat-neoforge-3.2.2+26.2.jar",
+      "before": "4ea76cc1969f03a9427f8af8cb8a06e897c8481ae4f4c1dae2f5560ac975e497",
+      "after": "d158a999e2dc0010dbc023445e7fe8571d68fb389f5af824c8bcd47f102d6659",
+      "changed": [
+        "net/bettercombat/mixin/player/PlayerEntityRangeMixin.class"
+      ],
+      "added": [
+        "net/bettercombat/logic/ScaleReach.class"
+      ]
+    },
+    {
+      "jar": "paladins-neoforge-3.1.2+26.2.jar",
+      "before": "1a0cf43aafc1e9d67e594e1454ffe5c239fc691ff09f4198f4f808a008f16aa2",
+      "after": "6f77562772a1deb50801296fb82ea3873c9d44995d6de9f6604167e170dfa705",
+      "changed": [
+        "assets/paladins/lang/en_us.json",
+        "net/paladins/client/entity/BarrierEntityRenderer.class",
+        "net/paladins/entity/BarrierEntity.class"
+      ],
+      "added": [
+        "assets/paladins/textures/spell_effect/purgatory_boundary.png",
+        "data/paladins/spell/purgatory_boundary.json",
+        "data/paladins/spell/purgatory_boundary_improved.json",
+        "net/paladins/client/entity/BoundaryRender.class"
+      ]
+    },
+    {
+      "jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "before": "4ad8482a9f9e283a0aca6726c33433dbf5cdf4e6c3be8046dee93fda0ba166ba",
+      "after": "15f1fd97d64cbc36de0cbabdff16085b068cf3bcd999078b07a654e020083b3f",
+      "changed": [
+        "assets/rogues/lang/en_us.json"
+      ],
+      "added": []
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before": "ab9f7aa4960682038c8c31cbb1caf755f94e439f09b23066f002a07616391ee3",
+      "after": "b50f7dd4855a1c9a1af9b6c48ef9806f40513599b214de0dc54d21918bbafa6d",
+      "changed": [
+        "net/spell_engine/entity/SpellProjectile.class",
+        "net/spell_engine/internals/SpellExecution.class",
+        "net/spell_engine/internals/target/SpellTarget.class",
+        "spell_engine.mixins.json",
+        "net/spell_engine/entity/ArcherProjectileRules.class",
+        "net/spell_engine/internals/PriestUltimates.class",
+        "net/spell_engine/internals/PaladinUltimates.class",
+        "net/spell_engine/internals/ArrowAssist.class"
+      ],
+      "added": [
+        "net/spell_engine/internals/PurgatoryBoundary.class",
+        "net/spell_engine/internals/SpatialRules.class",
+        "net/spell_engine/internals/SpatialState.class",
+        "net/spell_engine/mixin/entity/SpatialMovementMixin.class",
+        "net/spell_engine/mixin/entity/SpatialStateMixin.class"
+      ]
+    },
+    {
+      "jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "before": "24fa67c3b563716d31c40d70038c976561a015b1a326b35e5530c4a6c4868a18",
+      "after": "142f2a8efb7149f679f17e62c7cc89e4b1b4951ebf19699c53bd6c281c6a3f5d",
+      "changed": [
+        "assets/wizards/lang/en_us.json",
+        "data/wizards/spell/fire_slash.json"
+      ],
+      "added": []
+    }
+  ],
+  "preserved_repairs": {
+    "Better Revive - 2.2.0 - NeoForge - 26.2-MultiGraveFix-Java25.jar": "7968a97c78278f983c3e17c1287ba5aef66656b2899fe05234489968f78b8f01",
+    "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar": "99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3"
+  },
+  "validation": {
+    "dedicated_spatial_checks": 78,
+    "phase_one_regression_checks": 196,
+    "integrated_client_checks": 9,
+    "archive_checks": 59,
+    "handbook": {
+      "pages": 80,
+      "internal_links": 471,
+      "toc_rows": 51,
+      "toc_corrections": [],
+      "changed_pages": [
+        20
+      ]
+    }
+  },
+  "pdf_sha256": "df4490efc3dd481c23eb749d1b7cababa91327220a3dbe32ef9ffdb27bea3669",
+  "limitations": [
+    "Original affected Warrior save/loadout unavailable; repaired reproduced native/client range mismatch.",
+    "Controlled isolated native instances, not a live full-pack multiplayer playtest.",
+    "Barrage shares ordinary assist; controlled stationary near-miss fixtures verify each launched arrow, without increasing strength."
+  ],
+  "personal_installations_changed": false,
+  "github_pushed": false
+}

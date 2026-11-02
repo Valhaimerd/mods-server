@@ -43,6 +43,7 @@ public class Tick extends TickBase implements ICurioItem {
 
 
         if(stack.isEmpty() || (player.getHealth()<5 && player.getFoodData().getFoodLevel()<5))return;
+        if(!com.cozary.nameless_trinkets.pack.AccessoryCombat.available(player,"tick"))return;
         var targets=player.level().getEntitiesOfClass(LivingEntity.class,player.getBoundingBox().inflate(8),
             target->TickBase.isValidTarget(target) && com.cozary.nameless_trinkets.pack.AccessoryCombat.enemy(player,target)
                 && player.distanceToSqr(target)<=64 && target.getMaxHealth()>50 && target.getHealth()>target.getMaxHealth()/2);

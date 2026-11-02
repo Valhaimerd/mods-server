@@ -128,7 +128,7 @@ The other rows describe intended behavior and code conditions, not a certificati
 ## Source record
 
 - Installed JAR: `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar`.
-- JAR SHA-256: `294856632041f44dfd1b851a4e04717601afcb5e44e5b6086d1b7f9da3b1db31`.
+- JAR SHA-256: `99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3`.
 - Item coverage and displayed names: embedded `data/nameless_trinkets/tags/item/nameless_trinkets_tag.json` and `assets/nameless_trinkets/lang/en_us.json`.
 - Local source: `mod fixing/source/nameless-trinkets/`, particularly `common/.../items/trinkets/`, `common/.../events/`, and `neoforge-curios/.../items/trinkets/` and `events/`.
 - Original numeric defaults were read directly from all 243 public instance fields in the 54 upstream `*Base$Stats` classes. Requested overrides and removals are recorded in `docs/patches/nameless-balance/balance.json`; the local patch source and verification notes are beside it.

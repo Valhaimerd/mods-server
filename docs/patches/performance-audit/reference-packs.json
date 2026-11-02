@@ -1,0 +1,946 @@
+[
+  {
+    "project": "simply-neoforged",
+    "version": {
+      "id": "KYvZkgJD",
+      "project_id": "zIcRSgLz",
+      "name": "Simply NeoForged 26.2-1.0.4",
+      "version_number": "26.2-1.0.4",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-08-09T11:43:54.023070Z",
+      "dependencies": [
+        {
+          "version_id": "k9fqrSE6",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "bL1UyVT2",
+          "project_id": "OnlVIpq5",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J3ILsuJi",
+          "project_id": "dspVZXKP",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "IDYkXahy",
+          "project_id": "g96Z4WVZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zErG1kOw",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dKLDGs8Q",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "E76T0Qen",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J9CowDXK",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "sj4ujwsT",
+          "project_id": "Ps1zyz6x",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "tkK6uyoU",
+          "project_id": "COlSi5iR",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "LtVvw4uS",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Db4rYqXN",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "CYYwNHcs",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "name": "Simply NeoForged 26.2-1.0.4",
+    "dependencies": {
+      "minecraft": "26.2",
+      "neoforge": "26.2.0.54-beta"
+    },
+    "files": [
+      {
+        "path": "mods/BadOptimizations-2.4.1-26.2-forge.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/g96Z4WVZ/versions/IDYkXahy/BadOptimizations-2.4.1-26.2-forge.jar"
+        ]
+      },
+      {
+        "path": "mods/ImmediatelyFast-NeoForge-1.16.2+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/5ZwdcRci/versions/E76T0Qen/ImmediatelyFast-NeoForge-1.16.2%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/NoChatReports-NEOFORGE-26.2-v2.20.1.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/qQyHxfxd/versions/k9fqrSE6/NoChatReports-NEOFORGE-26.2-v2.20.1.jar"
+        ]
+      },
+      {
+        "path": "mods/ScalableLux-neoforge-0.3.0-alpha.0.16-all.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/Ps1zyz6x/versions/sj4ujwsT/ScalableLux-neoforge-0.3.0-alpha.0.16-all.jar"
+        ]
+      },
+      {
+        "path": "mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.94.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/COlSi5iR/versions/tkK6uyoU/c2me-neoforge-mc26.2-0.4.2-alpha.0.94.jar"
+        ]
+      },
+      {
+        "path": "mods/cloth-config-26.2.155.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/9s6osm5g/versions/zErG1kOw/cloth-config-26.2.155.jar"
+        ]
+      },
+      {
+        "path": "mods/ferritecore-9.0.0-neoforge.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/uXXizFIs/versions/LtVvw4uS/ferritecore-9.0.0-neoforge.jar"
+        ]
+      },
+      {
+        "path": "mods/lithium-neoforge-0.25.3+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/gvQqBUqZ/versions/J9CowDXK/lithium-neoforge-0.25.3%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/modernfix-neoforge-5.27.20+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/TjSm1wrD/versions/CYYwNHcs/modernfix-neoforge-5.27.20%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/moreculling-neoforge-26.2-1.8.1.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/51shyZVL/versions/dKLDGs8Q/moreculling-neoforge-26.2-1.8.1.jar"
+        ]
+      },
+      {
+        "path": "mods/sodium-neoforge-0.9.2-alpha.4+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/AANobbMI/versions/Db4rYqXN/sodium-neoforge-0.9.2-alpha.4%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/zfastnoise-1.0.40+26.2+neoforge.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/OnlVIpq5/versions/bL1UyVT2/zfastnoise-1.0.40%2B26.2%2Bneoforge.jar"
+        ]
+      },
+      {
+        "path": "resourcepacks/Fast Better Grass.zip",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/dspVZXKP/versions/J3ILsuJi/Fast%20Better%20Grass.zip"
+        ]
+      }
+    ],
+    "overrides": [
+      "overrides/config/NoChatReports/NCR-Client.json",
+      "overrides/config/NoChatReports/NCR-Common.json",
+      "overrides/config/NoChatReports/NCR-ServerPreferences.json",
+      "overrides/config/NoChatReports/README.md",
+      "overrides/config/badoptimizations.txt",
+      "overrides/config/c2me.toml",
+      "overrides/config/ferritecore-mixin.toml",
+      "overrides/config/fml.toml",
+      "overrides/config/immediatelyfast.json",
+      "overrides/config/lithium.properties",
+      "overrides/config/modernfix-mixins.properties",
+      "overrides/config/moreculling.toml",
+      "overrides/config/neoforge-client.toml",
+      "overrides/config/neoforge-common.toml",
+      "overrides/config/sodium-fingerprint.json",
+      "overrides/config/sodium-mixins.properties",
+      "overrides/config/sodium-options.json",
+      "overrides/config/zfastnoise.mixin.toml",
+      "overrides/options.txt"
+    ]
+  },
+  {
+    "project": "IpYIvkPB",
+    "version": {
+      "id": "Xz4MpZOj",
+      "project_id": "IpYIvkPB",
+      "name": "SOPC 2.1+26.2",
+      "version_number": "2.1+26.2",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "version_type": "release",
+      "date_published": "2026-08-16T20:30:28.709762Z",
+      "dependencies": [
+        {
+          "version_id": "uiY9tUaj",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "d5ddUdiB",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "9TGMeiu2",
+          "project_id": "OnlVIpq5",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "rxHcwxdQ",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "bA8ri0IU",
+          "project_id": "7MoE34WK",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "a9YZH3ip",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Nv3xnWXd",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Sr2VjbpG",
+          "project_id": "ONZm0H7Y",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "TUWH6NZu",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "vmQp7ixA",
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "D5oVCouK",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "f7vZ0VWU",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "jSMMstCy",
+          "project_id": "VSNURh3q",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "W4C08wBC",
+          "project_id": "jlNms3Jp",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "EKLUURiy",
+          "project_id": "Ps1zyz6x",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "edrtnY9v",
+          "project_id": "4WWQxlQP",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "d6FfpWFI",
+          "project_id": "wnEe9KBa",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "iiF6U3Ne",
+          "project_id": "NNAgCjsB",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "9MSHd6Gs",
+          "project_id": "p8RJPJIC",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "name": "Simply Optimized Continued",
+    "dependencies": {
+      "fabric-loader": "0.19.3",
+      "minecraft": "26.2"
+    },
+    "files": [
+      {
+        "path": "mods/ConfigManager-fabric-26.1_26.2-1.1.3.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/jlNms3Jp/versions/W4C08wBC/ConfigManager-fabric-26.1_26.2-1.1.3.jar"
+        ]
+      },
+      {
+        "path": "mods/Gnetum-4.5.3+26.2-fabric.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/7MoE34WK/versions/bA8ri0IU/Gnetum-4.5.3%2B26.2-fabric.jar"
+        ]
+      },
+      {
+        "path": "mods/ImmediatelyFast-Fabric-1.16.3+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/5ZwdcRci/versions/rxHcwxdQ/ImmediatelyFast-Fabric-1.16.3%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/Ixeris-4.6.5+26.2-fabric.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/p8RJPJIC/versions/9MSHd6Gs/Ixeris-4.6.5%2B26.2-fabric.jar"
+        ]
+      },
+      {
+        "path": "mods/NoChatReports-FABRIC-26.2-v2.20.1.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/qQyHxfxd/versions/uiY9tUaj/NoChatReports-FABRIC-26.2-v2.20.1.jar"
+        ]
+      },
+      {
+        "path": "mods/ScalableLux-fabric-0.3.0-alpha.0.3-all.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/Ps1zyz6x/versions/EKLUURiy/ScalableLux-fabric-0.3.0-alpha.0.3-all.jar"
+        ]
+      },
+      {
+        "path": "mods/bbe-fabric-1.3.8-beta.1+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/ONZm0H7Y/versions/Sr2VjbpG/bbe-fabric-1.3.8-beta.1%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/c2me-fabric-mc26.2-0.4.2-alpha.0.43.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/VSNURh3q/versions/jSMMstCy/c2me-fabric-mc26.2-0.4.2-alpha.0.43.jar"
+        ]
+      },
+      {
+        "path": "mods/cloth-config-26.2.155.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/9s6osm5g/versions/Nv3xnWXd/cloth-config-26.2.155.jar"
+        ]
+      },
+      {
+        "path": "mods/entityculling-fabric-1.10.5-mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/NNAgCjsB/versions/iiF6U3Ne/entityculling-fabric-1.10.5-mc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/fabric-api-0.157.0+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/P7dR8mSH/versions/vmQp7ixA/fabric-api-0.157.0%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/ferritecore-9.0.0-fabric.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/uXXizFIs/versions/d5ddUdiB/ferritecore-9.0.0-fabric.jar"
+        ]
+      },
+      {
+        "path": "mods/lithium-fabric-0.25.3+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/gvQqBUqZ/versions/f7vZ0VWU/lithium-fabric-0.25.3%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/modernfix-5.27.19-build.1.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/TjSm1wrD/versions/TUWH6NZu/modernfix-5.27.19-build.1.jar"
+        ]
+      },
+      {
+        "path": "mods/moreculling-fabric-26.2-1.8.1.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/51shyZVL/versions/D5oVCouK/moreculling-fabric-26.2-1.8.1.jar"
+        ]
+      },
+      {
+        "path": "mods/servercore-fabric-1.5.19+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/4WWQxlQP/versions/edrtnY9v/servercore-fabric-1.5.19%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/sodium-fabric-0.9.2-alpha.4+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/AANobbMI/versions/a9YZH3ip/sodium-fabric-0.9.2-alpha.4%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/vmp-fabric-mc26.2-0.2.0+beta.7.236-all.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/wnEe9KBa/versions/d6FfpWFI/vmp-fabric-mc26.2-0.2.0%2Bbeta.7.236-all.jar"
+        ]
+      },
+      {
+        "path": "mods/zfastnoise-1.0.40+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/OnlVIpq5/versions/9TGMeiu2/zfastnoise-1.0.40%2B26.2.jar"
+        ]
+      }
+    ],
+    "overrides": [
+      "overrides/config/modpack_defaults/config/NoChatReports/NCR-Client.json",
+      "overrides/config/modpack_defaults/config/servercore/config.yml",
+      "overrides/config/modpack_defaults/config/servercore/optimizations.yml",
+      "overrides/config/modpack_defaults/config/c2me.toml",
+      "overrides/config/modpack_defaults/config/entityculling.json",
+      "overrides/config/modpack_defaults/config/ferritecore.mixin.properties",
+      "overrides/config/modpack_defaults/config/immediatelyfast.json",
+      "overrides/config/modpack_defaults/config/lithium.properties",
+      "overrides/config/modpack_defaults/config/modernfix-mixins.properties",
+      "overrides/config/modpack_defaults/config/moreculling.toml",
+      "overrides/config/modpack_defaults/config/sodium-options.json",
+      "overrides/config/modpack_defaults/config/vmp.properties",
+      "overrides/config/modpack_defaults/debug-profile.json",
+      "overrides/config/modpack_defaults/options.txt"
+    ]
+  },
+  {
+    "project": "optimized-fps",
+    "version": {
+      "id": "kdmJOWvh",
+      "project_id": "aOOJ2mte",
+      "name": "Optimized fps 26.2 4.3.0",
+      "version_number": "4.3.0",
+      "game_versions": [
+        "26.2"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "version_type": "release",
+      "date_published": "2026-10-05T14:28:19.999989Z",
+      "dependencies": [
+        {
+          "version_id": "DVwuMj1w",
+          "project_id": "ZP7xHXtw",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dyZhmjnd",
+          "project_id": "TjSm1wrD",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "jeKkuhSg",
+          "project_id": "PtjYWJkn",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "HXD8kS5O",
+          "project_id": "qANg5Jrr",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "6Odun2uz",
+          "project_id": "qQyHxfxd",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "dKLDGs8Q",
+          "project_id": "51shyZVL",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "LtVvw4uS",
+          "project_id": "uXXizFIs",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zErG1kOw",
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "6NVPSTgp",
+          "project_id": "4I1XuqiY",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "4C8Vb9ab",
+          "project_id": "5ZwdcRci",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "zk293xl0",
+          "project_id": "Bh37bMuy",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "k55HdONq",
+          "project_id": "YL57xq9U",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "XVsaQXSm",
+          "project_id": "yBW8D80W",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "Vp6sjE3T",
+          "project_id": "BVzZfTc1",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "J9CowDXK",
+          "project_id": "gvQqBUqZ",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "DmnNKsfS",
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "fPHmG5Wc",
+          "project_id": "aXf2OSFU",
+          "file_name": null,
+          "dependency_type": "embedded"
+        },
+        {
+          "version_id": "nFnob0DH",
+          "project_id": "HaaH232J",
+          "file_name": null,
+          "dependency_type": "embedded"
+        }
+      ]
+    },
+    "name": "NeoForge 26.2",
+    "dependencies": {
+      "neoforge": "26.2.0.88",
+      "minecraft": "26.2"
+    },
+    "files": [
+      {
+        "path": "mods/lambdynamiclights-4.12.4+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/yBW8D80W/versions/XVsaQXSm/lambdynamiclights-4.12.4%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/yeetusexperimentus-neoforge-102.0.0.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/HaaH232J/versions/nFnob0DH/yeetusexperimentus-neoforge-102.0.0.jar"
+        ]
+      },
+      {
+        "path": "mods/ok_zoomer-18.0.0-beta.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/aXf2OSFU/versions/fPHmG5Wc/ok_zoomer-18.0.0-beta.2.jar"
+        ]
+      },
+      {
+        "path": "mods/NoChatReports-NEOFORGE-26.2-v2.20.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/qQyHxfxd/versions/6Odun2uz/NoChatReports-NEOFORGE-26.2-v2.20.2.jar"
+        ]
+      },
+      {
+        "path": "mods/iris-neoforge-1.11.4+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/YL57xq9U/versions/k55HdONq/iris-neoforge-1.11.4%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/entity_texture_features-7.2.5-26.2-neoforge.jar",
+        "env": {
+          "server": "unsupported",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/BVzZfTc1/versions/Vp6sjE3T/entity_texture_features-7.2.5-26.2-neoforge.jar"
+        ]
+      },
+      {
+        "path": "mods/lithium-neoforge-0.25.3+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/gvQqBUqZ/versions/J9CowDXK/lithium-neoforge-0.25.3%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/reeses-sodium-options-neoforge-2.2.4+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/Bh37bMuy/versions/zk293xl0/reeses-sodium-options-neoforge-2.2.4%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/e4mc-neoforge-6.2.3.jar",
+        "env": {
+          "server": "unsupported",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/qANg5Jrr/versions/HXD8kS5O/e4mc-neoforge-6.2.3.jar"
+        ]
+      },
+      {
+        "path": "mods/ImmediatelyFast-NeoForge-1.16.5+26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/5ZwdcRci/versions/4C8Vb9ab/ImmediatelyFast-NeoForge-1.16.5%2B26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/entity_model_features-3.3.11-26.2-neoforge.jar",
+        "env": {
+          "server": "unsupported",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/4I1XuqiY/versions/6NVPSTgp/entity_model_features-3.3.11-26.2-neoforge.jar"
+        ]
+      },
+      {
+        "path": "mods/modernfix-neoforge-5.27.21+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/TjSm1wrD/versions/dyZhmjnd/modernfix-neoforge-5.27.21%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/ferritecore-9.0.0-neoforge.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/uXXizFIs/versions/LtVvw4uS/ferritecore-9.0.0-neoforge.jar"
+        ]
+      },
+      {
+        "path": "mods/cloth-config-26.2.155.jar",
+        "env": {
+          "client": "required",
+          "server": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/9s6osm5g/versions/zErG1kOw/cloth-config-26.2.155.jar"
+        ]
+      },
+      {
+        "path": "mods/rrls-5.2.8+mc.26.2.jar",
+        "env": {
+          "server": "unsupported",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/ZP7xHXtw/versions/DVwuMj1w/rrls-5.2.8%2Bmc.26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/moreculling-neoforge-26.2-1.8.1.jar",
+        "env": {
+          "server": "required",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/51shyZVL/versions/dKLDGs8Q/moreculling-neoforge-26.2-1.8.1.jar"
+        ]
+      },
+      {
+        "path": "mods/sodium-neoforge-0.9.2+mc26.2.jar",
+        "env": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/AANobbMI/versions/DmnNKsfS/sodium-neoforge-0.9.2%2Bmc26.2.jar"
+        ]
+      },
+      {
+        "path": "mods/sodium-extra-neoforge-0.9.4+mc26.2.jar",
+        "env": {
+          "server": "unsupported",
+          "client": "required"
+        },
+        "downloads": [
+          "https://cdn.modrinth.com/data/PtjYWJkn/versions/jeKkuhSg/sodium-extra-neoforge-0.9.4%2Bmc26.2.jar"
+        ]
+      }
+    ],
+    "overrides": [
+      "overrides/config/entity_model_features.json",
+      "overrides/config/entity_texture_features.json",
+      "overrides/config/etf_warnings.json",
+      "overrides/config/ferritecore-mixin.toml",
+      "overrides/config/fml.toml",
+      "overrides/config/immediatelyfast.json",
+      "overrides/config/iris-excluded.json",
+      "overrides/config/iris.properties",
+      "overrides/config/lambdynlights.toml",
+      "overrides/config/lithium.properties",
+      "overrides/config/modernfix-mixins.properties",
+      "overrides/config/moreculling.toml",
+      "overrides/config/neoforge-client.toml",
+      "overrides/config/neoforge-common.toml",
+      "overrides/config/neoforge-server.toml",
+      "overrides/config/rrls.toml",
+      "overrides/config/sodium-extra-options.json",
+      "overrides/config/sodium-extra.properties",
+      "overrides/config/sodium-fingerprint.json",
+      "overrides/config/sodium-mixins.properties",
+      "overrides/config/sodium-options.json",
+      "overrides/config/ok_zoomer/config.json5",
+      "overrides/config/NoChatReports/NCR-Client.json",
+      "overrides/config/NoChatReports/NCR-Common.json",
+      "overrides/config/NoChatReports/NCR-ServerPreferences.json",
+      "overrides/config/NoChatReports/README.md",
+      "overrides/config/e4mc/e4mc.toml"
+    ]
+  }
+]

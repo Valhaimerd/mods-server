@@ -1,0 +1,217 @@
+arcane_missile actual damage at40 power: 6.719970703125
+arcane_explosion actual damage at40 power: 67.20001220703125
+arcane_beam actual damage at40 power: 5.1199951171875
+fire_breath actual damage at40 power: 3.20001220703125
+fire_meteor actual damage at40 power: 38.4000244140625
+fire_storm actual damage at40 power: 10.239990234375
+frost_blizzard actual damage at40 power: 6.719970703125
+arcane_barrage_bolt actual damage at40 power: 10.239990234375
+hydra_fireball actual damage at40 power: 14.08001708984375
+elemental_frost_nova actual damage at40 power: 46.4000244140625
+arcane_bolt actual damage at40 power: 17.91998291015625
+arcane_blast actual damage at40 power: 20.47998046875
+burst_blink_explosion actual damage at40 power: 12.79998779296875
+fire_slash actual damage at40 power: 25.5999755859375
+fire_scorch actual damage at40 power: 15.3599853515625
+fireball actual damage at40 power: 20.47998046875
+fire_blast actual damage at40 power: 25.5999755859375
+fire_wall actual damage at40 power: 5.1199951171875
+ancient_hydra_breath actual damage at40 power: 6.08001708984375
+frost_nova actual damage at40 power: 46.4000244140625
+frost_spikes actual damage at40 power: 20.47998046875
+frost_lance actual damage at40 power: 51.20001220703125
+frostbolt actual damage at40 power: 20.47998046875
+frost_shard actual damage at40 power: 15.3599853515625
+elemental_frost_shard actual damage at40 power: 25.5999755859375
+legion_frost_nova actual damage at40 power: 46.4000244140625
+Missiles non-proportional 0.0: 12.0
+Missiles non-proportional 0.2: 12.0
+Missiles non-proportional 0.5: 12.0
+Missiles non-proportional 0.9: 12.0
+Missiles non-proportional 1.0: 12.0
+Charged coefficient 0: 0.07999999523162843
+Charged coefficient 1: 0.08119999766349793
+Charged coefficient 20: 0.10399999618530274
+Charged coefficient 49: 0.11999999284744263
+Charged coefficient 100: 0.11999999284744263
+Echoing initial charges: 2.0
+Actual native release spends charge: 1.0
+First native spend: 1.0
+One charge remains usable: 0.0
+arcane_explosion actual damage at40 power: 41.5999755859375
+Hit does not refund: 1.0
+Second native spend: 0.0
+Empty blocks casting: 1.0
+No early recharge: 0.0
+First exact240 tick charge: 1.0
+Second still recovering: 1.0
+Second exact serial recharge: 2.0
+Respec preserves recharge gate: 1.0
+Reselect does not mint a charge: 1.0
+Old saved ordinary cooldown respected: 1.0
+Blocked cast does not spend: 2.0
+Reload preserves empty bank: 0.0
+Reload does not shortcut timer: 0.0
+Reload serial first charge: 1.0
+Reload serial second charge: 2.0
+Native clone event preserves empty bank: 0.0
+Clone preserves remaining recharge: 1.0
+Haste no early charge: 0.0
+Haste restores at120: 1.0
+Queued interval sampled when begun: 1.0
+Second queued original haste interval: 2.0
+WARD arcane P=0 effects=[] maxAbs=0.0
+arcane Ward power 0: 0.0
+WARD arcane P=7 effects=[] maxAbs=0.0
+arcane Ward power 7: 0.0
+WARD arcane P=8 effects=[effect.skill_tree_rpgs.arcane_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+arcane Ward power 8: 2.0
+arcane refresh does not refill: 1.0
+WARD arcane P=15 effects=[effect.skill_tree_rpgs.arcane_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+arcane Ward power 15: 2.0
+arcane refresh does not refill: 1.0
+WARD arcane P=16 effects=[effect.skill_tree_rpgs.arcane_ward x 3, Duration: 160, Particles: false] maxAbs=4.0
+arcane Ward power 16: 4.0
+arcane refresh does not refill: 3.0
+WARD arcane P=40 effects=[effect.skill_tree_rpgs.arcane_ward x 6, Duration: 160, Particles: false] maxAbs=10.0
+arcane Ward power 40: 10.0
+arcane refresh does not refill: 9.0
+WARD arcane P=80 effects=[effect.skill_tree_rpgs.arcane_ward x 11, Duration: 160, Particles: false] maxAbs=20.0
+arcane Ward power 80: 20.0
+arcane refresh does not refill: 19.0
+WARD fire P=0 effects=[] maxAbs=0.0
+fire Ward power 0: 0.0
+WARD fire P=7 effects=[] maxAbs=0.0
+fire Ward power 7: 0.0
+WARD fire P=8 effects=[effect.skill_tree_rpgs.fire_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+fire Ward power 8: 2.0
+fire refresh does not refill: 1.0
+WARD fire P=15 effects=[effect.skill_tree_rpgs.fire_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+fire Ward power 15: 2.0
+fire refresh does not refill: 1.0
+WARD fire P=16 effects=[effect.skill_tree_rpgs.fire_ward x 3, Duration: 160, Particles: false] maxAbs=4.0
+fire Ward power 16: 4.0
+fire refresh does not refill: 3.0
+WARD fire P=40 effects=[effect.skill_tree_rpgs.fire_ward x 6, Duration: 160, Particles: false] maxAbs=10.0
+fire Ward power 40: 10.0
+fire refresh does not refill: 9.0
+WARD fire P=80 effects=[effect.skill_tree_rpgs.fire_ward x 11, Duration: 160, Particles: false] maxAbs=20.0
+fire Ward power 80: 20.0
+fire refresh does not refill: 19.0
+WARD frost P=0 effects=[] maxAbs=0.0
+frost Ward power 0: 0.0
+WARD frost P=7 effects=[] maxAbs=0.0
+frost Ward power 7: 0.0
+WARD frost P=8 effects=[effect.skill_tree_rpgs.frost_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+frost Ward power 8: 2.0
+frost refresh does not refill: 1.0
+WARD frost P=15 effects=[effect.skill_tree_rpgs.frost_ward x 2, Duration: 160, Particles: false] maxAbs=2.0
+frost Ward power 15: 2.0
+frost refresh does not refill: 1.0
+WARD frost P=16 effects=[effect.skill_tree_rpgs.frost_ward x 3, Duration: 160, Particles: false] maxAbs=4.0
+frost Ward power 16: 4.0
+frost refresh does not refill: 3.0
+WARD frost P=40 effects=[effect.skill_tree_rpgs.frost_ward x 6, Duration: 160, Particles: false] maxAbs=10.0
+frost Ward power 40: 10.0
+frost refresh does not refill: 9.0
+WARD frost P=80 effects=[effect.skill_tree_rpgs.frost_ward x 11, Duration: 160, Particles: false] maxAbs=20.0
+frost Ward power 80: 20.0
+frost refresh does not refill: 19.0
+First Ward grants10: 10.0
+Another school cannot restore spent absorption: 6.0
+Stronger Ward adds only new capacity: 8.0
+New Ward after actual expiry grants again: 10.0
+Arrow iframe damage frenzy=false: 4.0
+Arrow iframe damage frenzy=true: 4.0
+Frenzy repeated weaker hit registers: 4.0
+Frenzy restores prior iframe: 20.0
+Ordinary repeated arrow still respects iframes: 0.0
+Explicit invulnerability retained: 0.0
+Sinful no time-zero damage: 1000.0
+True drain consumes absorption: 0.0
+Only remainder reaches health: 0.4000244140625
+Eight raw1 pulses retain80pct: 6.39990234375
+True damage respects explicit invulnerability: 1000.0
+True damage honors native totem: 1.0
+Native rescue consumes totem: 1.0
+Native cast time paladins:blessed_strikes: 1.5
+Native cast time paladins:judgement: 0.25
+Native cast time rogues:throw: 0.30000001192092896
+Native cast time rogues:throw_net: 0.30000001192092896
+Blessed five pulses retained: 5.0
+Purge target range: 30.0
+Throw charge curve rogues:throw 0.0: 12.79998779296875
+Throw charge curve rogues:throw 0.5: 17.5999755859375
+Throw charge curve rogues:throw 1.0: 25.5999755859375
+Throw charge curve rogues:throw_net 0.0: 2.4000244140625
+Throw charge curve rogues:throw_net 0.5: 3.29998779296875
+Throw charge curve rogues:throw_net 1.0: 4.79998779296875
+Existing Warrior root reward4pct: 10.399999991059303
+Warrior ordinary reward adds4pct: 10.799999982118607
+Rogue root reward2pct: 4.079999998211861
+Rogue ordinary reward adds2pct: 4.159999996423721
+Adventurer ordinary melee3pct modifier: 0.029999999329447746
+spell_power:arcane unenchanted other=0.0: 20.0
+spell_power:arcane weaponV only other=0.0: 24.75
+spell_power:arcane armorVx4 plus weaponV other=0.0: 36.75
+spell_power:arcane armorVx4 only other=0.0: 32.0
+spell_power:arcane unenchanted other=0.5: 30.0
+spell_power:arcane weaponV only other=0.5: 34.75
+spell_power:arcane armorVx4 plus weaponV other=0.5: 46.75
+spell_power:arcane armorVx4 only other=0.5: 42.0
+spell_power:arcane unenchanted other=1.0: 40.0
+spell_power:arcane weaponV only other=1.0: 44.75
+spell_power:arcane armorVx4 plus weaponV other=1.0: 56.75
+spell_power:arcane armorVx4 only other=1.0: 52.0
+spell_power:arcane unenchanted other=1.5: 50.0
+spell_power:arcane weaponV only other=1.5: 54.75
+spell_power:arcane armorVx4 plus weaponV other=1.5: 66.75
+spell_power:arcane armorVx4 only other=1.5: 62.0
+spell_power:arcane unenchanted other=2.35: 67.0
+spell_power:arcane weaponV only other=2.35: 71.75
+spell_power:arcane armorVx4 plus weaponV other=2.35: 83.75
+spell_power:arcane armorVx4 only other=2.35: 79.0
+spell_power:fire unenchanted other=0.0: 20.0
+spell_power:fire weaponV only other=0.0: 24.75
+spell_power:fire armorVx4 plus weaponV other=0.0: 36.75
+spell_power:fire armorVx4 only other=0.0: 32.0
+spell_power:fire unenchanted other=0.5: 30.0
+spell_power:fire weaponV only other=0.5: 34.75
+spell_power:fire armorVx4 plus weaponV other=0.5: 46.75
+spell_power:fire armorVx4 only other=0.5: 42.0
+spell_power:fire unenchanted other=1.0: 40.0
+spell_power:fire weaponV only other=1.0: 44.75
+spell_power:fire armorVx4 plus weaponV other=1.0: 56.75
+spell_power:fire armorVx4 only other=1.0: 52.0
+spell_power:fire unenchanted other=1.5: 50.0
+spell_power:fire weaponV only other=1.5: 54.75
+spell_power:fire armorVx4 plus weaponV other=1.5: 66.75
+spell_power:fire armorVx4 only other=1.5: 62.0
+spell_power:fire unenchanted other=2.35: 67.0
+spell_power:fire weaponV only other=2.35: 71.75
+spell_power:fire armorVx4 plus weaponV other=2.35: 83.75
+spell_power:fire armorVx4 only other=2.35: 79.0
+spell_power:frost unenchanted other=0.0: 20.0
+spell_power:frost weaponV only other=0.0: 24.75
+spell_power:frost armorVx4 plus weaponV other=0.0: 36.75
+spell_power:frost armorVx4 only other=0.0: 32.0
+spell_power:frost unenchanted other=0.5: 30.0
+spell_power:frost weaponV only other=0.5: 34.75
+spell_power:frost armorVx4 plus weaponV other=0.5: 46.75
+spell_power:frost armorVx4 only other=0.5: 42.0
+spell_power:frost unenchanted other=1.0: 40.0
+spell_power:frost weaponV only other=1.0: 44.75
+spell_power:frost armorVx4 plus weaponV other=1.0: 56.75
+spell_power:frost armorVx4 only other=1.0: 52.0
+spell_power:frost unenchanted other=1.5: 50.0
+spell_power:frost weaponV only other=1.5: 54.75
+spell_power:frost armorVx4 plus weaponV other=1.5: 66.75
+spell_power:frost armorVx4 only other=1.5: 62.0
+spell_power:frost unenchanted other=2.35: 67.0
+spell_power:frost weaponV only other=2.35: 71.75
+spell_power:frost armorVx4 plus weaponV other=2.35: 83.75
+spell_power:frost armorVx4 only other=2.35: 79.0
+Timed retaliation waits first0.5s: 0.0
+Timed retaliation first pulse: 1.0
+Timed retaliation eight finite pulses: 8.0
+Timed retaliation state consumed: 0.0

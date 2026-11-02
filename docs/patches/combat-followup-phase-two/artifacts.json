@@ -1,0 +1,27 @@
+[
+  {
+    "jar": "bettercombat-neoforge-3.2.2+26.2.jar",
+    "before": "5827f6104483793e87938fa3e7d8cdb6ce8c8b487e605aea2fa04e378b028900",
+    "after": "3f7f67e0c99c40cde8583e530c9f42c2dbd155da72c1fe6cc3f0948c16563705",
+    "changed": [
+      "bettercombat.mixins.json",
+      "net/bettercombat/network/ServerNetwork.class"
+    ],
+    "added": [
+      "net/bettercombat/logic/WeaponReachValidation.class",
+      "net/bettercombat/mixin/player/PlayerWeaponReachMixin.class"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "b85341622299bf044ef59b2785536ba16562d4f07b8f2202c8b5f12d1c61c184",
+    "after": "3bac4dc9686e39f0deac3025a007944b24679315749b98877724541e7db14115",
+    "changed": [
+      "spell_engine.mixins.json"
+    ],
+    "added": [
+      "net/spell_engine/internals/MultiplayerBoundary.class",
+      "net/spell_engine/mixin/entity/PlayerPacketBoundaryMixin.class"
+    ]
+  }
+]

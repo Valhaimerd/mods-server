@@ -1,0 +1,69 @@
+PASS Boundary active wall_outsider
+PASS Remote wall wall_outsider 11.4 -> 13.2 acceptedX=11.57572591442933
+PASS Boundary active wall_outside
+PASS Remote wall wall_outside 13.2 -> 11.4 acceptedX=12.424274085570667
+PASS Boundary active wall_party
+PASS Remote wall wall_party 11.4 -> 13.2 acceptedX=13.2
+PASS Boundary active wall_leave
+PASS Remote wall wall_leave 11.4 -> 13.2 acceptedX=11.57572591442933
+PASS Boundary active wall_join
+PASS Remote wall wall_join 11.4 -> 13.2 acceptedX=13.2
+PASS Boundary active wall_kick
+PASS Remote wall wall_kick 11.4 -> 13.2 acceptedX=11.57572591442933
+PASS Boundary active wall_join
+PASS Remote wall wall_join 11.4 -> 13.2 acceptedX=13.2
+PASS Boundary active wall_disband
+PASS Remote wall wall_disband 11.4 -> 13.2 acceptedX=11.57572591442933
+PASS Boundary active wall_outsider
+PASS Remote wall wall_outsider 11.8 -> 13.2 acceptedX=11.8
+PASS Boundary active wall_overlap
+PASS Remote wall wall_overlap 8.4 -> 10.2 acceptedX=8.57572591442933
+PASS Wall cleanup permits crossing
+METRIC ordinary {"x":0.0,"y":100.0,"z":0.0,"scale":1.0,"range":3.0,"blockRange":4.5,"expectedRange":3.0,"target":31,"health":1000.0,"nativeWithin":true,"targetZ":2.6,"token":"2eb48cbd-393f-402d-b790-be8faffe6fc5","op":"facts"}
+PASS Actual size ordinary
+PASS Range formula ordinary
+PASS Native attack validation ordinary
+PASS Block reach unchanged ordinary
+PASS Real Better Combat packet damages ordinary
+METRIC Titan {"x":0.0,"y":100.0,"z":0.0,"scale":1.25,"range":3.75,"blockRange":4.5,"expectedRange":3.75,"target":32,"health":1000.0,"nativeWithin":true,"targetZ":3.5,"token":"100525fc-f72b-4d1b-9558-fea6f57eff49","op":"facts"}
+PASS Actual size Titan
+PASS Range formula Titan
+PASS Native attack validation Titan
+PASS Block reach unchanged Titan
+PASS Real Better Combat packet damages Titan
+METRIC Enrage {"x":0.0,"y":100.0,"z":0.0,"scale":1.24,"range":3.7200000286102295,"blockRange":4.5,"expectedRange":3.7200000286102295,"target":33,"health":1000.0,"nativeWithin":true,"targetZ":3.4,"token":"11276fb0-45c2-49a1-8a81-ca045ff1543d","op":"facts"}
+PASS Actual size Enrage
+PASS Range formula Enrage
+PASS Native attack validation Enrage
+PASS Block reach unchanged Enrage
+PASS Real Better Combat packet damages Enrage
+METRIC Titan+Enrage {"x":0.0,"y":100.0,"z":0.0,"scale":1.55,"range":4.6499998569488525,"blockRange":4.5,"expectedRange":4.6499998569488525,"target":34,"health":1000.0,"nativeWithin":true,"targetZ":4.1,"token":"2b3ef829-5a48-401c-a3b8-0e0456d195f2","op":"facts"}
+PASS Actual size Titan+Enrage
+PASS Range formula Titan+Enrage
+PASS Native attack validation Titan+Enrage
+PASS Block reach unchanged Titan+Enrage
+PASS Real Better Combat packet damages Titan+Enrage
+METRIC large {"x":0.0,"y":100.0,"z":0.0,"scale":2.5,"range":7.5,"blockRange":4.5,"expectedRange":7.5,"target":35,"health":1000.0,"nativeWithin":true,"targetZ":7.0,"token":"a426e83c-80c8-4cab-a963-15dd82d19d2b","op":"facts"}
+PASS Actual size large
+PASS Range formula large
+PASS Native attack validation large
+PASS Block reach unchanged large
+PASS Real Better Combat packet damages large
+METRIC very large {"x":0.0,"y":100.0,"z":0.0,"scale":4.0,"range":12.0,"blockRange":4.5,"expectedRange":12.0,"target":36,"health":1000.0,"nativeWithin":true,"targetZ":10.0,"token":"21aaa210-11e3-474b-9be0-8ce2aa3ea94f","op":"facts"}
+PASS Actual size very large
+PASS Range formula very large
+PASS Native attack validation very large
+PASS Block reach unchanged very large
+PASS Real Better Combat packet damages very large
+METRIC shrunk {"x":0.0,"y":100.0,"z":0.0,"scale":0.75,"range":2.25,"blockRange":4.5,"expectedRange":2.25,"target":37,"health":1000.0,"nativeWithin":true,"targetZ":2.0,"token":"bbb20c6a-4364-484b-bda6-250d1e1e82de","op":"facts"}
+PASS Actual size shrunk
+PASS Range formula shrunk
+PASS Native attack validation shrunk
+PASS Block reach unchanged shrunk
+PASS Real Better Combat packet damages shrunk
+METRIC removed {"x":0.0,"y":100.0,"z":0.0,"scale":1.0,"range":3.0,"blockRange":4.5,"expectedRange":3.0,"target":38,"health":1000.0,"nativeWithin":true,"targetZ":2.6,"token":"68455ff4-95e5-44be-a25e-8ee2c144e83a","op":"facts"}
+PASS Actual size removed
+PASS Range formula removed
+PASS Native attack validation removed
+PASS Block reach unchanged removed
+PASS Real Better Combat packet damages removed

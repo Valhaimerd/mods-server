@@ -1,0 +1,25 @@
+package local.remote;
+import java.util.*;import java.nio.file.*;import com.google.gson.*;
+import net.neoforged.fml.common.Mod;import net.neoforged.neoforge.common.NeoForge;import net.neoforged.neoforge.event.tick.ServerTickEvent;import net.neoforged.neoforge.event.server.ServerStartedEvent;
+import net.minecraft.core.registries.*;import net.minecraft.resources.Identifier;import net.minecraft.server.level.*;import net.minecraft.world.item.*;import net.minecraft.world.InteractionHand;import net.minecraft.world.item.component.ChargedProjectiles;
+import local.crossarms.runtime.FrenzyState;
+@Mod("remote_spatial_probe") public class FrenzyServerProbe {
+ static final Path DIR=Path.of("../exchange");static final Gson G=new Gson();net.minecraft.server.MinecraftServer server;ServerPlayer p;Set<String> handled=new HashSet<>();int ticks;String label="";List<String> trace=new ArrayList<>();InteractionHand hand=InteractionHand.MAIN_HAND;
+ public FrenzyServerProbe(){NeoForge.EVENT_BUS.addListener((ServerStartedEvent e)->{server=e.getServer();try{Files.createDirectories(DIR);Files.writeString(DIR.resolve("ready"),"ready");}catch(Exception x){throw new RuntimeException(x);}});NeoForge.EVENT_BUS.addListener(this::tick);}
+ void command(String text){server.getCommands().performPrefixedCommand(server.createCommandSourceStack().withEntity(p).withLevel(p.level()).withPosition(p.position()).withSuppressedOutput(),text);}
+ JsonObject facts(){var r=new JsonObject();var bow=p.getItemInHand(hand);r.addProperty("shots",FrenzyState.score(p,"frenzy_shots"));r.addProperty("empty",FrenzyState.empty(p));r.addProperty("loaded",CrossbowItem.isCharged(bow));r.addProperty("parked",bow.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag().contains("crossarms_pack:reload_ammo"));r.addProperty("using",p.isUsingItem());r.addProperty("ticksUsing",p.getTicksUsingItem());r.addProperty("delay",FrenzyState.score(p,"HS_delay"));r.addProperty("mode",p.gameMode.getGameModeForPlayer().getName());r.addProperty("item",BuiltInRegistries.ITEM.getKey(bow.getItem()).toString());int arrows=0;for(int i=0;i<p.getInventory().getContainerSize();i++)if(p.getInventory().getItem(i).is(Items.ARROW))arrows+=p.getInventory().getItem(i).getCount();r.addProperty("arrows",arrows);return r;}
+ JsonObject action(JsonObject q)throws Exception{
+  String op=q.get("op").getAsString();if(op.equals("init")){p=server.getPlayerList().getPlayers().getFirst();p.teleportTo(0,100,0);p.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue(1000);p.setHealth(1000);}
+  if(op.equals("setup")){
+   label=q.get("label").getAsString();hand=q.has("offhand")?InteractionHand.OFF_HAND:InteractionHand.MAIN_HAND;p.stopUsingItem();p.getInventory().clearContent();p.setItemInHand(InteractionHand.OFF_HAND,ItemStack.EMPTY);p.removeAllEffects();p.setGameMode(q.get("mode").getAsString().equals("creative")?net.minecraft.world.level.GameType.CREATIVE:net.minecraft.world.level.GameType.SURVIVAL);p.setHealth(p.getMaxHealth());
+   p.getInventory().setItem(1,new ItemStack(Items.ARROW,64));var bow=new ItemStack(BuiltInRegistries.ITEM.getValue(Identifier.parse(q.has("item")?q.get("item").getAsString():"minecraft:crossbow")));bow.enchant(server.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).get(Identifier.parse("crossarms:frenzy")).orElseThrow(),1);p.setItemInHand(hand,bow);
+   for(var key:new String[]{"frenzy_shots","frenzy_empty","frenzy_idle","frenzy_notice","HS_delay","heat","frenzy_hurt"})command("scoreboard players set @s "+key+" 0");p.containerMenu.broadcastChanges();
+  }else if(op.equals("spare")){p.stopUsingItem();command("scoreboard players set @s frenzy_empty 1");command("scoreboard players set @s frenzy_shots 26");var bow=p.getItemInHand(hand).copy();bow.set(net.minecraft.core.component.DataComponents.CHARGED_PROJECTILES,ChargedProjectiles.ofNonEmpty(List.of(new ItemStack(Items.ARROW))));p.setItemInHand(hand,bow);p.containerMenu.broadcastChanges();}
+  else if(op.equals("finish")){Files.write(DIR.resolve("server-trace.txt"),trace);server.halt(false);}
+  return facts();
+ }
+ void tick(ServerTickEvent.Post event){if(server==null)return;try{
+  ticks++;if(p!=null&&ticks<5000){var f=facts();f.addProperty("tick",ticks);f.addProperty("label",label);trace.add(f.toString());}
+  try(var files=Files.newDirectoryStream(DIR,"request-*.json")){for(var file:files){if(!handled.add(file.getFileName().toString()))continue;var q=JsonParser.parseString(Files.readString(file)).getAsJsonObject();String token=q.get("token").getAsString();JsonObject response;try{response=action(q);}catch(Throwable t){t.printStackTrace();response=new JsonObject();response.addProperty("error",t.toString());}response.addProperty("token",token);Files.writeString(DIR.resolve("response-"+token+".tmp"),G.toJson(response));Files.move(DIR.resolve("response-"+token+".tmp"),DIR.resolve("response-"+token+".json"),StandardCopyOption.ATOMIC_MOVE);}}
+ }catch(Throwable t){t.printStackTrace();}}
+}

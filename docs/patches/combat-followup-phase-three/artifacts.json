@@ -1,0 +1,25 @@
+[
+  {
+    "jar": "crossarms-1.4.jar",
+    "before": "9a4d15a3e047a8e09a83fc7aac73a001d5693742ec49a5895aa0e1ba81edcdc4",
+    "after": "1c78afbe2dd376f614bd65613260459d8f11c8fb25780cff742d05c30041d3b4",
+    "changed": [
+      "crossarms-pack.mixins.json",
+      "local/crossarms/mixin/FrenzyReloadMixin.class",
+      "local/crossarms/runtime/FrenzyState.class"
+    ],
+    "added": [
+      "local/crossarms/mixin/FrenzyUseMixin.class",
+      "local/crossarms/runtime/FrenzyReliability.class"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "3bac4dc9686e39f0deac3025a007944b24679315749b98877724541e7db14115",
+    "after": "167f6513d62dec750978f9501d52e65810d1fc814d8750eb730fb3fae1286850",
+    "changed": [
+      "net/spell_engine/internals/ArrowAssist.class"
+    ],
+    "added": []
+  }
+]

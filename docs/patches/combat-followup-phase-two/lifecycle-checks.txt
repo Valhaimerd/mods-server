@@ -1,0 +1,14 @@
+PASS Active hostile wall restricts displacement
+PASS Creative physical movement still blocked
+PASS Spectator policy preserved
+PASS No floor/roof at y=90.0
+PASS No floor/roof at y=106.0
+PASS Body intersection blocks below origin
+PASS Overlapping body can return inward
+PASS Caster freely crosses own wall
+PASS Owned pet keeps friendly passage
+PASS Dead caster immediately stops restriction
+PASS Removed wall immediately stops restriction
+PASS Channel release leaves no movement restriction
+PASS Distant forged target still fails validation
+PASS Nonweapon native validation remains

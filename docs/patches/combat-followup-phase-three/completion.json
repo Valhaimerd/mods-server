@@ -1,0 +1,19 @@
+{
+  "status": "installed",
+  "date": "2026-11-02",
+  "jars": [
+    {
+      "jar": "crossarms-1.4.jar",
+      "after": "1c78afbe2dd376f614bd65613260459d8f11c8fb25780cff742d05c30041d3b4"
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "after": "167f6513d62dec750978f9501d52e65810d1fc814d8750eb730fb3fae1286850"
+    }
+  ],
+  "remote_checks": 8,
+  "native_checks": 21,
+  "trajectory_checks": 128,
+  "personal_installations_modified": false,
+  "committed_or_pushed": false
+}

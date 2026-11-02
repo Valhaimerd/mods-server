@@ -1,5 +1,7 @@
 # Warrior skills - raw attributes, secondary nodes and passive pairs
 
+> **2 November 2026 phase-one update:** [Current Warrior/Assassin values](../combat-followup-phase-one/README.md) supersede changed values in this historical reference.
+
 Inspected **25 October 2026** from the currently installed pack. Includes all three Warrior tiers, the revised health passives and independent shield damage reduction. Warrior shares the Rogues & Warriors JAR, but its spell and node IDs are separate from the Rogue class.
 
 ## Reading the values

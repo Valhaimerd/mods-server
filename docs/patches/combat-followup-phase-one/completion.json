@@ -1,0 +1,34 @@
+{
+  "status": "installed",
+  "date": "2026-11-02",
+  "jars": [
+    {
+      "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+      "after": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca"
+    },
+    {
+      "jar": "bettercombat-neoforge-3.2.2+26.2.jar",
+      "after": "5827f6104483793e87938fa3e7d8cdb6ce8c8b487e605aea2fa04e378b028900"
+    },
+    {
+      "jar": "combat_roll-neoforge-3.0.1+26.2.jar",
+      "after": "1d855c5e72bf4a64b82bba990be84a8ef268a08a0e5f822585e70cae73b0765d"
+    },
+    {
+      "jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "after": "1c22161837cd347730e70546120fb40f85224f1dbb3cd4b56aae94dcfe804d7b"
+    },
+    {
+      "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "after": "068c782def9d751c6966d0f3034c8b11e488765b0a8745e176ac4b2a4382ca8e"
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "after": "b85341622299bf044ef59b2785536ba16562d4f07b8f2202c8b5f12d1c61c184"
+    }
+  ],
+  "native_result": "PASS 70 checks",
+  "client_checks": 11,
+  "personal_installations_modified": false,
+  "committed_or_pushed": false
+}

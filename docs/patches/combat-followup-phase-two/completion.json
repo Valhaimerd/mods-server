@@ -1,0 +1,20 @@
+{
+    "status":  "installed",
+    "date":  "2026-11-02",
+    "jars":  [
+                 {
+                     "jar":  "bettercombat-neoforge-3.2.2+26.2.jar",
+                     "after":  "3f7f67e0c99c40cde8583e530c9f42c2dbd155da72c1fe6cc3f0948c16563705"
+                 },
+                 {
+                     "jar":  "spell_engine-neoforge-1.10.5+26.2.jar",
+                     "after":  "3bac4dc9686e39f0deac3025a007944b24679315749b98877724541e7db14115"
+                 }
+             ],
+    "remote_checks":  61,
+    "geometry_checks":  51,
+    "personal_installations_modified":  false,
+    "committed_or_pushed":  false,
+    "lifecycle_checks":  14,
+    "handbook_pages":  80
+}

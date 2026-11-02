@@ -207,3 +207,9 @@ The [Orb of Oblivion recipe](docs/patches/orb-acquisition/README.md) now require
 Purgatory's [24-second timing update](docs/patches/purgatory-24s/README.md) moves its stages to 8s/16s and reaches the 700%/900% explosion caps over the final eight seconds.
 
 [Reactive Wards and removals](docs/patches/ward-hit-retirement/README.md): Mage Wards activate after direct enemy damage on a 12s base cooldown. Fangs and Scalar RPG Utils are removed; saved Fangs gear keeps its other enchantments. RPG Series classes and equipment remain.
+
+The [Warrior/Assassin follow-up](docs/patches/combat-followup-phase-one/README.md) revises class skills, healing, defenses and melee attack movement. Adventurer melee nodes give 2%; RPG Warrior nodes give 5%. Mutilate targets within eight blocks and teleports in front of its enemy. Clients and servers need matching updated JARs; no config deletion is required. Multiplayer wall/reach repairs are implemented in the phase-two follow-up; the phase-three archery repair is also installed.
+
+The [multiplayer wall/reach follow-up](docs/patches/combat-followup-phase-two/README.md) enforces current-party passage through Purgatory walls after native movement validation and aligns Better Combat attack validation with size-scaled weapon reach. It preserves phase-one changes and block reach. Both clients and servers need the matching updated JARs and a restart.
+
+The [archery follow-up](docs/patches/combat-followup-phase-three/README.md) prevents premature Frenzy reloads between automatic shots and lets exhausted, already-loaded crossbows complete a normal crank without spending a second arrow. Slight arrow assistance compensates modestly for higher speed, retaining its narrow aiming requirements. Both sides need matching CrossArms and Spell Engine builds and a restart.

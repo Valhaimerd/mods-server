@@ -1,0 +1,11 @@
+PASS Charge movement eligibility synchronized
+PASS Actual Better Combat client input hook preserves full movement
+PASS Berserker movement eligibility synchronized
+PASS Actual Better Combat client input hook preserves full movement
+PASS Rejected cooldown cast does not teleport
+PASS Native Mutilate cast teleports in front of enemy
+PASS Mutilate destination reaches client
+PASS Expired movement exception clears on client
+PASS Selected Assassin path enables full movement on client
+PASS Actual Better Combat client input hook preserves full movement
+PASS Path reset removes movement exception

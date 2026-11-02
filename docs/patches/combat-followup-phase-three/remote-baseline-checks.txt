@@ -1,0 +1,13 @@
+METRIC survival after spam {"shots":26,"empty":true,"loaded":false,"parked":false,"using":false,"ticksUsing":0,"delay":3,"mode":"survival","item":"minecraft:crossbow","arrows":38,"token":"f0235778-e6f2-42a8-a7e7-2e25d4554704"}
+PASS survival exhausted after rapid firing
+PASS survival exactly 26 accepted shots
+METRIC survival after crank {"shots":0,"empty":false,"loaded":true,"parked":false,"using":false,"ticksUsing":0,"delay":0,"mode":"survival","item":"minecraft:crossbow","arrows":37,"token":"ede05425-154f-417a-a426-ee8fc1fa1be7"}
+PASS survival empty magazine reloads after full crank
+PASS Interrupted loaded recovery stays locked and preserves ammo
+METRIC loaded recovery {"shots":26,"empty":true,"loaded":true,"parked":false,"using":false,"ticksUsing":0,"delay":0,"mode":"survival","item":"minecraft:crossbow","arrows":37,"token":"b89eb2dc-e586-495b-9f0b-514bd6e82e33"}
+FAIL Loaded exhausted crossbow recovers after real full crank
+METRIC creative after spam {"shots":26,"empty":true,"loaded":false,"parked":false,"using":false,"ticksUsing":0,"delay":3,"mode":"creative","item":"minecraft:crossbow","arrows":64,"token":"f4dad67a-71a3-402d-a663-a300f2374df8"}
+PASS creative exhausted after rapid firing
+PASS creative exactly 26 accepted shots
+METRIC creative after crank {"shots":0,"empty":false,"loaded":true,"parked":false,"using":false,"ticksUsing":0,"delay":0,"mode":"creative","item":"minecraft:crossbow","arrows":64,"token":"5dc30dc2-5827-4e2f-a71b-808d641c3780"}
+PASS creative empty magazine reloads after full crank

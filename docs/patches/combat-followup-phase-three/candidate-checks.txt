@@ -1,0 +1,21 @@
+PASS Fixture has partial burst state
+PASS Automatic burst gap cannot start premature reload
+PASS Exhausted loaded crossbow can start full crank
+PASS Starting exhausted crank safely parks loaded ammunition
+PASS Incomplete crank does not unlock burst
+PASS Full crank unlocks loaded exhausted crossbow
+PASS Full recovery preserves loaded projectile
+PASS Loaded recovery does not consume duplicate arrow
+PASS Empty exhausted bow still loads through native crank
+PASS Native empty reload consumes one arrow
+PASS Ordinary crossbow retains native charging
+PASS Unsupported loaded firework cannot unlock Frenzy
+PASS Interrupted stored ammo survives hand and item-stack changes
+PASS Saved arrow can finish reload without spare inventory ammo
+PASS Malformed recovery data neither crashes nor unlocks Frenzy
+PASS Speed-aware turn bound 3.0
+PASS Steering retains speed 3.0
+PASS Speed-aware turn bound 4.5
+PASS Steering retains speed 4.5
+PASS Speed-aware turn bound 9.0
+PASS Steering retains speed 9.0

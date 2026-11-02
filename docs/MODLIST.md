@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 307 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 305 synchronized JARs · 23 client extras</p>
 
-Last audited: 2026-10-31<br>
+Last audited: 2026-11-02<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 307 synchronized JARs plus 23 client-store JARs
+Current distribution: 305 synchronized JARs plus 23 client-store JARs
 
 ## About this handbook
 
@@ -654,7 +654,7 @@ Activated shields reduce frontal damage by 80%, separately from armor and Resist
 - **Core mechanic:** Specializes class and weapon abilities by spending earned skill points.
 - **Player guidance:** Open the skill screen with T and inspect class and weapon prerequisites.
 
-Hover a spellbook or weapon and hold `Left Ctrl` to expand its spell details. Hold `Left Shift` for Penchant enchantment progress; hold both to show both sections. The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +2%. Warrior melee nodes grant +4%; ranged nodes and separate conditional weapon damage rewards remain +2%. Warrior root/ordinary damage nodes give 4%; Archer damage nodes remain 2%. Rogue root/ordinary attack-speed nodes give 2%. RPG Archer damage nodes receive no extra draw speed. Paladin class nodes grant +0.25 Healing Power. Class and weapon skill XP gains are 1.35 times their original rate. Mage active, weapon and summon damage now uses rounded 80% coefficients; separate school passives and healing remain. Echoing Blast stores two casts and recovers one at a time per haste-adjusted 12s, with no hit resets. Missiles has a fixed 12s base cooldown; both first-tier Arcane skills target within 40 blocks. Purge Heal reaches 30 blocks, Blessed Strikes channels five pulses in 1.5s, Divine Oath casts in 0.25s and both Warrior throws fully charge in 0.3s. Purgatory has a 12s base cooldown. Its first pulse pulls enemies strongly inward; continuous pull strengthens at 8s and 16s during the 24s channel. An orange wall contains enemies at the 12-block outer radius, or 14 with Improved, until channeling ends. The wall extends five blocks below and five above the caster, has no floor or roof, and lets allies and projectiles pass. Vanish prevents hostile skill selection and maintained homing locks, while untargeted damage still works. Flame Slash gently seeks visible nearby enemies. Native melee reach now follows the same size scaling as Better Combat. Frenzy arrows bypass ordinary hit i-frames while retaining defenses. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane, Flame and Frost Wards grant one absorption heart per six matching school power, last six seconds and have 15s base cooldowns. Refreshes preserve spent absorption; overlapping Wards do not add their shields. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected. Effect tooltips display received custom values and native stack-aware percentages, including debuffs. Stun, Root and Frozen have distinct official icons and plain control descriptions.
+Hover a spellbook or weapon and hold `Left Ctrl` to expand its spell details. Hold `Left Shift` for Penchant enchantment progress; hold both to show both sections. The RPG trees specialize the weapon and class book currently supporting the build. Plan a route through prerequisite nodes before spending points. This pack gives ordinary Arcane, Fire and Frost power nodes +3%, Priest Healing Power nodes +3%, and Assassin/Rogue Attack Speed nodes +2%. Warrior melee nodes grant +4%; ranged nodes and separate conditional weapon damage rewards remain +2%. Warrior root/ordinary damage nodes give 4%; Archer damage nodes remain 2%. Rogue root/ordinary attack-speed nodes give 2%. RPG Archer damage nodes receive no extra draw speed. Paladin class nodes grant +0.25 Healing Power. Class and weapon skill XP gains are 1.35 times their original rate. Mage active, weapon and summon damage now uses rounded 80% coefficients; separate school passives and healing remain. Echoing Blast stores two casts and recovers one at a time per haste-adjusted 12s, with no hit resets. Missiles has a fixed 12s base cooldown; both first-tier Arcane skills target within 40 blocks. Purge Heal reaches 30 blocks, Blessed Strikes channels five pulses in 1.5s, Divine Oath casts in 0.25s and both Warrior throws fully charge in 0.3s. Purgatory has a 12s base cooldown. Its first pulse pulls enemies strongly inward; continuous pull strengthens at 8s and 16s during the 24s channel. An orange wall contains enemies at the 12-block outer radius, or 14 with Improved, until channeling ends. The wall extends five blocks below and five above the caster, has no floor or roof, and lets allies and projectiles pass. Vanish prevents hostile skill selection and maintained homing locks, while untargeted damage still works. Flame Slash gently seeks visible nearby enemies. Native melee reach now follows the same size scaling as Better Combat. Frenzy arrows bypass ordinary hit i-frames while retaining defenses. Wizard passive cooldowns scale with haste. Presence of Mind readies the next Arcane spell to apply +20% Arcane vulnerability for six seconds; Arctic Reflex makes the next Frost spell deal 1.2 times damage. Both readiness buffs last five seconds. Arcane, Flame and Frost Wards grant one absorption heart per six matching school power, last six seconds and have 12s base cooldowns. Enemy melee, projectile and spell hits activate them after damage; casting and environmental damage do not. Refreshes preserve spent absorption; overlapping Wards do not add their shields. Scorching Flames lasts two seconds. Winter's Chill lasts two seconds and adds eight percentage points of Frost critical-damage vulnerability per stack, up to five stacks. Cold Snap excludes Blizzard and Frost Elemental. Stun can affect living bosses while party allies and pets remain protected. Effect tooltips display received custom values and native stack-aware percentages, including debuffs. Stun, Root and Frozen have distinct official icons and plain control descriptions.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/skill-tree">Official mod page</a></p>
 
@@ -919,20 +919,6 @@ Only one copy of each Nameless trinket can be active. The pack retains 42 trinke
 
 <div class="core-mod-entry">
 
-#### Scalar RPG Utils
-
-- **Type:** Equipment
-- **Core mechanic:** Turns materials into components for Curios gloves, necklaces, and rings.
-- **Player guidance:** Use gathered materials for compatible Curios accessories.
-
-Its gloves, necklaces, and rings create another equipment progression path. Compare their attributes with existing jewelry.
-
-<p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/scalar-rpg-utils">Official mod page</a></p>
-
-</div>
-
-<div class="core-mod-entry">
-
 #### Tool Belt
 
 - **Type:** Equipment
@@ -1165,7 +1151,7 @@ Its item icon shows the applied pattern more clearly. This helps identify decora
 - **Core mechanic:** Adds focused enchantment effects for movement, combat, armor, shields, and arrows.
 - **Player guidance:** Read each tooltip for its trigger, level, and eligible slot.
 
-Feather Falling reduces fall damage by 6% per level, reaching 24% at IV. The Toughness enchantment and its books are removed; armor?s own toughness remains. Other removed enchantments: Protection Grace, Antidote, Traveler, Soulbound, Air Jump, Tense, Withering, Deflector, Bombard, Recycling, Ghasted, Penetrating Strike, Spiteful and Decay. Vanilla Sweeping Edge remains hidden. Flame/Frost/Spectral are mutually exclusive; Tri-Shot excludes Power. Thorns excludes Fire Protection, Blast Protection and Fangs on one piece. Boots cannot combine Frost Walker with Soul Speed. Double Hit is excluded. Sharpness excludes Smite and the Arthropod/Aerial/Illager Banes; those four can combine with each other and Ensnaring. Ensnaring excludes Sharpness. Discharge excludes Fire Aspect/Frost Aspect. Life Steal is removed.
+Feather Falling reduces fall damage by 6% per level, reaching 24% at IV. The Toughness enchantment and its books are removed; armor?s own toughness remains. Other removed enchantments: Protection Grace, Antidote, Traveler, Soulbound, Air Jump, Tense, Withering, Deflector, Bombard, Recycling, Ghasted, Penetrating Strike, Spiteful and Decay. Vanilla Sweeping Edge remains hidden. Flame/Frost/Spectral are mutually exclusive; Tri-Shot excludes Power. Thorns excludes Fire Protection and Blast Protection on one piece. Fangs is removed; saved equipment retains its other enchantments. Boots cannot combine Frost Walker with Soul Speed. Double Hit is excluded. Sharpness excludes Smite and the Arthropod/Aerial/Illager Banes; those four can combine with each other and Ensnaring. Ensnaring excludes Sharpness. Discharge excludes Fire Aspect/Frost Aspect. Life Steal is removed.
 
 <p class="core-mod-source"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-enchantments">Official mod page</a></p>
 
@@ -4107,7 +4093,6 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 - [Ribbits](#ribbits)
 - [RPG classes](#rpg-classes)
 - [Runes](#runes)
-- [Scalar RPG Utils](#scalar-rpg-utils)
 - [Seaworthy Boats](#seaworthy-boats)
 - [Serene Seasons](#serene-seasons)
 - [Shield Upgrades](#shield-upgrades)
@@ -4212,7 +4197,6 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 - [Naturally Trimmed](#naturally-trimmed)
 - [Penchant](#penchant)
 - [Relics](#relics)
-- [Scalar RPG Utils](#scalar-rpg-utils)
 - [Shield Upgrades](#shield-upgrades)
 - [SimpleHats Lite](#simplehats-lite-1)
 - [Tool Belt](#tool-belt-1)

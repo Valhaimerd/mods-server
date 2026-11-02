@@ -30,7 +30,7 @@ Better Revive now preserves retained hotbar, armor and offhand items when a down
 
 Protection, Projectile Protection, Fire Protection, Blast Protection and Magic Protection now grant 1% reduction per level per piece (4% at IV). Four IV pieces give 16% per applicable enchantment; general and matching specialized protection combine in the existing layer. The user's coexistence rules are preserved. See [the native checks](docs/patches/protection-one-percent/README.md).
 
-Armor enchantment policy hides Protection Grace, Antidote, Traveler, Soulbound and Air Jump from normal acquisition and creative/recipe lists. Thorns conflicts with Fire Protection, Blast Protection and Fangs on the same piece; Frost Walker conflicts with Soul Speed on the same boots. The same-filename Penchant repack preserves its existing progression changes. See [the policy and isolated checks](docs/patches/armor-enchantments/README.md).
+Armor enchantment policy hides Protection Grace, Antidote, Traveler, Soulbound and Air Jump from normal acquisition and creative/recipe lists. Thorns conflicts with Fire Protection and Blast Protection on the same piece; Frost Walker conflicts with Soul Speed on the same boots. The same-filename Penchant repack preserves its existing progression changes. See [the policy and isolated checks](docs/patches/armor-enchantments/README.md).
 
 Ranged enchantment policy hides Tense, Withering, Deflector, Bombard, Recycling and Ghasted. Flame/Frost/Spectral are mutually exclusive, and Tri-Shot conflicts with Power. Crossbow Multishot/Might/Acceleration/Frenzy are mutually exclusive; Piercing and Zero Drop have no pairwise conflicts. Zero Drop prevents vanilla and RPG critical hits. Gravity excludes Frenzy while allowing Multishot, Might and Acceleration. See [the ranged policy and checks](docs/patches/ranged-enchantments/README.md).
 
@@ -205,3 +205,5 @@ The [Orb of Oblivion recipe](docs/patches/orb-acquisition/README.md) now require
 [Demoralizing Shout](docs/patches/warrior-shout-area/README.md) now shows a red ground perimeter and light pulse matching its 12-block radius, or 16 with Improved Shout. Its existing combat effects are preserved.
 
 Purgatory's [24-second timing update](docs/patches/purgatory-24s/README.md) moves its stages to 8s/16s and reaches the 700%/900% explosion caps over the final eight seconds.
+
+[Reactive Wards and removals](docs/patches/ward-hit-retirement/README.md): Mage Wards activate after direct enemy damage on a 12s base cooldown. Fangs and Scalar RPG Utils are removed; saved Fangs gear keeps its other enchantments. RPG Series classes and equipment remain.

@@ -1,0 +1,30 @@
+Fangs registry removed
+Scalar absent
+RPG Series retained
+Legacy leggings survive with valid enchantments
+Legacy stored enchantments and progress decode
+NBT migration preserves book
+arcane excludes fall
+arcane excludes self
+DIAG arcane stage=POST guard=true evaluate=true
+AFTER absorption=4.0 effects=[effect.skill_tree_rpgs.arcane_ward x 3, Duration: 120, Particles: false] cd=true
+arcane native enemy hit grants four HP at12 power
+arcane six-second shield
+arcane cooldown spent
+arcane twelve-second cooldown
+fire excludes fall
+fire excludes self
+DIAG fire stage=POST guard=true evaluate=true
+AFTER absorption=4.0 effects=[effect.skill_tree_rpgs.fire_ward x 3, Duration: 120, Particles: false] cd=true
+fire native enemy hit grants four HP at12 power
+fire six-second shield
+fire cooldown spent
+fire twelve-second cooldown
+frost excludes fall
+frost excludes self
+DIAG frost stage=POST guard=true evaluate=true
+AFTER absorption=4.0 effects=[effect.skill_tree_rpgs.frost_ward x 3, Duration: 120, Particles: false] cd=true
+frost native enemy hit grants four HP at12 power
+frost six-second shield
+frost cooldown spent
+frost twelve-second cooldown

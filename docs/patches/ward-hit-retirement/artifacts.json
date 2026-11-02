@@ -1,0 +1,36 @@
+[
+  {
+    "jar": "penchant-neoforge-26.2.0-1.6-2.5x-progress.jar",
+    "before": "20a0274f92f20a3777b1a370d3df0943ce0908daea854b423bf0f6c0c3e34015",
+    "after": "257bfb34e40a77b14669c125ddec0445b595da59af04ba39a4eef6a97b247c37",
+    "changed": [
+      "data/minecraft/tags/enchantment/exclusive_set/thorns.json",
+      "archives/tater/penchant/mixin/disable/RetiredEnchantmentsMixin.class",
+      "archives/tater/penchant/mixin/disable/RetiredProgressMixin.class"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "8a5f1fc0990fb582f117b74c115a578510c31faaaed90f3629b23992f5f31035",
+    "after": "86f92cf8fdaaae36852d55d02c095295a8b9d66795af1f821efed8603d843dd3",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_passive_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "1fa10a73b3096d324182ebe6e04842289be4f346decfd5ee304c39eb51d32ef1",
+    "after": "2d8616fa3fe2af4ad0b68230d2abd8a2365ca359dce4f269c2aefe705eea3581",
+    "changed": [
+      "net/spell_engine/internals/PaladinRevamp.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/WardHitRules.class"
+    ]
+  }
+]

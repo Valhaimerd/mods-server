@@ -1,0 +1,8 @@
+{
+  "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "before": "6e27e130d657905e6a4b557cc6d11bd14b3a369a1e2f1c7f7b9f10ab1be8cb6e",
+  "after": "07f3b6b4942a66cc1a24b5e2a8a4bfd1d57b7452b5ab06725c07c30f2cf5937c",
+  "changed": [
+    "net/spell_engine/internals/ArrowAssist.class"
+  ]
+}

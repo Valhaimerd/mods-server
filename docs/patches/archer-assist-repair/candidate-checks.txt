@@ -1,0 +1,65 @@
+PASS Non-Archer class rejected e5ljj7jx6pmdjatf
+PASS Non-Archer arrow stays ballistic e5ljj7jx6pmdjatf actual=0.0 expected=0.0
+PASS Non-Archer class rejected ov6ag9tjdhsmldil
+PASS Non-Archer arrow stays ballistic ov6ag9tjdhsmldil actual=0.0 expected=0.0
+PASS Non-Archer class rejected tdimeso8ajcwiygp
+PASS Non-Archer arrow stays ballistic tdimeso8ajcwiygp actual=0.0 expected=0.0
+PASS Non-Archer class rejected qr4fdarqqqm5ifoa
+PASS Non-Archer arrow stays ballistic qr4fdarqqqm5ifoa actual=0.0 expected=0.0
+PASS Non-Archer class rejected m1pc5vz73nx4b28c
+PASS Non-Archer arrow stays ballistic m1pc5vz73nx4b28c actual=0.0 expected=0.0
+PASS Non-Archer class rejected akyr8k2dv9xsy70c
+PASS Non-Archer arrow stays ballistic akyr8k2dv9xsy70c actual=0.0 expected=0.0
+PASS Non-Archer class rejected 63gwys64onqg00ry
+PASS Non-Archer arrow stays ballistic 63gwys64onqg00ry actual=0.0 expected=0.0
+PASS No class rejected
+PASS Sole Archer accepted
+PASS Stale Archer root alongside Warrior fails closed
+PASS Requested two-degree hard turn 1.0 actual=1.9999999999999472 expected=2.0
+PASS No speed boost 1.0 actual=1.0 expected=1.0
+PASS Requested two-degree hard turn 3.0 actual=1.9999999999999472 expected=2.0
+PASS No speed boost 3.0 actual=3.0 expected=3.0
+PASS Requested two-degree hard turn 4.5 actual=1.9999999999999472 expected=2.0
+PASS No speed boost 4.5 actual=4.5 expected=4.5
+PASS Requested two-degree hard turn 9.0 actual=1.9999999999999472 expected=2.0
+PASS No speed boost 9.0 actual=9.0 expected=9.0
+PASS Archer remains sole active class before acquisition
+PASS Aimed near miss gets correction
+PASS Arrow turn never exceeds2deg
+PASS Moving target is not continuously tracked actual=0.0 expected=0.0
+PASS Nearest eligible enemy chosen at launch
+PASS No retarget when original enemy disappears actual=0.0 expected=0.0
+PASS Clearly missed aim remains miss 3.0 actual=0.0 expected=0.0
+PASS Clearly missed aim remains miss 5.0 actual=0.0 expected=0.0
+PASS Clearly missed aim remains miss -5.0 actual=0.0 expected=0.0
+PASS Enemy behind bow excluded actual=0.0 expected=0.0
+PASS Old airborne arrow cannot acquire new target actual=0.0 expected=0.0
+PASS Class change cannot retrofit an already launched arrow actual=0.0 expected=0.0
+PASS Wall blocks acquisition actual=0.0 expected=0.0
+PASS Own pet never acquired actual=0.0 expected=0.0
+PASS Party player excluded
+PASS Eligible hostile player retained
+PASS Party change respected
+PASS Party pet excluded
+PASS Actual registered native tick listener assists near miss
+PASS No repeated tracking after launch tick 1 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 2 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 3 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 4 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 5 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 6 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 7 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 8 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 9 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 10 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 11 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 12 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 13 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 14 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 15 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 16 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 17 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 18 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 19 actual=0.0 expected=0.0
+PASS No repeated tracking after launch tick 20 actual=0.0 expected=0.0
+PASS Vanish enemy never acquired actual=0.0 expected=0.0

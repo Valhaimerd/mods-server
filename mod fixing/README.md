@@ -1,5 +1,9 @@
 # Mod Fixing Workspace
 
+## Archer-only launch correction - 4 November 2026
+
+Ordinary arrows get at most one 2-degree launch correction, only for a sole Archer class allocation and a narrowly aimed near miss. No center chasing, retargeting or new targets during flight. Legacy mixed class-root saves fail closed. Existing party/pet/PvP/Vanish exclusions remain; Magic Arrows are unchanged. Exact tested same-name Spell Engine replacement installed after 65 native checks and 20 artifact/install checks. [Design, evidence and limits](../docs/patches/archer-assist-repair/README.md). Prior Priest/Ward and other repairs retained. Originals in retired packs/archer-assist-repair-2026-11-04; no handbook rebuild or Git push.
+
 ## Penance specialization buff - 4 November 2026
 
 Hysteria grants 1.5% attack speed/draw speed/spell haste per stack; Chastise increases enemy damage taken by 1.5% per stack. Both cap at ten stacks/15% and retain four-second refreshes. Exact tested Spell Engine/Skill Tree replacements installed after 41 connected checks and 19 artifact/install checks. [Patch and evidence](../docs/patches/penance-specializations/README.md). Prior Priest/Ward and other repairs retained; originals backed up under retired packs/penance-specializations-2026-11-04. No handbook rebuild or push.

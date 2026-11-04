@@ -1,5 +1,7 @@
 # Archery follow-up: Frenzy reload and slight assist
 
+> **Superseding assist repair - 4 November 2026:** [Archer-only launch correction](../archer-assist-repair/README.md) replaces the ordinary-arrow steering behavior below. Frenzy changes remain.
+
 Implemented 2 November 2026 as same-filename CrossArms and Spell Engine replacements. Client and server need matching builds and a restart. No config deletion is needed; personal installations and the separate desktop server were not modified.
 
 ## Frenzy

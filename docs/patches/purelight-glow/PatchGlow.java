@@ -1,0 +1,4 @@
+import java.nio.file.*;import org.objectweb.asm.*;import org.objectweb.asm.tree.*;
+public class PatchGlow implements Opcodes {
+ public static void main(String[] args)throws Exception{var c=new ClassNode();new ClassReader(Files.readAllBytes(Path.of(args[0]))).accept(c,0);int count=0;for(var m:c.methods)if(m.name.equals("capture"))for(var n:m.instructions.toArray())if(n.getOpcode()==RETURN){var x=new InsnList();x.add(new VarInsnNode(ALOAD,0));x.add(new VarInsnNode(ALOAD,1));x.add(new MethodInsnNode(INVOKESTATIC,"net/spell_engine/client/render/tint/PurelightVisual","capture","(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)V",false));m.instructions.insertBefore(n,x);count++;}if(count!=1)throw new AssertionError(count);var w=new ClassWriter(ClassWriter.COMPUTE_MAXS);c.accept(w);Files.write(Path.of(args[1]),w.toByteArray());}
+}

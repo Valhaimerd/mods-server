@@ -1,0 +1,2580 @@
+{
+  "paladins-neoforge-3.1.2+26.2.jar": {
+    "data/paladins/spell/heal.json": {
+      "school": "spell_power:healing",
+      "range": 24,
+      "tier": 0,
+      "group": "priest_holy",
+      "active": {
+        "cast": {
+          "duration": 1.0,
+          "animation": {
+            "id": "spell_engine:one_handed_healing_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_healing_release"
+        },
+        "sound": {
+          "id": "spell_engine:generic_healing_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {
+          "sticky": true,
+          "use_caster_as_fallback": true
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "HEAL",
+            "heal": {
+              "spell_power_coefficient": 0.5
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_heal",
+                "appearance": {
+                  "color": 3353729023,
+                  "motion": "ASCEND"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "PILLAR",
+                  "anchor": "ENTITY",
+                  "vertical_origin": 0.1,
+                  "min_speed": 0.02,
+                  "max_speed": 0.15
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_impact_1"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 4.0,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    },
+    "data/paladins/spell/holy_shock.json": {
+      "school": "spell_power:healing",
+      "range": 24,
+      "tier": 1,
+      "group": "priest_holy",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.5,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_healing_release"
+        },
+        "sound": {
+          "id": "spell_engine:generic_healing_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {
+          "sticky": true,
+          "use_caster_as_fallback": true
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "HEAL",
+            "heal": {
+              "spell_power_coefficient": 0.4
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_heal",
+                "appearance": {
+                  "color": 3353729023,
+                  "motion": "ASCEND"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "PILLAR",
+                  "anchor": "ENTITY",
+                  "vertical_origin": 0.1,
+                  "min_speed": 0.02,
+                  "max_speed": 0.15
+                }
+              },
+              {
+                "id": "spell_engine:magic_holy",
+                "appearance": {
+                  "color": 3353729023,
+                  "motion": "DECELERATE"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.25
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "paladins:holy_shock_heal"
+          }
+        },
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8,
+              "knockback": 0.5
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_holy",
+                "appearance": {
+                  "color": 3787950591,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "paladins:holy_shock_damage"
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.2,
+        "cooldown": {
+          "group": "weapon",
+          "duration": 3.0,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    }
+  },
+  "skill_tree-neoforge-1.6.1+26.2.jar": {
+    "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json": {
+      "school": "spell_power:arcane",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_IMPACT_SPECIFIC",
+            "chance": 1,
+            "chance_batching": true,
+            "spell": {
+              "school": "arcane",
+              "type": "ACTIVE"
+            },
+            "impact": {
+              "impact_type": "DAMAGE"
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "allow_on_center_target": true,
+            "damage": {
+              "spell_power_coefficient": 0.3,
+              "knockback": 0.2
+            }
+          }
+        }
+      ],
+      "area_impact": {
+        "radius": 5,
+        "area": {
+          "distance_dropoff": "SQUARED"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:magic_arcane",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 0.5,
+                "max_speed": 0.5
+              }
+            },
+            {
+              "id": "spell_engine:area_effect_642",
+              "appearance": {
+                "color": 4284940287,
+                "facing": "CAMERA"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "SPHERE",
+                "anchor": "ENTITY"
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "skill_tree_rpgs:arcane_fissile_impact"
+        }
+      },
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 6,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/arcane_tier_3_passive_1.json": {
+      "school": "spell_power:arcane",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_missile"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_explosion"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_beam"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_barrage"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_blink"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:arcane_evocation"
+            }
+          }
+        ]
+      },
+      "release": {
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:sign_cast",
+              "appearance": {
+                "color": 4284940287,
+                "scale": 0.8,
+                "attachment": "POSITION"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "LINE_VERTICAL",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.0,
+                "min_speed": 0.8,
+                "max_speed": 0.8
+              }
+            },
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "ASCEND"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.1,
+                "max_speed": 0.3,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "spell_engine:signal_instant_cast",
+          "volume": 0.75
+        }
+      },
+      "target": {
+        "type": "CASTER"
+      },
+      "deliver": {
+        "type": "DIRECT"
+      },
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 15,
+          "haste_affected": true
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:presence_of_mind",
+              "duration": 5,
+              "amplifier": 0
+            },
+            "apply_to_caster": true
+          }
+        }
+      ],
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_modifier_2.json": {
+      "school": "spell_power:arcane",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:arcane_blink"
+        }
+      ]
+    },
+    "data/skill_tree_rpgs/spell/fire_tier_1_passive_2.json": {
+      "school": "spell_power:fire",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_IMPACT_SPECIFIC",
+            "chance": 1,
+            "spell": {
+              "school": "fire"
+            },
+            "impact": {
+              "impact_type": "DAMAGE"
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "spell_engine:stun",
+              "duration": 2.0
+            }
+          },
+          "sound": {
+            "id": "spell_engine:stun_generic"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 8,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/fire_tier_3_passive_1.json": {
+      "school": "spell_power:fire",
+      "range": 5.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "DAMAGE_TAKEN",
+            "chance": 1
+          }
+        ]
+      },
+      "release": {
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:area_effect_609",
+              "appearance": {
+                "color": 4284875007,
+                "scale": 5.0,
+                "facing": "GROUND"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "NONE",
+                "anchor": "GROUND"
+              }
+            },
+            {
+              "id": "lava",
+              "appearance": {},
+              "batch": {
+                "count": 10.0,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 0.15,
+                "max_speed": 0.2
+              }
+            },
+            {
+              "id": "spell_engine:flame_spark",
+              "appearance": {},
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.2,
+                "max_speed": 0.2
+              }
+            },
+            {
+              "id": "flame",
+              "appearance": {},
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.2,
+                "max_speed": 0.2
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "wizards:fire_meteor_impact"
+        }
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.3,
+              "knockback": 0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:flame_medium_b",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.15,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "spell_engine:generic_fire_impact_2"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 8,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      },
+      "area_impact": {
+        "radius": 5,
+        "area": {
+          "distance_dropoff": "SQUARED"
+        }
+      }
+    },
+    "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json": {
+      "school": "spell_power:fire",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "DAMAGE_TAKEN",
+            "stage": "POST",
+            "target_override": "CASTER",
+            "chance": 1
+          }
+        ]
+      },
+      "release": {
+        "sound": {
+          "id": "skill_tree_rpgs:fire_ward_activate"
+        }
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "deliver": {
+        "type": "STASH_EFFECT",
+        "stash_effect": {
+          "id": "skill_tree_rpgs:fire_ward",
+          "amplifier_power_multiplier": 0.16666666666666666,
+          "duration": 6.0,
+          "triggers": [
+            {
+              "type": "DAMAGE_TAKEN",
+              "chance": 0
+            }
+          ],
+          "consume": 0
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.2,
+              "knockback": 0.2
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:flame_medium_b",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.15,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:fire_scorch_impact"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 12,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/fire_tier_3_spell_2_modifier_1.json": {
+      "school": "spell_power:fire",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:fire_storm",
+          "mutate_impacts": "APPEND",
+          "impacts": [
+            {
+              "action": {
+                "type": "STATUS_EFFECT",
+                "status_effect": {
+                  "effect_id": "minecraft:slowness",
+                  "duration": 1,
+                  "amplifier": 0
+                }
+              }
+            },
+            {
+              "action": {
+                "type": "VELOCITY",
+                "velocity": {
+                  "push": {
+                    "x": 0.0,
+                    "y": 0.1,
+                    "z": -0.9
+                  }
+                }
+              }
+            }
+          ],
+          "release": {
+            "particles": [
+              {
+                "id": "spell_engine:area_effect_678",
+                "appearance": {
+                  "color": 4284875007,
+                  "scale": 15.0
+                },
+                "batch": {
+                  "count": 1.0,
+                  "shape": "SPHERE",
+                  "anchor": "GROUND"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_1_passive_1.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_nova"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_spikes"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_shield"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_lance"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_blizzard"
+            }
+          },
+          {
+            "type": "SPELL_CAST",
+            "chance": 1,
+            "spell": {
+              "id": "wizards:frost_elemental"
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "CASTER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "apply_to_caster": true,
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:winters_chill_ready",
+              "duration": 10
+            }
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "haste_affected": true,
+          "duration": 0
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_1_passive_2.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_IMPACT_SPECIFIC",
+            "chance": 1,
+            "spell": {
+              "school": "frost",
+              "type": "ACTIVE"
+            },
+            "impact": {
+              "impact_type": "DAMAGE"
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frozen",
+              "duration": 5,
+              "amplifier": 0,
+              "apply_mode": "SET"
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "DECELERATE"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.25,
+                  "max_speed": 0.3
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:frost_nova_effect_impact"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 12,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "SPELL_IMPACT_SPECIFIC",
+            "spell": {
+              "id": "wizards:frost_nova"
+            },
+            "impact": {
+              "impact_type": "DAMAGE"
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "deliver": {
+        "delay": 7
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.2,
+              "knockback": 0.2
+            }
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "minecraft:slowness",
+              "duration": 4,
+              "amplifier": 2
+            }
+          }
+        }
+      ],
+      "area_impact": {
+        "force_indirect": true,
+        "radius": 3.0,
+        "area": {
+          "distance_dropoff": "SQUARED"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:snowflake",
+              "appearance": {},
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.4,
+                "max_speed": 0.4
+              }
+            },
+            {
+              "id": "spell_engine:area_effect_293",
+              "appearance": {
+                "color": 1724710911,
+                "scale": 2.5
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "SPHERE",
+                "anchor": "GROUND"
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "wizards:frost_nova_damage_impact"
+        }
+      },
+      "cost": {
+        "durability": 0
+      }
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_2.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:frost_nova",
+          "effect_duration_add": 1
+        }
+      ]
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_2_spell_2_modifier_1.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:frost_spikes"
+        }
+      ]
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_2_spell_2_modifier_2.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:frost_spikes"
+        }
+      ]
+    },
+    "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_1.json": {
+      "school": "spell_power:frost",
+      "range": 0.0,
+      "tier": 1,
+      "type": "MODIFIER",
+      "modifiers": [
+        {
+          "spell_pattern": "wizards:frost_lance",
+          "projectile_scale_multiply": 0.5
+        }
+      ]
+    }
+  },
+  "spell_engine-neoforge-1.10.5+26.2.jar": {},
+  "wizards-neoforge-3.1.2+26.2.jar": {
+    "data/wizards/spell/arcane_blast.json": {
+      "school": "spell_power:arcane",
+      "range": 24,
+      "tier": 1,
+      "group": "arcane_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.5,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_arcane_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "ASCEND"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        },
+        "sound": {
+          "id": "wizards:arcane_missile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {
+          "sticky": true
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8,
+              "knockback": 0.5
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_arcane",
+                "appearance": {
+                  "color": 3097880575,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              },
+              {
+                "id": "firework",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.05,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:arcane_blast_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "apply_to_caster": true,
+            "status_effect": {
+              "effect_id": "wizards:arcane_charge",
+              "amplifier": 1,
+              "amplifier_cap": 2,
+              "apply_mode": "ADD"
+            }
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:arcane_stone"
+        }
+      }
+    },
+    "data/wizards/spell/arcane_bolt.json": {
+      "school": "spell_power:arcane",
+      "range": 24,
+      "tier": 0,
+      "group": "arcane_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.0,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_arcane_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "ASCEND"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        },
+        "sound": {
+          "id": "wizards:arcane_missile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "projectile": {
+            "client_data": {
+              "light_level": 10,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:magic_spell",
+                  "appearance": {
+                    "color": 3097880575,
+                    "motion": "ASCEND"
+                  },
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "min_speed": 0.05,
+                    "max_speed": 0.1
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/arcane_bolt",
+                      "scale": 0.5
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.7,
+              "knockback": 0.6
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_arcane",
+                "appearance": {
+                  "color": 3097880575,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:arcane_missile_impact"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:arcane_stone"
+        }
+      }
+    },
+    "data/wizards/spell/arcane_evocation.json": {
+      "school": "spell_power:arcane",
+      "range": 0.0,
+      "tier": 4,
+      "group": "arcane_conjuration",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 3,
+          "type": "CHANNEL",
+          "channel": {
+            "ticks": 10
+          },
+          "animation": {
+            "id": "spell_engine:one_handed_levitate_channel"
+          },
+          "movement_speed": 0.0,
+          "start_sound": {
+            "id": "wizards:arcane_evocation_start"
+          },
+          "sound": {
+            "id": "wizards:arcane_evocation_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 6,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 0.2,
+                "max_speed": 0.3,
+                "pre_travel": 6.0,
+                "invert": true
+              }
+            },
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 6,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 0.2,
+                "max_speed": 0.3,
+                "pre_travel": 6.0,
+                "invert": true
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "sound": {
+          "id": "wizards:arcane_evocation_release"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:arcane_evocation",
+              "amplifier": 1,
+              "amplifier_cap": 9,
+              "apply_mode": "ADD",
+              "duration": 10
+            }
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 35,
+          "proportional": true
+        },
+        "item": {
+          "id": "runes:arcane_stone"
+        }
+      }
+    },
+    "data/wizards/spell/fire_blast.json": {
+      "school": "spell_power:fire",
+      "range": 64.0,
+      "tier": 1,
+      "group": "fire_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.5,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_fire_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:flame",
+              "appearance": {},
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "velocity": 1.625,
+            "sound": {
+              "id": "spell_engine:generic_fire_release"
+            }
+          },
+          "projectile": {
+            "client_data": {
+              "light_level": 12,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:flame_spark",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                },
+                {
+                  "id": "spell_engine:flame_medium_b",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                },
+                {
+                  "id": "smoke",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/fire_blast",
+                      "scale": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "homing_angle": 1.5
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "knockback": 1.1,
+              "spell_power_coefficient": 1.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "lava",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "CIRCLE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.5,
+                  "max_speed": 3.0
+                }
+              },
+              {
+                "id": "spell_engine:flame_medium_b",
+                "appearance": {},
+                "batch": {
+                  "count": 10.0,
+                  "shape": "CIRCLE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.1,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "area_impact": {
+        "radius": 2.5,
+        "area": {
+          "distance_dropoff": "SQUARED"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:fire_explosion",
+              "appearance": {},
+              "batch": {
+                "count": 2.0,
+                "shape": "NONE",
+                "anchor": "ENTITY"
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "wizards:fireball_impact"
+        }
+      },
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:fire_stone"
+        }
+      }
+    },
+    "data/wizards/spell/fireball.json": {
+      "school": "spell_power:fire",
+      "range": 64.0,
+      "tier": 0,
+      "group": "fire_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.5,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_fire_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:flame",
+              "appearance": {},
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "sound": {
+              "id": "spell_engine:generic_fire_release"
+            },
+            "velocity": 1.3
+          },
+          "projectile": {
+            "client_data": {
+              "light_level": 12,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:flame",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                },
+                {
+                  "id": "smoke",
+                  "appearance": {},
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/fireball",
+                      "scale": 0.5
+                    }
+                  }
+                ]
+              }
+            },
+            "homing_angle": 1.5
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8,
+              "knockback": 0.8
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "smoke",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.01,
+                  "max_speed": 0.1
+                }
+              },
+              {
+                "id": "spell_engine:flame_medium_b",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "CIRCLE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.1,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:fire_scorch_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "FIRE",
+            "fire": {
+              "duration": 4.0
+            }
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:fire_stone"
+        }
+      }
+    },
+    "data/wizards/spell/frost_lance.json": {
+      "school": "spell_power:frost",
+      "range": 16.0,
+      "tier": 3,
+      "group": "frost_rime",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0.75,
+          "type": "CHARGE",
+          "charge": {
+            "output_scaling": 0.6,
+            "curve": "EASE_IN_QUART",
+            "bonus": {
+              "range_add": 16.0,
+              "projectile_launch": {
+                "velocity": 0.8
+              },
+              "projectile_scale_multiply": 1.0
+            }
+          },
+          "animation": {
+            "id": "spell_engine:weapon_spearthrow_ready"
+          },
+          "sound": {
+            "id": "wizards:frost_lance_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:snowflake",
+              "appearance": {},
+              "batch": {
+                "count": 0.5,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "min_speed": 0.1,
+                "max_speed": 0.2,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:weapon_spearthrow_toss"
+        },
+        "pitch_shift": 0.75,
+        "sound": {
+          "id": "wizards:frost_lance_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "velocity": 1.6
+          },
+          "projectile": {
+            "homing_angle": 1.5,
+            "travel_sound": {
+              "id": "spell_engine:weapon_spear_travel"
+            },
+            "perks": {
+              "pierce": 999
+            },
+            "client_data": {
+              "light_level": 12,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:snowflake",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                },
+                {
+                  "id": "spell_engine:magic_frost",
+                  "appearance": {
+                    "color": 2933780479,
+                    "motion": "BURST"
+                  },
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "min_speed": 0.1,
+                    "max_speed": 0.2
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "rotate_degrees_per_tick": 10.0,
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/ice_lance",
+                      "scale": 0.5
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "knockback": 2.0,
+              "spell_power_coefficient": 2.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.3,
+                  "max_speed": 0.8
+                }
+              },
+              {
+                "id": "spell_engine:frost_shard",
+                "appearance": {
+                  "color": 3439329279
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.4
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:frost_lance_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frozen",
+              "duration": 4.0,
+              "amplifier_cap": 1,
+              "apply_mode": "ADD"
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:snowflake",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.1,
+                  "max_speed": 0.4
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 12.0
+        },
+        "item": {
+          "id": "runes:frost_stone"
+        }
+      }
+    },
+    "data/wizards/spell/frost_shard.json": {
+      "school": "spell_power:frost",
+      "range": 48.0,
+      "tier": 0,
+      "group": "frost_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.0,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_frost_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:snowflake",
+              "appearance": {},
+              "batch": {
+                "count": 0.5,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "min_speed": 0.1,
+                "max_speed": 0.2,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        },
+        "sound": {
+          "id": "spell_engine:generic_frost_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "velocity": 1.56
+          },
+          "projectile": {
+            "perks": {
+              "bounce": 2
+            },
+            "client_data": {
+              "travel_particles": [
+                {
+                  "id": "spell_engine:magic_frost",
+                  "appearance": {
+                    "color": 2933780479,
+                    "motion": "BURST"
+                  },
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "min_speed": 0.1,
+                    "max_speed": 0.2
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/frost_shard",
+                      "scale": 0.75
+                    }
+                  }
+                ]
+              }
+            },
+            "homing_angle": 1.5
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.6
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:frost_shard_impact"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:frost_stone"
+        }
+      }
+    },
+    "data/wizards/spell/frost_spikes.json": {
+      "school": "spell_power:frost",
+      "range": 24,
+      "tier": 2,
+      "group": "frost_rime",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0.2,
+          "haste_affected": true,
+          "animation": {
+            "id": "spell_engine:one_handed_area_charge"
+          }
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:weapon_one_handed_slam"
+        },
+        "sound": {
+          "id": "wizards:frost_spike_release"
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "spell_engine:targeted_frost_spike"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8,
+              "knockback": 0.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:frost_spike_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frozen",
+              "duration": 1,
+              "amplifier": 0,
+              "amplifier_cap": 0,
+              "apply_mode": "SET"
+            }
+          },
+          "sound": {
+            "id": "wizards:frost_nova_effect_impact"
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.3,
+        "cooldown": {
+          "duration": 8.0
+        },
+        "item": {
+          "id": "runes:frost_stone"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {
+          "required": true
+        }
+      }
+    },
+    "data/wizards/spell/frostbolt.json": {
+      "school": "spell_power:frost",
+      "range": 64.0,
+      "tier": 1,
+      "group": "frost_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.1,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_frost_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:snowflake",
+              "appearance": {},
+              "batch": {
+                "count": 0.5,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "min_speed": 0.1,
+                "max_speed": 0.2,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "velocity": 1.56,
+            "sound": {
+              "id": "spell_engine:generic_frost_release"
+            }
+          },
+          "projectile": {
+            "homing_angle": 1.5,
+            "perks": {
+              "ricochet": 2,
+              "bounce": 2
+            },
+            "client_data": {
+              "light_level": 12,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:snowflake",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.1
+                  }
+                },
+                {
+                  "id": "spell_engine:magic_frost",
+                  "appearance": {
+                    "color": 2933780479,
+                    "motion": "BURST"
+                  },
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "min_speed": 0.1,
+                    "max_speed": 0.2
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/frostbolt_inner",
+                      "scale": 0.5
+                    }
+                  },
+                  {
+                    "rotate_degrees_per_tick": -2.0,
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/frostbolt_outer",
+                      "scale": 0.5
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "spell_engine:generic_frost_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frost_slowness",
+              "duration": 5.0,
+              "amplifier_cap": 1,
+              "apply_mode": "ADD",
+              "apply_limit": {
+                "health_base": 100.0,
+                "spell_power_multiplier": 4.0
+              }
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:snowflake",
+                "appearance": {},
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.1,
+                  "max_speed": 0.4
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:frost_stone"
+        }
+      }
+    },
+    "data/wizards/spell/frost_shield_burst.json": {
+      "school": "spell_power:frost",
+      "range": 5.0,
+      "tier": 0,
+      "type": "PASSIVE",
+      "target": {
+        "type": "AREA",
+        "area": {}
+      },
+      "deliver": {
+        "type": "DIRECT"
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:snowflake",
+              "appearance": {},
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "ENTITY",
+                "min_speed": 0.2,
+                "max_speed": 0.6
+              }
+            },
+            {
+              "id": "spell_engine:frost_shard",
+              "appearance": {},
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "ENTITY",
+                "min_speed": 0.5,
+                "max_speed": 0.9
+              }
+            },
+            {
+              "id": "spell_engine:area_effect_293",
+              "appearance": {
+                "color": 2582052863,
+                "scale_with": "RANGE"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "NONE",
+                "anchor": "GROUND"
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "wizards:frost_nova_release"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.3,
+              "knockback": 0
+            }
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frozen",
+              "duration": 1,
+              "amplifier": 1,
+              "amplifier_cap": 9,
+              "apply_mode": "ADD"
+            }
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 0
+        }
+      }
+    },
+    "data/wizards/spell/arcane_barrage_bolt.json": {
+      "school": "spell_power:arcane",
+      "range": 48.0,
+      "tier": 0,
+      "group": "arcane_weapon",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.0,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_arcane_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 3097880575,
+                "motion": "ASCEND"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_projectile_release"
+        },
+        "sound": {
+          "id": "wizards:arcane_missile_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "projectile": {
+            "client_data": {
+              "light_level": 10,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:magic_spell",
+                  "appearance": {
+                    "color": 3097880575,
+                    "motion": "ASCEND"
+                  },
+                  "batch": {
+                    "count": 1.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "min_speed": 0.05,
+                    "max_speed": 0.1
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "wizards:spell_projectile/arcane_bolt",
+                      "scale": 0.5
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "launch_properties": {
+            "velocity": 0.8
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.4,
+              "knockback": 0.6
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_arcane",
+                "appearance": {
+                  "color": 3097880575,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:arcane_missile_impact"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "group": "weapon"
+        },
+        "item": {
+          "id": "runes:arcane_stone"
+        }
+      }
+    },
+    "data/wizards/spell/frost_fan_burst.json": {
+      "school": "spell_power:frost",
+      "range": 3,
+      "tier": 0,
+      "group": "",
+      "release": {
+        "animation": {
+          "id": "spell_engine:weapon_one_handed_slam"
+        },
+        "sound": {
+          "id": "wizards:frost_spike_release"
+        }
+      },
+      "deliver": {
+        "type": "DIRECT"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.2,
+              "knockback": 0.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_frost",
+                "appearance": {
+                  "color": 2933780479,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.7
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "wizards:frost_spike_impact"
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "wizards:frozen",
+              "duration": 0.5,
+              "amplifier": 0,
+              "amplifier_cap": 0,
+              "apply_mode": "SET"
+            }
+          },
+          "sound": {
+            "id": "wizards:frost_nova_effect_impact"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 0
+        },
+        "durability": 0,
+        "exhaust": 0
+      },
+      "target": {
+        "type": "AREA",
+        "area": {
+          "distance_dropoff": "NONE"
+        }
+      },
+      "type": "PASSIVE",
+      "area_impact": {
+        "radius": 3,
+        "area": {
+          "distance_dropoff": "NONE"
+        }
+      }
+    }
+  }
+}

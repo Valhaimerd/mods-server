@@ -11,7 +11,8 @@
     "reforger",
     "speed_force",
     "super_magnet",
-    "what_magnet"
+    "what_magnet",
+    "fractured_nullstone"
   ],
   "overrides": {
     "AmphibiousHands": {
@@ -23,9 +24,6 @@
     },
     "ExperienceBattery": {
       "extraExperiencePercentage": 50.0
-    },
-    "FracturedNullstone": {
-      "magicDamageReductionPercentage": 15.0
     },
     "GhastEye": {
       "extraHearts": 4.0,

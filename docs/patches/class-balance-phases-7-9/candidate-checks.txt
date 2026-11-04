@@ -1,0 +1,96 @@
+PASS Circle native heal60% P actual=25.0 expected=25.0
+PASS Improved Circle native heal75% P actual=31.0 expected=31.0
+PASS Fade runtime concealment2s actual=40.0 expected=40.0
+PASS Fade runtime vanilla invisibility2s actual=40.0 expected=40.0
+PASS Divine Favor actual attacker stun3s actual=60.0 expected=60.0
+PASS Ascension fixed native length under haste50.0 actual=40.0 expected=40.0
+PASS Ascension pulse not early1 haste50.0
+PASS Ascension pulse due1 haste50.0
+PASS Ascension pulse not early2 haste50.0
+PASS Ascension pulse due2 haste50.0
+PASS Ascension pulse not early3 haste50.0
+PASS Ascension pulse due3 haste50.0
+PASS Ascension pulse not early4 haste50.0
+PASS Ascension pulse due4 haste50.0
+PASS Ascension fixed native length under haste100.0 actual=40.0 expected=40.0
+PASS Ascension pulse not early1 haste100.0
+PASS Ascension pulse due1 haste100.0
+PASS Ascension pulse not early2 haste100.0
+PASS Ascension pulse due2 haste100.0
+PASS Ascension pulse not early3 haste100.0
+PASS Ascension pulse due3 haste100.0
+PASS Ascension pulse not early4 haste100.0
+PASS Ascension pulse due4 haste100.0
+PASS Ascension fixed native length under haste200.0 actual=40.0 expected=40.0
+PASS Ascension pulse not early1 haste200.0
+PASS Ascension pulse due1 haste200.0
+PASS Ascension pulse not early2 haste200.0
+PASS Ascension pulse due2 haste200.0
+PASS Ascension pulse not early3 haste200.0
+PASS Ascension pulse due3 haste200.0
+PASS Ascension pulse not early4 haste200.0
+PASS Ascension pulse due4 haste200.0
+PASS Eight-block ally receives offense and Serenity independently of Uplift
+PASS Far ally does not receive Uplift defense
+PASS Ascension offensive four24% self stacks actual=1.239999994635582 expected=1.24
+PASS Ascension defense refresh6s actual=120.0 expected=120.0
+PASS Serenity20 absorption P40 four stacks actual=20.0 expected=20.0
+PASS Serenity refresh cannot refill actual=2.0 expected=2.0
+PASS Ascension halves actual magic exactly once actual=5.0 expected=5.0
+PASS Ascension halves actual melee exactly once actual=5.0 expected=5.0
+PASS Uplift near ally receives lifted defense
+PASS Uplift retains three-block lift radius
+PASS Removing levitation cleans defensive lease
+PASS Guardian base5% armor actual=21.0 expected=21.0
+PASS Guardian five stacks15% total actual=23.0 expected=23.0
+PASS Guardian shield20% total actual=24.0 expected=24.0
+PASS Vanguard15% after successful stun actual=0.0 expected=0.0
+PASS Vanguard actual15% physical reduction actual=8.5 expected=8.5
+PASS Vanguard shield25% status actual=1.0 expected=1.0
+PASS Dome roof blocks vertical escape
+PASS Dome underside blocks vertical escape
+PASS Dome side blocks escape
+PASS Deflection opens physical five-tick window
+PASS Deflection first charge only actual=1.0 expected=1.0
+PASS Burst hit blocked without extra charge0
+PASS Burst hit blocked without extra charge1
+PASS Burst hit blocked without extra charge2
+PASS Burst hit blocked without extra charge3
+PASS Burst hit blocked without extra charge4
+PASS Burst hit blocked without extra charge5
+PASS Burst hit blocked without extra charge6
+PASS Burst hit blocked without extra charge7
+PASS Burst hit blocked without extra charge8
+PASS Burst hit blocked without extra charge9
+PASS Burst hit blocked without extra charge10
+PASS Burst hit blocked without extra charge11
+PASS Burst preserves second and third charge actual=1.0 expected=1.0
+PASS Window grants finite speed buff
+PASS Window excludes burning
+PASS Roll arms Onslaught5s
+PASS Direct hit consumes readiness once
+PASS Onslaught ranged damage15% actual=11.500000059604645 expected=11.5
+PASS Legal third Roots cloud retires oldest only
+PASS Native fatal hit invokes Purelight after totem path
+PASS Purelight full maxHP rescue actual=100.0 expected=100.0
+PASS Purelight health cost bypasses absorption actual=99.0 expected=99.0
+PASS Purelight leaves absorption unchanged actual=12.0 expected=12.0
+PASS Dispel/respec cannot cleanse active cost
+PASS Active cost cannot rescue recursively
+PASS Native player save/load preserves Purelight active state
+PASS Divine Protection creates three scaled charges
+PASS Protection opens shared qualifying window
+PASS Protection consumes one charge actual=2.0 expected=2.0
+PASS Overlap reuses existing Protection window
+PASS Overlap does not spend Deflection actual=2.0 expected=2.0
+PASS Protection excludes attributed periodic type
+PASS Periodic damage cannot consume Onslaught
+PASS Onslaught active before respec
+PASS Respec clears Onslaught active modifier
+PASS Native Deflection blocks magic actual=100.0 expected=100.0
+PASS Native magic consumes exactly one charge actual=1.0 expected=1.0
+PASS Tick4 burst does not consume again actual=1.0 expected=1.0
+PASS Tick5 opens next window actual=0.0 expected=0.0
+PASS Tick10 spends final charge
+PASS Final charge protects through tick14 actual=100.0 expected=100.0
+PASS Tick15 final window expires

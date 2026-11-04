@@ -106,13 +106,6 @@
   },
   {
     "mod": "nameless_trinkets",
-    "id": "fractured_nullstone",
-    "name": "Fractured Nullstone",
-    "changed": true,
-    "details": "Reduces recognized magic damage by 15%, leaving 85% before other defenses."
-  },
-  {
-    "mod": "nameless_trinkets",
     "id": "fragile_cloud",
     "name": "Fragile Cloud",
     "changed": false,

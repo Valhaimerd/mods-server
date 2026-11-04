@@ -1,0 +1,10 @@
+[
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "sha256": "8bec2314897a9c2de89734f490a288c22ac2248ca76f898a279a5cdbda01e055"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "sha256": "3750cf9b67781aa694f117ef2a775cf62d93ae86ea4bc48c8b841db15b9a20d0"
+  }
+]

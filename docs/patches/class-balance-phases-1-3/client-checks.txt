@@ -1,0 +1,13 @@
+PASS Native Adventurer tree opened on connected client
+PASS Fitness allocation and attributes synchronized
+PASS Server selected Bulwark mastery
+PASS Server Bulwark armor=4.0
+PASS Defense stats synchronized actual=7.0 hp=102.0
+PASS Equipped Multi Roll III grants exactly two extra rolls
+PASS Base Vanish persists while sprinting and synchronizes
+PASS Base Vanish permits sprinting on server
+PASS Native roll event does not end base Vanish
+PASS Base Vanish remains visible to client after roll event
+PASS Actual Shadowstep teleports to its enemy
+PASS Actual Shadowstep roots selected enemy
+PASS Shadowstep root lasts one second

@@ -1,0 +1,50 @@
+[
+  {
+    "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+    "sha256": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca"
+  },
+  {
+    "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+    "sha256": "24ca0af4e1921be7c5f6d8e9906e3c7da42bc7e62a31dcbb3bbe54f165ba04c6"
+  },
+  {
+    "jar": "spell_power-neoforge-1.6.1+26.2.jar",
+    "sha256": "6033fa98d18f1424db890845a3431da0b68b43de1e8b27962b0fad0051cc2f72"
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "sha256": "167f6513d62dec750978f9501d52e65810d1fc814d8750eb730fb3fae1286850"
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "sha256": "142f2a8efb7149f679f17e62c7cc89e4b1b4951ebf19699c53bd6c281c6a3f5d"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "sha256": "068c782def9d751c6966d0f3034c8b11e488765b0a8745e176ac4b2a4382ca8e"
+  },
+  {
+    "jar": "rogues-neoforge-3.1.2+26.2.jar",
+    "sha256": "1c22161837cd347730e70546120fb40f85224f1dbb3cd4b56aae94dcfe804d7b"
+  },
+  {
+    "jar": "combat_roll-neoforge-3.0.1+26.2.jar",
+    "sha256": "1d855c5e72bf4a64b82bba990be84a8ef268a08a0e5f822585e70cae73b0765d"
+  },
+  {
+    "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
+    "sha256": "99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "sha256": "0a6f28257e9b5e5b2eb253ae9659033dfe2e036b124bb01e21322e0bf3967fa8"
+  },
+  {
+    "jar": "puffish_attributes-0.8.2-26.1-neoforge.jar",
+    "sha256": "510b3d0070cbd1424e5145be8f6229ce24b1d514b105a47ee95ec77998b251a3"
+  },
+  {
+    "jar": "puffish_skills-0.19.0-26.2-neoforge.jar",
+    "sha256": "084e0ee8dab8049b8e53a5ab178c0a6b109f01e05b3ee96fc3af81053045a464"
+  }
+]

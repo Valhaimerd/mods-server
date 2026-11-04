@@ -1,0 +1,21 @@
+{
+  "passed": [],
+  "failed": [
+    "Evocation three seconds",
+    "Emitter bolts 0.8x",
+    "Targeted spike replaces old rows",
+    "Lance charge .75s",
+    "arcane_bolt range24",
+    "arcane_blast range24",
+    "heal range24",
+    "holy_shock range24",
+    "fireball speed",
+    "fire_blast speed",
+    "frostbolt speed",
+    "frost_shard speed",
+    "Fissile cooldown6",
+    "Presence cooldown15",
+    "Near Zero five seconds",
+    "Colossal crit removed"
+  ]
+}

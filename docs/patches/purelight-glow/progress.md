@@ -1,0 +1,7 @@
+# Purelight cooldown and glow
+Status: installed and verified, 4 November 2026.
+Input: installed phases7-9, pinned baseline.json. Engine/SkillTree only; existing IDs and filenames retained.
+Scope:80s base cooldown, healing-school haste; starts on actual rescue. Active state remains irreversible through ordinary dispel/respec; no reentry while draining. Cooldown persists through native save/load and death/player recreation. Earlier lifesavers/totems remain first.
+Visual: synchronized purelight_cost drives100%-opaque full-bright gold-white body and armor plus animated gold glint. Reuses existing per-entity render-state capture; no global renderer color leak. Native lighting shader defines are reused; depth-writing solid pass avoids overlapping body/armor surfaces fighting. No new dependencies or native Glowing outline.
+Tests:14 native server checks passed, including80s/40s haste, earlier lifesaver bypass, native cooldown sync, clone/save persistence, gate expiry, retained health drain and visual-state cleanup. 5 connected-client checks passed for synchronized body/armor rendering and cleanup. Final night screenshot reviewed: bright, opaque gold-white silhouette without stale glow. 34 artifact/install checks passed against exact tested hashes in both mods/ and fixed packs. Original copies backed up under retired packs/purelight-glow-2026-11-04. An isolated render-pipeline identifier initialization failure was corrected before this final candidate; it was never installed.
+No handbook/PDF rebuild, personal/live-server edits, commit or push.

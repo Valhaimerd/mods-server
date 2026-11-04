@@ -1,0 +1,17 @@
+PASS Uses actual large-Hydra summon and existing scale
+PASS Native large-Hydra behavior also records20-block detection
+PASS Detects and targets enemy beyond shooting range inside20
+PASS Pursuit remains one block per second
+PASS Does not channel or show fire outside shooting range
+PASS Outside-range pursuit deals no breath damage
+PASS Detection includes20-block boundary
+PASS Does not acquire beyond20 blocks
+PASS Shootable enemy prioritized over closer out-of-fire-volume enemy
+PASS Chooses closest of multiple enemies in firing range
+PASS Stops walking while target is in firing range
+PASS Native breath actually damages an in-range enemy
+PASS Existing breath cone still hits eligible in-range bystanders
+PASS Enemy leaving fire range becomes pursuit target and stops breath
+PASS Blocked line of sight prevents acquisition
+PASS Ordinary Hydras keep twelve-block search and remain stationary
+PASS Ordinary Hydra native action path unchanged

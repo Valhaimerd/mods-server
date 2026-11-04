@@ -1,0 +1,14 @@
+PASS 80s base haste-aware passive metadata
+PASS Earlier lifesaver does not start cooldown or Purelight
+PASS Fatal rescue starts while ready
+PASS Full heal remains
+PASS Authoritative cooldown80s
+PASS Native UI cooldown80s
+PASS Downing/ending does not bypass cooldown
+PASS Cooldown survives recreation/death clone
+PASS Recreated native cooldown preserved
+PASS Cooldown survives native player save/load
+PASS Expired cooldown allows new rescue
+PASS 200% haste gives40s
+PASS Existing absorption-bypassing drain retained
+PASS End clears synchronized visual driver

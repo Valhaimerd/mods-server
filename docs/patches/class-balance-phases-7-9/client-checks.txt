@@ -1,0 +1,26 @@
+PASS Client receives fixed Ascension timing
+PASS Real equipped Serenity node recognized
+PASS Ascension defensive effect synchronized
+PASS Client sees four offensive stacks
+PASS Client sees actual Serenity20HP amount=20.0 effects=[effect.skill_tree_rpgs.ascension_power x 4, Duration: 136, effect.paladins.levitate, Duration: 136, Particles: false, effect.skill_tree_rpgs.priest_serenity_shield x 20, Duration: 136, effect.skill_tree_rpgs.ascension_guard, Duration: 96]
+PASS Opening armor status synchronized
+PASS Actual enemy movement blocked by dome roof
+PASS Actual enemy movement blocked by dome underside
+PASS Caster remains exempt from own dome
+PASS Hostile teleport event denied across dome
+PASS Early channel still accepts stun
+PASS Early stun releases containment
+PASS Late-stage channel retains stun immunity
+PASS Early channel release clears opening armor
+PASS Client dome removed on early release
+PASS Totem has priority over Purelight
+PASS Native client-player lethal hit rescued before knockdown
+PASS Purelight state icon synchronized
+PASS Real tick drain reduces health and bypasses absorption
+PASS Respec retains irreversible active drain
+PASS Dispelled cost indicator restored while drain remains
+PASS Onslaught readiness synchronized
+PASS One direct hit converts client readiness to active buff
+PASS Actual PlayerRevive API enters knocked-down state
+PASS Actual PlayerRevive downing stops drain
+PASS Better Revive actual downed API stops cost

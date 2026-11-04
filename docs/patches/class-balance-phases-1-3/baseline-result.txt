@@ -1,0 +1,1 @@
+FAIL java.lang.AssertionError: RPG magic no longer bypasses native armor

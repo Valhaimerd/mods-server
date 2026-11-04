@@ -1,0 +1,22 @@
+{
+  "passed": [
+    "lightwell cooldown",
+    "barrier cooldown",
+    "divine_protection cooldown",
+    "judgement cooldown",
+    "immolation cooldown",
+    "Circle60%",
+    "Ascension fixed timing",
+    "Fade2s",
+    "Guardian five stacks",
+    "archer_tier_1_passive_1 cooldown",
+    "archer_tier_3_passive_2 cooldown",
+    "archer_tier_2_passive_2 cooldown",
+    "Roots8s",
+    "Roots4.5s",
+    "Roots uses existing roll-lock effect",
+    "Magic Arrow1.95",
+    "Barrage70% normal weapon shot"
+  ],
+  "failed": []
+}

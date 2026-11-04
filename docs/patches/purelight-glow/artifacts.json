@@ -1,0 +1,28 @@
+[
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "3750cf9b67781aa694f117ef2a775cf62d93ae86ea4bc48c8b841db15b9a20d0",
+    "after": "a55ab9427a0387f849c0e974e447f3b154880f0774884e082304cefd2f8396ac",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_3_passive_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "8bec2314897a9c2de89734f490a288c22ac2248ca76f898a279a5cdbda01e055",
+    "after": "7f8c7048742845723d9647e3e8ddf7109fcf27cb4a195e35a2fda60801d7c6cd",
+    "changed": [
+      "spell_engine.mixins.json",
+      "net/spell_engine/client/render/tint/LastStandGlint.class",
+      "net/spell_engine/internals/FinalPurelight.class"
+    ],
+    "added": [
+      "assets/spell_engine/textures/misc/purelight_gold.png",
+      "assets/spell_engine/textures/misc/purelight_white.png",
+      "net/spell_engine/client/render/tint/PurelightVisual.class",
+      "net/spell_engine/mixin/client/render/purelight/PurelightRenderMixin.class"
+    ]
+  }
+]

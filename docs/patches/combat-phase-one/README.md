@@ -1,5 +1,7 @@
 # Combat rework — phase one
 
+> Affected current values are superseded by [the combined phases 1-3 update](../class-balance-phases-1-3/README.md). This document retains its historical implementation and test evidence.
+
 2 November 2026. **Implemented and installed in repository `mods/` and ignored fixed packs.** Same-filename overlays for Wizards, Skill Tree, Spell Engine, Paladins, Rogues & Warriors, CrossArms and Adventurer Skills. Phase two is deliberately excluded. Exact installed hashes are in [the completion record](completion.json).
 
 ## Gameplay

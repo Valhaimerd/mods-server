@@ -1,0 +1,108 @@
+{
+  "status": "phases-1-9-installed",
+  "magistrate_magic_resistance": 0.15,
+  "spec": "docs/superpowers/specs/2026-11-04-class-balance-and-behavior-follow-up-spec.md",
+  "original_plan_preserved": true,
+  "phases": [
+    {
+      "phase": 1,
+      "file": "2026-11-04-class-balance-phase-01-shared-combat.md",
+      "depends_on": "None",
+      "spec_sections": [
+        "Shared Resistance coverage and mage coefficient restoration - 4 November 2026",
+        "Verified current armor and Resistance behavior",
+        "Explicit shield and Priest protection coverage",
+        "Magistrate",
+        "Remove Fractured Nullstone"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 2,
+      "file": "2026-11-04-class-balance-phase-02-adventurer-and-rolls.md",
+      "depends_on": "01",
+      "spec_sections": [
+        "Adventurer Utilities layout, wording and Fitness - 4 November 2026",
+        "Approved Adventurer Defense redesign, Magistrate and Nullstone - 4 November 2026",
+        "Multi Roll enchantment"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 3,
+      "file": "2026-11-04-class-balance-phase-03-rogue-and-warrior.md",
+      "depends_on": "01, 02",
+      "spec_sections": [
+        "Rogue requested changes",
+        "Preserved behavior and exact interpretations",
+        "Details to settle before dependent implementation",
+        "Warrior changes",
+        "Timing, healing and cleanup",
+        "Shared traps and Warrior projectiles"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 4,
+      "file": "2026-11-04-class-balance-phase-04-arcane.md",
+      "depends_on": "01, 03",
+      "spec_sections": [
+        "Arcane Mage follow-up - 4 November 2026",
+        "Arcane Emitter and Priest follow-up - 4 November 2026"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 5,
+      "file": "2026-11-04-class-balance-phase-05-fire-and-weapon-spells.md",
+      "depends_on": "01, 04",
+      "spec_sections": [
+        "Fire Mage: large Ancient Hydra movement",
+        "Basic weapon spells and Fire Mage adjustments - 4 November 2026",
+        "Shared traps and Warrior projectiles"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 6,
+      "file": "2026-11-04-class-balance-phase-06-frost.md",
+      "depends_on": "01, 05",
+      "spec_sections": [
+        "Frost Mage, trap and Warrior additions - 4 November 2026",
+        "Precedence with this plan's new Frost rework"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 7,
+      "file": "2026-11-04-class-balance-phase-07-priest.md",
+      "depends_on": "01, 06",
+      "spec_sections": [
+        "Arcane Emitter and Priest follow-up - 4 November 2026",
+        "Ascension final revision",
+        "Explicit shield and Priest protection coverage"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 8,
+      "file": "2026-11-04-class-balance-phase-08-paladin.md",
+      "depends_on": "01, 03, 07",
+      "spec_sections": [
+        "Paladin and shared defense additions - 3 November 2026",
+        "Shared attack-block windows: Divine Protection and Archer Deflection"
+      ],
+      "status": "installed"
+    },
+    {
+      "phase": 9,
+      "file": "2026-11-04-class-balance-phase-09-archer-and-final-integration.md",
+      "depends_on": "01-08",
+      "spec_sections": [
+        "Archer rework and Ascension revision - 4 November 2026",
+        "Shared attack-block windows: Divine Protection and Archer Deflection"
+      ],
+      "status": "installed"
+    }
+  ]
+}

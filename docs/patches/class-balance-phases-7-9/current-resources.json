@@ -1,0 +1,1393 @@
+{
+  "archers-neoforge-3.1.2+26.2.jar": {
+    "data/archers/spell/barrage.json": {
+      "school": "spell_power:physical_ranged",
+      "range": 0.0,
+      "tier": 3,
+      "group": "archer_marksman",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0.1,
+          "animation": {
+            "id": "spell_engine:archery_pull"
+          },
+          "animates_ranged_weapon": true,
+          "sound": {
+            "id": "archers:bow_pull"
+          },
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:archery_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {}
+      },
+      "deliver": {
+        "type": "SHOOT_ARROW",
+        "shoot_arrow": {
+          "launch_properties": {
+            "velocity": 3.15,
+            "extra_launch_count": 2,
+            "extra_launch_delay": 3
+          },
+          "divergence": 0
+        }
+      },
+      "arrow_perks": {
+        "damage_multiplier": 0.7,
+        "bypass_iframes": true,
+        "knockback": 0.5
+      },
+      "cost": {
+        "cooldown": {
+          "duration": 8,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "arrow",
+          "consume": false
+        }
+      }
+    },
+    "data/archers/spell/entangling_roots.json": {
+      "school": "spell_power:physical_melee",
+      "secondary_archetype": "ANY",
+      "range": 0.0,
+      "tier": 2,
+      "group": "archer_nature",
+      "learn": {},
+      "active": {
+        "cast": {
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        }
+      },
+      "deliver": {
+        "type": "CLOUD",
+        "clouds": [
+          {
+            "volume": {
+              "radius": 6,
+              "area": {
+                "vertical_range_multiplier": 0.3
+              },
+              "sound": {
+                "id": "archers:entangling_roots"
+              }
+            },
+            "time_to_live_seconds": 4.5,
+            "impact_tick_interval": 15,
+            "client_data": {
+              "particles": [
+                {
+                  "id": "spell_engine:roots",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2.0,
+                    "shape": "PILLAR",
+                    "anchor": "ENTITY",
+                    "vertical_origin": 0.1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "archers:entangling_roots",
+              "duration": 1.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "falling_spore_blossom",
+                "appearance": {},
+                "batch": {
+                  "count": 2.0,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.1,
+                  "max_speed": 0.2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:challenged",
+              "duration": 1
+            }
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.2,
+        "cooldown": {
+          "duration": 8,
+          "haste_affected": true
+        }
+      }
+    },
+    "data/archers/spell/magic_arrow.json": {
+      "school": "spell_power:physical_ranged",
+      "range": 32,
+      "tier": 4,
+      "group": "archer_nature",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1.0,
+          "type": "CHARGE",
+          "charge": {
+            "output_scaling": 1
+          },
+          "animation": {
+            "id": "spell_engine:archery_pull"
+          },
+          "animates_ranged_weapon": true,
+          "sound": {
+            "id": "spell_engine:generic_wind_charging"
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3753468415,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 4.0,
+                "shape": "SPHERE",
+                "anchor": "LAUNCH_POINT",
+                "min_speed": 0.02,
+                "max_speed": 0.1,
+                "pre_travel": 14.0,
+                "invert": true
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:archery_release"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3753468415,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "LAUNCH_POINT",
+                "alignment": "LOOK",
+                "min_speed": 0.18,
+                "max_speed": 0.2
+              }
+            },
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 3753468415,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "CIRCLE",
+                "anchor": "LAUNCH_POINT",
+                "alignment": "LOOK",
+                "min_speed": 0.28,
+                "max_speed": 0.3
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "archers:magic_arrow_release"
+        }
+      },
+      "target": {
+        "type": "NONE"
+      },
+      "deliver": {
+        "type": "PROJECTILE",
+        "projectile": {
+          "launch_properties": {
+            "velocity": 1.95,
+            "extra_launch_count": 3,
+            "extra_launch_delay": 5
+          },
+          "projectile": {
+            "homing_angle": 5,
+            "perks": {
+              "pierce": 99999
+            },
+            "client_data": {
+              "light_level": 10,
+              "travel_particles": [
+                {
+                  "id": "spell_engine:magic_spark",
+                  "appearance": {
+                    "color": 3753468415,
+                    "motion": "DECELERATE"
+                  },
+                  "batch": {
+                    "count": 2,
+                    "shape": "LINE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "roll_per_tick": 18.0,
+                    "min_speed": 0.14,
+                    "max_speed": 0.15
+                  }
+                },
+                {
+                  "id": "spell_engine:magic_spark",
+                  "appearance": {
+                    "color": 3753468415,
+                    "motion": "DECELERATE"
+                  },
+                  "batch": {
+                    "count": 2,
+                    "shape": "LINE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "roll_per_tick": 18.0,
+                    "roll_offset": 180.0,
+                    "min_speed": 0.14,
+                    "max_speed": 0.15
+                  }
+                },
+                {
+                  "id": "firework",
+                  "appearance": {},
+                  "batch": {
+                    "count": 2.0,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.05
+                  }
+                },
+                {
+                  "id": "spell_engine:magic_spark",
+                  "appearance": {
+                    "color": 3753468415,
+                    "motion": "DECELERATE"
+                  },
+                  "batch": {
+                    "count": 2,
+                    "shape": "CIRCLE",
+                    "anchor": "ENTITY",
+                    "alignment": "LOOK",
+                    "max_speed": 0.05
+                  }
+                }
+              ],
+              "composite_model": {
+                "models": [
+                  {
+                    "fx": {
+                      "model_id": "archers:spell_projectile/magic_arrow",
+                      "light_emission": "RADIATE",
+                      "scale": 1.2
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "DAMAGE",
+            "damage": {
+              "spell_power_coefficient": 0.8,
+              "knockback": 2.0
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_spark",
+                "appearance": {
+                  "color": 3753468415,
+                  "motion": "BURST"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 1.2,
+                  "max_speed": 1.8
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "archers:magic_arrow_impact"
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 25,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "arrow"
+        }
+      }
+    }
+  },
+  "paladins-neoforge-3.1.2+26.2.jar": {
+    "data/paladins/spell/barrier.json": {
+      "school": "spell_power:healing",
+      "range": 10,
+      "tier": 4,
+      "group": "priest_discipline",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 1,
+          "animation": {
+            "id": "spell_engine:one_handed_area_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 1.0,
+                "max_speed": 1.0
+              }
+            },
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "SPHERE",
+                "anchor": "ENTITY",
+                "min_speed": 1.0,
+                "max_speed": 1.0
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "paladins:holy_barrier_activate"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "SPAWN",
+            "spawns": [
+              {
+                "entity_type_id": "paladins:barrier",
+                "time_to_live_seconds": 10
+              }
+            ]
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.4,
+        "cooldown": {
+          "duration": 40,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    },
+    "data/paladins/spell/circle_of_healing.json": {
+      "school": "spell_power:healing",
+      "range": 8.0,
+      "tier": 3,
+      "group": "priest_holy",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0.5,
+          "animation": {
+            "id": "spell_engine:one_handed_area_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        },
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "PILLAR",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.3,
+                "max_speed": 0.5,
+                "extent": 7.5
+              }
+            },
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "DECELERATE"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "PILLAR",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.1,
+                "max_speed": 0.5,
+                "extent": 7.5
+              }
+            },
+            {
+              "id": "spell_engine:magic_holy",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.1,
+                "max_speed": 0.2,
+                "extent": 8.0
+              }
+            },
+            {
+              "id": "spell_engine:area_effect_637",
+              "appearance": {
+                "color": 4294954111,
+                "scale_with": "RANGE",
+                "facing": "GROUND"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "NONE",
+                "anchor": "GROUND"
+              }
+            }
+          ]
+        },
+        "sound": {
+          "id": "spell_engine:generic_healing_release"
+        }
+      },
+      "target": {
+        "type": "AREA",
+        "area": {
+          "vertical_range_multiplier": 0.6,
+          "include_caster": true
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "HEAL",
+            "heal": {
+              "spell_power_coefficient": 0.6
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_heal",
+                "appearance": {
+                  "color": 3353729023,
+                  "motion": "ASCEND"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "PILLAR",
+                  "anchor": "ENTITY",
+                  "vertical_origin": 0.1,
+                  "min_speed": 0.02,
+                  "max_speed": 0.15
+                }
+              },
+              {
+                "id": "spell_engine:magic_holy",
+                "appearance": {
+                  "color": 3353729023,
+                  "motion": "DECELERATE"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.2,
+                  "max_speed": 0.25
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_impact_2"
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.3,
+        "cooldown": {
+          "duration": 16,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    },
+    "data/paladins/spell/divine_protection.json": {
+      "school": "spell_power:healing",
+      "range": 8,
+      "tier": 3,
+      "group": "paladin_protection",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        }
+      },
+      "impacts": [],
+      "cost": {
+        "exhaust": 0.3,
+        "cooldown": {
+          "duration": 20,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "paladin_pack:protection"
+        }
+      }
+    },
+    "data/paladins/spell/immolation.json": {
+      "school": "spell_power:healing",
+      "range": 6,
+      "tier": 4,
+      "group": "paladin_retribution",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 24,
+          "type": "CHANNEL",
+          "channel": {
+            "ticks": 48,
+            "release_fx": false
+          },
+          "movement_speed": 0,
+          "haste_affected": false,
+          "animation": {
+            "id": "spell_engine:one_handed_ground_charge"
+          },
+          "start_sound": {
+            "id": "rogues:last_stand_start"
+          },
+          "particles": []
+        }
+      },
+      "target": {
+        "type": "CASTER"
+      },
+      "impacts": [],
+      "cost": {
+        "exhaust": 0.3,
+        "cooldown": {
+          "duration": 16,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "paladin_pack:purgatory"
+        }
+      }
+    },
+    "data/paladins/spell/judgement.json": {
+      "school": "spell_power:healing",
+      "range": 15,
+      "tier": 3,
+      "group": "paladin_retribution",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 0.25,
+          "animation": {
+            "id": "spell_engine:one_handed_projectile_charge"
+          },
+          "sound": {
+            "id": "spell_engine:generic_healing_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4294954239,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.05,
+                "max_speed": 0.1,
+                "width_factor": 2.0
+              }
+            }
+          ],
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        },
+        "sound": {
+          "id": "spell_engine:generic_healing_release"
+        }
+      },
+      "target": {
+        "type": "AIM",
+        "aim": {
+          "required": false,
+          "sticky": true,
+          "use_caster_as_fallback": true
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "paladin_pack:oath_launch"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "HEAL",
+            "heal": {
+              "spell_power_coefficient": 0
+            }
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 18,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    },
+    "data/paladins/spell/levitate.json": {
+      "school": "spell_power:healing",
+      "range": 0.0,
+      "tier": 3,
+      "group": "priest_discipline",
+      "learn": {},
+      "active": {
+        "cast": {
+          "duration": 2,
+          "type": "CHANNEL",
+          "channel": {
+            "ticks": 4
+          },
+          "animation": {
+            "id": "spell_engine:one_handed_levitate_channel"
+          },
+          "movement_speed": 0.0,
+          "start_sound": {
+            "id": "paladins:holy_ward_impact"
+          },
+          "sound": {
+            "id": "spell_engine:generic_wind_casting",
+            "randomness": 0.0
+          },
+          "particles": [
+            {
+              "id": "spell_engine:magic_spark",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 4.0,
+                "shape": "PILLAR",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.02,
+                "max_speed": 0.12,
+                "extent": 0.5
+              }
+            },
+            {
+              "id": "spell_engine:magic_spell",
+              "appearance": {
+                "color": 4058632191,
+                "motion": "FLOAT"
+              },
+              "batch": {
+                "count": 2.0,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.02,
+                "max_speed": 0.1,
+                "extent": 0.5
+              }
+            }
+          ],
+          "haste_affected": false
+        }
+      },
+      "release": {
+        "sound": {
+          "id": "spell_engine:generic_wind_gust"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "VELOCITY",
+            "velocity": {
+              "frame": "LOOK",
+              "push": {
+                "x": 0.0,
+                "y": 0.15,
+                "z": 0.0
+              },
+              "reset_velocity": true,
+              "intent": "HELPFUL"
+            }
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "paladins:levitate",
+              "duration": 6
+            }
+          }
+        }
+      ],
+      "cost": {
+        "cooldown": {
+          "duration": 16,
+          "proportional": false,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "priest_pack:ascension"
+        }
+      }
+    },
+    "data/paladins/spell/lightwell.json": {
+      "school": "spell_power:healing",
+      "range": 0.0,
+      "tier": 4,
+      "group": "priest_holy",
+      "learn": {},
+      "active": {
+        "cast": {
+          "haste_affected": true
+        }
+      },
+      "release": {
+        "animation": {
+          "id": "spell_engine:one_handed_area_release"
+        }
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "SUMMON",
+            "summon": {
+              "entity_type_id": "paladins:lightwell",
+              "behaviour": {
+                "is_attackable": false,
+                "spawn_fx": {
+                  "particles": [
+                    {
+                      "id": "spell_engine:magic_holy",
+                      "appearance": {
+                        "color": 4058632191,
+                        "motion": "DECELERATE"
+                      },
+                      "batch": {
+                        "count": 12,
+                        "shape": "SPHERE",
+                        "anchor": "ENTITY",
+                        "min_speed": 0.2,
+                        "max_speed": 0.4
+                      }
+                    }
+                  ]
+                },
+                "existence_particles": [
+                  {
+                    "particles": [
+                      {
+                        "id": "spell_engine:magic_spark",
+                        "appearance": {
+                          "color": 4058632191,
+                          "motion": "ASCEND"
+                        },
+                        "batch": {
+                          "count": 2.0,
+                          "shape": "PILLAR",
+                          "anchor": "ENTITY",
+                          "vertical_origin": 0.1,
+                          "min_speed": 0.02,
+                          "max_speed": 0.12,
+                          "extent": 0.45
+                        }
+                      }
+                    ],
+                    "interval_ticks": 6
+                  }
+                ],
+                "movement": {
+                  "can_move": false,
+                  "affected_by_gravity": false,
+                  "is_pushable": false,
+                  "collision": "NONE"
+                },
+                "targeting": {
+                  "revenge": false,
+                  "attack_with_owner": false,
+                  "automatic_targeting": "NONE",
+                  "look_around": false,
+                  "detection_range": {
+                    "mode": "MAXIMUM_ACTION_RANGE"
+                  },
+                  "clear_condition": {
+                    "on_action_completed": [
+                      {
+                        "action_type": "SPELL_CAST"
+                      }
+                    ]
+                  }
+                },
+                "lifespan": {
+                  "spawn_ticks": 20,
+                  "active_seconds": 16,
+                  "despawn_ticks": 20
+                },
+                "sounds": {
+                  "spawn": {
+                    "id": "paladins:lightwell_spawn"
+                  },
+                  "despawn": {
+                    "id": "paladins:lightwell_despawn"
+                  },
+                  "ambient": {
+                    "id": "paladins:lightwell_ambient"
+                  }
+                },
+                "actions": [
+                  {
+                    "type": "SPELL_CAST",
+                    "spell_cast": {
+                      "spell_id": "paladins:lightwell_orb",
+                      "cooldown": 16
+                    }
+                  }
+                ]
+              },
+              "attribute_scaling": {
+                "entries": [
+                  {
+                    "attribute_id": "spell_power:healing",
+                    "modifiers": [
+                      {
+                        "attribute_id": "spell_power:healing",
+                        "operation": "ADD_VALUE",
+                        "base": 0.0,
+                        "coefficient": 0.05
+                      }
+                    ]
+                  },
+                  {
+                    "attribute_id": "spell_power:haste",
+                    "modifiers": [
+                      {
+                        "attribute_id": "spell_power:haste",
+                        "operation": "ADD_VALUE",
+                        "base": -100.0,
+                        "coefficient": 1.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              "placements": [
+                {
+                  "location_offset_by_look": 1.5,
+                  "apply_yaw": true
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "cost": {
+        "exhaust": 0.3,
+        "cooldown": {
+          "duration": 60,
+          "haste_affected": true
+        },
+        "item": {
+          "id": "runes:healing_stone"
+        }
+      }
+    }
+  },
+  "skill_tree-neoforge-1.6.1+26.2.jar": {
+    "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json": {
+      "school": "spell_power:physical_ranged",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "ARROW_IMPACT",
+            "chance": 1
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "spell_engine:stun",
+              "duration": 1
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "crit",
+                "appearance": {
+                  "color": 4278190335
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "SPHERE",
+                  "anchor": "ENTITY",
+                  "min_speed": 0.25,
+                  "max_speed": 0.3
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 4,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/archer_tier_2_passive_2.json": {
+      "school": "spell_power:physical_ranged",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "ROLL",
+            "chance": 1
+          }
+        ]
+      },
+      "release": {
+        "visuals": {
+          "particles": [
+            {
+              "id": "spell_engine:sign_roll",
+              "appearance": {
+                "color": 865730559,
+                "scale": 0.8,
+                "attachment": "POSITION"
+              },
+              "batch": {
+                "count": 1.0,
+                "shape": "LINE_VERTICAL",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.0,
+                "min_speed": 0.8,
+                "max_speed": 0.8
+              }
+            },
+            {
+              "id": "spell_engine:magic_stripe",
+              "appearance": {
+                "color": 3753468415,
+                "motion": "ASCEND"
+              },
+              "batch": {
+                "count": 12,
+                "shape": "PIPE",
+                "anchor": "ENTITY",
+                "vertical_origin": 0.1,
+                "min_speed": 0.1,
+                "max_speed": 0.3,
+                "width_factor": 2.0
+              }
+            }
+          ]
+        }
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:onslaught_ready",
+              "duration": 5
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_spark",
+                "appearance": {
+                  "color": 3753468415,
+                  "motion": "DECELERATE"
+                },
+                "batch": {
+                  "count": 12,
+                  "shape": "PIPE",
+                  "anchor": "ENTITY",
+                  "vertical_origin": 0.1,
+                  "min_speed": 0.1,
+                  "max_speed": 0.4,
+                  "width_factor": 2.0
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "skill_tree_rpgs:archer_maneuver_activate"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 8,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/archer_tier_3_passive_2.json": {
+      "school": "spell_power:physical_ranged",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "target_override": "CASTER",
+            "type": "DAMAGE_TAKEN",
+            "caster_conditions": [
+              {
+                "health_percent_above": 0.01,
+                "health_percent_below": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:deflection",
+              "amplifier": 2
+            }
+          },
+          "sound": {
+            "id": "skill_tree_rpgs:archer_deflection_activate"
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 30,
+          "haste_affected": true
+        }
+      },
+      "tooltip": {
+        "show_activation": true
+      }
+    },
+    "data/skill_tree_rpgs/spell/paladin_tier_1_passive_2.json": {
+      "school": "spell_power:physical_melee",
+      "range": 0.0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "DAMAGE_TAKEN",
+            "chance": 1,
+            "stage": "POST"
+          }
+        ]
+      },
+      "target": {
+        "type": "FROM_TRIGGER"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "apply_to_caster": true,
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:vengeance",
+              "amplifier": 1,
+              "amplifier_cap": 4,
+              "apply_mode": "ADD",
+              "duration": 5
+            }
+          },
+          "visuals": {
+            "particles": [
+              {
+                "id": "spell_engine:magic_spark",
+                "appearance": {
+                  "color": 3439329279,
+                  "motion": "DECELERATE"
+                },
+                "batch": {
+                  "count": 15.0,
+                  "shape": "PIPE",
+                  "anchor": "ENTITY",
+                  "vertical_origin": 0.1,
+                  "min_speed": 0.2,
+                  "max_speed": 0.3,
+                  "width_factor": 2.0
+                }
+              }
+            ]
+          },
+          "sound": {
+            "id": "skill_tree_rpgs:paladin_crusader_activate",
+            "volume": 0.25
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 0.25,
+          "haste_affected": true
+        }
+      }
+    },
+    "data/skill_tree_rpgs/spell/priest_tier_2_passive_1.json": {
+      "school": "spell_power:healing",
+      "range": 0,
+      "tier": 1,
+      "type": "PASSIVE",
+      "passive": {
+        "triggers": [
+          {
+            "type": "ROLL"
+          }
+        ]
+      },
+      "target": {
+        "type": "NONE"
+      },
+      "impacts": [
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "apply_to_caster": true,
+            "status_effect": {
+              "effect_id": "minecraft:invisibility",
+              "duration": 2
+            }
+          }
+        },
+        {
+          "action": {
+            "type": "STATUS_EFFECT",
+            "apply_to_caster": true,
+            "status_effect": {
+              "effect_id": "skill_tree_rpgs:priest_fade",
+              "duration": 2
+            }
+          }
+        }
+      ],
+      "cost": {
+        "durability": 0,
+        "cooldown": {
+          "duration": 6,
+          "haste_affected": true
+        }
+      },
+      "deliver": {
+        "type": "CUSTOM",
+        "custom": {
+          "handler": "class_pack:fade"
+        }
+      }
+    }
+  },
+  "spell_engine-neoforge-1.10.5+26.2.jar": {}
+}

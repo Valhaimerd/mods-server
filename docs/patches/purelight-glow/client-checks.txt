@@ -1,0 +1,5 @@
+PASS Active Purelight synchronized
+PASS Actual body submits full-bright gold passes
+PASS Actual equipped armor submits gold passes
+PASS Ending state clears client glow driver
+PASS Body and armor stop glowing without stale render state

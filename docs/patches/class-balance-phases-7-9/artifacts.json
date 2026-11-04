@@ -1,0 +1,84 @@
+[
+  {
+    "jar": "archers-neoforge-3.1.2+26.2.jar",
+    "before": "aaeb16d094c7a68a0f414afc9bfa3758a98fd48459ccd23e284096081573e071",
+    "after": "0c2d2ca3b40031dacbc5894697b59e039f54e2ddc47df044abe56d2de7d5c574",
+    "changed": [
+      "assets/archers/lang/en_us.json",
+      "data/archers/spell/barrage.json",
+      "data/archers/spell/entangling_roots.json",
+      "data/archers/spell/magic_arrow.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before": "2cd2535ec2cffa8d79e999c9edc96454648e1dcf5eaeadfa7010145325129921",
+    "after": "cce204fb7555162ea66d17a812fa36cb3b78914c4842c7a02b778225bf991b40",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/barrier.json",
+      "data/paladins/spell/circle_of_healing.json",
+      "data/paladins/spell/divine_protection.json",
+      "data/paladins/spell/immolation.json",
+      "data/paladins/spell/judgement.json",
+      "data/paladins/spell/levitate.json",
+      "data/paladins/spell/lightwell.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "380d9d36fe3c4364b18fd82b4b613145a20e6345e8334df0491f642606696ca5",
+    "after": "3750cf9b67781aa694f117ef2a775cf62d93ae86ea4bc48c8b841db15b9a20d0",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/archer_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/archer_tier_2_passive_2.json",
+      "data/skill_tree_rpgs/spell/archer_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/paladin_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/priest_tier_2_passive_1.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class",
+      "net/skill_tree_rpgs/compat/PaladinPassives.class"
+    ],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/ascension_guard.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/break_knockback.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/deflection_speed.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/onslaught_power.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/onslaught_ready.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/purelight_cost.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/purgatory_opening.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/vanguard_guard.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "eb6c5873bd7e1332b0b86fd4529061b6aea1736c6357146cb8ff43679d73b59d",
+    "after": "8bec2314897a9c2de89734f490a288c22ac2248ca76f898a279a5cdbda01e055",
+    "changed": [
+      "spell_engine.mixins.json",
+      "net/spell_engine/entity/ArcherProjectileRules.class",
+      "net/spell_engine/internals/PriestRules.class",
+      "net/spell_engine/internals/PriestPassives.class",
+      "net/spell_engine/internals/PaladinRevamp.class",
+      "net/spell_engine/internals/PaladinUltimates.class",
+      "net/spell_engine/internals/ProtectionHits.class",
+      "net/spell_engine/internals/Vanguard.class",
+      "net/spell_engine/internals/FollowUpRules.class",
+      "net/spell_engine/internals/PurgatoryBoundary.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/FinalArcher.class",
+      "net/spell_engine/internals/FinalDefenses$Window.class",
+      "net/spell_engine/internals/FinalDefenses.class",
+      "net/spell_engine/internals/FinalDome.class",
+      "net/spell_engine/internals/FinalPriest.class",
+      "net/spell_engine/internals/FinalPurelight.class",
+      "net/spell_engine/internals/FinalRules.class",
+      "net/spell_engine/mixin/finale/FinalImpactMixin.class",
+      "net/spell_engine/mixin/finale/FinalProtectionMixin.class",
+      "net/spell_engine/mixin/finale/FinalPurelightMixin.class"
+    ]
+  }
+]

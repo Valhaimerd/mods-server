@@ -1,5 +1,21 @@
 # Mod Fixing Workspace
 
+## Combined class balance phases 7-9 - 4 November 2026
+
+Installed four same-name replacements in repository active/fixed packs over phases1-6 plus the Hydra detection fix. Priest support, Paladin defenses/Purelight and Archer tuning are complete. Isolated checks:96 final server,104 shared regression,97 mage regression,17 Hydra regression and26 connected-client checks. Tested both installed revive APIs; native player save/load retains Purelight. [Values, sources and exact tested hashes](../docs/patches/class-balance-phases-7-9/README.md). Actual originals retained under `retired packs/class-balance-phases-7-9-2026-11-04/{active,fixed}`. No handbook/PDF rebuild, personal-world edit or Git push.
+
+## Ancient Hydra detection - 4 November 2026
+
+Large Hydra detects visible eligible enemies within 20 blocks, prioritizes its existing firing volume, and pursues the closest candidate at roughly one block per second until it can breathe. Ordinary Hydras remain unchanged. Installed the tested Spell Engine replacement in active/fixed packs; 17 isolated native checks passed. [Patch and hashes](../docs/patches/hydra-detection/README.md). Routine balance/AI fixes now use patch notes without handbook/PDF rebuilding.
+
+## Combined class balance phases 4-6 - 4 November 2026
+
+Four same-name replacements cover Arcane, Fire, Frost and weapon basics, layered over the installed phase 1-3 inputs. Two-charge Blitz has synchronized saved recovery; Ward retreat, three-second Evocation, finite native Frostbite, targeted spikes, gentle weapon projectiles and the slowly moving Ancient Hydra have isolated runtime coverage. See [values, source and verification](../docs/patches/class-balance-phases-4-6/README.md). Backups are retained under `retired packs/class-balance-phases-4-6-2026-11-04/`; phases 7-9 remain planned. No personal installation or separate desktop server is changed.
+
+## Combined class balance phases 1-3 - 4 November 2026
+
+Installed nine same-name replacements in repository `mods/` and `1 fixed packs/`, preserving original active/fixed copies in `retired packs/class-balance-phases-1-3-2026-11-04/`. Ordinary RPG magic respects armor; original mage coefficients are restored, general Defense and Utilities rebuilt, and Rogue/Warrior updates implemented. Fractured Nullstone is retired. Coated Blades blocks natural regeneration and Regeneration only. Final Java 25 isolated tests passed 104 server and 13 connected-client checks. See [the current values and evidence](../docs/patches/class-balance-phases-1-3/README.md). Phases 4-6 are recorded above; personal installations and the separate desktop server were not changed.
+
 ## Combat phase one - 2 November 2026
 
 Installed the rounded mage damage pass, serial Echoing charges, Ward/trap changes, progression buffs, faster Paladin/Warrior preparation, Sinful true damage and Frenzy ordinary-i-frame bypass. Seven same-name JARs are in repository `mods/` and `1 fixed packs/`; originals are in ignored `mod backup/combat-phase-one-2026-11-02`. Prior grave and trinket performance fixes are preserved. See [the completion record](../docs/patches/combat-phase-one/README.md). Phase two is covered by [the spatial patch](../docs/patches/combat-phase-two/README.md); no personal/live server or GitHub push.

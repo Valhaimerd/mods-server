@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-03",
+  "previous": "xaeroworldmap-neoforge-26.2-1.47.1.jar",
+  "installed": "xaeroworldmap-neoforge-26.2-1.47.2.jar",
+  "source": "https://modrinth.com/mod/xaeros-world-map/version/neoforge-26.2-1.47.2",
+  "download": "https://cdn.modrinth.com/data/NcUtCpym/versions/ECCmjmlu/xaeroworldmap-neoforge-26.2-1.47.2.jar",
+  "sha512": "d7ef7ad7a8bc7cc23d994a6574b378f67e0f243fe344c9c5c662b42949ddf20b1b5115e1d48c694e33ad3a2ec5306726381d1118573a8969547f83a28a084906",
+  "minecraft": "26.2",
+  "neoforge": "26.2.0.90",
+  "java": "26.0.2",
+  "main_pack_jars": 305,
+  "client_extra_jars": 23,
+  "probe_mods_added": false,
+  "personal_installations_modified": false,
+  "runtime_status": "PASS: full-pack client launched, joined isolated world, and initialized World Map. User confirmed launch-only testing is sufficient; further UI verification stopped.",
+  "map_screen_visually_verified": false
+}

@@ -1,0 +1,1215 @@
+{
+  "root": "ad8qet8e75ys5sek",
+  "nodes": {
+    "arcimlg0c3igwe0e": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -204,
+        "y": -68,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "xzau8wf7cmkahump",
+        "-7_-4"
+      ]
+    },
+    "new_colossus_health": {
+      "skill": {
+        "definition": "health+2",
+        "x": -402,
+        "y": -50,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Heart",
+        "size": 1,
+        "icon": {
+          "type": "effect",
+          "data": {
+            "effect": "health_boost"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "max_health",
+              "value": 2,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "lcx9mehm663aehtm"
+        }
+      },
+      "neighbors": [
+        "owk0eiqwgomn6jwb"
+      ]
+    },
+    "ebhti3huj2v7zvny": {
+      "skill": {
+        "definition": "colossus",
+        "x": -544,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": {
+          "text": "Colossus",
+          "color": "blue"
+        },
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:totem_of_undying"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "challenge"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "minecraft:max_health",
+              "value": 12,
+              "operation": "addition"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:healing",
+              "value": 0.06,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "spell_power:healing",
+              "value": 0.06,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "description": {
+          "text": "+6 Hearts\n+6% Healing"
+        }
+      },
+      "neighbors": [
+        "owk0eiqwgomn6jwb"
+      ]
+    },
+    "rr6e15vhxj8hdyt4": {
+      "skill": {
+        "definition": "healing+3%",
+        "x": -340,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": "+3% Healing",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:ghast_tear"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "spell_power:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "y942k6xrxjqac44r"
+        }
+      },
+      "neighbors": [
+        "rvzvos2233a9pi4g",
+        "owk0eiqwgomn6jwb",
+        "new_colossus_healing"
+      ]
+    },
+    "vgrpua0glqz5sem5": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -408,
+        "y": 272,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "bvasjpryldz0yhpx"
+      ]
+    },
+    "sgg10fjuiiqlos8w": {
+      "skill": {
+        "definition": "armor+1",
+        "x": -204,
+        "y": 68,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Armor",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:shield"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "armor",
+              "value": 1,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "z4wcecyiuukzxmq5"
+        }
+      },
+      "neighbors": [
+        "5h6pmokx7ro45qtw",
+        "-7_4"
+      ]
+    },
+    "-7_-4": {
+      "skill": {
+        "definition": "magic_resistance+2%",
+        "x": -272,
+        "y": -68,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Magic Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:magic_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "x2lvx91559f4jaaj"
+        }
+      },
+      "neighbors": [
+        "arcimlg0c3igwe0e",
+        "d67mbc3a2pg8781z"
+      ]
+    },
+    "bxm9laus4f3lfqjk": {
+      "skill": {
+        "definition": "magic_resistance+2%",
+        "x": -408,
+        "y": -136,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Magic Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:magic_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "x2lvx91559f4jaaj"
+        }
+      },
+      "neighbors": [
+        "2wtk419203if3s6n"
+      ]
+    },
+    "fxxc8k4yljxkbepz": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -340,
+        "y": 136,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "-7_4",
+        "00zagtopdfilmaw7"
+      ]
+    },
+    "owk0eiqwgomn6jwb": {
+      "skill": {
+        "definition": "health+2",
+        "x": -402,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Heart",
+        "size": 1,
+        "icon": {
+          "type": "effect",
+          "data": {
+            "effect": "health_boost"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "max_health",
+              "value": 2,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "lcx9mehm663aehtm"
+        }
+      },
+      "neighbors": [
+        "rr6e15vhxj8hdyt4",
+        "ebhti3huj2v7zvny",
+        "new_colossus_health"
+      ]
+    },
+    "6i5us24w9a9ar7v1": {
+      "skill": {
+        "definition": "healing+3%",
+        "x": -204,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": "+3% Healing",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:ghast_tear"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "spell_power:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "y942k6xrxjqac44r"
+        }
+      },
+      "neighbors": [
+        "zhraasg53ibsn3dk",
+        "rvzvos2233a9pi4g"
+      ]
+    },
+    "bvasjpryldz0yhpx": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -408,
+        "y": 204,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "zfneydbdzicoc783",
+        "00zagtopdfilmaw7",
+        "vgrpua0glqz5sem5"
+      ]
+    },
+    "8meyqbog5d7qmyzg": {
+      "skill": {
+        "definition": "resistance+1%",
+        "x": -408,
+        "y": 136,
+        "root": false
+      },
+      "definition": {
+        "title": "+1% Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:iron_ingot"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:resistance",
+              "value": 0.01,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "9ip9d9p0zh2r9x5g"
+        }
+      },
+      "neighbors": [
+        "zfneydbdzicoc783",
+        "00zagtopdfilmaw7",
+        "v2pojgmi36k5fuxe"
+      ]
+    },
+    "00zagtopdfilmaw7": {
+      "skill": {
+        "definition": "armor+1",
+        "x": -340,
+        "y": 204,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Armor",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:shield"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "armor",
+              "value": 1,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "z4wcecyiuukzxmq5"
+        }
+      },
+      "neighbors": [
+        "fxxc8k4yljxkbepz",
+        "8meyqbog5d7qmyzg",
+        "bvasjpryldz0yhpx"
+      ]
+    },
+    "4zj68e0t9ythniot": {
+      "skill": {
+        "definition": "magic_resistance+2%",
+        "x": -340,
+        "y": -204,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Magic Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:magic_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "x2lvx91559f4jaaj"
+        }
+      },
+      "neighbors": [
+        "d67mbc3a2pg8781z",
+        "2wtk419203if3s6n"
+      ]
+    },
+    "5h6pmokx7ro45qtw": {
+      "skill": {
+        "definition": "resistance+1%",
+        "x": -136,
+        "y": 68,
+        "root": false
+      },
+      "definition": {
+        "title": "+1% Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:iron_ingot"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:resistance",
+              "value": 0.01,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "9ip9d9p0zh2r9x5g"
+        }
+      },
+      "neighbors": [
+        "ad8qet8e75ys5sek",
+        "sgg10fjuiiqlos8w"
+      ]
+    },
+    "zfneydbdzicoc783": {
+      "skill": {
+        "definition": "bulwark",
+        "x": -476,
+        "y": 204,
+        "root": false
+      },
+      "definition": {
+        "title": {
+          "text": "Bulwark",
+          "color": "blue"
+        },
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:netherite_chestplate"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "challenge"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:resistance",
+              "value": 0.05,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.04,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "minecraft:armor",
+              "value": 2,
+              "operation": "addition"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "minecraft:knockback_resistance",
+              "value": 0.2,
+              "operation": "addition"
+            }
+          }
+        ],
+        "description": {
+          "text": "+5% Resistance\n+4% Ranged Resistance\n+2 Armor\n+20% Knockback Resistance"
+        }
+      },
+      "neighbors": [
+        "8meyqbog5d7qmyzg",
+        "bvasjpryldz0yhpx"
+      ]
+    },
+    "xzau8wf7cmkahump": {
+      "skill": {
+        "definition": "magic_resistance+2%",
+        "x": -136,
+        "y": -68,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Magic Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:magic_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "x2lvx91559f4jaaj"
+        }
+      },
+      "neighbors": [
+        "ad8qet8e75ys5sek",
+        "arcimlg0c3igwe0e"
+      ]
+    },
+    "rvzvos2233a9pi4g": {
+      "skill": {
+        "definition": "health+2",
+        "x": -272,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Heart",
+        "size": 1,
+        "icon": {
+          "type": "effect",
+          "data": {
+            "effect": "health_boost"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "max_health",
+              "value": 2,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "lcx9mehm663aehtm"
+        }
+      },
+      "neighbors": [
+        "6i5us24w9a9ar7v1",
+        "rr6e15vhxj8hdyt4"
+      ]
+    },
+    "ad8qet8e75ys5sek": {
+      "skill": {
+        "definition": "root_defensive",
+        "x": -64,
+        "y": 0,
+        "root": true
+      },
+      "definition": {
+        "title": "\u00c2\u00a79Defensive",
+        "description": [
+          {
+            "text": "Strengthen your defenses, increase resistance and withstand the toughest assaults"
+          }
+        ],
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:diamond_chestplate"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "challenge"
+          }
+        },
+        "rewards": [],
+        "metadata": {
+          "icon": "0umqhdtoiyre8p64"
+        }
+      },
+      "neighbors": [
+        "zhraasg53ibsn3dk",
+        "5h6pmokx7ro45qtw",
+        "xzau8wf7cmkahump"
+      ]
+    },
+    "d67mbc3a2pg8781z": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -340,
+        "y": -136,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "-7_-4",
+        "4zj68e0t9ythniot"
+      ]
+    },
+    "6tinz5atn533lzo9": {
+      "skill": {
+        "definition": "aegis",
+        "x": -476,
+        "y": -204,
+        "root": false
+      },
+      "definition": {
+        "title": {
+          "text": "Aegis",
+          "color": "blue"
+        },
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:enchanted_golden_apple"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "challenge"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:magic_resistance",
+              "value": 0.15,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.1,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "minecraft:movement_speed",
+              "value": 0.06,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "description": {
+          "text": "+15% Magic Resistance\n+10% Ranged Resistance\n+6% Movement Speed"
+        }
+      },
+      "neighbors": [
+        "2wtk419203if3s6n"
+      ]
+    },
+    "new_colossus_healing": {
+      "skill": {
+        "definition": "healing+3%",
+        "x": -340,
+        "y": -50,
+        "root": false
+      },
+      "definition": {
+        "title": "+3% Healing",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:ghast_tear"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          },
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "spell_power:healing",
+              "value": 0.03,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "y942k6xrxjqac44r"
+        }
+      },
+      "neighbors": [
+        "rr6e15vhxj8hdyt4"
+      ]
+    },
+    "-7_4": {
+      "skill": {
+        "definition": "resistance+1%",
+        "x": -272,
+        "y": 68,
+        "root": false
+      },
+      "definition": {
+        "title": "+1% Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:iron_ingot"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:resistance",
+              "value": 0.01,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "9ip9d9p0zh2r9x5g"
+        }
+      },
+      "neighbors": [
+        "sgg10fjuiiqlos8w",
+        "fxxc8k4yljxkbepz"
+      ]
+    },
+    "v2pojgmi36k5fuxe": {
+      "skill": {
+        "definition": "armor+1",
+        "x": -408,
+        "y": 68,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Armor",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:shield"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "armor",
+              "value": 1,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "z4wcecyiuukzxmq5"
+        }
+      },
+      "neighbors": [
+        "8meyqbog5d7qmyzg"
+      ]
+    },
+    "2wtk419203if3s6n": {
+      "skill": {
+        "definition": "ranged_resistance+2%",
+        "x": -408,
+        "y": -204,
+        "root": false
+      },
+      "definition": {
+        "title": "+2% Ranged Resistance",
+        "size": 1,
+        "icon": {
+          "type": "item",
+          "data": {
+            "item": "minecraft:target"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "puffish_attributes:ranged_resistance",
+              "value": 0.02,
+              "operation": "multiply_total"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "e2zxcc34b8ad2wtw"
+        }
+      },
+      "neighbors": [
+        "4zj68e0t9ythniot",
+        "6tinz5atn533lzo9",
+        "bxm9laus4f3lfqjk"
+      ]
+    },
+    "zhraasg53ibsn3dk": {
+      "skill": {
+        "definition": "health+2",
+        "x": -136,
+        "y": 0,
+        "root": false
+      },
+      "definition": {
+        "title": "+1 Heart",
+        "size": 1,
+        "icon": {
+          "type": "effect",
+          "data": {
+            "effect": "health_boost"
+          }
+        },
+        "frame": {
+          "type": "advancement",
+          "data": {
+            "frame": "task"
+          }
+        },
+        "rewards": [
+          {
+            "type": "puffish_skills:attribute",
+            "data": {
+              "attribute": "max_health",
+              "value": 2,
+              "operation": "addition"
+            }
+          }
+        ],
+        "metadata": {
+          "icon": "lcx9mehm663aehtm"
+        }
+      },
+      "neighbors": [
+        "ad8qet8e75ys5sek",
+        "6i5us24w9a9ar7v1"
+      ]
+    }
+  },
+  "exclusions": [
+    [
+      "zhraasg53ibsn3dk",
+      "xzau8wf7cmkahump"
+    ],
+    [
+      "zhraasg53ibsn3dk",
+      "5h6pmokx7ro45qtw"
+    ],
+    [
+      "xzau8wf7cmkahump",
+      "5h6pmokx7ro45qtw"
+    ]
+  ],
+  "installed_jar": "mods/adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+  "sha256": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca",
+  "date": "2026-11-04",
+  "method": "Read-only graph/definition inspection; no native attribute or runtime UI test in this audit."
+}

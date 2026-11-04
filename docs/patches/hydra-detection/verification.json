@@ -1,0 +1,17 @@
+{
+  "installed": true,
+  "minecraft": "26.2",
+  "neoforge": "26.2.0.90",
+  "java": 25,
+  "native_checks": 17,
+  "baseline_failures": 7,
+  "only_changed_classes": [
+    "net/spell_engine/internals/SummonRules.class",
+    "net/spell_engine/internals/MageSummons.class"
+  ],
+  "archive_crc": "PASS",
+  "exact_runtime_tested_hash": "eb6c5873bd7e1332b0b86fd4529061b6aea1736c6357146cb8ff43679d73b59d",
+  "active_and_fixed_hashes_match": true,
+  "handbook_rebuilt": false,
+  "commit_or_push": false
+}

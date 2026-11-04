@@ -1,0 +1,18 @@
+[
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "sha256": "99f71d754f97eaa3b6d6657e3df2c45ea7b4af15c234305820bf5f1dbad90014"
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "sha256": "ed77d7c3dd4b594d697187055d52349dd319f11d25fd16539a5aa5f8890570e4"
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "sha256": "b6cf711c3853c280d580ff2a8d657c5b16934883dd515cbb53c276ac116525fe"
+  },
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "sha256": "0a6f28257e9b5e5b2eb253ae9659033dfe2e036b124bb01e21322e0bf3967fa8"
+  }
+]

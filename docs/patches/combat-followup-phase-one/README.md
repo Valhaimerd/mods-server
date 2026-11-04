@@ -1,5 +1,7 @@
 # Combat follow-up phase one: Warrior and Assassin
 
+> Affected current values are superseded by [the combined phases 1-3 update](../class-balance-phases-1-3/README.md). This document retains its historical implementation and test evidence.
+
 2 November 2026. Same-version overlays over the current six affected archives: Adventurer Skills, Skill Tree, Rogues & Warriors, Spell Engine, Better Combat and Combat Roll. Saved skill IDs, equipment, unrelated patches and active filenames are retained. Both clients and servers need matching replacements and a restart; no config deletion is required.
 
 ## Progression and Assassin

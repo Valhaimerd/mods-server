@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-04",
+  "status": "installed",
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "minecraft": "26.2",
+  "neoforge": "26.2.0.90",
+  "runtime_java": "Temurin 25.0.4.1+1",
+  "bytecode_target": 25,
+  "server_checks": 104,
+  "client_checks": 13,
+  "resource_checks": 39,
+  "installed_locations": [
+    "mods/",
+    "mod fixing/1 fixed packs/"
+  ],
+  "backup": "mod fixing/retired packs/class-balance-phases-1-3-2026-11-04",
+  "artifacts": [
+    {
+      "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+      "before": "3e4f1660df073b43a86c0b25bddc2834a91b810b2dec40395aac27e656cbefca",
+      "after": "76b7037436212bbdf7285874e1ac58f39b332bbd7040dd021f1c7c9faa449b1a",
+      "changed": [
+        "data/adventurer_skills/puffish_skills/categories/adventurer_skills/connections.json",
+        "data/adventurer_skills/puffish_skills/categories/adventurer_skills/definitions.json",
+        "data/adventurer_skills/puffish_skills/categories/adventurer_skills/skills.json"
+      ],
+      "removed": [],
+      "added": [
+        "defense-v2.json"
+      ]
+    },
+    {
+      "jar": "combat_roll-neoforge-3.0.1+26.2.jar",
+      "before": "1d855c5e72bf4a64b82bba990be84a8ef268a08a0e5f822585e70cae73b0765d",
+      "after": "291d74ea7b96be1dad8b84c22095b98f862f35a4d47d32bb1bdd1de305b27e0c",
+      "changed": [
+        "data/combat_roll/enchantment/multi_roll.json"
+      ],
+      "removed": [],
+      "added": []
+    },
+    {
+      "jar": "Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar",
+      "before": "99dfaa0963119cbc55facd5bd417d66327a7f2c0dc0275e9fd6e9ec4a2f714e3",
+      "after": "e668970786387f44160093b379e6bb28ef3c4849146feb6a559eb7a6f62843fc",
+      "changed": [
+        "com/cozary/nameless_trinkets/events/FracturedNullstoneEvents.class",
+        "data/curios/tags/item/back.json",
+        "data/curios/tags/item/belt.json",
+        "data/curios/tags/item/charm.json",
+        "data/curios/tags/item/necklace.json",
+        "data/curios/tags/item/trinket.json",
+        "data/nameless_trinkets/tags/item/nameless_trinkets_tag.json",
+        "data/nameless_trinkets/tags/item/recyclable_trinkets_tag.json",
+        "data/nameless_trinkets/tags/item/trinkets/trinket/trinket.json",
+        "data/trinkets/tags/item/chest/back.json",
+        "data/trinkets/tags/item/chest/charm.json",
+        "data/trinkets/tags/item/chest/necklace.json",
+        "data/trinkets/tags/item/legs/belt.json",
+        "data/trinkets/tags/item/trinket/trinket.json",
+        "com/cozary/nameless_trinkets/pack/PackBalance.class",
+        "nameless-pack-balance.json"
+      ],
+      "removed": [
+        "data/nameless_trinkets/advancement/fractured_nullstone.json",
+        "data/nameless_trinkets/advancement/recipes/misc/fractured_nullstone.json",
+        "data/nameless_trinkets/recipe/fractured_nullstone.json"
+      ],
+      "added": []
+    },
+    {
+      "jar": "orb_of_oblivion_puffish_compat-1.0.2.jar",
+      "before": "24ca0af4e1921be7c5f6d8e9906e3c7da42bc7e62a31dcbb3bbe54f165ba04c6",
+      "after": "e76193a16c3f1c0db67ffffc25db7f0ed024e6570fbd11f2f8863250e2357731",
+      "changed": [
+        "net/valhaimerd/orboblivioncompat/SkillOverhaul.class",
+        "net/valhaimerd/orboblivioncompat/Utilities.class",
+        "net/valhaimerd/orboblivioncompat/mixin/CategoryGateMixin.class"
+      ],
+      "removed": [],
+      "added": [
+        "defense-v2.json",
+        "net/valhaimerd/orboblivioncompat/DefenseV2.class"
+      ]
+    },
+    {
+      "jar": "rogues-neoforge-3.1.2+26.2.jar",
+      "before": "1c22161837cd347730e70546120fb40f85224f1dbb3cd4b56aae94dcfe804d7b",
+      "after": "a8a4484747dfedfa87ed879a18186fb5bf89b3b5d9b765cbe149679aa2ee40d8",
+      "changed": [
+        "assets/rogues/lang/en_us.json",
+        "data/rogues/spell/bear_trap.json",
+        "data/rogues/spell/last_stand.json",
+        "data/rogues/spell/mortal_strike.json",
+        "data/rogues/spell/shock_powder.json",
+        "data/rogues/spell/throw.json",
+        "data/rogues/spell/throw_net.json"
+      ],
+      "removed": [],
+      "added": []
+    },
+    {
+      "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+      "before": "068c782def9d751c6966d0f3034c8b11e488765b0a8745e176ac4b2a4382ca8e",
+      "after": "ed77d7c3dd4b594d697187055d52349dd319f11d25fd16539a5aa5f8890570e4",
+      "changed": [
+        "assets/skill_tree_rpgs/lang/en_us.json",
+        "data/skill_tree_rpgs/spell/arcane_tier_2_spell_2_modifier_2.json",
+        "data/skill_tree_rpgs/spell/fire_tier_2_spell_1_modifier_1.json",
+        "data/skill_tree_rpgs/spell/fire_tier_3_spell_1_modifier_2.json",
+        "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+        "data/skill_tree_rpgs/spell/rogue_tier_1_passive_1.json",
+        "data/skill_tree_rpgs/spell/rogue_tier_2_spell_1_modifier_1.json",
+        "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_1.json",
+        "data/skill_tree_rpgs/spell/rogue_tier_3_spell_2_modifier_2.json",
+        "data/skill_tree_rpgs/spell/rogue_tier_4_spell_2_modifier_2.json",
+        "net/skill_tree_rpgs/effect/SkillEffects.class"
+      ],
+      "removed": [],
+      "added": [
+        "assets/skill_tree_rpgs/textures/mob_effect/aegis_guard.png",
+        "assets/skill_tree_rpgs/textures/mob_effect/coated_regeneration_lock.png"
+      ]
+    },
+    {
+      "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+      "before": "167f6513d62dec750978f9501d52e65810d1fc814d8750eb730fb3fae1286850",
+      "after": "b6cf711c3853c280d580ff2a8d657c5b16934883dd515cbb53c276ac116525fe",
+      "changed": [
+        "spell_engine.mixins.json",
+        "net/spell_engine/internals/RevisionRules.class",
+        "net/spell_engine/internals/SummonRules.class",
+        "net/spell_engine/internals/RogueRules.class",
+        "net/spell_engine/internals/TrapRules.class",
+        "net/spell_engine/entity/WarriorUltimates.class",
+        "net/spell_engine/internals/PriestRules.class",
+        "net/spell_engine/entity/ClassRework.class"
+      ],
+      "removed": [],
+      "added": [
+        "net/spell_engine/internals/BatchRules$VitalDamage.class",
+        "net/spell_engine/internals/BatchRules.class",
+        "net/spell_engine/mixin/batch/FoodRegenerationMixin.class",
+        "net/spell_engine/mixin/batch/RegenerationMixin.class"
+      ]
+    },
+    {
+      "jar": "spell_power-neoforge-1.6.1+26.2.jar",
+      "before": "6033fa98d18f1424db890845a3431da0b68b43de1e8b27962b0fad0051cc2f72",
+      "after": "d50006ff84b07cf0bd842d0282df6f7f5eeb3465d655821c98bbd9eea2e41edf",
+      "changed": [
+        "data/minecraft/tags/damage_type/bypasses_armor.json"
+      ],
+      "removed": [],
+      "added": []
+    },
+    {
+      "jar": "wizards-neoforge-3.1.2+26.2.jar",
+      "before": "142f2a8efb7149f679f17e62c7cc89e4b1b4951ebf19699c53bd6c281c6a3f5d",
+      "after": "99f71d754f97eaa3b6d6657e3df2c45ea7b4af15c234305820bf5f1dbad90014",
+      "changed": [
+        "assets/wizards/lang/en_us.json",
+        "data/wizards/spell/arcane_beam.json",
+        "data/wizards/spell/arcane_blast.json",
+        "data/wizards/spell/arcane_bolt.json",
+        "data/wizards/spell/arcane_explosion.json",
+        "data/wizards/spell/arcane_missile.json",
+        "data/wizards/spell/fire_blast.json",
+        "data/wizards/spell/fire_breath.json",
+        "data/wizards/spell/fire_meteor.json",
+        "data/wizards/spell/fire_scorch.json",
+        "data/wizards/spell/fire_slash.json",
+        "data/wizards/spell/fire_storm.json",
+        "data/wizards/spell/fire_wall.json",
+        "data/wizards/spell/fireball.json",
+        "data/wizards/spell/frost_blizzard.json",
+        "data/wizards/spell/frost_lance.json",
+        "data/wizards/spell/frost_nova.json",
+        "data/wizards/spell/frost_shard.json",
+        "data/wizards/spell/frost_spikes.json",
+        "data/wizards/spell/frostbolt.json",
+        "data/wizards/spell/arcane_barrage_bolt.json",
+        "data/wizards/spell/ancient_hydra_breath.json",
+        "data/wizards/spell/burst_blink_explosion.json",
+        "data/wizards/spell/elemental_frost_nova.json",
+        "data/wizards/spell/elemental_frost_shard.json",
+        "data/wizards/spell/hydra_fireball.json",
+        "data/wizards/spell/legion_frost_nova.json"
+      ],
+      "removed": [],
+      "added": []
+    }
+  ],
+  "personal_installations_changed": false,
+  "committed_or_pushed": false
+}

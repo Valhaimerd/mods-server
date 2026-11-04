@@ -1,0 +1,104 @@
+PASS RPG magic no longer bypasses native armor
+PASS Armor actually mitigates ordinary RPG magic
+PASS Native Resistance covers magic actual=8.0 expected=8.0
+PASS Shield active after native raise delay
+PASS Shield frontal 80% false actual=2.0 expected=2.0
+PASS Shield frontal 80% true actual=2.0 expected=2.0
+PASS Rear magic not shielded actual=10.0 expected=10.0
+PASS Pain Suppression magic tier 1 actual=9.399993896484375 expected=9.399999999999999
+PASS Pain Suppression magic tier 2 actual=8.79998779296875 expected=8.8
+PASS Pain Suppression magic tier 3 actual=8.199996948242188 expected=8.200000000000001
+PASS Pain Suppression magic tier 4 actual=7.599998474121094 expected=7.6
+PASS Player PvE retention remains 80% actual=8.0 expected=8.0
+PASS Player PvP retention remains 35% actual=3.5 expected=3.5
+PASS Multi Roll native equipped modifier level 1 actual=1.0 expected=1.0
+PASS Multi Roll native equipped modifier level 2 actual=2.0 expected=2.0
+PASS Multi Roll native equipped modifier level 3 actual=2.0 expected=2.0
+PASS Multi Roll native equipped modifier level 10 actual=2.0 expected=2.0
+PASS Fractured Nullstone retired using existing save-safe retirement policy
+PASS Nullstone absent from acquisition tag
+PASS Defense cap cannot skip second branch 0
+PASS Defense mastery selected 0
+PASS Defense armor total 0 actual=2.0 expected=2.0
+PASS Defense HP total 0 actual=1004.0 expected=1004.0
+PASS Healing received total 0 actual=4.0 expected=4.0
+PASS General Resistance total 0 actual=4.0 expected=4.0
+PASS Outgoing healing power unchanged 0 actual=1.0 expected=1.0
+PASS Cross-path selection rejected 0
+PASS Defense cap cannot skip second branch 1
+PASS Defense mastery selected 1
+PASS Defense armor total 1 actual=2.0 expected=2.0
+PASS Defense HP total 1 actual=1006.0 expected=1006.0
+PASS Healing received total 1 actual=8.0 expected=8.0
+PASS General Resistance total 1 actual=2.0 expected=2.0
+PASS Outgoing healing power unchanged 1 actual=1.0 expected=1.0
+PASS Cross-path selection rejected 1
+PASS Defense cap cannot skip second branch 2
+PASS Defense mastery selected 2
+PASS Defense armor total 2 actual=4.0 expected=4.0
+PASS Defense HP total 2 actual=1002.0 expected=1002.0
+PASS Healing received total 2 actual=0.0 expected=0.0
+PASS General Resistance total 2 actual=8.0 expected=8.0
+PASS Outgoing healing power unchanged 2 actual=1.0 expected=1.0
+PASS Cross-path selection rejected 2
+PASS Aegis activates after surviving enemy magic
+PASS Aegis exact damage-reduction attribute actual=84.99999940395355 expected=85.0
+PASS Aegis fixed cooldown prevents repeat activation
+PASS Colossus queues five recovery ticks after low-health hit
+PASS Colossus recovery uses sampled max HP and healing received actual=108.64802551269531 expected=108.64800000000001
+PASS Colossus recovery stops after five ticks
+PASS Defense migration refunds only Defense rewards
+PASS Defense migration preserves earned points and XP
+PASS Fitness fills hunger actual=20.0 expected=20.0
+PASS Fitness fills saturation actual=20.0 expected=20.0
+PASS rogues:last_stand pulse not early 1
+PASS rogues:last_stand pulse every 0.8s 1
+PASS rogues:last_stand pulse not early 2
+PASS rogues:last_stand pulse every 0.8s 2
+PASS rogues:last_stand pulse not early 3
+PASS rogues:last_stand pulse every 0.8s 3
+PASS rogues:last_stand pulse not early 4
+PASS rogues:last_stand pulse every 0.8s 4
+PASS rogues:last_stand pulse not early 5
+PASS rogues:last_stand pulse every 0.8s 5
+PASS rogues:last_stand exactly five pulses
+PASS rogues:mortal_strike pulse not early 1
+PASS rogues:mortal_strike pulse every 0.8s 1
+PASS rogues:mortal_strike pulse not early 2
+PASS rogues:mortal_strike pulse every 0.8s 2
+PASS rogues:mortal_strike pulse not early 3
+PASS rogues:mortal_strike pulse every 0.8s 3
+PASS rogues:mortal_strike pulse not early 4
+PASS rogues:mortal_strike pulse every 0.8s 4
+PASS rogues:mortal_strike pulse not early 5
+PASS rogues:mortal_strike pulse every 0.8s 5
+PASS rogues:mortal_strike exactly five pulses
+PASS First Last Stand pulse adds 20% maximum health actual=120.0 expected=120.0
+PASS First Last Stand pulse heals gained health and 20% new maximum actual=94.0 expected=94.0
+PASS Base Last Stand grants no Regeneration
+PASS Last Stand cooldown first pulse actual=40.0 expected=40.0
+PASS Last Stand earned cooldown 2 actual=45.0 expected=45.0
+PASS No special fifth pulse full heal 2
+PASS Last Stand earned cooldown 3 actual=50.0 expected=50.0
+PASS No special fifth pulse full heal 3
+PASS Last Stand earned cooldown 4 actual=55.0 expected=55.0
+PASS No special fifth pulse full heal 4
+PASS Last Stand earned cooldown 5 actual=60.0 expected=60.0
+PASS No special fifth pulse full heal 5
+PASS Vitality ten armor actual=10.0 expected=10.0
+PASS Vitality twenty HP actual=1020.0 expected=1020.0
+PASS Regeneration effect blocked actual=500.0 expected=500.0
+PASS Direct healing remains allowed actual=505.0 expected=505.0
+PASS Natural regeneration blocked actual=505.0 expected=505.0
+PASS Regeneration resumes after lock removed
+PASS Vital Hit armor scaling applies
+PASS Vital Hit physical maximum-health proc damages
+PASS Endurance gives eight total armor actual=8.0 expected=8.0
+PASS Berserker fatal rescue stun lasts eight seconds actual=160.0 expected=160.0
+PASS Restored native mage damage arcane_beam actual=6.4000244140625 expected=6.4
+PASS Restored native mage damage arcane_explosion actual=83.20001220703125 expected=83.2
+PASS Restored native mage damage arcane_missile actual=8.32000732421875 expected=8.32
+PASS Restored native mage damage fire_meteor actual=48.0 expected=48.0
+PASS Restored native mage damage frost_lance actual=64.0 expected=64.0
+PASS Restored native mage damage frost_nova actual=57.5999755859375 expected=57.6
+PASS Restored native mage damage fire_breath actual=4.47998046875 expected=4.48

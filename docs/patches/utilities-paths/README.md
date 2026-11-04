@@ -1,5 +1,7 @@
 # Exclusive Utilities paths
 
+> Affected current values are superseded by [the combined phases 1-3 update](../class-balance-phases-1-3/README.md). This document retains its historical implementation and test evidence.
+
 30 October 2026. Minecraft 26.2, NeoForge 26.2.0.90, Java 25+. Same-filename overlays for Adventurer Skills and its existing Orb compatibility module. Install matching client/server copies together with the [new Orb recipe and use cost](../orb-acquisition/README.md).
 
 ## Player benefits

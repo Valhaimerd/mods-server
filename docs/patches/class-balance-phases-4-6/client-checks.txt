@@ -1,0 +1,30 @@
+Client held=1 minecraft:iron_sword modifiers=[Reference{ResourceKey[minecraft:spell / skill_tree_rpgs:arcane_tier_4_spell_1_modifier_2]=net.spell_engine.api.spell.Spell@1b3a63cb}]
+PASS Selected passive synchronized to client
+PASS Client bank2/2
+SCREENSHOT Blitz2of2
+PASS Native client/server cast starts
+PASS Native first cast consumes one synchronized charge
+Blitz position=(0.0, 101.0, 7.5) scale=1.0
+PASS Controlled native Blitz travels 7.5 blocks
+PASS Successful client/server Blink cleanses stun
+PASS Blitz grants no stale Speed
+PASS Remaining charge usable during recharge
+SCREENSHOT Blitz1of2-recharging
+PASS Native client/server cast starts
+PASS Native second cast consumes final charge
+PASS Native third cast rejected while empty
+SCREENSHOT Blitz0of2
+PASS Actual death and respawn does not refill bank
+PASS Serial recharge returns full bank after respawn
+SCREENSHOT Blitz-restored2of2
+PASS Native reactive Arcane Ward blinks four blocks away
+PASS Ward effect synchronized to client
+PASS Ward movement synchronized
+PASS Winter readiness synchronized and visible
+SCREENSHOT Targeted-3x-spike-and-readiness
+PASS Ancient Hydra keeps threefold size
+PASS Ancient Hydra ground pulse enlarged to 3.6
+PASS Live Ancient Hydra slowly walks toward native target
+SCREENSHOT Ancient-Hydra-large-ring
+PASS Hydra movement stays slow
+PASS Owned Elemental frost attack applies native Frostbite

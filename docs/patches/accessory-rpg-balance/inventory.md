@@ -2,7 +2,7 @@
 
 Offensive proc power means the highest current melee, ranged or offensive spell attribute; Healing Power is excluded. Health scaling excludes all three scaling accessory bonuses and Health Boost; melee scaling excludes Power Glove and Woundbearer. Effective stat caps hold under outside attribute multipliers. Equipping or refreshing health items does not heal. Damage caps apply before defenses; heal caps are before healing-received modifiers.
 
-## Nameless Trinkets - 42 available
+## Nameless Trinkets - 41 available
 
 | Item | Decision | Effective details |
 | --- | --- | --- |
@@ -21,7 +21,6 @@ Offensive proc power means the highest current melee, ranged or offensive spell 
 | Fate Emerald (`nameless_trinkets:fate_emerald`) | Adjusted | Trade discount boost 25 (raw value, not a guaranteed 25% discount). Retains 60s removal lock and 0.1 exhaustion per second. |
 | Fertilizer (`nameless_trinkets:fertilizer`) | Retained | Growth interval 100 ticks = 5 s. Uses a configurable interval; it is not instantaneous growth for every plant. |
 | Four Leaf Clover (`nameless_trinkets:four_leaf_clover`) | Adjusted | Eligible non-player kills have a 25% chance of one extra loot-table roll. Not guaranteed duplication of original drops. |
-| Fractured Nullstone (`nameless_trinkets:fractured_nullstone`) | Adjusted | Reduces recognized magic damage by 15%, leaving 85% before other defenses. |
 | Fragile Cloud (`nameless_trinkets:fragile_cloud`) | Retained | Gravity modifier -0.07 while qualifying descent is active; resets fall distance. No configurable numeric Stats fields. Its handler yields when Moon Stone is equipped; elytra flight, grounded movement and water have separate handling. |
 | Ghast Eye (`nameless_trinkets:ghast_eye`) | Adjusted | Adds 7.5% of maximum HP before the three scaling health accessories and Health Boost, capped at +6 HP. Kills refresh Regeneration I for 5s without adding duration; stronger unrelated regeneration remains. |
 | Gills (`nameless_trinkets:gills`) | Retained | Air decreases by 7 per tick outside suitable water; choking hit 2 HP (1 heart); choking blindness enabled; underwater air resets to 300. Air drains outside water and can cause choking and blindness. Normal removal requires the wearer's eyes to be underwater. |
@@ -101,4 +100,4 @@ Offensive proc power means the highest current melee, ranged or offensive spell 
 
 ## Other entries
 
-The 12 legacy Nameless relics stay disabled and removable. Six supporting items, Umbrella, Everlasting Beef, Eternal Steak and the Mimic Spawn Egg retain their roles. Wooden Stick retains its hit-negation effect.
+The 12 legacy Nameless relics and Fractured Nullstone stay disabled and removable. Six supporting items, Umbrella, Everlasting Beef, Eternal Steak and the Mimic Spawn Egg retain their roles. Wooden Stick retains its hit-negation effect.

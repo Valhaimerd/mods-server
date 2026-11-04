@@ -1,5 +1,7 @@
 # Nameless Trinkets: pack balance and server repair
 
+> Affected current values are superseded by [the combined phases 1-3 update](../class-balance-phases-1-3/README.md). This document retains its historical implementation and test evidence.
+
 This same-version repair targets `mods/Nameless Trinkets-neoforge-26.2-1.2.4+26.2.1.jar` (Curios variant, Java 25 bytecode). `balance.json` records the requested settings, 12 removed relics and Titan's effect durations/amplifiers. It retains all other upstream classes and resources except the explicitly changed classes, affected item tags, 36 removed recipes/advancements and the English tooltip updates.
 
 ## Character-scaling follow-up - 30 October 2026

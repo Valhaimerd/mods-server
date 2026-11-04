@@ -1,0 +1,98 @@
+PASS Evocation not early 1
+PASS Evocation 0.3s delivery 1
+PASS Evocation not early 2
+PASS Evocation 0.3s delivery 2
+PASS Evocation not early 3
+PASS Evocation 0.3s delivery 3
+PASS Evocation not early 4
+PASS Evocation 0.3s delivery 4
+PASS Evocation not early 5
+PASS Evocation 0.3s delivery 5
+PASS Evocation not early 6
+PASS Evocation 0.3s delivery 6
+PASS Evocation not early 7
+PASS Evocation 0.3s delivery 7
+PASS Evocation not early 8
+PASS Evocation 0.3s delivery 8
+PASS Evocation not early 9
+PASS Evocation 0.3s delivery 9
+PASS Evocation not early 10
+PASS Evocation 0.3s delivery 10
+PASS Evocation exactly ten deliveries
+PASS Evocation removes increased damage taken actual=100.0 expected=100.0
+PASS Evocation retains positive haste
+PASS Fissile original target hit once at 30% P actual=9.5999755859375 expected=9.6
+PASS Presence consumes readiness into native context
+PASS Presence consumed once
+PASS wizards:frostbolt consumes Winter readiness at launch
+PASS wizards:frostbolt actual hit freezes
+PASS wizards:frostbolt ricochet cannot reuse readiness
+PASS wizards:frostbolt frozen extends damaging exposure to ten seconds
+PASS wizards:frost_shard consumes Winter readiness at launch
+PASS wizards:frost_shard actual hit freezes
+PASS wizards:frost_shard ricochet cannot reuse readiness
+PASS wizards:frost_shard frozen extends damaging exposure to ten seconds
+PASS Frost basic applies five seconds exposure
+PASS Frostbite uses native freeze threshold
+PASS Improved + Deep Freeze actual Frozen 3.5s actual=70.0 expected=70.0
+PASS Near Zero freezes without native freeze actual=100.0 expected=100.0
+PASS Near Zero Frozen extends exposure to ten seconds
+PASS Blizzard actual freeze .25s actual=5.0 expected=5.0
+PASS Blizzard same-target shared gate
+PASS Blizzard separate target gets own clock
+PASS Presence armed by class arcane_missile
+PASS Presence armed by class arcane_explosion
+PASS Presence armed by class arcane_beam
+PASS Presence armed by class arcane_barrage
+PASS Presence armed by class arcane_blink
+PASS Presence armed by class arcane_evocation
+PASS Arcane basic does not arm Presence
+PASS Winter armed by class frost_nova
+PASS Winter armed by class frost_spikes
+PASS Winter armed by class frost_shield
+PASS Winter armed by class frost_lance
+PASS Winter armed by class frost_blizzard
+PASS Winter armed by class frost_elemental
+PASS Frost basic does not rearm Winter
+PASS Eruption ignores damage without an attacker
+PASS Eruption attacker-centered30% P actual=9.5999755859375 expected=9.6
+PASS Eruption damages nearby enemies around attacker
+PASS Eruption launches attacker upward
+PASS Arcane Ward activates through damage event
+PASS Ward does not refill spent absorption
+PASS Fire Ward has native absorption
+Fire power=Result[school=net.spell_power.api.SpellSchool@16c0be3b, baseValue=40.0, criticalChance=0.0, criticalDamage=1.5] ward coefficient=0.2
+PASS Flameward retaliates on absorption-only hit actual=6.4000244140625 expected=6.4
+PASS Flameward beam repeat respects fixed half-second gate actual=993.5999755859375 expected=993.5999755859375
+PASS Blink allowed under stun
+PASS Colossal actual projectile hit ignores armor
+PASS Colossal leaves actual armor unchanged actual=20.0 expected=20.0
+PASS Blitz native blast20% P actual=6.4000244140625 expected=6.4
+PASS Blitz initial two charges actual=2.0 expected=2.0
+PASS Blitz exhausted after both charges actual=0.0 expected=0.0
+PASS Blitz saved head recovery actual=100.0 expected=100.0
+PASS Blitz saved serial tail recovery actual=340.0 expected=340.0
+PASS Blitz copying preserves unrelated cooldown actual=77.0 expected=77.0
+PASS Near-aim Fire basic acquires visible enemy
+PASS Off-axis enemy is not an aimbot target
+PASS Targeted spike accepts visible enemy
+PASS Spike waits before damage actual=1000.0 expected=1000.0
+PASS Spike rejects target beyond24 blocks
+PASS Native leather freezing immunity is preserved
+PASS Dodging snapshot avoids spike actual=1000.0 expected=1000.0
+PASS Spike hits enemy inside fixed two-block radius
+PASS Spike actual coefficient80% and PvE80% actual=25.5999755859375 expected=25.6
+PASS Spike applies Frozen
+PASS Glacial native cast is instant
+PASS Glacial100% damage without warning delay actual=32.0 expected=32.0
+PASS Frost Fan delayed native explosion damages original target
+PASS Frost Fan delayed explosion freezes
+PASS Short applied exposure expires over external snow
+PASS Expiry preserves outside native snow exposure
+PASS Shield expiry burst actual30% P actual=9.5999755859375 expected=9.6
+PASS Shield expiry burst Frozen1s actual=20.0 expected=20.0
+PASS Arctic Reflex actual coefficient multiplied1.2 once actual=76.79998779296875 expected=76.8
+PASS Native Frostbite actually damages without a custom DOT
+PASS Cold remains active before finite expiry
+PASS Frostbite expires
+PASS Frostbite releases native threshold after expiry

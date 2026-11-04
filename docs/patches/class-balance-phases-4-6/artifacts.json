@@ -1,0 +1,100 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before": "0a6f28257e9b5e5b2eb253ae9659033dfe2e036b124bb01e21322e0bf3967fa8",
+    "after": "2cd2535ec2cffa8d79e999c9edc96454648e1dcf5eaeadfa7010145325129921",
+    "changed": [
+      "data/paladins/spell/heal.json",
+      "data/paladins/spell/holy_shock.json"
+    ],
+    "removed": [],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "ed77d7c3dd4b594d697187055d52349dd319f11d25fd16539a5aa5f8890570e4",
+    "after": "380d9d36fe3c4364b18fd82b4b613145a20e6345e8334df0491f642606696ca5",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/arcane_tier_4_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_1.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_passive_2.json",
+      "data/skill_tree_rpgs/spell/fire_tier_3_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_1_passive_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_1_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_2_modifier_1.json",
+      "data/skill_tree_rpgs/spell/frost_tier_2_spell_2_modifier_2.json",
+      "data/skill_tree_rpgs/spell/frost_tier_3_spell_2_modifier_1.json",
+      "net/skill_tree_rpgs/effect/SkillEffects.class"
+    ],
+    "removed": [],
+    "added": [
+      "assets/skill_tree_rpgs/textures/mob_effect/frostbite_exposure.png",
+      "assets/skill_tree_rpgs/textures/mob_effect/winters_chill_ready.png"
+    ]
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "b6cf711c3853c280d580ff2a8d657c5b16934883dd515cbb53c276ac116525fe",
+    "after": "bba0472e63fab5d850eef13345180577ec8f98c13838fdf53dca54b75386fd1c",
+    "changed": [
+      "net/spell_engine/client/casting/ClientCastController.class",
+      "net/spell_engine/internals/SpellParameters.class",
+      "net/spell_engine/internals/cost/SpellCooldownManager.class",
+      "net/spell_engine/internals/cost/SpellCooldowns.class",
+      "spell_engine.mixins.json",
+      "net/spell_engine/internals/PassiveRules.class",
+      "net/spell_engine/internals/SummonRules.class",
+      "net/spell_engine/internals/ThirdTierRules.class",
+      "net/spell_engine/internals/RogueRules.class",
+      "net/spell_engine/internals/PriestRules.class",
+      "net/spell_engine/client/gui/EchoHud.class",
+      "net/spell_engine/internals/SpatialRules.class",
+      "net/spell_engine/internals/WardHitRules.class"
+    ],
+    "removed": [],
+    "added": [
+      "mage-followup-models.json",
+      "net/spell_engine/client/gui/BlinkHud.class",
+      "net/spell_engine/internals/FrostExposure$Cold.class",
+      "net/spell_engine/internals/FrostExposure.class",
+      "net/spell_engine/internals/MageFollowup.class",
+      "net/spell_engine/internals/MagePenetration.class",
+      "net/spell_engine/internals/MageProjectiles.class",
+      "net/spell_engine/internals/MageSummons.class",
+      "net/spell_engine/internals/TargetedSpike.class",
+      "net/spell_engine/internals/cost/BlinkCharges.class",
+      "net/spell_engine/internals/cost/JointCharges.class",
+      "net/spell_engine/mixin/mages/MageArmorMixin.class",
+      "net/spell_engine/mixin/mages/MageImpactScopeMixin.class"
+    ]
+  },
+  {
+    "jar": "wizards-neoforge-3.1.2+26.2.jar",
+    "before": "99f71d754f97eaa3b6d6657e3df2c45ea7b4af15c234305820bf5f1dbad90014",
+    "after": "213ee4bf5b141fcbde535e86c0268c199ee9228075427d285f7f925b5675719e",
+    "changed": [
+      "assets/wizards/lang/en_us.json",
+      "data/wizards/spell/arcane_blast.json",
+      "data/wizards/spell/arcane_bolt.json",
+      "data/wizards/spell/arcane_evocation.json",
+      "data/wizards/spell/fire_blast.json",
+      "data/wizards/spell/fireball.json",
+      "data/wizards/spell/frost_lance.json",
+      "data/wizards/spell/frost_shard.json",
+      "data/wizards/spell/frost_spikes.json",
+      "data/wizards/spell/frostbolt.json",
+      "data/wizards/spell/frost_shield_burst.json",
+      "data/wizards/spell/arcane_barrage_bolt.json"
+    ],
+    "removed": [],
+    "added": [
+      "data/wizards/spell/frost_fan_burst.json"
+    ]
+  }
+]

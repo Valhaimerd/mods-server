@@ -1,0 +1,9 @@
+{
+  "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+  "before": "bba0472e63fab5d850eef13345180577ec8f98c13838fdf53dca54b75386fd1c",
+  "after": "eb6c5873bd7e1332b0b86fd4529061b6aea1736c6357146cb8ff43679d73b59d",
+  "changed": [
+    "net/spell_engine/internals/SummonRules.class",
+    "net/spell_engine/internals/MageSummons.class"
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "pass": false,
+    "check": "Holy Light flat12s haste-aware metadata"
+  },
+  {
+    "pass": false,
+    "check": "Penance40% base"
+  },
+  {
+    "pass": false,
+    "check": "Circle65% base"
+  },
+  {
+    "pass": false,
+    "check": "Orb40% and strong knockback"
+  }
+]

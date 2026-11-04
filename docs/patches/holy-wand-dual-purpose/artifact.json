@@ -1,0 +1,9 @@
+{
+  "jar": "paladins-neoforge-3.1.2+26.2.jar",
+  "before": "cce204fb7555162ea66d17a812fa36cb3b78914c4842c7a02b778225bf991b40",
+  "after": "054d9a8c65d4de24353fddf252073297a5a98a825da6c381b4f12a4a4cff0697",
+  "changed": [
+    "assets/paladins/lang/en_us.json",
+    "data/paladins/spell/heal.json"
+  ]
+}

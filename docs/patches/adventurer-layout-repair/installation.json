@@ -1,0 +1,11 @@
+{
+  "installed": true,
+  "jar": "adventurerskills-EN-1.3-26.2-neoforge-fixed.jar",
+  "sha256": "5ecddc1a32a2a667361611fd142039b307f0269f7304ecce680d450bbdff0dd2",
+  "copies": [
+    "mods",
+    "mod fixing/1 fixed packs"
+  ],
+  "client_checks": 46,
+  "resource_checks": 231
+}

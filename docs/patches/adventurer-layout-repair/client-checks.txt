@@ -1,0 +1,46 @@
+PASS Defense allocation gate 0:0
+PASS Defense allocation gate 0:1
+PASS Defense allocation gate 0:2
+PASS Defense allocation gate 0:3
+PASS Defense allocation gate 0:4
+PASS Defense allocation gate 0:5
+PASS Mastery requires both penultimate nodes 0
+PASS Complete Defense path accepted 0
+PASS Native final-node prerequisites satisfied 0
+PASS Complete mastery active 0
+PASS Exact permanent HP total 0
+PASS Exact permanent armor total 0
+PASS Defense allocation gate 1:0
+PASS Defense allocation gate 1:1
+PASS Defense allocation gate 1:2
+PASS Defense allocation gate 1:3
+PASS Defense allocation gate 1:4
+PASS Defense allocation gate 1:5
+PASS Mastery requires both penultimate nodes 1
+PASS Complete Defense path accepted 1
+PASS Native final-node prerequisites satisfied 1
+PASS Complete mastery active 1
+PASS Exact permanent HP total 1
+PASS Exact permanent armor total 1
+PASS Defense allocation gate 2:0
+PASS Defense allocation gate 2:1
+PASS Defense allocation gate 2:2
+PASS Defense allocation gate 2:3
+PASS Defense allocation gate 2:4
+PASS Defense allocation gate 2:5
+PASS Mastery requires both penultimate nodes 2
+PASS Complete Defense path accepted 2
+PASS Native final-node prerequisites satisfied 2
+PASS Complete mastery active 2
+PASS Exact permanent HP total 2
+PASS Exact permanent armor total 2
+PASS Utility mastery rejects missing ordinary node i0j6pbbluuqne53e
+PASS Original Utility layout supports full allocation i0j6pbbluuqne53e
+PASS Native Utility two-link merge accepted i0j6pbbluuqne53e
+PASS Utility mastery rejects missing ordinary node s02hkhd2ha87ji1n
+PASS Original Utility layout supports full allocation s02hkhd2ha87ji1n
+PASS Native Utility two-link merge accepted s02hkhd2ha87ji1n
+PASS Utility mastery rejects missing ordinary node qxcrnvfslhwdg5ip
+PASS Original Utility layout supports full allocation qxcrnvfslhwdg5ip
+PASS Native Utility two-link merge accepted qxcrnvfslhwdg5ip
+PASS Repaired tree opened on connected client

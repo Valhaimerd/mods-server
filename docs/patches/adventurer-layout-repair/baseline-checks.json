@@ -1,0 +1,31 @@
+{
+  "passed": 207,
+  "failed": [
+    "original Utility position 0jtmcffuara4whxe",
+    "original Utility position 1f01nhbrg46ypfdc",
+    "original Utility position 2lw02if80lxvfvh9",
+    "original Utility position 2pj0fbogctx589t3",
+    "original Utility position 3i4j4n1jy9kq63b3",
+    "original Utility position 46o8u8oydffa04o6",
+    "original Utility position 8qvbdogd9x4xoycl",
+    "original Utility position 9qyrqud3g16qneu1",
+    "original Utility position arhes7xrvfitahm3",
+    "original Utility position axl8alff75wi5qjq",
+    "original Utility position b4r7snauht7yus9f",
+    "original Utility position cls3nuryikjn5pxx",
+    "original Utility position egztdm9c9i404yjo",
+    "original Utility position gh96zb6t67hnmswd",
+    "original Utility position gk57oho18h66ghxe",
+    "original Utility position i0j6pbbluuqne53e",
+    "original Utility position o327why5r32ntmbc",
+    "original Utility position qxcrnvfslhwdg5ip",
+    "original Utility position s02hkhd2ha87ji1n",
+    "original Utility position tt2rbu9d7n91o1a2",
+    "original Utility position tv2lczi8824fadw6",
+    "original Utility position vaios6drja2eapyg",
+    "original Utility position yts2dfnkpz3xqziu",
+    "Utility original internal graph and only two mastery spokes",
+    "overlapping/too-close nodes 4zj68e0t9ythniot / 9qyrqud3g16qneu1",
+    "crossing Defense edges ('owk0eiqwgomn6jwb', 'new_colossus_health') / ('new_colossus_healing', 'ebhti3huj2v7zvny')"
+  ]
+}

@@ -1,5 +1,7 @@
 # Combined class-balance phases 7-9
 
+> **Priest/Ward follow-up:** [Current cooldowns, coefficients and Arcane Ward distance gate](../priest-ward-tuning/README.md) supersede the affected older values below.
+
 > **Superseding Purelight update:** [80s haste-affected cooldown and radiant body/armor](../purelight-glow/README.md) are installed. This replaces the earlier no-cooldown value below.
 
 4 November 2026. Current Priest, Paladin and Archer follow-up, layered over installed phases 1-6 **and** the 20-block Ancient Hydra detection fix. Existing spell IDs, node allocations and active JAR filenames remain. Matching client/server JARs and a restart are required. Installation and final results are recorded in [progress.md](progress.md), not implied by this source overview.

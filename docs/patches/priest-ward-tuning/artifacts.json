@@ -1,0 +1,38 @@
+[
+  {
+    "jar": "paladins-neoforge-3.1.2+26.2.jar",
+    "before": "054d9a8c65d4de24353fddf252073297a5a98a825da6c381b4f12a4a4cff0697",
+    "after": "37b1551ee5e64bfd526f590202dc7ffb3c80773c056411c054fd8a78b1126a63",
+    "changed": [
+      "assets/paladins/lang/en_us.json",
+      "data/paladins/spell/circle_of_healing.json",
+      "data/paladins/spell/holy_beam.json",
+      "data/paladins/spell/penance.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "skill_tree-neoforge-1.6.1+26.2.jar",
+    "before": "a55ab9427a0387f849c0e974e447f3b154880f0774884e082304cefd2f8396ac",
+    "after": "cfc088ea1fa8ebee36f83c774bcb457ecacc160bd8daab1c101be56b3b55dffe",
+    "changed": [
+      "assets/skill_tree_rpgs/lang/en_us.json",
+      "data/skill_tree_rpgs/spell/priest_tier_3_passive_2.json"
+    ],
+    "added": []
+  },
+  {
+    "jar": "spell_engine-neoforge-1.10.5+26.2.jar",
+    "before": "7f8c7048742845723d9647e3e8ddf7109fcf27cb4a195e35a2fda60801d7c6cd",
+    "after": "6498584e098cf66fa34c6a9b082c05cc92e83469054c81e4e5fc20be80321366",
+    "changed": [
+      "net/spell_engine/internals/PriestRules.class",
+      "net/spell_engine/internals/PriestTuning.class",
+      "net/spell_engine/internals/MageFollowup.class",
+      "net/spell_engine/internals/FinalRules.class"
+    ],
+    "added": [
+      "net/spell_engine/internals/ArcaneWardRange.class"
+    ]
+  }
+]

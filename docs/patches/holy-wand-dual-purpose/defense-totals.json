@@ -1,0 +1,32 @@
+[
+  {
+    "path": "Aegis",
+    "totals": {
+      "max_health": 4,
+      "armor": 2,
+      "puffish_attributes:resistance": 0.04,
+      "puffish_attributes:healing": 0.04,
+      "knockback_resistance": 0
+    }
+  },
+  {
+    "path": "Colossus",
+    "totals": {
+      "max_health": 6,
+      "armor": 2,
+      "puffish_attributes:resistance": 0.02,
+      "puffish_attributes:healing": 0.08,
+      "knockback_resistance": 0
+    }
+  },
+  {
+    "path": "Bulwark",
+    "totals": {
+      "max_health": 2,
+      "armor": 4,
+      "puffish_attributes:resistance": 0.08,
+      "puffish_attributes:healing": 0,
+      "knockback_resistance": 0.2
+    }
+  }
+]

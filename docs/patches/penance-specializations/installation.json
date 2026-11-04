@@ -1,0 +1,8 @@
+{
+  "installed": true,
+  "runtime_checks": 41,
+  "jars": {
+    "skill_tree-neoforge-1.6.1+26.2.jar": "f4434228dd132b5fc4446681d4603cfa3836953176187713c83056be9dc48ab2",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "6e27e130d657905e6a4b557cc6d11bd14b3a369a1e2f1c7f7b9f10ab1be8cb6e"
+  }
+}

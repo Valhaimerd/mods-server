@@ -1,0 +1,11 @@
+{
+  "installed": true,
+  "jar": "paladins-neoforge-3.1.2+26.2.jar",
+  "sha256": "054d9a8c65d4de24353fddf252073297a5a98a825da6c381b4f12a4a4cff0697",
+  "copies": [
+    "mods",
+    "mod fixing/1 fixed packs"
+  ],
+  "client_checks": 152,
+  "adventurer_layout_sha256": "5ecddc1a32a2a667361611fd142039b307f0269f7304ecce680d450bbdff0dd2"
+}

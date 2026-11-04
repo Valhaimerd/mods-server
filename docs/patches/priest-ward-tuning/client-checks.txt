@@ -1,0 +1,35 @@
+PASS Holy Light proportional metadata disabled
+PASS Holy Light flat cooldown progress=0.0 actual=12.0 expected=12.0
+PASS Holy Light flat cooldown progress=0.04 actual=12.0 expected=12.0
+PASS Actual release cooldown ticks progress=0.04 actual=240.0 expected=240.0
+PASS Holy Light flat cooldown progress=0.5 actual=12.0 expected=12.0
+PASS Actual release cooldown ticks progress=0.5 actual=240.0 expected=240.0
+PASS Holy Light flat cooldown progress=0.96 actual=12.0 expected=12.0
+PASS Actual release cooldown ticks progress=0.96 actual=240.0 expected=240.0
+PASS Holy Light flat cooldown progress=1.0 actual=12.0 expected=12.0
+PASS Actual release cooldown ticks progress=1.0 actual=240.0 expected=240.0
+PASS Holy Light still affected by haste actual=6.0 expected=6.0
+PASS Penance minimum cooldown retained actual=8.0 expected=8.0
+PASS Penance full cooldown retained actual=12.0 expected=12.0
+PASS Penance runtime coefficient improved=false actual=0.4000000059604645 expected=0.4
+PASS Actual Penance explosion damage improved=false actual=6.4000244140625 expected=6.4
+PASS Actual Circle healing improved=false actual=13.0 expected=13.0
+PASS Penance runtime coefficient improved=true actual=0.5 expected=0.5
+PASS Actual Penance explosion damage improved=true actual=8.0 expected=8.0
+PASS Actual Circle healing improved=true actual=18.0 expected=18.0
+PASS Celestial Orb coefficient40% actual=0.4000000059604645 expected=0.4
+PASS Celestial Orb strong knockback1.0 actual=1.0 expected=1.0
+PASS Five celestial orbs readied
+PASS Joined player accepts combat damage
+PASS Actual incoming hit accepted
+PASS Actual own-hit Orb retaliation40% P after PvE retention actual=6.4000244140625 expected=6.4
+PASS Orb applies strong physical knockback
+PASS Retaliation consumes exactly one Orb
+PASS Ward still shields at distance=3.0
+PASS Ward teleport distance, attacker range=3.0 actual=4.0 expected=4.0
+PASS Ward still shields at distance=4.0
+PASS Ward teleport distance, attacker range=4.0 actual=4.0 expected=4.0
+PASS Ward still shields at distance=4.01
+PASS Ward teleport distance, attacker range=4.01 actual=0.0 expected=0.0
+PASS Ward still shields at distance=8.0
+PASS Ward teleport distance, attacker range=8.0 actual=0.0 expected=0.0

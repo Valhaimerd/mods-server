@@ -1,0 +1,154 @@
+[
+  {
+    "pass": true,
+    "check": "Holy Light flat12s haste-aware metadata"
+  },
+  {
+    "pass": true,
+    "check": "Penance40% base"
+  },
+  {
+    "pass": true,
+    "check": "Circle65% base"
+  },
+  {
+    "pass": true,
+    "check": "Orb40% and strong knockback"
+  },
+  {
+    "pass": true,
+    "check": "candidate hash paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "archive integrity paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "no removed IDs paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact changed members paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact additions paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "unchanged version/dependencies paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "Holy Wand dual-purpose fix preserved"
+  },
+  {
+    "pass": true,
+    "check": "exact runtime-tested bytes"
+  },
+  {
+    "pass": true,
+    "check": "installed mods/paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "installed mod fixing/1 fixed packs/paladins-neoforge-3.1.2+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "candidate hash skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "archive integrity skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "no removed IDs skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact changed members skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact additions skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "unchanged version/dependencies skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact runtime-tested bytes"
+  },
+  {
+    "pass": true,
+    "check": "installed mods/skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "installed mod fixing/1 fixed packs/skill_tree-neoforge-1.6.1+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "candidate hash spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "archive integrity spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "no removed IDs spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact changed members spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "exact additions spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "unchanged version/dependencies spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "preserved FinalPurelight"
+  },
+  {
+    "pass": true,
+    "check": "preserved FinalPriest"
+  },
+  {
+    "pass": true,
+    "check": "preserved FinalDome"
+  },
+  {
+    "pass": true,
+    "check": "preserved FinalDefenses"
+  },
+  {
+    "pass": true,
+    "check": "preserved SummonRules"
+  },
+  {
+    "pass": true,
+    "check": "preserved MageSummons"
+  },
+  {
+    "pass": true,
+    "check": "exact runtime-tested bytes"
+  },
+  {
+    "pass": true,
+    "check": "installed mods/spell_engine-neoforge-1.10.5+26.2.jar"
+  },
+  {
+    "pass": true,
+    "check": "installed mod fixing/1 fixed packs/spell_engine-neoforge-1.10.5+26.2.jar"
+  }
+]

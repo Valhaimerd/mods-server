@@ -1,5 +1,7 @@
 # Combined class-balance phases 1-3
 
+> **Layout correction:** [Defense and Utilities repair](../adventurer-layout-repair/README.md) restores original Utility positions and ordinary connections, removes early mastery spokes, and arranges Defense into clean rows. The earlier Utility chain-layout description below is superseded. Benefits and complete-path requirements remain unchanged.
+
 4 November 2026. This overlay supersedes the affected values in the earlier combat-phase-one, combat-followup-phase-one and Utilities patches. [Phases 4-6](../class-balance-phases-4-6/README.md) now layer the mage follow-up over these inputs; phases 7-9 remain planned. Active JAR filenames and saved skill IDs are retained; clients and servers need matching files and a restart.
 
 ## Shared combat

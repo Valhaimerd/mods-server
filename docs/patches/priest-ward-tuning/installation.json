@@ -1,0 +1,9 @@
+{
+  "installed": true,
+  "runtime_checks": 35,
+  "jars": {
+    "paladins-neoforge-3.1.2+26.2.jar": "37b1551ee5e64bfd526f590202dc7ffb3c80773c056411c054fd8a78b1126a63",
+    "skill_tree-neoforge-1.6.1+26.2.jar": "cfc088ea1fa8ebee36f83c774bcb457ecacc160bd8daab1c101be56b3b55dffe",
+    "spell_engine-neoforge-1.10.5+26.2.jar": "6498584e098cf66fa34c6a9b082c05cc92e83469054c81e4e5fc20be80321366"
+  }
+}

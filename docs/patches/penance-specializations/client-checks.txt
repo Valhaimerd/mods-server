@@ -1,0 +1,41 @@
+PASS Hysteria minecraft:attack_speed at 1 stacks actual=1.0149999996647239 expected=1.015
+PASS Hysteria ranged_weapon:haste at 1 stacks actual=1.0149999996647239 expected=1.015
+PASS Hysteria spell_power:haste at 1 stacks actual=1.0149999996647239 expected=1.015
+PASS Hysteria minecraft:attack_speed at 10 stacks actual=1.1499999966472387 expected=1.15
+PASS Hysteria ranged_weapon:haste at 10 stacks actual=1.1499999966472387 expected=1.15
+PASS Hysteria spell_power:haste at 10 stacks actual=1.1499999966472387 expected=1.15
+PASS Actual Penance remote caster Hysteria stack 1
+PASS Actual Penance remote caster Hysteria stack 2
+PASS Actual Penance remote caster Hysteria stack 3
+PASS Actual Penance remote caster Hysteria stack 4
+PASS Actual Penance remote caster Hysteria stack 5
+PASS Actual Penance remote caster Hysteria stack 6
+PASS Actual Penance remote caster Hysteria stack 7
+PASS Actual Penance remote caster Hysteria stack 8
+PASS Actual Penance remote caster Hysteria stack 9
+PASS Actual Penance remote caster Hysteria stack 10
+PASS Actual Penance remote caster Hysteria stack 11
+PASS Hysteria refresh remains4s
+PASS Actual Penance maximum15% minecraft:attack_speed actual=1.1499999966472387 expected=1.15
+PASS Actual Penance maximum15% ranged_weapon:haste actual=1.1499999966472387 expected=1.15
+PASS Actual Penance maximum15% spell_power:haste actual=1.1499999966472387 expected=1.15
+PASS Hysteria cleanup minecraft:attack_speed actual=4.0 expected=4.0
+PASS Hysteria cleanup ranged_weapon:haste actual=100.0 expected=100.0
+PASS Hysteria cleanup spell_power:haste actual=100.0 expected=100.0
+PASS Chastise received damage at 1 stacks actual=1.0149999996647239 expected=1.015
+PASS Chastise received damage at 10 stacks actual=1.1499999966472387 expected=1.15
+PASS Actual Penance Chastise stack 1
+PASS Actual Penance Chastise stack 2
+PASS Actual Penance Chastise stack 3
+PASS Actual Penance Chastise stack 4
+PASS Actual Penance Chastise stack 5
+PASS Actual Penance Chastise stack 6
+PASS Actual Penance Chastise stack 7
+PASS Actual Penance Chastise stack 8
+PASS Actual Penance Chastise stack 9
+PASS Actual Penance Chastise stack 10
+PASS Actual Penance Chastise stack 11
+PASS Chastise native maximum15% damage taken actual=1.1499999966472387 expected=1.15
+PASS Chastise refresh4s
+PASS Actual spell damage amplified15% actual=14.719970703125 expected=14.71998596191406
+PASS Chastise removal restores damage taken actual=100.0 expected=100.0

@@ -1,0 +1,152 @@
+PASS Wand retains 24-block targeting
+PASS Actual item spell binding acolyte_wand container=SpellContainer[access=MAGIC, access_param=, pool=, slot=, max_spell_count=0, spell_ids=[paladins:heal], extra_tier_binding=0]
+PASS Actual weapon right-click binding acolyte_wand
+PASS Actual item spell binding holy_wand container=SpellContainer[access=MAGIC, access_param=, pool=, slot=, max_spell_count=0, spell_ids=[paladins:heal], extra_tier_binding=0]
+PASS Actual weapon right-click binding holy_wand
+PASS Actual item spell binding diamond_holy_wand container=SpellContainer[access=MAGIC, access_param=, pool=, slot=, max_spell_count=0, spell_ids=[paladins:heal], extra_tier_binding=0]
+PASS Actual weapon right-click binding diamond_holy_wand
+PASS Actual item spell binding netherite_holy_wand container=SpellContainer[access=MAGIC, access_param=, pool=, slot=, max_spell_count=0, spell_ids=[paladins:heal], extra_tier_binding=0]
+PASS Actual weapon right-click binding netherite_holy_wand
+PASS Native Wand AIM acquires enemy
+PASS Wand actually damages enemy
+PASS Wand 80% P matches Staff under same mitigation actual=12.79998779296875 expected=12.79998779296875
+PASS Wand self-heals 50% P without self-damage actual=11.0 expected=11.0
+PASS Wand heals eligible ally and does not hurt it actual=11.0 expected=11.0
+PASS Path 0 node 1 cumulative HP actual=2.0 expected=2.0
+PASS Path 0 node 1 cumulative armor actual=0.0 expected=0.0
+PASS Path 0 node 1 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 0 node 1 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 1 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 2 cumulative HP actual=2.0 expected=2.0
+PASS Path 0 node 2 cumulative armor actual=1.0 expected=1.0
+PASS Path 0 node 2 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 0 node 2 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 2 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 3 cumulative HP actual=2.0 expected=2.0
+PASS Path 0 node 3 cumulative armor actual=1.0 expected=1.0
+PASS Path 0 node 3 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 0 node 3 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 3 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 4 cumulative HP actual=2.0 expected=2.0
+PASS Path 0 node 4 cumulative armor actual=2.0 expected=2.0
+PASS Path 0 node 4 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 0 node 4 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 4 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 5 cumulative HP actual=2.0 expected=2.0
+PASS Path 0 node 5 cumulative armor actual=2.0 expected=2.0
+PASS Path 0 node 5 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 0 node 5 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 5 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 6 cumulative HP actual=4.0 expected=4.0
+PASS Path 0 node 6 cumulative armor actual=2.0 expected=2.0
+PASS Path 0 node 6 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 0 node 6 cumulative healing received actual=0.0 expected=0.0
+PASS Path 0 node 6 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 7 cumulative HP actual=4.0 expected=4.0
+PASS Path 0 node 7 cumulative armor actual=2.0 expected=2.0
+PASS Path 0 node 7 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 0 node 7 cumulative healing received actual=4.0 expected=4.0
+PASS Path 0 node 7 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 0 node 8 cumulative HP actual=4.0 expected=4.0
+PASS Path 0 node 8 cumulative armor actual=2.0 expected=2.0
+PASS Path 0 node 8 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 0 node 8 cumulative healing received actual=4.0 expected=4.0
+PASS Path 0 node 8 cumulative knockback points actual=0.0 expected=0.0
+PASS Defense does not grant outgoing Healing Power 0 actual=1.0 expected=1.0
+PASS Refund removes all path bonuses 0 HP actual=20.0 expected=20.0
+PASS Refund removes all path bonuses 0 armor actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 0 physical/magic Resistance actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 0 healing received actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 0 knockback points actual=0.0 expected=0.0
+PASS Path 1 node 1 cumulative HP actual=2.0 expected=2.0
+PASS Path 1 node 1 cumulative armor actual=0.0 expected=0.0
+PASS Path 1 node 1 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 1 node 1 cumulative healing received actual=0.0 expected=0.0
+PASS Path 1 node 1 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 2 cumulative HP actual=2.0 expected=2.0
+PASS Path 1 node 2 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 2 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 1 node 2 cumulative healing received actual=0.0 expected=0.0
+PASS Path 1 node 2 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 3 cumulative HP actual=2.0 expected=2.0
+PASS Path 1 node 3 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 3 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 3 cumulative healing received actual=0.0 expected=0.0
+PASS Path 1 node 3 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 4 cumulative HP actual=4.0 expected=4.0
+PASS Path 1 node 4 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 4 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 4 cumulative healing received actual=0.0 expected=0.0
+PASS Path 1 node 4 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 5 cumulative HP actual=4.0 expected=4.0
+PASS Path 1 node 5 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 5 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 5 cumulative healing received actual=4.0 expected=4.0
+PASS Path 1 node 5 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 6 cumulative HP actual=6.0 expected=6.0
+PASS Path 1 node 6 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 6 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 6 cumulative healing received actual=4.0 expected=4.0
+PASS Path 1 node 6 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 7 cumulative HP actual=6.0 expected=6.0
+PASS Path 1 node 7 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 7 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 7 cumulative healing received actual=8.0 expected=8.0
+PASS Path 1 node 7 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 1 node 8 cumulative HP actual=6.0 expected=6.0
+PASS Path 1 node 8 cumulative armor actual=2.0 expected=2.0
+PASS Path 1 node 8 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 1 node 8 cumulative healing received actual=8.0 expected=8.0
+PASS Path 1 node 8 cumulative knockback points actual=0.0 expected=0.0
+PASS Defense does not grant outgoing Healing Power 1 actual=1.0 expected=1.0
+PASS Refund removes all path bonuses 1 HP actual=20.0 expected=20.0
+PASS Refund removes all path bonuses 1 armor actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 1 physical/magic Resistance actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 1 healing received actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 1 knockback points actual=0.0 expected=0.0
+PASS Path 2 node 1 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 1 cumulative armor actual=0.0 expected=0.0
+PASS Path 2 node 1 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 2 node 1 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 1 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 2 node 2 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 2 cumulative armor actual=1.0 expected=1.0
+PASS Path 2 node 2 cumulative physical/magic Resistance actual=0.0 expected=0.0
+PASS Path 2 node 2 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 2 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 2 node 3 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 3 cumulative armor actual=1.0 expected=1.0
+PASS Path 2 node 3 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 2 node 3 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 3 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 2 node 4 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 4 cumulative armor actual=2.0 expected=2.0
+PASS Path 2 node 4 cumulative physical/magic Resistance actual=2.0 expected=2.0
+PASS Path 2 node 4 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 4 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 2 node 5 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 5 cumulative armor actual=2.0 expected=2.0
+PASS Path 2 node 5 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 2 node 5 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 5 cumulative knockback points actual=0.0 expected=0.0
+PASS Path 2 node 6 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 6 cumulative armor actual=2.0 expected=2.0
+PASS Path 2 node 6 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 2 node 6 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 6 cumulative knockback points actual=5.000000074505806 expected=5.0
+PASS Path 2 node 7 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 7 cumulative armor actual=2.0 expected=2.0
+PASS Path 2 node 7 cumulative physical/magic Resistance actual=4.0 expected=4.0
+PASS Path 2 node 7 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 7 cumulative knockback points actual=10.000000149011612 expected=10.0
+PASS Path 2 node 8 cumulative HP actual=2.0 expected=2.0
+PASS Path 2 node 8 cumulative armor actual=4.0 expected=4.0
+PASS Path 2 node 8 cumulative physical/magic Resistance actual=8.0 expected=8.0
+PASS Path 2 node 8 cumulative healing received actual=0.0 expected=0.0
+PASS Path 2 node 8 cumulative knockback points actual=20.000000298023224 expected=20.0
+PASS Defense does not grant outgoing Healing Power 2 actual=1.0 expected=1.0
+PASS Refund removes all path bonuses 2 HP actual=20.0 expected=20.0
+PASS Refund removes all path bonuses 2 armor actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 2 physical/magic Resistance actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 2 healing received actual=0.0 expected=0.0
+PASS Refund removes all path bonuses 2 knockback points actual=0.0 expected=0.0

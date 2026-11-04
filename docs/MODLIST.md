@@ -4,11 +4,11 @@
 
 <p class="cover-deck">A player guide to the major mechanics, character progression, exploration, survival, and everyday controls in this pack.</p>
 
-<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 305 synchronized JARs · 23 client extras</p>
+<p class="cover-meta"><strong>Author:</strong> Valhaimerd<br><strong>Pack:</strong> Minecraft 26.2 · NeoForge 26.2.0.90<br><strong>Edition:</strong> October 2026<br><strong>Distribution:</strong> 305 synchronized JARs · 26 client extras</p>
 
 Last audited: 2026-11-04<br>
 Pack target: Minecraft 26.2 with NeoForge 26.2.0.90<br>
-Current distribution: 305 synchronized JARs plus 23 client-store JARs
+Current distribution: 305 synchronized JARs plus 26 client-store JARs
 
 ## About this handbook
 
@@ -3949,6 +3949,13 @@ Bifrost uses the key shown on its final RPG skill-bar slot. Its number changes w
 | Sword Inspect Rework (`sword_inspect_rework`) |  |
 | Punchy Sword Inspect Old (`punchy_sword_inspect_old`) |  |
 | Punchy Sword Inspect Rework (`punchy_sword_inspect_rework`) |  |
+
+#### Entity Culling
+
+| Action | Recommended key |
+|---|---|
+| Debug Toggle Culling |  |
+| Show Culling Boxes |  |
 
 #### Chiseled Bookshelf Visualizer
 

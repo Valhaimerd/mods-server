@@ -10,7 +10,4 @@
     <RootNamespace>ModsServerInstaller</RootNamespace>
     <DebugType>none</DebugType>
   </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="vectors-performance.json" LogicalName="ModsServerInstaller.VectorsPerformance" />
-  </ItemGroup>
 </Project>

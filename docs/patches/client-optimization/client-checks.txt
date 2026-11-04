@@ -1,0 +1,12 @@
+PASS Loaded compatible optimizer: sodium
+PASS Loaded compatible optimizer: ferritecore
+PASS Loaded compatible optimizer: moreculling
+PASS Loaded compatible optimizer: immediatelyfast
+PASS Loaded compatible optimizer: entityculling
+PASS Loaded compatible optimizer: dynamic_fps
+PASS Loaded compatible optimizer: modernfix
+PASS Vectors absent from complete client pack
+PASS Complete pack, not only an optimizer fixture
+PASS Native texture and entity renderer initialization
+PASS Complete-pack resource reload succeeds with combined optimizer stack
+PASS Client remains responsive after reload

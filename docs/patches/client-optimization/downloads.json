@@ -1,0 +1,191 @@
+[
+  {
+    "project": "immediatelyfast",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/8898471",
+    "url": "https://mediafilez.forgecdn.net/files/8898/471/ImmediatelyFast-NeoForge-1.16.5%2B26.2.jar",
+    "file": "ImmediatelyFast-NeoForge-1.16.5+26.2.jar",
+    "sha256": "3261318ad48e888fa4abcab2dcf332717a43886c26107e21bf2ce0f527d4fb2c",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "LGPL-3.0-or-later",
+      "issueTrackerURL": "https://github.com/RaphiMC/ImmediatelyFast/issues",
+      "mods": [
+        {
+          "modId": "immediatelyfast",
+          "version": "1.16.5+26.2",
+          "displayName": "ImmediatelyFast",
+          "description": "Speed up and optimize immediate mode rendering in Minecraft",
+          "authors": "RK_01",
+          "iconFile": "assets/immediatelyfast/icon.png",
+          "logoFile": "assets/immediatelyfast/icon.png",
+          "displayURL": "https://github.com/RaphiMC/ImmediatelyFast"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "immediatelyfast-common.mixins.json"
+        },
+        {
+          "config": "immediatelyfast-neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "immediatelyfast": [
+          {
+            "modId": "minecraft",
+            "versionRange": "[26.2.0]",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "neoforge",
+            "versionRange": "[26.2.0.0,26.3.0.0)",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "project": "entityculling",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/entityculling/files/9100314",
+    "url": "https://mediafilez.forgecdn.net/files/9100/314/entityculling-neoforge-1.11.3-mc26.2.jar",
+    "file": "entityculling-neoforge-1.11.3-mc26.2.jar",
+    "sha256": "18c8ad70bb90797be22c33e3d20f6192f54b3062ad1b2588ec79d21e9870e280",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/tr7zw/EntityCulling/issues",
+      "license": "tr7zw Protective License",
+      "mods": [
+        {
+          "modId": "entityculling",
+          "version": "1.11.3",
+          "displayName": "EntityCulling",
+          "displayURL": "https://modrinth.com/mod/entityculling",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "bannerFile": "icon.png",
+          "authors": "tr7zw",
+          "description": "This mod uses async path-tracing to hide Tiles/Entities that are not visible.\n",
+          "displayTest": "IGNORE_ALL_VERSION"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "entityculling.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "entityculling": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "~26.2",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[26.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "project": "dynamic-fps",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/dynamic-fps/files/8260229",
+    "url": "https://mediafilez.forgecdn.net/files/8260/229/dynamic-fps-3.11.9%2Bminecraft-26.2.0-neoforge.jar",
+    "file": "dynamic-fps-3.11.9+minecraft-26.2.0-neoforge.jar",
+    "sha256": "671ce4eac9c1c7411dae050773e8cca15b69a1cd9955bac9cb54f6093964f1ff",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "MIT",
+      "issueTrackerURL": "https://github.com/juliand665/Dynamic-FPS/issues",
+      "mods": [
+        {
+          "modId": "dynamic_fps",
+          "namespace": "net.lostluma",
+          "version": "3.11.9",
+          "displayName": "Dynamic FPS",
+          "authors": "juliand665 & LostLuma",
+          "description": "Reduce resource usage while Minecraft is in the background or idle.",
+          "logoFile": "dynamic_fps.png",
+          "displayTest": "IGNORE_ALL_VERSION",
+          "credits": "Thanks to:\n  Authors:\n    juliand665\n    LostLuma\n\n  Contributors:\n    altrisi\n    DenaryDev\n    dima-dencep\n    EuropaYou\n    N4TH4NOT\n    parly\n    Pixaurora\n    Setadokalo\n    Siphalor\n    sisby-folk\n    triphora\n\n  Illustrators:\n    Pixaurora\n\n  Translators:\n    AC19970\n    Alexander317\n    AlphaKR93\n    Altegar\n    atroniax\n    BurrConnie\n    DecafDawren\n    egeesin\n    Energobro\n    EuropaYou\n    Felix14-v2\n    FITFC\n    godkyo98\n    GuNanOvO\n    Hubry\n    ImVietnam\n    ishi-sama\n    kau19an\n    kyrtion\n    Lucanoria\n    LotuxPunk\n    Madis0\n    mpustovoi\n    N4TH4NOT\n    notlin4\n    pilahito\n    Pixaurora\n    Q2297045667\n    raspberrygitq\n    Rhbarber\n    RinixGG\n    Samekichi\n    Shihyeon\n    StarmanMine142\n    stijnvdkolk\n    Taarek\n    TheBossMagnus\n    TheLegendofSaram\n    wicivo\n    XfedeX\n    yichifauzi\n",
+          "modUrl": "https://dapprgames.com/mods",
+          "displayURL": "https://dapprgames.com/mods",
+          "updateJSONURL": "https://api.lostluma.net/updates/dynamic-fps?platform=neoforge"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "dynamic_fps.neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "dynamic_fps": [
+          {
+            "modId": "minecraft",
+            "mandatory": true,
+            "versionRange": "[26.2.0,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "project": "modernfix-mvus",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/modernfix-mvus/files/8896910",
+    "url": "https://mediafilez.forgecdn.net/files/8896/910/modernfix-neoforge-5.27.21%2Bmc26.2.jar",
+    "file": "modernfix-neoforge-5.27.21+mc26.2.jar",
+    "sha256": "857c90f486f271953ac9e3f8920486f930fd75e075611ad56a2d51d0ac2af767",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "GNU LGPL 3.0",
+      "issueTrackerURL": "https://github.com/coredex-source/ModernFix---mVUS/issues",
+      "mixins": [
+        {
+          "config": "modernfix-modernfix.mixins.json"
+        }
+      ],
+      "mods": [
+        {
+          "modId": "modernfix",
+          "version": "5.27.21+mc26.2",
+          "displayName": "ModernFix",
+          "displayURL": "https://modrinth.com/mod/modernfix-mvus",
+          "logoFile": "icon.png",
+          "authors": "embeddedt, coredex-source",
+          "description": "Egregious, yet effective performance improvements for modern Minecraft\n"
+        }
+      ],
+      "dependencies": {
+        "modernfix": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[26.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "jei",
+            "type": "optional",
+            "versionRange": "[15.8.0.11,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    }
+  }
+]

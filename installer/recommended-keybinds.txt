@@ -179,7 +179,6 @@ key_artifacts.key.universal_attractor.toggle:key.keyboard.unknown
 key_key.zeroteam_pet_status.open_dashboard:key.keyboard.r:SHIFT
 key_key.onekeyminer.hold:key.keyboard.c
 key_key.onekeyminer.config:key.keyboard.c:CONTROL
-key_key.vectors.open:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_keybinds.combat_roll.roll:key.keyboard.e
@@ -208,3 +207,5 @@ key_key.punchy.triggerable.sword_inspect_rework:key.keyboard.unknown
 key_key.punchy.triggerable.sword_inspect_old:key.keyboard.unknown
 key_key.punchy.triggerable.punchy_sword_inspect_old:key.keyboard.unknown
 key_key.punchy.triggerable.punchy_sword_inspect_rework:key.keyboard.unknown
+key_key.entityculling.toggle:key.keyboard.unknown
+key_key.entityculling.toggleBoxes:key.keyboard.unknown

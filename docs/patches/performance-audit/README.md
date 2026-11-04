@@ -1,5 +1,7 @@
 # Shared-PC client/server performance audit
 
+> **Superseding client update - 4 November 2026:** [Vectors removal and replacement client stack](../client-optimization/README.md). The original inventory/research below is historical; Vectors is no longer active.
+
 1 November 2026. Pack: Minecraft 26.2 / NeoForge 26.2.0.90 / Java 25+. Host reported: **12 GB RAM, Intel Core i5 14th generation**. Exact processor, client/server heap allocations and live-server configuration remain unknown.
 
 ## Conclusion and evidence limits

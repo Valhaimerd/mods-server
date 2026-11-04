@@ -1,0 +1,15 @@
+{
+  "matched_runtime_tested_pack_jars": 331,
+  "installed_new_files": 4,
+  "main_jars": 305,
+  "client_extra_jars": 26,
+  "vectors_absent": true,
+  "native_client_checks": 12,
+  "installer_self_test": "passed",
+  "keybind_tables": 47,
+  "pdf_pages": 80,
+  "review_pages": [
+    1,
+    80
+  ]
+}

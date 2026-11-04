@@ -1,5 +1,9 @@
 # Mod Fixing Workspace
 
+## Client optimization without Vectors - 4 November 2026
+
+Removed Vectors from client store and its installer provisioning. Added official NeoForge26.2 ImmediatelyFast1.16.5, Entity Culling1.11.3, Dynamic FPS3.11.9 and ModernFix-mVUS5.27.21 to client store/fixed packs, retaining Sodium/FerriteCore/More Culling. Exact files passed 12 complete-pack startup/resource-reload checks; installer build/self-tests pass. [Sources, hashes, scope and limits](../docs/patches/client-optimization/README.md). Vectors original is in retired packs/client-optimization-2026-11-04.305 main/26 client extras. Personal installations and server unchanged; no benchmark or Git push.
+
 ## Archer-only launch correction - 4 November 2026
 
 Ordinary arrows get at most one 2-degree launch correction, only for a sole Archer class allocation and a narrowly aimed near miss. No center chasing, retargeting or new targets during flight. Legacy mixed class-root saves fail closed. Existing party/pet/PvP/Vanish exclusions remain; Magic Arrows are unchanged. Exact tested same-name Spell Engine replacement installed after 65 native checks and 20 artifact/install checks. [Design, evidence and limits](../docs/patches/archer-assist-repair/README.md). Prior Priest/Ward and other repairs retained. Originals in retired packs/archer-assist-repair-2026-11-04; no handbook rebuild or Git push.

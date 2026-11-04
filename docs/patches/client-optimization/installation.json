@@ -1,0 +1,12 @@
+{
+  "installed": true,
+  "main_jars": 305,
+  "client_extra_jars": 26,
+  "runtime_checks": 12,
+  "files": {
+    "ImmediatelyFast-NeoForge-1.16.5+26.2.jar": "3261318ad48e888fa4abcab2dcf332717a43886c26107e21bf2ce0f527d4fb2c",
+    "entityculling-neoforge-1.11.3-mc26.2.jar": "18c8ad70bb90797be22c33e3d20f6192f54b3062ad1b2588ec79d21e9870e280",
+    "dynamic-fps-3.11.9+minecraft-26.2.0-neoforge.jar": "671ce4eac9c1c7411dae050773e8cca15b69a1cd9955bac9cb54f6093964f1ff",
+    "modernfix-neoforge-5.27.21+mc26.2.jar": "857c90f486f271953ac9e3f8920486f930fd75e075611ad56a2d51d0ac2af767"
+  }
+}

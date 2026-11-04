@@ -42,6 +42,8 @@ All 53 netherite RPG Series armor/weapon/shield items now repair with Netherite 
 
 The [accessory RPG balance](docs/patches/accessory-rpg-balance/README.md) keeps 42 Nameless Trinkets and 45 wearable Artifacts, with bounded combat procs, fixed intervals and party/pet protection. Moon Stone has 3/8 of its former gravity reduction. Existing removed relics, shrinking drawbacks and Vampire Blood's equipped-time lock remain. Stat-focused health and melee curios now scale with character attributes under effective caps; Tick uses bounded wearer-power damage instead of boss health. The full item inventory records changed and retained effects.
 
+The [client optimization stack](docs/patches/client-optimization/README.md) replaces Vectors with ImmediatelyFast, Entity Culling, Dynamic FPS and ModernFix-mVUS while retaining Sodium, FerriteCore and More Culling. Use a 60 FPS foreground cap when prioritizing lower power/heat; these mods do not guarantee a measured temperature or RAM reduction.
+
 ## Installer
 
 Download [ModsServerInstaller.exe](https://github.com/Valhaimerd/mods-server/releases/latest/download/ModsServerInstaller.exe), close Minecraft, and run it.

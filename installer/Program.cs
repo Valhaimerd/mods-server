@@ -114,12 +114,7 @@ internal static class Program
                     : "Punchy Better Combat compatibility is already enabled.");
                 if (punchy.BackupPath is not null)
                     Console.WriteLine($"Previous Punchy config backup: {punchy.BackupPath}");
-                var vectors = await VectorsProfile.ApplyAsync(target);
-                Console.WriteLine(vectors.Changed
-                    ? "Vectors Maximum Performance profile applied."
-                    : "Vectors Maximum Performance profile is already current.");
-                if (vectors.BackupPath is not null)
-                    Console.WriteLine($"Previous Vectors config backup: {vectors.BackupPath}");
+
             }
 
             if (request.ApplyRecommendedKeybinds)
@@ -580,7 +575,6 @@ internal static class Program
         }
 
         await PunchyCompatibility.RunSelfTestAsync();
-        await VectorsProfile.RunSelfTestAsync();
         await RecommendedKeybinds.RunSelfTestAsync();
         await EmotePackTests.RunAsync();
 
